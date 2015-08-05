@@ -3,12 +3,12 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 5 August 2015
 ! Expires: 2 days (update frequency) 
-! Version: 2015080502
+! Version: 2015080504
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: GNU GPL v3
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015080502 aktualizacja: sr, 5 sierpnia 2015, 10:35:00 
+! v.2015080504 aktualizacja: sr, 5 sierpnia 2015, 15:25:00 
 !
 !
 ! regex
@@ -181,7 +181,7 @@ gry-online.poszkole.pl##.ad-info
 ##.adoceanGora1Wrapper
 ~fastdecode.com,~linkdecode.com##.adsbygoogle
 ##.advertHolder
-##[class^="advertisement"]
+!~wtkplay.pl,~epoznan.pl##[class^="advertisement"]
 ##.ceneo-products.clearfix
 ##.ceneoaff-container.ceneoaff-468x60
 ##.cookemessagecloseico
@@ -1274,6 +1274,9 @@ view&user=anonymous&screen=$script,domain=player.pl
 @@/xgemius.js$script,domain=fakt.pl
 ! problem with stream on fotka.pl
 @@||diff3.smartadserver.com/call2/pubjallajax/$script,domain=fotka.pl
+! problems with video on epoznan.pl i wtkplay.pl
+@@|http://play.wtk.insys.pl/Scripts/InsysPlayer.v0.1.0/adTest.png$image,domain=play.wtk.insys.pl
+@@|http://ad.adview.pl/ad/$xmlhttprequest,domain=play.wtk.insys.pl
 !
 !
 !
