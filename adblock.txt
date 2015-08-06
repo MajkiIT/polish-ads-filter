@@ -1,14 +1,14 @@
 [Adblock Plus 2.0]
 ! Title: Adblock & uBlock Polish rules
 ! Homepage: http://www.certyficate.it/
-! Last modified: 5 August 2015
+! Last modified: 6 August 2015
 ! Expires: 2 days (update frequency) 
-! Version: 2015080505
+! Version: 2015080601
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: GNU GPL v3
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015080505 aktualizacja: sr, 5 sierpnia 2015, 18:25:00 
+! v.2015080601 aktualizacja: czw, 6 sierpnia 2015, 10:20:00 
 !
 !
 ! regex
@@ -181,7 +181,7 @@ gry-online.poszkole.pl##.ad-info
 ##.adoceanGora1Wrapper
 ~fastdecode.com,~linkdecode.com##.adsbygoogle
 ##.advertHolder
-!~wtkplay.pl,~epoznan.pl##[class^="advertisement"]
+~wtkplay.pl##[class^="advertisement"]
 ##.ceneo-products.clearfix
 ##.ceneoaff-container.ceneoaff-468x60
 ##.cookemessagecloseico
@@ -352,7 +352,7 @@ egospodarka.pl##A[href="http://www.opinie.egospodarka.pl/"]
 elektronika-nowosci.pl###post-body-2517817439355687334 > center
 enzo.pl###fancybox-inner
 enzo.pl###fancybox-outer
-epoznan.pl##[id^="adsys_"]
+!epoznan.pl##[id^="adsys_"] # include in EasyList
 erocentrum.pl##.panel
 eska.pl##A[style="display: block; height: 100%; width: 100%;"]
 eska.pl##IMG[src="http://static.eska.pl/html/v4/img/belka-reklama.jpg"]
@@ -1277,10 +1277,10 @@ view&user=anonymous&screen=$script,domain=player.pl
 @@||diff3.smartadserver.com/call2/pubjallajax/$script,domain=fotka.pl
 !
 !
-! problems with video on epoznan.pl i wtkplay.pl
-@@|http://play.wtk.insys.pl/Scripts/InsysPlayer.v0.1.0/adTest.png$image,domain=play.wtk.insys.pl
-@@|http://ad.adview.pl/ad/$xmlhttprequest,domain=play.wtk.insys.pl
-~wtkplay.pl,~epoznan.pl##[class^="advertisement"]
+! problems with video on epoznan.pl i wtkplay.pl /include in Easylist/
+!@@|http://play.wtk.insys.pl/Scripts/InsysPlayer.v0.1.0/adTest.png$image,domain=play.wtk.insys.pl
+!@@|http://ad.adview.pl/ad/$xmlhttprequest,domain=play.wtk.insys.pl
+!~wtkplay.pl,~epoznan.pl##[class^="advertisement"]
 !
 !
 !
