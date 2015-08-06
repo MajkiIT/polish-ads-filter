@@ -3,12 +3,12 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 6 August 2015
 ! Expires: 2 days (update frequency) 
-! Version: 2015080605
+! Version: 2015080606
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: GNU GPL v3
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015080605 aktualizacja: czw, 6 sierpnia 2015, 18:05:00 
+! v.2015080606 aktualizacja: czw, 6 sierpnia 2015, 22:05:00 
 !
 !
 ! regex
@@ -124,7 +124,7 @@ xgemius-min.jsgz$script
 !
 !
 ! cda.pl sent by Adam /2015-06-20/
-||*cda.pl/crossdomain.xml$object-subrequest,domain=cda.pl
+||cda.pl/crossdomain.xml$object-subrequest,domain=cda.pl
 ||static.video.superfilm.pl$object-subrequest,domain=cda.pl
 !
 !
@@ -234,6 +234,7 @@ gry-online.poszkole.pl##.ad-info
 ##img.expandBottomHead
 ##span.sponsorowany
 ##ul.sharing-tools
+!blocking div on wp.pl 
 ##.kbot
 ~rp.pl##[id*="reklama"]
 ~certyficate.it##[class*="reklama"]
@@ -293,10 +294,11 @@ bosch.pl##.top_co
 bounceexchange.com##IMG[src="https://1f2a292dca0422269d30-0b7e113615eebf298677542280795c6c.ssl.cf1.rackcdn.com/assets/uploads/clients/702/ads/XH0U4q9p.png"]
 bonami.pl##.overlay
 bonami.pl##.loginOverlay
-cda.pl##.bok-right.br-fix-js
+!cda.pl##.bok-right.br-fix-js
 cda.pl##.bx-pad
-cda.pl##DIV[style="position:absolute;top:30px;left:50%;margin-left:-104px"]
-cda.pl##IMG[src="http://static.cda.pl/imgb/wiejskie-zycie/1760_DOL_cda_300x50_jpg_fz.jpg"]
+cda.pl##.wrapp-bok-resp-abs
+!cda.pl##DIV[style="position:absolute;top:30px;left:50%;margin-left:-104px"]
+!cda.pl##IMG[src="http://static.cda.pl/imgb/wiejskie-zycie/1760_DOL_cda_300x50_jpg_fz.jpg"]
 ceneo.pl##.js_widget
 ceneo.pl##A[style="display: block; height: 100%; font: 0/0 a; text-shadow: none; color: transparent;"]
 ceneo.pl###body > .home.wrapper > .home-left-content > .home-ads-row
@@ -676,7 +678,7 @@ olx.pl###kredytHButton
 olx.pl##.screen-link.abs
 onet.pl###adContent
 onet.pl###extraAdsBlock
-onet.pl###fif-flat-boxright4
+!onet.pl###fif-flat-boxright4
 onet.pl###osgs_fla
 onet.pl,bistro24.pl,goldenline.pl,wizaz.pl##div[id*="slidebox"]
 ~sympatia.onet.pl,onet.pl##.banner
@@ -685,8 +687,8 @@ onet.pl##.infotips_window
 onet.pl##.localLink
 onet.pl##[class^="onetWidgetList"]
 onet.pl##.promoFrame.withImage.imageHorizontal
-onet.pl##DIV[style="background:#fff;position:absolute;z-index:8;height:2500px;left:0;top:180px;width:100%;padding-top:10px;"]
-onet.pl##DIV[style="background:#fff;position:absolute;z-index:8;height:2500px;left:0;top:50px;width:100%;padding-top:10px;"]
+!onet.pl##DIV[style="background:#fff;position:absolute;z-index:8;height:2500px;left:0;top:180px;width:100%;padding-top:10px;"]
+!onet.pl##DIV[style="background:#fff;position:absolute;z-index:8;height:2500px;left:0;top:50px;width:100%;padding-top:10px;"]
 onet.pl##[id^="lay"]
 onet.pl##a.adv
 onet.pl##span.newsAdd
