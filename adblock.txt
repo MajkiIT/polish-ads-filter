@@ -1,19 +1,19 @@
 [Adblock Plus 2.0]
 ! Title: Adblock & uBlock Polish rules
 ! Homepage: http://www.certyficate.it/
-! Last modified: 6 August 2015
+! Last modified: 7 August 2015
 ! Expires: 2 days (update frequency) 
-! Version: 2015080606
+! Version: 2015080701
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: GNU GPL v3
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015080606 aktualizacja: czw, 6 sierpnia 2015, 22:05:00 
+! v.2015080701 aktualizacja: ptk, 7 sierpnia 2015, 15:05:00 
 !
 !
 ! regex
 !
-*/o2/TVN-Adserver/*
+/o2/TVN-Adserver/
 .gomoney.pl/article
 !/2014-06/julia/nike/nike3-2.swf
 _baner/980x200
@@ -41,7 +41,7 @@ _banery/980x200
 ||net-zgadula.co.pl/cioza/^$other
 ||fashion-method.com/^$other
 ||polub.co^$other
-||vimeoo.net^$other
+!||vimeoo.net^$other
 ||seans24.com.pl^$other
 ||exashare.com^$other
 ||playnowunlimited.biz^$other
@@ -86,7 +86,7 @@ scigacz.pl##A[href^="http://emisja.contentstream.pl/_/ctr/"]
 ||pixel.solvemedia.com^
 |http://api.solvemedia.com/papi/action$popup
 ||wykop.pl/paylink/emiter^
-||kropka.onet.pl/_s/kropka/*$image
+||kropka.onet.pl/_s/kropka/$image
 |http://stats.asp24.pl/js/click.4.js$script
 ##A[href^="http://clk.tradedoubler.com/click?p="]
 !
@@ -992,7 +992,7 @@ wp.pl##div[id^="dbgadv"]
 wp.tv##[src^="http://adv.wp.pl/"]
 wp.tv###stickyBus
 wp.pl###radioPromoWrapper
-wp.pl###Container > .finanse.sec > .kbot > .wideEcom > h4
+!wp.pl###Container > .finanse.sec > .kbot > .wideEcom > h4
 !wiadomosci.wp.pl##.artMainWrapper > .fullWidth > .artCnt > .sowa-test-div:nth-of-type(2) > .sowa-stat-elem.ST-Pasek-dol.sowaStatic > .cnt > .zajawka:nth-of-type(2)
 !wiadomosci.wp.pl##.artMainWrapper > .fullWidth > .artCnt > .sowa-test-div:nth-of-type(2) > .sowa-stat-elem.ST-Pasek-dol.sowaStatic > .cnt > .zajawka:nth-of-type(3)
 wp.pl##.dynArts > .artMainWrapper:nth-of-type(1) > article > .artCnt > .sowa-test-div:nth-of-type(2) > .sowa-stat-elem.ST-Pasek-dol.sowaStatic > .cnt > .zajawka:nth-of-type(2)
@@ -1301,10 +1301,10 @@ view&user=anonymous&screen=$script,domain=player.pl
 !*adimage.php*
 *.adkontekst.*
 admeta.vo.llnwd.net##*
-*.adocean.pl*
-||ad.redkorn.pl^
+!*.adocean.pl*
+!||ad.redkorn.pl^
 !*adsearch.wp.pl*
-*.adserver.example.com/*
+!*.adserver.example.com/*
 *adserver.home.pl/*
 *adserver.magazyn.pl/*
 !*adserver.o2.pl
@@ -1317,7 +1317,7 @@ admeta.vo.llnwd.net##*
 !/*Affiliate/*
 ||allegro.pl/ap/ap_show.php*
 /bannermedia/*
-*/bannery/*
+!*/bannery/*
 !||bash.org.pl/m/banners/*
 !!||bbcdn.go.pol.bbelements.com^
 !||blue.pl/echoBanner?*
@@ -1325,62 +1325,62 @@ admeta.vo.llnwd.net##*
 !*boksy.onet.pl/dir/retbox_vers.html*
 !||cdn.go.arbopl.bbelements.com^
 !||cdn.quisma.com/3618/*
-*.clickad.*
-.com/ads.pl
+!*.clickad.*
+!.com/ads.pl
 !*.comes.com.pl/mmedia/*
-*darmowe-liczniki.info/pop*.gif
-*dc.sabela.*
+!*darmowe-liczniki.info/pop*.gif
+!*dc.sabela.*
 !||demotywatory.pl/res/swf/*
-*/digi-ads/*
+!*/digi-ads/*
 !*dot.wp.pl/*
 !*.doubleclick.*
 !*.enter.pl/inc/*
-||evolutionmedia.cdn.newmedialabs.pl^
-*file4u.pl/images/*.swf
-!*file4u.pl/js/im/*
-*.firma.arbomedia.pl/bbmedia/kampania/*
-*fotka.pl/img/r/*
-*g1.idg.pl/idg/gfx/rel/*
+!||evolutionmedia.cdn.newmedialabs.pl^
+!*file4u.pl/images/*.swf
+!!*file4u.pl/js/im/*
+!*.firma.arbomedia.pl/bbmedia/kampania/*
+!*fotka.pl/img/r/*
+!*g1.idg.pl/idg/gfx/rel/*
 !*.gemius.pl*
-*gery.pl/img/banner_rotating.swf
-/googleAd.js
+!*gery.pl/img/banner_rotating.swf
+!/googleAd.js
 /googleframe.
-*/grafiki_vobis/*.gif
-|http://94.23.7.219/openx/www/delivery/*
-|http://a.ads.
-|http://ad2.
+!*/grafiki_vobis/*.gif
+!|http://94.23.7.219/openx/www/delivery/*
+!|http://a.ads.
+!|http://ad2.
 !|http://ad.afilo.pl/*
 !|http://adidm.idmnet.pl/adsn/wnp_pl/*
 !|http://adserver.swiatobrazu.pl/www/delivery/*
-|http://adv.adtotal.pl/*
-|http://adv.adview.pl/ads/*
-|http://adv.gazeta.pl/*
+!|http://adv.adtotal.pl/*
+!|http://adv.adview.pl/ads/*
+!|http://adv.gazeta.pl/*
 !|http://ar.atwola.com/*
 !|http://bbcdn.go.arbopl.bbelements.com/*
 !|http://bbcdn.go.idmnet.bbelements.com/logos/*
-|http://cdn.fastclick.net/*
+!|http://cdn.fastclick.net/*
 !|http://cdn.go.idmnet.bbelements.com/*
-|http://content.yieldmanager.edgesuite.net/*
-|http://cpx-media.quisma.com/*
-|http://demotywatory.org/adv/*
-|http://ds.serving-sys.com/*
-|http://file4u.pl/js/img/*
-|http://files.netsales.pl/*
-|http://ggpro.pl/partner/product_images/*
+!|http://content.yieldmanager.edgesuite.net/*
+!|http://cpx-media.quisma.com/*
+!|http://demotywatory.org/adv/*
+!|http://ds.serving-sys.com/*
+!|http://file4u.pl/js/img/*
+!|http://files.netsales.pl/*
+!|http://ggpro.pl/partner/product_images/*
 |http://hit.stat24.com/*
-|http://i.blogads.com/*
-|http://img-cdn.mediaplex.com/*
+!|http://i.blogads.com/*
+!|http://img-cdn.mediaplex.com/*
 !|http://img.trojmiasto.pl/banery/*
-|http://im.of.pl/ks/*
-|http://im.xo.pl/ks/*
-|http://media.nk-net.pl/*
-|http://new.smartcontext.pl/*
-|http://openx.xenium.pl/www/images/*
+!|http://im.of.pl/ks/*
+!|http://im.xo.pl/ks/*
+!|http://media.nk-net.pl/*
+!|http://new.smartcontext.pl/*
+!|http://openx.xenium.pl/www/images/*
 !|http://partner.pobieraczek.pl/images/kampanie/*
-|http://rcm.amazon.com/e/*
-|http://r-trojmiasto.pl/www/delivery
-|http://s3.amazonaws.com/adtaily.production/*
-|http://s4.hit.stat24.com/*
+!|http://rcm.amazon.com/e/*
+!|http://r-trojmiasto.pl/www/delivery
+!|http://s3.amazonaws.com/adtaily.production/*
+!|http://s4.hit.stat24.com/*
 !|http://s.blomedia.pl/img/*
 !|http://s.di.com.pl/www/images/*
 !|http://spe.atdmt.com/*
@@ -1390,52 +1390,52 @@ admeta.vo.llnwd.net##*
 !|http://www.adspiro.pl/ad/srvl/*
 !|http://www.sfd.pl/sklep/images/front/*
 !||iladia.pl/1info/*
-*images.ectaco.com/images/*
+!*images.ectaco.com/images/*
 !||img.cdn.betclick.com^
 !*/img/dla_studenta.swf
 ||img.wiocha.pl/js/*
-*.inteligo.pl/infosite/_images/tradedoubler/konto_pan_button_*
-*.interia.pl/a/*
+!*.inteligo.pl/infosite/_images/tradedoubler/konto_pan_button_*
+!*.interia.pl/a/*
 !*.it-faq.pl/controls/SolpartMenu/spmenu.js
 !*ling.pl/hackers.gif
 !*lotto.pl/images_template_big/*.swf
 !malkinia.com##.artbannersplus
 !||malkinia.com//images/banners/*
 !||malkinia.com/skyscrapers/*
-/_media/ads/*
+!/_media/ads/*
 !||media.lotech.pl^
 !*.miastoplusa.pl/m/ad/*
 !money.pl##DIV#inContext_disabled
 !*money.pl/j/egazety_popup.js
-nk.pl##DIV#content_banner > DIV#oas_place_a_top
+!nk.pl##DIV#content_banner > DIV#oas_place_a_top
 !*onet.pl/_m/*.gif
 !*.openoffice.pl/img/*promocja*
 */pagead/*
 !*pazdan.org/pp.jpg
 !*.pf.pl/userimages/*$~image
-*/phpadsnew/*
+!*/phpadsnew/*
 !*pp.free.fr/iframe.htm
-/reclame/*
-/reklam.
-/reklamy/*
+!/reclame/*
+!/reklam.
+!/reklamy/*
 !reklamy.sfd.pl
 !*reklamy*.szukacz.pl/*
 !*rek.www.wp.pl/*
 !*.rmf.pl/main/buttony/*
 !*.rmf.pl/main/img/akcje/*
-sfd.pl##iframe
-*.sfd.pl/trec/*.swf
+!sfd.pl##iframe
+!*.sfd.pl/trec/*.swf
 !*smog.pl/files/img/belka_*
 !##*[src^="http://go.arbopl.bbelements.com/logos/"]
-||static3.skapiecstatic.pl/bukaimg/*
-||static.archiwumallegro.pl/ban/*
-||static.iplex.pl/banery/*
-*static.nasza-klasa.pl//flash/*
-*static.nasza-klasa.pl/media//*
-*static.nasza-klasa.pl//media/flash/*
-*static.nasza-klasa.pl/media/flash/*
-*static.nasza-klasa.pl/media/img/*
-*statik.nasza-klasa.pl/flash/*
+!||static3.skapiecstatic.pl/bukaimg/*
+!||static.archiwumallegro.pl/ban/*
+!||static.iplex.pl/banery/*
+!*static.nasza-klasa.pl//flash/*
+!*static.nasza-klasa.pl/media//*
+!*static.nasza-klasa.pl//media/flash/*
+!*static.nasza-klasa.pl/media/flash/*
+!*static.nasza-klasa.pl/media/img/*
+!*statik.nasza-klasa.pl/flash/*
 !tapeciarnia.pl###id_toplayer
 !||tapeciarnia.pl/reklama/*
 !||telefonygsm.pl/img/banner/*
