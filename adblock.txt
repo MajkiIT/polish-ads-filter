@@ -2,14 +2,14 @@
 ! Title: Adblock & uBlock Polish filters
 ! polskie filtry do Adblocka i uBlocka
 ! Homepage: http://www.certyficate.it/
-! Last modified: 11 August 2015
+! Last modified: 12 August 2015
 ! Expires: 2 days (update frequency) 
-! Version: 2015081102
+! Version: 2015081201
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: GNU GPL v3
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015081102 aktualizacja: wt, 11 sierpnia 2015, 11:30:00 
+! v.2015081201 aktualizacja: sr, 12 sierpnia 2015, 18:35:00 
 !
 !
 ! regex
@@ -65,6 +65,8 @@ _banery/980x200
 ||static.openload.io/ad/display.php$popup
 ||bubble.am/?utm_source=zalukaj.tv$popup,domain=zalukaj.tv
 ||seans-online.tv/wp-content/themes/lukajfilm/images/player.jpg
+||bar.pianomedia.eu/^$script,domain=wyborcza.pl
+||ad.gazeta.pl/cpc/$script,domain=wyborcza.pl
 !
 !
 !
@@ -101,6 +103,7 @@ xgemius-min.jsgz$script
 ||gemius.pl/*gemius.js$script
 ||gemius.pl/lsget.html$subdocument
 ||hit.gemius.pl/*/rexdot.js$script
+||pro.hit.gemius.pl/gstream.js$script
 !
 !
 !Adblock detect include in Anti-Ablock-Killer
@@ -384,6 +387,10 @@ filmy.a33.pl##CENTER
 fishki.pl###fancybox-wrap
 foodpanda.pl###campaign_22924_lightbox
 forbes.pl###Article-Inner-Content
+forum.dvhk.to##IMG[src*="/bannery/dvhk/"]
+forum.dvhk.to##IMG[width="400"][height="50"]
+forum.dvhk.to##[id^="f16"] IMG[src^="http://img.dvhk.to/"]
+forum.dvhk.to##[id^="f16"] IMG[src^="http://tvsat-sklep.com/baner/"]
 forum.fedora.pl###document_modal
 forum.jdtech.pl###content > .wrapper > div:nth-of-type(1)
 forum.jdtech.pl###content > .wrapper > div:nth-of-type(2)
@@ -1196,8 +1203,8 @@ view&user=anonymous&screen=$script,domain=player.pl
 ||t-mobile-trendy.pl/graph/backgrounds/*$image
 |http://e.hub.com.pl/152/*$image
 |http://f00.osfr.pl/si_upload/upload_ole/kampanie/*$image
-||tvsat-sklep.com/baner/$image,domain=forum.dvhk.to
-||img.dvhk.to^$image,domain=forum.dvhk.to
+!||tvsat-sklep.com/baner/$image,domain=forum.dvhk.to
+!||img.dvhk.to^$image,domain=forum.dvhk.to
 ||www.programosy.pl/images/reklama_forum1.png
 ||image2.ceneo.pl/data/banners/banner*$image
 ||nazwa.pl/video/$object-subrequest,domain=rmfon.pl
