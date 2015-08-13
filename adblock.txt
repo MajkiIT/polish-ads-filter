@@ -2,14 +2,14 @@
 ! Title: Adblock & uBlock Polish filters
 ! polskie filtry do Adblocka i uBlocka
 ! Homepage: http://www.certyficate.it/
-! Last modified: 12 August 2015
+! Last modified: 13 August 2015
 ! Expires: 2 days (update frequency) 
-! Version: 2015081204
+! Version: 2015081301
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: GNU GPL v3
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015081204 aktualizacja: sr, 12 sierpnia 2015, 21:55:00 
+! v.2015081301 aktualizacja: czw, 13 sierpnia 2015, 20:25:00 
 !
 !
 ! regex
@@ -76,12 +76,13 @@ _banery/980x200
 ##[id^="div-gpt-ad-"]
 !
 !
-! adsearch.pl & emisja.contentstream.pl 
+! adsearch.pl, emisja.contentstream.pl & incontext.pl
 !
 ||emisja.adsearch.pl$script,domain=cdaction.pl
 ||emisja.adsearch.pl/_/intext_static/?prefix=interia&browser=$script,domain=interia.pl
 pudelek.pl,scigacz.pl##A[href^="http://emisja.contentstream.pl/_/ctr/"]
 !||emisja.contentstream.pl^
+||incontext.pl^$script,domain=chip.pl
 !
 !
 ! privacy
@@ -103,7 +104,8 @@ xgemius-min.jsgz$script
 ||gemius.pl/*gemius.js$script
 ||gemius.pl/lsget.html$subdocument
 ||hit.gemius.pl/*/rexdot.js$script
-||pro.hit.gemius.pl/gstream.js$script
+||hit.gemius.pl/gstream.js$script
+||hit.gemius.pl/hmapxy.js$script
 !
 !
 !Adblock detect include in Anti-Ablock-Killer
