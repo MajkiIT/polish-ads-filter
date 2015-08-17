@@ -2,14 +2,14 @@
 ! Title: Adblock & uBlock polish filters
 ! polskie filtry do Adblocka i uBlocka
 ! Homepage: http://www.certyficate.it/
-! Last modified: 16 August 2015
+! Last modified: 17 August 2015
 ! Expires: 2 days (update frequency) 
-! Version: 2015081601
+! Version: 2015081701
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: GNU GPL v3
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015081601 aktualizacja: nie, 16 sierpnia 2015, 16:25:00 
+! v.2015081701 aktualizacja: pon, 17 sierpnia 2015, 09:35:00 
 !
 !
 ! regex
@@ -80,9 +80,10 @@ _banery/980x200
 !
 ||emisja.adsearch.pl$script,domain=cdaction.pl
 ||emisja.adsearch.pl/_/intext_static/?prefix=interia&browser=$script,domain=interia.pl
-pudelek.pl,scigacz.pl##A[href^="http://emisja.contentstream.pl/_/ctr/"]
+!kwejk.pl,pudelek.pl,scigacz.pl##A[href^="http://emisja.contentstream.pl/_/ctr/"]
+pl##A[href^="http://emisja.contentstream.pl/_/ctr/"]
 !||emisja.contentstream.pl^
-||incontext.pl^$script,domain=chip.pl
+||incontext.pl^$script
 !
 !
 ! privacy
@@ -316,6 +317,8 @@ ceneo.pl##.js_widget
 ceneo.pl##A[style="display: block; height: 100%; font: 0/0 a; text-shadow: none; color: transparent;"]
 ceneo.pl###body > .home.wrapper > .home-left-content > .home-ads-row
 ceneo.pl##.ad-shadow
+ceneo.pl##.promoted-products
+ceneo.pl##.ado-common
 centralainternetu.pl###dbx_light.dbx_content
 centrumxp.pl###WelcomeBox
 charaktery.eu###mass-top-home-banner
@@ -1240,6 +1243,7 @@ view&user=anonymous&screen=$script,domain=player.pl
 ||gowork.pl/images/top_img/*$image,domain=gowork.pl
 ||interia.pl/#utm_source$popup,domain=cdaction.pl
 ||f01.esfr.pl/si_upload/gfx/2015/$image,domain=euro.com.pl
+||dot.wp.pl^
 !
 !
 ! ---WHITELIST---
@@ -1298,7 +1302,10 @@ view&user=anonymous&screen=$script,domain=player.pl
 @@/xgemius.js$script,domain=fakt.pl
 ! problem with stream on fotka.pl
 @@||diff3.smartadserver.com/call2/pubjallajax/$script,domain=fotka.pl
-||dot.wp.pl^
+! disable ads on portal.abczdrowie.pl /Wiesiek mail 15.08.2015/
+@@|https://rek.www.wp.pl/vad.xml?rekid=$xmlhttprequest,domain=portal.abczdrowie.pl
+@@|https://js-agent.newrelic.com/$script,domain=portal.abczdrowie.pl
+@@|https://dot.wp.pl/*/media.gif$image,domain=portal.abczdrowie.pl
 !
 !
 ! problems with video on epoznan.pl i wtkplay.pl /include in Easylist/
