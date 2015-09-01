@@ -5,12 +5,12 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 1 September 2015
 ! Expires: 2 days (update frequency) 
-! Version: 2015090102
+! Version: 2015090103
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015090102 aktualizacja: wt, 1 wrzesien 2015, 19:15:00 
+! v.2015090103 aktualizacja: wt, 1 wrzesien 2015, 22:45:00 
 !
 !
 ! regex
@@ -252,7 +252,7 @@ gry-online.poszkole.pl##.ad-info
 ##div.widget.widget_text.widget-widget_text
 ##[id^="iframe#g2385"]
 ##img.expandBottomHead
-##span.sponsorowany
+!##span.sponsorowany
 ##ul.sharing-tools
 !blocking div on wp.pl 
 ##.kbot
@@ -789,6 +789,8 @@ pl##.box.ofero24
 pl##IMG[alt="Reklama"]
 pl##A[href^="http://adv.wp.pl/RM/click_lx.ads/"]
 pl###ad-bg-transparent
+pl##[class^="sponsorowany"]
+pl##[id^="sponsorowany"]
 planujemywesele.pl###ad-profile-box1
 play.pl##.overlay-shadow
 play.salesmanago.pl##DIV[style="width: 741px; height: 399px; background-color: #f3f3f3;"]
@@ -868,7 +870,7 @@ satkurier.pl###single_news > div > center
 satkurier.pl###wrapper > center > center
 saturn.pl###nl_modal
 saturn.pl###nl_overlay
-scigacz.pl###sponsorowany_sub_art
+!scigacz.pl###sponsorowany_sub_art
 !seansik.tv###left > div:nth-of-type(1) > .content:nth-of-type(6)
 sherdog.com###iframead-300x250
 sherdog.com##.container > .top_ads.content > .top_ad.ads
@@ -1303,7 +1305,7 @@ view&user=anonymous&screen=$script,domain=player.pl
 @@||reklama.onet.pl/_s/js/
 @@||reklama.onet.pl/_s/packages/
 @@||reklama.onet.pl/adexamples/display_USI/index_files/
-@@||reklama.onet.pl/bannery/promocja/sg/20140509_ikonki_sympatia_pl/
+!@@||reklama.onet.pl/bannery/promocja/sg/20140509_ikonki_sympatia_pl/
 @@||s.tvn.pl/bc/a_b.swf
 @@||go.brightcove.com/content/
 @@||admin.brightcove.com/js/api/SmartPlayerAPI.js
@@ -1318,8 +1320,8 @@ view&user=anonymous&screen=$script,domain=player.pl
 @@||tvn.adocean.pl^$script,domain=ekstraklasa.tv|itvn.pl|player.pl|ttv.pl|tvn.pl|tvn24.pl|tvn24bis.pl|tvn7.pl|tvnplayer.pl|tvnstyle.pl|tvnturbo.pl
 @@||rtax.criteo.com$domain=ekstraklasa.tv|itvn.pl|player.pl|ttv.pl|tvn.pl|tvn24.pl|tvn24bis.pl|tvn7.pl|tvnplayer.pl|tvnstyle.pl|tvnturbo.pl
 @@/advertisingmodule.$domain=ekstraklasa.tv|itvn.pl|player.pl|ttv.pl|tvn.pl|tvn24.pl|tvn24bis.pl|tvn7.pl|tvnplayer.pl|tvnstyle.pl|tvnturbo.pl
-@@||fbcdn-creative-a.akamaihd.net/hads-ak-xpf1/t45.1600-4/s261x260/*$image,domain=facebook.com
-@@||fbcdn-creative-a.akamaihd.net/hads-ak-xpf1/t45.1600-4/s526x296/*$image,domain=facebook.com
+!@@||fbcdn-creative-a.akamaihd.net/hads-ak-xpf1/t45.1600-4/s261x260/*$image,domain=facebook.com
+!@@||fbcdn-creative-a.akamaihd.net/hads-ak-xpf1/t45.1600-4/s526x296/*$image,domain=facebook.com
 !wyrzucenie detekcji adblocka na razem.tv w tym wpolityce.pl
 @@|http://razem.tv/Scripts/InsysPlayer.v0.1.0/adTest.png$image
 !@@||4vod.tv//assets/js/adcheck.js?v=6$script,domain=videostar.pl
