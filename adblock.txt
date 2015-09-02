@@ -5,12 +5,12 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 2 September 2015
 ! Expires: 2 days (update frequency) 
-! Version: 2015090201
+! Version: 2015090202
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015090201 aktualizacja: wt, 2 wrzesien 2015, 13:35:00 
+! v.2015090202 aktualizacja: wt, 2 wrzesien 2015, 20:35:00
 !
 !
 ! regex
@@ -30,6 +30,7 @@ _banery/980x200
 .pl/*/ads/
 .pl/wp-content/banners/
 /_adv/*
+/_baner/$domain=www.ipon.pl
 !
 !
 ! bad urls
@@ -521,7 +522,8 @@ internetstandard.pl###banner > .ad
 ideagrafika.pl###adswidget7-quick-adsense
 ipla.tv##IMG[src="http://s.redefine.pl/dcs/o2/redefine/uploader/0b/0bab5efed5a17080e992bb78ba8993b9.png"]
 ipo.pl##DIV[style="clear:both;min-height:100px;"]
-ipon.pl##OBJECT[data="http://www.ipon.pl/_baner/ipon.swf"]
+!ipon.pl##OBJECT[data="http://www.ipon.pl/_baner/ipon.swf"]
+ipon.pl###rekalama_PodMenu
 iv.pl###FlyingLayer > span > a[href="javascript:toggle_visibility()"] > b
 jankes.info##IMG[src^="http://image2.ceneo.pl/data/banners/"]
 jdtech.pl###centersidebar
@@ -791,6 +793,8 @@ pl##A[href^="http://adv.wp.pl/RM/click_lx.ads/"]
 pl###ad-bg-transparent
 pl##[class^="sponsorowany"]
 pl##[id^="sponsorowany"]
+pl##A[href*="/reklama"]
+pl##.Reklama
 planujemywesele.pl###ad-profile-box1
 play.pl##.overlay-shadow
 play.salesmanago.pl##DIV[style="width: 741px; height: 399px; background-color: #f3f3f3;"]
@@ -1275,6 +1279,7 @@ view&user=anonymous&screen=$script,domain=player.pl
 ||rek.www.wp.pl^
 ||egcfxjkcnn.wp.pl/$script,domain=wp.pl
 ||stg.wp.pl$subdocument
+||lib.onet.pl/s.csr/external/iframe$script,subdocument
 !
 !
 ! ---WHITELIST---
