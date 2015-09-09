@@ -3,14 +3,14 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard
 ! Homepage: http://www.certyficate.it/
-! Last modified: 8 September 2015
+! Last modified: 9 September 2015
 ! Expires: 2 days (update frequency) 
-! Version: 2015090802
+! Version: 2015090901
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015090802 aktualizacja: wt, 8 wrzesien 2015, 15:35:00
+! v.2015090901 aktualizacja: sr, 9 wrzesien 2015, 15:15:00
 !
 !
 ! regex
@@ -374,6 +374,14 @@ download.net.pl##DIV[style="text-align: center; margin: 0 auto;"]
 doz.pl##.clearfix.container > .clearfix.row
 dziennikwschodni.pl##P[style="font:normal 12px/16px Arial,Tahoma,sans-serif;margin:0;padding:6px 100px 5px 20px;color:#fff;word-wrap:break-word;"]
 dziennikwschodni.pl##body > span:nth-of-type(2)
+e-kg.pl##IMG[src^="http://www.e-kg.pl/images/banners/"]
+e-kg.pl##.artbannersxtd-flash
+e-kg.pl##.moduletable_plakat
+e-kg.pl###ads_pod_menu
+e-kg.pl###reklamystopka
+e-kg.pl###dropin
+e-kg.pl##.moduletable_news_region
+e-kg.pl###pasekdolny
 egazety.pl###mainb > .innerFooAds
 egospodarka.pl##.ego-book
 egospodarka.pl##.ego-opinie
@@ -1285,6 +1293,8 @@ view&user=anonymous&screen=$script,domain=player.pl
 ||stg.wp.pl$subdocument
 ||lib.onet.pl/s.csr/external/iframe$script,subdocument
 ||filmweb.pl/welcomeScreenJS$script,domain=filmweb.pl
+||e-kg.pl/templates/ekg/images/eska_kolobrzeg180.png$image
+||e-leclerc.pl$popup,domain=www.e-kg.pl
 !
 !
 ! ---WHITELIST---
