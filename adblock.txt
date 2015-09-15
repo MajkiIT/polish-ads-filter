@@ -5,12 +5,12 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 15 September 2015
 ! Expires: 2 days (update frequency) 
-! Version: 2015091501
+! Version: 2015091502
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015091501 aktualizacja: wt, 15 wrzesien 2015, 10:00:00
+! v.2015091502 aktualizacja: wt, 15 wrzesien 2015, 19:40:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -28,6 +28,7 @@ _banery/980x200
 .pl/wp-content/banners/
 /_adv/*
 /_baner/$domain=www.ipon.pl
+/stg/*$script,domain=biztok.pl|wp.tv|wp.pl|sportowefakty.pl|kafeteria.tv|.wrzuta.pl|pudelek.tv|komediowo.pl|sfora.pl|autokrata.pl|sportfan.pl|wawalove.pl|hotmoney.pl|aleseriale.pl|babol.pl|snobka.pl|nocoty.pl|money.pl|pudelek.pl
 !
 !
 !-----------------------Bad pages blocking filters-----------------------!
@@ -81,13 +82,10 @@ _banery/980x200
 !-----------------------Privacy filters-----------------------!
 ||pixel.solvemedia.com^
 |http://api.solvemedia.com/papi/action$popup
-!||wykop.pl/paylink/emiter^
 ||kropka.onet.pl/_s/kropka/$image
 |http://stats.asp24.pl/js/click.4.js$script
 ##A[href^="http://clk.tradedoubler.com/click?p="]
-!##a[href*="hit.gemius.pl"]
 ||gemius.pl$third-party,popup
-!interia.pl##[href^="http://interiaao.hit.gemius.pl/hitredir/id="]
 /xgemius.js$script
 xgemius-min.jsgz$script
 ||gemius.pl/*gemius.js$script
@@ -992,6 +990,7 @@ wyborcza.biz,wyborcza.pl,gazeta.pl###pianoMediaBoxModal
 wzory-cv.com###SWBZ92DAF66729114D5A977D
 voxfm.pl###global_belka
 video.anyfiles.pl##[style^="float: left; margin: 0px 2px 5px 3px; width: 315px; height: 260px; text-align: center; position: absolute;"]
+vinowisko.pl##[href^="http://adsearch.adkontekst.pl/_/ctr/"]
 xboxforum.pl###Notices > .scrollContainer
 xboxforum.pl###content > .pageWidth > .pageContent > .blockContainer:nth-of-type(5) > .noticeContainer
 xfinanse.pl##.entry-image.attachment-post
