@@ -5,12 +5,12 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 16 September 2015
 ! Expires: 2 days (update frequency) 
-! Version: 2015091602
+! Version: 2015091603
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015091602 aktualizacja: sr, 16 wrzesien 2015, 13:20:00
+! v.2015091603 aktualizacja: sr, 16 wrzesien 2015, 13:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -28,6 +28,7 @@ _banery/980x200
 .pl/wp-content/banners/
 /_adv/*
 /_baner/$domain=www.ipon.pl
+/scripts/click.php$popup
 /stg/*$script,domain=biztok.pl|wp.tv|wp.pl|sportowefakty.pl|kafeteria.tv|.wrzuta.pl|pudelek.tv|komediowo.pl|sfora.pl|autokrata.pl|sportfan.pl|wawalove.pl|hotmoney.pl|aleseriale.pl|babol.pl|snobka.pl|nocoty.pl|money.pl|pudelek.pl
 !
 !
@@ -448,7 +449,8 @@ jdtech.pl##[id^="linkabletitlehtmlandphpwidget-"]
 jdtech.pl###main > div:nth-of-type(2)
 jdtech.pl###post-4519 > div:nth-of-type(1)
 jdtech.pl###post-4524 > div:nth-of-type(1)
-jbzd.pl##div.sky
+jbzd.pl##.dads
+jbzd.pl##.adbox
 jelonka.com###hlmmtv > tbody > tr
 jelonka.com##table > tbody > tr > .box-bg > table:nth-of-type(1) > tbody > tr:nth-of-type(2)
 jobs.pl###gbpl_oba
@@ -463,7 +465,7 @@ knf.gov.pl##OBJECT[data="/Images/knf_620x86px_nie_wszystko_zloto.swf"]
 kobieta.onet.pl###sponsUrl
 kobieta.pl###c11849
 kobieta.dziennik.pl###rightSection > a[href="http://sprzedajemy.dziennik.pl/"] > img
-komixxy.pl,mistrzowie.org##[id^="sky"]
+komixxy.pl,mistrzowie.org,jbzd.pl##[id^="sky"]
 komputerswiat.pl###\5f 479491471
 komputerswiat.pl###ks_breaking_news
 komputerswiat.pl##[style="width: 600px; height: 400px; margin: 20px auto;"]
