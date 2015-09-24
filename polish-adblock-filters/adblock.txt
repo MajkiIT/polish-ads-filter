@@ -1,16 +1,16 @@
-[Adblock Plus 2.0]
+![Adblock Plus 2.0]
 ! Title: Adblock & uBlock polish filters
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 24 September 2015
 ! Expires: 2 days (update frequency) 
-! Version: 2015092402
+! Version: 2015092403
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015092402 aktualizacja: czw, 24 wrzesien 2015, 09:30:00
+! v.2015092403 aktualizacja: czw, 24 wrzesien 2015, 14:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -27,7 +27,7 @@ _banery/980x200
 .pl/*/ads/
 .pl/wp-content/banners/
 /_adv/*
-/_baner/$domain=www.ipon.pl
+/_baner/*$domain=www.ipon.pl
 /scripts/click.php$popup
 !
 !
@@ -664,6 +664,7 @@ pl##[class^="sponsorowany"]
 pl##[id^="sponsorowany"]
 pl##A[href$="/reklama"]
 pl##A[href^="http://emisja.contentstream.pl/_/ctr/"]
+pl##[src*="/banners/banner"] 
 planujemywesele.pl###ad-profile-box1
 play.pl##.overlay-shadow
 play.salesmanago.pl##DIV[style="width: 741px; height: 399px; background-color: #f3f3f3;"]
@@ -1119,7 +1120,7 @@ view&user=anonymous&screen=$script,domain=player.pl
 ||www1.advice.movie.advlab.pl$object,domain=get.x-link.pl
 ||adserwer.adtools.pl^$script,subdocument,domain=video.anyfiles.pl|adserwer.adtools.pl
 ||ocs-pl.oktawave.com/v1/AUTH_*/Reklamy/$object-subrequest,domain=video.anyfiles.pl
-||emisja.contentstream.pl/_/*$script
+||emisja.contentstream.pl/_/$script
 ||wp.pl/*/stg/$script,domain=pudelek.pl
 !
 !
@@ -1138,8 +1139,6 @@ view&user=anonymous&screen=$script,domain=player.pl
 @@|http://rek.www.wp.pl/vad.xml^
 @@|https://ssl.allegro.pl/order/^
 @@|http://ssl.allegro.pl/order/^
-@@|http://reklama.onet.pl/bannery/a/allegro/Allegro_36x36.jpg
-@@||reklama.onet.pl/bannery/promocja/sg/20140509_ikonki_sympatia_plus/*
 @@||reklama.onet.pl/_d/_k/navig/
 @@||reklama.onet.pl/_s/js/
 @@||reklama.onet.pl/_s/packages/
