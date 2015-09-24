@@ -3,14 +3,14 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk
 ! Homepage: http://www.certyficate.it/
-! Last modified: 23 September 2015
+! Last modified: 24 September 2015
 ! Expires: 2 days (update frequency) 
-! Version: 2015092301
+! Version: 2015092401
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.20150923021 aktualizacja: sr, 23 wrzesien 2015, 14:50:00
+! v.2015092401 aktualizacja: czw, 24 wrzesien 2015, 09:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -711,16 +711,12 @@ psychiatria.pl##.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui
 psychiatria.pl##.ui-widget-overlay.ui-front
 psychorada.pl###popup_image_14258946051175170698
 pudelek.pl##.video-star-box
-pudelek.pl##.page > .body > .sidebar > .cf.js-ga-utm_campaign.sidebar-article.sidebar-2 > .sub-col-right.sub-col
-pudelek.pl##.page > .body > .sidebar > .cf.js-ga-utm_campaign.sidebar-article.sidebar-1 > .sub-col-left.sub-col > .hot-topics-old > ul > li:nth-of-type(6)
 pudelek.pl,pudelek.tv,plotek.pl##[id^="frame-"]
 pudelek.tv,wp.tv,wrzuta.pl##[src^="http://adv.wp.pl"]
 pudelek.pl##[data-st-area="videostar_right"]
 pzpm.org.pl###powiadomiony
 radioplus.pl###bottom-ad
 radio.lublin.pl###banner_on_the_top
-radiowawa.pl###bmone2n-260\.2\.2\.2
-radiowawa.pl###header > .inner-right-index.inner-right > .box-three-a.box-three > .fb-news
 redbullmobile.pl###more1
 ringpolska.pl##.art-block.clearfix
 rmf.fm##.intad
@@ -1124,6 +1120,8 @@ view&user=anonymous&screen=$script,domain=player.pl
 ||www1.advice.movie.advlab.pl$object,domain=get.x-link.pl
 ||adserwer.adtools.pl^$script,subdocument,domain=video.anyfiles.pl|adserwer.adtools.pl
 ||ocs-pl.oktawave.com/v1/AUTH_*/Reklamy/$object-subrequest,domain=video.anyfiles.pl
+||emisja.contentstream.pl/_/*$script
+||wp.pl/*/stg/$script
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -1180,4 +1178,5 @@ view&user=anonymous&screen=$script,domain=player.pl
 @@||ak-ns.sascdn.com/diff/templates/$script,domain=www4.rp.pl
 @@||diff3.smartadserver.com/diff/$object,domain=get.x-link.pl
 @@||video.anyfiles.pl/pageloading/all-loader.jsp?ads=true$xmlhttprequest,domain=video.anyfiles.pl
-@@|http://showup.tv/js/core/Advertisement.js$xmlhttprequest,domain=showup.tv
+@@||showup.tv/js/core/Advertisement.js$xmlhttprequest,domain=showup.tv
+@@||wp.pl/*/stg/player/$script
