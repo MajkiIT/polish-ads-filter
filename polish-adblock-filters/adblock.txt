@@ -1,15 +1,16 @@
+[Adblock Plus 2.0]
 ! Title: Adblock & uBlock polish filters
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk
 ! Homepage: http://www.certyficate.it/
-! Last modified: 24 September 2015
+! Last modified: 25 September 2015
 ! Expires: 2 days (update frequency) 
-! Version: 2015092405
+! Version: 2015092501
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015092405 aktualizacja: czw, 24 wrzesien 2015, 19:05:00
+! v.2015092501 aktualizacja: ptk, 25 wrzesien 2015, 09:15:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -205,6 +206,7 @@ xgemius-min.jsgz$script
 ##A[href$="/reklama"]
 ##A[href^="http://emisja.contentstream.pl/_/ctr/"]
 ##[src*="/banners/banner"]
+##pb_block
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -285,8 +287,6 @@ cinema-city.pl###snatch
 cinema-city.pl###layer_3_-150_0
 co.pl###box
 co.pl###overlay
-com###arevicofancy-overlay
-com###pb_block
 computerworld.pl##DIV[style="margin-top:10px;"]
 computerworld.pl###banner > .ad.bilbo_ad
 czat.wp.pl###wpBotL
@@ -1174,3 +1174,5 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||video.anyfiles.pl/pageloading/all-loader.jsp?ads=true$xmlhttprequest,domain=video.anyfiles.pl
 @@||showup.tv/js/core/Advertisement.js$xmlhttprequest,domain=showup.tv
 @@||tibiopedia.pl/js/show_ads.js$script,domain=tibiopedia.pl
+@@||humoris.pl/ads.$xmlhttprequest,script,stylesheet,domain=humoris.pl
+@@||synonim.net/ads.$xmlhttprequest,script,stylesheet,domain=synonim.net
