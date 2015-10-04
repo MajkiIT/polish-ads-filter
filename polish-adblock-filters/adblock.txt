@@ -2,14 +2,14 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk
 ! Homepage: http://www.certyficate.it/
-! Last modified: 2 October 2015
+! Last modified: 4 October 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015100203
+! Version: 2015100401
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015100203 aktualizacja: ptk, 2 pazdziernika 2015, 14:15:00
+! v.2015100401 aktualizacja: nie, 4 pazdziernika 2015, 15:15:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -198,7 +198,7 @@ xgemius-min.jsgz$script
 ##.box.ofero24
 ##IMG[alt="Reklama"]
 ##A[href^="http://adv.wp.pl/RM/click_lx.ads/"]
-###ad-bg-transparent
+##[id^="ad-bp-"]
 ##[class^="sponsorowany"]
 ##[id^="sponsorowany"]
 ##A[href$="/reklama"]
@@ -330,12 +330,13 @@ euro.com.pl###uki_ovrly
 fakt.pl###eF > .clr
 fakty.interia.pl##[id^="brendingIplv2_new_starter"]
 fc.hub2.com.pl##HTML[xml\:lang="pl"]
-f1fanklub.pl#@##topad
 filmweb.pl###flashcontent3
 filmy.a33.pl##CENTER
 fishki.pl###fancybox-wrap
 foodpanda.pl###campaign_22924_lightbox
 forbes.pl###Article-Inner-Content
+forum.dobreprogramy.pl##[style="text-align:center;padding:20px 0;"]
+forum.dobreprogramy.pl##[style="margin:20px 0;text-align:center;"]
 forum.dvhk.to##IMG[src*="/bannery/dvhk/"]
 forum.dvhk.to##IMG[width="400"][height="50"]
 forum.dvhk.to##[id^="f16"] IMG[src^="http://img.dvhk.to/"]
@@ -1160,6 +1161,10 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||ak-ns.sascdn.com/diff/templates/$script,domain=www4.rp.pl
 @@||diff3.smartadserver.com/diff/$object,domain=get.x-link.pl
 @@||video.anyfiles.pl/pageloading/all-loader.jsp?ads=true$xmlhttprequest,domain=video.anyfiles.pl
+@@||rek.www.wp.pl/pliki/*.js$script,domain=autokult.pl|fotoblogia.pl|gadzetomania.pl|komorkomania.pl
+!
+!
+!---------------------------------Anti Adblock Rules----------------------------------!
 @@||showup.tv/js/core/Advertisement.js$xmlhttprequest,domain=showup.tv
 @@||tibiopedia.pl/js/show_ads.js$script,domain=tibiopedia.pl
 @@||humoris.pl/ads.$xmlhttprequest,script,stylesheet,domain=humoris.pl
@@ -1173,3 +1178,9 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||eska.tv/assets/js/ads.js$script,domain=eska.tv
 @@||voxmusic.tv/html/js/adv.bbelements.js$script,domain=voxmusic.tv
 @@||3.bp.blogspot.com/*.jpg#/adaffiliate_/adops/ad/adsales/ad/adsby./adtest./$domain=f1fanklub.pl
+f1fanklub.pl#@##topad
+@@||tvsierpc.pl/media/videoads/FILMY/*.mp4$object,image,domain=tvsierpc.pl
+inwestycje.pl#@##bottomAd
+inwestycje.pl#@#.reklama
+inwestycje.pl#@#[class*="reklama"]
+@@||hostuje.net/show_ads.js$script,domain=hostuje.net
