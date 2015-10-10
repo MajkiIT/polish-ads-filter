@@ -2,14 +2,14 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk
 ! Homepage: http://www.certyficate.it/
-! Last modified: 10 October 2015
+! Last modified: 11 October 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015101001
+! Version: 2015101101
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015101001 aktualizacja: sob, 10 pazdziernika 2015, 15:00:00
+! v.2015101011 aktualizacja: nie, 11 pazdziernika 2015, 00:40:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -732,7 +732,7 @@ showup.tv##IMG[src="http://adtraffic.pl/www/images/ea827454d37dac267739836ed3237
 showup.tv##div.bottom-baner
 showup.tv##div.top-baner
 sieradz.com.pl##.box
-sieradz.com.pl##.billboard
+sieradz.com.pl,zdunskawola24.pl##.billboard
 sklep.fipro.pl###tooltipmessage
 sklep.habys.pl###newsletterModal
 sklep.habys.pl##.modal-backdrop.fade.in
@@ -1091,7 +1091,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||mon.services.tvn.pl/xlinkplayer.js$script,domain=get.x-link.pl
 ||www1.advice.movie.advlab.pl$object,domain=get.x-link.pl
 ||adserwer.adtools.pl^$script,subdocument,domain=video.anyfiles.pl|adserwer.adtools.pl
-||ocs-pl.oktawave.com/v1/AUTH_*/Reklamy/$object-subrequest,domain=video.anyfiles.pl
+||ocs-pl.oktawave.com/v1/AUTH_*/Reklamy/$object-subrequest,domain=video.anyfiles.pl|freedisc.pl
 ||www.money.pl/rek/
 ||i.wp.pl/a/i/stg/*,wpjslib_*.js$script,domain=pudelek.pl|dom.wp.pl|finanse.wp.pl|gwiazdy.wp.pl|money.pl
 ||a.wpimg.pl/*/stg/*,xgemius.js$script
@@ -1153,8 +1153,11 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||rek.www.wp.pl/pliki/*.js$script,domain=autokult.pl|fotoblogia.pl|gadzetomania.pl|komorkomania.pl|wp.tv|polskastacja.pl
 @@||staticpics2.allegrostatic.pl/adverts/otomoto_pl/*128x96$image,domain=allegro.pl
 @@||egcfxjkcnn.wp.pl^$script,domain=polskastacja.pl|wp.tv
+@@||hit.gemius.pl/xgemius.js$script,domain=freedisc.pl
 !
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
 @@||videoo.info/show_ads.js$script,domain=videoo.info
 jetradar.pl##.ng-scope.no_adblock_wrapper
+@@||webshark.pl/adserver/*/main_script.js?advertise_check=1$script,domain=freedisc.pl
+@@||hugo.zdunskawola24.pl/$script,domain=zdunskawola24.pl
