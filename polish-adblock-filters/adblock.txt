@@ -4,12 +4,12 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 11 October 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015101101
+! Version: 2015101102
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015101011 aktualizacja: nie, 11 pazdziernika 2015, 00:40:00
+! v.2015101102 aktualizacja: nie, 11 pazdziernika 2015, 16:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -295,7 +295,6 @@ domiporta.pl###iFrameResizer0
 download.net.pl##DIV[style="text-align: center; margin: 0 auto;"]
 doz.pl##.clearfix.container > .clearfix.row
 dziennikwschodni.pl##P[style="font:normal 12px/16px Arial,Tahoma,sans-serif;margin:0;padding:6px 100px 5px 20px;color:#fff;word-wrap:break-word;"]
-dziennikwschodni.pl#@#.adholder
 dziennik.pl###a_201
 dziennik.pl##[style="text-align:center; margin: 0 0 10px 0;padding-bottom: 20px"] 
 e-kg.pl##IMG[src^="http://www.e-kg.pl/images/banners/"]
@@ -895,7 +894,6 @@ wp.pl##[href^="http://emisja.contentstream.pl/_/ctr/"]
 www.wp.pl##.newO2
 wprost.pl##class[id^="addbox.addbox-"]
 wprost.pl###left-column > .art-area > .art-content > center
-wpworld.pl,windowsowo.pl#@##adBanner
 wolapark.pl###post-2295 > .lap-one-third.palm-one-half.one-whole.column.thumb-container > div
 wrzuta.pl###floorBG
 wschodnia.tv###right > .yt-position-inner
@@ -1091,7 +1089,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||mon.services.tvn.pl/xlinkplayer.js$script,domain=get.x-link.pl
 ||www1.advice.movie.advlab.pl$object,domain=get.x-link.pl
 ||adserwer.adtools.pl^$script,subdocument,domain=video.anyfiles.pl|adserwer.adtools.pl
-||ocs-pl.oktawave.com/v1/AUTH_*/Reklamy/$object-subrequest,domain=video.anyfiles.pl|freedisc.pl
+||ocs-pl.oktawave.com/v1/AUTH_*/Reklamy/$object-subrequest,domain=video.anyfiles.pl|freedisc.pl|reseton.pl
 ||www.money.pl/rek/
 ||i.wp.pl/a/i/stg/*,wpjslib_*.js$script,domain=pudelek.pl|dom.wp.pl|finanse.wp.pl|gwiazdy.wp.pl|money.pl
 ||a.wpimg.pl/*/stg/*,xgemius.js$script
@@ -1154,6 +1152,12 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||staticpics2.allegrostatic.pl/adverts/otomoto_pl/*128x96$image,domain=allegro.pl
 @@||egcfxjkcnn.wp.pl^$script,domain=polskastacja.pl|wp.tv
 @@||hit.gemius.pl/xgemius.js$script,domain=freedisc.pl
+!
+!
+!------------------------Whitelist specific element hiding rules------------------------!
+dziennikwschodni.pl#@#.adholder
+freedisc.pl#@#.footer-ad
+wpworld.pl,windowsowo.pl#@##adBanner
 !
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
