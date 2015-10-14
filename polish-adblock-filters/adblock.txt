@@ -1,15 +1,16 @@
+[Adblock Plus 2.0]
 ! Title: Adblock & uBlock polish filters
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika
 ! Homepage: http://www.certyficate.it/
-! Last modified: 13 October 2015
+! Last modified: 14 October 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015101302
+! Version: 2015101401
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015101302 aktualizacja: wt, 13 pazdziernika 2015, 20:05:00
+! v.2015101401 aktualizacja: sr, 14 pazdziernika 2015, 19:05:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -1092,6 +1093,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||a.wpimg.pl/*/stg/*,xgemius.js$script
 ||gemius.pl^
 ||pclab.pl/partners/$image,subdocument,domain=pclab.pl
+||vstrim.pl/images/*.gif$image,domain=vstrim.pl
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -1160,3 +1162,31 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !---------------------------------Anti Adblock Rules----------------------------------!
 @@||webshark.pl/adserver/*/main_script.js?advertise_check=1$script,domain=freedisc.pl
 @@||hugo.zdunskawola24.pl/$script,domain=zdunskawola24.pl
+@@||vstrim.pl/js/ads.js$script,domain=vstrim.pl
+!
+!
+!--------------------------Rules sport streams element hiding rules-------------!
+##A[href*="beaffiliates.com/processing/clickthrgh.asp"]
+abcast.net##[id^="floatLayer"]
+deltatv.pw##DIV[class$="advertisement"]
+drhtv.com.pl##[id^="banner"]
+drhtv.com.pl##a[href="http://www.sts.pl"]
+drhtv.com.pl##embed
+drhtv.com.pl##DIV[class^="panel"]
+drhtv.com.pl##[class^="banner"]
+drhtv.com.pl##[id^="popup"]
+emb.aliez.biz###adbtm
+freehdsport.com##[id*="overlay_Player"]
+meczstudio.com##[id^="wb_Image"]
+meczstudio.com##[class^="wb_Image"]
+sportpl.tv##[id^="middle-rek"]
+sportpl.tv##IMG[src*=".postimg.org/"]
+sportpl.tv##.player_re
+sport-cast.pl###adv
+xyz##[class^="a_"]
+xyz##.m_right
+!
+!
+!--------------------------Rules sport streams blocking filters-------------!
+||livemecz.com/u3/ads.js$script
+||sportpl.tv/assets/img/$image,domain=sportpl.tv
