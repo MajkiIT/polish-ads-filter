@@ -2,14 +2,14 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika
 ! Homepage: http://www.certyficate.it/
-! Last modified: 17 October 2015
+! Last modified: 18 October 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015101701
+! Version: 2015101801
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015101701 aktualizacja: sob, 17 pazdziernika 2015, 13:20:00
+! v.2015101801 aktualizacja: nie, 18 pazdziernika 2015, 10:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -200,6 +200,7 @@ xgemius-min.jsgz$script
 ##A[href*="/emisja.contentstream.pl/_/ctr/"]
 ##[src*="/banners/banner"]
 ##pb_block
+##over-player
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -609,7 +610,6 @@ niebezpiecznik.pl##A[href*="//niebezpiecznik.pl/r2"]
 nk.pl###content_banner > .ad_sandbox_wrapper
 nudziara.pl##DIV[style="border: 1px solid #D8D0D0; padding: 5px 0px 5px 0px; width:705px;"]
 niebezpiecznik.pl###text-8 > .textwidget
-nocnyseans.pl###over-player
 nocoty.pl###slider300Wrapper
 o2.pl##.box-sidebar.box-sidebar-1
 o2.pl##.content-row.content-row-15.x-ecommerce
@@ -1177,10 +1177,12 @@ drhtv.com.pl##DIV[class^="panel"]
 drhtv.com.pl##.banner1 > div
 drhtv.com.pl##[id^="popup"]
 emb.aliez.tv,emb.aliez.biz###adbtm
-freehdsport.com##[id*="overlay_Player"]
+freehdsport.com,freehqsport.eu##[id*="overlay_Player"]
+ipilka.info,mecz.tv###advertising_box
 meczstudio.com##[id^="wb_Image"]
 meczstudio.com##[class^="wb_Image"]
 meczstudio.com###bettv
+sostart.org##.adsquare
 sportpl.tv##[id^="middle-rek"]
 sportpl.tv##IMG[src*=".postimg.org/"]
 sportpl.tv##.player_re
@@ -1188,9 +1190,11 @@ sport-cast.pl###adv
 streamsport.cc##.pop_up_fb
 streamsport.cc##[style^="width: 600px;"][style$="position: absolute;"]
 streamsport.cc##[style^="position: absolute;"][style$="font-size: 13px;"]
+typertv.com.pl##[id^="reklamka"]
+worldsport.me###html7
 .xyz##[class^="a_"]
 .xyz##[id$="_right"]
-.xyz##[class$="_right"]
+.xyz,mecz.tv,ipilka.info##[class$="_right"]
 !
 !
 !--------------------------Rules sport streams blocking filters-------------!
