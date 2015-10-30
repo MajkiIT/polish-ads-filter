@@ -1,15 +1,14 @@
-[Adblock Plus 2.0]
 ! Title: Adblock & uBlock polish cookies filters
 ! polskie filtry komunikatow cookies do Adblocka i uBlocka
 ! Homepage: http://www.certyficate.it/
-! Last modified: 27 October 2015
+! Last modified: 30 October 2015
 ! Expires: 7 days (update frequency) 
-! Version: 30
+! Version: 32
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/adblock-polskie-filtry-blokowanie-info-cookies/
-! v.1.31 aktualizacja: wt, 27 pazdziernika 2015, 09:05:00
+! v.1.32 aktualizacja: ptk, 30 pazdziernika 2015, 15:50:00
 !
 !
 4hifi.pl##div#myModal
@@ -424,6 +423,7 @@ zosiaikevin.pl##div#novem-slot
 ||paypass.pl/themes/paypass/js/cookies.js$script
 ||sycow.pl/a/cookie.js$script
 cookie-law-popup.js$script
+||asus.com/pl/cookienotice.json$xmlhttprequest
 !
 !
 ! Global
@@ -435,7 +435,7 @@ cookie-law-popup.js$script
 ###AcceptCookie
 ##[id*="cookie-"]
 ##[id*="cookie_"]
-##[class*="cookie-"]
+~asus.com##[class*="cookie-"]
 ###cookiesEU-box
 ###cookies_info
 ###ciastka_wiadomosc
