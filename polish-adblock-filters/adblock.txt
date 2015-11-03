@@ -2,14 +2,14 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam
 ! Homepage: http://www.certyficate.it/
-! Last modified: 31 October 2015
+! Last modified: 3 November 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015103102
+! Version: 2015110301
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015103102 aktualizacja: sob, 31 pazdziernika 2015, 16:00:00
+! v.2015110301 aktualizacja: wt, 3 listopada 2015, 18:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -83,7 +83,7 @@ _banery/980x200
 |http://api.solvemedia.com/papi/action$popup
 ||kropka.onet.pl/_s/kropka/$image
 |http://stats.asp24.pl/js/click.4.js$script
-##A[href^="http://clk.tradedoubler.com/click?p="]
+##A[href*="://clk.tradedoubler.com/click?p="]
 ||gemius.pl$third-party,popup
 /xgemius.js$script
 xgemius-min.jsgz$script
@@ -241,7 +241,7 @@ bez-cenzury24.pl##[div^="ips-popup"]
 biznes.pl##.e_Box.analyses
 biznes.pl##.rightBoxR.boxPopComtR.cl
 biztok.pl##.ads.ads--sidebar
-biztok.pl,teleshow.wp.pl,gwiazdy.wp.pl,moto.wp.pl,wiadomosci.wp.pl##A[href^="http://dot.wp.pl/redir"]
+biztok.pl,teleshow.wp.pl,gwiazdy.wp.pl,moto.wp.pl,wiadomosci.wp.pl,money.pl##A[href^="http://dot.wp.pl/redir"]
 blog.pluralsight.com##.video.widescreen.flex-video
 bosch.pl##.top_co
 bonami.pl##.overlay
@@ -576,6 +576,7 @@ money.pl###mnytechtoplayer
 money.pl###newsDnia > .wbl:nth-of-type(5)
 money.pl##DIV[style="text-align:center;padding:10px 0"]
 money.pl##A[href^="https://direct.money.pl/o/salechannel.php"]
+money.pl##A[href^="http://moneymania.pl/?IDDistributor"] 
 moto.pl##.template-minimal
 motocykl-online.pl##.bgWhite.container > .row > .left-rail > .article > .tools > .col-xs-12.ceneo-box-index
 motoryzacja.interia.pl##div#articleObjectSeeAlso1
@@ -713,9 +714,10 @@ rp.pl##[id^="sas_663"]
 rp.pl###adv_4
 rp.pl##[id^="sas-"]
 rtvagd.wp.pl##.bx.agito.ST-CL-Najczesciej-kupowane-agito > .cnt
-runtastic.com##.link_as_button
-runtastic.com##.medium_rectangle.content_banner.offer.may14_4th_gold_30_percent_off.vers_b.lang_pl
-runtastic.com##IMG[src="https://d2d69lvc7tiwu6.cloudfront.net/assets/run_sessions/statistik-button_en-42c6c9f6954edbad870bf93c26b4184a.png"]
+rzeszowiak.pl##DIV[id^="rkl"]
+rzeszowiak.pl##DIV.header-wizytowki
+rzeszowiak.pl###content-right
+rzeszowiak.pl###midtop
 sadistic.pl##[style="text-align: center; padding: 30px"]
 sadistic.pl##[href^="http://goo.gl/"] > IMG
 satkurier.pl###bann > center
@@ -895,6 +897,7 @@ wp.pl###shopingBx
 wp.pl##SECTION.testDrive.horizontal
 wp.pl,money.pl,pudelek.pl,pudelek.tv##[id^="adv"]
 wp.pl##[href^="http://emisja.contentstream.pl/_/ctr/"]
+wp.pl##div[id^="domodi300"]
 www.wp.pl##.newO2
 wprost.pl##class[id^="addbox.addbox-"]
 wprost.pl###left-column > .art-area > .art-content > center
@@ -936,7 +939,6 @@ vidfile.net##.rek
 voxfm.pl###global_belka
 video.anyfiles.pl##[style^="float: left; margin: 0px 2px 5px 3px; width: 315px; height: 260px; text-align: center; position: absolute;"]
 vinowisko.pl##[href^="http://adsearch.adkontekst.pl/_/ctr/"]
-vstrim.pl##[style="position: absolute; left: 50%; z-index: 1000; top: 242px;"]
 xboxforum.pl###Notices > .scrollContainer
 xboxforum.pl###content > .pageWidth > .pageContent > .blockContainer:nth-of-type(5) > .noticeContainer
 xfinanse.pl##.entry-image.attachment-post
@@ -1105,6 +1107,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||aff.mediarotate.com/Click^
 ||vixnixxer.com$script,third-party
 ||media.spidersweb.pl/wp-content/uploads/*.swf$object,domain=splay.pl
+||www.kupbon.pl/banner/$image,domain=rzeszowiak.pl
 !
 !
 !---------------------------------Whitelists----------------------------------!
