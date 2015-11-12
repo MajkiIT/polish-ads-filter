@@ -1,14 +1,14 @@
 ! Title: Adblock & uBlock polish cookies filters
 ! polskie filtry komunikatow cookies do Adblocka i uBlocka
 ! Homepage: http://www.certyficate.it/
-! Last modified: 8 November 2015
+! Last modified: 12 November 2015
 ! Expires: 7 days (update frequency) 
-! Version: 36
+! Version: 37
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/adblock-polskie-filtry-blokowanie-info-cookies/
-! v.1.36 aktualizacja: nie, 8 listopada 2015, 17:30:00
+! v.1.37 aktualizacja: czw, 12 listopada 2015, 16:30:00
 !
 !
 4hifi.pl##div#myModal
@@ -144,7 +144,6 @@ gniezno24.com##div.activebar-container
 goclever.com##div#cp-wrap
 goclever.pl##div#cp-wrap
 goldenline.pl###topReminder
-!goldenline.pl##.cookiesInfo.hide > .bottom
 goldenline.pl##section[class*="cookiesInfo"]
 google.com##div#epbar
 google.pl##div#epbar
@@ -215,6 +214,7 @@ labottegatoscana.pl##div#disclaimer
 lancia.pl###cl-banner
 lca.pl##div#popupDiv
 leclerc.com.pl##div#tekst
+lg.com##.policyChk
 lot.com##div#cc
 lotnictwo.net.pl##li#navbar_notice_123
 lovekrakow.pl##div#new-policy
@@ -485,11 +485,18 @@ pl##[id^="polityka-prywatnosci"]
 ##div#ck_dsclr
 ##.JSWrapper
 ##.cc_banner-wrapper
+##.alert-sm.alert-warning.alert
 ###ecl-notice
 ###ciastko_alert
+##.cookies-alert
 ##ciasteczka
+###cu_bar
 ##.gb_md.gb_gc.gb_g
 ##.gb_tb.gb_wb.gb_Ia
 ##.gb_wb.gb_ib.gb_Ka
 ##.gb_xb.gb_jb.gb_La
 ##.gb_Fb.gb_pb.gb_Ra
+!
+!
+!----------------Whitelist---------------------------
+@@||static.wirtualnemedia.pl/new/js/cookie.js$script
