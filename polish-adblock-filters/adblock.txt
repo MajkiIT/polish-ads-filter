@@ -2,14 +2,14 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx 
 ! Homepage: http://www.certyficate.it/
-! Last modified: 18 November 2015
+! Last modified: 20 November 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015111801
+! Version: 2015112001
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015111801 aktualizacja: sr, 18 listopada 2015, 12:15:00
+! v.2015112001 aktualizacja: ptk, 20 listopada 2015, 09:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -53,6 +53,7 @@ _banery/980x200
 ||freshinfo.waw.pl
 ||wiadomosci.pl
 ||pobierz123.pl^
+||nowiny.warszawa.pl^
 !
 !
 !-----------------------Popup filters on movie-----------------------!
@@ -674,9 +675,9 @@ portalspozywczy.pl##.partnerserwisu
 ppe.pl##[class*="adver"]
 ppe.pl###header > .clearfix.header_bg > a[href="http://www.ppe.pl/psx_extreme-2015-4.html"] > img[alt="PSX Extreme 212"]
 praca.interia.pl###nsitsp_3
-pracuj.pl###divFavBox
-pracuj.pl###divFavoritesWrapper
+pracuj.pl##[id^="divFav"]
 pracuj.pl##.betamore.openJDOMWindow
+pracuj.pl##.expander
 prawo.money.pl###img11155698
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
@@ -876,6 +877,7 @@ wp.pl###shopingBx
 wp.pl##SECTION.testDrive.horizontal
 wp.pl,money.pl,pudelek.pl,pudelek.tv##[id^="adv"]
 wp.pl##[href^="http://emisja.contentstream.pl/_/ctr/"]
+wp.pl##[href^="http://kodyrabatowe.wp.pl/"] 
 wp.pl##div[id^="domodi300"]
 www.wp.pl##.newO2
 wprost.pl###additional-column
@@ -1146,6 +1148,7 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !---------------------------------Anti Adblock Rules----------------------------------!
 @@||cdn3.iplex.pl/iplex3/static/js/ads.js$script
 @@||synonim.net/ads$script,xmlhttprequest,domain=synonim.net
+film.org.pl#@##adsense
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
