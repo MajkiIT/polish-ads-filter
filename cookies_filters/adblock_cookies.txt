@@ -1,14 +1,14 @@
 ! Title: Adblock & uBlock polish cookies filters
 ! polskie filtry komunikatow cookies do Adblocka i uBlocka
 ! Homepage: http://www.certyficate.it/
-! Last modified: 12 November 2015
+! Last modified: 23 November 2015
 ! Expires: 7 days (update frequency) 
-! Version: 37
+! Version: 38
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/adblock-polskie-filtry-blokowanie-info-cookies/
-! v.1.37 aktualizacja: czw, 12 listopada 2015, 16:30:00
+! v.1.38 aktualizacja: pon, 23 listopada 2015, 11:00:00
 !
 !
 4hifi.pl##div#myModal
@@ -47,6 +47,7 @@ bookiatryk.pl##div[style="position: fixed; z-index: 9999; top: 0px; width: 100%;
 break.pl##div.RACKWrapper
 bricomarche.pl##div#content-head-information
 bstorun.pl##div#comm_info
+buduj.co.uk###SiteAnouncement
 buziak.pl###cffc
 cabletech.pl##div[style="top:0;position:absolute;width:100%;background:#000;color:#f2f2f2;font-size:10px;text-align:center"]
 canalplus.pl##div#cookes_policy
@@ -137,7 +138,6 @@ getem.pl##div#polityka
 gg.pl##[style="position:absolute;right:0;top:0;display:block;width:22px;height:30px;font-family:Verdana, Tahoma, Arial;font-weight:bold;font-size:10px;color:#aaa;text-align:center;line-height:25px;cursor:pointer;cursor:hand;"] + DIV
 gg.pl##div[style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: auto; z-index: 6660; visibility: hidden; font-family: Arial, Tahoma, Verdana; font-size: 16px; line-height: 1em; color: rgb(34, 34, 34);"]
 giercownia.pl##div#ci-info-box
-!gikz.pl##div#cc-notification
 gimpex.pl##div#cs_gimpex
 gkn.pl##div#gora0
 gniezno24.com##div.activebar-container
@@ -145,8 +145,8 @@ goclever.com##div#cp-wrap
 goclever.pl##div#cp-wrap
 goldenline.pl###topReminder
 goldenline.pl##section[class*="cookiesInfo"]
-google.com##div#epbar
-google.pl##div#epbar
+google.pl,google.com##div#epbar
+google.pl##.gb_gd
 gosc.pl##DIV[style="border: 10px solid rgb(138, 138, 138); border-radius: 10px; box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.9); background-color: rgb(255, 255, 255); padding: 8px 8px 10px; position: fixed; z-index: 99999; right: 20px; left: 20px; bottom: 20px; width: 700px; max-width: 90%;"]
 gowork.pl##div#header_top
 gpwinfostrefa.pl##div#divcook
@@ -218,6 +218,7 @@ lg.com##.policyChk
 lot.com##div#cc
 lotnictwo.net.pl##li#navbar_notice_123
 lovekrakow.pl##div#new-policy
+mall.pl##.con-large.cpr-bar
 mamnewsa.pl##div[style="z-index: 100000; font-family:Arial; position: fixed; bottom: 0px; left: 0; background-color: #F4EFB4; color: #000000; text-align: center; font-weight: bold; padding: 20px 0px; width:100%;"]
 mania4x4.pl##div.activebar-container
 manusite.pl##div[style="width:960px;height:100px;background:#0F0F0F;font-size:15px;text-align:center;padding:10px auto;"]
@@ -252,7 +253,6 @@ net-speak.pl##div.uwaga
 niezalezna.pl##div[style="border: 2px solid #900; margin-left: auto; margin-right: auto; padding: 3px; width: 984px"]
 nik.gov.pl##div.informationBar
 niniwateam.pl##div[style="background-color: rgb(255, 230, 173); color: rgb(0, 0, 102); position: fixed; top: 0px; width: 100%; padding: 10px; font-size: 12px; "]
-!nizanski.eu##div#cc-notification
 nomi.pl##div#Messenger-Special
 nowehoryzonty.pl##div#div_ac
 nowezyciepabianic.pl##div#PopupDiv
@@ -427,16 +427,16 @@ cookie-law-popup.js$script
 !
 ! Global
 ~paypal.com,~accounts.google.com##:not(input)[id*="Cookie"]
-~abctygodnik.pl,~wykop.pl,~bt4.pl,~kolba.pl,~ezakupy.tesco.pl##div[class*="cookie"]
-~paypal.com,~reserved.com,~zumi.pl,~komunikacja.bialystok.pl,~nvidia.com##:not(input)[id*="cookie"]
+~abctygodnik.pl,~wykop.pl,~bt4.pl,~kolba.pl,~ezakupy.tesco.pl,~tablety.pl##div[class*="cookie"]
+~microsoft.com,~paypal.com,~reserved.com,~zumi.pl,~komunikacja.bialystok.pl,~nvidia.com##:not(input)[id*="cookie"]
 ##[id*="coockie"]
 ##[class*="coockie"]
 ###AcceptCookie
 ##[id*="cookie-"]
-##[id*="cookie_"]
+~microsoft.com##[id*="cookie_"]
 ##.cookie-notification
 ###polityka-ciastek
-~com##[class*="cookie-"]
+~tablety.pl,~com##[class*="cookie-"]
 ###cookiesEU-box
 ###cookies_info
 ###ciastka_wiadomosc
