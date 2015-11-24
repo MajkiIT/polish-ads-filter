@@ -2,15 +2,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx 
 ! Homepage: http://www.certyficate.it/
-! Last modified: 23 November 2015
+! Last modified: 24 November 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015112302
+! Version: 2015112401
 ! Contact: errors@certyficate.it
-! Support: https://github.com/reek/anti-adblock-killer/issues
+! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015112302 aktualizacja: pon, 23 listopada 2015, 18:30:00
+! v.2015112401 aktualizacja: wt, 24 listopada 2015, 08:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -58,6 +58,8 @@ _banery/980x200
 ||dofejsa.pl^
 ||dziennik-polska.ml^
 ||newsypolska.com^
+||filmy.a33.pl^
+||allplayer.pl^
 !
 !
 !-----------------------Popup filters on movie-----------------------!
@@ -333,11 +335,11 @@ euro.com.pl###uki_ovrly
 facet.wp.pl##[id^="adv0"]
 facet.wp.pl,finanse.wp.pl##DIV[style^="display: block; margin: auto; position: relative;"]
 facet.wp.pl##[id^="e"]
+facet.wp.pl##DIV[style="width: 640px; height:400px; margin:10px auto 10px  auto;"]
 fakt.pl###eF > .clr
 fakty.interia.pl##[id^="brendingIplv2_new_starter"]
 fc.hub2.com.pl##HTML[xml\:lang="pl"]
 filmweb.pl###flashcontent3
-filmy.a33.pl##CENTER
 fishki.pl###fancybox-wrap
 foodpanda.pl###campaign_22924_lightbox
 forbes.pl###Article-Inner-Content
@@ -1085,6 +1087,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||vixnixxer.com$script,third-party
 ||media.spidersweb.pl/wp-content/uploads/*.swf$object,domain=splay.pl
 ||www.kupbon.pl/banner/$image,domain=rzeszowiak.pl
+||corto.www.wp.pl^
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -1159,9 +1162,9 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
-@@||cdn3.iplex.pl/iplex3/static/js/ads.js$script
-@@||synonim.net/ads$script,xmlhttprequest,domain=synonim.net
-film.org.pl#@##adsense
+@@||t2e.pl/www/js/ads.js$script
+@@||advert-serv.johnmorris.me/adserver/adlogger_tracker.php$subdocument,script,domain=www.terrarium.com.pl
+
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
@@ -1174,6 +1177,7 @@ deltatv.pw##DIV[class$="advertisement"]
 direct-stream.biz###direct-player
 direct-stream.biz##script:contains(onbeforeunload)
 drhtv.com.pl##[id^="banner"]
+drhtv.com.pl##[class^="banner"]
 drhtv.com.pl##a[href="http://www.sts.pl"]
 drhtv.com.pl##embed
 drhtv.com.pl##DIV[class^="panel"]
@@ -1210,5 +1214,6 @@ vstrim.pl##[style^="position: absolute;"]
 ||sportpl.tv/assets/img/$image,domain=sportpl.tv|vsport.in|sportson.tv
 ||www.oglaszamy24.pl/adstorage/$image
 ||vsport.in/pasek$image
+||msport.in/pasek.png
 ||vsport.in/ban1$image
 ||hotcpm.pl^$third-party
