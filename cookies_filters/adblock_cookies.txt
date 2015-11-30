@@ -1,14 +1,14 @@
 ! Title: Adblock & uBlock polish cookies filters
 ! polskie filtry komunikatow cookies do Adblocka i uBlocka
 ! Homepage: http://www.certyficate.it/
-! Last modified: 26 November 2015
+! Last modified: 30 November 2015
 ! Expires: 4 days (update frequency) 
-! Version: 39
+! Version: 40
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/adblock-polskie-filtry-blokowanie-info-cookies/
-! v.1.39 aktualizacja: ptk, 27 listopada 2015, 18:50:00
+! v.1.40 aktualizacja: pon, 30 listopada 2015, 18:50:00
 !
 !
 4hifi.pl##div#myModal
@@ -43,6 +43,8 @@ bleach.com.pl##div#cookis-bg
 blog.orange.pl##div[style="width: 100%; background-color: rgb(0, 0, 0); margin: 10px auto 0px; padding: 15px 8px; position: fixed; left: 0px; bottom: 0px; z-index: 1000; color: rgb(255, 255, 255);"]
 bluecity.pl##div[style="position: fixed; bottom: 0px; left: 0px; width: 100%; padding: 10px 0px; background-image: url(http://bluecity.pl/public/themes/bluecity/img/cookie_bar.png); background-color: rgb(255, 255, 255); background-position: 50% 0%; background-repeat: repeat no-repeat; "]
 bocian.org.pl##div[id="jGrowl"][class="bottom-right jGrowl"]
+bold.net.pl###u12344
+bold.net.pl###u12365
 bookiatryk.pl##div[style="position: fixed; z-index: 9999; top: 0px; width: 100%; margin: 0px; padding: 5px 20px; text-align: center; line-height: 1.3em; background-color: rgb(255, 255, 255); font-size: 15px; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: rgb(255, 0, 0); background-position: initial initial; background-repeat: initial initial;"]
 break.pl##div.RACKWrapper
 bricomarche.pl##div#content-head-information
@@ -83,6 +85,7 @@ dvdmax.pl##div#alertTop
 dzis.tv##div#regulaminWrap
 e-fajek.pl##div[style="position: fixed; top: 0; left: 0; z-index: 10000; width: 100%; height: 30px; border-bottom: 1px solid rgba(186,186,186,.5); background-color: #000000; background-color: rgba(0,0,0,.9); color: #cccccc; font-family: Arial,Helvetica,Garuda,sans-serif; line-height: normal; font-size: 10px;"]
 e-podroznik.pl##.biscuits-usage
+epuap.gov.pl##.footer-info
 e-swietokrzyskie.kielce.eu##div#belka_dolna
 e24cloud.com##div#FullBox
 ebok.vectra.pl##div.jqmAlertContent
@@ -115,7 +118,6 @@ fileshark.pl###div_cookis
 filmaniak.tv##.top_info
 filmweb.pl##div.topBarCont
 firecash.org##div#info
-fixafilm.pl,forum.vwgolf.pl##div#ciasteczka_alert
 florexpol.eu##div#fancybox-overlay
 florexpol.eu##div#fancybox-wrap
 fora.pl##div[style="position: fixed; top: 28px; left: 0px; right: 0px; bottom: auto; z-index: 6660; visibility: hidden; font-family: Arial, Tahoma, Verdana; font-size: 16px; line-height: 1em; color: rgb(34, 34, 34);"]
@@ -222,6 +224,7 @@ lg.com##.policyChk
 lot.com##div#cc
 lotnictwo.net.pl##li#navbar_notice_123
 lovekrakow.pl##div#new-policy
+lubelska.pl##SECTION.cookies
 mall.pl##.con-large.cpr-bar
 mamnewsa.pl##div[style="z-index: 100000; font-family:Arial; position: fixed; bottom: 0px; left: 0; background-color: #F4EFB4; color: #000000; text-align: center; font-weight: bold; padding: 20px 0px; width:100%;"]
 mania4x4.pl##div.activebar-container
@@ -428,6 +431,7 @@ zosiaikevin.pl##div#novem-slot
 cookie-law-popup.js$script
 ||asus.com/pl/cookienotice.json$xmlhttprequest
 ||pl/*/cookie.js$script
+||www.pianomedia.pl/cookies-on-pianomedia$xmlhttprequest
 !
 !
 ! Global
@@ -441,7 +445,7 @@ cookie-law-popup.js$script
 ~microsoft.com##[id*="cookie_"]
 ##.cookie-notification
 ###polityka-ciastek
-~tablety.pl,~com##[class*="cookie-"]
+~teleman.pl,~tablety.pl,~com##[class*="cookie-"]
 ###cookiesEU-box
 ###cookies_info
 ###ciastka_wiadomosc
@@ -481,6 +485,7 @@ cookie-law-popup.js$script
 ##sliding-popup
 ##span[class*="Cookie"]
 ##span[class*="cookie"]
+##div[id*="ciasteczka_alert"]
 /js/cookieinfo.js
 /js/polityka_cookies.js$script
 /cookie_msg.js$script
