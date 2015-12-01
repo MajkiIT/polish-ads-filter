@@ -1,16 +1,17 @@
+[Adblock Plus 2.0]
 ! Title: Adblock & uBlock polish filters
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx 
 ! Homepage: http://www.certyficate.it/
-! Last modified: 30 November 2015
+! Last modified: 1 December 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015113001
+! Version: 2015120101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015113001 aktualizacja: pon, 30 listopada 2015, 09:05:00
+! v.2015120101 aktualizacja: wt, 1 grudnia 2015, 09:05:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -306,7 +307,7 @@ download.net.pl##DIV[style="text-align: center; margin: 0 auto;"]
 doz.pl##.clearfix.container > .clearfix.row
 dziennikwschodni.pl##P[style="font:normal 12px/16px Arial,Tahoma,sans-serif;margin:0;padding:6px 100px 5px 20px;color:#fff;word-wrap:break-word;"]
 dziennik.pl###a_201
-dziennik.pl##[style="text-align:center; margin: 0 0 10px 0;padding-bottom: 20px"] 
+dziennik.pl##[style="text-align:center; margin: 0 0 10px 0;padding-bottom: 20px"]
 e-kg.pl##IMG[src^="http://www.e-kg.pl/images/banners/"]
 e-kg.pl##.artbannersxtd-flash
 e-kg.pl##.moduletable_plakat
@@ -401,8 +402,9 @@ grafoteka.pl###info
 gratka.pl###exposeMask
 gratka.pl###kandyduch-popup
 gratka.pl##DIV[class^="ad"]
-groupon.pl###overlayDiv
-groupon.pl##[class^="popupPart popup"]
+groupon.pl###subscribe_modal_container
+groupon.pl###spotlight
+groupon.pl###ls-in-app-messages
 gry-online.pl##div#CP_box
 gry-online.pl##.ban-fp-970x200
 gry-online.pl##[id^="R"] > a[href^="http://multigry.gry-online.pl/"]
@@ -591,10 +593,11 @@ money.pl###mnyadtxt
 money.pl###mnytechtoplayer
 money.pl##DIV[style="text-align:center;padding:10px 0"]
 money.pl##A[href^="https://direct.money.pl/o/salechannel.php"]
-money.pl##A[href^="http://moneymania.pl/?IDDistributor"] 
+money.pl##A[href^="http://moneymania.pl/?IDDistributor"]
 moto.pl##.template-minimal
 motocykl-online.pl##.bgWhite.container > .row > .left-rail > .article > .tools > .col-xs-12.ceneo-box-index
 motoryzacja.interia.pl##div#articleObjectSeeAlso1
+mpolska24.pl##.mpRek
 multibenefit.pl###background_popup
 muzodajka.pl###tbl_div
 muzodajka.pl##DIV[style="position: absolute;height: 600px;left: -620px;margin-left: 50%;width: 160px;border: 1px solid;border-color: #ccc;border-radius: 5px;padding: 10px;padding-bottom: 30px;"]
@@ -665,6 +668,7 @@ pcworld.pl##.side-module.how-to
 pcworld.pl##div#toaster
 pebx.pl###photo_container
 pebx.pl##.funbox
+pekao.com.pl###PX45189
 planujemywesele.pl###ad-profile-box1
 play.pl##.overlay-shadow
 play.salesmanago.pl##DIV[style="width: 741px; height: 399px; background-color: #f3f3f3;"]
@@ -715,7 +719,7 @@ ringpolska.pl##.art-block.clearfix
 rmf.fm##.intad
 spiz.pl,roksa.pl##.c
 remiza.com.pl##.gofollow
-repostuj.pl##A[href^="http://panel.portmmo.com/scripts/click.php"] 
+repostuj.pl##A[href^="http://panel.portmmo.com/scripts/click.php"]
 roksa.pl###content > span
 romantycznyweekend.eu###article-finished
 rp.pl##.productSales
@@ -896,7 +900,7 @@ wp.pl###shopingBx
 wp.pl##SECTION.testDrive.horizontal
 wp.pl,money.pl,pudelek.pl,pudelek.tv##[id^="adv"]
 wp.pl##[href^="http://emisja.contentstream.pl/_/ctr/"]
-wp.pl##[href^="http://kodyrabatowe.wp.pl/"] 
+wp.pl##[href^="http://kodyrabatowe.wp.pl/"]
 wp.pl##div[id^="domodi300"]
 www.wp.pl##.newO2
 wprost.pl###additional-column
@@ -1107,7 +1111,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||maps.google.pl^$document
 @@||megapliki.interia.pl/$~subdocument
 @@||mozilla.org/
-@@|*player_control*.swf
+@@*player_control*.swf
 @@||wikimedia.org/
 @@||wrzuta.pl/$~object
 @@|http://zalukaj.tv/ads.js$domain=zalukaj.tv
@@ -1165,6 +1169,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||imasdk.googleapis.com/js/core/$subdocument,domain=facet.wp.pl
 @@||mdn.net/instream/video/client.js$script,domain=facet.wp.pl
 @@||.tradedoubler.com/*www.mediaexpert.pl*
+@@||config.sensic.net/pl1-ssa-w.js$script,domain=get.x-link.pl
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1216,6 +1221,8 @@ sport-cast.pl###adv
 streamsport.cc##.pop_up_fb
 streamsport.cc##[style^="width: 600px;"][style$="position: absolute;"]
 streamsport.cc##[style^="position: absolute;"][style$="font-size: 13px;"]
+streamsport.cc###overlayKrolowej
+streamsport.cc##.ewelinaKrolowa
 tvtoss.com##.bannerfloat
 typertv.com.pl##[id^="reklamka"]
 worldsport.me###html7
