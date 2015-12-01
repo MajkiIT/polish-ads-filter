@@ -4,13 +4,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 1 December 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015120101
+! Version: 2015120102
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015120101 aktualizacja: wt, 1 grudnia 2015, 09:05:00
+! v.2015120102 aktualizacja: wt, 1 grudnia 2015, 19:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -63,6 +63,7 @@ _banery/980x200
 ||pay2mob.pl^
 ||94.102.53.184^
 ||live-online.pl^
+||watchlive.pl^
 !
 !
 !-----------------------Popup filters on movie-----------------------!
@@ -757,7 +758,6 @@ softonet.pl##A[href^="http://click.plista.com/pets/"]
 speedtest.pl###ad
 spidersweb.pl###flashContent
 spidersweb.pl##.four.columns.hide-for-small
-spidersweb.pl##.row.hide-for-small
 spidersweb.pl##.text-center
 sport.pl##.entry.externalEntry
 sport.pl##.mod.mod_uzr_sport6
@@ -789,6 +789,7 @@ trasa.info###partners
 trasa.info###trip
 treningbiegacza.pl###under-menu-adds-wrapper
 trojmiasto.pl##.banner-a
+trojmiasto.pl###watermark[href^="http://www.trojmiasto.pl/rd/"]
 turystyka.wp.pl###b_container
 turystyka.wp.pl##.typOferty.ST-BX-Oferty-dnia-samoloty
 turystyka.wp.pl##.typOferty.hotele.ST-BX-Oferty-dnia-hotele
@@ -815,6 +816,7 @@ videostar.pl##.reveal-modal-bg
 vitalia.pl###pasekDdd
 wizaz.pl###contentAfPromo
 vod.pl##.infoCloud
+vshare.io###pplay
 wachamksiazki.pl##.sr
 webproject.sanok.pl###cboxOverlay
 webproject.sanok.pl###colorbox
@@ -1102,6 +1104,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||reseton.pl/static/player/*/vast.js$script
 ||superfilm.pl/vast/comeon.xml$object
 ||static.video.superfilm.pl/mediafarm/$object-subrequest
+||spidersweb.pl/wp-content/themes/new_sw_v3_git/others/$subdocument,domain=spidersweb.pl
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -1189,6 +1192,7 @@ abcast.net##[id^="floatLayer"]
 aliez.*###adbtm
 coolcast.eu###r2
 darmowe.tv###john
+darmowetv.pl##[class$="er-block"]
 deltatv.pw##DIV[class$="advertisement"]
 direct-stream.biz###direct-player
 direct-stream.biz##script:contains(onbeforeunload)
@@ -1208,6 +1212,9 @@ meczenazywo.pl,mecze24.pl##A[href^="http://ads.comeon.com/redirect.aspx"]
 meczenazywo.pl##A[href^="/bukmacher/r/"]
 meczenazywo.pl###my_div_wrapper
 mecze24.pl###bg[href="http://cw.totolotek.pl/nazywo"]
+mecze24.pl##.cool
+mecze24.pl###google-adds-event
+mecze24.pl,meczenazywo.pl##a[href^="http://z0x.pl/"]
 meczstudio.com##[id^="wb_Image"]
 meczstudio.com##[class^="wb_Image"]
 meczstudio.com###bettv
