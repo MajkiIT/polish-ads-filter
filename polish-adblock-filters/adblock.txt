@@ -4,13 +4,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 1 December 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015120102
+! Version: 2015120103
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015120102 aktualizacja: wt, 1 grudnia 2015, 19:50:00
+! v.2015120103 aktualizacja: wt, 1 grudnia 2015, 21:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -399,6 +399,8 @@ gowork.pl##[id^="ad_"]
 gowork.pl##.__b-popup1__.b-modal
 gowork.pl##.popup-free-offer
 grafoteka.pl###info
+gram.pl##.stripeBar
+gram.pl###billBoardAreaWrapper
 gratka.pl###exposeMask
 gratka.pl###kandyduch-popup
 gratka.pl##DIV[class^="ad"]
@@ -1105,6 +1107,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||superfilm.pl/vast/comeon.xml$object
 ||static.video.superfilm.pl/mediafarm/$object-subrequest
 ||spidersweb.pl/wp-content/themes/new_sw_v3_git/others/$subdocument,domain=spidersweb.pl
+||gram.pl/reklamy_assets/intel_iris/inteliris_$image,domain=gram.pl
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -1181,9 +1184,6 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
-@@||t2e.pl/www/js/ads.js$script
-@@||advert-serv.johnmorris.me/adserver/adlogger_tracker.php$subdocument,script,domain=www.terrarium.com.pl
-@@||hugo.sieradz.com.pl/$script
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
