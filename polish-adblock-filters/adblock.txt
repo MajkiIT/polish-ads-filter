@@ -2,15 +2,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx 
 ! Homepage: http://www.certyficate.it/
-! Last modified: 2 December 2015
+! Last modified: 3 December 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015120201
+! Version: 2015120301
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015120201 aktualizacja: sr, 2 grudnia 2015, 19:40:00
+! v.2015120301 aktualizacja: czw, 3 grudnia 2015, 19:40:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -290,7 +290,6 @@ computerworld.pl##DIV[style="margin-top:10px;"]
 computerworld.pl###banner > .ad.bilbo_ad
 czat.wp.pl###wpBotL
 darkwarez.pl##DIV[style="position:relative;height:110px;overflow: hidden;"]
-darmowetv.pl##CENTER
 data.shoplov.in###slgl
 demotywatory.pl###main_container > .demots > article:nth-of-type(10)
 demotywatory.pl##DIV[style="position: fixed; width: 750px; margin-left: -375px; bottom: 0; height: 68px; background-color: #ccc; border-top: 1px solid black; z-index: 1000; overflow: hidden; left: 50%; padding: 15px 30px; color: #666; font-family: arial; font-size: 12px; line-height:150%;"]
@@ -358,7 +357,6 @@ forum.dvhk.to##[id^="f16"] IMG[src^="http://img.dvhk.to/"]
 forum.dvhk.to##[id^="f16"] IMG[src^="http://tvsat-sklep.com/baner/"]
 forum.fedora.pl###document_modal
 forum.vwgolf.pl##A[style="position:absolute;bottom:0.4em;text-transform:uppercase;font-size:80%;right:1em;\a           background:#de8c2f;color:#e6ebf2;padding:3px 7px; display:block"]
-forum.vwgolf.pl##CENTER
 forum.vwgolf.pl##DIV[style="padding:10px 15px 12px"]
 forum.pclab.pl###messageHook
 forumrowerowe.org###a1ad
@@ -421,6 +419,7 @@ gsmservice.pl###banner6
 hdtv.com.pl##center > a[href="http://hushhush.pl"] > img
 hdtv.com.pl##[id^="edit"] > table:nth-of-type(n+2)
 hdtv.com.pl###links
+hebe.pl###splash_homepage
 holidaycheck.pl##.headline
 hqq.tv###this-pays-for-bandwidth-container-hor
 ideas2action.pl##.o_inner
@@ -700,6 +699,7 @@ pracuj.pl##[id^="divFav"]
 pracuj.pl##.betamore.openJDOMWindow
 pracuj.pl##.expander
 prawo.money.pl###img11155698
+precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu##center
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
 profil.wp.pl##.bxAdv
@@ -775,7 +775,6 @@ swistak.pl###first > a[href^="http://"]
 supernowosci24.pl###notificationbar
 sympatia.onet.pl###backdrop-container
 sympatia.onet.pl###close-frame
-szuman.eu##CENTER
 targeo.pl###Advertisement
 tekstowo.pl##.adv-home-child
 tekstowo.pl###advSong
@@ -803,12 +802,15 @@ tvn24.pl###adocean-screening-layer
 tvp.pl##.adv__rectangle
 tvnwarszawa.tvn24.pl###jHotInfosC
 tvseriesonline.pl##A[href^="http://l1nk.pl"]
+twoja-firma.pl###panel_left > .box:nth-of-type(8)
 twojapogoda.pl##IMG[alt="pixad"]
 twojasuknia.pl##.container-fluid.hidden-print.text-center.win-baner
 twoje-seriale.tv##a[href^="http://www.videostream.pl/"]
 ulub.pl##[class^="ads_szuk"]
 ulub.pl##.right_col
 upc.pl##DIV[style="position: fixed; width: 100%; left: 0px; bottom: 0px; padding-top: 1em; background: none repeat scroll 0% 0% rgb(232, 232, 232); opacity: 0.9; z-index: 2147483640; font: 14px/1.4em sans-serif; border: medium none; clear: none; color: rgb(102, 102, 102); cursor: default; display: block; float: none; letter-spacing: normal; overflow: hidden; visibility: visible; white-space: normal;"]
+uploaduj.com##.guestMessage
+uploaduj.com##A[href="http://yhu.pl/"]
 uptimemadeeasy.com##.subscribep
 v10.pl##[id^="newsltr1_"]
 v10.pl##DIV[style="width: 100%; background-color: rgb(0, 0, 0); margin: 0px; position: fixed; bottom: 0px; left: 0px; padding: 0px; height: 15px; line-height: 15px; text-align: center; color: rgb(255, 255, 255); z-index: 1000; font-family: Arial,Helvetica,sans-serif; font-size: 10px;"]
@@ -1176,6 +1178,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||mdn.net/instream/video/client.js$script,domain=facet.wp.pl
 @@||.tradedoubler.com/*www.mediaexpert.pl*
 @@||config.sensic.net/pl1-ssa-w.js$script,domain=get.x-link.pl
+@@||hub.com.pl/_*/ad$xmlhttprequest,script,domain=interia.pl
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1222,8 +1225,7 @@ meczstudio.com###bettv
 sostart.org##.adsquare
 sportpl.tv##[id^="middle-rek"]
 sportpl.tv##IMG[src*=".postimg.org/"]
-sportpl.tv##.player_re
-sportson.tv##.player_re
+sportpl.tv,sportson.tv##.player_re
 sport-cast.pl###adv
 streamsport.cc##.pop_up_fb
 streamsport.cc##[style^="width: 600px;"][style$="position: absolute;"]
