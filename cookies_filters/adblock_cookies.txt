@@ -1,14 +1,14 @@
 ! Title: Adblock & uBlock polish cookies filters
 ! polskie filtry komunikatow cookies do Adblocka i uBlocka
 ! Homepage: http://www.certyficate.it/
-! Last modified: 30 November 2015
+! Last modified: 4 December 2015
 ! Expires: 4 days (update frequency) 
-! Version: 40
+! Version: 41
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/adblock-polskie-filtry-blokowanie-info-cookies/
-! v.1.40 aktualizacja: pon, 30 listopada 2015, 18:50:00
+! v.1.41 aktualizacja: ptk, 4 grudnia 2015, 09:50:00
 !
 !
 4hifi.pl##div#myModal
@@ -68,6 +68,7 @@ cookielaw.org##div.optanon-alert-box-wrapper
 curvefever.pl##div.ccc-widget
 cyberbajt.pl##div#message0
 czescidobmw.pl##div[style="position:fixed;left:0;top:0;width:100%;height:100%;background:#000;background:rgba(0,0,0,0.5);z-index:99999;cursor:pointer"]
+darksiders.pl###callout
 dealertata.pl##div[style="margin: auto auto; padding:10px 0; width:100%; z-index:1000; background:#333; position: fixed; left: auto; bottom: 0%; right: auto;"]
 decathlon.pl##div#container-screen
 deichmann.com##.open.clearfix.module.newsflash
@@ -76,7 +77,7 @@ dodrukarki.pl##div[style="background:#FFFADE; padding:6px 0px;"]
 domena.pl##div[style="width: 950px; display: block; margin: 0px auto; background-color: rgb(255, 250, 222); padding: 15px; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; border: 1px solid rgb(238, 238, 238); font-size: 11px; position: relative; z-index: 1999; "]
 domkibieszczady.pl###cookiesDiv
 dpd.com.pl##div[style="width:940px; border:#CCCCCC 1px solid; padding:10px; z-index:100; position: fixed; left:auto; bottom:10px; background-color: #CCCCCC; font-size:10px;"]
-drogeriahebe.pl##section.legal-info
+hebe.pl##legal-info
 drony.net##div#cop
 drukuj24.pl##div#politykacooki
 dvbsklep.pl##div#simple-modal
@@ -103,7 +104,6 @@ elopol.pl##div.ciacho-wrap-container
 epapierosylodz.pl##div#topInfoContainer1
 epiotrkow.pl##div.cookskom
 eserial.pl##[class^="skryptcookies-pl-"]
-eszkola.pl##div#cookemessagehandler
 eteacher.pl##div#info_container
 eternityproject.pl##div.newsbar
 everhome.pl##div.shotimoo
@@ -180,6 +180,7 @@ imagazine.pl##div[style="position: fixed; bottom: 0px; padding: 10px 30px; z-ind
 in4.pl##div.subheader
 info.wiara.pl##div[style="border: 10px solid rgb(138, 138, 138); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; box-shadow: rgba(0, 0, 0, 0.901961) 0px 0px 15px 0px; background-color: rgb(255, 255, 255); padding: 8px 8px 10px; position: fixed; z-index: 99999; right: 20px; left: 20px; bottom: 20px; width: 700px; max-width: 90%;"]
 infoludek.pl##div.infcook
+ingservicespolska.pl###privacy
 instalki.pl##div#ciasteczka
 interhandler.pl##div#comm_info
 intimiti.pl###topInfo1
@@ -250,7 +251,7 @@ motonotes.pl##div[style="background-color:black; width=100%; height:25px; color:
 motostat.pl##div#messages
 mpk.krakow.pl##div#poityka-ciastek
 mpk.lodz.pl##div#stpdueckmsg
-mpolska24.pl##div.infoBox
+mpolska24.pl##div[class^="infoBox"]
 multikino.pl###CookielawBanner
 muzeum-kaszubskie.gda.pl##div.shotimoo
 muzeumwp.pl##div.RACKWrapper
@@ -358,7 +359,6 @@ sportowysklep.pl##div[style="background-color: rgb(73, 73, 73); color: rgb(255, 
 stat.gov.pl##div#divcook
 steplowski.net##div#cop
 strefa.fm##div.cookskom
-streszczenia.pl##div#cookemessagehandler
 studiokopiowania.pl##div#cooPInfo
 studniowka.legnica.pl##div#popupDiv
 swidnica24.pl##div#policyBox
@@ -375,11 +375,11 @@ tekstowo.pl##div#ci-info-box
 tesco.pl##.cies
 theregister.co.uk##div#RegCCO
 tluszczak.pl##div#ml_wrapper
+torkusa.com,tork.pl##.headerMessage
 torun.lasy.gov.pl##div.popup-alert-notice
 totaaltv.nl##div#sanoma-consent-bar
 totalmoney.pl##div#right_widget
 tp-link.com.pl##div#noticeBox
-trasa.info##div#cookemessagehandler
 tubalecznej.pl###socialBar
 tugazeta.pl##div#komunikat_ciastka
 tvgry.pl##div#CP_box
@@ -445,7 +445,7 @@ cookie-law-popup.js$script
 ~microsoft.com##[id*="cookie_"]
 ##.cookie-notification
 ###polityka-ciastek
-~teleman.pl,~tablety.pl,~com##[class*="cookie-"]
+~qt.io,~teleman.pl,~tablety.pl,~com##[class*="cookie-"]
 ###cookiesEU-box
 ###cookies_info
 ###ciastka_wiadomosc
@@ -465,6 +465,7 @@ cookie-law-popup.js$script
 ##div#cookieInfo
 ##div#cookies
 ##div#cookies-info
+##div[id^="cookemessage"]
 ###[id^="cookies-message"]
 ##div#cookies-politics
 ##div#cookiesdirective
