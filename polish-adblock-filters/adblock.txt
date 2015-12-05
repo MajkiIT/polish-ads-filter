@@ -2,15 +2,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx 
 ! Homepage: http://www.certyficate.it/
-! Last modified: 4 December 2015
+! Last modified: 5 December 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015120401
+! Version: 2015120501
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015120401 aktualizacja: ptk, 4 grudnia 2015, 15:40:00
+! v.2015120501 aktualizacja: sob, 5 grudnia 2015, 13:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -234,8 +234,8 @@ allegro.pl###installments-banner-container
 allegro.pl###main_page_hr_980_180
 alekino.tv##DIV[style="width:989px; height: 535px;margin: 10px 16px 10px 16px;overflow-y: hidden;"]
 android.com.pl##[id^="text-3"]
+antyweb.pl##.aadv
 audiostereo.pl###index_stats
-audiostereo.pl##.ipsAd > CENTER
 audiostereo.pl###opinie_sidebar
 audiostereo.pl###skapiec-widget
 audiostereo.pl###opinie_db > .general_box
@@ -339,7 +339,6 @@ ex-film.pl##.screens-trailer
 ex-film.pl##.middle-rkl
 ex-film.pl##.clearfix.actors-wrap
 euro.com.pl###uki_ovrly
-facet.wp.pl##[id^="adv0"]
 facet.wp.pl,finanse.wp.pl##DIV[style^="display: block; margin: auto; position: relative;"]
 facet.wp.pl##[id^="e"]
 facet.wp.pl##DIV[style="width: 640px; height:400px; margin:10px auto 10px  auto;"]
@@ -422,6 +421,7 @@ hdtv.com.pl##center > a[href="http://hushhush.pl"] > img
 hdtv.com.pl##[id^="edit"] > table:nth-of-type(n+2)
 hdtv.com.pl###links
 hebe.pl###splash_homepage
+hip-hop.pl##DIV[style="clear:both; margin:10px; text-align:center;"]
 holidaycheck.pl##.headline
 hqq.tv###this-pays-for-bandwidth-container-hor
 ideas2action.pl##.o_inner
@@ -461,6 +461,7 @@ interia.pl##.page-footer-main.container
 interia.pl##[id^="videoAd"]
 interia.pl###\#ad_place_news
 interia.pl###calendar_top
+interia.pl##[id^="adBillImg"]
 internetstandard.pl###banner > .ad
 ideagrafika.pl###adswidget7-quick-adsense
 ipla.tv##IMG[src="http://s.redefine.pl/dcs/o2/redefine/uploader/0b/0bab5efed5a17080e992bb78ba8993b9.png"]
@@ -568,6 +569,7 @@ mlecznepodroze.onet.pl##.banner728-container.clearfix
 mlecznepodroze.onet.pl##.widgetAD.widget_text
 mlecznepodroze.onet.pl##.g-single.a-336
 mlecznepodroze.onet.pl##DIV[style="overflow: hidden; border-bottom: solid #DDDDDD 0px; border-top: solid #DDDDDD 0px; padding-top: 15px; padding-bottom: 10px;"]
+mobilneforum.pl##a[href^="http://shrsl.com/"]
 money.pl###DfaVisibilityIdentifier_2484705286463164760
 money.pl##[id^="afbd_3"]
 money.pl##[class^="colorInfoBox color"]
@@ -687,6 +689,7 @@ podlasie24.pl##DIV[style="padding: 13px 50px 13px 16px;"]
 polish.poland.usembassy.gov##.box.featured-items
 poolska.pl###text-3
 polskastacja.pl##.plotki_bg
+polskastacja.pl###banner
 pomorska.pl##.boxHeader
 pomorska.pl##.jcarousel-container.jcarousel-container-vertical
 pomorska.pl##P[style="font:normal 12px/16px Arial,Tahoma,sans-serif;margin:0;padding:6px 100px 5px 20px;color:#fff;word-wrap:break-word;"]
@@ -716,6 +719,7 @@ pudelek.pl##.video-star-box
 pudelek.pl,pudelek.tv,plotek.pl##[id^="frame-"]
 pudelek.tv,wp.tv,wrzuta.pl##[src^="http://adv.wp.pl"]
 pudelek.pl##[data-st-area="videostar_right"]
+purepc.pl##a[href^="http://www.purepc.pl/redir.php"]
 pzpm.org.pl###powiadomiony
 radioplus.pl###bottom-ad
 radio.lublin.pl###banner_on_the_top
@@ -1114,6 +1118,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||static.video.superfilm.pl/mediafarm/$object-subrequest
 ||spidersweb.pl/wp-content/themes/new_sw_v3_git/others/$subdocument,domain=spidersweb.pl
 ||gram.pl/reklamy_assets/intel_iris/inteliris_$image,domain=gram.pl
+||hub.com.pl/*/_ds/interia-$image,domain=fakty.interia.pl
+||purepc.pl/files/Image/purepc04x04.jpg$image
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -1257,3 +1263,8 @@ vstrim.pl##[style^="position: absolute;"]
 ||vsport.in/ban1$image
 ||hotcpm.pl^$third-party
 ||www.mecze24.pl/img/css/*tapeta$image
+||mecze24.pl/js/popup.js$script
+!
+!
+!--------------------------Rules temporary blocking filters-------------!
+||antyweb.pl/wp-content/uploads/2015/08/V3_big_1.png$image
