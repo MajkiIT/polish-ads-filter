@@ -4,13 +4,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 7 December 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015120701
+! Version: 2015120702
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015120701 aktualizacja: pon, 7 grudnia 2015, 13:00:00
+! v.2015120702 aktualizacja: pon, 7 grudnia 2015, 17:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -243,6 +243,7 @@ audiostereo.pl###ips_Posts > .right
 audiostereo.pl###container > .sidebar_ranking
 auto-swiat.pl##.banner
 autocentrum.pl##.homepage-add-left
+autodoradca.pl##.banner-top
 autokult.pl,gadzetomania.pl,komorkomania.pl,portal.abczdrowie.pl##[style^="position: absolute; z-index: 99; width: calc(100% - 20px); padding: 10px; overflow: hidden;"]
 autokult.pl,gadzetomania.pl,komorkomania.pl,portal.abczdrowie.pl##[style^="color: rgba(255, 255, 255,"][style$="float: left; padding: 5px; font-size: 11px;"]
 avlab.pl###tmmyid_ad728x90_widget-2
@@ -790,7 +791,8 @@ sympatia.onet.pl###close-frame
 targeo.pl###Advertisement
 tekstowo.pl##.adv-home-child
 tekstowo.pl###advSong
-telchina.pl##.forabg
+telchina.pl###wrap > .forabg
+telchina.pl##.bg3.post
 telemagazyn.pl##[class^="fiszka"]
 teleman.pl###billboard
 teleman.pl###stacje-filmowe > .grid-group-as
@@ -1127,6 +1129,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||gram.pl/reklamy_assets/intel_iris/inteliris_$image,domain=gram.pl
 ||hub.com.pl/*/_ds/interia-$image,domain=fakty.interia.pl
 ||purepc.pl/files/Image/purepc04x04.jpg$image
+||czasdzieci.pl/_j/ad_$script
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -1204,9 +1207,6 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
-pssite.com#@#.adver
-@@||go.idmnet.bbelements.com/bb/bb_one$script,domain=cba.pl
-@@||go.idmnet.bbelements.com/please/showit/$script,domain=cba.pl
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
