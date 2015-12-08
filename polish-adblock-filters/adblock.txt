@@ -2,15 +2,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx 
 ! Homepage: http://www.certyficate.it/
-! Last modified: 7 December 2015
+! Last modified: 8 December 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015120702
+! Version: 2015120801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015120702 aktualizacja: pon, 7 grudnia 2015, 17:30:00
+! v.2015120801 aktualizacja: wt, 8 grudnia 2015, 14:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -283,7 +283,7 @@ chip.pl###nextartprompt
 chip.pl###search_box
 chip.pl##.portlet.portletCeneo
 cinema-city.pl###subsnatch
-cinema-city.pl###snatch
+cinema-city.pl##DIV[id^="snatch"]
 cinema-city.pl###layer_3_-150_0
 co.pl###box
 co.pl###overlay
@@ -342,6 +342,9 @@ ex-film.pl##.screens-trailer
 ex-film.pl##.middle-rkl
 ex-film.pl##.clearfix.actors-wrap
 euro.com.pl###uki_ovrly
+eurogamer.pl###leaderboard
+eurogamer.pl###skyscraper
+eurogamer.pl###low-leaderboard
 facet.wp.pl,finanse.wp.pl##DIV[style^="display: block; margin: auto; position: relative;"]
 facet.wp.pl##[id^="e"]
 facet.wp.pl##DIV[style="width: 640px; height:400px; margin:10px auto 10px  auto;"]
@@ -681,6 +684,7 @@ pcworld.pl##.side-module.how-to
 pcworld.pl##div#toaster
 pebx.pl###photo_container
 pebx.pl##.funbox
+pebx.pl##.message.sectionMain:nth-of-type(2)
 pekao.com.pl###PX45189
 planujemywesele.pl###ad-profile-box1
 play.pl##.overlay-shadow
@@ -782,6 +786,7 @@ spryciarze.pl###banner_konkursowy
 steam.io###dd_ajax_float
 store.office.live.com##.popupOuterCellRight
 styl.pl###headerTopWraper > .headerPre
+swiatbaterii.pl##DIV[id^="cbox"]
 swiatseriali.pl##[class^="introjs-"]
 swidniczka.com,walbrzyszek.com##[style="text-align:center;padding-bottom:15px;"]
 swistak.pl###first > a[href^="http://"]
@@ -793,6 +798,7 @@ tekstowo.pl##.adv-home-child
 tekstowo.pl###advSong
 telchina.pl###wrap > .forabg
 telchina.pl##.bg3.post
+telchina.pl##[style="padding: 5px 5px 2px 5px; font-size: 1.1em; background-color: #ECF1F3; margin: 0px auto; text-align: center;"]
 telemagazyn.pl##[class^="fiszka"]
 teleman.pl###billboard
 teleman.pl###stacje-filmowe > .grid-group-as
@@ -1198,6 +1204,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||.tradedoubler.com/*www.mediaexpert.pl*
 @@||config.sensic.net/pl1-ssa-w.js$script,domain=get.x-link.pl
 @@||hub.com.pl/_*/ad$xmlhttprequest,script,domain=interia.pl
+@@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$script,domain=pebx.pl
+@@||google-analytics.com/ga.js$script,domain=liptonicetea.com
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
