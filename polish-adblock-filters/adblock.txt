@@ -2,15 +2,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx 
 ! Homepage: http://www.certyficate.it/
-! Last modified: 8 December 2015
+! Last modified: 9 December 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015120801
+! Version: 2015120901
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015120801 aktualizacja: wt, 8 grudnia 2015, 14:45:00
+! v.2015120901 aktualizacja: sr, 9 grudnia 2015, 19:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -293,10 +293,12 @@ czat.wp.pl###wpBotL
 czasdzieci.pl###a_d_billboard
 czasdzieci.pl##DIV[id^="ad_skyscraper"]
 darkwarez.pl##DIV[style="position:relative;height:110px;overflow: hidden;"]
+darkwarez.pl##div[align="center"] > .copyright > table[border="0"]
 data.shoplov.in###slgl
 demotywatory.pl###main_container > .demots > article:nth-of-type(10)
 demotywatory.pl##DIV[style="position: fixed; width: 750px; margin-left: -375px; bottom: 0; height: 68px; background-color: #ccc; border-top: 1px solid black; z-index: 1000; overflow: hidden; left: 50%; padding: 15px 30px; color: #666; font-family: arial; font-size: 12px; line-height:150%;"]
 di.com.pl##[style="margin-bottom:5px;clear:both;"]
+dobrastacja.pl###tfhover
 dobreprogramy.pl##[style="width: 300px; margin: auto;"]
 dobreprogramy.pl##.wp-player
 dobreprogramy.pl##DIV[style="color: #A9A9A9; text-align:center;font-size:11px;"]
@@ -706,6 +708,7 @@ pomorska.pl##.jcarousel-container.jcarousel-container-vertical
 pomorska.pl##P[style="font:normal 12px/16px Arial,Tahoma,sans-serif;margin:0;padding:6px 100px 5px 20px;color:#fff;word-wrap:break-word;"]
 popularnie.pl###gold-header
 poreba2.fora.pl##DIV[style="position:relative;display:block;margin:0 auto;visibility:visible;overflow:hidden;font-size:0.8em;color:#232000;background-color:#fcfc9a;-moz-box-shadow:0 2px 4px #bbb;-webkit-box-shadow:0 2px 4px #bbb;-khtml-box-shadow:0 2px 4px #bbb;box-shadow:0 2px 4px #bbb;filter:progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=145, Strength=4);"]
+portalgorski.pl##.banneritem
 portalspozywczy.pl###new_topBox
 portalspozywczy.pl##.partnerserwisu
 ppe.pl##[class*="adver"]
@@ -715,7 +718,7 @@ pracuj.pl##[id^="divFav"]
 pracuj.pl##.betamore.openJDOMWindow
 pracuj.pl##.expander
 prawo.money.pl###img11155698
-precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl##center
+precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl##center
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
 profil.wp.pl##.bxAdv
@@ -972,12 +975,8 @@ zapytaj.onet.pl###content > aside > div:nth-of-type(1)
 zapytaj.onet.pl###promoTop
 zapytaj.onet.pl##div[id*="sliderSidebar"]
 zaufanatrzeciastrona.pl##A[href$="/klik.php"]
-zdrowie.dziennik.pl###rightSection > a[href="http://sprzedajemy.dziennik.pl/"] > img
-zumi.pl##.item.ads.even
-zumi.pl##.lazy-manual
-zumi.pl##.leaflet-popup-content-wrapper.zumi-popup-content-wrapper
-zumi.pl##[class^="zumi-ad"]
-zumi.pl##div.search-cloud
+zumi.pl###couponsBar
+zumi.pl###offersBar
 zycietoprzygoda.pl###ck_dsclr
 zycietoprzygoda.pl###iai_mraty
 zycietoprzygoda.pl##.menu_newsletterwidget.out-of-range
@@ -999,8 +998,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 |http://www.saturn.pl/temp/background_images/
 |http://ocdn.eu/images/mastt/
 ||img.wiocha.pl/img/logosy/
-|http://i.hub.com.pl/*.jpg
-||mylekarze.pl^
 ||i.wp.pl/a/i/czat/boksy/
 |http://nawzor.pl/js/ms.js
 |http://www.pracuj.pl/_images/content/box_
@@ -1033,8 +1030,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 |http://dva.wp.pl/RM/Box/c/e/a.js?x=1
 ||static.fakt.pl^
 |http://probasket.pl/static/img/banners/basketzone/kicksandhoops.swf
-|http://leczna24.pl/f/tlo_ogloszenia2.gif
-|http://e.hub.com.pl/151/*_tapeta.jpg
 |http://csr.onet.pl/_s/
 |http://a.wpimg.pl/a/i/stg/player/15931655,control.js
 |http://a.wpimg.pl/a/i/stg/player/control.png
@@ -1057,7 +1052,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||hub.com.pl/video/$image,domain=interia.pl
 ||hub.com.pl/kumulacje/$image,domain=interia.pl
 ||upc.pl/content/dam/www-upc-pl/brand3/img/home/$image,domain=upc.pl
-||satkurier.pl/img/banner_mierniki.gif
 ||data.shoplov.in/$subdocument
 ||shoplov.in/$script
 ||spolecznosci.net^$image,domain=fotka.pl|bezuzyteczna.pl|repostuj.pl|photoblog.pl
@@ -1206,6 +1200,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||hub.com.pl/_*/ad$xmlhttprequest,script,domain=interia.pl
 @@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$script,domain=pebx.pl
 @@||google-analytics.com/ga.js$script,domain=liptonicetea.com
+@@||ad.adview.pl/ad/$xmlhttprequest
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1215,6 +1210,8 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
+@@||terrarium.pl/public/js/showads.js$script
+@@||optyczne.pl/adsense.js$script
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
@@ -1246,6 +1243,7 @@ mecze24.pl###bg[href="http://cw.totolotek.pl/nazywo"]
 mecze24.pl##.cool
 mecze24.pl###google-adds-event
 mecze24.pl,meczenazywo.pl##a[href^="http://z0x.pl/"]
+meczhd.biz###rek
 meczstudio.com##[id^="wb_Image"]
 meczstudio.com##[class^="wb_Image"]
 meczstudio.com###bettv
@@ -1279,6 +1277,8 @@ vstrim.pl##[style^="position: absolute;"]
 ||hotcpm.pl^$third-party
 ||www.mecze24.pl/img/css/*tapeta$image
 ||mecze24.pl/js/popup.js$script
+||cdn.mediaessence.net$script
+||meczhd.biz/pasek$image
 !
 !
 !--------------------------Rules temporary blocking filters-------------!
