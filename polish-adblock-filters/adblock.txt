@@ -2,15 +2,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx 
 ! Homepage: http://www.certyficate.it/
-! Last modified: 9 December 2015
+! Last modified: 10 December 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015120901
+! Version: 2015121001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015120901 aktualizacja: sr, 9 grudnia 2015, 19:00:00
+! v.2015121001 aktualizacja: czw, 10 grudnia 2015, 14:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -286,7 +286,7 @@ cinema-city.pl###subsnatch
 cinema-city.pl##DIV[id^="snatch"]
 cinema-city.pl###layer_3_-150_0
 co.pl###box
-co.pl###overlay
+co.pl,poznaj-swiat.pl###overlay
 computerworld.pl##DIV[style="margin-top:10px;"]
 computerworld.pl###banner > .ad.bilbo_ad
 czat.wp.pl###wpBotL
@@ -734,6 +734,7 @@ pudelek.pl,pudelek.tv,plotek.pl##[id^="frame-"]
 pudelek.tv,wp.tv,wrzuta.pl##[src^="http://adv.wp.pl"]
 pudelek.pl##[data-st-area="videostar_right"]
 purepc.pl##a[href^="http://www.purepc.pl/redir.php"]
+pyszne.pl##.yd-banner
 pzpm.org.pl###powiadomiony
 radioplus.pl###bottom-ad
 radio.lublin.pl###banner_on_the_top
@@ -1212,6 +1213,7 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !---------------------------------Anti Adblock Rules----------------------------------!
 @@||terrarium.pl/public/js/showads.js$script
 @@||optyczne.pl/adsense.js$script
+@@/Advertisement.css$stylesheet,domain=openload.co
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
