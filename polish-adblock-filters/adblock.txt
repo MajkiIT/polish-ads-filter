@@ -2,15 +2,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx 
 ! Homepage: http://www.certyficate.it/
-! Last modified: 13 December 2015
+! Last modified: 14 December 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015121301
+! Version: 2015121401
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015121301 aktualizacja: nie, 13 grudnia 2015, 15:00:00
+! v.2015121401 aktualizacja: pon, 14 grudnia 2015, 19:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -64,6 +64,8 @@ _banery/980x200
 ||94.102.53.184^
 ||live-online.pl^
 ||watchlive.pl^
+##a[href^="http://vimeoo.net"]
+||xaxoro.com^
 !
 !
 !-----------------------Popup filters on movie-----------------------!
@@ -233,6 +235,7 @@ aleseriale.pl###slider300Wrapper.sliderWrapper
 allegro.pl###installments-banner-container
 allegro.pl###main_page_hr_980_180
 alekino.tv##DIV[style="width:989px; height: 535px;margin: 10px 16px 10px 16px;overflow-y: hidden;"]
+a-m.pl##[href^="http://adserwer."]
 android.com.pl##[id^="text-3"]
 antyweb.pl##.aadv
 audiostereo.pl###index_stats
@@ -295,6 +298,9 @@ czasdzieci.pl##DIV[id^="ad_skyscraper"]
 darkwarez.pl##DIV[style="position:relative;height:110px;overflow: hidden;"]
 darkwarez.pl##div[align="center"] > .copyright > table[border="0"]
 data.shoplov.in###slgl
+ddtorun.pl,ddwloclawek.pl##.container.movedDiv
+ddtorun.pl,ddwloclawek.pl##[class^="a-d-v"]
+ddtorun.pl,ddwloclawek.pl##.skodaAuto.box-margin.row
 demotywatory.pl###main_container > .demots > article:nth-of-type(10)
 demotywatory.pl##DIV[style="position: fixed; width: 750px; margin-left: -375px; bottom: 0; height: 68px; background-color: #ccc; border-top: 1px solid black; z-index: 1000; overflow: hidden; left: 50%; padding: 15px 30px; color: #666; font-family: arial; font-size: 12px; line-height:150%;"]
 di.com.pl##[style="margin-bottom:5px;clear:both;"]
@@ -347,7 +353,6 @@ euro.com.pl###uki_ovrly
 eurogamer.pl###leaderboard
 eurogamer.pl###skyscraper
 eurogamer.pl###low-leaderboard
-facet.wp.pl##[id^="e"]
 facet.wp.pl##DIV[style="width: 640px; height:400px; margin:10px auto 10px  auto;"]
 flashscore.pl###box-over-content-a
 fakt.pl###eF > .clr
@@ -876,6 +881,7 @@ wkinie.tv##[style="width: 750px; height: 100px;"]
 wkinie.tv##.ramka[style="height: 357px;"]
 wkinie.tv##A[href$="/bez-limitu.html"]
 ~www.wp.pl,wp.pl##DIV[style^="display: block; margin: auto; position: relative;"]
+~www.wp.pl,wp.pl##[id^="e"]
 wp.pl###adflashbx
 wp.pl##[id^="wpAdv"]
 wp.pl###bg-adv03
@@ -1133,6 +1139,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www.purepc.pl/files/Image/purepc$image,domain=purepc.pl
 ||czasdzieci.pl/_j/ad_$script
 ||media2.cinema-city.pl/pl/*.swf
+||ddtorun.pl/banery_foto/*.jpg$image
+||ddwloclawek.pl/banery_foto/*.jpg$image
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -1216,6 +1224,9 @@ wpworld.pl,windowsowo.pl#@##adBanner
 @@||terrarium.pl/public/js/showads.js$script
 @@||optyczne.pl/adsense.js$script
 @@/Advertisement.css$stylesheet,domain=openload.co
+benchmark.pl###adblock-info
+@@||ddtorun.pl/pl/js/show_ads.js$script
+@@||ddwloclawek.pl/pl/js/show_ads.js$script
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
@@ -1247,7 +1258,7 @@ mecze24.pl###bg[href="http://cw.totolotek.pl/nazywo"]
 mecze24.pl##.cool
 mecze24.pl###google-adds-event
 mecze24.pl,meczenazywo.pl##a[href^="http://z0x.pl/"]
-meczhd.biz###rek
+meczhd.biz,footlive.pl###rek
 meczstudio.com##[id^="wb_Image"]
 meczstudio.com##[class^="wb_Image"]
 meczstudio.com###bettv
