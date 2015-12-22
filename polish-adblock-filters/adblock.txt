@@ -2,15 +2,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx 
 ! Homepage: http://www.certyficate.it/
-! Last modified: 21 December 2015
+! Last modified: 22 December 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015122101
+! Version: 2015122201
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015122101 aktualizacja: pon, 21 grudnia 2015, 18:30:00
+! v.2015122201 aktualizacja: wt, 22 grudnia 2015, 18:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -697,8 +697,10 @@ pcworld.pl###WhitepaperModule
 pcworld.pl##.side-module.how-to
 pcworld.pl##div#toaster
 pebx.pl###photo_container
-pebx.pl##.funbox
-pebx.pl##.message.sectionMain:nth-of-type(2)
+pebx.pl###logoBlock .funbox
+pebx.pl##.noBorderRadius.pageContent > .funbox.sectionMain
+pebx.pl##.funbox.section
+pebx.pl##.message.sectionMain:not([id^="post-"])
 pekao.com.pl###PX45189
 planujemywesele.pl###ad-profile-box1
 play.pl##.overlay-shadow
@@ -1242,13 +1244,7 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
-@@||terrarium.pl/public/js/showads.js$script
-@@||optyczne.pl/adsense.js$script
-@@/Advertisement.css$stylesheet,domain=openload.co
-benchmark.pl###adblock-info
-@@||ddtorun.pl/pl/js/show_ads.js$script
-@@||ddwloclawek.pl/pl/js/show_ads.js$script
-zelaznalogika.net#@##adsense
+@@||how2play.pl/wp-content/themes/htp/js/vendor/adblock.js$script
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
