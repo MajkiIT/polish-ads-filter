@@ -2,15 +2,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx 
 ! Homepage: http://www.certyficate.it/
-! Last modified: 29 December 2015
+! Last modified: 30 December 2015
 ! Expires: 1 days (update frequency) 
-! Version: 2015122902
+! Version: 2015123001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2015 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2015122902 aktualizacja: wt, 29 grudnia 2015, 20:45:00
+! v.2015123001 aktualizacja: sr, 30 grudnia 2015, 11:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -107,7 +107,7 @@ _banery/980x200
 |http://api.solvemedia.com/papi/action$popup
 ||kropka.onet.pl/_s/kropka/$image
 |http://stats.asp24.pl/js/click.4.js$script
-##A[href*="://clk.tradedoubler.com/click?p="]
+##A[href*="://clk.tradedoubler.com/click"]
 ||gemius.pl$third-party,popup
 /xgemius.js$script
 xgemius-min.jsgz$script
@@ -179,7 +179,7 @@ xgemius-min.jsgz$script
 ##ul.sharing-tools
 ##.kbot
 ~rp.pl##[id*="reklama"]
-~eskago.pl,~certyficate.it,~motogen.pl##[class*="reklama"]
+~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl##[class*="reklama"]
 ##.Reklama
 ##.oponeoWidget
 ###oponeoWidget
@@ -206,7 +206,7 @@ xgemius-min.jsgz$script
 ##[id^="ad_box300"]
 ##[id^="msgLayer"]
 ##[id^="box300"]
-##[id^="commentAd"]
+~joemonster.org##[id^="commentAd"]
 ##[id^="ad-box"]
 ##[id^="sad_"]
 ##[id^="bbtBubble"]
@@ -238,6 +238,7 @@ allegro.pl###main_page_hr_980_180
 alekino.tv##DIV[style="width:989px; height: 535px;margin: 10px 16px 10px 16px;overflow-y: hidden;"]
 a-m.pl##[href^="http://adserwer."]
 android.com.pl##[id^="text-3"]
+android.com.pl##.textwidget IMG[src^="http://android.com.pl/images/user-images/"]
 antyweb.pl##.aadv
 audiostereo.pl###index_stats
 audiostereo.pl###opinie_sidebar
@@ -686,6 +687,7 @@ onet.pl##ul#flashMagazine
 onet.pl,pclab.pl##[href*="clk.onet.pl/clk"]
 onet.pl###onet-ad-top
 optymalizacja.com##DIV[style="text-align:center; z-index:-1000; "]
+ortografia.fora.pl###bot
 otodom.pl###adsTopOD
 panoramafirm.pl###bmone2n-16095\.1\.28\.30
 panoramalubelska.pl##.logowidget
@@ -737,7 +739,7 @@ pracuj.pl##[id^="divFav"]
 pracuj.pl##.betamore.openJDOMWindow
 pracuj.pl##.expander
 prawo.money.pl###img11155698
-precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl##center
+android.com.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl##center
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
 profil.wp.pl##.bxAdv
@@ -766,6 +768,7 @@ remiza.com.pl##.gofollow
 repostuj.pl##A[href^="http://panel.portmmo.com/scripts/click.php"]
 roksa.pl###content > span
 romantycznyweekend.eu###article-finished
+rozaholding.com###kon_logo
 rp.pl##.productSales
 rp.pl##[id^="sas_282"]
 rp.pl##[id^="sas_663"]
@@ -797,6 +800,7 @@ sklep.fipro.pl###tooltipmessage
 sklep.habys.pl###newsletterModal
 sklep.habys.pl##.modal-backdrop.fade.in
 sklep.habys.pl##.modal-content
+slupca.pl###baner-top
 snip.ly###profilePhoto
 softonet.pl##A[data-redirect^="http://click.plista.com/redirect.php"]
 softonet.pl##A[href^="http://click.plista.com/pets/"]
@@ -804,6 +808,7 @@ speedtest.pl###ad
 spidersweb.pl###flashContent
 spidersweb.pl##.four.columns.hide-for-small
 spidersweb.pl##.text-center
+spidersweb.pl##.twelve.columns[style="margin-bottom:20px"]
 sport.pl##.entry.externalEntry
 sport.pl##.mod.mod_uzr_sport6
 sportowefakty.pl##.site.spaced.centered.ad.billboard
@@ -821,6 +826,12 @@ supernowosci24.pl###notificationbar
 sympatia.onet.pl###backdrop-container
 sympatia.onet.pl###close-frame
 targeo.pl###Advertisement
+tabletowo.pl##[id^="text-"]
+techmaniak.pl,gsmmaniak.pl,appmaniak.pl,tabletmaniak.pl,fotomaniak.pl,mobimaniak.pl,acermaniak.pl,tvmaniak.pl,3dmaniak.pl,gizmaniak.pl,luxmaniak.pl,blogomaniak.pl,activemaniak.pl,agdmaniak.pl##a[href^="http://o.techmaniak.pl/www/gact/ckk.php"]:not([href*="www.tabletmaniak.pl"]):not([href*="www.appmaniak.pl"]):not([href*="www.mobimaniak.pl"])
+techmaniak.pl,gsmmaniak.pl,appmaniak.pl,tabletmaniak.pl,fotomaniak.pl,mobimaniak.pl,acermaniak.pl,tvmaniak.pl,3dmaniak.pl,gizmaniak.pl,luxmaniak.pl,blogomaniak.pl,activemaniak.pl,agdmaniak.pl##[style="width:990px; height:60px; margin:0 auto 5x auto; background:#70020b;"]
+techmaniak.pl,gsmmaniak.pl,appmaniak.pl,tabletmaniak.pl,fotomaniak.pl,mobimaniak.pl,acermaniak.pl,tvmaniak.pl,3dmaniak.pl,gizmaniak.pl,luxmaniak.pl,blogomaniak.pl,activemaniak.pl,agdmaniak.pl##[style="text-align:center; color:#999999; font-size:10px;"]
+techmaniak.pl,gsmmaniak.pl,appmaniak.pl,tabletmaniak.pl,fotomaniak.pl,mobimaniak.pl,acermaniak.pl,tvmaniak.pl,3dmaniak.pl,gizmaniak.pl,luxmaniak.pl,blogomaniak.pl,activemaniak.pl,agdmaniak.pl##[style="margin:0px auto 30px auto;"]
+techmaniak.pl,gsmmaniak.pl,appmaniak.pl,tabletmaniak.pl,fotomaniak.pl,mobimaniak.pl,acermaniak.pl,tvmaniak.pl,3dmaniak.pl,gizmaniak.pl,luxmaniak.pl,blogomaniak.pl,activemaniak.pl,agdmaniak.pl##.reklama-info
 tekstowo.pl##.adv-home-child
 tekstowo.pl###advSong
 telchina.pl###wrap > .forabg
@@ -871,6 +882,8 @@ wizaz.pl###contentAfPromo
 vod.pl##.infoCloud
 vshare.io###pplay
 wachamksiazki.pl##.sr
+webcamera.pl##.ad
+webcamera.pl##[style="width:728px;height:90px;"]
 webmasteruj.pl##a[href="http://2be.pl/mikolaj/"]
 webproject.sanok.pl###cboxOverlay
 webproject.sanok.pl###colorbox
