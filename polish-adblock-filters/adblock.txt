@@ -2,15 +2,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx 
 ! Homepage: http://www.certyficate.it/
-! Last modified: 5 January 2016
+! Last modified: 6 January 2016
 ! Expires: 1 days (update frequency) 
-! Version: 2016010501
+! Version: 2016010601
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016010501 aktualizacja: wt, 5 stycznia 2016, 08:05:00
+! v.2016010601 aktualizacja: sr, 6 stycznia 2016, 09:05:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -31,7 +31,6 @@ _banery/980x200
 /scripts/click.php$popup
 /data/ap3bo6/*.jpg$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 /data/ap3bo6/*.swf$object,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
-
 !
 !
 !-----------------------Bad pages blocking filters-----------------------!
@@ -267,6 +266,7 @@ benefitsystems.pl###fitSportInfo
 benefitsystems.pl##.in.fade.modal-backdrop
 bezuzyteczna.pl,zumi.pl##[class^="special"]
 bez-cenzury24.pl##[div^="ips-popup"]
+bitcoin.pl##.custom
 biznes.pl##.e_Box.analyses
 biznes.pl##.rightBoxR.boxPopComtR.cl
 biztok.pl##.ads.ads--sidebar
@@ -328,13 +328,10 @@ dwn.so###ad2
 dziennikwschodni.pl##P[style="font:normal 12px/16px Arial,Tahoma,sans-serif;margin:0;padding:6px 100px 5px 20px;color:#fff;word-wrap:break-word;"]
 dziennik.pl###a_201
 dziennik.pl##[style="text-align:center; margin: 0 0 10px 0;padding-bottom: 20px"]
-e-kg.pl##IMG[src^="http://www.e-kg.pl/images/banners/"]
-e-kg.pl##.artbannersxtd-flash
-e-kg.pl##.moduletable_plakat
-e-kg.pl###reklamystopka
-e-kg.pl###dropin
-e-kg.pl##.moduletable_news_region
-e-kg.pl###pasekdolny
+e-kg.pl##.bannergroup
+e-kg.pl###jm-banner
+e-kg.pl##.rstboxes
+e-kg.pl##DIV[style="text-align: center;"]
 efilmy.tv##.addbackground
 ehipoteka.com.pl,banki.pl##.sprawdzAplikacjeMobilnaTrigger
 egazety.pl###mainb > .innerFooAds
@@ -424,6 +421,7 @@ gowork.pl##[id^="ad_"]
 gowork.pl##.__b-popup1__.b-modal
 gowork.pl##.popup-free-offer
 grafoteka.pl###info
+grajkownia.com###aswift_0_expand
 gram.pl##.stripeBar
 gram.pl###billBoardAreaWrapper
 gratka.pl###exposeMask
@@ -1144,8 +1142,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||stg.wp.pl$subdocument
 ||lib.onet.pl/s.csr/external/iframe$script,subdocument
 ||filmweb.pl/welcomeScreenJS$script,domain=filmweb.pl
-||e-kg.pl/templates/ekg/images/eska_kolobrzeg180.png$image
-||e-leclerc.pl$popup,domain=www.e-kg.pl
 |http://mon.services.tvn.pl/_pix/uri-$image
 ||gry-online.pl/im/zmieniarka/$image,domain=gry-online.pl
 ||sklep.gry-online.pl/imgs/tapeta/$image,domain=sklep.gry-online.pl
@@ -1265,6 +1261,9 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$script,domain=pebx.pl
 @@||google-analytics.com/ga.js$script,domain=liptonicetea.com
 @@||go.pol.bbelements.com/please/showit/$xmlhttprequest,domain=filmweb.pl
+@@||video.anyfiles.pl/pageloading/search-media-loader.jsp?ads=true$xmlhttprequest
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wp.tv
+@@||imasdk.googleapis.com/js/core/bridge3$subdocument,domain=wp.tv
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1275,8 +1274,10 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
 @@||how2play.pl/wp-content/themes/htp/js/vendor/adblock.js$script
-||www.koscian.net/js/jquery-ui-1.9.2.custom.min.js$script
+||www.koscian.net/photos/adv_$object,important,redirect=1x1-transparent.gif
 dstar.pzk.pl#@#.adsbox
+@@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=grajkownia.com
+@@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$script,domain=grajkownia.com
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
