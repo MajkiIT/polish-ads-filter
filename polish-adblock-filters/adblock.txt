@@ -2,15 +2,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx 
 ! Homepage: http://www.certyficate.it/
-! Last modified: 6 January 2016
+! Last modified: 10 January 2016
 ! Expires: 1 days (update frequency) 
-! Version: 2016010601
+! Version: 2016011001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016010601 aktualizacja: sr, 6 stycznia 2016, 09:05:00
+! v.2016011001 aktualizacja: nie, 10 stycznia 2016, 12:55:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -244,6 +244,7 @@ a-m.pl##[href^="http://adserwer."]
 android.com.pl##[id^="text-3"]
 android.com.pl##.textwidget IMG[src^="http://android.com.pl/images/user-images/"]
 android.com.pl###reklma_top_middle
+androidpolska.pl##DIV[style="max-height:300px; overflow:hidden; float: left; width:100%;"]
 antyweb.pl##.aadv
 audiostereo.pl###index_stats
 audiostereo.pl###opinie_sidebar
@@ -728,6 +729,7 @@ polish.poland.usembassy.gov##.box.featured-items
 poolska.pl###text-3
 polskastacja.pl##.plotki_bg
 polskastacja.pl###banner
+polskastacja.pl##DIV[style="display: block; margin: auto; position: relative; width: 750px; height: 200px;"]
 pomorska.pl##.boxHeader
 pomorska.pl##.jcarousel-container.jcarousel-container-vertical
 pomorska.pl##P[style="font:normal 12px/16px Arial,Tahoma,sans-serif;margin:0;padding:6px 100px 5px 20px;color:#fff;word-wrap:break-word;"]
@@ -922,8 +924,8 @@ wkinie.tv##[style="width: 750px; height: 100px;"]
 wkinie.tv##.ramka[style="height: 357px;"]
 wkinie.tv##A[href$="/bez-limitu.html"]
 ~www.wp.pl,wp.pl##DIV[style^="display: block; margin: auto; position: relative;"]
-wp.pl##[style="margin: auto; position: relative; width: 970px; height: 200px;"]
-~www.wp.pl,wp.pl##[id^="e"]
+wp.pl,polskastacja.pl##DIV[style*="margin: auto; position: relative; width: 970px;"]
+~www.wp.pl,wp.pl,polskastacja.pl##[id^="e"]
 wp.pl###adflashbx
 wp.pl##[id^="wpAdv"]
 wp.pl###bg-adv03
@@ -1252,18 +1254,15 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||anime-odcinki.pl/sites/default/files/styles/medium-smaller__200x200_/public/okladki
 @@||adocean-pl.hit.gemius.pl/*/url=http://sport.tvp.pl/$popup,other
 @@||remiza.com.pl/ads/haft/jquery.slides.min.js$script
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=facet.wp.pl
-@@||imasdk.googleapis.com/js/core/$subdocument,domain=facet.wp.pl
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=facet.wp.pl|wp.tv
+@@||imasdk.googleapis.com/js/core/$subdocument,domain=facet.wp.pl|wp.tv
 @@||mdn.net/instream/video/client.js$script,domain=facet.wp.pl
 @@||.tradedoubler.com/*www.mediaexpert.pl*
 @@||config.sensic.net/pl1-ssa-w.js$script,domain=get.x-link.pl
-@@||hub.com.pl/_*/ad$xmlhttprequest,script,domain=interia.pl
 @@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$script,domain=pebx.pl
 @@||google-analytics.com/ga.js$script,domain=liptonicetea.com
 @@||go.pol.bbelements.com/please/showit/$xmlhttprequest,domain=filmweb.pl
 @@||video.anyfiles.pl/pageloading/search-media-loader.jsp?ads=true$xmlhttprequest
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wp.tv
-@@||imasdk.googleapis.com/js/core/bridge3$subdocument,domain=wp.tv
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1274,10 +1273,10 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
 @@||how2play.pl/wp-content/themes/htp/js/vendor/adblock.js$script
-||www.koscian.net/photos/adv_$object,important,redirect=1x1-transparent.gif
 dstar.pzk.pl#@#.adsbox
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=grajkownia.com
 @@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$script,domain=grajkownia.com
+droidek.pl###oszust2
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
