@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85
 ! Homepage: http://www.certyficate.it/
-! Last modified: 26 January 2016
+! Last modified: 28 January 2016
 ! Expires: 1 days (update frequency) 
-! Version: 2016012602
+! Version: 2016012801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016012602 aktualizacja: wt, 26 stycznia 2016, 13:15:00
+! v.2016012801 aktualizacja: czw, 28 stycznia 2016, 13:15:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -82,7 +82,6 @@ _banery/980x200
 ||vimeoo.net^$other,popup
 ||info-fakt.pl^$other,popup
 ||exeos.ws^$other,popup
-/player1.gif$image,domain=goserial.pl|gofilm.pl|gobajka.pl
 ||theme.gofilm.pl/js/scripts.js
 ||static.vidso.tv/player.gif$domain=embed.vidso.tv
 ||static.openload.io/ad/display.php$popup
@@ -94,10 +93,15 @@ _banery/980x200
 ||vimeoo.net^$third-party
 ||vod-24.tv/index/player$subdocument
 ||zarabi.am^$popup
-tvseriesonline.pl##IMG[src^="http://funkyimg.com/i/"]
 ||kinofan.tv/player/*$image,domain=kinofan.tv
 ||kinofan.tv/player/index.php
 ||vod-24.tv/*$subdocument,popup,domain=nocnyseans.pl
+!
+!
+!-----------------------Elements hide on movie-----------------------!
+vshare.io###pplaay
+tvseriesonline.pl##IMG[src^="http://funkyimg.com/i/"]
+/player1.gif$image,domain=goserial.pl|gofilm.pl|gobajka.pl
 !
 !
 !-----------------------Block pages-----------------------!
@@ -1231,6 +1235,9 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||reklamy.s3.amazonaws.com/bcg/*$image
 ||www.poloniada.com/files/banner/
 ||ipcsfkpnnn.wp.pl^
+||jxtypliife.wp.pl^
+||zssfmhpnbi.wp.pl^
+||rwnodvdoqt.wp.pl^
 !
 !
 !---------------------------------Whitelists----------------------------------!
