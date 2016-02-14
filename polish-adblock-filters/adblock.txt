@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85
 ! Homepage: http://www.certyficate.it/
-! Last modified: 11 February 2016
-! Expires: 1 days (update frequency) 
-! Version: 2016021101
+! Last modified: 14 February 2016
+! Expires: 2 days (update frequency) 
+! Version: 2016021401
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016021101 aktualizacja: czw, 11 lutego 2016, 18:25:00
+! v.2016021401 aktualizacja: nie, 14 lutego 2016, 16:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -348,6 +348,7 @@ egospodarka.pl##.ego-book
 egospodarka.pl##.ego-opinie
 egospodarka.pl##A[href="http://www.ksiazki.egospodarka.pl/promocje"]
 egospodarka.pl##A[href="http://www.opinie.egospodarka.pl/"]
+elektroda.pl##.smaller.m1
 embed.vidso.tv###video_container
 emsc2.tv##.advert.col-xs-12
 enzo.pl###fancybox-inner
@@ -610,6 +611,9 @@ mgsm.pl###sk_product_box_1_2533
 mgsm.pl##.doubleAdLargeRectangleContainer
 mgsm.pl##.floatLeft.width50.data-table
 mgsm.pl##TD[style="padding:0px;"]
+mh24.pl###colorbox
+mh24.pl###cboxOverlay
+mh24.pl##[id^="text-"]
 miejsce.warszawa.gazeta.pl###holder_201 > .travelist
 mfind.pl###sidebar-sticky-widgets > .widget-ebook-form > .widget-ebook-form-content
 milionkobiet.pl##.wrapper > .header
@@ -665,6 +669,8 @@ muzodajka.pl##DIV[style="position: absolute;height: 600px;left: -620px;margin-le
 muzodajka.pl##DIV[style="position: absolute;left: 430px;margin-left: 50%;width: 160px;height: 600px;border: 1px solid;border-color: #ccc;border-radius: 5px;padding: 10px;padding-bottom: 30px;"]
 muzyka.interia.pl###news1
 myhome.pl##.must-login-box.f-login-wrapper
+my-navia.pl##[style="WIDTH: 940px; font-family: Arial;"]
+my-navia.pl##TD[style="padding-top:10px; padding-bottom:10px;"]
 mysqlperformanceblog.com##.insightera-bar-widget.insightera-bar
 nadzwyczajne.com.pl##[id^="ultimate-modal"]
 nagios.org##div.p_content
@@ -1245,6 +1251,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||jxtypliife.wp.pl^
 ||zssfmhpnbi.wp.pl^
 ||rwnodvdoqt.wp.pl^
+||mediaexpert.pl/temp/filemanager_up/*tlo_*$image
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -1325,11 +1332,9 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
-@@||how2play.pl/wp-content/themes/htp/js/vendor/adblock.js$script
-dstar.pzk.pl#@#.adsbox
-@@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=grajkownia.com
-@@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$script,domain=grajkownia.com
-droidek.pl###oszust2
+@@||embed.nowvideo.co/banner.php$script
+||filmyhd-online.com/wp-admin/admin-ajax.php?action=adblockvisitordis$xmlhttprequest
+
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
@@ -1367,6 +1372,7 @@ meczhd.biz,footlive.pl###rek
 meczstudio.com##[id^="wb_Image"]
 meczstudio.com##[class^="wb_Image"]
 meczstudio.com###bettv
+meczyki.pl##.box.alert-box
 sostart.org##.adsquare
 sportpl.tv##[id^="middle-rek"]
 sportpl.tv##IMG[src*=".postimg.org/"]
@@ -1399,6 +1405,7 @@ vstrim.pl##[style^="position: absolute;"]
 ||mecze24.pl/js/popup.js$script
 ||cdn.mediaessence.net$script
 ||meczhd.biz/pasek$image
+||meczyki.pl/image_upload/background/*$image,domain=meczyki.pl
 !
 !
 !--------------------------Rules temporary blocking filters-------------!
