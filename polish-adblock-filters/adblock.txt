@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85
 ! Homepage: http://www.certyficate.it/
-! Last modified: 14 February 2016
+! Last modified: 18 February 2016
 ! Expires: 2 days (update frequency) 
-! Version: 2016021402
+! Version: 2016021801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016021402 aktualizacja: nie, 14 lutego 2016, 20:15:00
+! v.2016021801 aktualizacja: czw, 18 lutego 2016, 09:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -69,6 +69,7 @@ _banery/980x200
 ||watchlive.pl^
 ##a[href^="http://vimeoo.net"]
 ||xaxoro.com^
+||megacloudz.net^
 !
 !
 !-----------------------Popup filters on movie-----------------------!
@@ -374,6 +375,7 @@ eurogamer.pl###low-leaderboard
 evertiq.pl##IMG[alt="reklama"]
 evertiq.pl##[id^="bnr"]
 facet.wp.pl##DIV[style="width: 640px; height:400px; margin:10px auto 10px  auto;"]
+fangol.pl##[style="text-align:center;"]
 flashscore.pl###box-over-content-a
 fakt.pl###eF > .clr
 fakty.interia.pl##[id^="brendingIplv2_new_starter"]
@@ -676,6 +678,8 @@ nadzwyczajne.com.pl##[id^="ultimate-modal"]
 nagios.org##div.p_content
 nakanapie.pl##DIV[style="padding:10px 15px 12px"]
 napisy24.pl###avatar-pos-content-user-bottom
+napisy24.pl###avatar-body-top-block
+napisy24.pl###avatar-body-bottom-block
 naszamlawa.pl###fancybox-wrap
 nasze.fm##article > .container > section > .wrapper > .row > .nonprint.margin-top.col-md-4 > h6
 naszemiasto.pl###nastepny-artykul
@@ -1254,6 +1258,9 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||zssfmhpnbi.wp.pl^
 ||rwnodvdoqt.wp.pl^
 ||mediaexpert.pl/temp/filemanager_up/*tlo_*$image
+||hotcash.pl/bannery/*.gif
+||gfx.antyradio.pl/var/antyradio/storage/images/linki-graficzne/
+||static.evertiq.pl/bximg/digi-key/*$image 
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -1413,3 +1420,16 @@ vstrim.pl##[style^="position: absolute;"]
 !
 !--------------------------Rules temporary blocking filters-------------!
 ||antyweb.pl/wp-content/uploads/2015/08/V3_big_1.png$image
+!
+!
+!--------------------------Rules wykop.pl-------------!
+!https://gist.githubusercontent.com/dmnmrzk/372968e8f51f6d7d2dc7/raw/8714607e19c2fa6f62d81bfd9da475d5edec1b3c/wykop-adblock.txt!
+wykop.pl###autopromotion
+www.wykop.pl##.blacklisted
+wykop.pl###fixedBox
+wykop.pl###itemsStream:not(.touch-content) .article:not(.dC)
+wykop.pl###nav > .annotation.type-alert
+www.wykop.pl##ul#dyingLinksBox
+wykop.pl##.baner-mobile
+www.wykop.pl##article.slim
+wykop.pl##li.payentry
