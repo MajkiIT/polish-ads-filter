@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85
 ! Homepage: http://www.certyficate.it/
-! Last modified: 18 February 2016
+! Last modified: 20 February 2016
 ! Expires: 2 days (update frequency) 
-! Version: 2016021801
+! Version: 2016022001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016021801 aktualizacja: czw, 18 lutego 2016, 09:45:00
+! v.2016022001 aktualizacja: sob, 20 lutego 2016, 18:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -342,6 +342,7 @@ e-kg.pl##.bannergroup
 e-kg.pl###jm-banner
 e-kg.pl##.rstboxes
 e-kg.pl##DIV[style="text-align: center;"]
+e-kg.pl##a[href="http://www.e-leclerc.pl/"]
 efilmy.tv##.addbackground
 ehipoteka.com.pl,banki.pl##.sprawdzAplikacjeMobilnaTrigger
 egazety.pl###mainb > .innerFooAds
@@ -859,7 +860,14 @@ spidersweb.pl##.text-center
 spidersweb.pl##.twelve.columns[style="margin-bottom:20px"]
 sport.pl##.entry.externalEntry
 sport.pl##.mod.mod_uzr_sport6
-sportowefakty.pl##.site.spaced.centered.ad.billboard
+sportowefakty.wp.pl##body > var:nth-of-type(1)
+sportowefakty.wp.pl##body > em:nth-of-type(1)
+sportowefakty.wp.pl##body > samp:nth-of-type(1)
+sportowefakty.wp.pl##body > b:nth-of-type(1)
+sportowefakty.wp.pl##body > ins:nth-of-type(1)
+sportowefakty.wp.pl##body > i:nth-of-type(1)
+sportowefakty.wp.pl##body > strong:nth-of-type(1)
+sportowefakty.wp.pl##body > cite:nth-of-type(1)
 spryciarze.pl###banner_konkursowy
 steam.io###dd_ajax_float
 store.office.live.com##.popupOuterCellRight
@@ -1117,7 +1125,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||inevitablenpjohses.realmoney.pl/view/
 ||brjojc.goodmoney.pl^
 ||studentnews.pl/img/ban/
-|http://ulub.pl/images/klikrek.png
 |http://mpk.lublin.pl/imgs_upload/image/opony.swf?id=
 ||bbkoxc.goodmoney.pl^
 ||nadzwyczajne.com.pl/
@@ -1135,7 +1142,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 |http://probasket.pl/static/img/banners/basketzone/kicksandhoops.swf
 |http://csr.onet.pl/_s/
 |http://a.wpimg.pl/a/i/stg/player/15931655,control.js
-|http://a.wpimg.pl/a/i/stg/player/control.png
 |http://a.wpimg.pl/a/i/stg/player/5,control.swf
 |http://erk.www.wp.pl/?rid=
 |http://a.techmaniak.pl/www/images/*.png
@@ -1260,7 +1266,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||mediaexpert.pl/temp/filemanager_up/*tlo_*$image
 ||hotcash.pl/bannery/*.gif
 ||gfx.antyradio.pl/var/antyradio/storage/images/linki-graficzne/
-||static.evertiq.pl/bximg/digi-key/*$image 
+||static.evertiq.pl/bximg/digi-key/*$image
+||rek.www.wp.pl/vad.xml$xmlhttprequest,important,redirect=noopframe
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -1274,7 +1281,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||wrzuta.pl/$~object
 @@|http://zalukaj.tv/ads.js$domain=zalukaj.tv
 @@|http://www.eskago.pl/html/js/ads.js?clickTag=http://go.idmnet.bbelements.com/please/$domain=eskago.pl
-@@|http://rek.www.wp.pl/vad.xml^
 @@|https://ssl.allegro.pl/order/^
 @@|http://ssl.allegro.pl/order/^
 @@||reklama.onet.pl/_d/_k/navig/
