@@ -2,14 +2,14 @@
 ! Title: Adblock & uBlock polish cookies filters
 ! polskie filtry komunikatow cookies do Adblocka i uBlocka
 ! Homepage: http://www.certyficate.it/
-! Last modified: 22 February 2016
+! Last modified: 24 February 2016
 ! Expires: 4 days (update frequency) 
-! Version: 55
+! Version: 56
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/adblock-polskie-filtry-blokowanie-info-cookies/
-! v.1.55 aktualizacja: pon, 22 luty 2016, 22:10:00
+! v.1.56 aktualizacja: sr, 24 luty 2016, 18:20:00
 !
 !
 1000dni.pl##DIV[style="width: 100%; background-color: rgb(0, 60, 122); padding: 10px 8px; line-height: 20px; left: 0px; position: fixed; margin: 10px auto 0px; bottom: 0px; z-index: 1000; font-size: 13px; font-family: Helvetica,Arial,sans-serif; color: rgb(255, 255, 255);"]
@@ -531,6 +531,8 @@ polskawoda.pl##DIV[style="width: 100%;float: left;background: #fff;padding: 15px
 browar.biz##DIV[style="color: gray; background-color: white; border-bottom: 1px dotted gray; padding:2px; font-size: 0.75em;"]
 google.pl#@#div[class*="cookie"]
 nvidia.com#@#[id*="cookie_"]
+biomet.pl##[id^="fancybox-"]
+ramboll.pl##.infoboxHolder
 !
 !
 ! URLs
@@ -545,14 +547,14 @@ cookie-law-popup.js$script
 !
 !
 ! Global
-~paypal.com,~accounts.google.com##:not(input)[id*="Cookie"]
+~appki.com.pl,~paypal.com,~accounts.google.com##:not(input)[id*="Cookie"]
 ~starbucks.pl,~isobar.com,~morizon.pl,~abctygodnik.pl,~wykop.pl,~bt4.pl,~kolba.pl,~ezakupy.tesco.pl,~tablety.pl##div[class*="cookie"]
-~wmeritum.pl,~microsoft.com,~paypal.com,~reserved.com,~zumi.pl,~komunikacja.bialystok.pl,~nvidia.com##:not(input)[id*="cookie"]
+~everafterhigh.com,~wmeritum.pl,~microsoft.com,~paypal.com,~reserved.com,~zumi.pl,~komunikacja.bialystok.pl,~nvidia.com##:not(input)[id*="cookie"]
 ##[id*="coockie"]
 ~addons.mozilla.org##.privacy-policy
 ##[class*="coockie"]
 ###AcceptCookie
-~mvno-gsm.pl##[id*="cookie-"]
+~appki.com.pl,~mvno-gsm.pl##[id*="cookie-"]
 ~microsoft.com##[id*="cookie_"]
 ##.cookie-notification
 ###polityka-ciastek
@@ -622,6 +624,10 @@ pl##[id^="polityka-prywatnosci"]
 ##.cookie_agree
 ###cookieInfoBox
 ##.polityka-cookie
+/plugins/uk-cookie-consent/assets/js/uk-cookie-consent-js.js$script
+/CookieLaw$script
+||polityka-cookies.net/script/$script
+/cookieDisclaimer.js$script
 !
 !
 !----------------Whitelist---------------------------
