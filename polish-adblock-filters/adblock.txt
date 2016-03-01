@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85
 ! Homepage: http://www.certyficate.it/
-! Last modified: 29 February 2016
+! Last modified: 1 March 2016
 ! Expires: 2 days (update frequency) 
-! Version: 2016022902
+! Version: 2016030101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016022902 aktualizacja: pon, 29 lutego 2016, 19:20:00
+! v.2016030101 aktualizacja: wt, 1 marca 2016, 19:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -690,6 +690,7 @@ nocoty.pl###slider300Wrapper
 o2.pl##.box-sidebar.box-sidebar-1
 o2.pl##.content-row.content-row-15.x-ecommerce
 o2.pl##div.popup-wrap
+o2.pl##[data-reactid^=".0.0.7.2.0.0.0"]
 oboom.com###bgfadewnd1
 oboom.com###wcontent_wnd1
 oboom.com###wnd1
@@ -1247,6 +1248,10 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||static.evertiq.pl/bximg/digi-key/*$image
 ||rek.www.wp.pl/vad.xml$xmlhttprequest,important,redirect=noopframe
 ||vider.pl/static/player/v*/vast.js$script
+!
+!
+!---------------------------------Multi Regex----------------------------------!
+/:\/\/(?!wiadomosci)(?!sportowefakty)(?!sportowybar)(?!biuropodrozy)[a-zA-Z0-9]{10,}\.wp.pl\//
 !
 !
 !---------------------------------Whitelists----------------------------------!
