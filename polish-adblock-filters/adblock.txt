@@ -1,17 +1,17 @@
 [Adblock Plus 2.0]
 ! Title: Adblock & uBlock polish filters
 ! polskie filtry do Adblocka i uBlocka
-! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85
+! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432
 ! Homepage: http://www.certyficate.it/
-! Last modified: 3 March 2016
+! Last modified: 6 March 2016
 ! Expires: 2 days (update frequency) 
-! Version: 2016030301
+! Version: 2016030601
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016030301 aktualizacja: czw, 3 marca 2016, 08:30:00
+! v.2016030601 aktualizacja: nie, 6 marca 2016, 17:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -216,7 +216,7 @@ xgemius-min.jsgz$script
 ##[id^="ad-bp-"]
 ##[class^="sponsorowany"]
 ##[id^="sponsorowany"]
-##A[href$="/reklama"]
+~github.com##A[href$="/reklama"]
 ##A[href*="/emisja.contentstream.pl/_/ctr/"]
 ##[src*="/banners/banner"]
 ###pb_block
@@ -240,6 +240,7 @@ android.com.pl##.textwidget IMG[src^="http://android.com.pl/images/user-images/"
 android.com.pl###reklma_top_middle
 androidpolska.pl##DIV[style="max-height:300px; overflow:hidden; float: left; width:100%;"]
 androidpolska.pl###sidebar-right > .widget:nth-of-type(1)
+anglia4u.pl###gkSidebar
 antyweb.pl##.aadv
 audiostereo.pl###index_stats
 audiostereo.pl###opinie_sidebar
@@ -260,6 +261,7 @@ bazy.ngo.pl##.inner > P
 bebzol.com###right-col > .r-stick-box
 bezuzyteczna.pl,zumi.pl##[class^="special"]
 bez-cenzury24.pl##[div^="ips-popup"]
+biedronka.pl##.easter2015-bar
 bitcoin.pl##.custom
 biznes.pl##.e_Box.analyses
 biznes.pl##.rightBoxR.boxPopComtR.cl
@@ -358,7 +360,7 @@ ex-film.pl##DIV[style$="margin:100px auto;overflow-y: hidden;"]
 ex-film.pl##.screens-trailer
 ex-film.pl##.middle-rkl
 ex-film.pl##.clearfix.actors-wrap
-euro.com.pl###uki_ovrly
+euro.com.pl##[id^="uszy_"]
 eurogamer.pl###leaderboard
 eurogamer.pl###skyscraper
 eurogamer.pl###low-leaderboard
@@ -738,8 +740,9 @@ planujemywesele.pl###ad-profile-box1
 play.pl##.overlay-shadow
 play.salesmanago.pl##DIV[style="width: 741px; height: 399px; background-color: #f3f3f3;"]
 playstationforum.pl##[onclick^="MyAdvertisements"]
-pless.pl##[href^="http://www.pless.pl/a.php"]
+pless.pl,pless.nazwa.pl##[href^="http://www.pless.pl/a.php"]
 pless.pl##[class^="billboard"]
+pless.pl##.blok-sm.blok-r
 poczta.interia.pl###ad_box600x450 IMG
 poczta.onet.pl###fif-flat-boxright2
 poczta.onet.pl###preloader-novelty
@@ -748,7 +751,6 @@ podlasie24.pl###bA1
 podlasie24.pl###bA66
 podlasie24.pl##.box2x1s
 podlasie24.pl##DIV[style="padding: 13px 50px 13px 16px;"]
-polish.poland.usembassy.gov##.box.featured-items
 poolska.pl###text-3
 polskastacja.pl##.plotki_bg
 polskastacja.pl###banner
@@ -758,7 +760,6 @@ pomorska.pl##.jcarousel-container.jcarousel-container-vertical
 pomorska.pl##P[style="font:normal 12px/16px Arial,Tahoma,sans-serif;margin:0;padding:6px 100px 5px 20px;color:#fff;word-wrap:break-word;"]
 pozytywniej.pl###advL
 popularnie.pl###gold-header
-poreba2.fora.pl##DIV[style="position:relative;display:block;margin:0 auto;visibility:visible;overflow:hidden;font-size:0.8em;color:#232000;background-color:#fcfc9a;-moz-box-shadow:0 2px 4px #bbb;-webkit-box-shadow:0 2px 4px #bbb;-khtml-box-shadow:0 2px 4px #bbb;box-shadow:0 2px 4px #bbb;filter:progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=145, Strength=4);"]
 portalgorski.pl##.banneritem
 portalspozywczy.pl###new_topBox
 portalspozywczy.pl##.partnerserwisu
@@ -801,7 +802,6 @@ spiz.pl,roksa.pl##.c
 radomnews.pl##DIV[align="center"]
 radomnews.pl##[id^="banP"]
 remiza.com.pl##.gofollow
-repostuj.pl##A[href^="http://panel.portmmo.com/scripts/click.php"]
 roksa.pl###content > span
 romantycznyweekend.eu###article-finished
 rozaholding.com###kon_logo
@@ -910,11 +910,13 @@ tvp.pl##.adv__rectangle
 tvnwarszawa.tvn24.pl###jHotInfosC
 tvseriesonline.pl##A[href^="http://l1nk.pl"]
 twojapogoda.pl##IMG[alt="pixad"]
+twojaslupca.pl##.intermarche
+twojaslupca.pl###flashContent
+twojaslupca.pl##DIV[style="margin-bottom: 20px;"]
 twojasuknia.pl##.container-fluid.hidden-print.text-center.win-baner
 twoje-seriale.tv##a[href^="http://www.videostream.pl/"]
 ulub.pl##[class^="ads_szuk"]
 ulub.pl##.right_col
-upc.pl##DIV[style="position: fixed; width: 100%; left: 0px; bottom: 0px; padding-top: 1em; background: none repeat scroll 0% 0% rgb(232, 232, 232); opacity: 0.9; z-index: 2147483640; font: 14px/1.4em sans-serif; border: medium none; clear: none; color: rgb(102, 102, 102); cursor: default; display: block; float: none; letter-spacing: normal; overflow: hidden; visibility: visible; white-space: normal;"]
 uploaduj.com##.guestMessage
 uploaduj.com##A[href="http://yhu.pl/"]
 uploaduj.com##.UwOWM2OT
@@ -933,12 +935,7 @@ vshare.io###pplay
 wachamksiazki.pl##.sr
 webcamera.pl##.ad
 webcamera.pl##[style="width:728px;height:90px;"]
-webmasteruj.pl##a[href="http://2be.pl/mikolaj/"]
 webmasteruj.pl###elComment_x
-webproject.sanok.pl###cboxOverlay
-webproject.sanok.pl###colorbox
-webproject.sanok.pl##div#cboxWrapper
-webproject.sanok.pl##div#helion-widget-botd-2
 weeb.tv##DIV[style="width: 800px; height: 80px; background: url(\"http://backupstatic.weeb.tv/images/weeb-1.png\") no-repeat scroll left top transparent; padding-left: 151px; padding-top: 73px; cursor: pointer;"]
 wiadomosci.swidnickie.pl##IMG[src="images/mk-agro_29_new.png"]
 wiadomosci.wp.pl##.item
@@ -1116,7 +1113,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||money15.gomoney.pl^$domain=money.pl
 ||bbcdn.code.intext.contextad.pl/css/bubble/
 |http://dva.wp.pl/RM/Box/*.jpg
-|http://static.static-euro.com.pl/si_upload/gfx/201*.png
 |http://static.presspublica.pl/web/rp/img/*_300x200.jpg
 |http://eu1.dogry.pl.s3-website-eu-west-1.amazonaws.com/upload/*.jpg$domain=goldenline.pl
 |http://leczna24.pl/f/tlo_ogloszenia$domain=leczna24.pl
@@ -1167,7 +1163,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||inframe.platform.onet.pl/v1/
 ||gowork.pl/images/top_img/$image,domain=gowork.pl
 ||interia.pl/#utm_source$popup,domain=cdaction.pl
-||f01.esfr.pl/si_upload/gfx/2015/$image,domain=euro.com.pl
 ||adv.wp.pl^
 ||tzuwrljqdw.wp.pl^
 ||img.dvhk.to^$image,domain=portal.dvhk.to
@@ -1238,16 +1233,13 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||track.omgpl.com/bs/
 ||reklamy.s3.amazonaws.com/bcg/*$image
 ||www.poloniada.com/files/banner/
-||ipcsfkpnnn.wp.pl^
-||jxtypliife.wp.pl^
-||zssfmhpnbi.wp.pl^
-||rwnodvdoqt.wp.pl^
 ||mediaexpert.pl/temp/filemanager_up/*tlo_*$image
 ||hotcash.pl/bannery/*.gif
 ||gfx.antyradio.pl/var/antyradio/storage/images/linki-graficzne/
 ||static.evertiq.pl/bximg/digi-key/*$image
 ||rek.www.wp.pl/vad.xml$xmlhttprequest,important,redirect=noopframe
 ||vider.pl/static/player/v*/vast.js$script
+||superfilm.pl/*source=admedia&model=pop$popup
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1332,11 +1324,9 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
-@@||embed.nowvideo.co/banner.php$script
-||filmyhd-online.com/wp-admin/admin-ajax.php?action=adblockvisitordis$xmlhttprequest
-filmyhd-online.com##[class*="ui-front"]
-playonlinux.com###ads + .login
-@@&ad_$script,domain=videomega.tv
+clikcoin.pl#@##adsense
+@@||webshark.pl/adserver/*/main_script.js?advertise_check=1$script,domain=vider.pl
+@@||halamadrid.pl/wp-content/plugins/noadblock-nice-message/assets/js/ads.js$script
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
@@ -1393,6 +1383,9 @@ streamsport.cc##.ewelinaKrolowa
 tvtoss.com##.bannerfloat
 typertv.com.pl##[id^="reklamka"]
 worldsport.me###html7
+worldsport.pro##.player_re
+worldsport.pro##[style="position:absolute;width:100%;height:100%;top:0px;left:0px;z-index:1;"]
+worldsport.pro##[style="position: relative; left: 0px; bottom: 34px"]
 vsport.in##IMG[src*="=Miejsce+na+reklam"]
 vstrim.pl##[style^="position: absolute;"]
 .xyz##[class^="a_"]
