@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432
 ! Homepage: http://www.certyficate.it/
-! Last modified: 9 March 2016
+! Last modified: 11 March 2016
 ! Expires: 2 days (update frequency) 
-! Version: 2016030901
+! Version: 2016031101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016030901 aktualizacja: sr, 9 marca 2016, 19:30:00
+! v.2016031101 aktualizacja: sr, 9 marca 2016, 19:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -88,7 +88,7 @@ _banery/980x200
 ||vod-24.tv/*$subdocument,popup,domain=nocnyseans.pl
 ||reklamy.sterta.pl/$object-subrequest,domain=patrz.pl
 ||alltube.tv/pomoc$popup,domain=alltube.tv
-||bubble.am^$popup,domain=zalukaj.com
+||zalukaj.com/sdm.php$xmlhttprequest
 !
 !
 !-----------------------Elements hide on movie-----------------------!
@@ -319,6 +319,7 @@ dobreprogramy.pl##[style="width: 300px; margin: auto;"]
 dobreprogramy.pl##.wp-player
 dobreprogramy.pl##DIV[style="color: #A9A9A9; text-align:center;font-size:11px;"]
 dobreprogramy.pl###panReklama > div
+dojrzalakobieta.pl###slider-with
 dom.gratka.pl##.small-12.columns.textC.nieSkacz
 dom.gratka.pl##A[href="http://gratka.duon.pl/"]
 domiporta.pl###DetaleZakladki > .ingLinkDesktop[href^="http://tracking.mediaeffect.eu/click"]
@@ -569,6 +570,7 @@ kurierlubelski.pl,gry.jeja.pl###top
 kurierlubelski.pl##.adSrodek
 kwejk.pl##.media.ad
 linkpolonia.com##.credit-prize-box.credit-prize-box-small
+linktopoland.com##[id^="advertise-row"]
 linuxhelp.in###fan-exit
 live.com##.popupOuterCellLeft
 lm.pl##.belka_z_banerami
@@ -639,6 +641,7 @@ money.pl###mnyadtxt
 money.pl###mnytechtoplayer
 money.pl##A[href*="://direct.money.pl/o/salechannel.php"]
 money.pl##A[href*="gde-default.hit.gemius.pl/lshitredir/id="]
+money.pl##DIV[style="text-align:center;min-height:180px"]
 moszczenica.info##.banneritem
 moto.pl##.template-minimal
 motocykl-online.pl##.bgWhite.container > .row > .left-rail > .article > .tools > .col-xs-12.ceneo-box-index
@@ -677,10 +680,12 @@ nk.pl###content_banner > .ad_sandbox_wrapper
 nudziara.pl##DIV[style="border: 1px solid #D8D0D0; padding: 5px 0px 5px 0px; width:705px;"]
 niebezpiecznik.pl###text-8 > .textwidget
 nocoty.pl###slider300Wrapper
+nysa24.pl###jm-header
+nysa24.pl###Mod348
 o2.pl##.box-sidebar.box-sidebar-1
 o2.pl##.content-row.content-row-15.x-ecommerce
 o2.pl##div.popup-wrap
-o2.pl##[data-reactid^=".0.0.7.2.0.0.0"]
+o2.pl##._1-jlP._2ENCr
 oboom.com###bgfadewnd1
 oboom.com###wcontent_wnd1
 oboom.com###wnd1
@@ -840,6 +845,7 @@ sportowefakty.wp.pl##body > ins:nth-of-type(1)
 sportowefakty.wp.pl##body > i:nth-of-type(1)
 sportowefakty.wp.pl##body > strong:nth-of-type(1)
 sportowefakty.wp.pl##body > cite:nth-of-type(1)
+sportowefakty.wp.pl##.billboard.ad
 spryciarze.pl###banner_konkursowy
 steam.io###dd_ajax_float
 store.office.live.com##.popupOuterCellRight
@@ -1302,6 +1308,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||naekranie.pl/wp-content/plugins/duracelltomi-google-tag-manager/js/$script,domain=naekranie.pl
 @@||everafterhigh.com/Static/js/ga-script.js$script
 @@||gemius.pl^$domain=www.gemius.pl
+@@||wp.pl/*.$xmlhttprequest
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
