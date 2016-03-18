@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 18 March 2016
 ! Expires: 2 days (update frequency) 
-! Version: 2016031801
+! Version: 2016031802
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016031801 aktualizacja: ptk, 18 marca 2016, 06:30:00
+! v.2016031802 aktualizacja: ptk, 18 marca 2016, 19:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -49,17 +49,48 @@ _banery/980x200
 ||adeforsa.pl^$other
 ||134.pl^$other
 ||embedded-player.pl
-||pobierz123*.pl^
-||filmy.a33.pl^
-||allplayer.pl^
 ||pay2mob.pl^
 ||94.102.53.184^
 ||live-online.pl^
 ||watchlive.pl^
 ##a[href^="http://vimeoo.net"]
 ||xaxoro.com^
+!
+!
+!-----------------------SMS Fake Pages-------------------------------!
 ||megacloudz.net^
 ||moviecreator.pl^
+||pobierz123*.pl^
+||filmy.a33.pl^
+||allplayer.pl^
+||obrazkovo.pl^
+||fb-szpieg.com^
+||wpisztu.pl^
+||boostphone.pl^
+||wygrajskiny.pl^
+||movie-base.pl^
+||rocket-host.eu^
+||zlokalizowano.pl^
+||streamoo.pl^
+||konkursiphone.eu^
+||video-base.pl^
+||diamondmakeup.pl^
+||pokolorujfejs.eu^
+||polokalizuj.pl^
+||szpiegujgo.eu^
+||fejstime.pl^
+||wotgold.pl^
+||wygrajgtavpc.pl^
+||riotpointslol.pl^
+||megamovie.pl^
+||steamgry.eu/^
+||likeask.eu^
+||fb-szpieg.com.pl^
+||filmowabaza.pl^
+||samsung-s6.pl^
+||checkiq.eu^
+||podarunkowartvagd.pl^
+||wygrajpsc.eu^
 !
 !
 !-----------------------Popup filters on movie-----------------------!
@@ -84,9 +115,9 @@ _banery/980x200
 ||vimeoo.net^$third-party
 ||vod-24.tv/index/player$subdocument
 ||zarabi.am^$popup
-||kinofan.tv/player/*$image,domain=kinofan.tv
+||kinofan.tv/player/$image,domain=kinofan.tv
 ||kinofan.tv/player/index.php
-||vod-24.tv/*$subdocument,popup,domain=nocnyseans.pl
+||vod-24.tv/$subdocument,popup,domain=nocnyseans.pl
 ||reklamy.sterta.pl/$object-subrequest,domain=patrz.pl
 ||alltube.tv/pomoc$popup,domain=alltube.tv
 ||zalukaj.com/sdm.php$xmlhttprequest
@@ -775,7 +806,7 @@ promocyjni.pl###advcontentidAdpushbill526132811
 promocyjni.pl###inpl_ad_billboardimg
 promocyjni.pl##div#mask_newsl
 promocyjni.pl##div.new-newsletter-popup-holder
-pszczynska.pl##.baner 
+pszczynska.pl##.baner
 pudelek.pl##.video-star-box
 pudelek.pl,pudelek.tv,plotek.pl##[id^="frame-"]
 pudelek.tv,wp.tv,wrzuta.pl##[src^="http://adv.wp.pl"]
@@ -894,7 +925,6 @@ turystyka.wp.pl###b_container
 turystyka.wp.pl##.typOferty.ST-BX-Oferty-dnia-samoloty
 turystyka.wp.pl##.typOferty.hotele.ST-BX-Oferty-dnia-hotele
 tv.rp.pl##.aiText
-tv.wp.pl###expandBottomCnt
 tvmalbork.pl,tvsztum.pl,zulawyimierzeja24.pl,tvregionalna24.pl##.clickable[onclick^="article_video_advert_click"]
 tvn.pl##.boxadtop
 tvn24.pl###adocean-screening-layer
@@ -1028,6 +1058,8 @@ www.axn.pl###block-dart-dart-tag-980x100-ldr-top.block.block-dart > .content > .
 www.fcnet.pl###popup > li > div
 oleole.pl##[id^="ddd_left"]
 oleole.pl##[id^="ddd_right"]
+www.aptekagemini.pl##.baner
+www.aptekagemini.pl###pw_bannery_5
 www.oleole.pl###sss_left > .imgHover[alt="gazetka agd"]
 www.oleole.pl###sss_right
 www.strefabiznesu.kurierlubelski.pl###adoceanadnahgbvdrjv
@@ -1214,21 +1246,21 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www.one-solution.pl/images/banner.png
 ||gram.pl/ad/$image
 ||freedisc.pl/static/player/*/vast.js$script
-||nhlpl.cdn.adglare.org/img/*$image,domain=notebookcheck.pl
-||static.evertiq.pl/images/other/*$image
-||static.evertiq.pl/bximg/cbtg/*$image
-||evertiq.pl/include/ad-block/*$xmlhttprequest
+||nhlpl.cdn.adglare.org/img/$image,domain=notebookcheck.pl
+||static.evertiq.pl/images/other/$image
+||static.evertiq.pl/bximg/cbtg/$image
+||evertiq.pl/include/ad-block/$xmlhttprequest
 ||evertiq.pl/*/js/min/evqFront.js$script
 ||redcoon.pl/res/Image/special$image
 ||redcoon.pl/res/outer/2015/11/sk_$image
 ||zulawyimierzeja24.pl/assets/js/jwplayer/jwplayer.html5.js
 ||track.omgpl.com/bs/
-||reklamy.s3.amazonaws.com/bcg/*$image
+||reklamy.s3.amazonaws.com/bcg/$image
 ||www.poloniada.com/files/banner/
-||mediaexpert.pl/temp/filemanager_up/*tlo_*$image
+||mediaexpert.pl/temp/filemanager_up/*tlo_$image
 ||hotcash.pl/bannery/*.gif
 ||gfx.antyradio.pl/var/antyradio/storage/images/linki-graficzne/
-||static.evertiq.pl/bximg/digi-key/*$image
+||static.evertiq.pl/bximg/digi-key/$image
 ||rek.www.wp.pl/vad.xml$xmlhttprequest,important,redirect=noopframe
 ||vider.pl/static/player/v*/vast.js$script
 ||superfilm.pl/*source=admedia&model=pop$popup
@@ -1262,7 +1294,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||admin.brightcove.com/js/api/SmartPlayerAPI.js
 @@||c.brightcove.com/
 @@||metrics.brightcove.com/
-@@|https://sadmin.brightcove.com/js/BrightcoveExperiences.js
+@@||sadmin.brightcove.com/js/BrightcoveExperiences.js
 @@||admin.brightcove.com/viewer/
 @@||goku.brightcove.com^
 @@||admin.brightcove.com$domain=ekstraklasa.tv|itvn.pl|player.pl|ttv.pl|tvn.pl|tvn24.pl|tvn24bis.pl|tvn7.pl|tvnplayer.pl|tvnstyle.pl|tvnturbo.pl
@@ -1281,7 +1313,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@|http://w.iplsc.com/internal/inpl.intad/$script,domain=interia.pl
 @@/xgemius.js$script,domain=fakt.pl
 @@||diff3.smartadserver.com/call2/pubjallajax/$script,domain=fotka.pl
-@@||rek.www.wp.pl/vad.xml?rekid=$xmlhttprequest,domain=portal.abczdrowie.pl
 @@||js-agent.newrelic.com/$script,domain=portal.abczdrowie.pl
 @@||dot.wp.pl/*/media.gif$image,domain=portal.abczdrowie.pl
 @@||dot.wp.pl/*/show.gif$image,domain=portal.abczdrowie.pl
@@ -1404,7 +1435,7 @@ www.bayern.munchen.pl###box_polecamy
 ||meczelive.tv/images/tapeta_$image
 ||cdn.mediaessence.net$script
 ||meczhd.biz/pasek$image
-||meczyki.pl/image_upload/background/*$image,domain=meczyki.pl
+||meczyki.pl/image_upload/background/$image,domain=meczyki.pl
 !
 !
 !--------------------------Rules temporary blocking filters-------------!
