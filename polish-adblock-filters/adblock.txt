@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S
 ! Homepage: http://www.certyficate.it/
-! Last modified: 25 March 2016
+! Last modified: 28 March 2016
 ! Expires: 2 days (update frequency) 
-! Version: 2016032502
+! Version: 2016032801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016032502 aktualizacja: ptk, 25 marca 2016, 07:40:00
+! v.2016032801 aktualizacja: pon, 28 marca 2016, 13:40:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -125,6 +125,7 @@ _banery/980x200
 ||rm-tracker.com/path/lp.php$popup,domain=kinoman.tv
 ||104.197.10.88^$script,domain=kinoman.tv
 ||vo.msecnd.net/$script,domain=kinoman.tv
+||reklamy.sterta.pl/crossdomain.xml$object-subrequest,domain=playa.pl
 !
 !
 !-----------------------Elements hide on movie-----------------------!
@@ -350,6 +351,7 @@ demotywatory.pl###main_container > .demots > article:nth-of-type(10)
 demotywatory.pl###right_column2
 demotywatory.pl##DIV[style="position: fixed; width: 750px; margin-left: -375px; bottom: 0; height: 68px; background-color: #ccc; border-top: 1px solid black; z-index: 1000; overflow: hidden; left: 50%; padding: 15px 30px; color: #666; font-family: arial; font-size: 12px; line-height:150%;"]
 di.com.pl##[style="margin-bottom:5px;clear:both;"]
+doba.pl##[class^="banner"]
 dobrastacja.pl###tfhover
 dobreprogramy.pl##[style="width: 300px; margin: auto;"]
 dobreprogramy.pl##.wp-player
@@ -651,6 +653,7 @@ milionkobiet.pl##.wrapper > .content > .wrap > .main > .article.media > .clearfi
 milionkobiet.pl##.advert
 mistrzowie.org###services_box
 mistrzowie.org##[href*="utm_source=mistrzowie&utm_medium=banner&utm_campaign=pewexserwisy_mistrzowie"]
+mistrzowie.org##a[href^="http://pewex.pl/"]
 mlecznepodroze.onet.pl##.banner728-container.clearfix
 mlecznepodroze.onet.pl##.widgetAD.widget_text
 mlecznepodroze.onet.pl##.g-single.a-336
@@ -799,7 +802,7 @@ pracuj.pl##.expander
 prawo.money.pl###img11155698
 prostozmostu.net###ecoeconomy
 prostozmostu.net###nmb-BusyBox
-swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl##center
+miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl##center
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
 profil.wp.pl##.bxAdv
@@ -829,6 +832,7 @@ spiz.pl,roksa.pl##.c
 radomnews.pl##DIV[align="center"]
 radomnews.pl##[id^="banP"]
 remiza.com.pl##.gofollow
+reporter.pl##a[href^="/r/#"]
 roksa.pl###content > span
 roksa.pl##SPAN[style="color:gray;padding-left:350px;"]
 romantycznyweekend.eu###article-finished
@@ -909,6 +913,8 @@ techmaniak.pl,gsmmaniak.pl,appmaniak.pl,tabletmaniak.pl,fotomaniak.pl,mobimaniak
 techmaniak.pl,gsmmaniak.pl,appmaniak.pl,tabletmaniak.pl,fotomaniak.pl,mobimaniak.pl,acermaniak.pl,tvmaniak.pl,3dmaniak.pl,gizmaniak.pl,luxmaniak.pl,blogomaniak.pl,activemaniak.pl,agdmaniak.pl##[style="text-align:center; color:#999999; font-size:10px;"]
 techmaniak.pl,gsmmaniak.pl,appmaniak.pl,tabletmaniak.pl,fotomaniak.pl,mobimaniak.pl,acermaniak.pl,tvmaniak.pl,3dmaniak.pl,gizmaniak.pl,luxmaniak.pl,blogomaniak.pl,activemaniak.pl,agdmaniak.pl##[style="margin:0px auto 30px auto;"]
 techmaniak.pl,gsmmaniak.pl,appmaniak.pl,tabletmaniak.pl,fotomaniak.pl,mobimaniak.pl,acermaniak.pl,tvmaniak.pl,3dmaniak.pl,gizmaniak.pl,luxmaniak.pl,blogomaniak.pl,activemaniak.pl,agdmaniak.pl##.reklama-info
+thepolandtimes.com##img[alt="reklama"]
+thepolandtimes.com###header > .group.container > .container-inner > .pad.gro
 tekstowo.pl##.adv-home-child
 tekstowo.pl###advSong
 telchina.pl###wrap > .forabg
@@ -1275,6 +1281,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||emisja.contentstream.pl/$script,domain=wp.pl
 ||informacjelokalne.pl/images/banners/$image
 ||forms.e-petrol.pl/abc/html/logo/
+||www.purepc.pl/e404.php$image,domain=www.purepc.pl
+||www.purepc.pl/skin$script,domain=www.purepc.pl
 !
 !
 !---------------------------------Multi Regex----------------------------------!
