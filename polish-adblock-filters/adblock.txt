@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D
 ! Homepage: http://www.certyficate.it/
-! Last modified: 31 March 2016
+! Last modified: 3 April 2016
 ! Expires: 2 days (update frequency) 
-! Version: 2016033101
+! Version: 2016040301
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016033101 aktualizacja: czw, 31 marca 2016, 12:50:00
+! v.2016040301 aktualizacja: nie, 3 kwietnia 2016, 12:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -60,7 +60,7 @@ _banery/980x200
 !-----------------------SMS Fake Pages-------------------------------!
 ||megacloudz.net^
 ||moviecreator.pl^
-||pobierz123*.pl^
+||pobierz*123*.pl^
 ||filmy.a33.pl^
 ||allplayer.pl^
 ||obrazkovo.pl^
@@ -122,6 +122,11 @@ _banery/980x200
 ||mobilnelte.pl^
 ||konkursmedia.pl^
 ||wygrajpapierosa.pl^
+||meczezadarmowhd.pl^
+||galapolsat.xn.pl^
+||filmy-365.pl^
+||filmy-i-serale.pl^
+||mecze-hd.pl/wp-content/*/kod-zwrotny-sms.png
 !
 !
 !-----------------------Popup filters on movie-----------------------!
@@ -681,6 +686,8 @@ milionkobiet.pl##.wrapper > .header
 milionkobiet.pl##.wrapper > .content > .clearfix.sidebar > .fixed-box > .clearfix.zalando-ad-300-x.zalando-ad
 milionkobiet.pl##.wrapper > .content > .wrap > .main > .article.media > .clearfix.zalando-ad-660-1.zalando-ad
 milionkobiet.pl##.advert
+mikrokontroler.pl##TD[style*="background-image: url(\"http://mikrokontroler.pl/"]
+mikrokontroler.pl##[id^="block-simpleads-ad"]
 mistrzowie.org###services_box
 mistrzowie.org##[href*="utm_source=mistrzowie&utm_medium=banner&utm_campaign=pewexserwisy_mistrzowie"]
 mistrzowie.org##a[href^="http://pewex.pl/"]
@@ -849,7 +856,6 @@ pudelek.pl##.video-star-box
 pudelek.pl,pudelek.tv,plotek.pl##[id^="frame-"]
 pudelek.tv,wp.tv,wrzuta.pl##[src^="http://adv.wp.pl"]
 pudelek.pl##[data-st-area="videostar_right"]
-purepc.pl##a[href^="http://www.purepc.pl/redir.php"]
 pyszne.pl##.yd-banner
 pytamy.pl##.bx1
 pzpm.org.pl###powiadomiony
@@ -1398,11 +1404,7 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
-clikcoin.pl#@##adsense
-@@||webshark.pl/adserver/*/main_script.js?advertise_check=1$script,domain=vider.pl
-@@||halamadrid.pl/wp-content/plugins/noadblock-nice-message/assets/js/ads.js$script
-@@||www.eskago.pl/html/js/ads-header.js$script,domain=eskago.pl
-playonlinux.com###menu_droite > .login > div
+legaltv.pl#@#.adsbygoogle
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
