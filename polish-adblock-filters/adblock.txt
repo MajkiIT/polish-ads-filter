@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D
 ! Homepage: http://www.certyficate.it/
-! Last modified: 3 April 2016
+! Last modified: 5 April 2016
 ! Expires: 2 days (update frequency) 
-! Version: 2016040305
+! Version: 2016040501
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016040305 aktualizacja: nie, 3 kwietnia 2016, 22:45:00
+! v.2016040501 aktualizacja: wt, 5 kwietnia 2016, 18:25:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -128,6 +128,7 @@ _banery/980x200
 ||filmy-i-serale.pl^
 ||mecze-hd.pl/wp-content/*/kod-zwrotny-sms.png
 ||darmowetransmisjehd24.pl^
+||patrzetu.pl^
 !
 !
 !-----------------------Popup filters on movie-----------------------!
@@ -1321,7 +1322,9 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||informacjelokalne.pl/images/banners/$image
 ||forms.e-petrol.pl/abc/html/logo/
 ||www.purepc.pl/e404.php$image,domain=www.purepc.pl
-||statics.tarsago.pl/$object-subrequest,domain=meczelive.tv
+||statics.tarsago.pl/$object-subrequest
+||iha.wp.pl$image,script,object-subrequest,xmlhttprequest
+||yhmm.wp.pl$image,script,object-subrequest,xmlhttprequest
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1408,6 +1411,7 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
 legaltv.pl#@#.adsbygoogle
+filmyhd-online.com#@#.afs_ads
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
