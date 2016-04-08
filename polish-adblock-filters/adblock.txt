@@ -3,7 +3,7 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D
 ! Homepage: http://www.certyficate.it/
-! Last modified: 6 April 2016
+! Last modified: 8 April 2016
 ! Expires: 2 days (update frequency) 
 ! Version: 2016040601
 ! Contact: errors@certyficate.it
@@ -11,7 +11,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016040601 aktualizacja: sr, 6 kwietnia 2016, 10:20:00
+! v.2016040801 aktualizacja: ptk, 8 kwietnia 2016, 12:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -129,6 +129,47 @@ _banery/980x200
 ||mecze-hd.pl/wp-content/*/kod-zwrotny-sms.png
 ||darmowetransmisjehd24.pl^
 ||patrzetu.pl^
+||konkurskosmetyki.pl^
+||winshoes.pl^
+||sg7edge.pl^
+||wincandy.pl^
+||pakietlte.pl^
+||dodajsteam.pl^
+||konkurspsc.pl^
+||fejsszpieg.eu^
+||fejspodglądacz.pl^
+||przyjacielfb.pl^
+||szpiegfriend.pl^
+||mysocialnetwork.pl^
+||emotikonfb.com^
+||timerfejs.pl^
+||profilszpieg.pl^
+||pokolorujfb.pl^
+||movieplaytube.com^
+||hdvod24.pl^
+||hdsportstream.pl^
+||hd-vod.pl^
+||stream18plus.pl^
+||streamer-hd.pl^
+||24streamer.com^
+||akademiagreya.pl^
+||bookstar.pl^
+||twojartykul.pl^
+||webgazeta.pl^
+||realybooks.com^
+||filefolders.pl^
+||sharehosting.pl^
+||pointhost.pl^
+||pobraniowo.pl^
+||megadowner.com^
+||foldersfile.com^
+||klubgraczy.pl^
+||skinykonkurs.pl^
+||iqfree.pl^
+||asklike.pl^
+||followersinsta.pl^
+||zapisany.pl^
+||leadmore.pl^
 !
 !
 !-----------------------Popup filters on movie-----------------------!
@@ -315,6 +356,7 @@ android.com.pl##.textwidget IMG[src^="http://android.com.pl/images/user-images/"
 android.com.pl###reklma_top_middle
 androidpolska.pl##DIV[style="max-height:300px; overflow:hidden; float: left; width:100%;"]
 androidpolska.pl###sidebar-right > .widget:nth-of-type(1)
+androidpolska.pl###billboard_top
 anglia4u.pl###gkSidebar
 antyweb.pl##.aadv
 audiostereo.pl###index_stats
@@ -499,6 +541,7 @@ gazetaprawna.pl##[style^="text-align:center; margin: 0 0 10px 0"]
 glamrap.pl##.popup
 glamrap.pl##IMG[src^="/images/rk3/"]
 glamrap.pl###footmod
+gloria.tv##footer
 goldenline.pl###adv_top
 gomoney.pl###aunit
 gomoney.pl###taw0
@@ -979,6 +1022,7 @@ turystyka.wp.pl###b_container
 turystyka.wp.pl##.typOferty.ST-BX-Oferty-dnia-samoloty
 turystyka.wp.pl##.typOferty.hotele.ST-BX-Oferty-dnia-hotele
 tv.rp.pl##.aiText
+tvseriesonline.pl##a[href="http://amoface.com"]
 tvmalbork.pl,tvsztum.pl,zulawyimierzeja24.pl,tvregionalna24.pl##.clickable[onclick^="article_video_advert_click"]
 tvn.pl##.boxadtop
 tvn24.pl###adocean-screening-layer
@@ -1327,6 +1371,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||statics.tarsago.pl/$object-subrequest,domain=meczelive.tv|mecze24.pl
 ||iha.wp.pl^
 ||yhmm.wp.pl^
+||alltube.tv/adv/show-windows.php$script
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1404,6 +1449,9 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||gemius.pl^$domain=www.gemius.pl
 @@||wp.pl/bar.gif$xmlhttprequest
 @@||google-analytics.com$domain=certyficate.it
+@@||yhmm.wp.pl^$xmlhttprequest
+@@||iha.wp.pl^$xmlhttprequest
+@@||rek.www.wp.pl/$xmlhttprequest
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1415,6 +1463,7 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !---------------------------------Anti Adblock Rules----------------------------------!
 legaltv.pl#@#.adsbygoogle
 filmyhd-online.com#@#.afs_ads
+@@||www.tvseriesonline.pl/wp-content/themes/tvseriesonline/js/adsbygoogle.js$script,domain=tvseriesonline.pl
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
