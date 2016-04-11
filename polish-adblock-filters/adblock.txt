@@ -1,17 +1,17 @@
 [Adblock Plus 2.0]
 ! Title: Adblock & uBlock polish filters
 ! polskie filtry do Adblocka i uBlocka
-! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D
+! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R
 ! Homepage: http://www.certyficate.it/
-! Last modified: 8 April 2016
+! Last modified: 11 April 2016
 ! Expires: 2 days (update frequency) 
-! Version: 2016040603
+! Version: 2016041101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016040803 aktualizacja: ptk, 8 kwietnia 2016, 12:35:00
+! v.2016041101 aktualizacja: nie, 11 kwietnia 2016, 18:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -127,7 +127,6 @@ _banery/980x200
 ||filmy-365.pl^
 ||filmy-i-serale.pl^
 ||mecze-hd.pl/wp-content/*/kod-zwrotny-sms.png
-||darmowetransmisjehd24.pl^
 ||patrzetu.pl^
 ||konkurskosmetyki.pl^
 ||winshoes.pl^
@@ -170,6 +169,14 @@ _banery/980x200
 ||followersinsta.pl^
 ||zapisany.pl^
 ||leadmore.pl^
+||watchonline24.pl^
+||xbox-konkurs.pl^
+||pro-stream.pl^
+||allmovies.com.pl^
+||widget.twojanagroda.pl/?id=$subdocument
+||panel.eforsa.pl/widget/player-v$subdocument,stylesheet,script
+||news.maxcorpmedia.com/imp/$popup
+mecze-hd.com##IMG[src*="://imgur.com/"]
 !
 !
 !-----------------------Popup filters on movie-----------------------!
@@ -293,7 +300,7 @@ xgemius-min.jsgz$script
 ##ul.sharing-tools
 ##.kbot
 ~rp.pl##[id*="reklama"]
-~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl##[class*="reklama"]
+~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl##[class*="reklama"]
 ##.Reklama
 ##.oponeoWidget
 ###oponeoWidget
@@ -388,12 +395,14 @@ biztok.pl##.ads.ads--sidebar
 biztok.pl,teleshow.wp.pl,gwiazdy.wp.pl,moto.wp.pl,wiadomosci.wp.pl,money.pl,turystyka.wp.pl,finanse.wp.pl##A[href^="http://dot.wp.pl/redir"]
 blog.pluralsight.com##.video.widescreen.flex-video
 blogmobility.pl##.top-baner
+booksclub.pl##IMG[src*="/banners/"]
 bosch.pl##.top_co
 bonami.pl##.overlay
 bonami.pl##.loginOverlay
 cda.pl##.bx-pad
 cda.pl##.wrapp-bok-resp-abs
 cda.pl##A[href^="http://a.spolecznosci.net/"]
+cda.pl###as-narrow
 ceneo.pl##.js_widget
 ceneo.pl##A[style="display: block; height: 100%; font: 0/0 a; text-shadow: none; color: transparent;"]
 ceneo.pl###body > .home.wrapper > .home-left-content > .home-ads-row
@@ -430,6 +439,7 @@ demotywatory.pl###main_container > .demots > article:nth-of-type(10)
 demotywatory.pl###right_column2
 demotywatory.pl##DIV[style="position: fixed; width: 750px; margin-left: -375px; bottom: 0; height: 68px; background-color: #ccc; border-top: 1px solid black; z-index: 1000; overflow: hidden; left: 50%; padding: 15px 30px; color: #666; font-family: arial; font-size: 12px; line-height:150%;"]
 di.com.pl##[style="margin-bottom:5px;clear:both;"]
+digi-tv.pl##[id^="placement_"]
 doba.pl##[class^="banner"]
 dobrastacja.pl###tfhover
 dobreprogramy.pl##[style="width: 300px; margin: auto;"]
@@ -697,6 +707,7 @@ lokalna24.pl##OBJECT[data^="/banery/"]
 lokalna24.pl##IMG[src^="/banery/"]
 lowcygier.pl###moneymaker-1
 lowcygier.pl##[style="min-width:730px; min-height: 90px; margin: 10px auto auto auto; text-align:center; overflow:hidden;"]
+lubimyczytac.pl##.container_12 > A[href^="http://lubimyczytac.pl/redirect.php"]
 lublin112.pl###side_ad_widget-2
 lublin112.pl##.hehehe_box
 lublin112.pl##div.tickercontainer
@@ -811,6 +822,7 @@ o2.pl##div.popup-wrap
 oboom.com###bgfadewnd1
 oboom.com###wcontent_wnd1
 oboom.com###wnd1
+off-road.pl##.textwidget
 oleole.pl###pop_newsletter_inner
 olx.pl###kredytHButton
 olx.pl##.screen-link.abs
@@ -886,7 +898,7 @@ pracuj.pl##.expander
 prawo.money.pl###img11155698
 prostozmostu.net###ecoeconomy
 prostozmostu.net###nmb-BusyBox
-miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl##center
+solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl##center
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
 profil.wp.pl##.bxAdv
@@ -1005,7 +1017,7 @@ telchina.pl###wrap > .forabg
 telchina.pl##.bg3.post
 telchina.pl##[style="padding: 5px 5px 2px 5px; font-size: 1.1em; background-color: #ECF1F3; margin: 0px auto; text-align: center;"]
 telemagazyn.pl##[class^="fiszka"]
-teleman.pl###billboard
+teleman.pl,americasarmy.pl###billboard
 teleman.pl###stacje-filmowe > .grid-group-as
 teleman.pl###leaderboard-bottom
 tokfm.pl##DIV[style="width: 940px; padding: 21px 0 18px; background: #F8F8F8; margin: 0 auto; "]
@@ -1042,6 +1054,7 @@ uploaduj.com##.guestMessage
 uploaduj.com##A[href="http://yhu.pl/"]
 uploaduj.com##.UwOWM2OT
 uptimemadeeasy.com##.subscribep
+upcpm.pl##.count-clicks
 v10.pl##[id^="newsltr1_"]
 v10.pl##DIV[style="width: 100%; background-color: rgb(0, 0, 0); margin: 0px; position: fixed; bottom: 0px; left: 0px; padding: 0px; height: 15px; line-height: 15px; text-align: center; color: rgb(255, 255, 255); z-index: 1000; font-family: Arial,Helvetica,sans-serif; font-size: 10px;"]
 videostar.pl###player-guest-message
@@ -1313,7 +1326,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||baje.pl/rotator/show.php
 ||mon.services.tvn.pl/xlinkplayer.js$script,domain=get.x-link.pl
 ||www1.advice.movie.advlab.pl$object,domain=get.x-link.pl
-||adserwer.adtools.pl^$script,subdocument,domain=video.anyfiles.pl|adserwer.adtools.pl
+||adserwer.adtools.pl^$script,subdocument,domain=video.anyfiles.pl|adserwer.adtools.pl|serialeonline.pl
 ||ocs-pl.oktawave.com/v1/AUTH_*/Reklamy/$object-subrequest
 ||www.money.pl/rek/
 ||i.wp.pl/a/i/stg/*,wpjslib_*.js$script,domain=pudelek.pl|dom.wp.pl|gwiazdy.wp.pl|money.pl
@@ -1373,6 +1386,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||iha.wp.pl^
 ||yhmm.wp.pl^
 ||alltube.tv/adv/show-windows.php$script
+||free-all.pl/bb/$image,domain=free-all.pl
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1488,6 +1502,7 @@ estadios.pl##.kafelki_bukmacherskie
 freehdsport.com,freehqsport.eu##[id*="overlay_Player"]
 futbolhd.tv##.zareklamuj_sie_z_lewej
 futbolhd.tv###footer
+futbolhd.tv##TD[style="margin-left: -25px; font-size: 14px; padding: 10px; padding-top: 3px; letter-spacing: -0.25px; text-align: center; color: #1e84ed"]
 goodrtmp.com###r
 goodrtmp.com###ra
 ipilka.info,mecz.tv###advertising_box
