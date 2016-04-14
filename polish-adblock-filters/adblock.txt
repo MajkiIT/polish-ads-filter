@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R
 ! Homepage: http://www.certyficate.it/
-! Last modified: 12 April 2016
+! Last modified: 14 April 2016
 ! Expires: 2 days (update frequency) 
-! Version: 2016041206
+! Version: 2016041401
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016041206 aktualizacja: wt, 12 kwietnia 2016, 20:45:00
+! v.2016041401 aktualizacja: czw, 14 kwietnia 2016, 14:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -237,6 +237,7 @@ tvseriesonline.pl##IMG[src^="http://funkyimg.com/i/"]
 /xgemius.js$script
 xgemius-min.jsgz$script
 ||stg.wp.pl^$script
+||entryhit.wp.pl^
 !
 !
 !------------------------General element hiding rules-------------------------!
@@ -343,6 +344,7 @@ xgemius-min.jsgz$script
 ##[src*="/banners/banner"]
 ###pb_block
 ###over-player
+##[id^="nokaut_ads_"]
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -640,6 +642,7 @@ ipo.pl##DIV[style="clear:both;min-height:100px;"]
 ipon.pl###rekalama_PodMenu
 itporady.pl##.hidden-xs.r_sidebar
 itvpolska.pl##.cactus-ads
+iv.pl##.text_align_center
 jaka-komorka.pl###ja-right2
 jaka-komorka.pl###ja-botsl1
 jazzsoul.pl##.carousel
@@ -1031,6 +1034,7 @@ trasa.info###trip
 treningbiegacza.pl###under-menu-adds-wrapper
 trojmiasto.pl##.banner-a
 trojmiasto.pl###watermark[href^="http://www.trojmiasto.pl/rd/"]
+tryton.com.pl##[id^="banner"]
 turystyka.wp.pl###b_container
 turystyka.wp.pl##.typOferty.ST-BX-Oferty-dnia-samoloty
 turystyka.wp.pl##.typOferty.hotele.ST-BX-Oferty-dnia-hotele
@@ -1070,6 +1074,7 @@ wachamksiazki.pl##.sr
 webcamera.pl##.ad
 webcamera.pl##[style="width:728px;height:90px;"]
 webmasteruj.pl###elComment_x
+webmasteruj.pl##[style="margin:0 auto; text-align:center; margin-bottom:5px;"]
 weeb.tv##DIV[style="width: 800px; height: 80px; background: url(\"http://backupstatic.weeb.tv/images/weeb-1.png\") no-repeat scroll left top transparent; padding-left: 151px; padding-top: 73px; cursor: pointer;"]
 wiadomosci.swidnickie.pl##IMG[src="images/mk-agro_29_new.png"]
 wiadomosci.wp.pl##.item
@@ -1180,6 +1185,8 @@ www.strefabiznesu.kurierlubelski.pl###adoceanadnahgbvdrjv
 www.biala24.pl##[id^="cbox"]
 www.jaslo4u.pl###flashContent
 www.jaslo4u.pl###posters_slider
+www.pino.pl###pinowyswietlacz
+www.lubin.pl###banner
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1380,7 +1387,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||static.evertiq.pl/bximg/digi-key/$image
 ||vider.pl/static/player/v*/vast.js$script
 ||superfilm.pl/*source=admedia&model=pop$popup
-||emisja.contentstream.pl/$script,domain=wp.pl
+||emisja.contentstream.pl/$script
 ||informacjelokalne.pl/images/banners/$image
 ||forms.e-petrol.pl/abc/html/logo/
 ||www.purepc.pl/e404.php$image,domain=www.purepc.pl
@@ -1392,6 +1399,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||sztykp.wp.pl^
 ||yngsd.wp.pl^
 ||triathlonpoland.tv/vast.xml$xmlhttprequest
+||www.portalprzemyski.pl/wp-content/re/
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1469,9 +1477,10 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||gemius.pl^$domain=www.gemius.pl
 @@||wp.pl/bar.gif$xmlhttprequest
 @@||google-analytics.com$domain=certyficate.it
-@@||yhmm.wp.pl^$xmlhttprequest
-@@||iha.wp.pl^$xmlhttprequest
 @@||rek.www.wp.pl/$xmlhttprequest
+@@||yngsd.wp.pl^$xmlhttprequest
+@@||sztykp.wp.pl^$xmlhttprequest
+@@||adv.wp.pl^$xmlhttprequest
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
