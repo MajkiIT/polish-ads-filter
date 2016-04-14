@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 14 April 2016
 ! Expires: 2 days (update frequency) 
-! Version: 2016041402
+! Version: 2016041403
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016041402 aktualizacja: czw, 14 kwietnia 2016, 14:30:00
+! v.2016041403 aktualizacja: czw, 14 kwietnia 2016, 20:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -176,6 +176,10 @@ _banery/980x200
 ||panel.eforsa.pl/widget/player-v$subdocument,stylesheet,script
 ||news.maxcorpmedia.com/imp/$popup
 mecze-hd.com##IMG[src*="://imgur.com/"]
+||ero-tv.pl^
+||cda-filmy.com.pl^
+||rapidfile.pl^
+||telewizja-internetowa24.pl^
 !
 !
 !-----------------------Popup filters on movie-----------------------!
@@ -345,6 +349,7 @@ xgemius-min.jsgz$script
 ###pb_block
 ###over-player
 ##[id^="nokaut_ads_"]
+##a[href^="http://playnowunlimited.biz/"]
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -668,6 +673,7 @@ kei.pl##.img-responsive
 kino.pecetowiec.pl##.message.success
 kinoman.tv###footer-mobile
 kinoman.tv###git_wrapper_0
+kino24-tv.pl##a[href*="://ad.gameflow.pl/"]
 kobieta.onet.pl###sponsUrl
 kobieta.pl###c11849
 komixxy.pl,mistrzowie.org,jbzd.pl##[id^="sky"]
@@ -720,6 +726,7 @@ mackozer.myapple.pl##.container > .row > .col-xs-12 > .row > .col-md-4 > .well
 magia.onet.pl###box-random-game
 magazynt3.pl###leader-wrap
 mall.pl##.flt-bnr-fixed-02
+make-cash.pl##.ipsAdvertisement
 mapa.targeo.pl##[id^="OnRouteFoundBox"]
 mapa.targeo.pl##[id^="bblbrd_"]
 mapa.targeo.pl##[id^="expbox_"]
@@ -892,6 +899,7 @@ portalgorski.pl##.banneritem
 portalspozywczy.pl###new_topBox
 portalspozywczy.pl##.partnerserwisu
 portalsremski.pl##div[class^="ban"]
+portalplock.pl###fixme
 ppe.pl##[class*="adver"]
 ppe.pl###header > .clearfix.header_bg > a[href="http://www.ppe.pl/psx_extreme-2015-4.html"] > img[alt="PSX Extreme 212"]
 praca.interia.pl###nsitsp_3
@@ -901,7 +909,7 @@ pracuj.pl##.expander
 prawo.money.pl###img11155698
 prostozmostu.net###ecoeconomy
 prostozmostu.net###nmb-BusyBox
-solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl##center
+zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl##center
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
 profil.wp.pl##.bxAdv
@@ -1005,6 +1013,7 @@ swistak.pl###first > a[href^="http://"]
 supernowosci24.pl###notificationbar
 sympatia.onet.pl###backdrop-container
 sympatia.onet.pl###close-frame
+szybkiefilmy.pl##[href^="http://2hx.pl/"]
 targeo.pl###Advertisement
 tabletowo.pl##[id^="text-"]
 techmaniak.pl,gsmmaniak.pl,appmaniak.pl,tabletmaniak.pl,fotomaniak.pl,mobimaniak.pl,acermaniak.pl,tvmaniak.pl,3dmaniak.pl,gizmaniak.pl,luxmaniak.pl,blogomaniak.pl,activemaniak.pl,agdmaniak.pl##a[href^="http://o.techmaniak.pl/www/gact/ckk.php"]:not([href*="www.tabletmaniak.pl"]):not([href*="www.appmaniak.pl"]):not([href*="www.mobimaniak.pl"])
@@ -1101,6 +1110,7 @@ wizaz.pl###rectangle
 wkinie.tv##[style="width: 750px; height: 100px;"]
 wkinie.tv##.ramka[style="height: 357px;"]
 wkinie.tv##A[href$="/bez-limitu.html"]
+wkopi.pl##[style="background:transparent; width:728; height:90;"]
 ~www.wp.pl,wp.pl##DIV[style^="display: block; margin: auto; position: relative;"]
 wp.pl,polskastacja.pl##DIV[style*="margin: auto; position: relative; width: 970px;"]
 ~sportowefakty.wp.pl,~poczta.wp.pl,~profil.wp.pl,~www.wp.pl,wp.pl,polskastacja.pl,bloog.pl##[id^="e"]
@@ -1400,6 +1410,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||yngsd.wp.pl^
 ||triathlonpoland.tv/vast.xml$xmlhttprequest
 ||www.portalprzemyski.pl/wp-content/re/
+||mylead.eu/banner/
+||portalplock.pl/banery/
 !
 !
 !---------------------------------Multi Regex----------------------------------!
