@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R
 ! Homepage: http://www.certyficate.it/
-! Last modified: 14 April 2016
+! Last modified: 17 April 2016
 ! Expires: 2 days (update frequency) 
-! Version: 2016041403
+! Version: 2016041701
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016041403 aktualizacja: czw, 14 kwietnia 2016, 20:30:00
+! v.2016041701 aktualizacja: nie, 17 kwietnia 2016, 21:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -147,6 +147,7 @@ _banery/980x200
 ||movieplaytube.com^
 ||hdsportstream.pl^
 ||hd-vod.pl^
+||vod24.*^
 ||stream18plus.pl^
 ||streamer-hd.pl^
 ||24streamer.com^
@@ -219,7 +220,7 @@ mecze-hd.com##IMG[src*="://imgur.com/"]
 !-----------------------Elements hide on movie-----------------------!
 vshare.io###pplaay
 tvseriesonline.pl##IMG[src^="http://funkyimg.com/i/"]
-/player1.gif$image,domain=goserial.pl|gofilm.pl|gobajka.pl
+/player/*.gif$image,domain=goserial.pl|gofilm.pl|gobajka.pl
 !
 !
 !-----------------------Block pages-----------------------!
@@ -242,6 +243,9 @@ tvseriesonline.pl##IMG[src^="http://funkyimg.com/i/"]
 xgemius-min.jsgz$script
 ||stg.wp.pl^$script
 ||entryhit.wp.pl^
+||events.ocdn.eu^
+/xgemius.
+||adkontekst.pl$script
 !
 !
 !------------------------General element hiding rules-------------------------!
@@ -812,7 +816,7 @@ newsf24.pl##.box
 newsweek.pl##.in1
 newsweek.pl##[id^="ARTICLE_CONTENT_INNER_"]
 newsweek.pl###ARTICLE_RIGHT_REGION_2
-newsweek.pl###popup
+newsweek.pl,elk24.pl,grajewo24.pl,augustow24.pl###popup
 netia.pl##.popup
 nf.pl##.promo
 nhl.pl##[id^="adglare_"]
@@ -1502,11 +1506,7 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
-legaltv.pl#@#.adsbygoogle
-filmyhd-online.com#@#.afs_ads
-@@||www.tvseriesonline.pl/wp-content/themes/tvseriesonline/js/adsbygoogle.js$script,domain=tvseriesonline.pl
 purepc.pl#@#[class*="reklama"]
-purepc.pl#@#.reklama
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
