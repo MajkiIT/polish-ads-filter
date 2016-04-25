@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R
 ! Homepage: http://www.certyficate.it/
-! Last modified: 21 April 2016
+! Last modified: 25 April 2016
 ! Expires: 2 days (update frequency) 
-! Version: 2016042102
+! Version: 2016042501
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016042102 aktualizacja: czw, 21 kwietnia 2016, 21:00:00
+! v.2016042501 aktualizacja: pon, 25 kwietnia 2016, 19:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -316,6 +316,7 @@ xgemius-min.jsgz$script
 ||events.ocdn.eu^
 /xgemius.
 ||adkontekst.pl$script
+||www.wp.pl/v*/log/view
 !
 !
 !------------------------General element hiding rules-------------------------!
@@ -658,12 +659,12 @@ groupon.pl###spotlight
 groupon.pl###ls-in-app-messages
 gry-online.pl##div#CP_box
 gry-online.pl##.ban-fp-970x200
-gry-online.pl##[id^="R"] > a[href^="http://multigry.gry-online.pl/"]
 gry-online.pl##.ban-top
 gry-online.pl##.top_baner
 gry-online.poszkole.pl##.ad-info
 gry-online.pl###teaser_2015_c
 gry-online.pl###ws-cnt
+gry-online.pl###baner-top + [id^="R"]
 gry.pl##.advert.top.leaderboard
 gsmonline.pl###content > .paragraph_text.paragraph:nth-of-type(3)
 gsmonline.pl##[id$="ad"]
@@ -899,6 +900,7 @@ nudziara.pl##DIV[style="border: 1px solid #D8D0D0; padding: 5px 0px 5px 0px; wid
 niebezpiecznik.pl###text-8 > .textwidget
 nocoty.pl###slider300Wrapper
 nokiahacking.pl##.nh_ads
+nowafarmacja.pl##[class^="bg-banner-wrapper"]
 nysa24.pl###jm-header
 nysa24.pl###Mod348
 o2.pl##.box-sidebar.box-sidebar-1
@@ -930,6 +932,7 @@ onet.pl###onet-ad-top
 optymalizacja.com##DIV[style="text-align:center; z-index:-1000; "]
 ortografia.fora.pl###bot
 otodom.pl###adsTopOD
+panelradiowy.pl##[id^="slider"]
 panoramafirm.pl###bmone2n-16095\.1\.28\.30
 panoramalubelska.pl##.logowidget
 parenting.pl###floorBG
@@ -996,6 +999,7 @@ promocyjni.pl###advcontentidAdpushbill526132811
 promocyjni.pl###inpl_ad_billboardimg
 promocyjni.pl##div#mask_newsl
 promocyjni.pl##div.new-newsletter-popup-holder
+przegladsportowy.pl###region-item19176
 pszczynska.pl##.baner
 pudelek.pl##.video-star-box
 pudelek.pl,pudelek.tv,plotek.pl##[id^="frame-"]
@@ -1064,6 +1068,7 @@ spidersweb.pl##.text-center
 spidersweb.pl##.twelve.columns[style="margin-bottom:20px"]
 sport.pl##.entry.externalEntry
 sport.pl##.mod.mod_uzr_sport6
+sportluz.com##.ads_under_menu
 sportowefakty.wp.pl##body > var:nth-of-type(1)
 sportowefakty.wp.pl##body > em:nth-of-type(1)
 sportowefakty.wp.pl##body > samp:nth-of-type(1)
@@ -1276,6 +1281,8 @@ www.jaslo4u.pl###flashContent
 www.jaslo4u.pl###posters_slider
 www.pino.pl###pinowyswietlacz
 www.lubin.pl###banner
+www.gierkionline.pl##[id^="banner"]
+www.lajfy.com###sportObchodBanner
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1491,6 +1498,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www.portalprzemyski.pl/wp-content/re/
 ||mylead.eu/banner/
 ||portalplock.pl/banery/
+||www.moja-ostroleka.pl/uploads/banery/$image,object,script
 !
 !
 !---------------------------------Multi Regex----------------------------------!
