@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R
 ! Homepage: http://www.certyficate.it/
-! Last modified: 25 April 2016
+! Last modified: 28 April 2016
 ! Expires: 2 days (update frequency) 
-! Version: 2016042502
+! Version: 2016042801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016042502 aktualizacja: pon, 25 kwietnia 2016, 19:30:00
+! v.2016042801 aktualizacja: czw, 28 kwietnia 2016, 19:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -163,7 +163,6 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||pobraniowo.pl^
 ||megadowner.com^
 ||foldersfile.com^
-||klubgraczy.pl^
 ||skinykonkurs.pl^
 ||iqfree.pl^
 ||asklike.pl^
@@ -1499,6 +1498,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||mylead.eu/banner/
 ||portalplock.pl/banery/
 ||www.moja-ostroleka.pl/uploads/banery/$image,object,script
+||microsms.pl/img/reklama$image
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1591,6 +1591,7 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
 purepc.pl#@#[class*="reklama"]
+@@||dogry.pl/ads.html$subdocument
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
@@ -1699,3 +1700,6 @@ hentaicenter.pl##[id^="AdFAd"]
 bzykanie.com.pl###left
 bzykanie.com.pl##IMG[style="margin: 0 auto; width: 583px; display: block;"]
 ||clangames.pl/$domain=bzykanie.com.pl
+||zmarsa.pl/*.axd$script
+||szczekaopada.pl/*.axd$script
+||system.mondeos.pl/_$script
