@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R
 ! Homepage: http://www.certyficate.it/
-! Last modified: 5 May 2016
+! Last modified: 7 May 2016
 ! Expires: 2 days (update frequency) 
-! Version: 2016050502
+! Version: 2016050701
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016050502 aktualizacja: czw, 5 maj 2016, 20:40:00
+! v.2016050701 aktualizacja: sob, 7 maj 2016, 11:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -427,6 +427,7 @@ xgemius-min.jsgz$script
 ###over-player
 ##[id^="nokaut_ads_"]
 ##a[href^="http://playnowunlimited.biz/"]
+##[id^="adsensePlace"]
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -554,6 +555,7 @@ egospodarka.pl##.ego-opinie
 egospodarka.pl##A[href="http://www.ksiazki.egospodarka.pl/promocje"]
 egospodarka.pl##A[href="http://www.opinie.egospodarka.pl/"]
 elektroda.pl##.smaller.m1
+elektroda.pl##img[alt="Google Adsense"]
 embed.vidso.tv###video_container
 emsc2.tv##.advert.col-xs-12
 enzo.pl###fancybox-inner
@@ -964,7 +966,7 @@ podlasie24.pl###bA66
 podlasie24.pl##.box2x1s
 poolska.pl###text-3
 polskastacja.pl##.plotki_bg
-polskastacja.pl###banner
+polskastacja.pl,instalki.pl###banner
 polskastacja.pl##DIV[style="display: block; margin: auto; position: relative; width: 750px; height: 200px;"]
 pomorska.pl##.boxHeader
 pomorska.pl##.jcarousel-container.jcarousel-container-vertical
@@ -985,7 +987,7 @@ pracuj.pl##.expander
 prawo.money.pl###img11155698
 prostozmostu.net###ecoeconomy
 prostozmostu.net###nmb-BusyBox
-zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl##center
+androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl##center
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
 profil.wp.pl##.bxAdv
@@ -1282,6 +1284,8 @@ www.lubin.pl###banner
 www.gierkionline.pl##[id^="banner"]
 www.lajfy.com###sportObchodBanner
 www.ckm.pl##.adv-header
+www.applecenter.pl###leader-wrap
+www.applecenter.pl,zarabiajnaokazjach.pl##.textwidget
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1568,7 +1572,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||imasdk.googleapis.com/js/core/$subdocument,domain=facet.wp.pl|wp.tv
 @@||mdn.net/instream/video/client.js$script,domain=facet.wp.pl
 @@||.tradedoubler.com/*www.mediaexpert.pl*
-@@||config.sensic.net/pl1-ssa-w.js$script,domain=get.x-link.pl|tvgry.pl
+@@||config.sensic.net/pl1-ssa-w.js$script,domain=get.x-link.pl|tvgry.pl|ipla.tv
 @@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$script,domain=pebx.pl
 @@||google-analytics.com/ga.js$script,domain=liptonicetea.com
 @@||video.anyfiles.pl/pageloading/search-media-loader.jsp?ads=true$xmlhttprequest
@@ -1582,6 +1586,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||angielskie-slowka.pl/speecher/advert/*.mp3
 @@||tvn.pl$elemhide
 @@||cdntvn.pl/adscript.js$xmlhttprequest
+@@||tvnturbo.pl$generichide
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1593,6 +1598,7 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !---------------------------------Anti Adblock Rules----------------------------------!
 purepc.pl#@#[class*="reklama"]
 @@||dogry.pl/ads.html$subdocument
+zarabiajnaokazjach.pl#@##adsense
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
