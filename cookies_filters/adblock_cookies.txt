@@ -2,14 +2,14 @@
 ! Title: Adblock & uBlock polish cookies filters
 ! polskie filtry komunikatow cookies do Adblocka i uBlocka
 ! Homepage: http://www.certyficate.it/
-! Last modified: 2 May 2016
+! Last modified: 7 May 2016
 ! Expires: 4 days (update frequency) 
-! Version: 66
+! Version: 67
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/adblock-polskie-filtry-blokowanie-info-cookies/
-! v.1.66 aktualizacja: pon, 2 maja 2016, 10:20:00
+! v.1.67 aktualizacja: pon, 9 maja 2016, 19:00:00
 !
 !
 1000dni.pl##DIV[style="width: 100%; background-color: rgb(0, 60, 122); padding: 10px 8px; line-height: 20px; left: 0px; position: fixed; margin: 10px auto 0px; bottom: 0px; z-index: 1000; font-size: 13px; font-family: Helvetica,Arial,sans-serif; color: rgb(255, 255, 255);"]
@@ -597,18 +597,18 @@ cookie-law-popup.js$script
 !
 !
 ! Global
-~appki.com.pl,~paypal.com,~accounts.google.com##:not(input)[id*="Cookie"]
+~piekarniaanka.pl,~xboxarcade.pl,~appki.com.pl,~paypal.com,~accounts.google.com##:not(input)[id*="Cookie"]
 ~intel.com,~pkn.pl,~topsecret.pl,~starbucks.pl,~isobar.com,~morizon.pl,~abctygodnik.pl,~wykop.pl,~bt4.pl,~kolba.pl,~tablety.pl,~tesco.pl##div[class*="cookie"]
-~everafterhigh.com,~wmeritum.pl,~microsoft.com,~paypal.com,~reserved.com,~zumi.pl,~komunikacja.bialystok.pl,~nvidia.com##:not(input)[id*="cookie"]
+~piekarniaanka.pl,~xboxarcade.pl,~everafterhigh.com,~wmeritum.pl,~microsoft.com,~paypal.com,~reserved.com,~zumi.pl,~komunikacja.bialystok.pl,~nvidia.com##:not(input)[id*="cookie"]
 ##[id*="coockie"]
 ~addons.mozilla.org##.privacy-policy
 ##[class*="coockie"]
 ###AcceptCookie
-~appki.com.pl,~mvno-gsm.pl##[id*="cookie-"]
+~piekarniaanka.pl,~xboxarcade.pl,~appki.com.pl,~mvno-gsm.pl##[id*="cookie-"]
 ~microsoft.com##[id*="cookie_"]
 ##.cookie-notification
 ###polityka-ciastek
-~pl.forum.elvenar.com,~mcdonalds.co.uk,~astroweb.pl,~zadane.pl,~apteka-amica.pl,~naziemna.info,~planeteplus.pl,~abctygodnik.pl,~fundraising.org.pl,~filmydokumentalne.eu,~mvno-gsm.pl,~infoskawina.pl,~pikio.pl,~qt.io,~teleman.pl,~tablety.pl,~com##[class*="cookie-"]
+~futurevoicesystem.pl,~wmeritum.pl,~pl.forum.elvenar.com,~mcdonalds.co.uk,~astroweb.pl,~zadane.pl,~apteka-amica.pl,~naziemna.info,~planeteplus.pl,~abctygodnik.pl,~fundraising.org.pl,~filmydokumentalne.eu,~mvno-gsm.pl,~infoskawina.pl,~pikio.pl,~qt.io,~teleman.pl,~tablety.pl,~com##[class*="cookie-"]
 ###cookiesEU-box
 ###cookies_info
 ###ciastka_wiadomosc
@@ -634,7 +634,7 @@ cookie-law-popup.js$script
 ##[id^="cookies-message"]
 ###cookies-politics
 ###cookiesdirective
-###cookiewarning
+~piekarniaanka.pl###cookiewarning
 ###popup-cookies
 ###showCookieInfo
 ~zadane.pl##[class*="cookie-policy"]
@@ -686,6 +686,7 @@ pl##[id^="polityka-prywatnosci"]
 ###info_c_box
 ##.RACKWrapper
 ##.cookieForm
+/wp-content/plugins/cookie-warning/cookiewarning.$stylesheet,script
 !
 !
 !----------------Whitelist---------------------------
@@ -693,3 +694,4 @@ pl##[id^="polityka-prywatnosci"]
 @@/plugins/uk-cookie-consent/assets/js/uk-cookie-consent-js.js$script,domain=escaperooms.pl
 @@||rozklad-pkp.pl/js/$script,domain=rozklad-pkp.pl
 @@||cdaction.pl/views/js1/cookie.js$script
+@@/plugins/uk-cookie-consent/assets/js/uk-cookie-consent-js.js$script,domain=xboxarcade.pl
