@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 15 May 2016
 ! Expires: 2 days
-! Version: 2016051503
+! Version: 2016051504
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016051503 aktualizacja: sob, 15 maj 2016, 14:00:00
+! v.2016051504 aktualizacja: nie, 15 maj 2016, 16:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -189,7 +189,7 @@ foldersfile*.*
 pakiet*lte*.pl^
 ||pakiety5gb.pl^
 ||pamietnikiwampirow.tv^
-||panel.eforsa.pl/widget/player-v$subdocument,stylesheet,script
+||panel.eforsa.pl/widget/$subdocument,stylesheet,script
 ||patrzetu.pl^
 ||photodate.club^
 ||pl.mysafesmartphone.com^
@@ -295,6 +295,13 @@ pakiet*lte*.pl^
 ||zgarnijkonsole.pl^
 ||zlokalizowano.pl^
 ||zmienkolor-fb.pl^
+##.step1
+||gdziejestdziecko.*^
+||filmasy.*^
+||dajemy50.*^
+fullplayer.pl###player-container > iframe
+||pobierz.kekuko.*^
+/:\/\/[a-zA-Z0-9]{3,3}\.pl//$subdocument
 !
 !
 !-----------------------Popup filters on movie-----------------------!
@@ -355,8 +362,7 @@ tvseriesonline.pl##IMG[src^="http://funkyimg.com/i/"]
 xgemius-min.jsgz$script
 ||stg.wp.pl^$script
 ||entryhit.wp.pl^
-||events.ocdn.eu^
-||events.onet.pl^
+||events.ocdn.*^
 /xgemius.
 ||adkontekst.pl$script
 ||www.wp.pl/v*/log/view
@@ -374,19 +380,14 @@ xgemius-min.jsgz$script
 ##.advertHolder
 ~wtkplay.pl,~epoznan.pl##[class^="advertisement"]
 ##.ceneo-products.clearfix
-##.ceneoaff-container.ceneoaff-468x60
+##[id^="ceneoaffcontainer"]
 ##.cookemessagecloseico
 ##.forceRefresh disableScreeningClick adoHide adoSlv OnTop
 ##.jqmOverlay
 ##.mod.mod_cpCommerce.small
 ##.opacitybox
 ##.sec.ecommerce
-##.td-more-articles-box.td-front-end-display-block
-##A[href^="http://kropka.onet.pl/redir/redir.rd?banner="]
 ##a[href*="adnow.com/click"]
-##DIV[style="position: fixed; left:0; right:0; bottom:0; height:120px; background-color:#eee; border-top: 1px solid black; z-index:1000; overflow: auto"]
-##IMG[src^="http://www.reklama.pless.nazwa.pl/public/"]
-##SPAN[style="\a   display: inline-block;\a   border-radius: 4px;\a   -webkit-box-shadow: 2px 3px 10px -2px #333;\a   box-shadow: 2px 3px 10px -2px #333;\a   padding: 2px;\a   height: 300px;\a   width: 320px;\a   position: relative;\a   overflow: hidden;\a   box-sizing: border-box;\a   z-index: 9999;\a   -webkit-box-sizing: border-box;\a   -moz-box-sizing: border-box;"]
 ##div#skapiec_ad
 ##ul.sharing-tools
 ~rp.pl##[id*="reklama"]
@@ -1388,10 +1389,6 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
 purepc.pl#@#[class*="reklama"]
-@@||dogry.pl/ads.html$subdocument
-zarabiajnaokazjach.pl#@##adsense
-@@/plugins/ad-blocking-detector/assets/js/advertisement.min.js$script,domain=iosworld.pl
-www.scigacz.pl###adv_750
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
