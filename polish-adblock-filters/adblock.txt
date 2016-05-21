@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R
 ! Homepage: http://www.certyficate.it/
-! Last modified: 19 May 2016
+! Last modified: 21 May 2016
 ! Expires: 2 days
-! Version: 2016051906
+! Version: 2016052101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016051906 aktualizacja: czw, 19 maj 2016, 20:35:00
+! v.2016052101 aktualizacja: sob, 21 maj 2016, 17:35:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -63,6 +63,11 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ://*sms-za-darmo.pl
 mecze-hd.com##IMG[src*="://imgur.com/"]
 share*files*.*^
+/:\/\/[a-zA-Z0-9]{3,3}\.pl//$subdocument
+file*download.*^
+foldersfile*.*
+fullplayer.pl###player-container > iframe
+pakiet*lte*.pl^
 ||24streamer.com^
 ||5m4.pl^
 ||airmax90.com.pl
@@ -85,6 +90,7 @@ share*files*.*^
 ||chron-telefon.com^
 ||clashofclansapp.pl^
 ||cs-goskiny.pl^
+||dajemy50.*^
 ||darmowe-doladowanie.pl^
 ||deletefriend.pl^
 ||diamondmakeup.pl^
@@ -93,12 +99,15 @@ share*files*.*^
 ||doladowanie-na-twoj-tel.pl^
 ||doladowanie365.pl
 ||doladowanko.com^
+||doladuj-komorke.*^
+||doladuj-komorke.com.pl^
 ||doladujsteam.pl^
 ||downloaded.pl^
 ||downloadfile.eu^
 ||downloadfiles.pl^
 ||e-filmy24*.pl^
 ||edownload.com.pl^
+||egofile.pl^
 ||emotikonfb.com^
 ||enagrody24.pl^
 ||ero-tv.pl^
@@ -113,15 +122,13 @@ share*files*.*^
 ||fejstime.pl^
 ||file-share365.com^
 ||filebay.org^
-||filefolders.pl^
-file*download.*^
-||filesfolders.pl
+||file*folders.pl^
+||filmasy.*^
 ||filmowabaza.pl^
 ||filmy-365.pl^
 ||filmy-i-serale.pl^
 ||filmy.a33.pl^
 ||filmynet.eu^
-foldersfile*.*
 ||followersinsta.pl^
 ||fotomonto.pl^
 ||freedoladowania.pl
@@ -130,18 +137,23 @@ foldersfile*.*
 ||galapolsat.xn.pl^
 ||gamer24.pl^
 ||gangzalbani.pl^
+||gdziejestdziecko.*^
 ||goracenagrody.pl^
 ||goracezdobycze.pl^
 ||gosciefb.pl^
+||graotron.tv^
 ||hd-vod.pl^
-||hdfilms.pl
+||hdfilms.pl^
 ||hdsportstream.pl^
 ||hdvod*.pl^
 ||hersneakers.pl^
 ||hostshare.pl
 ||hotawards.pl^
+||icloudnet.*^
+||icloudnet.com.pl^
 ||ilebedemiecdzieci.pl^
 ||ilemasziq.pl^
+||info-fitness.com^
 ||instalike.pl^
 ||iqfree.pl^
 ||kiedy-umrzesz.pl^
@@ -185,8 +197,8 @@ foldersfile*.*
 ||oculusvsvr.pl^
 ||odpowiadam.pl^
 ||oferta4you.com.pl^
+||onlinecalyfilm.pl^
 ||otobony.pl^
-pakiet*lte*.pl^
 ||pakiety5gb.pl^
 ||pamietnikiwampirow.tv^
 ||panel.eforsa.pl/widget/$subdocument,stylesheet,script
@@ -195,10 +207,11 @@ pakiet*lte*.pl^
 ||pl.mysafesmartphone.com^
 ||pl.tappsms.com^
 ||pl.wizappz.com^
-||playmovie.pl
+||playmovie.pl^
 ||playvod.tv^
 ||pobieranie.online^
 ||pobierz*123*.pl^
+||pobierz.kekuko.*^
 ||pobierzebooka.pl^
 ||pobierzgo.pl
 ||pobierzpliki.net^
@@ -225,6 +238,7 @@ pakiet*lte*.pl^
 ||sg7edge.pl^
 ||sharehosting.pl^
 ||skinykonkurs.pl^
+||slodkieklamstewka.*^
 ||smartawards.pl^
 ||sms4all.pl^
 ||speedfile.info^
@@ -237,14 +251,17 @@ pakiet*lte*.pl^
 ||strefasexlive.pl^
 ||subkiller.pl^
 ||superciuchy.com.pl^
+||szpieg-sms.pl^
 ||szpiegfriend.pl^
 ||szpiegofon.pl^
+||szpiegsms.na.footoo.pl^
 ||szpieguj*.*^
 ||tapet0wo.pl^
 ||techawards.pl^
 ||techkonkurs.pl^
 ||telewizja-internetowa24.pl^
 ||timerfejs.pl^
+||tracksms.pl^
 ||transmisje24.net^
 ||tv-internetowa.pl^
 ||tvplayer24.pl^
@@ -260,13 +277,15 @@ pakiet*lte*.pl^
 ||webgazeta.pl^
 ||wgrajka.pl^
 ||widget.twojanagroda.pl/?id=$subdocument
-||winbike.pl
+||wikingowie.tv^
+||winbike.pl^
 ||wincandy.pl^
 ||winlokalizator.pl
 ||winshoes.pl^
 ||wotgold.pl^
 ||wpisztu.pl^
-||www.nowedoladowanie.pl
+||wspanialestulecie.tv^
+||www.nowedoladowanie.pl^
 ||wybierz-nagrode.pl^
 ||wygraj-iphone6s.pl^
 ||wygrajfallout4.pl^
@@ -277,12 +296,12 @@ pakiet*lte*.pl^
 ||wygrajpakiet.pl^
 ||wygrajpapierosa.pl^
 ||wygrajpsc.eu^
-||wygrajsamsunga.com.pl
+||wygrajsamsunga.com.pl^
 ||wygrajskiny.pl^
 ||wygrajxboxone.eu^
 ||wygrajz5.pl^
-||wygrywajpakiety.pl
-||xawards.pl
+||wygrywajpakiety.pl^
+||xawards.pl^
 ||xbox-konkurs.pl^
 ||y-tube.com.pl^
 ||zapisany.pl^
@@ -295,16 +314,6 @@ pakiet*lte*.pl^
 ||zgarnijkonsole.pl^
 ||zlokalizowano.pl^
 ||zmienkolor-fb.pl^
-||gdziejestdziecko.*^
-||filmasy.*^
-||dajemy50.*^
-fullplayer.pl###player-container > iframe
-||pobierz.kekuko.*^
-/:\/\/[a-zA-Z0-9]{3,3}\.pl//$subdocument
-||icloudnet.*^
-||info-fitness.com^
-||doladuj-komorke.*^
-||slodkieklamstewka.*^
 !
 !
 !-----------------------Popup filters on movie-----------------------!
@@ -489,6 +498,7 @@ digi-tv.pl##[id^="placement_"]
 doba.pl##[class^="banner"]
 dobrastacja.pl###tfhover
 dobreprogramy.pl##[style="width: 300px; margin: auto;"]
+dobreprogramy.pl##[style="height: 150px; width: 630;"]
 dobreprogramy.pl##.wp-player
 dobreprogramy.pl##DIV[style="color: #A9A9A9; text-align:center;font-size:11px;"]
 dobreprogramy.pl###panReklama > div
@@ -641,35 +651,7 @@ infogazeta.pl###comment-captcha
 infogazeta.pl,newsf24.pl##.border
 infoilawa.pl##.readmore
 instalki.pl##.banner_mod_top
-interia.pl###adSpecialLeft
-interia.pl###ad_exclusive_top
-interia.pl##[id^="belka_"]
-interia.pl,onet.pl##[id^="ecommerce"]
-interia.pl##[id^="panel_"]
-interia.pl###inpl_cp_cnt
-interia.pl##.ad-window
-interia.pl##.adBody
-interia.pl##.afi-b
-interia.pl##.error-page-layer
-interia.pl##.news-ul-spons
-interia.pl##[id^="li.lvl"]
-interia.pl##b.advrt
-interia.pl##div#see_also_fixed
-interia.pl##li.article.bigAdvrt
-interia.pl###objectTrailers
-interia.pl###ad_news
-interia.pl,poboczem.pl,styl.pl##[id^="box_ec_prawa_dol"]
-interia.pl,poboczem.pl,styl.pl##[id^="box_300"]
-interia.pl,poboczem.pl,styl.pl##[id^="adReactangle"]
-interia.pl,poboczem.pl,styl.pl##[id^="adRefreshable"]
-interia.pl###half_page
-interia.pl,styl.pl,swiatseriali.pl##[id^="adStandardTop"]
-interia.pl###content > aside > .sidebar.main-sidebar > .objectPromocyjniRight.objectPromocyjni.box
-interia.pl##.page-footer-main.container
-interia.pl##[id^="videoAd"]
-interia.pl###\#ad_place_news
-interia.pl###calendar_top
-interia.pl##[id^="adBillImg"]
+interia.pl##[id^="ad_"]
 internetstandard.pl###banner > .ad
 ideagrafika.pl###adswidget7-quick-adsense
 ipo.pl##DIV[style="clear:both;min-height:100px;"]
@@ -1501,7 +1483,10 @@ wykop.pl##.baner-mobile
 www.wykop.pl##article.slim
 wykop.pl##li.payentry
 wykop.pl##div.doodle
-||*wykop.pl/static/nowywykoppl/css/prawykop.css$stylesheet
+*wykop.pl/static/nowywykoppl/css/prawykop.css$stylesheet
+*wykop.pl/static/nowywykoppl/js/visual.script.js$script
+*wykop.pl/*/paylink_$image,domain=www.wykop.pl
+||www.wykop.pl/paylink/emiter/$image,domain=www.wykop.pl
 !
 !
 !--------------------------Adult rules-------------!
