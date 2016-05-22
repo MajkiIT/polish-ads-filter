@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R
 ! Homepage: http://www.certyficate.it/
-! Last modified: 21 May 2016
+! Last modified: 22 May 2016
 ! Expires: 2 days
-! Version: 2016052102
+! Version: 2016052201
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016052102 aktualizacja: sob, 21 maj 2016, 17:35:00
+! v.2016052201 aktualizacja: nie, 22 maj 2016, 21:25:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -424,6 +424,8 @@ xgemius-min.jsgz$script
 ~radekcholewinski.pl,~github.com##A[href$="/reklama"]
 ##A[href*="/emisja.contentstream.pl/_/ctr/"]
 ##[src*="/banners/banner"]
+##[id^="nokaut_ads_category_"]
+###middleboxrectangle
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -580,15 +582,6 @@ frazpc.pl###imgnetshare
 fronda.pl##.small-info
 fronda.pl###ecoeconomy
 futbol.pl##DIV[onmousedown="window.location.href='http://creativetravel.pl'"]
-gazeta.pl###banP1
-gazeta.pl##.article_top_tags
-gazeta.pl,plotek.pl##.eCommerce
-gazeta.pl##DIV[style="width: 940px; padding: 21px 0 18px; background: #F8F8F8; margin: 0 auto; "]
-gazeta.pl##div#mod_ads_bottom
-gazeta.pl##div.overlayPiano.helloBox
-gazeta.pl,wyborcza.pl,wyborcza.biz###padlock_plywak
-gazeta.pl##[class^="row ads_"]
-gazeta.pl##A[href*="hit.gemius.pl/lshitredir/"]
 gazetapolska.pl###sg1
 gazetapolska.pl###sg2
 gazetapolska.pl##DIV[style="float: left; padding-bottom: 10px; padding-top: 10px; width: 300px"]
@@ -786,6 +779,7 @@ olx.pl###kredytHButton
 olx.pl##.screen-link.abs
 onet.pl##span.newsAdd
 onet.pl###onet-ad-top
+onet.pl##.autopromoapp
 otodom.pl###adsTopOD
 panelradiowy.pl##[id^="slider"]
 parenting.pl###floorBG
@@ -1225,6 +1219,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||konto.amronet.pl$subdocument,domain=dobreprogramy.pl
 ||money.pl/*/ad/direct/*.jpg$image
 ||fiatklubpolska.pl/reklamy/$image
+||ad.gazeta.pl/cpc$script,domain=kobieta.gazeta.pl
+||avanti24.pl/pub/ips/$subdocument
 !
 !
 !---------------------------------Multi Regex----------------------------------!
