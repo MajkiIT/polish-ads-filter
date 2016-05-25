@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 25 May 2016
 ! Expires: 2 days
-! Version: 2016052501
+! Version: 2016052502
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016052501 aktualizacja: sr, 25 maj 2016, 09:30:00
+! v.2016052502 aktualizacja: sr, 25 maj 2016, 09:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -427,6 +427,7 @@ xgemius-min.jsgz$script
 ##[id^="nokaut_ads_category_"]
 ###middleboxrectangle
 ##[class^="ADbox"]
+##.ad-offers
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -1029,7 +1030,6 @@ wp.pl##._10AYj
 wp.pl##._3lLjc
 wp.pl##._2X2-k
 wp.pl##a[href^="http://smartclick.pl/redir"]
-wp.pl##[class^="ST-offers-"]
 wprost.pl###additional-column
 wprost.pl##class[id^="addbox.addbox-"]
 wprost.pl###left-column > .art-area > .art-content > center
@@ -1313,6 +1313,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||pagead2.googlesyndication.com^$domain=dobreprogramy.pl
 @@||bulletproofserving.com^$script,domain=dobreprogramy.pl
 @@||emisja.contentstream.pl/_/jsonapi/?prefix=adart$domain=rmf24.pl
+@@||dot.wp.pl/*/*.gif$xmlhttprequest,domain=www.wp.pl
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
