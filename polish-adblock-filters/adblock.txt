@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R
 ! Homepage: http://www.certyficate.it/
-! Last modified: 23 May 2016
+! Last modified: 25 May 2016
 ! Expires: 2 days
-! Version: 2016052303
+! Version: 2016052501
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016052303 aktualizacja: pon, 23 maj 2016, 21:10:00
+! v.2016052501 aktualizacja: sr, 25 maj 2016, 09:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -63,8 +63,8 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ://*sms-za-darmo.pl
 mecze-hd.com##IMG[src*="://imgur.com/"]
 share*files*.*^
-/:\/\/[a-zA-Z0-9]{3,3}\.pl//$subdocument
-file*download.*^
+/:\/\/[a-zA-Z0-9]{3,3}\.pl/file/
+/:\/\/[a-zA-Z0-9]{3,3}\.pl/film/
 foldersfile*.*
 fullplayer.pl###player-container > iframe
 pakiet*lte*.pl^
@@ -311,6 +311,9 @@ pakiet*lte*.pl^
 ||zgarnijkonsole.pl^
 ||zlokalizowano.pl^
 ||zmienkolor-fb.pl^
+||telefotki.pl^
+||z0x.pl^
+||firesub.pl^
 !
 !
 !-----------------------Popup filters on movie-----------------------!
@@ -423,6 +426,7 @@ xgemius-min.jsgz$script
 ##[src*="/banners/banner"]
 ##[id^="nokaut_ads_category_"]
 ###middleboxrectangle
+##[class^="ADbox"]
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -769,6 +773,7 @@ nysa24.pl###Mod348
 o2.pl##.box-sidebar.box-sidebar-1
 o2.pl##.content-row.content-row-15.x-ecommerce
 o2.pl##div.popup-wrap
+obligacje.pl##a[href*=".bankier.pl/click/"]
 oboom.com###bgfadewnd1
 oboom.com###wcontent_wnd1
 oboom.com###wnd1
@@ -837,7 +842,7 @@ profilook.pl###ceneo-os783-rZ0og
 press.pl###topBanner
 programosy.pl##.web.bn-b-0
 przegladsportowy.pl###region-item19176
-pszczynska.pl##.baner
+pszczynska.pl,szajn.pl##.baner
 pudelek.pl,pudelek.tv,plotek.pl##[id^="frame-"]
 pudelek.tv,wp.tv,wrzuta.pl##[src^="http://adv.wp.pl"]
 purepc.pl##a[href^="http://www.purepc.pl/redir.php"]
@@ -1024,6 +1029,7 @@ wp.pl##._10AYj
 wp.pl##._3lLjc
 wp.pl##._2X2-k
 wp.pl##a[href^="http://smartclick.pl/redir"]
+wp.pl##[class^="ST-offers-"]
 wprost.pl###additional-column
 wprost.pl##class[id^="addbox.addbox-"]
 wprost.pl###left-column > .art-area > .art-content > center
