@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 29 May 2016
 ! Expires: 2 days
-! Version: 2016052904
+! Version: 2016052905
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016052904 aktualizacja: nie, 29 maj 2016, 18:50:00
+! v.2016052905 aktualizacja: nie, 29 maj 2016, 21:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -33,6 +33,7 @@ _banery/980x200
 /data/ap3bo6/*.jpg$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 /data/ap3bo6/*.swf$object,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 pl/*/rodzinnawycieczka/$image,domain=wp.pl
+/reklamy/$image
 !
 !
 !-----------------------Bad pages blocking filters-----------------------!
@@ -380,6 +381,7 @@ xgemius-min.jsgz$script
 ||adkontekst.pl$script
 ||www.wp.pl/v*/log/view
 ##[href*="hit.gemius.pl/hitredir/"]
+/gemius/
 !
 !
 !------------------------General element hiding rules-------------------------!
@@ -947,6 +949,7 @@ twojaslupca.pl###flashContent
 twojaslupca.pl##DIV[style="margin-bottom: 20px;"]
 twojasuknia.pl##.container-fluid.hidden-print.text-center.win-baner
 twoje-seriale.tv##a[href^="http://www.videostream.pl/"]
+twojepc.pl##td[width="300"][align="left"][valign="top"]
 ulub.pl##[class^="ads_szuk"]
 ulub.pl##.right_col
 uploaduj.com##.guestMessage
@@ -1199,6 +1202,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||ad.gazeta.pl/cpc$script,domain=kobieta.gazeta.pl
 ||avanti24.pl/pub/ips/$subdocument
 ||www.cadblog.pl/*.gif$image
+||csr.onet.pl$script,xmlhttprequest
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1288,6 +1292,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||bulletproofserving.com^$script,domain=dobreprogramy.pl
 @@||emisja.contentstream.pl/_/jsonapi/?prefix=adart$domain=rmf24.pl
 @@||dot.wp.pl/*/*.gif$xmlhttprequest,domain=wp.pl
+@@||ostrowmaz.com/uploads/small_ad_photo/$image
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1299,9 +1304,12 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !---------------------------------Anti Adblock Rules----------------------------------!
 purepc.pl#@#[class*="reklama"]
 12zawodnik.pl#@#[class^="advertisement"]
-12zawodnik.pl#@#.reklama
-12zawodnik.pl#@#[class*="reklama"]
+12zawodnik.pl,bham.pl#@#.reklama
+12zawodnik.pl,bham.pl#@#[class*="reklama"]
 12zawodnik.pl#@#.adsbox
+bham.pl##[id^="bilboard"]
+bham.pl#@#.ad_top
+ostrowmaz.com#@#.small_ad
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
