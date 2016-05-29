@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 29 May 2016
 ! Expires: 2 days
-! Version: 2016052902
+! Version: 2016052903
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016052902 aktualizacja: nie, 29 maj 2016, 15:00:00
+! v.2016052903 aktualizacja: nie, 29 maj 2016, 18:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -391,7 +391,7 @@ xgemius-min.jsgz$script
 ##[id^="slot_ad_billboard"]
 ##.BanerHPBig
 ##.adoceanGora1Wrapper
-##.advertHolder
+##.advert
 ~wtkplay.pl,~epoznan.pl##[class^="advertisement"]
 ##.ceneo-products.clearfix
 ##[id^="ceneoaffcontainer"]
@@ -430,6 +430,7 @@ xgemius-min.jsgz$script
 ###middleboxrectangle
 ##[class^="ADbox"]
 ##.ad-offers
+pl##.ad
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -471,10 +472,6 @@ cda.pl##.bx-pad
 cda.pl##[class*="-abs"]
 cda.pl##A[href^="http://a.spolecznosci.net/"]
 cda.pl###aswift_0
-ceneo.pl##.js_widget
-ceneo.pl##.ad-shadow
-ceneo.pl##.promoted-products
-ceneo.pl##.ado-common
 centrumxp.pl###WelcomeBox
 chamsko.pl##[href^="http://empire.goodgamestudios.com/"]
 chip.pl###nextartprompt
@@ -485,7 +482,6 @@ cinema-city.pl##DIV[id^="snatch"]
 cinema-city.pl###layer_3_-150_0
 cmg24.pl##[src*="Reklamy/"]
 darkwarez.pl##DIV[style="position:relative;height:110px;overflow: hidden;"]
-darkwarez.pl##div[align="center"] > .copyright > table[border="0"]
 data.shoplov.in###slgl
 ddtorun.pl,ddwloclawek.pl##.container.movedDiv
 ddtorun.pl,ddwloclawek.pl##[class^="a-d-v"]
@@ -524,7 +520,6 @@ efilmy.tv##.addbackground
 elektroda.pl##.smaller.m1
 elektroda.pl##img[alt="Google Adsense"]
 embed.vidso.tv###video_container
-emsc2.tv##.advert.col-xs-12
 eredivisie.pl##IMG[src^="http://www.goal.pl/ban/"]
 erocentrum.pl##.panel
 eska.pl##A[style="display: block; height: 100%; width: 100%;"]
@@ -594,11 +589,6 @@ glos24.pl##IMG[src^="/files/adv/"]
 goldenline.pl###adv_top
 gomoney.pl###aunit
 gomoney.pl###taw0
-google.com##.gb_kb.gb_nb.gb_za
-google.pl##.ads-ad
-google.pl##.ads-creative
-google.pl##.c.commercial-unit.commercial-unit-desktop-rhs.rhsvw
-google.pl##.gb_gb.gb_jb.gb_wa
 gosc.pl##.fl-w100.webpart-wrap-advert
 gowork.pl##[id^="ad_"]
 gowork.pl##.__b-popup1__.b-modal
@@ -607,23 +597,8 @@ grafoteka.pl###info
 grajkownia.com###aswift_0_expand
 gram.pl##.stripeBar
 gram.pl###billBoardAreaWrapper
-gratka.pl###exposeMask
-gratka.pl###kandyduch-popup
-gratka.pl##DIV[class^="ad"]
-groupon.pl###subscribe_modal_container
-groupon.pl###spotlight
-groupon.pl###ls-in-app-messages
-gry-online.pl##div#CP_box
 gry-online.pl##.ban-fp-970x200
-gry-online.pl##.ban-top
-gry-online.pl##.top_baner
 gry-online.poszkole.pl##.ad-info
-gry-online.pl###teaser_2015_c
-gry-online.pl###ws-cnt
-gry-online.pl###baner-top + [id^="R"]
-gry.pl##.advert.top.leaderboard
-gsmonline.pl###content > .paragraph_text.paragraph:nth-of-type(3)
-gsmonline.pl##[id$="ad"]
 gsmservice.pl###banner6
 hdtv.com.pl##center > a[href="http://hushhush.pl"] > img
 hdtv.com.pl##[id^="edit"] > table:nth-of-type(n+2)
@@ -730,7 +705,6 @@ mh24.pl###cboxOverlay
 mh24.pl##[id^="text-"]
 miejsce.warszawa.gazeta.pl###holder_201 > .travelist
 mfind.pl###sidebar-sticky-widgets > .widget-ebook-form > .widget-ebook-form-content
-milionkobiet.pl##.advert
 mikrokontroler.pl##TD[style*="background-image: url(\"http://mikrokontroler.pl/"]
 mikrokontroler.pl##[id^="block-simpleads-ad"]
 mistrzowie.org###services_box
@@ -1440,4 +1414,3 @@ bzykanie.com.pl##IMG[style="margin: 0 auto; width: 583px; display: block;"]
 ||zmarsa.pl/*.axd$script
 ||szczekaopada.pl/*.axd$script
 ||system.mondeos.pl/_$script
-
