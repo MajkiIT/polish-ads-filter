@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R
 ! Homepage: http://www.certyficate.it/
-! Last modified: 5 June 2016
+! Last modified: 7 June 2016
 ! Expires: 2 days
-! Version: 2016060503
+! Version: 2016060701
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016060503 aktualizacja: nie, 5 czerwca 2016, 18:00:00
+! v.2016060701 aktualizacja: wt, 7 czerwca 2016, 19:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -119,8 +119,8 @@ xgemius-min.jsgz$script
 /xgemius.
 ||adkontekst.pl$script
 ||www.wp.pl/v*/log/view
-##[href*="hit.gemius.pl/hitredir/"]
-/gemius/
+~sportowefakty.wp.pl##[href*="hit.gemius.pl/*hitredir/"]
+/gemius/$script
 !
 !
 !------------------------General element hiding rules-------------------------!
@@ -174,13 +174,14 @@ xgemius-min.jsgz$script
 pl##.ad
 ##a[href^="https://www.solutions4ad.com/partner/scripts/click.php"]
 ##id^="ad_global"]
-##[id^="block-block"]
 ##[id^="aswift_"]
+##.ad-box
 !
 !
 !------------------------Specific element hiding rules------------------------!
 24tvonline.pl##.dataContainer
 4lomza.pl,zambrow.org##[id*="banner"]
+alltube.tv###ban-er
 android.com.pl##[id^="text-3"]
 android.com.pl##.textwidget IMG[src^="http://android.com.pl/images/user-images/"]
 android.com.pl###reklma_top_middle
@@ -345,6 +346,7 @@ gram.pl###billBoardAreaWrapper
 gry-online.pl##.ban-fp-970x200
 gry-online.poszkole.pl##.ad-info
 gsmservice.pl###banner6
+gsmmaniak.pl##a[href*="techmaniak.pl/www/gact/ckk.php"]
 hdtv.com.pl##center > a[href="http://hushhush.pl"] > img
 hdtv.com.pl##[id^="edit"] > table:nth-of-type(n+2)
 hdtv.com.pl###links
@@ -403,6 +405,7 @@ komixxy.pl,mistrzowie.org,jbzd.pl##[id^="sky"]
 komputerswiat.pl###\5f 479491471
 komputerswiat.pl###ks_breaking_news
 komputerswiat.pl##[style="width: 600px; height: 400px; margin: 20px auto;"]
+komorkomat.pl##.boxzilla-bottom-left-container
 koncertomania.pl##div#slide-out-newsletter
 korkosfera.pl##div#copyright_ne
 kraj24.pl##.box_h
@@ -462,6 +465,9 @@ mlecznepodroze.onet.pl##DIV[style="overflow: hidden; border-bottom: solid #DDDDD
 mobilneforum.pl##a[href^="http://shrsl.com/"]
 money.pl##A[href*="://direct.money.pl/o/salechannel.php"]
 money.pl##[style="text-align:center;min-height:180px"]
+mojaolesnica.pl##DIV[style="width: 750px; height: 200px; float: left; display: inline;"]
+mojaolesnica.pl##DIV[style="float: left; width: 705px;"]
+mojaolesnica.pl##DIV[style="width: 200px; height: 200px;"]
 moszczenica.info##.banneritem
 moto.pl##.template-minimal
 motocykl-online.pl##.bgWhite.container > .row > .left-rail > .article > .tools > .col-xs-12.ceneo-box-index
@@ -479,10 +485,10 @@ napisy24.pl##.custom_pozioma
 napisy24.pl##a[href^="http://www.allplayer.org/"]
 newsf24.pl##.box
 niebezpiecznik.pl##div[style="float:left"]
-niebezpiecznik.pl##A[href*="//niebezpiecznik.pl/r2"]
 nk.pl###content_banner > .ad_sandbox_wrapper
 nudziara.pl##DIV[style="border: 1px solid #D8D0D0; padding: 5px 0px 5px 0px; width:705px;"]
 niebezpiecznik.pl###text-8 > .textwidget
+niebezpiecznik.pl##a[href*="//niebezpiecznik.pl/r3"]
 nocoty.pl,aleseriale.pl###slider300Wrapper
 nokiahacking.pl##.nh_ads
 nowafarmacja.pl##[class^="bg-banner-wrapper"]
@@ -559,7 +565,7 @@ profil.wp.pl##.bxAdv
 profilook.pl###ceneo-os783-rZ0og
 press.pl###topBanner
 programosy.pl##.web.bn-b-0
-przegladsportowy.pl###region-item19176
+przegladsportowy.pl##[id$="_ARTICLE_TOP"]
 pszczynska.pl,szajn.pl##.baner
 pudelek.pl,pudelek.tv,plotek.pl##[id^="frame-"]
 pudelek.tv,wp.tv,wrzuta.pl##[src^="http://adv.wp.pl"]
@@ -940,6 +946,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||avanti24.pl/pub/ips/$subdocument
 ||www.cadblog.pl/*.gif$image
 ||csr.onet.pl$script,xmlhttprequest
+||haloursynow.pl/img/banery/
+||mojaolesnica.pl/reklamy/
 !
 !
 !---------------------------------Multi Regex----------------------------------!
