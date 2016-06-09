@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R
 ! Homepage: http://www.certyficate.it/
-! Last modified: 7 June 2016
+! Last modified: 9 June 2016
 ! Expires: 2 days
-! Version: 2016060702
+! Version: 2016060901
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016060702 aktualizacja: wt, 7 czerwca 2016, 20:10:00
+! v.2016060901 aktualizacja: czw, 9 czerwca 2016, 19:10:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -120,7 +120,7 @@ xgemius-min.jsgz$script
 ||adkontekst.pl$script
 ||www.wp.pl/v*/log/view
 ~sportowefakty.wp.pl##[href*="hit.gemius.pl/*hitredir/"]
-/gemius/$script
+/gemius/*$script
 !
 !
 !------------------------General element hiding rules-------------------------!
@@ -173,9 +173,9 @@ xgemius-min.jsgz$script
 ##.ad-offers
 pl##.ad
 ##a[href^="https://www.solutions4ad.com/partner/scripts/click.php"]
-##id^="ad_global"]
+##[id^="ad_global"]
 ##[id^="aswift_"]
-##.ad-box
+##[class^="ad-"]
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -183,7 +183,6 @@ pl##.ad
 4lomza.pl,zambrow.org##[id*="banner"]
 alltube.tv###ban-er
 android.com.pl##[id^="text-3"]
-android.com.pl##.textwidget IMG[src^="http://android.com.pl/images/user-images/"]
 android.com.pl###reklma_top_middle
 android.com.pl##.textwidget
 androidpolska.pl##DIV[style="max-height:300px; overflow:hidden; float: left; width:100%;"]
@@ -366,7 +365,6 @@ infogazeta.pl,newsf24.pl##.border
 infoilawa.pl##.readmore
 instalki.pl##.banner_mod_top
 interia.pl##[id^="ad_"]
-internetstandard.pl###banner > .ad
 ideagrafika.pl###adswidget7-quick-adsense
 ipo.pl##DIV[style="clear:both;min-height:100px;"]
 ipon.pl###rekalama_PodMenu
@@ -419,7 +417,6 @@ kurierlubelski.pl###oponeo
 kurierlubelski.pl###sm-sg
 kurierlubelski.pl,gry.jeja.pl###top
 kurierlubelski.pl##.adSrodek
-kwejk.pl##.media.ad
 linkpolonia.com##.credit-prize-box.credit-prize-box-small
 linktopoland.com##[id^="advertise-row"]
 linuxhelp.in###fan-exit
@@ -638,7 +635,6 @@ sportowefakty.wp.pl##body > ins:nth-of-type(1)
 sportowefakty.wp.pl##body > i:nth-of-type(1)
 sportowefakty.wp.pl##body > strong:nth-of-type(1)
 sportowefakty.wp.pl##body > cite:nth-of-type(1)
-sportowefakty.wp.pl##.billboard.ad
 spryciarze.pl###banner_konkursowy
 steam.io###dd_ajax_float
 store.office.live.com##.popupOuterCellRight
@@ -720,7 +716,6 @@ videowood.tv###tbl1
 vod.pl##.infoCloud
 vshare.io###pplay
 wachamksiazki.pl##.sr
-webcamera.pl##.ad
 webcamera.pl##[style="width:728px;height:90px;"]
 webmasteruj.pl###elComment_x
 webmasteruj.pl##[style="margin:0 auto; text-align:center; margin-bottom:5px;"]
@@ -730,7 +725,6 @@ wiadomosci.wp.pl##.item
 wiadomosci24.pl##.reka
 wiadomosci24.pl##.tekst
 windowsmania.pl##[id^="yui-gen"] > [class^="post"]
-windowsmania.pl###ad_global_below_navbar
 wiocha.pl###ad4sc
 wiocha.pl##[id$="infopanel"]
 wiocha.pl##[id^="skyscraper"]
@@ -835,9 +829,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||bbcdn.code.intext.contextad.pl/css/bubble/
 ||cdn.syndication.twitter.com/widgets/tweetbutton/
 |http://pix2.services.tvn.pl/pix2.js
-|||spolecznosci.net^$image,domain=fotka.com|bezuzyteczna.pl|repostuj.pl|photoblog.pl
-||spolecznosci.net/geo_snet$script
-||spolecznosci.net/get$script
+||spolecznosci.net^$image,subdocument,script
 ||pclab.pl/img/extra/$image,domain=pclab.pl
 ||pclab.pl/img/special/*.jpg
 ||t-mobile-trendy.pl/graph/backgrounds/$image
@@ -950,6 +942,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||haloursynow.pl/img/banery/
 ||mojaolesnica.pl/reklamy/
 ||www.comperialead.pl/upload/$image
+||data.shoplov.in/$subdocument
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1050,16 +1043,6 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
 purepc.pl#@#[class*="reklama"]
-12zawodnik.pl#@#[class^="advertisement"]
-12zawodnik.pl,bham.pl#@#.reklama
-12zawodnik.pl,bham.pl#@#[class*="reklama"]
-12zawodnik.pl#@#.adsbox
-bham.pl##[id^="bilboard"]
-bham.pl#@#.ad_top
-ostrowmaz.com#@#.small_ad
-@@||napisy24.pl/run/js/ads/$script
-@@||pagead2.googlesyndication.com/*show_ads$script,domain=napisy24.pl
-bytzbiorowy.pl###stickymsg
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
@@ -1174,3 +1157,4 @@ bzykanie.com.pl##IMG[style="margin: 0 auto; width: 583px; display: block;"]
 ||zmarsa.pl/*.axd$script
 ||szczekaopada.pl/*.axd$script
 ||system.mondeos.pl/_$script
+
