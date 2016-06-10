@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R
 ! Homepage: http://www.certyficate.it/
-! Last modified: 9 June 2016
+! Last modified: 10 June 2016
 ! Expires: 2 days
-! Version: 2016060901
+! Version: 2016061001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016060901 aktualizacja: czw, 9 czerwca 2016, 19:10:00
+! v.2016061001 aktualizacja: ptk, 10 czerwca 2016, 19:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -93,6 +93,7 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||104.197.*$script,domain=kinoman.tv|alltube.tv|serialnet.pl|vidzer.net
 ||vo.msecnd.net/$script,domain=kinoman.tv
 ||reklamy.sterta.pl/crossdomain.xml$object-subrequest,domain=playa.pl
+||cdn.vidzi.tv/$popup,subdocument,script
 !
 !
 !-----------------------Elements hide on movie-----------------------!
@@ -176,6 +177,7 @@ pl##.ad
 ##[id^="ad_global"]
 ##[id^="aswift_"]
 ##[class^="ad-"]
+##[id^="adv-"]
 !
 !
 !------------------------Specific element hiding rules------------------------!
