@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R
 ! Homepage: http://www.certyficate.it/
-! Last modified: 12 June 2016
+! Last modified: 14 June 2016
 ! Expires: 2 days
-! Version: 2016061201
+! Version: 2016061401
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016061201 aktualizacja: nie, 12 czerwca 2016, 15:45:00
+! v.2016061401 aktualizacja: wt, 14 czerwca 2016, 18:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -182,6 +182,8 @@ pl##.ad
 ##a[href*="bbelements.com/please/track/adClick/"]
 ##img[alt="reklama"]
 ##a[href^="http://advmanager.techfun.pl/redirect/"]
+##[href^="http://adserwer."]
+##a[href="http://upfiles.net/ref/"]
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -210,7 +212,7 @@ bankier.pl##[class$="Adv"]
 bebzol.com###right-col > .r-stick-box
 bezuzyteczna.pl,zumi.pl##[class^="special"]
 bez-cenzury24.pl##[div^="ips-popup"]
-bitcoin.pl##.custom
+bitcoin.pl,rightclick.pl##.custom
 biznes.pl##.e_Box.analyses
 biznes.pl##.rightBoxR.boxPopComtR.cl
 biznes2biznes.com##[id^="stickynote"]
@@ -306,6 +308,7 @@ fishki.pl###fancybox-wrap
 foodpanda.pl###campaign_22924_lightbox
 forbes.pl###Article-Inner-Content
 forall.pl##a[href^="http://www.forall.pl/red.php"]
+forsapl.info##iframe
 forum.dobreprogramy.pl##[style="text-align:center;padding:20px 0;"]
 forum.dobreprogramy.pl##[style="margin:20px 0;text-align:center;"]
 forum.dvhk.to##IMG[src*="/bannery/dvhk/"]
@@ -951,6 +954,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||mojaolesnica.pl/reklamy/
 ||www.comperialead.pl/upload/$image
 ||data.shoplov.in/$subdocument
+||tvgry.pl/images/tapeta_reklama/$image
 !
 !
 !---------------------------------Multi Regex----------------------------------!
