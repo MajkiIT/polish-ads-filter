@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R
 ! Homepage: http://www.certyficate.it/
-! Last modified: 14 June 2016
+! Last modified: 17 June 2016
 ! Expires: 2 days
-! Version: 2016061401
+! Version: 2016061701
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016061401 aktualizacja: wt, 14 czerwca 2016, 18:50:00
+! v.2016061701 aktualizacja: ptk, 17 czerwca 2016, 13:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -176,7 +176,7 @@ pl##.ad
 ##a[href^="https://www.solutions4ad.com/partner/scripts/click.php"]
 ##[id^="ad_global"]
 ##[id^="aswift_"]
-##[class^="ad-"]
+~hulu.com,~svobodneforum.cz,##[class^="ad-"]
 ##[id^="adv-"]
 ##[href^="http://csr.onet.pl/eclk/clk"]
 ##a[href*="bbelements.com/please/track/adClick/"]
@@ -184,6 +184,8 @@ pl##.ad
 ##a[href^="http://advmanager.techfun.pl/redirect/"]
 ##[href^="http://adserwer."]
 ##a[href="http://upfiles.net/ref/"]
+/reklamy/*$image,object
+##[class^="adv-"]
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -258,6 +260,7 @@ dobreprogramy.pl###panReklama > div
 dobreprogramy.pl##.target.center.page-element
 dobreprogramy.pl##[id$="_divAdTop"]
 dojrzalakobieta.pl###slider-with
+dogry.pl##.pro-box
 dom.gratka.pl##.small-12.columns.textC.nieSkacz
 dom.gratka.pl##A[href="http://gratka.duon.pl/"]
 domiporta.pl###DetaleZakladki > .ingLinkDesktop[href^="http://tracking.mediaeffect.eu/click"]
@@ -323,6 +326,7 @@ forum.autodoradca.pl##.ent
 forum.autodoradca.pl###idRightBanner
 forumrowerowe.org###a1ad
 forum.komputerswiat.pl###post_id_
+forum.optymalizacja.com##[href$="utm_medium=banner"]
 fotka.com##[id^="billboard_"]
 fotoszok.pl###tablewraper > center
 fotoszok.pl##center > a[href="http://www.boxing.pl"]
@@ -551,6 +555,7 @@ poolska.pl###text-3
 polskastacja.pl##.plotki_bg
 polskastacja.pl,instalki.pl###banner
 polskastacja.pl##DIV[style="display: block; margin: auto; position: relative; width: 750px; height: 200px;"]
+polygamia.pl##[onclick^="adwordsStatistic"]
 pomorska.pl##.boxHeader
 pomorska.pl##.jcarousel-container.jcarousel-container-vertical
 pomorska.pl##P[style="font:normal 12px/16px Arial,Tahoma,sans-serif;margin:0;padding:6px 100px 5px 20px;color:#fff;word-wrap:break-word;"]
@@ -568,7 +573,7 @@ pracuj.pl##.expander
 prawo.money.pl###img11155698
 prostozmostu.net###ecoeconomy
 prostozmostu.net###nmb-BusyBox
-androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl##center
+forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl##center
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
 profil.wp.pl##.bxAdv
@@ -779,7 +784,6 @@ www.aptekagemini.pl##.baner
 www.aptekagemini.pl###pw_bannery_5
 www.oleole.pl###sss_left > .imgHover[alt="gazetka agd"]
 www.oleole.pl###sss_right
-www.strefabiznesu.kurierlubelski.pl###adoceanadnahgbvdrjv
 www.biala24.pl##[id^="cbox"]
 www.jaslo4u.pl###flashContent
 www.jaslo4u.pl###posters_slider
@@ -789,7 +793,7 @@ www.gierkionline.pl##[id^="banner"]
 www.lajfy.com###sportObchodBanner
 www.ckm.pl##.adv-header
 www.applecenter.pl###leader-wrap
-www.applecenter.pl,zarabiajnaokazjach.pl##.textwidget
+trybawaryjny.pl,www.applecenter.pl,zarabiajnaokazjach.pl##.textwidget
 www.bolec.info##.baner_max
 www.bolec.info##[class$="Board"]
 www2.payback.pl##class[id^="all-app-"]
@@ -955,6 +959,9 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www.comperialead.pl/upload/$image
 ||data.shoplov.in/$subdocument
 ||tvgry.pl/images/tapeta_reklama/$image
+||ads.gry-online.pl^
+||embed.powercontent.pl^
+||motocyklistow.pl/uploads/banners/$image
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1056,6 +1063,7 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !
 !---------------------------------Anti Adblock Rules----------------------------------!
 purepc.pl#@#[class*="reklama"]
+@@||www.nadajemy.pl/js-css/adsense/ad/banner/adv.js$script
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
