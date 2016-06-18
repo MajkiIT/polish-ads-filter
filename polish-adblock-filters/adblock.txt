@@ -1,17 +1,17 @@
 [Adblock Plus 2.0]
 ! Title: Adblock & uBlock polish filters
 ! polskie filtry do Adblocka i uBlocka
-! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R
+! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 17 June 2016
+! Last modified: 18 June 2016
 ! Expires: 2 days
-! Version: 2016061701
+! Version: 2016061801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016061701 aktualizacja: ptk, 17 czerwca 2016, 13:20:00
+! v.2016061801 aktualizacja: sob, 18 czerwca 2016, 16:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -94,6 +94,8 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||vo.msecnd.net/$script,domain=kinoman.tv
 ||reklamy.sterta.pl/crossdomain.xml$object-subrequest,domain=playa.pl
 ||cdn.vidzi.tv^
+||www.flashx.tv/_a:$popup
+||versionall.net$popup,first-party
 !
 !
 !-----------------------Elements hide on movie-----------------------!
@@ -440,6 +442,7 @@ lm.pl##.belka_z_banerami
 lokalna24.pl##OBJECT[data^="/banery/"]
 lokalna24.pl##IMG[src^="/banery/"]
 lowcygier.pl###moneymaker-1
+lowcygier.pl##.big-top-widget-box
 lowcygier.pl##[style="min-width:730px; min-height: 90px; margin: 10px auto auto auto; text-align:center; overflow:hidden;"]
 lubimyczytac.pl##.container_12 > A[href^="http://lubimyczytac.pl/redirect.php"]
 lublin112.pl###side_ad_widget-2
@@ -796,6 +799,7 @@ www.applecenter.pl###leader-wrap
 trybawaryjny.pl,www.applecenter.pl,zarabiajnaokazjach.pl##.textwidget
 www.bolec.info##.baner_max
 www.bolec.info##[class$="Board"]
+www.przegladsportowy.pl##.lazy
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1064,6 +1068,7 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !---------------------------------Anti Adblock Rules----------------------------------!
 purepc.pl#@#[class*="reklama"]
 @@||www.nadajemy.pl/js-css/adsense/ad/banner/adv.js$script
+burze.dzis.net#@#.adsbygoogle
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
