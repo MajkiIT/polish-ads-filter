@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 18 June 2016
+! Last modified: 19 June 2016
 ! Expires: 2 days
-! Version: 2016061803
+! Version: 2016061901
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016061803 aktualizacja: sob, 18 czerwca 2016, 16:25:00
+! v.2016061901 aktualizacja: nie, 19 czerwca 2016, 18:25:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -189,13 +189,15 @@ pl##.ad
 ##a[href="http://upfiles.net/ref/"]
 /reklamy/*$image,object
 ##[class^="adv-"]
+##a[href*="/ad/click/"]
+##[class$="-ads"]
 !
 !
 !------------------------Specific element hiding rules------------------------!
 24tvonline.pl##.dataContainer
 4lomza.pl,zambrow.org##[id*="banner"]
 alltube.tv###ban-er
-allegro.pl##a[href^="https://asa.allegro.pl/diff/"]
+allegro.pl##a[href*="://asa.allegro.pl/*/cliccommand/"]
 android.com.pl##[id^="text-3"]
 android.com.pl###reklma_top_middle
 android.com.pl##.textwidget
@@ -235,6 +237,7 @@ cda.pl##[class*="-abs"]
 cda.pl##[class^="as-"]
 cda.pl##A[href^="http://a.spolecznosci.net/"]
 cda.pl##DIV[style$="width:980px;"]
+cda.pl##.miniPhotoBox
 centrumxp.pl###WelcomeBox
 chamsko.pl##[href^="http://empire.goodgamestudios.com/"]
 chip.pl###nextartprompt
@@ -365,6 +368,7 @@ gram.pl###billBoardAreaWrapper
 gry-online.pl##.ban-fp-970x200
 gry-online.pl##[class$="-stopka"]
 gry-online.poszkole.pl##.ad-info
+gry-online.pl###ws-cnt
 gsmservice.pl###banner6
 gsmmaniak.pl##a[href*="techmaniak.pl/www/gact/ckk.php"]
 hdtv.com.pl##center > a[href="http://hushhush.pl"] > img
@@ -829,7 +833,7 @@ zapytaj.onet.pl###content > aside > div:nth-of-type(1)
 zapytaj.onet.pl###promoTop
 zapytaj.onet.pl##div[id*="sliderSidebar"]
 zarabiara.pl##[class^="new_ad"]
-zaufanatrzeciastrona.pl##A[href$="/klik.php"]
+zaufanatrzeciastrona.pl##A[href$="/klik*.php"]
 zumi.pl###couponsBar
 zumi.pl###offersBar
 zycietoprzygoda.pl###ck_dsclr
