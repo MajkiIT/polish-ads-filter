@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 19 June 2016
+! Last modified: 22 June 2016
 ! Expires: 2 days
-! Version: 2016061903
+! Version: 2016062201
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016061903 aktualizacja: nie, 19 czerwca 2016, 20:10:00
+! v.2016062201 aktualizacja: sr, 22 czerwca 2016, 18:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -33,29 +33,6 @@ _banery/980x200
 /data/ap3bo6/*.jpg$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 /data/ap3bo6/*.swf$object,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 pl/*/rodzinnawycieczka/$image,domain=wp.pl
-!
-!
-!-----------------------Bad pages blocking filters-----------------------!
-||streamy.pl^
-||playhd.pl^
-||fullhd.pl^
-||fullmovies.com.pl^
-||net-zgadula.co.pl^
-||fashion-method.com^
-||polub.co^
-||seans24.com.pl^
-||exashare.com^
-||playnowunlimited.biz^
-||filesdown.pl^
-||adeforsa.pl
-||134.pl^$other
-||embedded-player.pl
-||pay2mob.pl^
-||94.102.53.184^
-||live-online.pl^
-||watchlive.pl^
-##a[href^="http://vimeoo.net"]
-||xaxoro.com^
 !
 !
 !-----------------------SMS Fake Pages-------------------------------!
@@ -170,7 +147,7 @@ xgemius-min.jsgz$script
 ##[id^="sponsorowany"]
 ~radekcholewinski.pl,~github.com##A[href$="/reklama"]
 ##A[href*="/emisja.contentstream.pl/_/ctr/"]
-##[src*="/banners/banner"]
+~gwarant.czest.pl##[src*="/banners/banner"]
 ##[id^="nokaut_ads_category_"]
 ###middleboxrectangle
 ##[class^="ADbox"]
@@ -190,7 +167,7 @@ pl##.ad
 /reklamy/*$image,object
 ##[class^="adv-"]
 ##a[href*="/ad/click/"]
-##[class$="-ads"]
+~mega.nz##[class$="-ads"]
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -275,6 +252,8 @@ domiporta.pl###DetaleZakladki > .ReklamaIngWrap > .ReklamaIngLabel
 domiporta.pl###iFrameResizer0
 download.net.pl##DIV[style="text-align: center; margin: 0 auto;"]
 doz.pl##.clearfix.container > .clearfix.row
+dstar.pzk.pl##[style$="background: #dfdfdf;"]
+dstar.pzk.pl##[style^="text-align: center; font-size: 8px; padding:"]
 dziennik.pl###a_201
 dziennik.pl##[style="text-align:center; margin: 0 0 10px 0;padding-bottom: 20px"]
 e-kg.pl##.bannergroup
@@ -487,7 +466,7 @@ mlecznepodroze.onet.pl##.g-single.a-336
 mlecznepodroze.onet.pl##DIV[style="overflow: hidden; border-bottom: solid #DDDDDD 0px; border-top: solid #DDDDDD 0px; padding-top: 15px; padding-bottom: 10px;"]
 mobilneforum.pl##a[href^="http://shrsl.com/"]
 money.pl##A[href*="://direct.money.pl/o/salechannel.php"]
-money.pl##[style="text-align:center;min-height:180px"]
+money.pl##DIV[style$="min-height:180px"]
 mojaolesnica.pl##DIV[style="width: 750px; height: 200px; float: left; display: inline;"]
 mojaolesnica.pl##DIV[style="float: left; width: 705px;"]
 mojaolesnica.pl##DIV[style="width: 200px; height: 200px;"]
@@ -593,7 +572,7 @@ programosy.pl##.web.bn-b-0
 przegladsportowy.pl##[id$="_ARTICLE_TOP"]
 pszczynska.pl,szajn.pl##.baner
 pudelek.pl,pudelek.tv,plotek.pl##[id^="frame-"]
-pudelek.tv,wp.tv,wrzuta.pl##[src^="http://adv.wp.pl"]
+pudelek.tv,wp.tv,wrzuta.pl,interaktywnie.com##[src^="http://adv.wp.pl"]
 purepc.pl##a[href^="http://www.purepc.pl/redir.php"]
 pyszne.pl##.yd-banner
 pytamy.pl##.bx1
@@ -803,9 +782,12 @@ www.gierkionline.pl##[id^="banner"]
 www.lajfy.com###sportObchodBanner
 www.ckm.pl##.adv-header
 www.applecenter.pl###leader-wrap
+www.ceneo.pl##.ado-top-billboard
+www.ceneo.pl##.js_widget
 trybawaryjny.pl,www.applecenter.pl,zarabiajnaokazjach.pl##.textwidget
 www.bolec.info##.baner_max
 www.bolec.info##[class$="Board"]
+www.ppe.pl###content > .column-right
 www.przegladsportowy.pl##.lazy
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
@@ -1075,7 +1057,7 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !---------------------------------Anti Adblock Rules----------------------------------!
 purepc.pl#@#[class*="reklama"]
 @@||www.nadajemy.pl/js-css/adsense/ad/banner/adv.js$script
-burze.dzis.net#@#.adsbygoogle
+dstar.pzk.pl,burze.dzis.net#@#.adsbygoogle
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
