@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 26 June 2016
 ! Expires: 2 days
-! Version: 2016062603
+! Version: 2016062604
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016062603 aktualizacja: nie, 26 czerwca 2016, 19:50:00
+! v.2016062604 aktualizacja: nie, 26 czerwca 2016, 21:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -41,11 +41,8 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 !
 !-----------------------Popup filters on movie-----------------------!
 !
-||odpal.to^$popup
 ||l1nk.pl^$popup,domain=gofilm.pl|goserial.pl|gobajka.pl
 ||oovid.pl^$popup,domain=gofilm.pl|goserial.pl|gobajka.pl
-||odpal.to/index/player
-||allmovies.pl^$other
 ||vimeoo.net^$other,popup
 ||info-fakt.pl^$other,popup
 ||exeos.ws^$other,popup
@@ -56,13 +53,7 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||seans-online.tv/wp-content/themes/lukajfilm/images/player.jpg
 ||bar.pianomedia.eu/^$script,domain=wyborcza.pl
 ||ad.gazeta.pl/cpc/$script,domain=wyborcza.pl
-||zarabi.am$popup,domain=exsite.pl
 ||vimeoo.net^$third-party
-||vod-24.tv/index/player$subdocument
-||zarabi.am^$popup
-||kinofan.tv/player/$image,domain=kinofan.tv
-||kinofan.tv/player/index.php
-||vod-24.tv/$subdocument,popup,domain=nocnyseans.pl
 ||reklamy.sterta.pl/$object-subrequest,domain=patrz.pl
 ||alltube.tv/pomoc$popup,domain=alltube.tv
 ||zalukaj.com/sdm.php$xmlhttprequest
@@ -74,6 +65,7 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||www.flashx.tv/_a:$popup
 ||versionall.net$popup,first-party
 ||nextclick.pl^$script
+||alltube.tv/redirect.php$popup
 !
 !
 !-----------------------Elements hide on movie-----------------------!
@@ -958,7 +950,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||motocyklistow.pl/uploads/banners/$image
 ||wiocha.pl/img/tapety/$image
 ||onenima.com^$script
-||alltube.tv/redirect.php$popup
 ||www.goal.pl/ban/$image
 !
 !
@@ -969,7 +960,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 !
 !
 !---------------------------------Whitelists----------------------------------!
-@@|http://poczta10.o2.pl/|$document
 @@||interia.pl/~stylesheet
 @@||maps.google.pl^$document
 @@||megapliki.interia.pl/$~subdocument
@@ -978,13 +968,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||wikimedia.org/
 @@||wrzuta.pl/$~object
 @@|http://zalukaj.tv/ads.js$domain=zalukaj.tv
-@@|http://www.eskago.pl/html/js/ads.js?clickTag=http://go.idmnet.bbelements.com/please/$domain=eskago.pl
-@@|https://ssl.allegro.pl/order/^
-@@|http://ssl.allegro.pl/order/^
-@@||reklama.onet.pl/_d/_k/navig/
-@@||reklama.onet.pl/_s/js/
-@@||reklama.onet.pl/_s/packages/
-@@||reklama.onet.pl/adexamples/display_USI/index_files/
+@@||ssl.allegro.pl/order/^
 @@||s.tvn.pl/bc/a_b.swf
 @@||go.brightcove.com/content/
 @@||admin.brightcove.com/js/api/SmartPlayerAPI.js
