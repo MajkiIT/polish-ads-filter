@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 22 June 2016
+! Last modified: 26 June 2016
 ! Expires: 2 days
-! Version: 2016062204
+! Version: 2016062601
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016062204 aktualizacja: sr, 22 czerwca 2016, 23:10:00
+! v.2016062601 aktualizacja: nie, 26 czerwca 2016, 14:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -147,7 +147,7 @@ xgemius-min.jsgz$script
 ##[id^="sponsorowany"]
 ~radekcholewinski.pl,~github.com##A[href$="/reklama"]
 ##A[href*="/emisja.contentstream.pl/_/ctr/"]
-~gwarant.czest.pl##[src*="/banners/banner"]
+~gwarant.czest.pl,~sukniaonline.pl##[src*="/banners/banner"]
 ##[id^="nokaut_ads_category_"]
 ###middleboxrectangle
 ##[class^="ADbox"]
@@ -168,12 +168,14 @@ pl##.ad
 ##[class^="adv-"]
 ##a[href*="/ad/click/"]
 ~mega.nz##[class$="-ads"]
+##TopTextAd
 !
 !
 !------------------------Specific element hiding rules------------------------!
 24tvonline.pl##.dataContainer
 4lomza.pl,zambrow.org##[id*="banner"]
 alltube.tv###ban-er
+alltube.tv###super-player
 allegro.pl##a[href*="://asa.allegro.pl/*/cliccommand/"]
 android.com.pl##[id^="text-3"]
 android.com.pl###reklma_top_middle
@@ -837,7 +839,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||bbcdn.code.intext.contextad.pl/css/bubble/
 ||cdn.syndication.twitter.com/widgets/tweetbutton/
 |http://pix2.services.tvn.pl/pix2.js
-||spolecznosci.net^$image,subdocument,script
+||spolecznosci.net^$image,subdocument,script,popup
 ||pclab.pl/img/extra/$image,domain=pclab.pl
 ||pclab.pl/img/special/*.jpg
 ||t-mobile-trendy.pl/graph/backgrounds/$image
@@ -955,6 +957,10 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||ads.gry-online.pl^
 ||embed.powercontent.pl^
 ||motocyklistow.pl/uploads/banners/$image
+||wiocha.pl/img/tapety/$image
+||onenima.com^$script
+||alltube.tv/redirect.php$popup
+||www.goal.pl/ban/$image
 !
 !
 !---------------------------------Multi Regex----------------------------------!
