@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 7 July 2016
 ! Expires: 2 days
-! Version: 2016070703
+! Version: 2016070704
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016070703 aktualizacja: czw, 7 lipca 2016, 20:15:00
+! v.2016070704 aktualizacja: czw, 7 lipca 2016, 20:25:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -84,16 +84,11 @@ tvseriesonline.pl##IMG[src^="http://funkyimg.com/i/"]
 ||kropka.onet.pl/_s/kropka/$image
 ||stats.asp24.pl/js/click.4.js$script
 ##A[href*="k.tradedoubler.com/click"]
-||gemius.pl$third-party,popup
-xgemius-min.jsgz$script
 ||stg.wp.pl^$script
 ||entryhit.wp.pl^
 ||events.ocdn.*^
-/xgemius.
 ||adkontekst.pl$script
 ||www.wp.pl/v*/log/view
-~sportowefakty.wp.pl##[href*="hit.gemius.pl/*hitredir/"]
-/gemius/*$script
 ||emisja.adsearch.pl/$xmlhttprequest
 !
 !
@@ -875,7 +870,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www1.advice.movie.advlab.pl$object,domain=get.x-link.pl
 ||adserwer.adtools.pl^$script,subdocument,domain=video.anyfiles.pl|adserwer.adtools.pl|serialeonline.pl
 ||ocs-pl.oktawave.com/v1/AUTH_*/Reklamy/$object-subrequest
-||gemius.pl^
 ||pclab.pl/partners/$image,subdocument,domain=pclab.pl
 ||vstrim.pl/images/*.gif$image,domain=vstrim.pl
 ||naszamlawa.pl/images/banner/$object,image
