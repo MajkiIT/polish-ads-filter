@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 12 July 2016
+! Last modified: 14 July 2016
 ! Expires: 2 days
-! Version: 2016071201
+! Version: 2016071401
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016071201 aktualizacja: wt, 12 lipca 2016, 21:35:00
+! v.2016071401 aktualizacja: czw, 14 lipca 2016, 18:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -154,7 +154,7 @@ pl##.ad
 /reklamy/*$image,object
 ##[class^="adv-"]
 ##a[href*="/ad/click/"]
-~gamepedia.com,~mega.nz##[class$="-ads"]
+~pcgamingwiki.com,~gamepedia.com,~mega.nz##[class$="-ads"]
 ##TopTextAd
 !
 !
@@ -552,7 +552,7 @@ pracuj.pl##.expander
 prawo.money.pl###img11155698
 prostozmostu.net###ecoeconomy
 prostozmostu.net###nmb-BusyBox
-forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl##center
+postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl##center
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
 profil.wp.pl##.bxAdv
@@ -1163,11 +1163,12 @@ wykop.pl##div.doodle
 ||www.wykop.pl/paylink/emiter/$image,domain=www.wykop.pl
 !
 !
-!--------------------------Adult rules-------------!
-hentaicenter.pl##[id^="AdFAd"]
-bzykanie.com.pl###left
-bzykanie.com.pl##IMG[style="margin: 0 auto; width: 583px; display: block;"]
-||clangames.pl/$domain=bzykanie.com.pl
-||zmarsa.pl/*.axd$script
-||szczekaopada.pl/*.axd$script
-||system.mondeos.pl/_$script
+!-----------------------Youtube: Other Annoyances------------------
+! Removes all annotations in videos
+||youtube.com/annotations_invideo?$object-subrequest
+! HTML5 version
+youtube.com##.video-annotations
+! Removes sharing tab below videos
+||youtube.com/share_ajax?action_get_share_box=1&video_id=$xmlhttprequest
+youtube.com##.action-panel-trigger[role="button"][data-trigger-for="action-panel-share"]
+youtube.com##.yt-uix-button[data-trigger-for="action-panel-share"]
