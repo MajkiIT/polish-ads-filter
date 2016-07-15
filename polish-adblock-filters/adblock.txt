@@ -1161,14 +1161,3 @@ wykop.pl##div.doodle
 *wykop.pl/static/nowywykoppl/css/prawykop.css$stylesheet
 *wykop.pl/*/paylink_$image,domain=www.wykop.pl
 ||www.wykop.pl/paylink/emiter/$image,domain=www.wykop.pl
-!
-!
-!-----------------------Youtube: Other Annoyances------------------
-! Removes all annotations in videos
-||youtube.com/annotations_invideo?$object-subrequest
-! HTML5 version
-youtube.com##.video-annotations
-! Removes sharing tab below videos
-||youtube.com/share_ajax?action_get_share_box=1&video_id=$xmlhttprequest
-youtube.com##.action-panel-trigger[role="button"][data-trigger-for="action-panel-share"]
-youtube.com##.yt-uix-button[data-trigger-for="action-panel-share"]
