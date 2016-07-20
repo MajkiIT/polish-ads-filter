@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 16 July 2016
+! Last modified: 20 July 2016
 ! Expires: 2 days
-! Version: 2016071603
+! Version: 2016072001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016071603 aktualizacja: sob, 16 lipca 2016, 22:15:00
+! v.2016072001 aktualizacja: sr, 20 lipca 2016, 12:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -37,6 +37,10 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 !
 !-----------------------SMS Fake Pages-------------------------------!
 !included https://raw.githubusercontent.com/azet12/KAD/master/KAD.txt
+!
+!
+!-----------------------Popup filters-----------------------!
+||gasurvey.gemius.com$popup
 !
 !
 !-----------------------Popup filters on movie-----------------------!
@@ -344,6 +348,7 @@ gry-online.poszkole.pl##.ad-info
 gry-online.pl###ws-cnt
 gsmservice.pl###banner6
 gsmmaniak.pl##a[href*="techmaniak.pl/www/gact/ckk.php"]
+gwiazdy.wp.pl##.EqSfA
 hdtv.com.pl##center > a[href="http://hushhush.pl"] > img
 hdtv.com.pl##[id^="edit"] > table:nth-of-type(n+2)
 hdtv.com.pl###links
@@ -368,6 +373,7 @@ ipon.pl###rekalama_PodMenu
 itporady.pl##.hidden-xs.r_sidebar
 itvpolska.pl##.cactus-ads
 iv.pl##.text_align_center
+jakdojade.pl##.GOQMLGOLR
 jaka-komorka.pl###ja-right2
 jaka-komorka.pl###ja-botsl1
 jazzsoul.pl##.carousel
@@ -731,7 +737,7 @@ wiocha.pl###posterdiv
 wiocha.pl##.rectadv
 wiocha.pl,showup.tv##A[href*="/click.php"]
 wiocha.pl##.imagediv
-wiocha.pl,alltube.tv,repostuj.pl##[href*="tracking.linktogame.com/aff_"]
+wiocha.pl,alltube.tv,repostuj.pl,jeja.pl##[href*="tracking.linktogame.com/"]
 wiocha.pl##DIV[style="margin:0 auto; max-width:702px;min-height:450px;max-height:550px;overflow:hidden;"]
 wiocha.pl##DIV[style="margin:0 auto; max-width:770px;min-height:450px;max-height:550px;overflow:hidden;vertical-align:middle;padding-bottom:10px;"]
 wirtualnemedia.pl###newsletter
@@ -960,6 +966,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||interia.pl/*/ads-sidebar$script
 ||interia.pl/iframe$subdocument
 ||statics.d404.pl/bundles/spoonsite/$image
+||asa.allegrostatic.pl/display-pl/$image
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1019,8 +1026,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||anime-odcinki.pl/sites/default/files/styles/medium-smaller__200x200_/public/okladki
 @@||adocean-pl.hit.gemius.pl/*/url=http://sport.tvp.pl/$popup,other
 @@||remiza.com.pl/ads/haft/jquery.slides.min.js$script
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=facet.wp.pl|wp.tv|pogoda.wp.pl|portal.abczdrowie.pl
-@@||imasdk.googleapis.com/js/core/$subdocument,domain=facet.wp.pl|wp.tv|pogoda.wp.pl|portal.abczdrowie.pl
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=facet.wp.pl|wp.tv|pogoda.wp.pl|portal.abczdrowie.pl|gwiazdy.wp.pl
+@@||imasdk.googleapis.com/js/core/$subdocument,domain=facet.wp.pl|wp.tv|pogoda.wp.pl|portal.abczdrowie.pl|gwiazdy.wp.pl
 @@||mdn.net/instream/video/client.js$script,domain=facet.wp.pl
 @@||.tradedoubler.com/*www.mediaexpert.pl*
 @@||config.sensic.net/pl1-ssa-w.js$script,domain=get.x-link.pl|tvgry.pl|ipla.tv
