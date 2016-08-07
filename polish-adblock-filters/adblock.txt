@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 1 August 2016
+! Last modified: 7 August 2016
 ! Expires: 2 days
-! Version: 2016080102
+! Version: 2016080701
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016080102 aktualizacja: pon, 1 sierpnia 2016, 19:40:00
+! v.2016080701 aktualizacja: nie, 7 sierpnia 2016, 17:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -158,6 +158,7 @@ pl##.ad
 ##a[href*="/ad/click/"]
 ~thenextweb.com,~pcgamingwiki.com,~gamepedia.com,~mega.nz##[class$="-ads"]
 ##TopTextAd
+##[href*=".hit.gemius.pl"]
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -292,6 +293,7 @@ filmweb.pl###flashcontent3
 fishki.pl###fancybox-wrap
 foodpanda.pl###campaign_22924_lightbox
 forbes.pl###Article-Inner-Content
+fora.pl##.jf--shown.jf__header__bar
 forall.pl##a[href^="http://www.forall.pl/red.php"]
 forsapl.info##iframe
 forum.dobreprogramy.pl##[style="text-align:center;padding:20px 0;"]
@@ -469,6 +471,7 @@ mojaolesnica.pl##DIV[style="float: left; width: 705px;"]
 mojaolesnica.pl##DIV[style="width: 200px; height: 200px;"]
 moszczenica.info##.banneritem
 moto.pl##.template-minimal
+motobanda.pl##.special-block
 motocykl-online.pl##.bgWhite.container > .row > .left-rail > .article > .tools > .col-xs-12.ceneo-box-index
 motoryzacja.interia.pl##div#articleObjectSeeAlso1
 mpolska24.pl##.mpRek
@@ -606,6 +609,7 @@ satkurier.pl###bann > center
 satkurier.pl###right_column_gallery
 satkurier.pl###single_news > div > center
 satkurier.pl###wrapper > center > center
+satkurier.pl##[id^="banner_"]
 saturn.pl###nl_modal
 saturn.pl###nl_overlay
 seb-tv.pl##center
@@ -1073,6 +1077,7 @@ wtkplay.pl,epoznan.pl#@#[class*="reklama"]
 wtkplay.pl,epoznan.pl#@#.reklama
 wtkplay.pl,epoznan.pl#@#.ad
 wtkplay.pl,epoznan.pl#@#.advertising_block
+@@||seansik.nl/seansik/js/ads.js$script
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
@@ -1177,4 +1182,13 @@ wykop.pl##div.doodle
 *wykop.pl/static/nowywykoppl/css/prawykop.css$stylesheet
 *wykop.pl/*/paylink_$image,domain=www.wykop.pl
 ||www.wykop.pl/paylink/emiter/$image,domain=www.wykop.pl
+!
+!
+!--------------------------Rules only to uBlock-------------!
+@@||national-geographic.pl/bundles/burdacore/js/adv.js$script
+national-geographic.pl##.advertising-billboard:style(height: 0px!important;)
+czasbajki.pl###kAdd
+czasbajki.pl###kSplash
+czasbajki.pl###kFinal:style(display: block!important;)
+motobanda.pl###mvideo:style(z-index: 1!important;)
 
