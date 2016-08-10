@@ -3,23 +3,66 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: F4z, xxcriticxx
 ! Homepage: http://www.certyficate.it/
-! Last modified: 7 August 2016
+! Last modified: 10 August 2016
 ! Expires: 2 days
-! Version: 2016080701
+! Version: 2016081001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016080701 aktualizacja: nie, 7 sierpnia 2016, 22:10:00
+! v.2016081001 aktualizacja: sr, 10 sierpnia 2016, 20:10:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
-@@||national-geographic.pl/bundles/burdacore/js/adv.js$script
-national-geographic.pl##.advertising-billboard:style(height: 0px!important;)
-czasbajki.pl###kAdd
-czasbajki.pl###kSplash
-czasbajki.pl###kFinal:style(display: block!important;)
 motobanda.pl###mvideo:style(z-index: 1!important;)
+!# http://alltube.tv/
+!# Ominięcie czekania
 alltube.tv###please-wait-container
 alltube.tv###iframe-container:style(display: block !important;)
+!
+!# http://www.czasbajki.pl/
+!# Ominięcie czekania
+czasbajki.pl###kAdd
+czasbajki.pl###kSplash
+czasbajki.pl###kFinal:style(display: block !important;)
+!
+!# http://www.efilmy.tv/
+!# Ominięcie przycisku "Close Ad and Watch as Free User"
+efilmy.tv###step1
+efilmy.tv###hideOnClick
+efilmy.tv###playerVidzer:style(display: block !important;)
+!
+!# http://gahe.pl/
+!# Ominięcie czekania
+gahe.pl###gameloader
+gahe.pl###flashgame:style(visibility: visible; display: block;)
+!
+!# http://www.gry.jeja.pl/
+!# Ominięcie czekania
+jeja.pl##.gameLoading
+jeja.pl###adLoading
+jeja.pl###swf:style(visibility: visible !important; position: static !important; left: 0px !important;)
+jeja.pl###game:style(visibility: visible !important; position: static !important; left: 0px !important;)
+!
+!# http://www.national-geographic.pl/
+!# Puste miejsce po reklamie
+@@||national-geographic.pl/bundles/burdacore/js/adv.js$script
+national-geographic.pl##.advertising-billboard:style(height: 0px !important;)
+!
+!# http://www.vidzer.net/
+!# Ominięcie przycisku "Close Ad and Watch as Free User"
+vidzer.net###step1
+vidzer.net###hideOnClick
+vidzer.net###playerVidzer:style(display: block !important;)
+!
+!# http://www.wykop.pl/
+!# Usunięcie komunikatu o ciasteczkach
+wykop.pl##.cookie
+wykop.pl##.type-permanent+#nav:style(top: 0px !important)
+wykop.pl##.type-permanent+#nav+div:style(padding-top: 49px !important)
+!
+!# zalukaj.tv 
+!# Usunięcie "KLIKNIJ, ABY OBEJRZEĆ"
+zalukaj.com###freePlayerWatch
+zalukaj.com###free_player:style(display: block !important;)
