@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 23 August 2016
+! Last modified: 28 August 2016
 ! Expires: 2 days
-! Version: 2016082301
+! Version: 2016082801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016082301 aktualizacja: wt, 23 sierpnia 2016, 19:20:00
+! v.2016082801 aktualizacja: nie, 28 sierpnia 2016, 11:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -34,6 +34,7 @@ _banery/980x200
 /data/ap3bo6/*.swf$object,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ://*.*/banery_foto/$image,domain=ki24.info|portalplock.pl|faktypilskie.pl
+.*sales*.pl/offers/$image
 !
 !
 !-----------------------SMS Fake Pages-------------------------------!
@@ -162,6 +163,7 @@ pl##.ad
 ##TopTextAd
 ##[href*=".hit.gemius.pl"]
 ##[id^="giercowniaAd"]
+###a_201
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -209,6 +211,7 @@ cda.pl##[class^="as-"]
 cda.pl##A[href^="http://a.spolecznosci.net/"]
 cda.pl##DIV[style$="width:980px;"]
 cda.pl##.miniPhotoBox
+cenabiznesu.pl##.img-responsive
 centrumxp.pl###WelcomeBox
 chamsko.pl##[href^="http://empire.goodgamestudios.com/"]
 chip.pl###nextartprompt
@@ -308,6 +311,7 @@ forum.autodoradca.pl##.ent
 forum.autodoradca.pl###idRightBanner
 forumrowerowe.org###a1ad
 forum.komputerswiat.pl###post_id_
+forum.pcformat.pl##.classic.post:not([style]):not([id])
 forum.optymalizacja.com##[href$="utm_medium=banner"]
 fotka.com##[id^="billboard_"]
 fotka.com###brd_profil
@@ -325,6 +329,8 @@ gazetapolska.pl###sg2
 gazetapolska.pl##DIV[style="float: left; padding-bottom: 10px; padding-top: 10px; width: 300px"]
 gazetapolska.pl##DIV[style="float: left;width:980px;"]
 gazetaprawna.pl##[style^="text-align:center; margin: 0 0 10px 0"]
+gazetaprawna.pl##.col-xs-off.tpl_ads_adsense.tpl_std_module
+gazetaprawna.pl##.tpl_ads_adexon.tpl_std_module
 glamrap.pl##.popup
 glamrap.pl##IMG[src^="/images/rk3/"]
 glamrap.pl###footmod
@@ -532,6 +538,7 @@ pebx.pl##[id^="funbox_zone_"]
 pebx.pl##.message.sectionMain:not([id^="post-"])
 pebx.pl##.Notices.PanelScroller
 pekao.com.pl###PX45189
+pirackiekino.blogspot.com##img[src*="blogspot.com/-AOw7_"]
 planujemywesele.pl###ad-profile-box1
 play.pl##.overlay-shadow
 playstationforum.pl##[onclick^="MyAdvertisements"]
@@ -566,7 +573,7 @@ pracuj.pl##.expander
 prawo.money.pl###img11155698
 prostozmostu.net###ecoeconomy
 prostozmostu.net###nmb-BusyBox
-postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl##center
+postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl,jajamioasfalt.pl##center
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
 profil.wp.pl##.bxAdv
