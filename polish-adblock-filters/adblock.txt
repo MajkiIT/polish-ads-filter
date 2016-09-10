@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 9 September 2016
+! Last modified: 10 September 2016
 ! Expires: 2 days
-! Version: 2016090903
+! Version: 2016091001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016090903 aktualizacja: ptk, 9 września 2016, 12:45:00
+! v.2016091001 aktualizacja: sob, 10 września 2016, 19:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -157,7 +157,7 @@ pl##.ad
 ##[href^="http://adserwer."]
 ##a[href="http://upfiles.net/ref/"]
 /reklamy/*$image,object
-##[class^="adv-"]
+~megadyskont.pl##[class^="adv-"]
 ##a[href*="/ad/click/"]
 ~thenextweb.com,~pcgamingwiki.com,~gamepedia.com,~mega.nz##[class$="-ads"]
 ##TopTextAd
@@ -169,6 +169,7 @@ pl##.ad
 !------------------------Specific element hiding rules------------------------!
 24tvonline.pl##.dataContainer
 4lomza.pl,zambrow.org##[id*="banner"]
+allegro.pl###installments-banner-container
 alltube.tv###ban-er
 alltube.tv###super-player
 android.com.pl##[id^="text-3"]
@@ -557,6 +558,7 @@ polskastacja.pl##.plotki_bg
 polskastacja.pl,instalki.pl###banner
 polskastacja.pl##DIV[style="display: block; margin: auto; position: relative; width: 750px; height: 200px;"]
 polygamia.pl##[onclick^="adwordsStatistic"]
+polygamia.pl##.adwordbackground
 pomorska.pl##.boxHeader
 pomorska.pl##.jcarousel-container.jcarousel-container-vertical
 pomorska.pl##P[style="font:normal 12px/16px Arial,Tahoma,sans-serif;margin:0;padding:6px 100px 5px 20px;color:#fff;word-wrap:break-word;"]
@@ -1077,6 +1079,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||s.tvp.pl/files/tvplayer/*/advertisement.gif$image
 @@/videojs.ads.$script,domain=filmiki4.maxart.pl
 @@||wtk.pl/javascript/ads.js$script
+@@||cdn.gamer-network.net/plugins/dfp/$script,domain=eurogamer.pl
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
