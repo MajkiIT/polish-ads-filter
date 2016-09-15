@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 11 September 2016
+! Last modified: 15 September 2016
 ! Expires: 2 days
-! Version: 2016091101
+! Version: 2016091501
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016091101 aktualizacja: nie, 11 września 2016, 19:45:00
+! v.2016091501 aktualizacja: czw, 15 września 2016, 10:15:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -257,7 +257,6 @@ download.net.pl##DIV[style="text-align: center; margin: 0 auto;"]
 doz.pl##.clearfix.container > .clearfix.row
 dstar.pzk.pl##[style$="background: #dfdfdf;"]
 dstar.pzk.pl##[style^="text-align: center; font-size: 8px; padding:"]
-dziennik.pl###a_201
 dziennik.pl##[style="text-align:center; margin: 0 0 10px 0;padding-bottom: 20px"]
 e-kg.pl##.bannergroup
 e-kg.pl###jm-banner
@@ -360,6 +359,7 @@ hdtv.com.pl##[id^="edit"] > table:nth-of-type(n+2)
 hdtv.com.pl###links
 hebe.pl###splash_homepage
 hip-hop.pl##DIV[style="clear:both; margin:10px; text-align:center;"]
+hifi.pl##[class$="barek"]
 holidaycheck.pl##.headline
 hopaj.pl##[id^="QAPS_GB_"]
 hqsite.org##.bannertop
@@ -569,6 +569,8 @@ portalsremski.pl##div[class^="ban"]
 portalplock.pl###fixme
 ppe.pl##[class*="adver"]
 ppe.pl###header > .clearfix.header_bg > a[href="http://www.ppe.pl/psx_extreme-2015-4.html"] > img[alt="PSX Extreme 212"]
+ppe.pl##.box > H4
+ppe.pl##.convertiser_comparison
 praca.interia.pl###nsitsp_3
 pracuj.pl##[id^="divFav"]
 pracuj.pl##.betamore.openJDOMWindow
@@ -576,7 +578,7 @@ pracuj.pl##.expander
 prawo.money.pl###img11155698
 prostozmostu.net###ecoeconomy
 prostozmostu.net###nmb-BusyBox
-postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl,jajamioasfalt.pl##center
+postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl,jajamioasfalt.pl,dostawcy-internetu.pl##center
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
 profil.wp.pl##.bxAdv
@@ -659,8 +661,10 @@ sportowefakty.wp.pl##body > cite:nth-of-type(1)
 spryciarze.pl###banner_konkursowy
 steam.io###dd_ajax_float
 store.office.live.com##.popupOuterCellRight
-stooq.com##[onclick*="http://stooq.com/ads/"]
-stooq.com##a[href^="ads/f/"]
+stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"][align="center"]:not([width])
+stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"][align="center"][height="252"]
+stooq.pl,stooq.com##[style^="letter-spacing:"][id]
+stooq.pl##a[href^="ads/f/"]
 strefagry.pl##[style="width:540px;margin:10px auto;"]
 strefagry.pl##.item_d
 styl.pl###headerTopWraper > .headerPre
@@ -1102,9 +1106,9 @@ epiotrkow.pl###abpnot
 cda-online.pl###deadblocker_success_dialog
 @@||www.biznesradar.pl/js/ads/advertising.js$script
 @@://*.*/pl/js/show_ads.js$script,domain=ki24.info|portalplock.pl|faktypilskie.pl
-@@||mmorpg.org.pl/imads.js$script
 www.plotek.pl##.adb_plotek
 @@||mmorpg.org.pl/*ads.js$script
+@@||myao.adocean.pl/_*/ad.xml$xmlhttprequest,domain=sport.tvp.pl
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
