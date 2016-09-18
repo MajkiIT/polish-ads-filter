@@ -2,14 +2,14 @@
 ! Title: Adblock & uBlock polish cookies filters
 ! polskie filtry komunikatow cookies do Adblocka i uBlocka
 ! Homepage: http://www.certyficate.it/
-! Last modified: 28 August 2016
+! Last modified: 18 September 2016
 ! Expires: 4 days (update frequency) 
-! Version: 74
+! Version: 75
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/adblock-polskie-filtry-blokowanie-info-cookies/
-! v.1.74 aktualizacja: nie, 28 sierpnia 2016, 10:40:00
+! v.1.75 aktualizacja: nie, 18 wrzesien 2016, 17:40:00
 !
 !
 1000dni.pl##DIV[style="width: 100%; background-color: rgb(0, 60, 122); padding: 10px 8px; line-height: 20px; left: 0px; position: fixed; margin: 10px auto 0px; bottom: 0px; z-index: 1000; font-size: 13px; font-family: Helvetica,Arial,sans-serif; color: rgb(255, 255, 255);"]
@@ -367,6 +367,7 @@ odjechani.com.pl##.guest_warn
 oferia.pl##DIV[style="position:fixed;z-index:9999999999;bottom:0;left:0;width:100%;background:#eedd27 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAA3CAIAAACkfXwqAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIBJREFUeNrckUEKwlAMRDNJGuoRPJgHLp7BA7gtdCGuTKHTIHykCzeiFMwmJJnHhATj5SgtwBxexe16euaAmN+ncwTUvDre9wp0FGamC4ycSZrC8zGXIKKErssi7qi5CL/AaGPstz7vGYp3qD3qUH/hs2EOe/x0w2Rj7COfVYABAL665UDFkHW5AAAAAElFTkSuQmCC) repeat-x;"]
 off-road.pl###popslide
 ogloszenia.e-gratka.info##div#pojemnik
+ogllo.pl##DIV[style="opacity: 0.9;-moz-opacity:0.9;z-index:999;position:fixed;bottom:0;left:0;right:0;text-align:center;padding:6px;color:#eee;background-color:#666;border-bottom:1px solid gray;"]
 okulary.szkla.com##div#polityka_prywatnosci
 old.wykopoczta.pl###noty_top_layout_container
 olimpiasport.pl##div#sek_cstk_inf
@@ -408,6 +409,7 @@ pl.chili.tv###_evh-ric
 pl.tripadvisor.com###COOKIE_BANNER > .inner
 pl.twich.tv##div#noty_bottomCenter_layout_container
 pl.yahoo.com##div#mediafpwave3-wshade
+playtube.pl##.alert-success
 plotowanie.com##div#howdydo-wrapper
 pobieralnia.org##div[style="text-align: center; height: 40px; width: 100%; left: 0; position: fixed; top: 0; z-index: 2001; background: rgb(165, 62, 4); -webkit-box-shadow: 0px -4px 4px -4px rgba(0, 0, 0, 0.75) inset; box-shadow: 0px -4px 4px -4px rgba(0, 0, 0, 0.75) inset"]
 pochlaniaczwilgoci.com.pl##div[style="display: block; position: fixed; bottom: 0px; z-index: 10000; width: 100%; padding: 10px 0px; border-top-style: solid; border-top-width: 2px; border-top-color: rgb(140, 140, 140); background-color: rgb(250, 250, 250); overflow: hidden; opacity: 0.95; "]
@@ -586,6 +588,7 @@ zielonagora.lasy.gov.pl##.popup-alert-notice
 zkmgdynia.pl##div.kom_polityka_prywatnosci
 zmienimyswiat.pl##.group.polityka
 zosiaikevin.pl##div#novem-slot
+zywiec-zdroj.pl##DIV[style="width: 100%; background-color: rgb(16, 69, 119); padding: 10px 8px; left: 0px; position: fixed; margin: 10px auto 0px; bottom: 0px; z-index: 1000; font-size: 12px; font-family: Helvetica,Arial,sans-serif; color: rgb(255, 255, 255);"]
 www.cefarm24.pl###notice_bar
 wiif.nowybip.pl###jGrowl
 stylowi.pl##DIV[style="position: fixed; left:0; right:0; bottom:0; height:120px; background-color:#eee; border-top: 1px solid black; z-index:16; overflow: auto"]
@@ -595,7 +598,7 @@ www.niemartwsie.pl##.notification
 www.hertz.com.pl##[class^="lb-"]
 www.cmcmarkets.com###cmc-tracking-consent-form-step1
 etransport.pl##.active.visible.transition.page.modals.dimmer.ui
-ttv.pl###msgLayer
+ttv.pl,kontakt24.tvn24.pl###msgLayer
 hankooktire.com##.top_ep_wrap
 www.continental-opony.pl##.scroll-to-fixed-fixed.privacyhint
 www.feuvert.pl###info
@@ -615,6 +618,7 @@ cookie-law-popup.js$script
 ||www.pianomedia.pl/cookies-on-pianomedia$xmlhttprequest
 ||asus.com/cookienotice.json$xmlhttprequest
 ||pl/wp-content/plugins/eu-cookie-law-wp-cookie-law/$script
+||cdn.inaudium.com/js/adtctr.js
 !
 !
 ! Global
@@ -629,7 +633,6 @@ cookie-law-popup.js$script
 ~microsoft.com##[id*="cookie_"]
 ##.cookie-notification
 ###polityka-ciastek
-~niepoddawajsie.pl,~krasnale.pl,~futurevoicesystem.pl,~wmeritum.pl,~pl.forum.elvenar.com,~mcdonalds.co.uk,~astroweb.pl,~zadane.pl,~apteka-amic.pl,~naziemna.info,~planeteplus.pl,~abctygodnik.pl,~fundraising.org.pl,~filmydokumentalne.eu,~mvno-gsm.pl,~infoskawina.pl,~pikio.pl,~qt.io,~teleman.pl,~tablety.pl,~com##[class*="cookie-"]
 ###cookiesEU-box
 ###cookies_info
 ###ciastka_wiadomosc
