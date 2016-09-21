@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 17 September 2016
+! Last modified: 21 September 2016
 ! Expires: 2 days
-! Version: 2016091702
+! Version: 2016092101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016091702 aktualizacja: sob, 17 września 2016, 18:20:00
+! v.2016092101 aktualizacja: sr, 21 września 2016, 10:40:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -119,7 +119,7 @@ tvseriesonline.pl##IMG[src^="http://funkyimg.com/i/"]
 ##div#skapiec_ad
 ##ul.sharing-tools
 ~rp.pl##[id*="reklama"]
-~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl##[class*="reklama"]
+~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org##[class*="reklama"]
 ##.Reklama
 ##.oponeoWidget
 ###oponeoWidget
@@ -148,7 +148,7 @@ pl##.ad
 ##a[href^="https://www.solutions4ad.com/partner/scripts/click.php"]
 ##[id^="ad_global"]
 ##[id^="aswift_"]
-~gumtree.com,~hulu.com,~svobodneforum.cz##[class^="ad-"]
+~hardcorowo.pl,~gumtree.com,~hulu.com,~svobodneforum.cz##[class^="ad-"]
 ##[id^="adv-"]
 ##[href^="http://csr.onet.pl/eclk/clk"]
 ##a[href*="bbelements.com/please/track/adClick/"]
@@ -432,6 +432,7 @@ kurierlubelski.pl##.adSrodek
 linkpolonia.com##.credit-prize-box.credit-prize-box-small
 linktopoland.com##[id^="advertise-row"]
 linuxhelp.in###fan-exit
+ling.pl###arboBig
 live.com##.popupOuterCellLeft
 lm.pl##.belka_z_banerami
 lokalna24.pl##OBJECT[data^="/banery/"]
@@ -502,6 +503,7 @@ nk.pl###content_banner > .ad_sandbox_wrapper
 nudziara.pl##DIV[style="border: 1px solid #D8D0D0; padding: 5px 0px 5px 0px; width:705px;"]
 niebezpiecznik.pl###text-8 > .textwidget
 niebezpiecznik.pl##a[href*="//niebezpiecznik.pl/r3"]
+niebezpiecznik.pl##a[href*="//niebezpiecznik.pl/r4"]
 nocoty.pl,aleseriale.pl###slider300Wrapper
 nokiahacking.pl##.nh_ads
 nowafarmacja.pl##[class^="bg-banner-wrapper"]
@@ -538,8 +540,10 @@ pebx.pl###logoBlock .funbox
 pebx.pl##.noBorderRadius.pageContent > .funbox.sectionMain
 pebx.pl##.funbox.section
 pebx.pl##[id^="funbox_zone_"]
-pebx.pl##.message.sectionMain:not([id^="post-"])
+pebx.pl##li[class="sectionMain message"]:not([id^="post-"])
 pebx.pl##.Notices.PanelScroller
+pebx.pl##.defaultBorderRadius.pageContent > .funbox.sectionMain
+pebx.pl###uix_stickyFooterSpacer
 pekao.com.pl###PX45189
 pirackiekino.blogspot.com##img[src*="blogspot.com/-AOw7_"]
 planujemywesele.pl###ad-profile-box1
@@ -995,6 +999,9 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||news.targeo.pl/oarm.php$xmlhttprequest,domain=mapa.targeo.pl
 ||www.optymalizacja.com/img/$image
 ||bit.ly/2a$popup,domain=mmorpg.org.pl
+||czasdzieci.home.pl/mailingi/iframe/$subdocument,domain=czasdzieci.pl
+||czasdzieci.pl/bannery/$image
+||czasdzieci.pl/adurl.php$popup
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1086,6 +1093,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@/videojs.ads.$script,domain=filmiki4.maxart.pl
 @@||wtk.pl/javascript/ads.js$script
 @@||cdn.gamer-network.net/plugins/dfp/$script,domain=eurogamer.pl
+@@||osgchmura.tk/tv/player/ads.js$script
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
