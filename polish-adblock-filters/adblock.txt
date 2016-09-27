@@ -3,7 +3,7 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 23 September 2016
+! Last modified: 27 September 2016
 ! Expires: 2 days
 ! Version: 2016092305
 ! Contact: errors@certyficate.it
@@ -11,7 +11,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016092305 aktualizacja: ptk, 23 września 2016, 19:50:00
+! v.2016092701 aktualizacja: wt, 27 września 2016, 18:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -64,7 +64,7 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||alltube.tv/pomoc$popup,domain=alltube.tv
 ||zalukaj.com/sdm.php$xmlhttprequest
 ||rm-tracker.com/path/lp.php$popup,domain=kinoman.tv
-||104.1*$script,popup,domain=kinoman.tv|alltube.tv|serialnet.pl|vidzer.net
+||130.211.198.219$script,popup
 ||vo.msecnd.net/$script,domain=kinoman.tv
 ||reklamy.sterta.pl/crossdomain.xml$object-subrequest,domain=playa.pl
 ||cdn.vidzi.tv^
@@ -284,6 +284,7 @@ evertiq.pl##[id^="bnr"]
 fangol.pl##[style="text-align:center;"]
 flashscore.pl###box-over-content-a
 fajowe.pl##.commercial-center
+faktykaliskie.pl##[id^="advt-"]
 fakt.pl###eF > .clr
 fakty.interia.pl##[id^="brendingIplv2_new_starter"]
 fc.hub2.com.pl##HTML[xml\:lang="pl"]
@@ -1005,7 +1006,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||czasdzieci.pl/bannery/$image
 ||czasdzieci.pl/adurl.php$popup
 ||static.osemka.pl/pixad/$image,domain=gry-online.poszkole.pl
-||130.211.198.219^$script
+||googleusercontent.com/$image,domain=openlinksys.info
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1014,7 +1015,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@/:\/\/(?!biuropodrozy)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!facet)(?!wyleczto)(?!kuchnia)(?!film)(?!moto)(?!gwiazdy)(?!teleshow)(?!finanse)(?!kobieta)(?!dom)(?!pogoda)(?!tech)(?!historia)(?!czat)(?!ksiazki)(?!gryonline)(?!hotele)(?!narty)(?!samoloty)(?!wycieczki)(?!hosting)(?!irlandia)(?!multikurs)(?!casino)(?!foto)(?!tech)(?!www)(?!stg)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!alefolwark)(?!angielski)(?!arenamody)(?!beniamin)(?!bon)(?!bsg)(?!casino)(?!diety)(?!dlaprasy)(?!dlugi)(?!doladowania)(?!dom)(?!dysk)(?!ebiznes)(?!ebooki)(?!empire)(?!fantasyliga)(?!film)(?!fundusze)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)(?!gazetki)(?!gry)(?!horoskop)(?!kalendarz)(?!katalog)(?!khanwars)(?!komiks)(?!konflikty)(?!kontakty)(?!korsarze)(?!kultura)(?!mini)(?!mmho)(?!mobilna)(?!morizon)(?!moto)(?!muzyka)(?!narty)(?!naryby)(?!onas)(?!orangekinoletnie)(?!piraci)(?!poczta)(?!pomoc)(?!praca)(?!profil)(?!programtv)(?!pytamy)(?!rekrutacja)(?!rss)(?!rtvagd)(?!rycerzeiksiezniczki)(?!smeet)(?!speedwaymanager)(?!szkola)(?!szukaj)(?!tech)(?!teleshow)(?!triviador)(?!turystyka)(?!twojeip)(?!ulubiency)(?!warodfragons)(?!wycieczki)(?!zdrowie)(?!zoomumba)(?!topnews)(?!erotyka)(?!dzieci)(?!fitness)(?!gielda)(?!finansomat)(?!biznes)(?!sport)[a-zA-Z0-9]{4,9}\.wp.pl\//$xmlhttprequest
 @@/:\/\/.*[.]wp[.]pl\/[a-z0-9_]{15,50}[.][a-z]{2,5}[/:&?]?/
 /:\/\/[a-zA-Z0-9]{6,8}\.onet.pl\//$script,xmlhttprequest,domain=www.onet.pl|vod.pl
-/:\/\/(?!media)(?!www)[a-zA-Z0-9]{3,8}\.onet\.pl\//$xmlhttprequest,domain=vod.pl|www.onet.pl
+/:\/\/(?!media)(?!www)[a-zA-Z0-9]{3,}\.onet\.pl\//$xmlhttprequest,domain=vod.pl|www.onet.pl
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -1099,6 +1100,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||wtk.pl/javascript/ads.js$script
 @@||cdn.gamer-network.net/plugins/dfp/$script,domain=eurogamer.pl
 @@||osgchmura.tk/tv/player/ads.js$script
+@@||tvn.adocean.pl/ad.xml$xmlhttprequest,domain=tvnturbo.pl
+@@||tvn.adocean.pl/__/ad.xml$xmlhttprequest,domain=tvnturbo.pl
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1124,7 +1127,6 @@ cda-online.pl###deadblocker_success_dialog
 www.plotek.pl##.adb_plotek
 @@||mmorpg.org.pl/*ads.js$script
 @@||myao.adocean.pl/_*/ad.xml$xmlhttprequest,domain=sport.tvp.pl
-||bcx.onet.pl$xmlhttprequest,domain=www.onet.pl|vod.pl
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
