@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 30 September 2016
+! Last modified: 1 November 2016
 ! Expires: 2 days
-! Version: 2016093002
+! Version: 2016100101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016093002 aktualizacja: ptk, 30 września 2016, 13:00:00
+! v.2016100101 aktualizacja: sob, 1 pazdziernika 2016, 22:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -212,6 +212,7 @@ cda.pl##[class^="as-"]
 cda.pl##A[href^="http://a.spolecznosci.net/"]
 cda.pl##DIV[style$="width:980px;"]
 cda.pl##.miniPhotoBox
+cda.pl##[class^="bok-"]
 cenabiznesu.pl##.img-responsive
 centrumxp.pl###WelcomeBox
 chamsko.pl##[href^="http://empire.goodgamestudios.com/"]
@@ -245,7 +246,6 @@ dobreprogramy.pl##.list.block-content > div[style$="height: 180px; width: 630;"]
 dobreprogramy.pl##.block > div[style$="height: 600px; width: 300;"]
 dobreprogramy.pl##.page-element.center.target > div[style$="height: 250px; width: 970;"]
 dobreprogramy.pl##a[href="http://loa2.dobregry.pl/"]
-||static.dpcdn.pl/*/assets/img/skin_*/back.jpg
 dojrzalakobieta.pl###slider-with
 dogry.pl##.pro-box
 dom.gratka.pl##.small-12.columns.textC.nieSkacz
@@ -316,6 +316,7 @@ forumrowerowe.org###a1ad
 forum.komputerswiat.pl###post_id_
 forum.pcformat.pl##.classic.post:not([style]):not([id])
 forum.optymalizacja.com##[href$="utm_medium=banner"]
+forum.dobreprogramy.pl##[style="text-align:center;padding:0px 0px 15px 0px;"]
 fotka.com##[id^="billboard_"]
 fotka.com###brd_profil
 fotoszok.pl###tablewraper > center
@@ -674,7 +675,9 @@ store.office.live.com##.popupOuterCellRight
 stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"][align="center"]:not([width])
 stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"][align="center"][height="252"]
 stooq.pl,stooq.com##[style^="letter-spacing:"][id]
-stooq.pl##a[href^="ads/f/"]
+stooq.pl,stooq.com##a[href^="ads/f/"]
+stooq.pl##[onclick*="http://stooq.pl/ads/f/"]
+stooq.com##[onclick*="http://stooq.com/ads/f/"]
 strefagry.pl##[style="width:540px;margin:10px auto;"]
 strefagry.pl##.item_d
 styl.pl###headerTopWraper > .headerPre
@@ -1010,6 +1013,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||czasdzieci.pl/adurl.php$popup
 ||static.osemka.pl/pixad/$image,domain=gry-online.poszkole.pl
 ||googleusercontent.com/$image,domain=openlinksys.info
+||static.dpcdn.pl/*/assets/img/skin_*/back.jpg
 !
 !
 !---------------------------------Multi Regex----------------------------------!
