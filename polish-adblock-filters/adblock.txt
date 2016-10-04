@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 1 November 2016
+! Last modified: 4 October 2016
 ! Expires: 2 days
-! Version: 2016100101
+! Version: 2016100401
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016100101 aktualizacja: sob, 1 pazdziernika 2016, 22:00:00
+! v.2016100401 aktualizacja: wt, 4 pazdziernika 2016, 19:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -95,6 +95,9 @@ tvseriesonline.pl##IMG[src^="http://funkyimg.com/i/"]
 ||adkontekst.pl$script
 ||www.wp.pl/v*/log/view
 ||emisja.adsearch.pl/$xmlhttprequest
+||hit.gemius.pl$script,image
+/js/gemius.js$script
+/gemius/*$script,image
 !
 !
 !------------------------General element hiding rules-------------------------!
@@ -107,7 +110,7 @@ tvseriesonline.pl##IMG[src^="http://funkyimg.com/i/"]
 ##.BanerHPBig
 ##.adoceanGora1Wrapper
 ##.advert
-~wtkplay.pl,~epoznan.pl##[class^="advertisement"]
+~lech.tv,~wtkplay.pl,~epoznan.pl##[class^="advertisement"]
 ##.ceneo-products.clearfix
 ##[id^="ceneoaffcontainer"]
 ##.cookemessagecloseico
@@ -119,7 +122,7 @@ tvseriesonline.pl##IMG[src^="http://funkyimg.com/i/"]
 ##div#skapiec_ad
 ##ul.sharing-tools
 ~rp.pl##[id*="reklama"]
-~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org##[class*="reklama"]
+~smiechawatv.pl,~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org##[class*="reklama"]
 ##.Reklama
 ##.oponeoWidget
 ###oponeoWidget
@@ -159,7 +162,7 @@ pl##.ad
 /reklamy/*$image,object
 ~megadyskont.pl##[class^="adv-"]
 ##a[href*="/ad/click/"]
-~thenextweb.com,~pcgamingwiki.com,~gamepedia.com,~mega.nz##[class$="-ads"]
+~konsoleigry.pl,~thenextweb.com,~pcgamingwiki.com,~gamepedia.com,~mega.nz##[class$="-ads"]
 ##TopTextAd
 ##[href*=".hit.gemius.pl"]
 ##[id^="giercowniaAd"]
@@ -534,6 +537,7 @@ opinie.wp.pl,facet.wp.pl,kobieta.wp.pl,gwiazdy.wp.pl##[style][class="_3iH28"]
 otodom.pl###adsTopOD
 panelradiowy.pl##[id^="slider"]
 parenting.pl###floorBG
+parenting.pl##.a-ctn-d
 pclab.pl###b028
 pclab.pl###a011
 pclab.pl##A[href^="http://click.plista.com/pets/"]
