@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 4 October 2016
+! Last modified: 5 October 2016
 ! Expires: 2 days
-! Version: 2016100401
+! Version: 2016100501
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016100401 aktualizacja: wt, 4 pazdziernika 2016, 19:00:00
+! v.2016100501 aktualizacja: sr, 5 pazdziernika 2016, 09:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -160,9 +160,9 @@ pl##.ad
 ##[href^="http://adserwer."]
 ##a[href="http://upfiles.net/ref/"]
 /reklamy/*$image,object
-~megadyskont.pl##[class^="adv-"]
+~konsoleigry.pl,~megadyskont.pl##[class^="adv-"]
 ##a[href*="/ad/click/"]
-~konsoleigry.pl,~thenextweb.com,~pcgamingwiki.com,~gamepedia.com,~mega.nz##[class$="-ads"]
+~thenextweb.com,~pcgamingwiki.com,~gamepedia.com,~mega.nz##[class$="-ads"]
 ##TopTextAd
 ##[href*=".hit.gemius.pl"]
 ##[id^="giercowniaAd"]
@@ -680,8 +680,8 @@ stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"][align="c
 stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"][align="center"][height="252"]
 stooq.pl,stooq.com##[style^="letter-spacing:"][id]
 stooq.pl,stooq.com##a[href^="ads/f/"]
-stooq.pl##[onclick*="http://stooq.pl/ads/f/"]
-stooq.com##[onclick*="http://stooq.com/ads/f/"]
+stooq.pl,stooq.com##div[onclick^="(function"]
+stooq.pl,stooq.com##a[href][target="_new"]
 strefagry.pl##[style="width:540px;margin:10px auto;"]
 strefagry.pl##.item_d
 styl.pl###headerTopWraper > .headerPre
