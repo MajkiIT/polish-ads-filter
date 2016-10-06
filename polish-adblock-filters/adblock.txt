@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 5 October 2016
+! Last modified: 6 October 2016
 ! Expires: 2 days
-! Version: 2016100501
+! Version: 2016100601
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016100501 aktualizacja: sr, 5 pazdziernika 2016, 09:00:00
+! v.2016100601 aktualizacja: czw, 6 pazdziernika 2016, 09:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -279,7 +279,7 @@ eska.pl##.center.t2.color13
 exsite.pl###adkon
 exsite.pl##DIV[id^="tower_"]
 exsite.pl##[style="width: 586px;height: 369px;margin: 50px auto 50px -18px;overflow-y: hidden;border:1px solid black;"]
-euro.com.pl##[id^="uszy_"]
+euro.com.pl##[id^="background-"]
 eurogamer.pl###leaderboard
 eurogamer.pl###skyscraper
 eurogamer.pl###low-leaderboard
@@ -677,11 +677,10 @@ spryciarze.pl###banner_konkursowy
 steam.io###dd_ajax_float
 store.office.live.com##.popupOuterCellRight
 stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"][align="center"]:not([width])
-stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"][align="center"][height="252"]
-stooq.pl,stooq.com##[style^="letter-spacing:"][id]
-stooq.pl,stooq.com##a[href^="ads/f/"]
-stooq.pl,stooq.com##div[onclick^="(function"]
-stooq.pl,stooq.com##a[href][target="_new"]
+stooq.pl##div[onclick^="(function"][onclick*="window.open"][style^="animation"]
+stooq.pl##[id] > b > a[href^="?"]
+stooq.pl,stooq.com##:xpath(//*[@align="center"]/*[@id][contains(text(),"REKLAMA")])
+stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"]:not([width]):has([id="ads_goog_1"])
 strefagry.pl##[style="width:540px;margin:10px auto;"]
 strefagry.pl##.item_d
 styl.pl###headerTopWraper > .headerPre
