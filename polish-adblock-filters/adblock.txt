@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 9 October 2016
 ! Expires: 2 days
-! Version: 2016100902
+! Version: 2016100903
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016100902 aktualizacja: nie, 9 pazdziernika 2016, 20:30:00
+! v.2016100903 aktualizacja: nie, 9 pazdziernika 2016, 21:10:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -1244,67 +1244,3 @@ wykop.pl##div.doodle
 *wykop.pl/static/nowywykoppl/css/prawykop.css$stylesheet
 *wykop.pl/*/paylink_$image,domain=www.wykop.pl
 ||www.wykop.pl/paylink/emiter/$image,domain=www.wykop.pl
-!
-!
-!--------------------------Rules only to uBlock-------------!
-motobanda.pl###mvideo:style(z-index: 1!important;)
-!# http://alltube.tv/
-!# Ominięcie czekania
-alltube.tv###please-wait-container
-alltube.tv###iframe-container:style(display: block !important;)
-alltube.tv##script:inject(noeval.js)
-!
-!# http://www.czasbajki.pl/
-!# Ominięcie czekania
-czasbajki.pl###kAdd
-czasbajki.pl###kSplash
-czasbajki.pl###kFinal:style(display: block !important;)
-!
-!# http://www.efilmy.tv/
-!# Ominięcie przycisku "Close Ad and Watch as Free User"
-efilmy.tv###step1
-efilmy.tv###hideOnClick
-efilmy.tv###playerVidzer:style(display: block !important;)
-!
-!# http://gahe.pl/
-!# Ominięcie czekania
-gahe.pl###gameloader
-gahe.pl###flashgame:style(visibility: visible; display: block;)
-!
-!# http://www.gry.jeja.pl/
-!# Ominięcie czekania
-jeja.pl##.gameLoading
-jeja.pl###adLoading
-jeja.pl###swf:style(visibility: visible !important; position: static !important; left: 0px !important;)
-jeja.pl###game:style(visibility: visible !important; position: static !important; left: 0px !important;)
-!
-!# http://www.national-geographic.pl/
-!# Puste miejsce po reklamie
-@@||national-geographic.pl/bundles/burdacore/js/adv.js$script
-national-geographic.pl##.advertising-billboard:style(height: 0px !important;)
-!
-!# http://www.vidzer.net/
-!# Ominięcie przycisku "Close Ad and Watch as Free User"
-vidzer.net###step1
-vidzer.net###hideOnClick
-vidzer.net###playerVidzer:style(display: block !important;)
-!
-!# http://www.wykop.pl/
-!# Usunięcie komunikatu o ciasteczkach
-wykop.pl##.cookie
-wykop.pl##.type-permanent+#nav:style(top: 0px !important)
-wykop.pl##.type-permanent+#nav+div:style(padding-top: 49px !important)
-!
-!# zalukaj.tv 
-!# Usunięcie "KLIKNIJ, ABY OBEJRZEĆ"
-zalukaj.com###freePlayerWatch
-zalukaj.com###free_player:style(display: block !important;)
-!
-!# ebay.pl
-ebay.pl##[id="gh"][role="banner"]:style(margin: 0 0 0 0 !important;)
-ebay.pl##[id="gh-gb"][tabindex="-1"][class="gh-banner-active gh-gb-shadow"]:style(border-top: 0px !important;)
-!
-!# gry-online.poszkole.pl
-!# szybsze ładowanie gier
-gry-online.poszkole.pl###fgame:style(width: 850px !important; height: 600px !important;)
-gry-online.poszkole.pl###mr-tomato
