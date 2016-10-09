@@ -2,14 +2,14 @@
 ! Title: Adblock & uBlock polish cookies filters
 ! polskie filtry komunikatow cookies do Adblocka i uBlocka
 ! Homepage: http://www.certyficate.it/
-! Last modified: 18 September 2016
+! Last modified: 9 October 2016
 ! Expires: 4 days (update frequency) 
-! Version: 75
+! Version: 76
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/adblock-polskie-filtry-blokowanie-info-cookies/
-! v.1.75 aktualizacja: nie, 18 wrzesien 2016, 17:40:00
+! v.1.76 aktualizacja: nie, 9 pazdziernik 2016, 19:30:00
 !
 !
 1000dni.pl##DIV[style="width: 100%; background-color: rgb(0, 60, 122); padding: 10px 8px; line-height: 20px; left: 0px; position: fixed; margin: 10px auto 0px; bottom: 0px; z-index: 1000; font-size: 13px; font-family: Helvetica,Arial,sans-serif; color: rgb(255, 255, 255);"]
@@ -445,7 +445,6 @@ racjonalista.pl##div#_ci
 radio.bialystok.pl##DIV[style="float: left; border: 1px solid #424242; width: 990px; height: 100px; margin:5px 0px;"]
 radio81.pl##iframe[src="http://www.radio818v.nazwa.pl/cookies.php"]
 radioem.pl##DIV[style="border: 10px solid rgb(138, 138, 138); border-radius: 10px; box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.898); background-color: rgb(255, 255, 255); padding: 8px 8px 10px; position: fixed; z-index: 99999; right: 20px; left: 20px; bottom: 20px; width: 700px; max-width: 90%;"]
-radioer.pl##body > div:nth-of-type(1) > div
 radiohit.net.pl##div[style="width:880px; padding:10px; margin:3px; background-color:#EFEFEF; color:#000000; text-align:center; margin-bottom:10px; font-weight:normal; display:block; font-size:11px; opacity:1.0; filter:alpha(opacity=100);"]
 radiomerkury.pl##div#privacyPolicyBox
 radiopik.pl##div#hmonit
@@ -623,7 +622,7 @@ cookie-law-popup.js$script
 !
 ! Global
 ~dwkoral.pl,~piekarniaanka.pl,~xboxarcade.pl,~appki.com.pl,~paypal.com,~accounts.google.com##:not(input)[id*="Cookie"]
-~intel.com,~pkn.pl,~topsecret.pl,~starbucks.pl,~isobar.com,~morizon.pl,~abctygodnik.pl,~wykop.pl,~bt4.pl,~kolba.pl,~tablety.pl,~tesco.pl##div[class*="cookie"]
+~autocentrum.pl,~ideabank.pl,~intel.com,~pkn.pl,~topsecret.pl,~starbucks.pl,~isobar.com,~morizon.pl,~abctygodnik.pl,~wykop.pl,~bt4.pl,~kolba.pl,~tablety.pl,~tesco.pl##div[class*="cookie"]
 ~piekarniaanka.pl,~xboxarcade.pl,~everafterhigh.com,~wmeritum.pl,~microsoft.com,~paypal.com,~reserved.com,~zumi.pl,~komunikacja.bialystok.pl,~nvidia.com##:not(input)[id*="cookie"]
 ##[id*="coockie"]
 ~addons.mozilla.org##.privacy-policy
@@ -720,6 +719,10 @@ pl##[id^="polityka-prywatnosci"]
 /cookiesWidget/widget.js$script
 ###privacy_policy_bar
 ##.policy-box
+/jquery.cookie.js$script
+###privacy-notice
+/javascript/cookieser.js$script
+/cookie_notify/*
 !
 !
 !----------------Whitelist---------------------------
