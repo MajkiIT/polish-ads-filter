@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 12 October 2016
+! Last modified: 13 October 2016
 ! Expires: 2 days
-! Version: 2016101201
+! Version: 2016101301
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016101201 aktualizacja: sr, 12 pazdziernika 2016, 20:30:00
+! v.2016101301 aktualizacja: czw, 13 pazdziernika 2016, 17:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -168,6 +168,7 @@ pl##.ad
 ##[href*=".hit.gemius.pl"]
 ##[id^="giercowniaAd"]
 ###a_201
+.pl/www/sys/ajs*.php?$script
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -1019,6 +1020,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||static.osemka.pl/pixad/$image,domain=gry-online.poszkole.pl
 ||googleusercontent.com/$image,domain=openlinksys.info
 ||static.dpcdn.pl/*/assets/img/skin_*/back.jpg
+||system.mondeos.pl/$image,script
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1242,6 +1244,8 @@ wykop.pl##.baner-mobile
 www.wykop.pl##article.slim
 wykop.pl##li.payentry
 wykop.pl##div.doodle
-*wykop.pl/static/nowywykoppl/css/prawykop.css$stylesheet
 *wykop.pl/*/paylink_$image,domain=www.wykop.pl
 ||www.wykop.pl/paylink/emiter/$image,domain=www.wykop.pl
+||nowy.wykop.pl/static/nowywykoppl/sponsors/$image,stylesheet
+wykop.pl##a[class*=screening]
+||wykop.pl/tracker/emiter/$image,domain=www.wykop.pl
