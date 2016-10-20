@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 20 October 2016
 ! Expires: 2 days
-! Version: 2016102006
+! Version: 2016102007
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016102006 aktualizacja: czw, 20 pazdziernika 2016, 21:30:00
+! v.2016102007 aktualizacja: czw, 20 pazdziernika 2016, 22:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -419,7 +419,6 @@ jelonka.com##[style="height:101px"]
 jobs.pl###gbpl_oba
 joemonster.org##DIV[style="position: fixed;bottom: 0;width: 1020px;height: 100px;background-color: #eee;border: 1px solid black;z-index: 1000;overflow: auto;left: 50%;margin-left: -510px;border-bottom: 0;"]
 joemonster.org##a[href*="utm_source=JoeMonster&utm_medium=Rectangle&utm_campaign="]
-joemonster.org###main_billboard
 joemonster.org##.matchedContent
 jysk.promoceny.pl###mbImage
 jysk.promoceny.pl###mbOverlay
@@ -922,6 +921,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||ddwloclawek.pl/banery_foto/*.jpg$image
 ||dot.wp.pl^
 ||dpcdn.pl/*/bg.jpg$image,domain=dobreprogramy.pl
+||doubleclick.net^
 ||embed.powercontent.pl^
 ||emisja.adsearch.pl$script,domain=cdaction.pl
 ||emisja.adsearch.pl/_/intext_static/?prefix=interia&browser=$script,domain=interia.pl
@@ -1267,3 +1267,7 @@ wykop.pl##div.doodle
 ||nowy.wykop.pl/static/nowywykoppl/sponsors/$image,stylesheet,script
 wykop.pl##a[class*=screening]
 ||wykop.pl/tracker/emiter/$image,domain=www.wykop.pl
+!
+!
+!--------------------------Rules unblock protection------------!
+@@||avangarde.unblock.onaudience.com/static/showad.js$xmlhttprequest,domain=joemonster.org
