@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 17 October 2016
+! Last modified: 20 October 2016
 ! Expires: 2 days
-! Version: 2016101702
+! Version: 2016102001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016101702 aktualizacja: pon, 17 pazdziernika 2016, 14:20:00
+! v.2016102001 aktualizacja: czw, 20 pazdziernika 2016, 08:40:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -219,7 +219,7 @@ cda.pl##.pser-kob-pparw
 cda.pl##A[href^="http://a.spolecznosci.net/"]
 cda.pl##DIV[style$="width:980px;"]
 cda.pl##.miniPhotoBox
-cda.pl##[class^="bok-"]
+cda.pl##div[class][style*="position:absolute;"] > div[id] > a[href^="http://www.cda.pl/video/"][target="_blank"]
 cenabiznesu.pl##.img-responsive
 centrumxp.pl###WelcomeBox
 centrumdruku3d.pl###slide-bottom-popup
@@ -300,6 +300,7 @@ fcinter.pl##.text-center
 filesdark.com##[href*="/adac.php"]
 films4free.pl##.M2U3OGQ4ZGY1
 filmweb.pl###flashcontent3
+filmweb.pl###pasekup
 film.wp.pl##[style][class="qd-US"]
 fishki.pl###fancybox-wrap
 foodpanda.pl###campaign_22924_lightbox
@@ -925,6 +926,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||forms.e-petrol.pl/abc/html/logo/
 ||free-all.pl/bb/$image,domain=free-all.pl
 ||freedisc.pl/static/player/*/vast.js$script
+||fwcdn.pl/adv/$subdocument
 ||gfx.antyradio.pl/var/antyradio/storage/images/linki-graficzne/
 ||googleusercontent.com/$image,domain=openlinksys.info
 ||gowork.pl/images/top_img/$image,domain=gowork.pl
@@ -1151,6 +1153,8 @@ www.plotek.pl##.adb_plotek
 mmorpg.org.pl##.adsbygoogle
 @@||tuba.pl/*/ad/$xmlhttprequest
 ||filmozercy.com/img/adblock/$image
+@@||komputerswiat.pl^$generichide
+komputerswiat.pl##.adsense
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
