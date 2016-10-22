@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 21 October 2016
 ! Expires: 2 days
-! Version: 2016102101
+! Version: 2016102201
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016102101 aktualizacja: ptk, 21 pazdziernika 2016, 19:00:00
+! v.2016102201 aktualizacja: sob, 22 pazdziernika 2016, 19:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -172,6 +172,7 @@ pl##.ad
 ##[id^="giercowniaAd"]
 ###a_201
 .pl/www/sys/ajs*.php?$script
+##.zalando-ad
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -376,6 +377,7 @@ hdtv.com.pl###links
 hebe.pl###splash_homepage
 hip-hop.pl##DIV[style="clear:both; margin:10px; text-align:center;"]
 hifi.pl##[class$="barek"]
+hoga.pl###php_widget-32
 holidaycheck.pl##.headline
 hopaj.pl##[id^="QAPS_GB_"]
 hqsite.org##.bannertop
@@ -901,12 +903,14 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||avanti24.pl/pub/ips/$subdocument
 ||baje.pl/rotator/show.php
 ||bbcdn.code.intext.contextad.pl/css/bubble/
-||bi.adview.pl/info/ban/
+||bi.adview.pl/$stylesheet,script
 ||bit.ly/2a$popup,domain=mmorpg.org.pl
 ||buletproofserving.com^$third-party
+||businessclick.biz.pl/awrapper$script
 ||cda.pl/crossdomain.xml$object-subrequest,domain=cda.pl
 ||cda.pl/images/branding/$image,domain=cda.pl
 ||cdn.syndication.twitter.com/widgets/tweetbutton/
+||cdn.dtxngr.com/$script
 ||adocean.pl^
 ||cloudfront.net/*$domain=allegro.pl
 ||code.intext.contextad.pl/pages$script
@@ -941,6 +945,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||gry-online.pl/im/zmieniarka/$image,domain=gry-online.pl
 ||haloursynow.pl/img/banery/
 ||hotcash.pl/bannery/*.gif
+||hotmoda.pl/sklep/GetIframe$subdocument
 ||hub.com.pl/*/_ds/interia-$image,domain=fakty.interia.pl
 ||hub.com.pl/*/ad.js$script
 ||ib.gazeta.pl/abc/$image,domain=polygamia.pl|plotek.pl
@@ -977,6 +982,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||pclab.pl/partners/$image,subdocument,domain=pclab.pl
 ||pogodynka.onet.pl/apiinfos/htmlwarn/
 ||portalplock.pl/banery/
+||ppstatic.pl/*/tymczasowe/$image
 ||rect.b2bpersonals.net^
 ||redcoon.pl/res/Image/special$image
 ||redcoon.pl/res/outer/2015/11/sk_$image
@@ -1161,6 +1167,7 @@ mmorpg.org.pl##.adsbygoogle
 @@||komputerswiat.pl^$generichide
 komputerswiat.pl##.adsense
 sport.tvp.pl###tvpoverlay_abdinfo
+@@||ppstatic.pl/*/ads.js$script,domain=pomorska.pl
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
