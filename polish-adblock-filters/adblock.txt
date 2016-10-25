@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 24 October 2016
+! Last modified: 25 October 2016
 ! Expires: 2 days
-! Version: 2016102402
+! Version: 2016102501
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016102402 aktualizacja: pon, 24 pazdziernika 2016, 22:50:00
+! v.2016102501 aktualizacja: wt, 25 pazdziernika 2016, 10:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -35,6 +35,7 @@ _banery/980x200
 pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ://*.*/banery_foto/$image,domain=ki24.info|portalplock.pl|faktypilskie.pl
 .*sales*.pl/offers/$image
+##a[href*="techmaniak.pl/www/gact/ckk.php"]
 !
 !
 !-----------------------SMS Fake Pages-------------------------------!
@@ -103,6 +104,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ||gemius.pl^
 ||revsci.net^
 ||kozaczek.pl/stats.php$xmlhttprequest
+||adnxs.com^
 !
 !
 !------------------------General element hiding rules-------------------------!
@@ -289,6 +291,7 @@ exsite.pl###adkon
 exsite.pl##DIV[id^="tower_"]
 exsite.pl##[style="width: 586px;height: 369px;margin: 50px auto 50px -18px;overflow-y: hidden;border:1px solid black;"]
 euro.com.pl##[id^="background-"]
+euro.com.pl##[id^="uszy_"]
 eurogamer.pl###leaderboard
 eurogamer.pl###skyscraper
 eurogamer.pl###promo-section
@@ -329,7 +332,8 @@ forumrowerowe.org###a1ad
 forum.komputerswiat.pl###post_id_
 forum.pcformat.pl##.classic.post:not([style]):not([id])
 forum.optymalizacja.com##[href$="utm_medium=banner"]
-forum.dobreprogramy.pl##[style="text-align:center;padding:0px 0px 15px 0px;"]
+forum.dobreprogramy.pl##div[style="text-align:center;padding:5px 0px 15px 0px;"]
+forum.dobreprogramy.pl##div[style="margin:0px 0px 20px 0px;text-align:center;"]
 fotka.com##[id^="billboard_"]
 fotka.com###brd_profil
 fotoszok.pl###tablewraper > center
@@ -370,7 +374,6 @@ gry-online.poszkole.pl##.ad-info
 gry-online.pl###ws-cnt
 gry-online.poszkole.pl###pixad
 gsmservice.pl###banner6
-gsmmaniak.pl##a[href*="techmaniak.pl/www/gact/ckk.php"]
 gwiazdy.wp.pl##.EqSfA
 hdtv.com.pl##center > a[href="http://hushhush.pl"] > img
 hdtv.com.pl##[id^="edit"] > table:nth-of-type(n+2)
@@ -606,7 +609,7 @@ pracuj.pl##.expander
 prawo.money.pl###img11155698
 prostozmostu.net###ecoeconomy
 prostozmostu.net###nmb-BusyBox
-postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl,jajamioasfalt.pl,dostawcy-internetu.pl##center
+postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl,jajamioasfalt.pl,dostawcy-internetu.pl,forum.bukmacherskie.com##center
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
 profil.wp.pl##.bxAdv
@@ -845,6 +848,8 @@ www.ppe.pl###content > .column-right
 www.pless.pl##.linki-sponsorowane-col
 www.pless.pl##main > .small.pasek-gray
 www.ceneo.pl##[class^="promoted-"]
+www.ceneo.pl###REK_Produkt_OPIS
+www.ceneo.pl##.highlighted-offers
 www.kmh24.pl##.banner-wrapper
 www.nexto.pl##iframe[src^="http://get.x-link.pl/"]
 www.morele.net##[id$="_ucho"]
@@ -874,7 +879,7 @@ zapytaj.onet.pl###content > aside > div:nth-of-type(1)
 zapytaj.onet.pl###promoTop
 zapytaj.onet.pl##div[id*="sliderSidebar"]
 zarabiara.pl##[class^="new_ad"]
-zaufanatrzeciastrona.pl##a[href*="//zaufanatrzeciastrona.pl/kl"]
+zaufanatrzeciastrona.pl###sidebar > a[href$=".php"]
 zumi.pl###couponsBar
 zumi.pl###offersBar
 zycietoprzygoda.pl###ck_dsclr
@@ -1139,6 +1144,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||osgchmura.tk/tv/player/ads.js$script
 @@||tvn.adocean.pl/ad.xml$xmlhttprequest,domain=tvnturbo.pl
 @@||tvn.adocean.pl/__/ad.xml$xmlhttprequest,domain=tvnturbo.pl
+@@||optimus.pl/temp/adrotator_miniatury/$image
+@@||stats.qmerce.com/interaction-stats/$xmlhttprequest,domain=renderer.qmerce.com
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
