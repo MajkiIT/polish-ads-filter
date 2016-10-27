@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 25 October 2016
+! Last modified: 27 October 2016
 ! Expires: 2 days
-! Version: 2016102501
+! Version: 2016102701
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016102501 aktualizacja: wt, 25 pazdziernika 2016, 10:50:00
+! v.2016102701 aktualizacja: czw, 27 pazdziernika 2016, 08:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -169,13 +169,15 @@ pl##.ad
 /reklamy/*$image,object
 ~konsoleigry.pl,~megadyskont.pl##[class^="adv-"]
 ##a[href*="/ad/click/"]
-~thenextweb.com,~pcgamingwiki.com,~gamepedia.com,~mega.nz##[class$="-ads"]
+~trojmiasto.pl,~thenextweb.com,~pcgamingwiki.com,~gamepedia.com,~mega.nz##[class$="-ads"]
 ##TopTextAd
 ##[href*=".hit.gemius.pl"]
 ##[id^="giercowniaAd"]
 ###a_201
 .pl/www/sys/ajs*.php?$script
 ##.zalando-ad
+###like-us-adblock-modal
+##.popup-premium__apla
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -850,6 +852,7 @@ www.pless.pl##main > .small.pasek-gray
 www.ceneo.pl##[class^="promoted-"]
 www.ceneo.pl###REK_Produkt_OPIS
 www.ceneo.pl##.highlighted-offers
+www.mycenter.pl##[id^="place3_v"]
 www.kmh24.pl##.banner-wrapper
 www.nexto.pl##iframe[src^="http://get.x-link.pl/"]
 www.morele.net##[id$="_ucho"]
@@ -1057,7 +1060,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 /:\/\/(?!biuropodrozy)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!facet)(?!wyleczto)(?!kuchnia)(?!film)(?!moto)(?!gwiazdy)(?!teleshow)(?!finanse)(?!kobieta)(?!dom)(?!pogoda)(?!tech)(?!historia)(?!czat)(?!ksiazki)(?!gryonline)(?!hotele)(?!narty)(?!samoloty)(?!wycieczki)(?!hosting)(?!irlandia)(?!multikurs)(?!casino)(?!foto)(?!tech)(?!www)(?!stg)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!alefolwark)(?!angielski)(?!arenamody)(?!beniamin)(?!bon)(?!bsg)(?!casino)(?!diety)(?!dlaprasy)(?!dlugi)(?!doladowania)(?!dom)(?!dysk)(?!ebiznes)(?!ebooki)(?!empire)(?!fantasyliga)(?!film)(?!fundusze)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)(?!gazetki)(?!gry)(?!horoskop)(?!kalendarz)(?!katalog)(?!khanwars)(?!komiks)(?!konflikty)(?!kontakty)(?!korsarze)(?!kultura)(?!mini)(?!mmho)(?!mobilna)(?!morizon)(?!moto)(?!muzyka)(?!narty)(?!naryby)(?!onas)(?!orangekinoletnie)(?!piraci)(?!poczta)(?!pomoc)(?!praca)(?!profil)(?!programtv)(?!pytamy)(?!rekrutacja)(?!rss)(?!rtvagd)(?!rycerzeiksiezniczki)(?!smeet)(?!speedwaymanager)(?!szkola)(?!szukaj)(?!tech)(?!teleshow)(?!triviador)(?!turystyka)(?!twojeip)(?!ulubiency)(?!warodfragons)(?!wycieczki)(?!zdrowie)(?!zoomumba)(?!topnews)(?!erotyka)(?!dzieci)(?!fitness)(?!gielda)(?!finansomat)(?!biznes)(?!sport)[a-zA-Z0-9]{4,9}\.wp.pl\//
 @@/:\/\/(?!biuropodrozy)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!facet)(?!wyleczto)(?!kuchnia)(?!film)(?!moto)(?!gwiazdy)(?!teleshow)(?!finanse)(?!kobieta)(?!dom)(?!pogoda)(?!tech)(?!historia)(?!czat)(?!ksiazki)(?!gryonline)(?!hotele)(?!narty)(?!samoloty)(?!wycieczki)(?!hosting)(?!irlandia)(?!multikurs)(?!casino)(?!foto)(?!tech)(?!www)(?!stg)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!alefolwark)(?!angielski)(?!arenamody)(?!beniamin)(?!bon)(?!bsg)(?!casino)(?!diety)(?!dlaprasy)(?!dlugi)(?!doladowania)(?!dom)(?!dysk)(?!ebiznes)(?!ebooki)(?!empire)(?!fantasyliga)(?!film)(?!fundusze)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)(?!gazetki)(?!gry)(?!horoskop)(?!kalendarz)(?!katalog)(?!khanwars)(?!komiks)(?!konflikty)(?!kontakty)(?!korsarze)(?!kultura)(?!mini)(?!mmho)(?!mobilna)(?!morizon)(?!moto)(?!muzyka)(?!narty)(?!naryby)(?!onas)(?!orangekinoletnie)(?!piraci)(?!poczta)(?!pomoc)(?!praca)(?!profil)(?!programtv)(?!pytamy)(?!rekrutacja)(?!rss)(?!rtvagd)(?!rycerzeiksiezniczki)(?!smeet)(?!speedwaymanager)(?!szkola)(?!szukaj)(?!tech)(?!teleshow)(?!triviador)(?!turystyka)(?!twojeip)(?!ulubiency)(?!warodfragons)(?!wycieczki)(?!zdrowie)(?!zoomumba)(?!topnews)(?!erotyka)(?!dzieci)(?!fitness)(?!gielda)(?!finansomat)(?!biznes)(?!sport)[a-zA-Z0-9]{4,9}\.wp.pl\//$xmlhttprequest
 @@/:\/\/.*[.]wp[.]pl\/[a-z0-9_]{10,50}[.][a-z]{2,5}[/:&?]?/
-@@/:\/\/.{3,10}\.wp\.pl\/.*[!*;@\$)[:].*\.(js|html|xml|jpg|gif|png)/
+@@/:\/\/(adv|rek\.www|owabgxis|fntajkb)\.wp\.pl\/(.{0,10}[&!*;@\$)[\]:%].*|[a-zA-Z0-9_.]{4,20})\.(js|html|xml|jpg|gif|png)/
 !
 !
 !---------------------------------Whitelists----------------------------------!
