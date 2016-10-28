@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 27 October 2016
+! Last modified: 28 October 2016
 ! Expires: 2 days
-! Version: 2016102701
+! Version: 2016102801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016102701 aktualizacja: czw, 27 pazdziernika 2016, 08:50:00
+! v.2016102801 aktualizacja: ptk, 28 pazdziernika 2016, 08:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -129,7 +129,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##div#skapiec_ad
 ##ul.sharing-tools
 ~rp.pl##[id*="reklama"]
-~przerwanareklame.pl,~tvpolska.pl,~smiechawatv.pl,~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org##[class*="reklama"]
+~wirtualny-wojownik.pl,~przerwanareklame.pl,~tvpolska.pl,~smiechawatv.pl,~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org##[class*="reklama"]
 ##.Reklama
 ##.oponeoWidget
 ###oponeoWidget
@@ -370,6 +370,7 @@ gowork.pl##.popup-free-offer
 grafoteka.pl###info
 gram.pl##.stripeBar
 gram.pl###billBoardAreaWrapper
+grupa7j.pl##table[style*="img/bg-black.png"] > tbody > tr
 gry-online.pl##.ban-fp-970x200
 gry-online.pl##[class$="-stopka"]
 gry-online.poszkole.pl##.ad-info
@@ -455,6 +456,7 @@ kurierlubelski.pl###oponeo
 kurierlubelski.pl###sm-sg
 kurierlubelski.pl,panoramafirm.pl###top
 kurierlubelski.pl##.adSrodek
+letsplej.pl##.rekl
 linkpolonia.com##.credit-prize-box.credit-prize-box-small
 linktopoland.com##[id^="advertise-row"]
 linuxhelp.in###fan-exit
@@ -900,7 +902,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||ad.adview.pl/ad/
 ||ad.gazeta.pl/cpc$script,domain=kobieta.gazeta.pl
 ||ad.zanox.com$third-party
-||adocean.pl^$domain=ekstraklasa.tv|itvn.pl|player.pl|ttv.pl|tvn.pl|tvn24.pl|tvn24bis.pl|tvn7.pl|tvnplayer.pl|tvnstyle.pl|tvnturbo.pl
 ||ads.gry-online.pl^
 ||adserwer.adtools.pl^$script,subdocument,domain=video.anyfiles.pl|adserwer.adtools.pl|serialeonline.pl
 ||adv.wp.pl^
@@ -1149,6 +1150,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||tvn.adocean.pl/__/ad.xml$xmlhttprequest,domain=tvnturbo.pl
 @@||optimus.pl/temp/adrotator_miniatury/$image
 @@||stats.qmerce.com/interaction-stats/$xmlhttprequest,domain=renderer.qmerce.com
+@@||emspartner.pl/wp-content/plugins/duracelltomi-google-tag-manager/js/$script
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1186,6 +1188,8 @@ onet.pl###extraAdsBlock
 onet.pl##.addthis_toolbox
 @@||sascdn.com/video/$script,domain=eskago.pl
 @@||eskago.pl/html/js/ads-header.js$script
+@@||grupa7j.pl/joomla/images/my/gallery_advert/$image,domain=grupa7j.pl
+||niepoprawni.pl/sites/all/libraries/copier/bck.js$script
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
