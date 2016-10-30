@@ -2,14 +2,14 @@
 ! Title: Adblock & uBlock polish cookies filters
 ! polskie filtry komunikatow cookies do Adblocka i uBlocka
 ! Homepage: http://www.certyficate.it/
-! Last modified: 12 October 2016
+! Last modified: 30 October 2016
 ! Expires: 4 days (update frequency) 
-! Version: 76
+! Version: 77
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/adblock-polskie-filtry-blokowanie-info-cookies/
-! v.1.76 aktualizacja: sr, 12 pazdziernik 2016, 21:30:00
+! v.1.77 aktualizacja: nie, 30 pazdziernik 2016, 20:30:00
 !
 !
 1000dni.pl##DIV[style="width: 100%; background-color: rgb(0, 60, 122); padding: 10px 8px; line-height: 20px; left: 0px; position: fixed; margin: 10px auto 0px; bottom: 0px; z-index: 1000; font-size: 13px; font-family: Helvetica,Arial,sans-serif; color: rgb(255, 255, 255);"]
@@ -322,6 +322,7 @@ mini-itx.com.pl##div#ciastka
 miplo.pl##div[style="zoom: 1; border: none; position: relative; "][class="error rounded"]
 mixmedia.pl##div#cook_info
 mklr.pl##DIV[style="position: fixed; left:0; right:0; bottom:0; height:40px; background-color:#eee; border-top: 1px solid black; z-index:1000; overflow: auto"]
+mkidn.gov.pl###pa
 mocnopomocni.pl##div[style="width: 100%; background-color: rgb(242, 242, 242); margin: 10px auto 0px; padding: 15px 8px; position: fixed; left: 0px; bottom: 0px; z-index: 1000; color: rgb(40, 40, 40); "]
 mocnopomocni.pl##DIV[style="width: 100%; background-color: rgb(242, 242, 242); margin: 10px auto 0px; padding: 15px 8px; position: fixed; left: 0px; bottom: 0px; z-index: 1000; color: rgb(40, 40, 40);"]
 moje-filmy.tk##.ggu-bot-snapped-launcher
@@ -605,6 +606,12 @@ www.mmtv.pl###policyInfo
 www3.syngenta.com###hideMe
 profitsms.pl###eurociacho
 www.tupperware.pl##.topRibbon
+www.lifescan.pl##.simplemodal-wrap
+www.lifescan.pl###simplemodal-overlay
+www.nfz-zielonagora.pl###statementWrapper
+www.pro-tech.bydgoszcz.pl###easyNotification
+kwantylion.pl###icc_message
+ergokantor.pl##.alert-warning.alert
 !
 !
 ! URLs
@@ -679,7 +686,7 @@ cookie-law-popup.js$script
 /js/cookieinfo.js
 /js/polityka_cookies.js$script
 /js/info_o_cookie.js
-/js/jquery.cookie.min.js$script,domain=~uplayconnect.ubi.com
+/js/jquery.cookie.min.js$script,domain=~uplayconnect.ubi.com,~rozklad-pkp.pl
 /cookie_msg.js$script
 /savecookie.js$script
 /cookie.js$script
@@ -722,6 +729,12 @@ pl##[id^="polityka-prywatnosci"]
 ###privacy-notice
 /javascript/cookieser.js$script
 /cookie_notify/*
+##.cookies-info
+###ciasteczka-komunikat
+##[id$="cookie-bar"]
+/js/jquery.cookie.min.js$script,domain=~rozklad-pkp.pl
+##.politykaprywatnosci
+##.ciasteczka
 !
 !
 !----------------Whitelist---------------------------
@@ -730,5 +743,10 @@ pl##[id^="polityka-prywatnosci"]
 @@||rozklad.pkp.pl/js/$script
 @@||cdaction.pl/views/js1/cookie.js$script
 @@/plugins/uk-cookie-consent/assets/js/uk-cookie-consent-js.js$script,domain=xboxarcade.pl
-telepizza.pl#@#div[class*="cookie"]
+letsplej.pl,telepizza.pl#@#div[class*="cookie"]
 @@||www.nba.com/themes/custom/membership/js/lib/cookie.js$script
+orange.pl#@##cookies-info
+orange.pl#@#div[class*="cookie"]
+orange.pl#@#:not(input)[id*="Cookie"]
+orange.pl#@#:not(input)[id*="cookie"]
+redbullmobilecollect.pl#@#[id^="polityka-prywatnosci"]
