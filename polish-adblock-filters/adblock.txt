@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 5 November 2016
 ! Expires: 2 days
-! Version: 2016110501
+! Version: 2016110502
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016110501 aktualizacja: sob, 5 listopada 2016, 09:45:00
+! v.2016110502 aktualizacja: sob, 5 listopada 2016, 19:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -178,6 +178,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##.zalando-ad
 ###like-us-adblock-modal
 ##.popup-premium__apla
+##[id^="banner_900x"]
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -1060,6 +1061,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www.wiocha.pl/subpages/page.php
 ||www1.advice.movie.advlab.pl$object,domain=get.x-link.pl
 ||zulawyimierzeja24.pl/assets/js/jwplayer/jwplayer.html5.js
+||lidl.pl/statics/lidl-pl/ds_img/layout/tapeta_$image
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1194,7 +1196,7 @@ onet.pl##.addthis_toolbox
 @@||eskago.pl/html/js/ads-header.js$script
 @@||grupa7j.pl/joomla/images/my/gallery_advert/$image,domain=grupa7j.pl
 ||niepoprawni.pl/sites/all/libraries/copier/bck.js$script
-@@||satkurier.pl/frontEnd/js/ads.js$script
+@@/js/ads.js$script,domain=solarkurier.pl|satkurier.pl
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
