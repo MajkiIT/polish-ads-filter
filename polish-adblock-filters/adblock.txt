@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 1 November 2016
+! Last modified: 5 November 2016
 ! Expires: 2 days
-! Version: 2016110103
+! Version: 2016110501
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016110103 aktualizacja: wt, 1 listopada 2016, 18:45:00
+! v.2016110501 aktualizacja: sob, 5 listopada 2016, 09:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -56,7 +56,7 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||theme.gofilm.pl/js/scripts.js
 ||static.vidso.tv/player.gif$domain=embed.vidso.tv
 ||static.openload.io/ad/display.php$popup
-||bubble.am/?utm_source=zalukaj.tv$popup,domain=zalukaj.tv
+||bubble.am/?utm_source$popup,domain=zalukaj.tv|zalukaj-tv.com
 ||seans-online.tv/wp-content/themes/lukajfilm/images/player.jpg
 ||bar.pianomedia.eu/^$script,domain=wyborcza.pl
 ||ad.gazeta.pl/cpc/$script,domain=wyborcza.pl
@@ -228,7 +228,7 @@ cda.pl##.pser-kob-pparw
 cda.pl##A[href^="http://a.spolecznosci.net/"]
 cda.pl##DIV[style$="width:980px;"]
 cda.pl##.miniPhotoBox
-cda.pl##div[class][style*="position:absolute;"] > div[id] > a[href^="http://www.cda.pl/video/"][target="_blank"]
+cda.pl##div > span > a[href^="http://www.cda.pl/video/"][target="_blank"]
 cenabiznesu.pl##.img-responsive
 centrumxp.pl###WelcomeBox
 centrumdruku3d.pl###slide-bottom-popup
@@ -1112,7 +1112,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||ak-ns.sascdn.com/diff/templates/$script,domain=www4.rp.pl
 @@||diff3.smartadserver.com/diff/$object,domain=get.x-link.pl
 @@||video.anyfiles.pl/pageloading/all-loader.jsp?ads=true$xmlhttprequest,domain=video.anyfiles.pl
-@@||rek.www.wp.pl/pliki/*.js$script,domain=autokult.pl|fotoblogia.pl|gadzetomania.pl|komorkomania.pl|wp.tv|polskastacja.pl|portal.abczdrowie.pl|parenting.pl|forum.kardiolo.pl|facet.wp.pl|wiadomosci.wp.pl
 @@||staticpics2.allegrostatic.pl/adverts/otomoto_pl/*128x96$image,domain=allegro.pl
 @@||hit.gemius.pl/xgemius.js$script,domain=freedisc.pl
 @@||ngastatic.com/*/collect.js$script,domain=allegro.pl
@@ -1195,6 +1194,7 @@ onet.pl##.addthis_toolbox
 @@||eskago.pl/html/js/ads-header.js$script
 @@||grupa7j.pl/joomla/images/my/gallery_advert/$image,domain=grupa7j.pl
 ||niepoprawni.pl/sites/all/libraries/copier/bck.js$script
+@@||satkurier.pl/frontEnd/js/ads.js$script
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
