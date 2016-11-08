@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 6 November 2016
+! Last modified: 8 November 2016
 ! Expires: 2 days
-! Version: 2016110601
+! Version: 2016110801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016110601 aktualizacja: nie, 6 listopada 2016, 11:30:00
+! v.2016110801 aktualizacja: wt, 8 listopada 2016, 20:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -570,6 +570,7 @@ parenting.pl##.a-ctn-d
 pclab.pl###b028
 pclab.pl###a011
 pclab.pl##A[href^="http://click.plista.com/pets/"]
+pclab.pl##[href^="http://csr.onet.pl/eclk/clk"]
 pcworld.pl###WhitepaperModule
 pcworld.pl##.side-module.how-to
 pcworld.pl##div#toaster
@@ -866,6 +867,8 @@ www.mycenter.pl##[id^="place3_v"]
 www.kmh24.pl##.banner-wrapper
 www.nexto.pl##iframe[src^="http://get.x-link.pl/"]
 www.morele.net##[id$="_ucho"]
+www.diki.pl##[id^="dikiAd"]
+www.diki.pl##[class$="AdContainer"]
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1062,6 +1065,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www1.advice.movie.advlab.pl$object,domain=get.x-link.pl
 ||zulawyimierzeja24.pl/assets/js/jwplayer/jwplayer.html5.js
 ||lidl.pl/statics/lidl-pl/ds_img/layout/tapeta_$image
+|http://$script,third-party,domain=shinden.pl
+|https://$script,third-party,domain=shinden.pl
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1069,20 +1074,15 @@ zycietoprzygoda.pl##[class^="tws_"]
 /:\/\/(?!biuropodrozy)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!facet)(?!wyleczto)(?!kuchnia)(?!film)(?!moto)(?!gwiazdy)(?!teleshow)(?!finanse)(?!kobieta)(?!dom)(?!pogoda)(?!tech)(?!historia)(?!czat)(?!ksiazki)(?!gryonline)(?!hotele)(?!narty)(?!samoloty)(?!wycieczki)(?!hosting)(?!irlandia)(?!multikurs)(?!casino)(?!foto)(?!tech)(?!www)(?!stg)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!alefolwark)(?!angielski)(?!arenamody)(?!beniamin)(?!bon)(?!bsg)(?!casino)(?!diety)(?!dlaprasy)(?!dlugi)(?!doladowania)(?!dom)(?!dysk)(?!ebiznes)(?!ebooki)(?!empire)(?!fantasyliga)(?!film)(?!fundusze)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)(?!gazetki)(?!gry)(?!horoskop)(?!kalendarz)(?!katalog)(?!khanwars)(?!komiks)(?!konflikty)(?!kontakty)(?!korsarze)(?!kultura)(?!mini)(?!mmho)(?!mobilna)(?!morizon)(?!moto)(?!muzyka)(?!narty)(?!naryby)(?!onas)(?!orangekinoletnie)(?!piraci)(?!poczta)(?!pomoc)(?!praca)(?!profil)(?!programtv)(?!pytamy)(?!rekrutacja)(?!rss)(?!rtvagd)(?!rycerzeiksiezniczki)(?!smeet)(?!speedwaymanager)(?!szkola)(?!szukaj)(?!tech)(?!teleshow)(?!triviador)(?!turystyka)(?!twojeip)(?!ulubiency)(?!warodfragons)(?!wycieczki)(?!zdrowie)(?!zoomumba)(?!topnews)(?!erotyka)(?!dzieci)(?!fitness)(?!gielda)(?!finansomat)(?!biznes)(?!sport)[a-zA-Z0-9]{4,9}\.wp.pl\//
 @@/:\/\/(?!biuropodrozy)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!facet)(?!wyleczto)(?!kuchnia)(?!film)(?!moto)(?!gwiazdy)(?!teleshow)(?!finanse)(?!kobieta)(?!dom)(?!pogoda)(?!tech)(?!historia)(?!czat)(?!ksiazki)(?!gryonline)(?!hotele)(?!narty)(?!samoloty)(?!wycieczki)(?!hosting)(?!irlandia)(?!multikurs)(?!casino)(?!foto)(?!tech)(?!www)(?!stg)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!alefolwark)(?!angielski)(?!arenamody)(?!beniamin)(?!bon)(?!bsg)(?!casino)(?!diety)(?!dlaprasy)(?!dlugi)(?!doladowania)(?!dom)(?!dysk)(?!ebiznes)(?!ebooki)(?!empire)(?!fantasyliga)(?!film)(?!fundusze)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)(?!gazetki)(?!gry)(?!horoskop)(?!kalendarz)(?!katalog)(?!khanwars)(?!komiks)(?!konflikty)(?!kontakty)(?!korsarze)(?!kultura)(?!mini)(?!mmho)(?!mobilna)(?!morizon)(?!moto)(?!muzyka)(?!narty)(?!naryby)(?!onas)(?!orangekinoletnie)(?!piraci)(?!poczta)(?!pomoc)(?!praca)(?!profil)(?!programtv)(?!pytamy)(?!rekrutacja)(?!rss)(?!rtvagd)(?!rycerzeiksiezniczki)(?!smeet)(?!speedwaymanager)(?!szkola)(?!szukaj)(?!tech)(?!teleshow)(?!triviador)(?!turystyka)(?!twojeip)(?!ulubiency)(?!warodfragons)(?!wycieczki)(?!zdrowie)(?!zoomumba)(?!topnews)(?!erotyka)(?!dzieci)(?!fitness)(?!gielda)(?!finansomat)(?!biznes)(?!sport)[a-zA-Z0-9]{4,9}\.wp.pl\//$xmlhttprequest
 @@/:\/\/.*[.]wp[.]pl\/[a-z0-9_]{10,50}[.][a-z]{2,5}[/:&?]?/
-@@/:\/\/(adv|rek\.www|owabgxis|fntajkb)\.wp\.pl\/(.{0,10}[&!*;@\$)[\]:%].*|(?!gaf|cap|vad)[a-zA-Z0-9\W_]{1,10})\.(js|html|xml|jpg|gif|png)/
+@@/:\/\/(adv|rek\.www|owabgxis|fntajkb)\.wp\.pl\/(.{0,15}[&!*;@\$)[\]:%].*|(?!gaf|cap|vad)[a-zA-Z0-9\W_]{1,10})\.(js|html|xml|jpg|gif|png)/
 !
 !
 !---------------------------------Whitelists----------------------------------!
-@@||interia.pl/~stylesheet
-@@||maps.google.pl^$document
-@@||megapliki.interia.pl/$~subdocument
-@@||mozilla.org/
 @@*player_control*.swf
 @@||wikimedia.org/
 @@||wrzuta.pl/$~object
 @@|http://zalukaj.tv/ads.js$domain=zalukaj.tv
 @@||ssl.allegro.pl/order/^
-@@||s.tvn.pl/bc/a_b.swf
 @@||go.brightcove.com/content/
 @@||admin.brightcove.com/js/api/SmartPlayerAPI.js
 @@||c.brightcove.com/
@@ -1157,6 +1157,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||optimus.pl/temp/adrotator_miniatury/$image
 @@||stats.qmerce.com/interaction-stats/$xmlhttprequest,domain=renderer.qmerce.com
 @@||emspartner.pl/wp-content/plugins/duracelltomi-google-tag-manager/js/$script
+@@||ajax.googleapis.com/ajax/libs/$script,domain=shinden.pl
+@@||cdnjs.cloudflare.com/ajax/libs/$script,domain=shinden.pl
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1197,6 +1199,8 @@ onet.pl##.addthis_toolbox
 @@||grupa7j.pl/joomla/images/my/gallery_advert/$image,domain=grupa7j.pl
 ||niepoprawni.pl/sites/all/libraries/copier/bck.js$script
 @@/js/ads.js$script,domain=solarkurier.pl|satkurier.pl
+@@||pclab.pl^$generichide
+@@||pclab.pl/*ad$script
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
