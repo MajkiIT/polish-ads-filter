@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 10 November 2016
+! Last modified: 12 November 2016
 ! Expires: 2 days
-! Version: 2016111001
+! Version: 2016111201
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016111001 aktualizacja: czw, 10 listopada 2016, 09:50:00
+! v.2016111201 aktualizacja: sob, 12 listopada 2016, 15:10:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -742,7 +742,7 @@ telemagazyn.pl##[class^="fiszka"]
 teleman.pl,americasarmy.pl,exsite.pl###billboard
 teleman.pl###stacje-filmowe > .grid-group-as
 teleman.pl###leaderboard-bottom
-teleshow.wp.pl##[style][class="qd-US"]
+teleshow.wp.pl##[class="qd-US"]
 thinkapple.pl,repostuj.pl##a[href*="://bit.ly/"]
 tokfm.pl##DIV[style="width: 940px; padding: 21px 0 18px; background: #F8F8F8; margin: 0 auto; "]
 tomaszowski.com.pl###jm-right
@@ -856,6 +856,7 @@ www.lajfy.com###sportObchodBanner
 www.ckm.pl##.adv-header
 www.applecenter.pl###leader-wrap
 www.ceneo.pl##.ado-top-billboard
+www.lubliniec.info##.rightSideBaner
 ceneo.pl##[class^="home-ad"]
 www.ceneo.pl##.js_widget
 trybawaryjny.pl,www.applecenter.pl,zarabiajnaokazjach.pl##.textwidget
@@ -1072,6 +1073,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 |http://$script,third-party,domain=shinden.pl
 |https://$script,third-party,domain=shinden.pl
 ||allegrostatic.pl/showcaseService/static/images/placeholders/1200x400.png$image
+||go.stirshakead.com/?auction_id=$popup
+||lubliniec.net/kampania_reklamowa/$subdocument
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1206,6 +1209,11 @@ onet.pl##.addthis_toolbox
 @@/js/ads.js$script,domain=solarkurier.pl|satkurier.pl
 @@||pclab.pl^$generichide
 @@||pclab.pl/*ad$script
+@@||webshark.pl/adserver/*advertise_check=1$script,domain=vider.info
+anyfiles.pl##.adblInfo
+@@||anyfiles.pl/pageloading/search-media-loader.jsp?ads=true$xmlhttprequest
+wortale.net,psy24.pl,koty24.pl##.row.ban
+@@||dekoder.ml/js/ads.js$script
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
