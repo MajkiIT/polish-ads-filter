@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 12 November 2016
 ! Expires: 2 days
-! Version: 2016111202
+! Version: 2016111203
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016111202 aktualizacja: sob, 12 listopada 2016, 15:30:00
+! v.2016111203 aktualizacja: sob, 12 listopada 2016, 18:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -65,7 +65,7 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||alltube.tv/pomoc$popup,domain=alltube.tv
 ||zalukaj.com/sdm.php$xmlhttprequest
 ||rm-tracker.com/path/lp.php$popup,domain=kinoman.tv
-||130.211.198.219$script,popup
+||104.154.237.193$script,popup
 ||vo.msecnd.net/$script,domain=kinoman.tv
 ||reklamy.sterta.pl/crossdomain.xml$object-subrequest,domain=playa.pl
 ||cdn.vidzi.tv^
@@ -1167,6 +1167,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||emspartner.pl/wp-content/plugins/duracelltomi-google-tag-manager/js/$script
 @@||ajax.googleapis.com/ajax/libs/$script,domain=shinden.pl
 @@||cdnjs.cloudflare.com/ajax/libs/$script,domain=shinden.pl
+@@||cdn.flurry.com/js/flurry.js$script,domain=cdn.games.mobinozer.com
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1190,7 +1191,7 @@ cda-online.pl###deadblocker_success_dialog
 @@://*.*/pl/js/show_ads.js$script,domain=ki24.info|portalplock.pl|faktypilskie.pl
 www.plotek.pl##.adb_plotek
 @@||mmorpg.org.pl^$generichide
-mmorpg.org.pl##.adsbygoogle
+mmorpg.org.pl,parezja.pl##.adsbygoogle
 @@||tuba.pl/*/ad/$xmlhttprequest
 ||filmozercy.com/img/adblock/$image
 @@||komputerswiat.pl^$generichide
@@ -1210,11 +1211,17 @@ onet.pl##.addthis_toolbox
 @@||pclab.pl/*ad$script
 @@||webshark.pl/adserver/*advertise_check=1$script,domain=vider.info
 anyfiles.pl##.adblInfo
-@@||anyfiles.pl/pageloading/search-media-loader.jsp?ads=true$xmlhttprequest
+@@||anyfiles.pl/pageloading/all-loader.jsp?ads=true
 ##.ban-69.row.ban
 @@||dekoder.ml/js/ads.js$script
 dziennikwschodni.pl#@#.ad
-pssite.com###abl
+pssite.com,ps3forum.pl###abl
+||istotne.pl/ajax/adverts$xmlhttprequest
+@@||brotkids.tv/media/mod_pwebadblock/js/ads.js$script
+!
+!
+!--------------------------Rules block ads after antiadblock rules-------------!
+parezja.pl##.td-banner-wrap-full
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
