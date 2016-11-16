@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 16 November 2016
 ! Expires: 2 days
-! Version: 2016111601
+! Version: 2016111602
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016111601 aktualizacja: sr, 16 listopada 2016, 10:30:00
+! v.2016111602 aktualizacja: sr, 16 listopada 2016, 14:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -102,9 +102,11 @@ tvseriesonline.pl##IMG[src^="http://funkyimg.com/i/"]
 poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 .pl/*_ac=kropka-*
 ||gemius.pl^
+,xgemius.js$script
 ||revsci.net^
 ||kozaczek.pl/stats.php$xmlhttprequest
 ||adnxs.com^
+||smartclick.pl$script
 !
 !
 !------------------------General element hiding rules-------------------------!
@@ -1073,6 +1075,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||go.stirshakead.com/?auction_id=$popup
 ||lubliniec.net/kampania_reklamowa/$subdocument
 ||v.wpimg.pl/*=/$script,domain=facet.wp.pl
+||wp.pl/*/reklamawp-$image
 !
 !
 !---------------------------------Multi Regex----------------------------------!
