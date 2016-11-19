@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 18 November 2016
+! Last modified: 19 November 2016
 ! Expires: 2 days
-! Version: 2016111802
+! Version: 2016111901
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016111802 aktualizacja: ptk, 18 listopada 2016, 22:40:00
+! v.2016111901 aktualizacja: sob, 19 listopada 2016, 15:40:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -107,6 +107,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ||kozaczek.pl/stats.php$xmlhttprequest
 ||adnxs.com^
 ||smartclick.pl$script
+||creativecdn.com^$third-party
 !
 !
 !------------------------General element hiding rules-------------------------!
@@ -196,7 +197,7 @@ android.com.pl##[id^="text-3"]
 android.com.pl###reklma_top_middle
 android.com.pl##.textwidget
 androidpolska.pl##DIV[style="max-height:300px; overflow:hidden; float: left; width:100%;"]
-androidpolska.pl###sidebar-right > .widget:nth-of-type(1)
+androidpolska.pl###sidebar-right > .widget:nth-of-type(2)
 androidpolska.pl###billboard_top
 androidpolska.pl###rectangleTopNetProgH
 anglia4u.pl###gkSidebar
@@ -276,6 +277,7 @@ dom.gratka.pl##A[href="http://gratka.duon.pl/"]
 domiporta.pl###DetaleZakladki > .ingLinkDesktop[href^="http://tracking.mediaeffect.eu/click"]
 domiporta.pl###DetaleZakladki > .ReklamaIngWrap > .ReklamaIngLabel
 domiporta.pl###iFrameResizer0
+dooktor.pl###r_top_container
 download.net.pl##DIV[style="text-align: center; margin: 0 auto;"]
 doz.pl##.clearfix.container > .clearfix.row
 dstar.pzk.pl##[style$="background: #dfdfdf;"]
@@ -586,6 +588,7 @@ pebx.pl##li[class="sectionMain message"]:not([id^="post-"])
 pebx.pl##.Notices.PanelScroller
 pebx.pl##.defaultBorderRadius.pageContent > .funbox.sectionMain
 pebx.pl###uix_stickyFooterSpacer
+pecetowicz.pl##.ipsPos_center
 pekao.com.pl###PX45189
 pirackiekino.blogspot.com##img[src*="blogspot.com/-AOw7_"]
 planujemywesele.pl###ad-profile-box1
@@ -681,6 +684,8 @@ showup.tv##div.bottom-baner
 showup.tv##div.top-baner
 sieradz.com.pl##.box
 sieradz.com.pl,zdunskawola24.pl##.billboard
+silesia.fm##.e3lan-top
+silesia.fm##.sidebar
 skiny.pl##A[href="http://www.radioparty.pl"]
 sklep.fipro.pl###tooltipmessage
 sklep.habys.pl###newsletterModal
@@ -731,7 +736,6 @@ szybkiefilmy.pl##[href^="http://2hx.pl/"]
 targeo.pl###Advertisement
 tabletowo.pl##[id^="text-"]
 thepolandtimes.com###header > .group.container > .container-inner > .pad.gro
-tech.wp.pl##[style][class="qd-US"]
 tekstowo.pl##.adv-home-child
 tekstowo.pl###advSong
 telchina.pl###wrap > .forabg
@@ -741,7 +745,7 @@ telemagazyn.pl##[class^="fiszka"]
 teleman.pl,americasarmy.pl,exsite.pl###billboard
 teleman.pl###stacje-filmowe > .grid-group-as
 teleman.pl###leaderboard-bottom
-teleshow.wp.pl,gwiazdy.wp.pl,facet.wp.pl,kobieta.wp.pl,film.wp.pl##[class="qd-US"]
+teleshow.wp.pl,gwiazdy.wp.pl,facet.wp.pl,kobieta.wp.pl,film.wp.pl,tech.wp.pl##[class="qd-US"]
 thinkapple.pl,repostuj.pl##a[href*="://bit.ly/"]
 tokfm.pl##DIV[style="width: 940px; padding: 21px 0 18px; background: #F8F8F8; margin: 0 auto; "]
 tomaszowski.com.pl###jm-right
@@ -828,6 +832,7 @@ wp.pl##._2X2-k
 wp.pl##a[href^="http://smartclick.pl/redir"]
 wp.pl##[style="width: 640px; height:400px; margin:10px auto 10px  auto;"]
 wp.pl###leaving
+wp.pl###shopingBx
 wprost.pl###additional-column
 wprost.pl##class[id^="addbox.addbox-"]
 wprost.pl###left-column > .art-area > .art-content > center
@@ -1254,10 +1259,12 @@ meczenazywo.pl##OL[class^="cool-stuff"]
 meczenazywo.pl,mecze24.pl##A[href^="http://ads.comeon.com/redirect.aspx"]
 meczenazywo.pl##A[href^="/bukmacher/r/"]
 meczenazywo.pl###my_div_wrapper
-mecze24.pl###bg[href="http://cw.totolotek.pl/nazywo"]
-mecze24.pl##.cool
-mecze24.pl###google-adds-event
-mecze24.pl,meczenazywo.pl##a[href^="http://z0x.pl/"]
+mecze24.pl###bg
+mecze24.pl##[class^="cool-stuff"]
+mecze24.pl##.module-facts.module
+mecze24.pl##.module-analyses.module
+mecze24.pl##.module-review_box.module
+mecze24.pl##[class^="module module-bookmakers_"]
 meczelive.tv##a[href*="adsrv.eacdn.com"]
 meczhd.biz,footlive.pl###rek
 meczstudio.com##[id^="wb_Image"]
@@ -1293,6 +1300,7 @@ www.bayern.munchen.pl###box_polecamy
 !
 !
 !--------------------------Rules sport streams blocking filters-------------!
+||extragoals.com/media/js/videojs.cool.js
 ||livemecz.*/u3/ads.js$script
 ||sportpl.tv/assets/img/$image,domain=sportpl.tv|vsport.in|sportson.tv
 ||www.oglaszamy24.pl/adstorage/$image
@@ -1300,8 +1308,7 @@ www.bayern.munchen.pl###box_polecamy
 ||msport.in/pasek$image
 ||vsport.in/ban1$image
 ||hotcpm.pl^$third-party
-||www.mecze24.pl/img/css/*tapeta$image
-||mecze24.pl/js/popup.js$script
+||mecze24.pl/img/tapeta$image
 ||meczelive.tv/images/tapeta_$image
 ||cdn.mediaessence.net$script
 ||meczhd.biz/pasek$image
