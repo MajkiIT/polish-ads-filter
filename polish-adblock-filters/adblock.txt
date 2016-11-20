@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 19 November 2016
+! Last modified: 20 November 2016
 ! Expires: 2 days
-! Version: 2016111901
+! Version: 2016112001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016111901 aktualizacja: sob, 19 listopada 2016, 15:40:00
+! v.2016112001 aktualizacja: nie, 20 listopada 2016, 19:40:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -132,7 +132,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##div#skapiec_ad
 ##ul.sharing-tools
 ~rp.pl##[id*="reklama"]
-~wirtualny-wojownik.pl,~przerwanareklame.pl,~tvpolska.pl,~smiechawatv.pl,~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org##[class*="reklama"]
+~linuxiarze.pl,~wirtualny-wojownik.pl,~przerwanareklame.pl,~tvpolska.pl,~smiechawatv.pl,~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org##[class*="reklama"]
 ##.Reklama
 ##.oponeoWidget
 ###oponeoWidget
@@ -200,6 +200,7 @@ androidpolska.pl##DIV[style="max-height:300px; overflow:hidden; float: left; wid
 androidpolska.pl###sidebar-right > .widget:nth-of-type(2)
 androidpolska.pl###billboard_top
 androidpolska.pl###rectangleTopNetProgH
+androidpolska.pl##.widget[style="text-align: center"]
 anglia4u.pl###gkSidebar
 antyweb.pl##.aadv
 audiostereo.pl###index_stats
@@ -238,6 +239,7 @@ cda.pl##.miniPhotoBox
 cda.pl##div > span > a[href^="http://www.cda.pl/video/"][target="_blank"]
 cenabiznesu.pl##.img-responsive
 centrumxp.pl###WelcomeBox
+centrumxp.pl##[id*="_Reklama_"]
 centrumdruku3d.pl###slide-bottom-popup
 chamsko.pl##[href^="http://empire.goodgamestudios.com/"]
 chip.pl###nextartprompt
@@ -474,6 +476,7 @@ letsplej.pl##.rekl
 linkpolonia.com##.credit-prize-box.credit-prize-box-small
 linktopoland.com##[id^="advertise-row"]
 linuxhelp.in###fan-exit
+linuxiarze.pl##a[href="http://linuxiarze.pl/reklama/#baner"]
 ling.pl###arboBig
 live.com##.popupOuterCellLeft
 lm.pl##.belka_z_banerami
@@ -742,7 +745,7 @@ telchina.pl###wrap > .forabg
 telchina.pl##.bg3.post
 telchina.pl##[style="padding: 5px 5px 2px 5px; font-size: 1.1em; background-color: #ECF1F3; margin: 0px auto; text-align: center;"]
 telemagazyn.pl##[class^="fiszka"]
-teleman.pl,americasarmy.pl,exsite.pl###billboard
+teleman.pl,americasarmy.pl,exsite.pl,jastrzebieonline.pl###billboard
 teleman.pl###stacje-filmowe > .grid-group-as
 teleman.pl###leaderboard-bottom
 teleshow.wp.pl,gwiazdy.wp.pl,facet.wp.pl,kobieta.wp.pl,film.wp.pl,tech.wp.pl##[class="qd-US"]
@@ -988,6 +991,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||interia.pl/#utm_source$popup,domain=cdaction.pl
 ||interia.pl/*/ads-sidebar$script
 ||interia.pl/iframe$subdocument
+||jastrzebieonline.pl/js/scripts.js$script,domain=jastrzebieonline.pl
+||jastrzebieonline.pl/files/banners/$domain=jastrzebieonline.pl
 ||konto.amronet.pl$subdocument,domain=dobreprogramy.pl
 ||lib.onet.pl/s.csr/external/iframe$script,subdocument
 ||media.empik.com/content/new_event/$image,domain=empik.com
@@ -1081,6 +1086,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||lubliniec.net/kampania_reklamowa/$subdocument
 ||v.wpimg.pl/*=/$script,domain=facet.wp.pl
 ||wp.pl/*/reklamawp-$image
+||polskie-torrenty.com.pl/imgb/banner.jpg$image
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1179,51 +1185,60 @@ freedisc.pl#@#.footer-ad
 wpworld.pl,windowsowo.pl#@##adBanner
 !
 !
-!---------------------------------Anti Adblock Rules----------------------------------!
-purepc.pl#@#[class*="reklama"]
-@@||wtkplay.pl/javascript/ads.js$script
-@@||www.nadajemy.pl/js-css/adsense/ad/banner/adv.js$script
-dstar.pzk.pl,burze.dzis.net#@#.adsbygoogle
-wtkplay.pl,epoznan.pl#@#[class*="reklama"]
-wtkplay.pl,epoznan.pl#@#.reklama
-wtkplay.pl,epoznan.pl#@#.ad
-wtkplay.pl,epoznan.pl#@#.advertising_block
-@@||seansik.nl/seansik/js/ads.js$script
-epiotrkow.pl###abpnot
+!---------------------------------Anti Adblock Rules element hide----------------------------------!
+##.ban-69.row.ban
+anyfiles.pl##.adblInfo
 cda-online.pl###deadblocker_success_dialog
-@@||www.biznesradar.pl/js/ads/advertising.js$script
-@@://*.*/pl/js/show_ads.js$script,domain=ki24.info|portalplock.pl|faktypilskie.pl
-www.plotek.pl##.adb_plotek
-@@||mmorpg.org.pl^$generichide
-mmorpg.org.pl,parezja.pl##.adsbygoogle
-@@||tuba.pl/*/ad/$xmlhttprequest
-||filmozercy.com/img/adblock/$image
-@@||komputerswiat.pl^$generichide
+dstar.pzk.pl,burze.dzis.net#@#.adsbygoogle
+dziennikwschodni.pl#@#.ad
+epiotrkow.pl###abpnot
 komputerswiat.pl##.adsense
-sport.tvp.pl###tvpoverlay_abdinfo
-@@||ppstatic.pl/*/ads.js$script,domain=pomorska.pl
-@@||vod.pl^$generichide
-@@||onet.pl^$generichide
+kursbootstrap.pl##.alert-dismissible.alert-success.alert
+mmorpg.org.pl,parezja.pl##.adsbygoogle
 onet.pl###extraAdsBlock
 onet.pl##.addthis_toolbox
-@@||sascdn.com/video/$script,domain=eskago.pl
+pssite.com,ps3forum.pl###abl
+purepc.pl#@#[class*="reklama"]
+sport.tvp.pl###tvpoverlay_abdinfo
+sucharry.pl###adb
+wtkplay.pl,epoznan.pl#@#.ad
+wtkplay.pl,epoznan.pl#@#.advertising_block
+wtkplay.pl,epoznan.pl#@#.reklama
+wtkplay.pl,epoznan.pl#@#[class*="reklama"]
+www.plotek.pl##.adb_plotek
+!
+!
+!---------------------------------Anti Adblock Rules blocking filters----------------------------------!
+||filmozercy.com/img/adblock/$image
+||istotne.pl/ajax/adverts$xmlhttprequest
+||lubiepowietrze.pl/wp-content/uploads/*.js$script,domain=lubiepowietrze.pl
+||niepoprawni.pl/sites/all/libraries/copier/bck.js$script
+!
+!
+!---------------------------------Anti Adblock Rules whitelist filters----------------------------------!
+@@/js/ads.js$script,domain=solarkurier.pl|satkurier.pl
+@@://*.*/pl/js/show_ads.js$script,domain=ki24.info|portalplock.pl|faktypilskie.pl
+@@|http://www.googletagmanager.com/gtm.js$script,domain=benchmark.pl
+@@||anyfiles.pl/pageloading/*-loader.jsp?ads=true
+@@||brotkids.tv/media/mod_pwebadblock/js/ads.js$script
+@@||dekoder.ml/js/ads.js$script
 @@||eskago.pl/html/js/ads-header.js$script
 @@||grupa7j.pl/joomla/images/my/gallery_advert/$image,domain=grupa7j.pl
-||niepoprawni.pl/sites/all/libraries/copier/bck.js$script
-@@/js/ads.js$script,domain=solarkurier.pl|satkurier.pl
-@@||pclab.pl^$generichide
+@@||komputerswiat.pl^$generichide
+@@||mmorpg.org.pl^$generichide
+@@||onet.pl^$generichide
 @@||pclab.pl/*ad$script
+@@||pclab.pl^$generichide
+@@||ppstatic.pl/*/ads.js$script,domain=pomorska.pl
+@@||sascdn.com/video/$script,domain=eskago.pl
+@@||seansik.nl/seansik/js/ads.js$script
+@@||tuba.pl/*/ad/$xmlhttprequest
+@@||vod.pl^$generichide
 @@||webshark.pl/adserver/*advertise_check=1$script,domain=vider.info
-anyfiles.pl##.adblInfo
-@@||anyfiles.pl/pageloading/*-loader.jsp?ads=true
-##.ban-69.row.ban
-@@||dekoder.ml/js/ads.js$script
-dziennikwschodni.pl#@#.ad
-pssite.com,ps3forum.pl###abl
-||istotne.pl/ajax/adverts$xmlhttprequest
-@@||brotkids.tv/media/mod_pwebadblock/js/ads.js$script
+@@||wtkplay.pl/javascript/ads.js$script
 @@||www.benchmark.pl/*/b.ads.js$script
-@@|http://www.googletagmanager.com/gtm.js$script,domain=benchmark.pl
+@@||www.biznesradar.pl/js/ads/advertising.js$script
+@@||www.nadajemy.pl/js-css/adsense/ad/banner/adv.js$script
 !
 !
 !--------------------------Rules block ads after antiadblock rules-------------!
@@ -1341,4 +1356,4 @@ wykop.pl##a[class*=screening]
 !
 !
 !--------------------------Rules unblock protection------------!
-@@||avangarde.unblock.onaudience.com/static/showad.js$xmlhttprequest,domain=joemonster.org
+@@||unblock.onaudience.com/static/showad.js$xmlhttprequest,domain=joemonster.org
