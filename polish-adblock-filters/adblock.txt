@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 22 November 2016
+! Last modified: 23 November 2016
 ! Expires: 2 days
-! Version: 2016112201
+! Version: 2016112301
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016112201 aktualizacja: wt, 22 listopada 2016, 15:20:00
+! v.2016112301 aktualizacja: sr, 23 listopada 2016, 19:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -201,6 +201,8 @@ androidpolska.pl###sidebar-right > .widget:nth-of-type(2)
 androidpolska.pl###billboard_top
 androidpolska.pl###rectangleTopNetProgH
 androidpolska.pl##.widget[style="text-align: center"]
+androidpolska.pl###sidebar-right > .widget:nth-of-type(1)
+androidpolska.pl###rectangle_top_ad
 anglia4u.pl###gkSidebar
 antyweb.pl##.aadv
 audiostereo.pl###index_stats
@@ -254,11 +256,15 @@ darkwarez.pl##div[align="center"] > .copyright > table[border="0"]
 ddtorun.pl,ddwloclawek.pl##.container.movedDiv
 ddtorun.pl,ddwloclawek.pl##[class^="a-d-v"]
 ddtorun.pl,ddwloclawek.pl##.skodaAuto.box-margin.row
-demotywatory.pl###main_container > .demots > article:nth-of-type(10)
+demotywatory.pl##.abox-view-content.center
 demotywatory.pl###right_column2
 demotywatory.pl##[href^="http://pewex.pl/"]
 di.com.pl##[style="margin-bottom:5px;clear:both;"]
 digi-tv.pl##[id^="placement_"]
+digi-tv.pl,satkurier.pl##[id^="pasek_hollex"]
+digi-tv.pl,satkurier.pl###SATKurierNews_top_750x100_r
+digi-tv.pl,satkurier.pl##[id^="idmnet_"]
+digi-tv.pl##[id^="banner_"]
 doba.pl##[class^="banner"]
 dobrastacja.pl###tfhover
 dobreprogramy.pl##[style="width: 300px; margin: auto;"]
@@ -300,7 +306,7 @@ eska.pl##A[style="display: block; height: 100%; width: 100%;"]
 eska.pl##.banner-750.fontregular
 eska.pl##[href*="bbelements.com/please/track/adClick/"]
 eska.pl##.center.t2.color13
-exsite.pl###adkon
+exsite.pl##[id^="adkon"]
 exsite.pl##DIV[id^="tower_"]
 exsite.pl##[style="width: 586px;height: 369px;margin: 50px auto 50px -18px;overflow-y: hidden;border:1px solid black;"]
 euro.com.pl##[id^="background-"]
@@ -309,6 +315,7 @@ eurogamer.pl###leaderboard
 eurogamer.pl###skyscraper
 eurogamer.pl###promo-section
 evertiq.pl##[id^="bnr"]
+facet.wp.pl##._1gZ6Rt0
 fangol.pl##[style="text-align:center;"]
 flashscore.pl###box-over-content-a
 fajowe.pl##.commercial-center
@@ -1087,14 +1094,17 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||v.wpimg.pl/*=/$script,domain=facet.wp.pl
 ||wp.pl/*/reklamawp-$image
 ||polskie-torrenty.com.pl/imgb/banner.jpg$image
+||ppwidget.skapiec.pl/widget/$script,domain=androidpolska.pl
+||satkurier.pl/getRandomBanner
+||satkurier.pl/laravel/banery/
 !
 !
 !---------------------------------Multi Regex----------------------------------!
 /:\/\/(?!biuropodrozy)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!rodzinnawycieczka)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)[a-zA-Z0-9]{10,}\.wp\.pl\//
 /:\/\/(?!biuropodrozy)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!facet)(?!wyleczto)(?!kuchnia)(?!film)(?!moto)(?!gwiazdy)(?!teleshow)(?!finanse)(?!kobieta)(?!dom)(?!pogoda)(?!tech)(?!historia)(?!czat)(?!ksiazki)(?!gryonline)(?!hotele)(?!narty)(?!samoloty)(?!wycieczki)(?!hosting)(?!irlandia)(?!multikurs)(?!casino)(?!foto)(?!tech)(?!www)(?!stg)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!alefolwark)(?!angielski)(?!arenamody)(?!beniamin)(?!bon)(?!bsg)(?!casino)(?!diety)(?!dlaprasy)(?!dlugi)(?!doladowania)(?!dom)(?!dysk)(?!ebiznes)(?!ebooki)(?!empire)(?!fantasyliga)(?!film)(?!fundusze)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)(?!gazetki)(?!gry)(?!horoskop)(?!kalendarz)(?!katalog)(?!khanwars)(?!komiks)(?!konflikty)(?!kontakty)(?!korsarze)(?!kultura)(?!mini)(?!mmho)(?!mobilna)(?!morizon)(?!moto)(?!muzyka)(?!narty)(?!naryby)(?!onas)(?!orangekinoletnie)(?!piraci)(?!poczta)(?!pomoc)(?!praca)(?!profil)(?!programtv)(?!pytamy)(?!rekrutacja)(?!rss)(?!rtvagd)(?!rycerzeiksiezniczki)(?!smeet)(?!speedwaymanager)(?!szkola)(?!szukaj)(?!tech)(?!teleshow)(?!triviador)(?!turystyka)(?!twojeip)(?!ulubiency)(?!warodfragons)(?!wycieczki)(?!zdrowie)(?!zoomumba)(?!topnews)(?!erotyka)(?!dzieci)(?!fitness)(?!gielda)(?!finansomat)(?!biznes)(?!sport)[a-zA-Z0-9]{4,9}\.wp\.pl\//
-@@/:\/\/(?!biuropodrozy)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!facet)(?!wyleczto)(?!kuchnia)(?!film)(?!moto)(?!gwiazdy)(?!teleshow)(?!finanse)(?!kobieta)(?!dom)(?!pogoda)(?!tech)(?!historia)(?!czat)(?!ksiazki)(?!gryonline)(?!hotele)(?!narty)(?!samoloty)(?!wycieczki)(?!hosting)(?!irlandia)(?!multikurs)(?!casino)(?!foto)(?!tech)(?!www)(?!stg)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!alefolwark)(?!angielski)(?!arenamody)(?!beniamin)(?!bon)(?!bsg)(?!casino)(?!diety)(?!dlaprasy)(?!dlugi)(?!doladowania)(?!dom)(?!dysk)(?!ebiznes)(?!ebooki)(?!empire)(?!fantasyliga)(?!film)(?!fundusze)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)(?!gazetki)(?!gry)(?!horoskop)(?!kalendarz)(?!katalog)(?!khanwars)(?!komiks)(?!konflikty)(?!kontakty)(?!korsarze)(?!kultura)(?!mini)(?!mmho)(?!mobilna)(?!morizon)(?!moto)(?!muzyka)(?!narty)(?!naryby)(?!onas)(?!orangekinoletnie)(?!piraci)(?!poczta)(?!pomoc)(?!praca)(?!profil)(?!programtv)(?!pytamy)(?!rekrutacja)(?!rss)(?!rtvagd)(?!rycerzeiksiezniczki)(?!smeet)(?!speedwaymanager)(?!szkola)(?!szukaj)(?!tech)(?!teleshow)(?!triviador)(?!turystyka)(?!twojeip)(?!ulubiency)(?!warodfragons)(?!wycieczki)(?!zdrowie)(?!zoomumba)(?!topnews)(?!erotyka)(?!dzieci)(?!fitness)(?!gielda)(?!finansomat)(?!biznes)(?!sport)[a-zA-Z0-9]{4,9}\.wp\.pl\//$xmlhttprequest
 @@/:\/\/.*[.]wp[.]pl\/[a-z0-9_]{10,50}[.][a-z]{2,5}[/:&?]?/
 @@/:\/\/(adv|rek\.www|owabgxis|fntajkb)\.wp\.pl\/(.{0,15}[&!*;@\$)[\]:%].*|(?!gaf|cap|vad)[a-zA-Z0-9\W_]{1,10})\.(js|html|xml|jpg|gif|png)/
+/:\/\/facet\.wp\.pl\/.{200,}[a-zA-Z0-9=]\//$script,important
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -1239,10 +1249,18 @@ www.plotek.pl##.adb_plotek
 @@||www.benchmark.pl/*/b.ads.js$script
 @@||www.biznesradar.pl/js/ads/advertising.js$script
 @@||www.nadajemy.pl/js-css/adsense/ad/banner/adv.js$script
+@@||digi-tv.pl/js/ads.js$script
+@@||mybank.pl^$generichide
+@@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=mybank.pl
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=mybank.pl
+@@||pagead2.googlesyndication.com/pagead/js/r*/show_ads_impl.js$script,domain=mybank.pl
 !
 !
 !--------------------------Rules block ads after antiadblock rules-------------!
 parezja.pl##.td-banner-wrap-full
+mybank.pl##.adsbygoogle
+mybank.pl##div[id^="div-gpt-ad"]
+mybank.pl##[id^="aswift_"]
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
