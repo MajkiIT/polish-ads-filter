@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 23 November 2016
+! Last modified: 24 November 2016
 ! Expires: 2 days
-! Version: 2016112302
+! Version: 2016112401
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016112302 aktualizacja: sr, 23 listopada 2016, 19:40:00
+! v.2016112401 aktualizacja: czw, 24 listopada 2016, 14:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -315,12 +315,6 @@ eurogamer.pl###leaderboard
 eurogamer.pl###skyscraper
 eurogamer.pl###promo-section
 evertiq.pl##[id^="bnr"]
-facet.wp.pl##div[class^="_"][style^="min-height: 250px; line-height: 250px;"]
-facet.wp.pl##div[class^="_"][style^="min-height:250px;line-height:250px;"]
-facet.wp.pl##div[class^="_"][style^="min-height:200px;line-height:200px;"]
-facet.wp.pl##div[class^="_"][style^="min-height: 200px; line-height: 200px;"]
-facet.wp.pl##div[class^="_"][style^="min-height: 600px; line-height: 600px;"]
-facet.wp.pl##div[class^="_"][style^="min-height:600px;line-height:600px;"]
 fangol.pl##[style="text-align:center;"]
 flashscore.pl###box-over-content-a
 fajowe.pl##.commercial-center
@@ -848,6 +842,12 @@ wp.pl##a[href^="http://smartclick.pl/redir"]
 wp.pl##[style="width: 640px; height:400px; margin:10px auto 10px  auto;"]
 wp.pl###leaving
 wp.pl###shopingBx
+wp.pl##div[class^="_"][style^="min-height: 250px; line-height: 250px;"]
+wp.pl##div[class^="_"][style^="min-height:250px;line-height:250px;"]
+wp.pl##div[class^="_"][style^="min-height:200px;line-height:200px;"]
+wp.pl##div[class^="_"][style^="min-height: 200px; line-height: 200px;"]
+wp.pl##div[class^="_"][style^="min-height: 600px; line-height: 600px;"]
+wp.pl##div[class^="_"][style^="min-height:600px;line-height:600px;"]
 wprost.pl###additional-column
 wprost.pl##class[id^="addbox.addbox-"]
 wprost.pl###left-column > .art-area > .art-content > center
@@ -1109,7 +1109,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 /:\/\/(?!biuropodrozy)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!facet)(?!wyleczto)(?!kuchnia)(?!film)(?!moto)(?!gwiazdy)(?!teleshow)(?!finanse)(?!kobieta)(?!dom)(?!pogoda)(?!tech)(?!historia)(?!czat)(?!ksiazki)(?!gryonline)(?!hotele)(?!narty)(?!samoloty)(?!wycieczki)(?!hosting)(?!irlandia)(?!multikurs)(?!casino)(?!foto)(?!tech)(?!www)(?!stg)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!alefolwark)(?!angielski)(?!arenamody)(?!beniamin)(?!bon)(?!bsg)(?!casino)(?!diety)(?!dlaprasy)(?!dlugi)(?!doladowania)(?!dom)(?!dysk)(?!ebiznes)(?!ebooki)(?!empire)(?!fantasyliga)(?!film)(?!fundusze)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)(?!gazetki)(?!gry)(?!horoskop)(?!kalendarz)(?!katalog)(?!khanwars)(?!komiks)(?!konflikty)(?!kontakty)(?!korsarze)(?!kultura)(?!mini)(?!mmho)(?!mobilna)(?!morizon)(?!moto)(?!muzyka)(?!narty)(?!naryby)(?!onas)(?!orangekinoletnie)(?!piraci)(?!poczta)(?!pomoc)(?!praca)(?!profil)(?!programtv)(?!pytamy)(?!rekrutacja)(?!rss)(?!rtvagd)(?!rycerzeiksiezniczki)(?!smeet)(?!speedwaymanager)(?!szkola)(?!szukaj)(?!tech)(?!teleshow)(?!triviador)(?!turystyka)(?!twojeip)(?!ulubiency)(?!warodfragons)(?!wycieczki)(?!zdrowie)(?!zoomumba)(?!topnews)(?!erotyka)(?!dzieci)(?!fitness)(?!gielda)(?!finansomat)(?!biznes)(?!sport)[a-zA-Z0-9]{4,9}\.wp\.pl\//
 @@/:\/\/.*[.]wp[.]pl\/[a-z0-9_]{10,50}[.][a-z]{2,5}[/:&?]?/
 @@/:\/\/(adv|rek\.www|owabgxis|fntajkb)\.wp\.pl\/(.{0,15}[&!*;@\$)[\]:%].*|(?!gaf|cap|vad)[a-zA-Z0-9\W_]{1,10})\.(js|html|xml|jpg|gif|png)/
-/:\/\/facet\.wp\.pl\/.{200,}[a-zA-Z0-9=]\//$script,important
+/:\/\/facet\.wp\.pl\/[a-zA-Z0-9\W_]{200,}\//$script,importan
+/:\/\/teleshow\.wp\.pl\/[a-zA-Z0-9\W_]{200,}\//$script,important
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -1356,7 +1357,6 @@ www.bayern.munchen.pl###box_polecamy
 !--------------------------Rules temporary blocking filters-------------!
 ||rek.www.wp.pl/gaf.js$important
 /:\/\/(?!biuropodrozy)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!facet)(?!wyleczto)(?!kuchnia)(?!film)(?!moto)(?!gwiazdy)(?!teleshow)(?!finanse)(?!kobieta)(?!dom)(?!pogoda)(?!tech)(?!historia)(?!czat)(?!ksiazki)(?!gryonline)(?!hotele)(?!narty)(?!samoloty)(?!wycieczki)(?!hosting)(?!irlandia)(?!multikurs)(?!casino)(?!foto)(?!tech)(?!www)(?!stg)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!alefolwark)(?!angielski)(?!arenamody)(?!beniamin)(?!bon)(?!bsg)(?!casino)(?!diety)(?!dlaprasy)(?!dlugi)(?!doladowania)(?!dom)(?!dysk)(?!ebiznes)(?!ebooki)(?!empire)(?!fantasyliga)(?!film)(?!fundusze)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)(?!gazetki)(?!gry)(?!horoskop)(?!kalendarz)(?!katalog)(?!khanwars)(?!komiks)(?!konflikty)(?!kontakty)(?!korsarze)(?!kultura)(?!mini)(?!mmho)(?!mobilna)(?!morizon)(?!moto)(?!muzyka)(?!narty)(?!naryby)(?!onas)(?!orangekinoletnie)(?!piraci)(?!poczta)(?!pomoc)(?!praca)(?!profil)(?!programtv)(?!pytamy)(?!rekrutacja)(?!rss)(?!rtvagd)(?!rycerzeiksiezniczki)(?!smeet)(?!speedwaymanager)(?!szkola)(?!szukaj)(?!tech)(?!teleshow)(?!triviador)(?!turystyka)(?!twojeip)(?!ulubiency)(?!warodfragons)(?!wycieczki)(?!zdrowie)(?!zoomumba)(?!topnews)(?!erotyka)(?!dzieci)(?!fitness)(?!gielda)(?!finansomat)(?!biznes)(?!sport)[a-zA-Z0-9]{4,9}\.wp\.pl\/.{150,}/$important
-
 !
 !
 !--------------------------Rules wykop.pl-------------!
