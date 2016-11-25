@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 24 November 2016
+! Last modified: 25 November 2016
 ! Expires: 2 days
-! Version: 2016112403
+! Version: 2016112501
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016112403 aktualizacja: czw, 24 listopada 2016, 22:50:00
+! v.2016112501 aktualizacja: ptk, 25 listopada 2016, 08:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -280,7 +280,7 @@ dobreprogramy.pl##.gamescarousel-wrapper
 dobreprogramy.pl##.list.block-content > div[style$="height: 180px; width: 630;"]
 dobreprogramy.pl##.block > div[style$="height: 600px; width: 300;"]
 dobreprogramy.pl##.page-element.center.target > div[style$="height: 250px; width: 970;"]
-dobreprogramy.pl##a[href="http://loa2.dobregry.pl/"]
+dobreprogramy.pl##div[id="slide-menu"] > a[id][href="#"]
 dojrzalakobieta.pl###slider-with
 dogry.pl##.pro-box
 dom.gratka.pl##.small-12.columns.textC.nieSkacz
@@ -588,6 +588,13 @@ parenting.pl##.a-ctn-d
 pclab.pl###b028
 pclab.pl###a011
 pclab.pl##A[href^="http://click.plista.com/pets/"]
+pclab.pl##[href^="http://csr.onet.pl/eclk/clk"]
+pclab.pl###header .left .sponT:style(height: 100px !important;)
+pclab.pl###header .right .sponT:style(height: 75px !important;)
+pclab.pl###headerwrapper:style(height: 140px !important;)
+pclab.pl###categories:style(top: 33px !important;)
+pclab.pl###header:style(z-index: 0 !important;)
+pclab.pl###tabwrapper #tab:style(margin-top: 90px !important;)
 pcworld.pl###WhitepaperModule
 pcworld.pl##.side-module.how-to
 pcworld.pl##div#toaster
@@ -640,7 +647,7 @@ pracuj.pl##.expander
 prawo.money.pl###img11155698
 prostozmostu.net###ecoeconomy
 prostozmostu.net###nmb-BusyBox
-postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl,jajamioasfalt.pl,dostawcy-internetu.pl,forum.bukmacherskie.com##center
+postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl,jajamioasfalt.pl,dostawcy-internetu.pl,forum.bukmacherskie.com,nasze.fm##center
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
 profil.wp.pl##.bxAdv
@@ -1049,7 +1056,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||spidersweb.pl/wp-content/themes/new_sw_v3_git/others/$subdocument,domain=spidersweb.pl
 ||spolecznosci.net^$image,subdocument,script,popup
 ||static*jelonka.com
-||static.dpcdn.pl/*/assets/img/skin_*/back.jpg
+||static.dpcdn.pl/*/assets/img/*.jpg$image,domain=dobreprogramy.pl
 ||static.evertiq.pl/bximg/cbtg/$image
 ||static.evertiq.pl/bximg/digi-key/$image
 ||static.evertiq.pl/images/other/$image
