@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 25 November 2016
+! Last modified: 26 November 2016
 ! Expires: 2 days
-! Version: 2016112501
+! Version: 2016112601
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016112501 aktualizacja: ptk, 25 listopada 2016, 08:50:00
+! v.2016112601 aktualizacja: sob, 26 listopada 2016, 10:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -65,7 +65,7 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||alltube.tv/pomoc$popup,domain=alltube.tv
 ||zalukaj.com/sdm.php$xmlhttprequest
 ||rm-tracker.com/path/lp.php$popup,domain=kinoman.tv
-||104.198.188.213$script,popup
+||104.198.188.^$script,popup
 ||vo.msecnd.net/$script,domain=kinoman.tv
 ||reklamy.sterta.pl/crossdomain.xml$object-subrequest,domain=playa.pl
 ||cdn.vidzi.tv^
@@ -77,6 +77,7 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||searchiq.xyz/$domain=cda-online.pl
 ||thnqemehtyfe.com/$script,domain=auratorrent.pl
 ||xjsqhlfscjxo.com/$script,domain=auratorrent.pl
+|http://$third-party,script,domain=auratorrent.pl
 !
 !
 !-----------------------Elements hide on movie-----------------------!
@@ -589,12 +590,6 @@ pclab.pl###b028
 pclab.pl###a011
 pclab.pl##A[href^="http://click.plista.com/pets/"]
 pclab.pl##[href^="http://csr.onet.pl/eclk/clk"]
-pclab.pl###header .left .sponT:style(height: 100px !important;)
-pclab.pl###header .right .sponT:style(height: 75px !important;)
-pclab.pl###headerwrapper:style(height: 140px !important;)
-pclab.pl###categories:style(top: 33px !important;)
-pclab.pl###header:style(z-index: 0 !important;)
-pclab.pl###tabwrapper #tab:style(margin-top: 90px !important;)
 pcworld.pl###WhitepaperModule
 pcworld.pl##.side-module.how-to
 pcworld.pl##div#toaster
@@ -769,6 +764,7 @@ thinkapple.pl,repostuj.pl##a[href*="://bit.ly/"]
 tokfm.pl##DIV[style="width: 940px; padding: 21px 0 18px; background: #F8F8F8; margin: 0 auto; "]
 tomaszowski.com.pl###jm-right
 tomaszowski.com.pl###jm-content-top
+topgearonline.pl###leader-wrapper
 torrentos.com.pl###xxxyyyyy
 translate.google.pl##.gb_zb.gb_jb.gb_La
 trasa.info###forum-box
@@ -1213,6 +1209,7 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !
 !---------------------------------Anti Adblock Rules element hide----------------------------------!
 ##.ban-69.row.ban
+12zawodnik.pl##.ads-checker-msg
 anyfiles.pl##.adblInfo
 cda-online.pl###deadblocker_success_dialog
 dstar.pzk.pl,burze.dzis.net#@#.adsbygoogle
@@ -1223,6 +1220,7 @@ kursbootstrap.pl##.alert-dismissible.alert-success.alert
 mmorpg.org.pl,parezja.pl##.adsbygoogle
 onet.pl###extraAdsBlock
 onet.pl##.addthis_toolbox
+parezja.pl###adblock_info
 pssite.com,ps3forum.pl###abl
 purepc.pl#@#[class*="reklama"]
 sport.tvp.pl###tvpoverlay_abdinfo
