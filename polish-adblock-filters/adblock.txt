@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 27 November 2016
+! Last modified: 29 November 2016
 ! Expires: 2 days
-! Version: 2016112701
+! Version: 2016112901
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016112701 aktualizacja: nie, 27 listopada 2016, 21:15:00
+! v.2016112901 aktualizacja: wt, 29 listopada 2016, 11:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -227,6 +227,7 @@ biznes.pl##.e_Box.analyses
 biznes.pl##.rightBoxR.boxPopComtR.cl
 biznes2biznes.com##[id^="stickynote"]
 biznes2biznes.com##DIV[style="width:200px;float:right;display:block;margin-left:-5px;"]
+biznesforum.pl##div[style="border-left:1px solid #cccccc;border-right:1px solid #cccccc;padding:0px;"]:not([id])
 biztok.pl##.ads.ads--sidebar
 biztok.pl,teleshow.wp.pl,gwiazdy.wp.pl,moto.wp.pl,wiadomosci.wp.pl,money.pl,turystyka.wp.pl,finanse.wp.pl,www.wp.pl##A[href^="http://dot.wp.pl/redir"]
 blog.pluralsight.com##.video.widescreen.flex-video
@@ -300,6 +301,7 @@ e-kg.pl###jm-banner
 e-kg.pl##.rstboxes
 e-kg.pl##DIV[style="text-align: center;"]
 e-kg.pl##a[href="http://www.e-leclerc.pl/"]
+e-krajna.pl,swiecie24.pl,zyciesokolowa.pl,ciechocinek.biz##.a-d-v-i
 efilmy.tv##.addbackground
 elektroda.pl##.smaller.m1
 elektroda.pl##img[alt="Google Adsense"]
@@ -860,6 +862,7 @@ wprost.pl###left-column > .art-area > .art-content > center
 wrzuta.pl###floorBG
 wschodnia.tv###right > .yt-position-inner
 wspomnijbliskich.pl###sponsor_title
+wtkplay.pl##[id^="adsys_"]
 wynagrodzenia.pl###slider_kontener
 www.axn.pl###block-dart-dart-tag-980x100-ldr-top.block.block-dart > .content > .dart-advertisement
 www.fcnet.pl###popup > li > div
@@ -882,8 +885,10 @@ www.ckm.pl##.adv-header
 www.applecenter.pl###leader-wrap
 www.ceneo.pl##.ado-top-billboard
 www.lubliniec.info##.rightSideBaner
-ceneo.pl##[class^="home-ad"]
+www.sosrodzice.pl##a[href^="http://www.sosrodzice.pl/m.php"]
+www.ceneo.pl##[class^="home-ad"]
 www.ceneo.pl##.js_widget
+www.policja2009.fora.pl##.f_bnr_type-1
 trybawaryjny.pl,www.applecenter.pl,zarabiajnaokazjach.pl##.textwidget
 www.bolec.info##.baner_max
 www.bolec.info##[class$="Board"]
@@ -1108,6 +1113,10 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||ppwidget.skapiec.pl/widget/$script,domain=androidpolska.pl
 ||satkurier.pl/getRandomBanner
 ||satkurier.pl/laravel/banery/
+||e-krajna.pl/banery_$image
+||swiecie24.pl/banery_$image
+||zyciesokolowa.pl/banery_$image
+||ciechocinek.biz/banery_$image
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1200,6 +1209,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||ajax.googleapis.com/ajax/libs/$script,domain=shinden.pl
 @@||cdnjs.cloudflare.com/ajax/libs/$script,domain=shinden.pl
 @@||cdn.flurry.com/js/flurry.js$script,domain=cdn.games.mobinozer.com
+@@||pclab.pl/img/extra/*_logo.$image,domain=pclab.pl
+@@||pclab.pl/img/extra/*_header.$image,domain=pclab.pl
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1215,6 +1226,7 @@ cda-online.pl###deadblocker_success_dialog
 dstar.pzk.pl,burze.dzis.net#@#.adsbygoogle
 dziennikwschodni.pl#@#.ad
 epiotrkow.pl###abpnot
+forum.vw-passat.pl###ct_i
 komputerswiat.pl##.adsense
 kursbootstrap.pl##.alert-dismissible.alert-success.alert
 mmorpg.org.pl,parezja.pl##.adsbygoogle
@@ -1225,11 +1237,16 @@ pssite.com,ps3forum.pl###abl
 purepc.pl#@#[class*="reklama"]
 sport.tvp.pl###tvpoverlay_abdinfo
 sucharry.pl###adb
+senda.pl#@#.advert_box
 wtkplay.pl,epoznan.pl#@#.ad
-wtkplay.pl,epoznan.pl#@#.advertising_block
-wtkplay.pl,epoznan.pl#@#.reklama
-wtkplay.pl,epoznan.pl#@#[class*="reklama"]
+lech.tv#@#.advertising_banner
+wtkplay.pl,epoznan.pl,lech.tv#@#.advertising_block
+wtkplay.pl,epoznan.pl,lech.tv#@#.reklama
+wtkplay.pl,epoznan.pl,lech.tv#@#[class*="reklama"]
 www.plotek.pl##.adb_plotek
+www.forum-wedkarskie.pl##.ads-checker-msg
+www.lubliniec.info##.baner_top
+przewodnikduchowy.pl#@#.adsbygoogle
 !
 !
 !---------------------------------Anti Adblock Rules blocking filters----------------------------------!
@@ -1241,7 +1258,7 @@ www.plotek.pl##.adb_plotek
 !
 !
 !---------------------------------Anti Adblock Rules whitelist filters----------------------------------!
-@@/js/ads.js$script,domain=solarkurier.pl|satkurier.pl
+@@/js/ads.js$script,domain=solarkurier.pl|satkurier.pl|saskakepa.waw.pl|e-krajna.pl|swiecie24.pl|zyciesokolowa.pl|ciechocinek.biz
 @@://*.*/pl/js/show_ads.js$script,domain=ki24.info|portalplock.pl|faktypilskie.pl
 @@|http://www.googletagmanager.com/gtm.js$script,domain=benchmark.pl
 @@||anyfiles.pl/pageloading/*-loader.jsp?ads=true
@@ -1269,10 +1286,19 @@ www.plotek.pl##.adb_plotek
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=mybank.pl
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=mybank.pl
 @@||pagead2.googlesyndication.com/pagead/js/r*/show_ads_impl.js$script,domain=mybank.pl
+@@.pl/menda/adsense.js$script,domain=to.proste.info.pl|seciki.pl
+@@||www.sc7.pl/media/graphics/sc7_468x60.png$image,domain=mynavi-expert.pl
+@@||epiotrkow.pl/js/adv2.reklama.js$script,domain=epiotrkow.pl
+@@||biznesforum.pl/adsense.js$script,domain=biznesforum.pl
+@@||mybank.pl^$generichide
+@@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=mybank.pl
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=mybank.pl
+@@||pagead2.googlesyndication.com/pagead/js/r*/show_ads_impl.js$script,domain=mybank.pl
 !
 !
 !--------------------------Rules block ads after antiadblock rules-------------!
 parezja.pl##.td-banner-wrap-full
+przewodnikduchowy.pl##.contop
 mybank.pl##.adsbygoogle
 mybank.pl##div[id^="div-gpt-ad"]
 mybank.pl##[id^="aswift_"]
