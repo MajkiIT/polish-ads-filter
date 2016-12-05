@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
 ! Homepage: http://www.certyficate.it/
-! Last modified: 04 December 2016
+! Last modified: 05 December 2016
 ! Expires: 2 days
-! Version: 2016120402
+! Version: 2016120501
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016120402 aktualizacja: nie, 04 grudnia 2016, 17:45:00
+! v.2016120501 aktualizacja: pon, 05 grudnia 2016, 09:35:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -32,6 +32,7 @@ _banery/980x200
 /scripts/click.php$popup
 /data/ap3bo6/*.jpg$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 /data/ap3bo6/*.swf$object,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
+.pl/data/cameras/banner_$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ://*.*/banery_foto/$image,domain=ki24.info|portalplock.pl|faktypilskie.pl
 .*sales*.pl/offers/$image
@@ -788,6 +789,7 @@ turystyka.wp.pl###b_container
 turystyka.wp.pl##.typOferty.ST-BX-Oferty-dnia-samoloty
 turystyka.wp.pl##.typOferty.hotele.ST-BX-Oferty-dnia-hotele
 tv.rp.pl##.aiText
+tvmalbork.pl,tvsztum.pl,zulawyimierzeja24.pl,tvregionalna24.pl##.advert_outer
 tvseriesonline.pl##a[href="http://amoface.com"]
 tvmalbork.pl,tvsztum.pl,zulawyimierzeja24.pl,tvregionalna24.pl##.clickable[onclick^="article_video_advert_click"]
 tvn24.pl###adocean-screening-layer
@@ -1297,7 +1299,7 @@ porteuropa.eu##i#g207
 @@||digi-tv.pl/js/ads.js$script
 @@||mybank.pl^$generichide
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=mybank.pl
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=mybank.pl
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=mybank.pl|gadzetomania.pl|komorkomania.pl|money.pl|portal.abczdrowie.pl|pudelek.tv|wp.pl
 @@||pagead2.googlesyndication.com/pagead/js/r*/show_ads_impl.js$script,domain=mybank.pl
 @@.pl/menda/adsense.js$script,domain=to.proste.info.pl|seciki.pl
 @@||www.sc7.pl/media/graphics/sc7_468x60.png$image,domain=mynavi-expert.pl
@@ -1306,7 +1308,6 @@ porteuropa.eu##i#g207
 @@||mybank.pl^$generichide
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=mybank.pl
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=mybank.pl
-@@||pagead2.googlesyndication.com/pagead/js/r*/show_ads_impl.js$script,domain=mybank.pl
 @@||cdnv.gazeta.pl/ad/banner/_adsense_/_adserver/_adview_.ad.json$xmlhttprequest,domain=gazeta.pl
 @@||kubofonista.net/r/ad.htm$script,domain=kubofonista.net
 @@||pc-sos.pl/ad.htm$script,domain=pc-sos.pl|xn--strela-8db.pl
