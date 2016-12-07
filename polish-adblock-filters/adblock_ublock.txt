@@ -3,15 +3,15 @@
 ! polskie filtry do uBlocka uzupelnienie
 ! Collaborators: F4z, xxcriticxx
 ! Homepage: http://www.certyficate.it/
-! Last modified: 03 December 2016
+! Last modified: 08 December 2016
 ! Expires: 2 days
-! Version: 2016120301
+! Version: 2016120801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016120301 aktualizacja: sob, 03 grudzień 2016, 13:35:00
+! v.2016120801 aktualizacja: czw, 08 grudzień 2016, 00:25:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -93,3 +93,7 @@ pclab.pl###tabwrapper #tab:style(margin-top: 90px !important;)
 !# playpuls.pl
 !# Ominięcie reklam
 playpuls.pl##script:inject(abort-on-property-write.js, ads)
+!
+!# senda.pl
+!# Ukrycie pustego miejsca po reklamie
+senda.pl##.advert_box > div > .tablebg:style(height: 1px !important; visibility: hidden !important;)
