@@ -1,17 +1,17 @@
 [Adblock Plus 2.0]
 ! Title: Adblock & uBlock polish filters
 ! polskie filtry do Adblocka i uBlocka
-! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter
+! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93
 ! Homepage: http://www.certyficate.it/
-! Last modified: 08 December 2016
+! Last modified: 10 December 2016
 ! Expires: 2 days
-! Version: 2016120805
+! Version: 2016121001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016120805 aktualizacja: czw, 08 grudnia 2016, 12:30:00
+! v.2016121001 aktualizacja: sob, 10 grudnia 2016, 13:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -1426,22 +1426,19 @@ facet.wp.pl,teleshow.wp.pl##div[class^="_"]:matches-css(background-image: url("d
 !
 !
 !--------------------------Rules wykop.pl-------------!
-!https://gist.githubusercontent.com/dmnmrzk/372968e8f51f6d7d2dc7/raw/8714607e19c2fa6f62d81bfd9da475d5edec1b3c/wykop-adblock.txt!
 wykop.pl###autopromotion
-www.wykop.pl##.blacklisted
 wykop.pl###fixedBox
+wykop.pl###fixedBoxIdent
 wykop.pl###itemsStream:not(.touch-content) .article:not(.dC)
-wykop.pl###nav > .annotation.type-alert
-www.wykop.pl##ul#dyingLinksBox
 wykop.pl##.baner-mobile
-www.wykop.pl##article.slim
-wykop.pl##li.payentry
-wykop.pl##div.doodle
-*wykop.pl/*/paylink_$image,domain=www.wykop.pl
-||www.wykop.pl/paylink/emiter/$image,domain=www.wykop.pl
-||nowy.wykop.pl/static/nowywykoppl/sponsors/$image,stylesheet,script
-wykop.pl##a[class*=screening]
-||wykop.pl/tracker/emiter/$image,domain=www.wykop.pl
+wykop.pl##div.r-block:has(:scope > .baner-mobile)
+wykop.pl##div.r-block:has(:scope > [id^=bmone2n-])
+wykop.pl##li.link:has(.adsbygoogle)
+wykop.pl##li.link:has(a[href*='wykop.pl/market'])
+wykop.pl##li.link:has(a[href*='wykop.pl/paylink'])
+wykop.pl##li.link:has(a[href*='wykop.pl/reklama'])
+||imgwykop.pl/*/paylink_$image,domain=www.wykop.pl
+||wykop.pl/paylink/emiter/$image,domain=www.wykop.pl
 !
 !
 !--------------------------Rules unblock protection------------!
