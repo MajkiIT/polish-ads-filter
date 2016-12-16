@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 16 December 2016
 ! Expires: 2 days
-! Version: 2016121603
+! Version: 2016121604
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016121603 aktualizacja: ptk, 16 grudnia 2016, 12:50:00
+! v.2016121604 aktualizacja: ptk, 16 grudnia 2016, 18:25:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -1473,6 +1473,6 @@ www.wp.pl##._2Gdr9
 !
 !
 !--------------------------Experimental rules------------!
-facet.wp.pl,teleshow.wp.pl##div[class^="_"]:matches-css(background-image: /^url(.*wp.pl/)
+facet.wp.pl,teleshow.wp.pl##div[class^="_"]:matches-css(background-image: /^url\(.*wp\.pl/)
 facet.wp.pl,teleshow.wp.pl##script:inject(abort-on-property-write.js, iaqExt)
-/^(http|https)://[a-z]{1,20}.wp.pl/.{200,}/$script,important,domain=facet.wp.pl|teleshow.wp.pl
+/^(http|https):\/\/[a-z]{1,20}\.wp\.pl\/.{200,}/$script,important,domain=facet.wp.pl|teleshow.wp.pl
