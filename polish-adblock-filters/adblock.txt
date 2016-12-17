@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93
 ! Homepage: http://www.certyficate.it/
-! Last modified: 16 December 2016
+! Last modified: 17 December 2016
 ! Expires: 2 days
-! Version: 2016121604
+! Version: 2016121701
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016121604 aktualizacja: ptk, 16 grudnia 2016, 18:25:00
+! v.2016121701 aktualizacja: sob, 17 grudnia 2016, 23:15:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -169,7 +169,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##[id^="ad_global"]
 ##[id^="aswift_"]
 ~.de,~box.com,~hardcorowo.pl,~gumtree.com,~hulu.com,~svobodneforum.cz##[class^="ad-"]
-##[id^="adv-"]
+~dizibox.com##[id^="adv-"]
 ##[href^="http://csr.onet.pl/eclk/clk"]
 ##a[href*="bbelements.com/please/track/adClick/"]
 ##img[alt="reklama"]
@@ -191,11 +191,13 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##[id^="banner_900x"]
 ###phContent_avastBadge
 ##[href*="://clickserve.dartsearch.net/link/click"]
+##a[href^="http://www.trizer.pl/?utm_source"]
 !
 !
 !------------------------Specific element hiding rules------------------------!
 24tvonline.pl##.dataContainer
 4lomza.pl,zambrow.org##[id*="banner"]
+4lomza.pl##.bxbanner
 allegro.pl###installments-banner-container
 allegro.pl###main_page_main_1200_400
 allegro.pl###mainpage-marketing-showcases > .clearfix
@@ -310,7 +312,7 @@ e-kg.pl###jm-banner
 e-kg.pl##.rstboxes
 e-kg.pl##DIV[style="text-align: center;"]
 e-kg.pl##a[href="http://www.e-leclerc.pl/"]
-e-krajna.pl,swiecie24.pl,zyciesokolowa.pl,ciechocinek.biz##.a-d-v-i
+e-krajna.pl,swiecie24.pl,zyciesokolowa.pl,ciechocinek.biz,ki24.info,faktypilskie.pl,zyciesiedleckie.pl,koronowo.net.pl,swiecie.siecportali.pl##.a-d-v-i
 efilmy.tv##.addbackground
 elektroda.pl##.smaller.m1
 elektroda.pl##img[alt="Google Adsense"]
@@ -509,10 +511,19 @@ live.com##.popupOuterCellLeft
 lm.pl##.belka_z_banerami
 lokalna24.pl##OBJECT[data^="/banery/"]
 lokalna24.pl##IMG[src^="/banery/"]
+londynek.net##.slTop
+londynek.net###ldnk-abp
+londynek.net##.jd-oaz
+londynek.net##.jd-sponsored-links-top
+londynek.net##.jd-content-to-left.jd-content-3-2
+londynek.net##.bannersZoneB1
 lowcygier.pl###moneymaker-1
 lowcygier.pl##.big-top-widget-box
 lowcygier.pl##[style="min-width:730px; min-height: 90px; margin: 10px auto auto auto; text-align:center; overflow:hidden;"]
 lubimyczytac.pl##.container_12 > A[href^="http://lubimyczytac.pl/redirect.php"]
+lubin.pl##.ad_group
+lubin.pl##.a-.g-single
+lubin.pl##.panel-widget-style.bottomspace.topspace
 lublin112.pl###side_ad_widget-2
 lublin112.pl##.hehehe_box
 lublin112.pl##div.tickercontainer
@@ -542,6 +553,7 @@ mikrokontroler.pl##[id^="block-simpleads-ad"]
 mistrzowie.org###services_box
 mistrzowie.org##[href*="utm_source=mistrzowie&utm_medium=banner&utm_campaign=pewexserwisy_mistrzowie"]
 mistrzowie.org##a[href^="http://pewex.pl/"]
+mlawa.fora.pl##table.forumline > tbody > tr:has(a[href^="http://www.mlawa.fora.pl/reklama"])
 mlecznepodroze.onet.pl##.banner728-container.clearfix
 mlecznepodroze.onet.pl##.widgetAD.widget_text
 mlecznepodroze.onet.pl##.g-single.a-336
@@ -572,6 +584,8 @@ na-luzie.net##a[href^="http://trafisz.com/"]
 napisy24.pl##.custom_pozioma
 napisy24.pl##[id^="napisy24"]
 napisy24.pl##a[href^="http://www.allplayer.org/"]
+naszamlawa.pl##.banner
+naszamlawa.pl###fancybox-wrap
 newsf24.pl##.box
 niebezpiecznik.pl##div[style="float:left"]
 nk.pl###content_banner > .ad_sandbox_wrapper
@@ -750,6 +764,7 @@ swieta.wp.pl##.section__baner.section
 swieta.wp.pl##.article--enteries
 swieta.wp.pl##a[href^="http://www.mediaexpert.pl/"]
 swieta.wp.pl##SECTION + .section.section--bg-white.products--section
+stalowemiasto.pl##.main-cbaner
 steam.io###dd_ajax_float
 store.office.live.com##.popupOuterCellRight
 stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"][align="center"]:not([width])
@@ -771,8 +786,10 @@ supernowosci24.pl###notificationbar
 sympatia.onet.pl###backdrop-container
 sympatia.onet.pl###close-frame
 szybkiefilmy.pl##[href^="http://2hx.pl/"]
-targeo.pl###Advertisement
 tabletowo.pl##[id^="text-"]
+tarnow.in##img[src][alt^="Baner"]
+tarnow.in###text-21 > .post-header > .post-header
+targeo.pl###Advertisement
 thepolandtimes.com###header > .group.container > .container-inner > .pad.gro
 tekstowo.pl##.adv-home-child
 tekstowo.pl###advSong
@@ -933,6 +950,14 @@ www.kufel.pl###Process
 www.skapiec.pl##.creation-corner
 www.ps4site.pl###text-12
 www.expressilustrowany.pl###gora1
+www.turek.net.pl##[class*="banner"]
+www.turek.net.pl##.l-head-advertisement.row
+www.turek.net.pl##span.color-grey.font-size-10
+www.iturek.net##[id^="block-views-baner"]
+www.iturek.net##.view-display-id-block.view-id-_yczenia.view--yczenia.view > .view-content
+www.chwaszczyno.pl##.bannergroup
+www.chwaszczyno.pl##.bd-custom-image.bd-btn-success.bd-bootstrap-btn.bd-tagstyles.bd-blockcontent > .custom
+www.uniejow.net.pl###baner
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -973,6 +998,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 !
 |http://mon.services.tvn.pl/_pix/uri-$image
 |http://pix2.services.tvn.pl/pix2.js
+||4lomza.pl/banner/$image
 ||a.ib.gazeta.pl^$image
 ||a1.advertine.com/w.js$script,domain=baje.pl
 ||ad.adview.pl/ad/
@@ -1047,8 +1073,13 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||interia.pl/iframe$subdocument
 ||jastrzebieonline.pl/js/scripts.js$script,domain=jastrzebieonline.pl
 ||jastrzebieonline.pl/files/banners/$domain=jastrzebieonline.pl
+||ki24.info/banery_extra/$image
 ||konto.amronet.pl$subdocument,domain=dobreprogramy.pl
+||koronowo.net.pl/banery_foto/$image
 ||lib.onet.pl/s.csr/external/iframe$script,subdocument
+||lubin.pl/wp-content/uploads/baner$image
+||lubin.pl/wp-content/uploads/reklama_$image
+||lubin.pl/wp-content/themes/supernews-provider/adrotate_group.php
 ||media.empik.com/content/new_event/$image,domain=empik.com
 ||media.spidersweb.pl/wp-content/uploads/*.swf$object,domain=splay.pl
 ||media2.cinema-city.pl/pl/*.swf
@@ -1060,7 +1091,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||motocyklistow.pl/uploads/banners/$image
 ||mybboard.pl/images/promo/$image
 ||mylead.eu/banner/
-||naszamlawa.pl/images/banner/$object,image
+||naszamlawa.pl/images/banner/$object,image,subdocument
 ||nazwa.pl/a.php?$object-subrequest,domain=rmfon.pl
 ||nazwa.pl/video/$object-subrequest,domain=rmfon.pl
 ||news.targeo.pl/oarm.php$xmlhttprequest,domain=mapa.targeo.pl
@@ -1070,6 +1101,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||pclab.pl/img/extra/$image,domain=pclab.pl
 ||pclab.pl/img/special/*.jpg
 ||pclab.pl/partners/$image,subdocument,domain=pclab.pl
+||picsrv.fora.pl/cdn/tri*trizer
 ||pogodynka.onet.pl/apiinfos/htmlwarn/
 ||portalplock.pl/banery/
 ||ppstatic.pl/*/tymczasowe/$image
@@ -1083,11 +1115,14 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||reseton.net/static/player/*/vast.js$script
 ||reseton.pl/static/player/*/vast.js$script
 ||sat-elita.net.pl/images/site_banner_
+||serwer1566493.home.pl^$subdocument,domain=naszamlawa.pl
 ||sklep-tvsat.hcore.pl/bannery/$image,domain=portal.dvhk.to
 ||sklep.gry-online.pl/imgs/tapeta/$image,domain=sklep.gry-online.pl
 ||smartadserver.com/call/cliccommand/$popup
 ||spidersweb.pl/wp-content/themes/new_sw_v3_git/others/$subdocument,domain=spidersweb.pl
 ||spolecznosci.net^$image,subdocument,script,popup
+||stalowemiasto.pl/_reklamy/$image
+||stalowemiasto.pl/colada2/_pliki/emisje/$object,image
 ||static*jelonka.com
 ||static.dpcdn.pl/*/assets/img/*.jpg$image,domain=dobreprogramy.pl
 ||static.evertiq.pl/bximg/cbtg/$image
@@ -1102,6 +1137,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||superfilm.pl/*source=admedia&model=pop$popup
 ||superfilm.pl/branding/$image,domain=superfilm.pl
 ||superfilm.pl/vast/comeon.xml$object
+||swiecie.siecportali.pl/banery_foto/$image
 ||system.mondeos.pl/$image,script
 ||t-mobile-trendy.pl/graph/backgrounds/$image
 ||track.omgpl.com/bs/
@@ -1118,6 +1154,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www.audiostereo.pl/banery/
 ||www.benchmark.pl/js/header.ad.js$script
 ||www.cadblog.pl/*.gif$image
+||www.chwaszczyno.pl/images/banners/$image
+||www.chwaszczyno.pl/templates/chwaszczyno*/images/designer/*_baner*.jpg$image
 ||www.comperialead.pl/upload/$image
 ||www.goal.pl/ban/$image
 ||www.koscian.net/photos/adv_
@@ -1130,6 +1168,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www.portalprzemyski.pl/wp-content/re/
 ||www.purepc.pl/e404.php$image,domain=www.purepc.pl
 ||www.purepc.pl/files/Image/purepc$image,domain=purepc.pl
+||www.uniejow.net.pl/p4banners/baner/$image,object
 ||www.wiocha.pl/subpages/page.php
 ||www1.advice.movie.advlab.pl$object,domain=get.x-link.pl
 ||zulawyimierzeja24.pl/assets/js/jwplayer/jwplayer.html5.js
@@ -1147,6 +1186,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||satkurier.pl/laravel/banery/
 ||e-krajna.pl/banery_$image
 ||swiecie24.pl/banery_$image
+||zyciesiedleckie.pl/banery_foto/$image
 ||zyciesokolowa.pl/banery_$image
 ||ciechocinek.biz/banery_$image
 ||bielsko.biala.pl/userfiles/banery/$image,object
@@ -1203,7 +1243,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||anime-odcinki.pl/sites/default/files/styles/medium-smaller__200x200_/public/okladki
 @@||adocean-pl.hit.gemius.pl/*/url=http://sport.tvp.pl/$popup,other
 @@||remiza.com.pl/ads/haft/jquery.slides.min.js$script
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wp.pl|wp.tv|portal.abczdrowie.pl|grydladzieci.pl|www.money.pl
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wp.pl|wp.tv|portal.abczdrowie.pl|grydladzieci.pl|www.money.pl|vod.pl|exs.pl
 @@||imasdk.googleapis.com/js/core/$subdocument,domain=wp.pl|wp.tv|portal.abczdrowie.pl
 @@||mdn.net/instream/video/client.js$script,domain=facet.wp.pl
 @@||.tradedoubler.com/*www.mediaexpert.pl*
@@ -1299,7 +1339,7 @@ www.ps4forum.pl##.googleheader
 !
 !---------------------------------Anti Adblock Rules whitelist filters----------------------------------!
 @@/js/ads.js$script,domain=solarkurier.pl|satkurier.pl|saskakepa.waw.pl|e-krajna.pl|swiecie24.pl|zyciesokolowa.pl|ciechocinek.biz
-@@://*.*/pl/js/show_ads.js$script,domain=ki24.info|portalplock.pl|faktypilskie.pl
+@@://*.*/pl/js/show_ads.js$script,domain=ki24.info|portalplock.pl|faktypilskie.pl|e-krajna.pl|swiecie24.pl|zyciesokolowa.pl|zyciesiedleckie.pl|koronowo.net.pl|ciechocinek.biz|swiecie.siecportali.pl
 @@|http://www.googletagmanager.com/gtm.js$script,domain=benchmark.pl
 @@||anyfiles.pl/pageloading/*-loader.jsp?ads=true
 @@||brotkids.tv/media/mod_pwebadblock/js/ads.js$script
@@ -1324,7 +1364,7 @@ www.ps4forum.pl##.googleheader
 @@||digi-tv.pl/js/ads.js$script
 @@||mybank.pl^$generichide
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=mybank.pl
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=mybank.pl|gadzetomania.pl|komorkomania.pl|money.pl|portal.abczdrowie.pl|pudelek.tv|wp.pl|wp.tv|parenting.pl
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=autokult.pl|biztok.pl|gadzetomania.pl|kafeteria.pl|kafeteria.tv|komediowo.pl|komorkomania.pl|money.pl|mybank.pl|parenting.pl|portal.abczdrowie.pl|pudelek.tv|wp.pl|wp.tv|wrzuta.pl
 @@||wp.hit.gemius.pl/xgemius.js$script,domain=wp.pl
 @@||static.criteo.net/js/ld/publishertag.js$script,domain=wp.pl
 @@||pagead2.googlesyndication.com/pagead/js/r*/show_ads_impl.js$script,domain=mybank.pl
@@ -1465,6 +1505,7 @@ wykop.pl##li.link:has(a[href*='wykop.pl/reklama'])
 !--------------------------Rules for ublock, but can be use with adblock------------!
 joemonster.org##script:inject(abort-on-property-write.js, ub_ct_load)
 ||ipla.hit.stat24.com^$object,domain=ipla.tv,important
+||imasdk.googleapis.com/js/core/bridge*.html$subdocument,domain=exs.pl,important
 !
 !
 !--------------------------Rules to hide reklama blocks on wp.pl------------!
