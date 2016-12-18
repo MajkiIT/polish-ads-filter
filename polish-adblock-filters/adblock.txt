@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 18 December 2016
 ! Expires: 2 days
-! Version: 2016121801
+! Version: 2016121802
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016121801 aktualizacja: nie, 18 grudnia 2016, 15:00:00
+! v.2016121802 aktualizacja: nie, 18 grudnia 2016, 20:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -1284,12 +1284,16 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||pclab.pl/img/extra/*_logo.$image,domain=pclab.pl
 @@||pclab.pl/img/extra/*_header.$image,domain=pclab.pl
 @@||websystem.pl/environment/cache/images/300_250_$image,domain=websystem.pl
+@@||pubads.g.doubleclick.net/gampad/ad$image,domain=www.emag.pl
+@@||pagead2.googlesyndication.com/pagead/imgad$image,domain=www.emag.pl
+@@||googletagmanager.com/gtm.js$script,domain=www.emag.pl
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
 freedisc.pl#@#.footer-ad
 wpworld.pl,windowsowo.pl#@##adBanner
 memytutaj.pl#@##top-ad
+emag.pl#@#[href^="http://pubads.g.doubleclick.net/"]
 !
 !
 !---------------------------------Anti Adblock Rules element hide----------------------------------!
@@ -1517,3 +1521,10 @@ www.wp.pl##._2Gdr9
 facet.wp.pl,teleshow.wp.pl##div[class^="_"]:matches-css(background-image: /^url\(.*wp\.pl/)
 facet.wp.pl,teleshow.wp.pl##script:inject(abort-on-property-write.js, iaqExt)
 /^(http|https):\/\/[a-z]{1,20}\.wp\.pl\/.{200,}/$script,important,domain=facet.wp.pl|teleshow.wp.pl
+!
+!
+!--------------------------Rules for pages with random adv scripts------------!
+|http://$third-party,script,domain=electro-torrent.pl
+@@||devil-torrents.pl^$generichide
+|http://$script,third-party,domain=devil-torrents.pl
+@@||ajax.googleapis.com^$domain=devil-torrents.pl
