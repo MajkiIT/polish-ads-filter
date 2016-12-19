@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 19 December 2016
 ! Expires: 2 days
-! Version: 2016121906
+! Version: 2016121907
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016121906 aktualizacja: pon, 19 grudnia 2016, 19:30:00
+! v.2016121907 aktualizacja: pon, 19 grudnia 2016, 22:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -224,7 +224,7 @@ audiostereo.pl###container > .sidebar_ranking
 augustow24.pl##[class^="rek_sr_"]
 augustow24.pl##.r_prawa_01
 augustow24.pl##.r_lewa_01
-auto-swiat.pl##.banner
+auto-swiat.pl,biala24.pl##.banner
 autocentrum.pl##a[href^="http://blbl.cr/"]
 autodoradca.pl##.banner-top
 bankier.pl##[class$="Adv"]
@@ -972,6 +972,7 @@ www.uniejow.net.pl###baner
 www.terazkrosno.pl##.center.custom
 www.miechowski.pl###rev_slider_8_1
 www.miechowski.pl##.attachment-full.vc_single_image-img
+www.dostawczakiem.pl###reklamowkaTop
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1207,6 +1208,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||unblock.onaudience.com^$third-party
 ||f01.esfr.pl/si_upload/gfx/*.png$image,domain=euro.com.pl
 ||podlasie24.pl/upl/ban*/$image,object
+||files.biala24.pl/banners/$image
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1527,7 +1529,6 @@ wykop.pl##a[href*="wykop.pl/tracker"]
 !
 !
 !--------------------------Rules for ublock, but can be use with adblock------------!
-joemonster.org##script:inject(abort-on-property-write.js, ub_ct_load)
 ||ipla.hit.stat24.com^$object,domain=ipla.tv,important
 ||imasdk.googleapis.com/js/core/bridge*.html$subdocument,domain=exs.pl,important
 !
