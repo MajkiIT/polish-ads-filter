@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93
 ! Homepage: http://www.certyficate.it/
-! Last modified: 18 December 2016
+! Last modified: 19 December 2016
 ! Expires: 2 days
-! Version: 2016121802
+! Version: 2016121901
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016121802 aktualizacja: nie, 18 grudnia 2016, 20:00:00
+! v.2016121901 aktualizacja: pon, 19 grudnia 2016, 14:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -192,6 +192,8 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ###phContent_avastBadge
 ##[href*="://clickserve.dartsearch.net/link/click"]
 ##a[href^="http://www.trizer.pl/?utm_source"]
+/wp-content/uploads/*/baner_$image,domain=lubanski.eu|miastoiludzie.pl
+##.adviewDFPBanner
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -222,6 +224,9 @@ audiostereo.pl###skapiec-widget
 audiostereo.pl###opinie_db > .general_box
 audiostereo.pl###ips_Posts > .right
 audiostereo.pl###container > .sidebar_ranking
+augustow24.pl##[class^="rek_sr_"]
+augustow24.pl##.r_prawa_01
+augustow24.pl##.r_lewa_01
 auto-swiat.pl##.banner
 autocentrum.pl##a[href^="http://blbl.cr/"]
 autodoradca.pl##.banner-top
@@ -316,6 +321,10 @@ e-krajna.pl,swiecie24.pl,zyciesokolowa.pl,ciechocinek.biz,ki24.info,faktypilskie
 efilmy.tv##.addbackground
 elektroda.pl##.smaller.m1
 elektroda.pl##img[alt="Google Adsense"]
+elektroda.pl##.the-content.col-md-8 > [style="float: left"]
+elektroda.pl##[style="float: left; position: relative;"]
+elektroda.pl##.sec-ads
+elektroda.pl##.button
 embed.vidso.tv###video_container
 eredivisie.pl##IMG[src^="http://www.goal.pl/ban/"]
 erocentrum.pl##.panel
@@ -403,6 +412,7 @@ gowork.pl##[id^="ad_"]
 gowork.pl##.__b-popup1__.b-modal
 gowork.pl##.popup-free-offer
 grafoteka.pl###info
+grajewo24.pl,elk24.pl,augustow24.pl###popup
 gram.pl##.stripeBar
 gram.pl###billBoardAreaWrapper
 grupa7j.pl##table[style*="img/bg-black.png"] > tbody > tr
@@ -546,6 +556,8 @@ mgsm.pl##TD[style="padding:0px;"]
 mh24.pl###colorbox
 mh24.pl###cboxOverlay
 mh24.pl##[id^="text-"]
+miastoiludzie.pl###text-11
+miastoiludzie.pl###header
 miejsce.warszawa.gazeta.pl###holder_201 > .travelist
 mfind.pl###sidebar-sticky-widgets > .widget-ebook-form > .widget-ebook-form-content
 mikrokontroler.pl##TD[style*="background-image: url(\"http://mikrokontroler.pl/"]
@@ -596,6 +608,7 @@ niebezpiecznik.pl##a[href*="//niebezpiecznik.pl/r4"]
 nocoty.pl,aleseriale.pl###slider300Wrapper
 nokiahacking.pl##.nh_ads
 nowafarmacja.pl##[class^="bg-banner-wrapper"]
+nowodworski24.pl###ubm-banners-2
 nysa24.pl###jm-header
 nysa24.pl###Mod348
 o2.pl##.box-sidebar.box-sidebar-1
@@ -672,6 +685,7 @@ praca.interia.pl###nsitsp_3
 pracuj.pl##[id^="divFav"]
 pracuj.pl##.betamore.openJDOMWindow
 pracuj.pl##.expander
+pracawgdansku.com.pl##TR[height="120px"]
 prawo.money.pl###img11155698
 prostozmostu.net###ecoeconomy
 prostozmostu.net###nmb-BusyBox
@@ -958,6 +972,9 @@ www.iturek.net##.view-display-id-block.view-id-_yczenia.view--yczenia.view > .vi
 www.chwaszczyno.pl##.bannergroup
 www.chwaszczyno.pl##.bd-custom-image.bd-btn-success.bd-bootstrap-btn.bd-tagstyles.bd-blockcontent > .custom
 www.uniejow.net.pl###baner
+www.terazkrosno.pl##.center.custom
+www.miechowski.pl###rev_slider_8_1
+www.miechowski.pl##.attachment-full.vc_single_image-img
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1191,6 +1208,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||ciechocinek.biz/banery_$image
 ||bielsko.biala.pl/userfiles/banery/$image,object
 ||unblock.onaudience.com^$third-party
+||f01.esfr.pl/si_upload/gfx/*.png$image,domain=euro.com.pl
+||podlasie24.pl/upl/ban*/$image,object
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1494,6 +1513,10 @@ wykop.pl##li.link:has(a[href*='wykop.pl/paylink'])
 wykop.pl##li.link:has(a[href*='wykop.pl/reklama'])
 ||imgwykop.pl/*/paylink_$image,domain=www.wykop.pl
 ||wykop.pl/paylink/emiter/$image,domain=www.wykop.pl
+||wykop.pl/tracker
+wykop.pl##.r-block:has(a[href*="wykop.pl/tracker"])
+wykop.pl##a[href*="wykop.pl/tracker"]
+||s1.cdn03.imgwykop.pl/static/wykoppl/img/rect/$image
 !
 !
 !--------------------------Rules unblock protection------------!
@@ -1524,7 +1547,5 @@ facet.wp.pl,teleshow.wp.pl##script:inject(abort-on-property-write.js, iaqExt)
 !
 !
 !--------------------------Rules for pages with random adv scripts------------!
-|http://$third-party,script,domain=electro-torrent.pl
-@@||devil-torrents.pl^$generichide
-|http://$script,third-party,domain=devil-torrents.pl
-@@||ajax.googleapis.com^$domain=devil-torrents.pl
+/:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])/.{30,}/$script,popup
+/^http:\/\/[a-zA-Z.]{10,}\.com\/[a-zA-Z]{1,}\.\js/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl
