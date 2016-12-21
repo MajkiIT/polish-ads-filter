@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93
 ! Homepage: http://www.certyficate.it/
-! Last modified: 19 December 2016
+! Last modified: 21 December 2016
 ! Expires: 2 days
-! Version: 2016121907
+! Version: 2016122101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016121907 aktualizacja: pon, 19 grudnia 2016, 22:30:00
+! v.2016122101 aktualizacja: sr, 21 grudnia 2016, 10:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -164,7 +164,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##a[href^="https://www.solutions4ad.com/partner/scripts/click.php"]
 ##[id^="ad_global"]
 ##[id^="aswift_"]
-~.de,~box.com,~hardcorowo.pl,~gumtree.com,~hulu.com,~svobodneforum.cz##[class^="ad-"]
+~de,~box.com,~hardcorowo.pl,~gumtree.com,~hulu.com,~svobodneforum.cz##[class^="ad-"]
 ~dizibox.com##[id^="adv-"]
 ##[href^="http://csr.onet.pl/eclk/clk"]
 ##a[href*="bbelements.com/please/track/adClick/"]
@@ -197,6 +197,8 @@ pl/popup.js|$script
 24tvonline.pl##.dataContainer
 4lomza.pl,zambrow.org##[id*="banner"]
 4lomza.pl##.bxbanner
+40ton.net##.size-full
+40ton.net##a[href^="http://www.trans.eu/pl/form-a2"]
 allegro.pl###installments-banner-container
 allegro.pl###main_page_main_1200_400
 allegro.pl###mainpage-marketing-showcases > .clearfix
@@ -309,6 +311,7 @@ doz.pl##.clearfix.container > .clearfix.row
 dstar.pzk.pl##[style$="background: #dfdfdf;"]
 dstar.pzk.pl##[style^="text-align: center; font-size: 8px; padding:"]
 dziennik.pl##[style="text-align:center; margin: 0 0 10px 0;padding-bottom: 20px"]
+e-grajewo.pl##[id^="rotator_"]
 e-kg.pl##.bannergroup
 e-kg.pl###jm-banner
 e-kg.pl##.rstboxes
@@ -323,6 +326,7 @@ elektroda.pl##[style="float: left; position: relative;"]
 elektroda.pl##.sec-ads
 elektroda.pl##.button
 embed.vidso.tv###video_container
+eostroleka.pl##DIV[style="margin-bottom:10px; margin-left:25px; float:left; width:300px; height:300px;"]
 eredivisie.pl##IMG[src^="http://www.goal.pl/ban/"]
 erocentrum.pl##.panel
 eska.pl##A[style="display: block; height: 100%; width: 100%;"]
@@ -353,6 +357,7 @@ films4free.pl##.M2U3OGQ4ZGY1
 filmweb.pl###flashcontent3
 filmweb.pl###pasekup
 fishki.pl###fancybox-wrap
+fm.tuba.pl##tuba-ads
 foodpanda.pl###campaign_22924_lightbox
 forbes.pl###Article-Inner-Content
 fora.pl##.jf--shown.jf__header__bar
@@ -1209,6 +1214,10 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||f01.esfr.pl/si_upload/gfx/*.png$image,domain=euro.com.pl
 ||podlasie24.pl/upl/ban*/$image,object
 ||files.biala24.pl/banners/$image
+||40ton.net/wp-content/uploads/*.gif$image
+||40ton.net/wp-content/uploads/*.png$image
+||www.eostroleka.pl/tlo-j*.jpg$image
+||www.eostroleka.pl/luba/dane/pliki/*.swf$object
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1376,7 +1385,7 @@ www.ps4forum.pl##.googleheader
 @@||ppstatic.pl/*/ads.js$script,domain=pomorska.pl
 @@||sascdn.com/video/$script,domain=eskago.pl
 @@||seansik.nl/seansik/js/ads.js$script
-@@||tuba.pl/*/ad/$xmlhttprequest
+@@||tuba.pl/*/ad*/$xmlhttprequest
 @@||vod.pl^$generichide
 @@||webshark.pl/adserver/*advertise_check=1$script,domain=vider.info
 @@||wtkplay.pl/javascript/ads.js$script
@@ -1474,9 +1483,9 @@ vsport.in##IMG[src*="=Miejsce+na+reklam"]
 vstrim.pl##[style^="position: absolute;"]
 www.bayern.munchen.pl##a[href^="https://www.sts.pl/"]
 www.bayern.munchen.pl###box_polecamy
-.xyz##[class^="a_"]
-.xyz##[id$="_right"]
-.xyz,mecz.tv,ipilka.info##[class$="_right"]
+xyz##[class^="a_"]
+xyz##[id$="_right"]
+xyz,mecz.tv,ipilka.info##[class$="_right"]
 !
 !
 !--------------------------Rules sport streams blocking filters-------------!
