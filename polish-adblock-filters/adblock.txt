@@ -3,7 +3,7 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93
 ! Homepage: http://www.certyficate.it/
-! Last modified: 23 December 2016
+! Last modified: 26 December 2016
 ! Expires: 2 days
 ! Version: 2016122307
 ! Contact: errors@certyficate.it
@@ -11,7 +11,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016122307 aktualizacja: ptk, 23 grudnia 2016, 21:50:00
+! v.2016122601 aktualizacja: pon, 26 grudnia 2016, 14:35:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -191,6 +191,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 /wp-content/uploads/*/baner_$image,domain=lubanski.eu|miastoiludzie.pl
 ##.adviewDFPBanner
 pl/popup.js|$script
+###goback
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -258,6 +259,8 @@ cda.pl##A[href^="http://a.spolecznosci.net/"]
 cda.pl##DIV[style$="width:980px;"]
 cda.pl##.miniPhotoBox
 cda.pl##div > span > a[href^="http://www.cda.pl/video/"][target="_blank"]
+cda.pl###r_p
+cda.pl##.wrapper > .wrapper-container > span[class]
 cenabiznesu.pl##.img-responsive
 centrumxp.pl###WelcomeBox
 centrumxp.pl##[id*="_Reklama_"]
@@ -494,6 +497,7 @@ joemonster.org##a[style="cursor: pointer"][onclick^="window.location.href="][tar
 jysk.promoceny.pl###mbImage
 jysk.promoceny.pl###mbOverlay
 kei.pl##.img-responsive
+kierunek.szczecin.pl##.textwidget
 kino.pecetowiec.pl##.message.success
 kinoman.tv###footer-mobile
 kinoman.tv###git_wrapper_0
@@ -847,6 +851,7 @@ turystyka.wp.pl###b_container
 turystyka.wp.pl##.typOferty.ST-BX-Oferty-dnia-samoloty
 turystyka.wp.pl##.typOferty.hotele.ST-BX-Oferty-dnia-hotele
 tv.rp.pl##.aiText
+tvlancut.com##[id*="-ad-"]
 tvmalbork.pl,tvsztum.pl,zulawyimierzeja24.pl,tvregionalna24.pl##.advert_outer
 tvseriesonline.pl##a[href="http://amoface.com"]
 tvmalbork.pl,tvsztum.pl,zulawyimierzeja24.pl,tvregionalna24.pl##.clickable[onclick^="article_video_advert_click"]
@@ -1240,6 +1245,11 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www.pch24.pl/images/banery/$image
 ||agoraperformance.pl^$third-party
 ||quartic.pl^$third-party
+||cda.pl/vast/
+||cda.pl/vast.php
+||iv.pl/rkm/$image
+||skiny.pl/*.gif$image
+||portalmorski.pl/images/banners/
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1336,6 +1346,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||pubads.g.doubleclick.net/gampad/ad$image,domain=www.emag.pl
 @@||pagead2.googlesyndication.com/pagead/imgad$image,domain=www.emag.pl
 @@||googletagmanager.com/gtm.js$script,domain=www.emag.pl
+@@||cda.pl/rekl-advertise.js$script
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
