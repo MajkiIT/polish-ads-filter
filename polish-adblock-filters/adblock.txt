@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 26 December 2016
 ! Expires: 2 days
-! Version: 2016122602
+! Version: 2016122701
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016122602 aktualizacja: pon, 26 grudnia 2016, 21:30:00
+! v.2016122701 aktualizacja: wt, 27 grudnia 2016, 16:25:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -192,10 +192,13 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##.adviewDFPBanner
 pl/popup.js|$script
 ###goback
+##.houdini
 !
 !
 !------------------------Specific element hiding rules------------------------!
 24tvonline.pl##.dataContainer
+300polityka.pl##.dcmads
+300polityka.pl###text-3
 4lomza.pl,zambrow.org##[id*="banner"]
 4lomza.pl##.bxbanner
 40ton.net##.size-full
@@ -367,6 +370,7 @@ foodpanda.pl###campaign_22924_lightbox
 forbes.pl###Article-Inner-Content
 fora.pl##.jf--shown.jf__header__bar
 forall.pl##a[href^="http://www.forall.pl/red.php"]
+forsal.pl##.tpl_ads_adsense
 forsapl.info##iframe
 forum.dobreprogramy.pl##[style="text-align:center;padding:20px 0;"]
 forum.dobreprogramy.pl##[style="margin:20px 0;text-align:center;"]
@@ -549,6 +553,7 @@ lublin112.pl###side_ad_widget-2
 lublin112.pl##.hehehe_box
 lublin112.pl##div.tickercontainer
 lublin112.pl###post-28259 > .post-entry > p:nth-of-type(8)
+lublin112.pl##[id^="haha"]
 lwypolnocy.pl##.DnnModule-922.DnnModule-DNN_HTML.DnnModule
 mackozer.myapple.pl##.container > .row > .col-xs-12 > .row > .col-md-4 > .well
 magia.onet.pl###box-random-game
@@ -1244,7 +1249,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www.pch24.pl/js/banery.js$script
 ||www.pch24.pl/images/banery/$image
 ||agoraperformance.pl^$third-party
-||quartic.pl^$third-party
+||quartic.pl^$third-party,domain=~quarticon.com|~quartic.pl
 ||cda.pl/vast/
 ||cda.pl/vast.php
 ||iv.pl/rkm/$image
