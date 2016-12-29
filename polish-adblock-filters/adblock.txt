@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93
 ! Homepage: http://www.certyficate.it/
-! Last modified: 28 December 2016
+! Last modified: 29 December 2016
 ! Expires: 2 days
-! Version: 2016122801
+! Version: 2016122901
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016122801 aktualizacja: sr, 28 grudnia 2016, 13:40:00
+! v.2016122901 aktualizacja: czw, 29 grudnia 2016, 09:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -58,12 +58,14 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||greevid.com/$popup
 ||searchiq.xyz/$domain=cda-online.pl
 ||vo.msecnd.net/$script,domain=kinoman.tv
+||iitv.pl/$popup
 !
 !
 !-----------------------Elements hide on movie-----------------------!
 vshare.io###pplaay
 vshare.io###sendif
 tvseriesonline.pl##IMG[src^="http://funkyimg.com/i/"]
+iitv.pl###player-above-2
 !
 !
 !-----------------------Block pages-----------------------!
@@ -287,6 +289,7 @@ dobreprogramy.pl##.list.block-content > div[style$="height: 180px; width: 630;"]
 dobreprogramy.pl##.block > div[style$="height: 600px; width: 300;"]
 dobreprogramy.pl##.page-element.center.target > div[style$="height: 250px; width: 970;"]
 dobreprogramy.pl##div[id="slide-menu"] > a[id][href="#"]
+dobreprogramy.pl##div#slide-menu > [id]:not([class]):not([style])
 dobreprogramy.pl##.no-filter
 dojrzalakobieta.pl###slider-with
 dogry.pl##.pro-box
@@ -361,6 +364,7 @@ forum.dvhk.to##IMG[width="400"][height="50"]
 forum.dvhk.to##[id^="f16"] IMG[src^="http://img.dvhk.to/"]
 forum.dvhk.to##[id^="f16"] IMG[src^="http://tvsat-sklep.com/baner/"]
 forum.fedora.pl###document_modal
+forumpc.pl##.ipsAdvertisement
 forum.vwgolf.pl##A[style="position:absolute;bottom:0.4em;text-transform:uppercase;font-size:80%;right:1em;\a           background:#de8c2f;color:#e6ebf2;padding:3px 7px; display:block"]
 forum.vwgolf.pl##DIV[style="padding:10px 15px 12px"]
 forum.pclab.pl###messageHook
@@ -812,6 +816,7 @@ thepolandtimes.com###header > .group.container > .container-inner > .pad.gro
 tekstowo.pl##.adv-home-child
 tekstowo.pl###advSong
 telchina.pl###wrap > .forabg
+technowinki.onet.pl###softonet
 telchina.pl##.bg3.post
 telchina.pl##[style="padding: 5px 5px 2px 5px; font-size: 1.1em; background-color: #ECF1F3; margin: 0px auto; text-align: center;"]
 telemagazyn.pl##[class^="fiszka"]
@@ -880,6 +885,7 @@ wiadomosci.swidnickie.pl##IMG[src="images/mk-agro_29_new.png"]
 wiadomosci.wp.pl##.item
 wiadomosci24.pl##.reka
 wiadomosci24.pl##.tekst
+wiadomosci.wp.pl##.recommended-offert
 windowsmania.pl##[id^="yui-gen"] > [class^="post"]
 wiocha.pl###ad4sc
 wiocha.pl##[id$="infopanel"]
@@ -1335,6 +1341,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||googletagmanager.com/gtm.js$script,domain=www.emag.pl
 @@||cda.pl/rekl-advertise.js$script
 @@||onet.hit.gemius.pl/xgemius.js$script
+@@||businessclick.net.pl/awrapper|$script,domain=teleshow.wp.pl
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1580,6 +1587,6 @@ facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##script:inject(abort-on-property-write.
 !
 !
 !--------------------------Rules for pages with random adv scripts------------!
-/:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])/.{30,}/$script,popup
+/:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])/.{30,}/$domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|kinoman.tv|iitv.pl
 /^http:\/\/[a-zA-Z.]{10,}\.com\/[a-zA-Z]{1,}\.\js/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl
 /^http:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl
