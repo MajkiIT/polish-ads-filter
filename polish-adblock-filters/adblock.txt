@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93
 ! Homepage: http://www.certyficate.it/
-! Last modified: 30 December 2016
+! Last modified: 31 December 2016
 ! Expires: 2 days
-! Version: 2016123003
+! Version: 2016123101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016123003 aktualizacja: ptk, 30 grudnia 2016, 17:55:00
+! v.2016123101 aktualizacja: sob, 31 grudnia 2016, 12:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -388,6 +388,9 @@ fronda.pl##.small-info
 fronda.pl###ecoeconomy
 futbol.pl##DIV[onmousedown="window.location.href='http://creativetravel.pl'"]
 futbol.pl###block-block-2
+gazeta.pl##.ecom
+gazeta.pl##.opacity.page-sections > .photos_loaded.box_games.page-section.html > .slices-container.container-fluid
+gazeta.pl##.photos_loaded.box_bargains.page-section.html > .slices-container.container-fluid
 gazetapolska.pl###sg1
 gazetapolska.pl###sg2
 gazetapolska.pl##DIV[style="float: left; padding-bottom: 10px; padding-top: 10px; width: 300px"]
@@ -655,6 +658,7 @@ pebx.pl##li[class="sectionMain message"]:not([id^="post-"])
 pebx.pl##.Notices.PanelScroller
 pebx.pl##.defaultBorderRadius.pageContent > .funbox.sectionMain
 pebx.pl###uix_stickyFooterSpacer
+pebx.pl##a[href^="https://www.bet365.com/dl/~offer"]
 pecetowicz.pl##.ipsPos_center
 pekao.com.pl###PX45189
 pirackiekino.blogspot.com##img[src*="blogspot.com/-AOw7_"]
@@ -878,6 +882,7 @@ videowood.tv###tbl1
 vod.pl##.infoCloud
 vshare.io###pplay
 wachamksiazki.pl##.sr
+wbj.pl##.akpbanner
 webcamera.pl##[style="width:728px;height:90px;"]
 webmasteruj.pl###elComment_x
 webmasteruj.pl##[style="margin:0 auto; text-align:center; margin-bottom:5px;"]
@@ -992,6 +997,9 @@ www.dostawczakiem.pl###reklamowkaTop
 www.brief.pl###conTopBanner
 www.press.pl##.big_image_post
 www.press.pl##.appstore_post
+www.benchmark.pl##.product
+www.knockout.pl##.art-blockcontent
+www.theillest.pl##a[href^="http://bit.ly/"]
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1243,6 +1251,11 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||iv.pl/rkm/$image
 ||skiny.pl/*.gif$image
 ||portalmorski.pl/images/banners/
+||wbj.pl/wp-content/plugins/adkingpro/js/adkingpro-functions.js$script
+||wbj.pl/adv/
+||cda.pl/v-a-s-t/
+||pasaz.goryonline.com/?k=$subdocument,domain=snowboard-mds.pl
+||www.glosgminny.pl/wp-content/uploads/*.gif$image
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1343,6 +1356,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||cda.pl/rekl-advertise.js$script
 @@||onet.hit.gemius.pl/xgemius.js$script
 @@||businessclick.net.pl/awrapper|$script,domain=teleshow.wp.pl
+@@||cda.pl/rekI-advertise.js$script
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1481,6 +1495,10 @@ ipilka.info,mecz.tv###advertising_box
 meczenazywo.pl##OL[class^="cool-stuff"]
 meczenazywo.pl,mecze24.pl##A[href^="http://ads.comeon.com/redirect.aspx"]
 meczenazywo.pl##A[href^="/bukmacher/r/"]
+meczenazywo.pl##a[href^="https://www.meczenazywo.pl/bukmacher/r/"]
+meczenazywo.pl##a[href^="http://www.meczenazywo.pl/bukmacher/r/"]
+meczenazywo.pl##a[href^="https://affmore.com/click/"]
+meczenazywo.pl##[class^="cool-stuff"]
 meczenazywo.pl###my_div_wrapper
 mecze24.pl###bg
 mecze24.pl##[class^="cool-stuff"]
