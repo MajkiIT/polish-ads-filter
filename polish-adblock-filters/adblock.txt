@@ -1,17 +1,17 @@
 [Adblock Plus 2.0]
 ! Title: Adblock & uBlock polish filters
 ! polskie filtry do Adblocka i uBlocka
-! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93
+! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: http://www.certyficate.it/
-! Last modified: 31 December 2016
+! Last modified: 2 January 2017
 ! Expires: 2 days
-! Version: 2016123101
+! Version: 2017010201
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-! Copyright (C) 2016 Certyficate IT
+! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2016123101 aktualizacja: sob, 31 grudnia 2016, 12:45:00
+! v.2017010201 aktualizacja: pon, 2 stycznia 2017, 11:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -37,6 +37,7 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ://*.*/banery_foto/$image,domain=ki24.info|portalplock.pl|faktypilskie.pl
 .*sales*.pl/offers/$image
 ##a[href*="techmaniak.pl/www/gact/ckk.php"]
+pl##.trizer-bnr
 !
 !
 !-----------------------SMS Fake Pages-------------------------------!
@@ -194,7 +195,7 @@ alltube.tv###ban-er
 alltube.tv###super-player
 android.com.pl##[id^="text-3"]
 android.com.pl###reklma_top_middle
-android.com.pl##.textwidget
+android.com.pl,tabletowo.pl##.textwidget
 androidpolska.pl##DIV[style="max-height:300px; overflow:hidden; float: left; width:100%;"]
 androidpolska.pl###sidebar-right > .widget:nth-of-type(2)
 androidpolska.pl###billboard_top
@@ -204,6 +205,7 @@ androidpolska.pl###sidebar-right > .widget:nth-of-type(1)
 androidpolska.pl###rectangle_top_ad
 anglia4u.pl###gkSidebar
 antyweb.pl##.aadv
+antyweb.pl##.group.big.box-adv
 audiostereo.pl###index_stats
 audiostereo.pl###opinie_sidebar
 audiostereo.pl###skapiec-widget
@@ -448,6 +450,7 @@ infokatowice.pl##.widget_text.widget > .textwidget
 infokatowice.pl##.vc_align_center.wpb_content_element.wpb_single_image
 infokatowice.pl##.td-a-rec-id-content_inline.td-a-rec
 infoilawa.pl##.readmore
+infogliwice.pl##A[class="gofollow"]
 instalki.pl##.banner_mod_top
 instalki.pl###PushangoAlert
 interia.pl##[id^="ad_"]
@@ -887,6 +890,7 @@ webcamera.pl##[style="width:728px;height:90px;"]
 webmasteruj.pl###elComment_x
 webmasteruj.pl##[style="margin:0 auto; text-align:center; margin-bottom:5px;"]
 weeb.tv##DIV[style="width: 800px; height: 80px; background: url(\"http://backupstatic.weeb.tv/images/weeb-1.png\") no-repeat scroll left top transparent; padding-left: 151px; padding-top: 73px; cursor: pointer;"]
+weszlo.com##.bsaGridGutter
 wiadomosci.swidnickie.pl##IMG[src="images/mk-agro_29_new.png"]
 wiadomosci.wp.pl##.item
 wiadomosci24.pl##.reka
@@ -1256,6 +1260,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||cda.pl/v-a-s-t/
 ||pasaz.goryonline.com/?k=$subdocument,domain=snowboard-mds.pl
 ||www.glosgminny.pl/wp-content/uploads/*.gif$image
+||naszawielkopolska.pl/wp-content/uploads/*/reklama$image
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1309,8 +1314,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||anime-odcinki.pl/sites/default/files/styles/medium-smaller__200x200_/public/okladki
 @@||adocean-pl.hit.gemius.pl/*/url=http://sport.tvp.pl/$popup,other
 @@||remiza.com.pl/ads/haft/jquery.slides.min.js$script
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wp.pl|wp.tv|portal.abczdrowie.pl|grydladzieci.pl|www.money.pl|vod.pl|exs.pl
-@@||imasdk.googleapis.com/js/core/$subdocument,domain=wp.pl|wp.tv|portal.abczdrowie.pl
 @@||mdn.net/instream/video/client.js$script,domain=facet.wp.pl
 @@||.tradedoubler.com/*www.mediaexpert.pl*
 @@||config.sensic.net/pl1-ssa-w.js$script,domain=get.x-link.pl|tvgry.pl|ipla.tv
@@ -1368,6 +1371,7 @@ emag.pl#@#[href^="http://pubads.g.doubleclick.net/"]
 !
 !---------------------------------Anti Adblock Rules element hide----------------------------------!
 ##.ban-69.row.ban
+##.adblock-placeholder
 12zawodnik.pl##.ads-checker-msg
 anyfiles.pl##.adblInfo
 cda-online.pl###deadblocker_success_dialog
@@ -1377,8 +1381,10 @@ dziennikwschodni.pl#@#.ad
 epiotrkow.pl###abpnot
 forum.vw-passat.pl###ct_i
 komputerswiat.pl##.adsense
+gragieldowa.pl##.login
 kursbootstrap.pl##.alert-dismissible.alert-success.alert
 mmorpg.org.pl,parezja.pl##.adsbygoogle
+nadajemy.pl###abp_info
 onet.pl###extraAdsBlock
 onet.pl##.addthis_toolbox
 parezja.pl###adblock_info
@@ -1400,6 +1406,8 @@ przewodnikduchowy.pl#@#.adsbygoogle
 porteuropa.eu##i#g207
 androidbeztajemnic.com###text-16.widget.widget_text
 www.ps4forum.pl##.googleheader
+www.charakterek.pl###HTML1
+wortale.net##.ban-71.ban
 !
 !
 !---------------------------------Anti Adblock Rules blocking filters----------------------------------!
@@ -1409,6 +1417,7 @@ www.ps4forum.pl##.googleheader
 ||niepoprawni.pl/sites/all/libraries/copier/bck.js$script
 ||napisy24.pl/run/js/blad*.js$script
 ||cosplayjav.pl/wp-content/themes/cosplayjav/js/fuckadblock
+/wp-content/plugins/wp-adblock-dedect/dedect.js$script
 !
 !
 !---------------------------------Anti Adblock Rules whitelist filters----------------------------------!
@@ -1457,6 +1466,9 @@ www.ps4forum.pl##.googleheader
 @@||rapidgrab.pl^$generichide
 @@#$image,domain=rapidgrab.pl
 @@||plejada.pl^$generichide
+@@||burzowo.info/scripts/ad.js$script,domain=burzowo.info
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wp.pl|wp.tv|portal.abczdrowie.pl|grydladzieci.pl|www.money.pl|vod.pl|exs.pl|wawalove.pl|fotoblogia.pl
+@@||imasdk.googleapis.com/js/core/$subdocument,domain=wp.pl|wp.tv|portal.abczdrowie.pl
 !
 !
 !--------------------------Rules block ads after antiadblock rules-------------!
