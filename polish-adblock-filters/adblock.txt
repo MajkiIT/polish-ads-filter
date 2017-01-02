@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 2 January 2017
 ! Expires: 2 days
-! Version: 2017010203
+! Version: 2017010204
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017010203 aktualizacja: pon, 2 stycznia 2017, 13:45:00
+! v.2017010204 aktualizacja: pon, 2 stycznia 2017, 21:15:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -39,6 +39,8 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ##a[href*="techmaniak.pl/www/gact/ckk.php"]
 pl##.trizer-bnr
 /wp-content/plugins/bsa-pro-scripteo/$script,stylesheet
+/wp-content/uploads/*/baner$image,domain=eksmagazyn.pl
+/wp-content/uploads/*/*300x600$image,domain=republikakobiet.pl
 !
 !
 !-----------------------SMS Fake Pages-------------------------------!
@@ -500,7 +502,7 @@ kinoman.tv###footer-mobile
 kinoman.tv###git_wrapper_0
 kino24-tv.pl##a[href*="://ad.gameflow.pl/"]
 kobieta.onet.pl###sponsUrl
-kobieta.pl###c11849
+kobieta.pl###c11865
 komixxy.pl,mistrzowie.org,jbzd.pl##[id^="sky"]
 komputerswiat.pl###\5f 479491471
 komputerswiat.pl###ks_breaking_news
@@ -570,7 +572,7 @@ mgsm.pl##.floatLeft.width50.data-table
 mgsm.pl##TD[style="padding:0px;"]
 mh24.pl###colorbox
 mh24.pl###cboxOverlay
-mh24.pl##[id^="text-"]
+mh24.pl,jaw.pl##[id^="text-"]
 miastoiludzie.pl###text-11
 miastoiludzie.pl###header
 miejsce.warszawa.gazeta.pl###holder_201 > .travelist
@@ -647,6 +649,7 @@ otodom.pl###adsTopOD
 panelradiowy.pl##[id^="slider"]
 parenting.pl###floorBG
 parenting.pl##.a-ctn-d
+pcformat.pl###ad_dol_srodek
 pclab.pl###b028
 pclab.pl###a011
 pclab.pl##A[href^="http://click.plista.com/pets/"]
@@ -667,6 +670,7 @@ pebx.pl##a[href^="https://www.bet365.com/dl/~offer"]
 pecetowicz.pl##.ipsPos_center
 pekao.com.pl###PX45189
 pirackiekino.blogspot.com##img[src*="blogspot.com/-AOw7_"]
+planeta-kobiet.pl##.banneritem
 planujemywesele.pl###ad-profile-box1
 play.pl##.overlay-shadow
 playstationforum.pl##[onclick^="MyAdvertisements"]
@@ -715,6 +719,7 @@ profilook.pl###ceneo-os783-rZ0og
 press.pl###topBanner
 programosy.pl##.web.bn-b-0
 przegladsportowy.pl##[id$="_ARTICLE_TOP"]
+przegladoponiarski.pl##.banners
 pszczynska.pl,szajn.pl##.baner
 pudelek.pl,pudelek.tv,plotek.pl##[id^="frame-"]
 pudelek.tv,wp.tv,wrzuta.pl,interaktywnie.com##[src^="http://adv.wp.pl"]
@@ -728,6 +733,7 @@ ringpolska.pl##.art-block.clearfix
 rmf.fm##.intad
 spiz.pl,roksa.pl##.c
 radio5.com.pl##.g-single
+radiokolor.pl##.boxAdvert
 radomnews.pl##DIV[align="center"]
 radomnews.pl##[id^="banP"]
 remiza.com.pl##.gofollow
@@ -1472,6 +1478,7 @@ wortale.net##.ban-71.ban
 @@||burzowo.info/scripts/ad.js$script,domain=burzowo.info
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wp.pl|wp.tv|portal.abczdrowie.pl|grydladzieci.pl|www.money.pl|vod.pl|exs.pl|wawalove.pl|fotoblogia.pl
 @@||imasdk.googleapis.com/js/core/$subdocument,domain=wp.pl|wp.tv|portal.abczdrowie.pl
+@@||businessinsider.com.pl^$generichide
 !
 !
 !--------------------------Rules block ads after antiadblock rules-------------!
