@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: http://www.certyficate.it/
-! Last modified: 2 January 2017
+! Last modified: 3 January 2017
 ! Expires: 2 days
-! Version: 2017010204
+! Version: 2017010301
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017010204 aktualizacja: pon, 2 stycznia 2017, 21:15:00
+! v.2017010301 aktualizacja: wt, 3 stycznia 2017, 14:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -228,6 +228,9 @@ bezuzyteczna.pl,zumi.pl##[class^="special"]
 bez-cenzury24.pl##[div^="ips-popup"]
 bham.pl##[id^="baner"]
 bia24.pl##[class^="iframe-R"]
+bielsko.info,tychy.info,czecho.pl##.resizable300x250
+bielsko.info,tychy.info,czecho.pl##.resizable970x90
+bielsko.info,tychy.info,czecho.pl##[id^="linki-sponsorowane-col-group-"]
 bitcoin.pl,rightclick.pl##.custom
 biznes.pl##.e_Box.analyses
 biznes.pl##.rightBoxR.boxPopComtR.cl
@@ -238,6 +241,7 @@ biztok.pl##.ads.ads--sidebar
 biztok.pl,teleshow.wp.pl,gwiazdy.wp.pl,moto.wp.pl,wiadomosci.wp.pl,money.pl,turystyka.wp.pl,finanse.wp.pl,www.wp.pl##A[href^="http://dot.wp.pl/redir"]
 blog.pluralsight.com##.video.widescreen.flex-video
 blogmobility.pl##.top-baner
+bochnianin.pl##.xo
 booksclub.pl##IMG[src*="/banners/"]
 businesswomanlife.pl##[id^="widget_sp_image"]
 businesswomanlife.pl##[id^="slidero-box-"]
@@ -540,6 +544,7 @@ londynek.net##.bannersZoneB1
 lowcygier.pl###moneymaker-1
 lowcygier.pl##.big-top-widget-box
 lowcygier.pl##[style="min-width:730px; min-height: 90px; margin: 10px auto auto auto; text-align:center; overflow:hidden;"]
+lubartow24.pl##[style="text-align: center; padding-bottom: 10px; margin: 0 auto;"]
 lubimyczytac.pl##.container_12 > A[href^="http://lubimyczytac.pl/redirect.php"]
 lubin.pl##.ad_group
 lubin.pl##.a-.g-single
@@ -646,6 +651,8 @@ onet.pl##.autopromoapp
 onet.pl##[id^="onet-ad-flat"]
 opinie.wp.pl##[style="pointer-events:none;"][class]
 otodom.pl###adsTopOD
+ozoneo.pl##.paralax
+ozoneo.pl##.non-fullwidth
 panelradiowy.pl##[id^="slider"]
 parenting.pl###floorBG
 parenting.pl##.a-ctn-d
@@ -1074,7 +1081,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||bit.ly/2a$popup,domain=mmorpg.org.pl
 ||buletproofserving.com^$third-party
 ||businessclick.*/$script
-||cda.pl/vast/vast$xmlhttprequest
 ||cdn.syndication.twitter.com/widgets/tweetbutton/
 ||cdn.dtxngr.com/$script
 ||adocean.pl^
@@ -1258,17 +1264,22 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www.pch24.pl/js/banery.js$script
 ||www.pch24.pl/images/banery/$image
 ||agoraperformance.pl^$third-party
-||cda.pl/vast/
 ||cda.pl/vast.php
 ||iv.pl/rkm/$image
 ||skiny.pl/*.gif$image
 ||portalmorski.pl/images/banners/
 ||wbj.pl/wp-content/plugins/adkingpro/js/adkingpro-functions.js$script
 ||wbj.pl/adv/
-||cda.pl/v-a-s-t/
+||cda.pl/v*a*s*t/
 ||pasaz.goryonline.com/?k=$subdocument,domain=snowboard-mds.pl
 ||www.glosgminny.pl/wp-content/uploads/*.gif$image
 ||naszawielkopolska.pl/wp-content/uploads/*/reklama$image
+||ozoneo.pl/templates/images/rotators/$image
+||ozoneo.pl/templates/images/description/5901/Image/$image
+||portal-firma.pl/banners/$image
+||ibillboard.com^$third-party
+||lubartow24.pl/f/*.gif$image
+||lubartow24.pl/f/navb*.jpg$image
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1507,6 +1518,9 @@ drhtv.com.pl##DIV[class^="panel"]
 drhtv.com.pl##.banner1 > div
 drhtv.com.pl,meczenazywo.pl##[id^="popup"]
 estadios.pl##.kafelki_bukmacherskie
+futbol.pl###gbbill_866951
+futbol.pl##header > .container > a >img
+futbol.pl##.adroll-block
 freehdsport.com,freehqsport.eu##[id*="overlay_Player"]
 futbolhd.tv##.zareklamuj_sie_z_lewej
 futbolhd.tv###footer
@@ -1514,7 +1528,6 @@ futbolhd.tv##TD[style="margin-left: -25px; font-size: 14px; padding: 10px; paddi
 goodrtmp.com###r
 goodrtmp.com###ra
 ipilka.info,mecz.tv###advertising_box
-meczenazywo.pl##OL[class^="cool-stuff"]
 meczenazywo.pl,mecze24.pl##A[href^="http://ads.comeon.com/redirect.aspx"]
 meczenazywo.pl##A[href^="/bukmacher/r/"]
 meczenazywo.pl##a[href^="https://www.meczenazywo.pl/bukmacher/r/"]
@@ -1573,6 +1586,7 @@ xyz,mecz.tv,ipilka.info##[class$="_right"]
 ||meczelive.tv/images/tapeta_$image
 ||cdn.mediaessence.net$script
 ||meczyki.pl/image_upload/background/$image,domain=meczyki.pl
+||futbol.pl/img/milenium.jpg$image
 !
 !
 !--------------------------Rules temporary blocking filters-------------!
