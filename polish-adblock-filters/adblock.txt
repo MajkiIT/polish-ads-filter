@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: http://www.certyficate.it/
-! Last modified: 3 January 2017
+! Last modified: 4 January 2017
 ! Expires: 2 days
-! Version: 2017010302
+! Version: 2017010401
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017010302 aktualizacja: wt, 3 stycznia 2017, 15:10:00
+! v.2017010401 aktualizacja: sr, 4 stycznia 2017, 19:40:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -997,7 +997,7 @@ www.morele.net##[id$="_ucho"]
 www.diki.pl##[id^="dikiAd"]
 www.diki.pl##[class$="AdContainer"]
 www.kufel.pl##.sda-slide-link-cont
-www.kufel.pl###Process
+www.kufel.pl,dzienniknarodowy.pl###Process
 www.skapiec.pl##.creation-corner
 www.ps4site.pl###text-12
 www.expressilustrowany.pl###gora1
@@ -1018,6 +1018,7 @@ www.press.pl##.big_image_post
 www.press.pl##.appstore_post
 www.benchmark.pl##.product
 www.knockout.pl##.art-blockcontent
+www.wakacje.pl##.adZoneCont
 www.theillest.pl##a[href^="http://bit.ly/"]
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
@@ -1280,6 +1281,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||ibillboard.com^$third-party
 ||lubartow24.pl/f/*.gif$image
 ||lubartow24.pl/f/navb*.jpg$image
+||muzyczneradio.com.pl/html/images/banners/$image
+||www.wiadomoscihandlowe.pl/img/banery/$image
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -1440,7 +1443,7 @@ wortale.net##.ban-71.ban
 !
 !
 !---------------------------------Anti Adblock Rules whitelist filters----------------------------------!
-@@/js/ads.js$script,domain=solarkurier.pl|satkurier.pl|saskakepa.waw.pl|e-krajna.pl|swiecie24.pl|zyciesokolowa.pl|ciechocinek.biz
+@@/js/ads.js$script,domain=solarkurier.pl|satkurier.pl|saskakepa.waw.pl|e-krajna.pl|swiecie24.pl|zyciesokolowa.pl|ciechocinek.biz|napiprojekt.pl
 @@://*.*/pl/js/show_ads.js$script,domain=ki24.info|portalplock.pl|faktypilskie.pl|e-krajna.pl|swiecie24.pl|zyciesokolowa.pl|zyciesiedleckie.pl|koronowo.net.pl|ciechocinek.biz|swiecie.siecportali.pl
 @@|http://www.googletagmanager.com/gtm.js$script,domain=benchmark.pl
 @@||anyfiles.pl/pageloading/*-loader.jsp?ads=true
@@ -1456,7 +1459,7 @@ wortale.net##.ban-71.ban
 @@||ppstatic.pl/*/ads.js$script,domain=pomorska.pl
 @@||sascdn.com/video/$script,domain=eskago.pl
 @@||seansik.nl/seansik/js/ads.js$script
-@@||tuba.pl/*/ad$xmlhttprequest
+@@||fm.tuba.pl^$xmlhttprequest,domain=fm.tuba.pl
 @@||vod.pl^$generichide
 @@||webshark.pl/adserver/*advertise_check=1$script,domain=vider.info
 @@||wtkplay.pl/javascript/ads.js$script
@@ -1640,7 +1643,7 @@ www.wp.pl##._2Gdr9
 !--------------------------Experimental rules------------!
 facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##div[class^="_"]:matches-css(background-image: /^url\(.*wp\.pl/)
 facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##script:inject(abort-on-property-write.js, iaqExt)
-/^(http|https):\/\/[a-z]{1,20}\.wp\.pl\/.{200,}/$script,important,domain=facet.wp.pl|gwiazdy.wp.pl|teleshow.wp.pl
+/^(http|https):\/\/[a-z]{1,20}\.wp\.pl\/.{250,}/$script,important,domain=facet.wp.pl|gwiazdy.wp.pl|teleshow.wp.pl
 !
 !
 !--------------------------Rules for pages with random adv scripts------------!
