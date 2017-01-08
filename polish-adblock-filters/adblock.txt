@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 8 January 2017
 ! Expires: 2 days
-! Version: 2017010801
+! Version: 2017010802
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017010801 aktualizacja: nie, 8 stycznia 2017, 18:30:00
+! v.2017010802 aktualizacja: nie, 8 stycznia 2017, 18:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -1207,7 +1207,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||portalplock.pl/banery/
 ||ppstatic.pl/*/tymczasowe/$image
 ||ppwidget.skapiec.pl/widget/$script
-||ppwidget.skapiec.pl/widget/$script,domain=androidpolska.pl
 ||rect.b2bpersonals.net^
 ||redcoon.pl/res/Image/special$image
 ||redcoon.pl/res/outer/2015/11/sk_$image
@@ -1402,10 +1401,11 @@ emag.pl#@#[href^="http://pubads.g.doubleclick.net/"]
 !
 !
 !---------------------------------Anti Adblock Rules element hide----------------------------------!
-##.ban-69.row.ban
-##.adblock-placeholder
 ##.adblock-alt
+##.adblock-placeholder
+##.ban-69.row.ban
 12zawodnik.pl##.ads-checker-msg
+androidbeztajemnic.com###text-16.widget.widget_text
 anyfiles.pl##.adblInfo
 cda-online.pl###deadblocker_success_dialog
 ciekawe.org#@##adsense
@@ -1413,39 +1413,38 @@ dstar.pzk.pl,burze.dzis.net#@#.adsbygoogle
 dziennikwschodni.pl#@#.ad
 epiotrkow.pl###abpnot
 forum.vw-passat.pl###ct_i
-komputerswiat.pl##.adsense
 gragieldowa.pl##.login
+komputerswiat.pl##.adsense
 kursbootstrap.pl##.alert-dismissible.alert-success.alert
+lech.tv#@#.advertising_banner
 mmorpg.org.pl,parezja.pl##.adsbygoogle
 nadajemy.pl###abp_info
 onet.pl###extraAdsBlock
 onet.pl##.addthis_toolbox
 parezja.pl###adblock_info
+porteuropa.eu##i#g207
+przewodnikduchowy.pl#@#.adsbygoogle
 pssite.com,ps3forum.pl###abl
 purepc.pl#@#[class*="reklama"]
-tvp.pl###tvpoverlay_abdinfo
-sucharry.pl###adb
+pzkosz.pl##.aside-ad-block
 senda.pl#@#.advert_box
+sucharry.pl###adb
+terrarium.com.pl##.ABD_display_wrapper
+tvp.pl###tvpoverlay_abdinfo
+twojezaglebie.pl###modal
+twojezaglebie.pl##.modal-box
+vod.pl#@#.text-ad
+wortale.net##.ban-71.ban
 wtkplay.pl,epoznan.pl#@#.ad
-lech.tv#@#.advertising_banner
 wtkplay.pl,epoznan.pl,lech.tv#@#.advertising_block
 wtkplay.pl,epoznan.pl,lech.tv#@#.reklama
 wtkplay.pl,epoznan.pl,lech.tv#@#[class*="reklama"]
-www.plotek.pl##.adb_plotek
-www.forum-wedkarskie.pl##.ads-checker-msg
-www.lubliniec.info##.baner_top
-vod.pl#@#.text-ad
-przewodnikduchowy.pl#@#.adsbygoogle
-porteuropa.eu##i#g207
-terrarium.com.pl##.ABD_display_wrapper
-twojezaglebie.pl##.modal-box
-twojezaglebie.pl###modal
-androidbeztajemnic.com###text-16.widget.widget_text
-www.ps4forum.pl##.googleheader
 www.charakterek.pl###HTML1
+www.forum-wedkarskie.pl##.ads-checker-msg
 www.forum.nieidealny.pl##center
-wortale.net##.ban-71.ban
-pzkosz.pl##.aside-ad-block
+www.lubliniec.info##.baner_top
+www.plotek.pl##.adb_plotek
+www.ps4forum.pl##.googleheader
 !
 !
 !---------------------------------Anti Adblock Rules blocking filters----------------------------------!
@@ -1462,55 +1461,55 @@ pzkosz.pl##.aside-ad-block
 !---------------------------------Anti Adblock Rules whitelist filters----------------------------------!
 @@/js/ads.js$script,domain=solarkurier.pl|satkurier.pl|saskakepa.waw.pl|e-krajna.pl|swiecie24.pl|zyciesokolowa.pl|ciechocinek.biz|napiprojekt.pl
 @@://*.*/pl/js/show_ads.js$script,domain=ki24.info|portalplock.pl|faktypilskie.pl|e-krajna.pl|swiecie24.pl|zyciesokolowa.pl|zyciesiedleckie.pl|koronowo.net.pl|ciechocinek.biz|swiecie.siecportali.pl
+@@#$image,domain=rapidgrab.pl
+@@.pl/menda/adsense.js$script,domain=to.proste.info.pl|seciki.pl
 @@|http://www.googletagmanager.com/gtm.js$script,domain=benchmark.pl
 @@||anyfiles.pl/pageloading/*-loader.jsp?ads=true
+@@||biznesforum.pl/adsense.js$script,domain=biznesforum.pl
+@@||blog.programyzadarmo.net.pl/images/ad/*.gif$image,domain=blog.programyzadarmo.net.pl
 @@||brotkids.tv/media/mod_pwebadblock/js/ads.js$script
+@@||burzowo.info/scripts/ad.js$script,domain=burzowo.info
+@@||businessinsider.com.pl^$generichide
+@@||cdnv.gazeta.pl/ad/banner/_adsense_/_adserver/_adview_.ad.json$xmlhttprequest,domain=gazeta.pl
+@@||csr.onet.pl/_s/csr-*/csr.jsx$script
 @@||dekoder.ml/js/ads.js$script
+@@||digi-tv.pl/js/ads.js$script
+@@||epiotrkow.pl/js/adv2.reklama.js$script,domain=epiotrkow.pl
 @@||eskago.pl/html/js/ads-header.js$script
+@@||fm.tuba.pl^$xmlhttprequest,domain=fm.tuba.pl
 @@||grupa7j.pl/joomla/images/my/gallery_advert/$image,domain=grupa7j.pl
+@@||imasdk.googleapis.com/js/core/$subdocument,domain=wp.pl|wp.tv|portal.abczdrowie.pl
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wp.pl|wp.tv|portal.abczdrowie.pl|grydladzieci.pl|www.money.pl|vod.pl|exs.pl|wawalove.pl|fotoblogia.pl|autokult.pl|gadzetomania.pl|parenting.pl
+@@||ithardware.pl/js/ads.js$script,domain=ithardware.pl
 @@||komputerswiat.pl^$generichide
+@@||kubofonista.net/r/ad.htm$script,domain=kubofonista.net
+@@||lib.onet.pl/s.csr/adp/px.gif?$image
 @@||mmorpg.org.pl^$generichide
+@@||mybank.pl^$generichide
 @@||onet.pl^$generichide
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=autokult.pl|biztok.pl|gadzetomania.pl|kafeteria.pl|kafeteria.tv|komediowo.pl|komorkomania.pl|money.pl|mybank.pl|parenting.pl|portal.abczdrowie.pl|pudelek.tv|wp.pl|wp.tv|wrzuta.pl|pudelekx.pl
+@@||pagead2.googlesyndication.com/pagead/js/r*/show_ads_impl.js$script,domain=mybank.pl
+@@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=mybank.pl
+@@||pc-sos.pl/ad.htm$script,domain=pc-sos.pl|xn--strela-8db.pl
 @@||pclab.pl/*ad$script
 @@||pclab.pl^$generichide
+@@||plejada.pl^$generichide
 @@||ppstatic.pl/*/ads.js$script,domain=pomorska.pl
+@@||rapidgrab.pl^$generichide
 @@||sascdn.com/video/$script,domain=eskago.pl
 @@||seansik.nl/seansik/js/ads.js$script
-@@||fm.tuba.pl^$xmlhttprequest,domain=fm.tuba.pl
+@@||static.criteo.net/js/ld/publishertag.js$script,domain=wp.pl
+@@||video.gazeta.pl/cdn/ads/ad/banner/_adsense_/_adserver/_adview_.ad.json$xmlhttprequest,domain=video.gazeta.pl
 @@||vod.pl^$generichide
 @@||webshark.pl/adserver/*advertise_check=1$script,domain=vider.info
+@@||wp.hit.gemius.pl/xgemius.js$script,domain=wp.pl
 @@||wtkplay.pl/javascript/ads.js$script
 @@||www.benchmark.pl/*/b.ads.js$script
 @@||www.biznesradar.pl/js/ads/advertising.js$script
-@@||www.nadajemy.pl/js-css/adsense/ad/banner/adv.js$script
-@@||digi-tv.pl/js/ads.js$script
-@@||mybank.pl^$generichide
-@@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=mybank.pl
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=autokult.pl|biztok.pl|gadzetomania.pl|kafeteria.pl|kafeteria.tv|komediowo.pl|komorkomania.pl|money.pl|mybank.pl|parenting.pl|portal.abczdrowie.pl|pudelek.tv|wp.pl|wp.tv|wrzuta.pl|pudelekx.pl
-@@||wp.hit.gemius.pl/xgemius.js$script,domain=wp.pl
-@@||static.criteo.net/js/ld/publishertag.js$script,domain=wp.pl
-@@||pagead2.googlesyndication.com/pagead/js/r*/show_ads_impl.js$script,domain=mybank.pl
-@@.pl/menda/adsense.js$script,domain=to.proste.info.pl|seciki.pl
-@@||www.sc7.pl/media/graphics/sc7_468x60.png$image,domain=mynavi-expert.pl
-@@||epiotrkow.pl/js/adv2.reklama.js$script,domain=epiotrkow.pl
-@@||biznesforum.pl/adsense.js$script,domain=biznesforum.pl
-@@||cdnv.gazeta.pl/ad/banner/_adsense_/_adserver/_adview_.ad.json$xmlhttprequest,domain=gazeta.pl
-@@||kubofonista.net/r/ad.htm$script,domain=kubofonista.net
-@@||pc-sos.pl/ad.htm$script,domain=pc-sos.pl|xn--strela-8db.pl
-@@||blog.programyzadarmo.net.pl/images/ad/*.gif$image,domain=blog.programyzadarmo.net.pl
-@@||zakupek.pl/wp-content/themes/zakupek/bannery/adbanner.htm$script,domain=zakupek.pl
 @@||www.gala.pl/bundles/burdacore/js/adv.js$script,domain=www.gala.pl
-@@||csr.onet.pl/_s/csr-*/csr.jsx$script
-@@||lib.onet.pl/s.csr/adp/px.gif?$image
-@@||rapidgrab.pl^$generichide
-@@#$image,domain=rapidgrab.pl
-@@||plejada.pl^$generichide
-@@||burzowo.info/scripts/ad.js$script,domain=burzowo.info
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wp.pl|wp.tv|portal.abczdrowie.pl|grydladzieci.pl|www.money.pl|vod.pl|exs.pl|wawalove.pl|fotoblogia.pl|autokult.pl|gadzetomania.pl|parenting.pl
-@@||imasdk.googleapis.com/js/core/$subdocument,domain=wp.pl|wp.tv|portal.abczdrowie.pl
-@@||businessinsider.com.pl^$generichide
-@@||ithardware.pl/js/ads.js$script,domain=ithardware.pl
-@@||video.gazeta.pl/cdn/ads/ad/banner/_adsense_/_adserver/_adview_.ad.json$xmlhttprequest,domain=video.gazeta.pl
+@@||www.nadajemy.pl/js-css/adsense/ad/banner/adv.js$script
+@@||www.sc7.pl/media/graphics/sc7_468x60.png$image,domain=mynavi-expert.pl
+@@||zakupek.pl/wp-content/themes/zakupek/bannery/adbanner.htm$script,domain=zakupek.pl
 !
 !
 !--------------------------Rules block ads after antiadblock rules-------------!
