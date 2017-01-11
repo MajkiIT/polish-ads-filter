@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 11 January 2017
 ! Expires: 2 days
-! Version: 2017011104
+! Version: 2017011105
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017011104 aktualizacja: sr, 11 stycznia 2017, 21:55:00
+! v.2017011105 aktualizacja: sr, 11 stycznia 2017, 22:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -625,6 +625,7 @@ newsf24.pl##.box
 niebezpiecznik.pl##div[style="float:left"]
 nk.pl###content_banner > .ad_sandbox_wrapper
 nudziara.pl##DIV[style="border: 1px solid #D8D0D0; padding: 5px 0px 5px 0px; width:705px;"]
+nhl.pl##.ipbtable:has(div[align="center"] > script[src^="//nhlpl.engine.adglare.org"])
 niebezpiecznik.pl###text-8 > .textwidget
 niebezpiecznik.pl##a[href*="//niebezpiecznik.pl/r3"]
 niebezpiecznik.pl##a[href*="//niebezpiecznik.pl/r4"]
@@ -1088,7 +1089,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||adsnet.pl$script
 ||adv.wp.pl^
 ||aff.mediarotate.com/Click^
-||adglare.org/img/$image,domain=nhl.pl
+||adglare.org^$third-party,domain=nhl.pl
 ||agoraperformance.pl^$third-party
 ||alemiasto.pl/adds/
 ||allegrostatic.pl/showcaseService/static/images/placeholders/1200x400.png$image
