@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: http://www.certyficate.it/
-! Last modified: 8 January 2017
+! Last modified: 11 January 2017
 ! Expires: 2 days
-! Version: 2017010802
+! Version: 2017011101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017010802 aktualizacja: nie, 8 stycznia 2017, 18:50:00
+! v.2017011101 aktualizacja: sr, 11 stycznia 2017, 16:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -102,6 +102,8 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 !
 !------------------------General element hiding rules-------------------------!
 ###ads
+##[class^="adSrodek"]
+##[id*="-billboard-advert"]
 ##[id^="ads_"]
 ###ceneo-placeholder-ceneo-12
 ##[id^="pianoMediaBoxInfo"]
@@ -160,7 +162,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##[href^="http://adserwer."]
 ##a[href="http://upfiles.net/ref/"]
 /reklamy/*$image,object
-~konsoleigry.pl,~megadyskont.pl##[class^="adv-"]
+~alexbranding.com,~unitheme.net,~konsoleigry.pl,~megadyskont.pl##[class^="adv-"]
 ##a[href*="/ad/click/"]
 ~gry-online.pl,~tv6.com.pl,~trojmiasto.pl,~thenextweb.com,~pcgamingwiki.com,~gamepedia.com,~mega.nz##[class$="-ads"]
 ##TopTextAd
@@ -829,6 +831,7 @@ swinoujskie.info##[id^="ads300_"]
 swinoujskie.info##.e3lan
 swirtv.czo.pl##[href^="./redir"]
 swistak.pl###first > a[href^="http://"]
+sucharry.pl##[style*="width: 336px;"]
 supernowosci24.pl###notificationbar
 sympatia.onet.pl###backdrop-container
 sympatia.onet.pl###close-frame
@@ -955,6 +958,7 @@ wp.pl##div[class^="_"][style^="min-height:600px;line-height:600px;"]
 wprost.pl###additional-column
 wprost.pl##class[id^="addbox.addbox-"]
 wprost.pl###left-column > .art-area > .art-content > center
+wrealu24.pl##.bannergroup
 wrzuta.pl###floorBG
 wschodnia.tv###right > .yt-position-inner
 wspomnijbliskich.pl###sponsor_title
@@ -1027,6 +1031,11 @@ www.wakacje.pl##.adZoneCont
 www.theillest.pl##a[href^="http://bit.ly/"]
 www.forum.nieidealny.pl##.ads
 www.pokochasz.pl##.banner
+www.antyradio.pl##.adsearch-adkontekst
+www.cenynaswiecie.pl##.system_banner
+www.cenynaswiecie.pl##.menu-block
+www.cenynaswiecie.pl##[class^="google-"]
+www.cenynaswiecie.pl##.hidden-xs.text-center
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1125,6 +1134,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||emisja.contentstream.pl/$script
 ||evertiq.pl/*/js/min/evqFront.js$script
 ||evertiq.pl/include/ad-block/$xmlhttprequest
+||exs.pl/$script
 ||f01.esfr.pl/si_upload/gfx/*.png$image,domain=euro.com.pl
 ||files.biala24.pl/banners/$image
 ||filmweb.pl/welcomeScreenJS$script,domain=filmweb.pl
@@ -1164,6 +1174,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||ki24.info/banery_extra/$image
 ||konto.amronet.pl$subdocument,domain=dobreprogramy.pl
 ||koronowo.net.pl/banery_foto/$image
+||leczna24.pl/f/*.gif$image
+||leczna24.pl/f/navb*.jpg$image
 ||lib.onet.pl/s.csr/external/iframe$script,subdocument
 ||lidl.pl/statics/lidl-pl/ds_img/layout/tapeta_$image
 ||lubartow24.pl/f/*.gif$image
@@ -1296,7 +1308,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 !
 !
 !---------------------------------Multi Regex----------------------------------!
-/:\/\/(?!biuropodrozy)(?!prezentownik)(?!nowapoczta)(?!swiecsie)(?!swieta)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!rodzinnawycieczka)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)[a-zA-Z0-9]{10,}\.wp\.pl\//
+/:\/\/(?!biuropodrozy)(?!mistrzowiebezpieczenstwa)(?!prezentownik)(?!nowapoczta)(?!swiecsie)(?!swieta)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!rodzinnawycieczka)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)[a-zA-Z0-9]{10,}\.wp\.pl\//
 /:\/\/(?!biuropodrozy)(?!prezentownik)(?!nowapoczta)(?!swiecsie)(?!swieta)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!facet)(?!wyleczto)(?!kuchnia)(?!film)(?!moto)(?!gwiazdy)(?!teleshow)(?!finanse)(?!kobieta)(?!dom)(?!pogoda)(?!tech)(?!historia)(?!czat)(?!ksiazki)(?!gryonline)(?!hotele)(?!narty)(?!samoloty)(?!wycieczki)(?!hosting)(?!irlandia)(?!multikurs)(?!casino)(?!foto)(?!tech)(?!www)(?!stg)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!alefolwark)(?!angielski)(?!arenamody)(?!beniamin)(?!bon)(?!bsg)(?!casino)(?!diety)(?!dlaprasy)(?!dlugi)(?!doladowania)(?!dom)(?!dysk)(?!ebiznes)(?!ebooki)(?!empire)(?!fantasyliga)(?!film)(?!fundusze)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)(?!gazetki)(?!gry)(?!horoskop)(?!kalendarz)(?!katalog)(?!khanwars)(?!komiks)(?!konflikty)(?!kontakty)(?!korsarze)(?!kultura)(?!mini)(?!mmho)(?!mobilna)(?!morizon)(?!moto)(?!muzyka)(?!narty)(?!naryby)(?!onas)(?!orangekinoletnie)(?!piraci)(?!poczta)(?!pomoc)(?!praca)(?!profil)(?!programtv)(?!pytamy)(?!rekrutacja)(?!rss)(?!rtvagd)(?!rycerzeiksiezniczki)(?!smeet)(?!speedwaymanager)(?!szkola)(?!szukaj)(?!tech)(?!teleshow)(?!triviador)(?!turystyka)(?!twojeip)(?!ulubiency)(?!warodfragons)(?!wycieczki)(?!zdrowie)(?!zoomumba)(?!topnews)(?!erotyka)(?!dzieci)(?!fitness)(?!gielda)(?!finansomat)(?!biznes)(?!sport)[a-zA-Z0-9]{4,9}\.wp\.pl\//
 @@/^(http|https):\/\/(adv|rek\.www|owabgxis|fntajkb)\.wp\.pl\/(.{0,15}[&!*;@\$)[\]:%].*|(?!gaf|cap|vad|display|dis3rd)[a-zA-Z0-9\W_]{0,10})\.(js|html|xml|jpg|gif|png)|^(http|https):\/\/rek\.www\.wp\.pl\/gaf\.js$|^(http|https):\/\/(adv|rek\.www|owabgxis|fntajkb)\.wp\.pl\/[a-zA-Z0-9=]{1,180}=$|^(http|https):\/\/(adv|rek\.www|owabgxis|fntajkb)\.wp\.pl\/(?!gaf|cap|vad|display|dis3rd)[a-zA-Z0-9,_]{0,180}\.(js|html|xml|jpg|gif|png)|^(http|https):\/\/(adv|rek\.www|owabgxis|fntajkb)\.wp\.pl\/(?!gaf|cap|vad|display|pliki)[a-zA-Z0-9]{15,50}$/
 /:\/\/[a-zA-Z0-9]{3,9}\.quartic.pl\/Ad\//$script
@@ -1445,6 +1457,13 @@ www.forum.nieidealny.pl##center
 www.lubliniec.info##.baner_top
 www.plotek.pl##.adb_plotek
 www.ps4forum.pl##.googleheader
+www.onet.pl#@#span.newsAdd
+www.onet.pl#@#[id^="onet-ad-flat"]
+www.onet.pl#@#.trizer-bnr
+www.onet.pl#@##onet-ad-top
+www.onet.pl#@##extraAdsBlock
+www.onet.pl#@#.addthis_toolbox
+www.onet.pl#@#.autopromoapp
 !
 !
 !---------------------------------Anti Adblock Rules blocking filters----------------------------------!
@@ -1461,7 +1480,8 @@ www.ps4forum.pl##.googleheader
 !---------------------------------Anti Adblock Rules whitelist filters----------------------------------!
 @@/js/ads.js$script,domain=solarkurier.pl|satkurier.pl|saskakepa.waw.pl|e-krajna.pl|swiecie24.pl|zyciesokolowa.pl|ciechocinek.biz|napiprojekt.pl
 @@://*.*/pl/js/show_ads.js$script,domain=ki24.info|portalplock.pl|faktypilskie.pl|e-krajna.pl|swiecie24.pl|zyciesokolowa.pl|zyciesiedleckie.pl|koronowo.net.pl|ciechocinek.biz|swiecie.siecportali.pl
-@@#$image,domain=rapidgrab.pl
+@@||rapidgrab.pl^$generichide
+@@ads$image,domain=rapidgrab.pl
 @@.pl/menda/adsense.js$script,domain=to.proste.info.pl|seciki.pl
 @@|http://www.googletagmanager.com/gtm.js$script,domain=benchmark.pl
 @@||anyfiles.pl/pageloading/*-loader.jsp?ads=true
@@ -1610,7 +1630,7 @@ xyz,mecz.tv,ipilka.info##[class$="_right"]
 !
 !
 !--------------------------Rules temporary blocking filters-------------!
-/:\/\/(?!biuropodrozy)(?!prezentownik)(?!nowapoczta)(?!swiecsie)(?!swieta)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!facet)(?!wyleczto)(?!kuchnia)(?!film)(?!moto)(?!gwiazdy)(?!teleshow)(?!finanse)(?!kobieta)(?!dom)(?!pogoda)(?!tech)(?!historia)(?!czat)(?!ksiazki)(?!gryonline)(?!hotele)(?!narty)(?!samoloty)(?!wycieczki)(?!hosting)(?!irlandia)(?!multikurs)(?!casino)(?!foto)(?!tech)(?!www)(?!stg)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!alefolwark)(?!angielski)(?!arenamody)(?!beniamin)(?!bon)(?!bsg)(?!casino)(?!diety)(?!dlaprasy)(?!dlugi)(?!doladowania)(?!dom)(?!dysk)(?!ebiznes)(?!ebooki)(?!empire)(?!fantasyliga)(?!film)(?!fundusze)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)(?!gazetki)(?!gry)(?!horoskop)(?!kalendarz)(?!katalog)(?!khanwars)(?!komiks)(?!konflikty)(?!kontakty)(?!korsarze)(?!kultura)(?!mini)(?!mmho)(?!mobilna)(?!morizon)(?!moto)(?!muzyka)(?!narty)(?!naryby)(?!onas)(?!orangekinoletnie)(?!piraci)(?!poczta)(?!pomoc)(?!praca)(?!profil)(?!programtv)(?!pytamy)(?!rekrutacja)(?!rss)(?!rtvagd)(?!rycerzeiksiezniczki)(?!smeet)(?!speedwaymanager)(?!szkola)(?!szukaj)(?!tech)(?!teleshow)(?!triviador)(?!turystyka)(?!twojeip)(?!ulubiency)(?!warodfragons)(?!wycieczki)(?!zdrowie)(?!zoomumba)(?!topnews)(?!erotyka)(?!dzieci)(?!fitness)(?!gielda)(?!finansomat)(?!biznes)(?!sport)[a-zA-Z0-9]{4,9}\.wp\.pl\/.{200,}/$important
+/:\/\/(?!biuropodrozy)(?!mistrzowiebezpieczenstwa)(?!prezentownik)(?!nowapoczta)(?!swiecsie)(?!swieta)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!facet)(?!wyleczto)(?!kuchnia)(?!film)(?!moto)(?!gwiazdy)(?!teleshow)(?!finanse)(?!kobieta)(?!dom)(?!pogoda)(?!tech)(?!historia)(?!czat)(?!ksiazki)(?!gryonline)(?!hotele)(?!narty)(?!samoloty)(?!wycieczki)(?!hosting)(?!irlandia)(?!multikurs)(?!casino)(?!foto)(?!tech)(?!www)(?!stg)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!alefolwark)(?!angielski)(?!arenamody)(?!beniamin)(?!bon)(?!bsg)(?!casino)(?!diety)(?!dlaprasy)(?!dlugi)(?!doladowania)(?!dom)(?!dysk)(?!ebiznes)(?!ebooki)(?!empire)(?!fantasyliga)(?!film)(?!fundusze)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)(?!gazetki)(?!gry)(?!horoskop)(?!kalendarz)(?!katalog)(?!khanwars)(?!komiks)(?!konflikty)(?!kontakty)(?!korsarze)(?!kultura)(?!mini)(?!mmho)(?!mobilna)(?!morizon)(?!moto)(?!muzyka)(?!narty)(?!naryby)(?!onas)(?!orangekinoletnie)(?!piraci)(?!poczta)(?!pomoc)(?!praca)(?!profil)(?!programtv)(?!pytamy)(?!rekrutacja)(?!rss)(?!rtvagd)(?!rycerzeiksiezniczki)(?!smeet)(?!speedwaymanager)(?!szkola)(?!szukaj)(?!tech)(?!teleshow)(?!triviador)(?!turystyka)(?!twojeip)(?!ulubiency)(?!warodfragons)(?!wycieczki)(?!zdrowie)(?!zoomumba)(?!topnews)(?!erotyka)(?!dzieci)(?!fitness)(?!gielda)(?!finansomat)(?!biznes)(?!sport)[a-zA-Z0-9]{4,9}\.wp\.pl\/.{200,}/$important
 money.pl,o2.pl,portal.abczdrowie.pl,wp.pl,wp.tv##script:inject(abort-on-property-write.js, gafBodies)
 facet.wp.pl,teleshow.wp.pl##div[class^="_"]:matches-css(background-image: url("data:image/png;base64,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"))
 ||rek.www.wp.pl/pliki/*.js$script,important
@@ -1672,3 +1692,23 @@ facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##script:inject(abort-on-property-write.
 !
 !--------------------------Stupid notifications------------!
 ||dashboard.push-ad.com^$script,domain=antyweb.pl
+!
+!
+!--------------------------Rules on tv streams element hiding rules------------!
+dotstream.tv##[id^="deny"]
+privatestream.tv##[id^="deny"]
+privatestream.tv/images/player_logo.png
+tvtoss.me##.bannerfloat
+castto.me##[id^="floatLayer"]
+##a[href^="https://gamehag.com/r/"]
+##a[href^="http://affiliates.bet-at-home.com/processing/clickthrgh.asp"]
+##a[href="http://www.livelooker.com"]
+!
+!
+!--------------------------Rules on tv streams blocking filters------------!
+||abcast.net/p.js$script
+||fullon.tv/matuma300x250.php$subdocument
+||nowwatchtvlive.co/matomyads$subdocument
+||cloudfront.net^$script,domain=telewizja-live.com
+||privatestream.tv/logo^
+||privatestream.tv/adl^
