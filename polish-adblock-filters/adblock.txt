@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 11 January 2017
 ! Expires: 2 days
-! Version: 2017011103
+! Version: 2017011104
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017011103 aktualizacja: sr, 11 stycznia 2017, 17:55:00
+! v.2017011104 aktualizacja: sr, 11 stycznia 2017, 21:55:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -1088,6 +1088,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||adsnet.pl$script
 ||adv.wp.pl^
 ||aff.mediarotate.com/Click^
+||adglare.org/img/$image,domain=nhl.pl
 ||agoraperformance.pl^$third-party
 ||alemiasto.pl/adds/
 ||allegrostatic.pl/showcaseService/static/images/placeholders/1200x400.png$image
@@ -1679,7 +1680,8 @@ www.wp.pl##._2Gdr9
 !--------------------------Experimental rules------------!
 facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##div[class^="_"]:matches-css(background-image: /^url\(.*wp\.pl/)
 facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##script:inject(abort-on-property-write.js, iaqExt)
-/^(http|https):\/\/[a-z]{1,20}\.wp\.pl\/.{250,}/$script,important,domain=facet.wp.pl|gwiazdy.wp.pl|teleshow.wp.pl
+facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl,kobieta.wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
+facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl,kobieta.wp.pl##div[class^="_"]:matches-css(background-size: 56px 45px)
 !
 !
 !--------------------------Rules for pages with random adv scripts------------!
