@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: http://www.certyficate.it/
-! Last modified: 11 January 2017
+! Last modified: 12 January 2017
 ! Expires: 2 days
-! Version: 2017011105
+! Version: 2017011201
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017011105 aktualizacja: sr, 11 stycznia 2017, 22:00:00
+! v.2017011201 aktualizacja: czw, 12 stycznia 2017, 08:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -194,6 +194,7 @@ allegro.pl###installments-banner-container
 allegro.pl###main_page_main_1200_400
 allegro.pl###mainpage-marketing-showcases > .clearfix
 allegro.pl###main_page_hr_980_180
+allegro.pl###coins-banner
 alltube.tv###ban-er
 alltube.tv###super-player
 android.com.pl##[id^="text-3"]
@@ -842,6 +843,9 @@ tekstowo.pl##.adv-home-child
 tekstowo.pl###advSong
 telchina.pl###wrap > .forabg
 technowinki.onet.pl###softonet
+tech.wp.pl,turystyka.wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
+tech.wp.pl,turystyka.wp.pl##div[class^="_"]:matches-css(background-size: 56px 45px)
+tech.wp.pl,turystyka.wp.pl##.scr-wallpaper
 telchina.pl##.bg3.post
 telchina.pl##[style="padding: 5px 5px 2px 5px; font-size: 1.1em; background-color: #ECF1F3; margin: 0px auto; text-align: center;"]
 telemagazyn.pl##[class^="fiszka"]
@@ -1033,6 +1037,7 @@ www.cenynaswiecie.pl##.system_banner
 www.cenynaswiecie.pl##.menu-block
 www.cenynaswiecie.pl##[class^="google-"]
 www.cenynaswiecie.pl##.hidden-xs.text-center
+www.swiatmotocykli.pl##.entry_7
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1132,7 +1137,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||emisja.contentstream.pl/$script
 ||evertiq.pl/*/js/min/evqFront.js$script
 ||evertiq.pl/include/ad-block/$xmlhttprequest
-||exs.pl/$script
+||exs.pl/$script,domain=playboy.pl
+||eurogol.pl/images/banner.jpg$image
 ||f01.esfr.pl/si_upload/gfx/*.png$image,domain=euro.com.pl
 ||files.biala24.pl/banners/$image
 ||filmweb.pl/welcomeScreenJS$script,domain=filmweb.pl
@@ -1236,6 +1242,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||sklep.gry-online.pl/imgs/tapeta/$image,domain=sklep.gry-online.pl
 ||smartadserver.com/call/cliccommand/$popup
 ||spidersweb.pl/wp-content/themes/new_sw_v3_git/others/$subdocument,domain=spidersweb.pl
+||spidersweb.pl/reklamy/$subdocument
 ||spolecznosci.net^$image,subdocument,script,popup
 ||stalowemiasto.pl/_reklamy/$image
 ||stalowemiasto.pl/colada2/_pliki/emisje/$object,image
@@ -1299,6 +1306,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www.viva-tv.pl/assets/gemius-*.swf$object
 ||www.wiadomoscihandlowe.pl/img/banery/$image
 ||www.wiocha.pl/subpages/page.php
+||www.ekobiety.pl/wp-content/uploads/*/reklama$image
 ||www1.advice.movie.advlab.pl$object,domain=get.x-link.pl
 ||zulawyimierzeja24.pl/assets/js/jwplayer/jwplayer.html5.js
 ||zyciesiedleckie.pl/banery_foto/$image
@@ -1400,7 +1408,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||cda.pl/rekl-advertise.js$script
 @@||onet.hit.gemius.pl/xgemius.js$script
 @@||businessclick.net.pl/awrapper|$script,domain=teleshow.wp.pl
-@@||cda.pl/rekI-advertise.js$script
+@@||cda.pl/*advertise.js$script
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
