@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 12 January 2017
 ! Expires: 2 days
-! Version: 2017011201
+! Version: 2017011202
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017011201 aktualizacja: czw, 12 stycznia 2017, 08:30:00
+! v.2017011202 aktualizacja: czw, 12 stycznia 2017, 21:40:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -103,6 +103,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##[class^="adSrodek"]
 ##[id*="-billboard-advert"]
 ##[id^="ads_"]
+###ad
 ###ceneo-placeholder-ceneo-12
 ##[id^="pianoMediaBoxInfo"]
 ###seeAlsoBox
@@ -360,6 +361,7 @@ filesdark.com##[href*="/adac.php"]
 films4free.pl##.M2U3OGQ4ZGY1
 filmweb.pl###flashcontent3
 filmweb.pl###pasekup
+filmweb.pl###clickUrl1
 fishki.pl###fancybox-wrap
 fm.tuba.pl##tuba-ads
 foodpanda.pl###campaign_22924_lightbox
@@ -915,6 +917,7 @@ webmasteruj.pl##[style="margin:0 auto; text-align:center; margin-bottom:5px;"]
 weeb.tv##DIV[style="width: 800px; height: 80px; background: url(\"http://backupstatic.weeb.tv/images/weeb-1.png\") no-repeat scroll left top transparent; padding-left: 151px; padding-top: 73px; cursor: pointer;"]
 weszlo.com##.bsaGridGutter
 weszlo.com##.adv
+weszlo.com##.top-adw
 wiadomosci.swidnickie.pl##IMG[src="images/mk-agro_29_new.png"]
 wiadomosci.wp.pl##.item
 wiadomosci24.pl##.reka
@@ -1006,6 +1009,8 @@ www.nexto.pl##iframe[src^="http://get.x-link.pl/"]
 www.morele.net##[id$="_ucho"]
 www.diki.pl##[id^="dikiAd"]
 www.diki.pl##[class$="AdContainer"]
+www.gazetaprawna.pl###boxSubscr2016
+www.gazetaprawna.pl##.tpl_static_html
 www.kufel.pl##.sda-slide-link-cont
 www.kufel.pl,dzienniknarodowy.pl###Process
 www.skapiec.pl##.creation-corner
@@ -1038,6 +1043,7 @@ www.cenynaswiecie.pl##.menu-block
 www.cenynaswiecie.pl##[class^="google-"]
 www.cenynaswiecie.pl##.hidden-xs.text-center
 www.swiatmotocykli.pl##.entry_7
+www.wiocha.pl###rectcont
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1409,6 +1415,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||onet.hit.gemius.pl/xgemius.js$script
 @@||businessclick.net.pl/awrapper|$script,domain=teleshow.wp.pl
 @@||cda.pl/*advertise.js$script
+@@||hub.com.pl^$script,subdocument,domain=poczta.interia.pl
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1465,12 +1472,15 @@ www.plotek.pl##.adb_plotek
 www.ps4forum.pl##.googleheader
 www.onet.pl#@#span.newsAdd
 www.onet.pl#@#[id^="onet-ad-flat"]
-www.onet.pl,vod.pl#@#.trizer-bnr
+www.onet.pl,vod.pl,businessinsider.com.pl,komputerswiat.pl#@#.trizer-bnr
 www.onet.pl#@##onet-ad-top
 www.onet.pl#@##extraAdsBlock
 www.onet.pl#@#.addthis_toolbox
 www.onet.pl#@#.autopromoapp
 vod.pl#@#.infoCloud
+komputerswiat.pl#@#.adsense
+komputerswiat.pl#@##ks_breaking_news
+komputerswiat.pl##.adsbygoogle
 !
 !
 !---------------------------------Anti Adblock Rules blocking filters----------------------------------!
@@ -1529,6 +1539,7 @@ vod.pl#@#.infoCloud
 @@||video.gazeta.pl/cdn/ads/ad/banner/_adsense_/_adserver/_adview_.ad.json$xmlhttprequest,domain=video.gazeta.pl
 @@||vod.pl^$generichide
 @@||webshark.pl/adserver/*advertise_check=1$script,domain=vider.info
+@@||webcamera.*/js/fuckadblock.js$script,domain=webcamera.pl|webcamera.live
 @@||wp.hit.gemius.pl/xgemius.js$script,domain=wp.pl
 @@||wtkplay.pl/javascript/ads.js$script
 @@||www.benchmark.pl/*/b.ads.js$script
