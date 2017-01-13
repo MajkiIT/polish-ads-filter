@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: http://www.certyficate.it/
-! Last modified: 12 January 2017
+! Last modified: 13 January 2017
 ! Expires: 2 days
-! Version: 2017011202
+! Version: 2017011301
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017011202 aktualizacja: czw, 12 stycznia 2017, 21:40:00
+! v.2017011301 aktualizacja: ptk, 13 stycznia 2017, 11:10:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -416,6 +416,7 @@ gazetaprawna.pl##.tpl_ads_adexon.tpl_std_module
 glamrap.pl##.popup
 glamrap.pl##IMG[src^="/images/rk3/"]
 glamrap.pl###footmod
+globtroter.pl##a[href^="http://track.omgpl.com/"] > .img-responsive
 gloria.tv##footer
 gloria.tv##A[href^="/advertisement/"]
 glos24.pl##IMG[src^="/files/adv/"]
@@ -430,6 +431,7 @@ grafoteka.pl###info
 grajewo24.pl,elk24.pl,augustow24.pl###popup
 gram.pl##.stripeBar
 gram.pl###billBoardAreaWrapper
+gram.pl##FIGURE.obrazek
 grupa7j.pl##table[style*="img/bg-black.png"] > tbody > tr
 gry-online.pl##.ban-fp-970x200
 gry-online.pl##[class$="-stopka"]
@@ -565,6 +567,7 @@ magazynt3.pl###leader-wrap
 make-cash.pl##.ipsAdvertisement
 malydziennik.pl##.desktop
 mapa.szukacz.pl###popupContainer
+maximgroup.pl###banner-counter
 mediaexpert.pl##.nletter_popup
 mediaexpert.pl## .js-promoClick
 mediamarkt.pl##A[href^="http://www.mediamarkt.pl/ad.php"]
@@ -680,6 +683,8 @@ pebx.pl###uix_stickyFooterSpacer
 pebx.pl###header > script + div[style="text-align:center;width:100%;text-align:center;"] > a[href][rel="nofollow"]
 pecetowicz.pl##.ipsPos_center
 pekao.com.pl###PX45189
+pilkanozna.pl##.rekl_srod_top
+pilkanozna.pl##DIV[style="text-align:center;padding:15px;"]
 pirackiekino.blogspot.com##img[src*="blogspot.com/-AOw7_"]
 planeta-kobiet.pl##.banneritem
 planujemywesele.pl###ad-profile-box1
@@ -1044,6 +1049,8 @@ www.cenynaswiecie.pl##[class^="google-"]
 www.cenynaswiecie.pl##.hidden-xs.text-center
 www.swiatmotocykli.pl##.entry_7
 www.wiocha.pl###rectcont
+www.photoblog.pl###adsense-top-placeholder
+www.pcformat.pl###ad_news
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1182,6 +1189,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||jastrzebieonline.pl/files/banners/$domain=jastrzebieonline.pl
 ||jastrzebieonline.pl/js/scripts.js$script,domain=jastrzebieonline.pl
 ||ki24.info/banery_extra/$image
+||www.kolporter.com.pl/gfx/img/bannery/$image,domain=rynekprasowy.pl
 ||konto.amronet.pl$subdocument,domain=dobreprogramy.pl
 ||koronowo.net.pl/banery_foto/$image
 ||leczna24.pl/f/*.gif$image
@@ -1472,11 +1480,12 @@ www.plotek.pl##.adb_plotek
 www.ps4forum.pl##.googleheader
 www.onet.pl#@#span.newsAdd
 www.onet.pl#@#[id^="onet-ad-flat"]
-www.onet.pl,vod.pl,businessinsider.com.pl,komputerswiat.pl#@#.trizer-bnr
+onet.pl,vod.pl,businessinsider.com.pl,komputerswiat.pl,plejada.pl,komorkomania.pl#@#.trizer-bnr
 www.onet.pl#@##onet-ad-top
 www.onet.pl#@##extraAdsBlock
 www.onet.pl#@#.addthis_toolbox
 www.onet.pl#@#.autopromoapp
+www.elektroda.pl###xx-block-info
 vod.pl#@#.infoCloud
 komputerswiat.pl#@#.adsense
 komputerswiat.pl#@##ks_breaking_news
@@ -1700,8 +1709,8 @@ www.wp.pl##._2Gdr9
 !--------------------------Experimental rules------------!
 facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##div[class^="_"]:matches-css(background-image: /^url\(.*wp\.pl/)
 facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##script:inject(abort-on-property-write.js, iaqExt)
-facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl,kobieta.wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
-facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl,kobieta.wp.pl##div[class^="_"]:matches-css(background-size: 56px 45px)
+facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl,kobieta.wp.pl,film.wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
+facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl,kobieta.wp.pl,film.wp.pl##div[class^="_"]:matches-css(background-size: 56px 45px)
 !
 !
 !--------------------------Rules for pages with random adv scripts------------!
