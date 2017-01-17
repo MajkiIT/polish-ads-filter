@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: http://www.certyficate.it/
-! Last modified: 15 January 2017
+! Last modified: 17 January 2017
 ! Expires: 2 days
-! Version: 2017011503
+! Version: 2017011701
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017011503 aktualizacja: nie, 15 stycznia 2017, 16:35:00
+! v.2017011701 aktualizacja: wt, 17 stycznia 2017, 15:15:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -663,6 +663,7 @@ ozoneo.pl##.non-fullwidth
 panelradiowy.pl##[id^="slider"]
 parenting.pl###floorBG
 parenting.pl##.a-ctn-d
+patriot24.net##[style="display: block; width: 750px; height: 200px; margin: 0px auto;"]
 pcformat.pl###ad_dol_srodek
 pclab.pl###b028
 pclab.pl###a011
@@ -733,6 +734,7 @@ pro-test.pl###coockie_txt
 profil.wp.pl##.bxAdv
 profilook.pl###ceneo-os783-rZ0og
 press.pl###topBanner
+procesor.pl###big-rectangle
 programosy.pl##.web.bn-b-0
 przegladsportowy.pl##[id$="_ARTICLE_TOP"]
 przegladoponiarski.pl##.banners
@@ -979,6 +981,7 @@ oleole.pl##[id^="ddd_left"]
 oleole.pl##[id^="ddd_right"]
 waszwilanow.pl##[style="text-align: center;"]
 waszwilanow.pl##.td-banner-wrap-full
+weszlo.com##.adv:style(height: 1px !important; width: 1px !important;)
 www.aptekagemini.pl##.baner
 www.aptekagemini.pl###pw_bannery_5
 www.oleole.pl###sss_left > .imgHover[alt="gazetka agd"]
@@ -1051,7 +1054,9 @@ www.swiatmotocykli.pl##.entry_7
 www.wiocha.pl###rectcont
 www.photoblog.pl###adsense-top-placeholder
 www.pcformat.pl###ad_news
-www.portel.pl###divBaXLpm
+www.portel.pl###divBaXLp
+www.portel.pl###divBaLp
+www.hopaj.pl###hopajembed
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1069,6 +1074,7 @@ xboxforum.pl###content > .pageWidth > .pageContent > .blockContainer:nth-of-type
 xfinanse.pl##.entry-image.attachment-post
 xfinanse.pl##IMG[src^="http://popartnersku.pl/system/banners/"]
 yellowpages.pl###col_c
+youradio.pl###block-block-41
 zabawkowo.com##IMG[src^="http://biuropro.pl/images/bannery/"]
 zalukaj.tv###left > a[href^="http://vshare.io/"]
 zambrow.org##.adv
@@ -1128,6 +1134,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||cda.pl/*v*a*s*t*/*.xml
 ||cdn.dtxngr.com/$script
 ||cdn.syndication.twitter.com/widgets/tweetbutton/
+||chozoba.pl/images/baner*$image
 ||ciechocinek.biz/banery_$image
 ||cloudfront.net/*$domain=allegro.pl
 ||code.intext.contextad.pl/pages$script
@@ -1151,6 +1158,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||emisja.contentstream.pl/$script
 ||evertiq.pl/*/js/min/evqFront.js$script
 ||evertiq.pl/include/ad-block/$xmlhttprequest
+||evertiq.pl/go/$popup
+||evertiq.pl/bximg/*.png$image
 ||exs.pl/$script,domain=playboy.pl
 ||eurogol.pl/images/banner.jpg$image
 ||f01.esfr.pl/si_upload/gfx/*.png$image,domain=euro.com.pl
@@ -1221,6 +1230,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||nazwa.pl/video/$object-subrequest,domain=rmfon.pl
 ||news.targeo.pl/oarm.php$xmlhttprequest,domain=mapa.targeo.pl
 ||nhlpl.cdn.adglare.org/img/$image,domain=notebookcheck.pl
+||nokaut.pl/wigetyflash/$object
 ||ocs-pl.oktawave.com/v1/AUTH_*/Reklamy/$object-subrequest
 ||onenima.com^$script
 ||ozoneo.pl/templates/images/description/5901/Image/$image
@@ -1230,6 +1240,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||pclab.pl/img/special/*.jpg
 ||pclab.pl/partners/$image,subdocument,domain=pclab.pl
 ||picsrv.fora.pl/cdn/tri*trizer
+||pobierak.jeja.pl/aban/$image
 ||podlasie24.pl/upl/ban*/$image,object
 ||pogodynka.onet.pl/apiinfos/htmlwarn/
 ||polskie-torrenty.com.pl/imgb/banner.jpg$image
@@ -1323,6 +1334,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www.wiadomoscihandlowe.pl/img/banery/$image
 ||www.wiocha.pl/subpages/page.php
 ||www.ekobiety.pl/wp-content/uploads/*/reklama$image
+||www.wgrane.pl/html/ads.js$script,domain=www.wgrane.pl
+||www.tv.pl/images/$image,domain=www.zakumaj.pl
 ||www1.advice.movie.advlab.pl$object,domain=get.x-link.pl
 ||zulawyimierzeja24.pl/assets/js/jwplayer/jwplayer.html5.js
 ||zyciesiedleckie.pl/banery_foto/$image
@@ -1426,6 +1439,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||businessclick.net.pl/awrapper|$script,domain=teleshow.wp.pl
 @@||cda.pl/*advertise.js$script
 @@||hub.com.pl^$subdocument,domain=poczta.interia.pl
+@@||cloud.ideabank.pl/js/libs/angular-google-plus.js$script,domain=cloud.ideabank.pl
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1500,6 +1514,7 @@ komputerswiat.pl##.adsbygoogle
 !---------------------------------Anti Adblock Rules whitelist filters----------------------------------!
 @@/js/ads.js$script,domain=solarkurier.pl|satkurier.pl|saskakepa.waw.pl|e-krajna.pl|swiecie24.pl|zyciesokolowa.pl|ciechocinek.biz|napiprojekt.pl
 @@://*.*/pl/js/show_ads.js$script,domain=ki24.info|portalplock.pl|faktypilskie.pl|e-krajna.pl|swiecie24.pl|zyciesokolowa.pl|zyciesiedleckie.pl|koronowo.net.pl|ciechocinek.biz|swiecie.siecportali.pl
+@@/showad_.js$domain=flashx.tv
 @@||rapidgrab.pl^$generichide
 @@ads$image,domain=rapidgrab.pl
 @@.pl/menda/adsense.js$script,domain=to.proste.info.pl|seciki.pl
@@ -1519,7 +1534,7 @@ komputerswiat.pl##.adsbygoogle
 @@||fm.tuba.pl^$xmlhttprequest,domain=fm.tuba.pl
 @@||grupa7j.pl/joomla/images/my/gallery_advert/$image,domain=grupa7j.pl
 @@||imasdk.googleapis.com/js/core/$subdocument,domain=wp.pl|wp.tv|portal.abczdrowie.pl
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wp.pl|wp.tv|portal.abczdrowie.pl|grydladzieci.pl|www.money.pl|vod.pl|exs.pl|wawalove.pl|fotoblogia.pl|autokult.pl|gadzetomania.pl|parenting.pl
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wp.pl|wp.tv|portal.abczdrowie.pl|grydladzieci.pl|www.money.pl|vod.pl|exs.pl|wawalove.pl|fotoblogia.pl|autokult.pl|gadzetomania.pl|parenting.pl|komorkomania.pl
 @@||ithardware.pl/js/ads.js$script,domain=ithardware.pl
 @@||komputerswiat.pl^$generichide
 @@||kubofonista.net/r/ad.htm$script,domain=kubofonista.net
