@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: http://www.certyficate.it/
-! Last modified: 17 January 2017
+! Last modified: 18 January 2017
 ! Expires: 2 days
-! Version: 2017011701
+! Version: 2017011801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017011701 aktualizacja: wt, 17 stycznia 2017, 15:15:00
+! v.2017011801 aktualizacja: sr, 18 stycznia 2017, 08:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -81,7 +81,7 @@ iitv.pl###player-above-2
 ##A[href*="k.tradedoubler.com/click"]
 ||stg.wp.pl^$script
 ||entryhit.wp.pl^
-||adkontekst.pl$script
+||adkontekst.pl$script,image
 ||www.wp.pl/v*/log/view
 ||emisja.adsearch.pl/$xmlhttprequest
 ||hit.gemius.pl$script,image
@@ -96,6 +96,8 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ||adnxs.com^
 ||smartclick.pl$script
 ||creativecdn.com^$third-party
+||nsaudience.pl^
+||vendimob.pl^
 !
 !
 !------------------------General element hiding rules-------------------------!
@@ -994,6 +996,7 @@ www.lubin.pl###banner
 www.gierkionline.pl##[id^="banner"]
 www.lajfy.com###sportObchodBanner
 www.ckm.pl##.adv-header
+www.ckm.pl##.prenumerata-sklep-ckm
 www.applecenter.pl###leader-wrap
 www.ceneo.pl##.ado-top-billboard
 www.lubliniec.info##.rightSideBaner
@@ -1334,7 +1337,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www.wiadomoscihandlowe.pl/img/banery/$image
 ||www.wiocha.pl/subpages/page.php
 ||www.ekobiety.pl/wp-content/uploads/*/reklama$image
-||www.wgrane.pl/html/ads.js$script,domain=www.wgrane.pl
 ||www.tv.pl/images/$image,domain=www.zakumaj.pl
 ||www1.advice.movie.advlab.pl$object,domain=get.x-link.pl
 ||zulawyimierzeja24.pl/assets/js/jwplayer/jwplayer.html5.js
