@@ -3,19 +3,18 @@
 ! polskie filtry do uBlocka uzupelnienie
 ! Collaborators: F4z, xxcriticxx
 ! Homepage: http://www.certyficate.it/
-! Last modified: 21 January 2017
+! Last modified: 22 January 2017
 ! Expires: 2 days
-! Version: 2017012101
+! Version: 2017012201
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2016 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017012101 aktualizacja: sob, 21 stycznia 2016, 21:30:00
+! v.2017012201 aktualizacja: niedz, 22 stycznia 2016, 21:35:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
-motobanda.pl###mvideo:style(z-index: 1!important;)
 !# http://alltube.tv/
 !# Ominięcie czekania
 alltube.tv###please-wait-container
@@ -45,6 +44,9 @@ jeja.pl##.gameLoading
 jeja.pl###adLoading
 jeja.pl###swf:style(visibility: visible !important; position: static !important; left: 0px !important;)
 jeja.pl###game:style(visibility: visible !important; position: static !important; left: 0px !important;)
+!
+!# Ominięcie reklam przed filmami
+motobanda.pl###mvideo:style(z-index: 1!important;)
 !
 !# http://www.national-geographic.pl/
 !# Puste miejsce po reklamie
@@ -77,12 +79,12 @@ ebay.pl##[id="gh-gb"][tabindex="-1"][class="gh-banner-active gh-gb-shadow"]:styl
 gry-online.poszkole.pl###fgame:style(width: 850px !important; height: 600px !important;)
 gry-online.poszkole.pl###mr-tomato
 !
-!#cda.pl
+!# cda.pl
 cda.pl###aa_ad
 cda.pl###obiekt:style(display: block !important;)
 cda.pl###kolumnaSrodkowa:style(height: auto !important;)
 !
-!#pclab.pl
+!# pclab.pl
 !pclab.pl###header .left .sponT:style(height: 100px !important;)
 !pclab.pl###header .right .sponT:style(height: 75px !important;)
 !pclab.pl###headerwrapper:style(height: 140px !important;)
@@ -98,24 +100,24 @@ playpuls.pl##script:inject(abort-on-property-write.js, ads)
 !# Ukrycie pustego miejsca po reklamie
 senda.pl##.advert_box > div > .tablebg:style(height: 1px !important; visibility: hidden !important;)
 !
-!#joemonster.org
-joemonster.org##script:inject(abort-on-property-write.js, ub_ct_load)
+!# Blokowanie reklam z unblock.onaudience.com
+autocentrum.pl,gry-online.pl,joemonster.org##script:inject(abort-on-property-write.js, ub_ct_load)
 !
-!#4lomza.pl
+!# 4lomza.pl
 4lomza.pl##body.polityka-cookies:style(margin-top: 0px !important;)
 !
-!#www.ps4forum.pl
+!# www.ps4forum.pl
 www.ps4forum.pl##.googleheader
 www.ps4forum.pl##.forumsTabLinks.tabLinks:style(top: 60px !important;)
 !
-!#dobreprogramy
+!# dobreprogramy
 dobreprogramy.pl##body:style(background: none !important;)
 !
 !#purepc.pl
 purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !important; position: absolute !important;)
 !
-!#filmweb.pl
+!# filmweb.pl
 ||fwcdn.pl/adv/$script,domain=filmweb.pl,important
 !
-!#wp.pl
+!# wp.pl
 ~www.wp.pl,~poczta.wp.pl,wp.pl##script:inject(abort-on-property-write.js, habahaba)
