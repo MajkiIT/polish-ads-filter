@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: http://www.certyficate.it/
-! Last modified: 23 January 2017
+! Last modified: 24 January 2017
 ! Expires: 2 days
-! Version: 2017012303
+! Version: 2017012401
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017012303 aktualizacja: pon, 23 stycznia 2017, 13:30:00
+! v.2017012401 aktualizacja: wt, 24 stycznia 2017, 09:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -107,6 +107,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##[id^="ads_"]
 ###ad
 ##.a-d-v-i
+##.ipsAdvertisement
 ###ceneo-placeholder-ceneo-12
 ##[id^="pianoMediaBoxInfo"]
 ###seeAlsoBox
@@ -126,7 +127,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##div#skapiec_ad
 ##ul.sharing-tools
 ~rp.pl##[id*="reklama"]
-~linuxiarze.pl,~wirtualny-wojownik.pl,~przerwanareklame.pl,~tvpolska.pl,~smiechawatv.pl,~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org##[class*="reklama"]
+~ceo.com.pl,~linuxiarze.pl,~wirtualny-wojownik.pl,~przerwanareklame.pl,~tvpolska.pl,~smiechawatv.pl,~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org##[class*="reklama"]
 ##.Reklama
 ##.oponeoWidget
 ###oponeoWidget
@@ -384,7 +385,6 @@ forum.dvhk.to##IMG[width="400"][height="50"]
 forum.dvhk.to##[id^="f16"] IMG[src^="http://img.dvhk.to/"]
 forum.dvhk.to##[id^="f16"] IMG[src^="http://tvsat-sklep.com/baner/"]
 forum.fedora.pl###document_modal
-forumpc.pl##.ipsAdvertisement
 forum.vwgolf.pl##A[style="position:absolute;bottom:0.4em;text-transform:uppercase;font-size:80%;right:1em;\a           background:#de8c2f;color:#e6ebf2;padding:3px 7px; display:block"]
 forum.vwgolf.pl##DIV[style="padding:10px 15px 12px"]
 forum.pclab.pl###messageHook
@@ -571,7 +571,6 @@ lwypolnocy.pl##.DnnModule-922.DnnModule-DNN_HTML.DnnModule
 mackozer.myapple.pl##.container > .row > .col-xs-12 > .row > .col-md-4 > .well
 magia.onet.pl###box-random-game
 magazynt3.pl###leader-wrap
-make-cash.pl##.ipsAdvertisement
 malydziennik.pl##.desktop
 mapa.szukacz.pl###popupContainer
 maximgroup.pl###banner-counter
@@ -776,7 +775,8 @@ rzeszowiak.pl##DIV[id^="rkl"]
 rzeszowiak.pl##DIV.header-wizytowki
 rzeszowiak.pl###content-right
 rzeszowiak.pl###midtop
-sadistic.pl##[style="text-align: center; padding: 30px"]
+sadeczanin.info##.box-big
+sadistic.pl##[style^="text-align: center; padding: 30px"]
 sadistic.pl##[href^="http://goo.gl/"] > IMG
 satkurier.pl###bann > center
 satkurier.pl###right_column_gallery
@@ -1431,8 +1431,9 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||wtk.pl/javascript/ads.js$script
 @@||cdn.gamer-network.net/plugins/dfp/$script,domain=eurogamer.pl
 @@||osgchmura.tk/tv/player/ads.js$script
-@@||tvn.adocean.pl/ad.xml$xmlhttprequest,domain=tvnturbo.pl
-@@||tvn.adocean.pl/__/ad.xml$xmlhttprequest,domain=tvnturbo.pl
+@@||tvn.adocean.pl/ad.xml$xmlhttprequest,domain=tvnturbo.pl|miniminiplus.pl
+@@||tvn.adocean.pl/__/ad.xml$xmlhttprequest,domain=tvnturbo.pl|miniminiplus.pl
+@@||miniminiplus.pl^$generichide
 @@||optimus.pl/temp/adrotator_miniatury/$image
 @@||stats.qmerce.com/interaction-stats/$xmlhttprequest,domain=renderer.qmerce.com
 @@||emspartner.pl/wp-content/plugins/duracelltomi-google-tag-manager/js/$script
@@ -1743,7 +1744,7 @@ opinie.wp.pl,facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl,kobieta.wp.pl,film.wp.pl##
 /^http:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\/[a-zA-Z0-9]{30,}/$script,popup,document
 /^http:\/\/[a-zA-Z.]{10,}\.com\/[a-zA-Z]{1,}\.\js/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|stop-limitom.pl
 /^http:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl
-/^http:\/\/[a-z0-9]{3,11}\.(party|website|science|webcam)\/[0-9]{3,10}\//$xmlhttprequest,domain=streamin.to
+/^(http|https):\/\/[a-z0-9]{3,11}\.(party|website|science|webcam|bid)\/[0-9]{3,10}\//$xmlhttprequest,domain=streamin.to|raptu.com
 !
 !
 !--------------------------Stupid notifications------------!
