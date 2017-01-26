@@ -5,13 +5,13 @@
 ! Homepage: http://www.certyficate.it/
 ! Last modified: 26 January 2017
 ! Expires: 2 days
-! Version: 2017012601
+! Version: 2017012602
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017012601 aktualizacja: czw, 26 stycznia 2017, 08:50:00
+! v.2017012602 aktualizacja: czw, 26 stycznia 2017, 18:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -168,7 +168,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 /reklamy/*$image,object
 ~elton.com.ua,~alexbranding.com,~unitheme.net,~konsoleigry.pl,~megadyskont.pl##[class^="adv-"]
 ##a[href*="/ad/click/"]
-~gry-online.pl,~tv6.com.pl,~trojmiasto.pl,~thenextweb.com,~pcgamingwiki.com,~gamepedia.com,~mega.nz##[class$="-ads"]
+~eleague.com,~gry-online.pl,~tv6.com.pl,~trojmiasto.pl,~thenextweb.com,~pcgamingwiki.com,~gamepedia.com,~mega.nz##[class$="-ads"]
 ##TopTextAd
 ##[href*=".hit.gemius.pl"]
 ##[id^="giercowniaAd"]
@@ -186,6 +186,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 pl/popup.js|$script
 ###goback
 ##.houdini
+##a[href^="http://pp.funhub.pl/api/click/"]
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -338,6 +339,8 @@ elektroda.pl##.the-content.col-md-8 > [style="float: left"]
 elektroda.pl##[style="float: left; position: relative;"]
 elektroda.pl##.sec-ads
 elektroda.pl##.button
+elektroda.pl##.toNiePrzeszkadza
+elektroda.pl##.badzcieLudzmi
 embed.vidso.tv###video_container
 eostroleka.pl##DIV[style="margin-bottom:10px; margin-left:25px; float:left; width:300px; height:300px;"]
 eredivisie.pl##IMG[src^="http://www.goal.pl/ban/"]
@@ -1068,6 +1071,7 @@ www.logo24.pl##.mod_uzr_ecommerce
 www.fight24.pl##a[href="http://berserklabs.com"]
 www.lowking.pl##.wallpaper-link
 www.lowking.pl###wallpaper
+www.czesciauto24.pl##[class^="tyres_promotion_link_"]
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1145,6 +1149,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||cda.pl/*v*a*s*t*/*.xml
 ||cdn.dtxngr.com/$script
 ||cdn.syndication.twitter.com/widgets/tweetbutton/
+||cdn.pkwteile.de/uploads/stock/$images,domain=czesciauto24.pl
 ||chozoba.pl/images/baner*$image
 ||ciechocinek.biz/banery_$image
 ||cloudfront.net/*$domain=allegro.pl
@@ -1454,6 +1459,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||*cda.pl/*advertise.js$script,domain=cda.pl
 @@||hub.com.pl^$subdocument,domain=poczta.interia.pl
 @@||cloud.ideabank.pl/js/libs/angular-google-plus.js$script,domain=cloud.ideabank.pl
+@@||www.bet-at-home.com/*/account/deposit/$popup,domain=www.bet-at-home.com
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1509,7 +1515,7 @@ www.plotek.pl##.adb_plotek
 www.ps4forum.pl##.googleheader
 www.glamour.pl##.products-set-items
 onet.pl,vod.pl,businessinsider.com.pl,komputerswiat.pl,plejada.pl,komorkomania.pl,noizz.pl,auto-swiat.pl#@#.trizer-bnr
-www.elektroda.pl###xx-block-info
+www.elektroda.pl##[id$="-block-info"]
 vod.pl#@#.infoCloud
 komputerswiat.pl##.adsbygoogle
 zamow-reklame.pl###block
