@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: http://www.certyficate.it/
-! Last modified: 27 January 2017
+! Last modified: 28 January 2017
 ! Expires: 2 days
-! Version: 2017012704
+! Version: 2017012801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017012704 aktualizacja: ptk, 27 stycznia 2017, 18:05:00
+! v.2017012801 aktualizacja: sob, 28 stycznia 2017, 11:05:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -31,6 +31,7 @@ _banery/980x200
 /_baner/*$domain=www.ipon.pl
 /scripts/click.php$popup
 /data/ap3bo6/*.jpg$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
+/data/ap3bo6/*.gif$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 /data/ap3bo6/*.swf$object,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 .pl/data/cameras/banner_$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 pl/*/rodzinnawycieczka/$image,domain=wp.pl
@@ -404,6 +405,7 @@ forum.dobreprogramy.pl##div[style="text-align:center;padding:5px 0px 15px 0px;"]
 forum.dobreprogramy.pl##div[style="margin:0px 0px 20px 0px;text-align:center;"]
 forum.drivecenter.pl##.rklm_sidebar
 forum.drivecenter.pl##.rklm_forumlist
+forum.nissanklub.pl##[class^="iParts_Ad"]
 fotka.com##[id^="billboard_"]
 fotka.com###brd_profil
 fotoszok.pl###tablewraper > center
@@ -425,6 +427,7 @@ gazetapolska.pl##DIV[style="float: left;width:980px;"]
 gazetaprawna.pl##[style^="text-align:center; margin: 0 0 10px 0"]
 gazetaprawna.pl##.col-xs-off.tpl_ads_adsense.tpl_std_module
 gazetaprawna.pl##.tpl_ads_adexon.tpl_std_module
+gazetaprawna.pl##a[href^="http://www.kyoceradocumentsolutions.pl/index/produkty/product/"]
 glamrap.pl##.popup
 glamrap.pl##IMG[src^="/images/rk3/"]
 glamrap.pl###footmod
@@ -611,7 +614,9 @@ mlecznepodroze.onet.pl##.banner728-container.clearfix
 mlecznepodroze.onet.pl##.widgetAD.widget_text
 mlecznepodroze.onet.pl##.g-single.a-336
 mlecznepodroze.onet.pl##DIV[style="overflow: hidden; border-bottom: solid #DDDDDD 0px; border-top: solid #DDDDDD 0px; padding-top: 15px; padding-bottom: 10px;"]
+mklr.pl##.google_ad_info
 mobilneforum.pl##a[href^="http://shrsl.com/"]
+mobimaniak.pl##[style$="color:#999999; font-size:10px;"]
 money.pl##A[href*="://direct.money.pl/o/salechannel.php"]
 money.pl##DIV[style$="min-height:180px"]
 mojaolesnica.pl##DIV[style="width: 750px; height: 200px; float: left; display: inline;"]
@@ -839,6 +844,7 @@ stooq.pl##div[onclick^="(function"][onclick*="window.open"][style^="animation"]
 stooq.pl##[id] > b > a[href^="?"]
 stooq.pl,stooq.com##:xpath(//*[@align="center"]/*[@id][contains(text(),"REKLAMA")])
 stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"]:not([width]):has([id="ads_goog_1"])
+strefaanime.pl###text-6
 strefagry.pl##[style="width:540px;margin:10px auto;"]
 strefagry.pl##.item_d
 styl.pl###headerTopWraper > .headerPre
@@ -1195,6 +1201,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||gram.pl/ad/$image
 ||gram.pl/reklamy_assets/intel_iris/inteliris_$image,domain=gram.pl
 ||gry-online.pl/im/zmieniarka/$image,domain=gry-online.pl
+||g.gazetaprawna.pl/gp/sgp/img/gp/kyocera-logo.png$image
 ||haloursynow.pl/img/banery/
 ||home.pl/nowemedia/public/www/shadowtactic/screening/$subdocument
 ||hotcash.pl/bannery/*.gif
@@ -1216,6 +1223,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||iv.pl/rkm/$image
 ||jastrzebieonline.pl/files/banners/$domain=jastrzebieonline.pl
 ||jastrzebieonline.pl/js/scripts.js$script,domain=jastrzebieonline.pl
+||kabaret.tworzymyhistorie.pl/images/banery/$image
 ||ki24.info/banery_extra/$image
 ||www.kolporter.com.pl/gfx/img/bannery/$image,domain=rynekprasowy.pl
 ||konto.amronet.pl$subdocument,domain=dobreprogramy.pl
@@ -1735,6 +1743,7 @@ gry-online.pl##img[src^="data:image"]
 ||govahoyuge.itup.pw^
 ||medianeo.pl^
 ||chrome-setup.bid^
+||levox.pl^
 !
 !
 !--------------------------Rules for ublock, but can be use with adblock------------!
