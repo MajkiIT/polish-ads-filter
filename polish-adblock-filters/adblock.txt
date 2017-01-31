@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: http://www.certyficate.it/
-! Last modified: 29 January 2017
+! Last modified: 31 January 2017
 ! Expires: 2 days
-! Version: 2017012903
+! Version: 2017013101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017012903 aktualizacja: nie, 29 stycznia 2017, 21:55:00
+! v.2017013101 aktualizacja: wt, 31 stycznia 2017, 19:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -129,7 +129,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##div#skapiec_ad
 ##ul.sharing-tools
 ~rp.pl##[id*="reklama"]
-~ceo.com.pl,~linuxiarze.pl,~wirtualny-wojownik.pl,~przerwanareklame.pl,~tvpolska.pl,~smiechawatv.pl,~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org##[class*="reklama"]
+~cz,~ceo.com.pl,~linuxiarze.pl,~wirtualny-wojownik.pl,~przerwanareklame.pl,~tvpolska.pl,~smiechawatv.pl,~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org##[class*="reklama"]
 ##.Reklama
 ##.oponeoWidget
 ###oponeoWidget
@@ -161,7 +161,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ~de,~box.com,~hardcorowo.pl,~gumtree.com,~hulu.com,~svobodneforum.cz##[class^="ad-"]
 ~dizibox.com##[id^="adv-"]
 ##[href^="http://csr.onet.pl/eclk/clk"]
-##a[href*="bbelements.com/please/track/"]
+##a[href*="bbelements.com/please/"]
 ##img[alt="reklama"]
 ##a[href^="http://advmanager.techfun.pl/redirect/"]
 ##[href^="http://adserwer."]
@@ -656,6 +656,7 @@ niebezpiecznik.pl##a[href*="//niebezpiecznik.pl/r3"]
 niebezpiecznik.pl##a[href*="//niebezpiecznik.pl/r4"]
 nocoty.pl,aleseriale.pl###slider300Wrapper
 nokiahacking.pl##.nh_ads
+noizz.pl##.intext-ads-container
 nowafarmacja.pl##[class^="bg-banner-wrapper"]
 nowodworski24.pl###ubm-banners-2
 nowemp3.pl##marquee
@@ -1082,6 +1083,8 @@ www.fight24.pl##a[href="http://berserklabs.com"]
 www.lowking.pl##.wallpaper-link
 www.lowking.pl###wallpaper
 www.czesciauto24.pl##[class^="tyres_promotion_link_"]
+www.taniaksiazka.pl###newsletter-popup-29
+www.taniaksiazka.pl##.col-right2
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1473,6 +1476,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||hub.com.pl^$subdocument,domain=poczta.interia.pl
 @@||cloud.ideabank.pl/js/libs/angular-google-plus.js$script,domain=cloud.ideabank.pl
 @@||www.bet-at-home.com/*/account/deposit/$popup,domain=www.bet-at-home.com
+@@||naekranie.pl/wp-admin/admin-ajax.php?action=ne_adframe_loader$xmlhttprequest,domain=naekranie.pl
 !
 !
 !------------------------Whitelist specific element hiding rules------------------------!
@@ -1607,6 +1611,7 @@ zamow-reklame.pl###block
 @@||www.sc7.pl/media/graphics/sc7_468x60.png$image,domain=mynavi-expert.pl
 @@||zakupek.pl/wp-content/themes/zakupek/bannery/adbanner.htm$script,domain=zakupek.pl
 @@||auto-swiat.pl^$generichide
+@@||myao.adocean.pl/files/js/ado.js$script,domain=planeta.fm
 !
 !
 !--------------------------Rules block ads after antiadblock rules-------------!
