@@ -25,6 +25,8 @@
 // @match        *://*.pudelek.pl/*
 // @run-at       document-start
 // @grant        none
+// @updateURL https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.js
+// @downloadURL https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.js
 // ==/UserScript==
 
 document.cookie.split(";").forEach(function(a) {
