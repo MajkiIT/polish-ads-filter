@@ -2,7 +2,7 @@
 // @name         wp.pl
 // @version      0.1
 // @description  Pozbycie siÄ™ reklam i komunikatu o adblocku na stronach naleÅ¼Ä…cych do wp.pl
-// @author       
+// @author       Polish Filters
 // @match        *://*.abczdrowie.pl/*
 // @match        *://*.autokrata.pl/*
 // @match        *://*.autokult.pl/*
