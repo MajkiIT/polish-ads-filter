@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: http://www.certyficate.it/
-! Last modified: 10 February 2017
+! Last modified: 11 February 2017
 ! Expires: 2 days
-! Version: 2017021001
+! Version: 2017021101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017021001 aktualizacja: ptk, 10 lutego 2017, 08:05:00
+! v.2017021101 aktualizacja: sob, 11 lutego 2017, 14:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -1165,6 +1165,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||businessclick.*/$script
 ||cda.pl/*v*a*s*t*.php
 ||cda.pl/*v*a*s*t*/*.xml
+||cda.pl/player.php?ads
+||cda.pl/xml.php?type=g_adblock&get=
 ||cdn.dtxngr.com/$script
 ||cdn.syndication.twitter.com/widgets/tweetbutton/
 ||cdn.pkwteile.de/uploads/stock/$images,domain=czesciauto24.pl
@@ -1471,6 +1473,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||onet.hit.gemius.pl/xgemius.js$script
 @@||*cda.pl/*advertise.js$script,domain=cda.pl
 @@||cda.pl/ads.js$script,domain=cda.pl
+@@|http://adx.advertise.cda.pl/vast.js?ads$script,domain=cda.pl
 @@||hub.com.pl^$subdocument,domain=poczta.interia.pl
 @@||cloud.ideabank.pl/js/libs/angular-google-plus.js$script,domain=cloud.ideabank.pl
 @@||www.bet-at-home.com/*/account/deposit/$popup,domain=www.bet-at-home.com
