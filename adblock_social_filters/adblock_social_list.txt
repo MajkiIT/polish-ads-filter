@@ -1,51 +1,48 @@
 [Adblock Plus 2.0]
 ! Title: Adblock polskie reguly social
-! Homepage: http://certyficate.it/
-! Last modified: 30 January 2017
+! Homepage: http://www.certyficate.it/
+! Last modified: 15 February 2017
 ! Expires: 2 days (update frequency) 
-! Version: 15
+! Version: 16
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://certyficate.it/polski-filtr-adblock/
-! v.1.15 aktualizacja: pon, 30 stycznia 2017, 14:10:00 
+! v.1.16 aktualizacja: sr, 15 lutego 2017, 11:00:00 
 !
 ! Domains
 !
-~allegro.pl,pl##.fb
-~ceneo.pl,pl##.topmenu
-~tvn24bis.pl,pl##.social
-belsat.eu##.icon-tv
-belsat.eu##.icon-vk
-belsat.eu##.icon-yt
-belsat.eu##a[href^="https://www.facebook.com/BELSAT.TV"]
-belsat.eu##a[href="http://vk.com/belsat_tv"]
-belsat.eu##a[href="https://twitter.com/Belsat_TV"]
-belsat.eu##a[href="https://www.youtube.com/user/ibelsat"]
-comperio.co##.Social > .Facebook
-comperio.co##.Social > .Gplus
-comperio.co##.Social > .Twitter
-comperio.co##nav > .Facebook
-comperio.co##nav > .Gplus
-comperio.co##nav > .Twitter
-consumer.huawei.com##.gtm-social.cbg-inline
-dobreprogramy.pl##a[href="http://www.facebook.com/dobreprogramy"]
-dobreprogramy.pl##a[href="http://www.twitter.com/dobreprogramy"]
-dobreprogramy.pl##a[href="https://plus.google.com/+dobreprogramy"]
--facebook
-forum.swiateczne.info###fb
-hipcio.sklep.pl##a[href="https://www.facebook.com/hipciosklep"]
--instagram
--logo_fb_r
--logoYTsmall
-myloveshabby.blogspot.com###HTML2 > .widget-content
--naszaklasa
--nasza-klasa
--nk_button
-pclab.pl###b021
-pl## .addthis_button_wykop
-pl## .addthisContener > .dymek
-pl## .at-svc-google_plusone_share
-pl## .facebook_like
-pl## .rrssb-twitter
+/banner-fb
+/facebook.
+/facebook-f
+/facebook-ikona
+/fb.
+/fb_button_sklep
+/fb_contact.
+/fb_t_ico
+/fb15
+/fbButton2
+/fb-login.
+/fbpanel.
+/FBRight
+/flickr_ico
+/instagram.
+/logo_fb_r
+/logoYTsmal
+/nasza-klasa.
+/nk_button
+/pin.
+/radio_sprite
+/socialBox2
+/spirit-img.
+/sprite.
+/Twitter_ico
+/twitter_white
+/wykop.
+/yt.
+@@/img/*/social_
+@@/social.png
+@@/social_icons.
+@@||ssl-images-amazon.com/*sprite*
+~www.allegro.pl,pl##.fb
 pl## a[href="https://www.facebook.com/telegurupoland"]
 pl###banner_main2 > a[href="http://www.facebook.com/AnimalCity.co"]
 pl###blip
@@ -59,6 +56,7 @@ pl###face
 pl###facebook
 pl###facebook-content
 pl###facebook-find-box
+pl###facebook-gadget
 pl###fanpage
 pl###fb
 pl###fbBox
@@ -77,9 +75,13 @@ pl###gp_ikona
 pl###grono
 pl###ikony_social
 pl###inBox
+pl###injectedSocialButtonFooter
 pl###instagram-box
 pl###join-us
 pl###labelSocial
+pl###LinkArea\:SGfoG\+
+pl###LinkArea\:SGfoIn
+pl###LinkArea\:SGfoSC
 pl###ls-footer-facebook-link
 pl###ls-footer-twitter-link
 pl###myspace
@@ -88,6 +90,7 @@ pl###naszaklasa
 pl###newsletter-trigger
 pl###o_shareOnSocialMedia
 pl###pinterest48
+pl###pinterest-footer
 pl###plus
 pl###plywajacy-fb
 pl###popup-social-media
@@ -112,6 +115,7 @@ pl###strong
 pl###text-6
 pl###topbar
 pl###tw
+pl###twitter-wjsbox>.belt
 pl###tws_a_100000
 pl###wb_social
 pl###websitePQTimeoutWindow
@@ -121,11 +125,18 @@ pl###wykop
 pl###YoutubeRight
 pl###yt
 pl###yt_ikona
+pl###yt-footer
 pl##.addthis_button_compact
 pl##.addthis_button_twitter
+pl##.addthis_button_wykop
+pl##.addthisContener > .dymek
 pl##.at-svc-facebook
+pl##.at-svc-google_plusone_share
 pl##.at-svc-twitter
 pl##.at-svc-wykop
+pl##.badge.fa-pinterest-p.fa
+pl##.block-menu-menu-social-footer.block-menu.block > .menu
+pl##.block-menu-menu-social-footer-p2.block-menu.block
 pl##.btn_social_fb
 pl##.btn_social_twiter
 pl##.btn_social_youtube
@@ -133,6 +144,7 @@ pl##.community-sites
 pl##.container-fluid > .social_header > .fb_img.img_social
 pl##.container-fluid > .social_header > .inst_img.img_social
 pl##.container-fluid > .social_header > .snap_img.img_social
+pl##.content-wrapper.sitemap > .social
 pl##.contest.BTtbar
 pl##.copyright-right-side
 pl##.dostepne_facebook
@@ -141,6 +153,8 @@ pl##.face.item
 pl##.facebook
 pl##.Facebook
 pl##.facebook_bg1
+pl##.facebook_like
+pl##.facebookIco
 pl##.fa-facebook.fa
 pl##.fa-facebook-official.fa
 pl##.fa-facebook-square
@@ -171,14 +185,17 @@ pl##.funkc_box
 pl##.g.socIco
 pl##.gk-icon-fb
 pl##.gk-icon-twitter
+pl##.google
 pl##.gp
 pl##.gplus
+pl##.gplusIco
 pl##.gtop_top
 pl##.handle
 pl##.header_fb_link
 pl##.header--social
 pl##.hidden-sm.hidden-xs.ico_fb
 pl##.hide-for-small-only.sm
+pl##.ic-instagram.ic-lg.ic.ib-hover.ib
 pl##.ico.ico-instagram
 pl##.ico_item.facebook_ico
 pl##.ico_item.tweeter_ico
@@ -192,10 +209,12 @@ pl##.im--instagram.im
 pl##.im--pinterest2.im
 pl##.im--twitter.im
 pl##.im--youtube3.im
+pl##.in
 pl##.inline-list-container.columns.small-12
 pl##.Instagram
 pl##.instagram
 pl##.instagram-footer
+pl##.item.social
 pl##.lateone
 pl##.likebox_1
 pl##.link-facebook
@@ -210,7 +229,11 @@ pl##.okl_goo.okl
 pl##.okl_ins.okl
 pl##.okl_pint.okl
 pl##.okl_tw.okl
+pl##.onet_ustPlugin_addthis
+pl##.pie.login > ul
 pl##.pin
+pl##.pinterest
+pl##.pull-sm-post.col-sm-2>.list-unstyled
 pl##.qticon-facebook
 pl##.qticon-twitter
 pl##.qticon-youtube
@@ -222,12 +245,18 @@ pl##.reseaux_blog
 pl##.roberto-facebook.roberto
 pl##.roberto-google-plus.roberto
 pl##.roberto-twitter.roberto
-pl##.rounded.icon-1x.pinterest.boxed-icon
 pl##.rrssb-facebook
+pl##.rrssb-twitter
 pl##.s-fb
 pl##.s-gp
+pl##.sh_facebook_art
+pl##.sh_gplus_art
+pl##.sh_twitter_art
 pl##.share-facebook
+pl##.share-fb
 pl##.share-google-plus-1
+pl##.share-pin
+pl##.share-tw]
 pl##.share-twitter
 pl##.show-apple-social
 pl##.slide_likebox_button
@@ -238,12 +267,17 @@ pl##.sm-link--p.sm-link
 pl##.sm-link--yt.sm-link
 pl##.snapchat
 pl##.soc12-c.no-mobile
+pl##.social.box
 pl##.social_media_art
 pl##.Social-Container-Top
+pl##.socialFbIco
+pl##.socializer-fb-share
 pl##.socials_foot
 pl##.socials-bar
+pl##.socialWyIco
 pl##.stgBookmark
 pl##.s-tw
+pl##.test
 pl##.theChampFacebookBackground.theChampSharing
 pl##.theChampGoogleplusBackground.theChampSharing
 pl##.theChampTwitterBackground.theChampSharing
@@ -259,6 +293,7 @@ pl##.tweet.item
 pl##.twico.icon
 pl##.twitter
 pl##.Twitter
+pl##.twitterIco
 pl##.UsiMenuAddthis_Button_addthis__button__facebook__follow
 pl##.UsiMenuAddthis_Button_addthis__button__google__follow
 pl##.UsiMenuAddthis_Button_addthis__button__twitter__follow
@@ -271,100 +306,84 @@ pl##.youtube-footer
 pl##.yt
 pl##.ytico.icon
 pl##.zobacz-nas
-pl##[href="https://plus.google.com/+TeleguruPl"]
-pl##[href="https://www.instagram.com/teleguru.pl/"]
-pl##a[href="https://twitter.com/Teleguru_pl"]
-pl##a[href="https://www.facebook.com/dellpointPL"]:nth-of-type(2
-pl##a[href="https://www.facebook.com/dellpointPL"]:nth-of-type(2)
+pl##[href="https://plus.google.com/+TeleguruPl"] 
+pl##[href="https://www.instagram.com/teleguru.pl/"] 
+pl##a[href="https://twitter.com/Teleguru_pl"] 
 pl##a[href="https://www.youtube.com/channel/UCvWNepKIbyhOlmw_xPyfSNQ"]
-pl##a[href="https://www.youtube.com/user/dellpointpl/"]
 pl##img[src="./images/icons/nk.png"]
 pl##img[src="/images/fb1.png"]
 pl##img[src="/img/nk_logo.png"]
 pl##img[src="/obrazki/youtube.png"]
-pl##img[src="https://wojas.pl/media/images/pl/socials/fb.png"]
-pl##img[src="https://wojas.pl/media/images/pl/socials/pin.png"]
-pl##img[src="https://wojas.pl/media/images/pl/socials/yt.png"]
 pl#@##share-buttons
 pl#@#.addthis.com^$third-party
 pl#@#.footer-social
 pl#@#.footer-social-icon
+pl#@#.icon-facebook
 pl#@#.sd-sharing
 pl#@#.sd-social
+pl#@#.selectionSharer
 pl#@#.share-article
+pl#@#.share-bar
+pl#@#.share-box
 pl#@#.share-button
 pl#@#.share-buttons
 pl#@#.share-buttons-wrapper
+pl#@#.share-count
 pl#@#.sharedaddy
 pl#@#.share-icon
 pl#@#.share-title
+pl#@#.socialButton
+pl#@#.socialIcons
 pl#@#.social-links
 pl#@#.social-media
+pl#@#.social-section
 pl#@#.social-toolbar
 pl#@#.subscribe-button
 pl#@#.the_champ_sharing_container
 pl#@#.the_champ_sharing_ul
 pl#@#.theChampSharing
-pl/*/sgp/img/*/icon.fb
-pl/*/sgp/img/*/icon.gplus
-pl/*/sgp/img/*/icon.twitter
-pl/*/sgp/img/icon.g.plus
-pl/_gfx/fb_contact
-pl/add-to/wykop
-pl/assets/gfx/fb-icon
-pl/assets/gfx/sprite
-pl/b/ikony/instagram
-pl/flickr_ico
-pl/gfx/fb
-pl/grfx/stuff/facebook_white
-pl/grfx/stuff/twitter_white
-pl/im/fb15
-pl/img/f
-pl/img/icon/nasza-klasa
-pl/naszaklasa
-pl/new_imgs/sprite
-pl/repo/bph/ogolne/ikony/logoYTsmall
-pl/statics/*/ds_img/assets_x_x/ikona_instagram11-2
-pl/statics/*/ds_img/assets_x_x/ikona_youtube1
-pl/templates/*/img/spirit-img
-pl/templates/*/img/sprite
-pl/themes/*/img/*/fb
-pl/Twitter_ico
-pl/wp-content/themes/*/img/ico-f
-pl/wp-content/uploads/*/fb_t_ico
-pl/wp-content/uploads/*/yt_t_ico
-pl/wykop
--radio_sprite
 radiolodz.pl##a[rel="me noopener"][target="_blank"]
--socialBox2
--spirit-img
--sprite
 telewizjatvt.pl###menu-item-117
 telewizjatvt.pl###menu-item-118
 telewizjatvt.pl##.ft_sc0.col-sm-4.col-md-15
 tv/grfx/stuff/facebook_white
 tv/grfx/stuff/twitter_white
--Twitter_ico
--twitter_white
 versus.com##.Footer__follow___x_y9W > div
 versus.com##.hover__hvr-grow___3kkj1.NavLink__iconLink___1QRm7:nth-of-type(1)
 versus.com##.hover__hvr-grow___3kkj1.NavLink__iconLink___1QRm7:nth-of-type(2)
-www.amazingtv.pl##a[href^="/banner.php"]
-www.ci-polsat.pl##.col-sm-6.col-md-4:nth-of-type(1) > .item.inside
-www.ci-polsat.pl##.promo:nth-of-type(2) > .inner > .content
-www.ci-polsat.pl##a[href="https://www.facebook.com/CIPolsat"] > .img-responsive
+www.belsat.eu##.icon-tv
+www.belsat.eu##.icon-vk
+www.belsat.eu##.icon-yt
+www.belsat.eu##a[href^="https://www.facebook.com/BELSAT.TV"]
+www.belsat.eu##a[href="http://vk.com/belsat_tv"]
+www.belsat.eu##a[href="https://twitter.com/Belsat_TV"]
+www.belsat.eu##a[href="https://www.youtube.com/user/ibelsat"]
+www.comperio.co##.Social > .Facebook
+www.comperio.co##.Social > .Gplus
+www.comperio.co##.Social > .Twitter
+www.comperio.co##nav > .Facebook
+www.comperio.co##nav > .Gplus
+www.comperio.co##nav > .Twitter
+www.consumer.huawei.com##.gtm-social.cbg-inline
 www.czterylapysklep.com###likeboxbluestandardright
-www.dolina-noteci.pl##a[href="https://www.instagram.com/dolina_noteci/"]
-www.dolina-noteci.pl##a[href="https://www.youtube.com/channel/UCVvYf-faUtq59YXmthBZWPg"]
+www.dellpoint.pl##.container.userfooter > .row > p:nth-of-type(1)
+www.dobreprogramy.pl##a[href="http://www.facebook.com/dobreprogramy"]
+www.dobreprogramy.pl##a[href="http://www.twitter.com/dobreprogramy"]
+www.dobreprogramy.pl##a[href="https://plus.google.com/+dobreprogramy"]
 www.echo24.tv##.hide-mobile.social
 www.em.kielce.pl###socialico > ul
+www.forum.swiateczne.info###fb
 www.hbo.com##.footerMain-listSocial
+www.hipcio.sklep.pl##a[href="https://www.facebook.com/hipciosklep"]
 www.historytv.pl##.promo:nth-of-type(5) > .col-md-4.col-sm-6 > .promobox
 www.historytv.pl##.promo:nth-of-type(6) > .col-md-4.col-sm-6 > .promobox
 www.historytv.pl##.promo:nth-of-type(7) > .col-md-4.col-sm-6 > .promobox
-www.krakvet.pl##a[href="https://www.youtube.com/c/KrakvetPl"]
-www.mtv.pl##a[href="/newsy/96672-zajrzyj-na-snapchata-mtv"]
-www.mtv.pl##a[href="https://www.instagram.com/mtvpolska_official/"]
+www.mtv.pl##a[href="http://www.facebook.com/MTVPolska"]
+www.myloveshabby.blogspot.com###HTML2 > .widget-content
+www.newsweek.pl##.icohead:nth-of-type(1)
+www.newsweek.pl##.icohead:nth-of-type(2)
+www.newsweek.pl##.icohead:nth-of-type(3)
+www.newsweek.pl##nav.Top-Menu > .sharenavi:style(width: 35px !important;)
 www.polvision.com##.foot_search_share
 www.radioemaus.pl##.icons > tbody
 www.radioony.fm##a[href="https://twitter.com/RadioONY93_1FM"]
@@ -392,8 +411,6 @@ www.tvn24.pl##.htmlBox:nth-of-type(10)
 www.tvn24.pl##.htmlBox:nth-of-type(8)
 www.tvn24.pl##a[href="http://www.tvn24.pl/tvn24-tvn-meteo-tvn-warszawa-w-serwisach-spolecznosciowych,503979,s.html"]
 www.tvzabrze.eu##a[href="http://www.facebook.com/pages/TVZ-Telewizja-Zabrze/148299788539083"]
--wykop
--yt
 !
 !
 !-------------------Whitelist----------------------
