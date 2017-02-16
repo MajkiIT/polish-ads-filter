@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: http://www.certyficate.it/
-! Last modified: 15 February 2017
+! Last modified: 16 February 2017
 ! Expires: 2 days
-! Version: 2017021502
+! Version: 2017021601
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017021502 aktualizacja: sr, 15 lutego 2017, 18:20:00
+! v.2017021601 aktualizacja: czw, 16 lutego 2017, 22:40:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -345,19 +345,7 @@ e-kg.pl##.rstboxes
 e-kg.pl##DIV[style="text-align: center;"]
 e-kg.pl##a[href="http://www.e-leclerc.pl/"]
 efilmy.tv##.addbackground
-elektroda.pl##.smaller.m1
-elektroda.pl##img[alt="Google Adsense"]
-elektroda.pl##.the-content.col-md-8 > [style="float: left"]
-elektroda.pl##[style="float: left; position: relative;"]
-elektroda.pl##.sec-ads
-elektroda.pl##.button
-elektroda.pl##.bb096870
-elektroda.pl##.row > .the-content.col-md-8 > [class] > form
-elektroda.pl##.row > .the-content.col-md-8 > [class] > div[style]
-elektroda.pl##.row > .the-content.col-md-8 > [class] > [rel="nofollow"]
-elektroda.pl###news > section > ul.the-list > li[class$=" clearfix"]
-elektroda.pl##div.the-post-list > ul > li[class$=" clearfix"]
-elektroda.pl##div.forumlist-wrap.clearfix > div[class$=" clearfix"]:not([style]):not([id])
+elektroda.pl##.col-md-8.the-content > [class]:not([class*=" "]):not([class*="-"])
 embed.vidso.tv###video_container
 eostroleka.pl##DIV[style="margin-bottom:10px; margin-left:25px; float:left; width:300px; height:300px;"]
 eredivisie.pl##IMG[src^="http://www.goal.pl/ban/"]
@@ -1132,7 +1120,7 @@ zapytaj.onet.pl###content > aside > div:nth-of-type(1)
 zapytaj.onet.pl###promoTop
 zapytaj.onet.pl##div[id*="sliderSidebar"]
 zarabiara.pl##[class^="new_ad"]
-zaufanatrzeciastrona.pl##a[href^="//zaufanatrzeciastrona.pl/"]
+zaufanatrzeciastrona.pl##[href*="//zaufanatrzeciastrona.pl/"] > IMG[src$=".gif"]
 zespolmi.pl##a[href^="https://prisonwarsonline.com/"]
 zumi.pl###couponsBar
 zumi.pl###offersBar
@@ -1800,7 +1788,7 @@ wp.pl##div[class^="_"]:matches-css(background-size: 56px 45px)
 !
 !--------------------------Rules for pages with random adv scripts------------!
 /^http:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\/[a-zA-Z0-9]{30,}/$script,popup,document
-/^(http|https):\/\/[a-zA-Z.]{10,}\.com\/[a-zA-Z]{1,}\.\js/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|stop-limitom.pl|vidlox.tv|playerbox.net|alltube.tv|cdax.tv|segos.es|efilmy.online
+/^(http|https):\/\/[a-zA-Z.]{10,}\.com\/[a-zA-Z]{1,}\.\js/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|stop-limitom.pl|vidlox.tv|playerbox.net|alltube.tv|cdax.tv|segos.es|efilmy.online|video.penny.ie
 /^http:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|alltube.tv
 /^(http|https):\/\/[a-z0-9]{3,11}\.[a-z]{5,11}\/[0-9]{3,10}\//$xmlhttprequest,domain=streamin.to|raptu.com|flashx.tv
 /^http:\/\/[a-z0-9]{5,}\.com\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{5,}\.\js/$script,domain=vidto.me
