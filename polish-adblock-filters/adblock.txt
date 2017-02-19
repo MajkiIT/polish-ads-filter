@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: http://www.certyficate.it/
-! Last modified: 18 February 2017
+! Last modified: 19 February 2017
 ! Expires: 2 days
-! Version: 2017021801
+! Version: 2017021901
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017021801 aktualizacja: sob, 18 lutego 2017, 15:00:00
+! v.2017021901 aktualizacja: nie, 19 lutego 2017, 19:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -195,6 +195,8 @@ pl/popup.js|$script
 !
 !
 !------------------------Specific element hiding rules------------------------!
+24gliwice.pl#@##adsense
+24gliwice.pl##a[href^="http://www.24gliwice.pl/r/counter-baners.php"]
 24tvonline.pl##.dataContainer
 300polityka.pl##.dcmads
 300polityka.pl###text-3
@@ -327,6 +329,7 @@ download.net.pl##DIV[style="text-align: center; margin: 0 auto;"]
 doz.pl##.clearfix.container > .clearfix.row
 dstar.pzk.pl##[style$="background: #dfdfdf;"]
 dstar.pzk.pl##[style^="text-align: center; font-size: 8px; padding:"]
+dzisiajwgliwicach.pl##img[src*="Baner-590x300-"]
 dziennik.pl##[style="text-align:center; margin: 0 0 10px 0;padding-bottom: 20px"]
 e-grajewo.pl##[id^="rotator_"]
 e-kg.pl##.bannergroup
@@ -745,6 +748,7 @@ prostozmostu.net###nmb-BusyBox
 postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl,jajamioasfalt.pl,dostawcy-internetu.pl,forum.bukmacherskie.com,nasze.fm,lovekrakow.pl##center
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
+profeto.pl##.rekl-top
 profil.wp.pl##.bxAdv
 profilook.pl###ceneo-os783-rZ0og
 press.pl###topBanner
@@ -878,6 +882,7 @@ teleman.pl,americasarmy.pl,exsite.pl,jastrzebieonline.pl###billboard
 teleman.pl###stacje-filmowe > .grid-group-as
 teleman.pl###leaderboard-bottom
 teleshow.wp.pl,gwiazdy.wp.pl,facet.wp.pl,kobieta.wp.pl,film.wp.pl,tech.wp.pl##[class="qd-US"]
+temat.info##.bannergroup
 thinkapple.pl,repostuj.pl##a[href*="://bit.ly/"]
 tokfm.pl##DIV[style="width: 940px; padding: 21px 0 18px; background: #F8F8F8; margin: 0 auto; "]
 tomaszowski.com.pl###jm-right
@@ -1562,11 +1567,13 @@ zamow-reklame.pl###block
 @@.pl/menda/adsense.js$script,domain=to.proste.info.pl|seciki.pl|kompnet.info
 @@|http://www.googletagmanager.com/gtm.js$script,domain=benchmark.pl
 @@||anyfiles.pl/pageloading/*-loader.jsp?ads=true
+@@||auto-swiat.pl^$generichide
 @@||biznesforum.pl/adsense.js$script,domain=biznesforum.pl
 @@||blog.programyzadarmo.net.pl/images/ad/*.gif$image,domain=blog.programyzadarmo.net.pl
 @@||brotkids.tv/media/mod_pwebadblock/js/ads.js$script
 @@||burzowo.info/scripts/ad.js$script,domain=burzowo.info
 @@||businessinsider.com.pl^$generichide
+@@||cdax.tv/js/ads.js$script
 @@||cdnv.gazeta.pl/ad/banner/_adsense_/_adserver/_adview_.ad.json$xmlhttprequest,domain=gazeta.pl
 @@||csr.onet.pl/_s/csr-*/csr.jsx$script
 @@||czasdzieci.pl/_j/showads.js$script
@@ -1581,9 +1588,12 @@ zamow-reklame.pl###block
 @@||kubofonista.net/r/ad.htm$script,domain=kubofonista.net
 @@||lib.onet.pl/s.csr/adp/px.gif?$image
 @@||mmorpg.org.pl^$generichide
+@@||myao.adocean.pl/files/js/ado.js$script,domain=planeta.fm
 @@||mybank.pl^$generichide
 @@||noizz.pl^$generichide
+@@||nowa.tv/media/static/js/ads.js$script
 @@||onet.pl^$generichide
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=bolotv.pl
 @@||pagead2.googlesyndication.com/pagead/js/r*/show_ads_impl.js$script,domain=mybank.pl
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=mybank.pl
 @@||pc-sos.pl/ad.htm$script,domain=pc-sos.pl|xn--strela-8db.pl
@@ -1593,13 +1603,14 @@ zamow-reklame.pl###block
 @@||ppstatic.pl/*/ads.js$script,domain=pomorska.pl
 @@||rapidgrab.pl^$generichide
 @@||sascdn.com/video/$script,domain=eskago.pl
+@@||se.pl/media/*js/ads.js$script,domain=se.pl
 @@||seansik.nl/seansik/js/ads.js$script
 @@||static.forsal.pl/js/ads.js$script
 @@||static.gazetaprawna.pl/js/ads.js$script
 @@||video.gazeta.pl/cdn/ads/ad/banner/_adsense_/_adserver/_adview_.ad.json$xmlhttprequest,domain=video.gazeta.pl
 @@||vod.pl^$generichide
-@@||webshark.pl/adserver/*advertise_check=1$script,domain=vider.info
 @@||webcamera.*/js/fuckadblock.js$script,domain=webcamera.pl|webcamera.live
+@@||webshark.pl/adserver/*advertise_check=1$script,domain=vider.info
 @@||wtkplay.pl/javascript/ads.js$script
 @@||www.benchmark.pl/*/b.ads.js$script
 @@||www.biznesradar.pl/js/ads/advertising.js$script
@@ -1607,10 +1618,6 @@ zamow-reklame.pl###block
 @@||www.nadajemy.pl/js-css/adsense/ad/banner/adv.js$script
 @@||www.sc7.pl/media/graphics/sc7_468x60.png$image,domain=mynavi-expert.pl
 @@||zakupek.pl/wp-content/themes/zakupek/bannery/adbanner.htm$script,domain=zakupek.pl
-@@||auto-swiat.pl^$generichide
-@@||myao.adocean.pl/files/js/ado.js$script,domain=planeta.fm
-@@||cdax.tv/js/ads.js$script
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=bolotv.pl
 !
 !
 !--------------------------Rules block ads after antiadblock rules-------------!
