@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: http://www.certyficate.it/
-! Last modified: 19 February 2017
+! Last modified: 21 February 2017
 ! Expires: 2 days
-! Version: 2017021901
+! Version: 2017022101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017021901 aktualizacja: nie, 19 lutego 2017, 19:30:00
+! v.2017022101 aktualizacja: wt, 21 lutego 2017, 21:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -192,6 +192,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 pl/popup.js|$script
 ###goback
 ##.houdini
+###poza-gridem
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -547,6 +548,7 @@ kurierlubelski.pl,panoramafirm.pl###top
 kurierlubelski.pl##.adSrodek
 kurierlubelski.pl,gloswielkopolski.pl,nto.pl,gazetalubuska.pl###prawa1
 leki.fora.pl##.trzContent
+leczna24.pl##.noprint.centrujban
 letsplej.pl##.rekl
 linkpolonia.com##.credit-prize-box.credit-prize-box-small
 linktopoland.com##[id^="advertise-row"]
@@ -1088,6 +1090,7 @@ www.czesciauto24.pl##[class^="tyres_promotion_link_"]
 www.taniaksiazka.pl###newsletter-popup-29
 www.taniaksiazka.pl##.col-right2
 www.planowaniewesela.pl###header-banner
+www.filmydokumentalne.eu###pop-up
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1349,6 +1352,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||wbj.pl/adv/
 ||wbj.pl/wp-content/plugins/adkingpro/js/adkingpro-functions.js$script
 ||wiocha.pl/img/tapety/$image
+||widgets.tracdelight.com/iframe/$subdocument
 ||wp.pl/*/reklamawp-$image
 ||www.audiostereo.pl/banery/
 ||www.benchmark.pl/js/header.ad.js$script
@@ -1383,6 +1387,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www.msfera.pl/images/banners/$image
 ||www.pokertexas.pl/uploads/pics/$image
 ||www.pokertexas.pl/fileadmin/images/bannery/$image
+||www.zielonanews.pl/wp-content/uploads/201*/*/*-baner-*.jpg$image
+||www.zielonanews.pl/wp-content/uploads/201*/*/*.swf$object
 ||www1.advice.movie.advlab.pl$object,domain=get.x-link.pl
 ||zulawyimierzeja24.pl/assets/js/jwplayer/jwplayer.html5.js
 ||zyciesiedleckie.pl/banery_foto/$image
@@ -1579,7 +1585,7 @@ zamow-reklame.pl###block
 @@||czasdzieci.pl/_j/showads.js$script
 @@||dekoder.ml/js/ads.js$script
 @@||digi-tv.pl/js/ads.js$script
-@@||epiotrkow.pl/js/adv*.reklama.js$script,domain=epiotrkow.pl
+@@||epiotrkow.pl/js/adv*.reklama*.js$script,domain=epiotrkow.pl
 @@||eskago.pl/html/js/ads-header.js$script
 @@||fm.tuba.pl^$xmlhttprequest,domain=fm.tuba.pl
 @@||grupa7j.pl/joomla/images/my/gallery_advert/$image,domain=grupa7j.pl
