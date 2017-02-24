@@ -3,7 +3,7 @@
 ! polskie filtry do uBlocka uzupelnienie
 ! Collaborators: F4z, xxcriticxx
 ! Homepage: http://www.certyficate.it/
-! Last modified: 16 February 2017
+! Last modified: 25 February 2017
 ! Expires: 2 days
 ! Version: 2017021601
 ! Contact: errors@certyficate.it
@@ -11,7 +11,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017021601 aktualizacja: czw, 16 lutego 2017, 08:50:00
+! v.2017022501 aktualizacja: sob, 25 lutego 2017, 00:55:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -111,9 +111,10 @@ www.ps4forum.pl##.googleheader
 www.ps4forum.pl##.forumsTabLinks.tabLinks:style(top: 60px !important;)
 !
 !# dobreprogramy
-dobreprogramy.pl##body:style(background: none !important;)
+dobreprogramy.pl##body#top:style(background: none !important;)
+dobreprogramy.pl##script:inject(setTimeout-defuser.js, Dp.unBlocker)
 !
-!#purepc.pl
+!# purepc.pl
 purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !important; position: absolute !important;)
 !
 !# filmweb.pl
