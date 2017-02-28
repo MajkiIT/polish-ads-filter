@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: http://www.certyficate.it/
-! Last modified: 26 February 2017
+! Last modified: 28 February 2017
 ! Expires: 2 days
-! Version: 2017022603
+! Version: 2017022801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017022603 aktualizacja: nie, 26 lutego 2017, 22:20:00
+! v.2017022801 aktualizacja: wt, 28 lutego 2017, 09:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -193,6 +193,7 @@ pl/popup.js|$script
 ###goback
 ##.houdini
 ###poza-gridem
+##.banneritem
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -419,6 +420,7 @@ fronda.pl##.small-info
 fronda.pl###ecoeconomy
 futbol.pl##DIV[onmousedown="window.location.href='http://creativetravel.pl'"]
 futbol.pl###block-block-2
+gamezilla.pl##DIV[style="width: 600px; height: 400px; margin: 20px auto;"]
 gazeta.pl##.ecom
 gazeta.pl##.opacity.page-sections > .photos_loaded.box_games.page-section.html > .slices-container.container-fluid
 gazeta.pl##.photos_loaded.box_bargains.page-section.html > .slices-container.container-fluid
@@ -629,7 +631,6 @@ money.pl##DIV[style$="min-height:180px"]
 mojaolesnica.pl##DIV[style="width: 750px; height: 200px; float: left; display: inline;"]
 mojaolesnica.pl##DIV[style="float: left; width: 705px;"]
 mojaolesnica.pl##DIV[style="width: 200px; height: 200px;"]
-moszczenica.info##.banneritem
 moto.pl##.template-minimal
 motobanda.pl##.special-block
 mobirank.pl##[id^="html_javascript_adder"]
@@ -691,7 +692,7 @@ pcformat.pl###ad_dol_srodek
 pclab.pl###b028
 pclab.pl###a011
 pclab.pl##A[href^="http://click.plista.com/pets/"]
-pclab.pl##[href^="http://csr.onet.pl/eclk/clk"]
+pclab.pl##[href^="http://csr.onet.pl/eclk/clk"] 
 pcworld.pl###WhitepaperModule
 pcworld.pl##.side-module.how-to
 pcworld.pl##div#toaster
@@ -711,7 +712,6 @@ pilkanozna.pl##.rekl_srod_top
 pilkanozna.pl##DIV[style="text-align:center;padding:15px;"]
 pilkanozna.pl###bglink
 pirackiekino.blogspot.com##img[src*="blogspot.com/-AOw7_"]
-planeta-kobiet.pl##.banneritem
 planujemywesele.pl###ad-profile-box1
 play.pl##.overlay-shadow
 playstationforum.pl##[onclick^="MyAdvertisements"]
@@ -738,7 +738,6 @@ pomorska.pl##P[style="font:normal 12px/16px Arial,Tahoma,sans-serif;margin:0;pad
 pozytywniej.pl###advL
 popularnie.pl###gold-header
 portal.abczdrowie.pl##.a-ctn-d
-portalgorski.pl##.banneritem
 portalsremski.pl##div[class^="ban"]
 portalplock.pl###fixme
 ppe.pl##[class*="adver"]
@@ -1006,6 +1005,8 @@ wrzuta.pl###floorBG
 wschodnia.tv###right > .yt-position-inner
 wspomnijbliskich.pl###sponsor_title
 wtkplay.pl##[id^="adsys_"]
+wyborcza.pl##[class^="mod-generic"][class*="la-http\:\/\/wyborcza\.pl\/"]
+wyborcza.pl##.right-content-holder > [class^="mod-generic"][class*="la-http\:\/\/wyborcza\.pl\/"] + #rectangle-splint
 wynagrodzenia.pl###slider_kontener
 www.axn.pl###block-dart-dart-tag-980x100-ldr-top.block.block-dart > .content > .dart-advertisement
 www.fcnet.pl###popup > li > div
@@ -1179,7 +1180,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||cda.pl/xml.php?type=g_adblock&get=
 ||cdn.dtxngr.com/$script
 ||cdn.syndication.twitter.com/widgets/tweetbutton/
-||cdn.pkwteile.de/uploads/stock/$images,domain=czesciauto24.pl
+||cdn.pkwteile.de/uploads/stock/$image,domain=czesciauto24.pl
 ||chozoba.pl/images/baner*$image
 ||ciechocinek.biz/banery_$image
 ||cloudfront.net/*$domain=allegro.pl
@@ -1315,6 +1316,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||redir.atmcdn.pl*swf$domain=tvn24.pl
 ||redir.atmcdn.pl/scale/o2/tvn/web-content/m/p2/i/81c8727c62e800be708dbf37c4695dff/$image,domain=tvnwarszawa.tvn24.pl
 ||rek.www.wp.pl^
+||reklama.elblag.com.pl$domain=www.portel.pl
 ||reklamy.s3.amazonaws.com/bcg/$image
 ||reseton.net/static/player/*/vast.js$script
 ||reseton.pl/static/player/*/vast.js$script
@@ -1350,6 +1352,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||swiecie.siecportali.pl/banery_foto/$image
 ||swiecie24.pl/banery_$image
 ||system.mondeos.pl/$image,script
+||studentnews.pl/img/ban/b*.jpg$image
 ||t-mobile-trendy.pl/graph/backgrounds/$image
 ||track.omgpl.com/bs/
 ||track.cux.io^
@@ -1402,6 +1405,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www.msfera.pl/images/banners/$image
 ||www.pokertexas.pl/uploads/pics/$image
 ||www.pokertexas.pl/fileadmin/images/bannery/$image
+||www.portel.pl/bsource/p1*/$domain=www.portel.pl
 ||www.zielonanews.pl/wp-content/uploads/201*/*/*-baner-*.jpg$image
 ||www.zielonanews.pl/wp-content/uploads/201*/*/*.swf$object
 ||www.cgm.pl/_vault/_adver/$image
@@ -1731,7 +1735,6 @@ xyz,mecz.tv,ipilka.info##[class$="_right"]
 !--------------------------Rules sport streams blocking filters-------------!
 ||extragoals.com/media/js/videojs.cool.js
 ||livemecz.*/u3/ads.js$script
-||www.oglaszamy24.pl/adstorage/$image
 ||vsport.in/pasek$image
 ||vsport.in/ban1$image
 ||hotcpm.pl^$third-party
