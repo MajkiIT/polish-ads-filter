@@ -147,4 +147,8 @@ bezuzyteczna.pl##section:has(script + div[id^="crt"][style])
 !
 !# kalisz.info.pl /ciasteczka/
 kalisz.info.pl###all:style(top: 0px !important;)
-
+!
+! naekranie.pl
+! Timery ladujace reklamy
+naekranie.pl##script:inject(setInterval-defuser.js, function neTick(){neTickCounter++;if(neTickCounter<=neTickCountLimit){neTickAjax=$.ajax({type:"POST",url:adminAjaxUrl+"?action=ne_tick",dataType:"json",success:function(data){neTickResponseAction(data)}})}}, 10000)
+naekranie.pl##script:inject(setTimeout-defuser.js, function check(){console.log("checked");if($(".adform").children().length>3){console.log("its more");$(".adform").children(".adform-banner").show();clearTimeout(check)}}, 1000)
