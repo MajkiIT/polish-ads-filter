@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: http://www.certyficate.it/
-! Last modified: 7 March 2017
+! Last modified: 9 March 2017
 ! Expires: 2 days
-! Version: 2017030704
+! Version: 2017030901
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017030704 aktualizacja: wt, 7 marca 2017, 20:30:00
+! v.2017030901 aktualizacja: czw, 9 marca 2017, 09:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -174,7 +174,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 /reklamy/*$image,object
 ~elton.com.ua,~alexbranding.com,~unitheme.net,~konsoleigry.pl,~megadyskont.pl##[class^="adv-"]
 ##a[href*="/ad/click/"]
-~onet.pl,~vod.pl,~gry-online.pl,~tv6.com.pl,~trojmiasto.pl,pl##[class$="-ads"]
+~businessinsider.com.pl,~komputerswiat.pl,~onet.pl,~vod.pl,~gry-online.pl,~tv6.com.pl,~trojmiasto.pl,pl##[class$="-ads"]
 ##TopTextAd
 ##[href*=".hit.gemius.pl"]
 ##[id^="giercowniaAd"]
@@ -195,6 +195,7 @@ pl/popup.js|$script
 ###poza-gridem
 ##.banneritem
 pl##[id^="crt-"]
+##.adexonModule
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -339,6 +340,8 @@ dstar.pzk.pl##[style$="background: #dfdfdf;"]
 dstar.pzk.pl##[style^="text-align: center; font-size: 8px; padding:"]
 dzisiajwgliwicach.pl##img[src*="Baner-590x300-"]
 dziennik.pl##[style="text-align:center; margin: 0 0 10px 0;padding-bottom: 20px"]
+dziennik.pl##img[src^="data:image/jpeg;base64"]
+dziennik.pl##.boxClose
 e-grajewo.pl##[id^="rotator_"]
 e-kg.pl##.bannergroup
 e-kg.pl###jm-banner
@@ -1002,6 +1005,7 @@ wirtualnemedia.pl###adv_bottom
 wizaz.pl##.billboard
 wizaz.pl###autoPromoBigBaner
 wizaz.pl###rectangle
+wizaz.pl###forum-gad2
 wkinie.tv##[style="width: 750px; height: 100px;"]
 wkinie.tv##.ramka[style="height: 357px;"]
 wkinie.tv##A[href$="/bez-limitu.html"]
@@ -1032,7 +1036,6 @@ wtkplay.pl##[id^="adsys_"]
 wyborcza.pl##[class^="mod-generic"][class*="la-http\:\/\/wyborcza\.pl\/"]
 wyborcza.pl##.right-content-holder > [class^="mod-generic"][class*="la-http\:\/\/wyborcza\.pl\/"] + #rectangle-splint
 wynagrodzenia.pl###slider_kontener
-wynikinazywo.pl##[id^="crt-"]
 www.axn.pl###block-dart-dart-tag-980x100-ldr-top.block.block-dart > .content > .dart-advertisement
 www.fcnet.pl###popup > li > div
 oleole.pl##[id^="ddd_left"]
@@ -1374,10 +1377,12 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||static.evertiq.pl/bximg/cbtg/$image
 ||static.evertiq.pl/bximg/digi-key/$image
 ||static.evertiq.pl/images/other/$image
+||static.gazetaprawna.pl/dziennik/required/build/js/adexonLoader.js$script
 ||static.osemka.pl/pixad/$image,domain=gry-online.poszkole.pl
 ||static.video.superfilm.pl$object-subrequest,domain=cda.pl
 ||static.video.superfilm.pl/mediafarm/$object-subrequest
 ||static.gazetaprawna.pl/dziennik/required/build/js/scrollRedirect.js$script,domain=dziennik.pl
+||static.wizaz.pl/dynamic/shopping/shopping-kwc.html
 ||statics.d404.pl/bundles/spoonsite/$image
 ||statics.tarsago.pl/$object-subrequest,domain=meczelive.tv|mecze24.pl
 ||stg.wp.pl$subdocument
