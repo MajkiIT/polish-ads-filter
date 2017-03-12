@@ -2,15 +2,15 @@
 ! Title: Adblock & uBlock polish cookies filters
 ! polskie filtry komunikatow cookies do Adblocka i uBlocka
 ! Collaborators: F4z, xxcriticxx, blocker999
-! Homepage: http://www.certyficate.it/
-! Last modified: 19 February 2017
+! Homepage: https://www.certyficate.it/
+! Last modified: 12 March 2017
 ! Expires: 4 days (update frequency) 
-! Version: 83
+! Version: 84
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/adblock-polskie-filtry-blokowanie-info-cookies/
-! v.1.83 aktualizacja: nie, 19 lutego 2017, 11:00:00
+! v.1.84 aktualizacja: nie, 12 marca 2017, 14:00:00
 !
 !
 1000dni.pl##DIV[style="width: 100%; background-color: rgb(0, 60, 122); padding: 10px 8px; line-height: 20px; left: 0px; position: fixed; margin: 10px auto 0px; bottom: 0px; z-index: 1000; font-size: 13px; font-family: Helvetica,Arial,sans-serif; color: rgb(255, 255, 255);"]
@@ -171,7 +171,8 @@ expozdrowie.pl###alert_popup
 expozdrowie.pl,fzz.pl##div#alert_popup
 extraserv.pl##div#uwaga
 ezakupy.tesco.pl###privacyInnerContainer
-fabrykamemow.pl##body>div:not([id]):not([class])         
+fabrykamemow.pl##body>div:not([id]):not([class])
+facebook.com##.pam.fbPageBanner._3d9x.uiBoxGray.bottomborder
 fajka24.pl##DIV[style="background: #fafafa; border: 1px solid #ccc; text-align: center; font-size: 1em; padding: 20px; width: 960px; height: 20px; left: 50%; bottom: 60px; margin-left: -480px; position: fixed; z-index:130 "]
 fajka24.pl##body > div:not([id]):not([class])
 faktopedia.pl##body > div:not([id]):not([class])
@@ -412,7 +413,7 @@ legalsite.pl###message-1
 legnica.pl###popupDiv
 lego.com###GFSticky
 lek-med.pl###zgoda
-leo.pl##.modal-backdrop
+leo.pl,4fstore.com##.modal-backdrop
 lg.com##.policyChk
 licytacje.komornik.pl###sign_up, body > div[style*="margin-top: 100px"]
 limango.pl##.floating_notification
@@ -521,6 +522,7 @@ nespresso.com###consent_blackbar
 net-speak.pl##div.uwaga
 net4car.pl###notice_messages
 nettg.pl##.fade
+nfz-lodz.pl##.mfp-ready
 niezalezna.pl##div[style="border: 2px solid #900; margin-left: auto; margin-right: auto; padding: 3px; width: 984px"]
 niniwateam.pl##div[style="background-color: rgb(255, 230, 173); color: rgb(0, 0, 102); position: fixed; top: 0px; width: 100%; padding: 10px; font-size: 12px; "]
 nokiablog.pl###cop
@@ -585,7 +587,6 @@ pebx.pl###Notices
 pecetowiec.pl##.messagesWrapper
 pekao.com.pl##div#box-layer
 pekao.com.pl##div[id="popup"][style="width: 400px;height: 400px; position: absolute; z-index:999999; top:50px; left:50%; margin-left:-480px; background: url('/res/layerPopup/policy_popup_PL.jpg') no-repeat;"]
-pemp.pl###divCiacho
 penguingamers.eu##div#RACKWrapper
 pepper.pl###softMessages-list
 personnelsolutions.pl,lekkoatletykadlakazdego.pl##DIV[style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; opacity: 0.8; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 100001;"]
@@ -637,10 +638,12 @@ pozegnania.net###pozeg_billboard
 pracuj.pl###cookieWarning
 praktiker.pl###infobarDiv, #infobar, .infobar, #info-bar, #info_c_box, .info-message
 praktiker.pl##div.info_c_box
+prideshop.pl##body > div:nth-of-type(1)
 preorder.pl##.message_cookie.info
 profitsms.pl###eurociacho
 prohibita.pl##.ciachbtm-wrap-container
 promib.pl###cInfo
+promocodius.com###reminder
 przeczytamwszystkich.pl##div#ctl00_ctl17_ctl00
 przeploty.pl##div[style="font-size:15px;padding-top:20px;padding-bottom:20px;width:950px;text-align:left;margin:auto;"]
 przygarnijkrolika.pl###sl-container
@@ -871,7 +874,7 @@ www.msd.pl###banner
 www.multimedia-energia.pl###layer
 www.nfz-zielonagora.pl###statementWrapper
 www.niemartwsie.pl##.notification
-www.o2.pl##._1Arb2
+www.o2.pl##._2_S1s
 www.obozytenisowe.pl###gbpl_oba
 www.oleole.pl###notifyCookie.notifyCookie > .wrapper
 www.pro-tech.bydgoszcz.pl###easyNotification
@@ -945,6 +948,7 @@ cookie-law-popup.js$script
 ###cookiesEU-box
 ###cookies_info
 ###cookieView
+##.cookie-alert
 ###ciastka_wiadomosc
 ###ciasteczka
 ##.ciasteczka-info
@@ -1054,6 +1058,8 @@ pl##.plg_system_eprivacy_module:not(body):not(html)
 ###Qookie
 ###politosci
 ##.cookskom
+###divCiacho
+##.ciasteczko
 !
 !
 !----------------Whitelist---------------------------
@@ -1074,3 +1080,8 @@ iculture.nl#@#:not(input)[id*="cookie"]
 topics.nl#@#div[class*="cookie"]
 lycos.de,lycos.com#@#.cookies
 tychy.geminipark.pl#@#.privacy-policy
+!
+!
+!----------------Rules do block elements after anti adblock---------------------------
+onet.pl,businessinsider.com.pl,noizz.pl,komputerswiat.pl,plejada.pl###cookieView
+kwejk.pl###cookies-politics
