@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 23 March 2017
 ! Expires: 2 days
-! Version: 2017032302
+! Version: 2017032303
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017032302 aktualizacja: czw, 23 marca 2017, 20:05:00
+! v.2017032303 aktualizacja: czw, 23 marca 2017, 20:25:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -159,7 +159,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ###middleboxrectangle
 ##[class^="ADbox"]
 ##.ad-offers
-~komputerswiat.pl,pl##.ad
+~komputerswiat.pl,anglia.today,pl##.ad
 ##a[href^="https://www.solutions4ad.com/partner/scripts/click.php"]
 ##[id^="ad_global"]
 ##[id^="aswift_"]
@@ -231,6 +231,7 @@ androidpolska.pl###rectangle_top_ad
 angielski.slowka.pl###acceptPopup
 angielski.slowka.pl###newsletterConfirm
 anglia4u.pl###gkSidebar
+anglia.today##[href^="/redirect/ad/background/"]
 antyweb.pl##.aadv
 antyweb.pl##.group.big.box-adv
 antyweb.pl##.visible.grid-box-big > .group.grid > .customScroller > .cs-wrapper.group > .grid-item.width-4.height-2.transparent
@@ -1119,7 +1120,7 @@ www.benchmark.pl##.product
 www.knockout.pl##.art-blockcontent
 www.wakacje.pl##.adZoneCont
 www.theillest.pl,estillmag.com##a[href^="http://bit.ly/"]
-www.forum.nieidealny.pl##.ads
+www.forum.nieidealny.pl,polskaracja.com##.ads
 www.pokochasz.pl##.banner
 www.antyradio.pl##.adsearch-adkontekst
 www.cenynaswiecie.pl##.system_banner
@@ -1130,8 +1131,6 @@ www.swiatmotocykli.pl##.entry_7
 www.wiocha.pl###rectcont
 www.photoblog.pl###adsense-top-placeholder
 www.pcformat.pl###ad_news
-www.portel.pl###divBaXLp
-www.portel.pl###divBaLp
 www.hopaj.pl###hopajembed
 www.logo24.pl##.mod_uzr_ecommerce
 www.fight24.pl##a[href="http://berserklabs.com"]
@@ -1215,6 +1214,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||api.videostar.pl/ad/show$xmlhttprequest,domain=videostar.pl
 ||asa.allegrostatic.*/display-pl/$image
 ||avanti24.pl/pub/ips/$subdocument
+||avanti.fashion/pub/ips/$subdocument
 ||baje.pl/rotator/show.php
 ||bi.adview.pl/$stylesheet,script
 ||bielsko.biala.pl/userfiles/banery/$image,object
@@ -1359,7 +1359,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||portal-firma.pl/banners/$image
 ||portalmorski.pl/images/banners/
 ||portalplock.pl/banery/
-||www.portel.pl/banjpg/$image
+||www.portel.pl/b2source/$subdocument
 ||ppstatic.pl/*/tymczasowe/$image
 ||ppstatic.pl/*/showcase/$image,domain=gratka.pl
 ||ppwidget.skapiec.pl/widget/$script
@@ -1369,7 +1369,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||redir.atmcdn.pl*swf$domain=tvn24.pl
 ||redir.atmcdn.pl/scale/o2/tvn/web-content/m/p2/i/81c8727c62e800be708dbf37c4695dff/$image,domain=tvnwarszawa.tvn24.pl
 ||rek.www.wp.pl^
-||reklama.elblag.com.pl$domain=www.portel.pl
 ||reklamy.s3.amazonaws.com/bcg/$image
 ||reseton.net/static/player/*/vast.js$script
 ||reseton.pl/static/player/*/vast.js$script
@@ -1828,6 +1827,7 @@ facet.wp.pl,teleshow.wp.pl##div[class^="_"]:matches-css(background-image: url("d
 ||rek.www.wp.pl/pliki/*.js$script,important
 ||rek.www.wp.pl/display.js?$script,important,domain=www.pudelek.tv
 ||rek.www.wp.pl/gaf.js$script,domain=gadzetomania.pl,important
+||ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/$image,domain=spidersweb.pl
 !
 !
 !--------------------------Rules wykop.pl-------------!
