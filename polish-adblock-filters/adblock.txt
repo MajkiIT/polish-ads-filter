@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 23 March 2017
+! Last modified: 26 March 2017
 ! Expires: 2 days
-! Version: 2017032305
+! Version: 2017032601
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017032305 aktualizacja: czw, 23 marca 2017, 21:15:00
+! v.2017032601 aktualizacja: nie, 26 marca 2017, 13:15:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -235,6 +235,7 @@ anglia.today##[href^="/redirect/ad/background/"]
 antyweb.pl##.aadv
 antyweb.pl##.group.big.box-adv
 antyweb.pl##.visible.grid-box-big > .group.grid > .customScroller > .cs-wrapper.group > .grid-item.width-4.height-2.transparent
+antyweb.pl##.wp-image-192844
 audiostereo.pl###index_stats
 audiostereo.pl###opinie_sidebar
 audiostereo.pl###skapiec-widget
@@ -781,9 +782,10 @@ pracuj.pl##.betamore.openJDOMWindow
 pracuj.pl##.expander
 pracawgdansku.com.pl##TR[height="120px"]
 prawo.money.pl###img11155698
+promise.com.pl###ctl00_ReklamaBig1_pnlBaner
 prostozmostu.net###ecoeconomy
 prostozmostu.net###nmb-BusyBox
-postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl,jajamioasfalt.pl,dostawcy-internetu.pl,forum.bukmacherskie.com,nasze.fm,lovekrakow.pl,mh24.pl,faktykonopne.pl,lajfy.com,disco-polo.info##center
+postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,mojlink.pl,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,optyczne.pl,legio24.pl,sdcv.pl,jajamioasfalt.pl,dostawcy-internetu.pl,forum.bukmacherskie.com,nasze.fm,lovekrakow.pl,mh24.pl,faktykonopne.pl,lajfy.com,disco-polo.info,pokemon-go.pl##center
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
 profeto.pl##.rekl-top
@@ -800,6 +802,7 @@ przegladoponiarski.pl##.banners
 pszczynska.pl,szajn.pl##.baner
 pudelek.pl,pudelek.tv,plotek.pl##[id^="frame-"]
 pudelek.tv,wp.tv,wrzuta.pl,interaktywnie.com##[src^="http://adv.wp.pl"]
+pukawka.pl##.partnerzy
 purepc.pl##a[href^="http://www.purepc.pl/redir.php"]
 purepc.pl##body#top:style(background: #d5d5d5 !important;)
 pyszne.pl##.yd-banner
@@ -848,6 +851,8 @@ saturn.pl###nl_modal
 saturn.pl###nl_overlay
 seansik.nl###over-player
 seb-tv.pl##center
+serwery.wiaderko.com##.wtaily
+serwery.wiaderko.com##.rounded
 shinden.pl###ad-player
 shoplov.in##.slide
 showup.tv##div.bottom-baner
@@ -896,6 +901,16 @@ stooq.pl##div[onclick^="(function"][onclick*="window.open"][style^="animation"]
 stooq.pl##[id] > b > a[href^="?"]
 stooq.pl,stooq.com##:xpath(//*[@align="center"]/*[@id][contains(text(),"REKLAMA")])
 stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"]:not([width]):has([id="ads_goog_1"])
+stooq.com##div[onclick^="(function"][onclick*="window.open"][style^="animation"]
+stooq.com##[id] > b > a[href^="?"]
+stooq.com##a[href^="//stooq.com/ads/f/"]
+stooq.com###f13 > table:has(#f13 > a[href^="//stooq.com/ads/"])
+stooq.com###f13 > table:if(#f13 > b:has-text(Artykuł Sponsorowany))
+stooq.com##table:has(:scope > tbody > tr > td > #aswift_1_expand)
+stooq.pl###f13 > table:has(#f13 > a[href^="//stooq.pl/ads/"])
+stooq.pl##a[href^="//stooq.pl/ads/f/"]
+stooq.pl###f13 > table:if(#f13 > b:has-text(Artykuł Sponsorowany))
+stooq.pl##table:has(:scope > tbody > tr > td > #aswift_1_expand)
 strefaanime.pl###text-6
 strefagry.pl##[style="width:540px;margin:10px auto;"]
 strefagry.pl##.item_d
@@ -1341,6 +1356,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||nhlpl.cdn.adglare.org/img/$image,domain=notebookcheck.pl
 ||nokaut.pl/wigetyflash/$object
 ||ocs-pl.oktawave.com/v1/AUTH_*/Reklamy/$object-subrequest
+||ocs-pl.oktawave.com/*/reklamy$subdocument,domain=spidersweb.pl
 ||oglaszamy24.pl/adstorage/$image
 ||onenima.com^$script
 ||ozoneo.pl/templates/images/description/5901/Image/$image
@@ -1896,7 +1912,7 @@ wp.pl##div[class^="_"]:matches-css(background-size: 56px 45px)
 !
 !--------------------------Rules for pages with random adv scripts------------!
 /^http:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\/[a-zA-Z0-9]{30,}/$script,popup,document
-/^(http|https):\/\/[a-zA-Z.]{10,}\.com\/[a-zA-Z]{1,}\.\js/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|stop-limitom.pl|vidlox.tv|playerbox.net|alltube.tv|cdax.tv|segos.es|efilmy.online|video.penny.ie|fileone.tv|serialeonline.pl|filiser.tv|streamango.com
+/^(http|https):\/\/[a-zA-Z.]{10,}\.com\/[a-zA-Z]{1,}\.\js/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|stop-limitom.pl|vidlox.tv|playerbox.net|alltube.tv|cdax.tv|segos.es|efilmy.online|video.penny.ie|fileone.tv|serialeonline.pl|filiser.tv|streamango.com|kinoline.pl
 /^http:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|alltube.tv
 /^(http|https):\/\/[a-z0-9]{3,11}\.[a-z]{5,11}\/[0-9]{3,10}\//$xmlhttprequest,domain=streamin.to|raptu.com|flashx.tv
 /^http:\/\/[a-z0-9]{5,}\.com\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{5,}\.\js/$script,domain=vidto.me
@@ -1925,6 +1941,20 @@ castto.me##[id^="floatLayer"]
 ||cloudfront.net^$script,domain=telewizja-live.com
 ||privatestream.tv/logo^
 ||privatestream.tv/adl^
+!
+!
+!--------------------------Problematic pages------------!
+autocentrum.pl,gry-online.pl,joemonster.org#@#.pub_300x250
+autocentrum.pl,gry-online.pl,joemonster.org#@#.pub_300x250m
+autocentrum.pl,gry-online.pl,joemonster.org#@#.pub_728x90
+autocentrum.pl,gry-online.pl,joemonster.org#@#.text-ad
+autocentrum.pl,gry-online.pl,joemonster.org#@#.textAd
+autocentrum.pl,gry-online.pl,joemonster.org#@#.text_ad
+autocentrum.pl,gry-online.pl,joemonster.org#@#.text_ads
+autocentrum.pl,gry-online.pl,joemonster.org#@#.text-ads
+autocentrum.pl,gry-online.pl,joemonster.org#@#.text-ad-links
+@@/ad/banner/_adsense_/_adserver/_adview_.ad.json?adzone=top&adsize=300x250&advid=$domain=autocentrum.pl|gry-online.pl|joemonster.org
+@@/ad/banner/_adsense_/_adserver/_adview_.ad.json/?adzone=top&adsize=300x250&advid=$domain=autocentrum.pl|gry-online.pl|joemonster.org
 !
 !
 !--------------------------Expired rules----------------------------------!
