@@ -3,15 +3,15 @@
 ! polskie filtry do uBlocka uzupelnienie
 ! Collaborators: F4z, xxcriticxx
 ! Homepage: https://www.certyficate.it/
-! Last modified: 17 March 2017
+! Last modified: 30 March 2017
 ! Expires: 2 days
-! Version: 2017031701
+! Version: 2017033001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017031701 aktualizacja: pt, 17 marca 2017, 20:50:00
+! v.2017033001 aktualizacja: czw, 30 marca 2017, 21:50:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -152,3 +152,10 @@ kalisz.info.pl###all:style(top: 0px !important;)
 ! Timery ladujace reklamy
 naekranie.pl##script:inject(setInterval-defuser.js, function neTick(){neTickCounter++;if(neTickCounter<=neTickCountLimit){neTickAjax=$.ajax({type:"POST",url:adminAjaxUrl+"?action=ne_tick",dataType:"json",success:function(data){neTickResponseAction(data)}})}}, 10000)
 naekranie.pl##script:inject(setTimeout-defuser.js, function check(){console.log("checked");if($(".adform").children().length>3){console.log("its more");$(".adform").children(".adform-banner").show();clearTimeout(check)}}, 1000)
+!
+!# tv.jardello.com
+videosio.pl###video_player_container:style(display: inline !important;)
+videosio.pl###preroll_placeholder
+!
+!# bankier.pl
+bankier.pl##.boxContent > ul > li[class^="item-"]:has(.premium-link)
