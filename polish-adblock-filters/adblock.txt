@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 31 March 2017
+! Last modified: 2 April 2017
 ! Expires: 2 days
-! Version: 2017033101
+! Version: 2017040201
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017033101 aktualizacja: ptk, 31 marca 2017, 06:25:00
+! v.2017040201 aktualizacja: nie, 2 kwietnia 2017, 14:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -154,7 +154,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##[id^="sponsorowany"]
 ~radekcholewinski.pl,~github.com##A[href$="/reklama"]
 ##A[href*="/emisja.contentstream.pl/_/ctr/"]
-~gwarant.czest.pl,~sukniaonline.pl##[src*="/banners/banner"]
+~rozklad-pkp.pl,~gwarant.czest.pl,~sukniaonline.pl##[src*="/banners/banner"]
 ##[id^="nokaut_ads_category_"]
 ###middleboxrectangle
 ##[class^="ADbox"]
@@ -869,6 +869,7 @@ saturn.pl###nl_modal
 saturn.pl###nl_overlay
 seansik.nl###over-player
 seb-tv.pl##center
+serialeonline.pl###alternative-banner
 serwery.wiaderko.com##.wtaily
 serwery.wiaderko.com##.rounded
 shinden.pl###ad-player
@@ -1505,6 +1506,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||www.zielonanews.pl/wp-content/uploads/201*/*/*-baner-*.jpg$image
 ||www.zielonanews.pl/wp-content/uploads/201*/*/*.swf$object
 ||www.cgm.pl/_vault/_adver/$image
+||www.strefawalkingdead.pl/graf/$image
 ||www1.advice.movie.advlab.pl$object,domain=get.x-link.pl
 ||zaufanatrzeciastrona.pl/aruba.gif
 ||zaufanatrzeciastrona.pl/wp-content/uploads/*/q2s.gif
@@ -1522,6 +1524,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 !
 !
 !---------------------------------Whitelists----------------------------------!
+@@|data:text$popup,domain=cda-x.pl
 @@*player_control*.swf
 @@/advertise*.js$script,domain=cda.pl
 @@/advertisingmodule.$domain=ekstraklasa.tv|itvn.pl|player.pl|ttv.pl|tvn.pl|tvn24.pl|tvn24bis.pl|tvn7.pl|tvnplayer.pl|tvnstyle.pl|tvnturbo.pl
@@ -1604,6 +1607,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||tvn.adocean.pl/ad.xml$xmlhttprequest,domain=tvnturbo.pl|miniminiplus.pl
 @@||tvn.adocean.pl^$script,domain=ekstraklasa.tv|itvn.pl|player.pl|ttv.pl|tvn.pl|tvn24.pl|tvn24bis.pl|tvn7.pl|tvnplayer.pl|tvnstyle.pl|tvnturbo.pl
 @@||tvn.pl$elemhide
+@@||tvn24.pl^$generichide
 @@||tvnturbo.pl$generichide
 @@||video.anyfiles.pl/js/ads.js$script,domain=video.anyfiles.pl
 @@||video.anyfiles.pl/player/ads.js$script,domain=video.anyfiles.pl
@@ -1937,11 +1941,12 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 !
 !--------------------------Rules for pages with random adv scripts------------!
 /^http:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\/[a-zA-Z0-9]{30,}/$script,popup,document
-/^(http|https):\/\/[a-zA-Z.]{10,}\.com\/[a-zA-Z]{1,}\.\js/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|stop-limitom.pl|vidlox.tv|playerbox.net|alltube.tv|cdax.tv|segos.es|efilmy.online|video.penny.ie|fileone.tv|serialeonline.pl|filiser.tv|streamango.com|kinoline.pl|cda-hd.pl
+/^(http|https):\/\/[a-zA-Z.]{10,}\.com\/[a-zA-Z]{1,}\.\js/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|stop-limitom.pl|vidlox.tv|playerbox.net|alltube.tv|cdax.tv|segos.es|efilmy.online|video.penny.ie|fileone.tv|serialeonline.pl|filiser.tv|streamango.com|kinoline.pl|cda-hd.pl|nasze-kino.online
 /^http:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|alltube.tv
 /^(http|https):\/\/[a-z0-9]{3,11}\.[a-z]{5,11}\/[0-9]{3,10}\//$xmlhttprequest,domain=streamin.to|raptu.com|flashx.tv
 /^http:\/\/[a-z0-9]{5,}\.com\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{5,}\.\js/$script,domain=vidto.me
 /^http:\/\/[a-zA-Z0-9]{8,20}\.com\/analytics\/[0-9]{5,7}/$subdocument,script,popup
+/^(http|https):\/\/[a-z]{3,11}\.com\/[a-z0-9]{2,}\/[a-z0-9]{2,}\/[a-z0-9]{2,}\/[a-z0-9]{15,}\.js/$script,domain=filiser.tv
 !
 !
 !--------------------------Stupid notifications------------!
