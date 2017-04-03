@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 3 April 2017
 ! Expires: 2 days
-! Version: 2017040301
+! Version: 2017040302
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017040301 aktualizacja: pon, 3 kwietnia 2017, 08:45:00
+! v.2017040302 aktualizacja: pon, 3 kwietnia 2017, 10:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -1961,6 +1961,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 !
 !--------------------------Stupid notifications------------!
 ||dashboard.push-ad.com^$script,domain=antyweb.pl
+||cdn.onesignal.com/sdks/OneSignalSDK.js$script
 !
 !
 !--------------------------Rules on tv streams element hiding rules------------!
@@ -1986,21 +1987,3 @@ castto.me##[id^="floatLayer"]
 !--------------------------Problematic pages------------!
 autocentrum.pl,gry-online.pl,joemonster.org#@#.leadAd
 @@/wp-content/plugins/banner-manager/*$domain=autocentrum.pl|gry-online.pl|joemonster.org
-!
-!
-!--------------------------Expired rules----------------------------------!
-!@@/^(http|https):\/\/(adv|rek\.www|owabgxis|fntajkb)\.wp\.pl\/(.{0,15}[&!*;@\$)[\]:%].*|(?!gaf|cap|vad|display|dis3rd)[a-zA-Z0-9\W_]{0,10})\.(js|html|xml|jpg|gif|png)|^(http|https):\/\/rek\.www\.wp\.pl\/gaf\.js$|^(http|https):\/\/(adv|rek\.www|owabgxis|fntajkb)\.wp\.pl\/[a-zA-Z0-9=]{1,180}=$|^(http|https):\/\/(adv|rek\.www|owabgxis|fntajkb)\.wp\.pl\/(?!gaf|cap|vad|display|dis3rd)[a-zA-Z0-9,_]{0,180}\.(js|html|xml|jpg|gif|png)|^(http|https):\/\/(adv|rek\.www|owabgxis|fntajkb)\.wp\.pl\/(?!gaf|cap|vad|display|pliki)[a-zA-Z0-9]{15,50}$/
-!@@||dot.wp.pl/*/media.gif$image,domain=portal.abczdrowie.pl
-!@@||dot.wp.pl/*/show.gif$image,domain=portal.abczdrowie.pl
-!@@||mdn.net/instream/video/client.js$script,domain=facet.wp.pl
-!@@||wp.pl/bar.gif$xmlhttprequest
-!@@||rek.www.wp.pl/$xmlhttprequest
-!@@||adv.wp.pl^$xmlhttprequest
-!@@||dot.wp.pl/*/*.gif$xmlhttprequest,domain=wp.pl
-!@@||wp.pl/*_p3*.$script
-!@@||businessclick.net.pl/awrapper|$script,domain=teleshow.wp.pl
-!@@||imasdk.googleapis.com/js/core/$subdocument,domain=wp.pl|wp.tv|portal.abczdrowie.pl
-!@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wp.pl|wp.tv|portal.abczdrowie.pl|grydladzieci.pl|www.money.pl|vod.pl|exs.pl|wawalove.pl|fotoblogia.pl|autokult.pl|gadzetomania.pl|parenting.pl|komorkomania.pl
-!@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=autokult.pl|biztok.pl|gadzetomania.pl|kafeteria.pl|kafeteria.tv|komediowo.pl|komorkomania.pl|money.pl|mybank.pl|parenting.pl|portal.abczdrowie.pl|pudelek.tv|wp.pl|wp.tv|wrzuta.pl|pudelekx.pl
-!@@||static.criteo.net/js/ld/publishertag.js$script,domain=wp.pl
-!@@||wp.hit.gemius.pl/xgemius.js$script,domain=wp.pl
