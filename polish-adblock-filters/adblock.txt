@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 7 April 2017
 ! Expires: 2 days
-! Version: 2017040702
+! Version: 2017040703
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017040702 aktualizacja: ptk, 7 kwietnia 2017, 21:30:00
+! v.2017040703 aktualizacja: ptk, 7 kwietnia 2017, 23:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -253,7 +253,6 @@ auto.pl###intertext1 > .text-center.col-all-max
 auto-swiat.pl,biala24.pl##.banner
 autocentrum.pl##a[href^="http://blbl.cr/"]
 autocentrum.pl###new_banner + div[style="max-width: 750px; margin: 0 auto; padding-bottom: 15px;"]
-autocentrum.pl##img[src^="data:image"]
 autodoradca.pl##.banner-top
 bankier.pl##[class$="Adv"]
 bebzol.com###right-col > .r-stick-box
@@ -553,7 +552,6 @@ jobs.pl###gbpl_oba
 joemonster.org##DIV[style="position: fixed;bottom: 0;width: 1020px;height: 100px;background-color: #eee;border: 1px solid black;z-index: 1000;overflow: auto;left: 50%;margin-left: -510px;border-bottom: 0;"]
 joemonster.org##a[href*="utm_source=JoeMonster&utm_medium=Rectangle&utm_campaign="]
 joemonster.org##.matchedContent
-joemonster.org##img[src^="data:image"]
 joemonster.org##iframe[mysrc]
 joemonster.org##a[style="cursor: pointer"][onclick^="window.location.href="][target="_blank"]
 jysk.promoceny.pl###mbImage
@@ -1211,6 +1209,7 @@ zaufanatrzeciastrona.pl##a[href="https://zaufanatrzeciastrona.pl/ydAb"]
 zaufanatrzeciastrona.pl##a[href="https://zaufanatrzeciastrona.pl/t1.php"]
 zaufanatrzeciastrona.pl##a[href="https://zaufanatrzeciastrona.pl/t2.php"]
 zaufanatrzeciastrona.pl###sidebar > a[href] > img
+zaufanatrzeciastrona.pl###wrap > #bar2
 zespolmi.pl##a[href^="https://prisonwarsonline.com/"]
 zumi.pl###couponsBar
 zumi.pl###offersBar
@@ -1924,7 +1923,6 @@ wykop.pl##a[href*="wykop.pl/tracker"]
 !
 !--------------------------Rules unblock protection------------!
 gry-online.pl##a[style="cursor: pointer"][onclick^="window.location.href="][target="_blank"]
-gry-online.pl##img[src^="data:image"]
 !
 !
 !--------------------------Pages with bad reputation------------!
@@ -1993,5 +1991,3 @@ castto.me##[id^="floatLayer"]
 !
 !
 !--------------------------Problematic pages------------!
-autocentrum.pl,gry-online.pl,joemonster.org#@#.leadAd
-@@/wp-content/plugins/banner-manager/*$domain=autocentrum.pl|gry-online.pl|joemonster.org
