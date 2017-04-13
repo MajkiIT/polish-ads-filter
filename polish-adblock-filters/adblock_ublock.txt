@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 13 April 2017
 ! Expires: 2 days
-! Version: 2017041301
+! Version: 2017041302
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017041301 aktualizacja: czw, 13 kwietnia 2017, 13:50:00
+! v.2017041302 aktualizacja: czw, 13 kwietnia 2017, 14:15:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -160,6 +160,7 @@ videosio.pl###preroll_placeholder
 !
 !# bankier.pl
 bankier.pl##.boxContent > ul > li[class^="item-"]:has(.premium-link)
+bankier.pl##script:inject(abort-on-property-write.js, detectAB)
 !
 !# efilmy.online
 efilmy.online##script:inject(impspcabe-defuser.js)
