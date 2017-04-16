@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 16 April 2017
 ! Expires: 2 days
-! Version: 2017041602
+! Version: 2017041603
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017041602 aktualizacja: nie, 16 kwietnia 2017, 14:45:00
+! v.2017041603 aktualizacja: nie, 16 kwietnia 2017, 20:10:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -201,6 +201,8 @@ pl/popup.js|$script
 ~fakt.pl,~forbes.pl,~auto-swiat.pl,~noizz.pl,~plejada.pl,~businessinsider.com.pl,~komputerswiat.pl,~onet.pl,~vod.pl,pl##[id^="crt-"]
 ##.adexonModule
 pl###nitro-block
+###ceneo_slider
+###a_d_billboard
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -214,6 +216,7 @@ pl###nitro-block
 4kom.pl###PSH-Bar
 40ton.net##.size-full
 40ton.net##a[href^="http://www.trans.eu/pl/form-a2"]
+90minut.pl##body > div:nth-of-type(3)
 allegro.pl###installments-banner-container
 allegro.pl###main_page_main_1200_400
 allegro.pl###mainpage-marketing-showcases > .clearfix
@@ -259,6 +262,7 @@ auto-swiat.pl,biala24.pl##.banner
 autocentrum.pl##a[href^="http://blbl.cr/"]
 autocentrum.pl###new_banner + div[style="max-width: 750px; margin: 0 auto; padding-bottom: 15px;"]
 autodoradca.pl##.banner-top
+bajkitv.pl###watch
 bankier.pl##[class$="Adv"]
 bebzol.com###right-col > .r-stick-box
 benchmark.pl###marketplaceProductBox
@@ -994,7 +998,7 @@ topgearonline.pl###leader-wrapper
 torrentos.com.pl###xxxyyyyy
 translate.google.pl##.gb_zb.gb_jb.gb_La
 trasa.info###forum-box
-trasa.info###partners
+trasa.info,kreskowki-online.pl###partners
 trasa.info###trip
 treningbiegacza.pl###under-menu-adds-wrapper
 trojmiasto.pl##.banner-a
@@ -1175,6 +1179,7 @@ www.cenynaswiecie.pl##.system_banner
 www.cenynaswiecie.pl##.menu-block
 www.cenynaswiecie.pl##[class^="google-"]
 www.cenynaswiecie.pl##.hidden-xs.text-center
+www.elmaz.pl##.tbWidth.top10 > tbody > tr:nth-of-type(2) > td > div
 www.swiatmotocykli.pl##.entry_7
 www.wiocha.pl###rectcont
 www.photoblog.pl###adsense-top-placeholder
@@ -1990,6 +1995,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 /^http:\/\/[a-zA-Z0-9]{8,20}\.com\/analytics\/[0-9]{5,7}/$subdocument,script,popup
 /^(http|https)://[a-z0-9]{5,}.top/[a-z0-9]{1,}/[a-z0-9]{1,}/[a-z0-9]{1,}/[a-z0-9]{5,}.\js/$script
 /^http://[a-zA-Z0-9]{8,20}.com/embed-[0-9a-z]{5,7}/$subdocument,script,popup,domain=cda-hd.pl
+/^(http|https):\/\/cdn\.[a-z]{3,}\.[a-z]{4,}\/[a-z]{4,}\.js/$script,domain=ekinko.pl
 !
 !
 !--------------------------Stupid notifications------------!
