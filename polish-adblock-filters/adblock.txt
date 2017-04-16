@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 14 April 2017
+! Last modified: 16 April 2017
 ! Expires: 2 days
-! Version: 2017041402
+! Version: 2017041601
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
-! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017041402 aktualizacja: ptk, 14 kwietnia 2017, 14:50:00
+! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
+! v.2017041601 aktualizacja: nie, 16 kwietnia 2017, 13:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -65,6 +65,7 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||thevideo.me/assets/*popjs$script
 |http:$popup,third-party,domain=raptu.com
 |https:$popup,third-party,domain=raptu.com
+||afftrack001.com^
 !
 !
 !-----------------------Elements hide on movie-----------------------!
@@ -288,7 +289,8 @@ businesswomanlife.pl##[id^="widget_sp_image"]
 businesswomanlife.pl##[id^="slidero-box-"]
 cadblog.pl##TD[bgcolor="#FFFFFF"]
 cda.pl##.wrapper > .wrapper-container > span[class]
-cda.pl##.muimerpIA
+cda.pl##.lkOps
+cda.pl##.muimerpIa
 cdax.tv##.container > .row > .text-center.col-sm-12 > a[href]
 cenabiznesu.pl##.img-responsive
 centrumxp.pl###WelcomeBox
@@ -1278,8 +1280,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||businessclick.*/$script
 ||cda.pl/*v*a*s*t*.php
 ||cda.pl/*v*a*s*t*/*.xml
-||cda.pl/player.php?ads
-||cda.pl/xml.php?type=g_adblock&get=
+||cda.pl/xml.php?type=*adblock
+||cda.pl/player.php
 ||cdn.dtxngr.com/$script
 ||cdn.syndication.twitter.com/widgets/tweetbutton/
 ||cdn.salesmedia.pl/codes/$script
