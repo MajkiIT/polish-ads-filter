@@ -3,15 +3,15 @@
 ! polskie filtry do uBlocka uzupelnienie
 ! Collaborators: F4z, xxcriticxx
 ! Homepage: https://www.certyficate.it/
-! Last modified: 13 April 2017
+! Last modified: 20 April 2017
 ! Expires: 2 days
-! Version: 2017041302
+! Version: 2017042001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017041302 aktualizacja: czw, 13 kwietnia 2017, 14:15:00
+! v.2017042001 aktualizacja: czw, 20 kwietnia 2017, 18:45:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -114,6 +114,7 @@ www.ps4forum.pl##.forumsTabLinks.tabLinks:style(top: 60px !important;)
 !# dobreprogramy
 dobreprogramy.pl##body#top:style(background: none !important;)
 dobreprogramy.pl##script:inject(abort-on-property-write.js, Promise)
+dobreprogramy.pl##body.variant-mobile div[style="color: #A9A9A9; text-align:center;font-size:11px;"]:style(visibility: hidden!important;)
 forum.dobreprogramy.pl##body[class]:style(background-image: none !important;)
 !
 !# purepc.pl
@@ -173,3 +174,9 @@ raptu.com##script:inject(noeval.js)
 !
 !# filiser.tv
 filiser.tv##script:inject(abort-on-property-write.js, _yhbog)
+!
+!# streamin.to
+streamin.to##script:inject(noeval-if.js, RTCPeerConnection)
+!
+!# Popupy https://github.com/MajkiIT/polish-ads-filter/issues/2478
+||go.onclasrv.com/apu.php$script,redirect=noopjs,important
