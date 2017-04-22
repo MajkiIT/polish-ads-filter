@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 21 April 2017
+! Last modified: 22 April 2017
 ! Expires: 2 days
-! Version: 2017042102
+! Version: 2017042201
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017042102 aktualizacja: pt, 21 kwietnia 2017, 21:35:00
+! v.2017042201 aktualizacja: sob, 22 kwietnia 2017, 19:55:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -203,6 +203,7 @@ pl/popup.js|$script
 ###ceneo_slider
 ###a_d_billboard
 ##a[href^="http://delivery.clickonometrics.pl/campaign="]
+pl##a[href*="://clicks.fortunaaffiliates.com/"]
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -293,9 +294,10 @@ businesswomanlife.pl##[id^="widget_sp_image"]
 businesswomanlife.pl##[id^="slidero-box-"]
 cadblog.pl##TD[bgcolor="#FFFFFF"]
 cda.pl##.wrapper > .wrapper-container > span[class]
-cda.pl##.lkOps
-cda.pl##.muimerpIa
-cdax.tv##.container > .row > .text-center.col-sm-12 > a[href]
+cda.pl##div > .adsense + [id]
+cda.pl##.top-anonco-content
+cda.pl##[class="pser-kob-dst-pparw wesn-esda"]
+cda.pl##.adsense.miniPhotobox
 cenabiznesu.pl##.img-responsive
 centrumxp.pl###WelcomeBox
 centrumxp.pl##[id*="_Reklama_"]
@@ -312,6 +314,7 @@ cinema-city.pl###subsnatch
 cinema-city.pl##DIV[id^="snatch"]
 cinema-city.pl###layer_3_-150_0
 czasdzieci.pl##.adlabel
+czateria.interia.pl##.video-player-container
 cgm.pl##.headFlash
 cmg24.pl##[src*="Reklamy/"]
 darkwarez.pl##DIV[style="position:relative;height:110px;overflow: hidden;"]
@@ -590,7 +593,8 @@ kozaczek.pl##img[src^="data:image/jpeg;base64"]
 kraj24.pl##.box_h
 kraj24.pl##.jcarousel-container.jcarousel-container-vertical
 kraj24.pl##DIV[style="margin:15px auto 15px auto"]
-krs-online.com.pl###banad
+krs-online.com.pl###bad
+krs-online.com.pl###commcoo
 kupbilet.pl###t3393f
 kurierlubelski.pl###adoceanadldghmiohjv
 kurierlubelski.pl###oponeo
@@ -1408,6 +1412,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||niebiescy.pl/bild/$image
 ||nhlpl.cdn.adglare.org/img/$image,domain=notebookcheck.pl
 ||nokaut.pl/wigetyflash/$object
+||nuteczki.eu/templates/KlubowaMuza/images/pobierz.png$image
 ||ocs-pl.oktawave.com/v1/AUTH_*/Reklamy/$object-subrequest
 ||ocs-pl.oktawave.com/*/reklamy$subdocument,domain=spidersweb.pl
 ||oglaszamy24.pl/adstorage/$image
@@ -1727,7 +1732,6 @@ onet.pl,vod.pl,businessinsider.com.pl,komputerswiat.pl,plejada.pl,komorkomania.p
 www.elektroda.pl##[id$="-block-info"]
 zetchilli.pl##.adblock-info
 vod.pl#@#.infoCloud
-komputerswiat.pl##.adsbygoogle
 zamow-reklame.pl###block
 zrabatowani.pl###popup-adblock-bottom
 !
