@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 24 April 2017
 ! Expires: 2 days
-! Version: 2017042403
+! Version: 2017042404
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017042403 aktualizacja: pon, 24 kwietnia 2017, 16:30:00
+! v.2017042404 aktualizacja: pon, 24 kwietnia 2017, 17:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -1098,7 +1098,6 @@ wp.pl##a[href^="http://smartclick.pl/redir"]
 wp.pl##[style="width: 640px; height:400px; margin:10px auto 10px  auto;"]
 wp.pl###leaving
 wp.pl###shopingBx
-wp.pl##div[class^="_"]:matches-css(background: /url\("data:image/png;base64,/)
 wp.pl##div[class^="_"]:matches-css(min-width: 300px):matches-css(background-color: rgb(242, 242, 242))
 wp.pl##section#section_shopping
 wprost.pl###additional-column
@@ -1204,6 +1203,7 @@ www.taniaksiazka.pl##.col-right2
 www.planowaniewesela.pl###header-banner
 www.filmydokumentalne.eu###pop-up
 www.fitnow.pl##[id^="banners"]
+www.wp.pl##div[class]:matches-css(background: /url\("data:image/png;base64,/)
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1971,6 +1971,9 @@ autocentrum.pl,demotywatory.pl,dziennik.pl,facetemjestem.pl,gala.pl,garnek.pl,gr
 !
 !--------------------------Pages with bad reputation------------!
 ||ogladajonline.pl^
+||wykop-fora.pl^
+||oplneo.pl^
+||mediatos.pl^
 !
 !
 !--------------------------Rules for ublock, but can be use with adblock------------!
