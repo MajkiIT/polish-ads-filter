@@ -3,15 +3,15 @@
 ! polskie filtry do uBlocka uzupelnienie
 ! Collaborators: F4z, xxcriticxx
 ! Homepage: https://www.certyficate.it/
-! Last modified: 20 April 2017
+! Last modified: 25 April 2017
 ! Expires: 2 days
-! Version: 2017042001
+! Version: 2017042501
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  http://www.certyficate.it/polski-filtr-adblock/
-! v.2017042001 aktualizacja: czw, 20 kwietnia 2017, 18:45:00
+! v.2017042501 aktualizacja: wt, 25 kwietnia 2017, 09:00:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -180,3 +180,10 @@ streamin.to##script:inject(noeval-if.js, RTCPeerConnection)
 !
 !# Popupy https://github.com/MajkiIT/polish-ads-filter/issues/2478
 ||go.onclasrv.com/apu.php$script,redirect=noopjs,important
+!
+! # reklama po prawej np. na pclab.pl,onet.pl,businessinsider.com.pl,noizz.pl,komputerswiat.pl,plejada.pl
+###nitro-block:style(position: absolute!important; left: -3000px!important;)
+!
+! #blokowanie gemius 
+||onet.hit.gemius.pl/fpdata.js$script,important
+||onet.hit.gemius.pl/xgemius.js$script,important
