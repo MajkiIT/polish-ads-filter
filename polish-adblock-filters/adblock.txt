@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 5 May 2017
+! Last modified: 7 May 2017
 ! Expires: 2 days
-! Version: 2017050502
+! Version: 2017050701
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017050502 aktualizacja: ptk, 5 maja 2017, 11:05:00
+! v.2017050701 aktualizacja: nie, 7 maja 2017, 13:05:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -293,7 +293,6 @@ businesswomanlife.pl##[id^="widget_sp_image"]
 businesswomanlife.pl##[id^="slidero-box-"]
 cadblog.pl##TD[bgcolor="#FFFFFF"]
 ~www.cba.pl,cba.pl##img[src="https://www.cba.pl/cba1.jpg"]
-~www.cba.pl,cba.pl##body > div:nth-of-type(1)
 cda.pl##.bolk-left
 cda.pl###as-narrow1
 cda.pl##.adsense.miniPhotobox
@@ -319,6 +318,7 @@ cgm.pl##.headFlash
 cmg24.pl##[src*="Reklamy/"]
 darkwarez.pl##DIV[style="position:relative;height:110px;overflow: hidden;"]
 darkwarez.pl##div[align="center"] > .copyright > table[border="0"]
+darmowe-torenty.pl##td:nth-of-type(2) > center:nth-of-type(1)
 datapremiery.pl##.column_center > [class*="mock"]
 ddtorun.pl,ddwloclawek.pl##.container.movedDiv
 ddtorun.pl,ddwloclawek.pl##[class^="a-d-v"]
@@ -333,6 +333,7 @@ digi-tv.pl,satkurier.pl##[id^="pasek_hollex"]
 digi-tv.pl,satkurier.pl###SATKurierNews_top_750x100_r
 digi-tv.pl,satkurier.pl##[id^="idmnet_"]
 digi-tv.pl##[id^="banner_"]
+disco-polo.info###smsites > .naglowek-sidebar
 doba.pl##[class*="banner"]
 dobrastacja.pl###tfhover
 dobreprogramy.pl##[style="width: 300px; margin: auto;"]
@@ -852,6 +853,7 @@ programosy.pl##.web.bn-b-0
 prv.pl###prv-billboard
 prv.pl###prvBottomParent
 przegladsportowy.pl##[id$="_ARTICLE_TOP"]
+przegladsportowy.pl###region-item20927
 przegladoponiarski.pl##.banners
 pszczynska.pl,szajn.pl##.baner
 pudelek.pl,pudelek.tv,plotek.pl##[id^="frame-"]
@@ -1219,6 +1221,8 @@ www.planowaniewesela.pl###header-banner
 www.filmydokumentalne.eu###pop-up
 www.fitnow.pl##[id^="banners"]
 www.wp.pl##div[class]:matches-css(background: /url\("data:image/png;base64,/)
+www.skionline.pl###tt-minisubu
+www.skionline.pl###bbs
 www2.payback.pl##class[id^="all-app-"]
 www2.payback.pl##class[id^="werewolf-"]
 www2.payback.pl###header-spacer
@@ -1456,6 +1460,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||pobierak.jeja.pl/aban/$image,domain=~jeja.pl
 ||podlasie24.pl/upl/ban*/$image,object
 ||pogodynka.onet.pl/apiinfos/htmlwarn/
+||polskiinternet.com/images/banner/$image
 ||polskie-torrenty.com.pl/imgb/banner.jpg$image
 ||portal-firma.pl/banners/$image
 ||portalmorski.pl/images/banners/
@@ -1870,6 +1875,11 @@ vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
 ##A[href*="beaffiliates.com/processing/clickthrgh.asp"]
 abcast.net##[id^="floatLayer"]
 aliez.*###adbtm
+bukmacherzy.com,mecze24.pl##.popup
+bukmacherzy.com###toplayer_eurobasket
+bukmacherzy.com##body > div:nth-of-type(3)
+bukmacherzy.com##body > div:nth-of-type(4)
+bukmacherzy.com##div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(7)
 coolcast.eu###r2
 darmowe.tv###john
 darmowetv.pl##[class$="er-block"]
@@ -1894,6 +1904,8 @@ futbolhd.tv##TD[style="margin-left: -25px; font-size: 14px; padding: 10px; paddi
 goodrtmp.com###r
 goodrtmp.com###ra
 ipilka.info,mecz.tv###advertising_box
+livemecz.pl###bilety-popup
+livemecz.pl###main_page > div:nth-of-type(2) > div
 meczelive.tv###dropin
 meczelive.tv##a[href^="http://goo.gl/"]
 meczenazywo.pl,mecze24.pl##A[href^="http://ads.comeon.com/redirect.aspx"]
@@ -1901,8 +1913,9 @@ meczenazywo.pl##A[href^="/bukmacher/r/"]
 meczenazywo.pl##a[href^="https://www.meczenazywo.pl/bukmacher/r/"]
 meczenazywo.pl##a[href^="http://www.meczenazywo.pl/bukmacher/r/"]
 meczenazywo.pl##a[href^="https://affmore.com/click/"]
-meczenazywo.pl##[class^="cool-stuff"]
+meczenazywo.pl,meczenazywo.tv##[class^="cool-stuff"]
 meczenazywo.pl###my_div_wrapper
+meczenazywo.tv###popup
 mecze24.pl###bg
 mecze24.pl##[class^="cool-stuff"]
 mecze24.pl##.module-facts.module
@@ -1950,6 +1963,7 @@ xyz,mecz.tv,ipilka.info##[class$="_right"]
 ||vsport.in/ban1$image
 ||hotcpm.pl^$third-party
 ||mecze24.pl/img/tapeta$image
+||meczenazywo.pl/img/tapeta$image
 ||meczelive.tv/images/tapeta_$image
 ||meczelive.tv/imghttps/$image
 ||cdn.mediaessence.net$script
