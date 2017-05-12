@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 11 May 2017
+! Last modified: 12 May 2017
 ! Expires: 2 days
-! Version: 2017051103
+! Version: 2017051201
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017051103 aktualizacja: czw, 11 maja 2017, 11:15:00
+! v.2017051201 aktualizacja: ptk, 12 maja 2017, 08:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -366,6 +366,7 @@ dooktor.pl###r_top_container
 dorzeczy.pl##.page-rectangle-inner
 download.net.pl##DIV[style="text-align: center; margin: 0 auto;"]
 doz.pl##.clearfix.container > .clearfix.row
+drukowanka.pl##[id^="v4u_"]
 dstar.pzk.pl##[style$="background: #dfdfdf;"]
 dstar.pzk.pl##[style^="text-align: center; font-size: 8px; padding:"]
 dzisiajwgliwicach.pl##img[src*="Baner-590x300-"]
@@ -860,6 +861,7 @@ procesor.pl###big-rectangle
 programosy.pl##.web.bn-b-0
 prv.pl###prv-billboard
 prv.pl###prvBottomParent
+przedszkola.edu.pl##.sidebar__widget:nth-of-type(2)
 przegladsportowy.pl##[id$="_ARTICLE_TOP"]
 przegladsportowy.pl###region-item20927
 przegladoponiarski.pl##.banners
@@ -1125,7 +1127,7 @@ wp.pl##a[href^="http://smartclick.pl/redir"]
 wp.pl##[style="width: 640px; height:400px; margin:10px auto 10px  auto;"]
 wp.pl###leaving
 wp.pl###shopingBx
-wp.pl##div[class^="_"]:matches-css(min-width: 300px):matches-css(background-color: rgb(242, 242, 242))
+wp.pl##div[class^="_"]:matches-css(min-width: 300px):matches-css(background-color: rgba)
 wp.pl##section#section_shopping
 wp.pl##.scr-wallpaper
 wprost.pl###additional-column
@@ -2063,6 +2065,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 !--------------------------Stupid notifications------------!
 ||dashboard.push-ad.com^$script,domain=antyweb.pl
 ||cdn.onesignal.com/sdks/OneSignalSDK.js$script
+||pushcrew.com$cript
 !
 !
 !--------------------------Rules on tv streams element hiding rules------------!
