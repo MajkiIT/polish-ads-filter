@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 17 May 2017
+! Last modified: 18 May 2017
 ! Expires: 2 days
-! Version: 2017051701
+! Version: 2017051801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017051701 aktualizacja: sr, 17 maja 2017, 11:10:00
+! v.2017051801 aktualizacja: czw, 18 maja 2017, 12:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -1138,6 +1138,7 @@ wp.pl###shopingBx
 wp.pl##div[class^="_"]:matches-css(min-width: 300px):matches-css(background-color: rgba)
 wp.pl##section#section_shopping
 wp.pl##.scr-wallpaper
+wp.pl##div[class^="_"] > style + div[class]
 wprost.pl###additional-column
 wprost.pl##class[id^="addbox.addbox-"]
 wprost.pl###left-column > .art-area > .art-content > center
@@ -1243,6 +1244,8 @@ www.planowaniewesela.pl###header-banner
 www.filmydokumentalne.eu###pop-up
 www.fitnow.pl##[id^="banners"]
 www.wp.pl##div[class]:matches-css(background: /url\("data:image/png;base64,/)
+www.wp.pl##div[class]:matches-css(width: 300px):matches-css(height: 250px)
+www.wp.pl##div[class]:matches-css(width: 309px):matches-css(height: 182px)
 www.skionline.pl###tt-minisubu
 www.skionline.pl###bbs
 www2.payback.pl##class[id^="all-app-"]
@@ -1507,6 +1510,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||sat-elita.net.pl/images/site_banner_
 ||satkurier.pl/getRandomBanner
 ||satkurier.pl/laravel/banery/
+||sekabet105.com/*banners*/$subdocument
 ||serwer1566493.home.pl^$subdocument,domain=naszamlawa.pl
 ||shoplov.in^$third-party
 ||skiny.pl/*.gif$image
@@ -2018,7 +2022,6 @@ money.pl,o2.pl,portal.abczdrowie.pl,wp.pl,wp.tv##script:inject(abort-on-property
 ||ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/splay/2017/03/xc_laser_300x700_2.jpg
 ||ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2017/03/1200x300.jpg
 ||signoredom.com^$popup
-||www.wp.pl/6yEDzl$script,domain=www.wp.pl
 !
 !
 !--------------------------Rules wykop.pl-------------!
