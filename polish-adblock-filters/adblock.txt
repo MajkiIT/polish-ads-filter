@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 18 May 2017
+! Last modified: 19 May 2017
 ! Expires: 2 days
-! Version: 2017051801
+! Version: 2017051901
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017051801 aktualizacja: czw, 18 maja 2017, 12:45:00
+! v.2017051901 aktualizacja: ptk, 19 maja 2017, 15:05:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -199,7 +199,7 @@ pl/popup.js|$script
 ~komputerswiat.pl,anglia.today,pl##.ad
 ~lech.tv,~wtkplay.pl,~epoznan.pl##[class^="advertisement"]
 ~radekcholewinski.pl,~github.com##A[href$="/reklama"]
-~rozklad-pkp.pl,~gwarant.czest.pl,~sukniaonline.pl##[src*="/banners/banner"]
+~katywroclawskie.pl,~rozklad-pkp.pl,~gwarant.czest.pl,~sukniaonline.pl##[src*="/banners/banner"]
 ~rp.pl##[id*="reklama"]
 ~superpharm.pl,~ceo.com.pl,~linuxiarze.pl,~wirtualny-wojownik.pl,~przerwanareklame.pl,~tvpolska.pl,~smiechawatv.pl,~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org,~motomio.pl,~semilac.pl,pl##[class*="reklama"]
 ~nationalgeographic.com,~wpolityce.pl,~box.com,~hardcorowo.pl,~gumtree.com,~hulu.com,com,pl##[class^="ad-"]
@@ -300,7 +300,9 @@ cda.pl##.bolk-left
 cda.pl###as-narrow1
 cda.pl##.adsense.miniPhotobox
 cda.pl##.muimerPIa
-cda.pl##.muimeRPIa
+cda.pl##.muimErPIa
+cda.pl##a[class][target]:has(img[src*="premium"])
+cda.pl##.block-footer > div:nth-of-type(3)
 cenabiznesu.pl##.img-responsive
 centrumxp.pl###WelcomeBox
 centrumxp.pl##[id*="_Reklama_"]
@@ -739,6 +741,7 @@ naekranie.pl##.sen-gal-sidebar-custom-content
 naekranie.pl##div[style="height: 5.3125rem !important;"]
 naekranie.pl##[class^="welcome_screen"]
 naekranie.pl###adocean-screening-layer > .post-content
+naekranie.pl##a[href^="http://onskr.in/"]
 na-luzie.net##a[href^="http://trafisz.com/"]
 napisy24.pl##.custom_pozioma
 napisy24.pl##[id^="napisy24"]
@@ -1256,6 +1259,7 @@ wyborcza.biz###clpp_wyborczabiz
 wyborcza.biz,wyborcza.pl,gazeta.pl###pianoMediaBoxModal
 wykop.pl,demotywatory.pl,joemonster.org,mistrzowie.org##[id^="bmone2n-"]
 wyspagier.pl##.banner-static-game
+valetudo.bialystok.pl##.darkness-popup
 vidfile.net##.rek
 voxfm.pl###global_belka
 video.anyfiles.pl##[style^="float: left; margin: 0px 2px 5px 3px; width: 315px; height: 260px; text-align: center; position: absolute;"]
@@ -2084,6 +2088,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 ||dashboard.push-ad.com^$script,domain=antyweb.pl
 ||cdn.onesignal.com/sdks/OneSignalSDK.js$script
 ||pushcrew.com$cript
+||cdn.sendpulse.com$script
 !
 !
 !--------------------------Rules on tv streams element hiding rules------------!
