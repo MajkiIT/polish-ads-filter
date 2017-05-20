@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 19 May 2017
+! Last modified: 20 May 2017
 ! Expires: 2 days
-! Version: 2017051902
+! Version: 2017052001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017051902 aktualizacja: ptk, 19 maja 2017, 15:20:00
+! v.2017052001 aktualizacja: sob, 20 maja 2017, 14:40:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -139,6 +139,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##.houdini
 ##.ipsAdvertisement
 ##.jqmOverlay
+##.banery_750_100
 ##.mod.mod_cpCommerce.small
 ##.opacitybox
 ##.oponeoWidget
@@ -208,6 +209,8 @@ pl/popup.js|$script
 !------------------------Specific element hiding rules------------------------!
 24gliwice.pl#@##adsense
 24gliwice.pl##a[href^="http://www.24gliwice.pl/r/counter-baners.php"]
+24opole.pl##.col.left > .acl_bd
+24opole.pl##.lay > .bd
 24tvonline.pl##.dataContainer
 300polityka.pl##.dcmads
 300polityka.pl###text-3
@@ -306,7 +309,7 @@ cda.pl##.block-footer > div:nth-of-type(3)
 cenabiznesu.pl##.img-responsive
 centrumxp.pl###WelcomeBox
 centrumxp.pl##[id*="_Reklama_"]
-centrumxp.pl###ctl00_sldr_nowoczesnyOffice1
+centrumxp.pl##[id^="ctl00_sldr_nowoczesnyOffice"]
 centrumdruku3d.pl###slide-bottom-popup
 centrumdruku3d.pl##ul > div
 centrumdruku3d.pl###attachment_4083 > div
@@ -774,6 +777,7 @@ oboom.com###wcontent_wnd1
 oboom.com###wnd1
 off-road.pl##.textwidget
 oleole.pl###pop_newsletter_inner
+oleole.pl##.banners-header
 olx.pl##.otokredytbox
 olx.pl##.screen-link.abs
 onet.pl##span.newsAdd
@@ -1282,6 +1286,7 @@ zarabiara.pl##[class^="new_ad"]
 zaufanatrzeciastrona.pl###sidebar > a[href="https://z3s.pl/ydAa"]
 zaufanatrzeciastrona.pl###sidebar > a[href="https://zaufanatrzeciastrona.pl/ydAa"]
 zaufanatrzeciastrona.pl##a[href="https://zaufanatrzeciastrona.pl/ydAb"]
+zaufanatrzeciastrona.pl##a[href="https://zaufanatrzeciastrona.pl/ydAc"]
 zaufanatrzeciastrona.pl##a[href="https://zaufanatrzeciastrona.pl/t1.php"]
 zaufanatrzeciastrona.pl##a[href="https://zaufanatrzeciastrona.pl/t2.php"]
 zaufanatrzeciastrona.pl###sidebar > a[href] > img
@@ -1306,6 +1311,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 |http://mon.services.tvn.pl/_pix/uri-$image
 |http://pix2.services.tvn.pl/pix2.js
 |https://$script,third-party,domain=shinden.pl
+||24opole.pl/bimg/$image
 ||40ton.net/wp-content/uploads/*.gif$image
 ||40ton.net/wp-content/uploads/*.png$image
 ||4lomza.pl/banner/$image
@@ -1422,6 +1428,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||incontext.pl^$script
 ||informacjelokalne.pl/images/banners/$image
 ||inframe.platform.onet.pl/v1/
+||instalacjebudowlane.pl/banery$image
 ||interia.pl/#utm_source$popup,domain=cdaction.pl
 ||interia.pl/*/ads-sidebar$script
 ||interia.pl/iframe$subdocument
@@ -1753,6 +1760,7 @@ spottedlublin.pl#@#.share-container
 ##.adblock-placeholder
 ##.ban-69.row.ban
 12zawodnik.pl##.ads-checker-msg
+24opole.pl#@#.ad
 adtaily.pl#@##sponsorText
 androidbeztajemnic.com###text-16.widget.widget_text
 anyfiles.pl##.adblInfo
@@ -2089,6 +2097,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 ||cdn.onesignal.com/sdks/OneSignalSDK.js$script
 ||pushcrew.com$cript
 ||cdn.sendpulse.com$script
+||salesmanago.pl/api/push/$xmlhttprequest
 !
 !
 !--------------------------Rules on tv streams element hiding rules------------!
