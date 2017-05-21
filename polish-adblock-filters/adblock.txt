@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 20 May 2017
+! Last modified: 21 May 2017
 ! Expires: 2 days
-! Version: 2017052001
+! Version: 2017052101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017052001 aktualizacja: sob, 20 maja 2017, 14:40:00
+! v.2017052101 aktualizacja: nie, 21 maja 2017, 21:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -271,6 +271,7 @@ bajkitv.pl###watch
 bankier.pl##[class$="Adv"]
 bebzol.com###right-col > .r-stick-box
 benchmark.pl###marketplaceProductBox
+benchmark.pl##.screenContainer
 bezuzyteczna.pl,zumi.pl##[class^="special"]
 bezuzyteczna.pl##[style="width:700px;height:200px;"]
 bez-cenzury24.pl##[div^="ips-popup"]
@@ -936,6 +937,7 @@ satkurier.pl###wrapper > center > center
 satkurier.pl##[id^="banner_"]
 saturn.pl###nl_modal
 saturn.pl###nl_overlay
+seciki.pl##.crek
 serialeonline.pl###alternative-banner
 serwery.wiaderko.com##.wtaily
 serwery.wiaderko.com##.rounded
@@ -986,21 +988,12 @@ swieta.wp.pl##SECTION + .section.section--bg-white.products--section
 stalowemiasto.pl##.main-cbaner
 steam.io###dd_ajax_float
 store.office.live.com##.popupOuterCellRight
-stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"][align="center"]:not([width])
-stooq.pl##div[onclick^="(function"][onclick*="window.open"][style^="animation"]
 stooq.pl##[id] > b > a[href^="?"]
 stooq.pl,stooq.com##:xpath(//*[@align="center"]/*[@id][contains(text(),"REKLAMA")])
 stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"]:not([width]):has([id="ads_goog_1"])
-stooq.com##div[onclick^="(function"][onclick*="window.open"][style^="animation"]
-stooq.com##[id] > b > a[href^="?"]
-stooq.com##a[href^="//stooq.com/ads/f/"]
-stooq.com###f13 > table:has(#f13 > a[href^="//stooq.com/ads/"])
-stooq.com###f13 > table:if(#f13 > b:has-text(Artykuł Sponsorowany))
-stooq.com##table:has(:scope > tbody > tr > td > #aswift_1_expand)
-stooq.pl###f13 > table:has(#f13 > a[href^="//stooq.pl/ads/"])
-stooq.pl##a[href^="//stooq.pl/ads/f/"]
-stooq.pl###f13 > table:if(#f13 > b:has-text(Artykuł Sponsorowany))
-stooq.pl##table:has(:scope > tbody > tr > td > #aswift_1_expand)
+stooq.pl,stooq.com##tbody > tr > td[width="1"]
+stooq.pl,stooq.com##tbody > tr > td[align="center"] > div[style="width:300;height:250"]
+stooq.pl,stooq.com##tbody > tr > td > table[width="300"][height="250"][border="0"][cellpadding="0"][cellspacing="0"][align="center"]
 strefaanime.pl###text-6
 strefagry.pl##[style="width:540px;margin:10px auto;"]
 strefagry.pl##.item_d
@@ -1080,6 +1073,7 @@ twoje-seriale.tv##a[href^="http://www.videostream.pl/"]
 twojepc.pl##td[width="300"][align="left"][valign="top"]
 ulub.pl##[class^="ads_szuk"]
 ulub.pl##.right_col
+upflix.pl##.hidden-xs
 uploaduj.com##.guestMessage
 uploaduj.net##.center-block
 uploaduj.com##.UwOWM2OT
