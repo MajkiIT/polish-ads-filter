@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 26 May 2017
+! Last modified: 28 May 2017
 ! Expires: 2 days
-! Version: 2017052601
+! Version: 2017052801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017052601 aktualizacja: ptk, 26 maja 2017, 19:00:00
+! v.2017052801 aktualizacja: nie, 28 maja 2017, 14:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -41,7 +41,7 @@
 _baner/980x200
 _banery/980x200
 pl/*/rodzinnawycieczka/$image,domain=wp.pl
-~fakt.pl,pl##.trizer-bnr
+/wp-content/plugins/unblock-adsense/*/adunblock$stylesheet,script
 !
 !
 !-----------------------SMS Fake Pages-------------------------------!
@@ -204,6 +204,7 @@ pl/popup.js|$script
 ~rp.pl##[id*="reklama"]
 ~superpharm.pl,~ceo.com.pl,~linuxiarze.pl,~wirtualny-wojownik.pl,~przerwanareklame.pl,~tvpolska.pl,~smiechawatv.pl,~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org,~motomio.pl,~semilac.pl,pl##[class*="reklama"]
 ~nationalgeographic.com,~wpolityce.pl,~box.com,~hardcorowo.pl,~gumtree.com,~hulu.com,com,pl##[class^="ad-"]
+~fakt.pl,pl##.trizer-bnr
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -1110,6 +1111,7 @@ videowood.tv###tbl1
 vshare.io###pplay
 wachamksiazki.pl##.sr
 wbj.pl##.akpbanner
+wcograc.pl##.click
 webcamera.pl##[style="width:728px;height:90px;"]
 webmasteruj.pl###elComment_x
 webmasteruj.pl##[style="margin:0 auto; text-align:center; margin-bottom:5px;"]
@@ -2049,7 +2051,7 @@ money.pl,o2.pl,portal.abczdrowie.pl,wp.pl,wp.tv##script:inject(abort-on-property
 ||ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/splay/2017/03/xc_laser_400x400_2.jpg
 ||ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/splay/2017/03/xc_laser_300x700_2.jpg
 ||ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2017/03/1200x300.jpg
-||signoredom.com^$popup
+|https://www.wp.pl/fT3*=/$script,domain=www.wp.pl
 !
 !
 !--------------------------Rules wykop.pl-------------!
