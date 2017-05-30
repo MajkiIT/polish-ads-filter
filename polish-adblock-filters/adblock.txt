@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 29 May 2017
+! Last modified: 30 May 2017
 ! Expires: 2 days
-! Version: 2017052902
+! Version: 2017053001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017052902 aktualizacja: pon, 29 maja 2017, 21:00:00
+! v.2017053001 aktualizacja: wt, 30 maja 2017, 09:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -385,6 +385,7 @@ doz.pl##.clearfix.container > .clearfix.row
 drukowanka.pl##[id^="v4u_"]
 dstar.pzk.pl##[style$="background: #dfdfdf;"]
 dstar.pzk.pl##[style^="text-align: center; font-size: 8px; padding:"]
+dx-team.org##body > center
 dzisiajwgliwicach.pl##img[src*="Baner-590x300-"]
 dziennik.pl##[style="text-align:center; margin: 0 0 10px 0;padding-bottom: 20px"]
 dziennik.pl##img[src^="data:image/jpeg;base64"]
@@ -521,6 +522,7 @@ grajewo24.pl,elk24.pl,augustow24.pl###popup
 gram.pl##.stripeBar
 gram.pl###billBoardAreaWrapper
 grupa7j.pl##table[style*="img/bg-black.png"] > tbody > tr
+groupon.pl###ls-in-app-messages
 gry-online.pl##.ban-fp-970x200
 gry-online.pl##[class$="-stopka"]
 gry-online.poszkole.pl##.ad-info
@@ -957,6 +959,7 @@ saturn.pl###nl_modal
 saturn.pl###nl_overlay
 seciki.pl##.crek
 serialeonline.pl###alternative-banner
+serialeonline.pl##.white-box
 serwery.wiaderko.com##.wtaily
 serwery.wiaderko.com##.rounded
 shinden.pl###ad-player
@@ -985,6 +988,7 @@ spidersweb.pl##.twelve.columns[style="margin-bottom:20px"]
 spidersweb.pl##.sidebar-panel[data-equalizer-watch^="entrieshome"][id^="sidebar_anchor_parent_"]
 spidersweb.pl##a[href*="&utm_medium=baner"][target] > img[src^="http://ocs-pl.oktawave.com/"]:not([class])
 spidersweb.pl###top_banner
+spidersweb.pl##.ads
 sport.pl##.entry.externalEntry
 sport.pl##.mod.mod_uzr_sport6
 sportluz.com##.ads_under_menu
@@ -1074,6 +1078,8 @@ trasa.info###forum-box
 trasa.info,kreskowki-online.pl###partners
 trasa.info###trip
 treningbiegacza.pl###under-menu-adds-wrapper
+trodatreleases.com##.bannertop
+trodatreleases.com##.bgrey.block
 trojmiasto.pl##.banner-a
 trojmiasto.pl###watermark[href^="http://www.trojmiasto.pl/rd/"]
 troman.pl##DIV[style="max-width: 970px; padding: 5px; background: #000; margin: 20px auto"]
@@ -2118,7 +2124,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 !
 !--------------------------Rules for pages with random adv scripts------------!
 /^http:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\/[a-zA-Z0-9]{30,}/$script,popup,document
-/^(http|https):\/\/[a-zA-Z.]{10,}\.com\/[a-zA-Z]{1,}\.\js/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|stop-limitom.pl|vidlox.tv|playerbox.net|alltube.tv|segos.es|efilmy.online|video.penny.ie|fileone.tv|serialeonline.pl|filiser.tv|streamango.com|kinoline.pl|cda-hd.pl|nasze-kino.online|vidto.pl|raptu.com|rapidvideo.com|ekinko.pl|data-scheme
+/^(http|https):\/\/[a-zA-Z.]{10,}\.com\/[a-zA-Z]{1,}\.\js/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|stop-limitom.pl|vidlox.tv|playerbox.net|alltube.tv|segos.es|efilmy.online|video.penny.ie|fileone.tv|serialeonline.pl|filiser.tv|streamango.com|kinoline.pl|cda-hd.pl|nasze-kino.online|vidto.pl|raptu.com|rapidvideo.com|ekinko.pl|data-scheme|vidfile.net
 /^http:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|alltube.tv
 /^(http|https):\/\/[a-z0-9]{3,20}\.[a-z]{2,11}\/[0-9]{3,10}/$xmlhttprequest,script,stylesheet,domain=streamin.to|raptu.com|flashx.tv|rapidvideo.com|filiser.tv|filmyiseriale.net|cda-hd.pl
 /^(http|https):\/\/[a-z0-9]{5,}\.com\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{5,}\.\js/$script,domain=vidto.me|filiser.tv|fileone.tv
@@ -2134,7 +2140,10 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 ||pushcrew.com$cript
 ||cdn.sendpulse.com$script
 ||salesmanago.pl/api/push/$xmlhttprequest
-||gstatic.com/firebasejs/*/firebase-messaging.js$domain=dobreprogramy.pl
+||gstatic.com/firebasejs/*/firebase-messaging.js$script
+||youtubersi.pl/themes/default/js/notify.js$script
+||savecart.pl/*/script.php$script
+||push-ad.com/integration.php$script
 !
 !
 !--------------------------Rules on tv streams element hiding rules------------!
