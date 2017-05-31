@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 30 May 2017
+! Last modified: 31 May 2017
 ! Expires: 2 days
-! Version: 2017053002
+! Version: 2017053102
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017053002 aktualizacja: wt, 30 maja 2017, 10:10:00
+! v.2017053102 aktualizacja: sr, 31 maja 2017, 09:05:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -184,6 +184,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##a[href^="http://delivery.clickonometrics.pl/campaign="]
 ##a[href^="http://www.trizer.pl/?utm_source"]
 ##a[href^="https://www.solutions4ad.com/partner/scripts/click.php"]
+##a[href^="https://ad.zanox.com/ppc/"]
 ##div#skapiec_ad
 ##img[alt="reklama"]
 ##ul.sharing-tools
@@ -1790,6 +1791,7 @@ wpworld.pl,windowsowo.pl#@##adBanner
 memytutaj.pl#@##top-ad
 emag.pl#@#[href^="http://pubads.g.doubleclick.net/"]
 gralandia.tv#@##ad_content
+pks-czestochowa.pl#@#.widget-advertisement
 spottedlublin.pl#@#.share-container
 !
 !
@@ -1816,6 +1818,7 @@ epiotrkow.pl##[id^="abpnot"]
 fly4free.pl##.warnadblk
 forum.vw-passat.pl###ct_i
 gragieldowa.pl##.login
+ikorektor.pl###adb
 ipon.pl##.alert-warning
 istotne.pl##.modal-dialog
 kursbootstrap.pl##.alert-dismissible.alert-success.alert
@@ -1934,6 +1937,7 @@ zrabatowani.pl###popup-adblock-bottom
 @@||sjp.pwn.pl/ads.js$script,domain=sjp.pwn.pl
 @@||static.forsal.pl/js/ads.js$script
 @@||static.gazetaprawna.pl/js/ads.js$script
+@@||static.videostar.pl/static/assets/js/adcheck.min.js^
 @@||video.gazeta.pl/cdn/ads/ad/banner/_adsense_/_adserver/_adview_.ad.json$xmlhttprequest,domain=video.gazeta.pl
 @@||vod.pl^$generichide
 @@||webcamera.*/js/fuckadblock.js$script,domain=webcamera.pl|webcamera.live
@@ -1987,7 +1991,7 @@ futbol.pl##header > .container > a >img
 futbol.pl##.adroll-block
 freehdsport.com,freehqsport.eu##[id*="overlay_Player"]
 futbolhd.tv##.zareklamuj_sie_z_lewej
-futbolhd.tv###footer
+futbolhd.tv,polishcorrector.com,korektoronline.pl###footer
 futbolhd.tv##TD[style="margin-left: -25px; font-size: 14px; padding: 10px; padding-top: 3px; letter-spacing: -0.25px; text-align: center; color: #1e84ed"]
 goodrtmp.com###r
 goodrtmp.com###ra
@@ -2138,13 +2142,14 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 !--------------------------Stupid notifications------------!
 ||dashboard.push-ad.com^$script,domain=antyweb.pl
 ||cdn.onesignal.com/sdks/OneSignalSDK.js$script
-||pushcrew.com$cript
+||pushcrew.com$script
 ||cdn.sendpulse.com$script
 ||salesmanago.pl/api/push/$xmlhttprequest
 ||gstatic.com/firebasejs/*/firebase-messaging.js$script
 ||youtubersi.pl/themes/default/js/notify.js$script
 ||savecart.pl/*/script.php$script
 ||push-ad.com/integration.php$script
+||pushango.com^$script,domain=~pushango.com
 !
 !
 !--------------------------Rules on tv streams element hiding rules------------!
