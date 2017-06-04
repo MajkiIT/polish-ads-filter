@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 2 June 2017
+! Last modified: 4 June 2017
 ! Expires: 2 days
-! Version: 2017060201
+! Version: 2017060401
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017060201 aktualizacja: ptk, 2 czerwca 2017, 08:55:00
+! v.2017060401 aktualizacja: nie, 4 czerwca 2017, 20:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -175,6 +175,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##[id^="pianoMediaBoxInfo"]
 ##[id^="slot_ad_billboard"]
 ##[id^="sponsorowany"]
+##[id^="AdsDetailsTop"]
 ##a[href*="/ad/click/"]
 ##a[href*="adnow.com/click"]
 ##a[href*="bbelements.com/please/"]
@@ -792,6 +793,8 @@ nysa24.pl###Mod348
 o2.pl##.box-sidebar.box-sidebar-1
 o2.pl##.content-row.content-row-15.x-ecommerce
 o2.pl##div.popup-wrap
+o2.pl##div[class^="_"][style^="width:"][style*="background-color:rgba(24"][style$=");"]
+o2.pl##div[class^="_"][style^="width:"][style*="background-color: rgba(24"][style$=");"]
 obligacje.pl##a[href*=".bankier.pl/click/"]
 oboom.com###bgfadewnd1
 oboom.com###wcontent_wnd1
@@ -1759,6 +1762,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||pclab.pl/img/extra/*_logo.$image,domain=pclab.pl
 @@||polotv.pl/assets/js/ads.js$script,domain=polotv.pl
 @@||pubads.g.doubleclick.net/gampad/ad$image,domain=www.emag.pl
+@@||pubads.g.doubleclick.net/gampad/ads?sz=*&iu=*Grydladzieci.pl_*&*&output=xml_vast3&unviewed_position_start=1&url=http%3A%2F%2Fwww.grydladzieci.pl%2F$domain=imasdk.googleapis.com
 @@||r.sascdn.com/diff/js/smart.js$script,domain=www4.rp.pl
 @@||remiza.com.pl/ads/haft/jquery.slides.min.js$script
 @@||rtax.criteo.com$domain=ekstraklasa.tv|itvn.pl|player.pl|ttv.pl|tvn.pl|tvn24.pl|tvn24bis.pl|tvn7.pl|tvnplayer.pl|tvnstyle.pl|tvnturbo.pl
