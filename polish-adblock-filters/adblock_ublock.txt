@@ -3,15 +3,15 @@
 ! polskie filtry do uBlocka uzupelnienie
 ! Collaborators: F4z, xxcriticxx
 ! Homepage: https://www.certyficate.it/
-! Last modified: 4 June 2017
+! Last modified: 6 June 2017
 ! Expires: 2 days
-! Version: 2017060401
+! Version: 2017060601
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017060401 aktualizacja: nie, 4 czerwca 2017, 20:30:00
+! v.2017060601 aktualizacja: wt, 6 czerwca 2017, 09:20:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -116,6 +116,7 @@ dobreprogramy.pl##body#top:style(background: none !important;)
 dobreprogramy.pl##body.variant-mobile div[style="color: #A9A9A9; text-align:center;font-size:11px;"]:style(visibility: hidden!important;)
 forum.dobreprogramy.pl##body[class]:style(background-image: none !important;)
 dobreprogramy.pl##script:inject(setTimeout-defuser.js, o = null, n || e.apply(r, i))
+dobreprogramy.pl##script:inject(abort-on-property-read.js, Element.prototype.attachShadow)
 !
 ! purepc.pl
 purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !important; position: absolute !important;)
