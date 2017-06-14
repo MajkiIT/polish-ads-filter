@@ -3,21 +3,22 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 13 June 2017
+! Last modified: 14 June 2017
 ! Expires: 2 days
-! Version: 2017061301
+! Version: 2017061401
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017061301 aktualizacja: wt, 13 czerwca 2017, 14:00:00
+! v.2017061401 aktualizacja: sr, 14 czerwca 2017, 09:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
 ##a[href*="techmaniak.pl/www/gact/ckk.php"]
 .*sales*.pl/offers/$image
 .gomoney.pl/article
+.pl/images/reklama120x60.jpg$image
 .pl/*/adds/
 .pl/*/ads/
 .pl/data/cameras/banner_$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
@@ -176,7 +177,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##[id^="slot_ad_billboard"]
 ##[id^="sponsorowany"]
 ##[id^="AdsDetailsTop"]
-##a[href*="/ad/click/"]
+~agatameble.pl##a[href*="/ad/click/"]
 ##a[href*="adnow.com/click"]
 ##a[href*="bbelements.com/please/"]
 ##a[href="http://upfiles.net/ref/"]
@@ -911,6 +912,7 @@ press.pl###topBanner
 pless.pl##.resizable970x250
 procesor.pl###big-rectangle
 programosy.pl##.web.bn-b-0
+prostoomuzyce.pl##[id^="block-views-banery-block"]
 prv.pl###prv-billboard
 prv.pl###prvBottomParent
 przedszkola.edu.pl##.sidebar__widget:nth-of-type(2)
@@ -1387,7 +1389,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||antyweb.pl/wp-content/themes/antyweb.autentika/horizon/
 ||antyweb.pl/wp-content/uploads/2017/03/horizon-cover.jpg$image
 ||antyweb.pl/wp-content/themes/antyweb.autentika/aadv/js/aadv.js
-||antyweb.pl/wp-content/uploads/20*/*/*_screening.jpg*.png
+||antyweb.pl/wp-content/uploads/20*/*/*1920x1080*.jpg
 ||api.videostar.pl/ad/show$xmlhttprequest,domain=videostar.pl
 ||asa.allegrostatic.*/display-pl/$image
 ||avanti24.pl/pub/ips/$subdocument
