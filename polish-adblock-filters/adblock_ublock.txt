@@ -3,15 +3,15 @@
 ! polskie filtry do uBlocka uzupelnienie
 ! Collaborators: F4z, xxcriticxx
 ! Homepage: https://www.certyficate.it/
-! Last modified: 12 June 2017
+! Last modified: 15 June 2017
 ! Expires: 2 days
-! Version: 2017061201
+! Version: 2017061501
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017061201 aktualizacja: pon, 12 czerwca 2017, 10:25:00
+! v.2017061501 aktualizacja: czw, 15 czerwca 2017, 12:00:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -52,12 +52,6 @@ motobanda.pl###mvideo:style(z-index: 1!important;)
 ! Puste miejsce po reklamie
 @@||national-geographic.pl/bundles/burdacore/js/adv.js$script
 national-geographic.pl##.advertising-billboard:style(height: 0px !important;)
-!
-! http://www.vidzer.net/
-! Ominięcie przycisku "Close Ad and Watch as Free User"
-vidzer.net###step1
-vidzer.net###hideOnClick
-vidzer.net###playerVidzer:style(display: block !important;)
 !
 ! http://www.wykop.pl/
 ! Usunięcie komunikatu o ciasteczkach
@@ -127,7 +121,7 @@ purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !importa
 ! wp.pl
 facet.wp.pl,film.wp.pl,gry.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,moto.wp.pl,opinie.wp.pl,sportowefakty.wp.pl,tech.wp.pl,turystyka.wp.pl,wiadomosci.wp.pl##script:inject(abort-on-property-write.js, habahaba)
 wp.pl##script:inject(abort-on-property-write.js, testMess)
-@@|https://www.wp.pl/BfuvDgu*=/$script,domain=www.wp.pl
+@@|https://www.wp.pl/9dvHqtBHU*=/$script,domain=www.wp.pl
 !
 ! kurnik.pl
 kurnik.pl##.adsbygoogle:style(height: 1px !important; width: 1px !important;)
