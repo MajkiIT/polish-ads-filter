@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 15 June 2017
+! Last modified: 18 June 2017
 ! Expires: 2 days
-! Version: 2017061501
+! Version: 2017061801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017061501 aktualizacja: czw, 15 czerwca 2017, 11:55:00
+! v.2017061801 aktualizacja: nie, 18 czerwca 2017, 22:25:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -251,10 +251,12 @@ androidpolska.pl###rectangle_top_ad
 androidpolska.pl###omg_art
 androidpolska.pl###middle-box-adk
 androidpolska.pl###nextClickAd
+androidpolska.pl###yeailRi
 angielski.slowka.pl###acceptPopup
 angielski.slowka.pl###newsletterConfirm
 anglia4u.pl###gkSidebar
 anglia.today##[href^="/redirect/ad/background/"]
+anyfiles.pl##[id^="adsbox_"]
 antyweb.pl##.aadv
 antyweb.pl##.group.big.box-adv
 antyweb.pl##.visible.grid-box-big > .group.grid > .customScroller > .cs-wrapper.group > .grid-item.width-4.height-2.transparent
@@ -427,6 +429,7 @@ eurogamer.pl###leaderboard
 eurogamer.pl###skyscraper
 eurogamer.pl###promo-section
 evertiq.pl##[id^="bnr"]
+f1wm.pl##[id^="bans_"]
 fangol.pl##[style="text-align:center;"]
 flashscore.pl###box-over-content-a
 flashscore.pl##.scrolling-box-under-content
@@ -995,6 +998,7 @@ sklep.fipro.pl###tooltipmessage
 sklep.habys.pl###newsletterModal
 sklep.habys.pl##.modal-backdrop.fade.in
 sklep.habys.pl##.modal-content
+skokinarciarskie.pl##DIV[style="width: 750px; height: 200px; text-align: center; margin: auto; margin-top: 4px; margin-bottom: -4px;"]
 slupca.pl,gry-online.pl###baner-top
 snip.ly###profilePhoto
 softonet.pl##A[data-redirect^="http://click.plista.com/redirect.php"]
@@ -1008,6 +1012,7 @@ spidersweb.pl##.sidebar-panel[data-equalizer-watch^="entrieshome"][id^="sidebar_
 spidersweb.pl##a[href*="&utm_medium=baner"][target] > img[src^="http://ocs-pl.oktawave.com/"]:not([class])
 spidersweb.pl###top_banner
 spidersweb.pl##.ads
+spidersweb.pl###nonsticky_1
 sport.pl##.entry.externalEntry
 sport.pl##.mod.mod_uzr_sport6
 sportluz.com##.ads_under_menu
@@ -1346,6 +1351,7 @@ zaufanatrzeciastrona.pl###sidebar > a[href] > img
 zaufanatrzeciastrona.pl###wrap > #bar2
 zaufanatrzeciastrona.pl##body > * > * > a[href]:not([href="//zaufanatrzeciastrona.pl"]) > img
 zaufanatrzeciastrona.pl###sponsor2
+zaufanatrzeciastrona.pl###rab1
 zespolmi.pl##a[href^="https://prisonwarsonline.com/"]
 zszywka.pl##A[style="display: block; position: fixed; bottom: 0px; box-sizing: border-box; width: 100%; background-color: rgb(129, 197, 78); background-image: none !important; background-repeat: no-repeat; background-attachment: scroll; background-clip: border-box; background-origin: padding-box; background-position: 20px 50%; background-size: auto auto; color: rgb(255, 255, 255); text-align: center; padding: 1em 150px; z-index: 1000; white-space: pre;"]
 zumi.pl###couponsBar
@@ -1570,6 +1576,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||ppstatic.pl/*/tymczasowe/$image
 ||ppstatic.pl/*/showcase/$image,domain=gratka.pl
 ||ppwidget.skapiec.pl/widget/$script
+||prl24.co.uk/res/rotate/$image
+||www.radioduch.pl/up_files/oferta/$image
 ||rect.b2bpersonals.net^
 ||redcoon.pl/res/Image/special$image
 ||redcoon.pl/res/outer/201*/$image
@@ -2156,7 +2164,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 /^http:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\/[a-zA-Z0-9]{30,}/$script,popup,document
 /^(http|https):\/\/[a-zA-Z.]{10,}\.com\/[a-zA-Z]{1,}\.\js/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|stop-limitom.pl|vidlox.tv|playerbox.net|alltube.tv|segos.es|efilmy.online|video.penny.ie|fileone.tv|serialeonline.pl|filiser.tv|streamango.com|kinoline.pl|cda-hd.pl|nasze-kino.online|vidto.pl|raptu.com|rapidvideo.com|ekinko.pl|data-scheme|vidfile.net|sharevideo.pl
 /^http:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|alltube.tv
-/^(http|https):\/\/[a-z0-9]{3,20}\.[a-z]{2,11}\/[0-9]{3,10}/$xmlhttprequest,script,stylesheet,domain=streamin.to|raptu.com|flashx.tv|rapidvideo.com|filiser.tv|filmyiseriale.net|cda-hd.pl
+/^(http|https):\/\/[a-z0-9]{3,20}\.[a-z]{2,11}\/[0-9]{3,10}/$xmlhttprequest,script,stylesheet,domain=streamin.to|raptu.com|flashx.tv|rapidvideo.com|filiser.tv|filmyiseriale.net|cda-hd.pl|fileone.tv
 /^(http|https):\/\/[a-z0-9]{5,}\.com\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{5,}\.\js/$script,domain=vidto.me|filiser.tv|fileone.tv
 /^http:\/\/[a-zA-Z0-9]{8,20}\.com\/analytics\/[0-9]{5,7}/$subdocument,script,popup
 /^(http|https)://[a-z0-9]{5,}.top/[a-z0-9]{1,}/[a-z0-9]{1,}/[a-z0-9]{1,}/[a-z0-9]{5,}.\js/$script
