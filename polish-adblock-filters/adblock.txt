@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 19 June 2017
+! Last modified: 20 June 2017
 ! Expires: 2 days
-! Version: 2017061902
+! Version: 2017062001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017061902 aktualizacja: pon, 19 czerwca 2017, 20:30:00
+! v.2017062001 aktualizacja: wt, 20 czerwca 2017, 10:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -62,6 +62,7 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||nextclick.pl^$script
 ||thevideo.me/assets/*popjs$script
 ||afftrack001.com^
+||vdztrack.com/$popup
 !
 !
 !-----------------------Elements hide on movie-----------------------!
@@ -2161,14 +2162,14 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 !
 !--------------------------Rules for pages with random adv scripts------------!
 /^http:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\/[a-zA-Z0-9]{30,}/$script,popup,document
-/^(http|https):\/\/[a-zA-Z.]{10,}\.com\/[a-zA-Z]{1,}\.\js/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|stop-limitom.pl|vidlox.tv|playerbox.net|alltube.tv|segos.es|efilmy.online|video.penny.ie|fileone.tv|serialeonline.pl|fili.tv|streamango.com|kinoline.pl|cda-hd.pl|nasze-kino.online|vidto.pl|raptu.com|rapidvideo.com|ekinko.pl|data-scheme|vidfile.net|sharevideo.pl
+/^(http|https):\/\/[a-zA-Z.]{10,}\.com\/[a-zA-Z]{1,}\.\js/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|stop-limitom.pl|vidlox.tv|playerbox.net|alltube.tv|segos.es|efilmy.online|video.penny.ie|fileone.tv|serialeonline.pl|fili.tv|streamango.com|kinoline.pl|cda-hd.pl|nasze-kino.online|vidto.pl|raptu.com|rapidvideo.com|data-scheme|vidfile.net|sharevideo.pl
 /^http:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=lobu.pl|devil-torrents.pl|electro-torrent.pl|auratorrent.pl|alltube.tv
 /^(http|https):\/\/[a-z0-9]{3,20}\.[a-z]{2,11}\/[0-9]{3,10}/$xmlhttprequest,script,stylesheet,domain=streamin.to|raptu.com|flashx.tv|rapidvideo.com|fili.tv|filmyiseriale.net|cda-hd.pl|fileone.tv
 /^(http|https):\/\/[a-z0-9]{5,}\.com\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{5,}\.\js/$script,domain=vidto.me|fili.tv|fileone.tv
 /^http:\/\/[a-zA-Z0-9]{8,20}\.com\/analytics\/[0-9]{5,7}/$subdocument,script,popup
 /^(http|https)://[a-z0-9]{5,}.top/[a-z0-9]{1,}/[a-z0-9]{1,}/[a-z0-9]{1,}/[a-z0-9]{5,}.\js/$script
 /^http://[a-zA-Z0-9]{8,20}.com/embed-[0-9a-z]{5,7}/$subdocument,script,popup,domain=cda-hd.pl
-/^(http|https):\/\/cdn\.[a-z]{3,}\.[a-z]{4,}\/[a-z]{4,}\.js/$script,domain=ekinko.pl
+/^http:\/\/[a-zA-Z0-9]{5,20}\.com\/watch\?/$popup
 !
 !
 !--------------------------Stupid notifications------------!
