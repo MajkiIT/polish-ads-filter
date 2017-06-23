@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii
 ! Homepage: https://www.certyficate.it/
-! Last modified: 20 June 2017
+! Last modified: 23 June 2017
 ! Expires: 2 days
-! Version: 2017062006
+! Version: 2017062301
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017062006 aktualizacja: wt, 20 czerwca 2017, 13:05:00
+! v.2017062301 aktualizacja: ptk, 23 czerwca 2017, 09:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -546,7 +546,9 @@ grydladzieci.pl##.first.section > [style="width:748px;height:90px;margin:0 auto;
 gsmservice.pl###banner6
 gsmmaniak.pl###okazja-dnia
 gsmmaniak.pl##a[href^="http://tofo.pl"]
-gwiazdy.wp.pl##.EqSfA
+gwiazdy.wp.pl##[class^="_"][href^="https://gwiazdy.wp.pl/"][target="_blank"]>FIGURE[class^="_"]
+gwiazdy.wp.pl##[class^="_2"][href^="https://gwiazdy.wp.pl/"][target="_blank"]
+gwiazdy.wp.pl##[class^="_2"][href^="https://gwiazdy.wp.pl/"] + SPAN[class^="_2"]
 hdtv.com.pl##center > a[href="http://hushhush.pl"] > img
 hdtv.com.pl##[id^="edit"] > table:nth-of-type(n+2)
 hdtv.com.pl###links
@@ -1067,6 +1069,7 @@ swirtv.czo.pl##[href^="./redir"]
 swistak.pl###first > a[href^="http://"]
 sucharry.pl##[style*="width: 336px;"]
 supernowosci24.pl###notificationbar
+suwalki.info###banner-billboard
 sympatia.onet.pl###backdrop-container
 sympatia.onet.pl###close-frame
 szybkiefilmy.pl##[href^="http://2hx.pl/"]
@@ -1706,6 +1709,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||zulawyimierzeja24.pl/assets/js/jwplayer/jwplayer.html5.js
 ||zyciesiedleckie.pl/banery_foto/$image
 ||zyciesokolowa.pl/banery_$image
+||zyciegrajewa.pl/adv/$image
 !
 !
 !---------------------------------Multi Regex----------------------------------!
@@ -2165,7 +2169,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 /^(http|https):\/\/[a-zA-Z.]{10,}\.com\/[a-zA-Z]{1,}\.\js/$script,domain=devil-torrents.pl|electro-torrent.pl|auratorrent.pl|stop-limitom.pl|vidlox.tv|playerbox.net|alltube.tv|segos.es|efilmy.online|video.penny.ie|fileone.tv|serialeonline.pl|fili.tv|streamango.com|kinoline.pl|cda-hd.pl|nasze-kino.online|vidto.pl|raptu.com|rapidvideo.com|data-scheme|vidfile.net|sharevideo.pl|sharing-box.cloud
 /^http:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=devil-torrents.pl|electro-torrent.pl|auratorrent.pl|alltube.tv
 /^(http|https):\/\/[a-z0-9]{3,20}\.[a-z]{2,11}\/[0-9]{3,10}/$xmlhttprequest,script,stylesheet,domain=streamin.to|raptu.com|flashx.tv|rapidvideo.com|fili.tv|filmyiseriale.net|cda-hd.pl|fileone.tv
-/^(http|https):\/\/[a-z0-9]{5,}\.com\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{5,}\.\js/$script,domain=vidto.me|fili.tv|fileone.tv|alltube.tv
+/^(http|https):\/\/[a-z0-9]{5,}\.com\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{5,}\.js/$script,domain=vidto.me|fili.tv|fileone.tv|alltube.tv
 /^http:\/\/[a-zA-Z0-9]{8,20}\.com\/analytics\/[0-9]{5,7}/$subdocument,script,popup
 /^(http|https)://[a-z0-9]{5,}.top/[a-z0-9]{1,}/[a-z0-9]{1,}/[a-z0-9]{1,}/[a-z0-9]{5,}.\js/$script
 /^http://[a-zA-Z0-9]{8,20}.com/embed-[0-9a-z]{5,7}/$subdocument,script,popup,domain=cda-hd.pl
@@ -2185,6 +2189,8 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 ||savecart.pl/*/script.php$script
 ||push-ad.com/integration.php$script
 ||pushango.com^$script,domain=~pushango.com
+||cdn.pushwoosh.com/webpush/*.js$script
+bzwbk.pl###pushwoosh-pop
 !
 !
 !--------------------------Rules on tv streams element hiding rules------------!
