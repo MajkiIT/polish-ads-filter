@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 2 July 2017
 ! Expires: 2 days
-! Version: 2017070202
+! Version: 2017070203
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017070202 aktualizacja: nie, 2 lipca 2017, 22:30:00
+! v.2017070203 aktualizacja: nie, 2 lipca 2017, 23:05:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -860,6 +860,10 @@ pclab.pl###b028
 pclab.pl###a011
 pclab.pl##A[href^="http://click.plista.com/pets/"]
 pclab.pl##[href^="http://csr.onet.pl/eclk/clk"]
+pclab.pl###spon_left
+pclab.pl###spon_right
+pclab.pl##.logoS:style(width: 275px; padding: 11px 0 0 5px; height: 74px; float: left;)
+pclab.pl##[class*=offer]
 pcworld.pl###WhitepaperModule
 pcworld.pl##.side-module.how-to
 pcworld.pl##div#toaster
@@ -1600,6 +1604,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||pclab.pl/img/extra/$image,domain=pclab.pl
 ||pclab.pl/img/special/*.jpg
 ||pclab.pl/partners/$image,subdocument,domain=pclab.pl
+||pclab.pl/css/extra
 ||picsrv.fora.pl/cdn/tri*trizer
 ||pilkanozna.pl/images/r-gol/$image
 ||pilkanozna.pl/images/reklamy_*.jpg$image
