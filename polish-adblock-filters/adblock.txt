@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, adreporter, blocker999,  FX54  
 ! Homepage: https://www.certyficate.it/
-! Last modified: 29 June 2017
+! Last modified: 2 July 2017
 ! Expires: 2 days
-! Version: 2017062901
+! Version: 2017070201
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017062901 aktualizacja: czw, 29 czerwca 2017, 09:15:00
+! v.2017070201 aktualizacja: nie, 2 lipca 2017, 11:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -60,7 +60,6 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||alltube.tv/pomoc$popup,domain=alltube.tv
 ||zalukaj.com/sdm.php$xmlhttprequest
 ||nextclick.pl^$script
-||thevideo.me/assets/*popjs$script
 ||afftrack001.com^
 ||vdztrack.com/$popup
 !
@@ -280,6 +279,7 @@ autocentrum.pl###new_banner + div[style="max-width: 750px; margin: 0 auto; paddi
 autodoradca.pl##.banner-top
 bajkitv.pl###watch
 bankier.pl##[class$="Adv"]
+barciany.pl##[id^="popuptable"]
 bebzol.com###right-col > .r-stick-box
 benchmark.pl###marketplaceProductBox
 benchmark.pl##.screenContainer
@@ -520,6 +520,7 @@ glamrap.pl##.popup
 glamrap.pl##IMG[src^="/images/rk3/"]
 glamrap.pl###footmod
 globtroter.pl##a[href^="http://track.omgpl.com/"] > .img-responsive
+glogow-info.pl##TD[onclick^="window.location.href="]
 gloria.tv##footer
 gloria.tv##A[href^="/advertisement/"]
 glos24.pl##IMG[src^="/files/adv/"]
@@ -577,6 +578,10 @@ infokatowice.pl##.vc_align_center.wpb_content_element.wpb_single_image
 infokatowice.pl##.td-a-rec-id-content_inline.td-a-rec
 infoilawa.pl##.readmore
 infogliwice.pl##A[class="gofollow"]
+informacja.wroclaw.pl###popupfmu
+informacja.wroclaw.pl##[class*="popup"]
+informacja.wroclaw.pl##.slideshow
+informacja.wroclaw.pl###top_ma_Box
 innpoland.pl##.jw-reset.jw-aspect
 instalki.pl##.banner_mod_top
 instalki.pl###PushangoAlert
@@ -650,6 +655,7 @@ kurierlubelski.pl,panoramafirm.pl###top
 kurierlubelski.pl##.adSrodek
 kurierlubelski.pl,gloswielkopolski.pl,nto.pl,gazetalubuska.pl###prawa1
 kurnik.pl##[style="background: #f21; color: #fff; font-weight: bold; text-align: center; text-transform: uppercase; padding: 10px; margin-bottom: 2em; "]
+kutno.net.pl##.upper-bilboard
 kwejk.pl##.da.media
 kwejk.pl##[id^="div-gpt-ad-"]
 kwejk.pl###bottomadcontainer
@@ -714,6 +720,8 @@ mgsm.pl###sk_product_box_1_2533
 mgsm.pl##.doubleAdLargeRectangleContainer
 mgsm.pl##.floatLeft.width50.data-table
 mgsm.pl##TD[style="padding:0px;"]
+mgsm.pl##.large-2 > object
+mgsm.pl##.text-center.padding-top10.columns.small-12.medium-12.large-12
 mh24.pl###colorbox
 mh24.pl###cboxOverlay
 mh24.pl,jaw.pl##[id^="text-"]
@@ -749,6 +757,7 @@ mojanorwegia.pl###modMnNewTopBar
 mojaolesnica.pl##DIV[style="width: 750px; height: 200px; float: left; display: inline;"]
 mojaolesnica.pl##DIV[style="float: left; width: 705px;"]
 mojaolesnica.pl##DIV[style="width: 200px; height: 200px;"]
+mojaolesnica.pl##DIV[style*="width: 966px; margin-top: 12px; margin-bottom: 15px; "]
 mojapogoda.com###upper_header
 morele.net##.ears-right
 morele.net##.ears-left
@@ -804,10 +813,16 @@ niebezpiecznik.pl###text-8 > .textwidget
 niebezpiecznik.pl##a[href*="//niebezpiecznik.pl/r3"]
 niebezpiecznik.pl##a[href*="//niebezpiecznik.pl/r4"]
 niebezpiecznik.pl##a[href*="//niebezpiecznik.pl/r5"]
+niebezpiecznik.pl###main > div[style="height:350px;width:660px"]
+niebezpiecznik.pl##div[style="width:300px;float:left;"]
+niebezpiecznik.pl##div[style="width:300px;float:left;"] ~ p:first-of-type:has-text(/^$/)
+niebezpiecznik.pl###text-8
+niebezpiecznik.pl###main > br
 nocoty.pl,aleseriale.pl###slider300Wrapper
 nokiahacking.pl##.nh_ads
 noizz.pl##.intext-ads-container
 nowafarmacja.pl##[class^="bg-banner-wrapper"]
+nowiny24.pl##.hide-for-medium-down
 nowodworski24.pl###ubm-banners-2
 nowemp3.pl##marquee
 nysa24.pl###jm-header
@@ -861,6 +876,8 @@ pebx.pl###header > script + div[style="text-align:center;width:100%;text-align:c
 pecetowicz.pl##.ipsPos_center
 pekao.com.pl###PX45189
 pepper.pl##.nav-banner
+piekary.pl##.mfp-content
+piekary.pl##.mfp-ready
 pilkanozna.pl##.rekl_srod_top
 pilkanozna.pl##DIV[style="text-align:center;padding:15px;"]
 pilkanozna.pl###bglink
@@ -944,6 +961,7 @@ q4.pl###bglink
 q4.pl##TD[valign="middle"]
 q4.pl##TD[bgcolor="#f0f0f0"]
 q4.pl###\33 DIV
+q4.pl##A[target="_blank"] > IMG
 radioplus.pl###bottom-ad
 realmadryt.pl##DIV[style="margin:0 auto;"]
 redbullmobile.pl###more1
@@ -952,6 +970,7 @@ ringpolska.pl##.art-block.clearfix
 rmf.fm##.intad
 spiz.pl,roksa.pl##.c
 radio5.com.pl##.g-single
+radiobiper.info##[id^="widget_sp_image-"]
 radiofm-online.com###block-block-3
 radiokolor.pl##.boxAdvert
 radiozet.pl##.adocean
@@ -1044,6 +1063,7 @@ swieta.wp.pl##.article--enteries
 swieta.wp.pl##a[href^="http://www.mediaexpert.pl/"]
 swieta.wp.pl##SECTION + .section.section--bg-white.products--section
 stalowemiasto.pl##.main-cbaner
+stargard.com.pl###index-01b
 steam.io###dd_ajax_float
 store.office.live.com##.popupOuterCellRight
 stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"][align="center"]:not([width])
@@ -1067,6 +1087,7 @@ stooq.pl,stooq.com##tbody > tr > td > table[width="300"][height="250"][border="0
 strefaanime.pl###text-6
 strefagry.pl##[style="width:540px;margin:10px auto;"]
 strefagry.pl##.item_d
+studentnews.pl##a[href^="http://studentnews.pl/klik.php"]
 styl.pl###headerTopWraper > .headerPre
 swiatbaterii.pl##DIV[id^="cbox"]
 swiatseriali.pl##[class^="introjs-"]
@@ -1137,7 +1158,7 @@ tvp.pl##.adv__rectangle
 tvseriesonline.pl##img[src^="https://ec.bankier.pl/file/"]
 tvnwarszawa.tvn24.pl##[id^="TopicItemContainer_"] > .boxItem
 tvseriesonline.pl##A[href^="http://l1nk.pl"]
-tvsudecka.pl,tczewska.pl##[class*="advert-"]
+tvsudecka.pl,tczewska.pl,slowopodlasia.pl,bydgoszcz.com##[class*="advert-"]
 twojapogoda.pl##IMG[alt="pixad"]
 twojaslupca.pl##.intermarche
 twojaslupca.pl###flashContent
@@ -1146,6 +1167,7 @@ twojasuknia.pl##.container-fluid.hidden-print.text-center.win-baner
 twoje-seriale.tv##a[href^="http://www.videostream.pl/"]
 twojepc.pl##td[width="300"][align="left"][valign="top"]
 tygodniknarodowy.pl###BusyBox
+tygodnikpowszechny.pl##[id*="-simpleads-"] > h2
 ulub.pl##[class^="ads_szuk"]
 ulub.pl##.right_col
 upflix.pl##.hidden-xs
@@ -1480,6 +1502,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||fwcdn.pl/adv/$subdocument
 ||gfx.antyradio.pl/var/antyradio/storage/images/linki-graficzne/
 ||gintama.wbijam.pl/tempa/banery/$image
+||glogow.pl/rek/$domain=glogow-info.pl
 ||go.stirshakead.com/?auction_id=$popup
 ||googleusercontent.com/$image,domain=openlinksys.info
 ||gowork.pl/images/top_img/$image,domain=gowork.pl
@@ -1551,6 +1574,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||mybboard.pl/images/promo/$image
 ||mylead.eu/banner/
 ||mylomza.pl/images/baner_$image
+||napisy24.pl/run/js/all_corners.js
+||napisy24.pl/images/bg-allplayer-*.png
 ||naszamlawa.pl/images/banner/$object,image,subdocument
 ||naszalomza.pl/vardata/banery/$image
 ||naszawielkopolska.pl/wp-content/uploads/*/reklama$image
@@ -1716,6 +1741,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||zaufanatrzeciastrona.pl/wp-content/uploads/2017/03/c.jpg
 ||zaufanatrzeciastrona.pl/wp-content/uploads/2017/03/d.jpg
 ||zaufanatrzeciastrona.pl/wp-content/uploads/2017/03/e.gif
+||zlotoryja.info/grafiki/bannery/$image
 ||zolti.pl/ajax/affiliate-generator.php?$script
 ||zulawyimierzeja24.pl/assets/js/jwplayer/jwplayer.html5.js
 ||zyciesiedleckie.pl/banery_foto/$image
@@ -1863,7 +1889,7 @@ dailyweb.pl##center
 dstar.pzk.pl,burze.dzis.net,kurnik.pl,arrow24.net,vampirediaries24.pl#@#.adsbygoogle
 dziennikwschodni.pl#@#.ad
 elektroda.pl##.row > DIV[style="display: block;"]
-epiotrkow.pl##[id^="abpnot"]
+epiotrkow.pl##[class^="abpnot"]
 fly4free.pl##.warnadblk
 forum.vw-passat.pl###ct_i
 gragieldowa.pl##.login
@@ -2143,11 +2169,15 @@ wykop.pl##li.link:has(.adsbygoogle)
 wykop.pl##li.link:has(a[href*='wykop.pl/market'])
 wykop.pl##li.link:has(a[href*='wykop.pl/paylink'])
 wykop.pl##li.link:has(a[href*='wykop.pl/reklama'])
+wykop.pl##.r-block:has(a[href*="wykop.pl/tracker"])
+wykop.pl##a[href*="wykop.pl/tracker"]
+wykop.pl##.screening-displace
+wykop.pl##[id^=banner_rectangle]
+wykop.pl###dyingLinksBox > .dying-links[hidden] ~ .dying-links:last-child:style(display:list-item !important)
+wykop.pl###dyingLinksBox > .dying-links[hidden] ~ .dying-links[style="display: list-item;"] ~ .dying-links:style(display: none !important)
 ||imgwykop.pl/*/paylink_$image,domain=www.wykop.pl
 ||wykop.pl/paylink/emiter/$image,domain=www.wykop.pl
 ||wykop.pl/tracker
-wykop.pl##.r-block:has(a[href*="wykop.pl/tracker"])
-wykop.pl##a[href*="wykop.pl/tracker"]
 ||s1.cdn03.imgwykop.pl/static/wykoppl/img/rect/$image
 !
 !
