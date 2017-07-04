@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, adreporter, blocker999,  FX54  
 ! Homepage: https://www.certyficate.it/
-! Last modified: 3 July 2017
+! Last modified: 4 July 2017
 ! Expires: 2 days
-! Version: 2017070302
+! Version: 2017070401
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017070302 aktualizacja: pon, 3 lipca 2017, 23:15:00
+! v.2017070401 aktualizacja: wt, 4 lipca 2017, 09:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -407,7 +407,7 @@ e-kg.pl##.rstboxes
 e-kg.pl##DIV[style="text-align: center;"]
 e-kg.pl##a[href="http://www.e-leclerc.pl/"]
 efilmy.tv##.addbackground
-elektroda.pl##[target="_blank"] > IMG
+www.elektroda.pl##[target="_blank"] > IMG[src$=".gif"]
 elektroda.pl##.the-post-list.sponsored
 elektroda.pl##[action^="http://"][method="get"][target="_blank"]
 elka.pl##[id^="banner-ajax-"]
@@ -2229,7 +2229,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 /^http:\/\/[a-zA-Z0-9]{8,20}\.com\/analytics\/[0-9]{5,7}/$subdocument,script,popup
 /^(http|https)://[a-z0-9]{5,}.top/[a-z0-9]{1,}/[a-z0-9]{1,}/[a-z0-9]{1,}/[a-z0-9]{5,}.\js/$script
 /^http://[a-zA-Z0-9]{8,20}.com/embed-[0-9a-z]{5,7}/$subdocument,script,popup,domain=cda-hd.pl
-/^http:\/\/[a-zA-Z0-9]{5,20}\.com\/watch\?/$popup
+/^http:\/\/(?!youtube)[a-zA-Z0-9]{5,20}\.com\/watch\?/$popup
 /^(http|https):\/\/ad\.[a-z]{3,10}\.[a-z]{2,3}\/[a-z/?=]{10,}\/asrv\/campaign\//$subdocument
 /^(http|https):\/\/[a-z]{5,10}\.com\/[a-zA-Z0-9]{80,}/$subdocument,domain=embed.nowvideo.sx|cloudtime.to
 !
