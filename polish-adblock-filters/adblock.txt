@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 9 July 2017
 ! Expires: 2 days
-! Version: 2017070901
+! Version: 2017070902
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017070901 aktualizacja: nie, 9 lipca 2017, 17:05:00
+! v.2017070902 aktualizacja: nie, 9 lipca 2017, 21:35:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -209,6 +209,7 @@ pl/popup.js|$script
 ~superpharm.pl,~ceo.com.pl,~linuxiarze.pl,~wirtualny-wojownik.pl,~przerwanareklame.pl,~tvpolska.pl,~smiechawatv.pl,~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org,~motomio.pl,~semilac.pl,pl##[class*="reklama"]
 ~nationalgeographic.com,~wpolityce.pl,~box.com,~hardcorowo.pl,~gumtree.com,~hulu.com,com,pl##[class^="ad-"]
 ~fakt.pl,pl##.trizer-bnr
+pl###widget-shop
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -271,6 +272,8 @@ audiostereo.pl###container > .sidebar_ranking
 augustow24.pl##[class^="rek_sr_"]
 augustow24.pl##.r_prawa_01
 augustow24.pl##.r_lewa_01
+augustyna.pl##TD[align="left"]
+augustyna.pl##IMG[alt="REKLAMA"]
 auto.pl###intertext1 > .text-center.col-all-max
 auto-swiat.pl,biala24.pl##.banner
 autocentrum.pl##a[href^="http://blbl.cr/"]
@@ -403,6 +406,7 @@ dzisiajwgliwicach.pl##img[src*="Baner-590x300-"]
 dziennik.pl##[style="text-align:center; margin: 0 0 10px 0;padding-bottom: 20px"]
 dziennik.pl##img[src^="data:image/jpeg;base64"]
 dziennik.pl##.boxClose
+dziennikzachodni.pl##.gry
 eioba.pl###adsPanelTopt
 e-grajewo.pl##[id^="rotator_"]
 e-kg.pl##.bannergroup
@@ -424,6 +428,7 @@ eska.pl##.banner-750.fontregular
 eska.pl##[href*="bbelements.com/please/track/adClick/"]
 eska.pl##.center.t2.color13
 eska.pl##.zpr_top_1
+eswinoujscie.pl##.widget_text
 exsite.pl##[id^="adkon"]
 exsite.pl##DIV[id^="tower_"]
 exsite.pl##[style="width: 586px;height: 369px;margin: 50px auto 50px -18px;overflow-y: hidden;border:1px solid black;"]
@@ -541,6 +546,7 @@ grafoteka.pl###info
 grajewo24.pl,elk24.pl,augustow24.pl,skrotymeczow.pl###popup
 gram.pl##.stripeBar
 gram.pl###billBoardAreaWrapper
+gram.pl###rrec
 grupa7j.pl##table[style*="img/bg-black.png"] > tbody > tr
 groupon.pl###ls-in-app-messages
 gry-online.pl##.ban-fp-970x200
@@ -915,7 +921,6 @@ polskaniepodlegla.pl##.header
 polskastacja.pl##.plotki_bg
 polskastacja.pl,instalki.pl###banner
 polskastacja.pl##DIV[style="display: block; margin: auto; position: relative; width: 750px; height: 200px;"]
-polskatimes.pl###widget-shop
 polygamia.pl##[onclick^="adwordsStatistic"]
 polygamia.pl##.adwordbackground
 pogoda.dziennik.pl###idm140677357800800
@@ -2245,6 +2250,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 /^http:\/\/(?!youtube)[a-zA-Z0-9]{5,20}\.com\/watch\?/$popup
 /^(http|https):\/\/ad\.[a-z]{3,10}\.[a-z]{2,3}\/[a-z/?=]{10,}\/asrv\/campaign\//$subdocument
 /^(http|https):\/\/[a-z]{5,10}\.com\/[a-zA-Z0-9]{80,}/$subdocument,domain=embed.nowvideo.sx|cloudtime.to
+/^(http|https):\/\/[a-z0-9.-]{5,}\.com\/[a-z]{1,}\/[a-z]{1,}\.js/$script,domain=wrealu24.pl
 !
 !
 !--------------------------Stupid notifications------------!
