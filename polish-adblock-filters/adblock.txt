@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, adreporter, blocker999,  FX54  
 ! Homepage: https://www.certyficate.it/
-! Last modified: 7 July 2017
+! Last modified: 9 July 2017
 ! Expires: 2 days
-! Version: 2017070701
+! Version: 2017070901
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017070701 aktualizacja: ptk, 7 lipca 2017, 09:05:00
+! v.2017070901 aktualizacja: nie, 9 lipca 2017, 17:05:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -295,6 +295,9 @@ biedronka.pl##.app-link
 bielsko.info,tychy.info,czecho.pl##.resizable300x250
 bielsko.info,tychy.info,czecho.pl##.resizable970x90
 bielsko.info,tychy.info,czecho.pl##[id^="linki-sponsorowane-col-group-"]
+binary24.pl##[id^="black-studio-tinymce-"]
+binary24.pl##[id^="text-"]
+binary24.pl###topbanner > .przypis
 biotechnologia.pl##.ats_link
 bitcoin.pl,rightclick.pl##.custom
 biznes.pl##.e_Box.analyses
@@ -334,6 +337,7 @@ chip.pl##.portlet.portletCeneo
 chip.pl##[id^="portletwrapper-"] > form
 chnnews.pl###main_bottom > .clearfix.module:nth-of-type(1)
 chozoba.pl###title
+chroma.pl##.uv3dpopup-adv
 cinema-city.pl###subsnatch
 cinema-city.pl##DIV[id^="snatch"]
 cinema-city.pl###layer_3_-150_0
@@ -637,6 +641,7 @@ komixxy.pl,mistrzowie.org,jbzd.pl##[id^="sky"]
 komputerswiat.pl###\5f 479491471
 komputerswiat.pl##[style="width: 600px; height: 400px; margin: 20px auto;"]
 komputerswiat.pl###ks_breaking_news
+komputerswiat.pl##.sidebar_html_embed
 komorkomat.pl##.boxzilla-bottom-left-container
 koncertomania.pl##div#slide-out-newsletter
 korkosfera.pl##div#copyright_ne
@@ -1703,6 +1708,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||wiocha.pl/img/tapety/$image
 ||widgets.tracdelight.com/iframe/$subdocument
 ||wp.pl/*/reklamawp-$image
+||wp.pl/staticad/$xmlhttprequest
 ||www.audiostereo.pl/banery/
 ||www.benchmark.pl/js/header.ad.js$script
 ||www.brief.pl/img,banner$image
@@ -1945,6 +1951,7 @@ www.ps4forum.pl##.googleheader
 www.glamour.pl##.products-set-items
 onet.pl,vod.pl,businessinsider.com.pl,komputerswiat.pl,plejada.pl,komorkomania.pl,noizz.pl,auto-swiat.pl#@#.trizer-bnr
 onet.pl#@#script:inject(abort-on-property-read.js, onetAds)
+onet.pl,komputerswiat.pl##script:inject(abort-on-property-read.js, dlApi)
 www.elektroda.pl##[id$="-block-info"]
 zetchilli.pl##.adblock-info
 vod.pl#@#.infoCloud
