@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, adreporter, blocker999,  FX54  
 ! Homepage: https://www.certyficate.it/
-! Last modified: 9 July 2017
+! Last modified: 10 July 2017
 ! Expires: 2 days
-! Version: 2017070904
+! Version: 2017071001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017070904 aktualizacja: nie, 9 lipca 2017, 22:35:00
+! v.2017071001 aktualizacja: pon, 10 lipca 2017, 16:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -275,7 +275,7 @@ augustow24.pl##.r_lewa_01
 augustyna.pl##TD[align="left"]
 augustyna.pl##IMG[alt="REKLAMA"]
 auto.pl###intertext1 > .text-center.col-all-max
-auto-swiat.pl,biala24.pl##.banner
+auto-swiat.pl,biala24.pl,trodatreleases.com##.banner
 autocentrum.pl##a[href^="http://blbl.cr/"]
 autocentrum.pl###new_banner + div[style="max-width: 750px; margin: 0 auto; padding-bottom: 15px;"]
 autodoradca.pl##.banner-top
@@ -338,6 +338,7 @@ chip.pl###nextartprompt
 chip.pl###search_box
 chip.pl##.portlet.portletCeneo
 chip.pl##[id^="portletwrapper-"] > form
+chomikuj.pl##IMG[style="width:100%;max-width:290px;"]
 chnnews.pl###main_bottom > .clearfix.module:nth-of-type(1)
 chozoba.pl###title
 chroma.pl##.uv3dpopup-adv
@@ -561,9 +562,6 @@ grydladzieci.pl##.first.section > [style="width:748px;height:90px;margin:0 auto;
 gsmservice.pl###banner6
 gsmmaniak.pl###okazja-dnia
 gsmmaniak.pl##a[href^="http://tofo.pl"]
-gwiazdy.wp.pl##[class^="_"][href^="https://gwiazdy.wp.pl/"][target="_blank"]>FIGURE[class^="_"]
-gwiazdy.wp.pl##[class^="_2"][href^="https://gwiazdy.wp.pl/"][target="_blank"]
-gwiazdy.wp.pl##[class^="_2"][href^="https://gwiazdy.wp.pl/"] + SPAN[class^="_2"]
 hdtv.com.pl##center > a[href="http://hushhush.pl"] > img
 hdtv.com.pl##[id^="edit"] > table:nth-of-type(n+2)
 hdtv.com.pl###links
@@ -875,7 +873,6 @@ pclab.pl##A[href^="http://click.plista.com/pets/"]
 pclab.pl##[href^="http://csr.onet.pl/eclk/clk"]
 pclab.pl###spon_left
 pclab.pl###spon_right
-pclab.pl##.logoS:style(width: 275px; padding: 11px 0 0 5px; height: 74px; float: left;)
 pclab.pl##[class*=offer]
 pcworld.pl###WhitepaperModule
 pcworld.pl##.side-module.how-to
@@ -1260,6 +1257,9 @@ wp.pl##section#section_shopping
 wp.pl##.scr-wallpaper
 wp.pl##div[class^="_"] > div[class^="_"]:has(:scope > img[class^="_"][src][alt="wp"])
 wp.pl##div[class^="_"] > style + div[class]
+wp.pl##[class^="_"][href^="https://"][target="_blank"]>FIGURE[class^="_"]
+wp.pl##[class^="_2"][href^="https://"][target="_blank"]
+wp.pl##[class^="_2"][href^="https://"] + SPAN[class^="_2"]
 wprost.pl###additional-column
 wprost.pl##class[id^="addbox.addbox-"]
 wprost.pl###left-column > .art-area > .art-content > center
@@ -1267,6 +1267,7 @@ wrealu24.pl##.bannergroup
 wrzuta.pl###floorBG
 wschodnia.tv###right > .yt-position-inner
 wspomnijbliskich.pl###sponsor_title
+wszystkotujest.pl##.box-banners
 wtkplay.pl##[id^="adsys_"]
 wyborcza.pl##[class^="mod-generic"][class*="la-http\:\/\/wyborcza\.pl\/"]
 wyborcza.pl##.right-content-holder > [class^="mod-generic"][class*="la-http\:\/\/wyborcza\.pl\/"] + #rectangle-splint
@@ -1410,6 +1411,8 @@ zaufanatrzeciastrona.pl##body > * > * > a[href]:not([href="//zaufanatrzeciastron
 zaufanatrzeciastrona.pl###sponsor2
 zaufanatrzeciastrona.pl###rab1
 zespolmi.pl##a[href^="https://prisonwarsonline.com/"]
+zory.dlawas.pl##.modal-dialog
+zory.dlawas.pl##.in.fade.modal-backdrop
 zszywka.pl##A[style="display: block; position: fixed; bottom: 0px; box-sizing: border-box; width: 100%; background-color: rgb(129, 197, 78); background-image: none !important; background-repeat: no-repeat; background-attachment: scroll; background-clip: border-box; background-origin: padding-box; background-position: 20px 50%; background-size: auto auto; color: rgb(255, 255, 255); text-align: center; padding: 1em 150px; z-index: 1000; white-space: pre;"]
 zumi.pl###couponsBar
 zumi.pl###offersBar
@@ -1620,7 +1623,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||pclab.pl/img/extra/$image,domain=pclab.pl
 ||pclab.pl/img/special/*.jpg
 ||pclab.pl/partners/$image,subdocument,domain=pclab.pl
-||pclab.pl/css/extra
 ||picsrv.fora.pl/cdn/tri*trizer
 ||pilkanozna.pl/images/r-gol/$image
 ||pilkanozna.pl/images/reklamy_*.jpg$image
@@ -1865,6 +1867,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||staticpics2.allegrostatic.pl/adverts/otomoto_pl/*128x96$image,domain=allegro.pl
 @@||stats.qmerce.com/interaction-stats/$xmlhttprequest,domain=renderer.qmerce.com
 @@||techpedia.pl/js/show_ads.js$script,domain=techpedia.pl
+@@||tpc.googlesyndication.com/pagead/imgad$image,domain=www.emag.pl
 @@||translatica.pl/ads.js$script
 @@||tvn.adocean.pl/__/ad.xml$xmlhttprequest,domain=tvnturbo.pl|miniminiplus.pl
 @@||tvn.adocean.pl/ad.xml$xmlhttprequest,domain=tvnturbo.pl|miniminiplus.pl
@@ -2266,6 +2269,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 ||cdn.pushpushgo.com/scripts/$script
 ||pushengage.com/script.js$script
 ||pushify.com$script
+||www.snrcdn.net/sdk/*/synerise-javascript-sdk.min.js$script
 bzwbk.pl###pushwoosh-pop
 !
 !
