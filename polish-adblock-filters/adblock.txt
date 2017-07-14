@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, adreporter, blocker999,  FX54  
 ! Homepage: https://www.certyficate.it/
-! Last modified: 13 July 2017
+! Last modified: 14 July 2017
 ! Expires: 2 days
-! Version: 2017071303
+! Version: 2017071401
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017071303 aktualizacja: czw, 13 lipca 2017, 15:35:00
+! v.2017071401 aktualizacja: ptk, 14 lipca 2017, 14:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -311,6 +311,7 @@ biznesforum.pl##div[style="border-left:1px solid #cccccc;border-right:1px solid 
 biztok.pl##.ads.ads--sidebar
 biztok.pl,teleshow.wp.pl,gwiazdy.wp.pl,moto.wp.pl,wiadomosci.wp.pl,money.pl,turystyka.wp.pl,finanse.wp.pl,www.wp.pl##A[href^="http://dot.wp.pl/redir"]
 blog.pluralsight.com##.video.widescreen.flex-video
+blog.nowebrzmienia.pl###text-2 > .widget-title-container
 blogmobility.pl##.top-baner
 bobrzanie.pl##.size-full.aligncenter
 bochnianin.pl##.xo
@@ -606,6 +607,8 @@ interia.pl##[id^="ad_"]
 ipo.pl##DIV[style="clear:both;min-height:100px;"]
 ipon.pl###rekalama_PodMenu
 itporady.pl##.hidden-xs.r_sidebar
+itporady.pl##.visible-md.visible-lg
+itporady.pl##.well
 itreseller.pl###banner
 itreseller.pl##.swf
 itvpolska.pl##.cactus-ads
@@ -746,6 +749,9 @@ miedzyrzec.info###banerA
 miejsce.warszawa.gazeta.pl###holder_201 > .travelist
 mikrokontroler.pl##TD[style*="background-image: url(\"http://mikrokontroler.pl/"]
 mikrokontroler.pl##[id^="block-simpleads-ad"]
+mikrokontroler.pl###text-3
+mikrokontroler.pl###text-5
+mikrokontroler.pl##.g.g
 mistrzowie.org###services_box
 mistrzowie.org##[href*="utm_source=mistrzowie&utm_medium=banner&utm_campaign=pewexserwisy_mistrzowie"]
 mistrzowie.org##a[href^="http://pewex.pl/"]
@@ -1157,6 +1163,7 @@ temat.info##.bannergroup
 thepolandtimes.com###header > .group.container > .container-inner > .pad.gro
 thinkapple.pl,repostuj.pl##a[href*="://bit.ly/"]
 tokfm.pl##DIV[style="width: 940px; padding: 21px 0 18px; background: #F8F8F8; margin: 0 auto; "]
+tkn24.pl##A[target="_blank"] > IMG
 tomaszowski.com.pl###jm-content-top
 tomaszowski.com.pl###jm-right
 topgearonline.pl###leader-wrapper
@@ -1816,6 +1823,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||ajax.googleapis.com/ajax/libs/$script,domain=shinden.pl
 @@||ak-ns.sascdn.com/diff/templates/$script,domain=www4.rp.pl
 @@||angielskie-slowka.pl/speecher/advert/*.mp3
+@@||assets.adobedtm.com^$script,domain=netto.pl
 @@||av-cdn-*.wpimg.pl/*:wp*.stream^$domain=wp.pl
 @@||anime-odcinki.pl/sites/default/files/styles/medium-smaller__200x200_/public/okladki
 @@||bulletproofserving.com^$script,domain=dobreprogramy.pl
@@ -1978,14 +1986,17 @@ zrabatowani.pl###popup-adblock-bottom
 !
 !---------------------------------Anti Adblock Rules blocking filters----------------------------------!
 ||bankier.pl/static/js/kichot.js$script
+||blog.nowebrzmienia.pl/wp-content/themes/awaken/js/scripts.js$script
 ||filmozercy.com/img/adblock/$image
 ||forum.android.com.pl/uploads/*fuckadblock.min.js
 ||flakyfeast.com/$script,domain=www.gry.pl
+||gizchina.com.pl/*fuckadblock.min.js$script
 ||lubiepowietrze.pl/wp-content/uploads/*.js$script,domain=lubiepowietrze.pl
 ||niepoprawni.pl/sites/all/libraries/copier/bck.js$script
 ||napisy24.pl/run/js/blad*.js$script
 ||cosplayjav.pl/wp-content/themes/cosplayjav/js/fuckadblock
 ||legiobiznes.pl/wp-content/uploads/tDRbieLKsyol/LhsodpaeYxyf.js$script
+/test_block.js$script,domain=proste.info.pl|kompnet.info
 /wp-content/plugins/wp-adblock-dedect/dedect.js$script
 /\/wp-content\/uploads\/[a-zA-Z]{8,}\/[a-zA-Z]{8,}\.js/$script,domain=fandroid.com.pl|crazynauka.pl
 !
