@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, adreporter, blocker999,  FX54  
 ! Homepage: https://www.certyficate.it/
-! Last modified: 15 July 2017
+! Last modified: 17 July 2017
 ! Expires: 2 days
-! Version: 2017071505
+! Version: 2017071701
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017071505 aktualizacja: sob, 15 lipca 2017, 22:05:00
+! v.2017071701 aktualizacja: pon, 17 lipca 2017, 10:10:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -341,6 +341,7 @@ chip.pl###nextartprompt
 chip.pl###search_box
 chip.pl##.portlet.portletCeneo
 chip.pl##[id^="portletwrapper-"] > form
+chip.pl##LI[id^="media_image"].widget_media_image:last-child
 chnnews.pl###main_bottom > .clearfix.module:nth-of-type(1)
 chomikuj.pl##IMG[style="width:100%;max-width:290px;"]
 chozoba.pl###title
@@ -823,6 +824,7 @@ naekranie.pl##.sen-gal-sidebar-custom-content
 naekranie.pl##[class^="welcome_screen"]
 naekranie.pl##a[href^="http://onskr.in/"]
 naekranie.pl##div[style="height: 5.3125rem !important;"]
+naekranie.pl##.except-mobile
 napisy24.pl##.custom_pozioma
 napisy24.pl##[id^="napisy24"]
 napisy24.pl##a[href^="http://www.allplayer.org/"]
@@ -972,7 +974,6 @@ profil.wp.pl##.bxAdv
 profilook.pl###ceneo-os783-rZ0og
 programosy.pl##.web.bn-b-0
 promise.com.pl###ctl00_ReklamaBig1_pnlBaner
-proste.info.pl###notice_visitor
 prostoomuzyce.pl##[id^="block-views-banery-block"]
 prostozmostu.net###ecoeconomy
 prostozmostu.net###nmb-BusyBox
@@ -2275,7 +2276,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 !
 !--------------------------Rules for pages with random adv scripts------------!
 /^http:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\/[a-zA-Z0-9]{30,}/$script,popup,document
-/^(http|https):\/\/[a-zA-Z.]{10,}\.com\/[a-zA-Z]{1,}\.\js/$script,domain=devil-torrents.pl|electro-torrent.pl|nitro.to|vidlox.tv|playerbox.net|alltube.tv|segos.es|efilmy.online|video.penny.ie|fileone.tv|serialeonline.pl|fili.tv|streamango.com|kinoline.pl|cda-hd.pl|nasze-kino.online|vidto.pl|raptu.com|rapidvideo.com|data-scheme|vidfile.net|sharevideo.pl|sharing-box.cloud||vidstream.xyz|dragon-ball-super.ga
+/^(http|https):\/\/[a-zA-Z.]{10,}\.com\/[a-zA-Z]{1,}\.\js/$script,domain=devil-torrents.pl|electro-torrent.pl|nitro.to|vidlox.tv|playerbox.net|alltube.tv|segos.es|efilmy.online|video.penny.ie|fileone.tv|serialeonline.pl|fili.tv|streamango.com|kinoline.pl|cda-hd.pl|nasze-kino.online|vidto.pl|raptu.com|rapidvideo.com|data-scheme|vidfile.net|sharevideo.pl|sharing-box.cloud||vidstream.xyz|dragon-ball-super.ga|openkatalog.ml
 /^http:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=devil-torrents.pl|electro-torrent.pl|nitro.to|alltube.tv|darmowa-telewizja.info
 /^(http|https):\/\/[a-z0-9]{3,20}\.[a-z]{2,11}\/[0-9]{3,10}/$xmlhttprequest,script,stylesheet,domain=streamin.to|raptu.com|flashx.tv|rapidvideo.com|fili.tv|filmyiseriale.net|cda-hd.pl|fileone.tv
 /^(http|https):\/\/[a-z0-9]{5,}\.com\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{5,}\.js/$script,domain=vidto.me|fili.tv|fileone.tv|alltube.tv|srkcast.com
@@ -2302,6 +2303,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 ||cdn.pushpushgo.com/scripts/$script
 ||pushengage.com/script.js$script
 ||pushify.com$script
+||oscarrak.pl/cdn-cgi/nexp/dok3v=1613a3a185/cloudflare/rocket.js$script
 ||www.snrcdn.net/sdk/*/synerise-javascript-sdk.min.js$script
 bzwbk.pl###pushwoosh-pop
 !
