@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 23 July 2017
 ! Expires: 2 days
-! Version: 2017072302
+! Version: 2017072303
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017072302 aktualizacja: niedz, 23 lipca 2017, 08:45:00
+! v.2017072303 aktualizacja: niedz, 23 lipca 2017, 12:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -1218,6 +1218,7 @@ tvseriesonline.pl##A[href^="http://l1nk.pl"]
 tvseriesonline.pl##a[href="http://amoface.com"]
 tvseriesonline.pl##img[src^="https://ec.bankier.pl/file/"]
 tvsudecka.pl,tczewska.pl,slowopodlasia.pl,bydgoszcz.com,tvswinoujscie.pl##[class*="advert-"]
+tvswinoujscie.pl##.boards.widget
 twojapogoda.pl##IMG[alt="pixad"]
 twojaslupca.pl###flashContent
 twojaslupca.pl##.intermarche
@@ -1753,6 +1754,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||weben1.com/scripts/generatewidget.js$script
 ||wiocha.pl/img/tapety/$image
 ||widgets.tracdelight.com/iframe/$subdocument
+||widgets.getsitecontrol.com/*/script.js$script,domain=instalki.pl,
 ||wp.pl/*/reklamawp-$image
 ||wp.pl/staticad/$xmlhttprequest
 ||www.audiostereo.pl/banery/
@@ -2362,3 +2364,8 @@ www.wp.pl##[class^="_"] > [class^="_"] > a[href^="https://www.wp.pl/"][class^="_
 www.wp.pl##[id^="section_"][class^="_"][data-st-area$="-section"] > [style*="width: 970px;"]
 www.wp.pl##[style$="display: block;"] > DIV[style*=" overflow: hidden;"]
 www.wp.pl##SCRIPT + [href^="https://www.wp.pl/"][target="_blank"] > DIV[style*="z-index:"]
+!
+!
+!--------------------------maciejtarmas rules testing -----------!
+||ninja.onap.io/ninja-cee.js$domain=olx.pl,important
+@@||olx.pl/*/ajax/ad/$xmlhttprequest
