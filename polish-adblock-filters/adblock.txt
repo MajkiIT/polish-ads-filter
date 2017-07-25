@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
-! Last modified: 24 July 2017
+! Last modified: 25 July 2017
 ! Expires: 2 days
-! Version: 2017072401
+! Version: 2017072501
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017072401 aktualizacja: pon, 24 lipca 2017, 17:45:00
+! v.2017072501 aktualizacja: wt, 25 lipca 2017, 10:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -410,6 +410,8 @@ dragon-ball-super.ga###container3
 drukowanka.pl##[id^="v4u_"]
 dstar.pzk.pl##[style$="background: #dfdfdf;"]
 dstar.pzk.pl##[style^="text-align: center; font-size: 8px; padding:"]
+dvbtmap.eu##[class*="advertcontent"]
+dvbtmap.eu##.ad-container
 dx-team.org##body > center
 dziennik.pl##.boxClose
 dziennik.pl##[style="text-align:center; margin: 0 0 10px 0;padding-bottom: 20px"]
@@ -538,8 +540,7 @@ gazetaprawna.pl##.tpl_ads_adexon.tpl_std_module
 gazetaprawna.pl##[style^="text-align:center; margin: 0 0 10px 0"]
 gazetaprawna.pl##a[href^="http://www.kyoceradocumentsolutions.pl/index/produkty/product/"]
 glamrap.pl###footmod
-glamrap.pl##.popup
-glamrap.pl##IMG[src^="/images/rk3/"]
+glamrap.pl##[onclick*="Reklama"][target="_blank"] > IMG
 globtroter.pl##a[href^="http://track.omgpl.com/"] > .img-responsive
 glogow-info.pl##TD[onclick^="window.location.href="]
 gloria.tv##A[href^="/advertisement/"]
@@ -677,6 +678,7 @@ kraj24.pl##.jcarousel-container.jcarousel-container-vertical
 kraj24.pl##DIV[style="margin:15px auto 15px auto"]
 krs-online.com.pl###bad
 krs-online.com.pl###commcoo
+krs-pobierz.pl##A[target="_blank"] > IMG[src*="ban"]
 krytykapolityczna.pl##.commercial
 kulturaonline.pl###movieBox
 kupbilet.pl###t3393f
@@ -1222,6 +1224,7 @@ tvseriesonline.pl##img[src^="https://ec.bankier.pl/file/"]
 tvsudecka.pl,tczewska.pl,slowopodlasia.pl,bydgoszcz.com,tvswinoujscie.pl##[class*="advert-"]
 tvswinoujscie.pl##.boards.widget
 twojapogoda.pl##IMG[alt="pixad"]
+twojapogoda.pl###box-pixad
 twojaslupca.pl###flashContent
 twojaslupca.pl##.intermarche
 twojaslupca.pl##DIV[style="margin-bottom: 20px;"]
@@ -1294,6 +1297,7 @@ wkinie.tv##A[href$="/bez-limitu.html"]
 wkinie.tv##[style="width: 750px; height: 100px;"]
 wkopi.pl##[style="background:transparent; width:728; height:90;"]
 wmeritum.pl##[id^="wmeri-"]
+wnet.fm##.prom-block
 wp.pl###leaving
 wp.pl###section_premium
 wp.pl###shopingBx
