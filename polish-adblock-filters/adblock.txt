@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 27 July 2017
 ! Expires: 2 days
-! Version: 2017072701
+! Version: 2017072702
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017072701 aktualizacja: czw, 27 lipca 2017, 14:30:00
+! v.2017072702 aktualizacja: czw, 27 lipca 2017, 17:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -524,6 +524,8 @@ futbol.pl###block-block-2
 futbol.pl##DIV[onmousedown="window.location.href='http://creativetravel.pl'"]
 gadzetomania.pl###exit-intent-modal
 gadzetomania.pl##.top-box--sponsored
+gamesfanatic.pl##[target="_blank"] > IMG[src*="wp-content/uploads/"]:last-child
+gamesfanatic.pl##.gofollow > IMG[src*="wp-content/uploads/"]
 gamezilla.pl##DIV[style="width: 600px; height: 400px; margin: 20px auto;"]
 gazeo.pl##.adsense
 gazeo.pl##.point
@@ -2365,7 +2367,7 @@ castto.me##[id^="floatLayer"]
 !www.wp.pl##div[class]:matches-css(width: 300px):matches-css(height: 250px)
 !www.wp.pl##div[class]:matches-css(width: 309px):matches-css(height: 182px)
 www.wp.pl##[class^="_"] > div[style^="display: block; min-height: 0px;"]
-!www.wp.pl##[id^="sgwp_screening_"]
+www.wp.pl##[id^="sgwp_screening_"]
 !www.wp.pl###glonews > div[style^="display: block; min-height: 0px;"]
 www.wp.pl##[class^="_"] > div > div[style^="display: block; min-height: 0px;"]
 www.wp.pl##[class^="_"] > [class^="_"] > [class^="_"] > a[href][target="_blank"] > img
@@ -2375,6 +2377,8 @@ www.wp.pl##[class^="_"] > [class^="_"] > a[href^="https://www.wp.pl/"][class^="_
 www.wp.pl##[id^="section_"][class^="_"][data-st-area$="-section"] > [style*="width: 970px;"]
 www.wp.pl##[style$="display: block;"] > DIV[style*=" overflow: hidden;"]
 www.wp.pl##SCRIPT + [href^="https://www.wp.pl/"][target="_blank"] > DIV[style*="z-index:"]
+www.wp.pl##DIV + [class^="_"][data-st-area$="-prawa"] > DIV[class]
+www.wp.pl##DIV > [data-st-area$="-prawa"] + DIV[class^="_3"] > DIV[class*="_"]
 !
 !
 !--------------------------maciejtarmas rules testing -----------!
