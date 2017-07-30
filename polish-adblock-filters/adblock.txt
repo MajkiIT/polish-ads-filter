@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
-! Last modified: 29 July 2017
+! Last modified: 30 July 2017
 ! Expires: 2 days
-! Version: 2017072901
+! Version: 2017073001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017072901 aktualizacja: sob, 29 lipca 2017, 19:50:00
+! v.2017073001 aktualizacja: nie, 30 lipca 2017, 14:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -1103,6 +1103,7 @@ spidersweb.pl##.ads
 spidersweb.pl##.sidebar-panel[data-equalizer-watch^="entrieshome"][id^="sidebar_anchor_parent_"]
 spidersweb.pl##a[href*="&utm_medium=baner"][target] > img[src^="http://ocs-pl.oktawave.com/"]:not([class])
 spidersweb.pl##.container > .show-for-medium.row
+spliff.pl###gkRight > .box
 spiz.pl,roksa.pl##.c
 sport.pl##.entry.externalEntry
 sport.pl##.mod.mod_uzr_sport6
@@ -1217,7 +1218,7 @@ tryton.com.pl##[id^="banner"]
 turystyka.wp.pl###b_container
 turystyka.wp.pl##.typOferty.ST-BX-Oferty-dnia-samoloty
 turystyka.wp.pl##.typOferty.hotele.ST-BX-Oferty-dnia-hotele
-tustolica.pl###b_706
+tustolica.pl##[id^="b_"]
 tv.rp.pl##.aiText
 tvgorzow.pl###testimonialrotatorwidget-5
 tvlancut.com##[id*="-ad-"]
@@ -2365,9 +2366,9 @@ castto.me##[id^="floatLayer"]
 !
 !
 !--------------------------WP element hide------------!
-!www.wp.pl##div[class]:matches-css(background: /url\("data:image\/png;base64,/)
-!www.wp.pl##div[class]:matches-css(width: 300px):matches-css(height: 250px)
-!www.wp.pl##div[class]:matches-css(width: 309px):matches-css(height: 182px)
+www.wp.pl##div[class]:matches-css(background: /url\("data:image\/png;base64,/)
+www.wp.pl##div[class]:matches-css(width: 300px):matches-css(height: 250px)
+www.wp.pl##div[class]:matches-css(width: 309px):matches-css(height: 182px)
 www.wp.pl##[class^="_"] > div[style^="display: block; min-height: 0px;"]
 www.wp.pl##[id^="sgwp_screening_"]
 !www.wp.pl###glonews > div[style^="display: block; min-height: 0px;"]
@@ -2380,7 +2381,7 @@ www.wp.pl##[id^="section_"][class^="_"][data-st-area$="-section"] > [style*="wid
 www.wp.pl##[style$="display: block;"] > DIV[style*=" overflow: hidden;"]
 www.wp.pl##SCRIPT + [href^="https://www.wp.pl/"][target="_blank"] > DIV[style*="z-index:"]
 www.wp.pl##DIV + [class^="_"][data-st-area$="-prawa"] > DIV[class]
-www.wp.pl##DIV > [data-st-area$="-prawa"] + DIV[class^="_3"] > DIV[class*="_"]
+www.wp.pl##[class^="_2"][data-st-area$="prawa"] > [class] + UL[class^="_3"] + [class^="_"]
 !
 !
 !--------------------------maciejtarmas rules testing -----------!
