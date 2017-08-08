@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
-! Last modified: 7 August 2017
+! Last modified: 8 August 2017
 ! Expires: 2 days
-! Version: 2017080702
+! Version: 2017080801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017080702 aktualizacja: pon, 7 sierpnia 2017, 17:10:00
+! v.2017080801 aktualizacja: wt, 8 sierpnia 2017, 08:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -130,6 +130,7 @@ motorolasolutions.com##.tealiumMo2TriggerButton
 ##.Reklama
 ##.a-d-v-i
 ##.a-d-v
+##.ads
 ##.ad-offers
 ##.adexonModule
 ##.adoceanGora1Wrapper
@@ -319,7 +320,6 @@ biznes.pl##.rightBoxR.boxPopComtR.cl
 biznes2biznes.com##DIV[style="width:200px;float:right;display:block;margin-left:-5px;"]
 biznes2biznes.com##[id^="stickynote"]
 biznesforum.pl##div[style="border-left:1px solid #cccccc;border-right:1px solid #cccccc;padding:0px;"]:not([id])
-biztok.pl##.ads.ads--sidebar
 biztok.pl,teleshow.wp.pl,gwiazdy.wp.pl,moto.wp.pl,wiadomosci.wp.pl,money.pl,turystyka.wp.pl,finanse.wp.pl,www.wp.pl##A[href^="http://dot.wp.pl/redir"]
 blog.pluralsight.com##.video.widescreen.flex-video
 blog.nowebrzmienia.pl###text-2 > .widget-title-container
@@ -1062,6 +1062,7 @@ radomsport.pl##A[target="_blank"] > IMG[src^="img/"]
 radomsport.pl##SCRIPT + DIV[align="center"]
 radomsport.pl##[id^="skyscraper"]
 radomsport.pl##div > hr
+rdn.pl###pl-w5922cc44491e8
 realmadryt.pl##DIV[style="margin:0 auto;"]
 realmadryt.pl##fieldset
 redbullmobile.pl###more1
@@ -1130,7 +1131,6 @@ s0urce.io##.login-element:nth-of-type(3)
 s0urce.io###window-msg2
 speedtest.pl##div[style^="width: 1068px; height: 470px; margin: 20px auto"]
 spidersweb.pl###nonsticky_1
-spidersweb.pl##.ads
 spidersweb.pl##.sidebar-panel[data-equalizer-watch^="entrieshome"][id^="sidebar_anchor_parent_"]
 spidersweb.pl##a[href*="&utm_medium=baner"][target] > img[src^="http://ocs-pl.oktawave.com/"]:not([class])
 spidersweb.pl##.container > .show-for-medium.row
@@ -1217,7 +1217,6 @@ telchina.pl##img[src^="https://s1.postimg.org/"]
 telemagazyn.pl##.callToActionTarget
 telemagazyn.pl##[class^="fiszka"]
 teleman.pl###leaderboard-bottom
-teleman.pl###stacje-filmowe > .grid-group-as
 teleman.pl,americasarmy.pl,exsite.pl,jastrzebieonline.pl,signs.pl###billboard
 teleman.pl##.grid-group-as
 teleshow.wp.pl,gwiazdy.wp.pl,facet.wp.pl,kobieta.wp.pl,film.wp.pl,tech.wp.pl##[class="qd-US"]
@@ -1407,7 +1406,6 @@ www.fcnet.pl###popup > li > div
 www.fight24.pl##a[href="http://berserklabs.com"]
 www.filmydokumentalne.eu###pop-up
 www.fitnow.pl##[id^="banners"]
-www.forum.nieidealny.pl,polskaracja.com,hurtidetal.pl##.ads
 www.gazetaprawna.pl###boxSubscr2016
 www.gazetaprawna.pl##.tpl_static_html
 www.gierkionline.pl##[id^="banner"]
@@ -1686,6 +1684,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||money.pl/*/ad/direct/*.jpg$image
 ||motocyklistow.pl/uploads/banners/$image
 ||moviads.pl$domain=~moviads.pl
+||mrex.exs.pl^$third-party
 ||muzyczneradio.com.pl/html/images/banners/$image
 ||my-mobile.pl/html/*.jpg$image
 ||mybboard.pl/images/promo/$image
@@ -1743,6 +1742,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||redir.atmcdn.pl/scale/o2/tvn/web-content/m/p2/i/81c8727c62e800be708dbf37c4695dff/$image,domain=tvnwarszawa.tvn24.pl
 ||rek.www.wp.pl^
 ||reklamy.s3.amazonaws.com/bcg/$image
+||repostuj.pl/static/repostujpl/arrow_right.jpg$domain=repostuj.pl
 ||reseton.net/static/player/*/vast.js$script
 ||reseton.pl/static/player/*/vast.js$script
 ||rtbnowads.com/$script
@@ -2024,7 +2024,6 @@ epiotrkow.pl##[class^="abpnot"]
 fly4free.pl##.warnadblk
 forum.vw-passat.pl###ct_i
 gragieldowa.pl##.login
-gorlice24.pl##.header-adblock
 ikorektor.pl###adb
 ipon.pl##.alert-warning
 istotne.pl##.modal-dialog
