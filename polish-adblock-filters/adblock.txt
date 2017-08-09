@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
-! Last modified: 8 August 2017
+! Last modified: 9 August 2017
 ! Expires: 2 days
-! Version: 2017080809
+! Version: 2017080901
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017080809 aktualizacja: wt, 8 sierpnia 2017, 19:45:00
+! v.2017080901 aktualizacja: sr, 9 sierpnia 2017, 08:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -823,6 +823,8 @@ mojaolesnica.pl##DIV[style="width: 750px; height: 200px; float: left; display: i
 mojapogoda.com###upper_header
 money.pl##A[href*="://direct.money.pl/o/salechannel.php"]
 money.pl##DIV[style$="min-height:180px"]
+money.pl##.recommended
+money.pl##.main-menu__submenu__offer
 morele.net##.ears-left
 morele.net##.ears-right
 morele.net##.hidden.citibank-popup
@@ -1076,6 +1078,7 @@ repostuj.pl##.panel-default.panel
 ringpolska.pl##.art-block.clearfix
 rmf.fm###strip-sponsor
 rmf.fm##.intad
+rmf24.pl##.kd_ns_sponsored
 roksa.pl###content > span
 roksa.pl##SPAN[style="color:gray;padding-left:350px;"]
 romantycznyweekend.eu###article-finished
@@ -1501,6 +1504,7 @@ zaufanatrzeciastrona.pl##a[href="https://zaufanatrzeciastrona.pl/t2.php"]
 zaufanatrzeciastrona.pl##a[href="https://zaufanatrzeciastrona.pl/ydAb"]
 zaufanatrzeciastrona.pl##a[href="https://zaufanatrzeciastrona.pl/ydAc"]
 zaufanatrzeciastrona.pl##body > * > * > a[href]:not([href="//zaufanatrzeciastrona.pl"]) > img
+zaufanatrzeciastrona.pl###sponsor3
 zespolmi.pl##a[href^="https://prisonwarsonline.com/"]
 zory.dlawas.pl##.in.fade.modal-backdrop
 zory.dlawas.pl##.modal-dialog
@@ -1959,6 +1963,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||pclab.pl/img/extra/*_header.$image,domain=pclab.pl
 @@||pclab.pl/img/extra/*_logo.$image,domain=pclab.pl
 @@||polotv.pl/assets/js/ads.js$script,domain=polotv.pl
+@@||polsatnews.pl/templates/pnews/js/fingerprint2.min.js
 @@||pubads.g.doubleclick.net/gampad/ad$image,domain=www.emag.pl
 @@||pubads.g.doubleclick.net/gampad/ads?sz=*&iu=*Grydladzieci.pl_*&*&output=xml_vast3&unviewed_position_start=1&url=http%3A%2F%2Fwww.grydladzieci.pl%2F$domain=imasdk.googleapis.com
 @@||r.sascdn.com/diff/js/smart.js$script,domain=www4.rp.pl
@@ -2129,6 +2134,7 @@ zrabatowani.pl###popup-adblock-bottom
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=games.cdn.famobi.com|grydladzieci.pl
 @@||humoris.pl/ads.reklama.728x90$script,stylesheet
 @@||imged.pl/subframe/js/*/adblock-advertisement.js$script
+@@||images.fm.tuba.pl/tuba3/_js/banner/advertisement.js$script
 @@||istotne.pl^$generichide
 @@||ithardware.pl/js/ads.js$script,domain=ithardware.pl
 @@||komputerswiat.pl^$generichide
@@ -2399,6 +2405,7 @@ castto.me##[id^="floatLayer"]
 ##a[href^="https://gamehag.com/r/"]
 ##a[href^="http://affiliates.bet-at-home.com/processing/clickthrgh.asp"]
 ##a[href="http://www.livelooker.com"]
+srkcast.com##[id^="table"]
 !
 !
 !--------------------------Rules on tv streams blocking filters------------!
