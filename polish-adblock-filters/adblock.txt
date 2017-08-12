@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
-! Last modified: 11 August 2017
+! Last modified: 12 August 2017
 ! Expires: 2 days
-! Version: 2017081102
+! Version: 2017081201
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017081102 aktualizacja: ptk, 11 sierpnia 2017, 13:50:00
+! v.2017081201 aktualizacja: sob, 12 sierpnia 2017, 15:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -217,6 +217,9 @@ pl###widget-shop
 pl##.ads
 pl##.adform-slot
 pl###advertisments
+pl##.ppa-slot
+pl##.linkSponsorowany
+pl###LinkArea\:gry
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -234,6 +237,7 @@ pl###advertisments
 4lomza.pl##.bxbanner
 4lomza.pl,zambrow.org##[id*="banner"]
 90minut.pl##body > div:nth-of-type(3)
+agrokapital.pl###main_right > .row:nth-of-type(6)
 alawar.pl##.b-game-list__bnr-title
 aleefuun.pl###ad-bg-transparent
 allegro.pl###coins-banner
@@ -374,6 +378,7 @@ datapremiery.pl##.column_center > [class*="mock"]
 ddtorun.pl,ddwloclawek.pl##.container.movedDiv
 ddtorun.pl,ddwloclawek.pl##.skodaAuto.box-margin.row
 ddtorun.pl,ddwloclawek.pl##[class^="a-d-v"]
+deccoria.pl##.autopromotion-beam-img
 demotywatory.pl###right_column2
 demotywatory.pl##.abox-view-content.center
 demotywatory.pl##[href^="http://pewex.pl/"]
@@ -620,6 +625,8 @@ ideas2action.pl##.o_inner
 imagazine.pl###content > .posts-ad
 imagazine.pl###text-402422661
 indeed.com###related
+info.elblag.pl###banner-glowny
+info.elblag.pl##.linkwrap
 infogazeta.pl###comment-captcha
 infogazeta.pl,newsf24.pl##.border
 infogliwice.pl##A[class="gofollow"]
@@ -682,6 +689,7 @@ kawerna.pl###kawerna_tapeta
 katalogi.pl###post_id_
 kei.pl##.img-responsive
 kino.pecetowiec.pl##.message.success
+kino-iskra.pl##.box.active > IMG[src^="/img/box/"]
 kino123.pl##img[src^="https://pp.funhub.pl/"]
 kino24-tv.pl##a[href*="://ad.gameflow.pl/"]
 klikplej.pl##.a-d-box
@@ -694,6 +702,7 @@ komputerswiat.pl###\5f 479491471
 komputerswiat.pl##.sidebar_html_embed
 komputerswiat.pl##[style="width: 600px; height: 400px; margin: 20px auto;"]
 koncertomania.pl##div#slide-out-newsletter
+koncertomania.pl###banner-side
 korkosfera.pl##div#copyright_ne
 kozaczek.pl##.nsg_ad_box
 kozaczek.pl##img[src^="data:image/jpeg;base64"]
@@ -969,6 +978,7 @@ pilkanozna.pl##.rekl_srod_top
 pilkanozna.pl##DIV[style="text-align:center;padding:15px;"]
 pilot.wp.pl###plugin-popup
 pirackiekino.blogspot.com##img[src*="blogspot.com/-AOw7_"]
+pisf.pl##.w-x4.h-x2.fl
 planujemywesele.pl###ad-profile-box1
 play.pl##.overlay-shadow
 playstationforum.pl##[onclick^="MyAdvertisements"]
@@ -1004,7 +1014,6 @@ popularnie.pl###gold-header
 poradnikzdrowie.pl###slidebox
 poranny.pl,polskatimes.pl##h2 > span
 poranny.pl###dfp-prawa1
-poranny.pl###LinkArea\:gry
 poranny.pl##.gry
 portal24h.pl###rt-content-bottom
 portal.abczdrowie.pl##.a-ctn-d
@@ -1075,6 +1084,7 @@ rdn.pl###pl-w5922cc44491e8
 realmadryt.pl##DIV[style="margin:0 auto;"]
 realmadryt.pl##fieldset
 redbullmobile.pl###more1
+reklama.pl##.banner-top
 remiza.com.pl##.gofollow
 reporter.pl##.dodaj.c
 reporter.pl##a[href^="/r/#"]
@@ -1653,6 +1663,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||img.dvhk.to^$image,domain=portal.dvhk.to
 ||img.targeo.pl/i/cache/a/$image,domain=mapa.targeo.pl
 ||incontext.pl^$script
+||info.elblag.pl/images/banerki$script,object
+||info.elblag.pl/media/layout/tla/$image
 ||informacjelokalne.pl/images/banners/$image
 ||inframe.platform.onet.pl/v1/
 ||instalacjebudowlane.pl/banery$image
@@ -1937,6 +1949,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 @@||emisja.contentstream.pl/_/jsonapi/?prefix=adart$domain=rmf24.pl
 @@||emspartner.pl/wp-content/plugins/duracelltomi-google-tag-manager/js/$script
 @@||everafterhigh.com/Static/js/ga-script.js$script
+@@||exs.pl^$domain=wpolityce.pl
 @@||fakt.pl^$generichide
 @@||gemius.pl^$domain=www.gemius.pl
 @@||go.brightcove.com/content/
@@ -2056,6 +2069,7 @@ mmorpg.org.pl,parezja.pl##.adsbygoogle
 memorizer.pl##.adblockInfo
 nadajemy.pl###abp_info
 parezja.pl###adblock_info
+pl###adnp
 portel.pl##[style^="height: 200px; padding: 30px;"]
 porteuropa.eu##i#g207
 proste.info.pl###warning
@@ -2072,7 +2086,6 @@ twojezaglebie.pl###modal
 twojezaglebie.pl##.modal-box
 vod.pl#@#.text-ad
 wortale.net##.ban-71.ban
-wrealu24.pl###adnp
 wtkplay.pl,epoznan.pl#@#.ad
 wtkplay.pl,epoznan.pl,lech.tv#@#.advertising_block
 wtkplay.pl,epoznan.pl,lech.tv#@#.reklama
