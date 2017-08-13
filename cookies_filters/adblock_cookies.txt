@@ -3,17 +3,18 @@
 ! polskie filtry komunikatow cookies do Adblocka i uBlocka
 ! Collaborators: F4z, xxcriticxx, blocker999, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Last modified: 10 August 2017
+! Last modified: 13 August 2017
 ! Expires: 4 days (update frequency) 
-! Version: 2017081001
+! Version: 2017081301
 ! Report problems or unblocked ads to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock-polskie-filtry-blokowanie-info-cookies/
-! v.2017081001 aktualizacja: czw, 10 sierpnia 2017, 20:03:00
+! v.2017081301 aktualizacja: nd, 13 sierpnia 2017, 21:18:00
 !
 !
 1000dni.pl##DIV[style="width: 100%; background-color: rgb(0, 60, 122); padding: 10px 8px; line-height: 20px; left: 0px; position: fixed; margin: 10px auto 0px; bottom: 0px; z-index: 1000; font-size: 13px; font-family: Helvetica,Arial,sans-serif; color: rgb(255, 255, 255);"]
+24opony.pl##.easyNotificationBck
 40latki.pl###noty_bottom_layout_container
 4f.com.pl##.in.fade.modal-backdrop
 4hifi.pl##div#myModal
@@ -40,6 +41,7 @@ aptekalwowska.com,aptekawaw.pl###dymek
 arachnea.org##div.guestwarn
 archiwumallegro.com.pl###polityka
 areatour.pl##div#topbar
+arnicaapteka.pl##.warning
 asd.pl##div[style="width: 100%;float: left;background: #fff;padding: 15px 0;position: fixed;top: 0px;left: 0px;text-align: center;color: #000;border-bottom: 1px #000 solid;z-index: 1000;"]
 audiostereo.pl###cookiebanner
 auschwitzmemento.pl##div.activebar-container
@@ -299,6 +301,7 @@ hillsvet.pl##[class*="ui-widget"]
 himountain.pl###infobarDiv, #infobar, .infobar, #info-bar, #info_c_box, .info-message
 hpe.com##.privacy-banner
 hoga.pl###warning
+holidaycheck.pl###infoCloseableBoxContainer
 home.pl###box_policies
 hotelbrda.com.pl##div#examplediv
 hotelpanorama.pl###_mo
@@ -573,6 +576,7 @@ nomi.pl##div#Messenger-Special
 novatech.com.pl###cooki
 nowaostroleka.pl###cffc
 nowapapiernia.pl##body > div:not([id]):not([class])[style*="position"][style*="fixed"], body > div:not([id]):not([class])[style*="position"][style*="absolute"]
+nowaruda24.pl###cndiv
 nowehoryzonty.pl##div#div_ac
 noweprzetargi.pl###dcach
 noweprzetargi.pl###txt
@@ -803,6 +807,7 @@ studiokopiowania.pl###cooPInfo
 studiorolety.pl##.content-head-information
 stylowi.pl##DIV[style="position: fixed; left:0; right:0; bottom:0; height:120px; background-color:#eee; border-top: 1px solid black; z-index:16; overflow: auto"]
 stylowi.pl##body > div:not([id]):not([class])
+stypendia.sejmik.kielce.pl##.mod_pa_sci
 superfilm.pl###box_info
 swiat-agd.com.pl##body > div:not([id]):not([class])
 swiat-laptopow.pl##body > div:not([id]):not([class])[style*="position"][style*="fixed"], body > div:not([id]):not([class])[style*="position"][style*="absolute"]
@@ -906,7 +911,7 @@ wrota.lubuskie.pl##div#eKPC_Container
 wrzucacz.pl###logo .info
 wsb.pl##div#ciasteczkowy_potwor
 wsedno24.pl###mordern_adbar_wrap
-wszystkotujest.pl##DIV[style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; opacity: 0.8; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 100001;"]
+wszystkotujest.pl##body > div:nth-of-type(3)
 wsse-poznan.pl##.visiblebox
 wtk.com.pl##div#TB_overlay
 wtk.com.pl##div#TB_window
@@ -1000,6 +1005,7 @@ cookie-law-popup.js$script
 ||radiopoznan.fm//homepage/privacyPolicy
 ||consent.truste.com/get?name=notice.js$script
 ||skryptcookies.pl^$third-party
+||rolpetrol.com.pl/cookies.js$script
 !
 !
 ! Global
@@ -1087,7 +1093,6 @@ sympatia.onet.pl###cookieInfo
 ~sympatia.onet.pl##[id^="topInfo"]
 ##DIV[style*="background:url(images/cookies_tlo.png)"]
 ##.head-page-information
-pl##[id^="polityka-prywatnosci"]
 ###ciacho_bar
 ###ca_banner
 ###ck_dsclr
@@ -1150,6 +1155,9 @@ pl##.plg_system_eprivacy_module:not(body):not(html)
 ###cooPInfo
 ###korzystanieZCiateczek
 ###cnpl_v01
+##.privacy_policy_info:not(body):not(html)
+###cookiePolisyInfo:not(body):not(html)
+###cookies-container:not(body):not(html)
 pl###notice_bar
 pl##.cnil-banner__content
 pl##[class^="kom_polityka_prywatnosci"]
@@ -1177,6 +1185,7 @@ pl##DIV[style="padding: 5px 25px 5px 15px;"]
 @@||static.wirtualnemedia.pl/new/js/cookie.js$script
 @@/plugins/uk-cookie-consent/assets/js/uk-cookie-consent-js.js$script,domain=escaperooms.pl|xboxarcade.pl|naziemna.info
 @@||*/wp-content/plugins/cookie-law-info/js/cookielawinfo.js$script
+@@||24gliwice.pl/wiadomosci/wp-content/plugins/cookie-law-info/js/cookielawinfo.js$script
 @@||rozklad.pkp.pl/js/$script
 @@||cdaction.pl/views/js1/cookie.js$script
 letsplej.pl,telepizza.pl#@#div[class*="cookie"]
