@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
-! Last modified: 21 August 2017
+! Last modified: 22 August 2017
 ! Expires: 2 days
-! Version: 2017082102
+! Version: 2017082201
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017082102 aktualizacja: pon, 21 sierpnia 2017, 20:50:00
+! v.2017082201 aktualizacja: wt, 22 sierpnia 2017, 19:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -340,6 +340,9 @@ blogmobility.pl##.top-baner
 bobrzanie.pl##.size-full.aligncenter
 bochnianin.pl##.xo
 booksclub.pl##IMG[src*="/banners/"]
+businessjournal.pl##.add
+businessjournal.pl##A[href^="http://"] > [class*="wp-image-"][width="750"]
+businessjournal.pl##[href^="http://"][target="_blank"] > IMG[src^="http://businessjournal.pl/wp-content/uploads/"]
 businesswomanlife.pl##[id^="slidero-box-"]
 businesswomanlife.pl##[id^="widget_sp_image"]
 cadblog.pl##TD[bgcolor="#FFFFFF"]
@@ -658,6 +661,7 @@ instalki.pl###PushangoAlert
 instalki.pl##.banner_mod_top
 instalki.pl###Mod359
 instalki.pl###banner
+instalki.pl##.banner_article_center
 interia.pl##.adSearch
 interia.pl##[id^="ad_"]
 ipo.pl##DIV[style="clear:both;min-height:100px;"]
@@ -2272,7 +2276,7 @@ mybank.pl##.adsbygoogle
 mybank.pl##div[id^="div-gpt-ad"]
 cosplayjav.pl##.baner-bottom-section
 vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
-tvnmeteo.tvn24.pl##.tvn-advertisement
+tvnmeteo.tvn24.pl##[class*="advert"]
 !
 !
 !--------------------------Rules sport streams element hiding rules-------------!
@@ -2454,6 +2458,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 /^(http|https):\/\/[a-z]{5,10}\.com\/[a-zA-Z0-9+]{80,}/$subdocument,domain=embed.nowvideo.sx|cloudtime.to|darmowa-telewizja.info
 /^(http|https):\/\/(?!apis.google)[a-z0-9.-]{5,}\.com\/[a-z]{1,}\/[a-z]{1,}\.js/$script,domain=wrealu24.pl
 /^(http|https):\/\/[a-z0-9]{10,20}\.com\/[0-9]{5,10}\.html/$subdocument,domain=ekino-tv.pl
+/^http:\/\/p[0-9]{6,10}\.[a-z]{5,10}\.com\/itab\/[a-z?=A-Z_0-9&]{10,}Zippyshare.com[a-z0-9A-Z%.'-]{5,}/$popup
 !
 !
 !--------------------------Stupid notifications------------!
