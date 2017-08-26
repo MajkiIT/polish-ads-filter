@@ -3,14 +3,14 @@
 ! polskie filtry komunikatow cookies do Adblocka i uBlocka
 ! Collaborators: F4z, xxcriticxx, blocker999, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Last modified: 25 August 2017
+! Last modified: 26 August 2017
 ! Expires: 4 days (update frequency) 
-! Version: 2017082501
+! Version: 2017082601
 ! Report problems or unblocked cookie and privacy warnings to errors@certyficate.it
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock-polskie-filtry-blokowanie-info-cookies/
-! Aktualizacja: pt, 25 sierpnia 2017, 20:44
+! Aktualizacja: sob, 26 sierpnia 2017, 16:08
 !
 !
 !preorder.pl##.message_cookie.info
@@ -1006,36 +1006,37 @@ cookie-law-popup.js$script
 !
 !
 ! Global
-###AcceptCookie
-###acceptCookies
+###AcceptCookie:not(body):not(html)
+###acceptCookies:not(body):not(html)
 ###blockPopupInformation
-###ca_banner
-###cc-notification
-###ciacho
+###ca_banner:not(body):not(html)
+###cc-notification:not(body):not(html)
+###ciacho:not(body):not(html)
 ###ciacho_bar
-###ciachoinfo
-###ciasteczka
+###ciachoinfo:not(body):not(html)
+###ciasteczka:not(body):not(html)
 ###ciasteczka-komunikat
 ###ciasteczkaInfo
-###ciastka
-###ciastka_wiadomosc
+###ciastka:not(body):not(html)
+###ciastka_wiadomosc:not(body):not(html)
 ###ciastko_alert
-###ck_dsclr
+###ck_dsclr:not(body):not(html)
 ###cnpl_v01
 ###cookie-bar:not(body):not(html)
-###cookieBox
+###cookieBox:not(body):not(html)
 ###cookieContent
 ###cookieInfo:not(body):not(html)
-###cookieInfoBox
+###cookieInfoBox:not(body):not(html)
 ###cookiePolisyInfo:not(body):not(html)
 ###cookies-container:not(body):not(html)
 ###cookies-info:not(body):not(html)
 ###cookies-politics:not(body):not(html)
-###cookies:not(body):not(html)
-###cookies_info
+###cookies:not(body):not(html):not(.section)
+###cookies_info:not(body):not(html)
 ###cookies_policy_box
-###cookiesdirective
-###cookiesEU-box
+###cookiesdirective:not(body):not(html)
+###cookiesEU-box:not(body):not(html)
+###cookiesPanel:not(body):not(html)
 ###cookieView:not(body):not(html)
 ###cooPInfo
 ###CPolicy
@@ -1045,49 +1046,49 @@ cookie-law-popup.js$script
 ###hideMe
 ###icc_message
 ###info_c_box
-###informacjaOCiasteczkach
-###inpl_cp_cnt
+###informacjaOCiasteczkach:not(body):not(html)
+###inpl_cp_cnt:not(body):not(html)
 ###korzystanieZCiateczek
 ###kuki
 ###policy-box
 ###politosci
 ###polityka-ciastek:not(body):not(html)
 ###polityka-cookies:not(body):not(html)
-###polityka:not(body):not(html)
+###polityka
 ###politykaprywatnosci:not(body):not(html)
-###popup-cookies
-###privacy-notice
+###popup-cookies:not(body):not(html)
+###privacy-notice:not(body):not(html)
 ###privacy_policy
-###privacy_policy_bar
+###privacy_policy_bar:not(body):not(html)
 ###Qookie
 ###showCookie:not(body):not(html)
 ###showCookie:not(body):not(html) ~ br
-###showCookieInfo
-###sliding-popup
+###showCookieInfo:not(body):not(html)
+###sliding-popup:not(body):not(html)
 ###wc
 ###ZATAKIEUSTAWYPOWINNIZAMYKAC
-###zk_polityka_ciastek
+###zk_polityka_ciastek:not(body):not(html)
 ##.alert-sm.alert-warning.alert
-##.biscuit-usage
-##.cc_banner-wrapper
-##.ciacho
-##.ciasteczka
-##.ciasteczka-info
+##.biscuit-usage:not(body):not(html)
+##.cc_banner-wrapper:not(body):not(html)
+##.ciacho:not(body):not(html)
+##.ciasteczka:not(body):not(html)
+##.ciasteczka-info:not(body):not(html)
 ##.ciasteczko
-##.ciastka
-##.cookie-alert
-##.cookie-info
-##.cookie-law
-##.cookie-notification
-##.cookie_agree
-##.COOKIE_PRIVACY_CONT
+##.ciastka:not(body):not(html)
+##.cookie-alert:not(body):not(html)
+##.cookie-info:not(body):not(html)
+##.cookie-law:not(body):not(html):not(.post-content)
+##.cookie-notification:not(body):not(html)
+##.cookie_agree:not(body):not(html)
+##.COOKIE_PRIVACY_CONT:not(body):not(html)
 ##.cookieForm
-##.cookies-alert
+##.cookies-alert:not(body):not(html)
 ##.cookies-box:not(body):not(html)
-##.cookies-container.container
-##.cookies-info
+##.cookies-container:not(body):not(html)
+##.cookies-info:not(body):not(html)
 ##.cookskom
-##.cookwarning
+##.cookwarning:not(body):not(html)
 ##.ek-bar
 ##.footerCookieNotice
 ##.giodoContainer
@@ -1096,12 +1097,12 @@ cookie-law-popup.js$script
 ##.message--cookie--show
 ##.message_cookie:not(body):not(html)
 ##.messi
-##.policy-box
+##.policy-box:not(body):not(html)
 ##.polityka-cookie:not(body):not(html)
 ##.politykaprywatnosci
-##.privacy-container
+##.privacy-container:not(body):not(html):not(.content-container)
 ##.privacy_policy_info:not(body):not(html)
-##.RACKWrapper
+##.RACKWrapper:not(body):not(html)
 ##[class*="coockie"]
 ##[class^="box-cookie"]
 ##[id*="ciasteczka_alert"]
@@ -1110,9 +1111,9 @@ cookie-law-popup.js$script
 ##[id^="PolitykaPrywatnosci"]
 ##aside[class*="Cookie"]
 ##aside[class*="cookie"]
-##ciasteczka
+##ciasteczka:not(body):not(html)
 ##co15ie87a
-##cookidiv
+##cookidiv:not(body):not(html)
 ##div#cookiepopupdiv
 ##div#footer-cookies
 ##div[class^="pea_cook_wrapper"]
@@ -1121,10 +1122,10 @@ cookie-law-popup.js$script
 ##DIV[style*="url(layout/cookies.png)"]
 ##iframe[class*="Cookie"]
 ##iframe[class*="cookie"]
-##inpl_cp_cnt
+##inpl_cp_cnt:not(body):not(html)
 ##nav[class*="Cookie"]
 ##nav[class*="cookie"]
-##sliding-popup
+##sliding-popup:not(body):not(html)
 ##span[class*="Cookie"]
 ##span[class*="cookie"]
 /cookie.js$script
@@ -1145,21 +1146,21 @@ cookie-law-popup.js$script
 com##.is-ready.is-shown.cnil-banner
 pl###amp-user-notification1
 pl###ciasteczka_tresc
-pl###ciastkodivf
+pl###ciastkodivf:not(body):not(html)
 pl###cokPyt
 pl###cookie
-pl###cookies_content
-pl###div-cookie-komunikat
-pl###gm-cookies
+pl###cookies_content:not(body):not(html)
+pl###div-cookie-komunikat:not(body):not(html)
+pl###gm-cookies:not(body):not(html)
 pl###komunikat-cookies
 pl###notice_bar
-pl###pasek_ciasteczka
+pl###pasek_ciasteczka:not(body):not(html)
 pl###policy-info
-pl##.cc-banner
+pl##.cc-banner:not(body):not(html)
 pl##.cnil-banner__content
 pl##.plg_system_eprivacy_module:not(body):not(html)
 pl##.polityka_ciastek
-pl##.privacy-info
+pl##.privacy-info:not(body):not(html)
 pl##[class^="kom_polityka_prywatnosci"]
 pl##[id^="polityka-prywatnosci"]
 pl##DIV[style="border: 10px solid rgb(138, 138, 138); border-radius: 10px; box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.9); background-color: rgb(255, 255, 255); padding: 8px 8px 10px; position: fixed; z-index: 99999; right: 20px; left: 20px; bottom: 20px; width: 700px; max-width: 90%;"]
