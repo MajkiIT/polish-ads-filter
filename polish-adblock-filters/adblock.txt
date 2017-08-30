@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 30 August 2017
 ! Expires: 2 days
-! Version: 2017083001
+! Version: 2017083002
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017083001 aktualizacja: sr, 30 sierpnia 2017, 08:15:00
+! v.2017083002 aktualizacja: sr, 30 sierpnia 2017, 12:25:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -556,6 +556,7 @@ franchising.pl##[id^="scrAd"]
 frazpc.pl###imgnetshare
 fronda.pl###ecoeconomy
 fronda.pl##.small-info
+fronda.pl##.selfpromotion-ticker.pull-left
 futbol.pl###block-block-2
 futbol.pl##DIV[onmousedown="window.location.href='http://creativetravel.pl'"]
 gadzetomania.pl###exit-intent-modal
@@ -1698,8 +1699,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||evertiq.pl/go/$popup
 ||evertiq.pl/bximg/*.png$image
 ||exs.pl/ads.js$script
-||exs.pl/frame*.php$subdocument
-||exs.pl/embed*.php$script
+||exs.pl/frame*.php$subdocument,domain=~wgospodarce.pl
+||exs.pl/embed*.php$script,domain=~wgospodarce.pl
 ||extremehobby.eu/banner/$subdocument
 ||eurogol.pl/images/banner.jpg$image
 ||fechallenge.com/images/*/brand
@@ -2550,3 +2551,7 @@ www.wp.pl##div[class^="_"]:matches-css(height: 2000px):matches-css(position: rel
 !--------------------------maciejtarmas rules testing -----------!
 ||ninja.onap.io/ninja-cee.js$domain=olx.pl,important
 @@||olx.pl/*/ajax/ad/$xmlhttprequest
+!
+!
+!--------------------------Easylist Bugs -----------!
+@@||wpolityce24.pl/imgcache/300x250/*/uploads/news/$image
