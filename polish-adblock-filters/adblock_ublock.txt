@@ -3,15 +3,15 @@
 ! polskie filtry do uBlocka uzupelnienie
 ! Collaborators: F4z, xxcriticxx
 ! Homepage: https://www.certyficate.it/
-! Last modified: 4 August 2017
+! Last modified: 31 August 2017
 ! Expires: 2 days
-! Version: 2017080401
+! Version: 2017083101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017080401 aktualizacja: ptk, 4 sierpnia 2017, 22:00:00
+! v.2017083101 aktualizacja: czw, 31 sierpnia 2017, 08:00:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -206,3 +206,6 @@ dvbtmap.eu###content-container:style(margin-top: 0px!important;)
 !
 ! naszemiasto.pl - https://github.com/MajkiIT/polish-ads-filter/issues/3175
 naszemiasto.pl##script:inject(abort-on-property-write.js, czy_wlaczony_adblock)
+!
+! anyfiles.pl
+anyfiles.pl##script:inject(abort-on-property-read.js, launchOpenWindow)
