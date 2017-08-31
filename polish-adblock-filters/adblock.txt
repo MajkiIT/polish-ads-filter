@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
-! Last modified: 30 August 2017
+! Last modified: 31 August 2017
 ! Expires: 2 days
-! Version: 2017083003
+! Version: 2017083101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017083003 aktualizacja: sr, 30 sierpnia 2017, 18:45:00
+! v.2017083101 aktualizacja: czw, 31 sierpnia 2017, 07:55:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -221,6 +221,7 @@ pl##.ppa-slot
 pl##.linkSponsorowany
 pl###LinkArea\:gry
 ###main_advertisement
+##.footer-ad
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -278,6 +279,7 @@ anglia.today##[href^="/redirect/ad/background/"]
 anglia4u.pl###gkSidebar
 anyfiles.pl###SearchVideosLoadDiv > .media-list > .media > .thumbnail:not([title])
 anyfiles.pl###AllVideosLoadDiv > .media-list > .media > .thumbnail:not([title])
+anyfiles.pl##[class^="bp-wrapp"]
 antyweb.pl##.aadv
 antyweb.pl##.group.big.box-adv
 antyweb.pl##.transparent
@@ -828,6 +830,7 @@ menshealth.pl##.billboard.mh-advert
 menshealth.pl###mh-halfpage-advert-2
 menstream.pl###artykul > .ad_box.ac
 meteo.pl##.project-title.control-wrapper
+meteoprog.pl##.reclama
 meteovista.pl##.leaderboard
 mfind.pl###sidebar-sticky-widgets > .widget-ebook-form > .widget-ebook-form-content
 mgsm.pl###BookmarksLink
@@ -899,6 +902,7 @@ msmobile.pl###text-57
 mtech.pl###widget-notify
 muzodajka.pl###tbl_div
 muzyka.interia.pl###news1
+muzyka.dziennik.pl##.widget-headertext-area
 mvbezlimitu.pl##.E0MTE
 my-mobile.pl###main-right > center
 my-mobile.pl###sidebar > center
@@ -1014,6 +1018,7 @@ pclab.pl##[href^="http://csr.onet.pl/eclk/clk"]
 pcworld.pl###WhitepaperModule
 pcworld.pl##.side-module.how-to
 pcworld.pl##div#toaster
+pdaclub.pl##.approvebg
 pebx.pl###header > script + div[style="text-align:center;width:100%;text-align:center;"] > a[href][rel="nofollow"]
 pebx.pl###logoBlock .funbox
 pebx.pl###photo_container
@@ -1270,6 +1275,7 @@ styl.pl###headerTopWraper > .headerPre
 sucharry.pl##[style*="width: 336px;"]
 superdania.pl###preface-top-container
 supernowosci24.pl###notificationbar
+super-torent.pl##td:nth-of-type(4) > .raised:nth-of-type(2) > .boxcontent
 suwalki.info###banner-billboard
 swiat-gier.com###paczkomaty_icon
 swiatbaterii.pl##DIV[id^="cbox"]
@@ -1655,6 +1661,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||bielsko.biala.pl/userfiles/banery/$image,object
 ||bit.ly/2$popup,domain=mmorpg.org.pl
 ||blogomaniak.pl/i/techmaniak-ceneo-sidebar$image
+||brand.ad/^
 ||businessclick.*/$script
 ||cda.pl/*v*a*s*t*.php
 ||cda.pl/*v*a*s*t*/*.xml
