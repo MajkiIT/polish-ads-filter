@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
-! Last modified: 31 August 2017
+! Last modified: 1 September 2017
 ! Expires: 2 days
-! Version: 2017083101
+! Version: 2017090101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017083101 aktualizacja: czw, 31 sierpnia 2017, 07:55:00
+! v.2017090101 aktualizacja: ptk, 1 wrzesnia 2017, 08:05:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -222,6 +222,7 @@ pl##.linkSponsorowany
 pl###LinkArea\:gry
 ###main_advertisement
 ##.footer-ad
+pl##.onnetwork-video
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -540,6 +541,7 @@ forum.ebiznesy.pl###sidebar
 forum.fedora.pl###document_modal
 forum.gniezno.com.pl##.naglowek_re_grupa1
 forum.gniezno.com.pl##.stopka_re
+forum.kodiwpigulce.pl##.wrapper > center
 forum.komputerswiat.pl###post_id_
 forum.nissanklub.pl##[class^="iParts_Ad"]
 forum.optymalizacja.com##[href$="utm_medium=banner"]
@@ -619,6 +621,7 @@ grydladzieci.pl###adRechts
 grydladzieci.pl##.first.section > [style="width:748px;height:90px;margin:0 auto; color:#fff;"]
 grydladzieci.pl##div[style="width:160px;float:left; margin-top:-40px;font-size:10px;"]
 grydladzieci.biz.pl###mmm2
+grydladzieci.pl##[id^="adRechts"]
 gry.misiakowo.pl##[style$="width:346px;height:290px;"]
 gry.misiakowo.pl##[style="width:100%;max-width:800px;overflow:auto;"] + H2
 gsmmaniak.pl###okazja-dnia
@@ -940,6 +943,7 @@ naszemiasto.pl##center > a[href^="http://www.gratka.pl/"][target="_blank"] > img
 naszemiasto.pl##.columns > p[style="margin-left: 40px; margin-bottom: 2px; text-align: left; font-size: 7pt; font-family: Verdana, Tahoma; color: #9d9d9d;"]
 natemat.pl##.onnetwork-video
 nczas.com##A[target="_self"] > .vc_single_image-img:last-child
+newseria.pl##.container > .banner-nagl
 newsf24.pl##.box
 nhl.pl##.ipbtable:has(div[align="center"] > script[src^="//nhlpl.engine.adglare.org"])
 niebezpiecznik.pl###main > br
@@ -1313,6 +1317,7 @@ teleman.pl,americasarmy.pl,exsite.pl,jastrzebieonline.pl,signs.pl###billboard
 teleman.pl##.grid-group-as
 teleshow.wp.pl,gwiazdy.wp.pl,facet.wp.pl,kobieta.wp.pl,film.wp.pl,tech.wp.pl##[class="qd-US"]
 telewizjarepublika.pl##.box-szary
+telewizjarepublika.pl##.mainpage-row:nth-of-type(11) > .mainpage-column-right
 temat.info##.bannergroup
 tenisklub.pl###bnrTop1
 tenisklub.pl##DIV[style="width:750px;height:100px;margin:10px auto;"]
@@ -1786,6 +1791,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||media2.cinema-city.pl/pl/*.swf
 ||mediaexpert.pl/temp/filemanager_up/*tlo_$image
 ||microsms.pl/img/reklama$image
+||mgsm.pl/js/getSkapiecSkycraper.xhtml$xmlhttprequest,domain=www.mgsm.pl
 ||mma.pl/wp-content/uploads/20*/*/kapka-do-kapki.jpg$image
 ||mmania.pl/cdn/partner/$image
 ||mojaolesnica.pl/reklamy/
