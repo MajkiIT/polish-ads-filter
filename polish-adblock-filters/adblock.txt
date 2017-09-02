@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 2 September 2017
 ! Expires: 2 days
-! Version: 2017090201
+! Version: 2017090202
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017090201 aktualizacja: sob, 2 wrzesnia 2017, 11:50:00
+! v.2017090202 aktualizacja: sob, 2 wrzesnia 2017, 15:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -510,6 +510,7 @@ filmweb.pl###flashcontent3
 filmweb.pl###pasekup
 filmweb.pl###skyBanner
 fishki.pl###fancybox-wrap
+flarrow.pl##[class^="td_block_wrap td_block_text_with_title td_uid_"]
 flashscore.pl###box-over-content-a
 flashscore.pl##.scrolling-box-under-content
 fly4free.pl##.rkcont--top
@@ -542,6 +543,7 @@ forum.fedora.pl###document_modal
 forum.gniezno.com.pl##.naglowek_re_grupa1
 forum.gniezno.com.pl##.stopka_re
 forum.kodiwpigulce.pl##.wrapper > center
+forum.kodiwpigulce.pl##DIV[onclick="MyAdvertisements.do_click(1);"]
 forum.komputerswiat.pl###post_id_
 forum.nissanklub.pl##[class^="iParts_Ad"]
 forum.optymalizacja.com##[href$="utm_medium=banner"]
@@ -994,6 +996,7 @@ olx.pl##.screen-link.abs
 onet.pl##span.newsAdd
 onet.pl##.miniSlot:style(min-height: 0rem!important;margin-bottom: 0rem!important;)
 opinie.wp.pl##[style="pointer-events:none;"][class]
+open.fm###bnr-top
 optyczne.pl##.double-billboard
 opolelubelskie.24wspolnota.pl##.visible-md.visible-lg.row
 originals24.pl##body > div:nth-of-type(3)
@@ -1196,6 +1199,7 @@ satkurier.pl###right_column_gallery
 satkurier.pl###single_news > div > center
 satkurier.pl###wrapper > center > center
 satkurier.pl##[id^="banner_"]
+satkurier.pl##[id^="google"]
 saturn.pl###nl_modal
 saturn.pl###nl_overlay
 seciki.pl##.crek
@@ -1790,7 +1794,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||media2.cinema-city.pl/pl/*.swf
 ||mediaexpert.pl/temp/filemanager_up/*tlo_$image
 ||microsms.pl/img/reklama$image
-||mgsm.pl/js/getSkapiecSkycraper.xhtml$xmlhttprequest,domain=www.mgsm.pl
+||mgsm.pl/js/getSkapiec*.xhtml$xmlhttprequest,domain=www.mgsm.pl
 ||mma.pl/wp-content/uploads/20*/*/kapka-do-kapki.jpg$image
 ||mmania.pl/cdn/partner/$image
 ||mojaolesnica.pl/reklamy/
@@ -2232,7 +2236,7 @@ zrabatowani.pl###popup-adblock-bottom
 @@|http://www.googletagmanager.com/gtm.js$script,domain=benchmark.pl
 @@||anyfiles.pl/pageloading/*-loader.jsp?ads=true
 @@||auto-swiat.pl^$generichide
-@@||adv.wp.pl/RM/Box/$xmlhttprequest,domain=pilot.wp.pl
+@@||adv.wp.pl/RM/Box/$xmlhttprequest,script,domain=pilot.wp.pl
 @@||biznesforum.pl/adsense.js$script,domain=biznesforum.pl
 @@||blog.programyzadarmo.net.pl/images/ad/*.gif$image,domain=blog.programyzadarmo.net.pl
 @@||brotkids.tv/media/mod_pwebadblock/js/ads.js$script
