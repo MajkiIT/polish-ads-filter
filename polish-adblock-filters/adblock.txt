@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 3 September 2017
 ! Expires: 2 days
-! Version: 2017090301
+! Version: 2017090302
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017090301 aktualizacja: nie, 3 wrzesnia 2017, 09:25:00
+! v.2017090302 aktualizacja: nie, 3 wrzesnia 2017, 10:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -77,13 +77,17 @@ streamin.to###rkm
 ||vshare.io/watch_video.php$script
 !
 !
-!-----------------------Privacy filters-----------------------!
+!-----------------------Privacy filters hide-----------------------!
 ##A[href*="k.tradedoubler.com/click"]
+poczta.interia.pl#@#[href*=".hit.gemius.pl"]
+motorolasolutions.com##.tealiumMo2TriggerButton
+!
+!
+!-----------------------Privacy filters block-----------------------!
 ,xgemius.js$script
 .pl/*_ac=kropka-*
 /gemius/*$script,image
 /js/gemius.js$script
-poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ||adkontekst.pl$script,image
 ||adnxs.com^
 ||api.solvemedia.com/papi/action$popup
@@ -91,6 +95,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ||creativecdn.com^$third-party
 ||emisja.adsearch.pl/$xmlhttprequest
 ||entryhit.wp.pl^
+||gcontent.services.tvn.pl^
 ||gemius.pl^
 ||hit.gemius.pl$script,image
 ||kozaczek.pl/stats.php$xmlhttprequest
@@ -106,7 +111,6 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ||vendimob.pl^
 ||www.wp.pl/v*/log/view
 ||tealium.hs.llnwd.net/*/utui/js/*.js$script,domain=motorolasolutions.com
-motorolasolutions.com##.tealiumMo2TriggerButton
 !
 !
 !------------------------General element hiding rules-------------------------!
@@ -923,17 +927,9 @@ mylomza.pl##.topblock
 mylomza.pl##.width100.float-left.contenttopbox > .last.first.mod-box.module
 mysqlperformanceblog.com##.insightera-bar-widget.insightera-bar
 na-luzie.net##a[href^="http://trafisz.com/"]
-naekranie.pl###adocean-screening-layer > .inner-wrap
-naekranie.pl###adocean-screening-layer > .post-content
-naekranie.pl###bg-custom-ad
-naekranie.pl##.anb
-naekranie.pl##.ans
-naekranie.pl##.native-click-trigger
 naekranie.pl##.sen-gal-sidebar-custom-content
-naekranie.pl##[class^="welcome_screen"]
-naekranie.pl##a[href^="http://onskr.in/"]
 naekranie.pl##div[style="height: 5.3125rem !important;"]
-naekranie.pl##.except-mobile
+naekranie.pl##.inner-wrap > .post-content
 napisy24.pl##.custom_pozioma
 napisy24.pl##[id^="napisy24"]
 napisy24.pl##a[href^="http://www.allplayer.org/"]
