@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
-! Last modified: 12 September 2017
+! Last modified: 13 September 2017
 ! Expires: 2 days
-! Version: 2017091203
+! Version: 2017091301
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017091203 aktualizacja: wt, 12 wrzesnia 2017, 18:15:00
+! v.2017091301 aktualizacja: sr, 13 wrzesnia 2017, 18:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -497,8 +497,8 @@ euro.com.pl##[id$="-ear"]
 euro.com.pl##[id^="background-"]
 euro.com.pl##.scroll-footer
 eurogamer.pl###leaderboard
-eurogamer.pl###promo-section
 eurogamer.pl###skyscraper
+eurogamer.pl##script:inject(abort-on-property-write.js, yafaIt)
 evertiq.pl##[id^="bnr"]
 exsite.pl##DIV[id^="tower_"]
 exsite.pl##[id^="adkon"]
@@ -566,6 +566,8 @@ forum.pcformat.pl##.classic.post:not([style]):not([id])
 forum.pclab.pl###messageHook
 forum.vwgolf.pl##A[style="position:absolute;bottom:0.4em;text-transform:uppercase;font-size:80%;right:1em;\a           background:#de8c2f;color:#e6ebf2;padding:3px 7px; display:block"]
 forum.vwgolf.pl##DIV[style="padding:10px 15px 12px"]
+forum.elportal.pl##.scale-with-grid
+forum.atnel.pl##a[onclick^="countAdClick"]
 forumrowerowe.org###a1ad
 forumrowerowe.org###post_id_
 fotka.com###brd_profil
@@ -1707,6 +1709,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||ciechocinek.biz/banery_$image
 ||cloudfront.net/*$domain=allegro.pl
 ||contextad.pl/$script,domain=~contextad.pl
+||converti.se/comparison/*$xmlhttprequest
 ||converti.se/static/js/convertext.js$script
 ||converti.se/recommendations.js$script
 ||corto.www.wp.pl^
@@ -2597,6 +2600,15 @@ www.wp.pl##[class^="_2"][data-st-area$="prawa"] > [class] + UL[class^="_3"] + [c
 www.wp.pl##DIV[style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgb(255, 255, 255); opacity: 1; z-index: 100000;"]
 www.wp.pl##div[class^="_"]:matches-css(height: 2000px):matches-css(position: relative)
 www.wp.pl##div[class]:matches-css(max-width: 300px):matches-css(max-height: 250px)
+!
+!
+!--------------------------Money element hide------------!
+money.pl##.right-column > DIV[style*="width: 300px;"]
+money.pl##SCRIPT + DIV > DIV[style*="max-width: 100%; "]
+money.pl##A[target="_blank"] > IMG[src^="https://v.wpimg.pl/"]
+money.pl##SECTION.recommended + DIV + DIV[style*="max-width: 100%; "]
+money.pl##P + DIV[style^="text-align:center;"]
+money.pl##DIV > DIV > DIV[style^="display: block; min-height: 0px;"]
 !
 !
 !--------------------------WP blocking filters------------!
