@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 14 September 2017
 ! Expires: 2 days
-! Version: 2017091401
+! Version: 2017091402
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017091401 aktualizacja: czw, 14 wrzesnia 2017, 10:30:00
+! v.2017091402 aktualizacja: czw, 14 wrzesnia 2017, 19:25:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -235,6 +235,7 @@ pl##.onnetwork-video
 !------------------------Specific element hiding rules------------------------!
 24gliwice.pl##a[href^="http://www.24gliwice.pl/r/counter-baners.php"]
 24gliwice.pl#@##adsense
+24gliwice.pl##.vce-sticky
 24jgora.pl##IMG[src^="http://www.24jgora.pl/kampanie/"]
 24jgora.pl##.banrek
 24legnica.pl,wstereo.pl###text-8
@@ -2608,9 +2609,14 @@ sportowefakty.wp.pl##A + DIV[style*="width: 300px"]
 sportowefakty.wp.pl##ASIDE.column > DIV[style*="max-width: 100%;"]
 !
 !
+!--------------------------Pudelek element hide------------!
+pudelek.pl##[data-st-area="naglowek"] + .mtb10
+pudelek.pl##DIV[style*="max-width: 100%; "]
+!
+!
 !--------------------------Money element hide------------!
 money.pl##.right-column > DIV[style*="width: 300px;"]
-money.pl##SCRIPT + DIV > DIV[style*="max-width: 100%; "]
+money.pl##DIV > DIV[style*="max-width: 100%;"]
 money.pl##A[target="_blank"] > IMG[src^="https://v.wpimg.pl/"]
 money.pl##SECTION.recommended + DIV + DIV[style*="max-width: 100%; "]
 money.pl##P + DIV[style^="text-align:center;"]
