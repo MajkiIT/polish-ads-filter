@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
-! Last modified: 14 September 2017
+! Last modified: 15 September 2017
 ! Expires: 2 days
-! Version: 2017091407
+! Version: 2017091501
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017091407 aktualizacja: czw, 14 wrzesnia 2017, 23:45:00
+! v.2017091501 aktualizacja: ptk, 15 wrzesnia 2017, 08:15:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -871,7 +871,7 @@ mgsm.pl###sk_product_box_1_2533
 mgsm.pl##.doubleAdLargeRectangleContainer
 mgsm.pl##.floatLeft.width50.data-table
 mgsm.pl##.large-2 > object
-mgsm.pl##.text-center.padding-top10.columns.small-12.medium-12.large-12
+mgsm.pl##.text-center.padding-top10.columns.small-12.medium-7.large-6
 mgsm.pl##.columns.small-12.medium-8.large-8 > .text-center.padding-bottom10.padding-top10.columns.small-12
 mgsm.pl##TD[style="padding:0px;"]
 mgsm.pl##[id^="AdArea"]
@@ -1823,7 +1823,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||media2.cinema-city.pl/pl/*.swf
 ||mediaexpert.pl/temp/filemanager_up/*tlo_$image
 ||microsms.pl/img/reklama$image
-||mgsm.pl/js/getSkapiec*.xhtml$xmlhttprequest,domain=www.mgsm.pl
+||mgsm.pl/js/get*.xhtml$xmlhttprequest,domain=www.mgsm.pl
 ||mma.pl/wp-content/uploads/20*/*/kapka-do-kapki.jpg$image
 ||mmania.pl/cdn/partner/$image
 ||mojaolesnica.pl/reklamy/
@@ -2583,11 +2583,18 @@ srkcast.com##[id^="table"]
 ||privatestream.tv/adl^
 !
 !
-!--------------------------WP element hide------------!
+!--------------------------WP Group element hide------------!
 kafeteria.pl##.scr-wallpaper
 kafeteria.pl##DIV > DIV[style*="width: 100%;"]
-komorkomania.pl##.article-wrapper > FIGURE.insert
-komorkomania.pl##FIGURE.insert > DIV[style*="max-width: 100%;"]
+komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##.article-wrapper > FIGURE.insert
+komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##FIGURE.insert > DIV[style*="max-width: 100%;"]
+open.fm###ADrail
+open.fm##.bnr-con2
+open.fm##A[target="_blank"] > IMG[style*="height: 100%;"]
+wawalove.pl,pytamy.pl,dzieci.pl##[id^="adv"]
+!
+!
+!--------------------------WP element hide------------!
 www.wp.pl##div[class]:matches-css(width: 300px):matches-css(height: 250px)
 www.wp.pl##div[class]:matches-css(width: 309px):matches-css(height: 182px)
 www.wp.pl##[class^="_"] > div[style^="display: block; min-height: 0px;"]
@@ -2605,7 +2612,6 @@ www.wp.pl##DIV[style="position: fixed; top: 0px; left: 0px; width: 100%; height:
 www.wp.pl##div[class^="_"]:matches-css(height: 2000px):matches-css(position: relative)
 www.wp.pl##div[class]:matches-css(max-width: 300px):matches-css(max-height: 250px)
 sportowefakty.wp.pl##.matchtable[data-st-area] + DIV
-!sportowefakty.wp.pl##DIV + ASIDE > DIV[style*="width: 300px; "]
 sportowefakty.wp.pl##P + DIV[style*="width: 300px;"]
 sportowefakty.wp.pl##.section__separator
 sportowefakty.wp.pl##DIV[data-st-area] + DIV[style*="width: 300px"]
