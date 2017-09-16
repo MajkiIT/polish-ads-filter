@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 16 September 2017
 ! Expires: 2 days
-! Version: 2017091603
+! Version: 2017091604
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017091603 aktualizacja: sob, 16 wrzesnia 2017, 14:35:00
+! v.2017091604 aktualizacja: sob, 16 wrzesnia 2017, 14:55:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -2038,7 +2038,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 /^(http|https):\/\/www\.[a-z]{5,10}\.pl\/[a-z0-9_.%/]{1,}\/p[0-9]{2,3}\/[a-z0-9_]{10,}.(html|jpg)/$subdocument,image,domain=www.portel.pl
 /^(http|https):\/\/www.wp.pl\/[a-zA-Z0-9-_]{50,}/$popup,domain=www.wp.pl
 /^(http|https):\/\/www\.chip.\pl\/wp-content\/themes\/_chip\/[a-z]{4,6}\/[a-z]{4,5}-[0-9]{4,5}/$image,domain=chip.pl
-/^https:\/\/[a-z]{4,10}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$domain=profil.wp.pl
+/^https:\/\/[a-z]{4,10}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$domain=profil.wp.pl|poczta.o2.pl
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -2597,7 +2597,7 @@ kafeteria.pl##DIV > DIV[style*="width: 100%;"]
 komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##BODY > DIV[style*="max-width: 100%; "]
 komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##.article-wrapper > FIGURE.insert
 komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##FIGURE.insert > DIV[style*="max-width: 100%;"]
-o2.pl##DIV > DIV[style*="width: 100%"]
+o2.pl##[class^="_"] + DIV[class^="_"][style="width: auto; background-color: rgba(243, 242, 242, 0.91); min-height: auto;"]
 open.fm###ADrail
 open.fm##.bnr-con2
 open.fm##A[target="_blank"] > IMG[style*="height: 100%;"]
