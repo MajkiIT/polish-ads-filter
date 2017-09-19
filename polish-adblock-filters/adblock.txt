@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
-! Last modified: 18 September 2017
+! Last modified: 19 September 2017
 ! Expires: 2 days
-! Version: 2017091805
+! Version: 2017091901
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017091805 aktualizacja: pon, 18 wrzesnia 2017, 19:00:00
+! v.2017091901 aktualizacja: wt, 19 wrzesnia 2017, 07:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -2621,30 +2621,37 @@ wawalove.pl,pytamy.pl,dzieci.pl,nasygnale.pl##[id^="adv"]
 czat.wp.pl,infografika.wp.pl##[id*="adv"]
 pilot.wp.pl##SCRIPT + DIV.row
 pilot.wp.pl##.top-section
+! potwierdzione
 www.wp.pl##div[class]:matches-css(width: 300px):matches-css(height: 250px)
 www.wp.pl##div[class]:matches-css(width: 309px):matches-css(height: 182px)
+www.wp.pl##div[class]:matches-css(max-width: 300px):matches-css(max-height: 250px)
+www.wp.pl##[id^="section_"][class^="_"][data-st-area$="-section"] > [style*="width: 970px;"]
+www.wp.pl##a[href^="http://direct.money.pl/landing-page/callcenter/"]
+www.wp.pl##[class^="_2"][data-st-area$="prawa"] > [class] + UL[class^="_3"] + [class^="_"]
+www.wp.pl##[class^="_"][title][target="_blank"][data-st-clk^="\7b \"teaserId\":"]
+www.wp.pl,sportowefakty.wp.pl,money.pl##DIV + DIV[style*="max-width: 100%;"]
+www.wp.pl##[target="_blank"] > DIV[style^="width: 100%; height: 100%; background-image: "]
+sportowefakty.wp.pl##ASIDE.column > DIV[style*="max-width: 100%;"]
+sportowefakty.wp.pl##.matchtable[data-st-area] + DIV
+! niepotwierzone
 www.wp.pl##[class^="_"] > div[style^="display: block; min-height: 0px;"]
 www.wp.pl##[id^="sgwp_screening_"]
 www.wp.pl##[class^="_"] > div > div[style^="display: block; min-height: 0px;"]
 www.wp.pl##[class^="_"] > [class^="_"] > [class^="_"] > a[href][target="_blank"] > img
 www.wp.pl##[class^="_"] > [class^="_"] > [class^="_"] > a[href][target="_blank"] + span
-www.wp.pl##a[href^="http://direct.money.pl/landing-page/callcenter/"]
 www.wp.pl##[class^="_"] > [class^="_"] > a[href^="https://www.wp.pl/"][class^="_"][target="_blank"]
 www.wp.pl##[id^="section_"][class^="_"][data-st-area$="-section"] > [style*="width: 970px;"]
 www.wp.pl##[style$="display: block;"] > DIV[style*=" overflow: hidden;"]
 www.wp.pl##SCRIPT + [href^="https://www.wp.pl/"][target="_blank"] > DIV[style*="z-index:"]
-www.wp.pl##[class^="_2"][data-st-area$="prawa"] > [class] + UL[class^="_3"] + [class^="_"]
 www.wp.pl##DIV[style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgb(255, 255, 255); opacity: 1; z-index: 100000;"]
 www.wp.pl##div[class^="_"]:matches-css(height: 2000px):matches-css(position: relative)
-www.wp.pl##div[class]:matches-css(max-width: 300px):matches-css(max-height: 250px)
-www.wp.pl,sportowefakty.wp.pl,money.pl##DIV + DIV[style*="max-width: 100%;"]
-sportowefakty.wp.pl##.matchtable[data-st-area] + DIV
+! inne
+sportowefakty.wp.pl##.has-screening > DIV[style$="ease 0s;"]
 sportowefakty.wp.pl##P + DIV[style*="width: 300px;"]
 sportowefakty.wp.pl##.section__separator
 sportowefakty.wp.pl##DIV[data-st-area] + DIV[style*="width: 300px"]
 sportowefakty.wp.pl##.scr-wallpaper + DIV[style*="max-width: 100%"]
 sportowefakty.wp.pl##A + DIV[style*="width: 300px"]
-sportowefakty.wp.pl##ASIDE.column > DIV[style*="max-width: 100%;"]
 sportowefakty.wp.pl##DIV > DIV[style*="max-width: 100%;"]
 !
 !
