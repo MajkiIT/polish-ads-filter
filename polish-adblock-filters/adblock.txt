@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
-! Last modified: 19 September 2017
+! Last modified: 20 September 2017
 ! Expires: 1 day
-! Version: 2017091906
+! Version: 2017092001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017091906 aktualizacja: wt, 19 wrzesnia 2017, 19:10:00
+! v.2017092001 aktualizacja: sr, 20 wrzesnia 2017, 08:05:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -489,6 +489,10 @@ egami-image.com##img[src*="tvsat-sklep.com"]
 eglobalcentral.pl##[id^="publi"]
 eholiday.pl###appear_event
 eioba.pl###adsPanelTopt
+elblag.net##[class^="baner"]
+elblag.net##a[href^="http://elblag.net/redirect.php"]
+elblag.net##[style="height:300px;padding-bottom:12px; margin-top: 13px; border-bottom: 1px dashed #ccc"]
+elblag.net##body:style(background-image: none!important;)
 elka.pl##[id^="banner-ajax-"]
 ekologia.pl###pasaz-wid
 embed.vidso.tv###video_container
@@ -620,6 +624,7 @@ gazetaprawna.pl##a[href^="http://www.kyoceradocumentsolutions.pl/index/produkty/
 gazetaprawna.pl##.boxyPromoContainer
 gazetawroclawska.pl##.typBaner
 gazetawroclawska.pl##.promoBox
+gazetki-promocyjne.net.pl##.shadow-text
 glamrap.pl###footmod
 glamrap.pl##[onclick*="Reklama"][target="_blank"] > IMG
 globtroter.pl##a[href^="http://track.omgpl.com/"] > .img-responsive
@@ -934,6 +939,7 @@ mojaolesnica.pl##DIV[style="float: left; width: 705px;"]
 mojaolesnica.pl##DIV[style="width: 200px; height: 200px;"]
 mojaolesnica.pl##DIV[style="width: 750px; height: 200px; float: left; display: inline;"]
 mojapogoda.com###upper_header
+mojeauto.pl###ma-top-layer
 money.pl##A[href*="://direct.money.pl/o/salechannel.php"]
 money.pl##DIV[style$="min-height:180px"]
 money.pl##.recommended
@@ -1008,6 +1014,7 @@ nowagazeta.pl##.td-pb-row.wpb_row.vc_row:nth-of-type(1) > .td-pb-span12.vc_colum
 nowemp3.pl##marquee
 nowiny24.pl##.hide-for-medium-down
 nowodworski24.pl###ubm-banners-2
+nowastrategia.org.pl###ticker-box
 nowosci-mp3.eu##.clr.center > .short-story
 nudziara.pl##DIV[style="border: 1px solid #D8D0D0; padding: 5px 0px 5px 0px; width:705px;"]
 nysa24.pl###Mod348
@@ -2686,3 +2693,7 @@ money.pl##[style="position: relative; display: block;"] > DIV[style*=" width: 10
 !
 !--------------------------Easylist Bugs -----------!
 @@||wpolityce24.pl/imgcache/300x250/*/uploads/news/$image
+!
+!
+!--------------------------Wordpress blocking filters------------!
+||overwatch.pl/wp-content/uploads/20*/*/250x700*.png$image
