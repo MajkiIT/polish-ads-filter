@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
-! Last modified: 23 September 2017
+! Last modified: 24 September 2017
 ! Expires: 2 days
-! Version: 2017092301
+! Version: 2017092401
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017092301 aktualizacja: sob, 23 wrzesnia 2017, 18:30:00
+! v.2017092401 aktualizacja: nie, 24 wrzesnia 2017, 16:40:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -76,6 +76,7 @@ streamin.to###rkm
 !-----------------------Block pages-----------------------!
 ||vshare.io/sdm.php$xmlhttprequest
 ||vshare.io/watch_video.php$script
+||alefilmy.com/fake/fake.php
 !
 !
 !-----------------------Privacy filters hide-----------------------!
@@ -122,6 +123,7 @@ motorolasolutions.com##.tealiumMo2TriggerButton
 ###ad
 ###ad_gora_srodek
 ###ads
+##ads-top-layer
 ###adtify-widget
 ###ceneo-placeholder-ceneo-12
 ###ceneo_slider
@@ -1442,6 +1444,7 @@ twojepc.pl##td[width="300"][align="left"][valign="top"]
 tygodniknarodowy.pl###BusyBox
 tygodnikpodlaski.pl###billboardRightAdsense
 tygodnikpowszechny.pl##[id*="-simpleads-"] > h2
+tygodniksiedlecki.com##[id^="wrap_scale_"]
 ulub.pl##.right_col
 ulub.pl##[class^="ads_szuk"]
 upcpm.pl##.count-clicks
@@ -1766,7 +1769,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||embed.powercontent.pl^
 ||emisja.adsearch.pl$script,domain=cdaction.pl
 ||emisja.adsearch.pl/_/intext_static/?prefix=interia&browser=$script,domain=interia.pl
-||emisja.contentstream.pl/$script
+||emisja.contentstream.pl/$script,image
 ||evertiq.pl/*/js/min/evqFront.js$script
 ||evertiq.pl/include/ad-block/$xmlhttprequest
 ||evertiq.pl/go/$popup
@@ -2655,19 +2658,20 @@ www.wp.pl,sportowefakty.wp.pl,money.pl##DIV + DIV[style*="max-width: 100%;"]
 www.wp.pl##[target="_blank"] > DIV[style^="width: 100%; height: 100%; background-image: "]
 www.wp.pl##[style^="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.6);"]
 sportowefakty.wp.pl,kobieta.wp.pl,moto.wp.pl,tech.wp.pl,gry.wp.pl,opinie.wp.pl,turystyka.wp.pl,pogoda.wp.pl,tv.wp.pl##* > DIV[style*="max-width: 100%;"]
-sportowefakty.wp.pl##.matchtable[data-st-area] + DIV
+sportowefakty.wp.pl##.matchtable[data-st-area] + DIV]
+wiadomosci.wp.pl##[target="_blank"] > IMG[src^="https://v.wpimg.pl/"]
 ! niepotwierzone
-www.wp.pl##[class^="_"] > div[style^="display: block; min-height: 0px;"]
-www.wp.pl##[id^="sgwp_screening_"]
-www.wp.pl##[class^="_"] > div > div[style^="display: block; min-height: 0px;"]
-www.wp.pl##[class^="_"] > [class^="_"] > [class^="_"] > a[href][target="_blank"] > img
-www.wp.pl##[class^="_"] > [class^="_"] > [class^="_"] > a[href][target="_blank"] + span
-www.wp.pl##[class^="_"] > [class^="_"] > a[href^="https://www.wp.pl/"][class^="_"][target="_blank"]
-www.wp.pl##[id^="section_"][class^="_"][data-st-area$="-section"] > [style*="width: 970px;"]
-www.wp.pl##[style$="display: block;"] > DIV[style*=" overflow: hidden;"]
-www.wp.pl##SCRIPT + [href^="https://www.wp.pl/"][target="_blank"] > DIV[style*="z-index:"]
-www.wp.pl##div[class^="_"]:matches-css(height: 2000px):matches-css(position: relative)
-www.wp.pl##[target="_blank"] > IMG[src^="https://v.wpimg.pl/"][style="width: 100%; margin: auto; border: 0px none; height: 100%; display: block;"]
+!www.wp.pl##[class^="_"] > div[style^="display: block; min-height: 0px;"]
+!www.wp.pl##[id^="sgwp_screening_"]
+!www.wp.pl##[class^="_"] > div > div[style^="display: block; min-height: 0px;"]
+!www.wp.pl##[class^="_"] > [class^="_"] > [class^="_"] > a[href][target="_blank"] > img
+!www.wp.pl##[class^="_"] > [class^="_"] > [class^="_"] > a[href][target="_blank"] + span
+!www.wp.pl##[class^="_"] > [class^="_"] > a[href^="https://www.wp.pl/"][class^="_"][target="_blank"]
+!www.wp.pl##[id^="section_"][class^="_"][data-st-area$="-section"] > [style*="width: 970px;"]
+!www.wp.pl##[style$="display: block;"] > DIV[style*=" overflow: hidden;"]
+!www.wp.pl##SCRIPT + [href^="https://www.wp.pl/"][target="_blank"] > DIV[style*="z-index:"]
+!www.wp.pl##div[class^="_"]:matches-css(height: 2000px):matches-css(position: relative)
+!www.wp.pl##[target="_blank"] > IMG[src^="https://v.wpimg.pl/"][style="width: 100%; margin: auto; border: 0px none; height: 100%; display: block;"]
 ! inne
 sportowefakty.wp.pl##.has-screening > DIV[style$="ease 0s;"]
 sportowefakty.wp.pl##P + DIV[style*="width: 300px;"]
