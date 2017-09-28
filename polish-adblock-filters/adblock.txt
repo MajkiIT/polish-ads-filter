@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 28 September 2017
 ! Expires: 2 days
-! Version: 2017092804
+! Version: 2017092805
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017092804 aktualizacja: czw, 28 wrzesnia 2017, 18:15:00
+! v.2017092805 aktualizacja: czw, 28 wrzesnia 2017, 18:55:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -2640,7 +2640,7 @@ pilot.wp.pl##SCRIPT + DIV.row
 pilot.wp.pl##.top-section
 ! potwierdzione
 gadzetomania.pl,komorkomania.pl##[class^="insert insert-"]
-wp.pl,komorkomania.pl##[target="_blank"] > IMG[class][src^="https://v.wpimg.pl/"]
+wp.pl,komorkomania.pl,pudelek.pl##[target="_blank"] > IMG[class][src^="https://v.wpimg.pl/"]
 czat.wp.pl,infografika.wp.pl,dladzieci.pl,muzyka.wp.pl,niewiarygodne.pl,poczta.bloog.pl##[id*="adv"]
 www.wp.pl##div[class]:matches-css(width: 300px):matches-css(height: 250px)
 www.wp.pl##div[class]:matches-css(width: 309px):matches-css(height: 182px)
@@ -2658,7 +2658,7 @@ www.wp.pl##[id*="_screening_"]
 sportowefakty.wp.pl,kobieta.wp.pl,moto.wp.pl,tech.wp.pl,gry.wp.pl,opinie.wp.pl,turystyka.wp.pl,pogoda.wp.pl,tv.wp.pl,finanse.wp.pl##* > DIV[style*="max-width: 100%;"]
 sportowefakty.wp.pl##DIV#matchtable + * + * + DIV[class]
 wiadomosci.wp.pl##[target="_blank"] > IMG[src^="https://v.wpimg.pl/"]
-film.wp.pl,turystyka.wp.pl,opinie.wp.pl,gry.wp.pl,tech.wp.pl,moto.wp.pl,kobieta.wp.pl,finanse.wp.pl,sportowefakty.wp.pl##* > DIV[style*="; overflow: hidden"]
+film.wp.pl,turystyka.wp.pl,opinie.wp.pl,gry.wp.pl,tech.wp.pl,moto.wp.pl,kobieta.wp.pl,finanse.wp.pl,sportowefakty.wp.pl,pudelek.pl##* > DIV[style*="; overflow: hidden"]
 !
 !main
 www.wp.pl##SECTION[id="section_topnews"][class^="_"] > DIV:first-child + DIV[class]
@@ -2692,10 +2692,11 @@ sportowefakty.wp.pl##A + DIV[style*="width: 300px"]
 !
 !--------------------------Pudelek/Pudelekx element hide------------!
 pudelek.pl##[data-st-area="naglowek"] + .mtb10
-pudelek.pl##DIV[style*="max-width: 100%;"]
 pudelek.pl##DIV.cb > DIV[class^="m"]
 pudelekx.pl##[id^="adv"]
-pudelek.pl##.blue_PowerWall
+pudelek.pl##DIV.m0 > DIV + DIV + DIV[class]
+pudelek.pl##DIV[class][data-utm_source][data-st-area] + DIV.m0 > DIV + DIV
+pudelek.pl##DIV.mbb
 !
 !
 !--------------------------Money element hide------------!
