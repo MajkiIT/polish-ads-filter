@@ -3,15 +3,15 @@
 ! polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
-! Last modified: 27 September 2017
+! Last modified: 28 September 2017
 ! Expires: 2 days
-! Version: 2017092702
+! Version: 2017092801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017092702 aktualizacja: sr, 27 wrzesnia 2017, 22:30:00
+! v.2017092801 aktualizacja: czw, 28 wrzesnia 2017, 09:15:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -2616,13 +2616,14 @@ srkcast.com##[id^="table"]
 !
 !
 !--------------------------WP Group element hide------------!
+gadzetomania.pl##[class^="insert insert-"]
 kafeteria.pl,money.pl,pudelek.pl,autokult.pl##.scr-wallpaper
 kafeteria.pl##DIV > DIV[style*="width: 100%;"]
 komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##BODY > DIV[style*="max-width: 100%; "]
 komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##.article-wrapper > FIGURE.insert
 komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##FIGURE.insert > DIV[style*="max-width: 100%;"]
 o2.pl##A[href*=".wp.pl/"][target="_blank"] > DIV[style^="background-color: rgb"]
-o2.pl##DIV > [href*=".wp.pl/"][target="_blank"] > IMG[src^="https://v.wpimg.pl/"][style*="height: 100%;"]
+o2.pl,gadzetomania.pl##A[href*=".wp.pl/"][target="_blank"] > IMG[class][src^="https://v.wpimg.pl/"]
 open.fm###ADrail
 open.fm##.bnr-con2
 open.fm##A[target="_blank"] > IMG[style*="height: 100%;"]
@@ -2637,7 +2638,8 @@ portal.abczdrowie.pl##.sidebar-box--promo
 pilot.wp.pl##SCRIPT + DIV.row
 pilot.wp.pl##.top-section
 ! potwierdzione
-wp.pl##[class^="_2"][href*=".wp.pl/"][target="_blank"]
+gadzetomania.pl##[class^="insert insert-"]
+wp.pl##[target="_blank"] > IMG[class][src^="https://v.wpimg.pl/"]
 czat.wp.pl,infografika.wp.pl,dladzieci.pl,muzyka.wp.pl,niewiarygodne.pl,poczta.bloog.pl##[id*="adv"]
 www.wp.pl##div[class]:matches-css(width: 300px):matches-css(height: 250px)
 www.wp.pl##div[class]:matches-css(width: 309px):matches-css(height: 182px)
@@ -2653,9 +2655,29 @@ www.wp.pl##[style$="display: block;"] > DIV[style*=" overflow: hidden;"]
 www.wp.pl##DIV > DIV[style*="max-width: 100%;"]
 www.wp.pl##[id*="_screening_"]
 sportowefakty.wp.pl,kobieta.wp.pl,moto.wp.pl,tech.wp.pl,gry.wp.pl,opinie.wp.pl,turystyka.wp.pl,pogoda.wp.pl,tv.wp.pl,finanse.wp.pl##* > DIV[style*="max-width: 100%;"]
-sportowefakty.wp.pl##.matchtable[data-st-area] + DIV]
+sportowefakty.wp.pl##DIV#matchtable + * + * + DIV[class]
 wiadomosci.wp.pl##[target="_blank"] > IMG[src^="https://v.wpimg.pl/"]
-film.wp.pl##* > DIV[style*="; overflow: hidden"]
+film.wp.pl,turystyka.wp.pl,opinie.wp.pl,gry.wp.pl,tech.wp.pl,moto.wp.pl,kobieta.wp.pl,finanse.wp.pl##* > DIV[style*="; overflow: hidden"]
+!
+!main
+www.wp.pl##SECTION[id="section_topnews"][class^="_"] > DIV:first-child + DIV[class]
+www.wp.pl##SECTION[id="section_topnews"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
+www.wp.pl##SECTION[id="section_topnews"][class^="_"] > DIV:first-child + DIV + DIV[class]
+www.wp.pl##SECTION[id="section_sport"][class^="_"] > DIV:first-child + DIV[class]
+www.wp.pl##SECTION[id="section_sport"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
+www.wp.pl##SECTION[id="section_sport"][class^="_"] > DIV:first-child + DIV + DIV[class]
+www.wp.pl##SECTION[id="section_finances"][class^="_"] > DIV:first-child + DIV[class]
+www.wp.pl##SECTION[id="section_finances"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
+www.wp.pl##SECTION[id="section_finances"][class^="_"] > DIV:first-child + DIV + DIV[class]
+www.wp.pl##SECTION[id="section_celebrities"][class^="_"] > DIV:first-child + DIV[class]
+www.wp.pl##SECTION[id="section_celebrities"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
+www.wp.pl##SECTION[id="section_celebrities"][class^="_"] > DIV:first-child + DIV + DIV[class]
+www.wp.pl##SECTION[id="section_mototech"][class^="_"] > DIV:first-child + DIV[class]
+www.wp.pl##SECTION[id="section_mototech"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
+www.wp.pl##SECTION[id="section_mototech"][class^="_"] > DIV:first-child + DIV + DIV[class]
+www.wp.pl##SECTION[id="section_lifestyle"][class^="_"] > DIV:first-child + DIV[class]
+www.wp.pl##SECTION[id="section_lifestyle"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
+www.wp.pl##SECTION[id="section_lifestyle"][class^="_"] > DIV:first-child + DIV + DIV[class]
 ! niepotwierdzone
 !
 ! inne
