@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 29 September 2017
 ! Expires: 2 days
-! Version: 2017092908
+! Version: 2017092909
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017092908 aktualizacja: ptk, 29 wrzesnia 2017, 22:10:00
+! v.2017092909 aktualizacja: ptk, 29 wrzesnia 2017, 22:15:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -82,7 +82,6 @@ streamin.to###rkm
 ##A[href*="k.tradedoubler.com/click"]
 poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 motorolasolutions.com##.tealiumMo2TriggerButton
-/^https:\/\/[a-z]{3,10}.\wp\.pl\/[a-zA-Z0-9-_]{250,}/$image
 !
 !
 !-----------------------Privacy filters block-----------------------!
@@ -116,6 +115,7 @@ motorolasolutions.com##.tealiumMo2TriggerButton
 ||sylaba.net^
 ||smpl.hit.ppdb.pl^
 ||daib.pl^
+||wp.pl/*/wpjslib-nojq.js$script
 !
 !
 !------------------------General element hiding rules-------------------------!
@@ -2646,6 +2646,7 @@ portal.abczdrowie.pl##.sidebar-box--promo
 pilot.wp.pl##SCRIPT + DIV.row
 pilot.wp.pl##.top-section
 ! potwierdzione
+wp.pl##.scr-wallpaper
 gadzetomania.pl,komorkomania.pl##[class^="insert insert-"]
 wp.pl,komorkomania.pl,pudelek.pl##[target="_blank"] > IMG[class][src^="https://v.wpimg.pl/"]
 czat.wp.pl,infografika.wp.pl,dladzieci.pl,muzyka.wp.pl,niewiarygodne.pl,poczta.bloog.pl##[id*="adv"]
