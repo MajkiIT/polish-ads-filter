@@ -5,13 +5,13 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 29 September 2017
 ! Expires: 2 days
-! Version: 2017092901
+! Version: 2017092902
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017092901 aktualizacja: czw, 29 wrzesnia 2017, 18:50:00
+! v.2017092902 aktualizacja: czw, 29 wrzesnia 2017, 19:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -2658,30 +2658,30 @@ wiadomosci.wp.pl##[target="_blank"] > IMG[src^="https://v.wpimg.pl/"]
 film.wp.pl,turystyka.wp.pl,opinie.wp.pl,gry.wp.pl,tech.wp.pl,moto.wp.pl,kobieta.wp.pl,finanse.wp.pl,sportowefakty.wp.pl,pudelek.pl##* > DIV[style*="; overflow: hidden"]
 !
 !main
-www.wp.pl##SECTION[id="section_topnews"][class^="_"] > DIV:first-child + DIV[class]
-www.wp.pl##SECTION[id="section_topnews"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
-www.wp.pl##SECTION[id="section_topnews"][class^="_"] > DIV:first-child + DIV + DIV[class]
 www.wp.pl##SECTION[id="section_sport"][class^="_"] > DIV:first-child + DIV[class]
 www.wp.pl##SECTION[id="section_sport"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
 www.wp.pl##SECTION[id="section_sport"][class^="_"] > DIV:first-child + DIV + DIV[class]
 www.wp.pl##SECTION[id="section_finances"][class^="_"] > DIV:first-child + DIV[class]
 www.wp.pl##SECTION[id="section_finances"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
 www.wp.pl##SECTION[id="section_finances"][class^="_"] > DIV:first-child + DIV + DIV[class]
-www.wp.pl##SECTION[id="section_celebrities"][class^="_"] > DIV:first-child + DIV[class]
-www.wp.pl##SECTION[id="section_celebrities"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
-www.wp.pl##SECTION[id="section_celebrities"][class^="_"] > DIV:first-child + DIV + DIV[class]
-www.wp.pl##SECTION[id="section_mototech"][class^="_"] > DIV:first-child + DIV[class]
-www.wp.pl##SECTION[id="section_mototech"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
-www.wp.pl##SECTION[id="section_mototech"][class^="_"] > DIV:first-child + DIV + DIV[class]
 www.wp.pl##SECTION[id="section_lifestyle"][class^="_"] > DIV:first-child + DIV[class]
 www.wp.pl##SECTION[id="section_lifestyle"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
 www.wp.pl##SECTION[id="section_lifestyle"][class^="_"] > DIV:first-child + DIV + DIV[class]
+www.wp.pl###section_topnews > * + * + DIV + DIV[class]
+www.wp.pl###section_celebrities > * + DIV + DIV[class]
+www.wp.pl###section_mototech > * + DIV + DIV[class]
+www.wp.pl###header_stream + * DIV[class^="_"] > DIV[class^="_"] > DIV + DIV[class]
 ! niepotwierdzone
 !
 ! inne
-sportowefakty.wp.pl##[class] > DIV + DIV[class]
-sportowefakty.wp.pl##[class] + DIV + DIV + DIV[class]
-sportowefakty.wp.pl##[class] + DIV#matchtable + DIV + DIV + DIV + DIV[class]
+sportowefakty.wp.pl##HEADER + DIV#matchtable + DIV + DIV
+sportowefakty.wp.pl##HEADER + DIV#matchtable + DIV + DIV + DIV + DIV[class]
+sportowefakty.wp.pl##HEADER + DIV#matchtable + DIV + DIV + DIV[class]
+sportowefakty.wp.pl##ASIDE > DIV + DIV + DIV[class]
+sportowefakty.wp.pl##ASIDE > DIV + DIV[class]
+sportowefakty.wp.pl##P + DIV + DIV + DIV + DIV[class]
+sportowefakty.wp.pl##P + DIV + DIV + DIV[class]
+sportowefakty.wp.pl##.section__separator
 !
 !
 !--------------------------Pudelek/Pudelekx element hide------------!
@@ -2694,12 +2694,12 @@ pudelek.pl##DIV.mbb
 !
 !
 !--------------------------Money element hide------------!
-money.pl##.right-column > DIV[style*="width: 300px;"]
-money.pl##DIV > DIV[style*="max-width: 100%;"]
-money.pl##A[target="_blank"] > IMG[src^="https://v.wpimg.pl/"]
-money.pl##P + DIV[style^="text-align:center;"]
-money.pl##DIV > DIV > DIV[style^="display: block; min-height: 0px;"]
-money.pl##[style="position: relative; display: block;"] > DIV[style*=" width: 100%;"]
+www.money.pl##DIV[style*=" overflow: hidden; "]
+money.pl##SCRIPT + DIV[class]
+money.pl##.right-column > DIV + DIV + DIV + DIV[class]
+money.pl##.right-column > DIV + DIV[class]
+money.pl##.right-column > DIV > DIV > DIV > DIV + DIV[class]
+money.pl##DIV[style] > DIV + DIV[class]
 !
 !
 !--------------------------WP blocking filters------------!
