@@ -1,17 +1,17 @@
 [Adblock Plus 2.0]
 ! Title: uBlock polish filters - supplement
-! polskie filtry do uBlocka uzupelnienie
-! Collaborators: F4z, xxcriticxx
+! polskie filtry do uBlocka - uzupelnienie
+! Collaborators: F4z, xxcriticxx, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Last modified: 15 September 2017
+! Last modified: 1 October 2017
 ! Expires: 2 days
-! Version: 2017091501
+! Version: 2017100101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
-! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017091501 aktualizacja: ptk, 15 września 2017, 18:20:00
+! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
+! Aktualizacja: nd, 1 pazdziernika 2017, 13:28
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -209,3 +209,11 @@ naszemiasto.pl##script:inject(abort-on-property-write.js, czy_wlaczony_adblock)
 !
 ! anyfiles.pl
 anyfiles.pl##script:inject(abort-on-property-read.js, launchOpenWindow)
+
+! mkidn.gov.pl & puma.com
+! Ukrycie popupów o ciasteczkach
+mkidn.gov.pl###myModal
+mkidn.gov.pl##body.modal-open:style(padding-right: 0px!important; overflow: visible!important;)
+puma.com###modal-geoip-cookies
+puma.com##.modal-backdrop
+puma.com##.modal-open:style(overflow: visible!important;)
