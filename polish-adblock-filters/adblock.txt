@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 4 October 2017
 ! Expires: 2 days
-! Version: 2017100402
+! Version: 2017100403
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017100402 aktualizacja: sr, 4 pazdziernika 2017, 17:55:00
+! v.2017100403 aktualizacja: sr, 4 pazdziernika 2017, 18:05:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -2731,6 +2731,7 @@ pudelek.pl##DIV.m0 > DIV + DIV + DIV[class]
 pudelek.pl##DIV[class][data-utm_source][data-st-area] + DIV.m0 > DIV + DIV
 pudelek.pl##SCRIPT + DIV + DIV[class^="m"]
 pudelek.pl##LI > DIV[class]:first-child
+pudelek.pl##DIV + DIV.sidebar > DIV[class^="m"]
 !
 !
 !--------------------------Money element hide------------!
@@ -2739,13 +2740,15 @@ money.pl##DIV[style="margin-bottom: 10px"] + DIV > DIV > DIV + DIV + DIV[class]
 money.pl##.right-column > DIV + DIV[class]
 money.pl##.right-column > DIV > DIV > DIV > DIV + DIV[class]
 money.pl##DIV#ADrail > DIV > DIV + DIV[class]
-www.money.pl##SCRIPT + DIV[class] > [class]:first-child
 money.pl##DIV.right-column > [class]:first-child
 money.pl##DIV.right-column[data-floatingsky] > DIV:first-child
 money.pl##DIV#ADrail > DIV[class]:first-child
 ~www.money.pl,money.pl##DIV[class] + DIV[id] > DIV[class]:first-child
 money.pl##DIV[class^="ad"]
 biztok.money.pl##* + DIV > DIV > DIV[class]:first-child
+www.money.pl###ADrail > DIV > DIV[class]
+www.money.pl##P + DIV[style$="padding:10px 0"]
+www.money.pl##SCRIPT[src^="//money"] + DIV[class][style="text-align:center;"]
 !
 !
 !--------------------------WP blocking filters------------!
