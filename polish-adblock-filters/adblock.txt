@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 4 October 2017
 ! Expires: 2 days
-! Version: 2017100401
+! Version: 2017100402
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017100401 aktualizacja: sr, 4 pazdziernika 2017, 09:45:00
+! v.2017100402 aktualizacja: sr, 4 pazdziernika 2017, 17:55:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -2655,7 +2655,7 @@ pilot.wp.pl##.top-section
 wp.pl##.scr-wallpaper
 gadzetomania.pl,komorkomania.pl##[class^="insert insert-"]
 wp.pl,komorkomania.pl,pudelek.pl##[target="_blank"] > IMG[class][src^="https://v.wpimg.pl/"]
-czat.wp.pl,infografika.wp.pl,dladzieci.pl,muzyka.wp.pl,niewiarygodne.pl,poczta.bloog.pl,sportowybar.wp.pl##[id*="adv"]
+czat.wp.pl,infografika.wp.pl,dladzieci.pl,muzyka.wp.pl,niewiarygodne.pl,poczta.bloog.pl,sportowybar.wp.pl,forum.o2.pl##[id*="adv"]
 www.wp.pl##div[class]:matches-css(width: 300px):matches-css(height: 250px)
 www.wp.pl##div[class]:matches-css(width: 309px):matches-css(height: 182px)
 www.wp.pl##div[class]:matches-css(max-width: 300px):matches-css(max-height: 250px)
@@ -2672,9 +2672,10 @@ www.wp.pl##[id*="_screening_"]
 sportowefakty.wp.pl,kobieta.wp.pl,moto.wp.pl,tech.wp.pl,gry.wp.pl,opinie.wp.pl,turystyka.wp.pl,pogoda.wp.pl,tv.wp.pl,finanse.wp.pl##* > DIV[style*="max-width: 100%;"]
 sportowefakty.wp.pl##DIV#matchtable + * + * + DIV[class]
 wiadomosci.wp.pl##[target="_blank"] > IMG[src^="https://v.wpimg.pl/"]
-film.wp.pl,turystyka.wp.pl,opinie.wp.pl,gry.wp.pl,tech.wp.pl,moto.wp.pl,kobieta.wp.pl,finanse.wp.pl,sportowefakty.wp.pl,wiadomosci.wp.pl,pudelek.pl##* > DIV[style*="; overflow: hidden"]
+film.wp.pl,turystyka.wp.pl,opinie.wp.pl,gry.wp.pl,tech.wp.pl,moto.wp.pl,kobieta.wp.pl,finanse.wp.pl,sportowefakty.wp.pl,wiadomosci.wp.pl,pudelek.pl,tv.wp.pl##* > DIV[style*="; overflow: hidden"]
 tv.wp.pl##SECTION > DIV.wide > DIV + DIV[class]
 tv.wp.pl##DIV[style="text-align:center; padding:10px;"]
+tv.wp.pl##SECTION#boksy > DIV > DIV[class]
 pogoda.wp.pl##DIV#stgHeader + * > :first-child + DIV[class]
 pogoda.wp.pl##DIV[style="text-align: center;"] > DIV[class]:first-child
 pogoda.wp.pl##DIV[class]:first-child + * + DIV[class]
@@ -2728,7 +2729,8 @@ pudelek.pl##DIV.cb > DIV[class^="m"]
 pudelekx.pl##[id^="adv"]
 pudelek.pl##DIV.m0 > DIV + DIV + DIV[class]
 pudelek.pl##DIV[class][data-utm_source][data-st-area] + DIV.m0 > DIV + DIV
-pudelek.pl##DIV.mbb
+pudelek.pl##SCRIPT + DIV + DIV[class^="m"]
+pudelek.pl##LI > DIV[class]:first-child
 !
 !
 !--------------------------Money element hide------------!
