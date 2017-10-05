@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 5 October 2017
 ! Expires: 2 days
-! Version: 2017100501
+! Version: 2017100502
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017100501 aktualizacja: czw, 5 pazdziernika 2017, 08:55:00
+! v.2017100502 aktualizacja: czw, 5 pazdziernika 2017, 12:15:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -2737,7 +2737,10 @@ money.pl##DIV#ADrail > DIV[class]:first-child
 money.pl##DIV[class^="ad"]
 www.money.pl##.article-set + DIV[style^="background"]
 www.money.pl##DIV[style$=" z-index: auto;"] > DIV[class]
-biztok.money.pl##* + DIV > DIV > DIV[class]:first-child
+biztok.money.pl##DIV[style="margin-bottom: 10px"] + DIV > DIV > DIV[class]
+biztok.money.pl##DIV[style="margin-bottom: 10px"] > DIV[class] > DIV[class]
+biztok.money.pl##[style$="padding:10px 0"] > DIV[class]
+biztok.money.pl##[style="margin-bottom: 10px"] > DIV[class]
 www.money.pl###ADrail > DIV > DIV[class]
 www.money.pl##P + DIV[style$="padding:10px 0"]
 www.money.pl##SCRIPT[src^="//money"] + DIV[class][style="text-align:center;"]
