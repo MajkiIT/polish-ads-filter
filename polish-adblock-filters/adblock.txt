@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 6 October 2017
 ! Expires: 2 days
-! Version: 2017100601
+! Version: 2017100602
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017100601 aktualizacja: ptk, 6 pazdziernika 2017, 09:25:00
+! v.2017100602 aktualizacja: ptk, 6 pazdziernika 2017, 09:35:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -117,6 +117,7 @@ motorolasolutions.com##.tealiumMo2TriggerButton
 ||sylaba.net^
 ||smpl.hit.ppdb.pl^
 ||daib.pl^
+||salesmanago.pl^$domain=~salesmanago.pl
 !
 !
 !------------------------General element hiding rules-------------------------!
@@ -219,7 +220,7 @@ pl/popup.js|$script
 ~lech.tv,~wtkplay.pl,~epoznan.pl##[class^="advertisement"]
 ~radekcholewinski.pl,~github.com##A[href$="/reklama"]
 ~katywroclawskie.pl,~rozklad-pkp.pl,~gwarant.czest.pl,~sukniaonline.pl##[src*="/banners/banner"]
-~tczewska.pl,~procamp.agency,~rp.pl,~sportowememy.pl##[id*="reklama"]
+~tczewska.pl,~procamp.agency,~rp.pl,~sportowememy.pl,~intercity.pl##[id*="reklama"]
 ~magdabek.pl,~superpharm.pl,~ceo.com.pl,~linuxiarze.pl,~wirtualny-wojownik.pl,~przerwanareklame.pl,~tvpolska.pl,~smiechawatv.pl,~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org,~motomio.pl,~semilac.pl,~e-otoczenie.pl,~wyborcza.pl,pl##[class*="reklama"]
 ~nationalgeographic.com,~wpolityce.pl,~box.com,~hardcorowo.pl,~gumtree.com,~hulu.com,com,pl##[class^="ad-"]
 ~fakt.pl,pl##.trizer-bnr
@@ -2585,7 +2586,6 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 ||push-ad.com$script
 ||pushcrew.com$script
 ||cdn.sendpulse.com$script
-||salesmanago.pl/api/push/$xmlhttprequest
 ||gstatic.com/firebasejs/*/firebase*.js$script
 ||youtubersi.pl/themes/default/js/notify.js$script
 ||savecart.pl/*/script.php$script
