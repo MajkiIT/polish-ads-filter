@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 6 October 2017
 ! Expires: 2 days
-! Version: 2017100604
+! Version: 2017100605
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017100604 aktualizacja: ptk, 6 pazdziernika 2017, 12:45:00
+! v.2017100605 aktualizacja: ptk, 6 pazdziernika 2017, 18:15:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -2697,6 +2697,10 @@ www.wp.pl##SECTION#section_celebrities > DIV[class]:first-child
 www.wp.pl##SECTION#section_mototech > DIV[class]:first-child
 www.wp.pl##DIV[class^="_3"] > DIV[class^="_3"] > DIV[class^="_"] > DIV[class]
 www.wp.pl##[class][src^="https://v.wpimg.pl/"][style="max-height: 25px;"]
+www.wp.pl###section_topnews > SPAN + DIV[class]
+~www.wp.pl,wp.pl##[class^="_"][data-reactid] > DIV[class^="_"] + [class^="_"][data-reactid]:last-child
+~www.wp.pl,wp.pl##DIV[class^="_"] + DIV[class^="_"]:last-child
+~www.wp.pl,wp.pl##A[class][href*=".wp.pl/"] > IMG[class][src^="https://v.wpimg.pl/"]:last-child
 ! niepotwierdzone
 !
 ! inne
@@ -2748,6 +2752,11 @@ biztok.money.pl##[style="margin-bottom: 10px"] > DIV[class]
 www.money.pl###ADrail > DIV > DIV[class]
 www.money.pl##P + DIV[style$="padding:10px 0"]
 www.money.pl##SCRIPT[src^="//money"] + DIV[class][style="text-align:center;"]
+manager.money.pl##.in > DIV[class]:first-child
+www.money.pl##.box:first-child + DIV[class]
+www.money.pl##[class^=" _bc_paragraph_"] + DIV[class]
+www.money.pl##DIV[class] > SPAN[class] + DIV[class]:last-child
+www.money.pl##P + DIV[class]
 !
 !
 !--------------------------WP blocking filters------------!
