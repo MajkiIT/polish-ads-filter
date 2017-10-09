@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 9 October 2017
 ! Expires: 2 days
-! Version: 2017100902
+! Version: 2017100903
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017100902 aktualizacja: pon, 9 pazdziernika 2017, 19:30:00
+! v.2017100903 aktualizacja: pon, 9 pazdziernika 2017, 19:55:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -2538,10 +2538,13 @@ wykop.pl##[id^="screening"]
 wykop.pl##[id^=banner_rectangle]
 wykop.pl###dyingLinksBox > .dying-links[hidden] ~ .dying-links:last-child:style(display:list-item !important)
 wykop.pl###dyingLinksBox > .dying-links[hidden] ~ .dying-links[style="display: list-item;"] ~ .dying-links:style(display: none !important)
-||imgwykop.pl/*/paylink_$image,domain=www.wykop.pl
+wykop.pl##[id^="banner_top_"]
+wykop.pl##.m-hide.screening
+||imgwykop.pl/*/*/paylink_$image,domain=www.wykop.pl
 ||wykop.pl/paylink/emiter/$image,domain=www.wykop.pl
 ||wykop.pl/tracker
-||s1.cdn03.imgwykop.pl/static/wykoppl/img/rect/$image
+!||s1.cdn03.imgwykop.pl/static/wykoppl/img/rect/$image
+||www.wykop.pl/img/campaign/$image,domain=www.wykop.pl
 !
 !
 !--------------------------Rules unblock protection------------!
