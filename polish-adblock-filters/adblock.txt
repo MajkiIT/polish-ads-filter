@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 10 October 2017
 ! Expires: 2 days
-! Version: 2017101004
+! Version: 2017101005
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017101004 aktualizacja: wt, 10 pazdziernika 2017, 14:52:00
+! v.2017101005 aktualizacja: wt, 10 pazdziernika 2017, 19:25:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -1210,6 +1210,7 @@ q4.pl##A[target="_blank"] > IMG
 q4.pl##TD[bgcolor="#f0f0f0"]
 q4.pl##TD[valign="middle"]
 radio5.com.pl##.g-single
+radioftb.net##.big-advertising
 radiobiper.info##[id^="widget_sp_image-"]
 radiofm-online.com###block-block-3
 radiokolor.pl##.boxAdvert
@@ -1228,6 +1229,7 @@ rawicz24.pl##.txt
 rdn.pl###pl-w5922cc44491e8
 realmadryt.pl##DIV[style="margin:0 auto;"]
 realmadryt.pl##fieldset
+rebelianci.org##.adad
 redbullmobile.pl###more1
 reedukacja.pl###ctl00_divAdverts
 reklama.pl##.banner-top
@@ -1654,6 +1656,7 @@ youradio.pl###block-block-41
 zabawkowo.com##IMG[src^="http://biuropro.pl/images/bannery/"]
 zagadkidladzieci.net,odmiana.net###opiekunka
 zalukaj.tv###left > a[href^="http://vshare.io/"]
+zumi.pl##.box.promotion
 zambrow.org##.adv
 zapytaj.onet.pl###content > aside > div:nth-of-type(1)
 zapytaj.onet.pl###content.clearfix > .wide-view > .club-content > .question-other-answers > section > .hide
@@ -2074,6 +2077,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 /^(http|https):\/\/www\.wp\.pl\/[a-zA-Z0-9-_]{50,}/$popup,domain=www.wp.pl
 /^(http|https):\/\/www\.chip\.pl\/wp-content\/themes\/_chip\/[a-z]{4,6}\/[a-z]{4,5}-[0-9]{4,5}/$image,domain=chip.pl
 /^https:\/\/[a-z]{3,10}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl|poczta.wp.pl
+/^https:\/\/[a-z]{3,10}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -2593,7 +2597,6 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 /^(http|https):\/\/(?!apis.google)[a-z0-9.-]{5,}\.com\/[a-z]{1,}\/[a-z]{1,}\.js/$script,domain=wrealu24.pl
 /^(http|https):\/\/[a-z0-9]{10,20}\.com\/[0-9]{5,10}\.html/$subdocument,domain=ekino-tv.pl
 /^http:\/\/p[0-9]{6,10}\.[a-z]{5,10}\.com\/itab\/[a-z?=A-Z_0-9&]{10,}Zippyshare.com[a-z0-9A-Z%.'-]{5,}/$popup
-/^https:\/\/[a-z]{3,10}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl
 !
 !
 !--------------------------Stupid notifications------------!
