@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 10 October 2017
+! Last modified: 11 October 2017
 ! Expires: 2 days
-! Version: 2017101007
+! Version: 2017101101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017101007 aktualizacja: wt, 10 pazdziernika 2017, 21:05:00
+! v.2017101101 aktualizacja: sr, 11 pazdziernika 2017, 08:05:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -296,10 +296,11 @@ anyfiles.pl###SearchVideosLoadDiv > .media-list > .media > .thumbnail:not([title
 anyfiles.pl###AllVideosLoadDiv > .media-list > .media > .thumbnail:not([title])
 anyfiles.pl##[class^="bp-wrapp"]
 antyweb.pl##.aadv
-antyweb.pl##.group.big.box-adv
+!antyweb.pl##.group.big.box-adv
 antyweb.pl##.transparent
 antyweb.pl##.wp-image-192844
 antyweb.pl##.touch + IMG.notMobile[src*="/1200x400"]
+antyweb.pl##.group.big.box-img
 anyfiles.pl##[id^="adsbox_"]
 apynews.pl##.featured-advert
 ergokantor.pl###przesuwany_tekst 
@@ -2076,7 +2077,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 /^(http|https):\/\/www\.wp\.pl\/[a-zA-Z0-9-_]{50,}/$popup,domain=www.wp.pl
 /^(http|https):\/\/www\.chip\.pl\/wp-content\/themes\/_chip\/[a-z]{4,6}\/[a-z]{4,5}-[0-9]{4,5}/$image,domain=chip.pl
 /^https:\/\/[a-z]{3,10}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl|poczta.wp.pl
-/^https:\/\/[a-z]{3,10}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl
+/^https:\/\/[a-z]{3,10}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl
 !
 !
 !---------------------------------Whitelists----------------------------------!
