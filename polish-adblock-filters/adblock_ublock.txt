@@ -3,15 +3,15 @@
 ! polskie filtry do uBlocka - uzupelnienie
 ! Collaborators: F4z, xxcriticxx, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Last modified: 10 October 2017
+! Last modified: 11 October 2017
 ! Expires: 2 days
-! Version: 2017101001
+! Version: 2017101101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! Aktualizacja: wt, 10 pazdziernika 2017, 07:55:00
+! Aktualizacja: sr, 11 pazdziernika 2017, 14:05:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -210,9 +210,13 @@ naszemiasto.pl##script:inject(abort-on-property-write.js, czy_wlaczony_adblock)
 !
 ! anyfiles.pl
 anyfiles.pl##script:inject(abort-on-property-read.js, launchOpenWindow)
-
+!
 ! mkidn.gov.pl i puma.com
 ! Ukrycie popupów o ciasteczkach
 mkidn.gov.pl###myModal
 mkidn.gov.pl,puma.com##.modal-open:style(padding-right: 0px!important; overflow: visible!important;)
 puma.com###modal-geoip-cookies, .modal-backdrop
+!
+! purepc.pl
+purepc.pl##script:inject(setTimeout-defuser.js, ubo_fix())
+purepc.pl##html > body:style(background: #d5d5d5!important;)
