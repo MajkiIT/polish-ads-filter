@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 13 October 2017
+! Last modified: 15 October 2017
 ! Expires: 2 days
-! Version: 2017101305
+! Version: 2017101501
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017101305 aktualizacja: ptk, 13 pazdziernika 2017, 15:05:00
+! v.2017101501 aktualizacja: nie, 15 pazdziernika 2017, 10:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -399,6 +399,7 @@ centrumxp.pl##[id*="_Reklama_"]
 centrumxp.pl##[id^="ctl00_sldr_nowoczesnyOffice"]
 cgm.pl##.headFlash
 chamsko.pl##[href^="http://empire.goodgamestudios.com/"]
+charaktery.eu##.text.custom_popup.popup.window_popup
 chip.pl###nextartprompt
 chip.pl###search_box
 chip.pl##.portlet.portletCeneo
@@ -749,6 +750,7 @@ ittechblog.pl##.ext-link
 iv.pl##.text_align_center
 jaka-komorka.pl###ja-botsl1
 jaka-komorka.pl###ja-right2
+jbofilm.pl##BR + A[href^="http"] > IMG[src]
 jakdojade.pl##.GOQMLGOLR
 jasnet.pl##[id^="adBox"]
 jaw.pl##P[style="text-align: center;"]:last-child
@@ -964,6 +966,8 @@ money.pl##.main-menu__submenu__offer
 morele.net##.ears-left
 morele.net##.ears-right
 morele.net##.hidden.citibank-popup
+morizon.pl###bb-banner-top
+morizon.pl##[class*="CampaignBox"]
 moto.pl##.template-minimal
 motomi.pl##A > .img-responsive
 motobanda.pl##.special-block
@@ -1354,6 +1358,7 @@ supernowosci24.pl###notificationbar
 super-torent.pl##td:nth-of-type(4) > .raised:nth-of-type(2) > .boxcontent
 suwalki.info###banner-billboard
 system.ekai.pl###banner_reklamowy
+szukacz.pl###googleContainer
 szwajcaria.net###ali, #cas1, #casa, #lewydolny, #lifeboat, #reklamtex
 szwajcaria.net##[id^="banner"]
 szwajcaria.net##[id^="prawareklam"]
@@ -1485,6 +1490,7 @@ vorek.pl##DIV[style="height: 35px;width: 726px;position:relative;text-align:cent
 voxfm.pl###global_belka
 vshare.io###pplay
 wachamksiazki.pl##.sr
+warszawawpigulce.pl##.code-block-5
 waszwilanow.pl##.td-banner-wrap-full
 waszwilanow.pl##[style="text-align: center;"]
 wbj.pl##.akpbanner
@@ -2321,7 +2327,7 @@ zrabatowani.pl###popup-adblock-bottom
 @@|http://www.googletagmanager.com/gtm.js$script,domain=benchmark.pl
 @@||anyfiles.pl/pageloading/*-loader.jsp?ads=true
 @@||auto-swiat.pl^$generichide
-@@||adv.wp.pl/RM/Box/$xmlhttprequest,domain=pilot.wp.pl
+@@||adv.wp.pl/adverts$xmlhttprequest,domain=pilot.wp.pl
 @@||biznesforum.pl/adsense.js$script,domain=biznesforum.pl
 @@||blog.programyzadarmo.net.pl/images/ad/*.gif$image,domain=blog.programyzadarmo.net.pl
 @@||brotkids.tv/media/mod_pwebadblock/js/ads.js$script
@@ -2355,6 +2361,7 @@ zrabatowani.pl###popup-adblock-bottom
 @@||mybank.pl^$generichide
 @@||noizz.pl^$generichide
 @@||nowa.tv/media/static/js/ads.js$script
+@@||oglaszamy24.pl/js-css/reklamy/bannery/google_ads/ad/banner/adv.js$script
 @@||okazje.co/assets/js/ads.js$script
 @@||onet.pl^$generichide
 @@||gapl.hit.gemius.pl/gemiuslib.js$script,domain=auto-swiat.pl|businessinsider.com.pl|fakt.pl|forbes.pl|komputerswiat.pl|noizz.pl|onet.pl|plejada.pl|vod.pl
@@ -2756,6 +2763,7 @@ pudelek.pl##LI > DIV[class]:first-child
 pudelek.pl##DIV + DIV.sidebar > DIV[class^="m"]
 pudelek.pl##DIV[data-st-area^="main-stream-"] + .mbb
 pudelek.pl##DIV[class^="sidebar-"] > [class^="mtb"]
+pudelek.pl##.mtb10
 !
 !
 !--------------------------Money element hide------------!
