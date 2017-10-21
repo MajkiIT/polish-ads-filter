@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 21 October 2017
 ! Expires: 2 days
-! Version: 2017102101
+! Version: 2017102102
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017102101 aktualizacja: sob, 21 pazdziernika 2017, 12:25:00
+! v.2017102102 aktualizacja: sob, 21 pazdziernika 2017, 16:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -522,6 +522,7 @@ elblag.net##a[href^="http://elblag.net/redirect.php"]
 elblag.net##[style="height:300px;padding-bottom:12px; margin-top: 13px; border-bottom: 1px dashed #ccc"]
 elblag.net##body:style(background-image: none!important;)
 elka.pl##[id^="banner-ajax-"]
+ekinomaniak.tv##IFRAME + A > IMG[src][alt]
 ekologia.pl###pasaz-wid
 embed.vidso.tv###video_container
 eostroleka.pl##DIV[style="margin-bottom:10px; margin-left:25px; float:left; width:300px; height:300px;"]
@@ -1943,6 +1944,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||ocs-pl.oktawave.com/*/reklamy$subdocument,domain=spidersweb.pl
 ||oglaszamy24.pl/adstorage/$image
 ||onenima.com^$script
+||openkatalog.ml/epg/?channel=*$subdocument
 ||opensubtitles.org/*=.js$script
 ||ozoneo.pl/templates/images/description/5901/Image/$image
 ||ozoneo.pl/templates/images/rotators/$image
@@ -2802,6 +2804,7 @@ pudelek.pl##DIV[data-st-area^="main-stream-"] + .mbb
 pudelek.pl##DIV[class^="sidebar-"] > [class^="mtb"]
 pudelek.pl##.mtb10
 pudelek.pl##DIV[style="position: relative; padding-bottom: 4px;"]
+pudelek.pl##LI > DIV[class][hidden] + DIV[class]
 !
 !
 !--------------------------Money element hide------------!
