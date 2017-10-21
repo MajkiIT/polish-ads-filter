@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 21 October 2017
 ! Expires: 2 days
-! Version: 2017102102
+! Version: 2017102103
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017102102 aktualizacja: sob, 21 pazdziernika 2017, 16:45:00
+! v.2017102103 aktualizacja: sob, 21 pazdziernika 2017, 21:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -2704,6 +2704,7 @@ portal.abczdrowie.pl##A[target="_blank"] > IMG[src^="https://v.wpimg.pl/"]
 portal.abczdrowie.pl##.article__textbox
 portal.abczdrowie.pl##[class^="article__side__stickblock-"]
 portal.abczdrowie.pl##.sidebar-box--promo
+open.fm##A[class][href*=".wp.pl/"] IMG[class][src^="https://v.wpimg.pl/"]
 !
 !
 !--------------------------WP element hide------------!
@@ -2767,7 +2768,6 @@ www.wp.pl###section_topnews > SPAN + DIV[class]
 www.wp.pl##[data-st-area="Gwiazdy-prawa"] > DIV[class^="_"] > DIV[class] > DIV[class] > SPAN[class] + DIV[class]
 www.wp.pl##A[class][href*=".wp.pl/"] > [class][src^="https://v.wpimg.pl/"]
 www.wp.pl##[class*="_"] > DIV[class] > SPAN[class] + DIV[class]
-~www.wp.pl,~gwiazdy.wp.pl,wp.pl,open.fm##A[class][href*=".wp.pl/"] IMG[class][src^="https://v.wpimg.pl/"]
 ~www.wp.pl,wp.pl##div[class^="_"]:matches-css(position: relative):matches-css(box-sizing: content-box):matches-css(background-color: /rgba/):matches-css(pointer-events: none)
 ~www.wp.pl,wp.pl##[class^="_"][data-reactid] > DIV[class^="_"][data-reactid] > DIV[class^="_"][data-reactid] + DIV[class^="_"][data-reactid] > DIV[class]
 www.wp.pl##[data-st-area="Premium"] > #header_premium
