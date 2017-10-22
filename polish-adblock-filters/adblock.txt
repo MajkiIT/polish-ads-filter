@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 21 October 2017
+! Last modified: 22 October 2017
 ! Expires: 2 days
-! Version: 2017102106
+! Version: 2017102201
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017102106 aktualizacja: sob, 21 pazdziernika 2017, 23:20:00
+! v.2017102201 aktualizacja: nie, 22 pazdziernika 2017, 12:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -2127,8 +2127,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 /^(http|https):\/\/www\.[a-z]{5,10}\.pl\/[a-z0-9_.%/]{1,}\/p[0-9]{2,3}\/[a-z0-9_]{10,}\.(html|jpg)/$subdocument,image,domain=www.portel.pl
 /^(http|https):\/\/www\.wp\.pl\/[a-zA-Z0-9-_]{50,}/$popup,domain=www.wp.pl
 /^(http|https):\/\/www\.chip\.pl\/wp-content\/themes\/_chip\/[a-z]{4,6}\/[a-z]{4,5}-[0-9]{4,5}/$image,domain=chip.pl
-/^https:\/\/[a-z]{3,10}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl|poczta.wp.pl
-/^https:\/\/[a-z]{3,10}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl
+/^https:\/\/[a-z]{2,10}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl|poczta.wp.pl
+/^https:\/\/[a-z]{2,10}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -2718,19 +2718,6 @@ wp.pl##.scr-wallpaper
 gadzetomania.pl,komorkomania.pl,fotoblogia.pl##[class^="insert insert-"]
 wp.pl,komorkomania.pl,pudelek.pl##[target="_blank"] > IMG[class][src^="https://v.wpimg.pl/"]
 czat.wp.pl,infografika.wp.pl,dladzieci.pl,muzyka.wp.pl,niewiarygodne.pl,poczta.bloog.pl,sportowybar.wp.pl,forum.o2.pl,komediowo.pl,topnews.wp.pl,ogloszenia.wp.pl##[id*="adv"]
-www.wp.pl##div[class]:matches-css(width: 300px):matches-css(height: 250px)
-www.wp.pl##div[class]:matches-css(width: 309px):matches-css(height: 182px)
-www.wp.pl##div[class]:matches-css(max-width: 300px):matches-css(max-height: 250px)
-www.wp.pl##[id^="section_"][class^="_"][data-st-area$="-section"] > [style*="width: 970px;"]
-www.wp.pl##a[href^="http://direct.money.pl/landing-page/callcenter/"]
-www.wp.pl##[class^="_2"][data-st-area$="prawa"] > [class] + UL[class^="_3"] + [class^="_"]
-www.wp.pl##[class^="_"][title][target="_blank"][data-st-clk^="\7b \"teaserId\":"]
-www.wp.pl,sportowefakty.wp.pl,money.pl##DIV + DIV[style*="max-width: 100%;"]
-www.wp.pl##[target="_blank"] > DIV[style^="width: 100%; height: 100%; background-image: "]
-www.wp.pl##[style^="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.6);"]
-www.wp.pl##[style$="display: block;"] > DIV[style*=" overflow: hidden;"]
-www.wp.pl##DIV > DIV[style*="max-width: 100%;"]
-www.wp.pl##[id*="_screening_"]
 sportowefakty.wp.pl,kobieta.wp.pl,moto.wp.pl,tech.wp.pl,gry.wp.pl,opinie.wp.pl,turystyka.wp.pl,pogoda.wp.pl,tv.wp.pl,finanse.wp.pl##* > DIV[style*="max-width: 100%;"]
 sportowefakty.wp.pl##DIV#matchtable + * + * + DIV[class]
 wiadomosci.wp.pl##[target="_blank"] > IMG[src^="https://v.wpimg.pl/"]
@@ -2743,48 +2730,65 @@ pogoda.wp.pl##DIV[style="text-align: center;"] > DIV[class]:first-child
 pogoda.wp.pl##DIV[class]:first-child + * + DIV[class]
 pogoda.wp.pl##DIV.stamp + * + DIV[class]
 pogoda.wp.pl##A[href*=".wp.pl/"][target="_blank"] > DIV:last-child
+~www.wp.pl,wp.pl##[class^="_"][data-reactid] > DIV[class^="_"][data-reactid] > DIV[class^="_"][data-reactid] + DIV[class^="_"][data-reactid] > DIV[class]
+~www.wp.pl,wp.pl##div[class^="_"]:matches-css(position: relative):matches-css(box-sizing: content-box):matches-!css(background-color: /rgba/):matches-css(pointer-events: none)
+sportowefakty.wp.pl,money.pl##DIV + DIV[style*="max-width: 100%;"]
 !
 !main
-www.wp.pl##SECTION[id="section_sport"][class^="_"] > DIV:first-child + DIV[class]
-www.wp.pl##SECTION[id="section_sport"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
-www.wp.pl##SECTION[id="section_sport"][class^="_"] > DIV:first-child + DIV + DIV[class]
-www.wp.pl##SECTION[id="section_finances"][class^="_"] > DIV:first-child + DIV[class]
-www.wp.pl##SECTION[id="section_finances"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
-www.wp.pl##SECTION[id="section_finances"][class^="_"] > DIV:first-child + DIV + DIV[class]
-www.wp.pl##SECTION[id="section_lifestyle"][class^="_"] > DIV:first-child + DIV[class]
-www.wp.pl##SECTION[id="section_lifestyle"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
-www.wp.pl##SECTION[id="section_lifestyle"][class^="_"] > DIV:first-child + DIV + DIV[class]
-!www.wp.pl###section_topnews > * + * + DIV + DIV[class]
-www.wp.pl###section_topnews > DIV + DIV[class]
-www.wp.pl###section_celebrities > * + DIV + DIV[class]
-www.wp.pl###section_mototech > * + DIV + DIV[class]
-www.wp.pl###header_stream + * DIV[class^="_"] > DIV[class^="_"] > DIV + DIV[class]
-www.wp.pl##SECTION#section_topnews > DIV[class]:first-child
-www.wp.pl##SECTION#section_sport > DIV[class]:first-child
-www.wp.pl##SECTION#section_finances > DIV[class]:first-child
-www.wp.pl##SECTION#section_lifestyle > DIV[class]:first-child
-www.wp.pl##SECTION#section_celebrities > DIV[class]:first-child
-www.wp.pl##SECTION#section_mototech > DIV[class]:first-child
-www.wp.pl##DIV[class^="_3"] > DIV[class^="_3"] > DIV[class^="_"] > DIV[class]
-www.wp.pl##[class][src^="https://v.wpimg.pl/"][style="max-height: 25px;"]
-www.wp.pl###section_topnews > SPAN + DIV[class]
-www.wp.pl##[data-st-area="Gwiazdy-prawa"] > DIV[class^="_"] > DIV[class] > DIV[class] > SPAN[class] + DIV[class]
-www.wp.pl##A[class][href*=".wp.pl/"] > [class][src^="https://v.wpimg.pl/"]
-www.wp.pl##[class*="_"] > DIV[class] > SPAN[class] + DIV[class]
-~www.wp.pl,wp.pl##div[class^="_"]:matches-css(position: relative):matches-css(box-sizing: content-box):matches-css(background-color: /rgba/):matches-css(pointer-events: none)
-~www.wp.pl,wp.pl##[class^="_"][data-reactid] > DIV[class^="_"][data-reactid] > DIV[class^="_"][data-reactid] + DIV[class^="_"][data-reactid] > DIV[class]
-www.wp.pl##[data-st-area="Premium"] > #header_premium
-www.wp.pl##A[class^="_3"][target="_blank"] > IMG[class^="_2"]
-www.wp.pl##.main > .mbox--big
+www.wp.pl##div[class]:matches-css(width: 309px):matches-css(height: 182px)
+www.wp.pl##div[class]:matches-css(max-width: 300px):matches-css(max-height: 250px)
+www.wp.pl##a[href^="http://direct.money.pl/landing-page/callcenter/"]
 www.wp.pl##[data-st-area="Mototech-prawa"] > div[class]
-www.wp.pl##SECTION[class^="_3"] > DIV[hidden] + DIV[class]
+www.wp.pl##[class^="_2"][data-st-area$="prawa"] > [class] + UL[class^="_3"] + [class^="_"]
+www.wp.pl###section_shopping > :nth-child(-n+4)
+www.wp.pl##[data-st-area="Gwiazdy-prawa"] > div > div
+www.wp.pl##[data-st-area="Stream"] > div > :nth-child(2) > :nth-child(2)
+www.wp.pl##[data-st-area="Wiadomosci"] > div > :nth-child(2) > div
+www.wp.pl##[data-st-area="Wiadomosci"] > div > :nth-child(5)
+www.wp.pl##[data-st-area="Zakupy"] > :nth-child(n+2):nth-child(-n+3) > div > div
+!
 ! niepotwierdzone
+!www.wp.pl##SECTION[id="section_sport"][class^="_"] > DIV:first-child + DIV[class]
+!www.wp.pl##SECTION[id="section_sport"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
+!www.wp.pl##SECTION[id="section_sport"][class^="_"] > DIV:first-child + DIV + DIV[class]
+!www.wp.pl##SECTION[id="section_finances"][class^="_"] > DIV:first-child + DIV[class]
+!www.wp.pl##SECTION[id="section_finances"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
+!www.wp.pl##SECTION[id="section_finances"][class^="_"] > DIV:first-child + DIV + DIV[class]
+!www.wp.pl##SECTION[id="section_lifestyle"][class^="_"] > DIV:first-child + DIV[class]
+!www.wp.pl##SECTION[id="section_lifestyle"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
+!www.wp.pl##SECTION[id="section_lifestyle"][class^="_"] > DIV:first-child + DIV + DIV[class]
+!www.wp.pl###section_topnews > DIV + DIV[class]
+!www.wp.pl###section_celebrities > * + DIV + DIV[class]
+!www.wp.pl###section_mototech > * + DIV + DIV[class]
+!www.wp.pl###header_stream + * DIV[class^="_"] > DIV[class^="_"] > DIV + DIV[class]
+!www.wp.pl##SECTION#section_topnews > DIV[class]:first-child
+!www.wp.pl##SECTION#section_sport > DIV[class]:first-child
+!www.wp.pl##SECTION#section_finances > DIV[class]:first-child
+!www.wp.pl##SECTION#section_lifestyle > DIV[class]:first-child
+!www.wp.pl##SECTION#section_celebrities > DIV[class]:first-child
+!www.wp.pl##SECTION#section_mototech > DIV[class]:first-child
+!www.wp.pl##DIV[class^="_3"] > DIV[class^="_3"] > DIV[class^="_"] > DIV[class]
+!www.wp.pl##[class][src^="https://v.wpimg.pl/"][style="max-height: 25px;"]
+!www.wp.pl###section_topnews > SPAN + DIV[class]
+!www.wp.pl##[data-st-area="Gwiazdy-prawa"] > DIV[class^="_"] > DIV[class] > DIV[class] > SPAN[class] + DIV[class]
+!www.wp.pl##A[class][href*=".wp.pl/"] > [class][src^="https://v.wpimg.pl/"]
+!www.wp.pl##[class*="_"] > DIV[class] > SPAN[class] + DIV[class]
+!www.wp.pl##[data-st-area="Premium"] > #header_premium
+!www.wp.pl##A[class^="_3"][target="_blank"] > IMG[class^="_2"]
+!www.wp.pl##.main > .mbox--big
+!www.wp.pl##SECTION[class^="_3"] > DIV[hidden] + DIV[class]
+!www.wp.pl##div[class]:matches-css(width: 300px):matches-css(height: 250px)
+!www.wp.pl##[id^="section_"][class^="_"][data-st-area$="-section"] > [style*="width: 970px;"]
+!www.wp.pl##[class^="_"][title][target="_blank"][data-st-clk^="\7b \"teaserId\":"]
+!www.wp.pl##[target="_blank"] > DIV[style^="width: 100%; height: 100%; background-image: "]
+!www.wp.pl##[style^="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.6);"]
+!www.wp.pl##[style$="display: block;"] > DIV[style*=" overflow: hidden;"]
+!www.wp.pl##DIV > DIV[style*="max-width: 100%;"]
+!www.wp.pl##[id*="_screening_"]
 !
 ! inne
 sportowefakty.wp.pl##HEADER + DIV#matchtable + DIV + DIV
 sportowefakty.wp.pl##HEADER + DIV#matchtable + DIV + DIV + DIV + DIV[class]
-!sportowefakty.wp.pl##HEADER + DIV#matchtable + DIV + DIV + DIV[class]
-!sportowefakty.wp.pl##ASIDE > DIV + DIV + DIV[class]
 sportowefakty.wp.pl##P + DIV + DIV + DIV + DIV[class]
 sportowefakty.wp.pl##P + DIV + DIV + DIV[class]
 sportowefakty.wp.pl##P + DIV + DIV[class]
@@ -2824,7 +2828,6 @@ money.pl##DIV#ADrail > DIV[class]:first-child
 www.money.pl##.article-set + DIV[style^="background"]
 www.money.pl##DIV[style$=" z-index: auto;"] > DIV[class]
 biztok.money.pl##DIV[style="margin-bottom: 10px"] + DIV > DIV > DIV[class]
-!biztok.money.pl##DIV[style="margin-bottom: 10px"] > DIV[class] > DIV[class]
 biztok.money.pl##[style$="padding:10px 0"] > DIV[class]
 biztok.money.pl##[style="margin-bottom: 10px"] > DIV[class]
 www.money.pl###ADrail > DIV > DIV[class]
