@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 22 October 2017
+! Last modified: 23 October 2017
 ! Expires: 2 days
-! Version: 2017102210
+! Version: 2017102301
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017102210 aktualizacja: nie, 22 pazdziernika 2017, 19:30:00
+! v.2017102301 aktualizacja: pon, 23 pazdziernika 2017, 00:25:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -2744,8 +2744,7 @@ pogoda.wp.pl##A[href*=".wp.pl/"][target="_blank"] > DIV:last-child
 sportowefakty.wp.pl,money.pl##DIV + DIV[style*="max-width: 100%;"]
 !
 !main
-www.wp.pl##div[class]:matches-css(width: 309px):matches-css(height: 182px)
-www.wp.pl##div[class]:matches-css(max-width: 300px):matches-css(max-height: 250px)
+www.wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 www.wp.pl##a[href^="http://direct.money.pl/landing-page/callcenter/"]
 www.wp.pl##[data-st-area="Mototech-prawa"] > div[class]
 www.wp.pl##[class^="_2"][data-st-area$="prawa"] > [class] + UL[class^="_3"] + [class^="_"]
