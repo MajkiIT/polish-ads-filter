@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 23 October 2017
 ! Expires: 2 days
-! Version: 2017102301
+! Version: 2017102302
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017102301 aktualizacja: pon, 23 pazdziernika 2017, 00:25:00
+! v.2017102302 aktualizacja: pon, 23 pazdziernika 2017, 19:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -381,6 +381,11 @@ businessjournal.pl##[href^="http://"][target="_blank"] > IMG[src^="http://busine
 businesswomanlife.pl##[id^="slidero-box-"]
 businesswomanlife.pl##[id^="widget_sp_image"]
 btc-sms.eu##.banner
+cannabisnews.pl##[class^="cn-ad-"]
+cannabisnews.pl##.td-visible-desktop
+cannabisnews.pl##A[target="_blank"] > [src]
+cannabisnews.pl##[id^="snp-pop-"]
+cannabisnews.pl##.bld-el
 cadblog.pl##TD[bgcolor="#FFFFFF"]
 cardsplitter.pl##[target="_blank"] > IMG[src^="/images/loga/"][height="249"]
 cartests.net###td-outer-wrap > .td-header-wrap:style(margin-bottom: 0px!important;)
@@ -558,6 +563,8 @@ fakt.pl##.smallAd
 fakty.interia.pl##[id^="brendingIplv2_new_starter"]
 faktykaliskie.pl##[id^="advt-"]
 faktykonopne.pl##.aligncenter
+faktykonopne.pl##.td-visible-desktop > A > IMG:last-child
+faktykonopne.pl##ASIDE.widget_text.td_block_template_14.widget.widget_custom_html
 fandroid.com.pl##.g1-ads
 fangol.pl##[style="text-align:center;"]
 fantastyka.pl##.tapeta
@@ -913,11 +920,15 @@ malydziennik.pl##.desktop
 mamkomputer.info###text-17
 mamawdomu.pl###text-161
 mapa.szukacz.pl###popupContainer
+marihuana.info.pl###header-right-section, #text-5, #text-10, #text-11
 maximgroup.pl###banner-counter
 meczyki.pl##.bookie-ranks
 mediaexpert.pl## .js-promoClick
 mediaexpert.pl##[id*="ban_"]
 mediamarkt.pl##A[href^="http://www.mediamarkt.pl/ad.php"]
+medycznamarihuana.pl##.footer-ad-wrap
+medycznamarihuana.com##A[target="_blank"] > IMG[src*="medycznamarihuana.com/wp-content/uploads/"]
+medycznamarihuana.com##IMG[src*="/wp-content/uploads/baner_"]
 miedzyrzecz.biz###showimage
 memy.pl##.container > div[style="height:250px; width:970px; margin-bottom: 10px;"]
 memy.pl##.content-stream.view-meme > #news > .break-row.row
@@ -1072,6 +1083,7 @@ nowy.tlen.pl##.shrink-none.mbox--main.mbox
 nudziara.pl##DIV[style="border: 1px solid #D8D0D0; padding: 5px 0px 5px 0px; width:705px;"]
 nysa24.pl###Mod348
 nysa24.pl,tvnakarte.eu###jm-header
+o.pl###wa, #s-rotator, #server-rectangle, #server-button
 o2.pl##.box-sidebar.box-sidebar-1
 o2.pl##.content-row.content-row-15.x-ecommerce
 o2.pl##div.popup-wrap
@@ -1098,6 +1110,7 @@ optyczne.pl##.double-billboard
 opolak.pl,poznaniak.pl,szczeciniak.pl,toruniak.pl,szczeciniak.pl,warszawiak.pl,wroclawiak.pl,katowiczak.pl,bialostoczak.pl,kaliszak.pl,gdyniak.pl,gdanszczak.pl,czestochowiak.pl,bydgoszczak.pl,krakusik.pl##.empty-baner
 opolelubelskie.24wspolnota.pl##.visible-md.visible-lg.row
 originals24.pl##body > div:nth-of-type(3)
+ostrowiecnews.pl###text-4, #text-2 > .textwidget > p:nth-of-type(n+2), .text-center.hidden-print
 oswiecimonline.pl###rev_slider_4_1_wrapper
 oswiecimonline.pl##.commercial
 oswiecimonline.pl##.vc_empty_space
@@ -1733,6 +1746,7 @@ zaufanatrzeciastrona.pl##body > * > * > a[href]:not([href="//zaufanatrzeciastron
 zaufanatrzeciastrona.pl###sponsor3
 zebrra.tv##.sam-container
 zespolmi.pl##a[href^="https://prisonwarsonline.com/"]
+zielonanews.pl##A.gofollow > IMG
 zory.dlawas.pl##.in.fade.modal-backdrop
 zory.dlawas.pl##.modal-dialog
 zszywka.pl##A[style="display: block; position: fixed; bottom: 0px; box-sizing: border-box; width: 100%; background-color: rgb(129, 197, 78); background-image: none !important; background-repeat: no-repeat; background-attachment: scroll; background-clip: border-box; background-origin: padding-box; background-position: 20px 50%; background-size: auto auto; color: rgb(255, 255, 255); text-align: center; padding: 1em 150px; z-index: 1000; white-space: pre;"]
@@ -1920,6 +1934,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||media.zwielkopolski24.pl/img/banery/$image,domain=rawicz24.pl
 ||media2.cinema-city.pl/pl/*.swf
 ||mediaexpert.pl/temp/filemanager_up/*tlo_$image
+||medycznamarihuana.com/wp-content/uploads/*_330x250$image
 ||microsms.pl/img/reklama$image
 ||mgsm.pl/js/get*Ads.xhtml$xmlhttprequest,domain=www.mgsm.pl
 ||mma.pl/wp-content/uploads/20*/*/kapka-do-kapki.jpg$image
@@ -2137,7 +2152,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 /^(http|https):\/\/www\.wp\.pl\/[a-zA-Z0-9-_]{50,}/$popup,domain=www.wp.pl
 /^(http|https):\/\/www\.chip\.pl\/wp-content\/themes\/_chip\/[a-z]{4,6}\/[a-z]{4,5}-[0-9]{4,5}/$image,domain=chip.pl
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl|poczta.wp.pl
-/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl
+/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -2573,7 +2588,6 @@ xyz,mecz.tv,ipilka.info##[class$="_right"]
 !
 !
 !--------------------------Rules temporary blocking filters-------------!
-/:\/\/(?!bilety24)(?!forgeofempires)(?!techsterowniki)(?!railnation)(?!lowcyzombi)(?!centralagier)(?!infografika)(?!stworzonadosukcesu)(?!pilot)(?!biuropodrozy)(?!mistrzowiebezpieczenstwa)(?!prezentownik)(?!nowapoczta)(?!swiecsie)(?!swieta)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!facet)(?!wyleczto)(?!kuchnia)(?!film)(?!moto)(?!gwiazdy)(?!teleshow)(?!finanse)(?!kobieta)(?!dom)(?!pogoda)(?!tech)(?!historia)(?!czat)(?!ksiazki)(?!gryonline)(?!hotele)(?!narty)(?!samoloty)(?!wycieczki)(?!hosting)(?!irlandia)(?!multikurs)(?!casino)(?!foto)(?!tech)(?!www)(?!stg)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!alefolwark)(?!angielski)(?!arenamody)(?!beniamin)(?!bon)(?!bsg)(?!casino)(?!diety)(?!dlaprasy)(?!dlugi)(?!doladowania)(?!dom)(?!dysk)(?!ebiznes)(?!ebooki)(?!empire)(?!fantasyliga)(?!film)(?!fundusze)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)(?!gazetki)(?!gry)(?!horoskop)(?!kalendarz)(?!katalog)(?!khanwars)(?!komiks)(?!konflikty)(?!kontakty)(?!korsarze)(?!kultura)(?!mini)(?!mmho)(?!mobilna)(?!morizon)(?!moto)(?!muzyka)(?!narty)(?!naryby)(?!onas)(?!orangekinoletnie)(?!piraci)(?!poczta)(?!pomoc)(?!praca)(?!profil)(?!programtv)(?!pytamy)(?!rekrutacja)(?!rss)(?!rtvagd)(?!rycerzeiksiezniczki)(?!smeet)(?!speedwaymanager)(?!szkola)(?!szukaj)(?!tech)(?!teleshow)(?!triviador)(?!turystyka)(?!twojeip)(?!ulubiency)(?!warodfragons)(?!wycieczki)(?!zdrowie)(?!zoomumba)(?!topnews)(?!erotyka)(?!dzieci)(?!fitness)(?!gielda)(?!finansomat)(?!biznes)(?!sport)[a-zA-Z0-9]{4,9}\.wp\.pl\/.{200,}/$script,important
 money.pl,o2.pl,portal.abczdrowie.pl,wp.pl,wp.tv##script:inject(abort-on-property-write.js, gafBodies)
 ||rek.www.wp.pl/pliki/*.js$script,important
 ||rek.www.wp.pl/display.js?$script,important,domain=www.pudelek.tv
@@ -2585,7 +2599,6 @@ money.pl,o2.pl,portal.abczdrowie.pl,wp.pl,wp.tv##script:inject(abort-on-property
 ||ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/splay/2017/03/xc_laser_400x400_2.jpg
 ||ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/splay/2017/03/xc_laser_300x700_2.jpg
 ||ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2017/03/1200x300.jpg
-||v.wpimg.pl/YmMxNjJhOAliKgNFCAchQn9If11nWG5CJx0kBWVZaFt1THpHCyQQIh8nJQskHDYfYhkiAyUaOwwjExEBKwYtAj8nOQsmHS0COgERASUGMhg_CxEZOgc3HiIKJwQtN2BYfAB6WhUfKTI9Fz4YKx8wAiMdfEQ6Bj4=$image
 !
 !
 !--------------------------Rules wykop.pl-------------!
