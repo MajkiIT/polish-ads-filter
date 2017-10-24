@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 23 October 2017
+! Last modified: 24 October 2017
 ! Expires: 2 days
-! Version: 2017102302
+! Version: 2017102401
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017102302 aktualizacja: pon, 23 pazdziernika 2017, 19:20:00
+! v.2017102401 aktualizacja: wt, 24 pazdziernika 2017, 20:15:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -222,7 +222,7 @@ pl/popup.js|$script
 ~katywroclawskie.pl,~rozklad-pkp.pl,~gwarant.czest.pl,~sukniaonline.pl##[src*="/banners/banner"]
 ~tczewska.pl,~procamp.agency,~rp.pl,~sportowememy.pl,~intercity.pl##[id*="reklama"]
 ~magdabek.pl,~superpharm.pl,~ceo.com.pl,~linuxiarze.pl,~wirtualny-wojownik.pl,~przerwanareklame.pl,~tvpolska.pl,~smiechawatv.pl,~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org,~motomio.pl,~semilac.pl,~e-otoczenie.pl,~wyborcza.pl,pl##[class*="reklama"]
-~nationalgeographic.com,~wpolityce.pl,~box.com,~hardcorowo.pl,~gumtree.com,~hulu.com,com,pl##[class^="ad-"]
+~nationalgeographic.com,~wpolityce.pl,~box.com,~hardcorowo.pl,~gumtree.com,~hulu.com,com,~filmweb.pl,pl##[class^="ad-"]
 ~fakt.pl,pl##.trizer-bnr
 pl###widget-shop
 ##.rek_kontener
@@ -398,6 +398,7 @@ cda.pl##.muimErPIa
 cda.pl##.muimerPIa
 cda.pl##a[class][target]:has(img[src*="premium"])
 cda.pl##.wraper-container
+cda.pl##.f-img
 cda-hd.pl##.s_left > [target="_blank"] > IMG[src^="http://cda-hd.pl/wp-content/uploads/201"]
 cenabiznesu.pl##.img-responsive
 centrumdruku3d.pl###attachment_4083 > div
@@ -1295,6 +1296,7 @@ rmf.fm##.intad
 rmf24.pl##.sponsoredCont
 roksa.pl###content > span
 roksa.pl##SPAN[style="color:gray;padding-left:350px;"]
+rockman.com.pl##[id^="menu_banners"]
 romantycznyweekend.eu###article-finished
 rozatv.eu##[class^="custom"]
 rp.pl###adv_4
@@ -1342,6 +1344,7 @@ sklep.fipro.pl###tooltipmessage
 sklep.habys.pl###newsletterModal
 sklep.habys.pl##.modal-backdrop.fade.in
 sklep.habys.pl##.modal-content
+sklep-muzyczny.com.pl##a[href*="santanderconsumer.pl"]
 skok-rafineria.pl##[id^="fancybox-"]
 skokinarciarskie.pl##DIV[style="width: 750px; height: 200px; text-align: center; margin: auto; margin-top: 4px; margin-bottom: -4px;"]
 skrstrzelce.pl##.center_bottom
@@ -1749,6 +1752,7 @@ zespolmi.pl##a[href^="https://prisonwarsonline.com/"]
 zielonanews.pl##A.gofollow > IMG
 zory.dlawas.pl##.in.fade.modal-backdrop
 zory.dlawas.pl##.modal-dialog
+zrabatowani.pl##.center-block.hidden-xs
 zszywka.pl##A[style="display: block; position: fixed; bottom: 0px; box-sizing: border-box; width: 100%; background-color: rgb(129, 197, 78); background-image: none !important; background-repeat: no-repeat; background-attachment: scroll; background-clip: border-box; background-origin: padding-box; background-position: 20px 50%; background-size: auto auto; color: rgb(255, 255, 255); text-align: center; padding: 1em 150px; z-index: 1000; white-space: pre;"]
 zumi.pl###couponsBar
 zumi.pl###offersBar
@@ -2152,7 +2156,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 /^(http|https):\/\/www\.wp\.pl\/[a-zA-Z0-9-_]{50,}/$popup,domain=www.wp.pl
 /^(http|https):\/\/www\.chip\.pl\/wp-content\/themes\/_chip\/[a-z]{4,6}\/[a-z]{4,5}-[0-9]{4,5}/$image,domain=chip.pl
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl|poczta.wp.pl
-/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl
+/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|open.fm
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -2406,6 +2410,7 @@ zrabatowani.pl###popup-adblock-bottom
 @@||epiotrkow.pl/js/adv*.reklama*.js$script,domain=epiotrkow.pl
 @@||eskago.pl/html/js/ads*.js$script
 @@||eskago.pl/html/js/showads.js$script,domain=www.eskago.pl
+@@||filmweb.pl^$generichide
 @@||fm.tuba.pl^$xmlhttprequest,domain=fm.tuba.pl
 @@||fokus.tv/assets/js/ads.js$script,domain=fokus.tv
 @@||grupa7j.pl/joomla/images/my/gallery_advert/$image,domain=grupa7j.pl
