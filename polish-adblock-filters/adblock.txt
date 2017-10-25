@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 25 October 2017
 ! Expires: 2 days
-! Version: 2017102501
+! Version: 2017102502
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017102501 aktualizacja: sr, 25 pazdziernika 2017, 09:00:00
+! v.2017102502 aktualizacja: sr, 25 pazdziernika 2017, 20:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -87,10 +87,10 @@ motorolasolutions.com##.tealiumMo2TriggerButton
 !
 !
 !-----------------------Privacy filters block-----------------------!
-,xgemius.js$script
+!,xgemius.js$script
 .pl/*_ac=kropka-*
-/gemius/*$script,image
-/js/gemius.js$script
+!/gemius/*$script,image
+!/js/gemius.js$script
 ||adkontekst.pl$script,image
 ||adnxs.com^
 ||api.solvemedia.com/papi/action$popup
@@ -99,8 +99,8 @@ motorolasolutions.com##.tealiumMo2TriggerButton
 ||emisja.adsearch.pl/$xmlhttprequest
 ||entryhit.wp.pl^
 ||gcontent.services.tvn.pl^
-||gemius.pl^
-||hit.gemius.pl$script,image
+!||gemius.pl^
+!||hit.gemius.pl$script,image
 ||kozaczek.pl/stats.php$xmlhttprequest
 ||nsaudience.pl^
 ||pixel.solvemedia.com^
@@ -115,7 +115,7 @@ motorolasolutions.com##.tealiumMo2TriggerButton
 ||www.wp.pl/v*/log/view
 ||tealium.hs.llnwd.net/*/utui/js/*.js$script,domain=motorolasolutions.com
 ||sylaba.net^
-||smpl.hit.ppdb.pl^
+!||smpl.hit.ppdb.pl^
 ||daib.pl^
 ||salesmanago.pl^$domain=~salesmanago.pl
 !
@@ -173,7 +173,7 @@ motorolasolutions.com##.tealiumMo2TriggerButton
 ##[class^="ADbox"]
 ##[class^="adSrodek"]
 ##[class^="sponsorowany"]
-##[href*=".hit.gemius.pl"]
+!##[href*=".hit.gemius.pl"]
 ##[href*="://clickserve.dartsearch.net/link/click"]
 ##[href^="http://adserwer."]
 ##[href^="http://csr.onet.pl/eclk/clk"]
