@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 26 October 2017
 ! Expires: 2 days
-! Version: 2017102601
+! Version: 2017102602
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017102601 aktualizacja: czw, 26 pazdziernika 2017, 10:05:00
+! v.2017102602 aktualizacja: czw, 26 pazdziernika 2017, 19:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -125,7 +125,7 @@ motorolasolutions.com##.tealiumMo2TriggerButton
 ###a_d_billboard
 ###ad
 ###ad_gora_srodek
-###ads
+~de###ads
 ##ads-top-layer
 ###adtify-widget
 ###ceneo-placeholder-ceneo-12
@@ -237,6 +237,7 @@ pl###LinkArea\:gry
 pl##.onnetwork-video
 pl##a[href^="https://converti.se/click/"]
 ##.advertisment-panel
+pl###pixad-box
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -1119,7 +1120,6 @@ onet.pl##.miniSlot:style(min-height: 0rem!important;margin-bottom: 0rem!importan
 opinie.wp.pl##[style="pointer-events:none;"][class]
 open.fm###bnr-top
 open.fm##.bnr-player
-open.fm##A[class][href*=".wp.pl/"] > IMG[class][src^="https://v.wpimg.pl/"]
 optyczne.pl##.double-billboard
 opolak.pl,poznaniak.pl,szczeciniak.pl,toruniak.pl,szczeciniak.pl,warszawiak.pl,wroclawiak.pl,katowiczak.pl,bialostoczak.pl,kaliszak.pl,gdyniak.pl,gdanszczak.pl,czestochowiak.pl,bydgoszczak.pl,krakusik.pl##.empty-baner
 opolelubelskie.24wspolnota.pl##.visible-md.visible-lg.row
@@ -1550,7 +1550,6 @@ vape.pl##.sidebar-wrapper + .sidebar-wrapper
 valetudo.bialystok.pl##.darkness-popup
 vampirediaries.pl##[width="300"] + [width="20"] + TD[width="300"]
 video.anyfiles.pl##[style^="float: left; margin: 0px 2px 5px 3px; width: 315px; height: 260px; text-align: center; position: absolute;"]
-vape.pl##.sidebar-wrapper + .sidebar-wrapper
 vbtpc.pl##.footer-banner
 videowood.tv###tbl1
 vidfile.net##.rek
@@ -2789,8 +2788,6 @@ www.wp.pl##SECTION#section_topnews > DIV[class]:first-child
 www.wp.pl##SECTION[class^="_3"] > DIV + DIV[class]
 www.wp.pl##[class][src^="https://v.wpimg.pl/"][style="max-height: 25px;"]
 www.wp.pl##[class^="_"][title][target="_blank"][data-st-clk^="\7b \"teaserId\":"]
-www.wp.pl###section_shopping > :nth-child(-n+4)
-www.wp.pl##[data-st-area="Zakupy"] > :nth-child(n+2):nth-child(-n+3) > div > div
 www.wp.pl##SECTION#section_celebrities > DIV[class]:first-child
 www.wp.pl##SECTION#section_mototech > DIV[class]:first-child
 www.wp.pl##SECTION#section_sport > DIV[class]:first-child
@@ -2842,12 +2839,10 @@ sportowefakty.wp.pl##P + DIV + DIV[class]
 sportowefakty.wp.pl##.section__separator
 sportowefakty.wp.pl##HEADER + DIV#matchtable + DIV[class]
 sportowefakty.wp.pl,money.pl,pudelek.pl##A[class][href*=".wp.pl/"] > IMG[class][src^="https://v.wpimg.pl/"]:last-child
-sportowefakty.wp.pl##ASIDE.column > DIV[class] + DIV[class] + DIV[class]
 sportowefakty.wp.pl##ASIDE.column > DIV[class] + DIV[class]
 !
 !
 !--------------------------Pudelek/Pudelekx element hide------------!
-pudelek.pl##[data-st-area="naglowek"] + .mtb10
 pudelek.pl##DIV.cb > DIV[class^="m"]
 pudelekx.pl##[id^="adv"]
 pudelek.pl##DIV.m0 > DIV + DIV + DIV[class]
