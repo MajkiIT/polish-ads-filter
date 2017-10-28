@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 27 October 2017
+! Last modified: 28 October 2017
 ! Expires: 2 days
-! Version: 2017102704
+! Version: 2017102801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017102704 aktualizacja: ptk, 27 pazdziernika 2017, 13:50:00
+! v.2017102801 aktualizacja: sob, 28 pazdziernika 2017, 19:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -76,7 +76,7 @@ streamin.to###rkm
 !-----------------------Block pages-----------------------!
 ||vshare.io/sdm.php$xmlhttprequest
 ||vshare.io/watch_video.php$script
-/fake/fake.php$domain=alefilmy.com|cyberkino.pl
+/premium/player.php$domain=alefilmy.com|cyberkino.pl
 !
 !
 !-----------------------Privacy filters hide-----------------------!
@@ -277,6 +277,10 @@ alltube.tv###ban-er
 alltube.tv###super-player
 alltube.tv###undermenu
 amigostv.net.pl###u785
+ampolska.net##.conntent > center
+ampolska.net###dwa_panel > center
+ampolska.net###trzy_panel
+ampolska.net##.ul_panel_bg:nth-of-type(4)
 android.com.pl##.big-banner
 android.com.pl##[id^="text-3"]
 androidpolska.pl###middle-box-adk
@@ -295,6 +299,8 @@ angielski.slowka.pl###acceptPopup
 angielski.slowka.pl###newsletterConfirm
 anglia.today##[href^="/redirect/ad/background/"]
 anglia4u.pl###gkSidebar
+animes.pl##.section-side > .mini-box:nth-of-type(2)
+animes.pl##.mini-title:nth-of-type(1) > p > a[href="#"]
 anyfiles.pl###SearchVideosLoadDiv > .media-list > .media > .thumbnail:not([title])
 anyfiles.pl###AllVideosLoadDiv > .media-list > .media > .thumbnail:not([title])
 anyfiles.pl##[class^="bp-wrapp"]
@@ -581,7 +587,6 @@ fechallenge.com##.layout-right-brand
 fechallenge.com##[class$="partners"]
 filesdark.com##[href*="/adac.php"]
 films4free.pl##.M2U3OGQ4ZGY1
-filmweb.pl###clickUrl1
 filmweb.pl###flashcontent3
 filmweb.pl###pasekup
 filmweb.pl###skyBanner
@@ -1054,6 +1059,8 @@ naekranie.pl##.sen-gal-sidebar-custom-content
 naekranie.pl##div[style="height: 5.3125rem !important;"]
 naekranie.pl##.inner-wrap > .post-content
 naekranie.pl##.adform
+naekranie.pl##div:if(>div:first-child:has-text(Reklama))
+naekranie.pl##.except-mobil
 naklo24.pl##.ban
 napisy24.pl##.custom_pozioma
 napisy24.pl##[id^="napisy24"]
@@ -1141,6 +1148,7 @@ parenting.pl###floorBG
 parenting.pl##.a-ctn-d
 parenting.pl##.article__textbox
 parenting.pl##[class^="article__side__stickblock--"]
+pato.pl##a[href="http://nocnik.pl/"]
 patriot24.net##[style="display: block; width: 750px; height: 200px; margin: 0px auto;"]
 pccentre.pl##.box_orange.box.menu_r_hp:nth-of-type(5)
 pcformat.pl###ad_dol_srodek
@@ -1567,6 +1575,9 @@ vorek.pl##.news > center:nth-of-type(1)
 voxfm.pl###global_belka
 vshare.io###pplay
 wachamksiazki.pl##.sr
+wakai.pl###text-html-widget-5
+wakai.pl##.youtube-widget
+wakai.pl###text-html-widget-6
 warszawawpigulce.pl##.code-block-5
 waszwilanow.pl##.td-banner-wrap-full
 waszwilanow.pl##[style="text-align: center;"]
@@ -1602,6 +1613,7 @@ wiocha.pl,showup.tv##A[href*="/click.php"]
 wirtualnemedia.pl###adv_bottom
 wirtualnemedia.pl###newsletter
 wirtualnemedia.pl##SPAN[style="color: #656971; font-size: 10px; font-weight: normal;"]
+wirtualnemedia.pl##a[href="http://www.wirtualnemedia.pl/praca/"]
 wizaz.pl###autoPromoBigBaner
 wizaz.pl###contentAfPromo
 wizaz.pl###forum-gad2
@@ -1792,6 +1804,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||40ton.net/wp-content/uploads/*.gif$image
 ||40ton.net/wp-content/uploads/*.png$image
 ||4lomza.pl/banner/$image
+||4lomza.pl/i/tlo/$image
 ||a.ib.gazeta.pl^$image
 ||a1.advertine.com/w.js$script,domain=baje.pl
 ||ad.adview.pl/ad/
@@ -1809,6 +1822,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||alemiasto.pl/adds/
 ||allegrostatic.pl/showcaseService/static/images/placeholders/1200x400.png$image
 ||alltube.tv/adv/show-windows.php$script
+||animes.pl/jscripts/myadvertisements.js$script
 ||antygrupa.pl/adv/$subdocument,domain=antyweb.pl
 ||antyweb.pl/wp-content/themes/antyweb.autentika/horizon/
 ||antyweb.pl/wp-content/uploads/2017/03/horizon-cover.jpg$image
@@ -1982,6 +1996,8 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||nazwa.pl/video/$object-subrequest,media,domain=rmfon.pl
 ||naekranie.pl/wp-admin/admin-ajax.php?action=ne_tick
 ||naekranie.pl/wp-content/themes/naekranie/partials/$image
+||naekranie.pl/wp-content/themes/naekranie/templates/welcome_screen.mustache
+||naekranie.pl/wp-content/uploads/*/najlepsze-seriale-640x50.jpg$image
 ||news.targeo.pl/oarm.php$xmlhttprequest,domain=mapa.targeo.pl
 ||niebiescy.pl/bild/$image
 ||nhlpl.cdn.adglare.org/img/$image,domain=notebookcheck.pl
@@ -2095,6 +2111,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||vixnixxer.com$script,third-party
 ||vshare.io/static/button.css$stylesheet
 ||vstrim.pl/images/*.gif$image,domain=vstrim.pl
+||xlkredyt.pl/js/widget-left.js$script
 ||xml.enovatis.pl/mrdsl/content.php$subdocument
 ||wbj.pl/adv/
 ||wbj.pl/wp-content/plugins/adkingpro/js/adkingpro-functions.js$script
@@ -2174,7 +2191,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 /^(http|https):\/\/www\.wp\.pl\/[a-zA-Z0-9-_]{50,}/$popup,domain=www.wp.pl
 /^(http|https):\/\/www\.chip\.pl\/wp-content\/themes\/_chip\/[a-z]{4,6}\/[a-z]{4,5}-[0-9]{4,5}/$image,domain=chip.pl
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl|poczta.wp.pl
-/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|open.fm|pogoda.wp.pl|dladzieci.pl|ksiazki.wp.pl|kuchnia.wp.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|sportowefakty.wp.pl|gwiazdy.wp.pl
+/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|open.fm|pogoda.wp.pl|dladzieci.pl|ksiazki.wp.pl|kuchnia.wp.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl
 !
 !
 !---------------------------------Whitelists----------------------------------!
