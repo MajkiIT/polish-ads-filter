@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 29 October 2017
 ! Expires: 2 days
-! Version: 2017102905
+! Version: 2017102906
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017102905 aktualizacja: nie, 29 pazdziernika 2017, 20:20:00
+! v.2017102906 aktualizacja: nie, 29 pazdziernika 2017, 20:30:00
 !
 !
 wp.pl##:xpath(//div[1][text()="REKLAMA"]/..)
@@ -23,8 +23,8 @@ wp.pl##:xpath(//a[contains(@href,'redir')]/ancestor::div[5]):matches-css(pointer
 wp.pl##:xpath(//aside[text()="Reklama"]//ancestor::li[1])
 wp.pl##:xpath(//img[@class][@src]/ancestor::div[2][@class]):matches-css(pointer-events: none)
 www.wp.pl##DIV[class] > A[class][href*=".wp.pl/"] > DIV > [class][src^="https://v.wpimg.pl/"]
-wiadomosci.wp.pl##A[class^="_2"][href*=".wp.pl/"][target="_blank"] > FIGURE[class^="_1"]
-wiadomosci.wp.pl##A[class^="_2"][href*=".wp.pl/"][target="_blank"]
+~www.wp.pl,wp.pl##A[class^="_2"][href*=".wp.pl/"][target="_blank"] > FIGURE[class^="_1"]
+~www.wp.pl,wp.pl##A[class^="_2"][href*=".wp.pl/"][target="_blank"]
 wp.pl,komorkomania.pl,pudelek.pl##[target="_blank"] > IMG[class][src^="https://v.wpimg.pl/"]
 czat.wp.pl,infografika.wp.pl,dladzieci.pl,muzyka.wp.pl,niewiarygodne.pl,poczta.bloog.pl,sportowybar.wp.pl,forum.o2.pl,komediowo.pl,topnews.wp.pl,ogloszenia.wp.pl##[id*="adv"]
 sportowefakty.wp.pl,kobieta.wp.pl,moto.wp.pl,tech.wp.pl,gry.wp.pl,opinie.wp.pl,turystyka.wp.pl,pogoda.wp.pl,tv.wp.pl,finanse.wp.pl##* > DIV[style*="max-width: 100%;"]
