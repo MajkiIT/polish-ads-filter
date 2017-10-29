@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 29 October 2017
 ! Expires: 2 days
-! Version: 2017102901
+! Version: 2017102902
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017102901 aktualizacja: nie, 29 pazdziernika 2017, 19:40:00
+! v.2017102902 aktualizacja: nie, 29 pazdziernika 2017, 19:50:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -2819,6 +2819,7 @@ wp.pl##:xpath(//a[contains(@href,'redir')]/ancestor::div[5]):matches-css(pointer
 wp.pl##:xpath(//aside[text()="Reklama"]//ancestor::li[1])
 tech.wp.pl##:xpath(//img[contains(@src, "LTE4NDk1PyAkQCcnRAJiY2sFeGpaAHxkcQNjdUZWKjEjA3d1RAkqMicCKnQOB3VhJld2c18EeGVxAHolUwJ9NXcFe3VdHzw6Ig==")]/ancestor::div[2]):matches-css(pointer-events: none)
 tech.wp.pl##:xpath(//img[contains(@src, "NTcxMDg3PSACDCQnSABgY01Je2pWAn5kV09gdUpUKDEFT3R1SAsoMgFOKXQCBXdhABt1c1MGemVXTHklXwB_NVFJeHVRHT46BA==")]/ancestor::div[2]):matches-css(pointer-events: none)
+www.wp.pl##DIV[class] > A[class][href*=".wp.pl/"] > DIV > [class][src^="https://v.wpimg.pl/"]
 !
 !main
 !www.wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
