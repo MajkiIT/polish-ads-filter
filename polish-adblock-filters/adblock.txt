@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85,Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 28 October 2017
+! Last modified: 29 October 2017
 ! Expires: 2 days
-! Version: 2017102801
+! Version: 2017102901
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017102801 aktualizacja: sob, 28 pazdziernika 2017, 19:45:00
+! v.2017102901 aktualizacja: nie, 29 pazdziernika 2017, 13:35:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -2865,7 +2865,10 @@ sportowefakty.wp.pl##P + DIV + DIV[class]
 sportowefakty.wp.pl##.section__separator
 sportowefakty.wp.pl##HEADER + DIV#matchtable + DIV[class]
 sportowefakty.wp.pl,money.pl,pudelek.pl##A[class][href*=".wp.pl/"] > IMG[class][src^="https://v.wpimg.pl/"]:last-child
-sportowefakty.wp.pl##ASIDE.column > DIV[class] + DIV[class]
+sportowefakty.wp.pl##A[target="_blank"] > DIV[style*="background-image: url(\"https://v.wpimg.pl/"]
+sportowefakty.wp.pl##ASIDE[class*="grid-"] > DIV[class]:first-child + DIV[class]
+sportowefakty.wp.pl##ASIDE.grid-wx1 > DIV[class]:first-child + * + * + DIV[class]
+sportowefakty.wp.pl##CITE + * + * + DIV[class]
 !
 !
 !--------------------------Pudelek/Pudelekx element hide------------!
