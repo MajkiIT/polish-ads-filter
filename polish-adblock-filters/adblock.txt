@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85, Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477, gwarser, mat41997 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 29 October 2017
+! Last modified: 30 October 2017
 ! Expires: 2 days
-! Version: 2017102905
+! Version: 2017103001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017102905 aktualizacja: nie, 29 pazdziernika 2017, 20:40:00
+! v.2017103001 aktualizacja: pon, 30 pazdziernika 2017, 21:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -238,6 +238,9 @@ pl##.onnetwork-video
 pl##a[href^="https://converti.se/click/"]
 ##.advertisment-panel
 pl###pixad-box
+##.ad_Handle
+##.homeadv
+##.ads_widget
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -345,6 +348,7 @@ besty.pl##[id^="adsense_main_"]
 bez-cenzury24.pl##[div^="ips-popup"]
 bezprawnik.pl##.col-xs-12.hidden-xs
 bezprawnik.pl##.play_iframe
+bezprawnik.pl##.show-for-large.columns
 bezuzyteczna.pl##[style="width:700px;height:200px;"]
 bezuzyteczna.pl,zumi.pl##[class^="special"]
 bham.pl##[id^="baner"]
@@ -480,6 +484,8 @@ digi-tv.pl,satkurier.pl##[id^="pasek_hollex"]
 disco-polo.info###smsites > .naglowek-sidebar
 discopolonew.cba.pl##ul:nth-of-type(7)
 doba.pl##[class*="banner"]
+dobra-mama.pl###slideshow
+dobramama.pl##.billboard
 dobrastacja.pl###tfhover
 dobreprogramy.pl###panReklama > div
 dobreprogramy.pl###slide-menu > * div[id^="c"][style^="height:"][style*="width:"]:not([id^="cbox"]):not([id="colorbox"])
@@ -523,6 +529,7 @@ dx-team.org##body > center
 dziennik.pl##.boxClose
 dziennik.pl##[style="text-align:center; margin: 0 0 10px 0;padding-bottom: 20px"]
 dziennik.pl##img[src^="data:image/jpeg;base64"]
+dziennikpolski24.pl##.typBaner
 dziennikzachodni.pl,kurierlubelski.pl,pomorska.pl##.gry
 dzisiajwgliwicach.pl##img[src*="Baner-590x300-"]
 e-blogi.pl##a[href="#"]
@@ -645,6 +652,7 @@ fotka.com###brd_profil
 fotka.com##[id^="billboard_"]
 fotoszok.pl###tablewraper > center
 fotoszok.pl##center > a[href="http://www.boxing.pl"]
+fpiec.pl###a-slot-content-13047-blog-body-7
 franchising.pl###right
 franchising.pl##[id^="scrAd"]
 frazpc.pl###imgnetshare
@@ -862,6 +870,8 @@ kozienice24.pl###adocr
 kraj24.pl##.box_h
 kraj24.pl##.jcarousel-container.jcarousel-container-vertical
 kraj24.pl##DIV[style="margin:15px auto 15px auto"]
+kresy.pl##[id^="layerslider_1"]
+kresy.pl##.ls-popup-overlay
 krknews.pl##[class*="adxx"]
 krs-online.com.pl###bad
 krs-online.com.pl###commcoo
@@ -887,6 +897,7 @@ lajfy.com###interContainer
 lajfy.com###interVeil
 lajfy.com###banner-top-four
 leczna24.pl##.noprint.centrujban
+leftlane.pl###u488942
 leki.fora.pl##.trzContent
 lento.pl###a-show-boottom
 lento.pl###sidebar-promo
@@ -949,6 +960,7 @@ mapa.szukacz.pl###popupContainer
 marihuana.info.pl###header-right-section, #text-5, #text-10, #text-11
 maximgroup.pl###banner-counter
 meczyki.pl##.bookie-ranks
+meczelive.tv##[target="_blank"] > IMG[src^="http://meczelive.tv/new/300/"]
 mediaexpert.pl## .js-promoClick
 mediaexpert.pl##[id*="ban_"]
 mediamarkt.pl##A[href^="http://www.mediamarkt.pl/ad.php"]
@@ -1079,6 +1091,8 @@ naszemiasto.pl##.sekcjaSzeroka.sbGry
 naszemiasto.pl##center > a[href^="http://www.gratka.pl/"][target="_blank"] > img[src*="/tymczasowe/"]
 naszemiasto.pl##.columns > p[style="margin-left: 40px; margin-bottom: 2px; text-align: left; font-size: 7pt; font-family: Verdana, Tahoma; color: #9d9d9d;"]
 nczas.com##A[target="_self"] > .vc_single_image-img:last-child
+newsbook.pl##.blocker.jquery-modal
+newsbook.pl###popup
 newseria.pl##.container > .banner-nagl
 newsf24.pl##.box
 nhl.pl##.ipbtable:has(div[align="center"] > script[src^="//nhlpl.engine.adglare.org"])
@@ -1243,6 +1257,7 @@ portalplock.pl###fixme
 portalsremski.pl##div[class^="ban"]
 portaltatrzanski.com##.promo-baner
 postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,legio24.pl,sdcv.pl,jajamioasfalt.pl,dostawcy-internetu.pl,forum.bukmacherskie.com,nasze.fm,lovekrakow.pl,mh24.pl,faktykonopne.pl,lajfy.com,disco-polo.info,pokemon-go.pl,gazeta-wiesci.pl,polskaniepodlegla.pl,lpg-forum.pl,kuszotv.pl,meczelive.tv,tablety.pl##center
+portel.pl###divBaTL
 pozytywniej.pl###advL
 ppe.pl###header > .clearfix.header_bg > a[href="http://www.ppe.pl/psx_extreme-2015-4.html"] > img[alt="PSX Extreme 212"]
 ppe.pl##.convertiser_comparison
@@ -1363,6 +1378,7 @@ serialeonline.pl###alternative-banner
 serialeonline.pl##.white-box
 serwery.wiaderko.com##.rounded
 serwery.wiaderko.com##.wtaily
+sgforum.pl###partnerzy
 shinden.pl###ad-player
 shoplov.in##.slide
 showup.tv##div.bottom-baner
@@ -1580,6 +1596,7 @@ videowood.tv###tbl1
 vidfile.net##.rek
 vinowisko.pl##[href^="http://adsearch.adkontekst.pl/_/ctr/"]
 vitalia.pl###pasekDdd
+vod.tvp.pl##.hidden-phone.rectangleWrapper
 vodbox.pl##.ad_wide_banner
 vorek.pl##DIV[style="height: 35px;width: 726px;position:relative;text-align:center;box-shadow:0 0 2px grey;border:2px solid #0D1E5A;background: #EDF1FF;margin:0px auto 0px;"]
 vorek.pl##.news > center:nth-of-type(1)
@@ -2811,6 +2828,7 @@ pogoda.wp.pl##A[href*=".wp.pl/"][target="_blank"] > DIV:last-child
 sportowefakty.wp.pl,money.pl##DIV + DIV[style*="max-width: 100%;"]
 ~www.wp.pl,wp.pl##A[class^="_2"][href*=".wp.pl/"][target="_blank"] > FIGURE[class^="_1"]
 ~www.wp.pl,wp.pl##A[class^="_2"][href*=".wp.pl/"][target="_blank"]
+~www.wp.pl,wp.pl##A[href*=".wp.pl/"] > DIV > IMG[class][src^="https://v.wpimg.pl/"]
 !
 !main
 www.wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
@@ -2949,7 +2967,11 @@ filmweb.pl##script:inject(abort-on-property-write.js, sas)
 !
 !--------------------------Wordpress element hide------------!
 cryptonews.pl###text-6, #text-5
+crypto-trader.pl##.wp-image-1528
 blogprezesa.pl,kryptowaluty.info.pl,litecoin.pl##.aligncenter
+ndie.pl##.textwidget
+historykon.pl###text-3
+livespot.pl##.text-center
 smartage.pl###text-17
 smartage.pl###media_image-3
 smartage.pl###custom_html-2
