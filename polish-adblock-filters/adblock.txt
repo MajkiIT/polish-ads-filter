@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 31 October 2017
 ! Expires: 2 days
-! Version: 2017103101
+! Version: 2017103102
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017103101 aktualizacja: wt, 31 pazdziernika 2017, 10:25:00
+! v.2017103102 aktualizacja: wt, 31 pazdziernika 2017, 11:55:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -2821,14 +2821,12 @@ pogoda.wp.pl##DIV[class]:first-child + * + DIV[class]
 pogoda.wp.pl##DIV.stamp + * + DIV[class]
 pogoda.wp.pl##A[href*=".wp.pl/"][target="_blank"] > DIV:last-child
 ~www.wp.pl,wp.pl##[class^="_"][data-reactid] > DIV[class^="_"][data-reactid] > DIV[class^="_"][data-reactid] + DIV[class^="_"][data-reactid] > DIV[class]
-~www.wp.pl,wp.pl##div[class^="_"]:matches-css(position: relative):matches-css(box-sizing: content-box):matches-css(background-color: /rgba/):matches-css(pointer-events: none)
+!~www.wp.pl,wp.pl##div[class^="_"]:matches-css(position: relative):matches-css(box-sizing: content-box):matches-css(background-color: /rgba/):matches-css(pointer-events: none)
 sportowefakty.wp.pl,money.pl##DIV + DIV[style*="max-width: 100%;"]
-~www.wp.pl,wp.pl##A[class^="_2"][href*=".wp.pl/"][target="_blank"] > FIGURE[class^="_1"]
-~www.wp.pl,wp.pl##A[class^="_2"][href*=".wp.pl/"][target="_blank"]
 ~www.wp.pl,wp.pl##A[href*=".wp.pl/"] > DIV > IMG[class][src^="https://v.wpimg.pl/"]
 !
 !main
-www.wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
+!www.wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 www.wp.pl##a[href^="http://direct.money.pl/landing-page/callcenter/"]
 www.wp.pl##[data-st-area="Mototech-prawa"] > div[class]
 www.wp.pl##[class^="_2"][data-st-area$="prawa"] > [class] + UL[class^="_3"] + [class^="_"]
