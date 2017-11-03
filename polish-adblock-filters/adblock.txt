@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 3 November 2017
 ! Expires: 2 days
-! Version: 2017110301
+! Version: 2017110302
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017110301 aktualizacja: ptk, 3 listopada 2017, 10:40:00
+! v.2017110302 aktualizacja: ptk, 3 listopada 2017, 10:55:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -2382,6 +2382,8 @@ elektroda.pl#@#.ad
 elektroda.pl#@#.ads-box
 elektroda.pl#@#.ads-frame
 epiotrkow.pl##[class^="abpnot"]
+filmweb.pl##script:inject(abort-on-property-read.js, document.onreadystatechange)
+filmweb.pl##script:inject(setTimeout-defuser.js, notDetected)
 fly4free.pl##.warnadblk
 forum.vw-passat.pl###ct_i
 gragieldowa.pl##.login
