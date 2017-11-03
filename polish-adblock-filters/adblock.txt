@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85, Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477, gwarser, mat41997 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 2 November 2017
+! Last modified: 3 November 2017
 ! Expires: 2 days
-! Version: 2017110203
+! Version: 2017110301
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017110203 aktualizacja: czw, 2 listopada 2017, 20:25:00
+! v.2017110301 aktualizacja: ptk, 3 listopada 2017, 10:40:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -266,6 +266,7 @@ pl###pixad-box
 4lomza.pl,zambrow.org##[id*="banner"]
 6obcy.com.pl##.g2a
 90minut.pl##body > div:nth-of-type(3)
+a-o.ninja##cite
 agrokapital.pl###main_right > .row:nth-of-type(6)
 alawar.pl##.b-game-list__bnr-title
 aleefuun.pl###ad-bg-transparent
@@ -686,6 +687,7 @@ gazetaprawna.pl##.tpl_ads_adexon.tpl_std_module
 gazetaprawna.pl##[style^="text-align:center; margin: 0 0 10px 0"]
 gazetaprawna.pl##a[href^="http://www.kyoceradocumentsolutions.pl/index/produkty/product/"]
 gazetaprawna.pl##.boxyPromoContainer
+gazetaprawna.pl##.tpl_stc-content.tpl_std_module
 gazetatrybunalska.pl##aside[id*="bns-corner-logo-"]
 gazetawroclawska.pl##.typBaner
 gazetawroclawska.pl##.promoBox
@@ -895,6 +897,7 @@ kutno.net.pl##.upper-bilboard
 kwejk.pl###bottomadcontainer
 kwejk.pl##.da.media
 kwejk.pl##[id^="div-gpt-ad-"]
+kyuu.pl##.forabg
 lajfy.com###interContainer
 lajfy.com###interVeil
 lajfy.com###banner-top-four
@@ -1083,6 +1086,7 @@ naekranie.pl##.inner-wrap > .post-content
 naekranie.pl##.adform
 naekranie.pl##div:if(>div:first-child:has-text(Reklama))
 naekranie.pl##.except-mobil
+naekranie.pl##DIV > A[target="_blank"] > IMG:last-child
 naklo24.pl##.ban
 napisy24.pl##.custom_pozioma
 napisy24.pl##[id^="napisy24"]
@@ -1448,6 +1452,7 @@ stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"][align="c
 stooq.pl,stooq.com##tbody > tr > td > table[width="300"][height="250"][border="0"][cellpadding="0"][cellspacing="0"][align="center"]
 stooq.pl,stooq.com##tbody > tr > td[align="center"] > div[style="width:300;height:250"]
 stooq.pl,stooq.com##tbody > tr > td[width="1"]
+strefadb.pl##.dba-button
 strefagry.pl##.item_d
 strefagry.pl##[style="width:540px;margin:10px auto;"]
 strefadb.pl###dbarena
@@ -2732,7 +2737,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 /^http:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\/[a-zA-Z0-9]{30,}/$script,popup,document
 /^(http|https):\/\/[a-zA-Z.]{8,}\.(com|bid|info)\/[a-zA-Z]{1,}\.js/$script,domain=devil-torrents.pl|electro-torrent.pl|nitro.to|vidlox.tv|playerbox.net|alltube.tv|segos.es|efilmy.online|video.penny.ie|fileone.tv|serialeonline.pl|fili.tv|streamango.com|kinoline.pl|cda-hd.pl|nasze-kino.online|vidto.pl|raptu.com|rapidvideo.com|data-scheme|vidfile.net|sharevideo.pl|sharing-box.cloud|vidstream.xyz|dragon-ball-super.ga|openkatalog.ml|dragon-ball-super.ga|nasze-kino.tv|kino123.pl|boxfilm.pl|cloudupload.co|allonline.pl|openload.co|cda-x.pl|dekoder.ws|abcast.net|darmowa-tv.pl
 /^http:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=devil-torrents.pl|electro-torrent.pl|nitro.to|alltube.tv|darmowa-telewizja.info|goldvod.tv|darmowa-tv.pl
-/^(http|https):\/\/[a-z0-9]{8,30}\.[a-z]{2,11}\/[0-9]{3,10}/$xmlhttprequest,script,stylesheet,domain=streamin.to|raptu.com|flashx.tv|rapidvideo.com|fili.tv|cda-hd.pl|fileone.tv
+/^(http|https):\/\/[a-z0-9]{8,30}\.[a-z]{2,11}\/[0-9]{3,10}/$xmlhttprequest,script,stylesheet,domain=streamin.to|raptu.com|flashx.tv|rapidvideo.com|fili.tv|cda-hd.pl|fileone.tv|animezone.pl
 /^(http|https):\/\/[a-z0-9]{5,}\.com\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{5,}\.js/$script,domain=vidto.me|fili.tv|fileone.tv|alltube.tv|srkcast.com
 /^http:\/\/[a-zA-Z0-9]{8,20}\.com\/analytics\/[0-9]{5,7}/$subdocument,script,popup
 /^(http|https):\/\/[a-z0-9]{5,}\.top\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{5,}\.js/$script
@@ -2744,6 +2749,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 /^(http|https):\/\/(?!apis.google)[a-z0-9.-]{5,}\.com\/[a-z]{1,}\/[a-z]{1,}\.js/$script,domain=wrealu24.pl
 /^(http|https):\/\/[a-z0-9]{10,20}\.com\/[0-9]{5,10}\.html/$subdocument,domain=ekino-tv.pl
 /^http:\/\/p[0-9]{6,10}\.[a-z]{5,10}\.com\/itab\/[a-z?=A-Z_0-9&]{10,}Zippyshare\.com[a-z0-9A-Z%.'-]{5,}/$popup
+/^http:\/\/[a-z0-9]{9,10}\.com\/[0-9]{7,9}\.html\?q/$document
 !
 !
 !--------------------------Stupid notifications------------!
@@ -2968,6 +2974,7 @@ filmweb.pl##script:inject(abort-on-property-write.js, sas)
 cryptonews.pl###text-6, #text-5
 crypto-trader.pl##.wp-image-1528
 blogprezesa.pl,kryptowaluty.info.pl,litecoin.pl##.aligncenter
+jedzbawsie.pl###text-7
 ndie.pl##.textwidget
 historykon.pl###text-3
 livespot.pl##.text-center
