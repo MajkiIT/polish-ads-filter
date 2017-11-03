@@ -1,16 +1,16 @@
 [Adblock Plus 2.0]
 ! Title: Polskie filtry cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności
-! Collaborators: F4z, xxcriticxx, blocker999, hawkeye116477
+! Collaborators: F4z, xxcriticxx, blocker999, hawkeye116477, xxcriticxx
 ! Homepage: https://www.certyficate.it/
-! Last modified: 31 October 2017
-! Expires: 2 days (update frequency) 
-! Version: 2017103101
+! Last modified: 3 November 2017
+! Expires: 2 days
+! Version: 2017110301
 ! Report problems or unblocked cookie and privacy warnings via e-mail (errors@certyficate.it) or GitHub (https://github.com/MajkiIT/polish-ads-filter/issues)
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! Aktualizacja: wt, 31 pazdziernika 2017, 14:37
+! Aktualizacja: pt, 3 listopada 2017, 23:36
 !
 !
 .lomza.pl##html > body.polityka-cookies:style(margin-top: 0px !important; background-position: center 20px !important;)
@@ -49,6 +49,7 @@ archiwa.gov.pl###message_box
 archiwum.rp.pl,info.rp.pl##html > body:style(margin-top: 0px!important;)
 areatour.pl##div#topbar
 arnicaapteka.pl##.warning
+ascar-rent.pl###hellobar
 asd.pl##div[style="width: 100%;float: left;background: #fff;padding: 15px 0;position: fixed;top: 0px;left: 0px;text-align: center;color: #000;border-bottom: 1px #000 solid;z-index: 1000;"]
 atlas-roslin.pl##.tytul > span
 auschwitzmemento.pl##div.activebar-container
@@ -212,6 +213,7 @@ filmweb.pl##div.topBarCont
 filmykino.tv##.top_info
 firecash.org##div#info
 firmy4u.pl###infociasteczka
+fiskars.pl##.desktop:style(top: 0px!important;)
 fleetboard.pl###overlay
 florexpol.eu##div#fancybox-overlay
 florexpol.eu##div#fancybox-wrap
@@ -372,7 +374,6 @@ kartamultisport.pl##div[style=" width: 780px; background:#f0f0f0; text-align:cen
 kartonwork.pl##body > div > div[style*="position: fixed"]
 kartuzy.info##div#page_top_topbar2
 kartuzy.pl###rstbox_1
-katowice-airport.com##div[style="border: 5px solid rgb(51, 179, 238); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 15px 0px; -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 15px 0px; background-color: rgb(255, 255, 255); padding: 8px 8px 10px; position: fixed; z-index: 10000; left: 25px; bottom: 25px; width: 700px; max-width: 90%; font-size: 12px;"]
 kentype.pl##div#ciasteczka-box
 kierunekspozywczy.pl###cook, .cook
 kino.ck.przemysl.pl###widget-12
@@ -998,6 +999,7 @@ zywiec-zdroj.pl##DIV[style="width: 100%; background-color: rgb(16, 69, 119); pad
 !
 ! URLs
 cookie-law-popup.js$script
+||a.wpimg.pl/a/i/stg/wpjslib-chunk-cookie-info.js$script
 ||apteki24.waw.pl/info_cook.js
 ||asus.com/cookienotice.json$xmlhttprequest
 ||asus.com/pl/cookienotice.json$xmlhttprequest
@@ -1009,6 +1011,7 @@ cookie-law-popup.js$script
 ||eurocookie.galilcloud.wixapps.net/popup$subdocument
 ||exploder.pl/info_o_cookie.js$script
 ||jak-zablokowac-cookies.pl/cookies_komunikat.js$script
+||katowice-airport.com/js-libraries/cookie-info.js$script
 ||metpartner.pl/cookie/info_cookie.js$script
 ||nike.com/*/script.js?assets=nike.gadget.CookieSettingsManager&loaded=nike.exp.global.Ad*nike.ScriptLoade$script
 ||nike.com/*CookieSettingsManager$xmlhttprequest
@@ -1065,6 +1068,8 @@ cookie-law-popup.js$script
 ###CookielawBanner:not(body):not(html)
 ###cookieMessageContainer:not(body):not(html)
 ###cookieMsgBlock:not(body):not(html)
+###cookiemonster_popup:not(body):not(html)
+###cookiemonster_popup:not(body):not(html) + #document_modal
 ###cookiepolicydiv:not(body):not(html)
 ###cookiePolisyInfo:not(body):not(html)
 ###cookies-container:not(body):not(html)
@@ -1109,6 +1114,7 @@ cookie-law-popup.js$script
 ###kuki
 ###notifyCookie:not(body):not(html)
 ###pasek_ciasteczka:not(body):not(html)
+###permission-bar:not(body):not(html)
 ###poityka-ciastek:not(body):not(html)
 ###policy-box
 ###politosci
@@ -1235,7 +1241,7 @@ pl##DIV[style="padding: 5px 25px 5px 15px;"]
 ~addons.mozilla.org##.privacy-policy
 ~autocentrum.pl,~ideabank.pl,~intel.com,~pkn.pl,~topsecret.pl,~starbucks.pl,~isobar.com,~morizon.pl,~abctygodnik.pl,~wykop.pl,~bt4.pl,~kolba.pl,~tablety.pl,~tesco.pl##div[class*="cookie"]
 ~bskrasnosielc.pl,~interhotel.pl,~laskonline.pl,~piekarniaanka.pl###cookiewarning:not(body):not(html)
-~fd.nl,~piekarniaanka.pl,~xboxarcade.pl,~everafterhigh.com,~wmeritum.pl,~microsoft.com,~paypal.com,~reserved.com,~zumi.pl,~komunikacja.bialystok.pl,~nvidia.com##:not(input)[id*="cookie"]
+~fd.nl,~piekarniaanka.pl,~xboxarcade.pl,~everafterhigh.com,~wmeritum.pl,~microsoft.com,~paypal.com,~reserved.com,~zumi.pl,~komunikacja.bialystok.pl,~nvidia.com,~dobreprogramy.pl,~emigrantpl.com##:not(input)[id*="cookie"]
 ~filterlists.com,~yamaha-motor.eu,~dwkoral.pl,~piekarniaanka.pl,~xboxarcade.pl,~appki.com.pl,~paypal.com,~accounts.google.com##:not(input)[id*="Cookie"]
 ~linuxiarz.pl,~piekarniaanka.pl,~xboxarcade.pl,~appki.com.pl,~mvno-gsm.pl##[id*="cookie-"]
 ~lycos.com,~freaktab.com,~csmonitor.com##.cookies:not(body):not(html)
@@ -1255,6 +1261,7 @@ pl##DIV[style="padding: 5px 25px 5px 15px;"]
 @@||rozklad.pkp.pl/js/$script
 @@||static.wirtualnemedia.pl/new/js/cookie.js$script
 @@||static2.cdn.ubi.com/uplay-connect/v2/live/default/js/jquery.cookie.min.js
+@@||www.emigrantpl.com/public/style_images/tctc91_glare/_custom/js/cookie.js$script
 @@||www.nba.com/themes/custom/membership/js/lib/cookie.js$script
 foxnews.com#@#.cookies
 iculture.nl#@#:not(input)[id*="cookie"]
@@ -1277,6 +1284,7 @@ tychy.geminipark.pl#@#.privacy-policy
 !----------------Rules do block elements after anti adblock---------------------------
 !pclab.pl,onet.pl,businessinsider.com.pl,noizz.pl,komputerswiat.pl,plejada.pl,auto-swiat.pl,fakt.pl,vod.pl###cookieView
 fakt.pl,komputerswiat.pl,przegladsportowy.pl###cookies
+filmweb.pl##.cookieInfo
 kwejk.pl###cookies-politics
 miniminiplus.pl##.cookies
 pl###cookieView:not(body):not(html)
