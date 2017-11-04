@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 4 November 2017
 ! Expires: 2 days
-! Version: 2017110401
+! Version: 2017110402
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017110401 aktualizacja: sob, 4 listopada 2017, 12:15:00
+! v.2017110402 aktualizacja: sob, 4 listopada 2017, 17:00:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -87,10 +87,7 @@ motorolasolutions.com##.tealiumMo2TriggerButton
 !
 !
 !-----------------------Privacy filters block-----------------------!
-!,xgemius.js$script
 .pl/*_ac=kropka-*
-!/gemius/*$script,image
-!/js/gemius.js$script
 ||adkontekst.pl$script,image
 ||adnxs.com^
 ||api.solvemedia.com/papi/action$popup
@@ -99,8 +96,6 @@ motorolasolutions.com##.tealiumMo2TriggerButton
 ||emisja.adsearch.pl/$xmlhttprequest
 ||entryhit.wp.pl^
 ||gcontent.services.tvn.pl^
-!||gemius.pl^
-!||hit.gemius.pl$script,image
 ||kozaczek.pl/stats.php$xmlhttprequest
 ||nsaudience.pl^
 ||pixel.solvemedia.com^
@@ -115,7 +110,6 @@ motorolasolutions.com##.tealiumMo2TriggerButton
 ||www.wp.pl/v*/log/view
 ||tealium.hs.llnwd.net/*/utui/js/*.js$script,domain=motorolasolutions.com
 ||sylaba.net^
-!||smpl.hit.ppdb.pl^
 ||daib.pl^
 ||salesmanago.pl^$domain=~salesmanago.pl
 !
@@ -2154,6 +2148,7 @@ zycietoprzygoda.pl##[class^="tws_"]
 ||tractors.pl/banner*.png$image
 ||triathlonpoland.tv/vast.xml$xmlhttprequest
 ||tvgry.pl/images/tapeta_reklama/$image
+||tvnights.pl/assets/img/bg/$image
 ||tvrep.pl/images/banners/$image
 ||tvsat-sklep.com/baner/$image,domain=portal.dvhk.to
 ||unblock.onaudience.com^$third-party
@@ -2883,41 +2878,6 @@ www.wp.pl##SCRIPT[src*=".wp.pl/"] + DIV[style$="z-index: 100000;"]
 www.wp.pl##[id^="sgwp_screening_"]
 www.wp.pl##DIV[class] > A[class][href*=".wp.pl/"] > DIV > [class][src^="https://v.wpimg.pl/"]
 !
-! niepotwierdzone
-!www.wp.pl##SECTION[id="section_sport"][class^="_"] > DIV:first-child + DIV[class]
-!www.wp.pl##SECTION[id="section_sport"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
-!www.wp.pl##SECTION[id="section_sport"][class^="_"] > DIV:first-child + DIV + DIV[class]
-!www.wp.pl##SECTION[id="section_finances"][class^="_"] > DIV:first-child + DIV[class]
-!www.wp.pl##SECTION[id="section_finances"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
-!www.wp.pl##SECTION[id="section_finances"][class^="_"] > DIV:first-child + DIV + DIV[class]
-!www.wp.pl##SECTION[id="section_lifestyle"][class^="_"] > DIV:first-child + DIV[class]
-!www.wp.pl##SECTION[id="section_lifestyle"][class^="_"] > DIV:first-child + DIV + DIV + DIV[class]
-!www.wp.pl##SECTION[id="section_lifestyle"][class^="_"] > DIV:first-child + DIV + DIV[class]
-!www.wp.pl###section_celebrities > * + DIV + DIV[class]
-!www.wp.pl###section_mototech > * + DIV + DIV[class]
-!www.wp.pl###header_stream + * DIV[class^="_"] > DIV[class^="_"] > DIV + DIV[class]
-!www.wp.pl##SECTION#section_sport > DIV[class]:first-child
-!www.wp.pl##SECTION#section_finances > DIV[class]:first-child
-!www.wp.pl##SECTION#section_lifestyle > DIV[class]:first-child
-!www.wp.pl##SECTION#section_celebrities > DIV[class]:first-child
-!www.wp.pl##SECTION#section_mototech > DIV[class]:first-child
-!www.wp.pl##DIV[class^="_3"] > DIV[class^="_3"] > DIV[class^="_"] > DIV[class]
-!www.wp.pl##[class][src^="https://v.wpimg.pl/"][style="max-height: 25px;"]
-!www.wp.pl###section_topnews > SPAN + DIV[class]
-!www.wp.pl##[data-st-area="Gwiazdy-prawa"] > DIV[class^="_"] > DIV[class] > DIV[class] > SPAN[class] + DIV[class]
-!www.wp.pl##A[class][href*=".wp.pl/"] > [class][src^="https://v.wpimg.pl/"]
-!www.wp.pl##[class*="_"] > DIV[class] > SPAN[class] + DIV[class]
-!www.wp.pl##[data-st-area="Premium"] > #header_premium
-!www.wp.pl##A[class^="_3"][target="_blank"] > IMG[class^="_2"]
-!www.wp.pl##.main > .mbox--big
-!www.wp.pl##div[class]:matches-css(width: 300px):matches-css(height: 250px)
-!www.wp.pl##[id^="section_"][class^="_"][data-st-area$="-section"] > [style*="width: 970px;"]
-!www.wp.pl##[target="_blank"] > DIV[style^="width: 100%; height: 100%; background-image: "]
-!www.wp.pl##[style^="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.6);"]
-!www.wp.pl##[style$="display: block;"] > DIV[style*=" overflow: hidden;"]
-!www.wp.pl##DIV > DIV[style*="max-width: 100%;"]
-!www.wp.pl##[id*="_screening_"]
-!
 ! inne
 sportowefakty.wp.pl##HEADER + DIV#matchtable + DIV + DIV
 sportowefakty.wp.pl##HEADER + DIV#matchtable + DIV + DIV + DIV + DIV[class]
@@ -2971,15 +2931,6 @@ manager.money.pl##.in > DIV[class]:first-child
 www.money.pl##.box:first-child + DIV[class]
 www.money.pl##[class^=" _bc_paragraph_"] + DIV[class]
 www.money.pl##DIV[class] > SPAN[class] + DIV[class]:last-child
-!
-!
-!--------------------------WP blocking filters------------!
-||alladyn.wp-sa.pl^
-!
-!
-!--------------------------maciejtarmas rules testing -----------!
-||ninja.onap.io/ninja-cee.js$domain=olx.pl,important
-@@||olx.pl/*/ajax/ad/$xmlhttprequest
 !
 !
 !--------------------------Easylist Bugs -----------!
