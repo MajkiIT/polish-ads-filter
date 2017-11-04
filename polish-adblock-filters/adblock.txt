@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 4 November 2017
 ! Expires: 2 days
-! Version: 2017110402
+! Version: 2017110403
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017110402 aktualizacja: sob, 4 listopada 2017, 17:00:00
+! v.2017110403 aktualizacja: sob, 4 listopada 2017, 17:15:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -83,7 +83,7 @@ streamin.to###rkm
 ##A[href*="k.tradedoubler.com/click"]
 poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 motorolasolutions.com##.tealiumMo2TriggerButton
-/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9-_.?=?&%]{250,}/$image
+/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9-_.?=?&%]{200,}/$image
 !
 !
 !-----------------------Privacy filters block-----------------------!
@@ -112,6 +112,7 @@ motorolasolutions.com##.tealiumMo2TriggerButton
 ||sylaba.net^
 ||daib.pl^
 ||salesmanago.pl^$domain=~salesmanago.pl
+||wp.pl/*/hub.html$subdocument
 !
 !
 !------------------------General element hiding rules-------------------------!
@@ -494,7 +495,7 @@ dobrastacja.pl###tfhover
 dobreprogramy.pl###panReklama > div
 dobreprogramy.pl###slide-menu > * div[id^="c"][style^="height:"][style*="width:"]:not([id^="cbox"]):not([id="colorbox"])
 dobreprogramy.pl##.block > div[style$="height: 600px; width: 300;"]
-dobreprogramy.pl##.gamescarousel-wrapper
+dobreprogramy.pl##.gamescarousel
 dobreprogramy.pl##.list.block-content > div[style$="height: 180px; width: 630;"]
 dobreprogramy.pl##.no-filter
 dobreprogramy.pl##.page-element.center.target > div[style$="height: 250px; width: 970;"]
