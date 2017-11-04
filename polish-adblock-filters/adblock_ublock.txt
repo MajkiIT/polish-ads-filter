@@ -3,15 +3,15 @@
 ! polskie filtry do uBlocka - uzupelnienie
 ! Collaborators: F4z, xxcriticxx, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Last modified: 30 October 2017
-! Expires: 2 days
-! Version: 2017103001
+! Last modified: 4 November 2017
+! Expires: 4 days
+! Version: 2017110401
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! Aktualizacja:2017103001 pon, 30 pazdziernika 2017, 21:55:00
+! v.2017110401 aktualizacja: sob, 4 listopada 2017, 16:55:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -121,15 +121,10 @@ purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !importa
 ||fwcdn.pl/adv/$script,domain=filmweb.pl,important
 !
 ! wp.pl
-!facet.wp.pl,film.wp.pl,gry.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,moto.wp.pl,opinie.wp.pl,sportowefakty.wp.pl,tech.wp.pl,turystyka.!wp.pl,wiadomosci.wp.pl##script:inject(abort-on-property-write.js, habahaba)
-!wp.pl##script:inject(abort-on-property-write.js, testMess)
-!@@|https://www.wp.pl/fLRA9-kB*=/$script,domain=www.wp.pl
-!sportowefakty.wp.pl##div[class]:if(>span[class]:has-text(REKLAMA))
-www.wp.pl##:xpath(//ul[count(*)<=4][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
 wp.pl##script:inject(abort-on-property-read.js, WP.inline)
 www.wp.pl##:xpath(//div[count(*)=1][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
-www.wp.pl##:xpath(//ul[count(*)<=4][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
 ~www.wp.pl,wp.pl##:xpath(//div[count(*)=3][img[@class][@src]][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
+www.wp.pl##:xpath(//div[@data-st-area='Zakupy'][count(*)=2][not(header)])
 !
 ! kurnik.pl
 kurnik.pl##.adsbygoogle:style(height: 1px !important; width: 1px !important;)
