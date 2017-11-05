@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85, Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477, gwarser, mat41997 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 4 November 2017
+! Last modified: 5 November 2017
 ! Expires: 2 days
-! Version: 2017110405
+! Version: 2017110501
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017110405 aktualizacja: sob, 4 listopada 2017, 20:45:00
+! v.2017110501 aktualizacja: nie, 5 listopada 2017, 11:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -371,9 +371,8 @@ bitcoin-online.pl##.sp-module:nth-of-type(3) > .sp-module-content > .custom
 bithub.pl##.st-ad-region
 biznes.pl##.e_Box.analyses
 biznes.pl##.rightBoxR.boxPopComtR.cl
-biznesalert.pl##.container > .row:nth-of-type(5)
 biznesalert.pl##.banner-overlay
-biznesalert.pl##.col-md-12
+biznesalert.pl##A[target="_blank"] > IMG.img-responsive
 biznesnafali.pl##[target="_blank"] > .vc_single_image-img.attachment-full
 biznes2biznes.com##DIV[style="width:200px;float:right;display:block;margin-left:-5px;"]
 biznes2biznes.com##[id^="stickynote"]
@@ -594,6 +593,7 @@ faktykaliskie.pl##[id^="advt-"]
 faktykonopne.pl##.aligncenter
 faktykonopne.pl##.td-visible-desktop > A > IMG:last-child
 faktykonopne.pl##ASIDE.widget_text.td_block_template_14.widget.widget_custom_html
+fakty.plportal.pl##[id^="block-simple-adsense-simple-adsense-slot"]
 fandroid.com.pl##.g1-ads
 fangol.pl##[style="text-align:center;"]
 fantastyka.pl##.tapeta
@@ -801,6 +801,7 @@ ipon.pl###rekalama_PodMenu
 itporady.pl##.hidden-xs.r_sidebar
 itporady.pl##.visible-md.visible-lg
 itporady.pl##.well
+itporady.pl##A > IMG.img-responsive.center-block
 itreseller.pl###banner
 itreseller.pl##.swf
 itvpolska.pl##.cactus-ads
@@ -846,6 +847,7 @@ joemonster.org##a[style="cursor: pointer"][onclick^="window.location.href="][tar
 joemonster.org##iframe[mysrc]
 jysk.promoceny.pl###mbImage
 jysk.promoceny.pl###mbOverlay
+kamienskie.info##.ads-subpage
 kawerna.pl###kawerna_tapeta
 katalogi.pl###post_id_
 kei.pl##.img-responsive
@@ -2948,6 +2950,7 @@ filmweb.pl##script:inject(abort-on-property-write.js, sas)
 !
 !
 !--------------------------Wordpress element hide------------!
+40ton.net##A[target="_blank"] > IMG[class*="wp-image-"]
 cryptonews.pl###text-6, #text-5
 crypto-trader.pl##.wp-image-1528
 blogprezesa.pl,kryptowaluty.info.pl,litecoin.pl##.aligncenter
@@ -2957,7 +2960,7 @@ gamenerd.pl###text-46
 hdtvpolska.com###text-4
 historykon.pl###text-3
 livespot.pl##.text-center
-lowking.pl###text-14, #text-20
+lowking.pl###sidebar-wrapper > UL > [id^="text-"]
 kamienskie.info##[class^="ads-index"]
 kamienskie.info##[id^="text-"]
 mambiznes.pl##.wpb_raw_html
