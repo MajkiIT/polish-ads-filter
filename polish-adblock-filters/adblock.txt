@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85, Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477, gwarser, mat41997 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 9 November 2017
+! Last modified: 10 November 2017
 ! Expires: 2 days
-! Version: 2017110901
+! Version: 2017111001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017110901 aktualizacja: czw, 9 listopada 2017, 20:40:00
+! v.2017111001 aktualizacja: ptk, 10 listopada 2017, 19:15:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -81,6 +81,8 @@ streamin.to###rkm
 !
 !-----------------------Privacy filters hide-----------------------!
 ##A[href*="k.tradedoubler.com/click"]
+naekranie.pl###adocean-screening-layer > .single-news
+naekranie.pl###adocean-screening-layer > .inner-wrap
 poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 motorolasolutions.com##.tealiumMo2TriggerButton
 /^https:\/\/[a-z.]{2,16}\.wp\.pl\/[a-zA-Z0-9-_.?=?&%]{200,}/$image
@@ -236,6 +238,7 @@ pl###pixad-box
 ##.homeadv
 ##.ads_widget
 pl##.hide-for-small.baner-promo-euro
+pl##.adverstiment-box
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -336,6 +339,7 @@ baltic.info.pl##IMG[style="display: block; margin-left: auto; margin-right: auto
 bankier.pl##[class$="Adv"]
 bankier.pl##[id^="boxPromoTool"]
 bankier.pl###boxBankierPick
+bankobranie.blogspot.com##.adblockNfo, #topHintBar, #hint, .widget.Image
 barciany.pl##[id^="popuptable"]
 barlinek24.pl###jm-right > div > .jm-module:nth-of-type(1) > .jm-module-in
 barlinek24.pl###jm-content-top
@@ -371,6 +375,8 @@ biotechnologia.pl##.ats_link
 bitcoin.pl,rightclick.pl##.custom
 bitcoin.edu.pl##.custom-html-widget.textwidget
 bitcoin-online.pl##.sp-module:nth-of-type(3) > .sp-module-content > .custom
+bitcoin-online.pl##A[rel="nofollow"] > IMG
+bitcoin-info.pl##IMG[src^="/data/banner/"]
 bithub.pl##.st-ad-region
 biznes.pl##.e_Box.analyses
 biznes.pl##.rightBoxR.boxPopComtR.cl
@@ -393,6 +399,7 @@ bowlingnews.pl##IMG[class^="alignnone size-"]
 brainly.pl##.brn-ads-box
 bramkasms.pl###ja-left1
 bryk.pl##[class^="advert-"]
+btc-jak-bitcoin.blog.pl##A > IMG[width="250"]
 businessjournal.pl##.add
 businessjournal.pl##A[href^="http://"] > [class*="wp-image-"][width="750"]
 businessjournal.pl##[href^="http://"][target="_blank"] > IMG[src^="http://businessjournal.pl/wp-content/uploads/"]
@@ -409,6 +416,7 @@ cadblog.pl##TD[bgcolor="#FFFFFF"]
 cardsplitter.pl##[target="_blank"] > IMG[src^="/images/loga/"][height="249"]
 cartests.net###td-outer-wrap > .td-header-wrap:style(margin-bottom: 0px!important;)
 cartests.net##.td-container > .td-header-sp-recs
+cashowsky.pl##IMG[alt^="Baner"]
 cda.pl###as-narrow1
 cda.pl##.adsense.miniPhotobox
 cda.pl##.block-footer > div:nth-of-type(3)
@@ -454,7 +462,7 @@ cinema-city.pl##DIV[id^="snatch"]
 cmg24.pl##[src*="Reklamy/"]
 comparic.pl##A[target="_blank"] > IMG
 cozadzien.pl##.box_bnewshome
-craftportal.pl###secondary
+craftportal.pl,pomyslnawszystko.pl###secondary
 craftportal.pl##A[alt] > IMG:last-child
 craftportal.pl##.bbc_center
 craftportal.pl##A[href*="?utm_source="]
@@ -478,6 +486,8 @@ dbpolska.net###trzy_panel
 ddtorun.pl,ddwloclawek.pl##.container.movedDiv
 ddtorun.pl,ddwloclawek.pl##.skodaAuto.box-margin.row
 ddtorun.pl,ddwloclawek.pl##[class^="a-d-v"]
+ddz.doba.pl##a[href^="http://beta.doba.pl/adserver"]
+ddz.doba.pl##.sliderads
 deccoria.pl##.autopromotion-beam-img
 demotywatory.pl###right_column2
 demotywatory.pl##.abox-view-content.center
@@ -583,6 +593,7 @@ euro.com.pl##.scroll-footer
 eurogamer.pl###leaderboard
 eurogamer.pl###skyscraper
 eurogamer.pl##script:inject(abort-on-property-write.js, yafaIt)
+eurogamer.pl##.container:nth-of-type(2) > .i-amphtml-unresolved.amp-unresolved.i-amphtml-layout-size-defined.i-amphtml-layout-responsive.amp-notbuilt.i-amphtml-notbuilt.i-amphtml-element
 evertiq.pl##[id^="bnr"]
 exsite.pl##DIV[id^="tower_"]
 exsite.pl##[id^="adkon"]
@@ -779,8 +790,7 @@ ikrotoszyn.pl##.partners2
 imagazine.pl###content > .posts-ad
 imagazine.pl###text-402422661
 indeed.com###related
-info.elblag.pl###banner-glowny
-info.elblag.pl##.linkwrap
+info.elblag.pl##.ADinfo, #banner-33, .linkwrap, #banner-glowny
 infogazeta.pl###comment-captcha
 infogazeta.pl,newsf24.pl##.border
 infogliwice.pl##A[class="gofollow"]
@@ -863,6 +873,7 @@ joemonster.org##.BoxContent + DIV[align="center"]
 jysk.promoceny.pl###mbImage
 jysk.promoceny.pl###mbOverlay
 kamienskie.info##.ads-subpage
+kantorbitcoin.pl##.mom-e3lan
 kawerna.pl###kawerna_tapeta
 katalogi.pl###post_id_
 kei.pl##.img-responsive
@@ -872,9 +883,11 @@ kino123.pl##img[src^="https://pp.funhub.pl/"]
 kino24-tv.pl##a[href*="://ad.gameflow.pl/"]
 klikplej.pl##.a-d-box
 klikplej.pl##div[style="width:300px;height:42px;background:url(/img/font_reklama.png);"]
-kk24.pl##DIV > [target="_self"] > IMG
-kk24.pl##STYLE + [target="_blank"] > IMG
-kk24.pl##.flash-link
+!kk24.pl##DIV > [target="_self"] > IMG
+!kk24.pl##STYLE + [target="_blank"] > IMG
+!kk24.pl##.flash-link
+kk24.pl##A[target="_top"] > IMG
+kk24.pl##A[target="new"] > IMG[src^="promocje.php"]
 kkozle.pl##.adboxbline
 kobieta.pl###c11865
 kodiwpigulce.pl##.sweet-alert
@@ -1051,6 +1064,7 @@ mobileclick.pl###text-38
 mobileclick.pl###text-40
 mobileworld24.pl###text-4
 mobilneforum.pl##a[href^="http://shrsl.com/"]
+mobilitynews.pl##.a-single, .banner_header
 mobimaniak.pl##[style$="color:#999999; font-size:10px;"]
 mobimaniak.pl###nav2
 mobirank.pl##[id^="html_javascript_adder"]
@@ -1150,6 +1164,7 @@ nowafarmacja.pl##[class^="bg-banner-wrapper"]
 nowagazeta.pl##.vc_row-has-fill
 nowagazeta.pl##.g-single > A > IMG[src^="http://nowagazeta.pl/wp-content/uploads/"]
 nowagazeta.pl##.td-pb-row.wpb_row.vc_row:nth-of-type(1) > .td-pb-span12.vc_column_container.wpb_column > .vc_column-inner
+noweinfo.pl##.td-adspot-title
 nowemp3.pl##marquee
 nowodworski24.pl###ubm-banners-2
 nowastrategia.org.pl###ticker-box
@@ -1284,6 +1299,7 @@ pomorska.pl,dziennikzachodni.pl##figure
 poolska.pl###text-3
 popularnie.pl###gold-header
 poradnikzdrowie.pl###slidebox
+poradnikzdrowie.pl##.shopping
 poranny.pl,polskatimes.pl##h2 > span
 poranny.pl###dfp-prawa1
 poranny.pl##.gry
@@ -1318,6 +1334,7 @@ profil.wp.pl##.bxAdv
 profilook.pl###ceneo-os783-rZ0og
 programosy.pl##.web.bn-b-0
 promise.com.pl###ctl00_ReklamaBig1_pnlBaner
+prostaekonomia.pl###layerslider_2
 prostoomuzyce.pl##[id^="block-views-banery-block"]
 prostozmostu.net###ecoeconomy
 prostozmostu.net###nmb-BusyBox
@@ -1340,7 +1357,7 @@ pzn.pl###EditoPopup\$Panel133
 pzpm.org.pl###powiadomiony
 q4.pl###\33 DIV
 q4.pl###bglink
-q4.pl,fakty.plportal.pl,chinytolubie.pl,filmyfantastyczne.pl,dts24.pl,mragowo24.info,przemysl.info.pl,eluban.pl,wien.info,tkn24.pl,resellernews.pl,independenttrader.pl,scie24.pl,ogrodinfo.pl,zakliczyninfo.pl,kk24.pl##A[target="_blank"] > IMG
+q4.pl,fakty.plportal.pl,chinytolubie.pl,filmyfantastyczne.pl,dts24.pl,mragowo24.info,przemysl.info.pl,eluban.pl,wien.info,tkn24.pl,resellernews.pl,independenttrader.pl,scie24.pl,ogrodinfo.pl,zakliczyninfo.pl,kk24.pl,gieldykryptowalut.pl,odkryjbitcoin.pl,stacja7.pl##A[target="_blank"] > IMG
 q4.pl##TD[bgcolor="#f0f0f0"]
 q4.pl##TD[valign="middle"]
 radio5.com.pl##.g-single
@@ -1414,6 +1431,7 @@ satkurier.pl##[id^="banner_"]
 satkurier.pl##[id^="google"]
 saturn.pl###nl_modal
 saturn.pl###nl_overlay
+scie24.pl##A[target="blank_"] > IMG[src^="/uploads/baners/"]
 seciki.pl##.crek
 serialeonline.pl###alternative-banner
 serialeonline.pl##.white-box
@@ -1469,6 +1487,7 @@ sportowepodhale.pl##[id^="p4"]
 sportowywroclaw.eu##a[href^="http://clicks.fortunaaffiliates.com/afs/"]
 spryciarze.pl###banner_konkursowy
 sprzedajemy.pl###mon-AListTop
+sprzedajemy.pl###mon-AdsAdsDetailsTop
 stalowemiasto.pl##.main-cbaner
 stargard.com.pl###index-01b
 staypoland.com###bottomBar
@@ -1606,7 +1625,7 @@ tvmalbork.pl,tvsztum.pl,zulawyimierzeja24.pl,tvregionalna24.pl##.clickable[oncli
 tvn24.pl###adocean-screening-layer
 tvnwarszawa.tvn24.pl##[id^="TopicItemContainer_"] > .boxItem
 tvp.pl##.adv__rectangle
-tvsudecka.pl,tczewska.pl,slowopodlasia.pl,bydgoszcz.com,tvswinoujscie.pl,tygodnikoko.pl,tv-wschod.pl##[class*="advert"]
+tvsudecka.pl,tczewska.pl,slowopodlasia.pl,bydgoszcz.com,tvswinoujscie.pl,tygodnikoko.pl,tv-wschod.pl,inowroclaw.info.pl##[class*="advert"]
 tvsudecka.pl##.visible-xs
 tvswinoujscie.pl##.boards.widget
 twojapogoda.pl##IMG[alt="pixad"]
@@ -1621,6 +1640,7 @@ twojepajeczno.pl##.rekslide
 twojepc.pl##td[width="300"][align="left"][valign="top"]
 turek.net.pl##.BanerP
 tychy.info##[data-ads-id] > DIV[class$="970x250"]
+tychy.info##.header_img
 tygodniknarodowy.pl###BusyBox
 tygodnikpodlaski.pl###billboardRightAdsense
 tygodnikpowszechny.pl##[id*="-simpleads-"] > h2
@@ -2082,6 +2102,8 @@ zywiecinfo.pl###blockadblock
 ||naekranie.pl/wp-content/themes/naekranie/partials/$image
 ||naekranie.pl/wp-content/themes/naekranie/templates/welcome_screen.mustache
 ||naekranie.pl/wp-content/uploads/*/najlepsze-seriale-640x50.jpg$image
+||naekranie.pl/wp-admin/admin-ajax.php?action=ne_register_silentdisplay$xmlhttprequest
+||naekranie.pl/wp-admin/admin-ajax.php?action=ne_register_pageview$xmlhttprequest
 ||news.targeo.pl/oarm.php$xmlhttprequest,domain=mapa.targeo.pl
 ||niebiescy.pl/bild/$image
 ||nhlpl.cdn.adglare.org/img/$image,domain=notebookcheck.pl
@@ -3003,7 +3025,9 @@ livespot.pl##.text-center
 lowking.pl###sidebar-wrapper > UL > [id^="text-"]
 kamienskie.info##[class^="ads-index"]
 kamienskie.info##[id^="text-"]
+kryptoholik.pl##.alignnone.wp-image-329.size-full
 kryptowalutykoparka.pl###text-14
+kryptowalutykoparka.pl###text-20
 mambiznes.pl##.wpb_raw_html
 ministerstwonaukijazdy.pl##IMG.lazy.lazy-loaded
 mypolacy.nl##[id^="custom_html-"]
