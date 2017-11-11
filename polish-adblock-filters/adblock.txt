@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85, Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477, gwarser, mat41997 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 10 November 2017
+! Last modified: 11 November 2017
 ! Expires: 2 days
-! Version: 2017111001
+! Version: 2017111101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017111001 aktualizacja: ptk, 10 listopada 2017, 19:15:00
+! v.2017111101 aktualizacja: sob, 11 listopada 2017, 11:55:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -44,6 +44,7 @@ _baner/980x200
 _banery/980x200
 pl/*/rodzinnawycieczka/$image,domain=wp.pl
 /wp-content/plugins/unblock-adsense/*/adunblock$stylesheet,script
+/screening/*$domain=telepolis.pl,image
 !
 !
 !-----------------------SMS Fake Pages-------------------------------!
@@ -791,6 +792,7 @@ imagazine.pl###content > .posts-ad
 imagazine.pl###text-402422661
 indeed.com###related
 info.elblag.pl##.ADinfo, #banner-33, .linkwrap, #banner-glowny
+info.elblag.pl##IMG[alt*="reklamowe"]
 infogazeta.pl###comment-captcha
 infogazeta.pl,newsf24.pl##.border
 infogliwice.pl##A[class="gofollow"]
@@ -915,6 +917,7 @@ krknews.pl##[class*="adxx"]
 krs-online.com.pl###bad
 krs-online.com.pl###commcoo
 krs-pobierz.pl##A[target="_blank"] > IMG[src*="ban"]
+kryptoholik.pl##A > [class*="size-full wp-image-"][width="200"]
 krytykapolityczna.pl##.commercial
 kulturaonline.pl###movieBox
 kupbilet.pl###t3393f
@@ -1164,13 +1167,14 @@ nowafarmacja.pl##[class^="bg-banner-wrapper"]
 nowagazeta.pl##.vc_row-has-fill
 nowagazeta.pl##.g-single > A > IMG[src^="http://nowagazeta.pl/wp-content/uploads/"]
 nowagazeta.pl##.td-pb-row.wpb_row.vc_row:nth-of-type(1) > .td-pb-span12.vc_column_container.wpb_column > .vc_column-inner
-noweinfo.pl##.td-adspot-title
+noweinfo.pl##.td-visible-desktop > A > IMG:last-child
 nowemp3.pl##marquee
 nowodworski24.pl###ubm-banners-2
 nowastrategia.org.pl###ticker-box
 nowosci-mp3.eu##.clr.center > .short-story
 nowy.tlen.pl##.ng-scope.promo-highlights
 nowy.tlen.pl##.shrink-none.mbox--main.mbox
+nportal.no##.commercial-top, #commercial-300, .three-commercials
 nudziara.pl##DIV[style="border: 1px solid #D8D0D0; padding: 5px 0px 5px 0px; width:705px;"]
 nysa24.pl###Mod348
 nysa24.pl,tvnakarte.eu###jm-header
@@ -1194,6 +1198,7 @@ olx.pl###ytplayer
 olx.pl##.otokredytbox
 olx.pl##.screen-link.abs
 onet.pl##span.newsAdd
+onet.pl###googleAdsCont
 onet.pl##.miniSlot:style(min-height: 0rem!important;margin-bottom: 0rem!important;)
 opinie.wp.pl##[style="pointer-events:none;"][class]
 open.fm###bnr-top
@@ -1281,6 +1286,7 @@ podlasie24.pl##HR
 podhale24.pl##h6
 podhale24.pl,optyczne.pl##.banner
 pogoda.dziennik.pl###idm140677357800800
+pogoda.onet.pl##.ssListaContainer
 polscygracze.pl##.gridlove-sidebar > .LfUW8dL1Hl-widget.gridlove-box.widget
 polskaligaesportowa.pl##.home-partners
 polskaniepodlegla.pl##.header
@@ -1328,6 +1334,7 @@ press.pl,ogrodinfo.pl###topBanner
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
 probasket.pl##.header-banner
+probasket.pl##.textwidget > A > IMG
 procesor.pl###big-rectangle
 profeto.pl##.rekl-top
 profil.wp.pl##.bxAdv
@@ -1357,7 +1364,7 @@ pzn.pl###EditoPopup\$Panel133
 pzpm.org.pl###powiadomiony
 q4.pl###\33 DIV
 q4.pl###bglink
-q4.pl,fakty.plportal.pl,chinytolubie.pl,filmyfantastyczne.pl,dts24.pl,mragowo24.info,przemysl.info.pl,eluban.pl,wien.info,tkn24.pl,resellernews.pl,independenttrader.pl,scie24.pl,ogrodinfo.pl,zakliczyninfo.pl,kk24.pl,gieldykryptowalut.pl,odkryjbitcoin.pl,stacja7.pl##A[target="_blank"] > IMG
+q4.pl,fakty.plportal.pl,chinytolubie.pl,filmyfantastyczne.pl,dts24.pl,mragowo24.info,przemysl.info.pl,eluban.pl,wien.info,tkn24.pl,resellernews.pl,independenttrader.pl,scie24.pl,ogrodinfo.pl,zakliczyninfo.pl,kk24.pl,gieldykryptowalut.pl,odkryjbitcoin.pl,stacja7.pl,kryptoholik.pl,btc-jak-bitcoin.blog.pl,cashowsky.pl##A[target="_blank"] > IMG
 q4.pl##TD[bgcolor="#f0f0f0"]
 q4.pl##TD[valign="middle"]
 radio5.com.pl##.g-single
@@ -1574,6 +1581,7 @@ telemagazyn.pl##[class^="fiszka"]
 teleman.pl###leaderboard-bottom
 teleman.pl,exsite.pl,jastrzebieonline.pl,signs.pl###billboard
 teleman.pl##.grid-group-as
+telepolis.pl##a[href^="http://partnerzy.comperia.pl/ads.php"]
 teleshow.wp.pl,gwiazdy.wp.pl,facet.wp.pl,kobieta.wp.pl,film.wp.pl,tech.wp.pl##[class="qd-US"]
 telewizjapolska24.pl##.page_option
 telewizjarepublika.pl##.box-szary
@@ -2303,7 +2311,7 @@ zywiecinfo.pl###blockadblock
 /^(http|https):\/\/www\.wp\.pl\/[a-zA-Z0-9-_]{50,}/$popup,domain=www.wp.pl
 /^(http|https):\/\/www\.chip\.pl\/wp-content\/themes\/_chip\/[a-z]{4,6}\/[a-z]{4,5}-[0-9]{4,5}/$image,domain=chip.pl
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl|poczta.wp.pl
-/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|open.fm|pogoda.wp.pl|dladzieci.pl|ksiazki.wp.pl|kuchnia.wp.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|parenting.pl
+/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|open.fm|pogoda.wp.pl|dladzieci.pl|ksiazki.wp.pl|kuchnia.wp.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|parenting.pl|fotoblogia.pl
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -2872,7 +2880,6 @@ srkcast.com##[id^="table"]
 !
 !--------------------------WP Group element hide------------!
 kafeteria.pl,money.pl,pudelek.pl,autokult.pl##.scr-wallpaper
-kafeteria.pl##DIV > DIV[style*="width: 100%;"]
 komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##BODY > DIV[style*="max-width: 100%; "]
 komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##.article-wrapper > FIGURE.insert
 komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##FIGURE.insert > DIV[style*="max-width: 100%;"]
@@ -2899,7 +2906,7 @@ pilot.wp.pl##.top-section
 ! potwierdzione
 wp.pl##.scr-wallpaper
 gadzetomania.pl,komorkomania.pl,fotoblogia.pl##[class^="insert insert-"]
-wp.pl,komorkomania.pl,pudelek.pl##[target="_blank"] > IMG[class][src^="https://v.wpimg.pl/"]
+komorkomania.pl,pudelek.pl##[target="_blank"] > IMG[class][src^="https://v.wpimg.pl/"]
 czat.wp.pl,infografika.wp.pl,dladzieci.pl,muzyka.wp.pl,niewiarygodne.pl,poczta.bloog.pl,sportowybar.wp.pl,forum.o2.pl,komediowo.pl,topnews.wp.pl,ogloszenia.wp.pl##[id*="adv"]
 sportowefakty.wp.pl,kobieta.wp.pl,moto.wp.pl,tech.wp.pl,gry.wp.pl,opinie.wp.pl,turystyka.wp.pl,pogoda.wp.pl,tv.wp.pl,finanse.wp.pl##* > DIV[style*="max-width: 100%;"]
 sportowefakty.wp.pl##DIV#matchtable + * + * + DIV[class]
