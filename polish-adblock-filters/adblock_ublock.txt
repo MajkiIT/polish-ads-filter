@@ -3,15 +3,15 @@
 ! polskie filtry do uBlocka - uzupelnienie
 ! Collaborators: F4z, xxcriticxx, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Last modified: 4 November 2017
+! Last modified: 11 November 2017
 ! Expires: 4 days
-! Version: 2017110401
+! Version: 2017111101
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2017110401 aktualizacja: sob, 4 listopada 2017, 16:55:00
+! v.2017111101 aktualizacja: sob, 11 listopada 2017, 11:00:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -220,4 +220,11 @@ puma.com###modal-geoip-cookies, .modal-backdrop
 ! purepc.pl
 purepc.pl##script:inject(setTimeout-defuser.js, ubo_fix())
 purepc.pl##html > body:style(background: #d5d5d5!important;)
-
+!
+! animezone.pl
+animezone.pl##script:inject(noeval.js)
+animezone.pl##script:inject(abort-on-property-read.js, o6c6e)
+!
+! parenting.pl
+parenting.pl##:xpath(//div[count(*)=1][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
+parenting.pl##:xpath(//div[count(*)=1][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
