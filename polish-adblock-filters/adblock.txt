@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 14 November 2017
 ! Expires: 2 days
-! Version: 2017111401
+! Version: 2017111402
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017111401 aktualizacja: wt, 14 listopada 2017, 17:20:00
+! v.2017111402 aktualizacja: wt, 14 listopada 2017, 19:55:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -240,6 +240,7 @@ pl###pixad-box
 ##.ads_widget
 pl##.hide-for-small.baner-promo-euro
 pl##.adverstiment-box
+###adsense_main_lewa
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -350,6 +351,7 @@ benchmark.pl###marketplaceProductBox
 benchmark.pl##.screenContainer
 benchmark.pl##.threeTilesAndLogo.colWide[style="background: #EB6878;"]
 besty.pl##[id^="adsense_main_"]
+besty.pl##SPAN[style=" display: block;margin-bottom: 10px; font-size: 13px;color: #aaa; text-align: center;"]
 bez-cenzury24.pl##[div^="ips-popup"]
 bezprawnik.pl##.col-xs-12.hidden-xs
 bezprawnik.pl##.play_iframe
@@ -438,6 +440,7 @@ centrumxp.pl##[id*="_Reklama_"]
 centrumxp.pl##[id^="ctl00_sldr_nowoczesnyOffice"]
 cgm.pl##.headFlash
 chamsko.pl##[href^="http://empire.goodgamestudios.com/"]
+chamsko.pl##.main-banner
 charaktery.eu##.text.custom_popup.popup.window_popup
 chillizet.pl##.banner-radiostacja
 chip.pl###nextartprompt
@@ -604,6 +607,7 @@ exsite.pl##[id^="adkon"]
 exsite.pl##[style="width: 586px;height: 369px;margin: 50px auto 50px -18px;overflow-y: hidden;border:1px solid black;"]
 ezamosc.pl##.bannergroupvertical
 f1wm.pl##[id^="bans_"]
+fabrykasypialni.pl###mebloo
 fajowe.pl##.commercial-center
 fakt.pl###eF > .clr
 fakt.pl###multi-1488380533
@@ -890,9 +894,6 @@ kino123.pl##img[src^="https://pp.funhub.pl/"]
 kino24-tv.pl##a[href*="://ad.gameflow.pl/"]
 klikplej.pl##.a-d-box
 klikplej.pl##div[style="width:300px;height:42px;background:url(/img/font_reklama.png);"]
-!kk24.pl##DIV > [target="_self"] > IMG
-!kk24.pl##STYLE + [target="_blank"] > IMG
-!kk24.pl##.flash-link
 kk24.pl##A[target="_top"] > IMG
 kk24.pl##A[target="new"] > IMG[src^="promocje.php"]
 kkozle.pl##.adboxbline
@@ -1015,6 +1016,7 @@ maximgroup.pl###banner-counter
 mazury.info.pl##A[href^="http://"] > IMG[src*="logo"]
 mazury.info.pl##A[href^="https://"] > IMG
 meble-andrex.pl###left > p
+mebloo.pl###fabryka_sypialni > [target="_blank"] > IMG
 meczyki.pl##.bookie-ranks
 meczelive.tv##[target="_blank"] > IMG[src^="http://meczelive.tv/new/300/"]
 mediaexpert.pl## .js-promoClick
@@ -2605,7 +2607,7 @@ zrabatowani.pl###popup-adblock-bottom
 @@||onet.hit.gemius.pl/*/rexdot.js$script,domain=auto-swiat.pl|businessinsider.com.pl|fakt.pl|forbes.pl|komputerswiat.pl|noizz.pl|onet.pl|plejada.pl|vod.pl
 @@||onet.hit.gemius.pl/*/redot.js$script,domain=auto-swiat.pl|businessinsider.com.pl|fakt.pl|forbes.pl|komputerswiat.pl|noizz.pl|onet.pl|plejada.pl|vod.pl
 @@||polvod.pl/advertisement.js$script,domain=superfilm.pl
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=bolotv.pl
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=bolotv.pl|tapeciarnia.pl
 @@||pagead2.googlesyndication.com/pagead/js/r*/show_ads_impl.js$script,domain=mybank.pl
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=mybank.pl
 @@||pc-sos.pl/ad.htm$script,domain=pc-sos.pl|xn--strela-8db.pl
