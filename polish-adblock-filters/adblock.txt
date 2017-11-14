@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85, Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477, gwarser, mat41997 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 12 November 2017
+! Last modified: 14 November 2017
 ! Expires: 2 days
-! Version: 2017111202
+! Version: 2017111401
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017111202 aktualizacja: nie, 12 listopada 2017, 17:35:00
+! v.2017111401 aktualizacja: wt, 14 listopada 2017, 17:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -484,6 +484,7 @@ czateria.interia.pl##.video-player-container
 darkwarez.pl##DIV[style="position:relative;height:110px;overflow: hidden;"]
 darkwarez.pl##div[align="center"] > .copyright > table[border="0"]
 datapremiery.pl##.column_center > [class*="mock"]
+datapremiery.pl##.item_top_mock
 dbpolska.net###trzy_panel
 ddtorun.pl,ddwloclawek.pl##.container.movedDiv
 ddtorun.pl,ddwloclawek.pl##.skodaAuto.box-margin.row
@@ -574,6 +575,7 @@ elblag.net##body:style(background-image: none!important;)
 elka.pl##[id^="banner-ajax-"]
 ekinomaniak.tv##IFRAME + A > IMG[src][alt]
 ekologia.pl###pasaz-wid
+ekurdwanow.pl##B > .title-block
 embed.vidso.tv###video_container
 eostroleka.pl##DIV[style="margin-bottom:10px; margin-left:25px; float:left; width:300px; height:300px;"]
 epainfo.pl##.td_block_text_with_title
@@ -1383,6 +1385,7 @@ radiowarszawa.com.pl##.wpb_single_image.wpb_content_element.vc_align_center
 radiovia.com.pl##.imageBox > P[style="text-align: center;"]
 radiotczew.pl##[target="_blank"] > .img-responsive
 radiozet.pl##.adocean
+radiozet.pl###banner-radiostacja
 radomnews.pl##DIV[align="center"]
 radomnews.pl##[id^="banP"]
 radomsport.pl##A[target="_blank"] > IMG[src^="img/"]
@@ -2314,7 +2317,7 @@ zywiecinfo.pl###blockadblock
 /^(http|https):\/\/www\.wp\.pl\/[a-zA-Z0-9-_]{50,}/$popup,domain=www.wp.pl
 /^(http|https):\/\/www\.chip\.pl\/wp-content\/themes\/_chip\/[a-z]{4,6}\/[a-z]{4,5}-[0-9]{4,5}/$image,domain=chip.pl
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl|poczta.wp.pl
-/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|open.fm|pogoda.wp.pl|dladzieci.pl|ksiazki.wp.pl|kuchnia.wp.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|parenting.pl|fotoblogia.pl
+/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|open.fm|pogoda.wp.pl|dladzieci.pl|ksiazki.wp.pl|kuchnia.wp.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|parenting.pl|fotoblogia.pl|bloog.pl
 !
 !
 !---------------------------------Whitelists----------------------------------!
@@ -2556,6 +2559,7 @@ zrabatowani.pl###popup-adblock-bottom
 @@.pl/menda/adsense.js$script,domain=to.proste.info.pl|seciki.pl|kompnet.info
 @@/ads.reklama.728x90$script,stylesheet,domain=zmianaczasu.info|antonimy.net|odmiana.net|definicja.net|krzyzowka.net
 @@|http://www.googletagmanager.com/gtm.js$script,domain=benchmark.pl
+@@||www.advert.com/advert$domain=moviesroom.pl
 @@||anyfiles.pl/pageloading/*-loader.jsp?ads=true
 @@||auto-swiat.pl^$generichide
 @@||adv.wp.pl/adverts$xmlhttprequest,domain=pilot.wp.pl
