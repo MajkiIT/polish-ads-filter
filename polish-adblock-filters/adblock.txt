@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 17 November 2017
 ! Expires: 2 days
-! Version: 2017111702
+! Version: 2017111703
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/polski-filtr-adblock/
-! v.2017111702 aktualizacja: ptk, 17 listopada 2017, 08:40:00
+! v.2017111703 aktualizacja: ptk, 17 listopada 2017, 20:25:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -467,6 +467,7 @@ cinema-city.pl###subsnatch
 cinema-city.pl##DIV[id^="snatch"]
 cmg24.pl##[src*="Reklamy/"]
 comparic.pl##A[target="_blank"] > IMG
+computerworld.pl###tui-animation
 cozadzien.pl##.box_bnewshome
 craftportal.pl,pomyslnawszystko.pl###secondary
 craftportal.pl##A[alt] > IMG:last-child
@@ -1013,6 +1014,7 @@ mamkomputer.info###text-17
 mamawdomu.pl###text-161
 mapa.szukacz.pl###popupContainer
 marihuana.info.pl###header-right-section, #text-5, #text-10, #text-11
+marihuanamedyczna.com##.x-content-dock.right.x-content-dock-on
 maximgroup.pl###banner-counter
 mazury.info.pl##A[href^="http://"] > IMG[src*="logo"]
 mazury.info.pl##A[href^="https://"] > IMG
@@ -1151,6 +1153,7 @@ naszemiasto.pl##.sekcjaSzeroka.sbGry
 naszemiasto.pl##center > a[href^="http://www.gratka.pl/"][target="_blank"] > img[src*="/tymczasowe/"]
 naszemiasto.pl##.columns > p[style="margin-left: 40px; margin-bottom: 2px; text-align: left; font-size: 7pt; font-family: Verdana, Tahoma; color: #9d9d9d;"]
 nczas.com##A[target="_self"] > .vc_single_image-img:last-child
+ndie.pl##DIV + A > IMG[style="width:100%;"]
 newsbook.pl##.blocker.jquery-modal
 newsbook.pl###popup
 newseria.pl##.container > .banner-nagl
@@ -1367,6 +1370,7 @@ plotek.pl##[id^="frame-"]
 pudelek.tv,wp.tv,interaktywnie.com##[src^="http://adv.wp.pl"]
 pukawka.pl##.partnerzy
 purepc.pl##DIV > A[href^="http"][style^="display:block;"]
+purepc.pl##a[href^="https://www.purepc.pl/r3dir.php"]
 pyszne.pl##.yd-banner
 pytamy.pl##.bx1
 pzl24.pl##.visible-md
@@ -1374,9 +1378,11 @@ pzn.pl###EditoPopup\$Panel133
 pzpm.org.pl###powiadomiony
 q4.pl###\33 DIV
 q4.pl###bglink
-q4.pl,fakty.plportal.pl,chinytolubie.pl,filmyfantastyczne.pl,dts24.pl,mragowo24.info,przemysl.info.pl,eluban.pl,wien.info,tkn24.pl,resellernews.pl,independenttrader.pl,scie24.pl,ogrodinfo.pl,zakliczyninfo.pl,kk24.pl,gieldykryptowalut.pl,odkryjbitcoin.pl,stacja7.pl,kryptoholik.pl,btc-jak-bitcoin.blog.pl,cashowsky.pl,historyk.eu##A[target="_blank"] > IMG
+q4.pl,fakty.plportal.pl,chinytolubie.pl,filmyfantastyczne.pl,dts24.pl,mragowo24.info,przemysl.info.pl,eluban.pl,wien.info,tkn24.pl,resellernews.pl,independenttrader.pl,scie24.pl,ogrodinfo.pl,zakliczyninfo.pl,kk24.pl,gieldykryptowalut.pl,odkryjbitcoin.pl,stacja7.pl,kryptoholik.pl,btc-jak-bitcoin.blog.pl,cashowsky.pl,historyk.eu,marihuanamedyczna.com##A[target="_blank"] > IMG
 q4.pl##TD[bgcolor="#f0f0f0"]
 q4.pl##TD[valign="middle"]
+nacjonalista.pl##DIV[align="center"]
+nacjonalista.pl##.napis
 radio5.com.pl##.g-single
 radioftb.net##.big-advertising
 radiobiper.info##[id^="widget_sp_image-"]
@@ -1488,12 +1494,14 @@ softonic.pl##[id^="show_banner_"]
 s0urce.io##.login-element:nth-of-type(3)
 s0urce.io###window-msg2
 speedtest.pl##div[style^="width: 1068px; height: 470px; margin: 20px auto"]
-spidersweb.pl###nonsticky_1
-spidersweb.pl##.sidebar-panel[data-equalizer-watch^="entrieshome"][id^="sidebar_anchor_parent_"]
-spidersweb.pl##a[href*="&utm_medium=baner"][target] > img[src^="http://ocs-pl.oktawave.com/"]:not([class])
-spidersweb.pl##.container > .show-for-medium.row
+!spidersweb.pl###nonsticky_1
+!spidersweb.pl##.sidebar-panel[data-equalizer-watch^="entrieshome"][id^="sidebar_anchor_parent_"]
+!spidersweb.pl##a[href*="&utm_medium=baner"][target] > img[src^="http://ocs-pl.oktawave.com/"]:not([class])
+!spidersweb.pl##.container > .show-for-medium.row
 spidersweb.pl##.playstation.wall-bg:style(background: none!important)
-spidersweb.pl##.wall-bg-banner
+!spidersweb.pl##.wall-bg-banner
+spidersweb.pl##iframe[src*="ads"]
+spidersweb.pl##.sonybg
 spliff.pl###gkRight > .box
 spiz.pl,roksa.pl##.c
 spigot.pl##.ipsBox.ipsWidget_vertical.ipsWidget:nth-of-type(1)
@@ -1532,6 +1540,8 @@ strefadb.pl##.dba-button
 strefagry.pl##.item_d
 strefagry.pl##[style="width:540px;margin:10px auto;"]
 strefadb.pl###dbarena
+strefawolnejprasy.pl##.rev_slider_wrapper
+strefawolnejprasy.pl##.article-ad-section
 stw24.pl##.advads-widget
 studentka.pl##.s_dodatkowa > .box
 studentnews.pl##a[href^="http://studentnews.pl/klik.php"]
@@ -2858,6 +2868,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 ||pushango.com^$script,domain=~pushango.com
 ||cdn.pushwoosh.com/webpush/*.js$script
 ||salesmanago.pl/api/push/$xmlhttprequest
+||cdn.pushassist.com/account/assets/psa-swp.js
 ||cdn.pushpushgo.com/scripts/$script
 ||pushalert.co^
 ||pushengage.com/script.js$script
@@ -2906,6 +2917,8 @@ portal.abczdrowie.pl##.article__textbox
 portal.abczdrowie.pl##[class^="article__side__stickblock-"]
 portal.abczdrowie.pl##.sidebar-box--promo
 open.fm##A[class][href*=".wp.pl/"] IMG[class][src^="https://v.wpimg.pl/"]
+wawalove.pl##.floating-ad.advertisement
+wawalove.pl##a[href="http://dajsygnal.pl/"]
 !
 !
 !--------------------------WP element block------------!
@@ -3034,7 +3047,7 @@ bieznie-treningowe.pl###text-2
 cryptonews.pl###text-6, #text-5
 crypto-trader.pl##.wp-image-1528
 blogprezesa.pl,kryptowaluty.info.pl,litecoin.pl##.aligncenter
-jedzbawsie.pl###text-7
+jedzbawsie.pl,ekspert.ceneo.pl###text-7
 ndie.pl,magazynfakty.pl##.textwidget
 gamenerd.pl###text-46
 hdtvpolska.com,ps4life.pl###text-4
@@ -3051,6 +3064,7 @@ kryptowalutykoparka.pl###text-20
 kryptoholik.pl##P > A > [class*="wp-image-"]
 mambiznes.pl##.wpb_raw_html
 ministerstwonaukijazdy.pl##IMG.lazy.lazy-loaded
+movieway.pl##IMG[alt="Image Widget"]
 mypolacy.nl##[id^="custom_html-"]
 mypolacy.nl###text-10, #text-27, #text-17
 rynekinwestycji.pl###black-studio-tinymce-2 > .textwidget
