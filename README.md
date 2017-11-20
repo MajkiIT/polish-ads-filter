@@ -5,7 +5,7 @@
 
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/MajkiIT/polish-ads-filter.svg)](http://isitmaintained.com/project/MajkiIT/polish-ads-filter "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/MajkiIT/polish-ads-filter.svg)](http://isitmaintained.com/project/MajkiIT/polish-ads-filter "Percentage of issues still open")
 
-We create filters for polish pages. Visit our page https://www.certyficate.it
+We create <a href="https://www.certyficate.it/adblock/">filters</a> for polish pages. Visit our page https://www.certyficate.it
 
 
 
