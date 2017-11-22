@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85, Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477, gwarser, mat41997 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 21 November 2017
+! Last modified: 22 November 2017
 ! Expires: 2 days
-! Version: 2017112101
+! Version: 2017112201
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/polski-filtr-adblock/
-! v.2017112101 aktualizacja: wt, 21 listopada 2017, 08:45:00
+! v.2017112201 aktualizacja: sr, 22 listopada 2017, 07:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -215,7 +215,7 @@ pl/popup.js|$script
 ~joemonster.org##[id^="commentAd"]
 ~komputerswiat.pl,anglia.today,dbnao.net,pl##.ad
 ~lech.tv,~wtkplay.pl,~epoznan.pl##[class^="advertisement"]
-~radekcholewinski.pl,~github.com##A[href$="/reklama"]
+~wirtualnemedia.pl,~radekcholewinski.pl,~github.com##A[href$="/reklama"]
 ~katywroclawskie.pl,~rozklad-pkp.pl,~gwarant.czest.pl,~sukniaonline.pl##[src*="/banners/banner"]
 ~tczewska.pl,~procamp.agency,~rp.pl,~sportowememy.pl,~intercity.pl##[id*="reklama"]
 ~grafmag.pl,~magdabek.pl,~superpharm.pl,~ceo.com.pl,~linuxiarze.pl,~wirtualny-wojownik.pl,~przerwanareklame.pl,~tvpolska.pl,~smiechawatv.pl,~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org,~motomio.pl,~semilac.pl,~e-otoczenie.pl,~wyborcza.pl,pl##[class*="reklama"]
@@ -241,6 +241,7 @@ pl###pixad-box
 pl##.hide-for-small.baner-promo-euro
 pl##.adverstiment-box
 ###adsense_main_lewa
+##a[href^="https://affiliate.bitbay.net/"]
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -254,6 +255,8 @@ pl##.adverstiment-box
 24legnica.pl###text-5
 24opole.pl##.acl_bd
 24opole.pl##.cd
+24opole.pl##.dd
+3dwpraktyce.pl##.hidden-xs.col-xs-12
 300polityka.pl###text-3
 300polityka.pl##.dcmads
 40ton.net##.size-full
@@ -426,7 +429,7 @@ cashowsky.pl##IMG[alt^="Baner"]
 cda.pl###as-narrow1
 cda.pl##.adsense.miniPhotobox
 cda.pl##.block-footer > div:nth-of-type(3)
-!cda.pl##.bolk-left
+cda.pl##.bolk-left
 !cda.pl##.muimErPIa
 !cda.pl##.muimerPIa
 cda.pl##a[class][target]:has(img[src*="premium"])
@@ -634,7 +637,6 @@ fechallenge.com##.layout-right-brand
 fechallenge.com##[class$="partners"]
 filesdark.com##[href*="/adac.php"]
 films4free.pl##.M2U3OGQ4ZGY1
-fishki.pl###fancybox-wrap
 flarrow.pl##[class^="td_block_wrap td_block_text_with_title td_uid_"]
 flashscore.pl###box-over-content-a
 flashscore.pl##.scrolling-box-under-content
@@ -1461,6 +1463,7 @@ satkurier.pl###single_news > div > center
 satkurier.pl###wrapper > center > center
 satkurier.pl##[id^="banner_"]
 satkurier.pl##[id^="google"]
+satkurier.pl###side_bottom_m
 saturn.pl###nl_modal
 saturn.pl###nl_overlay
 scie24.pl##A[target="blank_"] > IMG[src^="/uploads/baners/"]
@@ -1515,7 +1518,6 @@ spiz.pl,roksa.pl##.c
 spigot.pl##.ipsBox.ipsWidget_vertical.ipsWidget:nth-of-type(1)
 sport.pl##.entry.externalEntry
 sport.pl##.mod.mod_uzr_sport6
-sport.pl##.art_embed
 sportowebeskidy.pl##.baner
 sportowepodhale.pl##[id^="p4"]
 sportowywroclaw.eu##a[href^="http://clicks.fortunaaffiliates.com/afs/"]
@@ -1592,6 +1594,7 @@ tabletowo.pl##[rel="nofollow"][target="_blank"]
 tabletowo.pl##a[href*="dhosting.pl"]
 tabletowo.pl##a[href*="goo.gl"]
 tabletowo.pl###menu-item-komputronik, #re_kk_near_logo
+taniaksiazka.pl##A[target="_self"] > IMG
 targeo.pl###Advertisement
 tarnow.in###text-21 > .post-header > .post-header
 tarnow.in##img[src][alt^="Baner"]
@@ -2277,6 +2280,7 @@ zywiecinfo.pl###blockadblock
 ||www.moja-ostroleka.pl/uploads/banery/$image,object,script
 ||www.movie-box.pl/commer/*.mp4$media,domain=www.movie-box.pl
 ||www.one-solution.pl/images/banner.png
+||www.24opole.pl/dimg/$image
 ||www.optymalizacja.com/img/$image
 ||www.pch24.pl/images/banery/$image
 ||www.pch24.pl/js/banery.js$script
@@ -2493,6 +2497,7 @@ jbzdy.pl,kwejk.pl,piwniczkamemow.pl#@#.text-ads
 jbzdy.pl,kwejk.pl,piwniczkamemow.pl#@#.text-ad-links
 kursbootstrap.pl##.alert-dismissible.alert-success.alert
 lech.tv#@#.advertising_banner
+lubimyczytac.pl###kociak
 maxkino.pl##.btn-warning.btn-block.btn
 medianarodowe.com###overlay
 megawrzuta.pl###popup-1
