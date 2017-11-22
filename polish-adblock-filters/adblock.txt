@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 22 November 2017
 ! Expires: 2 days
-! Version: 2017112201
+! Version: 2017112202
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/polski-filtr-adblock/
-! v.2017112201 aktualizacja: sr, 22 listopada 2017, 07:20:00
+! v.2017112202 aktualizacja: sr, 22 listopada 2017, 22:15:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -217,7 +217,7 @@ pl/popup.js|$script
 ~lech.tv,~wtkplay.pl,~epoznan.pl##[class^="advertisement"]
 ~wirtualnemedia.pl,~radekcholewinski.pl,~github.com##A[href$="/reklama"]
 ~katywroclawskie.pl,~rozklad-pkp.pl,~gwarant.czest.pl,~sukniaonline.pl##[src*="/banners/banner"]
-~tczewska.pl,~procamp.agency,~rp.pl,~sportowememy.pl,~intercity.pl##[id*="reklama"]
+~wirtualnemedia.pl,~tczewska.pl,~procamp.agency,~rp.pl,~sportowememy.pl,~intercity.pl##[id*="reklama"]
 ~grafmag.pl,~magdabek.pl,~superpharm.pl,~ceo.com.pl,~linuxiarze.pl,~wirtualny-wojownik.pl,~przerwanareklame.pl,~tvpolska.pl,~smiechawatv.pl,~break.pl,~radekcholewinski.pl,~prokonsumencki.pl,~sekurak.pl,~techmaniak.pl,~gsmmaniak.pl,~appmaniak.pl,~tabletmaniak.pl,~fotomaniak.pl,~mobimaniak.pl,~acermaniak.pl,~tvmaniak.pl,~3dmaniak.pl,~gizmaniak.pl,~luxmaniak.pl,~blogomaniak.pl,~activemaniak.pl,~agdmaniak.pl,~eskago.pl,~certyficate.it,~motogen.pl,~wikipedia.org,~motomio.pl,~semilac.pl,~e-otoczenie.pl,~wyborcza.pl,pl##[class*="reklama"]
 ~nationalgeographic.com,~wpolityce.pl,~box.com,~hardcorowo.pl,~gumtree.com,~hulu.com,com,~filmweb.pl,pl##[class^="ad-"]
 ~fakt.pl,pl##.trizer-bnr
@@ -612,6 +612,7 @@ eurogamer.pl###skyscraper
 eurogamer.pl##script:inject(abort-on-property-write.js, yafaIt)
 eurogamer.pl##.container:nth-of-type(2) > .i-amphtml-unresolved.amp-unresolved.i-amphtml-layout-size-defined.i-amphtml-layout-responsive.amp-notbuilt.i-amphtml-notbuilt.i-amphtml-element
 evertiq.pl##[id^="bnr"]
+expresselblag.pl##.all-services
 exsite.pl##DIV[id^="tower_"]
 exsite.pl##[id^="adkon"]
 exsite.pl##[style="width: 586px;height: 369px;margin: 50px auto 50px -18px;overflow-y: hidden;border:1px solid black;"]
@@ -843,6 +844,7 @@ interia.pl##[id^="ad_"]
 interia.pl##.dfp_slot
 ipo.pl##DIV[style="clear:both;min-height:100px;"]
 ipon.pl###rekalama_PodMenu
+it-coin.pl##DIV.td-all-devices > A > IMG:last-child
 itporady.pl##.hidden-xs.r_sidebar
 itporady.pl##.visible-md.visible-lg
 itporady.pl##.well
@@ -1025,6 +1027,7 @@ mamawdomu.pl###text-161
 mapa.szukacz.pl###popupContainer
 marihuana.info.pl###header-right-section, #text-5, #text-10, #text-11
 marihuanamedyczna.com##.x-content-dock.right.x-content-dock-on
+medycznamarihuana.com##DIV[style="float: left; padding: 8px;"]
 maximgroup.pl###banner-counter
 mazury.info.pl##A[href^="http://"] > IMG[src*="logo"]
 mazury.info.pl##A[href^="https://"] > IMG
@@ -1151,6 +1154,8 @@ naekranie.pl##.adform
 naekranie.pl##div:if(>div:first-child:has-text(Reklama))
 naekranie.pl##.except-mobil
 naekranie.pl##DIV > A[target="_blank"] > IMG:last-child
+naekranie.pl##a[href*="naekranie.pl/8c36c658ca"]
+naekranie.pl##.sde03cbbe
 naklo24.pl##.ban
 napisy24.pl##.custom_pozioma
 napisy24.pl##[id^="napisy24"]
@@ -2020,7 +2025,6 @@ zywiecinfo.pl###blockadblock
 ||elka.pl/audiovideo/banners/
 ||elka.pl/modules/bannerySwiffy.php$subdocument
 ||eluban.pl/uploads/baners/$image
-||naekranie.pl/wp-content/themes/naekranie/resources/img/yokai.png
 ||e-aptekarodzinna.pl/images/*1366x768.jpg$image
 ||egnatius-ear.com/$script,domain=www.sadistic.pl
 ||embed.powercontent.pl^
@@ -2746,10 +2750,6 @@ xyz,mecz.tv,ipilka.info##[class$="_right"]
 !
 !
 !--------------------------Rules temporary blocking filters-------------!
-money.pl,o2.pl,portal.abczdrowie.pl,wp.pl,wp.tv##script:inject(abort-on-property-write.js, gafBodies)
-!||rek.www.wp.pl/pliki/*.js$script,important
-!||rek.www.wp.pl/display.js?$script,important,domain=www.pudelek.tv
-!||rek.www.wp.pl/gaf.js$script,domain=gadzetomania.pl,important
 ||ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2017/03/MV_nolimit_1180x200.jpg
 ||ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2017/03/EXPLORE_1401_Spidersweb_3*x*px_V*_02-03-2017.jpg
 ||ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2017/03/300x700.jpg
@@ -2757,6 +2757,7 @@ money.pl,o2.pl,portal.abczdrowie.pl,wp.pl,wp.tv##script:inject(abort-on-property
 ||ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/splay/2017/03/xc_laser_400x400_2.jpg
 ||ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/splay/2017/03/xc_laser_300x700_2.jpg
 ||ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2017/03/1200x300.jpg
+||cont5.naekranie.pl/wp-content/uploads/2017/11/playlink-1.jpg$image
 !
 !
 !--------------------------Rules wykop.pl-------------!
