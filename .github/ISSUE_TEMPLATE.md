@@ -1,5 +1,5 @@
 <!--
-Dziękujemy za zgłoszenie na rzecz Polskich Filtrów AdBlock & uBlock
+Dziękujemy za zgłoszenie na rzecz Polskich Filtrów Adblock & uBlock
 Przed podjęciem jakiegokolwiek działania koniecznie zapoznaj się z CONTRIBUTING.md
 -->
 ### Zrzut ekranu
