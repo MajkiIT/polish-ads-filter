@@ -1,6 +1,14 @@
 <!--
 Dziękujemy za zgłoszenie na rzecz Polskich Filtrów AdBlock & uBlock
---> 
+-->
+### Zrzut ekranu
+```
+wstaw tutaj obraz lub link
+```
+
+`tutaj wstaw link bezpośredni`
+
+
 ### Co trzeba zrobić aby reklama/element lub błąd się pojawił
 1. 
 2. 
@@ -19,8 +27,3 @@ Dziękujemy za zgłoszenie na rzecz Polskich Filtrów AdBlock & uBlock
 
 *Inne ważne informacje mogące mieć znaczenie:*
 
-
-### Zrzut ekranu
-```
-wstaw tutaj obraz lub link
-```
