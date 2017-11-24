@@ -1,28 +1,26 @@
 <!--
-Dziękujemy za zgłoszenie na Polskie Filtry Adblock & Ublock
+Dziękujemy za zgłoszenie na rzecz Polskich Filtrów AdBlock & uBlock
 --> 
-### Co trzeba zrobić aby reklama/element się pojawił
-1.
-2.
-3.
+### Co trzeba zrobić aby reklama/element lub błąd się pojawił
+1. 
+2. 
+3. 
 
 
 ### Twoja konfiguracja
-**Przeglądarka:**
+*Wersja przeglądarki:*
 
-**Operating system:**
+*Używane wtyczki:*
 
-**Blocker:**
+*Używane filtry:*
+1. 
+2. 
+3. 
 
-**Używane filtry:**
-1.
-2.
-3.
-4.
+*Inne ważne informacje mogące mieć znaczenie:*
+
 
 ### Zrzut ekranu
 ```
-wstaw tutaj link
+wstaw tutaj obraz lub link
 ```
-
-
