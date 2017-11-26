@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85, Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477, gwarser, mat41997 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 25 November 2017
+! Last modified: 26 November 2017
 ! Expires: 2 days
-! Version: 2017112501
+! Version: 2017112601
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/polski-filtr-adblock/
-! v.2017112501 aktualizacja: sob, 25 listopada 2017, 18:30:00
+! v.2017112601 aktualizacja: nie, 26 listopada 2017, 17:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -64,6 +64,7 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||afftrack001.com^
 ||vdztrack.com^
 ||zxtrace.com/*=cda-hd.pl$document
+||lab.ankieta-online.pl^
 !
 !
 !-----------------------Elements hide on movie-----------------------!
@@ -522,7 +523,7 @@ disco-polo.info###smsites > .naglowek-sidebar
 discopolonew.cba.pl##ul:nth-of-type(7)
 doba.pl##[class*="banner"]
 dobra-mama.pl###slideshow
-dobramama.pl##.billboard
+dobramama.pl,tablety.pl##.billboard
 dobrastacja.pl###tfhover
 dobreprogramy.pl###panReklama > div
 dobreprogramy.pl###slide-menu > * div[id^="c"][style^="height:"][style*="width:"]:not([id^="cbox"]):not([id="colorbox"])
@@ -1401,7 +1402,7 @@ pzn.pl###EditoPopup\$Panel133
 pzpm.org.pl###powiadomiony
 q4.pl###\33 DIV
 q4.pl###bglink
-q4.pl,fakty.plportal.pl,chinytolubie.pl,filmyfantastyczne.pl,dts24.pl,mragowo24.info,przemysl.info.pl,eluban.pl,wien.info,tkn24.pl,resellernews.pl,independenttrader.pl,scie24.pl,ogrodinfo.pl,zakliczyninfo.pl,kk24.pl,gieldykryptowalut.pl,odkryjbitcoin.pl,stacja7.pl,kryptoholik.pl,btc-jak-bitcoin.blog.pl,cashowsky.pl,historyk.eu,marihuanamedyczna.com##A[target="_blank"] > IMG
+q4.pl,fakty.plportal.pl,chinytolubie.pl,filmyfantastyczne.pl,dts24.pl,mragowo24.info,przemysl.info.pl,eluban.pl,wien.info,tkn24.pl,resellernews.pl,independenttrader.pl,scie24.pl,ogrodinfo.pl,zakliczyninfo.pl,kk24.pl,gieldykryptowalut.pl,odkryjbitcoin.pl,stacja7.pl,kryptoholik.pl,btc-jak-bitcoin.blog.pl,cashowsky.pl,historyk.eu,marihuanamedyczna.com,pcworld.pl##A[target="_blank"] > IMG
 q4.pl##TD[bgcolor="#f0f0f0"]
 q4.pl##TD[valign="middle"]
 nacjonalista.pl##DIV[align="center"]
@@ -1420,6 +1421,7 @@ radiotczew.pl##[target="_blank"] > .img-responsive
 radiozet.pl##.adocean
 radiozet.pl###banner-radiostacja
 radio.kielce.pl##.content:nth-of-type(3) > .na-space
+radio.kielce.pl##.folkRadioLink
 radomnews.pl##DIV[align="center"]
 radomnews.pl##[id^="banP"]
 radomsport.pl##A[target="_blank"] > IMG[src^="img/"]
@@ -2031,6 +2033,7 @@ zywiecinfo.pl###blockadblock
 ||dowcip.net/x.png$image
 ||doubleclick.net^
 ||dpcdn.pl/*/bg.jpg$image,domain=dobreprogramy.pl
+||dfp.gazeta.pl/c.servlet?cn=dfpreferrer&cv=DIRECT$xmlhttprequest,domain=www.plotek.pl
 ||e-krajna.pl/banery_$image
 ||ec.bankier.pl/show$script
 ||efilmy.tv/adsvid/$image
@@ -2881,6 +2884,7 @@ castto.me##[id^="floatLayer"]
 ##a[href^="http://affiliates.bet-at-home.com/processing/clickthrgh.asp"]
 ##a[href="http://www.livelooker.com"]
 srkcast.com##[id^="table"]
+bro.adca.st###propis
 !
 !
 !--------------------------Rules on tv streams blocking filters------------!
@@ -2890,6 +2894,11 @@ srkcast.com##[id^="table"]
 ||cloudfront.net^$script,domain=telewizja-live.com
 ||privatestream.tv/logo^
 ||privatestream.tv/adl^
+||images.futbolbase.us/*.html$domain=bro.adca.st
+||assets.bro.adca.st/rectangular.html
+||assets.bro.adca.st/cuadrado.html
+||static.bro.adca.st/promo.html
+||d1f5rbi95y1icu.cloudfront.net^
 !
 !
 !--------------------------WP Group element hide------------!
@@ -3062,6 +3071,7 @@ mypolacy.nl###text-10, #text-27, #text-17
 rynekinwestycji.pl###black-studio-tinymce-2 > .textwidget
 smartage.pl###media_image-3
 smartage.pl###custom_html-2
+strefakodera.pl##.col.widget:nth-of-type(2) > .widgetHeader
 witanet.net##.top-footer-wrap.clearfix
 technowinki24.pl##.alignright.wp-image-579.size-full
 tomaszowski.com.pl###text-15
