@@ -7,29 +7,29 @@
 * [Zobacz](https://github.com/MajkiIT/polish-ads-filter/issues) otwarte zgłoszenia
 
 
-## Require
+## Wymagane
 1. Podaj link do strony gdzie występuje problem
 2. Dodaj co najmniej 1 zrzut ekranu
- 1. Zrób zrzut ekranu: [windows](http://www.7tutorials.com/how-use-snipping-tool) albo [inny](http://www.take-a-screenshot.org/)
- 2. Gdzie wrzucić zrzut: [Imgur](http://imgur.com/) albo [Imgbox](http://imgbox.com/)
+ a) Zrób zrzut ekranu: [windows](http://www.7tutorials.com/how-use-snipping-tool) albo [inny](http://www.take-a-screenshot.org/)
+ b) Gdzie wrzucić zrzut: [Imgur](http://imgur.com/) albo [Imgbox](http://imgbox.com/) albo bezpośrednio na GitHub za pomocą przeciągania i upuszczania
 3. Twoja przeglądarka
-4. Twoje skrypty
-5. Twój blocker reklam
+4. Twoje skrypty lub rozszerzenia ukrywające antyadblocki
+5. Twój bloker reklam
 6. Twoja lista filtrów
 
 
 ## Przykład
 
-##### tytuł
+##### Tytuł
 <pre>www.certyficate.it</pre>
 
 ##### Treść
 <pre>
 https://www.certyficate.it
 https://www.screencast.com/t/Xf0Z04RcS
-Mozilla Firefox
+Mozilla Firefox 57.0
 AAK-Cont
-Ublock 
+uBlock Origin 1.14.18
 EasyList + Polish filters
 </pre>
 
