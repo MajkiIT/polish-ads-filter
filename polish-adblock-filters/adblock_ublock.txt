@@ -3,15 +3,15 @@
 ! polskie filtry do uBlocka - uzupelnienie
 ! Collaborators: F4z, xxcriticxx, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Last modified: 17 November 2017
+! Last modified: 27 November 2017
 ! Expires: 4 days
-! Version: 2017111701
+! Version: 2017112701
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2017111701 aktualizacja: ptk, 17 listopada 2017, 20:20:00
+! v.2017112701 aktualizacja: pon, 27 listopada 2017, 13:33
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -211,11 +211,14 @@ naszemiasto.pl##script:inject(abort-on-property-write.js, czy_wlaczony_adblock)
 ! anyfiles.pl
 anyfiles.pl##script:inject(abort-on-property-read.js, launchOpenWindow)
 !
-! mkidn.gov.pl i puma.com
+! mkidn.gov.pl, puma.com i unileverfoodsolutions.pl
 ! Ukrycie popupów o ciasteczkach
 mkidn.gov.pl###myModal
 mkidn.gov.pl,puma.com##.modal-open:style(padding-right: 0px!important; overflow: visible!important;)
 puma.com###modal-geoip-cookies, .modal-backdrop
+unileverfoodsolutions.pl##.js-cookie-wall
+unileverfoodsolutions.pl##body.blurred>*:style(box-shadow: none!important; filter: none!important;)
+unileverfoodsolutions.pl##body:style(overflow: auto!important;)
 !
 ! purepc.pl
 purepc.pl##script:inject(setTimeout-defuser.js, ub_fix())
