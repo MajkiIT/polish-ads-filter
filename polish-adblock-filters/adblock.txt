@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85, Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477, gwarser, mat41997 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 26 November 2017
+! Last modified: 27 November 2017
 ! Expires: 2 days
-! Version: 2017112602
+! Version: 2017112701
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/polski-filtr-adblock/
-! v.2017112602 aktualizacja: nie, 26 listopada 2017, 18:00:00
+! v.2017112701 aktualizacja: pon, 27 listopada 2017, 21:05:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -64,7 +64,7 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||afftrack001.com^
 ||vdztrack.com^
 ||zxtrace.com/*=cda-hd.pl$document
-||lab.ankieta-online.pl^
+||lab.ankieta-online.pl/q/*/*/invitation.html$document,domain=lab.ankieta-online.pl
 !
 !
 !-----------------------Elements hide on movie-----------------------!
@@ -359,6 +359,7 @@ benchmark.pl##.screenContainer
 benchmark.pl##.threeTilesAndLogo.colWide[style="background: #EB6878;"]
 besty.pl##[id^="adsense_main_"]
 besty.pl##SPAN[style=" display: block;margin-bottom: 10px; font-size: 13px;color: #aaa; text-align: center;"]
+besty.pl##div:nth-of-type(10) > span
 bez-cenzury24.pl##[div^="ips-popup"]
 bezprawnik.pl##.col-xs-12.hidden-xs
 bezprawnik.pl##.play_iframe
@@ -543,6 +544,8 @@ dobreprogramy.pl##div[id="slide-menu"] > a[id][href="#"]
 dobreprogramy.pl##a[href*="campaign=baner"]
 dobreprogramy.pl###divPoweredBy
 dobreprogramy.pl##script:inject(abort-on-property-read.js, _0x373f)
+dobreprogramy.pl##.target
+dobreprogramy.pl##small
 dodajzdjecie.funfootball.pl##.wp-image-9996
 dogry.pl##.pro-box
 dojrzalakobieta.pl###slider-with
@@ -928,7 +931,7 @@ komputerswiat.pl##.intext:nth-of-type(17)
 koncertomania.pl##div#slide-out-newsletter
 koncertomania.pl###banner-side
 korkosfera.pl##div#copyright_ne
-koszalininfo.pl,wlkp24.info,wwl24.info,b2-biznes.pl##.g
+koszalininfo.pl,wlkp24.info,wwl24.info,b2-biznes.pl,sporteuro.pl##.g
 kozaczek.pl##.nsg_ad_box
 kozaczek.pl##img[src^="data:image/jpeg;base64"]
 kozienice24.pl###adocr
@@ -1041,7 +1044,10 @@ mazury.info.pl##A[href^="http://"] > IMG[src*="logo"]
 mazury.info.pl##A[href^="https://"] > IMG
 meble-andrex.pl###left > p
 mebloo.pl###fabryka_sypialni > [target="_blank"] > IMG
+meczelive.tv##.menu:nth-of-type(1) > .nav
+meczelive.tv##a[href^="http://bit.ly/"]
 meczyki.pl##.bookie-ranks
+meczyki.pl##.container-banner-top.container-banner
 meczelive.tv##[target="_blank"] > IMG[src^="http://meczelive.tv/new/300/"]
 mediaexpert.pl## .js-promoClick
 mediaexpert.pl##[id*="ban_"]
@@ -1176,6 +1182,7 @@ naszamlawa.pl##.banner
 naszemiasto.pl##.sekcjaSzeroka.sbGry
 naszemiasto.pl##center > a[href^="http://www.gratka.pl/"][target="_blank"] > img[src*="/tymczasowe/"]
 naszemiasto.pl##.columns > p[style="margin-left: 40px; margin-bottom: 2px; text-align: left; font-size: 7pt; font-family: Verdana, Tahoma; color: #9d9d9d;"]
+natemat.pl##.kd_ns_logo
 nczas.com##A[target="_self"] > .vc_single_image-img:last-child
 ndie.pl##DIV + A > IMG[style="width:100%;"]
 newsbook.pl##.blocker.jquery-modal
@@ -1334,7 +1341,7 @@ polskiautohandel.pl##.panel.widget-2
 polubione.pl##.execphpwidget
 polygamia.pl##.adwordbackground
 polygamia.pl##[onclick^="adwordsStatistic"]
-poki.pl##.Ek
+poki.pl##.EA
 pomorska.pl##.boxHeader
 pomorska.pl##.jcarousel-container.jcarousel-container-vertical
 pomorska.pl##P[style="font:normal 12px/16px Arial,Tahoma,sans-serif;margin:0;padding:6px 100px 5px 20px;color:#fff;word-wrap:break-word;"]
@@ -1700,6 +1707,8 @@ twojepc.pl##td[width="300"][align="left"][valign="top"]
 turek.net.pl##.BanerP
 tychy.info##[data-ads-id] > DIV[class$="970x250"]
 tychy.info##.header_img
+tychy.info##main > .small.pasek-gray:nth-of-type(3)
+tychy.info##main > .serwis.small.pasek-gray
 tygodniknarodowy.pl###BusyBox
 tygodnikpodlaski.pl###billboardRightAdsense
 tygodnikpowszechny.pl##[id*="-simpleads-"] > h2
@@ -2188,6 +2197,7 @@ zywiecinfo.pl###blockadblock
 ||portal-firma.pl/banners/$image
 ||portalmorski.pl/images/banners/
 ||portalplock.pl/banery/
+||portel.pl/reks/$subdocument
 ||pp.funhub.pl^$domain=naszemiasto.pl
 ||ppstatic.pl/*/tymczasowe/$image
 ||ppstatic.pl/*/showcase/$image,domain=gratka.pl
@@ -2331,6 +2341,7 @@ zywiecinfo.pl###blockadblock
 ||www.locomobit.pl/right_mm.php$object
 ||www.locomobit.pl/media/sn/banner_$image
 ||www1.advice.movie.advlab.pl$object,domain=get.x-link.pl
+||zap-hosting.com/interface/media/banner/$image
 ||zaufanatrzeciastrona.pl/aruba.gif
 ||zaufanatrzeciastrona.pl/wp-content/uploads/*/q2s.gif
 ||zaufanatrzeciastrona.pl/wp-content/uploads/*/Desktop_TA_LA_*_0*.jpg
