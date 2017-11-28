@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85, Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477, gwarser, mat41997 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 27 November 2017
+! Last modified: 28 November 2017
 ! Expires: 2 days
-! Version: 2017112702
+! Version: 2017112801
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/polski-filtr-adblock/
-! v.2017112702 aktualizacja: pon, 27 listopada 2017, 22:30:00
+! v.2017112801 aktualizacja: wt, 28 listopada 2017, 07:05:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -246,6 +246,7 @@ pl##.adverstiment-box
 ##a[href^="https://affiliate.bitbay.net/"]
 pl##.module_single_ads
 ##.zalando-placeholder
+pl##.gwt-Anchor
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -387,7 +388,7 @@ biotechnologia.pl##.ats_link
 bitcoin.pl##.custom
 bitcoin.edu.pl##.custom-html-widget.textwidget
 bitcoin-online.pl##.sp-module:nth-of-type(3) > .sp-module-content > .custom
-bitcoin-online.pl##A[rel="nofollow"] > IMG
+bitcoin-online.pl,swiatdronow.pl##A[rel="nofollow"] > IMG
 bitcoin-info.pl##IMG[src^="/data/banner/"]
 bithub.pl##.st-ad-region
 biznes.pl##.e_Box.analyses
@@ -544,8 +545,7 @@ dobreprogramy.pl##div[id="slide-menu"] > a[id][href="#"]
 dobreprogramy.pl##a[href*="campaign=baner"]
 dobreprogramy.pl###divPoweredBy
 dobreprogramy.pl##script:inject(abort-on-property-read.js, _0x373f)
-dobreprogramy.pl##.target
-dobreprogramy.pl##small
+dobreprogramy.pl##body > .page-form > script + style + *:empty
 dodajzdjecie.funfootball.pl##.wp-image-9996
 dogry.pl##.pro-box
 dojrzalakobieta.pl###slider-with
@@ -620,7 +620,7 @@ eurogamer.pl###skyscraper
 eurogamer.pl##script:inject(abort-on-property-write.js, yafaIt)
 eurogamer.pl##.container:nth-of-type(2) > .i-amphtml-unresolved.amp-unresolved.i-amphtml-layout-size-defined.i-amphtml-layout-responsive.amp-notbuilt.i-amphtml-notbuilt.i-amphtml-element
 evertiq.pl##[id^="bnr"]
-expressilustrowany.pl##.gwt-Anchor
+expressilustrowany.pl###scoopshot
 expresselblag.pl##.all-services
 exsite.pl##DIV[id^="tower_"]
 exsite.pl##[id^="adkon"]
@@ -746,6 +746,7 @@ gloria.tv##A[href^="/advertisement/"]
 gloria.tv##footer
 glos24.pl##IMG[src^="/files/adv/"]
 glosgminny.pl###text-30
+gloswielkopolski.pl##.partner
 goal.pl##a[href="http://www.camelbet.com/pl/"]
 goldenline.pl###adv_top
 gomoney.pl###aunit
@@ -957,7 +958,7 @@ kurierlubelski.pl###oponeo
 kurierlubelski.pl###sm-sg
 kurierlubelski.pl##.adSrodek
 kurierlubelski.pl,gloswielkopolski.pl,nto.pl,gazetalubuska.pl###prawa1
-kurierlubelski.pl,panoramafirm.pl###top
+kurierlubelski.pl,panoramafirm.pl,farmer.pl###top
 kurnik.pl##[style="background: #f21; color: #fff; font-weight: bold; text-align: center; text-transform: uppercase; padding: 10px; margin-bottom: 2em; "]
 kuszotv.pl##[style="padding: 0 0 5px 0;"]
 kutno.net.pl##.upper-bilboard
@@ -1077,7 +1078,7 @@ mh24.pl###cboxOverlay
 mh24.pl###colorbox
 mh24.pl,jaw.pl##[id^="text-"]
 miastoiludzie.pl###header
-miastoiludzie.pl###text-11
+miastoiludzie.pl,swiatoze.pl###text-11
 miastons.pl##IMG[src^="http://www.miastons.pl/media/Banners/"]
 miedziowe.pl##[id^="banner-ajax-"]
 miedzyrzec.info###banerA
@@ -1268,6 +1269,7 @@ parenting.pl###floorBG
 parenting.pl##.a-ctn-d
 parenting.pl##.article__textbox
 parenting.pl##[class^="article__side__stickblock--"]
+parezja.pl##IMG.lazy
 pato.pl##a[href="http://nocnik.pl/"]
 patriot24.net##[style="display: block; width: 750px; height: 200px; margin: 0px auto;"]
 patriot24.net##[class$="_ad"]
@@ -1296,6 +1298,7 @@ pebx.pl##li[class="sectionMain message"]:not([id^="post-"])
 pecetowicz.pl##.ipsPos_center
 pekao.com.pl###PX45189
 pepper.pl##.nav-banner
+perepele.pl##A > IMG.ccm-image-block
 piekary.pl##.mfp-content
 piekary.pl##.mfp-ready
 pielegniarki.info.pl###gsk
@@ -1410,7 +1413,7 @@ pzn.pl###EditoPopup\$Panel133
 pzpm.org.pl###powiadomiony
 q4.pl###\33 DIV
 q4.pl###bglink
-q4.pl,fakty.plportal.pl,chinytolubie.pl,filmyfantastyczne.pl,dts24.pl,mragowo24.info,przemysl.info.pl,eluban.pl,wien.info,tkn24.pl,resellernews.pl,independenttrader.pl,scie24.pl,ogrodinfo.pl,zakliczyninfo.pl,kk24.pl,gieldykryptowalut.pl,odkryjbitcoin.pl,stacja7.pl,kryptoholik.pl,btc-jak-bitcoin.blog.pl,cashowsky.pl,historyk.eu,marihuanamedyczna.com,pcworld.pl##A[target="_blank"] > IMG
+q4.pl,fakty.plportal.pl,chinytolubie.pl,filmyfantastyczne.pl,dts24.pl,mragowo24.info,przemysl.info.pl,eluban.pl,wien.info,tkn24.pl,resellernews.pl,independenttrader.pl,scie24.pl,ogrodinfo.pl,zakliczyninfo.pl,kk24.pl,gieldykryptowalut.pl,odkryjbitcoin.pl,stacja7.pl,kryptoholik.pl,btc-jak-bitcoin.blog.pl,cashowsky.pl,historyk.eu,marihuanamedyczna.com,pcworld.pl,esanok.pl,lovekrakow.pl,swiatdronow.pl##A[target="_blank"] > IMG
 q4.pl##TD[bgcolor="#f0f0f0"]
 q4.pl##TD[valign="middle"]
 nacjonalista.pl##DIV[align="center"]
@@ -1547,6 +1550,7 @@ sport.pl##.mod.mod_uzr_sport6
 sportowebeskidy.pl##.baner
 sportowepodhale.pl##[id^="p4"]
 sportowywroclaw.eu##a[href^="http://clicks.fortunaaffiliates.com/afs/"]
+spottedlublin.pl##[role="main"] > .row
 spryciarze.pl###banner_konkursowy
 sprzedajemy.pl###mon-AListTop
 sprzedajemy.pl###mon-AdsAdsDetailsTop
@@ -2257,6 +2261,7 @@ zywiecinfo.pl###blockadblock
 ||superfilm.pl/vast/comeon.xml$object
 ||superkinomaniak.pl/js/show-promote.min.js
 ||swiat-gier.com/themes/swiat-gier/img/background$image
+||swiatoze.pl/wp-content/uploads/20*/*/banner-$image
 ||swiecie24.pl/banery_$image
 ||system.mondeos.pl/$image,script
 ||studentnews.pl/img/ban/b*.jpg$image
@@ -3081,6 +3086,7 @@ ministerstwonaukijazdy.pl##IMG.lazy.lazy-loaded
 movieway.pl##IMG[alt="Image Widget"]
 mypolacy.nl##[id^="custom_html-"]
 mypolacy.nl###text-10, #text-27, #text-17
+newsbook.pl##.newsb-widget.widget
 rynekinwestycji.pl###black-studio-tinymce-2 > .textwidget
 smartage.pl###media_image-3
 smartage.pl###custom_html-2
