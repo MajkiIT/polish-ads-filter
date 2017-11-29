@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 29 November 2017
 ! Expires: 2 days
-! Version: 2017112901
+! Version: 2017112902
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/polski-filtr-adblock/
-! v.2017112901 aktualizacja: sr, 29 listopada 2017, 07:25:00
+! v.2017112902 aktualizacja: sr, 29 listopada 2017, 21:20:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -246,7 +246,6 @@ pl###pixad-box
 ##a[href^="https://affiliate.bitbay.net/"]
 ##.module_single_ads
 ##.zalando-placeholder
-##.gwt-Anchor
 ##[class^="cg-template"]
 !
 !
@@ -437,8 +436,7 @@ cda.pl###as-narrow1
 cda.pl##.adsense.miniPhotobox
 cda.pl##.block-footer > div:nth-of-type(3)
 cda.pl##.bolk-left
-!cda.pl##.muimErPIa
-!cda.pl##.muimerPIa
+cda.pl##.pdmarea
 cda.pl##a[class][target]:has(img[src*="premium"])
 cda.pl##.wrapercontainer
 cda.pl##.f-img
@@ -2867,6 +2865,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 /^http:\/\/p[0-9]{6,10}\.[a-z]{5,10}\.com\/itab\/[a-z?=A-Z_0-9&]{10,}Zippyshare\.com[a-z0-9A-Z%.'-]{5,}/$popup
 /^http:\/\/[a-z0-9]{9,10}\.com\/[0-9]{7,9}\.html\?q/$document
 /^(http|https):\/\/[a-z.-]{5,30}\/client\?party/$script,domain=openkatalog.com
+/^(http|https):\/\/[a-z.]{5,10}\.[a-z]{2,4}\/[a-z]{3,7}\?[a-zA-Z0-9=&%]{150,250}/$popup,domain=centrum-dramy.pl|a-o.ninja
 !
 !
 !--------------------------Stupid notifications------------!
