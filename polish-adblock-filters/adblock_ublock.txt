@@ -3,15 +3,15 @@
 ! polskie filtry do uBlocka - uzupelnienie
 ! Collaborators: F4z, xxcriticxx, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Last modified: 27 November 2017
+! Last modified: 30 November 2017
 ! Expires: 4 days
-! Version: 2017112701
+! Version: 2017113001
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2017112701 aktualizacja: pon, 27 listopada 2017, 13:33
+! v.2017112701 aktualizacja: czw, 30 listopada 2017, 22:25
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -113,6 +113,9 @@ dobreprogramy.pl##body.variant-mobile div[style="color: #A9A9A9; text-align:cent
 forum.dobreprogramy.pl##body[class]:style(background-image: none !important;)
 dobreprogramy.pl##script:inject(setTimeout-defuser.js, o = null, n || e.apply(r, i))
 dobreprogramy.pl##script:inject(abort-on-property-read.js, Element.prototype.attachShadow)
+dobreprogramy.pl##script:inject(abort-on-property-read.js, _0x373f)
+dobreprogramy.pl##body > .page-form > *:matches-css(background-image: /data:image\/png;base64,/):matches-css(position:fixed)
+dobreprogramy.pl##body > .page-form > * *:matches-css(background-image: /data:image\/png;base64,/):matches-css(position:fixed)
 !
 ! purepc.pl
 purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !important; position: absolute !important;)
