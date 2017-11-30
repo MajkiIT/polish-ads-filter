@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 30 November 2017
 ! Expires: 2 days
-! Version: 2017113001
+! Version: 2017113002
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/polski-filtr-adblock/
-! v.2017113001 aktualizacja: czw, 30 listopada 2017, 00:20:00
+! v.2017113002 aktualizacja: czw, 30 listopada 2017, 21:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -345,6 +345,7 @@ auto.pl###intertext1 > .text-center.col-all-max
 autocentrum.pl###new_banner + div[style="max-width: 750px; margin: 0 auto; padding-bottom: 15px;"]
 autocentrum.pl##a[href^="http://blbl.cr/"]
 autodoradca.pl##.banner-top
+autofascynacje.pl##IMG.image-style-bdvert
 bajkitv.pl###watch
 baltic.info.pl##IMG[style="display: block; margin-left: auto; margin-right: auto;"]
 bankier.pl##[class$="Adv"]
@@ -395,9 +396,10 @@ biznes.pl##.e_Box.analyses
 biznes.pl##.rightBoxR.boxPopComtR.cl
 biznesalert.pl##.banner-overlay
 biznesalert.pl##A[target="_blank"] > IMG.img-responsive
-biznesnafali.pl##[target="_blank"] > .vc_single_image-img.attachment-full
+biznesnafali.pl,biznestuba.pl##[target="_blank"] > .vc_single_image-img.attachment-full
 biznes2biznes.com##DIV[style="width:200px;float:right;display:block;margin-left:-5px;"]
 biznes2biznes.com##[id^="stickynote"]
+biznestuba.pl##DIV[class^="td-a"] > A > IMG
 biznesforum.pl##div[style="border-left:1px solid #cccccc;border-right:1px solid #cccccc;padding:0px;"]:not([id])
 biztok.pl,teleshow.wp.pl,gwiazdy.wp.pl,moto.wp.pl,wiadomosci.wp.pl,money.pl,turystyka.wp.pl,finanse.wp.pl,www.wp.pl##A[href^="http://dot.wp.pl/redir"]
 blog.pluralsight.com##.video.widescreen.flex-video
@@ -411,7 +413,7 @@ booksclub.pl##IMG[src*="/banners/"]
 bowlingnews.pl##IMG[class^="alignnone size-"]
 brainly.pl##.brn-ads-box
 bramkasms.pl###ja-left1
-bryk.pl##[class^="advert-"]
+bryk.pl,zvami.tv##[class^="advert-"]
 btc-jak-bitcoin.blog.pl##A > IMG[width="250"]
 businessjournal.pl##.add
 businessjournal.pl##A[href^="http://"] > [class*="wp-image-"][width="750"]
@@ -544,7 +546,8 @@ dobreprogramy.pl##div[id="slide-menu"] > a[id][href="#"]
 dobreprogramy.pl##a[href*="campaign=baner"]
 dobreprogramy.pl###divPoweredBy
 dobreprogramy.pl##script:inject(abort-on-property-read.js, _0x373f)
-dobreprogramy.pl##body > .page-form > script + style + *:empty
+dobreprogramy.pl##body > .page-form > :empty:matches-css-before(content: /reklama/)
+dobreprogramy.pl##body > .page-form > * :only-child:last-child:empty:matches-css-before(content: /reklama/)
 dodajzdjecie.funfootball.pl##.wp-image-9996
 dogry.pl##.pro-box
 dojrzalakobieta.pl###slider-with
@@ -582,6 +585,7 @@ e-kg.pl##.bannergroup
 e-kg.pl##.rstboxes
 e-kg.pl##DIV[style="text-align: center;"]
 e-kg.pl##a[href="http://www.e-leclerc.pl/"]
+e-widuchowa.pl##.bgad
 echo24.tv##[class^="banner-"]
 efilmy.tv##.addbackground
 egami-image.com##img[src*="tvsat-sklep.com"]
@@ -1087,6 +1091,7 @@ mikrokontroler.pl##[id^="block-simpleads-ad"]
 mikrokontroler.pl###text-3
 mikrokontroler.pl###text-5
 mikrokontroler.pl##.g.g
+minecraft-list.pl##.promocontainer
 mistrzowie.org###services_box
 mistrzowie.org##[href*="utm_source=mistrzowie&utm_medium=banner&utm_campaign=pewexserwisy_mistrzowie"]
 mistrzowie.org##a[href^="http://pewex.pl/"]
@@ -1336,6 +1341,7 @@ podhale24.pl##h6
 podhale24.pl,optyczne.pl##.banner
 pogoda.dziennik.pl###idm140677357800800
 pogoda.onet.pl##.ssListaContainer
+polnocna.tv##A[href^="/ad/"] > IMG
 polscygracze.pl##.gridlove-sidebar > .LfUW8dL1Hl-widget.gridlove-box.widget
 polskaligaesportowa.pl##.home-partners
 polskaniepodlegla.pl##.header
@@ -1402,6 +1408,7 @@ przegladoponiarski.pl##.banners
 przegladsportowy.pl###region-item20927
 przegladsportowy.pl##[id$="_ARTICLE_TOP"]
 przegladsportowy.pl##A > .lazy:last-child
+przychodnia.pl##.prnetItem
 pszczynska.pl,szajn.pl##.baner
 plotek.pl##[id^="frame-"]
 pudelek.tv,wp.tv,interaktywnie.com##[src^="http://adv.wp.pl"]
@@ -1415,7 +1422,7 @@ pzn.pl###EditoPopup\$Panel133
 pzpm.org.pl###powiadomiony
 q4.pl###\33 DIV
 q4.pl###bglink
-q4.pl,fakty.plportal.pl,chinytolubie.pl,filmyfantastyczne.pl,dts24.pl,mragowo24.info,przemysl.info.pl,eluban.pl,wien.info,tkn24.pl,resellernews.pl,independenttrader.pl,scie24.pl,ogrodinfo.pl,zakliczyninfo.pl,kk24.pl,gieldykryptowalut.pl,odkryjbitcoin.pl,stacja7.pl,kryptoholik.pl,btc-jak-bitcoin.blog.pl,cashowsky.pl,historyk.eu,marihuanamedyczna.com,pcworld.pl,esanok.pl,lovekrakow.pl,swiatdronow.pl##A[target="_blank"] > IMG
+q4.pl,fakty.plportal.pl,chinytolubie.pl,filmyfantastyczne.pl,dts24.pl,mragowo24.info,przemysl.info.pl,eluban.pl,wien.info,tkn24.pl,resellernews.pl,independenttrader.pl,scie24.pl,ogrodinfo.pl,zakliczyninfo.pl,kk24.pl,gieldykryptowalut.pl,odkryjbitcoin.pl,stacja7.pl,kryptoholik.pl,btc-jak-bitcoin.blog.pl,cashowsky.pl,historyk.eu,marihuanamedyczna.com,pcworld.pl,esanok.pl,lovekrakow.pl,swiatdronow.pl,glosgminny.pl,damitv.pl ##A[target="_blank"] > IMG
 q4.pl##TD[bgcolor="#f0f0f0"]
 q4.pl##TD[valign="middle"]
 nacjonalista.pl##DIV[align="center"]
@@ -1536,10 +1543,6 @@ softonic.pl##[id^="show_banner_"]
 s0urce.io##.login-element:nth-of-type(3)
 s0urce.io###window-msg2
 speedtest.pl##div[style^="width: 1068px; height: 470px; margin: 20px auto"]
-!spidersweb.pl###nonsticky_1
-!spidersweb.pl##.sidebar-panel[data-equalizer-watch^="entrieshome"][id^="sidebar_anchor_parent_"]
-!spidersweb.pl##a[href*="&utm_medium=baner"][target] > img[src^="http://ocs-pl.oktawave.com/"]:not([class])
-!spidersweb.pl##.container > .show-for-medium.row
 spidersweb.pl##.playstation.wall-bg:style(background: none!important)
 !spidersweb.pl##.wall-bg-banner
 spidersweb.pl##iframe[src*="ads"]
@@ -2888,7 +2891,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 ||pushad.io^
 ||proxy.synerise.com/*/web-push/get-public-config
 ||www.wp.pl/webpush/static/js/webpush.js$script
-||cdn.gravitec.net/storage/*/client.js$script
+||cdn.gravitec.net/sites/*/client.js,$script
 bzwbk.pl###pushwoosh-pop
 pomponik.pl##.ppg__signin
 !
