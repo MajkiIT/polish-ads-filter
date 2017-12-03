@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85, Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477, gwarser, mat41997 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 1 December 2017
+! Last modified: 3 December 2017
 ! Expires: 2 days
-! Version: 2017120103
+! Version: 2017120301
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/polski-filtr-adblock/
-! v.2017120103 aktualizacja: ptk, 1 grudnia 2017, 12:15:00
+! v.2017120301 aktualizacja: nie, 3 grudnia 2017, 18:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -64,7 +64,7 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||afftrack001.com^
 ||vdztrack.com^
 ||zxtrace.com/*=cda-hd.pl$document
-||lab.ankieta-online.pl/q/*/*/invitation.html$document,domain=lab.ankieta-online.pl
+||ankieta-online.pl/q/*/*/invitation.html$document,domain=lab.ankieta-online.pl
 !
 !
 !-----------------------Elements hide on movie-----------------------!
@@ -246,7 +246,7 @@ pl###pixad-box
 ##a[href^="https://affiliate.bitbay.net/"]
 ##.module_single_ads
 ##.zalando-placeholder
-##[class^="cg-template"]
+.pl##[class*="cg-template"]
 !
 !
 !------------------------Specific element hiding rules------------------------!
@@ -409,6 +409,9 @@ bloog.pl##.clr.wrapper > .cnt
 blogmobility.pl##.top-baner
 bobrzanie.pl##.size-full.aligncenter
 bochnianin.pl##.xo
+booklips.pl###custom_html-24 > .widget-wrap.widget_text > .custom-html-widget.textwidget
+booklips.pl##.home:style(background-image: none !important;)
+booklips.pl#?#.widget_custom_html:-abp-contains(Patron)
 booksclub.pl##IMG[src*="/banners/"]
 bowlingnews.pl##IMG[class^="alignnone size-"]
 brainly.pl##.brn-ads-box
@@ -586,6 +589,7 @@ e-kg.pl##.bannergroup
 e-kg.pl##.rstboxes
 e-kg.pl##DIV[style="text-align: center;"]
 e-kg.pl##a[href="http://www.e-leclerc.pl/"]
+e-kursy-walut.pl##a[href^="https://link.e-kursy-walut.pl/"]
 e-widuchowa.pl##.bgad
 echo24.tv##[class^="banner-"]
 efilmy.tv##.addbackground
@@ -724,6 +728,7 @@ gazeta.pl##.photos_loaded.box_bargains.page-section.html > .slices-container.con
 gazeta.pl##.mod_alias_under_article
 gazeta.pl##.binInLinksList
 gazeta.pl##.mod_sponsoredArticle
+gazeta.pl##.type_default
 gazetka.be##[id^="djslider"]
 gazetka.be##IMG[src^="/images/stories/wspolpraca/"]
 gazetapolska.pl###sg1
@@ -1013,6 +1018,7 @@ lubartow24.pl##[style="text-align: center; padding-bottom: 8px; margin: 0 auto;"
 lubartow24.pl##DIV[style="margin: 0 auto; text-align: center; max-width: 950px;"]
 lubartow24.pl##.img-responsive
 lubimyczytac.pl##.container_12 > A[href^="http://lubimyczytac.pl/redirect.php"]
+lubimyczytac.pl###content-container:style(background: none !important; padding-top: 0px !important)
 lubin.pl##.a-.g-single
 lubin.pl##.ad_group
 lubin.pl##.panel-widget-style.bottomspace.topspace
@@ -1243,7 +1249,6 @@ oboom.com###bgfadewnd1
 oboom.com###wcontent_wnd1
 oboom.com###wnd1
 oleole.pl###pop_newsletter_inner
-oleole.pl##.banners-header
 oleole.pl##[id^="ddd_left"]
 oleole.pl##[id^="ddd_right"]
 olx.pl###ytplayer
@@ -1387,6 +1392,7 @@ pracuj.pl##.betamore.openJDOMWindow
 pracuj.pl##.expander
 pracuj.pl##[id^="divFav"]
 prawo.money.pl###img11155698
+prawodrogowe.pl##IMG.img-responsive[src^="/img/banner/"]
 press.pl,ogrodinfo.pl###topBanner
 pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
@@ -1424,7 +1430,7 @@ pzn.pl###EditoPopup\$Panel133
 pzpm.org.pl###powiadomiony
 q4.pl###\33 DIV
 q4.pl###bglink
-q4.pl,fakty.plportal.pl,chinytolubie.pl,filmyfantastyczne.pl,dts24.pl,mragowo24.info,przemysl.info.pl,eluban.pl,wien.info,tkn24.pl,resellernews.pl,independenttrader.pl,scie24.pl,ogrodinfo.pl,zakliczyninfo.pl,kk24.pl,gieldykryptowalut.pl,odkryjbitcoin.pl,stacja7.pl,kryptoholik.pl,btc-jak-bitcoin.blog.pl,cashowsky.pl,historyk.eu,marihuanamedyczna.com,pcworld.pl,esanok.pl,lovekrakow.pl,swiatdronow.pl,glosgminny.pl,damitv.pl ##A[target="_blank"] > IMG
+q4.pl,fakty.plportal.pl,chinytolubie.pl,filmyfantastyczne.pl,dts24.pl,mragowo24.info,przemysl.info.pl,eluban.pl,wien.info,tkn24.pl,resellernews.pl,independenttrader.pl,scie24.pl,ogrodinfo.pl,zakliczyninfo.pl,kk24.pl,gieldykryptowalut.pl,odkryjbitcoin.pl,stacja7.pl,kryptoholik.pl,btc-jak-bitcoin.blog.pl,cashowsky.pl,historyk.eu,marihuanamedyczna.com,pcworld.pl,esanok.pl,lovekrakow.pl,swiatdronow.pl,glosgminny.pl,damitv.pl,przyjaznawarszawa.pl,ecoportal.com.pl,zd24.pl,historiasportu.info,wszczecinie.pl##A[target="_blank"] > IMG
 q4.pl##TD[bgcolor="#f0f0f0"]
 q4.pl##TD[valign="middle"]
 nacjonalista.pl##DIV[align="center"]
@@ -1631,7 +1637,7 @@ tabletowo.pl##[rel="nofollow"][target="_blank"]
 tabletowo.pl##a[href*="dhosting.pl"]
 tabletowo.pl##a[href*="goo.gl"]
 tabletowo.pl###menu-item-komputronik, #re_kk_near_logo
-taniaksiazka.pl##A[target="_self"] > IMG
+taniaksiazka.pl,gsmmaniak.pl##A[target="_self"] > IMG
 targeo.pl###Advertisement
 tarnow.in###text-21 > .post-header > .post-header
 tarnow.in##img[src][alt^="Baner"]
@@ -1794,6 +1800,7 @@ wirtualnemedia.pl###adv_bottom
 wirtualnemedia.pl###newsletter
 wirtualnemedia.pl##SPAN[style="color: #656971; font-size: 10px; font-weight: normal;"]
 wirtualnemedia.pl##a[href="http://www.wirtualnemedia.pl/praca/"]
+wirtualnyelk.pl##A[href="/reklama.html"] > IMG
 wizaz.pl###autoPromoBigBaner
 wizaz.pl###contentAfPromo
 wizaz.pl###forum-gad2
@@ -1955,10 +1962,14 @@ zaufanatrzeciastrona.pl##a[href="https://zaufanatrzeciastrona.pl/ydAb"]
 zaufanatrzeciastrona.pl##a[href="https://zaufanatrzeciastrona.pl/ydAc"]
 zaufanatrzeciastrona.pl##body > * > * > a[href]:not([href="//zaufanatrzeciastrona.pl"]) > img
 zaufanatrzeciastrona.pl###sponsor3
+zawiszafans.net##body > p
+zawiszafans.net###najblizszyMeczk, #wspieraja-nas
+zawiszafans.net##table
 zebrra.tv##.sam-container
 zeglarski.info##[style="margin-bottom: 20px; "] > A
 zespolmi.pl##a[href^="https://prisonwarsonline.com/"]
 zielonanews.pl##A.gofollow > IMG
+zielonydziennik.pl##.a-single
 zory.dlawas.pl##.in.fade.modal-backdrop
 zory.dlawas.pl##.modal-dialog
 zrabatowani.pl##.center-block.hidden-xs
@@ -2587,6 +2598,7 @@ zrabatowani.pl###popup-adblock-bottom
 !
 !
 !---------------------------------Anti Adblock Rules blocking filters----------------------------------!
+astroweb.pl##script:inject(abort-on-property-read.js, checkAds)
 ||bankier.pl/static/js/kichot.js$script
 ||blog.nowebrzmienia.pl/wp-content/themes/awaken/js/scripts.js$script
 ||filmozercy.com/img/adblock/$image
@@ -2870,7 +2882,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 /^http:\/\/p[0-9]{6,10}\.[a-z]{5,10}\.com\/itab\/[a-z?=A-Z_0-9&]{10,}Zippyshare\.com[a-z0-9A-Z%.'-]{5,}/$popup
 /^http:\/\/[a-z0-9]{9,10}\.com\/[0-9]{7,9}\.html\?q/$document
 /^(http|https):\/\/[a-z.-]{5,30}\/client\?party/$script,domain=openkatalog.com
-/^(http|https):\/\/[a-z.]{5,10}\.[a-z]{2,4}\/[a-z]{3,7}\?[a-zA-Z0-9=&%]{150,250}/$popup,domain=centrum-dramy.pl|a-o.ninja
+/^(http|https):\/\/[a-z.]{5,10}\.[a-z]{2,4}\/[a-z]{3,7}\?[a-zA-Z0-9=&%-]{150,250}/$popup,domain=centrum-dramy.pl|a-o.ninja
 !
 !
 !--------------------------Stupid notifications------------!
@@ -3074,7 +3086,7 @@ cryptonews.pl###text-6, #text-5
 crypto-trader.pl##.wp-image-1528
 blogprezesa.pl,kryptowaluty.info.pl,litecoin.pl##.aligncenter
 jedzbawsie.pl,ekspert.ceneo.pl###text-7
-ndie.pl,magazynfakty.pl##.textwidget
+ndie.pl,magazynfakty.pl,obserwatorfinansowy.pl##.textwidget
 gamenerd.pl###text-46
 hdtvpolska.com,ps4life.pl###text-4
 historykon.pl###text-3
