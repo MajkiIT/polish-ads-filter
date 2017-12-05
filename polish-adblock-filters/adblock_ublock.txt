@@ -1,0 +1,230 @@
+[Adblock Plus 2.0]
+! Title: uBlock polish filters - supplement
+! polskie filtry do uBlocka - uzupelnienie
+! Collaborators: F4z, xxcriticxx, hawkeye116477
+! Homepage: https://www.certyficate.it/
+! Last modified: 17 November 2017
+! Expires: 4 days
+! Version: 2017111701
+! Contact: errors@certyficate.it
+! Support: https://github.com/MajkiIT/polish-ads-filter/issues
+! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
+! Copyright (C) 2017 Certyficate IT
+! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
+! v.2017111701 aktualizacja: ptk, 17 listopada 2017, 20:20:00
+!
+!
+!--------------------------Rules only to uBlock-------------!
+! http://alltube.tv/
+! Ominięcie czekania
+alltube.tv###please-wait-container
+alltube.tv###iframe-container:style(display: block !important;)
+alltube.tv##script:inject(noeval.js)
+!
+! http://www.czasbajki.pl/
+! Ominięcie czekania
+czasbajki.pl###kAdd
+czasbajki.pl###kSplash
+czasbajki.pl###kFinal:style(display: block !important;)
+!
+! http://www.efilmy.tv/
+! Ominięcie przycisku "Close Ad and Watch as Free User"
+efilmy.tv###step1
+efilmy.tv###hideOnClick
+efilmy.tv###playerVidzer:style(display: block !important;)
+!
+! http://gahe.pl/
+! Ominięcie czekania
+gahe.pl###gameloader
+gahe.pl###flashgame:style(visibility: visible; display: block;)
+!
+! http://www.gry.jeja.pl/
+! Ominięcie czekania
+jeja.pl##.gameLoading
+jeja.pl###adLoading
+jeja.pl###swf:style(visibility: visible !important; position: static !important; left: 0px !important;)
+jeja.pl###game:style(visibility: visible !important; position: static !important; left: 0px !important;)
+!
+!# Ominięcie reklam przed filmami
+motobanda.pl###mvideo:style(z-index: 1!important;)
+!
+! http://www.national-geographic.pl/
+! Puste miejsce po reklamie
+@@||national-geographic.pl/bundles/burdacore/js/adv.js$script
+national-geographic.pl##.advertising-billboard:style(height: 0px !important;)
+!
+! http://www.wykop.pl/
+! Usunięcie komunikatu o ciasteczkach
+wykop.pl##.cookie
+wykop.pl##.type-permanent+#nav:style(top: 0px !important)
+wykop.pl##.type-permanent+#nav+div:style(padding-top: 49px !important)
+!
+! zalukaj.tv 
+! Usunięcie "KLIKNIJ, ABY OBEJRZEĆ"
+zalukaj.com###freePlayerWatch
+zalukaj.com###free_player:style(display: block !important;)
+!
+! ebay.pl
+ebay.pl##[id="gh"][role="banner"]:style(margin: 0 0 0 0 !important;)
+ebay.pl##[id="gh-gb"][tabindex="-1"][class="gh-banner-active gh-gb-shadow"]:style(border-top: 0px !important;)
+!
+! gry-online.poszkole.pl
+! szybsze ładowanie gier
+gry-online.poszkole.pl###fgame:style(width: 850px !important; height: 600px !important;)
+gry-online.poszkole.pl###mr-tomato
+!
+! cda.pl
+cda.pl###aa_ad
+cda.pl###obiekt:style(display: block !important;)
+cda.pl###kolumnaSrodkowa:style(height: auto !important;)
+!
+! pclab.pl
+!pclab.pl###header .left .sponT:style(height: 100px !important;)
+!pclab.pl###header .right .sponT:style(height: 75px !important;)
+!pclab.pl###headerwrapper:style(height: 140px !important;)
+!pclab.pl###categories:style(top: 33px !important;)
+!pclab.pl###header:style(z-index: 0 !important;)
+!pclab.pl###tabwrapper #tab:style(margin-top: 90px !important;)
+pclab.pl##.logoS:style(width: 275px; padding: 11px 0 0 5px; height: 74px; float: left;)
+||pclab.pl/css/extra
+!
+! playpuls.pl
+! Ominięcie reklam
+playpuls.pl##script:inject(abort-on-property-write.js, ads)
+!
+! senda.pl
+! Ukrycie pustego miejsca po reklamie
+senda.pl##.advert_box > div > .tablebg:style(height: 1px !important; visibility: hidden !important;)
+!
+! Blokowanie reklam z unblock.onaudience.com
+autocentrum.pl,demotywatory.pl,dziennik.pl,facetemjestem.pl,gala.pl,garnek.pl,gry-online.pl,jegostrona.pl,joemonster.org,kobieta.pl,komixxy.pl,transfery.info,v10.pl##script:inject(abort-on-property-write.js, ub_ct_load)
+tvn24.pl##script:inject(abort-on-property-write.js, Vublock)
+!
+! 4lomza.pl
+4lomza.pl##body.polityka-cookies:style(margin-top: 0px !important;)
+!
+! www.ps4forum.pl
+www.ps4forum.pl##.googleheader
+www.ps4forum.pl##.forumsTabLinks.tabLinks:style(top: 60px !important;)
+!
+! dobreprogramy
+dobreprogramy.pl##body#top:style(background-image: none!important;)
+dobreprogramy.pl##body.variant-mobile div[style="color: #A9A9A9; text-align:center;font-size:11px;"]:style(visibility: hidden!important;)
+forum.dobreprogramy.pl##body[class]:style(background-image: none !important;)
+dobreprogramy.pl##script:inject(setTimeout-defuser.js, o = null, n || e.apply(r, i))
+dobreprogramy.pl##script:inject(abort-on-property-read.js, Element.prototype.attachShadow)
+!
+! purepc.pl
+purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !important; position: absolute !important;)
+!
+! filmweb.pl
+||fwcdn.pl/adv/$script,domain=filmweb.pl,important
+!
+! wp.pl
+wp.pl##script:inject(abort-on-property-read.js, WP.inline)
+www.wp.pl##:xpath(//div[count(*)=1][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
+~www.wp.pl,wp.pl##:xpath(//div[count(*)=3][img[@class][@src]][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
+www.wp.pl##:xpath(//div[@data-st-area='Zakupy'][count(*)=2][not(header)])
+!
+! kurnik.pl
+kurnik.pl##.adsbygoogle:style(height: 1px !important; width: 1px !important;)
+!
+! weszlo.com
+weszlo.com##body > #page:style(margin-top: 137px !important;)
+weszlo.com##body > #page > .main-page-content > .navbar-fixed-top:style(top: 0px !important;)
+!
+! antyweb.pl
+antyweb.pl##article.newsletter-block:style(filter: none !important; max-height: none !important; user-select: auto !important; border-top: none !important;)
+!
+! iitv.pl i serialnet.pl
+iitv.pl##script:inject(noeval.js)
+!
+! komputerswiat.pl
+komputerswiat.pl#@#.adsbygoogle
+komputerswiat.pl##.adsbygoogle:style(height: 1px !important;)
+!
+! bezuzyteczna.pl
+bezuzyteczna.pl##section > script + div[id^="crt"][style]
+bezuzyteczna.pl##section:has(script + div[id^="crt"][style])
+!
+! kalisz.info.pl /ciasteczka/
+kalisz.info.pl###all:style(top: 0px !important;)
+!
+! naekranie.pl
+! Timery ladujace reklamy
+naekranie.pl##script:inject(setInterval-defuser.js, function neTick(){neTickCounter++;if(neTickCounter<=neTickCountLimit){neTickAjax=$.ajax({type:"POST",url:adminAjaxUrl+"?action=ne_tick",dataType:"json",success:function(data){neTickResponseAction(data)}})}}, 10000)
+naekranie.pl##script:inject(setTimeout-defuser.js, function check(){console.log("checked");if($(".adform").children().length>3){console.log("its more");$(".adform").children(".adform-banner").show();clearTimeout(check)}}, 1000)
+!
+! tv.jardello.com
+videosio.pl###video_player_container:style(display: inline !important;)
+videosio.pl###preroll_placeholder
+!
+! bankier.pl
+bankier.pl##.boxContent > ul > li[class^="item-"]:has(.premium-link)
+bankier.pl##script:inject(abort-on-property-write.js, detectAB)
+!
+! efilmy.online
+efilmy.online##script:inject(impspcabe-defuser.js)
+!
+! streamango.com
+streamango.com##script:inject(abort-on-property-write.js, BetterJsPop)
+!
+! raptu.com
+raptu.com##script:inject(noeval.js)
+!
+! filiser.tv
+filiser.tv##script:inject(abort-on-property-write.js, _yhbog)
+!
+! streamin.to
+streamin.to##script:inject(noeval-if.js, RTCPeerConnection)
+!
+! Popupy https://github.com/MajkiIT/polish-ads-filter/issues/2478
+||go.onclasrv.com/apu.php$script,redirect=noopjs,important
+!
+! reklama po prawej np. na pclab.pl,onet.pl,businessinsider.com.pl,noizz.pl,komputerswiat.pl,plejada.pl
+auto-swiat.pl,businessinsider.com.pl,komputerswiat.pl,noizz.pl,onet.pl,pclab.pl,plejada.pl,vod.pl###nitro-block:style(position: absolute!important; left: -3000px!important;)
+!
+! blokowanie gemius 
+||onet.hit.gemius.pl/fpdata.js$script,important
+||onet.hit.gemius.pl/xgemius.js$script,important
+!
+! www.4clubbers.com.pl
+www.4clubbers.com.pl##body:style(margin: 0px !important; margin-top: 0px !important;)
+!
+! originals24.pl
+originals24.pl##table > tbody > tr > td > font:has-text(Reklama)
+!
+! grymel.pl
+www.grymel.pl###layout:style(margin-top: 5px !important;)
+!
+! benchmark.pl
+benchmark.pl###bannerDBB:style(height: 10px !important;)!
+!
+! dvbtmap.eu
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$important,script,redirect=noopjs,domain=dvbtmap.eu
+dvbtmap.eu###leftCol:style(top: 51px!important)
+dvbtmap.eu###content-container:style(margin-top: 0px!important;)
+!
+! naszemiasto.pl - https://github.com/MajkiIT/polish-ads-filter/issues/3175
+naszemiasto.pl##script:inject(abort-on-property-write.js, czy_wlaczony_adblock)
+!
+! anyfiles.pl
+anyfiles.pl##script:inject(abort-on-property-read.js, launchOpenWindow)
+!
+! mkidn.gov.pl i puma.com
+! Ukrycie popupów o ciasteczkach
+mkidn.gov.pl###myModal
+mkidn.gov.pl,puma.com##.modal-open:style(padding-right: 0px!important; overflow: visible!important;)
+puma.com###modal-geoip-cookies, .modal-backdrop
+!
+! purepc.pl
+purepc.pl##script:inject(setTimeout-defuser.js, ub_fix())
+purepc.pl##html > body:style(background: #d5d5d5!important;)
+!
+! animezone.pl
+animezone.pl##script:inject(noeval.js)
+animezone.pl##script:inject(abort-on-property-read.js, o6c6e)
+!
+! parenting.pl
+parenting.pl##:xpath(//div[count(*)=1][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
+parenting.pl##:xpath(//div[count(*)=1][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
