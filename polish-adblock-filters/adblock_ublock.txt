@@ -3,15 +3,15 @@
 ! polskie filtry do uBlocka - uzupelnienie
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, mat41997
 ! Homepage: https://www.certyficate.it/
-! Last modified: 06 December 2017
+! Last modified: 6 Dec 2017
 ! Expires: 1 days
-! Version: 2017120601
+! Version: 2017120602
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2017120601 aktualizacja: sr, 06 December 2017, 05:59
+! v.2017120602 aktualizacja: sr, 6 grudnia 2017, 15:15
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -209,8 +209,10 @@ naszemiasto.pl##script:inject(abort-on-property-write.js, czy_wlaczony_adblock)
 ! anyfiles.pl
 anyfiles.pl##script:inject(abort-on-property-read.js, launchOpenWindow)
 !
-! mkidn.gov.pl, puma.com i unileverfoodsolutions.pl
+! auto-czesci-lipiec.pl, mkidn.gov.pl, puma.com i unileverfoodsolutions.pl
 ! Ukrycie popupów o ciasteczkach
+auto-czesci-lipiec.pl###mAll
+auto-czesci-lipiec.pl##.modal-open:style(overflow: visible !important; padding-right: 0px !important;)
 mkidn.gov.pl###myModal
 mkidn.gov.pl,puma.com##.modal-open:style(padding-right: 0px!important; overflow: visible!important;)
 puma.com###modal-geoip-cookies, .modal-backdrop
