@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85, Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477, gwarser, mat41997 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 5 December 2017
+! Last modified: 6 December 2017
 ! Expires: 2 days
-! Version: 2017120504
+! Version: 2017120601
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/polski-filtr-adblock/
-! v.2017120504 aktualizacja: wt, 5 grudnia 2017, 21:55:00
+! v.2017120601 aktualizacja: sr, 6 grudnia 2017, 07:30:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -380,6 +380,12 @@ bielsko.info,tychy.info,czecho.pl##[id^="linki-sponsorowane-col-group-"]
 bielsko.biala.pl##[id^="placeholder_"]
 bielsko.biala.pl##.rekl-title
 bielsko.info##DIV[data-ads-id] > [class$="970x250"]
+bielsko.info,czecho.pl,pless.pl,tychy.info##.blok-artykul > .wrapper-row:nth-of-type(1)
+bielsko.info,czecho.pl,pless.pl,tychy.info##.linki-sponsorowane-col, .skyscraper
+bielsko.info,czecho.pl,pless.pl,tychy.info##main > .serwis.small.pasek-gray
+bielsko.info,czecho.pl,pless.pl,tychy.info#?#body > .page > main > .small.pasek-gray:-abp-contains(Reklama)
+djfranek.pl,mojelokum.pl,mojapraca.pl,turboportal.pl,wujekfranek.pl##.sidebar-lock
+djfranek.pl,mojelokum.pl,turboportal.pl,wujekfranek.pl##.r-dynamiczna.zajawka
 bilgorajska.pl###box_r
 bilgorajska.pl##.czytaj_dalej
 binary24.pl###topbanner > .przypis
@@ -2911,6 +2917,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 ||www.wp.pl/webpush/static/js/webpush.js$script
 ||cdn.gravitec.net/sites/*/client.js
 ||cdn.gravitec.net/storage/*/client.js
+antyweb.pl###pushAdUpBanner > div
 bzwbk.pl###pushwoosh-pop
 pomponik.pl##.ppg__signin
 !
@@ -3086,6 +3093,7 @@ filmweb.pl##script:inject(abort-on-property-write.js, sas)
 ambassador24.pl###text-6 > .textwidget
 autofakty.pl##.widget_text.widget
 bieznie-treningowe.pl###text-2
+blogujmy24.pl###text-3
 cryptonews.pl###text-6, #text-5
 crypto-trader.pl##.wp-image-1528
 blogprezesa.pl,kryptowaluty.info.pl,litecoin.pl##.aligncenter
