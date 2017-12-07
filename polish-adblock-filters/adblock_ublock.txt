@@ -3,15 +3,15 @@
 ! polskie filtry do uBlocka - uzupelnienie
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, mat41997
 ! Homepage: https://www.certyficate.it/
-! Last modified: 6 Dec 2017
-! Expires: 1 days
-! Version: 2017120602
+! Last modified: 7 December 2017
+! Expires: 4 days
+! Version: 2017120701
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2017120602 aktualizacja: sr, 6 grudnia 2017, 15:15
+! v.2017120701 aktualizacja: czw, 7 grudnia 2017, 12:05:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -231,3 +231,8 @@ animezone.pl##script:inject(abort-on-property-read.js, o6c6e)
 ! parenting.pl
 parenting.pl##:xpath(//div[count(*)=1][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
 parenting.pl##:xpath(//div[count(*)=1][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
+!
+! nslowo.pl
+||bestcontent.solutions/images/baner$image
+nslowo.pl###gkTopBar:style(position: static !important;)
+nslowo.pl###gkBg:style(background: none !important;)
