@@ -1,18 +1,18 @@
 [Adblock Plus 2.0]
 ! Title: Adblock & uBlock polish filters
-! polskie filtry do Adblocka i uBlocka
+! Polskie filtry do Adblocka i uBlocka
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85, Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477, gwarser, mat41997 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
-! Last modified: 8 December 2017
+! Last modified: 9 December 2017
 ! Expires: 2 days
-! Version: 2017120803
+! Version: 2017120901
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/polski-filtr-adblock/
-! v.2017120803 aktualizacja: ptk, 7 grudnia 2017, 11:05:00
+! v.2017120901 aktualizacja: sob, 9 grudnia 2017, 14:40:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -445,6 +445,7 @@ cardsplitter.pl##[target="_blank"] > IMG[src^="/images/loga/"][height="249"]
 cartests.net###td-outer-wrap > .td-header-wrap:style(margin-bottom: 0px!important;)
 cartests.net##.td-container > .td-header-sp-recs
 cashowsky.pl##IMG[alt^="Baner"]
+cda.pl##.muimERPIa
 cda.pl###as-narrow1
 cda.pl##.adsense.miniPhotobox
 cda.pl##.block-footer > div:nth-of-type(3)
@@ -1197,9 +1198,9 @@ naekranie.pl##.adform
 naekranie.pl##div:if(>div:first-child:has-text(Reklama))
 naekranie.pl##.except-mobil
 naekranie.pl##DIV > A[target="_blank"] > IMG:last-child
-naekranie.pl##a[href*="naekranie.pl/8c36c658ca"]
-naekranie.pl##.sde03cbbe
 naekranie.pl##.icon-star.box
+naekranie.pl##.s69f742b1
+naekranie.pl##a[href*="naekranie.pl/ff019a9682"]
 naklo24.pl##.ban
 nakolei.pl##.textwidget > A[target="_blank"]
 napisy24.pl##.custom_pozioma
@@ -2417,7 +2418,7 @@ zywiecinfo.pl###blockadblock
 /^(http|https):\/\/www\.wp\.pl\/[a-zA-Z0-9-_]{50,}/$popup,domain=www.wp.pl
 /^(http|https):\/\/www\.chip\.pl\/wp-content\/themes\/_chip\/[a-z]{4,6}\/[a-z]{4,5}-[0-9]{4,5}/$image,domain=chip.pl
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl|poczta.wp.pl
-/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|open.fm|pogoda.wp.pl|dladzieci.pl|ksiazki.wp.pl|kuchnia.wp.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|parenting.pl|fotoblogia.pl|bloog.pl|avent-ugrow.wp.pl|pudelek.pl|pudelekx.pl|nerwica.com
+/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|open.fm|pogoda.wp.pl|dladzieci.pl|ksiazki.wp.pl|kuchnia.wp.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|parenting.pl|fotoblogia.pl|bloog.pl|avent-ugrow.wp.pl|pudelek.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl
 /^https:\/\/vstatic3\.cda\.pl\/v\/[a-zA-Z0-9_]{9,13}\.mp4/$media,object,domain=www.cda.pl
 !
 !
@@ -3158,6 +3159,6 @@ zdrowyportal.org###text-8
 !
 !
 !--------------------------Bitcoin ------------!
-||openkatalog.com/static/anyemotions/*$subdocument
+||openkatalog.com/static/$subdocument
 ||coin-hive.com/lib/coinhive.min.js$script
 ||coinhive.com^
