@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 14 December 2017
 ! Expires: 2 days
-! Version: 2017121401
+! Version: 2017121402
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/polski-filtr-adblock/
-! v.22017121401 aktualizacja: czw, 14 grudnia 2017, 10:55:00
+! v.22017121402 aktualizacja: czw, 14 grudnia 2017, 18:45:00
 !
 !
 !-----------------------General advert blocking filters-----------------------!
@@ -63,7 +63,6 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||nextclick.pl^$script
 ||afftrack001.com^
 ||vdztrack.com^
-||zxtrace.com/*=cda-hd.pl$document
 ||ankieta-online.pl/q/*/*/invitation.html$document,domain=lab.ankieta-online.pl
 !
 !
@@ -457,7 +456,6 @@ cda.pl##a[class][target]:has(img[src*="premium"])
 cda.pl##.wrapercontainer
 cda.pl##.f-img
 cda.pl##DIV[style="width:320px; height:285px;overflow:hidden; text-align:center; margin: 0 auto;position:absolute;top:50%;left:50%;margin-left:-160px;margin-top:-145px"]
-cda-hd.pl##.s_left > [target="_blank"] > IMG[src^="http://cda-hd.pl/wp-content/uploads/201"]
 cenabiznesu.pl##.img-responsive
 !centrumdruku3d.pl###attachment_4083 > div
 centrumdruku3d.pl###slide-bottom-popup
@@ -784,7 +782,7 @@ goniec.net###gkContentTop > .box:nth-of-type(1)
 goniec.net###gkToptop5 > .box
 gorlice24.pl##.owl-item[style="width: 413px;"]
 gorlice24.pl##.red_14
-gorzowianin.com##a[href*="gorzowianin.com/rotator"]
+gorzowianin.com##img[src*="/gorzowianin.com/data/rotator/"]
 gosc.pl###ReleasePromo
 gosc.pl##.fl-w100.webpart-wrap-advert
 gowork.pl##.__b-popup1__.b-modal
@@ -1208,9 +1206,9 @@ naekranie.pl##div:if(>div:first-child:has-text(Reklama))
 naekranie.pl##.except-mobil
 naekranie.pl##DIV > A[target="_blank"] > IMG:last-child
 naekranie.pl##.icon-star.box
-naekranie.pl##.s69f742b1
-naekranie.pl##a[href*="naekranie.pl/ff019a9682"]
 naekranie.pl##.title-p
+naekranie.pl###adocean-screening-layer > Div[class^="s"]
+naekranie.pl##.belka-w-tekscie
 naklo24.pl##.ban
 nakolei.pl##.textwidget > A[target="_blank"]
 napisy24.pl##.custom_pozioma
@@ -1397,7 +1395,7 @@ pomorska.pl##P[style="font:normal 12px/16px Arial,Tahoma,sans-serif;margin:0;pad
 pomorska.pl,dziennikzachodni.pl##figure
 poolska.pl###text-3
 popularnie.pl###gold-header
-popularne.pl##[class^="devel-"]
+popularne.pl,popularne.net##[class^="devel-"]
 poradnikzdrowie.pl,vipmultimedia.pl###slidebox
 poradnikzdrowie.pl##.shopping
 poranny.pl,polskatimes.pl##h2 > span
@@ -1465,7 +1463,7 @@ pzn.pl###EditoPopup\$Panel133
 pzpm.org.pl###powiadomiony
 q4.pl###\33 DIV
 q4.pl###bglink
-q4.pl,fakty.plportal.pl,chinytolubie.pl,filmyfantastyczne.pl,dts24.pl,mragowo24.info,przemysl.info.pl,eluban.pl,wien.info,tkn24.pl,resellernews.pl,independenttrader.pl,scie24.pl,ogrodinfo.pl,zakliczyninfo.pl,kk24.pl,gieldykryptowalut.pl,odkryjbitcoin.pl,stacja7.pl,kryptoholik.pl,btc-jak-bitcoin.blog.pl,cashowsky.pl,historyk.eu,marihuanamedyczna.com,pcworld.pl,esanok.pl,lovekrakow.pl,swiatdronow.pl,glosgminny.pl,damitv.pl,przyjaznawarszawa.pl,ecoportal.com.pl,zd24.pl,historiasportu.info,wszczecinie.pl,forum-bron.pl,zielonydziennik.pl,mieszkaniectargowka.pl,centrumdruku3d.pl,bielski24.pl,applemobile.pl,sprawnypo40.pl,forum.dopalamy.com,cyfrowypolsatnews.pl,olsztyn.com.pl,wpolityce.pl,nasztomaszow.pl,bielskiedrogi.pl,prokapitalizm.pl,agrokapital.pl,wieliczkacity.pl##A[target="_blank"] > IMG
+q4.pl,fakty.plportal.pl,chinytolubie.pl,filmyfantastyczne.pl,dts24.pl,mragowo24.info,przemysl.info.pl,eluban.pl,wien.info,tkn24.pl,resellernews.pl,independenttrader.pl,scie24.pl,ogrodinfo.pl,zakliczyninfo.pl,kk24.pl,gieldykryptowalut.pl,odkryjbitcoin.pl,stacja7.pl,kryptoholik.pl,btc-jak-bitcoin.blog.pl,cashowsky.pl,historyk.eu,marihuanamedyczna.com,pcworld.pl,esanok.pl,lovekrakow.pl,swiatdronow.pl,glosgminny.pl,damitv.pl,przyjaznawarszawa.pl,ecoportal.com.pl,zd24.pl,historiasportu.info,wszczecinie.pl,forum-bron.pl,zielonydziennik.pl,mieszkaniectargowka.pl,centrumdruku3d.pl,bielski24.pl,applemobile.pl,sprawnypo40.pl,forum.dopalamy.com,cyfrowypolsatnews.pl,olsztyn.com.pl,wpolityce.pl,nasztomaszow.pl,bielskiedrogi.pl,prokapitalizm.pl,agrokapital.pl,wieliczkacity.pl,fronda.pl,krytykapolityczna.pl##A[target="_blank"] > IMG
 q4.pl##TD[bgcolor="#f0f0f0"]
 q4.pl##TD[valign="middle"]
 nacjonalista.pl##DIV[align="center"]
@@ -2926,14 +2924,13 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 !
 !--------------------------Rules for pages with random adv scripts------------!
 /^http:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\/[a-zA-Z0-9]{30,}/$script,popup,document
-/^(http|https):\/\/[a-zA-Z.]{8,}\.(com|bid|info)\/[a-zA-Z]{1,}\.js/$script,domain=devil-torrents.pl|electro-torrent.pl|nitro.to|vidlox.tv|playerbox.net|alltube.tv|segos.es|efilmy.online|video.penny.ie|fileone.tv|serialeonline.pl|fili.tv|streamango.com|kinoline.pl|cda-hd.pl|nasze-kino.online|vidto.pl|raptu.com|rapidvideo.com|data-scheme|vidfile.net|sharevideo.pl|sharing-box.cloud|vidstream.xyz|dragon-ball-super.ga|openkatalog.ml|dragon-ball-super.ga|nasze-kino.tv|kino123.pl|boxfilm.pl|cloudupload.co|allonline.pl|openload.co|cda-x.pl|dekoder.ws|abcast.net|darmowa-tv.pl|veecast.net|abcast.net|a-o.ninja|castto.me|centrum-dramy.pl|hentai-online.pl|centrum-mangi.ninja
+/^(http|https):\/\/[a-zA-Z.]{8,}\.(com|bid|info)\/[a-zA-Z]{1,}\.js/$script,domain=devil-torrents.pl|electro-torrent.pl|nitro.to|vidlox.tv|playerbox.net|alltube.tv|segos.es|efilmy.online|video.penny.ie|fileone.tv|serialeonline.pl|fili.tv|streamango.com|kinoline.pl|nasze-kino.online|vidto.pl|raptu.com|rapidvideo.com|data-scheme|vidfile.net|sharevideo.pl|sharing-box.cloud|vidstream.xyz|dragon-ball-super.ga|openkatalog.ml|dragon-ball-super.ga|nasze-kino.tv|kino123.pl|boxfilm.pl|cloudupload.co|allonline.pl|openload.co|cda-x.pl|dekoder.ws|abcast.net|darmowa-tv.pl|veecast.net|abcast.net|a-o.ninja|castto.me|centrum-dramy.pl|hentai-online.pl|centrum-mangi.ninja
 /^http:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=devil-torrents.pl|electro-torrent.pl|nitro.to|alltube.tv|darmowa-telewizja.info|goldvod.tv|darmowa-tv.pl
-/^(http|https):\/\/[a-z0-9]{8,30}\.[a-z]{2,11}\/[0-9]{3,10}/$xmlhttprequest,script,stylesheet,domain=streamin.to|raptu.com|flashx.tv|rapidvideo.com|fili.tv|cda-hd.pl|fileone.tv|animezone.pl
+/^(http|https):\/\/[a-z0-9]{8,30}\.[a-z]{2,11}\/[0-9]{3,10}/$xmlhttprequest,script,stylesheet,domain=streamin.to|raptu.com|flashx.tv|rapidvideo.com|fili.tv|fileone.tv|animezone.pl
 /^(http|https):\/\/[a-z0-9]{5,}\.com\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{5,}\.js/$script,domain=vidto.me|fili.tv|fileone.tv|alltube.tv|srkcast.com|vidfile.net|a-o.ninja
 /^http:\/\/[a-zA-Z0-9]{8,20}\.com\/analytics\/[0-9]{5,7}/$subdocument,script,popup
 /^(http|https):\/\/[a-z0-9]{5,}\.top\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{5,}\.js/$script
-/^(http|https):\/\/[a-zA-Z0-9.]{7,15}\.(com|net)\/[a-z]{3,5}\/[0-9]{5,8}/$subdocument,script,popup,domain=cda-hd.pl
-/^(http|https):\/\/[a-zA-Z0-9]{5,10}\.[a-z]{2,10}\/[a-zA-Z0-9?_=&-.%]{50,70}/$subdocument,script,popup,domain=cda-hd.pl|dekoder.ws|darmowa-tv.pl
+/^(http|https):\/\/[a-zA-Z0-9]{5,10}\.[a-z]{2,10}\/[a-zA-Z0-9?_=&-.%]{50,70}/$subdocument,script,popup,domain=filmtu.pl|dekoder.ws|darmowa-tv.pl
 /^(http|https):\/\/(?!youtube)[a-zA-Z0-9.]{5,20}\.com\/watch\?key=/$popup
 /^(http|https):\/\/ad\.[a-z]{3,10}\.[a-z]{2,3}\/[a-z/?=]{10,}\/asrv\/campaign\//$subdocument
 /^(http|https):\/\/[a-z]{5,10}\.com\/[a-zA-Z0-9+]{80,}/$subdocument,domain=embed.nowvideo.sx|cloudtime.to|darmowa-telewizja.info
