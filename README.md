@@ -1,6 +1,6 @@
 
-# Adblock & uBlock Polish rules
-![Polish Filters to Adblock&uBlock](https://www.certyficate.it/wp-content/uploads/2014/05/logo_ciemne-tło-jasne-litery.png)
+# Adblock, uBlock & AdGuard Polish rules
+![Polish Filters to Adblock, uBlock & AdGuard](https://www.certyficate.it/wp-content/uploads/2014/05/logo_ciemne-tło-jasne-litery.png)
 
 ## About
 
@@ -9,4 +9,6 @@
 ![Fork](https://img.shields.io/github/forks/MajkiIT/polish-ads-filter.svg)
 ![ISSEUS](https://img.shields.io/github/issues/MajkiIT/polish-ads-filter.svg)
 
-We create [filters](https://www.certyficate.it/adblock/) for polish pages. Visit our page https://www.certyficate.it
+We create a [rules list](https://www.certyficate.it/adblock/) for the polish pages. Visit our page https://www.certyficate.it
+
+[*Check the wiki page for the more info..*](https://github.com/MajkiIT/polish-ads-filter/wiki)
