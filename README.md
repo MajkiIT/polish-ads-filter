@@ -1,6 +1,6 @@
 
-# Adblock, uBlock & AdGuard Polish rules
-![Polish Filters to Adblock, uBlock & AdGuard](https://www.certyficate.it/wp-content/uploads/2014/05/logo_ciemne-tło-jasne-litery.png)
+# Adblock, uBlock & AdGuard Polish rules list
+![Polish Rules to Adblock, uBlock & AdGuard](https://www.certyficate.it/wp-content/uploads/2014/05/logo_ciemne-tło-jasne-litery.png)
 
 ## About
 
