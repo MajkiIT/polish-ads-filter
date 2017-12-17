@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 17 December 2017
 ! Expires: 2 days
-! Version: 2017121704
+! Version: 2017121705
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/polski-filtr-adblock/
-! v.2017121704 aktualizacja: nie, 17 grudnia 2017, 16:10:00
+! v.2017121705 aktualizacja: nie, 17 grudnia 2017, 16:40:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -2972,11 +2972,11 @@ wykop.pl##.woodle
 ||www.wykop.pl/img/campaign/$image,domain=www.wykop.pl
 !
 !
-!21#--------------------------Rules unblock protection------------!
+!22#--------------------------Rules unblock protection------------!
 autocentrum.pl,demotywatory.pl,dziennik.pl,facetemjestem.pl,gala.pl,garnek.pl,gry-online.pl,jegostrona.pl,joemonster.org,kobieta.pl,komixxy.pl,transfery.info,v10.pl,prawdaobiektywna.pl##div > iframe[style^="border:"]:not([src])
 !
 !
-!22#--------------------------Pages with bad reputation------------!
+!23#--------------------------Pages with bad reputation------------!
 ||zobaczto.pisz.pl^
 ||filmik.pisz.pl^
 ||platnosc.link^
@@ -2987,17 +2987,17 @@ autocentrum.pl,demotywatory.pl,dziennik.pl,facetemjestem.pl,gala.pl,garnek.pl,gr
 ||adsbtrack.com^
 !
 !
-!22#--------------------------Rules for ublock, but can be use with adblock------------!
+!24#--------------------------Rules for ublock, but can be use with adblock------------!
 ||ipla.hit.stat24.com^$object,domain=ipla.tv,important
 ||imasdk.googleapis.com/js/core/bridge*.html$subdocument,domain=exs.pl,important
 !
 !
-!23#--------------------------Experimental rules------------!
+!25#--------------------------Experimental rules------------!
 facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##script:inject(abort-on-property-write.js, iaqExt)
 wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 !
 !
-!24#--------------------------Rules for pages with random adv scripts------------!
+!26#--------------------------Rules for pages with random adv scripts------------!
 /^http:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\/[a-zA-Z0-9]{30,}/$script,popup,document
 /^(http|https):\/\/[a-zA-Z.]{8,}\.(com|bid|info)\/[a-zA-Z]{1,}\.js/$script,domain=devil-torrents.pl|electro-torrent.pl|nitro.to|vidlox.tv|playerbox.net|alltube.tv|segos.es|efilmy.online|video.penny.ie|fileone.tv|serialeonline.pl|fili.tv|streamango.com|kinoline.pl|nasze-kino.online|vidto.pl|raptu.com|rapidvideo.com|data-scheme|vidfile.net|sharevideo.pl|sharing-box.cloud|vidstream.xyz|dragon-ball-super.ga|openkatalog.ml|dragon-ball-super.ga|nasze-kino.tv|kino123.pl|boxfilm.pl|cloudupload.co|allonline.pl|openload.co|cda-x.pl|dekoder.ws|abcast.net|darmowa-tv.pl|veecast.net|abcast.net|a-o.ninja|castto.me|centrum-dramy.pl|hentai-online.pl|centrum-mangi.ninja
 /^http:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=devil-torrents.pl|electro-torrent.pl|nitro.to|alltube.tv|darmowa-telewizja.info|goldvod.tv|darmowa-tv.pl
@@ -3018,7 +3018,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 /^(http|https):\/\/[a-zA-Z0-9]{5,15}\.(com|net)\/[a-z]{4,10}\/[0-9a-z.?=%A-Z-&]{60,100}/$script,popup,domain=dekoder.ws|veecast.net|darmowa-tv.pl
 !
 !
-!25#--------------------------Stupid notifications------------!
+!27#--------------------------Stupid notifications------------!
 ||cdn.onesignal.com/sdks/OneSignalSDK.js$script
 ||push-ad.com$script
 ||pushcrew.com$script
@@ -3045,7 +3045,7 @@ bzwbk.pl###pushwoosh-pop
 pomponik.pl##.ppg__signin
 !
 !
-!26#--------------------------Rules on tv streams element hiding rules------------!
+!28#--------------------------Rules on tv streams element hiding rules------------!
 dotstream.tv##[id^="deny"]
 privatestream.tv##[id^="deny"]
 privatestream.tv/images/player_logo.png
@@ -3058,7 +3058,7 @@ srkcast.com##[id^="table"]
 bro.adca.st###propis
 !
 !
-!27#--------------------------Rules on tv streams blocking filters------------!
+!29#--------------------------Rules on tv streams blocking filters------------!
 ||abcast.net/p.js$script
 ||fullon.tv/matuma300x250.php$subdocument
 ||nowwatchtvlive.co/matomyads$subdocument
@@ -3072,7 +3072,7 @@ bro.adca.st###propis
 ||d1f5rbi95y1icu.cloudfront.net^
 !
 !
-!28#--------------------------WP Group element hide------------!
+!30#--------------------------WP Group element hide------------!
 avent-ugrow.wp.pl##[class$="BgClick"]
 kafeteria.pl,money.pl,pudelek.pl,autokult.pl##.scr-wallpaper
 komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##BODY > DIV[style*="max-width: 100%; "]
@@ -3093,13 +3093,13 @@ wawalove.pl##.floating-ad.advertisement
 wawalove.pl##a[href="http://dajsygnal.pl/"]
 !
 !
-!29#--------------------------WP element block------------!
+!31#--------------------------WP element block------------!
 ||i.wp.pl/*/stg/wpjslib-nojq.js$script,domain=www.dobreprogramy.pl
 ||xml.enovatis.pl/mrdsl/json.php$xmlhttprequest,domain=turystyka.wp.pl
 ||wpkoszyk.wp.pl/api/koszyk$xmlhttprequest
 !
 !
-!30#--------------------------WP element hide------------!
+!32#--------------------------WP element hide------------!
 pilot.wp.pl##SCRIPT + DIV.row
 pilot.wp.pl##.top-section
 ! potwierdzione
@@ -3161,7 +3161,7 @@ sportowefakty.wp.pl##A[target="_blank"] > DIV[style*="background-image: url(\"ht
 sportowefakty.wp.pl##ASIDE.grid-wx1 > DIV[class]:first-child + * + * + DIV[class]
 !
 !
-!31#--------------------------Pudelek/Pudelekx element hide------------!
+!33#--------------------------Pudelek/Pudelekx element hide------------!
 pudelek.pl##DIV.cb > DIV[class^="m"]
 pudelekx.pl##[id^="adv"]
 pudelek.pl##DIV.m0 > DIV + DIV + DIV[class]
@@ -3177,7 +3177,7 @@ pudelek.pl##LI > DIV[class] + DIV[class]
 pudelek.pl##.results__entry.toRight
 !
 !
-!32#--------------------------Money element hide------------!
+!34#--------------------------Money element hide------------!
 www.money.pl##DIV[style*=" overflow: hidden; "]
 money.pl##DIV[style="margin-bottom: 10px"] + DIV > DIV > DIV + DIV + DIV[class]
 money.pl##.right-column > DIV + DIV[class]
@@ -3202,17 +3202,17 @@ www.money.pl##[class^=" _bc_paragraph_"] + DIV[class]
 www.money.pl##DIV[class] > SPAN[class] + DIV[class]:last-child
 !
 !
-!33#--------------------------Easylist Bugs -----------!
+!35#--------------------------Easylist Bugs -----------!
 @@||wpolityce24.pl/imgcache/300x250/*/uploads/news/$image
 @@||reklama.gazeta.pl^$image,font,script
 filmweb.pl##script:inject(abort-on-property-write.js, sas)
 !
 !
-!34#--------------------------Wordpress blocking filters------------!
+!36#--------------------------Wordpress blocking filters------------!
 ||overwatch.pl/wp-content/uploads/20*/*/250x700*.png$image
 !
 !
-!35#--------------------------Wordpress element hide------------!
+!37#--------------------------Wordpress element hide------------!
 40ton.net##A[target="_blank"] > IMG[class*="wp-image-"]
 ambassador24.pl###text-6 > .textwidget
 autofakty.pl##.widget_text.widget
@@ -3263,7 +3263,7 @@ zdrowyportal.org###text-8
 zwiedzamyparyz.pl###text-6, .a-single, .gyg-widget
 !
 !
-!36#--------------------------Bitcoin ------------!
+!38#--------------------------Bitcoin ------------!
 ||subloader.cf/$subdocument
 ||mercy.ga/$subdocument
 ||coin-hive.com/lib/coinhive.min.js$script
