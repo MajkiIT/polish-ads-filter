@@ -6,13 +6,13 @@
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
 ! Last modified: 17 December 2017
 ! Expires: 2 days
-! Version: 2017121710
+! Version: 2017121711
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/polski-filtr-adblock/
-! v.2017121710 aktualizacja: nie, 17 grudnia 2017, 19:10:00
+! v.2017121711 aktualizacja: nie, 17 grudnia 2017, 22:45:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -3208,6 +3208,7 @@ www.money.pl##DIV[class] > SPAN[class] + DIV[class]:last-child
 !35#--------------------------Easylist Bugs -----------!
 @@||wpolityce24.pl/imgcache/300x250/*/uploads/news/$image
 @@||reklama.gazeta.pl^$image,font,script
+@@||partneragdrtv.com.pl/temp/adrotator_filemanager/*$image
 filmweb.pl##script:inject(abort-on-property-write.js, sas)
 !
 !
@@ -3272,5 +3273,6 @@ zwiedzamyparyz.pl###text-6, .a-single, .gyg-widget
 ||coin-hive.com/lib/coinhive.min.js$script
 ||coinhive.com^
 ||megabanners.cf^$third-party
-/^(https|http):\/\/[a-z]{4,15}\.[a-z]{2,7}\/[a-z/.?=]{15,100}proxy=wss:\/\/[a-z.?:0-9]{10,30}pool=/$script
+/^(https|http):\/\/[a-z]{4,15}\.[a-z]{2,7}\/[a-z/.?=]{15,100}proxy=wss:\/\/[a-z.?:0-9]{10,30}/$script
+/^(https|http):\/\/[a-z]{4,15}\.[a-z]{2,7}\/heywhatsupgirl\/a-o\//
 !END#--------------------------END------------!
