@@ -1,18 +1,18 @@
 [Adblock Plus 2.0]
-! Title: Official Adblock & uBlock Origin & Adguard polish filters
-! Oficjalne polskie filtry do Adblock, uBlock Origin, Adguard
+! Title: Official Polish filters for AdBlock, uBlock Origin & AdGuard
+! Oficjalne polskie filtry do AdBlocka, uBlocka Origin i AdGuarda
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85, Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477, gwarser, mat41997 
 ! Homepage: https://www.certyficate.it/
-! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika 
+! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika
 ! Last modified: 19 December 2017
 ! Expires: 2 days
-! Version: 2017121904
+! Version: 2017121905
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/polski-filtr-adblock/
-! v.2017121904 aktualizacja: wt, 19 grudnia 2017, 11:05:00
+! v.2017121905 aktualizacja: wt, 19 grudnia 2017, 16:30
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -3027,34 +3027,8 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 /^(http|https):\/\/[a-zA-Z0-9]{5,15}\.(com|net)\/[a-z]{4,10}\/[0-9a-z.?=%A-Z-&]{60,100}/$script,popup,domain=dekoder.ws|veecast.net|darmowa-tv.pl
 !
 !
-!27#--------------------------Stupid notifications------------!
-||cdn.onesignal.com/sdks/OneSignalSDK.js$script
-||push-ad.com$script
-||pushcrew.com$script
-||cdn.sendpulse.com$script
-||mxapis.com^
-||gstatic.com/firebasejs/*/firebase*.js$script,domain=dobreprogramy.pl|fotka.com
-||youtubersi.pl/themes/default/js/notify.js$script
-||savecart.pl/*/script.php$script
-||pushango.com^$script,domain=~pushango.com
-||cdn.pushwoosh.com/webpush/*.js$script
-||salesmanago.pl/api/push/$xmlhttprequest
-||cdn.pushassist.com/account/assets/psa-swp.js
-||cdn.pushpushgo.com/scripts/$script
-||pushalert.co^
-||pushengage.com/script.js$script
-||pushify.com$script
-||pushad.io^
-||proxy.synerise.com/*/web-push/get-public-config
-||www.wp.pl/webpush/static/js/webpush.js$script
-||cdn.gravitec.net/sites/*/client.js
-||cdn.gravitec.net/storage/*/client.js
-antyweb.pl###pushAdUpBanner > div
-bzwbk.pl###pushwoosh-pop
-pomponik.pl##.ppg__signin
 !
-!
-!28#--------------------------Rules on tv streams element hiding rules------------!
+!27#--------------------------Rules on tv streams element hiding rules------------!
 dotstream.tv##[id^="deny"]
 privatestream.tv##[id^="deny"]
 privatestream.tv/images/player_logo.png
@@ -3067,7 +3041,7 @@ srkcast.com##[id^="table"]
 bro.adca.st###propis
 !
 !
-!29#--------------------------Rules on tv streams blocking filters------------!
+!28#--------------------------Rules on tv streams blocking filters------------!
 ||abcast.net/p.js$script
 ||fullon.tv/matuma300x250.php$subdocument
 ||nowwatchtvlive.co/matomyads$subdocument
@@ -3081,7 +3055,7 @@ bro.adca.st###propis
 ||d1f5rbi95y1icu.cloudfront.net^
 !
 !
-!30#--------------------------WP Group element hide------------!
+!29#--------------------------WP Group element hide------------!
 avent-ugrow.wp.pl##[class$="BgClick"]
 kafeteria.pl,money.pl,pudelek.pl,autokult.pl##.scr-wallpaper
 komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##BODY > DIV[style*="max-width: 100%; "]
@@ -3102,13 +3076,13 @@ wawalove.pl##.floating-ad.advertisement
 wawalove.pl##a[href="http://dajsygnal.pl/"]
 !
 !
-!31#--------------------------WP element block------------!
+!30#--------------------------WP element block------------!
 ||i.wp.pl/*/stg/wpjslib-nojq.js$script,domain=www.dobreprogramy.pl
 ||xml.enovatis.pl/mrdsl/json.php$xmlhttprequest,domain=turystyka.wp.pl
 ||wpkoszyk.wp.pl/api/koszyk$xmlhttprequest
 !
 !
-!32#--------------------------WP element hide------------!
+!31#--------------------------WP element hide------------!
 pilot.wp.pl##SCRIPT + DIV.row
 pilot.wp.pl##.top-section
 ! potwierdzione
@@ -3170,7 +3144,7 @@ sportowefakty.wp.pl##A[target="_blank"] > DIV[style*="background-image: url(\"ht
 sportowefakty.wp.pl##ASIDE.grid-wx1 > DIV[class]:first-child + * + * + DIV[class]
 !
 !
-!33#--------------------------Pudelek/Pudelekx element hide------------!
+!32#--------------------------Pudelek/Pudelekx element hide------------!
 pudelek.pl##DIV.cb > DIV[class^="m"]
 pudelekx.pl##[id^="adv"]
 pudelek.pl##DIV.m0 > DIV + DIV + DIV[class]
@@ -3186,7 +3160,7 @@ pudelek.pl##LI > DIV[class] + DIV[class]
 pudelek.pl##.results__entry.toRight
 !
 !
-!34#--------------------------Money element hide------------!
+!33#--------------------------Money element hide------------!
 www.money.pl##DIV[style*=" overflow: hidden; "]
 money.pl##DIV[style="margin-bottom: 10px"] + DIV > DIV > DIV + DIV + DIV[class]
 money.pl##.right-column > DIV + DIV[class]
@@ -3211,18 +3185,18 @@ www.money.pl##[class^=" _bc_paragraph_"] + DIV[class]
 www.money.pl##DIV[class] > SPAN[class] + DIV[class]:last-child
 !
 !
-!35#--------------------------Easylist Bugs -----------!
+!34#--------------------------Easylist Bugs -----------!
 @@||wpolityce24.pl/imgcache/300x250/*/uploads/news/$image
 @@||reklama.gazeta.pl^$image,font,script
 @@||partneragdrtv.com.pl/temp/adrotator_filemanager/*$image
 filmweb.pl##script:inject(abort-on-property-write.js, sas)
 !
 !
-!36#--------------------------Wordpress blocking filters------------!
+!35#--------------------------Wordpress blocking filters------------!
 ||overwatch.pl/wp-content/uploads/20*/*/250x700*.png$image
 !
 !
-!37#--------------------------Wordpress element hide------------!
+!36#--------------------------Wordpress element hide------------!
 40ton.net##A[target="_blank"] > IMG[class*="wp-image-"]
 ambassador24.pl###text-6 > .textwidget
 autofakty.pl##.widget_text.widget
@@ -3273,7 +3247,7 @@ zdrowyportal.org###text-8
 zwiedzamyparyz.pl###text-6, .a-single, .gyg-widget
 !
 !
-!38#--------------------------Bitcoin ------------!
+!37#--------------------------Bitcoin ------------!
 ||subloader.cf/$subdocument
 ||mercy.ga/$subdocument
 ||coin-hive.com/lib/coinhive.min.js$script
