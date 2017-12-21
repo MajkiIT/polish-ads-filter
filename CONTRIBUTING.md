@@ -4,10 +4,9 @@
 > Ten przewodnik pomoże Ci sformułować raport, a informacje, które mi podasz, pozwolą mi łatwiej zidentyfikować i rozwiązać problemy. Z góry dziękuję za wkład.
 
 ## Przed zgłoszeniem
-* [Zobacz](https://github.com/MajkiIT/polish-ads-filter/issues) otwarte zgłoszenia
+* [Sprawdź](https://github.com/MajkiIT/polish-ads-filter/issues) otwarte zgłoszenia
 
-* Sprawdź czy masz zainstalowane wymagane do działania listy
-
+* Sprawdź czy masz zainstalowane wymagane do działania listy filtrów.
 
 **LISTA** | **ELEMENTY** | **LINK** | **WYMAGANIA**
 ---   |---       |---        |---
