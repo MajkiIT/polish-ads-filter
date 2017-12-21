@@ -29,7 +29,7 @@ KAD - Przekręty | przekręty sms, oszustwa | ([Klik](https://raw.githubusercont
 3. Twoja przeglądarka
 4. Twoje skrypty i rozszerzenia ukrywające mechanizmy antyadblock
 5. Twój bloker reklam
-6. Twoja lista filtrów
+6. Twoja lista filtrów lub ![kopia zapasowa](https://github.com/MajkiIT/polish-ads-filter/wiki/Jak-stworzy%C4%87,-opublikowa%C4%87-i-za%C5%82adowa%C4%87-kopie-zapasow%C4%85-ustawie%C5%84-uBlock-Origin) twoich ustawień
 
 #### Uwagi
 
