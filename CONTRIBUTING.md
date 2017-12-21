@@ -51,10 +51,10 @@ KAD - Przekręty | przekręty sms, oszustwa | ([Klik](https://raw.githubusercont
 https://www.screencast.com/t/Xf0Z04RcS
 `https://www.certyficate.it`
 
-Mozilla Firefox 57.0
-AAK-Cont
+Google Chrome 63.0.3239.108
+Nano Defender 13.8
 uBlock Origin 1.14.22
-EasyList + Polskie filtry
+EasyList + Polskie filtry 2017122101
 </pre>
 
 ## Nowe zgłoszenia
