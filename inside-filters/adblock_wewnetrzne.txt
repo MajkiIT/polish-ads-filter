@@ -3,8 +3,8 @@
 ! Collaborators: mat41997, MajkiIT, hawkeye116477
 ! Homepage: https://certyficate.it
 ! EULA: Instalacja|Użytkowanie listy "Polskie filtry wewnętrzne" jest równoznaczne z akceptacją co do bycia ich komitentem, a twórcy nie ponoszą odpowiedzialności prawnej za nadużycia użytkowników.
-! Last modified: 21 December 2017, 07:58
-! Version: 112
+! Last modified: 21 December 2017, 08:39
+! Version: 113
 ! Expires: 2 days
 ! Support: 
 !   Discord >> https://discord.me/polskiefiltry
@@ -337,6 +337,8 @@ histografy.pl###text-6
 # https://github.com/MajkiIT/polish-ads-filter/issues/4834
 strefadb.pl###tooltip
 !
+filetracker.pl###gosc
+!
 !
 !----------------------!-Uważaj na-!----------------------!
 !
@@ -346,4 +348,27 @@ uwazajnakryptowaluty.pl^
 !----------------------!-Sponsorzy-!----------------------!
 !
 wysokienapiecie.pl##.col-module:nth-of-type(2)
+!
+!
+!----------------------!-Ankiety-!----------------------!
+!
+# https://github.com/MajkiIT/polish-ads-filter/issues/5148
+dsw.doba.pl###stick-to-left
+!
+!
+!----------------------!-Tymczasowe-!----------------------!
+!
+/script.packed.
+/license\.\d{1,5}\.js$/$script,~third-party
+@@||ajax.googleapis.com/ajax/libs/$script,domain=vidoza.net
+@@||cdnjs.cloudflare.com/ajax/libs/$script,domain=vidoza.net
+@@||vidoza.net/js/ads.js$script,domain=vidoza.net
+@@||vidoza.net/js/pop.js$script,domain=vidoza.net
+|http://$script,third-party,domain=vidoza.net
+|https://$script,third-party,domain=vidoza.net
+||vidoza.net/js/sop/
+$popup,domain=vidoza.net
+$websocket,domain=vidoza.net
+
+||pascal3.science^
 !
