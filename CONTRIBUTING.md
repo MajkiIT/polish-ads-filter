@@ -23,12 +23,12 @@ KAD - Przekręty | przekręty sms, oszustwa | ([Klik](https://raw.githubusercont
 1. Podaj link do strony gdzie występuje problem
 2. Dodaj co najmniej 1 zrzut ekranu
  
- a) Zrób zrzut ekranu: [windows](http://www.7tutorials.com/how-use-snipping-tool) albo [inny](http://www.take-a-screenshot.org/)
+ a) Zrób zrzut ekranu: [windows](http://www.7tutorials.com/how-use-snipping-tool) lub [inny](http://www.take-a-screenshot.org/)
  
- b) Gdzie wrzucić zrzut: [Imgur](http://imgur.com/) albo [Imgbox](http://imgbox.com/) albo bezpośrednio na GitHub za pomocą przeciągania i upuszczania
+ b) Gdzie wrzucić zrzut: [Imgur](http://imgur.com/) lub [Imgbox](http://imgbox.com/) albo bezpośrednio na GitHub za pomocą przeciągania i upuszczania
 
 3. Twoja przeglądarka
-4. Twoje skrypty lub rozszerzenia ukrywające antyadblocki
+4. Twoje skrypty i rozszerzenia ukrywające mechanizmy antyadblock
 5. Twój bloker reklam
 6. Twoja lista filtrów
 
@@ -36,16 +36,16 @@ KAD - Przekręty | przekręty sms, oszustwa | ([Klik](https://raw.githubusercont
 ## Przykład
 
 ##### Tytuł
-<pre>www.certyficate.it</pre>
+<pre>certyficate.it</pre>
 
 ##### Treść
 <pre>
-https://www.certyficate.it
-https://www.screencast.com/t/Xf0Z04RcS
+`https://www.certyficate.it`
+`https://www.screencast.com/t/Xf0Z04RcS`
 Mozilla Firefox 57.0
 AAK-Cont
-uBlock Origin 1.14.18
-EasyList + Polish filters
+uBlock Origin 1.14.22
+EasyList + Polskie filtry
 </pre>
 
 ## Nowe zgłoszenia
