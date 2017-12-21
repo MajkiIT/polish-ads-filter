@@ -1,6 +1,6 @@
 
 # Adblock, uBlock & AdGuard Polish filters
-![certyficate it](https://www.certyficate.it/wp-content/uploads/2014/05/logo_ciemne-tło-jasne-litery.png)
+[![certyficate it](https://www.certyficate.it/wp-content/uploads/2014/05/logo_ciemne-tło-jasne-litery.png)](https://www.certyficate.it)
 
 ## About
 
