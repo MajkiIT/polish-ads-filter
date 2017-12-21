@@ -55,4 +55,4 @@ EasyList + Polskie filtry
 </pre>
 
 ## Nowe zgłoszenia
-* Na [Github.com](https://github.com/MajkiIT/polish-ads-filter/issues/new)
+* Zawsze na [Github](https://github.com/MajkiIT/polish-ads-filter/issues/new)
