@@ -1,4 +1,4 @@
-![https://www.certyficate.it/wp-content/uploads/2014/05/logo_ciemne-t%C5%82o-jasne-litery.png](https://www.certyficate.it/wp-content/uploads/2014/05/logo_ciemne-t%C5%82o-jasne-litery.png)
+[![https://www.certyficate.it/wp-content/uploads/2014/05/logo_ciemne-t%C5%82o-jasne-litery.png](https://www.certyficate.it/wp-content/uploads/2014/05/logo_ciemne-t%C5%82o-jasne-litery.png)](https://www.certyficate.it)
 
 ## /!\ WAŻNE /!\
 > Ten przewodnik pomoże Ci sformułować raport, a informacje które mi podasz, pozwolą mi łatwiej zidentyfikować i rozwiązać problemy. Z góry dziękuję za wkład.
