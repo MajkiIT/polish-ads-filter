@@ -33,9 +33,9 @@ KAD - Przekręty | przekręty sms, oszustwa | ([Klik](https://raw.githubusercont
 
 #### Uwagi
 
-- Jeśli dodajesz treści o charakterze erotycznym, pamiętaj od dodaniu **NSFW!** na początku tytułu, np. 
+- Jeśli dodajesz treści o charakterze erotycznym, pamiętaj od dodaniu `NSFW!` na początku tytułu, np. 
 ```NSFW! przykladowastrona.pl```
-- Jeśli twoja sprawa jest pilna i nie cierpiąca zwłoki, pamiętaj o dodaniu **URGENT!** na początku tytułu, np. 
+- Jeśli twoja sprawa jest pilna i nie cierpiąca zwłoki, pamiętaj o dodaniu `URGENT!` na początku tytułu, np. 
 ```URGENT! przykladowastrona.pl```
 
 ## Przykład
