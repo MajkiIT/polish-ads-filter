@@ -45,8 +45,9 @@ KAD - Przekręty | przekręty sms, oszustwa | ([Klik](https://raw.githubusercont
 
 ##### Treść
 <pre>
+https://www.screencast.com/t/Xf0Z04RcS
 `https://www.certyficate.it`
-`https://www.screencast.com/t/Xf0Z04RcS`
+
 Mozilla Firefox 57.0
 AAK-Cont
 uBlock Origin 1.14.22
