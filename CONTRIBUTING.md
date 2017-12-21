@@ -1,7 +1,7 @@
 ![https://www.certyficate.it/wp-content/uploads/2014/05/logo_ciemne-t%C5%82o-jasne-litery.png](https://www.certyficate.it/wp-content/uploads/2014/05/logo_ciemne-t%C5%82o-jasne-litery.png)
 
 ## /!\ WAŻNE /!\
-> Ten przewodnik pomoże Ci sformułować raport, a informacje, które mi podasz, pozwolą mi łatwiej zidentyfikować i rozwiązać problemy. Z góry dziękuję za wkład.
+> Ten przewodnik pomoże Ci sformułować raport, a informacje które mi podasz, pozwolą mi łatwiej zidentyfikować i rozwiązać problemy. Z góry dziękuję za wkład.
 
 ## Przed zgłoszeniem
 * [Sprawdź](https://github.com/MajkiIT/polish-ads-filter/issues) otwarte zgłoszenia
@@ -31,7 +31,7 @@ KAD - Przekręty | przekręty sms, oszustwa | ([Klik](https://raw.githubusercont
 5. Twój bloker reklam
 6. Twoja lista filtrów
 
-### Uwagi
+#### Uwagi
 
 - Jeśli dodajesz treści o charakterze erotycznym, pamiętaj od dodaniu **NSFW!** na początku tytułu, np. 
 `NSFW! przykladowastrona.pl`
