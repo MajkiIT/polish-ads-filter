@@ -6,7 +6,7 @@
 ## Przed zgłoszeniem
 * [Sprawdź](https://github.com/MajkiIT/polish-ads-filter/issues) otwarte zgłoszenia
 
-* Sprawdź czy masz zainstalowane wymagane do działania listy filtrów.
+* Sprawdź czy masz zainstalowane wymagane do działania listy filtrów
 
 **LISTA** | **ELEMENTY** | **LINK** | **WYMAGANIA**
 ---   |---       |---        |---
@@ -34,9 +34,9 @@ KAD - Przekręty | przekręty sms, oszustwa | ([Klik](https://raw.githubusercont
 #### Uwagi
 
 - Jeśli dodajesz treści o charakterze erotycznym, pamiętaj od dodaniu **NSFW!** na początku tytułu, np. 
-`NSFW! przykladowastrona.pl`
+```NSFW! przykladowastrona.pl```
 - Jeśli twoja sprawa jest pilna i nie cierpiąca zwłoki, pamiętaj o dodaniu **URGENT!** na początku tytułu, np. 
-`URGENT! przykladowastrona.pl`
+```URGENT! przykladowastrona.pl```
 
 ## Przykład
 
