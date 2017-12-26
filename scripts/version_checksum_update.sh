@@ -1,4 +1,3 @@
-
 #!/bin/bash
 # Skrypt został zrobiony przez hawkeye116477
 
