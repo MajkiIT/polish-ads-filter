@@ -10,7 +10,7 @@ data=$(date +"%d %b %Y %H:%M UTC%:::z")
 sed -i '/! Last modified:/c\'"! Last modified: $data" $1
 
 # Aktualizacja wersji
-wersja=$(date +"%Y%d%m%H%M")
+wersja=$(date +"%Y%m%d%H%M")
 sed -i '/! Version:/c\'"! Version: $wersja" $1
 
 # Aktualizacja pola aktualizacja
