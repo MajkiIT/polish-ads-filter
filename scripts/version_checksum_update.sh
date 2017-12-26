@@ -1,4 +1,3 @@
-
 #!/bin/bash
 # Skrypt został zrobiony przez hawkeye116477
 
@@ -11,7 +10,7 @@ data=$(date +"%d %b %Y %H:%M:%S UTC%:::z")
 sed -i '/! Last modified:/c\'"! Last modified: $data" $1
 
 # Aktualizacja wersji
-wersja=$(date +"%Y%m%d%H%M")
+wersja=$(date +"%Y%m%d%H%M%S")
 sed -i '/! Version:/c\'"! Version: $wersja" $1
 
 # Aktualizacja pola aktualizacja
