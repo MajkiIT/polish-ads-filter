@@ -2,35 +2,10 @@
 # Skrypt został zrobiony przez hawkeye116477
 
 for i in "$@"; do
-    # Sciezka to miejsce, w którym znajduje się skrypt
-    sciezka=$(dirname "$0")
-
-    # Ustawianie nazwy listy filtrów w zależności od nazwy pliku. Jeśli nazwa pliku nie jest zamieszczona w warunkach if, to trzeba podać nazwę listy filtrów.
-    if [[ $(basename $i) == *"adblock_social_list.txt"* ]]; then
-        filtr="Polish social filters";
-    elif [[ $(basename $i) == *"adblock_cookies.txt"* ]]; then
-        filtr="Polish cookies filters";
-    elif [[ $(basename $i) == *"adblock_anty-dotacje.txt"* ]]; then
-        filtr="Polish anti-donate filters";
-    elif [[ $(basename $i) == *"adblock_wewnetrzne.txt"* ]]; then
-        filtr="Polish inside filters";
-    elif [[ $(basename $i) == *"adblock_adguard.txt"* ]]; then
-        filtr="Polish filters - supplement for AdGuard";
-    elif [[ $(basename $i) == *"adblock_ublock.txt"* ]]; then
-        filtr="Polish filters - supplement for uBlock";
-    elif [[ $(basename $i) == *"adblock.txt"* ]]; then
-        filtr="Official Polish filters for AdBlock, uBlock Origin & AdGuard";
-    elif [[ $(basename $i) == *"hostfile.txt"* ]]; then
-        filtr="Polish filters to Pi hole";
-    else
-        printf "Podaj nazwę listy filtrów: "
-        read filtr
-    fi
-
     # Ustawienie polskiej strefy czasowej
     export TZ=":Poland"
 
-    # Aktualizacja daty i godziny w polu Last modified
+    # Aktualizacja daty i godziny w polu „Last modified"
     export LC_ALL=en_US.UTF-8
     data=$(date +"%d %b %Y %H:%M:%S UTC%:::z")
     sed -i '/! Last modified:/c\'"! Last modified: $data" $i
@@ -39,20 +14,31 @@ for i in "$@"; do
     wersja=$(date +"%Y%m%d%H%M")
     sed -i '/! Version:/c\'"! Version: $wersja" $i
 
-    # Aktualizacja pola aktualizacja
+    # Aktualizacja pola „aktualizacja"
     export LC_ALL=pl_PL.UTF-8
     aktualizacja=$(date +"%a, %d %b %Y, %H:%M:%S UTC%:::z")
     sed -i '/! v./c\'"! v.$wersja aktualizacja: $aktualizacja" $i
 
+    # Sciezka to miejsce, w którym znajduje się skrypt
+    sciezka=$(dirname "$0")
+    
     # Aktualizacja sumy kontrolnej
     perl $sciezka/addChecksum.pl $i
 
     # Przejście do katalogu, w którym znajduje się lokalne repozytorium git
     cd $sciezka/..
     
+    # Ustawianie kryptonimu (krótszej nazwy listy filtrów) do opisu commita w zależności od tego, co jest wpisane w polu „Cryptonym:". Jeśli nie ma takiego pola, to trzeba podać kryptonim dla listy filtrów.
+    if grep -q "! Cryptonym" $i; then
+        filtr=$(grep -oP '! Cryptonym: \K.*' $i);
+    else
+        printf "Podaj kryptonim dla listy filtrów $(basename $i): "
+        read filtr
+    fi
+    
     # Dodawanie zmienionych plików do repozytorium git
     git add $i
-    printf "Podaj rozszerzony opis commitu do pliku $filtr, np 'Fix #1, fix #2' (bez ciapków; jeśli nie chcesz rozszerzonego opisu, to możesz po prostu nic nie wpisywać): "
+    printf "Podaj rozszerzony opis commita do listy filtrów $filtr, np 'Fix #1, fix #2' (bez ciapek; jeśli nie chcesz rozszerzonego opisu, to możesz po prostu nic nie wpisywać): "
     read roz_opis
     git commit -S -m "Update $filtr to version $wersja" -m "${roz_opis}"
 done
