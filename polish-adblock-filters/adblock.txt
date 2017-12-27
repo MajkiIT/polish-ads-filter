@@ -4,15 +4,15 @@
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85, Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477, gwarser, mat41997 
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika
-! Last modified: 26 December 2017
+! Last modified: 27 December 2017
 ! Expires: 2 days
-! Version: 2017122602
+! Version: 2017122701
 ! Contact: errors@certyficate.it
 ! Support: https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/polski-filtr-adblock/
-! v.2017122602 aktualizacja: wt, 26 grudnia 2017, 16:00:00
+! v.2017122701 aktualizacja: sr, 27 grudnia 2017, 10:20:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -50,6 +50,7 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 /screening/*$domain=telepolis.pl,image
 /*images*/banners/$image,domain=tsk24.pl|wschodnik.pl
 /*images*/banery/$image,domain=strzelecopolski.pl
+/bannery/$image,domain=em.kielce.pl|czasdzieci.pl|kolporter.com.pl|sklep-tvsat.hcore.pl|www.pokertexas.pl|www.walbrzych24.com|zlotoryja.info
 !
 !
 !2#-----------------------SMS Fake Pages-------------------------------!
@@ -440,6 +441,7 @@ businessjournal.pl##A[href^="http://"] > [class*="wp-image-"][width="750"]
 businessjournal.pl##[href^="http://"][target="_blank"] > IMG[src^="http://businessjournal.pl/wp-content/uploads/"]
 businesswomanlife.pl##[id^="slidero-box-"]
 businesswomanlife.pl##[id^="widget_sp_image"]
+businesswomanlife.pl##[class*="sidebar-cat-box-"]
 bytomski.pl##IMG[src^="http://www.bytomski.pl/images/banners/"]
 bzdura.pl##[class^="adv"]
 bzdura.pl##.text.item.block:nth-of-type(1)
@@ -1478,7 +1480,7 @@ portalmorski.pl##.pm-banner
 portalplock.pl###fixme
 portalsremski.pl##div[class^="ban"]
 portaltatrzanski.com##.promo-baner
-postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,legio24.pl,sdcv.pl,jajamioasfalt.pl,dostawcy-internetu.pl,forum.bukmacherskie.com,nasze.fm,lovekrakow.pl,mh24.pl,faktykonopne.pl,lajfy.com,disco-polo.info,pokemon-go.pl,gazeta-wiesci.pl,polskaniepodlegla.pl,lpg-forum.pl,kuszotv.pl,meczelive.tv,tablety.pl,polskatimes.pl,gazetakrakowska.pl,nacjonalista.pl,trybunaczestochowska.pl,ostrowiecnews.pl##center
+postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,zarabiam.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,pewnapozyczka.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,audiostereo.pl,ogloszenia.gazeta.ie,mods-kodi.pl,legio24.pl,sdcv.pl,jajamioasfalt.pl,dostawcy-internetu.pl,forum.bukmacherskie.com,nasze.fm,lovekrakow.pl,mh24.pl,faktykonopne.pl,lajfy.com,disco-polo.info,pokemon-go.pl,gazeta-wiesci.pl,polskaniepodlegla.pl,lpg-forum.pl,kuszotv.pl,meczelive.tv,tablety.pl,polskatimes.pl,gazetakrakowska.pl,nacjonalista.pl,trybunaczestochowska.pl,ostrowiecnews.pl,medianarodowe.com##center
 pozytywniej.pl###advL
 ppe.pl##[class*="adver"]
 ppe.pl##.convertiser_comparison
@@ -1488,6 +1490,7 @@ pracawgdansku.com.pl##TR[height="120px"]
 pracuj.pl##.betamore.openJDOMWindow
 pracuj.pl##.expander
 pracuj.pl##[id^="divFav"]
+prawicowyinternet.pl##.widget_text.widget.td_block_template_1:nth-of-type(4)
 prawodrogowe.pl##IMG.img-responsive[src^="/img/banner/"]
 prawo.money.pl###img11155698
 press.pl,ogrodinfo.pl###topBanner
@@ -1542,7 +1545,7 @@ radiokolor.pl##.boxAdvert
 radio.opole.pl##.bannerplace
 radioplus.pl###bottom-ad
 radiostar.net##.widget_media_image.widget.td_block_template_4
-radiosud.pl##[class^="banner"]
+radiosud.pl,krasnik24.pl##[class^="banner"]
 radiotczew.pl##[target="_blank"] > .img-responsive
 radiovia.com.pl##.imageBox > P[style="text-align: center;"]
 radiowarszawa.com.pl##.wpb_single_image.wpb_content_element.vc_align_center
@@ -1881,7 +1884,7 @@ wakai.pl##.youtube-widget
 walbrzych24.com##[id^="promo"]
 warszawawpigulce.pl##.code-block-5
 waszwilanow.pl##[style="text-align: center;"]
-waszwilanow.pl##.td-banner-wrap-full
+waszwilanow.pl,itvm.pl##.td-banner-wrap-full
 wbijam.pl##.odcinek_oczekiwanie_info > center
 wbj.pl##.akpbanner
 wcograc.pl##.click
@@ -2184,7 +2187,6 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 ||csr.onet.pl$script,xmlhttprequest
 ||czasdzieci.home.pl/mailingi/iframe/$subdocument,domain=czasdzieci.pl
 ||czasdzieci.pl/adurl.php$popup
-||czasdzieci.pl/bannery/$image
 ||czasdzieci.pl/_j/ad_$script
 ||datalandhobby.pl/photos/gallery/$image
 ||dfp.gazeta.pl/c.servlet?cn=dfpreferrer&cv=DIRECT$xmlhttprequest,domain=www.plotek.pl
@@ -2197,7 +2199,6 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 ||efilmy.tv/adsvid/$image
 ||egnatius-ear.com/$script,domain=www.sadistic.pl
 ||e-krajna.pl/banery_$image
-||eku24.net/images/slajdy/$image
 ||elka.pl/audiovideo/banners/
 ||elka.pl/modules/bannerySwiffy.php$subdocument
 ||eluban.pl/uploads/baners/$image
@@ -2276,7 +2277,6 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 ||kdega.e-kei.pl/banery/$image
 ||ki24.info/banery_extra/$image
 ||klikplej.pl/a_d/banner.gif
-||kolporter.com.pl/gfx/img/bannery/$image,domain=rynekprasowy.pl
 ||konto.amronet.pl$subdocument,domain=dobreprogramy.pl
 ||kronikiwsi.powiatgostyn.pl/kronikiwsi/photos/adv_$image
 ||ladnydom.pl/aliasy/ladnydom/adblock_prompt.htm
@@ -2399,7 +2399,6 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 ||shoplov.in^$third-party
 ||skiny.pl/*.gif$image
 ||sklep.gry-online.pl/imgs/tapeta/$image,domain=sklep.gry-online.pl
-||sklep-tvsat.hcore.pl/bannery/$image,domain=portal.dvhk.to
 ||smartadserver.com/call/cliccommand/$popup
 ||s-nk.pl/files/offers/$subdocument
 ||spidersweb.pl/*reklamy/$subdocument
@@ -2506,7 +2505,6 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 ||www.pch24.pl/images/banery/$image
 ||www.pch24.pl/js/banery.js$script
 ||www.piszanin.pl/img/img_bannery/$image
-||www.pokertexas.pl/fileadmin/images/bannery/$image
 ||www.pokertexas.pl/uploads/pics/$image
 ||www.portalprzemyski.pl/wp-content/re/
 ||www.powiatsuski24.pl/banners/$image
@@ -2520,7 +2518,6 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 ||www.tv.pl/images/$image,domain=www.zakumaj.pl
 ||www.uniejow.net.pl/p4banners/baner/$image,object
 ||www.viva-tv.pl/assets/gemius-*.swf$object
-||www.walbrzych24.com/upload/upload/Bannery/$image
 ||www.wiadomoscihandlowe.pl/img/banery/$image
 ||www.wiocha.pl/subpages/*.php$subdocument
 ||www.zielonanews.pl/wp-content/uploads/201*/*/*-baner-*.jpg$image
@@ -2536,7 +2533,6 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 ||zaufanatrzeciastrona.pl/wp-content/uploads/2017/03/e.gif
 ||zaufanatrzeciastrona.pl/wp-content/uploads/*/Desktop_TA_LA_*_0*.jpg
 ||zaufanatrzeciastrona.pl/wp-content/uploads/*/q2s.gif
-||zlotoryja.info/grafiki/bannery/$image
 ||zolti.pl/ajax/affiliate-generator.php?$script
 ||zulawyimierzeja24.pl/assets/js/jwplayer/jwplayer.html5.js
 ||zyciegrajewa.pl/adv/$image
@@ -2553,6 +2549,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|open.fm|pogoda.wp.pl|dladzieci.pl|ksiazki.wp.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|parenting.pl|fotoblogia.pl|bloog.pl|avent-ugrow.wp.pl|pudelek.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl|pytamy.pl|www.o2.pl
 /^https:\/\/vstatic3\.cda\.pl\/[a-z0-9]\/[a-zA-Z0-9_]{9,13}\.mp4/$media,object,domain=www.cda.pl
 /^(http|https):\/\/www\.portel\.pl\/(?!oglimg)(?!images)[a-z0-9A-Z]{1,11}\/[a-z0-9]{2,15}\.(html|jpg)/$subdocument,image,domain=www.portel.pl
+/^https:\/\/eku24.net\/images\/slajdy\/(?!zyczenia)[a-z]{3,10}\/[a-zA-Z0-9_]{10,30}\.jpg/$image
 !
 !
 !12#---------------------------------Whitelists----------------------------------!
@@ -3287,7 +3284,7 @@ tygodnikprzeglad.pl##.widget-9.last.widget
 tygodnikprzeglad.pl##A > [class^="slider-"][draggable="false"]
 witanet.net##.top-footer-wrap.clearfix
 zarabiajprzez24.pl###media_image-3
-zdrowyportal.org###text-8
+zdrowyportal.org###text-10
 zwiedzamyparyz.pl###text-6, .a-single, .gyg-widget
 !
 !
