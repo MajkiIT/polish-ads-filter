@@ -28,11 +28,11 @@ for i in "$@"; do
     # Przejście do katalogu, w którym znajduje się lokalne repozytorium git
     cd $sciezka/..
     
-    # Ustawianie kryptonimu (krótszej nazwy listy filtrów) do opisu commita w zależności od tego, co jest wpisane w polu „Cryptonym:". Jeśli nie ma takiego pola, to trzeba podać kryptonim dla listy filtrów.
-    if grep -q "! Cryptonym" $i; then
-        filtr=$(grep -oP '! Cryptonym: \K.*' $i);
+    # Ustawianie nazwy kodowej (krótszej nazwy listy filtrów) do opisu commita w zależności od tego, co jest wpisane w polu „Codename:". Jeśli nie ma takiego pola, to trzeba podać nazwę kodową dla listy filtrów.
+    if grep -q "! Codename" $i; then
+        filtr=$(grep -oP '! Codename: \K.*' $i);
     else
-        printf "Podaj kryptonim dla listy filtrów $(basename $i): "
+        printf "Podaj nazwę kodową dla listy filtrów $(basename $i): "
         read filtr
     fi
     
