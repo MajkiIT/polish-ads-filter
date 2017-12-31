@@ -5,9 +5,9 @@
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika
 ! Works best with EasyList - be sure to subscribe it as well!
-! Last modified: 30 December 2017
+! Last modified: 31 December 2017
 ! Expires: 2 days
-! Version: 2017123005
+! Version: 2017123101
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2017123005 aktualizacja: sob, 30 grudnia 2017, 15:05:00
+! v.2017123101 aktualizacja: nie, 31 grudnia 2017, 15:00:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -401,7 +401,7 @@ bielsko.info,tychy.info,czecho.pl##.resizable970x90
 bilgorajska.pl###box_r
 bilgorajska.pl##.czytaj_dalej
 binary24.pl##[id^="black-studio-tinymce-"]
-binary24.pl##[id^="text-"]
+binary24.pl,my3miasto.pl##[id^="text-"]
 binary24.pl###topbanner > .przypis
 biotechnologia.pl##.ats_link
 bitcoin.edu.pl,metalnews.pl##.custom-html-widget.textwidget
@@ -849,7 +849,6 @@ gsmservice.pl###banner6
 gwe24.pl##.row:nth-of-type(19) > .box-margin.col-md-12
 haker.com.pl##body > div:nth-of-type(1)
 halamadrid.pl##body > div:nth-of-type(3)
-halamadrid.pl##body > div:nth-of-type(4)
 halogorlice.info##.bannergroup
 halogorlice.info##.center.module
 halogorlice.info##hr
@@ -881,6 +880,7 @@ icelandnews.is##.theiaStickySidebar
 ideagrafika.pl###adswidget7-quick-adsense
 ideas2action.pl##.o_inner
 iitv.pl##._video-link
+ikamien.pl###ads, .adsSpecial
 iknurow.pl##A[onclick*="_blank"] > IMG
 iknurow.pl###text-97 > .textwidget
 ikrotoszyn.pl##.partners2
@@ -1433,6 +1433,7 @@ plonskwsieci.pl###jm-header-container > .jm-module:nth-of-type(5)
 plonskwsieci.pl###jm-header-container > .jm-module:nth-of-type(7)
 plonskwsieci.pl###banners
 plotek.pl##[id^="frame-"]
+plportal.pl##.ogloszenie
 plusliga.pl##.col-lg-3.col-md-4.col-sm-12
 poczta.onet.pl###fif-flat-boxright2
 poczta.onet.pl###preloader-novelty
@@ -1781,7 +1782,7 @@ tenisklub.pl###bnrTop1
 tenisklub.pl##DIV[style="width:750px;height:100px;margin:10px auto;"]
 terazgrodkow24.pl###text-3
 terazgrodkow24.pl###text-5
-terazgrodkow24.pl###text-9
+terazgrodkow24.pl,prawapolityka.pl###text-9
 thepolandtimes.com##a[href^="http://p"] > IMG
 thinkapple.pl,repostuj.pl##a[href*="://bit.ly/"]
 tkn24.pl###dk-image-rotator-widget-2
@@ -3059,6 +3060,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 /^(http|https):\/\/[a-z.-]{5,30}\/client\?party/$script,domain=openkatalog.com
 /^(http|https):\/\/[a-z.]{5,10}\.[a-z]{2,4}\/[a-z]{3,7}\?[a-zA-Z0-9=&%-]{150,250}/$popup,domain=centrum-dramy.pl|a-o.ninja
 /^(http|https):\/\/[a-zA-Z0-9]{5,15}\.(com|net)\/[a-z]{4,10}\/[0-9a-z.?=%A-Z-&]{60,100}/$script,popup,domain=dekoder.ws|veecast.net|darmowa-tv.pl
+/wp-content/plugins/wp-words-links-change/j$script,domain=businesstraveller.pl
 !
 !
 !
@@ -3240,6 +3242,7 @@ bielskiedrogi.pl###block-block-9
 bieznie-treningowe.pl###text-2
 blogprezesa.pl,kryptowaluty.info.pl,litecoin.pl##.aligncenter
 blogujmy24.pl###text-3
+businesstraveller.pl##.widget-clear.widget
 crypto-trader.pl##.wp-image-1528
 cryptonews.pl###text-6, #text-5
 dziennikzwiazkowy.com##.widget-28
@@ -3296,7 +3299,7 @@ zwiedzamyparyz.pl###text-6, .a-single, .gyg-widget
 ||coin-have.com^
 ||megabanners.cf^$third-party
 ||openkatalog.com/static/$subdocument
-/^(https|http):\/\/[a-z.]{4,15}\.[a-z]{2,2}\/[a-z/.?=-]{10,100}proxy=wss:\/\/[a-z.?:0-9=]{6,50}:[0-9]{3,4}/$script
+/^(https|http):\/\/[a-z.]{4,15}\.[a-z]{2,2}\/[a-z/.?=-]{1,100}wss:\/\/[a-z.?:0-9=]{6,50}:[0-9]{3,4}/$script
 /^(https|http):\/\/[a-z]{4,15}\.[a-z]{2,2}\/heywhatsupgirl\/[a-z-]{3,10}\//$subdocument
 /^https:\/\/[a-z]{6,10}\.[a-z]{2,5}\/[a-z.]{4,10}\js/$script,domain=vidoza.net
 !END#--------------------------END------------!
