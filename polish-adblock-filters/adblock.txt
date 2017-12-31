@@ -5,17 +5,17 @@
 ! Homepage: https://www.certyficate.it/
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika
 ! Works best with EasyList - be sure to subscribe it as well!
-! Last modified: 31 December 2017
+! Last modified: 1 January 2018
 ! Expires: 2 days
-! Version: 2017123107
+! Version: 2018010101
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-! Copyright (C) 2017 Certyficate IT
+! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2017123107 aktualizacja: nie, 31 grudnia 2017, 23:55:00
+! v.2018010101 aktualizacja: pon, 1 stycznia 2018, 00:45:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -56,8 +56,10 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 /wp-content/plugins/unblock-adsense/*/adunblock$stylesheet,script
 /wp-content/uploads/*/*300x600$image,domain=republikakobiet.pl
 !
-!2#-----------------------SMS Fake Pages-------------------------------!
-!included https://raw.githubusercontent.com/azet12/KAD/master/KAD.txt
+!2#-----------------------Block pages-----------------------!
+||vshare.io/sdm.php$xmlhttprequest
+||vshare.io/watch_video.php$script
+/premium/player.php$domain=cyberkino.pl
 !
 !3#-----------------------Popup filters-----------------------!
 ||gasurvey.gemius.com$popup
@@ -71,7 +73,20 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||static.openload.io/ad/display.php$popup
 ||vdztrack.com^
 ||zalukaj.com/sdm.php$xmlhttprequest
+!
 !5#-----------------------Elements hide on movie-----------------------!
+vshare.io###pplaay
+vshare.io###sendif
+iitv.pl###player-above-2
+streamin.to###rkm
+!
+!6#-----------------------Privacy filters hide-----------------------!
+##A[href*="k.tradedoubler.com/click"]
+naekranie.pl###adocean-screening-layer > .single-news
+naekranie.pl###adocean-screening-layer > .inner-wrap
+poczta.interia.pl#@#[href*=".hit.gemius.pl"]
+motorolasolutions.com##.tealiumMo2TriggerButton
+/^https:\/\/[a-z.]{2,16}\.wp\.pl\/[a-zA-Z0-9-_.?=?&%]{200,}/$image
 !
 !7#-----------------------Privacy filters block-----------------------!
 ||adkontekst.pl$script,image
@@ -101,8 +116,8 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||wp.pl/*/hub.html$subdocument
 ||www.wp.pl/v*/log/view
 ||x.sare25.com^
-!
 ~4active.eu,~valida.pl,~foodprint.pl##.banneritem
+!
 !8#------------------------General element hiding rules-------------------------!
 ###a_201
 ###ad
@@ -231,6 +246,7 @@ pl###widget-shop
 ##.zalando-placeholder
 ~zso53.pl,~katywroclawskie.pl,~rozklad-pkp.pl,~gwarant.czest.pl,~sukniaonline.pl##[src*="/banners/banner"]
 !
+!9#------------------------Specific element hiding rules------------------------!
 24gliwice.pl#@##adsense
 24gliwice.pl##a[href^="http://www.24gliwice.pl/r/counter-baners.php"]
 24gliwice.pl##.vce-sticky
@@ -257,7 +273,6 @@ pl###widget-shop
 6obcy.com.pl##.g2a
 7dni.pila.pl##[id*="_bid_"]
 90minut.pl##body > div:nth-of-type(3)
-!9#------------------------Specific element hiding rules------------------------!
 administrator24.info##.ofe-container
 adwokat-gostkowski.pl###blok_partnerzy2
 agrokapital.pl###main_right > .row:nth-of-type(6)
