@@ -2,12 +2,12 @@
 ! Title: Official Polish filters for AdBlock, uBlock Origin & AdGuard
 ! Oficjalne polskie filtry do AdBlocka, uBlocka Origin i AdGuarda
 ! Collaborators: Adam W, Dominik, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85, Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, FX54, hawkeye116477, gwarser, mat41997 
-! Homepage: https://www.certyficate.it/
+! Homepage: https://www.certyficate.it
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Last modified: 1 January 2018
 ! Expires: 2 days
-! Version: 2018010103
+! Version: 2018010104
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018010103 aktualizacja: pon, 1 stycznia 2018, 01:00:00
+! v.2018010104 aktualizacja: pon, 1 stycznia 2018, 15:05:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -381,7 +381,7 @@ bielsko.biala.pl##.rekl-title
 bielsko.info,czecho.pl,pless.pl,tychy.info##.blok-artykul > .wrapper-row:nth-of-type(1)
 bielsko.info,czecho.pl,pless.pl,tychy.info#?#body > .page > main > .small.pasek-gray:-abp-contains(Reklama)
 bielsko.info,czecho.pl,pless.pl,tychy.info##.linki-sponsorowane-col, .skyscraper
-bielsko.info,czecho.pl,pless.pl,tychy.info##main > .serwis.small.pasek-gray
+bielsko.info,czecho.pl,pless.pl##main > .serwis.small.pasek-gray
 bielsko.info##DIV[data-ads-id] > [class$="970x250"]
 bielsko.info,tychy.info,czecho.pl##[id^="linki-sponsorowane-col-group-"]
 bielsko.info,tychy.info,czecho.pl##.resizable300x250
@@ -1739,6 +1739,7 @@ tabletowo.pl###menu-item-komputronik, #re_kk_near_logo
 tabletowo.pl##[rel="nofollow"][target="_blank"]
 tabletowo.pl##.widget2:nth-of-type(2)
 tabletowo.pl##.widget2:nth-of-type(3)
+tabletowo.pl##.swckbb
 taniaksiazka.pl,gsmmaniak.pl,wieliczkacity.pl,aferyprawa.eu,tyna.info.pl,polskaniepodlegla.pl,startkariery.pl##A[target="_self"] > IMG
 targeo.pl###Advertisement
 tarnow.in##img[src][alt^="Baner"]
@@ -1959,7 +1960,7 @@ www.ceneo.pl###ca241240-4097-4af3-9819-9a1a26afec46
 www.ceneo.pl##[class^="home-ad"]
 !www.ceneo.pl##[class^="promoted-"]
 !www.ceneo.pl##.highlighted-offers
-!www.ceneo.pl##.js_widget
+www.ceneo.pl##.js_widget
 www.ceneo.pl##.lnd_contrast.praktyczne
 !www.ceneo.pl###REK_Produkt_OPIS
 www.cenynaswiecie.pl##[class^="google-"]
@@ -2010,7 +2011,6 @@ www.pcformat.pl###ad_news
 www.photoblog.pl###adsense-top-placeholder
 www.pino.pl###pinowyswietlacz
 www.planowaniewesela.pl###header-banner
-www.pless.pl##.linki-sponsorowane-col
 www.pless.pl##main > .small.pasek-gray
 www.pokochasz.pl,probasket.pl,fantastyka.pl,ochrona-mienia.pl##.banner
 www.policja2009.fora.pl##.f_bnr_type-1
@@ -2158,8 +2158,6 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 ||businessclick.*/$script
 ||cda.pl/CDA/01_cda_bananki_$image
 ||cda.pl/player.php
-!||cda.pl/*v*a*s*t*.php
-!||cda.pl/*v*a*s*t*/*.xml
 ||cda.pl/xml.php?ads$xmlhttprequest,domain=www.cda.pl
 ||cda.pl/xml.php?type=*adblock
 ||cdn.dtxngr.com/$script
@@ -2180,6 +2178,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 ||czasdzieci.pl/_j/ad_$script
 ||datalandhobby.pl/photos/gallery/$image
 ||dfp.gazeta.pl/c.servlet?cn=dfpreferrer&cv=DIRECT$xmlhttprequest,domain=www.plotek.pl
+||disqusads.com^
 ||dot.wp.pl^
 ||doubleclick.net^
 ||dowcip.net/x.png$image
@@ -2536,7 +2535,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl|poczta.wp.pl
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|open.fm|pogoda.wp.pl|dladzieci.pl|ksiazki.wp.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|parenting.pl|fotoblogia.pl|bloog.pl|avent-ugrow.wp.pl|pudelek.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl|pytamy.pl|www.o2.pl
 /^https:\/\/eku24.net\/images\/slajdy\/(?!zyczenia)[a-z]{3,10}\/[a-zA-Z0-9_-]{10,50}\.jpg/$image
-/^https:\/\/vstatic3\.cda\.pl\/[a-z0-9]\/[a-zA-Z0-9_]{9,13}\.mp4/$media,object,domain=www.cda.pl
+/^https:\/\/vstatic3\.cda\.pl\/[a-z0-9]\/[a-z0-9]\/[a-zA-Z0-9_]{9,13}\.mp4/$media,object,domain=www.cda.pl
 /:\/\/(?!wawalove)(?!bilety24)(?!forgeofempires)(?!techsterowniki)(?!railnation)(?!lowcyzombi)(?!centralagier)(?!infografika)(?!stworzonadosukcesu)(?!pilot)(?!biuropodrozy)(?!mistrzowiebezpieczenstwa)(?!prezentownik)(?!nowapoczta)(?!swiecsie)(?!swieta)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!rodzinnawycieczka)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)[a-zA-Z0-9]{10,}\.wp\.pl\//
 /:\/\/(?!wawalove)(?!bilety24)(?!forgeofempires)(?!techsterowniki)(?!railnation)(?!lowcyzombi)(?!centralagier)(?!infografika)(?!stworzonadosukcesu)(?!pilot)(?!biuropodrozy)(?!prezentownik)(?!nowapoczta)(?!swiecsie)(?!swieta)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!facet)(?!wyleczto)(?!kuchnia)(?!film)(?!moto)(?!gwiazdy)(?!teleshow)(?!finanse)(?!kobieta)(?!dom)(?!pogoda)(?!tech)(?!historia)(?!czat)(?!ksiazki)(?!gryonline)(?!hotele)(?!narty)(?!samoloty)(?!wycieczki)(?!hosting)(?!irlandia)(?!multikurs)(?!casino)(?!foto)(?!tech)(?!www)(?!stg)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!alefolwark)(?!angielski)(?!arenamody)(?!beniamin)(?!bon)(?!bsg)(?!casino)(?!diety)(?!dlaprasy)(?!dlugi)(?!doladowania)(?!dom)(?!dysk)(?!ebiznes)(?!ebooki)(?!empire)(?!fantasyliga)(?!film)(?!fundusze)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)(?!gazetki)(?!gry)(?!horoskop)(?!kalendarz)(?!katalog)(?!khanwars)(?!komiks)(?!konflikty)(?!kontakty)(?!korsarze)(?!kultura)(?!mini)(?!mmho)(?!mobilna)(?!morizon)(?!moto)(?!muzyka)(?!narty)(?!naryby)(?!onas)(?!orangekinoletnie)(?!piraci)(?!poczta)(?!pomoc)(?!praca)(?!profil)(?!programtv)(?!pytamy)(?!rekrutacja)(?!rss)(?!rtvagd)(?!rycerzeiksiezniczki)(?!smeet)(?!speedwaymanager)(?!szkola)(?!szukaj)(?!tech)(?!teleshow)(?!triviador)(?!turystyka)(?!twojeip)(?!ulubiency)(?!warodfragons)(?!wycieczki)(?!zdrowie)(?!zoomumba)(?!topnews)(?!erotyka)(?!dzieci)(?!fitness)(?!gielda)(?!finansomat)(?!biznes)(?!sport)[a-zA-Z0-9]{4,9}\.wp\.pl\//$script
 !
@@ -2625,7 +2624,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 @@||.tradedoubler.com/*www.mediaexpert.pl*
 @@||translatica.pl/ads.js$script
 @@||tvn24.pl^$generichide
-@@||tvn.adocean.pl/ad.xml$xmlhttprequest,domain=tvnturbo.pl|miniminiplus.pl|teletoonplus.pl
+!@@||tvn.adocean.pl/ad.xml$xmlhttprequest,domain=tvnturbo.pl|miniminiplus.pl|teletoonplus.pl
 @@||tvn.adocean.pl/*ad.xml$xmlhttprequest,domain=tvnturbo.pl|miniminiplus.pl|teletoonplus.pl|player.pl
 @@||tvn.adocean.pl^$script,domain=ekstraklasa.tv|itvn.pl|player.pl|ttv.pl|tvn.pl|tvn24.pl|tvn24bis.pl|tvn7.pl|tvnplayer.pl|tvnstyle.pl|tvnturbo.pl
 @@/TVN-Adserver/*.mp4$xmlhttprequest,domain=player.pl
