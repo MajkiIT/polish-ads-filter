@@ -7,7 +7,7 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Last modified: 1 January 2018
 ! Expires: 2 days
-! Version: 2018010106
+! Version: 2018010107
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018010106 aktualizacja: pon, 1 stycznia 2018, 19:25:00
+! v.2018010107 aktualizacja: pon, 1 stycznia 2018, 21:25:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -26,7 +26,7 @@
 /_adv/*
 ##a[href*="techmaniak.pl/www/gact/ckk.php"]
 _baner/980x200
-/_baner/*$domain=www.ipon.pl
+/_baner/*$domain=www.ipon.pl|tygodnikzamojski.pl
 /banery/*110x90
 /banery/*750x100
 /banery/*750x200
@@ -186,6 +186,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##[id^="aswift_"]
 ##[id^="banner_900x"]
 ##[id*="-billboard-advert"]
+##[id^="bunyad_ads_widget"]
 ##[id^="boxRegioPromoTab"]
 ##[id^="ceneoaffcontainer"]
 ##[id^="giercowniaAd"]
@@ -216,6 +217,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ###phContent_avastBadge
 pl##.adform-slot
 pl##.ads
+pl##.adsense
 pl###advertisments
 pl##a[href*="://clicks.fortunaaffiliates.com/"]
 pl##a[href*="://converti.se/click/"]
@@ -225,6 +227,7 @@ pl###LinkArea\:gry
 pl##.linkSponsorowany
 pl##.onnetwork-video
 pl###pixad-box
+pl##.sliderads
 pl/popup.js|$script
 pl##.ppa-slot
 pl##.widget-ads-content
@@ -254,6 +257,7 @@ pl###widget-shop
 24gliwice.pl##.vce-sticky
 24jgora.pl##.banrek
 24jgora.pl##IMG[src^="http://www.24jgora.pl/kampanie/"]
+24jgora.pl##.linia_4.clear
 24legnica.pl###text-4
 24legnica.pl###text-5
 24opole.pl##.acl_bd
@@ -413,6 +417,7 @@ biztok.pl,teleshow.wp.pl,gwiazdy.wp.pl,moto.wp.pl,wiadomosci.wp.pl,money.pl,tury
 blogmobility.pl##.top-baner
 blog.nowebrzmienia.pl###text-2 > .widget-title-container
 blog.pluralsight.com##.video.widescreen.flex-video
+blogomaniak.pl##.anal-post-popularne
 bloog.pl##body > div:nth-of-type(2)
 bloog.pl##.clr.wrapper > .cnt
 bobrzanie.pl,tablety.pl##.size-full.aligncenter
@@ -446,7 +451,6 @@ cardsplitter.pl##[target="_blank"] > IMG[src^="/images/loga/"][height="249"]
 cartests.net##.td-container > .td-header-sp-recs
 cashowsky.pl##IMG[alt^="Baner"]
 cda.pl##a[class][target]:has(img[src*="premium"])
-cda.pl##.adsense.miniPhotobox
 cda.pl###as-narrow1
 cda.pl##.block-footer > div:nth-of-type(3)
 cda.pl##.bolk-left
@@ -640,6 +644,7 @@ epainfo.pl##DIV.g-single > IMG
 epainfo.pl##.td_block_text_with_title
 epainfo.pl,vipmultimedia.pl##A.gofollow > IMG
 epainfo.pl##.wpb_text_column
+e-play.pl###text-61, #text-86, #text-75
 eredivisie.pl##IMG[src^="http://www.goal.pl/ban/"]
 ergokantor.pl###przesuwany_tekst
 erocentrum.pl##.panel
@@ -756,7 +761,6 @@ gamesfanatic.pl##.gofollow > IMG[src*="wp-content/uploads/"]
 gamesfanatic.pl##[target="_blank"] > IMG[src*="wp-content/uploads/"]:last-child
 gamestough.com##.sbs_1600
 gamezilla.pl##DIV[style="width: 600px; height: 400px; margin: 20px auto;"]
-gazeo.pl##.adsense
 gazeo.pl##.point
 gazetagazeta.com###media_image-23, #media_image-12, #media_image-22
 gazeta.pl##.binInLinksList
@@ -803,6 +807,7 @@ goniec.net###gkToptop5 > .box
 gorlice24.pl##.owl-item[style="width: 413px;"]
 gorlice24.pl##.red_14
 gorydlaciebie.pl##.widget_text.text-3.widget.row
+gorzow24.pl##[id^="ims_"]
 gorzowianin.com##img[src*="/gorzowianin.com/data/rotator/"]
 gosc.pl##.fl-w100.webpart-wrap-advert
 gosc.pl###ReleasePromo
@@ -1000,8 +1005,8 @@ koncertomania.pl###banner-side
 koncertomania.pl##div#slide-out-newsletter
 konflikty.pl##.vwpc-section-custom_content
 korkosfera.pl##div#copyright_ne
-korsosanockie.pl##.no-bg.widget
-koszalininfo.pl,wlkp24.info,wwl24.info,b2-biznes.pl,sporteuro.pl,metropoliabydgoska.pl,brzeg24.pl,pabianice.tv,zambrowiacy.pl##.g
+korsosanockie.pl,korso.pl##.no-bg.widget
+koszalininfo.pl,wlkp24.info,wwl24.info,b2-biznes.pl,sporteuro.pl,metropoliabydgoska.pl,brzeg24.pl,pabianice.tv,zambrowiacy.pl,e-play.pl##.g
 kozaczek.pl##img[src^="data:image/jpeg;base64"]
 kozaczek.pl##.nsg_ad_box
 kozienice24.pl###adocr
@@ -1272,6 +1277,7 @@ naszemiasto.pl##.sekcjaSzeroka.sbGry
 naszraciborz.pl##.news_box_google
 nasztomaszow.pl###popup_our
 naszwodzislaw.com##.single_news > div:nth-of-type(2)
+naszwodzislaw.com##.news_box:nth-of-type(8)
 natemat.pl##.kd_ns_logo
 n###bglink
 nczas.com##A[target="_self"] > .vc_single_image-img:last-child
@@ -1314,7 +1320,7 @@ nportal.no##.commercial-top, #commercial-300, .three-commercials
 nslowo.pl###gkSidebar > div > .box:nth-of-type(1)
 nudziara.pl##DIV[style="border: 1px solid #D8D0D0; padding: 5px 0px 5px 0px; width:705px;"]
 nysa24.pl###Mod348
-nysa24.pl,tvnakarte.eu###jm-header
+nysa24.pl,tvnakarte.eu,powiatowa.info###jm-header
 o2.pl##.box-sidebar.box-sidebar-1
 o2.pl##.content-row.content-row-15.x-ecommerce
 o2.pl##div[class^="_"][style^="width:"][style*="background-color:rgba(24"][style$=");"]
@@ -1443,6 +1449,9 @@ polscygracze.pl##.gridlove-sidebar > .LfUW8dL1Hl-widget.gridlove-box.widget
 polskaligaesportowa.pl##.home-partners
 polskiautohandel.pl##.header-middle
 polskiautohandel.pl##.panel.widget-2
+polskieradio.com##.post-widget.widget:nth-of-type(2)
+polskieradio.com##.categories-widget
+polskieradio.com##.col-md-4:nth-of-type(2)
 polskiprzemysl.com.pl##.banner-full-content
 polski-tenis.pl##.hidden-xs
 polubione.pl##.execphpwidget
@@ -1946,7 +1955,7 @@ www2.payback.pl###header-spacer
 www2.payback.pl##IMG[onclick="GAEvent('Latarki - BP', 'Overlay', 'click');"]
 www.antyradio.pl##.adsearch-adkontekst
 www.applecenter.pl###leader-wrap
-www.applecenter.pl,zarabiajnaokazjach.pl,kierunek.szczecin.pl,trybawaryjny.pl,android.com.pl,tabletowo.pl,off-road.pl,polskikosz.pl,gazeta-wiesci.pl,newsweb.pl,my3miasto.pl##.textwidget
+www.applecenter.pl,zarabiajnaokazjach.pl,kierunek.szczecin.pl,trybawaryjny.pl,android.com.pl,tabletowo.pl,off-road.pl,polskikosz.pl,gazeta-wiesci.pl,newsweb.pl,my3miasto.pl,kucharze.pl##.textwidget
 www.aptekagemini.pl##.baner
 www.aptekagemini.pl###pw_bannery_5
 www.axn.pl###block-dart-dart-tag-980x100-ldr-top.block.block-dart > .content > .dart-advertisement
@@ -2347,6 +2356,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 ||plonskwsieci.pl/images/reklamy_$image
 ||pobierak.jeja.pl/aban/$image,domain=~jeja.pl
 ||podhale24.pl/uploads/r/$image
+||podhale24.pl/images/partners/$image
 ||podlasie24.pl/upl/ban*/$image,object
 ||pogodynka.onet.pl/apiinfos/htmlwarn/
 ||polacywewloszech.com/wp-content/uploads/20*/*/*reklama*.jpg$image
@@ -3196,7 +3206,7 @@ filmweb.pl##script:inject(abort-on-property-write.js, sas)
 !
 !36#--------------------------Wordpress element hide------------!
 40ton.net##A[target="_blank"] > IMG[class*="wp-image-"]
-7dni.pila.pl###text-22
+7dni.pila.pl,petronews.pl###text-22
 ambassador24.pl###text-6 > .textwidget
 autofakty.pl##.widget_text.widget
 bielskiedrogi.pl###block-block-9
