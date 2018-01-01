@@ -7,7 +7,7 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Last modified: 1 January 2018
 ! Expires: 2 days
-! Version: 2018010102
+! Version: 2018010103
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018010102 aktualizacja: pon, 1 stycznia 2018, 00:55:00
+! v.2018010103 aktualizacja: pon, 1 stycznia 2018, 01:00:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -57,9 +57,9 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 /wp-content/uploads/*/*300x600$image,domain=republikakobiet.pl
 !
 !2#-----------------------Block pages-----------------------!
+/premium/player.php$domain=cyberkino.pl
 ||vshare.io/sdm.php$xmlhttprequest
 ||vshare.io/watch_video.php$script
-/premium/player.php$domain=cyberkino.pl
 !
 !3#-----------------------Popup filters-----------------------!
 ||gasurvey.gemius.com$popup
@@ -75,18 +75,18 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||zalukaj.com/sdm.php$xmlhttprequest
 !
 !5#-----------------------Elements hide on movie-----------------------!
-vshare.io###pplaay
-vshare.io###sendif
 iitv.pl###player-above-2
 streamin.to###rkm
+vshare.io###pplaay
+vshare.io###sendif
 !
 !6#-----------------------Privacy filters hide-----------------------!
 ##A[href*="k.tradedoubler.com/click"]
-naekranie.pl###adocean-screening-layer > .single-news
-naekranie.pl###adocean-screening-layer > .inner-wrap
-poczta.interia.pl#@#[href*=".hit.gemius.pl"]
-motorolasolutions.com##.tealiumMo2TriggerButton
 /^https:\/\/[a-z.]{2,16}\.wp\.pl\/[a-zA-Z0-9-_.?=?&%]{200,}/$image
+motorolasolutions.com##.tealiumMo2TriggerButton
+naekranie.pl###adocean-screening-layer > .inner-wrap
+naekranie.pl###adocean-screening-layer > .single-news
+poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 !
 !7#-----------------------Privacy filters block-----------------------!
 ||adkontekst.pl$script,image
