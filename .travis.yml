@@ -1,0 +1,8 @@
+addons:
+  apt:
+    packages:
+    - libtypes-path-tiny-perl
+    - locales
+    - language-pack-pl
+script:
+- "./scripts/version_checksum_update_Travis.sh $(git diff-tree --no-commit-id --name-only -r master)"
