@@ -5,9 +5,9 @@
 ! Homepage: https://www.certyficate.it
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika
 ! Works best with EasyList - be sure to subscribe it as well!
-! Last modified: 4 January 2018
+! Last modified: 5 January 2018
 ! Expires: 2 days
-! Version: 2018010404
+! Version: 2018010501
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018010404 aktualizacja: czw, 4 stycznia 2018, 22:45:00
+! v.2018010501 aktualizacja: ptk, 5 stycznia 2018, 20:05:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -420,7 +420,7 @@ biztok.pl,teleshow.wp.pl,gwiazdy.wp.pl,moto.wp.pl,wiadomosci.wp.pl,money.pl,tury
 blogmobility.pl##.top-baner
 blog.nowebrzmienia.pl###text-2 > .widget-title-container
 blog.pluralsight.com##.video.widescreen.flex-video
-blogomaniak.pl##.anal-post-popularne, .anal-post-ad-pod-artykulem
+blogomaniak.pl##.anal-post-popularne, .anal-post-ad-pod-artykulem, .anal-bottom
 blogomaniak.pl###headerNavBlogomaniak > .wrapper > .right
 blogomaniak.pl##.rsidebar > div:nth-of-type(5)
 blogomaniak.pl##.rsidebar > div:nth-of-type(1)
@@ -575,7 +575,7 @@ dobreprogramy.pl##.list.block-content > div[style$="height: 180px; width: 630;"]
 dobreprogramy.pl##.no-filter
 dobreprogramy.pl##.page-element.center.target > div[style$="height: 250px; width: 970;"]
 dobreprogramy.pl###panReklama > div
-!dobreprogramy.pl##script:inject(abort-current-inline-script.js, document.onreadystatechange, document.body.insertBefore)
+dobreprogramy.pl##.pattern
 dobreprogramy.pl###slide-menu > * div[id^="c"][style^="height:"][style*="width:"]:not([id^="cbox"]):not([id="colorbox"])
 dobreprogramy.pl##[style="height: 150px; width: 630;"]
 dobreprogramy.pl##[style="width: 300px; margin: auto;"]
@@ -739,6 +739,7 @@ forum.ebiznesy.pl###sidebar
 forum.elportal.pl##.scale-with-grid
 forumfajerwerki.pl##.message, .bbc_center
 forumfajerwerki.pl###content > .bbc_center:nth-of-type(1)
+forumfajerwerki.pl###index_stats > p
 forum.fedora.pl###document_modal
 forum.fordclubpolska.org##center:nth-of-type(2)
 forum.gniezno.com.pl##.naglowek_re_grupa1
@@ -801,6 +802,8 @@ gazetka.be##IMG[src^="/images/stories/wspolpraca/"]
 gazetki-promocyjne.net.pl##.shadow-text
 geoforum.pl###advertisement_div
 geoforum.pl##.banery
+gieldaigospodarka.pl##.footer-widget-area > .col-md-4:nth-of-type(3)
+gieldaigospodarka.pl##.footer-widget-area > .col-md-4:nth-of-type(2)
 glamrap.pl###footmod
 glamrap.pl##[onclick*="Reklama"][target="_blank"] > IMG
 globtroter.pl##a[href^="http://track.omgpl.com/"] > .img-responsive
@@ -933,6 +936,7 @@ interia.pl##[id^="ad_"]
 ipon.pl###rekalama_PodMenu
 ipo.pl##DIV[style="clear:both;min-height:100px;"]
 ironmangdynia.pl##.itemImageBlock
+ironmangdynia.pl##.adverts-sidebar
 it-coin.pl##DIV.td-all-devices > A > IMG:last-child
 itporady.pl##A > IMG.img-responsive.center-block
 itporady.pl##.hidden-xs.r_sidebar
@@ -1442,7 +1446,7 @@ pless.pl##[class^="billboard"]
 pless.pl,pless.nazwa.pl##[href^="http://www.pless.pl/a.php"]
 pless.pl##.resizable970x250
 pl.jooble.org##.image_banner
-plonskwsieci.pl###banners
+plonskwsieci.pl##.clearfix.jm-module-content > .custom
 plonskwsieci.pl##.ic_marquee0
 plonskwsieci.pl###jm-header-container > .jm-module:nth-of-type(5)
 plonskwsieci.pl###jm-header-container > .jm-module:nth-of-type(7)
@@ -1468,6 +1472,8 @@ polnocna.tv##A[href^="/ad/"] > IMG
 polscygracze.pl##.gridlove-sidebar > .LfUW8dL1Hl-widget.gridlove-box.widget
 polskaligaesportowa.pl##.home-partners
 polskaniepodlegla.pl###sppb-addon-1503648426950
+polskaniepodlegla.pl###sppb-addon-1511187487983
+polskaniepodlegla.pl###section-id-1503913327338
 polskiautohandel.pl##.header-middle
 polskiautohandel.pl##.panel.widget-2
 polskieradio.com##.post-widget.widget:nth-of-type(2)
@@ -1550,6 +1556,7 @@ przychodnia.pl##.prnetItem
 pszczynska.pl,szajn.pl##.baner
 pudelek.tv,wp.tv,interaktywnie.com##[src^="http://adv.wp.pl"]
 pukawka.pl##.partnerzy
+pultusk24.pl##.row:nth-of-type(11)
 purepc.pl##a[href^="https://www.purepc.pl/r3dir.php"]
 purepc.pl##DIV > A[href^="http"][style^="display:block;"]
 pyszne.pl##.yd-banner
@@ -1660,6 +1667,7 @@ showup.tv##div.top-baner
 sieradz.com.pl##.box
 sieradz.com.pl,zdunskawola24.pl,filmaster.pl##.billboard
 signs.pl##.podreklame
+signs.pl##.boxpanelextra
 silentiumpc.com###sfuh97g
 silesia.fm##.e3lan-top
 silesia.fm##.sidebar
@@ -1674,6 +1682,7 @@ sklep.habys.pl###newsletterModal
 sklep-muzyczny.com.pl##a[href*="santanderconsumer.pl"]
 skokinarciarskie.pl##DIV[style="width: 750px; height: 200px; text-align: center; margin: auto; margin-top: 4px; margin-bottom: -4px;"]
 skokinarciarskie.pl##.pbox:nth-of-type(9) > .pbox_napis
+skokinarciarskie.pl##.pbox:nth-of-type(3) > .pbox_napis
 skok-rafineria.pl##[id^="fancybox-"]
 skript.pl##.skAds
 skrstrzelce.pl##.center_bottom
@@ -1847,7 +1856,7 @@ troman.pl##DIV[style="max-width: 970px; padding: 5px; background: #000; margin: 
 trybawaryjny.pl###bottom-bar
 trybi.pl##.bannerInner
 trybi.pl###main_content_section > div[style=" text-align: center; height: 260px;"]
-trybunaczestochowska.pl###popmake-14375
+trybunaczestochowska.pl###popmake-14375, #text-2
 tryton.com.pl##[id^="banner"]
 turek.net.pl##.BanerP
 turystyka.wp.pl###b_container
@@ -1869,6 +1878,8 @@ tvsudecka.pl,tczewska.pl,slowopodlasia.pl,bydgoszcz.com,tvswinoujscie.pl,tygodni
 tvsudecka.pl##.visible-xs
 tvswinoujscie.pl##.boards.widget
 twojradom.pl,pultusk24.pl##.fl.w250
+twojradom.pl###slider > p
+twojradom.pl##.row:nth-of-type(10) > .fl.w1000
 twojahistoria.pl##.backbglink
 twojahistoria.pl##.topbn.row
 twojapogoda.pl##.abcdef
