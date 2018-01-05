@@ -1,20 +1,24 @@
-[Adblock Plus 2.0]
 ! Title: Polskie filtry wewnętrzne
-! Collaborators: mat41997, MajkiIT, hawkeye116477
+! Collaborators: KonoromiHimaries, MajkiIT, hawkeye116477
 ! Homepage: https://certyficate.it
-! EULA: Instalacja|Użytkowanie listy "Polskie filtry wewnętrzne" jest równoznaczne z akceptacją co do bycia ich komitentem, a twórcy nie ponoszą odpowiedzialności prawnej za nadużycia użytkowników.
-! Last modified: 31 December 2017, 16:43
-! Version: 116
+! Statement: https://github.com/MajkiIT/polish-ads-filter/wiki/Og%C3%B3lna-Koncepcja
+! EULA: Subskrybcja|Użytkowanie listy "Polskie filtry wewnętrzne" jest równoznaczne z akceptacją co do bycia ich komitentem, a twórcy nie ponoszą odpowiedzialności prawnej za nadużycia użytkowników.
+! Last modified: 5 January 2018, 19:57
+! Version: 125
 ! Expires: 3 days
-! Support: 
+! Wymagane:
+!   Rozszerzenia >> uBlock Origin / AdGuard lub ich aktualne forki
+!   Listy filtrów >> EasyList + Polskie filtry + Polskie filtry elementów irytujących
+! Społeczność:
 !   Discord >> https://discord.me/polskiefiltry
 !   Dotacje >> https://patronite.pl/polskiefiltry
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pl
 ! Copyright (C) 2017 Certyficate IT
-! Najnowsza wersja zawsze na: https://certyficate.it/adblock
 !
-!----------------------!-Ogólne filtry reklam-!----------------------!
+!   Subskrybuj swoje listy filtrów >> https://certyficate.it/adblock
+!
+!----------------------!-Ogólne reguły wewnętrzne-!----------------------!
 !
 bulldogjob.pl##.well-transparent.well-lg.well:nth-of-type(1)
 !
@@ -46,6 +50,16 @@ wojsko.com.pl###AnimacjaPrzenikanieKontener
 kk24.pl##.widget_text.widget:nth-of-type(1)
 # https://github.com/MajkiIT/polish-ads-filter/issues/5340
 kk24.pl##.simple_manager_widget.widget:nth-of-type(8)
+!
+# https://github.com/MajkiIT/polish-ads-filter/issues/5365
+elubaczow.com###sidebar_r > center:nth-of-type(1)
+elubaczow.com###execphp-30
+elubaczow.com##.posts > center:nth-of-type(2)
+!
+pionki24.pl##.siderightcontent:nth-of-type(2)
+!
+# https://github.com/MajkiIT/polish-ads-filter/issues/5383
+petronews.pl##a[href="http://petronews.pl/reklama-plus/"]
 !
 !
 !----------------------!-Sklepy-!----------------------!
@@ -80,6 +94,10 @@ krytykapolityczna.pl##.site-commerc.book-item:nth-of-type(5)
 krytykapolityczna.pl##.entry-content > .site-commerc.book-item:nth-of-type(1)
 !
 24tp.pl##.padd-right-0.padd-left-0.polecamy.col-xs-12
+!
+# https://github.com/MajkiIT/polish-ads-filter/issues/5393
+faktykonopne.pl##.listing_grid_view.listing-simple
+faktykonopne.pl##[class*="wpb_text_column wpb_content_element"]
 !
 !
 !----------------------!-Prenumeraty premium-!----------------------!
@@ -173,6 +191,9 @@ dzienniklodzki.pl##.hide-for-small-down.medium-4.columns
 !
 slowosportowe.pl###buy-online
 !
+# https://github.com/MajkiIT/polish-ads-filter/issues/5379
+tygodnikzamojski.pl##.wydanieside
+!
 !
 !----------------------!-Promocje-!----------------------!
 !
@@ -200,7 +221,7 @@ money.pl##.widgets > div:nth-of-type(7)
 money.pl##.widgets > div:nth-of-type(8)
 !
 !
-!----------------------!-Spoleczne-!----------------------!
+!----------------------!-Społecznościowe-!----------------------!
 !
 #https://github.com/MajkiIT/polish-ads-filter/issues/4216
 wakai.pl##right > center:nth-of-type(1)
@@ -209,6 +230,9 @@ serialomaniak.pl##a[href="https://www.facebook.com/groups/grupaserialomaniak"]
 !
 # https://github.com/MajkiIT/polish-ads-filter/issues/4737
 wadowice24.pl###right2 > .title-off.module:nth-of-type(3)
+!
+# https://github.com/MajkiIT/polish-ads-filter/issues/5352
+startkariery.pl###footer-widgets > .home-widget:nth-of-type(2)
 !
 !
 !----------------------!-Spam-!----------------------!
@@ -255,6 +279,11 @@ lukow24.pl##div:nth-of-type(6) > a[href="http://www.reklama.lukow24.pl"] > img[s
 lukow24.pl##div:nth-of-type(8) > a[href="http://www.reklama.lukow24.pl"] > img[src="/grafika/miejsce_na_reklame.jpg"]
 lukow24.pl##div:nth-of-type(12) > a[href="http://www.reklama.lukow24.pl"] > img[src="/grafika/miejsce_na_reklame.jpg"]
 !
+nowiny.rybnik.pl###blok_
+!
+# https://github.com/MajkiIT/polish-ads-filter/issues/5460
+ziemialimanowska.pl###text-3
+!
 !
 !----------------------!-Nie duże banery-!----------------------!
 !
@@ -282,6 +311,9 @@ rmf.fm###strip-akcje-konkursy-3
 !
 focus.pl##.text-center > p
 !
+# https://github.com/MajkiIT/polish-ads-filter/issues/5475
+pultusk24.pl##.row:nth-of-type(5)
+pultusk24.pl##.art-pol-xl
 !
 !----------------------!-Zdarzenia-!----------------------!
 !
@@ -330,6 +362,8 @@ rp.pl###containerEkonomiaPrawo > .row > .mk-component--horizontal.col-xs-12
 !
 shinden.pl##iframe[src="https://titanembeds.com/embed/245931283031523330?defaultchannel=366583280058892289"]
 !
+alltube.tv###slide-panel:style(position: absolute!important; top: 400px!important;)
+!
 !
 !----------------------!-Wspólnicy-!----------------------!
 !
@@ -337,12 +371,22 @@ shinden.pl##iframe[src="https://titanembeds.com/embed/245931283031523330?default
 histografy.pl###text-6
 !
 !
-!----------------------!-Komunikaty-!----------------------!
+!----------------------!-Komunikaty i tabelki-!----------------------!
 !
 # https://github.com/MajkiIT/polish-ads-filter/issues/4834
 strefadb.pl###tooltip
 !
 filetracker.pl###gosc
+!
+a-o.ninja##center > font
+!
+pionki24.pl##.siderightcontent:nth-of-type(30)
+pionki24.pl##div:nth-of-type(31)
+pionki24.pl##div:nth-of-type(32)
+pionki24.pl##.prawyblok2content
+pionki24.pl##.siderightcontent:nth-of-type(1)
+pionki24.pl##.siderightcontent:nth-of-type(3)
+pionki24.pl##.siderightcontent:nth-of-type(34)
 !
 !
 !----------------------!-Uważaj na-!----------------------!
@@ -363,4 +407,20 @@ dsw.doba.pl###stick-to-left
 !
 !----------------------!-Tymczasowe-!----------------------!
 !
+pudelek.pl##.content.page > div:nth-of-type(2)
+!
+!
+!----------------------!-Przyciski-!----------------------!
+!
+# https://github.com/MajkiIT/polish-ads-filter/issues/5393
+faktykonopne.pl##.vc_col-sm-6.vc_column_container.wpb_column:nth-of-type(2)
+!
+!
+!----------------------!-Polecane-!----------------------!
+!
+# https://github.com/MajkiIT/polish-ads-filter/issues/5403
+korsosanockie.pl##.companies.widget.row
+!
+# https://github.com/MajkiIT/polish-ads-filter/issues/5428
+esanok.pl##.fiblok:nth-of-type(n+6):nth-of-type(-n+14)
 !
