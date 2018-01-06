@@ -7,7 +7,7 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Last modified: 6 January 2018
 ! Expires: 1 day
-! Version: 2018010601
+! Version: 2018010602
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018010601 aktualizacja: sob, 6 stycznia 2018, 16:35:00
+! v.2018010602 aktualizacja: sob, 6 stycznia 2018, 17:45:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -422,9 +422,10 @@ blog.nowebrzmienia.pl###text-2 > .widget-title-container
 blog.pluralsight.com##.video.widescreen.flex-video
 blogomaniak.pl##.anal-post-popularne, .anal-post-ad-pod-artykulem, .anal-bottom
 blogomaniak.pl###headerNavBlogomaniak > .wrapper > .right
-blogomaniak.pl##.rsidebar > div:nth-of-type(5)
-blogomaniak.pl##.rsidebar > div:nth-of-type(1)
+blogomaniak.pl,acermaniak.pl,luxmaniak.pl,activemaniak.pl,rtvmaniak.pl,agdmaniak.pl,fotomaniak.pl,gizmaniak.pl,tabletmaniak.pl##.rsidebar > div:nth-of-type(5)
+blogomaniak.pl,acermaniak.pl,luxmaniak.pl,activemaniak.pl,rtvmaniak.pl,agdmaniak.pl,fotomaniak.pl,gizmaniak.pl,tabletmaniak.pl,techmaniak.pl##.rsidebar > div:nth-of-type(1)
 blogomaniak.pl###left
+blogomaniak.pl##.mainwrap > div:nth-of-type(2)
 bloog.pl##body > div:nth-of-type(2)
 bloog.pl##.clr.wrapper > .cnt
 bobrzanie.pl,tablety.pl##.size-full.aligncenter
@@ -1643,6 +1644,7 @@ showup.tv##div.top-baner
 sieradz.com.pl##.box
 sieradz.com.pl,zdunskawola24.pl,filmaster.pl##.billboard
 signs.pl##.podreklame
+signs.pl###podreklame
 signs.pl##.boxpanelextra
 silentiumpc.com###sfuh97g
 silesia.fm##.e3lan-top
@@ -1659,6 +1661,7 @@ sklep-muzyczny.com.pl##a[href*="santanderconsumer.pl"]
 skokinarciarskie.pl##DIV[style="width: 750px; height: 200px; text-align: center; margin: auto; margin-top: 4px; margin-bottom: -4px;"]
 skokinarciarskie.pl##.pbox:nth-of-type(9) > .pbox_napis
 skokinarciarskie.pl##.pbox:nth-of-type(3) > .pbox_napis
+skokinarciarskie.pl##.pbox:nth-of-type(4) > .pbox_napis
 skok-rafineria.pl##[id^="fancybox-"]
 skript.pl##.skAds
 skrstrzelce.pl##.center_bottom
@@ -1858,6 +1861,14 @@ twojradom.pl###slider > p
 twojradom.pl##.row:nth-of-type(10) > .fl.w1000
 twojahistoria.pl##.backbglink
 twojahistoria.pl##.topbn.row
+twojakowala.pl,twojawierzbica.pl,twojskaryszew.pl##.row:nth-of-type(6)
+twojakowala.pl##.row:nth-of-type(9)
+twojakowala.pl,twojawierzbica.pl,twojwolanow.pl,twojskaryszew.pl,twojzwolen.pl,twojradom.pl##.row:nth-of-type(4)
+twojakowala.pl,twojawierzbica.pl,twojwolanow.pl,twojskaryszew.pl,twojzwolen.pl##.row:nth-of-type(5)
+twojwolanow.pl##.row:nth-of-type(3)
+twojzwolen.pl##.row:nth-of-type(3) > .fl.w750
+twojradom.pl##.row:nth-of-type(8)
+twojradom.pl##.row:nth-of-type(21)
 twojapogoda.pl##.abcdef
 twojapogoda.pl###box-pixad
 twojapogoda.pl##IMG[alt="pixad"]
@@ -2201,7 +2212,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 ||businessclick.*/$script
 ||cda.pl/CDA/01_cda_bananki_$image
 ||cda.pl/player.php
-||cda.pl/xml.php?ads$xmlhttprequest,domain=www.cda.pl
+||cda.pl/xml*.php?ads$domain=cda.pl
 ||cda.pl/xml.php?type=*adblock
 ||cdn.dtxngr.com/$script
 ||cdn.pkwteile.de/uploads/stock/$image,domain=czesciauto24.pl
@@ -2579,7 +2590,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl|poczta.wp.pl
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|open.fm|pogoda.wp.pl|dladzieci.pl|ksiazki.wp.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|parenting.pl|fotoblogia.pl|bloog.pl|avent-ugrow.wp.pl|pudelek.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl|pytamy.pl|www.o2.pl
 /^https:\/\/eku24.net\/images\/slajdy\/(?!zyczenia)[a-z]{3,10}\/[a-zA-Z0-9_-]{10,50}\.jpg/$image
-/^https:\/\/vstatic3\.cda\.pl\/[a-z0-9]\/[a-z0-9]\/[a-zA-Z0-9_]{9,13}\.mp4/$media,object,domain=www.cda.pl
+!/^https:\/\/vstatic3\.cda\.pl\/[a-z0-9]\/[a-z0-9]\/[a-zA-Z0-9_]{9,13}\.mp4/$media,object,domain=www.cda.pl
 /:\/\/(?!wawalove)(?!bilety24)(?!forgeofempires)(?!techsterowniki)(?!railnation)(?!lowcyzombi)(?!centralagier)(?!infografika)(?!stworzonadosukcesu)(?!pilot)(?!biuropodrozy)(?!mistrzowiebezpieczenstwa)(?!prezentownik)(?!nowapoczta)(?!swiecsie)(?!swieta)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!rodzinnawycieczka)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)[a-zA-Z0-9]{10,}\.wp\.pl\//
 /:\/\/(?!wawalove)(?!bilety24)(?!forgeofempires)(?!techsterowniki)(?!railnation)(?!lowcyzombi)(?!centralagier)(?!infografika)(?!stworzonadosukcesu)(?!pilot)(?!biuropodrozy)(?!prezentownik)(?!nowapoczta)(?!swiecsie)(?!swieta)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!facet)(?!wyleczto)(?!kuchnia)(?!film)(?!moto)(?!gwiazdy)(?!teleshow)(?!finanse)(?!kobieta)(?!dom)(?!pogoda)(?!tech)(?!historia)(?!czat)(?!ksiazki)(?!gryonline)(?!hotele)(?!narty)(?!samoloty)(?!wycieczki)(?!hosting)(?!irlandia)(?!multikurs)(?!casino)(?!foto)(?!tech)(?!www)(?!stg)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!alefolwark)(?!angielski)(?!arenamody)(?!beniamin)(?!bon)(?!bsg)(?!casino)(?!diety)(?!dlaprasy)(?!dlugi)(?!doladowania)(?!dom)(?!dysk)(?!ebiznes)(?!ebooki)(?!empire)(?!fantasyliga)(?!film)(?!fundusze)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)(?!gazetki)(?!gry)(?!horoskop)(?!kalendarz)(?!katalog)(?!khanwars)(?!komiks)(?!konflikty)(?!kontakty)(?!korsarze)(?!kultura)(?!mini)(?!mmho)(?!mobilna)(?!morizon)(?!moto)(?!muzyka)(?!narty)(?!naryby)(?!onas)(?!orangekinoletnie)(?!piraci)(?!poczta)(?!pomoc)(?!praca)(?!profil)(?!programtv)(?!pytamy)(?!rekrutacja)(?!rss)(?!rtvagd)(?!rycerzeiksiezniczki)(?!smeet)(?!speedwaymanager)(?!szkola)(?!szukaj)(?!tech)(?!teleshow)(?!triviador)(?!turystyka)(?!twojeip)(?!ulubiency)(?!warodfragons)(?!wycieczki)(?!zdrowie)(?!zoomumba)(?!topnews)(?!erotyka)(?!dzieci)(?!fitness)(?!gielda)(?!finansomat)(?!biznes)(?!sport)[a-zA-Z0-9]{4,9}\.wp\.pl\//$script
 !
@@ -2803,6 +2814,7 @@ astroweb.pl##script:inject(abort-on-property-read.js, checkAds)
 ||flakyfeast.com/$script,domain=www.gry.pl
 ||forum.android.com.pl/uploads/*fuckadblock.min.js
 ||gizchina.com.pl/*fuckadblock.min.js$script
+||lechia.net/modules/mod_adblockdetector/js/*$script,stylesheet
 ||napisy24.pl/run/js/blad*.js$script
 ||niepoprawni.pl/sites/all/libraries/copier/bck.js$script
 /test_block.js$script,domain=proste.info.pl|kompnet.info
@@ -3300,6 +3312,7 @@ tomaszowski.com.pl###text-15
 toyotaklub.org.pl###text-6
 trybunaczestochowska.pl###text-4, #text-6, #text-9, #text-11
 trybunaczestochowska.pl##body > div:nth-of-type(1) > center
+trybunaczestochowska.pl###foot-leader
 tygodnikprzeglad.pl##A > [class^="slider-"][draggable="false"]
 tygodnikprzeglad.pl##.widget-6.widget
 tygodnikprzeglad.pl##.widget-9.last.widget
