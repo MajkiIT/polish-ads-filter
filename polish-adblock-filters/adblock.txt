@@ -7,7 +7,7 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Last modified: 6 January 2018
 ! Expires: 1 day
-! Version: 2018010603
+! Version: 2018010604
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018010603 aktualizacja: sob, 6 stycznia 2018, 18:30:00
+! v.2018010604 aktualizacja: sob, 6 stycznia 2018, 21:45:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -2588,7 +2588,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 /^(http|https):\/\/www\.portel\.pl\/(?!oglimg)(?!images)[-a-z0-9A-Z_%$&+=]{1,200}\/[a-z0-9A-Z]{2,200}\.(html|jpg)/$subdocument,image,domain=www.portel.pl
 /^(http|https):\/\/www\.wp\.pl\/[a-zA-Z0-9-_]{50,}/$popup,domain=www.wp.pl
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl|poczta.wp.pl
-/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|open.fm|pogoda.wp.pl|dladzieci.pl|ksiazki.wp.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|parenting.pl|fotoblogia.pl|bloog.pl|avent-ugrow.wp.pl|pudelek.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl|pytamy.pl|www.o2.pl
+/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|open.fm|pogoda.wp.pl|dladzieci.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|parenting.pl|fotoblogia.pl|bloog.pl|avent-ugrow.wp.pl|pudelek.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl|pytamy.pl|www.o2.pl|ranking.abczdrowie.pl
 /^https:\/\/eku24.net\/images\/slajdy\/(?!zyczenia)[a-z]{3,10}\/[a-zA-Z0-9_-]{10,50}\.jpg/$image
 !/^https:\/\/vstatic3\.cda\.pl\/[a-z0-9]\/[a-z0-9]\/[a-zA-Z0-9_]{9,13}\.mp4/$media,object,domain=www.cda.pl
 /:\/\/(?!wawalove)(?!bilety24)(?!forgeofempires)(?!techsterowniki)(?!railnation)(?!lowcyzombi)(?!centralagier)(?!infografika)(?!stworzonadosukcesu)(?!pilot)(?!biuropodrozy)(?!mistrzowiebezpieczenstwa)(?!prezentownik)(?!nowapoczta)(?!swiecsie)(?!swieta)(?!websocket)(?!liveblog)(?!relacje)(?!opinie)(?!zalacznik)(?!magazyn)(?!newsletter)(?!rodzinnawycieczka)(?!doladowania)(?!fantasyliga)(?!funduszeue)(?!imperiumstylu)(?!kodyrabatowe)(?!ogloszenia)(?!orangekinoletnie)(?!rekrutacja)(?!rycerzeiksiezniczki)(?!speedwaymanager)(?!sportowefakty)(?!sportowybar)(?!talesofmagic)(?!ubezpieczenia)(?!warofdragons)(?!wiadomosci)[a-zA-Z0-9]{10,}\.wp\.pl\//
@@ -3172,7 +3172,7 @@ sportowefakty.wp.pl,money.pl##DIV + DIV[style*="max-width: 100%;"]
 ~www.wp.pl,wp.pl##A[href*=".wp.pl/"] > DIV > IMG[class][src^="https://v.wpimg.pl/"]
 !
 !main
-www.wp.pl##.css-ofebmy
+~www.wp.pl,wp.pl##[class^="css-"]
 www.wp.pl##a[href^="http://direct.money.pl/landing-page/callcenter/"]
 www.wp.pl##[data-st-area="Mototech-prawa"] > div[class]
 www.wp.pl##[class^="_2"][data-st-area$="prawa"] > [class] + UL[class^="_3"] + [class^="_"]
@@ -3253,6 +3253,7 @@ filmweb.pl##script:inject(abort-on-property-write.js, sas)
 @@||partneragdrtv.com.pl/temp/adrotator_filemanager/$image
 @@||reklama.gazeta.pl^$image,font,script
 @@||wpolityce24.pl/imgcache/300x250/*/uploads/news/$image
+kafeteria.pl#@#.is-sponsored
 !
 !35#--------------------------Wordpress blocking filters------------!
 ||overwatch.pl/wp-content/uploads/20*/*/250x700*.png$image
