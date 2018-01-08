@@ -41,6 +41,10 @@ KAD - Przekręty | przekręty sms, oszustwa | ([Klik](https://raw.githubusercont
 
 ```URGENT! przykladowastrona.pl```
 
+- Jeśli tworzysz zgłoszenie grupowe i chcesz w nim umieścić kilka serwisów, pamiętaj o dodaniu `GROUP!` na początku tytułu, np. 
+
+```GROUP! przykladowastrona.pl```
+
 ## Przykład
 
 ##### Tytuł
