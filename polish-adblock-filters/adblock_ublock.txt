@@ -5,7 +5,7 @@
 ! Homepage: https://www.certyficate.it/
 ! Last modified: 9 January 2018
 ! Expires: 2 days
-! Version: 2018010901
+! Version: 2018010902
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -13,7 +13,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018010901 aktualizacja: wt, 9 stycznia 2018, 07:10:00
+! v.2018010902 aktualizacja: wt, 9 stycznia 2018, 19:23:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -111,8 +111,7 @@ forum.dobreprogramy.pl##body[class]:style(background-image: none !important;)
 dobreprogramy.pl##script:inject(setTimeout-defuser.js, o = null, n || e.apply(r, i))
 dobreprogramy.pl##script:inject(abort-on-property-read.js, Element.prototype.attachShadow)
 dobreprogramy.pl##script:inject(abort-on-property-read.js, _0x373f)
-dobreprogramy.pl##body > .page-form > *:matches-css(background-image: /data:image\/png;base64,/):matches-css(position:fixed)
-dobreprogramy.pl##body > .page-form > * *:matches-css(background-image: /data:image\/png;base64,/):matches-css(position:fixed)
+dobreprogramy.pl##.page-form *:matches-css(background: /url\("?data:image\/png;base64,/)
 !
 ! purepc.pl
 purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !important; position: absolute !important;)
