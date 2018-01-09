@@ -5,9 +5,9 @@
 ! Homepage: https://www.certyficate.it
 ! Uzywanie polskich filtrow jest jednoznaczne ze świadomością co do ich zawartosci (co blokują itp.) a twórcy nie ponoszą odpowiedzialności za niewiedze uzytkownika
 ! Works best with EasyList - be sure to subscribe it as well!
-! Last modified: 9 January 2018
+! Last modified: 10 January 2018
 ! Expires: 1 day
-! Version: 2018010907
+! Version: 2018011001
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018010907 aktualizacja: wt, 9 stycznia 2018, 22:40:00
+! v.2018011001 aktualizacja: sr, 10 stycznia 2018, 00:35:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -50,6 +50,7 @@ pl##a[href*="/adserwer/"]
 .pl/img/ad/
 pl/*/rodzinnawycieczka/$image,domain=wp.pl
 .pl/wp-content/banners/
+/rotator.php$subdocument,domain=minecraftpolska.net|q4.pl
 .*sales*.pl/offers/$image
 /screening/*$domain=telepolis.pl,image
 /scripts/click.php$popup
@@ -383,6 +384,7 @@ bia24.pl##[class^="iframee-R"]
 biedronka.pl##.app-link
 biedronka.pl##.position10x1
 biedronka.pl##.position9x1
+bieganieuskrzydla.pl##.c-advertaisment
 bielski24.pl###JtfRightBox
 bielskiedrogi.pl###block-block-11
 bielskiedrogi.pl###block-views-reklamy-block-2
@@ -640,6 +642,7 @@ eostroleka.pl##.modul-lewa > div:nth-of-type(8)
 eostroleka.pl##.modul-lewa > div:nth-of-type(9)
 eostroleka.pl##.modul-lewa > div:nth-of-type(12)
 eostroleka.pl##.modul-lewa > div:nth-of-type(13)
+eostroleka.pl##body > div:nth-of-type(1)
 epainfo.pl##DIV.g-single > IMG
 epainfo.pl##.td_block_text_with_title
 epainfo.pl,vipmultimedia.pl##A.gofollow > IMG
@@ -674,6 +677,7 @@ evertiq.pl##[id^="bnr"]
 e-widuchowa.pl##.bgad
 expresselblag.pl##.all-services
 expressilustrowany.pl###scoopshot
+etransport.pl##small
 ezamosc.pl##.bannergroupvertical
 f1wm.pl##[id^="bans_"]
 fabrykasypialni.pl###mebloo
@@ -730,6 +734,7 @@ forum.elportal.pl##.scale-with-grid
 forumfajerwerki.pl##.message, .bbc_center
 forumfajerwerki.pl###index_stats > p
 forum.fedora.pl###document_modal
+forumfs.pl###inner-body-with-sidebar > center
 forum.fordclubpolska.org##center:nth-of-type(2)
 forum.gniezno.com.pl##.naglowek_re_grupa1
 forum.gniezno.com.pl##.stopka_re
@@ -1415,6 +1420,7 @@ pecetowicz.pl##.ipsPos_center
 pekao.com.pl###PX45189
 pepper.pl##.nav-banner
 perepele.pl##A > IMG.ccm-image-block
+perfumik.pl###popup_start
 piekary.pl##.mfp-content
 piekary.pl##.mfp-ready
 pielegniarki.info.pl###gsk
@@ -2353,6 +2359,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 ||lublin112.pl/ads-content/$subdocument
 ||lubliniak.com.pl/images/re/$image
 ||lubliniec.net/kampania_reklamowa/$subdocument
+||kampanie.etransport.pl/$image,domain=etransport.pl
 ||magazyngitarzysta.pl/images/banners/tlo*.jpg$image
 ||meczenazywo.pl/imghttps/tapeta$image
 ||media2.cinema-city.pl/pl/*.swf
@@ -2435,7 +2442,6 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 ||ppwidget.skapiec.pl/widget/$script
 ||prl24.co.uk/res/rotate/$image
 ||q4.pl/media/20/*.gif$image
-||q4.pl/rotacja/billboard/rotator.php$subdocument
 ||racjonalista.pl/img/strony/$image
 ||radioduch.pl/up_files/oferta/$image
 ||rajdy.autoklub.pl/banner/$image
@@ -2775,6 +2781,7 @@ maxkino.pl##.btn-warning.btn-block.btn
 medianarodowe.com###overlay
 megawrzuta.pl###popup-1
 memorizer.pl##.adblockInfo
+minecraftpolska.net#@##reklama
 mmorpg.org.pl,parezja.pl##.adsbygoogle
 nadajemy.pl###abp_info
 niezalezna.pl##script:inject(noeval.js)
