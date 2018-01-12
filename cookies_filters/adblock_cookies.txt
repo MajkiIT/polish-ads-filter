@@ -1,26 +1,28 @@
 [Adblock Plus 2.0]
-! Checksum: Rd9d7q6Lb0STvQWAdOmdTw
+! Checksum: hdLYGz4WSDzwrRjF9PvcGQ
 ! Title: Polskie filtry ciasteczkowe
 ! Polish Cookies Filters
 ! Codename: Cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności
 ! Collaborators: F4z, xxcriticxx, blocker999, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 201801031823
-! Last modified: 03 Jan 2018 18:23:13 UTC+01
+! Version: 201801121800
+! Last modified: 12 Jan 2018 18:00:17 UTC+01
 ! Expires: 2 days
 ! Support:
-!   e-mail -> errors@certyficate.it
 !   GitHub -> https://github.com/MajkiIT/polish-ads-filter/issues
 !   Discord -> https://discord.me/polskiefiltry
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2017 Certyficate IT
-! Najnowsza wersja zawsze na: https://www.certyficate.it/polski-filtr-adblock/
-! v.201801031823 aktualizacja: śro, 03 sty 2018, 18:23:13 UTC+01
+! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
+! v.201801121800 aktualizacja: pią, 12 sty 2018, 18:00:17 UTC+01
+!
+!
+! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować (obecnie to działa tylko w uBlock Origin dev 1.14.23b0+ i Nano Adblockerze)
+!#include cookies_uB_AG.txt
 !
 !
 !1#------------------------Specific element hiding rules------------------------!
-.lomza.pl##html > body.polityka-cookies:style(margin-top: 0px !important; background-position: center 20px !important;)
 24jgora.pl###popup
 24opony.pl##.easyNotificationBck
 40latki.pl###noty_bottom_layout_container
@@ -38,7 +40,6 @@ agatahome.pl##[id^="jbar"]
 akademia-piwa.pl##div#polityka_tekst
 alipaczka.pl###bottom-charm
 allekoszyk.pl##DIV[style="position:fixed;bottom:0;background-color:white;width:100%;padding-left:10px;font-size:12px;"]
-allepaczki.pl##.cookies:style(padding-top: 0px!important;)
 alles-bhp.pl,greattrade.pl,szkolnaspizarnia.pl,urwisy2.pl###contGlowny > div:not([id]):not([class])[style*="position"][style*="fixed"]
 allplay.pl,ammoffice.pl,androidmagazine.pl,biuletyn.net,blog.j-labs.pl,bptour.pl,cmjordan.krakow.pl,czasdzieci.pl,edk.org.pl,eneva.pl,faktopedia.pl,galeria-dominikanska.pl,gosc.pl,komixxy.pl,kotburger.pl,puls.hedrych.pl,sigatech.pl,strzelnicabojowa.pl,yorkedukacja.pl,zamakmercator.pl,zamow-myjnie.pl##body > div:not([id]):not([class])[style*="position"][style*="fixed"]
 almamarket.pl,kozy.pl,galeriakrakowska.pl,www.sygnity.pl###claw
@@ -53,7 +54,6 @@ aptekagemini.pl##div#kukiz
 aptekaleki.co.uk##.ui-resizable.ui-draggable.ui-dialog-buttons.ui-front.ui-corner-all.ui-widget-content.ui-widget.ui-dialog
 arachnea.org##div.guestwarn
 archiwa.gov.pl###message_box
-archiwum.rp.pl,info.rp.pl##html > body:style(margin-top: 0px!important;)
 areatour.pl##div#topbar
 arnicaapteka.pl##.warning
 ascar-rent.pl###hellobar
@@ -68,7 +68,6 @@ bankmillennium.pl,zus.pl#@#.cookies-info
 bardotti.pl##.wpmui-popup
 bartix.pl###menusDiv
 bcc.com.pl###info
-beko.pl##.cookies-margin:style(top: 0px!important;)
 beskidzkapilka.pl##.messageinfo
 betsson.com###MsgAreaBottom
 bibliotekaleczyca.pl###bannerbl
@@ -80,11 +79,8 @@ bingospa.pl###gritter-notice-wrapper
 biomet.pl,rapid-recovery.pl##[id^="fancybox-"]
 bitcomputer.pl###pp
 bitmarket24.pl###notifications
-biuletyn.net##.urzad_mini > div:style(top: 225px!important;)
-biuletyn.net##body > table:style(margin-top: 0px!important;)
 blog.orange.pl##div[style="width: 100%; background-color: rgb(0, 0, 0); margin: 10px auto 0px; padding: 15px 8px; position: fixed; left: 0px; bottom: 0px; z-index: 1000; color: rgb(255, 255, 255);"]
 blog4u.pl##DIV[style="width:100%;float:left;padding:3px 0;background-color:#fff"]
-bloombergbusinessweek.pl##body:style(margin-top: 0px!important;)
 bluecity.pl##div[style="position: fixed; bottom: 0px; left: 0px; width: 100%; padding: 10px 0px; background-image: url(http://bluecity.pl/public/themes/bluecity/img/cookie_bar.png); background-color: rgb(255, 255, 255); background-position: 50% 0%; background-repeat: repeat no-repeat; "]
 bluerank.pl##DIV[style="position: fixed; right: 0px; left: 0px; top: 0px; background: rgb(241, 241, 241) none repeat scroll 0% 0%; text-align: center; padding: 2px; font-size: 12px; z-index: 25;"]
 bocian.org.pl##.jGrowl-notification
@@ -175,7 +171,6 @@ e24cloud.com##div#FullBox
 ebay.pl##.gh-banner-active.gh-banner
 ebok.jmdi.pl##.ui-notificationbar.top
 ebok.vectra.pl##div.jqmAlertContent
-echo24.tv##.on-top:style(top: 0px!important;)
 eco.atman.pl##div#gbpl_oba
 economist.com##div#ec-message-1
 edarling.pl###infobarDiv, #infobar, .infobar, #info-bar, #info_c_box, .info-message
@@ -200,7 +195,6 @@ eservice.pl###zwcc
 esklep-sbs.pl###cibMessage
 eteacher.pl###info_container
 eternityproject.pl##div.newsbar
-etransport.pl##.active.visible.transition.page.modals.dimmer.ui
 everhome.pl##div.shotimoo
 expozdrowie.pl###alert_popup
 expozdrowie.pl,fzz.pl##div#alert_popup
@@ -222,7 +216,6 @@ filmweb.pl##div.topBarCont
 filmykino.tv##.top_info
 firecash.org##div#info
 firmy4u.pl###infociasteczka
-fiskars.pl##.desktop:style(top: 0px!important;)
 fleetboard.pl###overlay
 florexpol.eu##div#fancybox-overlay
 florexpol.eu##div#fancybox-wrap
@@ -362,6 +355,7 @@ itpromo.pl###topInfoContainer0, #topInfoContainer1, #topInfoContainer1Mask, #top
 izone.pl##.mm-page > div[style*="height: 80px"]
 jajco.pl##div[id*="n-cookies-notification"]
 jak-ksiegowac.pl###message_wrap
+jangar.pl###popup
 januszebiznesu.pl###komunikat
 jarocin.poznan.lasy.gov.pl##div#aui_3_2_0_1203
 jazzfestiwal.kck.com.pl###system-message > .fade.message.notice > ul > li
@@ -428,7 +422,6 @@ kursyuniversum.ksiezyc.pl##a[href="cookies.php"]
 kzkgop.com.pl##.container.in.fade
 kzkgop.pl###container > div:not([id]):not([class])
 labottegatoscana.pl###disclaimer, .disclaimer, .disclaimerContainer, .disclaimer-box, .disclaimer--info, #disclaimerC, #disclaimer-container, #disclaimer-box, .disclaimer-wrapper
-lafe.pl##.cinfo:style(padding-bottom: 0px!important;)
 lampy.pl##.dnt-dialog
 lancia.pl###cl-banner
 laskonline.pl###cookiewarning > div:nth-of-type(1)
@@ -593,7 +586,6 @@ o2.pl##.zyHor, #app-inner ._1Arb2
 ociasteczkach.pl###ociasteczkach
 odjechani.com.pl###akceptacja-odjechani
 odjechani.com.pl##.guest_warn
-oferia.pl##DIV[style="position:fixed;z-index:9999999999;bottom:0;left:0;width:100%;background:#eedd27 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAA3CAIAAACkfXwqAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIBJREFUeNrckUEKwlAMRDNJGuoRPJgHLp7BA7gtdCGuTKHTIHykCzeiFMwmJJnHhATj5SgtwBxexe16euaAmN+ncwTUvDre9wp0FGamC4ycSZrC8zGXIKKErssi7qi5CL/AaGPstz7vGYp3qD3qUH/hs2EOe/x0w2Rj7COfVYABAL665UDFkHW5AAAAAElFTkSuQmCC) repeat-x;"]
 oferia.pl##body > div:not([id]):not([class])
 off-road.pl###popslide
 offsklep.pl##body > div:not([id]):not([class])
@@ -619,6 +611,7 @@ opteam.pl###infobarDiv, #infobar, .infobar, #info-bar, #info_c_box, .info-messag
 oracle.com##div[style="background-color: rgb(0, 0, 0); opacity: 0.4; position: fixed; z-index: 1000000; width: 100%; height: 100%; top: 0px; left: 0px; overflow: hidden; "]
 oracle.com##div[style="position: absolute; z-index: 2000000; top: 150px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding: 10px; background-image: url(http://consent.truste.com/get?name=trans.png); left: 50%; margin-left: -425px; background-position: initial initial; background-repeat: initial initial; "]
 orange.pl##.background
+orientshop.com.pl,tapenda.pl###ciacha
 origin.com###truste-banner
 orliman.pl##.c-info
 oskolaf.pl###modal-info, .modal-backdrop
@@ -659,7 +652,6 @@ pl.twich.tv##div#noty_bottomCenter_layout_container
 pl.yahoo.com##div#mediafpwave3-wshade
 plandomu.pl##body > div:not([id]):not([class])
 play.google.com#?#.gb_g:-abp-contains(cookie)
-play.google.com,translate.google.pl###gba:style(height: 60px!important;)
 player.pl##.cBox
 playtube.pl##.alert-success
 plotowanie.com##div#howdydo-wrapper
@@ -767,7 +759,6 @@ seriale.co###komunikat
 seriale.co###player_warn
 serialefilmyonline.pl##.alert-dismissible, .alert-dismissable, .alert--dismissable, .pmd-alert-dismissible
 serwis.currenda.pl##div#sign_up
-serwis.currenda.pl##div:style(margin-top: auto!important;)
 seszele.com.pl##iframe#cookfr
 shazam.com##div.policy-label
 shippuuden.pl##div#cookis-bg
@@ -787,6 +778,7 @@ sklep.alablaboratoria.pl,lmbruss.pl###cover
 sklep.eltron.pl###communication
 sklep.vistula.pl##div[style="text-align: center; position: fixed; bottom: 0px; left: 0px; right: 0px; background: none repeat scroll 0% 0% rgb(240, 240, 240); border-top: 2px solid rgb(204, 204, 204);"]
 skm.warszawa.pl##div[style="width: 600px; padding: 40px 30px 30px; position: fixed; margin-left: -300px; border: 1px solid rgb(34, 34, 34); line-height: 18px; font-size: 14px; background-color: rgb(255, 255, 255); -webkit-box-shadow: rgba(50, 50, 50, 0.74902) 3px 3px 9px; box-shadow: rgba(50, 50, 50, 0.74902) 3px 3px 9px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; right: 40px; bottom: 40px; z-index: 9999; color: rgb(40, 40, 40); overflow: hidden;"]
+skokinarciarskie.pl##.pbox:nth-of-type(13)
 skrypt.com.pl,ekologiczny.pl###topInfoContainer0, #topInfoContainer1, #topInfoContainer1Mask, #top_info, .top_info
 slubowisko.pl###eurociastko
 slupsk.pl###easyNotification
@@ -794,7 +786,6 @@ smakizycia.pl###infobarDiv, #infobar, .infobar, #info-bar, #info_c_box, .info-me
 smakizycia.pl,edarling.pl###info-bar
 smart.com##.ui-widget-overlay
 solidarni2010.pl##div#kom
-sonymobile.com##.bnw-module.header[style="margin-top: 80px;"]:style(margin-top: 0px!important;)
 sosnowiec.pl###topBar_MainCover
 sosulski.pl##body > form
 specshop.pl##.blockUI
@@ -826,6 +817,7 @@ stypendia.sejmik.kielce.pl##.mod_pa_sci
 superfilm.pl###box_info
 swiat-agd.com.pl##body > div:not([id]):not([class])
 swiat-laptopow.pl##body > div:not([id]):not([class])[style*="position"][style*="fixed"], body > div:not([id]):not([class])[style*="position"][style*="absolute"]
+swiatdeski.pl##.id-6.location-0.type-10.widget
 swiatnauki.pl###menu
 swidnica24.pl##div#policyBox
 swietnafirma.pl###cMess
@@ -849,7 +841,6 @@ tchibo.pl##[class^="euCookieLayer"]
 teatrateneum.pl##div#ecd_opt_in_banner
 teb-akademia.pl###ciasteczkowy_potwor
 tekstowo.pl###ci-info-box
-telepizza.pl##.navbar:style(margin-top: 0px!important;)
 teletrade-dj.pl###pp
 teltab.pl###topInfoContainer0, #topInfoContainer1, #topInfoContainer1Mask, #top_info, .top_info
 termokubki.com.pl###topInfoContainer0, #topInfoContainer1, #topInfoContainer1Mask, #top_info, .top_info
@@ -911,6 +902,7 @@ w9investment.pl##[style="display: block; margin: 0 auto;"]
 wapteka.pl##.coo
 warszawa-pragapoludnie.sr.gov.pl##div#divcook
 waw.pl##.alert-warning, .komunikat
+wbijam.pl###stopka_dol
 webcam.peregrinus.pl##div.activebar-container
 webd.pl###cffc
 webd.pl###topbar, #topBar, .topbarBox, .topBarMessage, #__topBar, #top_bar
@@ -993,7 +985,6 @@ wyrobieniepaszportu.pl##body > div:not([id]):not([class])
 xaa.pl###ic
 yogenfruz.pl##.shotimoo
 youtube.com###ticker
-youtube.com##div#masthead-positioner-height-offset:style(height: 80px!important;)
 yoy.tv##.notice
 yp.pl##div#jQ_cookiBox
 zaimo.pl##.politica
@@ -1045,6 +1036,8 @@ cookie-law-popup.js$script
 ||revolweb.pl/api/flash_msg.js$script
 ||rolpetrol.com.pl/cookies.js$script
 ||skryptcookies.pl^$third-party
+||www.e-drewno.pl/stock/javascript/browser.js
+||www.e-drewno.pl/stock/javascript/cptlx.js
 ||www.odszkodowania-torun.pl/wp-content/plugins/wp-cookies-alert/style.css
 ||www.pianomedia.pl/cookies-on-pianomedia$xmlhttprequest
 ||www.tamizo.pl/js/jquery.cookiesinfo.js$script
@@ -1287,9 +1280,9 @@ pl##[class^="kom_polityka_prywatnosci"]
 pl##[id^="polityka-prywatnosci"]
 ~addons.mozilla.org##.privacy-policy
 ~allegro##[class*="cookie-policy"]:not(body):not(html)
-~autocentrum.pl,~ideabank.pl,~intel.com,~pkn.pl,~topsecret.pl,~starbucks.pl,~isobar.com,~morizon.pl,~abctygodnik.pl,~wykop.pl,~bt4.pl,~kolba.pl,~tablety.pl,~tesco.pl,~unileverfoodsolutions.pl##div[class*="cookie"]
+~autocentrum.pl,~ideabank.pl,~intel.com,~pkn.pl,~topsecret.pl,~starbucks.pl,~isobar.com,~morizon.pl,~abctygodnik.pl,~wykop.pl,~bt4.pl,~kolba.pl,~tablety.pl,~tesco.pl,~unileverfoodsolutions.pl,~lomza.pl##div[class*="cookie"]
 ~bskrasnosielc.pl,~interhotel.pl,~laskonline.pl,~piekarniaanka.pl###cookiewarning:not(body):not(html)
-~fd.nl,~piekarniaanka.pl,~xboxarcade.pl,~everafterhigh.com,~wmeritum.pl,~microsoft.com,~paypal.com,~reserved.com,~zumi.pl,~komunikacja.bialystok.pl,~nvidia.com,~dobreprogramy.pl,~emigrantpl.com##:not(input)[id*="cookie"]
+~fd.nl,~piekarniaanka.pl,~xboxarcade.pl,~everafterhigh.com,~wmeritum.pl,~microsoft.com,~paypal.com,~reserved.com,~zumi.pl,~komunikacja.bialystok.pl,~nvidia.com,~dobreprogramy.pl,~emigrantpl.com,~lomza.pl##:not(input)[id*="cookie"]
 ~filterlists.com,~yamaha-motor.eu,~dwkoral.pl,~piekarniaanka.pl,~xboxarcade.pl,~appki.com.pl,~paypal.com,~accounts.google.com,~tylesmiechu.pl,~neon24.pl##:not(input)[id*="Cookie"]
 ~linuxiarz.pl,~piekarniaanka.pl,~xboxarcade.pl,~appki.com.pl,~mvno-gsm.pl##[id*="cookie-"]
 ~lycos.com,~freaktab.com,~csmonitor.com##.cookies:not(body):not(html)
@@ -1315,6 +1308,7 @@ iculture.nl#@#:not(input)[id*="cookie"]
 iculture.nl#@#[id*="cookie_"]
 interhotel.pl#@#:not(input)[id*="cookie"]
 letsplej.pl,telepizza.pl#@#div[class*="cookie"]
+lomza.pl#@##komunikat-cookie
 lycos.de,lycos.com#@#.cookies
 orange.pl#@##cookies-info
 orange.pl#@#:not(input)[id*="Cookie"]
@@ -1334,10 +1328,12 @@ tychy.geminipark.pl#@#.privacy-policy
 /resources/js/min.cookies.js$domain=fakt.pl|komputerswiat.pl|przegladsportowy.pl|auto-swiat.pl|prezenty-i-zyczenia.pl|asp24.pl
 applemobile.pl###cookies-message
 filmweb.pl##.cookieInfo
+gryonline.wp.pl##.js-cookie-info
 kwejk.pl###cookies-politics
 miniminiplus.pl##.cookies
 mybank.pl##.ciasteczka
 pl###cookieView:not(body):not(html)
+przegladsportowy.pl##.cookies-section
 rapidgrab.pl##.cc_banner
 store.playstation.com###cookieWarningMessage:not(body):not(html)
 strefabajek.vod.pl###cookie-bar

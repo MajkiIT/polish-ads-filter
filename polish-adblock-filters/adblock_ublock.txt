@@ -1,11 +1,13 @@
-[Adblock Plus 2.0]
-! Title: uBlock polish filters - supplement
-! polskie filtry do uBlocka - uzupelnienie
+[]
+! Checksum: +314GZFhNmDLOW5XP7rHYA
+! Title: Official Polish filters for AdBlock, uBlock Origin & AdGuard - supplement for uBlock
+! Oficjalne polskie filtry do AdBlocka, uBlocka Origin i AdGuarda - uzupełnienie do uBlocka
+! Codename: Official - supplement for uBlock
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
-! Last modified: 10 January 2018
+! Last modified: 12 Jan 2018 18:07:28 UTC+01
 ! Expires: 2 days
-! Version: 2018011001
+! Version: 201801121807
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -13,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018011001 aktualizacja: sr, 10 stycznia 2018, 20:20:00
+! v.201801121807 aktualizacja: pią, 12 sty 2018, 18:07:28 UTC+01
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -49,12 +51,6 @@ motobanda.pl###mvideo:style(z-index: 1!important;)
 ! Puste miejsce po reklamie
 @@||national-geographic.pl/bundles/burdacore/js/adv.js$script
 national-geographic.pl##.advertising-billboard:style(height: 0px !important;)
-!
-! http://www.wykop.pl/
-! Usunięcie komunikatu o ciasteczkach
-wykop.pl##.cookie
-wykop.pl##.type-permanent+#nav:style(top: 0px !important)
-wykop.pl##.type-permanent+#nav+div:style(padding-top: 49px !important)
 !
 ! zalukaj.tv 
 ! Usunięcie "KLIKNIJ, ABY OBEJRZEĆ"
@@ -96,9 +92,6 @@ senda.pl##.advert_box > div > .tablebg:style(height: 1px !important; visibility:
 ! Blokowanie reklam z unblock.onaudience.com
 autocentrum.pl,demotywatory.pl,dziennik.pl,facetemjestem.pl,gala.pl,garnek.pl,gry-online.pl,jegostrona.pl,joemonster.org,kobieta.pl,komixxy.pl,transfery.info,v10.pl##script:inject(abort-on-property-write.js, ub_ct_load)
 tvn24.pl##script:inject(abort-on-property-write.js, Vublock)
-!
-! 4lomza.pl
-4lomza.pl##body.polityka-cookies:style(margin-top: 0px !important;)
 !
 ! www.ps4forum.pl
 www.ps4forum.pl##.googleheader
@@ -145,9 +138,6 @@ komputerswiat.pl##.adsbygoogle:style(height: 1px !important;)
 ! bezuzyteczna.pl
 bezuzyteczna.pl##section > script + div[id^="crt"][style]
 bezuzyteczna.pl##section:has(script + div[id^="crt"][style])
-!
-! kalisz.info.pl /ciasteczka/
-kalisz.info.pl###all:style(top: 0px !important;)
 !
 ! naekranie.pl
 ! Timery ladujace reklamy
@@ -210,17 +200,6 @@ naszemiasto.pl##script:inject(abort-on-property-write.js, czy_wlaczony_adblock)
 ! anyfiles.pl
 anyfiles.pl##script:inject(abort-on-property-read.js, launchOpenWindow)
 !
-! auto-czesci-lipiec.pl, mkidn.gov.pl, puma.com i unileverfoodsolutions.pl
-! Ukrycie popupów o ciasteczkach
-auto-czesci-lipiec.pl###mAll
-auto-czesci-lipiec.pl##.modal-open:style(overflow: visible !important; padding-right: 0px !important;)
-mkidn.gov.pl###myModal
-mkidn.gov.pl,puma.com##.modal-open:style(padding-right: 0px!important; overflow: visible!important;)
-puma.com###modal-geoip-cookies, .modal-backdrop
-unileverfoodsolutions.pl##.js-cookie-wall
-unileverfoodsolutions.pl##body.blurred>*:style(box-shadow: none!important; filter: none!important;)
-unileverfoodsolutions.pl##body:style(overflow: auto!important;)
-!
 ! purepc.pl
 purepc.pl##script:inject(setTimeout-defuser.js, ub_fix())
 purepc.pl##html > body:style(background: #d5d5d5!important;)
@@ -270,9 +249,8 @@ wykop.pl###dyingLinksBox > .dying-links:first-child ~ .dying-links[style="displa
 dziwnekomiksy.pl##body>*:style(filter: blur(0px) !important;)
 alefunny.pl###myModal, .modal-backdrop
 alefunny.pl##.modal-open:style(overflow: auto !important; padding-right: 0px !important;)
-fotoblogia.pl##script:inject(abort-on-property-write.js, __serviceAbModal)
 gadzetomania.pl,wp.pl,autokult.pl,komorkomania.pl##.modal__body-adblock
-gadzetomania.pl,wp.pl,autokult.pl,komorkomania.pl##script:inject(abort-on-property-write.js, __serviceAbModal)
+gadzetomania.pl,wp.pl,autokult.pl,komorkomania.pl,fotoblogia.pl##script:inject(abort-on-property-write.js, __serviceAbModal)
 !
 ! Rules after Adblock
 vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
