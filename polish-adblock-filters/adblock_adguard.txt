@@ -1,11 +1,12 @@
-[Adblock Plus 2.0]
+[]
+! Checksum: JfHAte4a3/n1Aq23NI7k4g
 ! Title: Adblock & uBlock polish filters - Adguard supplement
 ! polskie filtry do Adblocka i uBlocka - uzupełnienie do AdGuarda
 ! Collaborators: F4z, FadeMind, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Last modified: 10 January 2018
+! Last modified: 12 Jan 2018 18:01:48 UTC+01
 ! Expires: 2 days
-! Version: 2018011001
+! Version: 201801121801
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -13,7 +14,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018011001 aktualizacja: sr, 10 stycznia 2018, 20:20:00
+! v.201801121801 aktualizacja: pią, 12 sty 2018, 18:01:48 UTC+01
 !
 !
 ! http://alltube.tv/
@@ -21,10 +22,6 @@
 alltube.tv###please-wait-container
 alltube.tv#$##iframe-container { display: block !important; }
 !
-! http://chip.pl/
-! Usunięcie komunikatu o ciasteczkach i poprawa położenia niebieskiego paska
-chip.pl###polityka-cookies
-chip.pl###body[class^="template-"] { background-position: 50% top !important; }
 !
 ! http://www.efilmy.tv/
 ! Ominięcie przycisku "Close Ad and Watch as Free User"
@@ -133,16 +130,6 @@ spidersweb.pl##.play_iframe
 ! silesion.pl
 silesion.pl##body .banner-ad
 !
-! auto-czesci-lipiec.pl, mkidn.gov.pl, puma.com i unileverfoodsolutions.pl
-! Ukrycie popupów o ciasteczkach
-auto-czesci-lipiec.pl###mAll
-auto-czesci-lipiec.pl##.modal-open:style(overflow: visible !important; padding-right: 0px !important;)
-mkidn.gov.pl###myModal
-mkidn.gov.pl,puma.com##.modal-open:style(padding-right: 0px!important; overflow: visible!important;)
-puma.com###modal-geoip-cookies, .modal-backdrop
-unileverfoodsolutions.pl##.js-cookie-wall
-unileverfoodsolutions.pl##body.blurred>*:style(box-shadow: none!important; filter: none!important;)
-unileverfoodsolutions.pl##body:style(overflow: auto!important;)
 !
 ! nslowo.pl
 ||bestcontent.solutions/images/baner$image
@@ -181,7 +168,7 @@ wykop.pl###dyingLinksBox > .dying-links:first-child ~ .dying-links[style="displa
 dziwnekomiksy.pl##body>*:style(filter: blur(0px) !important;)
 alefunny.pl###myModal, .modal-backdrop
 alefunny.pl##.modal-open:style(overflow: auto !important; padding-right: 0px !important;)
-gadzetomania.pl,wp.pl,autokult.pl,komorkomania.pl ##.modal__body-adblock
+gadzetomania.pl,wp.pl,autokult.pl,komorkomania.pl##.modal__body-adblock
 !
 ! Rules after Adblock
 vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
