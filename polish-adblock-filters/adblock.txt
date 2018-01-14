@@ -7,7 +7,7 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Last modified: 14 January 2018
 ! Expires: 1 day
-! Version: 2018011402
+! Version: 2018011403
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018011402 aktualizacja: nie, 14 stycznia 2018, 14:25:00
+! v.2018011403 aktualizacja: nie, 14 stycznia 2018, 17:55:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -867,9 +867,9 @@ halogorlice.info##.center.module
 halogorlice.info##hr
 halogorlice.info##.itemFullText > .custom
 handballnews.pl##A > IMG[src^="http://www.handballnews.pl/image/strona750x500"]
-hdtv.com.pl##center > a[href="http://hushhush.pl"] > img
 hdtv.com.pl##[id^="edit"] > table:nth-of-type(n+2)
 hdtv.com.pl###links
+hdtv.com.pl##body > center
 hebe.pl###splash_homepage
 hej.mielec.pl##.divMainBannerShell
 hej.mielec.pl##.noFormat.divOpisCnt >.divKernel > p
@@ -1902,6 +1902,7 @@ twojakowala.pl,twojawierzbica.pl,twojskaryszew.pl##.row:nth-of-type(6)
 twojakowala.pl##.row:nth-of-type(9)
 twojakowala.pl,twojawierzbica.pl,twojwolanow.pl,twojskaryszew.pl,twojzwolen.pl,twojradom.pl##.row:nth-of-type(4)
 twojakowala.pl,twojawierzbica.pl,twojwolanow.pl,twojskaryszew.pl,twojzwolen.pl##.row:nth-of-type(5)
+twojakowala.pl,twojawierzbica.pl,twojwolanow.pl,twojskaryszew.pl,twojzwolen.pl,twojradom.pl##[id*="cmcmedia_upid_"]
 twojwolanow.pl##.row:nth-of-type(3)
 twojzwolen.pl##.row:nth-of-type(3) > .fl.w750
 twojradom.pl##.row:nth-of-type(8)
@@ -2628,7 +2629,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 !11#---------------------------------Multi Regex----------------------------------!
 /:\/\/[a-zA-Z0-9]{3,9}\.quartic\.pl\/Ad\//$script
 /^(http|https):\/\/www\.chip\.pl\/wp-content\/themes\/_chip\/[a-z]{4,6}\/[a-z]{4,5}-[0-9]{4,5}/$image,domain=chip.pl
-/^(http|https):\/\/www\.portel\.pl\/[-a-z0-9A-Z_%$&+=[\]]{1,200}\/[-a-z0-9A-Z_%$&+=[\]/]{2,200}.html/$subdocument,domain=www.portel.pl
+/^(http|https):\/\/www\.portel\.pl\/[-a-z0-9A-Z_%$&+=[\]]{1,200}\/[-a-z0-9A-Z_%$&+=[\]/.]{2,200}.html/$subdocument,domain=www.portel.pl
 /^(http|https):\/\/www\.wp\.pl\/[a-zA-Z0-9-_]{50,}/$popup,domain=www.wp.pl
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl|poczta.wp.pl
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=money.pl|autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|open.fm|pogoda.wp.pl|dladzieci.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|parenting.pl|fotoblogia.pl|bloog.pl|avent-ugrow.wp.pl|pudelek.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl|pytamy.pl|www.o2.pl|ranking.abczdrowie.pl
@@ -2916,6 +2917,7 @@ astroweb.pl##script:inject(abort-on-property-read.js, checkAds)
 @@.pl/menda/adsense.js$script,domain=to.proste.info.pl|seciki.pl|kompnet.info
 @@||polvod.pl/advertisement.js$script,domain=superfilm.pl
 @@||portel.pl/js/adsrv.js
+@@||potplayerclub.pl^$generichide
 @@||ppstatic.pl/*/ads.js$script,domain=pomorska.pl
 @@||przegladsportowy.pl^$generichide
 @@||rapidgrab.pl^$generichide
