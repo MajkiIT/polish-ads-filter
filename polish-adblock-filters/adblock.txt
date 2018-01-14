@@ -7,7 +7,7 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Last modified: 14 January 2018
 ! Expires: 1 day
-! Version: 2018011401
+! Version: 2018011402
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018011401 aktualizacja: nie, 14 stycznia 2018, 13:20:00
+! v.2018011402 aktualizacja: nie, 14 stycznia 2018, 14:25:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -35,7 +35,7 @@ _baner/980x200
 _banery/980x200
 /banery/*980x90
 ://*.*/banery_foto/$image,domain=ki24.info|portalplock.pl|faktypilskie.pl|ddtorun.pl|ddwloclawek.pl|koronowo.net.pl|zyciesiedleckie.pl
-/bannery/*$image,subdocument,domain=em.kielce.pl|czasdzieci.pl|kolporter.com.pl|sklep-tvsat.hcore.pl|www.pokertexas.pl|www.walbrzych24.com|zlotoryja.info
+/bannery/*$image,subdocument,domain=em.kielce.pl|czasdzieci.pl|kolporter.com.pl|sklep-tvsat.hcore.pl|www.pokertexas.pl|www.walbrzych24.com|zlotoryja.info|skijumping.pl
 /data/ap3bo6/*.gif$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 /data/ap3bo6/*.jpg$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 /data/ap3bo6/*.swf$object,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
@@ -597,6 +597,7 @@ dziennik.pl##.boxClose
 dziennik.pl##img[src^="data:image/jpeg;base64"]
 dziennik.pl##[style="text-align:center; margin: 0 0 10px 0;padding-bottom: 20px"]
 dziennikpolski24.pl##.typBaner
+dziennikwschodni.pl##[id^="\37"]
 dziennikzachodni.pl,kurierlubelski.pl,pomorska.pl##.gry
 dzisiajwgliwicach.pl##img[src*="Baner-590x300-"]
 ebelchatow.pl##[id^="block-views-top-right-baner-"], #region-middle-poleca
@@ -660,6 +661,7 @@ esanok.pl###sidebarl > ul:nth-of-type(1)
 esanok.pl###sidebarl > div:nth-of-type(1)
 esanok.pl###content > div:nth-of-type(4)
 esanok.pl###content > div:nth-of-type(9)
+esanok.pl##.entry2 > div:nth-of-type(2)
 eska.pl##A[style="display: block; height: 100%; width: 100%;"]
 eska.pl##.banner-750.fontregular
 eska.pl##.center.t2.color13
@@ -1287,7 +1289,7 @@ naekranie.pl##.icon-star.box
 naekranie.pl##.inner-wrap > .post-content
 naekranie.pl##.sen-gal-sidebar-custom-content
 naekranie.pl##.title-p
-naekranie.pl##.s3db38909
+naekranie.pl##.sa4240eef
 naklo24.pl##.ban
 nakolei.pl##.textwidget > A[target="_blank"]
 na-luzie.net##a[href^="http://trafisz.com/"]
@@ -1312,6 +1314,8 @@ nczas.com##A[target="_self"] > .vc_single_image-img:last-child
 ndie.pl##DIV + A > IMG[style="width:100%;"]
 newsbook.pl##.blocker.jquery-modal
 newsbook.pl###popup
+newsbook.pl##.td-pb-border-top.td_uid_114_5a5b5087cd3d0_rand.td_block_text_with_title.td_block_wrap
+newsbook.pl##.wpb_content_element.wpb_text_column
 newseria.pl##.container > .banner-nagl
 newsf24.pl##.box
 nf.pl##.footer-container.ban-main-centering-container
@@ -1812,6 +1816,7 @@ tabletowo.pl##.widget2:nth-of-type(2)
 tabletowo.pl##.widget2:nth-of-type(3)
 tabletowo.pl##.swckbb
 taniaksiazka.pl,gsmmaniak.pl,wieliczkacity.pl,aferyprawa.eu,tyna.info.pl,startkariery.pl,ziemialimanowska.pl##A[target="_self"] > IMG
+tapenda.pl##[class^="glowna_adbox"]
 targeo.pl###Advertisement
 tarnow.in##img[src][alt^="Baner"]
 tarnow.in###text-21 > .post-header > .post-header
@@ -1919,6 +1924,7 @@ tygodniknarodowy.pl###BusyBox
 tygodnikpodlaski.pl###billboardRightAdsense
 tygodnikpowszechny.pl##[id*="-simpleads-"] > h2
 tygodniksiedlecki.com##[id^="wrap_scale_"]
+tylkonauka.pl##.even.field-item > div
 typosfera.net##.pull-bottom
 tysol.pl##.rekl_box
 ulub.pl##[class^="ads_szuk"]
@@ -2796,6 +2802,7 @@ medianarodowe.com###overlay
 megawrzuta.pl###popup-1
 memorizer.pl##.adblockInfo
 minecraftpolska.net#@#[id*="reklama"]
+minecraftpolska.net#@##reklama
 mmorpg.org.pl,parezja.pl##.adsbygoogle
 nadajemy.pl###abp_info
 niezalezna.pl##script:inject(noeval.js)
@@ -3247,6 +3254,7 @@ sportowefakty.wp.pl##HEADER + DIV#matchtable + DIV[class]
 sportowefakty.wp.pl,money.pl,pudelek.pl##A[class][href*=".wp.pl/"] > IMG[class][src^="https://v.wpimg.pl/"]:last-child
 sportowefakty.wp.pl##A[target="_blank"] > DIV[style*="background-image: url(\"https://v.wpimg.pl/"]
 sportowefakty.wp.pl##ASIDE.grid-wx1 > DIV[class]:first-child + * + * + DIV[class]
+turystyka.wp.pl##._1BbcvOI
 !
 !
 !32#--------------------------Pudelek/Pudelekx element hide------------!
@@ -3318,7 +3326,7 @@ gamenerd.pl###text-46
 hdtvpolska.com,ps4life.pl###text-4
 historykon.pl###text-3
 iknurow.pl###text-91
-jedzbawsie.pl,ekspert.ceneo.pl,slupca.pl###text-7
+jedzbawsie.pl,ekspert.ceneo.pl,slupca.pl,fsgk.pl###text-7
 kamienskie.info##[class^="ads-index"]
 kamienskie.info##[id^="text-"]
 ketrzynnews.pl##.wpb_raw_html, #text-34
