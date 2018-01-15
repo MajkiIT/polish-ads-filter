@@ -5,9 +5,9 @@
 ! Codename: Official - supplement for uBlock
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
-! Last modified: 12 Jan 2018 18:07:28 UTC+01
+! Last modified: 15 January 2018
 ! Expires: 2 days
-! Version: 201801121807
+! Version: 2018011501
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.201801121807 aktualizacja: pią, 12 sty 2018, 18:07:28 UTC+01
+! v.2018011501 aktualizacja: pon, 15 stycznia 2018, 13:05:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -105,6 +105,9 @@ dobreprogramy.pl##script:inject(setTimeout-defuser.js, o = null, n || e.apply(r,
 dobreprogramy.pl##script:inject(abort-on-property-read.js, Element.prototype.attachShadow)
 dobreprogramy.pl##script:inject(abort-on-property-read.js, _0x373f)
 dobreprogramy.pl##.page-form *:matches-css(background: /url\("?data:image\/png;base64,/)
+dobreprogramy.pl##.page-form *:matches-css(background: /url("?blob:https://www.dobreprogramy.pl//)
+dobreprogramy.pl##div > div:not([class]):not([id]):style(position: absolute!important; left: -3000px!important;)
+dobreprogramy.pl##[style^="background:url"][style*="blob:https://www.dobreprogramy.pl/"]:style(position: absolute!important; left: -3000px!important;)
 !
 ! purepc.pl
 purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !important; position: absolute !important;)
