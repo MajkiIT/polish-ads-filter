@@ -3,8 +3,8 @@
 ! Homepage: https://certyficate.it
 ! Oświadczenie: https://github.com/MajkiIT/polish-ads-filter/blob/master/STATEMENT.md
 ! EULA: Subskrybcja|Użytkowanie listy "Polskie filtry wewnętrzne" jest równoznaczne z wyrażeniem zgody na bycie ich komitentem, a twórcy nie ponoszą odpowiedzialności prawnej za nadużycia użytkowników.
-! Last modified: 17 January 2018, 22:15
-! Version: 152
+! Last modified: 18 January 2018, 00:51
+! Version: 153
 ! Expires: 3 days
 ! Wymagane:
 !   Rozszerzenia >> uBlock Origin / AdGuard lub ich aktualne forki
@@ -441,12 +441,7 @@ dsw.doba.pl###stick-to-left
 !
 pudelek.pl##.content.page > div:nth-of-type(2)
 !
-@@||www.dobreprogramy.pl^$generichide
-@@||static.criteo.net/js/ld/publishertag.js$script,domain=www.dobreprogramy.pl
-@@||amp.services^$script,domain=www.dobreprogramy.pl
-@@||googletagservices.com^$script,domain=www.dobreprogramy.pl
-@@||securepubads.g.doubleclick.net^$script,domain=www.dobreprogramy.pl
-www.dobreprogramy.pl###dfpList_MIDDLE5
+www.dobreprogramy.pl##script:inject(abort-current-inline-script.js, Math.random, outerMostParent)
 !
 !
 !----------------------!-Przyciski-!----------------------!
