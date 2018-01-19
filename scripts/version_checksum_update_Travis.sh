@@ -21,15 +21,20 @@ for i in "$@"; do
     # Sciezka to miejsce, w którym znajduje się skrypt
     sciezka=$(dirname "$0")
     
-    # Aktualizacja sumy kontrolnej
+    # Generowanie sumy kontrolnej (binarny MD5 zakodowany w Base64)
     # Założenie: kodowanie UTF-8 i styl końca linii Unix
-    # Usuwanie starej sumy kontrolnej i pustych linii
-    grep -v '! Checksum: ' $i | grep -v '^$' > $i.chk
-    # Generowanie sumy kontrolnej... Binarny MD5 zakodowany w Base64
-    suma_k=`cat $i.chk | openssl dgst -md5 -binary | openssl enc -base64 | cut -d "=" -f 1`
-    # Zamiana atrapy sumy kontrolnej na prawdziwą
-    sed -i "/! Checksum: /c\! Checksum: $suma_k" $i
-    rm -r $i.chk
+    if grep -q "! Checksum: " $i; then
+        grep -v '! Checksum: ' $i | grep -v '^$' > $i.chk
+        suma_k=`cat $i.chk | openssl dgst -md5 -binary | openssl enc -base64 | cut -d "=" -f 1`
+        sed -i "/! Checksum: /c\! Checksum: $suma_k" $i
+        rm -r $i.chk
+    elif grep -q "/\[Adblock Plus 2.0\]/" $i; then
+        suma_k=`cat $i | openssl dgst -md5 -binary | openssl enc -base64 | cut -d "=" -f 1`
+        sed -i  "/\[Adblock Plus 2.0\]/a ! Checksum: $suma_k" $i
+    else
+        suma_k=`cat $i | openssl dgst -md5 -binary | openssl enc -base64 | cut -d "=" -f 1`
+        sed -i '/! Title: /i\'"! Checksum: $suma_k" $i
+    fi
 
     # Przejście do katalogu, w którym znajduje się lokalne repozytorium git
     cd $sciezka/..
