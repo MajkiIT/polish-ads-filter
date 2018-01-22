@@ -5,9 +5,9 @@
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 22 Jan 2018 21:45:00 UTC+01
+! Last modified: 22 Jan 2018 23:00:00 UTC+01
 ! Expires: 2 days
-! Version: 201801222145
+! Version: 201801222300
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.201801222145 aktualizacja: pon, 22 sty 2018, 21:45:00 UTC+01
+! v.201801222300 aktualizacja: pon, 22 sty 2018, 23:00:00 UTC+01
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -109,7 +109,7 @@ dobreprogramy.pl##.page-form *:matches-css(background: /url("?blob:https://www.d
 dobreprogramy.pl##[style^="background:url"][style*="blob:https://www.dobreprogramy.pl/"]:style(position: absolute!important; left: -3000px!important;)
 www.dobreprogramy.pl##script:inject(abort-current-inline-script.js, Math.random, outerMostParent)
 www.dobreprogramy.pl##script:inject(abort-current-inline-script.js, Math.random, \x67\)
-||www.dobreprogramy.pl^$csp=img-src 'self' *.dpcdn.pl
+www.dobreprogramy.pl##script:inject(addEventListener-defuser.js, DOMContentLoaded, removeEventListener)
 !
 ! purepc.pl
 purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !important; position: absolute !important;)
