@@ -5,9 +5,9 @@
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 23 January 2018
+! Last modified: 24 January 2018
 ! Expires: 2 days
-! Version: 2018012303
+! Version: 2018012401
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018012303 aktualizacja: wt, 23 sty 2018, 22:05:00
+! v.2018012401 aktualizacja: sr, 24 stycznia 2018, 16:20:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -118,6 +118,8 @@ www.wp.pl##:xpath(//div[count(*)=1][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[
 ~www.wp.pl,wp.pl##:xpath(//div[count(*)=3][img[@class][@src]][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
 www.wp.pl##:xpath(//div[@data-st-area='Zakupy'][count(*)=2][not(header)])
 www.wp.pl##body:style(overflow: visible!important;)
+~www.wp.pl,wp.pl,sportowefakty.wp.pl##div[class*=" "]:has(>div[class*=" "] > [class^="__bc_layer"])
+www.wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 !
 ! kurnik.pl
 kurnik.pl##.adsbygoogle:style(height: 1px !important; width: 1px !important;)
