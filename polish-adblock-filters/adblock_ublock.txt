@@ -7,7 +7,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 24 January 2018
 ! Expires: 2 days
-! Version: 2018012401
+! Version: 2018012402
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018012401 aktualizacja: sr, 24 stycznia 2018, 16:20:00
+! v.2018012402 aktualizacja: sr, 24 stycznia 2018, 20:00:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -105,6 +105,7 @@ dobreprogramy.pl##.page-form *:matches-css(background: /url\("?data:image\/png;b
 dobreprogramy.pl##.page-form *:matches-css(background: /url("?blob:https://www.dobreprogramy.pl//)
 dobreprogramy.pl##[style^="background:url"][style*="blob:https://www.dobreprogramy.pl/"]:style(position: absolute!important; left: -3000px!important;)
 www.dobreprogramy.pl##script:inject(addEventListener-defuser.js, DOMContentLoaded, removeEventListener)
+||www.dobreprogramy.pl^$csp=img-src 'self' *.dpcdn.pl
 !
 ! purepc.pl
 purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !important; position: absolute !important;)
