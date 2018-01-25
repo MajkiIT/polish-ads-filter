@@ -5,9 +5,9 @@
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 24 January 2018
+! Last modified: 25 January 2018
 ! Expires: 2 days
-! Version: 2018012402
+! Version: 2018012501
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018012402 aktualizacja: sr, 24 stycznia 2018, 20:00:00
+! v.2018012501 aktualizacja: czw, 25 stycznia 2018, 19:05:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -240,7 +240,6 @@ pilkanozna.pl##.index_bg_top:style(top: auto!important;)
 portal.abczdrowie.pl##.article__side__stickblock:style(position: absolute!important; left: -3000px!important;)
 portal.abczdrowie.pl##.article__textbox:style(position: absolute!important; left: -3000px!important;)
 spidersweb.pl##.playstation.wall-bg:style(background: none!important)
-swiatfilmow.com###preroll_skip_btn:style(display: block!important;)
 tabletowo.pl###main_header:style(margin-top: 0px!important;)
 tv-wschod.pl##section.container:style(padding-top: 0px!important;)
 tv-wschod.pl##.widget:style(margin: 10px -15px 0 0!important;)
@@ -259,3 +258,7 @@ gadzetomania.pl,wp.pl,autokult.pl,komorkomania.pl,fotoblogia.pl##script:inject(a
 !
 ! Rules after Adblock
 vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
+!
+! Rules to limit time wait on movies
+ekino-tv.pl##script:inject(nano-setTimeout-booster.js)
+swiatfilmow.com##script:inject(nano-setTimeout-booster.js, function, 1000, 0.02)
