@@ -34,17 +34,17 @@ KAD - Przekręty | przekręty sms, oszustwa | ([Klik](https://raw.githubusercont
 
 #### Uwagi
 
-- Jeśli dodajesz treści o charakterze erotycznym, pamiętaj od dodaniu `NSFW!` na początku tytułu, np. 
+- Jeśli dodajesz treści o charakterze erotycznym, pamiętaj od dodaniu `NSFW` na początku tytułu, np. 
 
-```NSFW! przykladowastrona.pl```
+```NSFW przykladowastrona.pl```
 
-- Jeśli twoja sprawa jest pilna i nie cierpiąca zwłoki, pamiętaj o dodaniu `URGENT!` na początku tytułu, np. 
+- Jeśli twoja sprawa jest pilna i nie cierpiąca zwłoki, pamiętaj o dodaniu `URGENT` na początku tytułu, np. 
 
-```URGENT! przykladowastrona.pl```
+```URGENT przykladowastrona.pl```
 
-- Jeśli tworzysz zgłoszenie grupowe i chcesz w nim umieścić kilka serwisów, pamiętaj o dodaniu `GROUP!` na początku tytułu, np. 
+- Jeśli tworzysz zgłoszenie grupowe i chcesz w nim umieścić kilka serwisów, pamiętaj o dodaniu `GROUP` na początku tytułu, np. 
 
-```GROUP! przykladowastrona.pl```
+```GROUP przykladowastrona.pl```
 
 ## Przykład
 
