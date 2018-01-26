@@ -3,8 +3,8 @@
 ! Homepage: https://certyficate.it
 ! Oświadczenie: https://github.com/MajkiIT/polish-ads-filter/blob/master/STATEMENT.md
 ! EULA: Subskrybcja|Użytkowanie listy "Polskie filtry wewnętrzne" jest równoznaczne z wyrażeniem zgody na bycie ich komitentem, a twórcy nie ponoszą odpowiedzialności prawnej za nadużycia użytkowników.
-! Last modified: 18 January 2018
-! Version: 177
+! Last modified: 26 January 2018
+! Version: 218
 ! Expires: 3 days
 ! Wymagane:
 !   Rozszerzenia >> uBlock Origin / AdGuard lub ich aktualne forki
@@ -19,6 +19,8 @@
 !   Subskrybuj swoje listy filtrów >> https://certyficate.it/adblock
 !
 !----------------------!-Ogólne reguły wewnętrzne-!----------------------!
+!
+sprawnymarketing.pl##.hidden-mobile
 !
 bulldogjob.pl##.well-transparent.well-lg.well:nth-of-type(1)
 !
@@ -63,6 +65,14 @@ petronews.pl##a[href="http://petronews.pl/reklama-plus/"]
 !
 !
 !----------------------!-Sklepy-!----------------------!
+!
+www.portel.pl##.col_left > .mojBox:nth-of-type(6)
+!
+gamedot.pl##.news-shop
+!
+liberte.pl##.shop-liberte
+!
+www.culturva.pl###HTML9
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/4545
 gamedot.pl###content > div.content-columns.width > div.content-columns-right > div:nth-child(7)
@@ -109,8 +119,31 @@ arch.telewizjarepublika.pl###column-right > a[href="http://sklep.telewizjarepubl
 www.sfd.pl##.promotion-products.articles-section
 www.sfd.pl##.add-produkt-boksprods
 !
+libertarianin.org###text-29
+!
 !
 !----------------------!-Prenumeraty premium-!----------------------!
+!
+www.forbes.pl##.wdgImage.wdg:nth-of-type(3)
+!
+liberte.pl##.pobierz-nowe-wydanie
+!
+www.rynek-kolejowy.pl##.najnowszyNumerRK
+www.rynek-kolejowy.pl###wiadomoscBody > div:nth-of-type(4)
+!
+superhistoria.pl##.issue-cover
+superhistoria.pl##.issue-art-info
+superhistoria.pl##.art-text-relation-issue-dorzeczy.art-text-relation
+!
+forumakademickie.pl###miesieczniki
+!
+www.dziennikpolski24.pl##.kontener-okladka.columns.medium-4
+www.dziennikpolski24.pl##.row.prenumerata-linki
+!
+www.ckm.pl##.sidebar-advert:nth-of-type(7)
+www.ckm.pl##.clearfix.homepage-main-ad-box
+www.ckm.pl##.new-magazine.tab-box
+www.ckm.pl##.sidebar-advert:nth-of-type(5)
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/4556
 wolnosc24.pl##.td-pb-row.wpb_row.vc_row:nth-of-type(2)
@@ -136,8 +169,6 @@ magazyngitarzysta.pl##.transition-all.button
 magazyngitarzysta.pl##.new-newspaper.module
 !
 sadeczanin.info##.views-row-odd.views-row-7.views-row
-!
-poranny.pl##.hide-for-small-down.medium-4.columns
 !
 ppe.pl##.clb.clearfix.sprzedaz.box
 !
@@ -181,24 +212,14 @@ tygodnikprzeglad.pl##.widget.widget-5
 !
 focus.pl###magazineCarousel
 !
-poranny.pl###paywall-zaslona
-!
 terazrock.pl##.nowynumer.box
 !
 gazetapolska.pl###sidebar-second > .column
-!
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4864
-echodnia.eu,dziennikzachodni.pl##.hide-for-small-down.medium-4.columns
-echodnia.eu,dziennikzachodni.pl###paywall-zaslona
 !
 rzeszow.wyborcza.pl###p_lock_body
 ||bis.gazeta.pl/im/4/21084/m21084594.png
 !
 gpcodziennie.pl##.new-prenumerata
-!
-dzienniklodzki.pl##.typBaner.skrocone.rekomendacje.large-3.hide-for-medium-down.columns > div
-dzienniklodzki.pl###LinkArea\:medPlPl > .lewaKolumna.medium-6.columns > .show-for-large-up.promoBox
-dzienniklodzki.pl##.hide-for-small-down.medium-4.columns
 !
 slowosportowe.pl###buy-online
 !
@@ -215,15 +236,14 @@ www.pch24.pl##.mt30.posr
 skijumping.pl##.block_16.billboard:nth-of-type(4)
 skijumping.pl##.ad1
 !
-www.gazetalubuska.pl###zajawka-serwis-plus
-www.gazetalubuska.pl,www.gloswielkopolski.pl,www.kurierlubelski.pl,www.nto.pl,www.gs24.pl##.hide-for-small-down.medium-4.columns
-www.gazetalubuska.pl,www.gloswielkopolski.pl,www.kurierlubelski.pl,www.nto.pl,www.gs24.pl##.typBaner.skrocone.rekomendacje.large-3.hide-for-medium-down.columns > div
-www.gazetalubuska.pl,www.gloswielkopolski.pl,www.kurierlubelski.pl,www.nto.pl,www.gs24.pl###LinkArea\:medPlPl > .lewaKolumna.medium-6.columns > .show-for-large-up.promoBox
-www.gazetalubuska.pl###paywall-zaslona
+www.gazetalubuska.pl,www.pomorska.pl###zajawka-serwis-plus
+www.gazetalubuska.pl,www.poranny.pl,www.gloswielkopolski.pl,www.kurierlubelski.pl,www.nto.pl,www.gs24.pl,www.pomorska.pl,www.gazetawroclawska.pl,www.dzienniklodzki.pl,www.echodnia.eu,www.dziennikzachodni.pl,www.dziennikbaltycki.pl,www.gazetakrakowska.pl,www.nowiny24.pl##.hide-for-small-down.medium-4.columns
+www.gazetalubuska.pl,www.gloswielkopolski.pl,www.kurierlubelski.pl,www.nto.pl,www.gs24.pl,www.pomorska.pl,www.dzienniklodzki.pl,www.dziennikbaltycki.pl,www.gazetakrakowska.pl,www.nowiny24.pl##.typBaner.skrocone.rekomendacje.large-3.hide-for-medium-down.columns > div
+www.gazetalubuska.pl,www.gloswielkopolski.pl,www.kurierlubelski.pl,www.nto.pl,www.gs24.pl,www.pomorska.pl,www.dzienniklodzki.pl,www.dziennikbaltycki.pl,www.gazetakrakowska.pl,www.nowiny24.pl###LinkArea\:medPlPl > .lewaKolumna.medium-6.columns > .show-for-large-up.promoBox
+www.gazetalubuska.pl,www.poranny.pl,www.gazetalubuska.pl,www.echodnia.eu,www.dziennikzachodni.pl,www.dziennikbaltycki.pl,www.gazetawroclawska.pl,www.nowiny24.pl###paywall-zaslona
 !
 www.dziennik.pl##.tpl_dgp_edgp.tpl_std_module
 gospodarka.dziennik.pl##.infor-responsive-banner
-www.gazetalubuska.pl###paywall-zaslona
 !
 www.pcworld.pl##.section-110
 !
@@ -242,6 +262,8 @@ gwarek.com.pl##.blok:nth-of-type(2)
 !
 !
 !----------------------!-Promocje-!----------------------!
+!
+www.money.pl##.widgets > div:nth-of-type(5)
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/4608
 upolujebooka.pl##.banner:nth-of-type(2)
@@ -272,9 +294,6 @@ biztok.money.pl##.news
 !
 !----------------------!-Społecznościowe-!----------------------!
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4216
-wakai.pl##right > center:nth-of-type(1)
-!
 serialomaniak.pl##a[href="https://www.facebook.com/groups/grupaserialomaniak"]
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/4737
@@ -282,6 +301,8 @@ wadowice24.pl###right2 > .title-off.module:nth-of-type(3)
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/5352
 startkariery.pl###footer-widgets > .home-widget:nth-of-type(2)
+!
+prawy.pl##img[src="/ad/dolina_1.jpg"]
 !
 !
 !----------------------!-Spam-!----------------------!
@@ -321,8 +342,15 @@ thevideo.us##.fa-exclamation-circle.fa-fw.fa
 !
 vidlox.tv##.dwnld
 !
+www.youtube.com##.ytp-endscreen-content
+!
 !
 !----------------------!-Miejsca na reklame-!----------------------!
+!
+dowbit.pl###et_ads-3
+!
+droneweb.pl##.td-header-sp-recs
+droneweb.pl##.td-all-devices
 !
 lukow24.pl##div:nth-of-type(6) > a[href="http://www.reklama.lukow24.pl"] > img[src="/grafika/miejsce_na_reklame.jpg"]
 lukow24.pl##div:nth-of-type(8) > a[href="http://www.reklama.lukow24.pl"] > img[src="/grafika/miejsce_na_reklame.jpg"]
@@ -349,6 +377,8 @@ niebezpiecznik.pl###text-14 > .textwidget
 !
 !----------------------!-Inne-!----------------------!
 !
+superhistoria.pl###page-box-2-162-20
+!
 sadeczanin.info##.view-dom-id-0fdf4aa148404cb29a8d594c25b7313b.view-display-id-block_bannery_prawa_kolumna_strona_glowna.view-id-bannery.view-bannery.view > .view-content
 !
 wnp.pl##.col-x4 > div:nth-of-type(2)
@@ -359,6 +389,10 @@ naszpradnik.pl###swifty-img-widget-3
 !
 !
 !----------------------!-Konkursy-!----------------------!
+!
+pultusk24.pl##.row:nth-of-type(4) > .fl.w500:nth-of-type(1)
+!
+www.ckm.pl##.hp-show-sidebar-box.tab-box
 !
 polskieradio.pl##.Section02.third.col-md-4
 !
@@ -489,8 +523,15 @@ faktykonopne.pl##.vc_col-sm-6.vc_column_container.wpb_column:nth-of-type(2)
 mragowo24.info##.ads.reklama_wysuwana_bok2
 mragowo24.info##.ads.reklama_wysuwana_bok
 !
+patronite.pl##.active.zostan_patronem_menu
+!
 !
 !----------------------!-Polecane-!----------------------!
+!
+hiro.pl##[class^="block-title"]:-abp-contains(petarda)
+hiro.pl##[class^="td_block_inner td-column-3"]
+!
+naekranie.pl##.prawa-szpalta.box:nth-of-type(3)
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/5403
 korsosanockie.pl##.companies.widget.row
@@ -499,6 +540,8 @@ korsosanockie.pl##.companies.widget.row
 esanok.pl##.fiblok:nth-of-type(n+6):nth-of-type(-n+14)
 !
 niebezpiecznik.pl##a[href^="https://niebezpiecznik.pl/szkolenia/"]
+!
+www.rynekzdrowia.pl###boxSpodekMCK
 !
 !
 !----------------------!-Aplikacje-!----------------------!
@@ -509,10 +552,17 @@ hipp.pl##.m-promo
 !
 !----------------------!-Katalogi firm-!----------------------!
 !
+www.portel.pl##.kat
+!
 ki24.info##.company > .row:nth-of-type(1)
 !
 !
 !----------------------!-Odtwarzacz-!----------------------!
 !
 dorzeczy.pl##.muted-player
+!
+!
+!----------------------!-Autoreklama-!----------------------!
+!
+aszdziennik.pl##.old-centered.container.footer__box--row
 !
