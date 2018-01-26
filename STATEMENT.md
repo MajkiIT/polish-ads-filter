@@ -17,6 +17,8 @@ Polskie filtry dla Adblocka, uBlocka i AdGuarda. To sposób oceniania i kategory
 - staramy się zapewnić możliwie jak najszybsze wsparcie, dlatego stworzyliśmy [kanał discord](https://discord.me/polskiefiltry)
 - nim coś zrobimy poddajmy to [głosowaniu społeczności](https://fb.com/CertyficateIT/) by podjąć jak najlepszą decyzje
 
+### Przydzielanie elementów do list
+
 **LISTA** | **ELEMENTY** | **LINK** | **WYMAGANIA** | **ZGODNOŚĆ** |
 --- |--- |--- |--- |---
 Oficjalne polskie filtry do AdBlocka, uBlocka Origin i AdGuarda | reklamy zwykłe, reklamy multimedialne, irytujące linki afiliacyjne, skrypty anty-adblock | ([Klik](https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt)) | [![EasyList](https://img.shields.io/badge/color--brightgreen.svg?label=EasyList)](https://easylist.to/easylist/easylist.txt) [![Uzupełnienie uBO](https://img.shields.io/badge/color--yellowgreen.svg?label=Uzupelnienie%20uBO)](https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt) [![Uzupełnienie AG](https://img.shields.io/badge/color--yellowgreen.svg?label=Uzupelnienie%20AG)](https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_adguard.txt) | ![uBO](https://www.certyficate.it/adblock/ublock.png) ![AG](https://www.certyficate.it/adblock/adguard_new.png) ![ADB](https://www.certyficate.it/adblock/adblock.png) ![ABP](https://www.certyficate.it/adblock/adblock_plus.png) ![NANO](https://www.certyficate.it/adblock/nano.png)
