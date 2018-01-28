@@ -4,8 +4,8 @@
 ! Homepage: https://certyficate.it
 ! Oświadczenie: https://github.com/MajkiIT/polish-ads-filter/blob/master/STATEMENT.md
 ! EULA: Subskrybcja|Użytkowanie listy "Polskie filtry wewnętrzne" jest równoznaczne z wyrażeniem zgody na bycie ich komitentem, a twórcy nie ponoszą odpowiedzialności prawnej za nadużycia użytkowników.
-! Last modified: 27 January 2018
-! Version: 221
+! Last modified: 28 January 2018
+! Version: 222
 ! Expires: 3 days
 ! Wymagane:
 !   Rozszerzenia >> uBlock Origin / AdGuard lub ich aktualne forki
@@ -124,6 +124,10 @@ libertarianin.org###text-29
 !
 !
 !----------------------!-Prenumeraty premium-!----------------------!
+!
+www.supertydzien.pl##.widget.row:nth-of-type(1)
+www.supertydzien.pl##.content > div:nth-of-type(2)
+www.supertydzien.pl##.widget.row:nth-of-type(n+6):nth-of-type(-n+7)
 !
 www.forbes.pl##.wdgImage.wdg:nth-of-type(3)
 !
@@ -288,8 +292,7 @@ londynek.net##.promotion-front.jd-section-front
 wp.pl##div[data-st-area="Stream-naglowek"]
 wp.pl##div[data-st-area="Ciekawostki-gry"]
 !
-money.pl##.widgets > div:nth-of-type(7)
-money.pl##.widgets > div:nth-of-type(8)
+money.pl##.widgets > div:nth-of-type(n+7):nth-of-type(-n+8)
 biztok.money.pl##.news
 !
 !
@@ -335,13 +338,10 @@ alltube.tv##header > .row
 !
 rapidvideo.com##a[href^="//"]
 !
-thevideo.io##.inplayer_signup_link > span:nth-of-type(2)
-thevideo.io##.fa-exclamation-circle.fa-fw.fa
+thevideo.io,thevideo.us,thevideo.me,tvad.me##.inplayer_signup_link > span:nth-of-type(2)
+thevideo.io,thevideo.us,thevideo.me,tvad.me##.fa-exclamation-circle.fa-fw.fa
 !
-thevideo.us##.inplayer_signup_link > span:nth-of-type(2)
-thevideo.us##.fa-exclamation-circle.fa-fw.fa
-!
-vidlox.tv##.dwnld
+vidlox.tv,vidlox.me##.dwnld
 !
 www.youtube.com##.ytp-endscreen-content
 !
@@ -489,8 +489,7 @@ filetracker.pl###gosc
 a-o.ninja##center > font
 !
 pionki24.pl##.siderightcontent:nth-of-type(30)
-pionki24.pl##div:nth-of-type(31)
-pionki24.pl##div:nth-of-type(32)
+pionki24.pl##div:nth-of-type(n+31):nth-of-type(-n+32)
 pionki24.pl##.prawyblok2content
 pionki24.pl##.siderightcontent:nth-of-type(1)
 pionki24.pl##.siderightcontent:nth-of-type(3)
@@ -570,4 +569,10 @@ dorzeczy.pl##.muted-player
 www.ponapisach.pl##.main-custom-logo
 !
 aszdziennik.pl##.old-centered.container.footer__box--row
+!
+!
+!----------------------!-ankiety - sms premium-!----------------------!
+!
+www.supertydzien.pl##.widget.row:nth-of-type(n+8):nth-of-type(-n+9)
+www.supertydzien.pl##.widget.row:nth-of-type(n+2):nth-of-type(-n+3)
 !
