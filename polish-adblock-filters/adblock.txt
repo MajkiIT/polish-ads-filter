@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 29 January 2018
 ! Expires: 1 day
-! Version: 2018012901
+! Version: 2018012902
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018012901 aktualizacja: pon, 29 stycznia 2018, 17:15:00
+! v.2018012902 aktualizacja: pon, 29 stycznia 2018, 19:05:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -144,7 +144,7 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ##.advertisment-panel
 ##.a-d-v-i
 ##.adviewDFPBanner
-~agatameble.pl##a[href*="/ad/click/"]
+~kakto.pl,~agatameble.pl##a[href*="/ad/click/"]
 ##a[href*="adnow.com/click"]
 ##a[href*="bbelements.com/please/"]
 ##A[href*="/emisja.contentstream.pl/_/ctr/"]
@@ -821,7 +821,7 @@ gloria.tv##A[href^="/advertisement/"]
 gloria.tv##footer
 glos24.pl##IMG[src^="/files/adv/"]
 glosgminny.pl###text-30
-gloswielkopolski.pl,mybboard.pl##.partner
+gloswielkopolski.pl##.partner
 glucholazyonline.com.pl##.flexbannergrouphidden-phone
 goal.pl,ligapolska.pl##object
 goldenline.pl###adv_top
@@ -1287,7 +1287,8 @@ muzyka.dziennik.pl##.widget-headertext-area
 muzyka.interia.pl###news1
 muzykazreklam.tv##.adfullwideblock
 mvbezlimitu.pl##.E0MTE
-mybboard.pl###posts > a[href^="https://"] > IMG
+mybboard.pl##section
+mybboard.pl##[class^="partner"]
 myhome.pl##.must-login-box.f-login-wrapper
 mylomza.pl##.deepest.box-2
 mylomza.pl##.topblock
@@ -1637,6 +1638,7 @@ q4.pl##TD[bgcolor="#f0f0f0"]
 q4.pl##TD[valign="middle"]
 racjonalista.tv###execphp-3
 radio5.com.pl##.g-single
+radioaoi.pl###blok-reklamowy
 radiobiper.info##[id^="widget_sp_image-"]
 radiofm-online.com###block-block-3
 radioftb.net##.big-advertising
@@ -3462,6 +3464,7 @@ zwiedzamyparyz.pl###text-6, .a-single, .gyg-widget
 /^(http|https):\/\/[a-z\W]{6,15}\.[a-z]{2,5}\/[a-z.]{4,10}\.js/$script,domain=vidoza.net|fileone.tv
 /^(http|https):\/\/[a-z0-9.]{8,30}\.[a-z]{2,11}\/[a-z]{3,7}\/[a-z0-9]{5,25}\.(wasm|js)/$xmlhttprequest,script,domain=alltube.tv
 /(http|https):\/\/(?!alltube)(?!www.speedvid)(?!streamcherry.com)(?!vshare)(?!vidoza)(?!openload)(?!www.youtube)(?!streamango)(?!www.rapidvideo)(?!embed.nowvideo)(?!video.anyfiles)(?!vidto)[a-z0-9.-]{5,40}\.[a-z]{0,10}\/[\w\d\W]{0,100}$/$subdocument,domain=alltube.tv
+^(http|https):\/\/[a-z]{5,10}\.xyz\/[\w\W]{50,80}/$subdocument,domain=heja.tv
 !
 !38#--------------------------Bitcoin whitelist ------------!
 @@||cda.pl/*/*$subdocument,domain=alltube.tv
