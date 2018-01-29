@@ -1,3 +1,4 @@
+```
 !!! - dotyczy całej listy
 !! - dotyczy całego segmentu
 ! - dotyczący następnej linii
@@ -43,3 +44,4 @@ baner,widget
 75%  - bardzo zly
 50%  - zly
 25%  - niezadowalający
+```
