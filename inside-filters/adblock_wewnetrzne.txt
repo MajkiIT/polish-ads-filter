@@ -1,10 +1,11 @@
 ! Title: Polskie filtry wewnętrzne
+! Codename: inside - main
 ! Collaborators: KonoromiHimaries, MajkiIT, hawkeye116477
 ! Homepage: https://certyficate.it
 ! Oświadczenie: https://github.com/MajkiIT/polish-ads-filter/blob/master/STATEMENT.md
 ! EULA: Subskrybcja|Użytkowanie listy "Polskie filtry wewnętrzne" jest równoznaczne z wyrażeniem zgody na bycie ich komitentem, a twórcy nie ponoszą odpowiedzialności prawnej za nadużycia użytkowników.
-! Last modified: 26 January 2018
-! Version: 218
+! Last modified: 29 January 2018
+! Version: 251
 ! Expires: 3 days
 ! Wymagane:
 !   Rozszerzenia >> uBlock Origin / AdGuard lub ich aktualne forki
@@ -18,7 +19,9 @@
 !
 !   Subskrybuj swoje listy filtrów >> https://certyficate.it/adblock
 !
-!----------------------!-Ogólne reguły wewnętrzne-!----------------------!
+!1$----------------------{ ogólne reguły wewnętrzne }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 sprawnymarketing.pl##.hidden-mobile
 !
@@ -64,7 +67,22 @@ pionki24.pl##.siderightcontent:nth-of-type(2)
 petronews.pl##a[href="http://petronews.pl/reklama-plus/"]
 !
 !
-!----------------------!-Sklepy-!----------------------!
+!2$----------------------{ sklepy }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+www.mmarocks.pl##p > a[href^="http://sklep.mmarocks.pl/"]
+www.mmarocks.pl##.wpb_wrapper > a[href^="http://sklep.mmarocks.pl/"]
+www.mmarocks.pl##.widget_text.widget:nth-of-type(3)
+www.mmarocks.pl##.widget_text.widget:nth-of-type(7)
+www.mmarocks.pl##.widget_custom_html.widget.widget_text:nth-of-type(5)
+mmarocks.pl##[class^="widget widget_text"]
+mmarocks.pl##[class^="wpb_text_column wpb_content_element"]
+!
+racjonalista.tv###text-13
+racjonalista.tv###text-12
+!
+gosc.pl##a[href="http://sklep.gosc.pl/kategoria-produktu/md/wielkipost/"] > .imgResized.cf
 !
 www.portel.pl##.col_left > .mojBox:nth-of-type(6)
 !
@@ -122,7 +140,27 @@ www.sfd.pl##.add-produkt-boksprods
 libertarianin.org###text-29
 !
 !
-!----------------------!-Prenumeraty premium-!----------------------!
+!3$----------------------{ prenumeraty premium }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+www.ckm.pl##.sidebar-advert:nth-of-type(4)
+!
+www.gazetapolska.pl###block-views-najnowszy-spis-block-1
+www.gazetapolska.pl###block-views-ostatninumer-block-1
+www.gazetapolska.pl###footer_wrapper:nth-of-type(2)
+!
+playboy.pl##[class^="order"]
+!
+swietajno-szczycienskie.wm.pl##.box-ewydanie
+!
+wm.pl##.block-gazeta
+!
+olsztyn.wm.pl,swietajno-szczycienskie.wm.pl##.print
+!
+www.supertydzien.pl##.widget.row:nth-of-type(1)
+www.supertydzien.pl##.content > div:nth-of-type(2)
+www.supertydzien.pl##.widget.row:nth-of-type(n+6):nth-of-type(-n+7)
 !
 www.forbes.pl##.wdgImage.wdg:nth-of-type(3)
 !
@@ -237,10 +275,10 @@ skijumping.pl##.block_16.billboard:nth-of-type(4)
 skijumping.pl##.ad1
 !
 www.gazetalubuska.pl,www.pomorska.pl###zajawka-serwis-plus
-www.gazetalubuska.pl,www.poranny.pl,www.gloswielkopolski.pl,www.kurierlubelski.pl,www.nto.pl,www.gs24.pl,www.pomorska.pl,www.gazetawroclawska.pl,www.dzienniklodzki.pl,www.echodnia.eu,www.dziennikzachodni.pl,www.dziennikbaltycki.pl,www.gazetakrakowska.pl,www.nowiny24.pl##.hide-for-small-down.medium-4.columns
+www.gazetalubuska.pl,www.poranny.pl,www.gloswielkopolski.pl,www.kurierlubelski.pl,www.nto.pl,www.gs24.pl,www.pomorska.pl,www.gazetawroclawska.pl,www.dzienniklodzki.pl,www.echodnia.eu,www.dziennikzachodni.pl,www.dziennikbaltycki.pl,www.gazetakrakowska.pl,www.nowiny24.pl,www.nowosci.com.pl##.hide-for-small-down.medium-4.columns
 www.gazetalubuska.pl,www.gloswielkopolski.pl,www.kurierlubelski.pl,www.nto.pl,www.gs24.pl,www.pomorska.pl,www.dzienniklodzki.pl,www.dziennikbaltycki.pl,www.gazetakrakowska.pl,www.nowiny24.pl##.typBaner.skrocone.rekomendacje.large-3.hide-for-medium-down.columns > div
-www.gazetalubuska.pl,www.gloswielkopolski.pl,www.kurierlubelski.pl,www.nto.pl,www.gs24.pl,www.pomorska.pl,www.dzienniklodzki.pl,www.dziennikbaltycki.pl,www.gazetakrakowska.pl,www.nowiny24.pl###LinkArea\:medPlPl > .lewaKolumna.medium-6.columns > .show-for-large-up.promoBox
-www.gazetalubuska.pl,www.poranny.pl,www.gazetalubuska.pl,www.echodnia.eu,www.dziennikzachodni.pl,www.dziennikbaltycki.pl,www.gazetawroclawska.pl,www.nowiny24.pl###paywall-zaslona
+www.gazetalubuska.pl,www.gloswielkopolski.pl,www.kurierlubelski.pl,www.nto.pl,www.gs24.pl,www.pomorska.pl,www.dzienniklodzki.pl,www.dziennikbaltycki.pl,www.gazetakrakowska.pl,www.nowiny24.pl,www.nowosci.com.pl###LinkArea\:medPlPl > .lewaKolumna.medium-6.columns > .show-for-large-up.promoBox
+www.gazetalubuska.pl,www.poranny.pl,www.gazetalubuska.pl,www.echodnia.eu,www.dziennikzachodni.pl,www.dziennikbaltycki.pl,www.gazetawroclawska.pl,www.nowiny24.pl,www.nowosci.com.pl,www.gazetakrakowska.pl###paywall-zaslona
 !
 www.dziennik.pl##.tpl_dgp_edgp.tpl_std_module
 gospodarka.dziennik.pl##.infor-responsive-banner
@@ -261,7 +299,9 @@ www.forbes.pl##.wdgImage.wdg:nth-of-type(2)
 gwarek.com.pl##.blok:nth-of-type(2)
 !
 !
-!----------------------!-Promocje-!----------------------!
+!4$----------------------{ promocje }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 www.money.pl##.widgets > div:nth-of-type(5)
 !
@@ -281,18 +321,21 @@ pilot.wp.pl##.promotion-banner
 londynek.net##.promotion-front.jd-section-front
 !
 !
-!----------------------!-Gry-!----------------------!
+!5$----------------------{ gry }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/4037#issuecomment-342455796
 wp.pl##div[data-st-area="Stream-naglowek"]
 wp.pl##div[data-st-area="Ciekawostki-gry"]
 !
-money.pl##.widgets > div:nth-of-type(7)
-money.pl##.widgets > div:nth-of-type(8)
+money.pl##.widgets > div:nth-of-type(n+7):nth-of-type(-n+8)
 biztok.money.pl##.news
 !
 !
-!----------------------!-Społecznościowe-!----------------------!
+!6$----------------------{ społecznościowe }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 serialomaniak.pl##a[href="https://www.facebook.com/groups/grupaserialomaniak"]
 !
@@ -305,7 +348,9 @@ startkariery.pl###footer-widgets > .home-widget:nth-of-type(2)
 prawy.pl##img[src="/ad/dolina_1.jpg"]
 !
 !
-!----------------------!-Spam-!----------------------!
+!7$----------------------{ spam }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 brd24.pl###text-13
 !
@@ -325,27 +370,34 @@ centrumdruku3d.pl##ul > div:nth-of-type(1)
 aszdziennik.pl##.double-cols-right
 !
 !
-!----------------------!-Zachęcanie do rejestracji-!----------------------!
+!8$----------------------{ zachęcanie do rejestracji }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+popodrozy.pl##.layout_seselegant_paralex.generic_layout_container
 !
 alltube.tv##header > .row
 !
 !
-!----------------------!-Międzykontynentalne-!----------------------!
+!9$----------------------{ międzykontynentalne }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 rapidvideo.com##a[href^="//"]
 !
-thevideo.io##.inplayer_signup_link > span:nth-of-type(2)
-thevideo.io##.fa-exclamation-circle.fa-fw.fa
+thevideo.io,thevideo.us,thevideo.me,tvad.me##.inplayer_signup_link > span:nth-of-type(2)
+thevideo.io,thevideo.us,thevideo.me,tvad.me##.fa-exclamation-circle.fa-fw.fa
 !
-thevideo.us##.inplayer_signup_link > span:nth-of-type(2)
-thevideo.us##.fa-exclamation-circle.fa-fw.fa
-!
-vidlox.tv##.dwnld
+vidlox.tv,vidlox.me##.dwnld
 !
 www.youtube.com##.ytp-endscreen-content
 !
 !
-!----------------------!-Miejsca na reklame-!----------------------!
+!10$----------------------{ miejsca na reklame }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+telewizor.eu##a[href="http://telewizor.eu/reklama.html"]
 !
 dowbit.pl###et_ads-3
 !
@@ -368,14 +420,18 @@ zakopane.naszemiasto.pl##.flatFee
 naszemiasto.pl##.columns.small-12.medium-6.large-12.sekcjaWaska:nth-of-type(1)
 !
 !
-!----------------------!-Nie duże banery-!----------------------!
+!11$----------------------{ nie duże banery }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 autokult.pl##.partner-area
 !
 niebezpiecznik.pl###text-14 > .textwidget
 !
 !
-!----------------------!-Inne-!----------------------!
+!12$----------------------{ inne }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 superhistoria.pl###page-box-2-162-20
 !
@@ -388,7 +444,11 @@ comparic.pl##.td-pb-row.wpb_row.vc_row:nth-of-type(6) > .td-pb-span4.vc_column_c
 naszpradnik.pl###swifty-img-widget-3
 !
 !
-!----------------------!-Konkursy-!----------------------!
+!13$----------------------{ konkursy }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+4fun.tv##.playing
 !
 pultusk24.pl##.row:nth-of-type(4) > .fl.w500:nth-of-type(1)
 !
@@ -413,12 +473,16 @@ ddwloclawek.pl##.col-md-4 > .box-margin
 ddwloclawek.pl##.container:nth-of-type(12) > .row:nth-of-type(11)
 !
 !
-!----------------------!-Zdarzenia-!----------------------!
+!14$----------------------{ zdarzenia }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 poranny.pl##a[href*="&utm_campaign=prenumerata-swiateczna"]
 !
 !
-!----------------------!-Kampanie Społeczne-!----------------------!
+!15$----------------------{ kampanie Społeczne }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/4771
 mieszkaniectargowka.pl###image-2
@@ -431,7 +495,9 @@ trybunaczestochowska.pl##.wp-image-14638.size-full.aligncenter
 trybunaczestochowska.pl##.popmake-close.pum-close
 !
 !
-!----------------------!-Sezonowe-!----------------------!
+!16$----------------------{ sezonowe }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/4789
 benchmark.pl##img[src="http://www.benchmark.pl/uploads/backend_img/c/konkursy/kalendarz-2017/kalendarz_960x90.jpg"]
@@ -443,19 +509,25 @@ benchmark.pl##img[src="http://www.benchmark.pl/uploads/backend_img/c/konkursy/ka
 pudelek.tv##.aside-youtube-channel:nth-of-type(4)
 !
 !
-!----------------------!-Loga-!----------------------!
+!17$----------------------{ loga }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/4797
 ebd.cda.pl##.pb-logo
 !
 !
-!----------------------!-Tła-!----------------------!
+!18$----------------------{ tła }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/5154
 ||s.znak.com.pl/files/background/tapeta-1900x1500fisher3.jpg$image
 !
 !
-!----------------------!-Premium-!----------------------!
+!19$----------------------{ premium }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 naekranie.pl##a[href="/strefa-showmax"]
 !
@@ -463,20 +535,28 @@ naekranie.pl##a[href="/strefa-showmax"]
 rp.pl###containerEkonomiaPrawo > .row > .mk-component--horizontal.col-xs-12
 !
 !
-!----------------------!-Ulepszenia-!----------------------!
+!20$----------------------{ ulepszenia }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 shinden.pl##iframe[src="https://titanembeds.com/embed/245931283031523330?defaultchannel=366583280058892289"]
 !
 alltube.tv###slide-panel:style(position: absolute!important; top: 400px!important;)
 !
 !
-!----------------------!-Partnerzy-!----------------------!
+!21$----------------------{ partnerzy }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+www.ponapisach.pl###hugeit_slider_widget-10
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/4813
 histografy.pl###text-6
 !
 !
-!----------------------!-Komunikaty i tabelki-!----------------------!
+!22$----------------------{ komunikaty i tabelki }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/4834
 strefadb.pl###tooltip
@@ -486,36 +566,45 @@ filetracker.pl###gosc
 a-o.ninja##center > font
 !
 pionki24.pl##.siderightcontent:nth-of-type(30)
-pionki24.pl##div:nth-of-type(31)
-pionki24.pl##div:nth-of-type(32)
+pionki24.pl##div:nth-of-type(n+31):nth-of-type(-n+32)
 pionki24.pl##.prawyblok2content
 pionki24.pl##.siderightcontent:nth-of-type(1)
 pionki24.pl##.siderightcontent:nth-of-type(3)
 pionki24.pl##.siderightcontent:nth-of-type(34)
 !
 !
-!----------------------!-Uważaj na-!----------------------!
+!23$----------------------{ uważaj na }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 uwazajnakryptowaluty.pl^
 !
 !
-!----------------------!-Sponsorzy-!----------------------!
+!24$----------------------{ sponsorzy }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 wysokienapiecie.pl##.col-module:nth-of-type(2)
 !
 !
-!----------------------!-Ankiety-!----------------------!
+!25$----------------------{ ankiety }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/5148
 dsw.doba.pl###stick-to-left
 !
 !
-!----------------------!-Tymczasowe-!----------------------!
+!26$----------------------{ tymczasowe }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 pudelek.pl##.content.page > div:nth-of-type(2)
 !
 !
-!----------------------!-Przyciski-!----------------------!
+!27$----------------------{ przyciski }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/5393
 faktykonopne.pl##.vc_col-sm-6.vc_column_container.wpb_column:nth-of-type(2)
@@ -526,7 +615,14 @@ mragowo24.info##.ads.reklama_wysuwana_bok
 patronite.pl##.active.zostan_patronem_menu
 !
 !
-!----------------------!-Polecane-!----------------------!
+!28$----------------------{ polecane }----------------------!
+!
+!# https://github.com/MajkiIT/polish-ads-filter/issues/5749
+!& [T: 2018.01.29] [A: ukryj] [R: tabela] [S: zrealizowane] [P:2] [Q-12] [N=B]
+olsztyn.wm.pl###content > div:nth-of-type(7)
+olsztyn.wm.pl##div:nth-of-type(13)
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 hiro.pl##[class^="block-title"]:-abp-contains(petarda)
 hiro.pl##[class^="td_block_inner td-column-3"]
@@ -544,25 +640,94 @@ niebezpiecznik.pl##a[href^="https://niebezpiecznik.pl/szkolenia/"]
 www.rynekzdrowia.pl###boxSpodekMCK
 !
 !
-!----------------------!-Aplikacje-!----------------------!
+!29$----------------------{ aplikacje }----------------------!
 !
-# https://github.com/MajkiIT/polish-ads-filter/issues/5555
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+!# https://github.com/MajkiIT/polish-ads-filter/issues/5555
 hipp.pl##.m-promo
 !
 !
-!----------------------!-Katalogi firm-!----------------------!
+!30$----------------------{ katalogi firm }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 www.portel.pl##.kat
 !
 ki24.info##.company > .row:nth-of-type(1)
 !
 !
-!----------------------!-Odtwarzacz-!----------------------!
+!31$----------------------{ odtwarzacz }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 dorzeczy.pl##.muted-player
 !
 !
-!----------------------!-Autoreklama-!----------------------!
+!32$----------------------{ autoreklama }----------------------!
 !
-aszdziennik.pl##.old-centered.container.footer__box--row
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+www.ponapisach.pl##.main-custom-logo
+!
+aszdziennik.pl,innpoland.pl,mamadu.pl##.old-centered.container.footer__box--row
+!
+!
+!33$----------------------{ ankiety - sms premium }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+www.supertydzien.pl##.widget.row:nth-of-type(n+8):nth-of-type(-n+9)
+www.supertydzien.pl##.widget.row:nth-of-type(n+2):nth-of-type(-n+3)
+!
+!
+!34$----------------------{ fix na zepsute elementy }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+olsztyn.wm.pl##.icon-Symbol4-day
+olsztyn.wm.pl##.icon-Symbol9-day
+!
+!
+!35$----------------------{ puste sekcje }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+elubaczow.com##.posts > .widgettitle:nth-of-type(3)
+!
+!
+!36$----------------------{ wizjer e-handlu }----------------------!
+!
+!: "wizjer e-handlu" jest to index złych praktyk stosowanych przez e-commerce.
+!
+!# https://github.com/MajkiIT/polish-ads-filter/issues/5786
+!& [T: 2018.01.29] [A: ukryj] [E: reklama] [R: baner] [S: zrealizowane] [P:2] [Q-8] [N=B]
+www.hitech.com.pl##.look_at
+!&? [E: konkurs]
+www.hitech.com.pl##.banner_right > .item:nth-of-type(1)
+!&? [E: autoreklama]
+www.hitech.com.pl##.banner_right > .item:nth-of-type(5)
+!&? [E: reklama]
+www.hitech.com.pl##.banner_right > .item:nth-of-type(n+2):nth-of-type(-n+4)
+!
+!# https://github.com/MajkiIT/polish-ads-filter/issues/5784
+!& [T: 2018.01.29] [A: ukryj] [E: partner] [R: baner] [S: zrealizowane] [P:2] [Q-9] [N=B]
+procpu.pl##.conteiner > div:nth-of-type(1)
+!
+!# https://github.com/MajkiIT/polish-ads-filter/issues/5783
+!& [T: 2018.01.29] [A: ukryj] [E: reklama] [R: baner] [S: zrealizowane] [P:2] [Q-9] [N=B]
+foxkomputer.pl##p:nth-of-type(2)
+!
+!# https://github.com/MajkiIT/polish-ads-filter/issues/5778
+!& [T: 2018.01.29] [A: ukryj] [E: reklama] [R: baner] [S: zrealizowane] [P:2] [Q-8] [N=B]
+www.senetic.pl###banner
+!&? [E: partner]
+www.senetic.pl##.office365.vendor
+www.senetic.pl##a[href="https://office365.senetic.pl/pakiety-i-ceny/"]
+!
+!# https://github.com/MajkiIT/polish-ads-filter/issues/5777
+!& [T: 2018.01.29] [A: ukryj] [E: promocja] [R: baner] [S: zrealizowane] [P:2] [Q-16] [N=B]
+www.zadowolenie.pl##[class^="js-widget_holder  layer_element"]
+www.zadowolenie.pl##[class^="b-offer_banner js-billboard g-mb0"]
+www.zadowolenie.pl##.b-adZone_wide:nth-of-type(5)
 !

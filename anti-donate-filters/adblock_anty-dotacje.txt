@@ -1,10 +1,11 @@
 ! Title: Polskie filtry anty-dotacyjne
+! Codename: ant-dot - main
 ! Collaborators: KonoromiHimaries, MajkiIT
 ! Homepage: https://certyficate.it
 ! Oświadczenie: https://github.com/MajkiIT/polish-ads-filter/blob/master/STATEMENT.md
 ! EULA: Subskrybcja|Użytkowanie listy "Polskie filtry anty-dotacyjne" jest równoznaczne z wyrażeniem zgody na bycie ich komitentem, a twórcy nie ponoszą odpowiedzialności prawnej za nadużycia użytkowników.
-! Last modified: 26 January 2018
-! Version: 71
+! Last modified: 29 January 2018
+! Version: 83
 ! Expires: 3 days
 ! Wymagane:
 !   Rozszerzenia >> uBlock Origin / AdGuard lub ich aktualne forki
@@ -18,7 +19,11 @@
 !
 !   Subskrybuj swoje listy filtrów >> https://certyficate.it/adblock
 !
-!----------------------!-Ogólne reguły anty-dotacyjne-!----------------------!
+!1$----------------------{ ogólne reguły anty-dotacyjne }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+wimieprawdy.pl###gkSidebar > .nomargin.clear.box
 !
 histmag.org##a[href="https://histmag.org/Histmag-wesprzyj-nas-9745"]
 !
@@ -88,18 +93,24 @@ obserwatorpolityczny.pl###widget-wrap:nth-of-type(1)
 kodiwpigulce.pl###text-33
 !
 !
-!----------------------!-Sezonowe-!----------------------!
+!2$----------------------{ sezonowe }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 wykop.pl##.woodle
 !
 !
-!----------------------!-Bitcoin-!----------------------!
+!3$----------------------{ bitcoin }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 !#https://github.com/MajkiIT/polish-ads-filter/issues/4619
 bitcoin-online.pl##.sppb-col-md-6:nth-of-type(2)
 !
 !
-!----------------------!-Paypal-!----------------------!
+!4$----------------------{ paypal }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 shareinfo.pl###text-6
 shareinfo.pl##.tg-third-footer-widget
@@ -128,27 +139,41 @@ prawicowyinternet.pl##center:nth-of-type(2)
 argonauta.pl##.widget-container:nth-of-type(5)
 !
 !
-!----------------------!-Międzykontynentalne-!----------------------!
+!5$----------------------{ międzykontynentalne }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/4798
 creativecommons.org###header-below
 creativecommons.org##.slide-trigger
 !
 !
-!----------------------!-Patronite-!----------------------!
+!6$----------------------{ patronite }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+medianarodowe.com##.clearfix.widget_custom_html.widget.widget_text:nth-of-type(2)
 !
 totylkoteoria.pl###Image1
 !
 www.stacjafilipa.pl###text-13
 !
 !
-!----------------------!-tPay-!----------------------!
+!7$----------------------{ tpay }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+medianarodowe.com##.donate_cycle
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/4848
 tygodnikprzeglad.pl##.footer-darowizna-widgets
 !
 !
-!----------------------!-Zrzutka-!----------------------!
+!8$----------------------{ zrzutka }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+racjonalista.tv###text-14
 !
 pc-geek.pl##.clearfix.sb-content.widget_text
 !
@@ -158,15 +183,21 @@ pc-geek.pl##.clearfix.sb-content.widget_text
 3droga.pl###text-3
 !
 !
-!----------------------!-PayU-!----------------------!
+!9$----------------------{ payu }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
 !
 trybun.org.pl###widget_simplecatch_adspace_widget-11
 !
 !
-!----------------------!-Tymczasowe-!----------------------!
+!10$----------------------{ tymczasowe }----------------------!
 !
 !
-!----------------------!-Konto bankowe-!----------------------!
+!11$----------------------{ konta bankowe }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+racjonalista.tv###text-4
 !
 ciapkowo.pl###text-7
 !
@@ -174,11 +205,49 @@ prawy.pl###content-main > div:nth-of-type(7)
 prawy.pl###content-main > div:nth-of-type(4)
 !
 !
-!----------------------!-1% podatku-!----------------------!
+!12$----------------------{ 1% podatku }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+gosc.pl##a[href="http://fundacja.gosc.pl"] > .imgResized.cf
+!
+www.schronisko.olsztyn.pl###article_6
+!
+gazetaolsztynska.pl###prenumerata
 !
 www.rzeszowiak.pl##.menu-left-link:nth-of-type(2)
 !
 ciapkowo.pl###text-13
 !
 prawy.pl###leader-wrap
+!
+!
+!13$----------------------{ przyciski }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+medianarodowe.com##.link_donate
+!
+!
+!14$----------------------{ komunikaty }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+medianarodowe.com##.desc
+!
+!
+!15$----------------------{ krypto koparki }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+tvwlodawa.pl###monero-miner-for-coin-hive-3
+tvwlodawa.pl###text-8
+tvwlodawa.pl###text-6 > .widget-top
+!
+!
+!16$----------------------{ fundacje }----------------------!
+!
+!!& [S: wymaga zindexowania] [P:3] [Q-24]
+!
+polskieradio.com##a[href="../radioton.aspx"]
 !
