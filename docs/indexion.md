@@ -1,6 +1,6 @@
 ```
 Przykładowy Index
-!& [T: 2018.01.31] [E: reklama] [S: zrealizowane] [P:2] [Q:100]
+!& [T: 2018.01.31] [E: reklama] [S: zrealizowane] [P:2] [Q:1]
 
 Mega Tagi
 !!! - dotyczy całej listy
@@ -19,7 +19,7 @@ T: - czas ( data ostatniej aktualizacji )
 E: - rodzaj elementu ( np. promocja )
 S: - status ( np. zrealizowane )
 P: - priorytet ( od 1 do 4, domyślnie 2 )
-Q: - poziom wrażliwości ( od 1 do 100, np. 37 )
+Q: - poziom wrażliwości ( od 1 do 100, np. 23% )
 
 Legenda
 
