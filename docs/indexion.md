@@ -19,7 +19,7 @@ T: - czas ( data ostatniej aktualizacji )
 E: - rodzaj elementu ( np. promocja )
 S: - status ( np. zrealizowane )
 P: - priorytet ( od 1 do 4, domyślnie 2 )
-Q: - poziom wrażliwości ( od 1% do 100%, np. 23% )
+Q: - poziom wrażliwości ( od 1 do 100, np. 23 )
 
 Legenda
 
@@ -41,9 +41,9 @@ formularz,reklama,promocja
 
 Q:
 poziom wrażliwości - określa poziom ukrywanie elementu na podstawie estetyki, złośliwości i typu ukrywanego elementu
-100% - ukrywa wszysto
-75%  - pozwala na nieistotne reklamy
-50%  - pozwala na nieagresywne reklamy
-25%  - pozwala na zwykłe reklamy
-0%   - pozwala na wszystkie bezpieczne reklamy
+100 - ukrywa wszysto
+75  - pozwala na nieistotne reklamy
+50  - pozwala na nieagresywne reklamy
+25  - pozwala na zwykłe reklamy
+0   - pozwala na wszystkie bezpieczne reklamy
 ```
