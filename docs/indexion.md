@@ -13,7 +13,6 @@ Tagi Funkcyjne
 
 Super Tagi
 T: - czas ( data ostatniej aktualizacji )
-A: - akcja ( np. ukryj )
 E: - rodzaj elementu ( np. promocja )
 S: - status ( np. zrealizowane )
 P: - priorytet ( od 1 do 4, domyślnie 2 )
