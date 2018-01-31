@@ -1,24 +1,26 @@
 ```
+Mega Tagi
 !!! - dotyczy całej listy
-!! - dotyczy całego segmentu
-! - dotyczący następnej linii
-!: - komentarz, opis
-!# - dokumentacja, link do źródła
+!!  - dotyczy całego segmentu
+!   - dotyczący następnej linii
+
+Tagi Funkcyjne
+!:  - komentarz, opis
+!#  - dokumentacja, link do źródła
 !1$ - nr. segmentu
-!& - zbiór tagów
+!&  - wywołanie zbioru tagów
 !&? - patrz na ostatni zbiór tagów
 
-
+Super Tagi
 T: - czas ( data ostatniej aktualizacji )
 A: - akcja ( np. ukryj )
 E: - rodzaj elementu ( np. promocja )
-R: - typ elementu ( np. baner )
 S: - status ( np. zrealizowane )
 P: - priorytet ( od 1 do 4, domyślnie 2 )
-~  - procentowo, negatywny wplyw elementu na strone
-Q- - trudność rozwiązania ( skala 1-30 )
-N= - skuteczność, jakość rozwiazania ( od a do f )
-W: - wymagane do działania listy ( podane w codename )
+R: - szkodliwość dla estetyki strony ( od 1 do 10 )
+Q: - skuteczność, jakość rozwiazania ( od a do f )
+
+Legenda
 
 S:
 wymaga zindexowania
@@ -34,14 +36,5 @@ P:
 4 - nieszkodliwe, można zignorować
 
 E:
-ankieta,reklama,promocja
-
-R:
-baner,widget
-
-~
-100% - krytyczny
-75%  - bardzo zly
-50%  - zly
-25%  - niezadowalający
+formularz,reklama,promocja
 ```
