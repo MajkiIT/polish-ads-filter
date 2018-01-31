@@ -42,8 +42,8 @@ formularz,reklama,promocja
 Q:
 poziom wrażliwości - określa poziom ukrywanie elementu na podstawie estetyki, złośliwości i typu ukrywanego elementu
 100% - ukrywa wszysto
-75%  - nieistotne reklamy
-50%  - nieagresywne reklamy
-25%  - zwykłe reklamy
-0%   - wszystkie bezpieczne reklamy
+75%  - pozwala na nieistotne reklamy
+50%  - pozwala na nieagresywne reklamy
+25%  - pozwala na zwykłe reklamy
+0%   - pozwala na wszystkie bezpieczne reklamy
 ```
