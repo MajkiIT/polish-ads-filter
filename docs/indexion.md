@@ -1,6 +1,6 @@
 ```
 Przykładowy Index
-!& [T: 2018.01.31] [E: reklama] [S: zrealizowane] [P:2] [Q:1]
+!& [T: 2018.01.31] [E: reklama] [S: zrealizowane] [P:2] [Q:100]
 
 Mega Tagi
 !!! - dotyczy całej listy
@@ -41,4 +41,9 @@ formularz,reklama,promocja
 
 Q:
 poziom wrażliwości - określa poziom ukrywanie elementu na podstawie estetyki, złośliwości i typu ukrywanego elementu.
+100% - ukrywa wszysto
+75 - nieistotne reklamy
+50 - nieagresywne reklamy
+25 - zwykłe reklamy
+0 - wszystkie bezpieczne reklamy
 ```
