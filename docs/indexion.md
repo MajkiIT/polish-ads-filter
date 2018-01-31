@@ -37,7 +37,7 @@ P:
 4 - nieszkodliwe, można zignorować
 
 E:
-ankieta,reklama,promocja
+formularz,reklama,promocja
 
 Q:
 poziom wrażliwości - określa poziom ukrywanie elementu na podstawie estetyki, złośliwości i typu ukrywanego elementu.
