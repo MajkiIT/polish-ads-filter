@@ -17,8 +17,7 @@ A: - akcja ( np. ukryj )
 E: - rodzaj elementu ( np. promocja )
 S: - status ( np. zrealizowane )
 P: - priorytet ( od 1 do 4, domyślnie 2 )
-R: - szkodliwość dla estetyki strony ( od 1 do 10 )
-Q: - skuteczność, jakość rozwiazania ( od a do f )
+Q: - poziom wrażliwości ( od 1 do 100, np. 37-42 )
 
 Legenda
 
@@ -36,5 +35,8 @@ P:
 4 - nieszkodliwe, można zignorować
 
 E:
-formularz,reklama,promocja
+ankieta,reklama,promocja
+
+Q:
+poziom wrażliwości - określa poziom ukrywanie elementu na podstawie estetyki, złośliwości i typu ukrywanego elementu.
 ```
