@@ -1,6 +1,6 @@
 ```
 Przykładowy Index
-!& [T: 2018.01.31] [E: reklama] [S: zrealizowane] [P:2] [Q:100]
+!& [V.125] [E: reklama] [S: zrealizowane] [P:2] [Q:100]
 
 Mega Tagi
 !!! - dotyczy całej listy
