@@ -7,8 +7,8 @@
 ! Required: Do poprawnego działania wymagana jest lista Fanboy's Social Blocking List!
 ! Collaborators: blocker999, hawkeye116477, xxcriticxx
 ! Homepage: https://www.certyficate.it/
-! Version: 201802011500
-! Last modified: 01 Feb 2018 15:00:42 UTC+01
+! Version: 2018020401
+! Last modified: 4 February 2018
 ! Expires: 2 days
 ! Support:
 !   GitHub -> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201802011500 aktualizacja: czw, 01 lut 2018, 15:00:42 UTC+01
+! v.2018020401 aktualizacja: nie, 4 luty 2018, 18:15:00
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować (obecnie to działa tylko w uBlock Origin dev 1.14.23b0+ i Nano Adblockerze)
@@ -165,6 +165,7 @@ pl###sm-sa
 pl###social-facebook-footer-wraper
 pl###social-heder
 pl###SocialFooter
+pl###social-media
 pl###socials-container
 pl###socialYT
 pl###strong
@@ -187,6 +188,7 @@ pl###websitePQTimeoutWindow
 pl###widget-faceboox
 pl###widget_shop3
 pl###widget_shop5
+pl##.widget_social
 pl###win_like
 pl###win_like_mask
 pl###wykop
@@ -281,6 +283,7 @@ pl##.facebookactivity
 pl##.facebookIco
 pl##.facebookLikeBoxSmall
 pl##.facebooks
+pl###facebook_slider_widget
 pl##.facebookThis
 pl##.fanpage.show-for-large-up.fb_fixed
 pl##.FB
@@ -307,6 +310,7 @@ pl##.fbLikebtn
 pl##.fblikebtn
 pl##.fbLink
 pl##.fbShareBt
+pl##.fb_iframe_widget
 pl##.fejs
 pl##.filled.fbox
 pl##.filled.gbox
@@ -549,6 +553,9 @@ pl##.social-fb
 pl##.social-gp
 pl##.social-tw
 pl##.social.box
+pl##.social-url
+pl##.et-social-icons
+pl##.social-conteiner
 pl##.social_ico-fb.social_ico
 pl##.social_ico-gp.social_ico
 pl##.social_ico-insta.social_ico
@@ -615,6 +622,7 @@ pl##.wykop
 pl##.wykop-button.share-button
 pl##.wykopButton
 pl##.wykopShareIcon
+pl##.__xX20facebook
 pl##.yo_icon
 pl##.youtube-footer
 pl##.yt
@@ -734,6 +742,8 @@ comperio.co##nav > .Gplus
 comperio.co##nav > .Twitter
 consumer.huawei.com##.gtm-social.cbg-inline
 csgo-skins.com###fb-page-button
+cs-escape.pl##.ipsBox.ipsWidget_vertical.ipsWidget:nth-of-type(3)
+csopole.eu##.ipsBox.ipsWidget_vertical.ipsWidget:nth-of-type(5)
 cud.rzeszow.pl###pwebbox104, .youtube
 cyfrowypolsatnews.pl###side-border-left > .panel:nth-of-type(6)
 cyfrowypolsatnews.pl##a[href="https://plus.google.com/113231559080328863312"]
@@ -873,7 +883,7 @@ lechia.net###gkInset > .box:nth-of-type(n+1):nth-of-type(-n+3)
 lechia.net###jj_sl_navigation
 lobu.pl##.uix_footer_columns_col3
 lols.pl##.bimber-icon-follow
-lososwkuchni.pl###text-6
+lososwkuchni.pl,blog.spigot.pl###text-6
 lowcygier.pl###socialfans_counter_widget-2
 lublin112.pl##.g.icon
 macademiangirl.com##.footer-instagram-wrapper, .header-info-text
@@ -940,6 +950,7 @@ nawozy.eu###fbWidget
 nawspolnej.tvn.pl,rozmowywtoku.tvn.pl##.socialFeedback, .socialFeedbackFooter
 ncplus.pl,sympatia.onet.pl##.findUs
 nerwica.com##.facebook
+netlandcomputers.pl###leftcolumn > .txt.innertube > h2:nth-of-type(1)
 nexto.pl###social
 nibyblog.pl###rss > ul > li:nth-of-type(2)
 nietylkopasta.pl##.uk-width-large-1-4.bh-sidebar-right > .widget-text.uk-panel:nth-of-type(1)
@@ -1005,6 +1016,7 @@ polygamia.pl###polysocial
 polygamia.pl###sidebar-footer-top
 pomyslnawszystko.pl##.widget_ffpw_social
 portaltatrzanski.com##.moduletable.m-d
+pasland.pl##center
 powiatsuski24.pl##.widget-facebook-tab
 pozyczkomat-lodz.pl##.head_socials
 prawdaobiektywna.pl###hwm
@@ -1164,6 +1176,7 @@ wlaczoszczedzanie.pl##a[href="https://pl.pinterest.com/wlaczoszczedzanie/"] > .f
 wlaczoszczedzanie.pl##a[href="https://twitter.com/LukasPajak"] > .fm-icon
 wlaczoszczedzanie.pl##a[href="https://www.facebook.com/wlaczoszczedzanie/"] > .fm-icon
 wlaczoszczedzanie.pl##a[href^="https://www.youtube.com/channel/UCEO8Mm72kk79BtIHoEAOlXQ/playlists"] > .fm-icon
+wolkom.pl###column_right > div:nth-of-type(1) > .clear.box_column_margin > .box_table_fun
 wojas.pl##.sv-fb-0
 wp.tv##.social
 wszystkotujest.pl##.is
