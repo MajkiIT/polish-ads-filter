@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 5 February 2018
 ! Expires: 1 day
-! Version: 2018020503
+! Version: 2018020504
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018020503 aktualizacja: pon, 5 luty 2018, 20:10:00
+! v.2018020504 aktualizacja: pon, 5 luty 2018, 20:50:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -471,7 +471,7 @@ cannabisnews.pl##.td-visible-desktop
 cardsplitter.pl##[target="_blank"] > IMG[src^="/images/loga/"][height="249"]
 cartests.net##.td-container > .td-header-sp-recs
 cashowsky.pl##IMG[alt^="Baner"]
-cda.pl##a[class][target]:has(img[src*="premium"])
+cda.pl#?#a[class][target]:-abp-has(img[src*="premium"])
 cda.pl###as-narrow1
 cda.pl##.block-footer > div:nth-of-type(3)
 cda.pl##.bolk-left
@@ -1248,7 +1248,7 @@ mistrzowie.org##a[href^="http://pewex.pl/"]
 mistrzowie.org##[href*="utm_source=mistrzowie&utm_medium=banner&utm_campaign=pewexserwisy_mistrzowie"]
 mistrzowie.org###services_box
 mklr.pl##.google_ad_info
-mlawa.fora.pl##table.forumline > tbody > tr:has(a[href^="http://www.mlawa.fora.pl/reklama"])
+mlawa.fora.pl#?#table.forumline > tbody > tr:-abp-has(a[href^="http://www.mlawa.fora.pl/reklama"])
 mlecznepodroze.onet.pl##.banner728-container.clearfix
 mlecznepodroze.onet.pl##DIV[style="overflow: hidden; border-bottom: solid #DDDDDD 0px; border-top: solid #DDDDDD 0px; padding-top: 15px; padding-bottom: 10px;"]
 mlecznepodroze.onet.pl##.g-single.a-336
@@ -1380,7 +1380,7 @@ newseria.pl##.container > .banner-nagl
 newsf24.pl##.box
 nf.pl##.footer-container.ban-main-centering-container
 nf.pl##.promo-container_google
-nhl.pl##.ipbtable:has(div[align="center"] > script[src^="//nhlpl.engine.adglare.org"])
+nhl.pl#?#.ipbtable:-abp-has(div[align="center"] > script[src^="//nhlpl.engine.adglare.org"])
 niebezpiecznik.pl##a[href*="//niebezpiecznik.pl/r3"]
 niebezpiecznik.pl##a[href*="//niebezpiecznik.pl/r4"]
 niebezpiecznik.pl##a[href*="//niebezpiecznik.pl/r5"]
@@ -1855,22 +1855,22 @@ staypoland.com###bottomBar
 steam.io###dd_ajax_float
 stooq.com##a[href^="//stooq.com/ads/f/"]
 stooq.com##div[onclick^="(function"][onclick*="window.open"][style^="animation"]
-stooq.com###f13 > table:has(#f13 > a[href^="//stooq.com/ads/"])
+stooq.com#?##f13 > table:-abp-has(#f13 > a[href^="//stooq.com/ads/"])
 stooq.com#?##f13 > table:if(#f13 > b:-abp-contains(Artykuł Sponsorowany))
 stooq.com##[id] > b > a[href^="?"]
-stooq.com##table:has(:scope > tbody > tr > td > #aswift_1_expand)
+stooq.com#?#table:-abp-has(:scope > tbody > tr > td > #aswift_1_expand)
 stooq.pl##a[href^="//stooq.pl/ads/f/"]
 stooq.pl##div[onclick^="(function"][onclick*="window.open"][style^="animation"]
-stooq.pl###f13 > table:has(#f13 > a[href^="//stooq.pl/ads/"])
+stooq.pl#?##f13 > table:-abp-has(#f13 > a[href^="//stooq.pl/ads/"])
 stooq.pl#?##f13 > table:if(#f13 > b:-abp-contains(Artykuł Sponsorowany))
 stooq.pl##[id] > b > a[href^="?"]
 stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"][align="center"]:not([width])
-stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"]:not([width]):has([id="ads_goog_1"])
+stooq.pl,stooq.com#?#table[border="0"][cellpadding="0"][cellspacing="0"]:not([width]):-abp-has([id="ads_goog_1"])
 stooq.pl,stooq.com##tbody > tr > td[align="center"] > div[style="width:300;height:250"]
 stooq.pl,stooq.com##tbody > tr > td[width="1"]
 stooq.pl,stooq.com##tbody > tr > td > table[width="300"][height="250"][border="0"][cellpadding="0"][cellspacing="0"][align="center"]
 stooq.pl,stooq.com##:xpath(//*[@align="center"]/*[@id][contains(text(),"REKLAMA")])
-stooq.pl##table:has(:scope > tbody > tr > td > #aswift_1_expand)
+stooq.pl#?#table:-abp-has(:scope > tbody > tr > td > #aswift_1_expand)
 strajk.eu##.cc-adv
 strefadb.pl##.dba-button
 strefadb.pl###dbarena
@@ -3215,21 +3215,21 @@ xyz,mecz.tv,ipilka.info##[class$="_right"]
 wykop.pl##a[href*="wykop.pl/tracker"]
 wykop.pl###autopromotion
 wykop.pl##.baner-mobile
-wykop.pl##div.r-block:has(:scope > .baner-mobile)
-wykop.pl##div.r-block:has(:scope > [id^=bmone2n-])
+wykop.pl#?#div.r-block:-abp-has(:scope > .baner-mobile)
+wykop.pl#?#div.r-block:-abp-has(:scope > [id^=bmone2n-])
 wykop.pl###fixedBox
 wykop.pl###fixedBoxIdent
 wykop.pl##[id^=banner_rectangle]
 wykop.pl##[id^="banner_top_"]
 wykop.pl##[id^="screening"]
 wykop.pl###itemsStream:not(.touch-content) .article:not(.dC)
-wykop.pl##li.link:has(.adsbygoogle)
-wykop.pl##li.link:has(a[href*='wykop.pl/market'])
-wykop.pl##li.link:has(a[href*='wykop.pl/paylink'])
-wykop.pl##li.link:has(a[href*='wykop.pl/reklama'])
+wykop.pl#?#li.link:-abp-has(.adsbygoogle)
+wykop.pl#?#li.link:-abp-has(a[href*='wykop.pl/market'])
+wykop.pl#?#li.link:-abp-has(a[href*='wykop.pl/paylink'])
+wykop.pl#?#li.link:-abp-has(a[href*='wykop.pl/reklama'])
 wykop.pl##.m-hide.screening
 ||wykop.pl/paylink/emiter/$image,domain=www.wykop.pl
-wykop.pl##.r-block:has(a[href*="wykop.pl/tracker"])
+wykop.pl#?#.r-block:-abp-has(a[href*="wykop.pl/tracker"])
 ||wykop.pl/tracker
 wykop.pl##.woodle
 wykop.pl##.screening-displace.r-block
