@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 6 February 2018
 ! Expires: 1 day
-! Version: 2018020602
+! Version: 2018020603
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018020602 aktualizacja: wt, 6 luty 2018, 17:45:00
+! v.2018020603 aktualizacja: wt, 6 luty 2018, 20:15:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -2115,7 +2115,7 @@ webmasteruj.pl##[style="margin:0 auto; text-align:center; margin-bottom:5px;"]
 weeb.tv##DIV[style="width: 800px; height: 80px; background: url(\"http://backupstatic.weeb.tv/images/weeb-1.png\") no-repeat scroll left top transparent; padding-left: 151px; padding-top: 73px; cursor: pointer;"]
 weekend.gazeta.pl##A[target="_blank"] > IMG[alt^="(fot."][src^="http://bi.gazeta.pl/"]
 weszlo.com##.bsaGridGutter
-weszlo.com,pssite.com,signs.pl,pogonszczecin.pl,asta24.pl,cgm.pl##.adv
+weszlo.com,pssite.com,signs.pl,pogonszczecin.pl,asta24.pl,cgm.pl,outsourcingportal.eu##.adv
 weszlo.com##.top-adw
 wiadomosci24.pl##.reka
 wiadomosci24.pl##.tekst
@@ -2993,6 +2993,7 @@ zrabatowani.pl###popup-adblock-bottom
 !
 !15#---------------------------------Anti Adblock Rules blocking filters----------------------------------!
 astroweb.pl##script:inject(abort-on-property-read.js, checkAds)
+aternos.org##script:inject(setTimeout-defuser.js, hasAdblock)
 ||bankier.pl/static/js/kichot.js$script
 ||blog.nowebrzmienia.pl/wp-content/themes/awaken/js/scripts.js$script
 ||cosplayjav.pl/wp-content/themes/cosplayjav/js/fuckadblock
@@ -3009,6 +3010,7 @@ astroweb.pl##script:inject(abort-on-property-read.js, checkAds)
 /\/wp-content\/uploads\/[a-zA-Z]{8,}\/[a-zA-Z]{8,}\.js/$script,domain=fandroid.com.pl|crazynauka.pl|legiobiznes.pl
 ||wp.hit.gemius.pl/gdejs/xgde.js$script,redirect=noopjs,domain=pilot.wp.pl
 ||xperiasite.pl/public/js/antyadblock.js$script
+/^(http|https):\/\/eurogamer-pl\.eurogamer\.pl\/[\w\W]{250,400}/$script,image,xmlhttprequest
 !
 !16#---------------------------------Anti Adblock Rules whitelist filters----------------------------------!
 @@/adframe.js$script,domain=kobieceporady.pl
