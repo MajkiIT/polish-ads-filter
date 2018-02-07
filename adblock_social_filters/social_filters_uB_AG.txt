@@ -1,11 +1,11 @@
-! Checksum: E6LtBlqIwF7uJX/l0C7zEA
+! Checksum: aUzQN2hAUP3OhV+BjN/d/A
 ! Title: Polskie filtry społecznościowe - uzupełnienie do uBlocka i AdGuarda
 ! Polish Social Filters - supplement for uBlock & AdGuard
 ! Codename: Social - supplement
-! Collaborators: blocker999, hawkeye116477
+! Collaborators: blocker999, hawkeye116477, F4z
 ! Homepage: https://www.certyficate.it/
-! Version: 201801191340
-! Last modified: 19 Jan 2018 13:40:36 UTC+01
+! Version: 201801281926
+! Last modified: 28 Jan 2018 19:26:20 UTC+01
 ! Expires: 3 days
 ! Support:
 !   GitHub -> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,25 +13,20 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201801191340 aktualizacja: pią, 19 sty 2018, 13:40:36 UTC+01
+! v.201801281926 aktualizacja: nie, 28 sty 2018, 19:26:20 UTC+01
 !
 !
 ! Popupy
 galeriabronowice.pl##.fancybox-overlay-fixed.fancybox-overlay
 !
-!+ PLATFORM(ext_ublock)
-galeriabronowice.pl##html > body:style(overflow: auto !important;)
-!+ PLATFORM(ext_ublock)
-galeriabronowice.pl##html.fancybox-lock > body:style(overflow: auto !important;)
-!+ PLATFORM(ext_ublock)
+!+ PLATFORM(ext_ublock, ext_ff, ext_edge)
 galeriabronowice.pl##html.fancybox-lock:style(overflow: auto !important;)
-!+ PLATFORM(ext_ublock)
+!+ PLATFORM(ext_ublock, ext_ff, ext_edge)
 galeriabronowice.pl##html.fancybox-margin:style(margin-right: 0px !important;)
 !
-! Reguły tylko dla AdGuarda
-galeriabronowice.pl#$#html:has(>body) > body { overflow: auto !important; }
-galeriabronowice.pl#$#html.fancybox-lock:has(>body) > body { overflow: auto !important; }
+!+ NOT_PLATFORM(ext_ublock, ext_ff, ext_edge)
 galeriabronowice.pl#$#html.fancybox-lock:has(>body) { overflow: auto !important; }
+!+ NOT_PLATFORM(ext_ublock, ext_ff, ext_edge)
 galeriabronowice.pl#$#html.fancybox-margin:has(>body) { margin-right: 0px !important; )
 !
 smaker.pl###overlay, #popup
@@ -39,8 +34,8 @@ smaker.pl###overlay, #popup
 !+ PLATFORM(ext_ublock)
 smaker.pl##html > body.scrollingDisabled:style(overflow: visible !important;)
 !
-! Reguła tylko dla AdGuarda
-smaker.pl#$#html:has(>body) > body.scrollingDisabled { overflow: visible !important; }
+!+ NOT_PLATFORM(ext_ublock)
+!smaker.pl#$#body.scrollingDisabled { overflow: visible !important; }
 !
 sprawnymarketing.pl###pop_facebook
 sprawnymarketing.pl##.blur:style(filter: none !important;)
@@ -48,3 +43,4 @@ sprawnymarketing.pl##.blur:style(filter: none !important;)
 !
 ! Przyciski
 bankobranie.blogspot.com###sideSocial:style(height: auto !important;)
+ 
