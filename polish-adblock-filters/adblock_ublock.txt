@@ -5,9 +5,9 @@
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 4 February 2018
+! Last modified: 7 February 2018
 ! Expires: 2 days
-! Version: 2018020401
+! Version: 2018020701
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018020401 aktualizacja: nd, 4 luty 2018, 07:30:00
+! v.2018020701 aktualizacja: sr, 7 luty 2018, 09:20:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -123,6 +123,7 @@ www.wp.pl##body:style(overflow: visible!important;)
 www.wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 wp.pl##[class^="_"]:has(>img[src*=".wp.pl"])
 wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
+facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##script:inject(abort-on-property-write.js, iaqExt)
 !
 ! kurnik.pl
 kurnik.pl##.adsbygoogle:style(height: 1px !important; width: 1px !important;)
@@ -230,6 +231,9 @@ portel.pl##body[style^="background:"]:style(background-image: none!important;)
 calcoolator.pl##script:inject(setTimeout-defuser.js, no-ads-info)
 ||calcoolator.pl/inc/js/adblockill_copy.js
 !
+! eurogamer.pl
+eurogamer.pl##script:inject(abort-on-property-write.js, yafaIt)
+!
 ! style()
 booklips.pl##.js:style(background-image: none !important;)
 cartests.net###td-outer-wrap > .td-header-wrap:style(margin-bottom: 0px!important;)
@@ -256,11 +260,17 @@ wykop.pl###dyingLinksBox > .dying-links:first-child ~ .dying-links:last-child:st
 wykop.pl###dyingLinksBox > .dying-links:first-child ~ .dying-links[style="display: list-item;"] ~ .dying-links:style(display: none !important)
 !
 ! Adblock
+cvninja.pl##script:inject(abort-on-property-write.js, fuckAdBlock)
 dziwnekomiksy.pl##body>*:style(filter: blur(0px) !important;)
 alefunny.pl###myModal, .modal-backdrop
 alefunny.pl##.modal-open:style(overflow: auto !important; padding-right: 0px !important;)
 gadzetomania.pl,wp.pl,autokult.pl,komorkomania.pl##.modal__body-adblock
 gadzetomania.pl,wp.pl,autokult.pl,komorkomania.pl,fotoblogia.pl##script:inject(abort-on-property-write.js, __serviceAbModal)
+filmweb.pl##script:inject(abort-on-property-read.js, document.onreadystatechange)
+filmweb.pl##script:inject(setTimeout-defuser.js, notDetected)
+niezalezna.pl##script:inject(noeval.js)
+astroweb.pl##script:inject(abort-on-property-read.js, checkAds)
+aternos.org##script:inject(setTimeout-defuser.js, hasAdblock)
 !
 ! Rules after Adblock
 vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
@@ -268,3 +278,6 @@ vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
 ! Rules to limit time wait on movies
 ekino-tv.pl##script:inject(nano-setTimeout-booster.js)
 swiatfilmow.com##script:inject(nano-setTimeout-booster.js, function, 1000, 0.02)
+!
+! Easylist Bugs
+filmweb.pl##script:inject(abort-on-property-write.js, sas)
