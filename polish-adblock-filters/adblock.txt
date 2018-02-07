@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 7 February 2018
 ! Expires: 1 day
-! Version: 2018020701
+! Version: 2018020702
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018020701 aktualizacja: sr, 7 luty 2018, 09:10:00
+! v.2018020702 aktualizacja: sr, 7 luty 2018, 09:15:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -703,7 +703,6 @@ euro.com.pl###image-banner
 euro.com.pl##.scroll-footer
 eurogamer.pl##.container:nth-of-type(2) > .i-amphtml-unresolved.amp-unresolved.i-amphtml-layout-size-defined.i-amphtml-layout-responsive.amp-notbuilt.i-amphtml-notbuilt.i-amphtml-element
 eurogamer.pl###leaderboard
-eurogamer.pl##script:inject(abort-on-property-write.js, yafaIt)
 eurogamer.pl###skyscraper
 evertiq.pl##[id^="bnr"]
 e-widuchowa.pl##.bgad
@@ -2910,7 +2909,6 @@ benchmark.pl###greeting
 cda-online.pl###deadblocker_success_dialog
 chelsea24news.pl###rba2
 ciekawe.org,baza-lekow.com.pl#@##adsense
-cvninja.pl##script:inject(abort-on-property-write.js, fuckAdBlock)
 czasdiet.pl##.contop + [style*="border:2px solid;"], .consid + [style*="border:2px solid;"]
 dailyweb.pl##DIV[style="border: 1px solid;margin: 20px 0;max-width:750px;margin:0 auto; line-height: 1.4;text-align:justify;padding:15px;background-repeat: no-repeat;background-position: 10px center;background-color: #ef7163;color:#fff;font-family: Domine, Georgia, serif;"]
 dstar.pzk.pl,burze.dzis.net,kurnik.pl,arrow24.net,vampirediaries24.pl,matzoo.pl,skript.pl#@#.adsbygoogle
@@ -2918,8 +2916,6 @@ dziennikwschodni.pl,vorek.pl#@#.ad
 dziwnekomiksy.pl###adbk
 egarwolin.pl###TXhkUvZljBCga
 epiotrkow.pl##[class^="abpnot"]
-filmweb.pl##script:inject(abort-on-property-read.js, document.onreadystatechange)
-filmweb.pl##script:inject(setTimeout-defuser.js, notDetected)
 fly4free.pl##.warnadblk
 forum.vw-passat.pl###ct_i
 fotoblogia.pl##.modal__body-adblock
@@ -2949,7 +2945,6 @@ minecraftpolska.net,pracawgdansku.com.pl#@#[id*="reklama"]
 minecraftpolska.net,pracawgdansku.com.pl#@##reklama
 mmorpg.org.pl,parezja.pl##.adsbygoogle
 nadajemy.pl###abp_info
-niezalezna.pl##script:inject(noeval.js)
 przegladsportowy.pl,onet.pl,vod.pl,businessinsider.com.pl,komputerswiat.pl,plejada.pl,komorkomania.pl,noizz.pl,auto-swiat.pl#@#.trizer-bnr
 parezja.pl###adblock_info
 pikio.pl##.adBlockDetectModal, .swal2-fade
@@ -2996,8 +2991,6 @@ zmiksowani.pl##.text-center.alert-danger.alert
 zrabatowani.pl###popup-adblock-bottom
 !
 !15#---------------------------------Anti Adblock Rules blocking filters----------------------------------!
-astroweb.pl##script:inject(abort-on-property-read.js, checkAds)
-aternos.org##script:inject(setTimeout-defuser.js, hasAdblock)
 ||bankier.pl/static/js/kichot.js$script
 ||blog.nowebrzmienia.pl/wp-content/themes/awaken/js/scripts.js$script
 ||cosplayjav.pl/wp-content/themes/cosplayjav/js/fuckadblock
@@ -3268,7 +3261,6 @@ autocentrum.pl,demotywatory.pl,dziennik.pl,facetemjestem.pl,gala.pl,garnek.pl,gr
 ||ipla.hit.stat24.com^$object,domain=ipla.tv,important
 !
 !25#--------------------------Experimental rules------------!
-facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##script:inject(abort-on-property-write.js, iaqExt)
 wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 !
 !26#--------------------------Rules for pages with random adv scripts------------!
@@ -3453,7 +3445,6 @@ www.money.pl##SCRIPT[src^="//money"] + DIV[class][style="text-align:center;"]
 www.money.pl##div:nth-of-type(1) > .news > .news__items > .item:nth-of-type(1)
 !
 !34#--------------------------Easylist Bugs -----------!
-filmweb.pl##script:inject(abort-on-property-write.js, sas)
 @@||partneragdrtv.com.pl/temp/adrotator_filemanager/$image
 @@||reklama.gazeta.pl^$image,font,script
 @@||rentcars.pl/build/js/user-tracking.js?psv=11$script
