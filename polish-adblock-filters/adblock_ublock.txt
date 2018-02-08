@@ -5,9 +5,9 @@
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 7 February 2018
+! Last modified: 8 February 2018
 ! Expires: 2 days
-! Version: 2018020701
+! Version: 2018020801
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018020701 aktualizacja: sr, 7 luty 2018, 09:20:00
+! v.2018020801 aktualizacja: czw, 8 luty 2018, 19:15:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -124,6 +124,7 @@ www.wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 wp.pl##[class^="_"]:has(>img[src*=".wp.pl"])
 wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##script:inject(abort-on-property-write.js, iaqExt)
+~pilot.wp.pl,wp.pl##script:inject(set-constant.js, PWA_adbd, 2)
 !
 ! kurnik.pl
 kurnik.pl##.adsbygoogle:style(height: 1px !important; width: 1px !important;)
