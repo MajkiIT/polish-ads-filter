@@ -5,7 +5,7 @@
 ! Oświadczenie: https://github.com/MajkiIT/polish-ads-filter/blob/master/STATEMENT.md
 ! EULA: Subskrybcja|Użytkowanie listy "Polskie filtry wewnętrzne" jest równoznaczne z wyrażeniem zgody na bycie ich komitentem, a twórcy nie ponoszą odpowiedzialności prawnej za nadużycia użytkowników.
 ! Last modified: 10 February 2018
-! Version: 287
+! Version: 288
 ! Expires: 3 days
 ! Wymagane:
 !   Rozszerzenia >> uBlock Origin / AdGuard lub ich aktualne forki
@@ -760,8 +760,9 @@ elubaczow.com##.posts > .widgettitle:nth-of-type(3)
 !: "wizjer e-handlu" jest to index złych praktyk stosowanych przez e-commerce.
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/6111
-!& [V.287] [E: podstrona] [S: zrealizowane] [P:2] [Q:84]
-www.3kropki.pl##.banLeft:nth-of-type(2)
+!& [V.288] [E: podstrona, polecane] [S: zrealizowane] [P:2] [Q:84]
+www.3kropki.pl##.banLeft:nth-of-type(n+2):nth-of-type(-n+3)
+www.3kropki.pl##.banLeft:nth-of-type(n+5):nth-of-type(-n+6)
 !
 !# https://github.com/MajkiIT/polish-ads-filter/issues/5819
 !& [V.261] [E: podserwis] [S: zrealizowane] [P:2] [Q:73]
