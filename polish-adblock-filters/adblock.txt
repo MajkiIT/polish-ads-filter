@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 11 February 2018
 ! Expires: 1 day
-! Version: 2018021104
+! Version: 2018021105
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018021104 aktualizacja: nie, 11 luty 2018, 11:25:00
+! v.2018021105 aktualizacja: nie, 11 luty 2018, 14:00:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -230,6 +230,7 @@ pl##a[href*="://converti.se/click/"]
 ~przegladsportowy.pl,~playpuls.pl,~fakt.pl,~forbes.pl,~auto-swiat.pl,~noizz.pl,~plejada.pl,~businessinsider.com.pl,~komputerswiat.pl,~onet.pl,~vod.pl,~gry-online.pl,~tv6.com.pl,~trojmiasto.pl,~otomoto.pl,pl##[class*="cg-template"]
 pl##a[href^="http://s.click.aliexpress.com/"]
 pl###LinkArea\:gry
+pl##[id^="ad_widget"]
 ~przegladsportowy.pl,~medonet.pl,~fakt.pl,~forbes.pl,~auto-swiat.pl,~noizz.pl,~plejada.pl,~businessinsider.com.pl,~komputerswiat.pl,~onet.pl,~vod.pl,pl##.linkSponsorowany
 ~przegladsportowy.pl,~medonet.pl,~fakt.pl,~forbes.pl,~auto-swiat.pl,~noizz.pl,~plejada.pl,~businessinsider.com.pl,~komputerswiat.pl,~onet.pl,~vod.pl,pl##.onnetwork-video
 ~przegladsportowy.pl,~medonet.pl,~fakt.pl,~forbes.pl,~auto-swiat.pl,~noizz.pl,~plejada.pl,~businessinsider.com.pl,~komputerswiat.pl,~onet.pl,~vod.pl,pl###pixad-box
@@ -706,7 +707,7 @@ euro.com.pl##.scroll-footer
 eurogamer.pl##.container:nth-of-type(2) > .i-amphtml-unresolved.amp-unresolved.i-amphtml-layout-size-defined.i-amphtml-layout-responsive.amp-notbuilt.i-amphtml-notbuilt.i-amphtml-element
 eurogamer.pl###leaderboard
 eurogamer.pl###skyscraper
-evertiq.pl##[id^="bnr"]
+evertiq.pl,tenisklub.pl,##[id^="bnr"]
 e-widuchowa.pl##.bgad
 expresselblag.pl##.all-services
 expressilustrowany.pl###scoopshot
@@ -1915,7 +1916,7 @@ supernowosci24.pl##A[target="_blank"] > EMBED
 super-torent.pl##td:nth-of-type(4) > .raised:nth-of-type(2) > .boxcontent
 supertydzien.pl##a[href^="https://www.facebook.com"] > IMG[src*="ifotos.pl"]
 suwalki.info###banner-billboard
-suwalki24.pl##.box:nth-of-type(5), .box:nth-of-type(3), #content_right > div:nth-of-type(2), .box:nth-of-type(8)
+suwalki24.pl##.box:nth-of-type(5), .box:nth-of-type(3), #content_right > div:nth-of-type(2), .box:nth-of-type(8), #exposeMask, #pupup_comercial
 suwalki24.pl##[class*="commercial"]
 suwalki24.pl##[id*="commercial"]
 swiatbaterii.pl##DIV[id^="cbox"]
@@ -1998,7 +1999,7 @@ terazgrodkow24.pl,aletorcik.pl###text-5
 thepolandtimes.com##a[href^="http://p"] > IMG
 theoniondaily.com##.custom-html-widget.textwidget
 thinkapple.pl,repostuj.pl##a[href*="://bit.ly/"]
-tkn24.pl###dk-image-rotator-widget-2
+tkn24.pl###right-sidebar, #dk-image-rotator-widget-6
 toiowo.eu###black-studio-tinymce-21, #text-6, #text-4
 tokfm.pl##DIV[style="width: 940px; padding: 21px 0 18px; background: #F8F8F8; margin: 0 auto; "]
 tomaszowski.com.pl###jm-right
@@ -2192,6 +2193,7 @@ wrc.net.pl##.sidebar.col-sm-4.col-xs-12
 wrealu24.pl##.article-podobne.section
 wrealu24.pl##.bannergroup
 wrealu24.pl##DIV[id^="content_video_"][preload="auto"]
+wrzesnia.info.pl##section:nth-of-type(1)
 wschodnik.pl##.col-sm-3.col-xs-12 > p
 wschodnik.pl##.hsbannerside > p
 wspomnijbliskich.pl###sponsor_title
@@ -2788,6 +2790,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 ||www.sps24.pl/media/banery/$image
 ||www.strefawalkingdead.pl/graf/$image
 ||www.suwalki24.pl/admaster/$image
+||www.suwalki24.pl/_uploads/*/ban_$image
 ||www.tv.pl/images/$image,domain=www.zakumaj.pl
 ||www.uniejow.net.pl/p4banners/baner/$image,object
 ||www.viva-tv.pl/assets/gemius-*.swf$object
@@ -3505,6 +3508,7 @@ businesstraveller.pl##.widget-clear.widget
 cryptonews.pl###text-6, #text-5, #text-11
 cryptonews.pl###sidebar:style(padding-top: 0 !important)
 crypto-trader.pl##.wp-image-1528
+dziejesienapodkarpaciu.pl###lsvr_image_widget-2
 dziennikzwiazkowy.com##.widget-28
 extra.info.pl###leader-wrap, #text-38
 gamenerd.pl###text-46
@@ -3516,6 +3520,7 @@ jedzbawsie.pl,ekspert.ceneo.pl,slupca.pl,fsgk.pl###text-7
 kamienskie.info##[class^="ads-index"]
 kamienskie.info##[id^="text-"]
 ketrzynnews.pl##.wpb_raw_html, #text-34
+konflikty.pl###vw_widget_custom_text-2
 kryptoholik.pl##.alignnone.wp-image-329.size-full
 kryptoholik.pl##P > A > [class*="wp-image-"]
 kryptowalutykoparka.pl###text-14
@@ -3556,6 +3561,7 @@ tygodnikprzeglad.pl##.widget-9.last.widget
 witanet.net##.top-footer-wrap.clearfix
 wolna-polska.pl###text-39
 zarabiajprzez24.pl###media_image-3
+zawiercianskie.pl###rommeled_image-19
 zdrowyportal.org,swiatoze.pl###text-10
 zwiedzamyparyz.pl###text-6, .a-single, .gyg-widget
 !
