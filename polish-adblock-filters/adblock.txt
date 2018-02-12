@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 12 February 2018
 ! Expires: 1 day
-! Version: 2018021201
+! Version: 2018021202
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018021201 aktualizacja: pon, 12 luty 2018, 07:35:00
+! v.2018021202 aktualizacja: pon, 12 luty 2018, 07:45:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -287,7 +287,7 @@ pl##.cg3-products
 6obcy.com.pl##.g2a
 7dni.pila.pl##[id*="_bid_"]
 90minut.pl##body > div:nth-of-type(3)
-a-o.ninja##.clearfix.node-epizod.node > center
+a-o.ninja##div:nth-of-type(2) > center
 administrator24.info##.ofe-container
 adwokat-gostkowski.pl###blok_partnerzy2
 agrokapital.pl###main_right > .row:nth-of-type(6)
@@ -3074,7 +3074,7 @@ zrabatowani.pl###popup-adblock-bottom
 @@ads$image,domain=rapidgrab.pl
 @@/ads.reklama.728x90$script,stylesheet,domain=zmianaczasu.info|antonimy.net|odmiana.net|definicja.net|krzyzowka.net|humoris.pl
 @@/advertisement.js$script,domain=meczyki.pl|autocentrum.pl
-@@/popads.js$script,domain=a-o.ninja
+@@/\/(popads|-ad-001-).js/$script,domain=a-o.ninja
 @@||adv.wp.pl/adverts$xmlhttprequest,domain=pilot.wp.pl
 @@||anyfiles.pl/pageloading/*-loader.jsp?ads=true
 @@||app.convertiser.com/scripts/*.advert.js
