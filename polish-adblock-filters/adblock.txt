@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 14 February 2018
 ! Expires: 1 day
-! Version: 2018021403
+! Version: 2018021404
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018021403 aktualizacja: sr, 14 luty 2018, 15:15:00
+! v.2018021404 aktualizacja: sr, 14 luty 2018, 19:00:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -109,8 +109,6 @@ poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 ||nsaudience.pl^
 ||pixel.solvemedia.com^
 .pl/*_ac=kropka-
-||quartic.pl/api/event^
-||quartic.pl/t.php^
 ||revsci.net^
 !||salesmanago.pl^$domain=~salesmanago.pl
 ||smartclick.pl$script
@@ -1537,7 +1535,8 @@ pcworld.pl##.side-module.how-to
 pcworld.pl###WhitepaperModule
 pcworld.pl###box_deal
 pcworld.pl##article > .row:nth-of-type(3)
-pcworld.pl##article > .deal-row.row
+pcworld.pl##.deal-row.row
+pcworld.pl###newsmore408558 > .row:nth-of-type(2)
 pdaclub.pl##.approvebg
 pebx.pl##.defaultBorderRadius.pageContent > .funbox.sectionMain
 pebx.pl##.funbox.section
@@ -2682,6 +2681,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 ||ppwidget.skapiec.pl/widget/$script
 ||prl24.co.uk/res/rotate/$image
 ||q4.pl/media/20/*.gif$image
+||quartic.pl/$script,domain=~quartic.pl
 ||racjonalista.pl/img/strony/$image
 ||radioduch.pl/up_files/oferta/$image
 ||rajdy.autoklub.pl/banner/$image
@@ -2984,7 +2984,7 @@ cda-online.pl###deadblocker_success_dialog
 chelsea24news.pl###rba2
 ciekawe.org,baza-lekow.com.pl#@##adsense
 czasdiet.pl##.contop + [style*="border:2px solid;"], .consid + [style*="border:2px solid;"]
-dailyweb.pl##DIV[style="border: 1px solid;margin: 20px 0;max-width:750px;margin:0 auto; line-height: 1.4;text-align:justify;padding:15px;background-repeat: no-repeat;background-position: 10px center;background-color: #ef7163;color:#fff;font-family: Domine, Georgia, serif;"]
+dailyweb.pl##.row:nth-of-type(4)
 dstar.pzk.pl,burze.dzis.net,kurnik.pl,arrow24.net,vampirediaries24.pl,matzoo.pl,skript.pl#@#.adsbygoogle
 dziennikwschodni.pl,vorek.pl#@#.ad
 dziwnekomiksy.pl###adbk
