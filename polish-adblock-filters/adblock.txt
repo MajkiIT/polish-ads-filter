@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 19 February 2018
+! Last modified: 20 February 2018
 ! Expires: 1 day
-! Version: 2018021903
+! Version: 2018022001
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018021903 aktualizacja: pon, 19 luty 2018, 21:30:00
+! v.2018022001 aktualizacja: wt, 20 luty 2018, 21:30:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -303,8 +303,6 @@ allegro.pl###installments-banner-container
 allegro.pl###main_page_hr_980_180
 allegro.pl###main_page_main_1200_400
 allegro.pl###mainpage-marketing-showcases > .clearfix
-allezestaw.prv.pl###prvAliasBanner
-allezestaw.prv.pl##span
 alltube.tv###ban-er
 alltube.tv###super-player
 alltube.tv###undermenu
@@ -1414,6 +1412,7 @@ natemat.pl##.kd_ns_logo
 nczas.com##A[target="_self"] > .vc_single_image-img:last-child
 ndie.pl##DIV + A > IMG[style="width:100%;"]
 ndie.pl##.td-header-style-7 .td-header-sp-logo img:style(top:-32px!important;height:100%!important;width:auto!important;)
+ndie.pl##a[href="https://twierdzaeuropa.pl/"]
 next.gazeta.pl##.art_embed
 newsbook.pl##.blocker.jquery-modal
 newsbook.pl###popup
@@ -1701,8 +1700,9 @@ pro-test.pl###abonament_right
 pro-test.pl###coockie_txt
 proto.pl###zone-header-wrapper
 proto.pl###block-block-1
-prv.pl###prv-billboard
-prv.pl###prvBottomParent
+prv.pl###prvAliasFrame2:style(height:calc(100vh - 10px)!important;)
+prv.pl##.menu
+prv.pl###container
 przedszkola.edu.pl##.sidebar__widget:nth-of-type(2)
 przegladoponiarski.pl##.banners
 przegladkoninski.pl##[id*="advertise"]
@@ -2869,7 +2869,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 /^(http|https):\/\/www\.portel\.pl\/[-a-z0-9A-Z_%$&+=[\].]{1,200}\/[-a-z0-9A-Z_%$&+=[\]/.]{2,200}.(html|htm)/$subdocument,domain=www.portel.pl
 /^(http|https):\/\/www\.wp\.pl\/[a-zA-Z0-9-_]{50,}/$popup,domain=www.wp.pl
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl|poczta.wp.pl
-/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=autokult.pl|kafeteria.pl|portal.abczdrowie.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|pogoda.wp.pl|dladzieci.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|parenting.pl|fotoblogia.pl|bloog.pl|avent-ugrow.wp.pl|pudelek.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl|pytamy.pl|ranking.abczdrowie.pl
+/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=autokult.pl|kafeteria.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|pogoda.wp.pl|dladzieci.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|fotoblogia.pl|bloog.pl|avent-ugrow.wp.pl|pudelek.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl|pytamy.pl|ranking.abczdrowie.pl
 /^https:\/\/eku24.net\/images\/slajdy\/(?!zyczenia)[a-z]{3,10}\/[a-zA-Z0-9_-]{10,50}\.jpg/$image
 /\/[0-9a-zA-Z]{5,7}\_(?!adaptiveresize)[a-z]{12,17}\_[0-9]{3,3}\x[0-9]{3,3}\.jpg$/$image,domain=www.pcworld.pl
 !
