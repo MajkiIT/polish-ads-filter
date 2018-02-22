@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 22 February 2018
 ! Expires: 1 day
-! Version: 2018022202
+! Version: 2018022203
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018022202 aktualizacja: czw, 22 luty 2018, 11:50:00
+! v.2018022203 aktualizacja: czw, 22 luty 2018, 12:00:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -3365,8 +3365,13 @@ autocentrum.pl,demotywatory.pl,dziennik.pl,facetemjestem.pl,gala.pl,garnek.pl,gr
 !25#--------------------------Experimental rules------------!
 wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 !
-!26#--------------------------Rules for pages with random adv scripts------------!
+!26#--------------------------Rules for pages with random adv scripts hide elem------------!
+electro-torrent.pl##a[href*="://o9d.pl/"]
+!
+!27#--------------------------Rules for pages with random adv scripts block------------!
 ||electro-torrent.pl/overlib.js$script
+!
+!28#--------------------------Rules for pages with random adv scripts regex------------!
 /^http:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\/[a-zA-Z0-9]{30,}/$script,popup
 !/^http:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=devil-torrents.pl|electro-torrent.pl|nitro.to|alltube.tv|darmowa-telewizja.info|goldvod.tv|darmowa-tv.pl
 !/^http:\/\/[a-zA-Z0-9]{8,20}\.com\/analytics\/[0-9]{5,7}/$subdocument,script,popup
@@ -3387,7 +3392,7 @@ wp.pl##body > div:nth-of-type(1)[style^="display: block;"]
 /^(http|https):\/\/[\w]{12,}\.[a-z]{3,3}\/[a-z]{1,10}\.html[\w\d\W]{100,}/$script,domain=tele-wizja.ru
 /^(http|https):\/\/[\w]{8,}\.[a-z]{3,3}\/[\w\d\W]{60,}/$script,domain=abcast.net
 !
-!27#--------------------------Rules on tv streams element hiding rules------------!
+!29#--------------------------Rules on tv streams element hiding rules------------!
 ##a[href^="http://affiliates.bet-at-home.com/processing/clickthrgh.asp"]
 ##a[href^="https://gamehag.com/r/"]
 ##a[href="http://www.livelooker.com"]
@@ -3399,7 +3404,7 @@ privatestream.tv/images/player_logo.png
 srkcast.com##[id^="table"]
 tvtoss.me##.bannerfloat
 !
-!28#--------------------------Rules on tv streams blocking filters------------!
+!30#--------------------------Rules on tv streams blocking filters------------!
 ||abcast.net/p.js$script
 ||assets.bro.adca.st/cuadrado.html
 ||assets.bro.adca.st/rectangular.html
@@ -3412,7 +3417,7 @@ tvtoss.me##.bannerfloat
 ||privatestream.tv/logo^
 ||static.bro.adca.st/promo.html
 !
-!29#--------------------------WP Group element hide------------!
+!31#--------------------------WP Group element hide------------!
 avent-ugrow.wp.pl##[class$="BgClick"]
 autokult.pl##.insert--top-offer.insert
 kafeteria.pl,money.pl,pudelek.pl,autokult.pl##.scr-wallpaper
@@ -3434,12 +3439,12 @@ wawalove.pl##.floating-ad.advertisement
 wawalove.pl,pytamy.pl,dzieci.pl##[id^="adv"]
 wp.tv##.y9xe8qn
 !
-!30#--------------------------WP element block------------!
+!32#--------------------------WP element block------------!
 ||i.wp.pl/*/stg/wpjslib-nojq.js$script,domain=www.dobreprogramy.pl
 ||wpkoszyk.wp.pl/api/koszyk$xmlhttprequest
 ||xml.enovatis.pl/mrdsl/json.php$xmlhttprequest,domain=turystyka.wp.pl
 !
-!31#--------------------------WP element hide------------!
+!33#--------------------------WP element hide------------!
 pilot.wp.pl##SCRIPT + DIV.row
 pilot.wp.pl##.top-section
 ! potwierdzione
@@ -3514,7 +3519,7 @@ gwiazdy.wp.pl,teleshow.wp.pl##A[href*=".wp.pl/"][target="_blank"]:first-child > 
 kobieta.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##A[class^="_"][href*=".wp.pl/"][target="_blank"] > FIGURE[class^="_"] + * H3[class*="teaser"]
 !
 !
-!32#--------------------------Pudelek/Pudelekx element hide------------!
+!34#--------------------------Pudelek/Pudelekx element hide------------!
 pudelek.pl##DIV.cb > DIV[class^="m"]
 pudelek.pl##DIV[class][data-utm_source][data-st-area] + DIV.m0 > DIV + DIV
 pudelek.pl##DIV[class^="sidebar-"] > [class^="mtb"]
@@ -3528,7 +3533,7 @@ pudelek.pl##.results__entry.toRight
 pudelek.pl##SCRIPT + DIV + DIV[class^="m"]
 pudelekx.pl##[id^="adv"]
 !
-!33#--------------------------Money element hide------------!
+!35#--------------------------Money element hide------------!
 biztok.money.pl##DIV[style="margin-bottom: 10px"] + DIV > DIV > DIV[class]
 biztok.money.pl##[style="margin-bottom: 10px"] > DIV[class]
 biztok.money.pl##[style$="padding:10px 0"] > DIV[class]
@@ -3554,7 +3559,7 @@ www.money.pl##P + DIV[style$="padding:10px 0"]
 www.money.pl##SCRIPT[src^="//money"] + DIV[class][style="text-align:center;"]
 www.money.pl##div:nth-of-type(1) > .news > .news__items > .item:nth-of-type(1)
 !
-!34#--------------------------Easylist Bugs -----------!
+!36#--------------------------Easylist Bugs -----------!
 @@||alltube.tv/index.php?url=$xmlhttprequest
 @@||partneragdrtv.com.pl/temp/adrotator_filemanager/$image
 @@||reklama.gazeta.pl^$image,font,script
@@ -3562,12 +3567,12 @@ www.money.pl##div:nth-of-type(1) > .news > .news__items > .item:nth-of-type(1)
 @@||wpolityce24.pl/imgcache/300x250/*/uploads/news/$image
 kafeteria.pl#@#.is-sponsored
 !
-!35#--------------------------Wordpress blocking filters------------!
+!37#--------------------------Wordpress blocking filters------------!
 ||overwatch.pl/wp-content/uploads/20*/*/250x700*.png$image
 !
 24legnica.pl,wstereo.pl,magazynbasista.pl,niebezpiecznik.pl,appki.com.pl,prawapolityka.pl###text-8
 !
-!36#--------------------------Wordpress element hide------------!
+!38#--------------------------Wordpress element hide------------!
 7dni.pila.pl,petronews.pl###text-22
 ambassador24.pl###text-6 > .textwidget
 autofakty.pl##.widget_text.widget
@@ -3636,7 +3641,7 @@ zawiercianskie.pl###rommeled_image-19
 zdrowyportal.org,swiatoze.pl###text-10
 zwiedzamyparyz.pl###text-6, .a-single, .gyg-widget
 !
-!37#--------------------------Bitcoin ------------!
+!39#--------------------------Bitcoin ------------!
 ||anyfiles.ovh^$subdocument,domain=anyfiles.pl
 ||dekoder.ws/*.wasm$xmlhttprequest
 ||subloader.cf/$subdocument
@@ -3659,12 +3664,12 @@ zwiedzamyparyz.pl###text-6, .a-single, .gyg-widget
 /:\/\/[\w\W]{5,15}\.[a-z]{2,3}:[0-9]{3,4}\//$domain=dekoder.ws|alltube.tv|ekinomaniak.tv
 /:\/\/[\w\W]{4,15}\.[a-z]{2,3}:[0-9]{3,4}\//$subdocument,domain=alltube.tv|szukajka.tv
 !
-!38#--------------------------Bitcoin whitelist ------------!
+!40#--------------------------Bitcoin whitelist ------------!
 @@||cda.pl/*/*$subdocument,domain=alltube.tv
 @@||anyfiles.pl/$subdocument,domain=alltube.tv
 @@||authedmine.com/$domain=dotacje.certyficate.it
 !
-!39#--------------------------Dobreprogramy WL ------------!
+!41#--------------------------Dobreprogramy WL ------------!
 dobreprogramy.pl,interia.pl,kwantowo.pl#@#.pub_300x250
 dobreprogramy.pl,interia.pl,kwantowo.pl#@#.pub_300x250m
 dobreprogramy.pl,interia.pl,kwantowo.pl#@#.pub_728x90
@@ -3675,7 +3680,7 @@ dobreprogramy.pl,interia.pl,kwantowo.pl#@#.text-ad-links
 dobreprogramy.pl,interia.pl,kwantowo.pl#@#.text_ads
 dobreprogramy.pl,interia.pl,kwantowo.pl#@#.text-ads
 !
-!40#--------------------------Dobreprogramy hide elements ------------!
+!42#--------------------------Dobreprogramy hide elements ------------!
 dobreprogramy.pl##a[href*="campaign=baner"]
 dobreprogramy.pl##.block > div[style$="height: 600px; width: 300;"]
 dobreprogramy.pl##body:not(.variant-mobile) div[style="color: #A9A9A9; text-align:center;font-size:11px;"]
@@ -3703,10 +3708,10 @@ forum.dobreprogramy.pl##[style="text-align:center;padding:20px 0;"]
 www.dobreprogramy.pl###phContent_hpOperaLink
 www.dobreprogramy.pl##.dobregry-slider-wrapper
 !
-!41#--------------------------Gemius link to ads ------------!
+!43#--------------------------Gemius link to ads ------------!
 spidersweb.pl##a[href*="hit.gemius.pl/"]
 !
-!42#--------------------------Agora ADS------------!
+!44#--------------------------Agora ADS------------!
 sport.pl##.cg4-ad
 avanti24.pl##.art_embed
 !
