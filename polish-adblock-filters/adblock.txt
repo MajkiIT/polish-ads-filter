@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 23 February 2018
 ! Expires: 1 day
-! Version: 2018022302
+! Version: 2018022303
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018022302 aktualizacja: ptk, 2 luty 2018, 11:35:00
+! v.2018022303 aktualizacja: ptk, 23 luty 2018, 18:20:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -495,9 +495,8 @@ cenabiznesu.pl##.img-responsive
 centrum-dramy.pl##[id^="aukcjoner"]
 centrumdruku3d.pl##DIV.right > STYLE + DIV
 centrumdruku3d.pl###slide-bottom-popup
-centrumxp.pl##[id^="ctl00_sldr_nowoczesnyOffice"]
-centrumxp.pl##[id*="_Reklama_"]
 centrumxp.pl###WelcomeBox
+centrumxp.pl###sldr
 cgm.pl##.headFlash
 chamskie.pl###ad-bg-transparent
 chamskie.pl##[class^="ads"]
@@ -574,6 +573,7 @@ culturva.pl###HTML7
 culturva.pl###HTML6
 culturva.pl###Text1
 culturva.pl###HTML8
+cyberdefence24.pl##.header-bottom-partner
 cyfrowaekonomia.pl##.td-fix-index.td_mod_wrap
 czasdzieci.pl##.adlabel
 czateria.interia.pl##.video-player-container
@@ -949,11 +949,13 @@ hdtv.com.pl##body > center
 hebe.pl###splash_homepage
 hej.mielec.pl##.divMainBannerShell
 hej.mielec.pl##.noFormat.divOpisCnt >.divKernel > p
+heronews.pl###bdaia-widget-html-2
 herozerogame.com##[id^="frameAdvertisment"]
 heynet.pl##[id^="panel-"] > .custom-html-widget.textwidget > div
 heynet.pl###pgc-w5a8d123266efb-5-1
 heynet.pl###pgc-w5a8d123266efb-8-1
 heynet.pl###pgc-w5a8d123266efb-10-1
+heynet.pl##[id^="custom_html-"]
 hifi.pl##[class$="barek"]
 hip-hop.pl##DIV[style="clear:both; margin:10px; text-align:center;"]
 histmag.org##.commented-widget:nth-of-type(1) > .header
@@ -1520,6 +1522,8 @@ oswiecimonline.pl##.commercial
 oswiecimonline.pl###rev_slider_4_1_wrapper
 oswiecimonline.pl##.vc_empty_space
 otodom.pl###adsTopOD
+ototorun.pl##.row:nth-of-type(6) > .fl.w1000
+ototorun.pl##.row:nth-of-type(8) > .fl.w1000
 otozawiercie.pl###HTML8
 otozawiercie.pl###Image1
 ox.pl##.advert-owl
@@ -2886,6 +2890,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=autokult.pl|kafeteria.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|pogoda.wp.pl|dladzieci.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|fotoblogia.pl|bloog.pl|avent-ugrow.wp.pl|pudelek.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl|pytamy.pl|ranking.abczdrowie.pl
 /^https:\/\/eku24.net\/images\/slajdy\/(?!zyczenia)[a-z]{3,10}\/[a-zA-Z0-9_-]{10,50}\.jpg/$image
 /\/[0-9a-zA-Z]{5,7}\_(?!adaptiveresize)[a-z]{12,17}\_[0-9]{3,3}\x[0-9]{3,3}\.jpg$/$image,domain=www.pcworld.pl
+/^(http|https):\/\/a-o.ninja\/[\w\d]{5,10}\.js\?[a-z]{2,5}/$script
 !
 !12#---------------------------------Whitelists----------------------------------!
 !@@||admin.brightcove.com$domain=ekstraklasa.tv|itvn.pl|player.pl|ttv.pl|tvn.pl|tvn24.pl|tvn24bis.pl|tvn7.pl|tvnplayer.pl|tvnstyle.pl|tvnturbo.pl
@@ -3120,6 +3125,7 @@ zrabatowani.pl###popup-adblock-bottom
 ||napisy24.pl/run/js/blad*.js$script
 ||niepoprawni.pl/sites/all/libraries/copier/bck.js$script
 /test_block.js$script,domain=proste.info.pl|kompnet.info
+||wgrane.pl/html/_pl/adblock_top.txt
 /wp-content/plugins/wp-adblock-dedect/dedect.js$script
 /\/wp-content\/uploads\/[a-zA-Z]{8,}\/[a-zA-Z]{8,}\.js/$script,domain=fandroid.com.pl|crazynauka.pl|legiobiznes.pl
 ||wp.hit.gemius.pl/gdejs/xgde.js$script,redirect=noopjs,domain=pilot.wp.pl
@@ -3132,7 +3138,7 @@ zrabatowani.pl###popup-adblock-bottom
 @@ads$image,domain=rapidgrab.pl
 @@/ads.reklama.728x90$script,stylesheet,domain=zmianaczasu.info|antonimy.net|odmiana.net|definicja.net|krzyzowka.net|humoris.pl
 @@/advertisement.js$script,domain=meczyki.pl|autocentrum.pl|tokfm.pl
-@@/\/js\/[\w]{5,20}\.js/$script,domain=a-o.ninja
+!@@/\/js\/[\w]{5,20}\.js/$script,domain=a-o.ninja
 @@||adv.wp.pl/adverts$xmlhttprequest,domain=pilot.wp.pl
 @@||anyfiles.pl/pageloading/*-loader.jsp?ads=true
 @@||app.convertiser.com/scripts/*.advert.js
@@ -3558,6 +3564,7 @@ pudelekx.pl##[id^="adv"]
 biztok.money.pl##DIV[style="margin-bottom: 10px"] + DIV > DIV > DIV[class]
 biztok.money.pl##[style="margin-bottom: 10px"] > DIV[class]
 biztok.money.pl##[style$="padding:10px 0"] > DIV[class]
+msp.money.pl##DIV > DIV[style*=" z-index: 310"]
 manager.money.pl##.in > DIV[class]:first-child
 money.pl##DIV#ADrail > DIV[class]:first-child
 money.pl##DIV#ADrail > DIV > DIV + DIV[class]
