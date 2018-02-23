@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 22 February 2018
+! Last modified: 23 February 2018
 ! Expires: 1 day
-! Version: 2018022210
+! Version: 2018022301
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018022210 aktualizacja: czw, 22 luty 2018, 20:25:00
+! v.2018022301 aktualizacja: ptk, 2 luty 2018, 08:30:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -37,6 +37,7 @@ _baner/980x200
 _banery/980x200
 /banery/*980x90
 /*300x300$image,domain=portalgwiazd.pl
+/content-generator/published/frame/generate?frameId=*&placementId=*&guid=
 ://*.*/banery_foto/$image,domain=ki24.info|portalplock.pl|faktypilskie.pl|ddtorun.pl|ddwloclawek.pl|koronowo.net.pl|zyciesiedleckie.pl
 /bannery/*$image,subdocument,domain=em.kielce.pl|czasdzieci.pl|kolporter.com.pl|sklep-tvsat.hcore.pl|www.pokertexas.pl|www.walbrzych24.com|zlotoryja.info|skijumping.pl|icomp.pl|forum.cs-classic.pl|nocnygdansk.pl
 /data/ap3bo6/*.gif$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
@@ -533,6 +534,8 @@ ciekawostkihistoryczne.pl##.floatRight.short.books
 cinema-city.pl##DIV[id^="snatch"]
 cinema-city.pl###layer_3_-150_0
 cinema-city.pl###subsnatch
+cksport.pl##.box:nth-of-type(1)
+cksport.pl##.box:nth-of-type(3)
 cmg24.pl##[src*="Reklamy/"]
 codziennikmlawski.pl###ai_widget-8
 comparic.pl##A[target="_blank"] > IMG
@@ -2442,7 +2445,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 ||40ton.net/wp-content/uploads/*.png$image
 ||4lomza.pl/banner/$image
 ||4lomza.pl/i/tlo/$image
-||a-o.ninja/nicehype.js$script
+||a-o.ninja/*js?re$script
 ||a1.advertine.com/w.js$script,domain=baje.pl
 ||ad.adview.pl/ad/
 ||ad.bitbay.net$image
@@ -2885,7 +2888,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 /\/[0-9a-zA-Z]{5,7}\_(?!adaptiveresize)[a-z]{12,17}\_[0-9]{3,3}\x[0-9]{3,3}\.jpg$/$image,domain=www.pcworld.pl
 !
 !12#---------------------------------Whitelists----------------------------------!
-@@||admin.brightcove.com$domain=ekstraklasa.tv|itvn.pl|player.pl|ttv.pl|tvn.pl|tvn24.pl|tvn24bis.pl|tvn7.pl|tvnplayer.pl|tvnstyle.pl|tvnturbo.pl
+!@@||admin.brightcove.com$domain=ekstraklasa.tv|itvn.pl|player.pl|ttv.pl|tvn.pl|tvn24.pl|tvn24bis.pl|tvn7.pl|tvnplayer.pl|tvnstyle.pl|tvnturbo.pl
 @@||adocean-pl.hit.gemius.pl/*/url=http://sport.tvp.pl/$popup,other
 @@||adserwer.adtools.pl/Rs$script,domain=adserwer.adtools.pl
 @@||adtaily.pl/wp-content/themes/adtaily_*/$domain=www.adtaily.pl
@@ -2896,7 +2899,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 @@||anime-odcinki.pl/sites/default/files/styles/medium-smaller__200x200_/public/okladki
 @@||assets.adobedtm.com^$script,domain=netto.pl
 @@||av-cdn-*.wpimg.pl/*:wp*.stream^$domain=wp.pl
-@@||c.brightcove.com/
+!@@||c.brightcove.com/
 @@||cda.pl/ads.js$script,domain=cda.pl
 @@||*cda.pl/*advertise.js$script,domain=cda.pl
 @@||cda.pl/rekl-adv*.js$script
@@ -2916,8 +2919,8 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 @@||exs.pl^$domain=wpolityce.pl|wio.waw.pl
 @@||fakt.pl^$generichide
 @@||gemius.pl^$domain=www.gemius.pl
-@@||go.brightcove.com/content/
-@@||goku.brightcove.com^
+!@@||go.brightcove.com/content/
+!@@||goku.brightcove.com^
 @@||google-analytics.com$domain=certyficate.it|liptonicetea.com|filmweb.pl
 @@||googletagmanager.com/gtag/$script,domain=certyficate.it
 @@||googletagmanager.com/gtm.js$script,domain=www.emag.pl|benchmark.pl
@@ -2930,11 +2933,10 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 @@|http://razem.tv/Scripts/InsysPlayer.v0.1.0/adTest.png$image
 @@|http://w.iplsc.com/internal/inpl.intad/$script,domain=interia.pl
 @@||hub.com.pl^$subdocument,domain=poczta.interia.pl
-@@||ilc.pl^
 @@||js-agent.newrelic.com/$script,domain=portal.abczdrowie.pl
 @@||lulektv.app.insyscd.net/Content/player/insysplayer/adTest.png$image,domain=lulektv.app.insyscd.net
 @@||katowickisport.pl^$generichide
-@@||metrics.brightcove.com/
+!@@||metrics.brightcove.com/
 @@||miniminiplus.pl^$generichide
 @@||myao.adocean.pl/ad.xml?*$domain=sport.tvp.pl
 @@||myao.adocean.pl/__/ad.xml?*$domain=sport.tvp.pl
@@ -2951,7 +2953,7 @@ zywiecinfo.pl##.promoted.wow.fadeIn
 @@reklama$domain=intercity.pl
 @@||remiza.com.pl/ads/haft/jquery.slides.min.js$script
 @@||rtax.criteo.com$domain=ekstraklasa.tv|itvn.pl|player.pl|ttv.pl|tvn.pl|tvn24.pl|tvn24bis.pl|tvn7.pl|tvnplayer.pl|tvnstyle.pl|tvnturbo.pl
-@@||sadmin.brightcove.com/js/BrightcoveExperiences.js
+!@@||sadmin.brightcove.com/js/BrightcoveExperiences.js
 @@||sascdn.com^$object-subrequest,script,domain=poradnikzdrowie.pl|www4.rp.pl|eskago.pl
 @@||smartadserver.com^$script,domain=poradnikzdrowie.pl|www4.rp.pl|fotka.pl
 @@||s-nk.pl/script/nk/ads/$script,domain=nk.pl
@@ -3070,6 +3072,7 @@ portel.pl##a[href^="/skrypty/kampania.php"]
 portel.pl##DIV[style*=" background-color: rgb(0, 0, 0); "]
 porteuropa.eu##i#g207
 proste.info.pl###warning
+przewodnikduchowy.pl##.col-md-8 > div:nth-of-type(2)
 pssite.com,ps3forum.pl###abl
 purepc.pl#@#[class*="reklama"]
 pzkosz.pl##.aside-ad-block
