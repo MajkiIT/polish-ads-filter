@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 25 February 2018
+! Last modified: 26 February 2018
 ! Expires: 1 day
-! Version: 2018022504
+! Version: 2018022601
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://certyficate.it/adblock
-! v.2018022504 aktualizacja: nie, 25 luty 2018, 20:00:00
+! v.2018022601 aktualizacja: pon, 26 luty 2018, 10:00:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -341,6 +341,7 @@ antyweb.pl##.group.big.box-img
 antyweb.pl##.touch + IMG.notMobile[src*="/1200x400"]
 antyweb.pl##.transparent
 antyweb.pl##.wp-image-192844
+antyweb.pl##.column:nth-of-type(1) > p
 anyfiles.pl###AllVideosLoadDiv > .media-list > .media > .thumbnail:not([title])
 anyfiles.pl##[class^="bp-wrapp"]
 anyfiles.pl##[id^="adsbox_"]
@@ -771,6 +772,7 @@ filesdark.com##[href*="/adac.php"]
 films4free.pl##.M2U3OGQ4ZGY1
 fishing-mart.com.pl##td:nth-of-type(6) > .norm11:nth-of-type(4)
 flarrow.pl##[class^="td_block_wrap td_block_text_with_title td_uid_"]
+flarrow.pl#?#.td_block_wrap:-abp-has(.td-pulldown-size:-abp-contains(Reklama))
 flashscore.pl###box-over-content-a
 flashscore.pl##.scrolling-box-under-content
 fly4free.pl##A[href^="https://www.youtube.com/watch"] > IMG[src^="//www.fly4free.pl/wp-content/uploads/"]
@@ -1119,6 +1121,7 @@ komputerswiat.pl###\5f 479491471
 komputerswiat.pl##.intext:nth-of-type(17)
 komputerswiat.pl##.sidebar_html_embed
 komputerswiat.pl##[style="width: 600px; height: 400px; margin: 20px auto;"]
+komputery.malopolska.pl##[class^="et_bloom_popup"]
 koncertomania.pl###banner-side
 koncertomania.pl##div#slide-out-newsletter
 konflikty.pl##.vwpc-section-custom_content
@@ -1127,7 +1130,7 @@ kopalniawiedzy.pl##.ui-helper-clearfix.box.interview > .ui-helper-clearfix
 kopalniawiedzy.pl##.right-col-sky
 korkosfera.pl##div#copyright_ne
 korsosanockie.pl,korso.pl##.no-bg.widget
-koszalininfo.pl,wlkp24.info,wwl24.info,b2-biznes.pl,sporteuro.pl,metropoliabydgoska.pl,brzeg24.pl,pabianice.tv,zambrowiacy.pl,e-play.pl,wrc.net.pl,dziennik.walbrzych.pl##.g
+koszalininfo.pl,wlkp24.info,wwl24.info,b2-biznes.pl,sporteuro.pl,metropoliabydgoska.pl,brzeg24.pl,pabianice.tv,zambrowiacy.pl,e-play.pl,wrc.net.pl,dziennik.walbrzych.pl,asta24.pl##.g
 kozaczek.pl##img[src^="data:image/jpeg;base64"]
 kozaczek.pl##.nsg_ad_box
 kozienice24.pl###adocr
@@ -1411,8 +1414,9 @@ naekranie.pl##.inner-wrap > .post-content
 naekranie.pl##.sen-gal-sidebar-custom-content
 naekranie.pl##.title-p
 naekranie.pl##DIV[style="width: 375px; height: 200px;"]
-naekranie.pl##A[target="_blank"] > DIV[style^="background: url('"]
+!naekranie.pl##A[target="_blank"] > DIV[style^="background: url('"]
 naekranie.pl##DIV[style="max-width: 1230px; margin: auto;"] > DIV[class][style*="max-width: 100vw"]
+naekranie.pl##.s537eee91.s4c0e50fa
 naklo24.pl##.ban
 nakolei.pl##.textwidget > A[target="_blank"]
 na-luzie.net##a[href^="http://trafisz.com/"]
@@ -3147,6 +3151,7 @@ zw.pl###abpnotzw
 /test_block.js$script,domain=proste.info.pl|kompnet.info
 ||wgrane.pl/html/_pl/adblock_top.txt
 /wp-content/plugins/wp-adblock-dedect/dedect.js$script
+/wp-content/plugins/pause-adblocker$script
 /\/wp-content\/uploads\/[a-zA-Z]{8,}\/[a-zA-Z]{8,}\.js/$script,domain=fandroid.com.pl|crazynauka.pl|legiobiznes.pl
 ||wp.hit.gemius.pl/gdejs/xgde.js$script,redirect=noopjs,domain=pilot.wp.pl
 ||xperiasite.pl/public/js/antyadblock.js$script
@@ -3197,6 +3202,7 @@ zw.pl###abpnotzw
 @@||onet.hit.gemius.pl/*/redot.js$script,domain=auto-swiat.pl|businessinsider.com.pl|fakt.pl|forbes.pl|komputerswiat.pl|noizz.pl|onet.pl|plejada.pl|vod.pl
 @@||onet.hit.gemius.pl/*/rexdot.js$script,domain=auto-swiat.pl|businessinsider.com.pl|fakt.pl|forbes.pl|komputerswiat.pl|noizz.pl|onet.pl|plejada.pl|vod.pl
 @@||onet.pl^$generichide
+@@||online-tv.pl/wp-content/plugins/pause-adblocker/inc/pause-front.css
 @@||pagead2.googlesyndication.com^$script,domain=pilot.wp.pl|skript.pl
 @@||pclab.pl^$generichide
 @@||pc-sos.pl/ad.htm$script,domain=pc-sos.pl|xn--strela-8db.pl
