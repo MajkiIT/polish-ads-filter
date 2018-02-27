@@ -7,7 +7,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 27 February 2018
 ! Expires: 2 days
-! Version: 2018022701
+! Version: 2018022702
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018022701 aktualizacja: wt, 27 luty 2018, 08:50:00
+! v.2018022702 aktualizacja: wt, 27 luty 2018, 18:00:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -245,6 +245,9 @@ shinden.pl##.ads:style(height: 27px!important;)
 ! olx.pl
 ||olx.pl^*/advertising.js$script,important,redirect=noopjs,first-party
 !
+! webcamera.pl
+||webcamera.pl/videointro/filead*.mp4$media,redirect=noopmp3-0.1s,important
+!
 ! style()
 booklips.pl##.js:style(background-image: none !important;)
 cartests.net###td-outer-wrap > .td-header-wrap:style(margin-bottom: 0px!important;)
@@ -282,6 +285,7 @@ filmweb.pl##script:inject(setTimeout-defuser.js, notDetected)
 niezalezna.pl##script:inject(noeval.js)
 astroweb.pl##script:inject(abort-on-property-read.js, checkAds)
 aternos.org##script:inject(setTimeout-defuser.js, hasAdblock)
+||wp.hit.gemius.pl/gdejs/xgde.js$script,redirect=noopjs,domain=pilot.wp.pl
 !
 ! Rules after Adblock
 vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
