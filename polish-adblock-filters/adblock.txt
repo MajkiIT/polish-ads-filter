@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 5 March 2018
 ! Expires: 1 day
-! Version: 2018030504
+! Version: 2018030505
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018030504 aktualizacja: pon, 5 marzec 2018, 18:25:00
+! v.2018030505 aktualizacja: pon, 5 marzec 2018, 21:15:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -308,9 +308,9 @@ allegro.pl###installments-banner-container
 allegro.pl###main_page_hr_980_180
 allegro.pl###main_page_main_1200_400
 allegro.pl###mainpage-marketing-showcases > .clearfix
-alltube.tv###ban-er
-alltube.tv###super-player
-alltube.tv###undermenu
+alltube.tv,alltube.pl###ban-er
+alltube.tv,alltube.pl###super-player
+alltube.tv,alltube.pl###undermenu
 ampolska.net##.conntent > center
 ampolska.net###dwa_panel > center
 ampolska.net###trzy_panel
@@ -2244,7 +2244,7 @@ wiara.pl,radiosochaczew.pl##[class*="advert"]
 windowsmania.pl##[id^="yui-gen"] > [class^="post"]
 wimieprawdy.pl##.cke-resize
 wiocha.pl###ad4sc
-wiocha.pl,alltube.tv,repostuj.pl,jeja.pl##[href*="tracking.linktogame.com/"]
+wiocha.pl,repostuj.pl,jeja.pl##[href*="tracking.linktogame.com/"]
 wiocha.pl##DIV[style="margin:0 auto; max-width:702px;min-height:450px;max-height:550px;overflow:hidden;"]
 wiocha.pl##DIV[style="margin:0 auto; max-width:770px;min-height:450px;max-height:550px;overflow:hidden;vertical-align:middle;padding-bottom:10px;"]
 wiocha.pl##[id$="infopanel"]
@@ -2486,6 +2486,7 @@ zywiecinfo.pl##.col-md-12
 zywiecinfo.pl##.promoted
 !
 !10#----------------------Specific advert blocking filters-----------------------!
+/adv/show-windows.php$script,domain=alltube.tv|alltube.pl
 ||24opole.pl/bimg/$image
 ||40ton.net/wp-content/uploads/*.gif$image
 ||40ton.net/wp-content/uploads/*.png$image
@@ -2511,7 +2512,6 @@ zywiecinfo.pl##.promoted
 ||a.ib.gazeta.pl^$image
 ||alemiasto.pl/adds/
 ||allegrostatic.pl/showcaseService/static/images/placeholders/1200x400.png$image
-||alltube.tv/adv/show-windows.php$script
 ||animes.pl/jscripts/myadvertisements.js$script
 ||antygrupa.pl/adv/$subdocument,domain=antyweb.pl
 ||antyweb.pl/wp-content/themes/antyweb.autentika/aadv/js/aadv.js
@@ -2585,6 +2585,7 @@ zywiecinfo.pl##.promoted
 ||evertiq.pl/go/$popup
 ||evertiq.pl/include/ad-block/$xmlhttprequest
 ||evertiq.pl/bin/evqNewsTop.js
+||evertiq.pl/bin/evqReadBot.js
 ||exs.pl/ads.js$script
 ||exs.pl/embed*.php$script,domain=~wgospodarce.pl|~szczecinek.com|~polityka.pl
 ||exs.pl/frame*.php$subdocument,domain=~wgospodarce.pl|~szczecinek.com|~polityka.pl
@@ -3420,12 +3421,12 @@ pl##a[href^="//69oxt4q05.com/"]
 !
 !28#--------------------------Rules for pages with random adv scripts regex------------!
 /^http:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\/[a-zA-Z0-9]{30,}/$script,popup
-!/^http:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=devil-torrents.pl|electro-torrent.pl|nitro.to|alltube.tv|darmowa-telewizja.info|goldvod.tv|darmowa-tv.pl
+!/^http:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=devil-torrents.pl|electro-torrent.pl|nitro.to|alltube.tv|darmowa-telewizja.info|goldvod.tv|darmowa-tv.pl|alltube.pl
 !/^http:\/\/[a-zA-Z0-9]{8,20}\.com\/analytics\/[0-9]{5,7}/$subdocument,script,popup
 !/^(http|https):\/\/ad\.[a-z]{3,10}\.[a-z]{2,3}\/[a-z/?=]{10,}\/asrv\/campaign\//$subdocument
 !/^(http|https):\/\/(?!apis.google)[a-z0-9.-]{5,}\.com\/[a-z]{1,}\/[a-z]{1,}\.js/$script,domain=wrealu24.pl
 /^(http|https):\/\/[a-z0-9]{10,20}\.com\/[0-9]{5,10}\.html/$subdocument,domain=ekino-tv.pl|dekoder.ws
-/^(http|https):\/\/[a-z0-9]{5,}\.com\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{5,}\.js/$script,domain=vidto.me|fili.tv|fileone.tv|alltube.tv|srkcast.com|vidfile.net|a-o.ninja
+/^(http|https):\/\/[a-z0-9]{5,}\.com\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{5,}\.js/$script,domain=vidto.me|fili.tv|fileone.tv|alltube.tv|srkcast.com|vidfile.net|a-o.ninja||alltube.pl
 /^(http|https):\/\/[a-z0-9]{8,30}\.[a-z]{2,11}\/[0-9]{3,10}/$xmlhttprequest,script,stylesheet,domain=streamin.to|raptu.com|flashx.tv|rapidvideo.com|fili.tv|fileone.tv|animezone.pl|vidoza.net|kreskowkazone.pl
 /^(http|https):\/\/[a-z.]{5,10}\.[a-z]{2,4}\/[a-z]{3,7}\?[a-zA-Z0-9=&%-]{150,250}/$popup,domain=centrum-dramy.pl|a-o.ninja
 /^(http|https):\/\/[a-z]{5,10}\.com\/[a-zA-Z0-9+]{80,}/$subdocument,domain=embed.nowvideo.sx|cloudtime.to|darmowa-telewizja.info
@@ -3612,7 +3613,7 @@ www.money.pl##SCRIPT[src^="//money"] + DIV[class][style="text-align:center;"]
 www.money.pl##div:nth-of-type(1) > .news > .news__items > .item:nth-of-type(1)
 !
 !36#--------------------------Easylist Bugs -----------!
-@@||alltube.tv/index.php?url=$xmlhttprequest
+@@/index.php?url=$xmlhttprequest,domain=alltube.pl|alltube.tv
 @@||partneragdrtv.com.pl/temp/adrotator_filemanager/$image
 @@||reklama.gazeta.pl^$image,font,script
 @@||rentcars.pl/build/js/user-tracking.js?psv=11$script
@@ -3710,16 +3711,16 @@ zwiedzamyparyz.pl###text-6, .a-single, .gyg-widget
 /^(https|http):\/\/[a-z.]{4,15}\.[a-z]{2,2}\/[a-z/.?=-]{1,100}wss:\/\/[a-z.?:0-9=]{6,50}/$script
 /^(http|https):\/\/(?!www.speedvid)(?!streamcherry.com)(?!vshare)(?!vidoza)(?!openload)(?!www.youtube)(?!streamango)(?!www.rapidvideo)[a-zA-Z0-9\W]{5,10}.[a-z]{2,20}\/[\w\W\d]{5,20}\/[a-z]{5,20}\//$subdocument,domain=a-o.ninja|centrum-dramy.pl|love-drama.pl|vidfile.net
 /^(http|https):\/\/[a-z\W]{6,15}\.[a-z]{2,5}\/[a-z.]{4,10}\.js/$script,domain=vidoza.net|fileone.tv
-/^(http|https):\/\/[a-z0-9.]{8,30}\.[a-z]{2,11}\/[a-z]{3,7}\/[a-z0-9]{5,25}\.(wasm|js)/$xmlhttprequest,script,domain=alltube.tv
-/(http|https):\/\/(?!alltube)(?!www.speedvid)(?!streamcherry.com)(?!vshare)(?!vidoza)(?!openload)(?!www.youtube)(?!streamango)(?!www.rapidvideo)(?!embed.nowvideo)(?!video.anyfiles)(?!vidto)(?!vidfile)[a-z0-9.-]{5,40}\.[a-z]{0,10}\/[\w\d\W]{0,100}$/$subdocument,domain=alltube.tv|centrum-dramy.pl
+/^(http|https):\/\/[a-z0-9.]{8,30}\.[a-z]{2,11}\/[a-z]{3,7}\/[a-z0-9]{5,25}\.(wasm|js)/$xmlhttprequest,script,domain=alltube.tv|alltube.pl
+/(http|https):\/\/(?!alltube)(?!www.speedvid)(?!streamcherry.com)(?!vshare)(?!vidoza)(?!openload)(?!www.youtube)(?!streamango)(?!www.rapidvideo)(?!embed.nowvideo)(?!video.anyfiles)(?!vidto)(?!vidfile)[a-z0-9.-]{5,40}\.[a-z]{0,10}\/[\w\d\W]{0,100}$/$subdocument,domain=alltube.tv|centrum-dramy.pl|alltube.pl
 /^(http|https):\/\/[a-z]{5,10}\.[a-z]{2,3}\/[\w\W]{50,80}/$subdocument,domain=heja.tv
 /^(http|https):\/\/[a-z.]{5,15}\.[a-z]{2,4}\/[a-z]{3,3}\/conf\?[a-z0-9\W]{10,50}/$xmlhttprequest,domain=fileone.tv
-/:\/\/[\w\W]{5,15}\.[a-z]{2,3}:[0-9]{3,4}\//$domain=dekoder.ws|alltube.tv|ekinomaniak.tv|vidoza.net
-/:\/\/[\w\W]{4,15}\.[a-z]{2,3}:[0-9]{3,4}\//$subdocument,domain=alltube.tv|szukajka.tv
+/:\/\/[\w\W]{5,15}\.[a-z]{2,3}:[0-9]{3,4}\//$domain=dekoder.ws|alltube.tv|ekinomaniak.tv|vidoza.net|alltube.pl
+/:\/\/[\w\W]{4,15}\.[a-z]{2,3}:[0-9]{3,4}\//$subdocument,domain=alltube.tv|szukajka.tv|alltube.pl
 !
 !40#--------------------------Bitcoin whitelist ------------!
-@@||cda.pl/*/*$subdocument,domain=alltube.tv
-@@||anyfiles.pl/$subdocument,domain=alltube.tv
+@@||cda.pl/*/*$subdocument,domain=alltube.tv|alltube.pl
+@@||anyfiles.pl/$subdocument,domain=alltube.tv|alltube.pl
 @@||authedmine.com/$domain=dotacje.certyficate.it
 !
 !41#--------------------------Dobreprogramy WL ------------!
