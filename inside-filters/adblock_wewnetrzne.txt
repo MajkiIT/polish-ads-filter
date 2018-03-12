@@ -5,7 +5,7 @@
 ! Oświadczenie: https://github.com/MajkiIT/polish-ads-filter/blob/master/STATEMENT.md
 ! EULA: Subskrybcja|Użytkowanie listy "Polskie Filtry Wewnętrzne" jest równoznaczne z wyrażeniem zgody na bycie ich komitentem, a twórcy nie ponoszą odpowiedzialności prawnej za nadużycia użytkowników.
 ! Last modified: 12 March 2018
-! Version: 326.1
+! Version: 327.2
 ! Expires: 3 days
 ! Wymagane:
 !   Rozszerzenia >> uBlock Origin / AdGuard lub ich aktualne forki
@@ -21,8 +21,6 @@
 !
 !1$----------------------{ ogólne reguły wewnętrzne }----------------------!
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
 sprawnymarketing.pl##.hidden-mobile
 !
 bulldogjob.pl##.well-transparent.well-lg.well:nth-of-type(1)
@@ -37,7 +35,7 @@ magazynmotomi.pl##.aggads-visible-lg.aggads-hidden-md.aggads-hidden-sm.aggads-hi
 !
 movieway.pl##.pull-left.span3.brand
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4826
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4826
 bielskiedrogi.pl###block-block-12
 !
 nasze.fm###nasze
@@ -51,28 +49,28 @@ bitcoinheavy.org##p:nth-of-type(44)
 !
 wojsko.com.pl###AnimacjaPrzenikanieKontener
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5278
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5278
 kk24.pl##.widget_text.widget:nth-of-type(1)
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5340
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5340
 kk24.pl##.simple_manager_widget.widget:nth-of-type(8)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5365
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5365
 elubaczow.com###sidebar_r > center:nth-of-type(1)
 elubaczow.com###execphp-30
 elubaczow.com##.posts > center:nth-of-type(2)
 !
 pionki24.pl##.siderightcontent:nth-of-type(2)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5383
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5383
 petronews.pl##a[href="http://petronews.pl/reklama-plus/"]
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/6131
+!> https://github.com/MajkiIT/polish-ads-filter/issues/6131
 www.fishing-mart.com.pl##body > .norm10
 !
 !
 !2$----------------------{ sklepy }----------------------!
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/6167
+!> https://github.com/MajkiIT/polish-ads-filter/issues/6167
 !& [V.290.1] [E: podstrona] [S: zrealizowane] [P:2] [Q:B]
 tarnow.in###woocommerce_products-7
 !
@@ -81,8 +79,6 @@ rms.pl###art_g_p
 !
 !& [V.265] [E: podserwis] [S: zrealizowane] [P:2] [Q:A]
 www.gry-online.pl##.skl-promo-bar
-!
-!!& [S: wymaga zindexowania] [P:4]
 !
 www.mmarocks.pl##p > a[href^="http://sklep.mmarocks.pl/"]
 www.mmarocks.pl##.wpb_wrapper > a[href^="http://sklep.mmarocks.pl/"]
@@ -105,10 +101,10 @@ liberte.pl##.shop-liberte
 !
 www.culturva.pl###HTML9
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4545
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4545
 gamedot.pl###content > div.content-columns.width > div.content-columns-right > div:nth-child(7)
 gamedot.pl##.content-columns-right-inner.content-module:nth-of-type(1)
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4801
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4801
 gamedot.pl##.see-in-store
 !
 conowego.pl###c40
@@ -117,23 +113,23 @@ magazyngitarzysta.pl##.main-news.module > .container-fluid > .site-row > .col-29
 !
 wnp.pl###boxSpodekMCK
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4296
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4296
 pulskosmosu.pl###text-51
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4784
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4784
 facetemjestem.pl###a-b > .uk-hidden-small
 facetemjestem.pl##.sidebar-sticky
 !
 ratowniczy.net##p:nth-of-type(3)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4874
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4874
 krytykapolityczna.pl##.page-sidebar:nth-of-type(2) > .sticky.widget-area > .textwidget:nth-of-type(1)
 krytykapolityczna.pl##.entry-content > .site-commerc.book-item:nth-of-type(n+1):nth-of-type(-n+2)
 krytykapolityczna.pl##.site-commerc.book-item:nth-of-type(n+3):nth-of-type(-n+5)
 !
 24tp.pl##.padd-right-0.padd-left-0.polecamy.col-xs-12
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5393
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5393
 faktykonopne.pl##.listing_grid_view.listing-simple
 faktykonopne.pl##[class*="wpb_text_column wpb_content_element"]
 !
@@ -168,8 +164,6 @@ www.tysol.pl##div:nth-of-type(1) > div:nth-of-type(5)
 !
 !& [V.276] [E: artykuł premium] [S: zrealizowane] [P:2] [Q:B]
 ###smsPaymentRegion
-!
-!!& [S: wymaga zindexowania] [P:4]
 !
 www.ckm.pl##.sidebar-advert:nth-of-type(4)
 !
@@ -210,7 +204,7 @@ www.ckm.pl##.clearfix.homepage-main-ad-box
 www.ckm.pl##.new-magazine.tab-box
 www.ckm.pl##.sidebar-advert:nth-of-type(5)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4556
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4556
 wolnosc24.pl##.td-pb-row.wpb_row.vc_row:nth-of-type(2)
 wolnosc24.pl##.td-pb-row.wpb_row.vc_row:nth-of-type(6)
 wolnosc24.pl##.td-pb-row.wpb_row.vc_row:nth-of-type(10) > .td-pb-span8.vc_column_container.wpb_column
@@ -219,14 +213,14 @@ wolnosc24.pl##.td-pb-row.wpb_row.vc_row:nth-of-type(15) > .td-pb-span6.vc_column
 nczas.com##.widget_text.widget.td_block_template_1:nth-of-type(1)
 nczas.com##.td-pb-span4.vc_column_container.wpb_column:nth-of-type(1)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4608
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4608
 upolujebooka.pl##.banner:nth-of-type(1)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4739
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4739
 zblogowani.pl##.text-center.col-xs-12 > div
 !
 rp.pl###containerBestOfWeek > .row > .col-xs-12.col-md-4.col-lg-3
-!# https://github.com/azet12/PopupBlocker/issues/224
+!> https://github.com/azet12/PopupBlocker/issues/224
 rp.pl###subscription-bar-top
 !
 magazyngitarzysta.pl##a[href="https://ulubionykiosk.pl/wydawnictwo/13-gitarzysta"] > .image
@@ -248,7 +242,7 @@ newsweek.pl##.newestCover
 newsweek.pl##.coverDescBox
 www.newsweek.pl###region-item4430
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4818
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4818
 wpolityce.pl##.premium-banner
 wpolityce.pl##.footer-banner
 wpolityce.pl##.rectangle-forum.rectangle-container > .ad-container
@@ -265,12 +259,12 @@ serwisy.gazetaprawna.pl##.medium
 !
 wyborcza.pl##.mod.action-module
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4839
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4839
 goniec.net###gkToptop1
 !
 itwiz.pl##.a-95.a-single
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4848
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4848
 tygodnikprzeglad.pl##.slides
 tygodnikprzeglad.pl##.bd3hover
 tygodnikprzeglad.pl##.widget.widget-5
@@ -288,7 +282,7 @@ gpcodziennie.pl##.new-prenumerata
 !
 slowosportowe.pl###buy-online
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5379
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5379
 tygodnikzamojski.pl##.wydanieside
 !
 polskaniepodlegla.pl##[id^="sppb-addon"], [id^="sp-right"]:has-text(UP PDF)
@@ -326,28 +320,26 @@ www.forbes.pl##.wdgImage.wdg:nth-of-type(2)
 !
 gwarek.com.pl##.blok:nth-of-type(2)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/6106
+!> https://github.com/MajkiIT/polish-ads-filter/issues/6106
 gofin.pl##.Zakladka_TematycznaSzeroka1000 > tbody > tr:nth-of-type(1)
 forum.gofin.pl##.row:nth-of-type(6)
 !
 !
 !4$----------------------{ promocje }----------------------!
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
 www.money.pl##.widgets > div:nth-of-type(5)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4608
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4608
 upolujebooka.pl##.banner:nth-of-type(2)
 !
-!# https://github.com/azet12/PopupBlocker/issues/224
+!> https://github.com/azet12/PopupBlocker/issues/224
 rp.pl###voucher-widget
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4837
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4837
 nexto.pl###main > .container
 nexto.pl###midpage-banner
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4844
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4844
 pilot.wp.pl##.promotion-banner
 !
 londynek.net##.promotion-front.jd-section-front
@@ -355,9 +347,7 @@ londynek.net##.promotion-front.jd-section-front
 !
 !5$----------------------{ gry }----------------------!
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4037#issuecomment-342455796
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4037#issuecomment-342455796
 wp.pl##div[data-st-area="Stream-naglowek"]
 wp.pl##div[data-st-area="Ciekawostki-gry"]
 !
@@ -367,14 +357,12 @@ biztok.money.pl##.news
 !
 !6$----------------------{ społecznościowe }----------------------!
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
 serialomaniak.pl##a[href="https://www.facebook.com/groups/grupaserialomaniak"]
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4737
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4737
 wadowice24.pl###right2 > .title-off.module:nth-of-type(3)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5352
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5352
 startkariery.pl###footer-widgets > .home-widget:nth-of-type(2)
 !
 prawy.pl##img[src="/ad/dolina_1.jpg"]
@@ -382,11 +370,9 @@ prawy.pl##img[src="/ad/dolina_1.jpg"]
 !
 !7$----------------------{ spam }----------------------!
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
 brd24.pl###text-13
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4749
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4749
 applemobile.pl##.vc_row-fluid.wpb_row.vc_row:nth-of-type(3)
 !
 policja.pl##.box-white:nth-of-type(13)
@@ -394,23 +380,21 @@ policja.pl##.box-white:nth-of-type(24)
 policja.pl##.box-white:nth-of-type(26)
 policja.pl##.box-white:nth-of-type(29)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4759
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4759
 centrumdruku3d.pl##.row:nth-of-type(2) > .col-sm-12.col-lg-4:nth-of-type(1)
 centrumdruku3d.pl##ul > div:nth-of-type(1)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4753
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4753
 aszdziennik.pl##.double-cols-right
 !
 !
 !8$----------------------{ zachęcanie do rejestracji }----------------------!
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/6079
+!> https://github.com/MajkiIT/polish-ads-filter/issues/6079
 !& [V.271] [E: okres testowy] [S: zrealizowane] [P:2] [Q:A]
 www.cda.pl##.video-baner
 !&? [V.303.1] [E: &?, podstrona, promocja]
 www.cda.pl##.btn-premium.btn
-!
-!!& [S: wymaga zindexowania] [P:4]
 !
 popodrozy.pl##.layout_seselegant_paralex.generic_layout_container
 !
@@ -419,14 +403,12 @@ alltube.tv,alltube.pl##header > .row
 !
 !9$----------------------{ międzykontynentalne }----------------------!
 !
-!# https://github.com/ryanbr/fanboy-adblock/issues/262
+!> https://github.com/ryanbr/fanboy-adblock/issues/262
 !& [V.326.1] [E: tymczasowy, fanboy-social-fix, popup-fb] [S: zrealizowane] [P:1] [Q:C]
 otakustream.tv##.show.fade.modal-backdrop
 !
 !& [V.268] [E: komunikat, mining alert] [S: zrealizowane] [P:2] [Q:A]
 vidoza.net##[class^="floating_pane floating_pane--position_top floating_pane--text_center"]
-!
-!!& [S: wymaga zindexowania] [P:4]
 !
 rapidvideo.com##a[href^="//"]
 !
@@ -443,16 +425,12 @@ www.youtube.com##.ytp-endscreen-content
 !& [V.296.1] [E: zew. strona] [S: zrealizowane] [P:2] [Q:A]
 a-o.ninja##.a-stats
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
 autokult.pl##.partner-area
 !
 niebezpiecznik.pl###text-14 > .textwidget
 !
 !
 !11$----------------------{ inne }----------------------!
-!
-!!& [S: wymaga zindexowania] [P:4]
 !
 superhistoria.pl###page-box-2-162-20
 !
@@ -467,8 +445,6 @@ naszpradnik.pl###swifty-img-widget-3
 !
 !12$----------------------{ konkursy }----------------------!
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
 4fun.tv##.playing
 !
 pultusk24.pl##.row:nth-of-type(4) > .fl.w500:nth-of-type(1)
@@ -477,12 +453,12 @@ www.ckm.pl##.hp-show-sidebar-box.tab-box
 !
 polskieradio.pl##.Section02.third.col-md-4
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4836
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4836
 rmf.fm###strip-akcje-konkursy-3
 !
 focus.pl##.text-center > p
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5475
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5475
 pultusk24.pl##.row:nth-of-type(5)
 pultusk24.pl##.art-pol-xl
 !
@@ -496,16 +472,12 @@ ddwloclawek.pl##.container:nth-of-type(12) > .row:nth-of-type(11)
 !
 !13$----------------------{ zdarzenia }----------------------!
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
 poranny.pl##a[href*="&utm_campaign=prenumerata-swiateczna"]
 !
 !
 !14$----------------------{ kampanie Społeczne }----------------------!
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4771
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4771
 mieszkaniectargowka.pl###image-2
 !
 tvn24.pl##.editorialWithPhoto:nth-of-type(2)
@@ -518,12 +490,10 @@ trybunaczestochowska.pl##.popmake-close.pum-close
 !
 !15$----------------------{ sezonowe }----------------------!
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4789
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4789
 benchmark.pl##img[src="http://www.benchmark.pl/uploads/backend_img/c/konkursy/kalendarz-2017/kalendarz_960x90.jpg"]
 !
-!# https://github.com/azet12/PopupBlocker/issues/173#issuecomment-350242581
+!> https://github.com/azet12/PopupBlocker/issues/173#issuecomment-350242581
 ||cont6.naekranie.pl/wp-content/uploads/2017/12/pobrane-1.jpg$image
 ||cont7.naekranie.pl/wp-content/uploads/2017/12/promomorele.png$image
 !
@@ -532,33 +502,25 @@ pudelek.tv##.aside-youtube-channel:nth-of-type(4)
 !
 !16$----------------------{ loga }----------------------!
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4797
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4797
 ebd.cda.pl##.pb-logo
 !
 !
 !17$----------------------{ tła }----------------------!
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5154
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5154
 ||s.znak.com.pl/files/background/tapeta-1900x1500fisher3.jpg$image
 !
 !
 !18$----------------------{ premium }----------------------!
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
 naekranie.pl##a[href="/strefa-showmax"]
 !
-!# https://github.com/azet12/PopupBlocker/issues/224
+!> https://github.com/azet12/PopupBlocker/issues/224
 rp.pl###containerEkonomiaPrawo > .row > .mk-component--horizontal.col-xs-12
 !
 !
 !19$----------------------{ ulepszenia }----------------------!
-!
-!!& [S: wymaga zindexowania] [P:4]
 !
 shinden.pl##iframe[src="https://titanembeds.com/embed/245931283031523330?defaultchannel=366583280058892289"]
 !
@@ -567,11 +529,9 @@ alltube.tv,alltube.pl###slide-panel:style(position: absolute!important; top: 400
 !
 !20$----------------------{ partnerzy }----------------------!
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
 www.ponapisach.pl###hugeit_slider_widget-10
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4813
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4813
 histografy.pl###text-6
 !
 !
@@ -583,9 +543,7 @@ a-o.ninja##.alert-info.alert.region-help.region
 !& [V.273] [E: formułka bezpieczeństwa] [S: zrealizowane] [P:2] [Q:A]
 bitcoin-online.pl##.itemAuthorBlock
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4834
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4834
 strefadb.pl###tooltip
 !
 filetracker.pl###gosc
@@ -602,23 +560,17 @@ pionki24.pl##.siderightcontent:nth-of-type(34)
 !
 !22$----------------------{ uważaj na }----------------------!
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
 ||uwazajnakryptowaluty.pl^
 !
 !
 !23$----------------------{ sponsorzy }----------------------!
-!
-!!& [S: wymaga zindexowania] [P:4]
 !
 wysokienapiecie.pl##.col-module:nth-of-type(2)
 !
 !
 !24$----------------------{ ankiety }----------------------!
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5148
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5148
 dsw.doba.pl###stick-to-left
 !
 !
@@ -636,9 +588,7 @@ esanok.pl##img[src="http://esanok.pl/dodatki/przeprosiny-mielczarek.jpg"]
 !& [V.291.1] [E: wyłącz reklamy] [S: zrealizowane] [P:2] [Q:A]
 a-o.ninja##.last.leaf
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5393
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5393
 faktykonopne.pl##.vc_col-sm-6.vc_column_container.wpb_column:nth-of-type(2)
 !
 mragowo24.info##.ads.reklama_wysuwana_bok2
@@ -649,49 +599,45 @@ patronite.pl##.active.zostan_patronem_menu
 !
 !27$----------------------{ polecane }----------------------!
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/4037#issuecomment-366173639
+!> https://github.com/MajkiIT/polish-ads-filter/issues/4037#issuecomment-366173639
 !& [V.304.1] [E: podserwis] [S: zrealizowane] [P:2] [Q:A]
 sportowefakty.wp.pl##.image:nth-of-type(12)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5749
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5749
 !& [V.259] [E: artykuły] [S: zrealizowane] [P:2] [Q:C]
 olsztyn.wm.pl###content > div:nth-of-type(7)
 olsztyn.wm.pl##div:nth-of-type(13)
-!
-!!& [S: wymaga zindexowania] [P:4]
 !
 hiro.pl##[class^="block-title"]:has-text(petarda)
 hiro.pl##[class^="td_block_inner td-column-3"]
 !
 naekranie.pl##.prawa-szpalta.box:nth-of-type(3)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5403
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5403
 korsosanockie.pl##.companies.widget.row
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5428
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5428
 esanok.pl##.fiblok:nth-of-type(n+6):nth-of-type(-n+14)
 !
 niebezpiecznik.pl##a[href^="https://niebezpiecznik.pl/szkolenia/"]
 !
 www.rynekzdrowia.pl###boxSpodekMCK
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/6131
+!> https://github.com/MajkiIT/polish-ads-filter/issues/6131
 www.fishing-mart.com.pl##td:nth-of-type(2) > .norm11:nth-of-type(4)
 !
 !
 !28$----------------------{ katalogi firm }----------------------!
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/6370
+!> https://github.com/MajkiIT/polish-ads-filter/issues/6370
 !& [V.322.1] [E: polecane] [S: zrealizowane] [P:2] [Q:B]
 esanok.pl##.fiblok:nth-of-type(15) > ul > li:nth-of-type(1)
-!
-!!& [S: wymaga zindexowania] [P:4]
 !
 www.portel.pl##.kat
 !
 ki24.info##.company > .row:nth-of-type(1)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/6248
+!> https://github.com/MajkiIT/polish-ads-filter/issues/6248
 www.ikrotoszyn.pl##img[src^="http://www.ikrotoszyn.pl/banery/"]
 www.ikrotoszyn.pl##a[href="http://www.intermarche.ikrotoszyn.pl/"]
 www.ikrotoszyn.pl##a[href="http://www.szkoleniepsow.ikrotoszyn.pl/"]
@@ -699,14 +645,10 @@ www.ikrotoszyn.pl##a[href="http://www.szkoleniepsow.ikrotoszyn.pl/"]
 !
 !29$----------------------{ odtwarzacz }----------------------!
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
 dorzeczy.pl##.muted-player
 !
 !
 !30$----------------------{ autoreklama }----------------------!
-!
-!!& [S: wymaga zindexowania] [P:4]
 !
 www.ponapisach.pl##.main-custom-logo
 !
@@ -715,15 +657,11 @@ aszdziennik.pl,innpoland.pl,mamadu.pl##.old-centered.container.footer__box--row
 !
 !31$----------------------{ ankiety - sms premium }----------------------!
 !
-!!& [S: wymaga zindexowania] [P:4]
-!
 www.supertydzien.pl##.widget.row:nth-of-type(n+8):nth-of-type(-n+9)
 www.supertydzien.pl##.widget.row:nth-of-type(n+2):nth-of-type(-n+3)
 !
 !
 !32$----------------------{ fix na zepsute elementy }----------------------!
-!
-!!& [S: wymaga zindexowania] [P:4]
 !
 olsztyn.wm.pl##.icon-Symbol4-day
 olsztyn.wm.pl##.icon-Symbol9-day
@@ -731,23 +669,21 @@ olsztyn.wm.pl##.icon-Symbol9-day
 !
 !33$----------------------{ puste sekcje }----------------------!
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/6138
+!> https://github.com/MajkiIT/polish-ads-filter/issues/6138
 !& [V.284] [E: podstrona] [S: zrealizowane] [P:2] [Q:B]
 www.portalpszczelarski.pl###APPMicroBanersTop > a[href="http://www.portalpszczelarski.pl/8/reklama.html"]
 www.portalpszczelarski.pl###APPMicroBanersBottom > a[href="http://www.portalpszczelarski.pl/8/reklama.html"]
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5832
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5832
 !& [V.263] [E: podstrona] [S: zrealizowane] [P:2] [Q:B]
 www.starterzy.pl##.clear.row > .banner
 !
 !& [V.264] [E: szara sekcja] [S: zrealizowane] [P:2] [Q:B]
 www.vmc.org.pl###page-footer
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5741
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5741
 !& [V.262] [E: szara sekcja] [S: zrealizowane] [P:2] [Q:C]
 spottedlublin.pl##.spotted-embedded-video
-!
-!!& [S: wymaga zindexowania] [P:4]
 !
 telewizor.eu##a[href="http://telewizor.eu/reklama.html"]
 !
@@ -762,10 +698,10 @@ lukow24.pl##div:nth-of-type(12) > a[href="http://www.reklama.lukow24.pl"] > img[
 !
 nowiny.rybnik.pl###blok_
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5460
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5460
 ziemialimanowska.pl###text-3
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5577
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5577
 zakopane.naszemiasto.pl##.columns.small-12.medium-6.large-12.sekcjaWaska:nth-of-type(1)
 zakopane.naszemiasto.pl##.flatFee
 !
@@ -780,20 +716,20 @@ kopalniawiedzy.pl##.page-footer > .content-wrapper:style(padding-bottom: 20px!im
 !
 !: "wizjer e-handlu" jest to index złych praktyk stosowanych przez e-commerce.
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/6111
+!> https://github.com/MajkiIT/polish-ads-filter/issues/6111
 !& [V.288] [E: podstrona, polecane] [S: zrealizowane] [P:2] [Q:A]
 www.3kropki.pl##.banLeft:nth-of-type(n+2):nth-of-type(-n+3)
 www.3kropki.pl##.banLeft:nth-of-type(n+5):nth-of-type(-n+6)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5819
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5819
 !& [V.261] [E: podserwis] [S: zrealizowane] [P:2] [Q:B]
 krioni.pl##a[href="gfx/intel/"]
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5816
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5816
 !& [V.260] [E: reklama] [S: zrealizowane] [P:2] [Q:B]
 conner.pl###box_banner4
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5786
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5786
 !& [V.256] [E: reklama] [S: zrealizowane] [P:2] [Q:B]
 www.hitech.com.pl##.look_at
 www.hitech.com.pl##.banner_right > .item:nth-of-type(n+2):nth-of-type(-n+4)
@@ -802,22 +738,22 @@ www.hitech.com.pl##.banner_right > .item:nth-of-type(1)
 !&? [E: autoreklama]
 www.hitech.com.pl##.banner_right > .item:nth-of-type(5)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5784
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5784
 !& [V.256] [E: partner] [S: zrealizowane] [P:2] [Q:B]
 procpu.pl##.conteiner > div:nth-of-type(1)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5783
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5783
 !& [V.256] [E: reklama] [S: zrealizowane] [P:2] [Q:B]
 foxkomputer.pl##p:nth-of-type(2)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5778
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5778
 !& [V.256] [E: reklama] [S: zrealizowane] [P:2] [Q:B]
 www.senetic.pl###banner
 !&? [E: partner]
 www.senetic.pl##.office365.vendor
 www.senetic.pl##a[href="https://office365.senetic.pl/pakiety-i-ceny/"]
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/5777
+!> https://github.com/MajkiIT/polish-ads-filter/issues/5777
 !& [V.256] [E: promocja] [S: zrealizowane] [P:2] [Q:B]
 www.zadowolenie.pl##[class^="js-widget_holder  layer_element"]
 www.zadowolenie.pl##[class^="b-offer_banner js-billboard g-mb0"]
@@ -832,7 +768,7 @@ www.bankier.pl##iframe[src="https://bankier.polldaddy.com/s/złoty-bankier-zgło
 !
 !36$----------------------{ sponsorowane }----------------------!
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/6085
+!> https://github.com/MajkiIT/polish-ads-filter/issues/6085
 !& [V.279] [E: reklama artykułu] [S: zrealizowane] [P:2] [Q:B]
 make-cash.pl##.ipsBox.ipsWidget_vertical.ipsWidget:nth-of-type(3)
 make-cash.pl##.ipsBox.ipsWidget_vertical.ipsWidget:nth-of-type(8)
@@ -843,7 +779,7 @@ make-cash.pl##.ipsBox.ipsWidget_vertical.ipsWidget:nth-of-type(8)
 !& [V.311.1] [E: komunikat] [S: zrealizowane] [P:2] [Q:B]
 niewygodne.info.pl##tr:nth-of-type(1):has-text(cookies)
 !
-!# https://github.com/MajkiIT/polish-ads-filter/issues/6296
+!> https://github.com/MajkiIT/polish-ads-filter/issues/6296
 !& [V.305.1] [E: komunikat] [S: zrealizowane] [P:2] [Q:B]
 24wspolnota.pl##.container > .col-sm-12.col-md-4
 !
