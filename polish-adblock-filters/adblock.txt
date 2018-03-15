@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 14 March 2018
+! Last modified: 15 March 2018
 ! Expires: 1 day
-! Version: 2018031406
+! Version: 2018031501
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018031406 aktualizacja: sr, 14 marzec 2018, 21:10:00
+! v.2018031501 aktualizacja: czw, 15 marca 2018, 08:40:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -238,6 +238,7 @@ pl###playerads
 pl##.single_ad_300x250
 pl###content-stream
 pl##.adsbygoogle
+pl##[id^="ad_box"]
 pl/popup.js|$script
 ~astrosalus.pl,~przegladsportowy.pl,~medonet.pl,~fakt.pl,~forbes.pl,~auto-swiat.pl,~noizz.pl,~plejada.pl,~businessinsider.com.pl,~komputerswiat.pl,~onet.pl,~vod.pl,anglia.today,dbnao.net,pl##.ad
 pl###ads
@@ -1447,7 +1448,7 @@ nacjonalista.pl##DIV[align="center"]
 nacjonalista.pl##.napis
 naekranie.pl##.adform
 !naekranie.pl###adocean-screening-layer > Div[class^="s"]
-naekranie.pl##DIV[class^="s"] > DIV[class^="s"][style*="overflow: hidden"]
+naekranie.pl##DIV[class] > DIV[class][style*="overflow: hidden"]
 naekranie.pl##.belka-w-tekscie
 naekranie.pl##div[style="height: 5.3125rem !important;"]
 naekranie.pl##DIV[class][style$="height: 200px;"]
@@ -3467,6 +3468,7 @@ pl##a[href^="//69oxt4q05.com/"]
 !27#--------------------------Rules for pages with random adv scripts block------------!
 ||electro-torrent.pl/over*.js$script
 ||69oxt4q05.com^
+||b54m4qbmt0b9.com^
 ||follofop.com/$subdocument,popup
 !
 !28#--------------------------Rules for pages with random adv scripts regex------------!
@@ -3489,7 +3491,7 @@ pl##a[href^="//69oxt4q05.com/"]
 /wp-content/plugins/wp-words-links-change/*$script,domain=businesstraveller.pl
 /^(http|https):\/\/[\w]{12,}\.[a-z]{3,3}\/[a-z]{1,10}\.html[\w\d\W]{100,}/$script,domain=tele-wizja.ru
 /^(http|https):\/\/[\w]{8,}\.[a-z]{3,3}\/[\w\d\W]{45,}/$script,domain=abcast.net|alltube.pl|alltube.tv
-/^https:\/\/naekranie\.pl\/[a-z0-9]{10,20}/$image
+/^https:\/\/naekranie\.pl\/[a-z]{5,20}\/[a-z0-9]{15,25}/$image
 !
 !29#--------------------------Rules on tv streams element hiding rules------------!
 ##a[href^="http://affiliates.bet-at-home.com/processing/clickthrgh.asp"]
