@@ -5,9 +5,9 @@
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 27 February 2018
+! Last modified: 15 March 2018
 ! Expires: 2 days
-! Version: 2018022702
+! Version: 2018031501
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018022702 aktualizacja: wt, 27 luty 2018, 18:00:00
+! v.2018031501 aktualizacja: czw, 15 marca 2018, 10:20:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -195,7 +195,7 @@ originals24.pl##table > tbody > tr > td > font:has-text(Reklama)
 www.grymel.pl###layout:style(margin-top: 5px !important;)
 !
 ! benchmark.pl
-benchmark.pl###bannerDBB:style(height: 10px !important;)!
+benchmark.pl###bannerDBB:style(height: 10px !important;)
 !
 ! dvbtmap.eu
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$important,script,redirect=noopjs,domain=dvbtmap.eu
@@ -241,6 +241,7 @@ a-o.ninja##script:inject(set-constant.js, openload, true)
 ! shinden.pl
 shinden.pl##.ads:style(height: 27px!important;) 
 ||google-analytics.com/analytics.js$important,script,redirect=noopjs,domain=shinden.pl
+/^https:\/\/reklama\.shinden.eu\//$important
 !
 ! olx.pl
 ||olx.pl^*/advertising.js$script,important,redirect=noopjs,first-party
@@ -289,6 +290,7 @@ aternos.org##script:inject(setTimeout-defuser.js, hasAdblock)
 !
 ! Rules after Adblock
 vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
+webinsider.pl##script:inject(setTimeout-defuser.js, AdBlock)
 !
 ! Rules to limit time wait on movies
 ekino-tv.pl##script:inject(nano-setTimeout-booster.js)
