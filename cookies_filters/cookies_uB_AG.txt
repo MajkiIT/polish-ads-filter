@@ -1,11 +1,11 @@
-! Checksum: lUgh7wpb3XBcO36DzEuhGg
+! Checksum: 05gUprxdZiZBBNwioCiyxw
 ! Title: Polskie Filtry Ciasteczkowe - uzupełnienie do uBlocka i AdGuarda
 ! Polish Cookies Filters - supplement for uBlock and AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 201802181646
-! Last modified: 18 Feb 2018 16:46:39 UTC+01
+! Version: 201803171614
+! Last modified: 17 Mar 2018 16:14:06 UTC+01
 ! Expires: 2 days
 ! Support:
 !   GitHub -> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,7 +13,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201802181646 aktualizacja: nie, 18 lut 2018, 16:46:39 UTC+01
+! v.201803171614 aktualizacja: sob, 17 mar 2018, 16:14:06 UTC+01
 !
 !
 ! Komunikaty ciasteczkowe i dziury
@@ -33,6 +33,9 @@ lomza.pl##html > body.polityka-cookies:style(margin-top: 0px !important; backgro
 !
 !+ NOT_PLATFORM(ext_ublock, ext_ff, ext_edge)
 !lomza.pl#$#body.polityka-cookies { margin-top: 0px !important; background-position: center 120px !important; }
+!
+!+ PLATFORM(ext_ublock)
+neon24.pl##script:inject(abort-on-property-read.js, Service.cookieMonster)
 !
 play.google.com,translate.google.pl###gba:style(height: 60px!important;)
 sephora.pl###header:style(margin-top: 41px !important;)
