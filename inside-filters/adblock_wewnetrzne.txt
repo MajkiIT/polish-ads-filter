@@ -5,8 +5,8 @@
 ! Oświadczenie: https://github.com/MajkiIT/polish-ads-filter/blob/master/STATEMENT.md
 ! EULA: Subskrybcja|Użytkowanie listy "Polskie Filtry Wewnętrzne" jest równoznaczne z wyrażeniem zgody na bycie ich komitentem, a twórcy nie ponoszą odpowiedzialności prawnej za nadużycia użytkowników.
 ! INFO: Aby wyłączyć niepożądaną regułę, należy ją skopiować do zakładki Moje Filtry a następnie między znakami ## wstawić znak @ np. sprawnymarketing.pl#@#.hidden-mobile
-! Last modified: 18 March 2018
-! Version: 344.2
+! Last modified: 19 March 2018
+! Version: 345.2
 ! Expires: 3 days
 ! Wymagane:
 !   Rozszerzenia >> uBlock Origin / AdGuard lub ich aktualne forki
@@ -69,6 +69,10 @@ petronews.pl##a[href="http://petronews.pl/reklama-plus/"]
 www.fishing-mart.com.pl##body > .norm10
 !
 www.grajteraz.pl###bannerGameSkyscraperRight
+!
+!> https://github.com/MajkiIT/polish-ads-filter/issues/6576
+!& [V.345.2] [E: widget, podstrona] [S: zrealizowane] [P:2] [Q:C]
+www.roland-gazeta.pl##.art-content.art-layout-cell > .art-nostyle:nth-of-type(1)
 !
 !
 !2$----------------------{ sklepy }----------------------!
@@ -880,4 +884,18 @@ radiozw.com.pl###bigbox > H4
 !
 !& [V.341.2] [E: okres testowy, podstrona, baner, popup] [S: testowane] [P:1] [Q:D]
 ebd.cda.pl##[class^="pb-premium-promotion pb-context-wrapp pb-context-wrapp-show"]
+!
+!
+!44$----------------------{ eventy }----------------------!
+!
+!> https://github.com/MajkiIT/polish-ads-filter/issues/6574
+!& [V.345.2] [E: baner, tymczasowe] [S: zrealizowane] [P:2] [Q:B]
+lipno-cli.pl##.row:nth-of-type(3)
+!
+!
+!44$----------------------{ ogłoszenia }----------------------!
+!
+!> https://github.com/MajkiIT/polish-ads-filter/issues/6581
+!& [V.345.2] [E: sekcja, podserwis] [S: zrealizowane] [P:2] [Q:D]
+www.e-pajeczno.pl##.region-sidebar-first.region
 !
