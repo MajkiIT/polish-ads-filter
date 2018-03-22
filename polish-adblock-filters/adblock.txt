@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 21 March 2018
+! Last modified: 22 March 2018
 ! Expires: 1 day
-! Version: 2018032106
+! Version: 2018032201
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018032106 aktualizacja: sr, 21 marca 2018, 19:35:00
+! v.2018032201 aktualizacja: czw, 22 marca 2018, 09:50:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -289,7 +289,7 @@ mclista.pl,bialystokonline.pl##[id*="reklama"]
 24pr.pl###wpp-4:style(width: 200%)
 24wspolnota.pl##.visible-lg
 300polityka.pl##.dcmads
-300polityka.pl,meczyki.pl###text-3
+300polityka.pl,meczyki.pl,polskapilka24.net###text-3
 3dwpraktyce.pl##.hidden-xs.col-xs-12
 40ton.net##.clearfix.sidebar-box:nth-of-type(2)
 4clubbers.com.pl##body > center
@@ -1027,6 +1027,7 @@ historia.pl,portal.pl##A > IMG:last-child
 historia.org.pl###a468
 historyk.eu###banner-book + A > IMG:last-child
 historyk.eu##DIV > A > IMG[style^="width: "]:last-child
+hobby.pl##.header-top-right.columns.eight, #text-54, #aq-block-41054-3
 hoga.pl###baner960
 hoga.pl###php_widget-32
 holenderskiskun.pl##.banner-slider.slider
@@ -2069,7 +2070,7 @@ strajk.eu##.cc-adv
 strefacaraudio.pl##.entry-content.post > div
 strefadb.pl##.dba-button
 strefadb.pl###dbarena
-strefadb.pl###notifications
+strefadb.pl###notifications, #pop-slapev, #not, .bg-pop-over
 strefacaraudio.pl###category_message
 strefagry.pl##.item_d
 strefagry.pl##[style="width:540px;margin:10px auto;"]
@@ -2350,7 +2351,7 @@ wio.waw.pl##.fr.w250
 wir-com.pl##body > div:nth-of-type(4)
 wirtualnemedia.pl##.tvn-box, #article_promo
 wirtualnemedia.pl##a[href="http://www.wirtualnemedia.pl/praca/"]
-wirtualnemedia.pl###newsletter
+wirtualnemedia.pl###newsletter, .container.row:nth-of-type(6)
 wirtualnemedia.pl##SPAN[style="color: #656971; font-size: 10px; font-weight: normal;"]
 wirtualnyelk.pl##A[href="/reklama.html"] > IMG
 wizaz.pl###autoPromoBigBaner
@@ -3853,7 +3854,7 @@ dobreprogramy.pl##a[href*="campaign=baner"]
 dobreprogramy.pl##.block > div[style$="height: 600px; width: 300;"]
 dobreprogramy.pl##body:not(.variant-mobile) div[style="color: #A9A9A9; text-align:center;font-size:11px;"]
 dobreprogramy.pl##body > form > #slide-menu > :empty
-!dobreprogramy.pl##body > *:matches-css(background-image: /data:image\/(gif|jpg|jpeg|png);base64,/):matches-css(position:fixed)
+dobreprogramy.pl##body:not(#bd):not([style*="background-image:"]):style(background-image:none!important;)
 dobreprogramy.pl##div[id="slide-menu"] > a[id][href="#"]
 dobreprogramy.pl###divPoweredBy
 dobreprogramy.pl##div#slide-menu > [id]:not([class]):not([style])
