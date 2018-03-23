@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 23 March 2018
 ! Expires: 1 day
-! Version: 2018032301
+! Version: 2018032302
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018032301 aktualizacja: ptk, 23 marca 2018, 12:50:00
+! v.2018032302 aktualizacja: ptk, 23 marca 2018, 21:45:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -58,6 +58,8 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 .*sales*.pl/offers/$image
 /screening/*$domain=telepolis.pl,image
 /scripts/click.php$popup
+/upload_module/C_reklamy/*$domain=infobus.pl|transinfo.pl|inforail.pl|infotram.pl|infobike.pl|infoair.pl|infoship.pl
+/upload_module//C_reklamy/*$domain=infobus.pl|transinfo.pl|inforail.pl|infotram.pl|infobike.pl|infoair.pl|infoship.pl
 /wp-content/plugins/bsa-pro-scripteo/*$script,stylesheet
 /wp-content/plugins/unblock-adsense/*/adunblock$stylesheet,script
 /wp-content/uploads/*/*300x600$image,domain=republikakobiet.pl
@@ -1060,6 +1062,9 @@ imokotow.pl##.row:nth-of-type(2) > .fl.w1000
 indeed.com###related
 info.elblag.pl##.ADinfo, #banner-33, .linkwrap, #banner-glowny
 info.elblag.pl##IMG[alt*="reklamowe"]
+infoship.pl,infoair.pl,infobike.pl,infotram.pl,inforail.pl,transinfo.pl,infobus.pl###banner
+infoship.pl,infoair.pl,infobike.pl,infotram.pl,inforail.pl,transinfo.pl,infobus.pl##.reklamaR2Napis
+infoship.pl,infoair.pl,infobike.pl,infotram.pl,inforail.pl,transinfo.pl,infobus.pl##[id^="reklama"][idrekl]
 infogazeta.pl###comment-captcha
 infogazeta.pl##.border
 infogliwice.pl##A[class="gofollow"]
