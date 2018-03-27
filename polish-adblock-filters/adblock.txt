@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 26 March 2018
+! Last modified: 27 March 2018
 ! Expires: 1 day
-! Version: 2018032601
+! Version: 2018032701
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018032601 aktualizacja: pon, 26 marca 2018, 20:30:00
+! v.2018032701 aktualizacja: wt, 27 marca 2018, 09:05:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -242,7 +242,7 @@ pl##a[href*="://clicks.fortunaaffiliates.com/"]
 pl##a[href*="://converti.se/click/"]
 pl##a[href^="http://s.click.aliexpress.com/"]
 pl##a[href^="http://tc.tradetracker.net/"]
-pl##[id*="ad-container"]
+~docer.pl,pl##[id*="ad-container"]
 pl###playerads
 pl##.single_ad_300x250
 pl###content-stream
@@ -817,6 +817,7 @@ fechallenge.com##.layout-right-brand
 filesdark.com##[href*="/adac.php"]
 fili.tv,fili.cc###links > ul:nth-of-type(1)
 fili.tv,fili.cc##divo, #divlol
+fili.tv,fili.cc##a[href^="https://goo.gl/"]
 films4free.pl##.M2U3OGQ4ZGY1
 fishing-mart.com.pl##td:nth-of-type(6) > .norm11:nth-of-type(4)
 flarrow.pl##[class^="td_block_wrap td_block_text_with_title td_uid_"]
@@ -2047,6 +2048,7 @@ sokolka.tv###jm-top1
 sokolka.tv##.hidden-phone.white-ms.jm-module
 sokolka.tv###jm-content-top
 speedtest.pl##div[style^="width: 1068px; height: 470px; margin: 20px auto"]
+speedtest.pl##.ha2, .ba3
 spidersweb.pl##iframe[src*="ads"]
 spidersweb.pl##.sonybg
 spidersweb.pl##.box-visual
@@ -2397,6 +2399,7 @@ wnp.pl##.box-1
 worms.fora.pl,qus.fora.pl##tr[height="280"], tr[height="300"]
 wpolityce.pl##.ad-stamp
 wpolityce.pl##.box-division-holder-right
+wpolityce24.pl###ai_widget-12, #ai_widget-13, #ai_widget-14, #custom_html-5, #ai_widget-10, #ai_widget-9
 wp.pl##a[href^="http://smartclick.pl/redir"]
 wp.pl##div[class^="_"] > style + div[class]
 wp.pl##[href^="http://emisja.contentstream.pl/_/ctr/"]
@@ -3049,7 +3052,7 @@ zywiecinfo.pl##.promoted
 !11#---------------------------------Multi Regex----------------------------------!
 /:\/\/[a-zA-Z0-9]{3,9}\.quartic\.pl\/Ad\//$script
 /^(http|https):\/\/www\.chip\.pl\/wp-content\/themes\/_chip\/[a-z]{4,6}\/[a-z]{4,5}-[0-9]{4,5}/$image,domain=chip.pl
-/^(http|https):\/\/www\.portel\.pl\/[-a-z0-9A-Z_%$&+=[\].]{1,200}\/[-a-z0-9A-Z_%$&+=[\]/.]{2,200}.(html|htm)/$subdocument,domain=www.portel.pl
+/^(http|https):\/\/www\.portel\.pl\/(?!pasaz)[-a-z0-9A-Z_%$&+=[\].]{1,200}\/[-a-z0-9A-Z_%$&+=[\]/.]{2,200}.(html|htm)/$subdocument,domain=www.portel.pl
 /^(http|https):\/\/www\.wp\.pl\/[a-zA-Z0-9-_]{50,}/$popup,domain=www.wp.pl
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl|poczta.wp.pl
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=autokult.pl|kafeteria.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|pogoda.wp.pl|dladzieci.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|fotoblogia.pl|bloog.pl|avent-ugrow.wp.pl|pudelek.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl|pytamy.pl|ranking.abczdrowie.pl
