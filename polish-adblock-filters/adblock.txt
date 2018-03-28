@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 28 March 2018
 ! Expires: 1 day
-! Version: 2018032801
+! Version: 2018032802
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018032801 aktualizacja: sr, 28 marca 2018, 08:10:00
+! v.2018032802 aktualizacja: sr, 28 marca 2018, 18:40:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -27,6 +27,7 @@
 !1#-----------------------General advert blocking filters-----------------------!
 /_adv/*
 /adv/*$image
+/affiliates/$image,domain=www.pasazer.com
 ##a[href*="techmaniak.pl/www/gact/ckk.php"]
 _baner/980x200
 /_baner/*$domain=www.ipon.pl|tygodnikzamojski.pl
@@ -40,7 +41,7 @@ _banery/980x200
 /*300x300$image,domain=portalgwiazd.pl
 /content-generator/published/frame/generate?*frameId=*&placementId=*&guid=
 ://*.*/banery_foto/$image,domain=ki24.info|portalplock.pl|faktypilskie.pl|ddtorun.pl|ddwloclawek.pl|koronowo.net.pl|zyciesiedleckie.pl
-/bannery/*$image,subdocument,domain=em.kielce.pl|czasdzieci.pl|kolporter.com.pl|sklep-tvsat.hcore.pl|www.pokertexas.pl|www.walbrzych24.com|zlotoryja.info|skijumping.pl|icomp.pl|forum.cs-classic.pl|nocnygdansk.pl|wagaciezka.com
+/bannery/*$image,subdocument,domain=em.kielce.pl|czasdzieci.pl|kolporter.com.pl|sklep-tvsat.hcore.pl|www.pokertexas.pl|www.walbrzych24.com|zlotoryja.info|skijumping.pl|icomp.pl|forum.cs-classic.pl|nocnygdansk.pl|wagaciezka.com|obud.pl
 /data/ap3bo6/*.gif$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 /data/ap3bo6/*.jpg$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 /data/ap3bo6/*.swf$object,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
@@ -251,6 +252,7 @@ pl/popup.js|$script
 pl###ads
 pl##.adbox
 pl###top-reklama
+pl##.reklama-top
 pl##.reklama-rectangle
 ~fakt.pl,pl##.trizer-bnr
 ~joemonster.org##[id^="commentAd"]
@@ -2052,7 +2054,7 @@ sokolka.tv###jm-content-top
 speedtest.pl##div[style^="width: 1068px; height: 470px; margin: 20px auto"]
 speedtest.pl##.ha2, .ba3
 spidersweb.pl##iframe[src*="ads"]
-spidersweb.pl##.sonybg
+spidersweb.pl##.sonybg, .menu-item.bplogo
 spidersweb.pl##.box-visual
 spidersweb.pl##.category-color-bg.archive-header
 spidersweb.pl##a[href^="https://www.audi.pl/"]
