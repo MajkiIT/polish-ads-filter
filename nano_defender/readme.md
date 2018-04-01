@@ -29,7 +29,7 @@ https://addons.mozilla.org/pl/firefox/addon/real-nano-adblocker/
 
 3. wejdź w link
 ```
-https://github.com/MajkiIT/polish-ads-filter/blob/master/nano_defender/nano_defender-13.49-an%2Bfx.xpi
+https://github.com/MajkiIT/polish-ads-filter/tree/master/nano_defender
 ```
 
 4. po pobraniu zainstaluj dodatek wybierając zaawansowaną opcje `zainstaluj dodatek z pliku` znajdującą się w panelu dodatków `about:addons` przeglądarki firefox
@@ -38,7 +38,7 @@ https://github.com/MajkiIT/polish-ads-filter/blob/master/nano_defender/nano_defe
 
 ### aby go zainstalować z ublockiem origim
 
-polecam zajrzeć do oryginalnego poradnika autora rozszerzenia
+zajrzyj do oryginalnego poradnika autora rozszerzenia
 ```
 https://jspenguin2017.github.io/uBlockProtector/
 ```
