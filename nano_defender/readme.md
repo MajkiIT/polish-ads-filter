@@ -1,11 +1,8 @@
 ## Nano Defender to dodatek do uBlock Origin/Nano Adblockera mający za zadanie blokować skrypty anty-adblock
 
-
-
 ### aby zainstalować z nano adblockerem
 
 #### na Chrome
-
 
 1. wejdź w linki
 ```
