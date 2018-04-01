@@ -2,7 +2,7 @@
 
 
 
-### aby go zainstalować z nano adblockerem
+### aby zainstalować z nano adblockerem
 
 #### na Chrome
 
@@ -36,7 +36,7 @@ https://github.com/MajkiIT/polish-ads-filter/tree/master/nano_defender
 
 5. pamiętaj aby regularnie instalować nowszą wersje dodatku Nano Defender, ponieważ firefox nie obsługuje jego automatycznej aktualizacji
 
-### aby go zainstalować z ublockiem origim
+### aby zainstalować z ublockiem origim
 
 zajrzyj do oryginalnego poradnika autora rozszerzenia
 ```
