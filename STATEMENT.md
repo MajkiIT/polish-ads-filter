@@ -1,6 +1,6 @@
 ## Wprowadzenie
 
-Polskie filtry dla Adblocka, uBlocka i AdGuarda. To sposób oceniania i kategoryzacji elementów wg. list. Nie jesteśmy w stanie przewidzieć w jaki sposób programy blokujące reklamy zareagują na naszą listę. Ale możemy aktywnie reagować na wszystkie wasze pytania, o [tutaj](https://github.com/MajkiIT/polish-ads-filter/issues).
+Polskie filtry dla Adblocka, uBlocka i AdGuarda. To sposób oceniania i kategoryzacji elementów wg. list. Nie jesteśmy odpowiedzialni za sposób w jaki rozszerzenia blokujące reklamy korzystają z naszych list. Ale możemy aktywnie reagować na wszystkie wasze pytania, o [tutaj](https://github.com/MajkiIT/polish-ads-filter/issues).
 
 ---
 
