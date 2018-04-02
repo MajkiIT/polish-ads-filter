@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 1 April 2018
+! Last modified: 2 April 2018
 ! Expires: 1 day
-! Version: 2018040105
+! Version: 2018040201
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018040105 aktualizacja: nie, 1 kwietnia 2018, 22:05:00
+! v.2018040201 aktualizacja: pon, 2 kwietnia 2018, 15:35:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -285,10 +285,9 @@ popkiller.pl,tygodnikpodhalanski.pl,cnc.info.pl##[class*="reklamy"]
 mclista.pl,bialystokonline.pl##[id*="reklama"]
 !
 !9#------------------------Specific element hiding rules------------------------!
-24gliwice.pl#@##adsense
 24gliwice.pl##a[href^="http://www.24gliwice.pl/r/counter-baners.php"]
 24gliwice.pl##.vce-sticky
-24jgora.pl##.banrek
+24jgora.pl##.banrek, #reklama-top_new, .block.r_art
 24jgora.pl##IMG[src^="http://www.24jgora.pl/kampanie/"]
 24jgora.pl##.linia_4.clear
 24legnica.pl###text-4
@@ -2065,11 +2064,12 @@ sokolka.tv###jm-content-top
 speedtest.pl##div[style^="width: 1068px; height: 470px; margin: 20px auto"]
 speedtest.pl##.ha2, .ba3
 spidersweb.pl##iframe[src*="ads"]
-spidersweb.pl##.sonybg, .menu-item.bplogo
+spidersweb.pl##.sonybg
 spidersweb.pl##.box-visual
 spidersweb.pl##.category-color-bg.archive-header
 spidersweb.pl##a[href^="https://www.audi.pl/"]
 spidersweb.pl##.sticky
+spidersweb.pl##.show-for-large.columns.large-9 > nav > ul > li:nth-of-type(9)
 spigot.pl##.ipsBox.ipsWidget_vertical.ipsWidget:nth-of-type(1)
 spiz.pl,roksa.pl##.c
 spliff.pl###gkRight > .box
@@ -3182,6 +3182,7 @@ wpworld.pl,windowsowo.pl#@##adBanner
 !14#---------------------------------Anti Adblock Rules element hide----------------------------------!
 12zawodnik.pl##.ads-checker-msg
 24opole.pl#@#.ad
+24gliwice.pl,wyborkierowcow.pl#@##adsense
 ##.adblock-alt
 ##.adblock-placeholder
 a-o.ninja##h4
@@ -3238,6 +3239,7 @@ katowickisport.pl#@##pixad-box
 katowickisport.pl#@##advertisments
 katowickisport.pl#@##adnp
 kursbootstrap.pl##.alert-dismissible.alert-success.alert
+leaseplan.pl#@#.afs_ads
 lech.tv#@#.advertising_banner
 lubimyczytac.pl###kociak
 maxkino.pl##.btn-warning.btn-block.btn
