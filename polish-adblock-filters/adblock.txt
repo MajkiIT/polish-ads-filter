@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 3 April 2018
 ! Expires: 1 day
-! Version: 2018040302
+! Version: 2018040303
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018040302 aktualizacja: wt, 3 kwietnia 2018, 17:55:00
+! v.2018040303 aktualizacja: wt, 3 kwietnia 2018, 18:25:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -3334,6 +3334,7 @@ zw.pl###abpnotzw
 !16#---------------------------------Anti Adblock Rules whitelist filters----------------------------------!
 @@/adframe.js$script,domain=kobieceporady.pl
 @@ads$image,domain=rapidgrab.pl
+@@/adsense.js$script,domain=biznesforum.pl|optyczne.pl
 @@/ads.reklama.728x90$script,stylesheet,domain=zmianaczasu.info|antonimy.net|odmiana.net|definicja.net|krzyzowka.net|humoris.pl
 @@/advertisement*.js$script,domain=meczyki.pl|autocentrum.pl|tokfm.pl|trojmiasto.pl|superfilm.pl
 @@/showads.js$script,domain=www.eskago.pl|czasdzieci.pl|towideo.pl
@@ -3344,7 +3345,6 @@ zw.pl###abpnotzw
 @@||app.convertiser.com/scripts/*.advert.js
 @@||applemobile.pl^$generichide
 @@||auto-swiat.pl^$generichide
-@@||biznesforum.pl/adsense.js$script,domain=biznesforum.pl
 @@||blog.programyzadarmo.net.pl/images/ad/*.gif$image,domain=blog.programyzadarmo.net.pl
 @@||burzowo.info/scripts/ad.js$script,domain=burzowo.info
 @@||businessinsider.com.pl^$generichide
@@ -3394,6 +3394,7 @@ zw.pl###abpnotzw
 @@||sjp.pwn.pl/ads.js$script,domain=sjp.pwn.pl
 @@||static-pilot.wp.pl/static/assets/js/ads.js$xmlhttprequest,domain=pilot.wp.pl
 @@||video.gazeta.pl/cdn/ads/ad/banner/_adsense_/_adserver/_adview_.ad.json$xmlhttprequest,domain=video.gazeta.pl
+@@||virpe.com/includes/js/adver.js$script
 @@||vod.pl^$generichide
 @@||webshark.pl/adserver/*advertise_check=1$script,domain=vider.info
 @@||wp.pl/do/*/dotn$image,domain=pilot.wp.pl
@@ -3589,7 +3590,7 @@ pl##a[href^="//69oxt4q05.com/"]
 /^(http|https):\/\/[a-z.-]{5,30}\/client\?party/$script,domain=openkatalog.com
 /^(http|https):\/\/[a-zA-Z0-9]{5,10}\.[a-z]{2,10}\/[a-zA-Z0-9?_=&-.%]{50,70}/$subdocument,script,popup,domain=filmtu.pl|dekoder.ws|darmowa-tv.pl|cda-x.pl|tele-wizja.is|widestream.io
 /^(http|https):\/\/[a-zA-Z0-9]{5,15}\.(com|net)\/[a-z]{4,10}\/[0-9a-z.?=%A-Z-&]{60,100}/$script,popup,domain=dekoder.ws|veecast.net|darmowa-tv.pl
-/^(http|https):\/\/[a-zA-Z.0-9]{7,}\.(com|bid|info)\/[a-zA-Z]{1,}\.js/$script,domain=devil-torrents.pl|electro-torrent.pl|vidlox.tv|segos.es|fileone.tv|fili.tv|streamango.com|nasze-kino.online|vidto.pl|raptu.com|rapidvideo.com|vidfile.net|sharevideo.pl|sharing-box.cloud|vidstream.xyz|dragon-ball-super.ga|openkatalog.ml|dragon-ball-super.ga|nasze-kino.tv|kino123.pl|boxfilm.pl|cloudupload.co|allonline.pl|openload.co|cda-x.pl|dekoder.ws|abcast.net|darmowa-tv.pl|veecast.net|a-o.ninja|castto.me|centrum-dramy.pl|hentai-online.pl|centrum-mangi.ninja|openkatalog.com|shinden.pl|tele-wizja.is|ekinomaniak.tv|tele-wizja.ru|hqq.watch|whostreams.net|seriale-po-polsku.pl
+/^(http|https):\/\/[a-zA-Z.0-9]{7,}\.(com|bid|info)\/[a-zA-Z]{1,}\.js/$script,domain=devil-torrents.pl|electro-torrent.pl|vidlox.tv|segos.es|fileone.tv|fili.tv|streamango.com|nasze-kino.online|vidto.pl|raptu.com|rapidvideo.com|vidfile.net|sharevideo.pl|sharing-box.cloud|vidstream.xyz|dragon-ball-super.ga|openkatalog.ml|dragon-ball-super.ga|nasze-kino.tv|kino123.pl|boxfilm.pl|cloudupload.co|allonline.pl|openload.co|cda-x.pl|dekoder.ws|abcast.net|darmowa-tv.pl|veecast.net|a-o.ninja|castto.me|centrum-dramy.pl|hentai-online.pl|centrum-mangi.ninja|openkatalog.com|shinden.pl|tele-wizja.is|ekinomaniak.tv|tele-wizja.ru|hqq.watch|whostreams.net|seriale-po-polsku.pl|virpe.com
 /^(http|https):\/\/(?!youtube)[a-zA-Z0-9.]{5,20}\.com\/watch\?key=/$popup
 /^http:\/\/p[0-9]{6,10}\.[a-z]{5,10}\.com\/itab\/[a-z?=A-Z_0-9&]{10,}Zippyshare\.com[a-z0-9A-Z%.'-]{5,}/$popup
 /wp-content/plugins/wp-words-links-change/*$script,domain=businesstraveller.pl
