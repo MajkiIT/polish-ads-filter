@@ -5,9 +5,9 @@
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 31 March 2018
+! Last modified: 3 April 2018
 ! Expires: 2 days
-! Version: 2018033101
+! Version: 2018040301
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018033101 aktualizacja: sob, 31 marca 2018, 21:45:00
+! v.2018040301 aktualizacja: wt, 3 kwietnia 2018, 20:15:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -107,6 +107,7 @@ forum.dobreprogramy.pl##body[class]:style(background-image: none !important;)
 !www.dobreprogramy.pl##script:inject(addEventListener-defuser.js, DOMContentLoaded, removeEventListener)
 !||www.dobreprogramy.pl^$csp=img-src 'self' *.dpcdn.pl
 www.dobreprogramy.pl##body:not(variant-mobile).skin-green .user-login:style(color:#88ae04!important;)
+dobreprogramy.pl##script:inject(set-constant.js, WP.gaf.loadAndRunBunch, noopFunc)
 !
 ! purepc.pl
 purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !important; position: absolute !important;)
@@ -249,6 +250,9 @@ a-o.ninja##script:inject(set-constant.js, openload, true)
 !
 ! webcamera.pl
 ||webcamera.pl/videointro/filead*.mp4$media,redirect=noopmp3-0.1s,important
+!
+! motomi.pl
+motomi.pl##.partnership-header-banner:style(height: 80px !important;)
 !
 ! style()
 booklips.pl##.js:style(background-image: none !important;)
