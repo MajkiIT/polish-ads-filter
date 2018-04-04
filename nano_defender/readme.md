@@ -33,7 +33,7 @@ https://github.com/MajkiIT/polish-ads-filter/tree/master/nano_defender
 
 5. pamiętaj aby regularnie instalować nowszą wersje dodatku Nano Defender, ponieważ firefox nie obsługuje jego automatycznej aktualizacji
 
-### aby zainstalować z ublockiem origim
+### aby zainstalować z ublockiem origin
 
 zajrzyj do oryginalnego poradnika autora rozszerzenia
 ```
