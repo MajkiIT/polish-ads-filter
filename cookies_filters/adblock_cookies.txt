@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: LTShE/W3xBpwEoro2S/kFA
+! Checksum: zjTDDKG9lXvSrIoceq7CVw
 ! Title: Polskie Filtry Ciasteczkowe
 ! Polish Cookies Filters
 ! Codename: Cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności
 ! Collaborators: F4z, xxcriticxx, blocker999, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 201804032058
-! Last modified: 03 Apr 2018 20:58:29 UTC+02
+! Version: 201804052236
+! Last modified: 05 Apr 2018 22:36:07 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email >> errors@certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201804032058 aktualizacja: wto, 03 kwi 2018, 20:58:29 UTC+02
+! v.201804052236 aktualizacja: czw, 05 kwi 2018, 22:36:08 UTC+02
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować
@@ -44,7 +44,7 @@ akademia-piwa.pl##div#polityka_tekst
 alipaczka.pl###bottom-charm
 allekoszyk.pl##DIV[style="position:fixed;bottom:0;background-color:white;width:100%;padding-left:10px;font-size:12px;"]
 alles-bhp.pl,greattrade.pl,szkolnaspizarnia.pl,urwisy2.pl###contGlowny > div:not([id]):not([class])[style*="position"][style*="fixed"]
-allplay.pl,ammoffice.pl,androidmagazine.pl,biuletyn.net,blog.j-labs.pl,bptour.pl,cmjordan.krakow.pl,czasdzieci.pl,edk.org.pl,eneva.pl,faktopedia.pl,galeria-dominikanska.pl,gosc.pl,komixxy.pl,kotburger.pl,puls.hedrych.pl,sigatech.pl,strzelnicabojowa.pl,yorkedukacja.pl,zamakmercator.pl,zamow-myjnie.pl##body > div:not([id]):not([class])[style*="position"][style*="fixed"]
+allplay.pl,ammoffice.pl,androidmagazine.pl,biuletyn.net,blog.j-labs.pl,bptour.pl,cmjordan.krakow.pl,czasdzieci.pl,edk.org.pl,eneva.pl,faktopedia.pl,galeria-dominikanska.pl,gosc.pl,komixxy.pl,kotburger.pl,puls.hedrych.pl,sigatech.pl,strzelnicabojowa.pl,yorkedukacja.pl,zamakmercator.pl,zamow-myjnie.pl,mototube.pl##body > div:not([id]):not([class])[style*="position"][style*="fixed"]
 almamarket.pl,kozy.pl,galeriakrakowska.pl,www.sygnity.pl###claw
 am.gdynia.pl##div#infoCiasteczek
 amarone.pl###bannerMSG
@@ -308,7 +308,7 @@ gsm-grodzisk.pl##div#_mo
 gsmonline.pl###jGrowl
 gsmonline.pl##div[id*="jGrowl"][class*="bottom-right"]
 guardian.co.uk##.identity-noticebar-content
-gugik.gov.pl##.cookie
+gugik.gov.pl,smyk.com,modecom.com##.cookie
 hachette.com.pl##div[style="position:fixed;bottom:0;z-index:1000;width:100%;text-align:center;background:#EEE;padding:15px 0;border-top:1px solid #333;"]
 hankooktire.com##.top_ep_wrap
 hattrick.interia.pl##div.alert
@@ -662,7 +662,7 @@ plotowanie.com##div#howdydo-wrapper
 pobieralnia.org##div[style="text-align: center; height: 40px; width: 100%; left: 0; position: fixed; top: 0; z-index: 2001; background: rgb(165, 62, 4); -webkit-box-shadow: 0px -4px 4px -4px rgba(0, 0, 0, 0.75) inset; box-shadow: 0px -4px 4px -4px rgba(0, 0, 0, 0.75) inset"]
 pochlaniaczwilgoci.com.pl,wielkopolska.travel##div[style="display: block; position: fixed; bottom: 0px; z-index: 10000; width: 100%; padding: 10px 0px; border-top-style: solid; border-top-width: 2px; border-top-color: rgb(140, 140, 140); background-color: rgb(250, 250, 250); overflow: hidden; opacity: 0.95; "]
 poczesna.com.pl##div#PolitykaBlok
-poki.pl##.CT, .Br, .Bd, .Be
+poki.pl#?#div > div > div:-abp-contains(cookie)
 polandtrade.pl###cb
 polcar.com###cwwb
 policja.pl##.informationBar, .JSWrapper
@@ -788,7 +788,6 @@ slupsk.pl###easyNotification
 smakizycia.pl###infobarDiv, #infobar, .infobar, #info-bar, #info_c_box, .info-message
 smakizycia.pl,edarling.pl###info-bar
 smart.com##.ui-widget-overlay
-smyk.com##.cookie
 solidarni2010.pl##div#kom
 sosnowiec.pl###topBar_MainCover
 sosulski.pl##body > form
@@ -1169,6 +1168,7 @@ cookie-law-popup.js$script
 ###wpca-box:not(body):not(html)
 ###ZATAKIEUSTAWYPOWINNIZAMYKAC
 ###zk_polityka_ciastek:not(body):not(html)
+##.agree-cookie-wrap:not(body):not(html)
 ##.alert-sm.alert-warning.alert
 ##.biscuit-usage:not(body):not(html)
 ##.cc-banner:not(body):not(html)
@@ -1189,6 +1189,7 @@ cookie-law-popup.js$script
 ##.cookie-law:not(body):not(html):not(.post-content)
 ##.cookie-msg-box:not(body):not(html)
 ##.cookie-msg:not(body):not(html)
+##.cookie-notice:not(body):not(html)
 ##.cookie-notification:not(body):not(html)
 ##.cookie_agree:not(body):not(html)
 ##.COOKIE_PRIVACY_CONT:not(body):not(html)
@@ -1218,6 +1219,7 @@ cookie-law-popup.js$script
 ##.message_cookie:not(body):not(html)
 ##.messi
 ##.notice_notice_cookies:not(body):not(html)
+##.optanon-alert-box-wrapper:not(body):not(html)
 ##.plg_system_eprivacy_module:not(body):not(html)
 ##.policy-box:not(body):not(html)
 ##.polityka-cookie:not(body):not(html)
