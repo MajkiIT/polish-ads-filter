@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 6 April 2018
 ! Expires: 1 day
-! Version: 2018040604
+! Version: 2018040605
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018040604 aktualizacja: ptk, 6 kwietnia 2018, 13:35:00
+! v.2018040605 aktualizacja: ptk, 6 kwietnia 2018, 19:35:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -94,47 +94,8 @@ vshare.io###pplaay
 vshare.io###sendif
 !
 !6#-----------------------Privacy filters hide-----------------------!
-##A[href*="k.tradedoubler.com/click"]
-motorolasolutions.com##.tealiumMo2TriggerButton
-naekranie.pl###adocean-screening-layer > .inner-wrap
-naekranie.pl###adocean-screening-layer > .single-news
-poczta.interia.pl#@#[href*=".hit.gemius.pl"]
 !
 !7#-----------------------Privacy filters block-----------------------!
-/^(http|https):\/\/(.*)salesmanago\.(pl|com)\/(static|dynamic)\//$script,domain=~salesmanago.com|~salesmanago.pl
-/^https:\/\/[a-z.]{2,16}\.wp\.pl\/[a-zA-Z0-9-_.?=?&%]{200,}/$image,domain=~pilot.wp.pl
-/*dc_trk_aid$image,script
-||adkontekst.pl$script,image
-||adnxs.com^
-||api.solvemedia.com/papi/action$popup
-||audienceinsights.net^$domain=~audienceinsights.net
-||behavioralengine.com^$domain=~behavioralengine.com
-||clickmatic.pl/$domain=~clickmatic.pl
-||creativecdn.com^$third-party
-||daib.pl^
-||emisja.adsearch.pl/$xmlhttprequest
-||entryhit.wp.pl^
-||gcontent.services.tvn.pl^
-||kozaczek.pl/stats.php$xmlhttprequest
-||nsaudience.pl^
-||pixel.solvemedia.com^
-.pl/*_ac=kropka-
-||revsci.net^
-||salesbee.pl^
-||salesbeehive.com^
-||smartclick.pl$script
-||stats.asp24.pl/js/click.4.js$script
-||stg.wp.pl^$script
-||sylaba.net^
-||tealium.hs.llnwd.net/*/utui/js/*.js$script,domain=motorolasolutions.com
-||track.omgpl.com^
-||ut.o2.pl^
-||vendimob.pl^
-||www.wp.pl/v*/log/view
-||x.sare25.com^
-||ymetrica.com^
-||clickserve.dartsearch.net^
-~sloworegionu.pl,~4active.eu,~valida.pl,~foodprint.pl##.banneritem
 !
 !8#------------------------General element hiding rules-------------------------!
 ###a_201
@@ -285,6 +246,7 @@ pl##.reklama-rectangle
 ##[id^="ad_box"]
 popkiller.pl,tygodnikpodhalanski.pl,cnc.info.pl##[class*="reklamy"]
 mclista.pl,bialystokonline.pl##[id*="reklama"]
+~sloworegionu.pl,~4active.eu,~valida.pl,~foodprint.pl##.banneritem
 !
 !9#------------------------Specific element hiding rules------------------------!
 24gliwice.pl##a[href^="http://www.24gliwice.pl/r/counter-baners.php"]
@@ -3788,6 +3750,7 @@ money.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 @@||wpolityce24.pl/imgcache/300x250/*/uploads/news/$image
 kafeteria.pl#@#.is-sponsored
 @@/tagcommander/$script,domain=account.ubisoft.com
+@@||erpxt.pl/Scripts/Code/
 !
 !37#--------------------------Wordpress blocking filters------------!
 ||overwatch.pl/wp-content/uploads/20*/*/250x700*.png$image
