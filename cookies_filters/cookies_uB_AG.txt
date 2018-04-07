@@ -1,11 +1,11 @@
-! Checksum: kFOqitfxvNUFQRbbqTCoeA
+! Checksum: wKWJfU7LzO6xy4zmng2BfA
 ! Title: Polskie Filtry Ciasteczkowe - uzupełnienie do uBlocka i AdGuarda
 ! Polish Cookies Filters - supplement for uBlock and AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 201803292127
-! Last modified: 29 Mar 2018 21:27:07 UTC+02
+! Version: 201804071714
+! Last modified: 07 Apr 2018 17:14:47 UTC+02
 ! Expires: 2 days
 ! Support:
 !   GitHub -> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,7 +13,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201803292127 aktualizacja: czw, 29 mar 2018, 21:27:07 UTC+02
+! v.201804071714 aktualizacja: sob, 07 kwi 2018, 17:14:47 UTC+02
 !
 !
 ! Komunikaty ciasteczkowe i dziury
@@ -28,16 +28,8 @@ echo24.tv##.on-top:style(top: 0px!important;)
 fiskars.pl##.desktop:style(top: 0px!important;)
 kalisz.info.pl###all:style(top: 0px !important;)
 lafe.pl##.cinfo:style(padding-bottom: 0px!important;)
-!
-!+ PLATFORM(ext_ublock, ext_ff, ext_edge)
 lomza.pl##html > body.polityka-cookies:style(margin-top: 0px !important; background-position: center 120px !important;)
-!
-!+ NOT_PLATFORM(ext_ublock, ext_ff, ext_edge)
-!lomza.pl#$#body.polityka-cookies { margin-top: 0px !important; background-position: center 120px !important; }
-!
-!+ PLATFORM(ext_ublock)
 neon24.pl##script:inject(abort-on-property-read.js, Service.cookieMonster)
-!
 play.google.com,translate.google.pl###gba:style(height: 60px!important;)
 sephora.pl###header:style(margin-top: 41px !important;)
 sephora.pl##.bandeBody:style(top: 0px !important;)
@@ -55,6 +47,7 @@ auto-czesci-lipiec.pl###mAll
 auto-czesci-lipiec.pl##.modal-open:style(overflow: visible !important; padding-right: 0px !important;) 
 etransport.pl##.modals.dimmer
 etransport.pl##body.dimmed:style(overflow: auto !important;)
+kobietymedycyny.pl##script:inject(abort-current-inline-script.js, $, cookies)
 mkidn.gov.pl###myModal 
 mkidn.gov.pl,puma.com##.modal-open:style(padding-right: 0px!important; overflow: visible!important;) 
 multimediago.pl##.modal-cookie
