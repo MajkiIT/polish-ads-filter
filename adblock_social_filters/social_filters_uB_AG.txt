@@ -1,11 +1,11 @@
-! Checksum: GI8FxishO6+DXJVmKVF91Q
+! Checksum: XOeKkez25HOexrjppVuRfg
 ! Title: Polskie Filtry Społecznościowe - Uzupełnienie do uBlocka i AdGuarda
 ! Polish Social Filters - Supplement for uBlock & AdGuard
 ! Codename: Social - Supplement
 ! Collaborators: blocker999, hawkeye116477, F4z
 ! Homepage: https://www.certyficate.it/
-! Version: 201803181216
-! Last modified: 18 Mar 2018 12:16:48 UTC+01
+! Version: 201804081143
+! Last modified: 08 Apr 2018 11:43:55 UTC+02
 ! Expires: 3 days
 ! Support:
 !   GitHub -> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,32 +13,17 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201803181216 aktualizacja: nie, 18 mar 2018, 12:16:48 UTC+01
+! v.201804081143 aktualizacja: nie, 08 kwi 2018, 11:43:55 UTC+02
 !
 !
 ! Popupy
 apynews.pl###fb-modal, .modal-backdrop
 apynews.pl##.modal-open:style(overflow: auto !important; padding-right: 0px !important;)
 galeriabronowice.pl##.fancybox-overlay-fixed.fancybox-overlay
-!
-!+ PLATFORM(ext_ublock, ext_ff, ext_edge)
 galeriabronowice.pl##html.fancybox-lock:style(overflow: auto !important;)
-!+ PLATFORM(ext_ublock, ext_ff, ext_edge)
 galeriabronowice.pl##html.fancybox-margin:style(margin-right: 0px !important;)
-!
-!+ NOT_PLATFORM(ext_ublock, ext_ff, ext_edge)
-galeriabronowice.pl#$#html.fancybox-lock:has(>body) { overflow: auto !important; }
-!+ NOT_PLATFORM(ext_ublock, ext_ff, ext_edge)
-galeriabronowice.pl#$#html.fancybox-margin:has(>body) { margin-right: 0px !important; )
-!
 smaker.pl###overlay, #popup
-!
-!+ PLATFORM(ext_ublock)
 smaker.pl##html > body.scrollingDisabled:style(overflow: visible !important;)
-!
-!+ NOT_PLATFORM(ext_ublock)
-!smaker.pl#$#body.scrollingDisabled { overflow: visible !important; }
-!
 sprawnymarketing.pl###pop_facebook
 sprawnymarketing.pl##.blur:style(filter: none !important;)
 !
