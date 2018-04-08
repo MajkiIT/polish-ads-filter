@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 8 April 2018
 ! Expires: 1 day
-! Version: 2018040802
+! Version: 2018040803
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018040802 aktualizacja: nie, 8 kwietnia 2018, 09:25:00
+! v.2018040803 aktualizacja: nie, 8 kwietnia 2018, 15:40:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -246,7 +246,7 @@ pl##.reklama-rectangle
 ~zso53.pl,~katywroclawskie.pl,~rozklad-pkp.pl,~gwarant.czest.pl,~sukniaonline.pl##[src*="/banners/banner"]
 ##[id^="ad_box"]
 popkiller.pl,tygodnikpodhalanski.pl,cnc.info.pl##[class*="reklamy"]
-mclista.pl,bialystokonline.pl##[id*="reklama"]
+mclista.pl,bialystokonline.pl,ewgt.com.pl##[id*="reklama"]
 ~sloworegionu.pl,~4active.eu,~valida.pl,~foodprint.pl##.banneritem
 !
 !9#------------------------Specific element hiding rules------------------------!
@@ -1049,6 +1049,9 @@ ideagrafika.pl###adswidget7-quick-adsense
 ideas2action.pl##.o_inner
 iitvx.pl##._video-link
 igostyn.pl,ikalisz.pl,iostrowwlkp.pl,ijarocin.pl,ipleszew.pl##.partners2
+igrit.pl##.boczniak, #polifoska
+igrit.pl##a[href^="redirect/"]
+igrit.pl##table:nth-of-type(1) > tbody > tr:nth-of-type(7)
 ikamien.pl###ads, .adsSpecial
 iknurow.pl##A[onclick*="_blank"] > IMG
 iknurow.pl###text-97 > .textwidget
@@ -3933,7 +3936,7 @@ www.dobreprogramy.pl##.pub-sponsor, .mfp-sidebar
 www.dobreprogramy.pl#?#article > .clearfix:-abp-contains(przy pomocy Asystenta pobierania)
 !
 !43#--------------------------Gemius link to ads ------------!
-spidersweb.pl##a[href*="hit.gemius.pl/"]
+spidersweb.pl,topagrar.pl##a[href*="hit.gemius.pl/"]
 !
 !44#--------------------------Agora ADS------------!
 sport.pl##.cg4-ad
