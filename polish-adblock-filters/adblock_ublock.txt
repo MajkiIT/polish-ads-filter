@@ -5,9 +5,9 @@
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 3 April 2018
+! Last modified: 9 April 2018
 ! Expires: 2 days
-! Version: 2018040301
+! Version: 2018040901
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018040301 aktualizacja: wt, 3 kwietnia 2018, 20:15:00
+!
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -24,6 +24,17 @@
 alltube.tv###please-wait-container
 alltube.tv###iframe-container:style(display: block !important;)
 alltube.tv##script:inject(noeval.js)
+!
+! a-o.ninja
+a-o.ninja##script:inject(set-constant.js, openload, true)
+a-o.ninja##.leaf:nth-of-type(12)
+a-o.ninja##.region-content.region > p:nth-of-type(3)
+a-o.ninja###block-block-19 > center > table
+a-o.ninja###block-system-main > div > center
+||a-o.ninja/wp-content/uploads/*.gif$image
+a-o.ninja##.clearfix:nth-of-type(5)
+a-o.ninja##.leaf:nth-of-type(11)
+a-o.ninja##.clearfix.block-search.block.widget_text:nth-of-type(8)
 !
 ! http://www.czasbajki.pl/
 ! Ominięcie czekania
@@ -237,8 +248,6 @@ calcoolator.pl##script:inject(setTimeout-defuser.js, no-ads-info)
 ! eurogamer.pl
 eurogamer.pl##script:inject(abort-on-property-write.js, yafaIt)
 !
-! a-o.ninja
-a-o.ninja##script:inject(set-constant.js, openload, true)
 !
 ! shinden.pl
 !shinden.pl##.ads:style(height: 27px!important;) 
