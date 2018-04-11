@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 11 April 2018
 ! Expires: 1 day
-! Version: 2018041103
+! Version: 2018041104
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018041103 aktualizacja: sr, 11 kwietnia 2018, 19:45:00
+! v.2018041104 aktualizacja: sr, 11 kwietnia 2018, 21:00:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -3680,12 +3680,7 @@ wp.tv##.y9xe8qn
 !
 !33#--------------------------WP element hide------------!
 !
-www.wp.pl###section_topnews > div:nth-of-type(1) > div
-www.wp.pl###section_finances > div:nth-of-type(1) > div
-www.wp.pl###section_celebrities > div:nth-of-type(1) > div
-www.wp.pl###section_mototech > div:nth-of-type(1) > div
-www.wp.pl###section_lifestyle > div:nth-of-type(1)
-www.wp.pl###section_lifestyle > div:nth-of-type(3)
+www.wp.pl##[id^="section_"]:not(#section_trends) > div:not([class]) > div:not([class]):not([id])
 www.wp.pl##.content._1gA4wm > div:nth-of-type(2) > ._2kJYSo > div > div:nth-of-type(2)
 www.wp.pl##[data-st-area="Mototech-prawa"] > div[class]
 www.wp.pl##[data-st-area="Gwiazdy-prawa"] > div > div
