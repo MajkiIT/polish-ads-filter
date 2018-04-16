@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 16 April 2018
 ! Expires: 1 day
-! Version: 2018041603
+! Version: 2018041604
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018041603 aktualizacja: pon, 16 kwietnia 2018, 11:55:00
+! v.2018041604 aktualizacja: pon, 16 kwietnia 2018, 18:20:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -1532,7 +1532,7 @@ nacjonalista.pl##.napis, #.entry-content.entry > A
 naekranie.pl##.adform,n #attachment_3064862
 naekranie.pl##DIV[class] > DIV[class][style*="overflow: hidden"]
 naekranie.pl##DIV[class^="p"][style*="content: "] > DIV[class^="p"][style*="content:"]
-!naekranie.pl##[class^="p"] > a[href^="https://naekranie.pl/"][target="_blank"]
+naekranie.pl##[class^="p"] > a[href^="https://naekranie.pl/"][target="_blank"]
 naekranie.pl##.prawa-szpalta.box > DIV[class^="p"]
 naklo24.pl##.ban
 nakolei.pl##.textwidget > A[target="_blank"]
@@ -3177,7 +3177,6 @@ zywiecinfo.pl##.promoted
 @@||myao.adocean.pl/_*/ad.xml$xmlhttprequest,domain=sport.tvp.pl
 @@||myao.adocean.pl^$xmlhttprequest,domain=tvpstream.vod.tvp.pl
 @@||naekranie.pl/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-download-tracker.js$script,~third-party
-!@@||onet.hit.gemius.pl/fpdata.js$script
 @@||optimus.pl/temp/adrotator_miniatury/$image
 @@||osgchmura.tk/tv/player/ads.js$script
 @@||ostrowmaz.com/uploads/small_ad_photo/$image
@@ -3639,7 +3638,7 @@ pl##a[href^="//69oxt4q05.com/"]
 /wp-content/plugins/wp-words-links-change/*$script,domain=businesstraveller.pl
 /^(http|https):\/\/[\w]{12,}\.[a-z]{3,3}\/[a-z]{1,10}\.html[\w\d\W]{100,}/$script,domain=tele-wizja.ru
 /^(http|https):\/\/[\w]{8,}\.[a-z]{3,3}\/[\w\d\W]{45,}/$script,domain=abcast.net|alltube.pl|alltube.tv
-/^https:\/\/naekranie\.pl\/[a-z0-9]{5,20}\/[a-z0-9]{5,25}/$image
+/(http|https):\/\/naekranie\.pl\/wp-content\/uploads\/[0-9]{4,4}\/[0-9]{2,2}\/(?!jpg)[0-9a-z]{7,10}$/$image
 !
 !29#--------------------------Rules on tv streams element hiding rules------------!
 ##a[href^="http://affiliates.bet-at-home.com/processing/clickthrgh.asp"]
