@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 16 April 2018
+! Last modified: 17 April 2018
 ! Expires: 1 day
-! Version: 2018041607
+! Version: 2018041701
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018041607 aktualizacja: pon, 16 kwietnia 2018, 22:45:00
+! v.2018041701 aktualizacja: wt, 17 kwietnia 2018, 09:05:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -3713,7 +3713,7 @@ www.wp.pl##._3Yt2CT._3JvtY-
 !
 pilot.wp.pl##SCRIPT + DIV.row
 pilot.wp.pl##.top-section
-! potwierdzione
+! potwierdzone
 wp.pl##.scr-wallpaper
 gadzetomania.pl,komorkomania.pl,fotoblogia.pl##[class^="insert insert-"]
 komorkomania.pl,pudelek.pl##[target="_blank"] > IMG[class][src^="https://v.wpimg.pl/"]
@@ -3736,31 +3736,12 @@ sportowefakty.wp.pl,money.pl##DIV + DIV[style*="max-width: 100%;"]
 moto.wp.pl###aSlot3
 wiadomosci.wp.pl##DIV[style="position: relative; top: 0px;"] > A[target="_blank"] > DIV
 www.o2.pl##.gzuwb
+www.wp.pl##[id^="section_"] div[class*=" "]:empty:not([style]):not([id]):not([img]):not([src])
+sportowefakty.wp.pl##main div[class*=" "]:empty:not([style]):not([id]):not([img]):not([src])
 !
 !main
 ~www.wp.pl,wp.pl##[class^="css-"]
 ~www.wp.pl,wp.pl##[class^="__bc_layer"]
-!
-! niepotrzebne ?
-!www.wp.pl##[data-st-area="Stream"] > div > :nth-child(2) > :nth-child(2)
-!www.wp.pl##[class][src^="https://v.wpimg.pl/"][style="max-height: 25px;"]
-!www.wp.pl##SECTION#section_celebrities > DIV[class]:first-child
-!www.wp.pl##SECTION#section_mototech > DIV[class]:first-child
-!www.wp.pl##SECTION#section_sport > DIV[class]:first-child
-!www.wp.pl##SECTION#section_finances > DIV[class]:first-child
-!www.wp.pl##SECTION#section_lifestyle > DIV[class]:first-child
-!www.wp.pl##SCRIPT[src*=".wp.pl/"] + DIV[style$="z-index: 100000;"]
-!www.wp.pl##.css-ofebmy
-!www.wp.pl##.css-7cz9vf
-!www.wp.pl##[data-st-area="Zakupy"] > :nth-child(n+2):nth-child(-n+3) > div > div
-!www.wp.pl##[class^="_2"][alt="ZNAJDŹ INSPIRACJE"]
-!www.wp.pl###section_shopping > :nth-last-child(n+3)
-!www.wp.pl###header_premium[data-st-area="Premium-naglowek"]
-!www.wp.pl##SCRIPT[async="async"] + DIV[class]:last-child
-!www.wp.pl##SECTION#section_topnews > DIV[class]:first-child
-!www.wp.pl##DIV[class] > A[class][href*=".wp.pl/"] > DIV > [class][src^="https://v.wpimg.pl/"]
-!www.wp.pl##SECTION#section_topnews > DIV[data-reactid="80"] > DIV[class] + DIV[class]
-!www.wp.pl##section_trends
 !
 ! inne
 sportowefakty.wp.pl##HEADER + DIV#matchtable + DIV + DIV
