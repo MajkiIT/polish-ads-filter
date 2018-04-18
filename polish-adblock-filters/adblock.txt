@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 18 April 2018
 ! Expires: 1 day
-! Version: 2018041804
+! Version: 2018041805
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018041804 aktualizacja: sr, 18 kwietnia 2018, 14:50:00
+! v.2018041805 aktualizacja: sr, 18 kwietnia 2018, 16:30:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -328,9 +328,6 @@ anyfiles.pl###AllVideosLoadDiv > .media-list > .media > .thumbnail:not([title])
 anyfiles.pl##[class^="bp-wrapp"]
 anyfiles.pl##[id^="adsbox_"]
 anyfiles.pl###SearchVideosLoadDiv > .media-list > .media > .thumbnail:not([title])
-a-o.ninja##.region-content.region > center
-a-o.ninja##.content > center
-a-o.ninja##[id^="aukcjoner"]
 apynews.pl##.featured-advert
 astratex.pl##[class^="bFix"]
 astronomia24.com###side-border-right > .panel:nth-of-type(6)
@@ -3126,11 +3123,11 @@ zywiecinfo.pl##.promoted
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=kafeteria.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|pogoda.wp.pl|dladzieci.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|fotoblogia.pl|avent-ugrow.wp.pl|pudelek.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl|pytamy.pl|ranking.abczdrowie.pl|profil.tlen.pl
 /^https:\/\/eku24.net\/images\/slajdy\/(?!zyczenia)[a-z]{3,10}\/[a-zA-Z0-9_-]{10,50}\.jpg/$image
 /\/[0-9a-zA-Z]{5,7}\_(?!adaptiveresize)[a-z]{12,17}\_[0-9]{3,3}\x[0-9]{3,3}\.jpg$/$image,domain=www.pcworld.pl
-/^(http|https):\/\/a-o.ninja\/[\w\d]{5,10}\.js\?[a-z]{2,5}/$script
 /^https:\/\/v\.wpimg\.pl\/[a-zA-Z0-9]{90,100}/$image,domain=money.pl
 /^http:\/\/www\.filmweb\.pl\/[\w\W]{400,500}/$script
 /^https:\/\/[a-z.]{2,17}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$popup,domain=www.wp.pl
 /^https:\/\/cont[1-7]\.naekranie\.pl\/wp-content\/uploads\/[0-9]{4,4}\/[0-9]{2,2}\/[\w]{20,30}\.jpg/$image
+/^(http|https):\/\/a-o.ninja\/[\w\d]{5,10}\.js\?[a-z]{2,5}/$script
 !
 !12#---------------------------------Whitelists----------------------------------!
 @@||adocean-pl.hit.gemius.pl/*/url=http://sport.tvp.pl/$popup,other
@@ -3238,7 +3235,6 @@ wpworld.pl,windowsowo.pl#@##adBanner
 24gliwice.pl,wyborkierowcow.pl,kino123.pl#@##adsense
 ##.adblock-alt
 ##.adblock-placeholder
-a-o.ninja##h4
 adtaily.pl#@##sponsorText
 allekoszyk.pl##DIV[style="background-color:red;color:white;padding:10px;text-align:center;"]
 androidbeztajemnic.com###text-16.widget.widget_text
@@ -3382,14 +3378,14 @@ zw.pl###abpnotzw
 @@/adframe.js$script,domain=kobieceporady.pl
 @@/ad_pics/*$image,domain=pcworld.pl
 @@/ad_ops/*$image,domain=www.pcworld.pl
+@@/ads.js$script,domain=a-o.ninja
 @@/popunder*.js$script,domain=a-o.ninja
 @@/^(https|http):\/\/a-o\.ninja\/[\w\W]{20,100}\.js/$script
 @@ads$image,domain=rapidgrab.pl
 @@/adsense.js$script,domain=biznesforum.pl|optyczne.pl|a-o.ninja
 @@/ads.reklama.728x90$script,stylesheet,domain=zmianaczasu.info|antonimy.net|odmiana.net|definicja.net|krzyzowka.net|humoris.pl
-@@/advertisement*.js$script,domain=meczyki.pl|autocentrum.pl|tokfm.pl|trojmiasto.pl|superfilm.pl
+@@/advertisement*.js$script,domain=meczyki.pl|autocentrum.pl|tokfm.pl|trojmiasto.pl|superfilm.pl|a-o.ninja
 @@/showads.js$script,domain=www.eskago.pl|czasdzieci.pl|towideo.pl
-@@/advertisement.js$script,domain=a-o.ninja
 @@||4free.waw.pl^$generichide
 @@||adv.wp.pl/adverts$xmlhttprequest,domain=pilot.wp.pl
 @@||adv.wp.pl/RM/Box/*/inline-videostar.js$script,domain=pilot.wp.pl
@@ -3459,6 +3455,7 @@ zw.pl###abpnotzw
 @@||www.sc7.pl/media/graphics/sc7_468x60.png$image,domain=mynavi-expert.pl
 @@||www.telepolis.pl/js/ads_adv_telepolis_skrypt.js
 @@||zakupek.pl/wp-content/themes/zakupek/bannery/adbanner.htm$script,domain=zakupek.pl
+@@||zyciepabianic.pl^$generichide
 !
 !17#--------------------------Rules block ads after antiadblock rules-------------!
 cosplayjav.pl##.baner-bottom-section
@@ -3990,5 +3987,11 @@ avanti24.pl##.art_embed
 @@||reklama.shinden.eu^$image,domain=reklama.shinden.eu
 @@||s1.rtbnowads.com/ad/$subdocument,domain=shinden.pl
 shinden.pl#@#.AD-RC-300x250
+!
+!46#--------------------------a-o.ninja------------!
+a-o.ninja##.region-content.region > center
+a-o.ninja##.content > center
+a-o.ninja##[id^="aukcjoner"]
+a-o.ninja##h4
 !
 !END#--------------------------END------------!
