@@ -7,7 +7,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 19 April 2018
 ! Expires: 2 days
-! Version: 2018041901
+! Version: 2018041902
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018041901 aktualizacja: czw, 19 kwietnia 2018, 13:35:00
+! v.2018041902 aktualizacja: czw, 19 kwietnia 2018, 13:50:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -246,11 +246,11 @@ a-o.ninja##script:inject(set-constant.js, openload, true)
 !shinden.pl##.ads:style(height: 27px!important;) 
 !||google-analytics.com/analytics.js$important,script,redirect=noopjs,domain=shinden.pl
 !/^https:\/\/reklama\.shinden.eu\//$important
-shinden.pl##script:inject(setTimeout-defuser.js, addBlockDetected)
-shinden.pl##script:inject(set-constant.js, iFrameResize, true)
-shinden.pl##script:inject(set-constant.js, rtb_header_loaded, true)
-||rtbnowads.com^$domain=shinden.pl,important
-||reklama.shinden.eu^$domain=shinden.pl,important
+!shinden.pl##script:inject(setTimeout-defuser.js, addBlockDetected)
+!shinden.pl##script:inject(set-constant.js, iFrameResize, true)
+!shinden.pl##script:inject(set-constant.js, rtb_header_loaded, true)
+!||rtbnowads.com^$domain=shinden.pl,important
+!||reklama.shinden.eu^$domain=shinden.pl,important
 !
 ! olx.pl
 ||olx.pl^*/advertising.js$script,important,redirect=noopjs,first-party
