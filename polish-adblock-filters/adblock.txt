@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 20 April 2018
 ! Expires: 1 day
-! Version: 2018042004
+! Version: 2018042005
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018042004 aktualizacja: ptk, 20 kwietnia 2018, 16:20:00
+! v.2018042005 aktualizacja: ptk, 20 kwietnia 2018, 17:40:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -153,6 +153,7 @@ vshare.io###sendif
 ##.tvn-advertisement
 ##.zalando-ad
 ##.zalando-placeholder
+##.reklama-gora
 ##A[href*="/emisja.contentstream.pl/_/ctr/"]
 ##a[href*="://tracking.linktogame.com/aff_c"]
 ##IMG[alt="Reklama"]
@@ -549,7 +550,7 @@ cksport.pl##.box:nth-of-type(1)
 cksport.pl##.box:nth-of-type(3)
 cksport.pl##p > span > span
 cmg24.pl##[src*="Reklamy/"]
-cnc.info.pl##.box_bok > .nazwa_ebmia, .box_ebmia
+cnc.info.pl##.box_bok > .nazwa_ebmia, .box_ebmia, .reklama-bok
 codziennikmlawski.pl###ai_widget-8, .code-block-9.code-block
 codziennikmlawski.pl##div:nth-of-type(6) > a[href^="https://"]
 comparic.pl##A[target="_blank"] > IMG
@@ -685,6 +686,7 @@ echogorzowa.pl##[id^="ims_"]
 echo24.tv##[class^="banner-"]
 echodnia.eu##.typBaner, .promoBox
 echodnia.eu###dfp-prawa1
+edux.pl##billb-tlo
 efilmy.tv##.addbackground
 egami-image.com##img[src*="tvsat-sklep.com"]
 eholiday.pl##.rectangles, .box-promo-title
@@ -1281,6 +1283,7 @@ lajfy.com###interVeil
 laskonline.pl###prawa_kolumna > h1:nth-of-type(2)
 lawka.pl##table:nth-of-type(2) > tbody > tr > td > table
 lawka.pl###szesc
+lca.pl###banner_inside1
 lebork24.info###rT1, #rM0, #rM2
 leczna24.pl##.noprint.centrujban
 leftlane.pl###u488942
@@ -1393,7 +1396,7 @@ medycznamarihuana.com##A[target="_blank"] > IMG[src*="medycznamarihuana.com/wp-c
 medycznamarihuana.com##DIV[style="float: left; padding: 8px;"]
 medycznamarihuana.com##IMG[src*="/wp-content/uploads/baner_"]
 medycznamarihuana.pl##.footer-ad-wrap
-megalotto.pl###poradnik_prostokat_poziomy_gorny
+megalotto.pl###poradnik_prostokat_poziomy_gorny, #poradnik_kwadrat_gorny, #pod_chatem_lewa_kolumna
 memy.pl##.container > div[style="height:250px; width:970px; margin-bottom: 10px;"]
 memy.pl##.content-stream.view-meme > div[style="height:200px; width:750px;"]
 memy.pl##.content-stream.view-meme > #news > .break-row.row
@@ -1941,7 +1944,8 @@ radio.kielce.pl##.content:nth-of-type(3) > .na-space
 radio.kielce.pl##.folkRadioLink
 radio.kielce.pl##.addmain
 radio.opole.pl##.bannerplace
-radioplus.pl###bottom-ad, .moduletable:nth-of-type(3)
+radioplus.pl###bottom-ad
+radioplus.com.pl##.moduletable:nth-of-type(3)
 radiostar.net##.widget_media_image.widget.td_block_template_4
 radiosud.pl,krasnik24.pl,czestochowanews.pl##[class^="banner"]
 radiozw.com.pl###slider
