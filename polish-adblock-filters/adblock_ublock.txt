@@ -7,7 +7,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 20 April 2018
 ! Expires: 2 days
-! Version: 2018042003
+! Version: 2018042004
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018042003 aktualizacja: ptk, 20 kwietnia 2018, 13:40:00
+! v.2018042004 aktualizacja: ptk, 20 kwietnia 2018, 19:30:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -127,7 +127,7 @@ wp.pl##[class^="_"]:has(>img[src*=".wp.pl"])
 wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##script:inject(abort-on-property-write.js, iaqExt)
 ~pilot.wp.pl,wp.pl,echirurgia.pl##script:inject(set-constant.js, PWA_adbd, 2)
-~poczta.wp.pl,wp.pl,echirurgia.pl##script:inject(set-constant.js, WP.gaf.addCreation, noopFunc)
+~poczta.wp.pl,wp.pl,echirurgia.pl,kardiolo.pl##script:inject(set-constant.js, WP.gaf.addCreation, noopFunc)
 !
 ! kurnik.pl
 kurnik.pl##.adsbygoogle:style(height: 1px !important; width: 1px !important;)
