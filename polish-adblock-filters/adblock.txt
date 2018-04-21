@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 21 April 2018
 ! Expires: 1 day
-! Version: 2018042106
+! Version: 2018042107
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018042106 aktualizacja: sob, 21 kwietnia 2018, 16:35:00
+! v.2018042107 aktualizacja: sob, 21 kwietnia 2018, 21:55:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -689,7 +689,7 @@ echogorzowa.pl##[id^="ims_"]
 echo24.tv##[class^="banner-"]
 echodnia.eu##.typBaner, .promoBox
 echodnia.eu###dfp-prawa1
-edux.pl##billb-tlo
+edux.pl###billb-tlo
 efilmy.tv##.addbackground
 egami-image.com##img[src*="tvsat-sklep.com"]
 eholiday.pl##.rectangles, .box-promo-title
@@ -3428,6 +3428,7 @@ zw.pl###abpnotzw
 @@/showads.js$script,domain=www.eskago.pl|czasdzieci.pl|towideo.pl
 @@||a-o.ninja/*ad*.js$script
 @@||a-o.ninja/*-popexit.js$script
+@@||a-o.ninja/reklama1.js$script,
 @@||4free.waw.pl^$generichide
 @@||adv.wp.pl/adverts$xmlhttprequest,domain=pilot.wp.pl
 @@||adv.wp.pl/RM/Box/*/inline-videostar.js$script,domain=pilot.wp.pl
@@ -3767,7 +3768,7 @@ pilot.wp.pl##SCRIPT + DIV.row
 pilot.wp.pl##.top-section
 ! potwierdzone
 wp.pl##.scr-wallpaper
-gadzetomania.pl,komorkomania.pl,fotoblogia.pl##[class^="insert insert-"]
+gadzetomania.pl,fotoblogia.pl##[class^="insert insert-"]
 komorkomania.pl,pudelek.pl##[target="_blank"] > IMG[class][src^="https://v.wpimg.pl/"]
 czat.wp.pl,infografika.wp.pl,dladzieci.pl,muzyka.wp.pl,niewiarygodne.pl,sportowybar.wp.pl,forum.o2.pl,komediowo.pl,topnews.wp.pl,ogloszenia.wp.pl##[id*="adv"]
 sportowefakty.wp.pl,kobieta.wp.pl,moto.wp.pl,tech.wp.pl,gry.wp.pl,opinie.wp.pl,turystyka.wp.pl,pogoda.wp.pl,tv.wp.pl,finanse.wp.pl##* > DIV[style*="max-width: 100%;"]
@@ -3875,6 +3876,7 @@ kafeteria.pl#@#.is-sponsored
 @@/tagcommander/$script,domain=account.ubisoft.com
 @@/app\.erpxt\.[a-z]{2,3}\/Scripts\/Code\//
 @@||erpxt.pl/Scripts/Code/
+||static-olxeu.akamaized.net/static/olxpl/naspersclassifieds-regional/olxeu-atlas-web/static/js/advertising.js$important
 !
 !37#--------------------------Wordpress blocking filters------------!
 ||overwatch.pl/wp-content/uploads/20*/*/250x700*.png$image
@@ -3925,7 +3927,7 @@ motobanda.pl##.sp-block.mt10.text-center.row
 mypolacy.nl###text-10, #text-27, #text-17
 mypolacy.nl,tkn24.pl##[id^="custom_html-"]
 ndie.pl,magazynfakty.pl,obserwatorfinansowy.pl,parezja.pl##.textwidget
-nettg.pl###category-topics > .container > .row:nth-of-type(4) > .col-sm-12.col-md-6, .internal_google_ads, .container:nth-of-type(7), .hidden-sm.hidden-xs.col-xs-12.col-sm-12.col-md-6
+nettg.pl###category-topics > .container > .row:nth-of-type(4) > .col-sm-12.col-md-6, .internal_google_ads, .container:nth-of-type(7), .hidden-sm.hidden-xs.col-xs-12.col-sm-12.col-md-6, #content-news > div:nth-of-type(3)
 nettg.pl##[id^="widget-"] > div > label
 newsbook.pl##.newsb-widget.widget
 olgasmile.com###text-37 > .widget-wrap
