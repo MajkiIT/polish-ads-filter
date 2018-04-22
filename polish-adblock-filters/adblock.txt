@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 21 April 2018
+! Last modified: 22 April 2018
 ! Expires: 1 day
-! Version: 2018042107
+! Version: 2018042201
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018042107 aktualizacja: sob, 21 kwietnia 2018, 21:55:00
+! v.2018042201 aktualizacja: nie, 22 kwietnia 2018, 09:40:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -248,7 +248,7 @@ pl##.reklama-rectangle
 ~zso53.pl,~katywroclawskie.pl,~rozklad-pkp.pl,~gwarant.czest.pl,~sukniaonline.pl##[src*="/banners/banner"]
 ##[id^="ad_box"]
 popkiller.pl,tygodnikpodhalanski.pl,cnc.info.pl##[class*="reklamy"]
-mclista.pl,bialystokonline.pl,ewgt.com.pl##[id*="reklama"]
+mclista.pl,bialystokonline.pl,ewgt.com.pl,tugazeta.pl##[id*="reklama"]
 ~m3esolutions.com,~sloworegionu.pl,~4active.eu,~valida.pl,~foodprint.pl##.banneritem
 !
 !9#------------------------Specific element hiding rules------------------------!
@@ -553,6 +553,7 @@ cksport.pl##.box:nth-of-type(1)
 cksport.pl##.box:nth-of-type(3)
 cksport.pl##p > span > span
 cmg24.pl##[src*="Reklamy/"]
+cmg24.pl##tr > td > .H7
 cnc.info.pl##.box_bok > .nazwa_ebmia, .box_ebmia, .reklama-bok
 codziennikmlawski.pl###ai_widget-8, .code-block-9.code-block
 codziennikmlawski.pl##div:nth-of-type(6) > a[href^="https://"]
@@ -822,7 +823,7 @@ filesdark.com##[href*="/adac.php"]
 fileland.pl##.hidden-xs.mari.col-sm-12.col-md-2.col-lg-2 > .reki:nth-of-type(1)
 fili.tv,fili.cc###links > ul:nth-of-type(1)
 fili.tv,fili.cc##divo, #divlol
-fili.tv,fili.cc##a[href^="https://goo.gl/"]
+fili.tv,fili.cc,centrumdruku3d.p##a[href^="https://goo.gl/"]
 films4free.pl##.M2U3OGQ4ZGY1
 filmweb.pl###pasekup
 filmweb.pl##[id$="_iframe"]
@@ -1030,7 +1031,7 @@ gwint24.pl###gwint-938685755
 gwarek.com.pl##.boxer_info
 gwiazdor.pl###google-ad-top, .simple-ads-box
 hack.pl###block-block-6
-haker.com.pl##body > div:nth-of-type(1)
+haker.com.pl,mojaolesnica.pl##body > div:nth-of-type(1)
 halamadrid.pl##body > div:nth-of-type(3)
 halamadrid.pl##a[href^="https://"] > IMG
 halogorlice.info##.bannergroup
@@ -1494,6 +1495,9 @@ mojaolesnica.pl##DIV[style="float: left; width: 705px;"]
 mojaolesnica.pl##DIV[style="width: 200px; height: 200px;"]
 mojaolesnica.pl##DIV[style="width: 750px; height: 200px; float: left; display: inline;"]
 mojaolesnica.pl##DIV[style*="width: 966px; margin-top: 12px; margin-bottom: 15px; "]
+mojaolesnica.pl##.mainright > div:nth-of-type(3)
+mojaolesnica.pl##.mainright > div:nth-of-type(5)
+mojaolesnica.pl##.mainright > div:nth-of-type(7)
 mojapogoda.com###lower_header_right_area
 mojapogoda.com###upper_header
 mojeauto.pl###ma-top-layer
@@ -1849,6 +1853,7 @@ portalmedialny.pl###rc_content_block:nth-of-type(11)
 portalmorski.pl###C-D-1
 portalmorski.pl##.pm-banner
 portalplock.pl###fixme
+portalpszczelarski.pl###APPMicroBanersBottom, #APPMicroBanersTop
 portalsamorzadowy.pl##.box-1 > .left
 portalsremski.pl##div[class^="ban"]
 portaltatrzanski.com##.promo-baner
