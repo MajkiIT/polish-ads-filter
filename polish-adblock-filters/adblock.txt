@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 22 April 2018
 ! Expires: 1 day
-! Version: 2018042204
+! Version: 2018042206
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018042204 aktualizacja: nie, 22 kwietnia 2018, 16:05:00
+! v.2018042206 aktualizacja: nie, 22 kwietnia 2018, 19:10:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -1559,9 +1559,10 @@ nacjonalista.pl##.napis, #.entry-content.entry > A
 naekranie.pl##.adform,n #attachment_3064862
 naekranie.pl##DIV[class^="p"][style*="content: "] > DIV[class^="p"][style*="content:"]
 naekranie.pl##[class^="p"] > a[href^="https://naekranie.pl/"][target="_blank"]
-naekranie.pl##.prawa-szpalta.box > DIV[class^="p"]
 naekranie.pl##.new.inner-wrap > [class^="r"] > [class^="r"]
-naekranie.pl##aside > [class^="r"]
+naekranie.pl#?#div[class]:-abp-has(> span > span > span > a[href^="https://naekranie.pl/"][target="_blank"])
+naekranie.pl#?#div[class]:-abp-has(> span > span > a[href^="https://naekranie.pl/"][target="_blank"])
+naekranie.pl#?#div[class]:-abp-has(> span > a[href^="https://naekranie.pl/"][target="_blank"])
 naklo24.pl##.ban
 nakolei.pl##.textwidget > A[target="_blank"]
 na-luzie.net##a[href^="http://trafisz.com/"]
@@ -3178,7 +3179,6 @@ zywiecinfo.pl##.promoted
 /^https:\/\/v\.wpimg\.pl\/[a-zA-Z0-9]{90,100}/$image,domain=money.pl
 !/^http:\/\/www\.filmweb\.pl\/[\w\W]{300,500}/$script
 /^https:\/\/[a-z.]{2,17}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$popup,domain=www.wp.pl
-/^https:\/\/cont[1-7]\.naekranie\.pl\/wp-content\/uploads\/[0-9]{4,4}\/[0-9]{2,2}\/[\w]{20,30}\.jpg/$image
 /^(http|https):\/\/a-o.ninja\/[\w\d]{5,10}\.js\?[a-z]{2,5}/$script
 !
 !12#---------------------------------Whitelists----------------------------------!
@@ -3440,7 +3440,8 @@ zw.pl###abpnotzw
 @@/showads.js$script,domain=www.eskago.pl|czasdzieci.pl|towideo.pl
 @@||a-o.ninja/*ad*.js$script
 @@||a-o.ninja/*-popexit.js$script
-@@||a-o.ninja/*reklama*.js$script,
+@@||a-o.ninja/*reklama*.js$script
+@@||a-o.ninja/*annonser*.js$script
 @@||4free.waw.pl^$generichide
 @@||adv.wp.pl/adverts$xmlhttprequest,domain=pilot.wp.pl
 @@||adv.wp.pl/RM/Box/*/inline-videostar.js$script,domain=pilot.wp.pl
