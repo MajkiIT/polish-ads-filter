@@ -5,9 +5,9 @@
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 20 April 2018
+! Last modified: 23 April 2018
 ! Expires: 2 days
-! Version: 2018042004
+! Version: 2018042301
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018042004 aktualizacja: ptk, 20 kwietnia 2018, 19:30:00
+! v.2018042301 aktualizacja: sob, 23 kwietnia 2018, 22:35:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -243,14 +243,7 @@ eurogamer.pl##script:inject(abort-on-property-write.js, yafaIt)
 a-o.ninja##a[href^="http://allegro.pl/"]
 !
 ! shinden.pl
-!shinden.pl##.ads:style(height: 27px!important;) 
-!||google-analytics.com/analytics.js$important,script,redirect=noopjs,domain=shinden.pl
-!/^https:\/\/reklama\.shinden.eu\//$important
-!shinden.pl##script:inject(setTimeout-defuser.js, addBlockDetected)
-!shinden.pl##script:inject(set-constant.js, iFrameResize, true)
-!shinden.pl##script:inject(set-constant.js, rtb_header_loaded, true)
-!||rtbnowads.com^$domain=shinden.pl,important
-!||reklama.shinden.eu^$domain=shinden.pl,important
+shinden.pl##.ads:style(height: 200px!important; position: absolute!important; left: -3000px!important;)
 !
 ! olx.pl
 ||olx.pl^*/advertising.js$script,important,redirect=noopjs,first-party
