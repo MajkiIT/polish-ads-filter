@@ -1,19 +1,20 @@
-! Checksum: BwYzErecZSCE47423Oaybg
+! Checksum: aRpotRldy7ayUddUkgRMmw
 ! Title: Polskie Filtry Ciasteczkowe - uzupełnienie do uBlocka i AdGuarda
 ! Polish Cookies Filters - supplement for uBlock and AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 201804162125
-! Last modified: 16 Apr 2018 21:25:04 UTC+02
+! Version: 201804231909
+! Last modified: Mon, 23 Apr 2018, 19:09:34 UTC+02
 ! Expires: 2 days
 ! Support:
-!   GitHub -> https://github.com/MajkiIT/polish-ads-filter/issues
-!   Discord -> https://discord.me/polskiefiltry
-! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-! Copyright (C) 2018 Certyficate IT
+!   Email => errors@certyficate.it
+!   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
+!   Discord => https://discord.me/polskiefiltry
+! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
+! Copyright (C) 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201804162125 aktualizacja: pon, 16 kwi 2018, 21:25:04 UTC+02
+! v.201804231909 aktualizacja: pon, 23 kwi 2018, 19:09:34 UTC+02 
 !
 !
 ! Komunikaty ciasteczkowe i dziury
@@ -21,12 +22,11 @@
 archiwum.rp.pl,info.rp.pl##body:style(margin-top: 0px!important;)
 bbcpolska.com###home:style(padding-top: 0px !important;)
 beko.pl##.cookies-margin:style(top: 0px!important;)
-biuletyn.net##.urzad_mini > div:style(top: 225px!important;)
 biuletyn.net##body > table:style(margin-top: 0px!important;)
+biuletyn.net##.urzad_mini > div:style(top: 225px!important;)
 bloombergbusinessweek.pl##body:style(margin-top: 0px!important;)
 echo24.tv##.on-top:style(top: 0px!important;)
 fiskars.pl##.desktop:style(top: 0px!important;)
-fotoblogia.pl,gadzetomania.pl,komorkomania.pl##.cookie-disclaimer:style(visibility: hidden !important;)
 kalisz.info.pl###all:style(top: 0px !important;)
 lafe.pl##.cinfo:style(padding-bottom: 0px!important;)
 lomza.pl##html > body.polityka-cookies:style(margin-top: 0px !important; background-position: center 120px !important;)
@@ -43,6 +43,12 @@ wykop.pl##.type-permanent+#nav:style(top: 0px !important)
 youtube.com##div#masthead-positioner-height-offset:style(height: 80px!important;)
 !
 !
+! Komunikaty ciasteczkowe i dziury - specjalne instrukcje
+!#if !cap_user_stylesheet
+fotoblogia.pl,gadzetomania.pl,komorkomania.pl##.cookie-disclaimer:style(visibility: hidden !important;)
+!#endif
+!
+!
 ! Popupy
 auto-czesci-lipiec.pl###mAll 
 auto-czesci-lipiec.pl##.modal-open:style(overflow: visible !important; padding-right: 0px !important;) 
@@ -54,6 +60,6 @@ mkidn.gov.pl,puma.com##.modal-open:style(padding-right: 0px!important; overflow:
 multimediago.pl##.modal-cookie
 multimediago.pl##.modal-open:style(overflow: auto !important; padding-right: 0px !important;)
 puma.com###modal-geoip-cookies, .modal-backdrop 
-unileverfoodsolutions.pl##.js-cookie-wall 
 unileverfoodsolutions.pl##body.blurred>*:style(box-shadow: none!important; filter: none!important;) 
-unileverfoodsolutions.pl##body:style(overflow: auto!important;)
+unileverfoodsolutions.pl##body:style(overflow: auto!important;) 
+unileverfoodsolutions.pl##.js-cookie-wall 
