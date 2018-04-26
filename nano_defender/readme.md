@@ -66,6 +66,8 @@
    ```
    https://jspenguin2017.github.io/uBlockProtector/
    ```
+   
+ 6. pamiętaj aby regularnie sprawdzać nowszą wersje dodatku Nano Defender na liście dodatków Firefox, aby korzystać z najnowszej wersji.
 
  
 [uBO]: https://www.certyficate.it/adblock/ublock.png
