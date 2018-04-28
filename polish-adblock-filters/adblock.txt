@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 28 April 2018
 ! Expires: 1 day
-! Version: 2018042802
+! Version: 2018042803
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018042802 aktualizacja: sob, 28 kwietnia 2018, 12:10:00
+! v.2018042803 aktualizacja: sob, 28 kwietnia 2018, 18:25:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -844,7 +844,8 @@ foodpanda.pl###campaign_22924_lightbox
 footroll.pl##.box-banner
 forall.pl##a[href^="http://www.forall.pl/red.php"]
 fora.pl##.jf--shown.jf__header__bar
-forbes.pl###Article-Inner-Content
+forbes.pl###Article-Inner-Content, #googleAdsCont, #onet-ad-top, #przeswietlWidgetBig, .stickyWrapperAlone
+forbes.pl##.hyphenate > A[href*="skapiec.pl"][id]
 forbot.pl##a[href^="https://forbot.pl/r/counter-baners.php"]
 forbot.pl##.bodyline > div:nth-of-type(3)
 forbot.pl###sidebar-right > div:nth-of-type(1)
@@ -1116,7 +1117,7 @@ infoship.pl,infoair.pl,infobike.pl,infotram.pl,inforail.pl,transinfo.pl,infobus.
 infoship.pl,infoair.pl,infobike.pl,infotram.pl,inforail.pl,transinfo.pl,infobus.pl##[id^="reklama"][idrekl]
 infoship.pl,infoair.pl,infobike.pl,infotram.pl,inforail.pl,transinfo.pl,infobus.pl##.reklamaR2Napis
 innpoland.pl##.jw-reset.jw-aspect
-inowroclaw.info.pl##A[target="_blank"] > IMG
+inowroclaw.info.pl,webhelp.pl##A[target="_blank"] > IMG
 inowroclaw.info.pl##CENTER > A > IMG
 inowroclaw.info.pl##.row:nth-of-type(4) > .fl.w250
 instalki.pl###banner
@@ -2469,6 +2470,8 @@ wbijam.pl##.odcinek_oczekiwanie_info > center
 wbj.pl##.akpbanner
 wcograc.pl##.click
 webcamera.pl##[style="width:728px;height:90px;"]
+webhelp.pl###sponsor
+webhelp.pl###infobar > .foot:nth-of-type(3) 
 webhostingtalk.pl###wht_new
 webmasteruj.pl###elComment_x
 webmasteruj.pl##[style="margin:0 auto; text-align:center; margin-bottom:5px;"]
@@ -3205,7 +3208,7 @@ zywiecinfo.pl##.promoted
 /^(http|https):\/\/www\.portel\.pl\/(?!pasaz)[-a-z0-9A-Z_%$&+=[\].]{1,200}\/[-a-z0-9A-Z_%$&+=[\]/.]{2,200}.(html|htm)/$subdocument,domain=www.portel.pl
 /^(http|https):\/\/www\.wp\.pl\/[a-zA-Z0-9-_]{50,}/$popup,domain=www.wp.pl
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl|poczta.wp.pl
-/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=kafeteria.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|komorkomania.pl|pogoda.wp.pl|dladzieci.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|fotoblogia.pl|avent-ugrow.wp.pl|pudelek.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl|pytamy.pl|ranking.abczdrowie.pl|profil.tlen.pl
+/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=kafeteria.pl|twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|pogoda.wp.pl|dladzieci.pl|dzieci.pl|gadzetomania.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|fotoblogia.pl|avent-ugrow.wp.pl|pudelek.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl|pytamy.pl|ranking.abczdrowie.pl|profil.tlen.pl
 /^https:\/\/[a-z.]{2,17}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$popup,domain=www.wp.pl
 /^https:\/\/eku24.net\/images\/slajdy\/(?!zyczenia)[a-z]{3,10}\/[a-zA-Z0-9_-]{10,50}\.jpg/$image
 /^https:\/\/v\.wpimg\.pl\/[a-zA-Z0-9]{90,100}/$image,domain=money.pl
