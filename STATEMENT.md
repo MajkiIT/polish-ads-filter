@@ -14,7 +14,7 @@ Polskie filtry dla Adblocka, uBlocka i AdGuarda. To sposób oceniania i kategory
 - staramy się zapewnić jak największą zgodność z pierwotną treścią stron które obejmuje nasz filtr
 - wszelkie środki z dotacji przeznaczamy na dalsze [wsparcie filtrów](https://patronite.pl/polskiefiltry) ( opłacenie programistów, koszty utrzymania serwera )
 - niezależność, dodajemy do listy możliwie wszystkie pozycje i nie poddajemy się
-- staramy się zapewnić możliwie jak najszybsze wsparcie, dlatego stworzyliśmy [kanał discord](https://discord.me/polskiefiltry)
+- staramy się zapewnić możliwie jak najszybsze wsparcie, dlatego stworzyliśmy [serwer na Discordzie](https://discord.me/polskiefiltry)
 - nim coś zrobimy poddajmy to [głosowaniu społeczności](https://fb.com/CertyficateIT/) by podjąć jak najlepszą decyzje
 
 ---
