@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 30 April 2018
+! Last modified: 1 May 2018
 ! Expires: 1 day
-! Version: 2018043004
+! Version: 2018050101
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018043004 aktualizacja: pon, 30 kwietnia 2018, 15:05:00
+! v.2018050101 aktualizacja: wt, 1 maja 2018, 08:55:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -831,7 +831,7 @@ fili.tv,fili.cc##a[href^="https://bit.ly/"]
 fili.tv,fili.cc###links > ul:nth-of-type(1)
 films4free.pl##.M2U3OGQ4ZGY1
 filmweb.pl##[id*="iframe"]
-filmweb.pl###pasekup
+filmweb.pl###pasekup, iframe, .clickArea
 fishing-mart.com.pl##td:nth-of-type(6) > .norm11:nth-of-type(4)
 flarrow.pl##[class^="td_block_wrap td_block_text_with_title td_uid_"]
 flarrow.pl#?#.td_block_wrap:-abp-has(.td-pulldown-size:-abp-contains(Reklama))
@@ -2542,7 +2542,6 @@ wrc.net.pl##.sidebar.col-sm-4.col-xs-12
 wrealu24.pl##.article-podobne.section
 wrealu24.pl##.bannergroup
 wrealu24.pl##DIV[id^="content_video_"][preload="auto"]
-wrzesnia.info.pl##section:nth-of-type(1)
 wschodnik.pl##.col-sm-3.col-xs-12 > p
 wschodnik.pl##.hsbannerside > p
 wspomnijbliskich.pl###sponsor_title
@@ -2877,6 +2876,7 @@ zywiecinfo.pl##.promoted
 ||filmweb.pl/*/background.jpg
 ||filmweb.pl/*tapeta.jpg$image
 ||filmweb.pl/*welcomeScreenJS$script,domain=filmweb.pl
+||filmweb.pl/spot/*.mp4$media,domain=www.filmweb.pl
 ||forms.e-petrol.pl/abc/html/logo/
 ||forum.haszysz.com/baner_$image
 ||freedisc.pl/static/player/*/vast.js$script
