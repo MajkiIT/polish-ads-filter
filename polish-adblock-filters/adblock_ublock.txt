@@ -7,7 +7,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 3 May 2018
 ! Expires: 2 days
-! Version: 2018050301
+! Version: 2018050302
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018050301 aktualizacja: czw, 3 maja 2018, 10:35:00
+! v.2018050302 aktualizacja: czw, 3 maja 2018, 19:35:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -154,6 +154,7 @@ bezuzyteczna.pl##section:has(script + div[id^="crt"][style])
 ! Timery ladujace reklamy
 naekranie.pl##script:inject(setInterval-defuser.js, function neTick(){neTickCounter++;if(neTickCounter<=neTickCountLimit){neTickAjax=$.ajax({type:"POST",url:adminAjaxUrl+"?action=ne_tick",dataType:"json",success:function(data){neTickResponseAction(data)}})}}, 10000)
 naekranie.pl##script:inject(setTimeout-defuser.js, function check(){console.log("checked");if($(".adform").children().length>3){console.log("its more");$(".adform").children(".adform-banner").show();clearTimeout(check)}}, 1000)
+naekranie.pl##script:inject(abort-on-property-read.js, showEntryWelcomescreen)
 !
 ! tv.jardello.com
 videosio.pl###video_player_container:style(display: inline !important;)
