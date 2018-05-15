@@ -7,7 +7,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 15 May 2018
 ! Expires: 2 days
-! Version: 2018051503
+! Version: 2018051504
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018051503 aktualizacja: wt 15 maja 2018, 22:15:00
+! v.2018051504 aktualizacja: wt 15 maja 2018, 23:00:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -117,7 +117,7 @@ purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !importa
 !
 ! wp.pl
 wp.pl##script:inject(abort-on-property-read.js, WP.inline)
-!www.wp.pl##:xpath(//div[count(*)=1][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
+www.wp.pl##[data-st-area] > div > div > div[class]:matches-css(max-width: 300px):matches-css(max-height: 250px)
 ~www.wp.pl,wp.pl##:xpath(//div[count(*)=3][img[@class][@src]][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
 www.wp.pl##:xpath(//div[@data-st-area='Zakupy'][count(*)=2][not(header)])
 www.wp.pl##body:style(overflow: visible!important;)
