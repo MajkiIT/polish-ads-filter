@@ -7,7 +7,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 15 May 2018
 ! Expires: 2 days
-! Version: 2018051501
+! Version: 2018051502
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018051501 aktualizacja: wt 15 maja 2018, 08:50:00
+! v.2018051502 aktualizacja: wt 15 maja 2018, 09:05:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -314,3 +314,11 @@ swiatfilmow.com##script:inject(nano-setTimeout-booster.js, function, 1000, 0.02)
 !
 ! Easylist Bugs
 filmweb.pl##script:inject(abort-on-property-write.js, sas)
+!
+! IF rules
+!#if cap_html_filtering
+pracawgdansku.com.pl##^HTML > HEAD > META + TITLE + LINK + SCRIPT
+!#endif
+!#if !cap_html_filtering
+pracawgdansku.com.pl##IFRAME#iframe:style(height: 100% !important;)
+!#endif
