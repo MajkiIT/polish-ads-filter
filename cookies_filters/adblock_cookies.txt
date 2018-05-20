@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: /gTNVowdbtefLqUC3sLRBQ
+! Checksum: m6+EZVZv3egshanJr902Aw
 ! Title: Polskie Filtry Ciasteczkowe
 ! Polish Cookies Filters
 ! Codename: Cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności
 ! Collaborators: F4z, xxcriticxx, blocker999, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 201805162336
-! Last modified: Wed, 16 May 2018, 23:36:04 UTC+02
+! Version: 201805201847
+! Last modified: Sun, 20 May 2018, 18:47:04 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201805162336 aktualizacja: śro, 16 maj 2018, 23:36:05 UTC+02
+! v.201805201847 aktualizacja: nie, 20 maj 2018, 18:47:04 UTC+02
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować
@@ -73,6 +73,7 @@ bartix.pl###menusDiv
 baza-krs.pl##.alert-dismissible
 bbcpolska.com##body > iframe
 bcc.com.pl###info
+bdl.lasy.gov.pl###infoDiv
 beskidzkapilka.pl##.messageinfo
 betsson.com###MsgAreaBottom
 bibliotekaleczyca.pl###bannerbl
@@ -1076,9 +1077,11 @@ cookie-law-popup.js$script
 !
 !
 ! Privacy Policy Popups
-komputerswiat.pl,onet.pl,newsweek.pl,fakt.pl,literia.pl,verdykt.pl,plejada.pl,forbes.pl,onetontour.pl,przegladsportowy.pl,auto-swiat.pl,ofeminin.pl,nk.pl,noizz.pl,skapiec.pl,zumi.pl,opineo.pl##.cmp-popup_popup
+interia.pl##.rodo-popup
+komputerswiat.pl,onet.pl,newsweek.pl,fakt.pl,literia.pl,verdykt.pl,plejada.pl,forbes.pl,onetontour.pl,przegladsportowy.pl,auto-swiat.pl,ofeminin.pl,nk.pl,noizz.pl,skapiec.pl,zumi.pl,opineo.pl,medonet.pl,softonet.pl,pclab.pl,businessinsider.com.pl##.cmp-popup_popup
 ||a.wpimg.pl/a/i/stg/wpjslib-chunk-consent-form.js
-||std.wpcdn.pl/wpjslib/wpjslib-chunk-consent-form.js 
+||cdn.rp.pl/rodo-agreement-popup/rodo-agreement-popup.min.js
+||std.wpcdn.pl/wpjslib/*wpjslib-chunk-consent-form.js 
 !
 !
 ! General element hiding rules
@@ -1288,6 +1291,7 @@ pl##[id^="polityka-prywatnosci"]
 ##.cookies_message:not(body):not(html)
 ##.cookie-alert:not(body):not(html)
 ##.cookie-banner:not(body):not(html)
+##.cookie-consent:not(body):not(html)
 ##.cookie-disclaimer:not(body):not(html)
 ##.cookie-info:not(body):not(html)
 ##.cookie-law:not(body):not(html):not(.post-content)
