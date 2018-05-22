@@ -26,7 +26,9 @@ KAD - Przekręty | przekręty sms, oszustwa | ([Subskrybuj][KAD - Przekręty Sub
 
 `*`  Listy uzupełniające są wymagane tylko w przypadku posiadania `uBlocka Origin < 1.15.0` lub `AdGuarda` 
 
-`**` Jeżeli korzystasz z Polskich Filtrów EI, to nie dodawaj Ciasteczkowych, gdyż Polskie Filtry Ciasteczkowe są już w nich zawarte
+`**` Jeżeli korzystasz z `Polskich Filtrów Elementów Irytujących`, to nie dodawaj filtrów `Ciasteczkowych`. Ponieważ filtry Ciasteczkowe są już zawarte w filtrach Elementów Irytujących.
+
+[*Sprawdź naszą wiki aby dowiedzieć się więcej.*](https://github.com/MajkiIT/polish-ads-filter/wiki)
 
 [Polskie Filtry Subscribe]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt&title=Official%20Polish%20filters%20for%20AdBlock,%20uBlock%20Origin%20and%20AdGuard
 [Polskie Filtry Prywatności Subscribe]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/olegwukr/polish-privacy-filters/master/adblock.txt&title=Polskie%20Filtry%20Prywatności
@@ -54,5 +56,3 @@ KAD - Przekręty | przekręty sms, oszustwa | ([Subskrybuj][KAD - Przekręty Sub
 [ADB]: https://www.certyficate.it/adblock/adblock.png
 [ABP]: https://www.certyficate.it/adblock/adblock_plus.png
 [NANO]: https://www.certyficate.it/adblock/nano.png
-
-[*Sprawdź naszą wiki aby dowiedzieć się więcej.*](https://github.com/MajkiIT/polish-ads-filter/wiki)
