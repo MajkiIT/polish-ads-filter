@@ -24,7 +24,8 @@ NoCoin Filter List | skrypty wydobywające kryptowaluty, skrypty powodujące zwi
 AlleBlock | filtry do Allegro, Ceneo i OLX | ([Subskrybuj][AlleBlock Subscribe]) ([Podgląd](https://alleblock.pl/alleblock/alleblock.txt)) ([Zgłoś](https://github.com/maciejtarmas/AlleBlock/issues)) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
 KAD - Przekręty | przekręty sms, oszustwa | ([Subskrybuj][KAD - Przekręty Subscribe]) ([Podgląd](https://raw.githubusercontent.com/azet12/KAD/master/KAD.txt)) ([Zgłoś](https://github.com/azet12/KADhosts/issues)) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
 
-`*`  Listy uzupełniające są wymagane tylko w przypadku posiadania `uBlocka Origin < 1.15.0` lub `AdGuarda`
+`*`  Listy uzupełniające są wymagane tylko w przypadku posiadania `uBlocka Origin < 1.15.0` lub `AdGuarda` 
+
 `**` Jeżeli korzystasz z Polskich Filtrów EI, to nie dodawaj Ciasteczkowych, gdyż Polskie Filtry Ciasteczkowe są już w nich zawarte
 
 [Polskie Filtry Subscribe]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt&title=Official%20Polish%20filters%20for%20AdBlock,%20uBlock%20Origin%20and%20AdGuard
