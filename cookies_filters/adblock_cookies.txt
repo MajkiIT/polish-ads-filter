@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: fqlh2K1gbuKTpCSlxigdcw
+! Checksum: uY819XfLzlxUNVppVJQU3A
 ! Title: Polskie Filtry Ciasteczkowe
 ! Polish Cookies Filters
 ! Codename: Cookies
-! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności
+! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności/RODO
 ! Collaborators: F4z, xxcriticxx, blocker999, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2018052405
-! Last modified: 24 May 2018
+! Version: 201805242334
+! Last modified: Thu, 24 May 2018, 23:34:06 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2018052405 aktualizacja: czw, 24 maj 2018, 23:00:00
+! v.201805242334 aktualizacja: czw, 24 maj 2018, 23:34:06 UTC+02
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować
@@ -1069,7 +1069,6 @@ cookie-law-popup.js$script
 ||pl/wp-content/plugins/eu-cookie-law-wp-cookie-law/$script
 ||radiopoznan.fm//homepage/privacyPolicy
 ||revolweb.pl/api/flash_msg.js$script
-||rodo.agora.pl^$script
 ||rolpetrol.com.pl/cookies.js$script
 ||skryptcookies.pl^$third-party
 ||www.e-drewno.pl/stock/javascript/browser.js
@@ -1083,13 +1082,15 @@ cookie-law-popup.js$script
 ! Privacy Policy Popups
 antyweb.pl###privacy
 demotywatory.pl,fabrykamemow.pl,faktopedia.pl,piekielni.pl,mklr.pl,rebelianci.org,kotburger.pl,mistrzowie.org###pp-bg-overlay
-dobreprogramy.pl##html > head + div[id]:not(#top)
+dobreprogramy.pl##body>div[id]
 interia.pl##.rodo-popup
 komputerswiat.pl,onet.pl,newsweek.pl,fakt.pl,literia.pl,verdykt.pl,plejada.pl,forbes.pl,onetontour.pl,przegladsportowy.pl,auto-swiat.pl,ofeminin.pl,nk.pl,noizz.pl,skapiec.pl,zumi.pl,opineo.pl,medonet.pl,softonet.pl,pclab.pl,businessinsider.com.pl,targsmaku.pl,agdlab.pl,jakdojade.pl,vod.pl##.cmp-popup_popup
 naekranie.pl###modal-rodo-info, .reveal-modal-bg
+###rodo-overlay
 /_sess/rodo.js
 ||a.wpimg.pl/a/i/stg/wpjslib-chunk-consent-form.js
 ||cdn.rp.pl/rodo-agreement-popup/rodo-agreement-popup.min.js
+||rodo.agora.pl^$script
 ||std.wpcdn.pl/wpjslib/*wpjslib-chunk-consent-form.js 
 ||whitepress.pl/common/pltk/pltk.js
 !
@@ -1256,7 +1257,6 @@ pl##[id^="polityka-prywatnosci"]
 ###privacy-notice:not(body):not(html)
 ###privacy_policy
 ###privacy_policy_bar:not(body):not(html)
-###rodo-overlay
 ###showCookieInfo:not(body):not(html)
 ###showCookie:not(body):not(html)
 ###showCookie:not(body):not(html) ~ br
