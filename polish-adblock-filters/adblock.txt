@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 25 May 2018
 ! Expires: 1 day
-! Version: 2018052502
+! Version: 2018052503
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018052502 aktualizacja: ptk, 25 maja 2018, 00:25:00
+! v.2018052503 aktualizacja: ptk, 25 maja 2018, 23:15:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -849,7 +849,7 @@ fili.tv,fili.cc###links > ul:nth-of-type(1)
 films4free.pl##.M2U3OGQ4ZGY1
 filmpolski.pl##.obrazek_bez_ramki
 filmweb.pl##[id*="iframe"]
-filmweb.pl###iframe, .clickArea, .screening-content, .topBillboard, .BILLBOARD, [id^="sad_"], .clickableAdBG, #screening, [id$="_ifame"]
+filmweb.pl###iframe, .clickArea, .screening-content, .topBillboard, .BILLBOARD, [id^="sad_"], .clickableAdBG, #screening, [id$="_ifame"], #[id^="sas_"], div[class] > [href*="/click"]
 fishing-mart.com.pl##td:nth-of-type(6) > .norm11:nth-of-type(4)
 flarrow.pl##[class^="td_block_wrap td_block_text_with_title td_uid_"]
 flarrow.pl#?#.td_block_wrap:-abp-has(.td-pulldown-size:-abp-contains(Reklama))
@@ -1040,7 +1040,7 @@ grydladzieci.pl##[id^="adRechts"]
 grylogiczne.biz.pl###mmm2
 gry.misiakowo.pl##[style="width:100%;max-width:800px;overflow:auto;"] + H2
 gry.misiakowo.pl##[style$="width:346px;height:290px;"]
-gry-online.pl##.ban-fp-970x200
+gry-online.pl##.ban-fp-970x200, .if-no-baner.gp16-box-baner1
 gry-online.pl##[class$="-stopka"]
 gry-online.pl##.prom-bot
 gry-online.pl##.S016-asus-s
@@ -1238,6 +1238,7 @@ kardiolo.pl##.content-sidebar > DIV
 katalogi.pl###post_id_
 katalogsmakow.pl##.cOuterBlock-5
 katowicedzis.pl###g-sidebar > .g-grid
+katowice24.info##.inner, #text-4, #text-5
 kawerna.pl###kawerna_tapeta
 kawerna.pl###Mod138, #ja-header
 kei.pl##.img-responsive
@@ -1725,7 +1726,7 @@ ogloszenia.niedziela.nl##.banner_container, .modulebanner
 ogrodnikleszek.pl##.block-block.block.widget
 okiemrolnika.pl##.bannergroup > span
 oknonet.pl##a[href^="/openurl.php"]
-oknonet.pl###mainbaner, #AdBig
+oknonet.pl###mainbaner, #AdBig, .oknoad-news
 oknoserwis.pl##td:nth-of-type(3) > p:nth-of-type(1)
 oleole.pl##[id^="ddd_left"]
 oleole.pl##[id^="ddd_right"]
@@ -2325,7 +2326,7 @@ tarnowiak.pl##.rightb.column:nth-of-type(4)
 tarnow.in##img[src][alt^="Baner"]
 tarnow.in###text-21 > .post-header > .post-header
 tatromaniak.pl##.google-sidedrt-wrap
-techfresh.pl###banner-3
+techfresh.pl,chip.pl###banner-3
 techmaniachd.pl##a[href*="s.click.aliexpress.com"]
 techmaniachd.pl##img[src*="amazon-adsystem.com"]
 technologiczna.pl##.wpb_raw_html.wpb_content_element.wpb_raw_code:nth-of-type(2) > .wpb_wrapper
@@ -2507,7 +2508,7 @@ wakai.pl###text-html-widget-5
 wakai.pl###text-html-widget-6
 wakai.pl##.youtube-widget
 walbrzych24.com##[id^="promo"]
-warszawawpigulce.pl##.code-block-5, .eklama, #undermenu-block
+warszawawpigulce.pl##.code-block-5, .eklama, #undermenu-block, .code-block-6
 warszawiak.pl###id_C-place > section > .box-header
 warszawskagazeta.pl###section-id-1504866636717
 warszawskagazeta.pl###sppb-addon-1511188176589
@@ -3272,7 +3273,7 @@ zywiecinfo.pl##.promoted
 !12#---------------------------------Whitelists----------------------------------!
 @@||adocean-pl.hit.gemius.pl/*/url=http://sport.tvp.pl/$popup,other
 @@||adserwer.adtools.pl/Rs$script,domain=adserwer.adtools.pl
-@@/ads.js$script,domain=translatica.pl|photo.bikestats.eu
+@@/ads.js$script,domain=translatica.pl|photo.bikestats.eu|portel.pl
 @@||adtaily.pl/wp-content/themes/adtaily_*/$domain=www.adtaily.pl
 @@/advertise*.js$script,domain=cda.pl|tuba.pl
 @@/advertisingmodule.$domain=ekstraklasa.tv|itvn.pl|player.pl|ttv.pl|tvn.pl|tvn24.pl|tvn24bis.pl|tvn7.pl|tvnplayer.pl|tvnstyle.pl|tvnturbo.pl
