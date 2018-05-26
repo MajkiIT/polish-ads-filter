@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 25 May 2018
+! Last modified: 26 May 2018
 ! Expires: 1 day
-! Version: 2018052506
+! Version: 2018052601
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018052506 aktualizacja: ptk, 25 maja 2018, 23:55:00
+! v.2018052601 aktualizacja: sob, 26 maja 2018, 09:35:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -40,7 +40,7 @@ _baner/980x200
 _banery/980x200
 /banery/*980x90
 ://*.*/banery_foto/$image,domain=ki24.info|portalplock.pl|faktypilskie.pl|ddtorun.pl|ddwloclawek.pl|koronowo.net.pl|zyciesiedleckie.pl
-/banery/$image,domain=oknoserwis.pl|sps24.pl|www.chojnice.com
+/banery/$image,domain=oknoserwis.pl|sps24.pl|www.chojnice.com|usa.info.pl
 /bannery/*$image,subdocument,domain=em.kielce.pl|czasdzieci.pl|kolporter.com.pl|sklep-tvsat.hcore.pl|www.pokertexas.pl|www.walbrzych24.com|zlotoryja.info|skijumping.pl|icomp.pl|forum.cs-classic.pl|nocnygdansk.pl|wagaciezka.com|obud.pl
 /content-generator/published/frame/generate?*frameId=*&placementId=*&guid=
 /data/ap3bo6/*.gif$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
@@ -397,7 +397,7 @@ bham.pl##a[href^="http://bham.pl/sea/www/send/"]
 bham.pl###bilboard
 bham.pl##.innerbanner
 bham.pl###mainhead > div:nth-of-type(2)
-b1.pl##.header_spotted
+b1.pl##.header_spotted, .header_praca, .header_bilety, .header_podreczniki, .header_imprezy, .header_spotted, .portal_header
 bia24.pl##[class^="iframee-R"]
 bialystok.com.pl##div#showcase.w3-container
 biedronka.pl##.app-link
@@ -849,7 +849,7 @@ fili.tv,fili.cc###links > ul:nth-of-type(1)
 films4free.pl##.M2U3OGQ4ZGY1
 filmpolski.pl##.obrazek_bez_ramki
 filmweb.pl##[id*="iframe"]
-filmweb.pl###iframe, .clickArea, .screening-content, .topBillboard, .BILLBOARD, [id^="sad_"], .clickableAdBG, #screening, [id$="_ifame"], [id^="sas_"], div[class] > [href*="/click"], [src$=".html"]
+filmweb.pl###iframe, .clickArea, .screening-content, .topBillboard, .BILLBOARD, [id^="sad_"], .clickableAdBG, #screening, [id$="_ifame"], [id^="sas_"], div[class] > [href*="/click"], [src$=".html"], #skyBanner
 fishing-mart.com.pl##td:nth-of-type(6) > .norm11:nth-of-type(4)
 flarrow.pl##[class^="td_block_wrap td_block_text_with_title td_uid_"]
 flarrow.pl#?#.td_block_wrap:-abp-has(.td-pulldown-size:-abp-contains(Reklama))
@@ -868,7 +868,7 @@ forbes.pl##.hyphenate > A[href*="skapiec.pl"][id]
 forbot.pl##a[href^="https://forbot.pl/r/counter-baners.php"]
 forbot.pl##.bodyline > div:nth-of-type(3)
 forbot.pl###sidebar-right > div:nth-of-type(1)
-forbot.pl###sidebar-right > h3:nth-of-type(3)
+forbot.pl###sidebar-right > h3:nth-of-type(3), #boxA__header
 foreca.pl###topbanner
 forex-nawigator.biz###pasek_dol
 forsal.pl##.tpl_ads_adsense
@@ -907,6 +907,7 @@ forum.optymalizacja.com##[href$="utm_medium=banner"]
 forum.optymalizacja.com##.ipsBox.ipsWidget_vertical.ipsWidget
 forum.pcformat.pl##.classic.post:not([style]):not([id])
 forum.pclab.pl###messageHook
+forum.usa.info.pl##.ipsWidget_vertical:nth-of-type(1)
 forumrowerowe.org###a1ad
 forumrowerowe.org###post_id_
 forum.szafa.pl##a[href^="//agrest.pl/"]
@@ -1057,7 +1058,7 @@ gwarminska.pl##.td-header-sp-recs
 gwe24.pl##.row:nth-of-type(19) > .box-margin.col-md-12
 gwiazdor.pl###google-ad-top, .simple-ads-box
 gwiazdybasketu.pl###a20180308 > a[href^="/r.php"]
-gwint24.pl###gwint-938685755, #DIV > SMALL
+gwint24.pl###gwint-938685755, #DIV > SMALL, [id^="gwint-"] > SMALL
 hack.pl###block-block-6
 haker.com.pl,mojaolesnica.pl##body > div:nth-of-type(1)
 halamadrid.pl##a[href^="https://"] > IMG
@@ -1899,6 +1900,7 @@ pomorska.pl##.boxHeader
 pomorska.pl##figure
 pomorska.pl##.jcarousel-container.jcarousel-container-vertical
 pomorska.pl##P[style="font:normal 12px/16px Arial,Tahoma,sans-serif;margin:0;padding:6px 100px 5px 20px;color:#fff;word-wrap:break-word;"]
+pomorskiprzewodnikwedkarski.pl##.art-hmenu-extra2, #div.clearfix.art-block:nth-of-type(2), #div.clearfix.art-block:nth-of-type(4), .jmoddiv.clearfix.art-block
 pomu.pl##.Games-addLateral, .Banners-lateral
 ponapisach.pl##[class^="slide-"]
 poolska.pl###text-3
@@ -2080,7 +2082,7 @@ ringpolska.pl##.art-sidebar2.art-layout-cell > .clearfix.art-block:nth-of-type(1
 ringpolska.pl##.art-sidebar2.art-layout-cell > .clearfix.art-block:nth-of-type(2) > .art-blockcontent
 ringpolska.pl##.art-sidebar2.art-layout-cell > .clearfix.art-block:nth-of-type(3) > .art-blockcontent
 ringpolska.pl##.art-sidebar2.art-layout-cell > .clearfix.art-block:nth-of-type(6) > .art-blockcontent
-rmf24.pl##.sponsoredCont, #ContenStream
+rmf24.pl##.sponsoredCont, #ContenStream, #relatedContentList1
 rmf.fm##.intad
 rmf.fm###strip-sponsor
 rockman.com.pl##[id^="menu_banners"]
@@ -2471,7 +2473,7 @@ ulub.pl##[class^="ads_szuk"]
 ulub.pl##.right_col
 upcpm.pl##.count-clicks
 upflix.pl##.hidden-xs
-upflix.pl##.za30
+upflix.pl##.za30, .showmax-handmaid
 uploaduj.com##.guestMessage
 uploaduj.com##.UwOWM2OT
 uploaduj.net,pielegniarki.info.pl##.center-block
@@ -2527,6 +2529,7 @@ webhelp.pl###infobar > .foot:nth-of-type(3)
 webhostingtalk.pl###wht_new
 webmasteruj.pl###elComment_x
 webmasteruj.pl##[style="margin:0 auto; text-align:center; margin-bottom:5px;"]
+wedkarstwo-lublin.pl###wrap > div:nth-of-type(1), #page-footer > div:nth-of-type(2)
 weeb.tv##DIV[style="width: 800px; height: 80px; background: url(\"http://backupstatic.weeb.tv/images/weeb-1.png\") no-repeat scroll left top transparent; padding-left: 151px; padding-top: 73px; cursor: pointer;"]
 weekend.gazeta.pl##A[target="_blank"] > IMG[alt^="(fot."][src^="http://bi.gazeta.pl/"]
 weszlo.com##.bsaGridGutter
@@ -2741,7 +2744,7 @@ zagadkidladzieci.net,odmiana.net###opiekunka
 zajefajna.com##IMG[alt="Pobierz plik"]
 zajefajna.com###zajesearch > a[href^="https://tb7.pl/"]
 zakon-ac.info##.amalker.erdt-news
-zakopane.info##.addv-container
+zakopane.info##.addv-container, .tblank
 zalukaj.tv###left > a[href^="http://vshare.io/"]
 zambrowiacy.pl###sponsorbox
 zambrow.org##.adv, .slick-slide, #__cmcmedia_upid_6
