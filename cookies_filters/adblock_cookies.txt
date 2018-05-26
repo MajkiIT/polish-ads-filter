@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: v39NTjD+3sGGplmlUGNZqg
+! Checksum: b4q30tzbkpF19YIMEpzWdQ
 ! Title: Polskie Filtry Ciasteczkowe
 ! Polish Cookies Filters
 ! Codename: Cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności/RODO
 ! Collaborators: F4z, xxcriticxx, blocker999, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 201805262108
-! Last modified: Sat, 26 May 2018, 21:08:45 UTC+02
+! Version: 201805262234
+! Last modified: Sat, 26 May 2018, 22:34:24 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201805262108 aktualizacja: sob, 26 maj 2018, 21:08:46 UTC+02
+! v.201805262234 aktualizacja: sob, 26 maj 2018, 22:34:24 UTC+02
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować
@@ -1085,16 +1085,14 @@ antyweb.pl###privacy
 auto-swiat.pl###termsPopup
 certum.pl##.spu-bg, .spu-box
 demotywatory.pl,fabrykamemow.pl,faktopedia.pl,piekielni.pl,mklr.pl,rebelianci.org,kotburger.pl,mistrzowie.org,joemonster.org,komixxy.pl,retro.pewex.pl,stylowi.pl###pp-bg-overlay
+ekstraklasa.tv##.cmp-app_gdpr
 filmweb.pl##.rodo__overlay
 gazetalubuska.pl,dziennikbaltycki.pl,gs24.pl###cross-dialog
 gofin.pl###formalAgreementModal, #modalBackdrop
 gospodarkamorska.pl###rodo
-helion.pl,ebookpoint.pl,onepress.pl,sensus.pl,septem.pl,editio.pl,dlabystrzakow.pl,videopoint.pl##.rodo-accept
 homebook.pl##body > div:not(body):not(id)[style*="position: fixed;"]
 imagazine.pl##.overlay-rules
-interia.pl,pcformat.pl,esporter.pl,rmf24.pl,cdaction.pl,pokazywarka.pl,edufinanse.pl##.rodo-popup
 ipla.tv##.rodo-rules-modal
-komputerswiat.pl,onet.pl,newsweek.pl,fakt.pl,literia.pl,verdykt.pl,plejada.pl,forbes.pl,onetontour.pl,przegladsportowy.pl,auto-swiat.pl,ofeminin.pl,nk.pl,noizz.pl,skapiec.pl,zumi.pl,opineo.pl,medonet.pl,softonet.pl,pclab.pl,businessinsider.com.pl,targsmaku.pl,agdlab.pl,jakdojade.pl,vod.pl##.cmp-popup_popup
 lubimyczytac.pl###TB_window, #TB_overlay
 lublin112.pl###privacy_info_content, #privacy_info_overlay
 naekranie.pl###modal-rodo-info, .reveal-modal-bg
@@ -1102,6 +1100,10 @@ natemat.pl,aszdziennik.pl,mamadu.pl,innpoland.pl##div[class^="app_gdpr"]
 neonet.pl##.rodo-info__content, .rodo-info__overlay
 niezalezna.pl,gpcodziennie.pl/###swsoverlay, #swsmodal
 player.pl##.modal-dialog
+pl##.cmp-app_gdpr:not(body):not(html)
+pl##.rodo-accept:not(body):not(html)
+pl##.rodo-popup:not(body):not(html)
+pogodynka.pl###accept
 polskieradio.pl##.rodo-modal
 portel.pl###rodoDiv
 radiowroclaw.pl###rodoModal
@@ -1112,7 +1114,11 @@ tvp.info,tvp.pl##.tvp-covl, .tvp-covl-bg
 wnp.pl##.open.rodo
 wpolityce.pl,wgospodarce.pl,wpolsce.pl##.rhododendron-popup, .rhododendron-popup-overlay
 www.dobreprogramy.pl##body>div[id]
+!helion.pl,ebookpoint.pl,onepress.pl,sensus.pl,septem.pl,editio.pl,dlabystrzakow.pl,videopoint.pl##.rodo-accept
+!interia.pl,pcformat.pl,esporter.pl,rmf24.pl,cdaction.pl,pokazywarka.pl,edufinanse.pl##.rodo-popup
+!komputerswiat.pl,onet.pl,newsweek.pl,fakt.pl,literia.pl,verdykt.pl,plejada.pl,forbes.pl,onetontour.pl,przegladsportowy.pl,auto-swiat.pl,ofeminin.pl,nk.pl,noizz.pl,skapiec.pl,zumi.pl,opineo.pl,medonet.pl,softonet.pl,pclab.pl,businessinsider.com.pl,targsmaku.pl,agdlab.pl,jakdojade.pl,vod.pl,dreamlab.pl##.cmp-app_gdpr
 ###rodo-overlay:not(body):not(html)
+###rodo-popup:not(.fade):not(body):not(html)
 /rhododendron/css/rhododendron-popup.css$domain=wpolityce.pl|wgospodarce.pl|wpolsce.pl
 /_sess/rodo.js
 ||a.wpimg.pl/a/i/stg/wpjslib-chunk-consent-form.js
@@ -1120,6 +1126,7 @@ www.dobreprogramy.pl##body>div[id]
 ||rodo.agora.pl^$script
 ||std.wpcdn.pl/wpjslib/*wpjslib-chunk-consent-form.js 
 ||whitepress.pl/common/pltk/pltk.js
+||www.twojapogoda.pl/rodo/*$xmlhttprequest
 ||www.wroclaw.pl/portal/themes/js/script-rodo.min.js
 !
 !
