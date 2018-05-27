@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: b4q30tzbkpF19YIMEpzWdQ
+! Checksum: Yk9BSbqNU1ifdZE3n9RXhQ
 ! Title: Polskie Filtry Ciasteczkowe
 ! Polish Cookies Filters
 ! Codename: Cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności/RODO
 ! Collaborators: F4z, xxcriticxx, blocker999, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 201805262234
-! Last modified: Sat, 26 May 2018, 22:34:24 UTC+02
+! Version: 201805272054
+! Last modified: Sun, 27 May 2018, 20:54:54 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201805262234 aktualizacja: sob, 26 maj 2018, 22:34:24 UTC+02
+! v.201805272054 aktualizacja: nie, 27 maj 2018, 20:54:54 UTC+02
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować
@@ -1082,22 +1082,29 @@ cookie-law-popup.js$script
 !
 ! Privacy Policy Popups
 antyweb.pl###privacy
+autocentrum.pl##.hello-rodo
 auto-swiat.pl###termsPopup
 certum.pl##.spu-bg, .spu-box
 demotywatory.pl,fabrykamemow.pl,faktopedia.pl,piekielni.pl,mklr.pl,rebelianci.org,kotburger.pl,mistrzowie.org,joemonster.org,komixxy.pl,retro.pewex.pl,stylowi.pl###pp-bg-overlay
+durszlak.pl##.shadow.privacy-layer
+dziennikwschodni.pl##.rodo-alert
 ekstraklasa.tv##.cmp-app_gdpr
+epoznan.pl###rodo-info-box
 filmweb.pl##.rodo__overlay
-gazetalubuska.pl,dziennikbaltycki.pl,gs24.pl###cross-dialog
+gazetalubuska.pl,dziennikbaltycki.pl,gs24.pl,echodnia.eu,pomorska.pl###cross-dialog
 gofin.pl###formalAgreementModal, #modalBackdrop
 gospodarkamorska.pl###rodo
+hebe.pl##.rodo-popup_popup
 homebook.pl##body > div:not(body):not(id)[style*="position: fixed;"]
 imagazine.pl##.overlay-rules
 ipla.tv##.rodo-rules-modal
+londynek.net##.jd-rodo
 lubimyczytac.pl###TB_window, #TB_overlay
 lublin112.pl###privacy_info_content, #privacy_info_overlay
 naekranie.pl###modal-rodo-info, .reveal-modal-bg
 natemat.pl,aszdziennik.pl,mamadu.pl,innpoland.pl##div[class^="app_gdpr"]
 neonet.pl##.rodo-info__content, .rodo-info__overlay
+neosite.pl,ppe.pl,terazmuzyka.pl###rodo-overlay
 niezalezna.pl,gpcodziennie.pl/###swsoverlay, #swsmodal
 player.pl##.modal-dialog
 pl##.cmp-app_gdpr:not(body):not(html)
@@ -1106,23 +1113,25 @@ pl##.rodo-popup:not(body):not(html)
 pogodynka.pl###accept
 polskieradio.pl##.rodo-modal
 portel.pl###rodoDiv
-radiowroclaw.pl###rodoModal
+radiowroclaw.pl,radioram.pl###rodoModal
 salesmanago.pl##.popup
 telewizjarepublika.pl###swsmodal, #swsoverlay
 tesco.pl##.gdpr-cookies-inside
 tvp.info,tvp.pl##.tvp-covl, .tvp-covl-bg
+tygodnikpowszechny.pl###top_head
+wio.waw.pl##.modal-backdrop, .modal-body, #RODOCOOKIE
 wnp.pl##.open.rodo
 wpolityce.pl,wgospodarce.pl,wpolsce.pl##.rhododendron-popup, .rhododendron-popup-overlay
 www.dobreprogramy.pl##body>div[id]
 !helion.pl,ebookpoint.pl,onepress.pl,sensus.pl,septem.pl,editio.pl,dlabystrzakow.pl,videopoint.pl##.rodo-accept
 !interia.pl,pcformat.pl,esporter.pl,rmf24.pl,cdaction.pl,pokazywarka.pl,edufinanse.pl##.rodo-popup
 !komputerswiat.pl,onet.pl,newsweek.pl,fakt.pl,literia.pl,verdykt.pl,plejada.pl,forbes.pl,onetontour.pl,przegladsportowy.pl,auto-swiat.pl,ofeminin.pl,nk.pl,noizz.pl,skapiec.pl,zumi.pl,opineo.pl,medonet.pl,softonet.pl,pclab.pl,businessinsider.com.pl,targsmaku.pl,agdlab.pl,jakdojade.pl,vod.pl,dreamlab.pl##.cmp-app_gdpr
-###rodo-overlay:not(body):not(html)
 ###rodo-popup:not(.fade):not(body):not(html)
 /rhododendron/css/rhododendron-popup.css$domain=wpolityce.pl|wgospodarce.pl|wpolsce.pl
 /_sess/rodo.js
 ||a.wpimg.pl/a/i/stg/wpjslib-chunk-consent-form.js
 ||cdn.rp.pl/rodo-agreement-popup/rodo-agreement-popup.min.js
+||newonce.net/wp-content/plugins/popup-builder/javascript/jquery.sgcolorbox-min.js
 ||rodo.agora.pl^$script
 ||std.wpcdn.pl/wpjslib/*wpjslib-chunk-consent-form.js 
 ||whitepress.pl/common/pltk/pltk.js
@@ -1398,21 +1407,18 @@ pl##[id^="polityka-prywatnosci"]
 !
 ! Whitelist
 foxnews.com#@#.cookies
-google.pl#@#div[class*="cookie"]
 iculture.nl#@#[id*="cookie_"]
-letsplej.pl,telepizza.pl#@#div[class*="cookie"]
+letsplej.pl,telepizza.pl,orange.pl,google.pl,topics.nl,przenosne.pl##@#div[class*="cookie"]
 lomza.pl#@##komunikat-cookie
 lycos.de,lycos.com#@#.cookies
 norauto.pl#@#:not(input)[id*="Cookie"]
 opencraft.pl#@#[id^="topInfo"]
-orange.pl#@#div[class*="cookie"]
 orange.pl#@##cookies-info
 orange.pl#@#:not(input)[id*="Cookie"]
 orange.pl,taat.pl,bskrasnosielc.pl,iculture.nl,interhotel.pl,puma.com,bestcena.pl#@#:not(input)[id*="cookie"]
 pokemon.com#@#.cookies
 redbullmobilecollect.pl#@#[id^="polityka-prywatnosci"]
 tchibo.de#@#.cookies
-topics.nl#@#div[class*="cookie"]
 tychy.geminipark.pl#@#.privacy-policy
 @@/cookie.js$domain=socialblade.com|infoplus.com.pl|arimr.gov.pl|promedica24.com.pl|emigrantpl.com|wirtualnemedia.pl|e.dorzeczy.pl|e.wprost.pl|intel.com|cdaction.pl|katowice-airport.com|myshows.me|rze.pl|nba.com
 @@/js/jquery.cookie.min.js$domain=rozklad.pkp.pl|ubi.com
