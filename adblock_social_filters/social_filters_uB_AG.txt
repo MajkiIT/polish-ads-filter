@@ -1,11 +1,11 @@
-! Checksum: Q6v70b4iYmDoir+rbTUgjw
+! Checksum: InELICPjqT0JwJA02SuW5A
 ! Title: Polskie Filtry Społecznościowe - Uzupełnienie do uBlocka i AdGuarda
 ! Polish Social Filters - Supplement for uBlock & AdGuard
 ! Codename: Social - Supplement
 ! Collaborators: blocker999, hawkeye116477, F4z
 ! Homepage: https://www.certyficate.it/
-! Version: 201805251632
-! Last modified: Fri, 25 May 2018, 16:32:18 UTC+02
+! Version: 201805281421
+! Last modified: Mon, 28 May 2018, 14:21:43 UTC+02
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,7 +13,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201805251632 aktualizacja: pią, 25 maj 2018, 16:32:18 UTC+02 
+! v.201805281421 aktualizacja: pon, 28 maj 2018, 14:21:43 UTC+02 
 !
 !
 ! Popupy
@@ -34,10 +34,12 @@ sprawnymarketing.pl##.blur:style(filter: none !important;)
 4free.waw.pl###spolecznosci:style(height: auto !important;)
 bankobranie.blogspot.com###sideSocial:style(height: auto !important;)
 rynek-kolejowy.pl##.sledzNasContainer > .zawartoscBox:style(height: auto !important;)
+wp.pl##.article > [class]:has(>[class] > .fb-like)
 !
 !
 ! Widgety - specjalne instrukcje
 !#if !cap_user_stylesheet
 gadzetomania.pl,fotoblogia.pl,komorkomania.pl,autokult.pl##a[href^="https://www.facebook.com/sharer.php"], [href^="http://twitter.com/intent/tweet"], [href^="http://pinterest.com/pin/create/link/"]:style(visibility: hidden !important;)
 gadzetomania.pl,fotoblogia.pl,komorkomania.pl,autokult.pl##.link-facebook, .link-youtube, .link-gplus, .link-instagram, .icon-mail:style(visibility: hidden !important;)
+wp.pl,~www.wp.pl###app > div > table > tbody > tr:nth-child(1) > td > div > div > div > div > div > div > div > article > div > div > div > div[hidden]:style(position: absolute !important; left: -3000px !important;)
 !#endif

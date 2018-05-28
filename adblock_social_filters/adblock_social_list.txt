@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Checksum: MG6ep1B9UX9r8C/xd4iyBg
+! Checksum: F2ThOdIQphr9oe1FZV5rug
 ! Title: Polskie Filtry Społecznościowe
 ! Polish Social Filters
 ! Codename: Social
@@ -7,8 +7,8 @@
 ! Required: Do poprawnego działania wymagana jest lista Fanboy's Social Blocking List!
 ! Collaborators: blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV
 ! Homepage: https://www.certyficate.it/
-! Version: 201805272054
-! Last modified: Sun, 27 May 2018, 20:54:53 UTC+02
+! Version: 201805281421
+! Last modified: Mon, 28 May 2018, 14:21:41 UTC+02
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201805272054 aktualizacja: nie, 27 maj 2018, 20:54:53 UTC+02 
+! v.201805281421 aktualizacja: pon, 28 maj 2018, 14:21:41 UTC+02 
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować
@@ -43,6 +43,7 @@ pl##.facebook-bn_site-overlay
 pl##.facebook-popup
 telewizja-cyfrowa.com,znaczkijakrobaczki.pl##.ppsPopupFbLikeShell, #ppsPopupBgOverlay
 wakacjezprocentem.pl##.overlay
+winicjatywa.pl##h2:nth-of-type(3)
 /wp-content/plugins/dc-facebook-like-box-popup-increase-facebook-fans/
 /wp-content/plugins/facebook-likebox-responsive-slider/templates/assets/js/facebook_likebox_slider.min.js
 /wp-content/plugins/popups/public/assets/js/min/public-min.js$domain=programistanaswoim.pl
@@ -57,17 +58,51 @@ wakacjezprocentem.pl##.overlay
 ||zalajkowane.pl/wp-content/plugins/custom-fan-gate-plugin/js/custom-fan-gate.js 
 !
 !
-! Widgety
+! Ogólne reguły blokujące
+/INSTA.
+/Twitter_ico
+/bannerfb
+/bgfb
+/btnartwrzuta
+/btnfb
+/btn-art-wrzuta
+/btn-fb
+/facebookf
+/facebookikona
+/facebook_white
+/flickr_ico
+/f_fb.
+/f_tw.
+/google_small.
+/gplusico.
+/iconfackbook
+/icontwitter
+/icon_yt_
+/ico_g
+/in.
+/ins.
+/inst.
+/instagram_logo
+/i_fb.
+/i_ins.
+/i_li.
+/i_tw.
+/logoYTsmal
+/logo_fb_r
+/naszaklasa
+/nk_button
+/polub
+/radio_sprite
+/snfacebooklike
+/socialBox2
+/spiritimg
+/tw.
+/twitter-icon.
+/twitter_white
+/yt. 
 !
 !
-! Blokowanie elementów po zastosowaniu generichide
-fakt.pl##.socialButtons
-filmweb.pl##.fb-share-button
-istotne.pl###social_buttons
-potplayerclub.pl##.social-icon-wrapper, .social-icon-wrapper-pie 
-!
-!
-! Reguły ogólne
+! Ogólne reguły ukrywające
 pl##.FBButton
 pl##.Facebook
 pl##.Instagram
@@ -650,47 +685,6 @@ pl##[id^="nk_fajne"]
 ##.social-float-bar
 ##.social_widgets
 ##.yt_foot
-/INSTA.
-/Twitter_ico
-/bannerfb
-/bgfb
-/btnartwrzuta
-/btnfb
-/btn-art-wrzuta
-/btn-fb
-/facebookf
-/facebookikona
-/facebook_white
-/flickr_ico
-/f_fb.
-/f_tw.
-/google_small.
-/gplusico.
-/iconfackbook
-/icontwitter
-/icon_yt_
-/ico_g
-/in.
-/ins.
-/inst.
-/instagram_logo
-/i_fb.
-/i_ins.
-/i_li.
-/i_tw.
-/logoYTsmal
-/logo_fb_r
-/naszaklasa
-/nk_button
-/polub
-/radio_sprite
-/snfacebooklike
-/socialBox2
-/spiritimg
-/tw.
-/twitter-icon.
-/twitter_white
-/yt.
 !
 !
 ! Specyficzne reguły ukrywające
@@ -742,6 +736,7 @@ anime24.pl##.panel:nth-of-type(3)
 animes.pl##div:nth-of-type(2) > .button
 animes.pl###ougcannbars_bar_1
 animes.pl##.register:nth-of-type(3)
+animezone.pl##div.desktop.panel-default.panel:nth-of-type(1)
 anime-centrum.pl##.button-social-1
 ankieterka.pl###facebook2_2
 anna-urbanska.pl###sfsi-widget-2, .wdi_instagram_widget
@@ -781,6 +776,7 @@ autonom.pl###custom_html-3
 autonom.pl###text-7
 autorskielegalnie.pl###text-10, #menu-menu-2-dol > .menu-item-644.menu-item-object-custom.menu-item-type-custom.menu-item, .menu-item-620.menu-item-object-custom.menu-item-type-custom.menu-item
 auto-mobil.pl##.f-icon-2, .f-icon-3, .f-icon-4
+avast.com##.social-icons > a.bi-link:nth-child(-n+5)
 avlab.pl##li:nth-child(-n+3) > .ext
 a-o.ninja##.alert-info
 b365.pl###box_custom36
@@ -833,6 +829,7 @@ biznesfinder.pl##.sharing-toolbox > ul > li:nth-child(-n+5)
 biznesomania.com.pl###wp_my_plugin-4
 biznes-host.pl##.col-md-2 > p:nth-of-type(1)
 blasty.pl##.ips_image_share
+blink.pl##div.col-md-2:nth-of-type(1) > p:nth-of-type(1)
 blip.pl##.footer-nav.fluid-200.col-xs-6.col-md-2:nth-of-type(4)
 bliskopolski.pl##.sub-navigation
 blogierka.pl###facebook_like_widget-3
@@ -903,6 +900,7 @@ citroen.pl##.column_50.columns:nth-of-type(2)
 ci-polsat.pl##.pane-block-21.pane-block.panel-pane
 ci-polsat.pl##.promo:nth-of-type(2) > .inner > .content
 ckm.pl##.facebook-aside.widget
+ckm.pl##.social-link-item
 ckz.pl##a[href="#"]:nth-of-type(n+2):nth-of-type(-n+3) > .use-hover.shortcode.icon
 ckz.pl##div[id*="wpv-column-"] > p > a[href="#"]:nth-of-type(1) > .use-hover.shortcode.icon
 club-sound.pl###gbgpPanelWidget
@@ -910,6 +908,7 @@ coccodrillo.eu###socialFlyBox
 cocomoda.pl##h4:nth-of-type(2)
 cocomoda.pl##.banner_small_right
 cocomoda.pl##.icons_footer_top
+coinforum.pl##div.statistics.sidebar-widget:nth-of-type(1)
 columbusenergy.pl##.menu-second > .margin > .social, .clear-fix.row, .dark-box:nth-of-type(1)
 comel-it.com##.fa-facebook
 comparic.pl##a[href="https://twitter.com/comparic"]
@@ -938,6 +937,7 @@ csopole.eu##.ipsBox.ipsWidget_vertical.ipsWidget:nth-of-type(5)
 cssetti.pl##h4:nth-of-type(3)
 cs-escape.pl##.ipsBox.ipsWidget_vertical.ipsWidget:nth-of-type(3)
 cud.rzeszow.pl###pwebbox104, .youtube
+cybersport.pl##.footer-right-top
 cyfrowydoradca.pl##.rt-grid-4:nth-of-type(2) > .borderleft.rt-block > .module-surround > .module-content > .customborderleft
 cyfrowypolsatnews.pl##a[href="https://plus.google.com/113231559080328863312"]
 cyfrowypolsatnews.pl##a[href="https://twitter.com/cp_news_"]
@@ -1049,6 +1049,7 @@ elotek.pl##img[src="/static/zjvc3cdU7gfA0QJSMJ4gM7973JRKbn1YS34uItxVCGM.png"]
 elportal.pl###rfb_widget-2
 elportal.pl###text-4
 elubaczow.com###text-34, #text-35
+emisja.tv##.header-signbtn
 empik.com##.empikFooter__social
 em.kielce.pl###socialico > ul
 em.kielce.pl##.module_prawa:nth-of-type(1)
@@ -1192,6 +1193,7 @@ gry-online.pl##.mnu-ico-yt
 gry-online.pl#?#.tekst-ramka-blue:-abp-contains(Facebook)
 gry-online.poszkole.pl###fb_slide
 gs24.pl###prawa-kolumna > .blok:nth-of-type(1)
+gsmonline.pl##div.col-lg-2.col-sm-4.col-12:nth-of-type(2)
 gtasite.net##a[href="http://plus.google.com/111659073636889323211"]
 gumtree.pl##.icon-seo-facebook, .icon-seo-gmailplus, .icon-seo-twitter, .icon-seo-pinterest
 guzik.konin.pl##a[href="https://pl-pl.facebook.com/GUZIK.systemy.informatyczne/"]
@@ -1211,9 +1213,11 @@ hej.mielec.pl##a[href^="http://blip.pl/dashboard"]
 hej.mielec.pl##.divPageCol2 > .divWindowTitle:nth-of-type(6)
 hej.mielec.pl##.divSecondaryContentsShell > .divOpisCnt:nth-of-type(2)
 hej.mielec.pl##.embedly-card
+hellozdrowie.pl##.fbCount
 hellozdrowie.pl##.wrapSocialBox
 hes.pl##a[href="https://www.facebook.com/hes.wroclaw/"]
 hifiphilosophy.com###wysuwane
+highlab.pl###custom_html-4
 hipcio.sklep.pl##a[href="https://www.facebook.com/hipciosklep"]
 histmag.org##.commented-widget:nth-of-type(7)
 histografy.pl###text-2
@@ -1245,6 +1249,7 @@ infogram.com##a[href="https://www.facebook.com/infogramApp"]
 infogram.com##a[href="https://www.linkedin.com/company/infogram"]
 infogram.com##.lc_fb, .lc_gp
 infomech.pl##.social_ico
+infoplanet.pl##.aside-header
 infoplanet.pl##.left-fixed, .footer-fanpages, .footer-header
 info.wiara.pl##.txt__social
 ingbank.pl##.footer_icons
@@ -1281,6 +1286,7 @@ jsystems.pl##h4:nth-of-type(2)
 jsystems.pl##ul:nth-of-type(2) > li > [href="blog/index.html"]
 jsystems.pl##[href="https://pl-pl.facebook.com/JSystems.szkolenia/"]
 kabeltv.pl##.sidebar-widget:nth-of-type(3)
+kajto.pl##.sidebar.span3
 kalendarzrolnikow.pl##.bt-fc
 kalendarz.onet.pl, poczta.onet.pl##.ico-facebook
 katowicedzis.pl##.g-social
@@ -1299,6 +1305,7 @@ kodiwpigulce.pl##.footer-sidebar.sidebar:nth-of-type(4)
 kodi.org.pl##.pweb-theme-fbnavy
 kolorowankionline.net###sgcboxWrapper
 komentuj24.pl##center
+komorkomania.pl##.post-article-links__header > strong
 komorkomat.pl##.social
 komorkomat.pl##.hidden-sm.hidden-xs.social_kontener
 komorkomat.pl##.widget_text.col-md-3:nth-of-type(4) > .widgettitle
@@ -1309,6 +1316,7 @@ kontakty.onet.pl##.icon-basic-menu-facebook
 kopalniawiedzy.pl##.ui-helper-clearfix.box.articles:nth-of-type(4)
 korso.pl##.sbuttons.list-inline.list-unstyled > li:nth-of-type(4)
 kosmetykizameryki.pl##.insta-top
+kosmicznapropaganda.pl##.themewing_instagram_widget
 kosmicznapropaganda.pl,movieway.pl,cryptodemy.pl,xn--soikowo-njb.pl##.widget_fbw_id
 kosmonautyka.pl##tr:nth-of-type(3)
 koszalininfo.pl###text-4
@@ -1479,6 +1487,7 @@ myownconference.pl##a[href^="https://www.linkedin.com/company/4865021"]
 myphone.pl##.clearGroup.fLeft
 mzk-ostrow.com.pl##p:nth-child(n+59)
 m.se.pl##.social.row
+m.superbiz.se.pl##.social
 nadrapaku.pl###HTML1, #HTML2
 naekranie.pl###social-fans
 naekranie.pl##.addthis_responsive_sharing
@@ -1570,6 +1579,7 @@ otomoto.pl##.social-network
 outsourcingportal.eu,nafciarze.info##.social
 overwatch.pl##.mks_button_medium
 overwatch.pl,bfhpolska.pl,polscygracze.pl,fortnitepolska.pl##.mks_button_small
+o-m.pl###T1, .znajdz-nas
 paczka-wiedzy.pl###text-7
 padokoweswiry.pl##.elementor-divider, .elementor-social-icons-wrapper, .fadeIn.elementor-widget-wp-widget-custom_html.elementor-element > .elementor-widget-container > h5
 paleosmak.pl##.likebox
@@ -1674,6 +1684,7 @@ polvision.com##.foot_search_share
 polygamia.pl###polysocial
 polygamia.pl###sidebar-footer-top
 pomagam.pl##.og-share.bg-color-fb.btn-icon-inherit.btn, .tweet.bg-color-tw.btn-icon-inherit.btn.js-twt
+pompateam.pl##div.col-sm-5.col-md-5.col-lg-5:nth-of-type(4)
 pomyslnawszystko.pl##.widget_ffpw_social
 poradnikprzedsiebiorcy.pl##.col-md-6
 poranny.pl###prawa-kolumna > .blok:nth-of-type(4) > .row
@@ -1719,6 +1730,7 @@ przegladbaltycki.pl###rum_sst_tab
 przegladpiaseczynski.pl###Mod106
 przegladsportowy.pl##.fb_share
 przemocnc.pl##.simplesocialbuttons
+przenosne.pl##.sm_link
 przewodnikduchowy.pl##.well:nth-of-type(1)
 przewodnik-katolicki.pl##.pozycje-menu, .social-stopka, .strefa-social, .fb-comments
 przyslijprzepis.pl##a[href="https://www.youtube.com/przyslijprzepis"]
@@ -1968,6 +1980,7 @@ tm-serwis.pomorze.pl##.fblogin
 together-razem.org##.item-222
 torebunia.pl##.fb-login-button
 tosieoplaca.pl##.et_section_regular.et_pb_section_6.et_pb_section
+totylkoteoria.pl##.top-comment-widget-menu, #Image2
 tradingjam.pl##.twitter-timeline-profile, #twitter-timeline-profile-2
 traftu.pl##.social > span
 transfery.info##.blok:nth-of-type(3)
@@ -2195,6 +2208,7 @@ zdrowie.tvn.pl##.l-page__footer-label
 zegarkiipasja.pl##.gl-white-background:nth-of-type(4)
 zegarkiipasja.pl##.m-t-20.m-b-20.col-sm-6.col-xs-12
 zegarkiipasja.pl##.top-menu > .hidden-xs
+zenbox.pl##.social
 zeropln.antyweb.pl##.xs\:mb-8.xs\:items-center.xs\:flex.xs\:mr-0.xs\:w-full.text-center.mr-8.w-24
 zielonearkady.com.pl##.button_yt, .button_insta, .find_us_name, .find_us_content
 zlece.pl###sledz-nas
@@ -2202,6 +2216,7 @@ zmianynaziemi.pl##.service-links--pl-wykop, .service-links--pl-sledzik
 zoom.idg.com.pl##a[href="https://twitter.com/IDG_Poland"]
 zoom.idg.com.pl##.social_con
 ztm.waw.pl##img[src="http://www.ztm.waw.pl/download/bannerZalacznik/302_bannery99.png"]
+ztm.waw.pl###Facebook, #Tweeter, #YouTube
 zuzelend.com###login_facebook
 zyciepabianic.pl###facebook
 !
@@ -2313,9 +2328,17 @@ zyciepabianic.pl###facebook
 ||zpazurem.pl/images/layout/icons/printerest-medium.png
 !
 !
+! Blokowanie elementów po zastosowaniu generichide
+fakt.pl##.socialButtons
+filmweb.pl##.fb-share-button
+istotne.pl###social_buttons
+potplayerclub.pl##.social-icon-wrapper, .social-icon-wrapper-pie 
+!
+!
 ! Bugi Fanboy's Social Blocking List
 alilove.pl#@#.footer-social-wrap
 alilove.pl#@#.td-social-icon-wrap
+avast.com#@#.social-icons
 edunews.pl#@#.custom-social-buttons
 greencanoe.pl#@#.social-links
 lublin112.pl#@##social-icon
