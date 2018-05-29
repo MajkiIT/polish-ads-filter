@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: 5vLVDUJXOumcrBWEKeN8dA
+! Checksum: jJGgkJw3PVqtLDvVTADVwQ
 ! Title: Polskie Filtry Ciasteczkowe
 ! Polish Cookies Filters
 ! Codename: Cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności/RODO
 ! Collaborators: F4z, xxcriticxx, blocker999, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 201805282233
-! Last modified: Mon, 28 May 2018, 22:33:50 UTC+02
+! Version: 201805291233
+! Last modified: Tue, 29 May 2018, 12:33:12 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201805282233 aktualizacja: pon, 28 maj 2018, 22:33:50 UTC+02
+! v.201805291233 aktualizacja: wto, 29 maj 2018, 12:33:12 UTC+02
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować
@@ -41,6 +41,7 @@ adwokatrozycka.pl,cad2cad.com,greensteam.pl,kacperkowalski.pl,metronic.com.pl,np
 agatahome.pl##[id^="jbar"]
 akademia-piwa.pl##div#polityka_tekst
 alipaczka.pl###bottom-charm
+allegro.pl##div[data-box-name="cookie policy"]
 allekoszyk.pl##DIV[style="position:fixed;bottom:0;background-color:white;width:100%;padding-left:10px;font-size:12px;"]
 alles-bhp.pl,greattrade.pl,szkolnaspizarnia.pl,urwisy2.pl###contGlowny > div:not([id]):not([class])[style*="position"][style*="fixed"]
 allplay.pl,ammoffice.pl,androidmagazine.pl,biuletyn.net,blog.j-labs.pl,bptour.pl,cmjordan.krakow.pl,czasdzieci.pl,edk.org.pl,eneva.pl,faktopedia.pl,galeria-dominikanska.pl,gosc.pl,komixxy.pl,kotburger.pl,puls.hedrych.pl,sigatech.pl,strzelnicabojowa.pl,yorkedukacja.pl,zamakmercator.pl,zamow-myjnie.pl,mototube.pl,pudliszki.pl,miechow.eu,culturapoloneza.ro##body > div:not([id]):not([class])[style*="position"][style*="fixed"]
@@ -1083,6 +1084,7 @@ cookie-law-popup.js$script
 !
 !
 ! Popupy - polityka prywatności/RODO
+allegro.pl##div[data-box-name="allegro.rodoConsentModal"]
 antyweb.pl###privacy
 astar.czest.pl##.lean-overlay
 autocentrum.pl##.hello-rodo
@@ -1105,7 +1107,7 @@ homebook.pl##body > div:not(body):not(id)[style*="position: fixed;"]
 imagazine.pl##.overlay-rules
 ipla.tv##.rodo-rules-modal
 jelonka.com##.prywatnosc
-kochamwroclaw.pl##.ginger_banner
+kochamwroclaw.pl###tfade, #cwv3_dialog, #tlight, .dialog-overlay, #surbma-yes-no-popup
 londynek.net##.jd-rodo
 lotto.pl###klauzula_informacyjna_nakladka
 lubimyczytac.pl###TB_window, #TB_overlay
@@ -1143,8 +1145,13 @@ www.dobreprogramy.pl##body>div[id]
 ###rodo-popup:not(.fade):not(body):not(html)
 /rhododendron/css/rhododendron-popup.css$domain=wpolityce.pl|wgospodarce.pl|wpolsce.pl
 /_sess/rodo.js
+||assets.allegrostatic.com/opbox-rodo-consent-modal/index*.css$domain=allegro.pl
+||assets.goldenline.io/assets/user/profilingAgreement.*.js
 ||a.wpimg.pl/a/i/stg/wpjslib-chunk-consent-form.js
 ||cdn.rp.pl/rodo-agreement-popup/rodo-agreement-popup.min.js
+||cookie.avt.pl/cookie-noscript
+||kochamwroclaw.pl/wp-content/plugins/surbma-yes-no-popup/css/styles.css
+||kochamwroclaw.pl/wp-content/plugins/wp-terms-popup/assets/popup-style.css
 ||newonce.net/wp-content/plugins/popup-builder/javascript/jquery.sgcolorbox-min.js
 ||rodo.agora.pl^$script
 ||std.wpcdn.pl/wpjslib/*wpjslib-chunk-consent-form.js 
@@ -1261,6 +1268,7 @@ pl##[id^="polityka-prywatnosci"]
 ###cookieBox:not(body):not(html)
 ###cookieContent
 ###cookieInfoBox:not(body):not(html)
+###cookieInfoMsgOuter:not(body):not(html)
 ###cookieInfoMsgWrapper:not(body):not(html)
 ###cookieInfo:not(body):not(html)
 ###cookieMessageContainer:not(body):not(html)
@@ -1454,6 +1462,8 @@ gg.pl#@#body > div:nth-of-type(2) > div
 !
 ! Wyjątki
 foxnews.com#@#.cookies
+gdansk.pl#@##cookies:not(body):not(html):not(.section)
+gdansk.pl#@#:not(input)[id*="cookie"]
 gokf.gda.pl#@##cookies:not(body):not(html):not(.section)
 iculture.nl#@#[id*="cookie_"]
 letsplej.pl,telepizza.pl,orange.pl,google.pl,topics.nl,przenosne.pl##@#div[class*="cookie"]
@@ -1468,6 +1478,7 @@ pokemon.com#@#.cookies
 redbullmobilecollect.pl#@#[id^="polityka-prywatnosci"]
 tchibo.de#@#.cookies
 tychy.geminipark.pl#@#.privacy-policy
+wsensie.pl,wsensie.tv#@#.policy-box:not(body):not(html)
 @@/cookie.js$domain=socialblade.com|infoplus.com.pl|arimr.gov.pl|promedica24.com.pl|emigrantpl.com|wirtualnemedia.pl|e.dorzeczy.pl|e.wprost.pl|intel.com|cdaction.pl|katowice-airport.com|myshows.me|rze.pl|nba.com
 @@/js/jquery.cookie.min.js$domain=rozklad.pkp.pl|ubi.com
 @@/plugins/uk-cookie-consent/assets/js/uk-cookie-consent-js.js$script,domain=escaperooms.pl|xboxarcade.pl|naziemna.info|3dwpraktyce.pl|tvs.pl|przegladbaltycki.pl|wypowiadamoc.pl
