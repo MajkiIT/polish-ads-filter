@@ -29,17 +29,9 @@
 
 3. zainstaluj dodatek
 
-4. wejdź w link
+4. po pobraniu zainstaluj dodatek wybierając zaawansowaną opcje `zainstaluj dodatek z pliku` znajdującą się w panelu dodatków `about:addons` przeglądarki firefox
 
-<ul>
-
-<code>https://github.com/MajkiIT/polish-ads-filter/tree/master/nano_defender</code>
-
-</ul>
-
-5. po pobraniu zainstaluj dodatek wybierając zaawansowaną opcje `zainstaluj dodatek z pliku` znajdującą się w panelu dodatków `about:addons` przeglądarki firefox
-
-6. pamiętaj aby regularnie instalować nowszą wersje dodatku Nano Defender, ponieważ firefox nie obsługuje jego automatycznej aktualizacji
+5. pamiętaj aby regularnie instalować nowszą wersje dodatku Nano Defender, ponieważ firefox nie obsługuje jego automatycznej aktualizacji
 
 ### aby zainstalować nano defender z ublockiem origin
 
