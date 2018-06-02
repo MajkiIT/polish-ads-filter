@@ -46,6 +46,7 @@
 ```
 userResourcesLocation https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoResources.txt
 ```
+
 ![img-2](https://i.imgur.com/hoxZwxz.png)
 
 7. kliknij przycisk "Zastosuj zmiany"
@@ -55,10 +56,12 @@ userResourcesLocation https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/Na
 9. włącz filtr "Adblock Warning Removal List" 
 
 10. zasubskrubuj poniższe listy filtrów:
+
 <code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt</code>
 <code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoBase.txt</code>
 <code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoWhitelist.txt</code>
 <code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoAnnoyance.txt</code>
+
 ![img-3](https://i.imgur.com/Mni0JPe.png)</details>
 
 11. kliknij przycisk "Zastosuj zmiany"
