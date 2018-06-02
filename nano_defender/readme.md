@@ -64,7 +64,7 @@ userResourcesLocation https://raw.githubusercontent.com/NanoAdblocker/NanoFilter
 
 8. wejdź w zakładkę "Listy filtrów"
 
-9. zaznacz filtr "Adblock Warning Removal List" 
+9. włącz filtr "Adblock Warning Removal List" 
 
 10. zasubskrubuj poniższe listy filtrów:
 <code>https://raw.githubusercontent.com/jspenguin2017/uBlockProtector/master/uBlockProtectorList.txt</code>
