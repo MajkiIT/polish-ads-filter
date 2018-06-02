@@ -69,10 +69,6 @@ userResourcesLocation https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/Na
 
 </ul>
 
-11. kliknij przycisk "Zastosuj zmiany"
-
-12. kliknij przycisk "Aktualizuj teraz"
-
 ### aby zasubskrybować dodatkowe listy wejdź tutaj
 
 <code>https://github.com/MajkiIT/polish-ads-filter#about</code>
