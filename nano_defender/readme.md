@@ -59,13 +59,13 @@ userResourcesLocation https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/Na
 
 <ul>
 
-[<code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt</code>][NanoDefender]
+([Subskrybuj][NanoDefender]) <code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt</code>
 
-[<code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoBase.txt</code>][NanoBase]
+([Subskrybuj][NanoBase]) <code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoBase.txt</code>
 
-[<code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoWhitelist.txt</code>][NanoWhitelist]
+([Subskrybuj][NanoWhitelist]) <code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoWhitelist.txt</code>
 
-[<code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoAnnoyance.txt</code>][NanoAnnoyance]
+([Subskrybuj][NanoAnnoyance]) <code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoAnnoyance.txt</code>
 
 </ul>
 
