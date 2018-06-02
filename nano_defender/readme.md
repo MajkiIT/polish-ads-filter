@@ -27,9 +27,9 @@
 
 2. pobierz dodatek
 
-2. zainstaluj dodatek
+3. zainstaluj dodatek
 
-3. wejdź w link
+4. wejdź w link
 
 <ul>
 
@@ -37,9 +37,9 @@
 
 </ul>
 
-4. po pobraniu zainstaluj dodatek wybierając zaawansowaną opcje `zainstaluj dodatek z pliku` znajdującą się w panelu dodatków `about:addons` przeglądarki firefox
+5. po pobraniu zainstaluj dodatek wybierając zaawansowaną opcje `zainstaluj dodatek z pliku` znajdującą się w panelu dodatków `about:addons` przeglądarki firefox
 
-5. pamiętaj aby regularnie instalować nowszą wersje dodatku Nano Defender, ponieważ firefox nie obsługuje jego automatycznej aktualizacji
+6. pamiętaj aby regularnie instalować nowszą wersje dodatku Nano Defender, ponieważ firefox nie obsługuje jego automatycznej aktualizacji
 
 ### aby zainstalować nano defender z ublockiem origin
 
