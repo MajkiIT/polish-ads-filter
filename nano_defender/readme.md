@@ -44,7 +44,7 @@
 
 6. zmień wartość `userResourcesLocation unset` na 
 ```
-userResourcesLocation https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoResources.txt
+userResourcesLocation https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoResources.txt
 ```
 ![img-2](https://i.imgur.com/hoxZwxz.png)
 
@@ -55,10 +55,10 @@ userResourcesLocation https://raw.githubusercontent.com/NanoAdblocker/NanoFilter
 9. włącz filtr "Adblock Warning Removal List" 
 
 10. zasubskrubuj poniższe listy filtrów:
-<code>https://raw.githubusercontent.com/jspenguin2017/uBlockProtector/master/uBlockProtectorList.txt</code>
-<code>https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoBase.txt</code>
-<code>https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoWhitelist.txt</code>
-<code>https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoTimer.txt</code>
+<code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt</code>
+<code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoBase.txt</code>
+<code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoWhitelist.txt</code>
+<code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoAnnoyance.txt</code>
 ![img-3](https://i.imgur.com/Mni0JPe.png)</details>
 
 11. kliknij przycisk "Zastosuj zmiany"
