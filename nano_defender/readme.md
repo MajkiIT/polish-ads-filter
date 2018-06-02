@@ -69,10 +69,9 @@ userResourcesLocation https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/Na
 
 </ul>
 
-### aby zasubskrybować dodatkowe listy wejdź tutaj
+### aby subskrybować dodatkowe listy wejdź tutaj
 
 <code>https://github.com/MajkiIT/polish-ads-filter#about</code>
-
 
 [NanoDefender]: https://subscribe.adblockplus.org/?location=https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt&title=Nano%20Defender%20Integration
 [NanoBase]: https://subscribe.adblockplus.org/?location=https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoBase.txt&title=Nano%20filters
