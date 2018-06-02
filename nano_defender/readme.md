@@ -33,7 +33,7 @@
 
 1. zainstaluj ublock origin wraz z nano defenderem
 
-2. wejdź w opcje rozszerzenia ublock origin
+2. wejdź w opcje dodatku ublock origin
 
 3. wejdź w zakładkę "Ustawienia"
 
