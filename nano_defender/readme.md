@@ -58,8 +58,11 @@ userResourcesLocation https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/Na
 10. zasubskrubuj poniższe listy filtrów:
 
 ([Subskrybuj][NanoDefender]) <code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt</code>
+
 ([Subskrybuj][NanoBase]) <code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoBase.txt</code>
+
 ([Subskrybuj][NanoWhitelist]) <code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoWhitelist.txt</code>
+
 ([Subskrybuj][NanoAnnoyance]) <code>https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoAnnoyance.txt</code>
 
 11. kliknij przycisk "Zastosuj zmiany"
