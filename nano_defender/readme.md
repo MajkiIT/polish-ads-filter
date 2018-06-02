@@ -6,8 +6,12 @@
 
 1. wejdź w poniższe linki
 
+<ul>
+
 <code>https://chrome.google.com/webstore/detail/nano-adblocker/gabbbocakeomblphkmmnoamkioajlkfo</code>
 <code>https://chrome.google.com/webstore/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb</code>
+
+</ul>
 
 2. zainstaluj obydwa dodatki
 
@@ -15,7 +19,11 @@
 
 1. wejdź w link
 
+<ul>
+
 <code>https://github.com/krystian3w/NanoDefenderFirefox/releases</code>
+
+</ul>
 
 2. pobierz dodatek
 
@@ -23,7 +31,11 @@
 
 3. wejdź w link
 
+<ul>
+
 <code>https://github.com/MajkiIT/polish-ads-filter/tree/master/nano_defender</code>
+
+</ul>
 
 4. po pobraniu zainstaluj dodatek wybierając zaawansowaną opcje `zainstaluj dodatek z pliku` znajdującą się w panelu dodatków `about:addons` przeglądarki firefox
 
