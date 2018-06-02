@@ -55,7 +55,7 @@ userResourcesLocation https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/Na
 
 9. włącz filtr "Adblock Warning Removal List" 
 
-10. zasubskrubuj poniższe listy filtrów:
+10. zasubskrubuj poniższe listy filtrów
 
 <ul>
 
