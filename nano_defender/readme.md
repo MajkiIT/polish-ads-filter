@@ -42,7 +42,7 @@
 5. kliknij w ikonkę trzech trybików
 ![img-1](https://i.imgur.com/4fOOUO8.png)
 
-6. zmień wartość `userResourcesLocation unset` na 
+6. wartość `userResourcesLocation unset` zmień na 
 ```
 userResourcesLocation https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoResources.txt
 ```
