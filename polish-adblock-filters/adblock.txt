@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 2 June 2018
+! Last modified: 3 June 2018
 ! Expires: 1 day
-! Version: 2018060202
+! Version: 2018060301
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018060202 aktualizacja: sob, 2 czerwca 2018, 13:50:00
+! v.2018060301 aktualizacja: nie, 3 czerwca 2018, 13:20:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -103,7 +103,7 @@ vshare.io###sendif
 !8#------------------------General element hiding rules-------------------------!
 ###a_201
 ###a_d_billboard
-##.adexonModule
+##.adexonModuleportel.pl
 ###ad_gora_srodek
 ##.ad_Handle
 ##.adoceanGora1Wrapper
@@ -117,6 +117,7 @@ vshare.io###sendif
 ##.advert
 ##.advertisment-panel
 ##.a-d-v-i
+##.boxAdv
 ##.adviewDFPBanner
 ##a[href*="adnow.com/click"]
 ##a[href*="bbelements.com/please/"]
@@ -2015,6 +2016,7 @@ pudelek.tv,wp.tv,interaktywnie.com##[src^="http://adv.wp.pl"]
 pukawka.pl##.partnerzy
 pultusk24.pl##.row:nth-of-type(11)
 pultusk24.pl##.row:nth-of-type(7)
+pultusk24.pl##div.row:nth-of-type(3)
 purepc.pl##a[href^="https://www.purepc.pl/r3dir.php"]
 purepc.pl##DIV > A[href^="http"][style^="display:block;"]
 pykownia.pl##.ipsWidget:nth-of-type(8)
@@ -3291,7 +3293,7 @@ zywiecinfo.pl##.promoted
 !12#---------------------------------Whitelists----------------------------------!
 @@||adocean-pl.hit.gemius.pl/*/url=http://sport.tvp.pl/$popup,other
 @@||adserwer.adtools.pl/Rs$script,domain=adserwer.adtools.pl
-@@/ads.js$script,domain=translatica.pl|photo.bikestats.eu|portel.pl|astar.czest.pl
+@@/ads.js$script,domain=translatica.pl|photo.bikestats.eu|astar.czest.pl
 @@||adtaily.pl/wp-content/themes/adtaily_*/$domain=www.adtaily.pl
 @@/advertise*.js$script,domain=cda.pl|tuba.pl
 @@/advertisingmodule.$domain=ekstraklasa.tv|itvn.pl|player.pl|ttv.pl|tvn.pl|tvn24.pl|tvn24bis.pl|tvn7.pl|tvnplayer.pl|tvnstyle.pl|tvnturbo.pl
@@ -3317,6 +3319,7 @@ zywiecinfo.pl##.promoted
 @@||everafterhigh.com/Static/js/ga-script.js$script
 @@||exs.pl^$domain=wpolityce.pl|wio.waw.pl
 @@||fakt.pl^$generichide
+@@||gazetabilgoraj.pl/wp-content/plugins/better-adsmanager/js/advertising.min.js$script
 @@||google-analytics.com$domain=certyficate.it|liptonicetea.com|filmweb.pl|shinden.pl
 @@||googletagmanager.com/gtag/$script,domain=certyficate.it
 @@||googletagmanager.com/gtm.js$script,domain=www.emag.pl|benchmark.pl|komputerswiat.pl
@@ -3514,6 +3517,7 @@ zrabatowani.pl###popup-adblock-bottom
 zw.pl###abpnotzw
 !
 !15#---------------------------------Anti Adblock Rules blocking filters----------------------------------!
+/blockadblock.$script
 ||bankier.pl/static/js/kichot.js$script
 ||blog.nowebrzmienia.pl/wp-content/themes/awaken/js/scripts.js$script
 ||cosplayjav.pl/wp-content/themes/cosplayjav/js/fuckadblock
@@ -3590,7 +3594,7 @@ zw.pl###abpnotzw
 @@||plejada.pl^$generichide
 @@://*.*/pl/js/show_ads.js$script,domain=ki24.info|portalplock.pl|faktypilskie.pl|e-krajna.pl|swiecie24.pl|zyciesokolowa.pl|zyciesiedleckie.pl|koronowo.net.pl|ciechocinek.biz|gniewkowo.eu|kolniak24.pl|itvszubin.pl|uniejow.net.pl|nizanskie.info|pluznica.info|superchodziez.pl|tygodnik.pl|ekutno.pl|naszbrzesc.pl|bydgoszcz24.pl|terazlipno.pl|saskakepa.waw.pl|gwe24.pl
 @@.pl/menda/adsense.js$script,domain=to.proste.info.pl|seciki.pl|kompnet.info|kolniak24.eu
-@@||portel.pl/js/adsrv.js
+@@||portel.pl/phpadsnew/advs.js$script,domain=www.portel.pl
 @@||potplayerclub.pl^$generichide
 @@||ppstatic.pl/*/ads.js$script,domain=pomorska.pl
 @@||przegladsportowy.pl^$generichide
