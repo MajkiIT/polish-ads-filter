@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: UQPphHiiKGZBZQEygCBqaw
+! Checksum: co7wJ+UHXlQ5IC/HKL2X3A
 ! Title: Polskie Filtry RODO-Ciasteczkowe
 ! Polish GDPR-Cookies Filters
 ! Codename: Cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności/RODO.
 ! Collaborators: F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 201806041450
-! Last modified: Mon, 04 Jun 2018, 14:50:42 UTC+02
+! Version: 201806051659
+! Last modified: Tue, 05 Jun 2018, 16:59:48 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201806041450 aktualizacja: pon, 04 cze 2018, 14:50:42 UTC+02
+! v.201806051659 aktualizacja: wto, 05 cze 2018, 16:59:48 UTC+02
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować
@@ -945,7 +945,7 @@ webcam.peregrinus.pl##div.activebar-container
 webd.pl###cffc
 webd.pl###topbar, #topBar, .topbarBox, .topBarMessage, #__topBar, #top_bar
 webelite.pl###infobarDiv, #infobar, .infobar, #info-bar, #info_c_box, .info-message
-weebly.com###kb-container
+weebly.com,eniro.pl,eniroweb.pl,amawid.pl###kb-container
 wefix.pl##DIV[style="position: fixed; bottom: 0; left: 0; z-index: 10000; width: 100%; min-height: 30px; border-bottom: 1px solid rgba(186,186,186,.5); background-color: #fff; background-color: rgba(255,255,255,.9); color: #333; font-family: Arial,Helvetica,Garuda,sans-serif; line-height: normal; font-size: 10px;"]
 wegetarianie.pl##td[align="center"][height="22"]
 westgate.com.pl##body > div:not([id]):not([class])
@@ -1025,6 +1025,7 @@ youtube.com###ticker
 yoy.tv##.notice
 yp.pl##div#jQ_cookiBox
 zaimo.pl##.politica
+zapinamypasy.pl###ember1676
 zarmen.pl###komunikat
 zaufanekliniki.pl##.alert-fixed
 zblogowani.pl###ci-info-box
@@ -1109,11 +1110,13 @@ dziennikwschodni.pl##.rodo-alert
 ekstraklasa.tv##.cmp-app_gdpr
 elka.pl,elka.tv###RODOZgoda
 epoznan.pl###rodo-info-box
+fantasy.ekstraklasa.tv###rodo-info
 filmweb.pl##.rodo__overlay
 firmy.lu###privacy_info_overlay, #privacy_info_content
 foreca.pl###ckieconsent
 gazetalubuska.pl,dziennikbaltycki.pl,gs24.pl,echodnia.eu,pomorska.pl,nto.pl,gazetakrakowska.pl,sportowy24.pl,dzienniklodzki.pl,dziennikpolski24.pl,gloswielkopolski.pl,gol24.pl,nowiny24.pl,warszawa.naszemiasto.pl,kurierlubelski.pl,expressilustrowany.pl,gazetawroclawska.pl,poranny.pl,dziennikzachodni.pl,nowosci.com.pl,gk24.pl,to.com.pl,polskatimes.pl,expressbydgoski.pl,telemagazyn.pl###cross-dialog
 gb.pl###rdModal
+gieldarolna.pl##.rodo
 gofin.pl###formalAgreementModal, #modalBackdrop
 goldenline.pl##.modal-backdrop, #profiling-agreement
 gospodarkamorska.pl,synonim.net###rodo
@@ -1131,6 +1134,8 @@ lotto.pl###klauzula_informacyjna_nakladka
 lubimyczytac.pl###TB_window, #TB_overlay
 lublin112.pl###privacy_info_content, #privacy_info_overlay
 meble.com.pl,archiconnect.pl,lazienka.pl,najlepszedomy.pl,mamkuchnie.pl###axn
+medme.pl###ccc
+m.benchmark.pl###private-policy-popup
 naekranie.pl###modal-rodo-info, .reveal-modal-bg
 natemat.pl,aszdziennik.pl,mamadu.pl,innpoland.pl,warszawawpigulce.pl##div[class^="app_gdpr"]
 neonet.pl##.rodo-info__content, .rodo-info__overlay
@@ -1157,7 +1162,7 @@ tygodnikpowszechny.pl###top_head
 virustotal.com###euConsent
 weather.com##.lite-msg-parent
 wio.waw.pl,ciechanowinaczej.pl,lowicz24.eu##.modal-backdrop, #RODOCOOKIE
-wm.pl###rodoinfo
+wm.pl,przyszloscdladzieci.org,familie.pl,naszolsztyniak.pl,gazetaolsztynska.pl###rodoinfo
 wpolityce.pl,wgospodarce.pl,wpolsce.pl##.rhododendron-popup, .rhododendron-popup-overlay
 wunderground.com,weather.com##.truste_overlay, .truste_box_overlay, .privacy-policy-toast
 wzp.pl###myrodoinfo
@@ -1485,18 +1490,17 @@ gg.pl#@#body > div:nth-of-type(2) > div
 !
 ! Wyjątki
 foxnews.com#@#.cookies
-gdansk.pl#@##cookies:not(body):not(html):not(.section)
 gdansk.pl#@#:not(input)[id*="cookie"]
-gokf.gda.pl#@##cookies:not(body):not(html):not(.section)
+gdansk.pl,gokf.gda.pl,orteil.dashnet.org#@##cookies:not(body):not(html):not(.section)
 iculture.nl#@#[id*="cookie_"]
 letsplej.pl,telepizza.pl,orange.pl,google.pl,topics.nl,przenosne.pl##@#div[class*="cookie"]
 lomza.pl#@##komunikat-cookie
 lycos.de,lycos.com#@#.cookies
-norauto.pl#@#:not(input)[id*="Cookie"]
+norauto.pl,orange.pl,orteil.dashnet.org#@#:not(input)[id*="Cookie"]
 opencraft.pl#@#[id^="topInfo"]
 orange.pl#@##cookies-info
-orange.pl#@#:not(input)[id*="Cookie"]
-orange.pl,taat.pl,bskrasnosielc.pl,iculture.nl,interhotel.pl,puma.com,bestcena.pl,gokf.gda.pl#@#:not(input)[id*="cookie"]
+orange.pl,taat.pl,bskrasnosielc.pl,iculture.nl,interhotel.pl,puma.com,bestcena.pl,gokf.gda.pl,orteil.dashnet.org#@#:not(input)[id*="cookie"]
+orteil.dashnet.org#@#div[class*="Cookie"]
 pokemon.com#@#.cookies
 redbullmobilecollect.pl#@#[id^="polityka-prywatnosci"]
 tchibo.de#@#.cookies
