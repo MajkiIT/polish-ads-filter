@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 8 June 2018
+! Last modified: 10 June 2018
 ! Expires: 1 day
-! Version: 2018060802
+! Version: 2018061001
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018060802 aktualizacja: ptk, 8 czerwca 2018, 11:10:00
+! v.2018061001 aktualizacja: nie, 10 czerwca 2018, 15:05:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -113,6 +113,7 @@ vshare.io###sendif
 ##.ads_widget
 ###adtify-widget
 ##.a-d-v
+###a-d-s
 ##.adverstiment-box
 ##.advert
 ##.advertisment-panel
@@ -801,7 +802,6 @@ etransport.pl##iframe[src^="http://kampanie.etransport.pl"]
 etransport.pl##small
 eufigames.com##.widgettitle
 euractiv.pl##h6 > span
-euro.com.pl##.banners-header
 euro.com.pl##[id^="background-"]
 euro.com.pl##[id$="-ear"]
 euro.com.pl###image-banner
@@ -1059,6 +1059,7 @@ gry-online.pl##.S016-asus-s
 gry-online.pl###ws-cnt
 gry-online.poszkole.pl##.ad-info
 gry-online.poszkole.pl###pixad
+gsim.pl###execphp-7 > .execphpwidget, .footer-banner
 gsmmaniak.pl,acermaniak.pl,activemaniak.pl,agdmaniak.pl,appmaniak.pl,blogomaniak.pl,fotomaniak.pl,gizmaniak.pl,luxmaniak.pl,mobimaniak.pl,tabletmaniak.pl###okazja-dnia
 gsmmaniak.pl##a[href^="http://tofo.pl"]
 gsmmaniak.pl##DIV[style="margin:10px auto; text-align:center; text-align:center; color:#999999; font-size:10px;"]
@@ -1742,6 +1743,7 @@ oboom.com###bgfadewnd1
 oboom.com###wcontent_wnd1
 oboom.com###wnd1
 obywatelenieba.pl,highlab.pl###custom_html-7
+ochrona24.info###custom_html-37, #custom_html-38, #custom_html-39
 oczamiostrego.pl##[id^="Image"]
 ogloszenia.niedziela.nl##.banner_container, .modulebanner
 ogrodnikleszek.pl##.block-block.block.widget
@@ -1857,6 +1859,7 @@ pionki24.pl###adocr
 pionki24.pl##A[rel="follow"] > IMG
 pionki24.pl##div:nth-of-type(3) > div:nth-of-type(8)
 pionki24.pl##.srodkowyblok6content
+piotrkowski24.pl##.ag-block-index-2, .clearfix.footer-widgets, .clearfix.ag-block-index-4.ag-news-template-1.ag-news-block, .clearfix.ag-block-index-0.ag-news-template-1.ag-news-block
 pirackiekino.blogspot.com##img[src*="blogspot.com/-AOw7_"]
 pisf.pl##.w-x4.h-x2.fl
 planujemywesele.pl###ad-profile-box1
@@ -2047,6 +2050,7 @@ radio.bialystok.pl##.defgrey, .hide-for-print.columns.large-4:nth-of-type(6)
 radiobiper.info##[id^="widget_sp_image-"]
 radiofm-online.com###block-block-3
 radioftb.net##.big-advertising
+radiogol.pl##.td-pb-span12.vc_column_container.wpb_column.td_uid_20_5b1d1b638aa41_rand.vc_column > .wpb_wrapper
 radio.kielce.pl##.addmain
 radio.kielce.pl##.content:nth-of-type(3) > .na-space
 radio.kielce.pl##.folkRadioLink
@@ -2344,6 +2348,7 @@ tabletowo.pl##[rel="nofollow"][target="_blank"]
 tabletowo.pl##.swckbb, .megatop_wrap
 tabletowo.pl##.widget2:nth-of-type(2)
 tabletowo.pl##.widget2:nth-of-type(3)
+taksiegra.pl##body > center
 taniaksiazka.pl,gsmmaniak.pl,wieliczkacity.pl,aferyprawa.eu,tyna.info.pl,startkariery.pl,ziemialimanowska.pl##A[target="_self"] > IMG
 tapenda.pl##[class^="glowna_adbox"]
 tapenda.pl###glowna_fotki
@@ -2443,6 +2448,7 @@ tvn24.pl###adocean-screening-layer
 tvnwarszawa.tvn24.pl##[id^="TopicItemContainer_"] > .boxItem
 tvp.info##.banner
 tvp.pl##.adv__rectangle
+tvpolsat.info##CENTER > A[target="_blank"] > IMG + ##div.panel-default.panel:nth-of-type(5)
 tv.rp.pl##.aiText
 tvsudecka.pl,tczewska.pl,slowopodlasia.pl,bydgoszcz.com,tvswinoujscie.pl,tygodnikoko.pl,tv-wschod.pl,inowroclaw.info.pl,korsosanockie.pl,supertydzien.pl,lokalnatelewizja.pl##[class*="advert"]
 tvsudecka.pl##.visible-xs
@@ -2557,7 +2563,7 @@ webmasteruj.pl##[style="margin:0 auto; text-align:center; margin-bottom:5px;"]
 wedkarstwo-lublin.pl###wrap > div:nth-of-type(1), #page-footer > div:nth-of-type(2)
 weeb.tv##DIV[style="width: 800px; height: 80px; background: url(\"http://backupstatic.weeb.tv/images/weeb-1.png\") no-repeat scroll left top transparent; padding-left: 151px; padding-top: 73px; cursor: pointer;"]
 weekend.gazeta.pl##A[target="_blank"] > IMG[alt^="(fot."][src^="http://bi.gazeta.pl/"]
-weszlo.com##.bsaGridGutter
+weszlo.com##.bsaGridGutter, A[href^="https://promocje.woah.com/"]
 weszlo.com,neosite.pl,signs.pl,pogonszczecin.pl,asta24.pl,cgm.pl,outsourcingportal.eu,wnp.pl##.adv
 weszlo.com##.top-adw
 whitemad.pl##.clearfix.cb-module-block.cb-box.cb-a-large:nth-of-type(3)
@@ -3584,7 +3590,7 @@ zw.pl###abpnotzw
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=games.cdn.famobi.com|grydladzieci.pl|fm.tuba.pl|wp.pl|player.pl|animezone.pl
 @@||imged.pl/subframe/js/*/adblock-advertisement.js$script
 @@||istotne.pl^$generichide
-@@/js/ads.js$script,domain=solarkurier.pl|satkurier.pl|saskakepa.waw.pl|e-krajna.pl|swiecie24.pl|zyciesokolowa.pl|ciechocinek.biz|napiprojekt.pl|uniejow.net.pl|nizanskie.info|pluznica.info|superchodziez.pl|tygodnik.pl|ekutno.pl|naszbrzesc.pl|bydgoszcz24.pl|terazlipno.pl|gwe24.pl|dziwnekomiksy.pl|digi-tv.pl|chelsea24news.pl|wolomin24.info|splendo.pl|egorzow.pl|irembertow.pl|iminsk.pl|ikrakow.info|iskierniewice.pl|ikampinos.pl|e-wyszogrod.pl|ibielsk.pl|wterenie.pl|ciechanowinaczej.pl|wabrzezno-cwa.pl|infosiedlce.pl|rypin-cry.pl|golub-cgd.pl|iotwock.info|szczecinek.com|lipno-cli.pl|imokotow.pl|nolesnica.pl|itvpiaseczno.pl|histmag.org|lowcygier.pl|gorzowianin.com|polotv.pl|video.anyfiles.pl|brotkids.tv|fokus.tv|ithardware.pl|meteoprog.pl|nowa.tv|okazje.co|forsal.pl|gazetaprawna.pl|fxmag.pl|nasztomaszow.pl|dieroten.pl|reklama.pl|gpr24.pl|twojradom.pl|inowroclaw.info.pl|pultusk24.pl|bham.pl|vorek.pl|plonszczak.pl|zdrowowdomu.wp.pl|audiklub.org|video-static.tunnl.com|pcworld.pl|gostynin.info|zambrow.org|millemiglia.wp.pl
+@@/js/ads.js$script,domain=solarkurier.pl|satkurier.pl|saskakepa.waw.pl|e-krajna.pl|swiecie24.pl|zyciesokolowa.pl|ciechocinek.biz|napiprojekt.pl|uniejow.net.pl|nizanskie.info|pluznica.info|superchodziez.pl|tygodnik.pl|ekutno.pl|naszbrzesc.pl|bydgoszcz24.pl|terazlipno.pl|gwe24.pl|dziwnekomiksy.pl|digi-tv.pl|chelsea24news.pl|wolomin24.info|splendo.pl|egorzow.pl|irembertow.pl|iminsk.pl|ikrakow.info|iskierniewice.pl|ikampinos.pl|e-wyszogrod.pl|ibielsk.pl|wterenie.pl|ciechanowinaczej.pl|wabrzezno-cwa.pl|infosiedlce.pl|rypin-cry.pl|golub-cgd.pl|iotwock.info|szczecinek.com|lipno-cli.pl|imokotow.pl|nolesnica.pl|itvpiaseczno.pl|histmag.org|lowcygier.pl|gorzowianin.com|polotv.pl|video.anyfiles.pl|brotkids.tv|fokus.tv|ithardware.pl|meteoprog.pl|nowa.tv|okazje.co|forsal.pl|gazetaprawna.pl|fxmag.pl|nasztomaszow.pl|dieroten.pl|reklama.pl|gpr24.pl|twojradom.pl|inowroclaw.info.pl|pultusk24.pl|bham.pl|vorek.pl|plonszczak.pl|zdrowowdomu.wp.pl|audiklub.org|video-static.tunnl.com|pcworld.pl|gostynin.info|zambrow.org|millemiglia.wp.pl|radiogol.pl
 @@||js.iplsc.com/inpl.adb/*/empt.js?*&adserv=$domain=interia.pl
 @@||komputerswiat.pl^$generichide
 @@||kubofonista.net/r/ad.htm$script,domain=kubofonista.net
@@ -3702,7 +3708,7 @@ meczstudio.com###bettv
 meczstudio.com##[class^="wb_Image"]
 meczstudio.com##[id^="wb_Image"]
 meczyki.net.pl##.cool-stuff
-meczyki.pl##.box.alert-box
+meczyki.pl##.box.alert-box, .widget-advert
 polska-telewizja-online.ayz.pl###footer-widgets > .container-inner > .group.pad
 sport-cast.pl###adv
 sportsbox.pro##[style="position:absolute;width:100%;height:100%;top:0px;left:0px;"]
@@ -4015,7 +4021,7 @@ kafeteria.pl#@#.is-sponsored
 @@/tagcommander/$script,domain=account.ubisoft.com
 @@||wpolityce24.pl/imgcache/300x250/*/uploads/news/$image
 !
-24legnica.pl,wstereo.pl,magazynbasista.pl,niebezpiecznik.pl,appki.com.pl,prawapolityka.pl,stop-cham.pl###text-8
+24legnica.pl,wstereo.pl,magazynbasista.pl,niebezpiecznik.pl,appki.com.pl,prawapolityka.pl,stop-cham.pl,zwiedzam-stadiony.eu###text-8
 !37#--------------------------Wordpress blocking filters------------!
 ||overwatch.pl/wp-content/uploads/20*/*/250x700*.png$image
 !
