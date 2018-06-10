@@ -5,9 +5,9 @@
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 5 June 2018
+! Last modified: 10 June 2018
 ! Expires: 2 days
-! Version: 2018060501
+! Version: 2018061001
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018060501 aktualizacja: czw, 5 czerwca 2018, 09:10:00
+! v.2018061001 aktualizacja: nie, 10 czerwca 2018, 15:10:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -108,6 +108,8 @@ forum.dobreprogramy.pl##body[class]:style(background-image: none !important;)
 !||www.dobreprogramy.pl^$csp=img-src 'self' *.dpcdn.pl
 www.dobreprogramy.pl##body:not(variant-mobile).skin-green .user-login:style(color:#88ae04!important;)
 dobreprogramy.pl##script:inject(set-constant.js, WP.gaf.loadAndRunBunch, noopFunc)
+www.dobreprogramy.pl###phContent_downloaderHint
+www.dobreprogramy.pl##article > div[id]:matches-css-after(content: "przy pomocy Asystenta pobierania")
 !
 ! purepc.pl
 purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !important; position: absolute !important;)
@@ -326,4 +328,7 @@ pracawgdansku.com.pl##^HTML > HEAD > META + TITLE + LINK + SCRIPT
 !#endif
 !#if !cap_html_filtering
 pracawgdansku.com.pl##IFRAME#iframe:style(height: 100% !important;)
+!#endif
+!#if env_firefox
+neosite.pl##.kokpit:style(padding: 0 !important;)
 !#endif
