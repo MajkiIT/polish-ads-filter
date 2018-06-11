@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: Uu2Ke708Ejfl66GKSf+V7g
+! Checksum: 3OL7/YQlWyEuKmpjUQkaDw
 ! Title: Polskie Filtry RODO-Ciasteczkowe
 ! Polish GDPR-Cookies Filters
 ! Codename: Cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności/RODO.
 ! Collaborators: F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 201806101247
-! Last modified: Sun, 10 Jun 2018, 12:47:13 UTC+02
+! Version: 201806111240
+! Last modified: Mon, 11 Jun 2018, 12:40:42 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201806101247 aktualizacja: nie, 10 cze 2018, 12:47:13 UTC+02
+! v.201806111240 aktualizacja: pon, 11 cze 2018, 12:40:42 UTC+02
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować
@@ -200,6 +200,7 @@ epuap.gov.pl##.footer-info
 erboristeriamagentina.it###blultpdfbanner
 ergokantor.pl##.alert-warning.alert
 eservice.pl###zwcc
+eskago.pl###mpc_cookie_intro
 esklep-sbs.pl###cibMessage
 eteacher.pl###info_container
 eternityproject.pl##div.newsbar
@@ -1151,6 +1152,7 @@ mall.pl##consent-panel
 meble.com.pl,archiconnect.pl,lazienka.pl,najlepszedomy.pl,mamkuchnie.pl###axn
 medme.pl###ccc
 medpolonia.pl###bannerPopup
+moviesroom.pl##.overlay-rules
 m.benchmark.pl###private-policy-popup
 naekranie.pl###modal-rodo-info, .reveal-modal-bg
 natemat.pl,aszdziennik.pl,mamadu.pl,innpoland.pl,warszawawpigulce.pl##div[class^="app_gdpr"]
@@ -1168,12 +1170,14 @@ pl,ki24.info,ciechocinek.biz,gniewkowo.eu,pluznica.info,nizanskie.info##.rodo-ov
 pogodynka.pl###accept
 polskieradio.pl##.rodo-modal
 portel.pl###rodoDiv
+queer.pl##.box-rodo
 radiogol.pl##.hustle-modal-message
 radiowroclaw.pl,radioram.pl,radiogdansk.pl###rodoModal
 radiozet.pl,antyradio.pl,radiostacja.pl,meloradio.pl,azorek.pl,planeta.fm,chillizet.pl##div[class^="app_cmpAppGdpr"]
 razemztoba.pl##.inform
 rmf.fm##.rodo-popup
 salesmanago.pl##.popup
+serialowa.pl##.popmake-overlay
 speedtest.net###_evidon-barrier-wrapper
 store.playstation.com###privacy-header
 szlot.pl##.spu-bg, .spu-total-
@@ -1197,6 +1201,7 @@ zywiec.com.pl,heineken.com.pl###infobx
 ###rodo-popup:not(.fade):not(body):not(html)
 ##.gdpr-privacy-bar:not(body):not(html)
 /rhododendron/css/rhododendron-popup.css$domain=wpolityce.pl|wgospodarce.pl|wpolsce.pl
+/rodo/*$xmlhttprequest,domain=polsat.pl|polsat1.pl|polsatfilm.pl|polsatplay.pl|polsatcafe.pl|tv4.pl|tv6.com.pl|discopolomusic.pl
 /_sess/rodo.js
 ||assets.allegrostatic.com/opbox-rodo-consent-modal/index*.css$domain=allegro.pl
 ||assets.goldenline.io/assets/user/profilingAgreement.*.js
@@ -1210,6 +1215,7 @@ zywiec.com.pl,heineken.com.pl###infobx
 ||rodo.agora.pl^$script
 ||std.wpcdn.pl/wpjslib/*wpjslib-chunk-consent-form.js 
 ||whitepress.pl/common/pltk/pltk.js
+||www.serialowa.pl/wpr/wp-content/plugins/popup-maker/assets/css/site.min.css
 ||www.swiatksiazki.pl/customer/account/infoAgreement/*$xmlhttprequest
 ||www.twojapogoda.pl/rodo/*$xmlhttprequest
 ||www.wroclaw.pl/portal/themes/js/script-rodo.min.js
@@ -1536,7 +1542,7 @@ tychy.geminipark.pl#@#.privacy-policy
 wsensie.pl,wsensie.tv#@#.policy-box:not(body):not(html)
 @@/cookie.js$domain=socialblade.com|infoplus.com.pl|arimr.gov.pl|promedica24.com.pl|emigrantpl.com|wirtualnemedia.pl|e.dorzeczy.pl|e.wprost.pl|intel.com|cdaction.pl|katowice-airport.com|myshows.me|rze.pl|nba.com
 @@/js/jquery.cookie.min.js$domain=rozklad.pkp.pl|ubi.com
-@@/plugins/uk-cookie-consent/assets/js/uk-cookie-consent-js.js$script,domain=escaperooms.pl|xboxarcade.pl|naziemna.info|3dwpraktyce.pl|tvs.pl|przegladbaltycki.pl|wypowiadamoc.pl|gazetabilgoraj.pl
+@@/plugins/uk-cookie-consent/assets/js/uk-cookie-consent-js.js$script,domain=escaperooms.pl|xboxarcade.pl|naziemna.info|3dwpraktyce.pl|tvs.pl|przegladbaltycki.pl|wypowiadamoc.pl|gazetabilgoraj.pl|serialowy.info
 @@/wp-content/plugins/cookie-law-info/js/cookielawinfo.js$script
 @@||coinroom.com/Modules/UI/Cookie/Cookie.js$script
 @@||pracatobie.pl/jscripts/cookieLaws.js
