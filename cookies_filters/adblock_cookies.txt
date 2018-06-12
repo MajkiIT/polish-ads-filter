@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: P+fdP6+2xkx+H4YCkYtY4Q
+! Checksum: vxKXKBPunRG3rmWC5RlDYg
 ! Title: Polskie Filtry RODO-Ciasteczkowe
 ! Polish GDPR-Cookies Filters
 ! Codename: Cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności/RODO.
 ! Collaborators: F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 201806121353
-! Last modified: Tue, 12 Jun 2018, 13:53:09 UTC+02
+! Version: 201806121833
+! Last modified: Tue, 12 Jun 2018, 18:33:22 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201806121353 aktualizacja: wto, 12 cze 2018, 13:53:09 UTC+02
+! v.201806121833 aktualizacja: wto, 12 cze 2018, 18:33:22 UTC+02
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować
@@ -1120,14 +1120,14 @@ elka.pl,elka.tv###RODOZgoda
 emt-systems.pl###rodoBG
 epoznan.pl###rodo-info-box
 epuap.gov.pl###rodo-modal
-fantasy.ekstraklasa.tv###rodo-info
+fantasy.ekstraklasa.tv,trojmiasto.pl###rodo-info
 filmlab.com.pl,wtkplay.pl,lech.tv,obiezyswiat.org###rodo-info-box
 filmweb.pl##.rodo__overlay
 firmy.lu###privacy_info_overlay, #privacy_info_content
 foreca.pl###ckieconsent
 fotosik.pl###rodo-info, .modal-backdrop
 funduszpomerania.pl###eprivacyModal, .modal-backdrop
-gazetalubuska.pl,dziennikbaltycki.pl,gs24.pl,echodnia.eu,pomorska.pl,nto.pl,gazetakrakowska.pl,sportowy24.pl,dzienniklodzki.pl,dziennikpolski24.pl,gloswielkopolski.pl,gol24.pl,nowiny24.pl,warszawa.naszemiasto.pl,kurierlubelski.pl,expressilustrowany.pl,gazetawroclawska.pl,poranny.pl,dziennikzachodni.pl,nowosci.com.pl,gk24.pl,to.com.pl,polskatimes.pl,expressbydgoski.pl,telemagazyn.pl,naszemiasto.pl,gp24.pl###cross-dialog
+gazetalubuska.pl,dziennikbaltycki.pl,gs24.pl,echodnia.eu,pomorska.pl,nto.pl,gazetakrakowska.pl,sportowy24.pl,dzienniklodzki.pl,dziennikpolski24.pl,gloswielkopolski.pl,gol24.pl,nowiny24.pl,warszawa.naszemiasto.pl,kurierlubelski.pl,expressilustrowany.pl,gazetawroclawska.pl,poranny.pl,dziennikzachodni.pl,nowosci.com.pl,gk24.pl,to.com.pl,polskatimes.pl,expressbydgoski.pl,telemagazyn.pl,naszemiasto.pl,gp24.pl,gratka.pl###cross-dialog
 gb.pl###rdModal
 gieldarolna.pl##.rodo
 gofin.pl###formalAgreementModal, #modalBackdrop
@@ -1199,6 +1199,7 @@ zywiec.com.pl,heineken.com.pl###infobx
 !helion.pl,ebookpoint.pl,onepress.pl,sensus.pl,septem.pl,editio.pl,dlabystrzakow.pl,videopoint.pl##.rodo-accept
 !interia.pl,pcformat.pl,esporter.pl,rmf24.pl,cdaction.pl,pokazywarka.pl,edufinanse.pl##.rodo-popup
 !komputerswiat.pl,onet.pl,newsweek.pl,fakt.pl,literia.pl,verdykt.pl,plejada.pl,forbes.pl,onetontour.pl,przegladsportowy.pl,auto-swiat.pl,ofeminin.pl,nk.pl,noizz.pl,skapiec.pl,zumi.pl,opineo.pl,medonet.pl,softonet.pl,pclab.pl,businessinsider.com.pl,targsmaku.pl,agdlab.pl,jakdojade.pl,vod.pl,dreamlab.pl##.cmp-app_gdpr
+###gdpr_banner:not(body):not(html)
 ###rodo-popup:not(.fade):not(body):not(html)
 ##.gdpr-privacy-bar:not(body):not(html)
 /rhododendron/css/rhododendron-popup.css$domain=wpolityce.pl|wgospodarce.pl|wpolsce.pl
@@ -1207,6 +1208,7 @@ zywiec.com.pl,heineken.com.pl###infobx
 ||assets.allegrostatic.com/opbox-rodo-consent-modal/index*.css$domain=allegro.pl
 ||assets.goldenline.io/assets/user/profilingAgreement.*.js
 ||a.wpimg.pl/a/i/stg/wpjslib-chunk-consent-form.js
+||a.wpimg.pl/a/i/stg/wpjslib-chunk-notification.js
 ||cdn.rp.pl/rodo-agreement-popup/rodo-agreement-popup.min.js
 ||cookie.avt.pl/cookie-noscript
 ||kochamwroclaw.pl/wp-content/plugins/surbma-yes-no-popup/css/styles.css
@@ -1215,6 +1217,7 @@ zywiec.com.pl,heineken.com.pl###infobx
 ||player.pl/playerapi/document/rodo-short/content$xmlhttprequest
 ||rodo.agora.pl^$script
 ||std.wpcdn.pl/wpjslib/*wpjslib-chunk-consent-form.js 
+||std.wpcdn.pl/wpjslib/*/wpjslib-chunk-notification.js
 ||whitepress.pl/common/pltk/pltk.js
 ||www.serialowa.pl/wpr/wp-content/plugins/popup-maker/assets/css/site.min.css
 ||www.swiatksiazki.pl/customer/account/infoAgreement/*$xmlhttprequest
@@ -1541,7 +1544,7 @@ redbullmobilecollect.pl#@#[id^="polityka-prywatnosci"]
 tchibo.de#@#.cookies
 tychy.geminipark.pl#@#.privacy-policy
 wsensie.pl,wsensie.tv#@#.policy-box:not(body):not(html)
-@@/cookie.js$domain=socialblade.com|infoplus.com.pl|arimr.gov.pl|promedica24.com.pl|emigrantpl.com|wirtualnemedia.pl|e.dorzeczy.pl|e.wprost.pl|intel.com|cdaction.pl|katowice-airport.com|myshows.me|rze.pl|nba.com
+@@/cookie.js$domain=socialblade.com|infoplus.com.pl|arimr.gov.pl|promedica24.com.pl|emigrantpl.com|wirtualnemedia.pl|e.dorzeczy.pl|e.wprost.pl|intel.com|cdaction.pl|katowice-airport.com|myshows.me|rze.pl|nba.com|bitbucket.org
 @@/js/jquery.cookie.min.js$domain=rozklad.pkp.pl|ubi.com
 @@/plugins/uk-cookie-consent/assets/js/uk-cookie-consent-js.js$script,domain=escaperooms.pl|xboxarcade.pl|naziemna.info|3dwpraktyce.pl|tvs.pl|przegladbaltycki.pl|wypowiadamoc.pl|gazetabilgoraj.pl|serialowy.info
 @@/wp-content/plugins/cookie-law-info/js/cookielawinfo.js$script
