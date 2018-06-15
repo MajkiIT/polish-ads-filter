@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 15 June 2018
 ! Expires: 1 day
-! Version: 2018061501
+! Version: 2018061502
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018061501 aktualizacja: ptk, 15 czerwca 2018, 09:30:00
+! v.2018061502 aktualizacja: ptk, 15 czerwca 2018, 13:40:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -2458,7 +2458,6 @@ tvmalbork.pl,tvsztum.pl,zulawyimierzeja24.pl,tvregionalna24.pl##.clickable[oncli
 tvn24.pl###adocean-screening-layer
 tvnwarszawa.tvn24.pl##[id^="TopicItemContainer_"] > .boxItem
 tvp.info##.banner
-tvp.pl##.adv__rectangle
 tvpolsat.info##CENTER > A[target="_blank"] > IMG + ##div.panel-default.panel:nth-of-type(5)
 tv.rp.pl##.aiText
 tvsudecka.pl,tczewska.pl,slowopodlasia.pl,bydgoszcz.com,tvswinoujscie.pl,tygodnikoko.pl,tv-wschod.pl,inowroclaw.info.pl,korsosanockie.pl,supertydzien.pl,lokalnatelewizja.pl##[class*="advert"]
@@ -2536,7 +2535,6 @@ vidfile.net,epiotrkow.pl##.rek
 vinowisko.pl##[href^="http://adsearch.adkontekst.pl/_/ctr/"]
 vitalia.pl###pasekDdd
 vodbox.pl##.ad_wide_banner
-vod.tvp.pl##.hidden-phone.rectangleWrapper
 vorek.pl##DIV[style="height: 35px;width: 726px;position:relative;text-align:center;box-shadow:0 0 2px grey;border:2px solid #0D1E5A;background: #EDF1FF;margin:0px auto 0px;"]
 vorek.pl###dle-content > center
 vorek.pl##.news > center:nth-of-type(1)
@@ -3203,7 +3201,6 @@ zywiecinfo.pl##.promoted
 ||turinfo.pl/zdjecia/*.gif$image
 ||tvgry.pl/images/tapeta_reklama/$image
 ||tvnights.pl/assets/img/bg/$image
-||tvp.pl/video/vod/reklamy/$domain=tvp.pl
 ||tvsat-sklep.com/baner/$image,domain=portal.dvhk.to
 ||tvwlodawa.pl/wp-content/uploads/*/*/logo-$image
 ||twojahistoria.pl/uploads/20*/*/*-bg.jpg$image
@@ -3323,7 +3320,6 @@ zywiecinfo.pl##.promoted
 !/^http:\/\/www\.filmweb\.pl\/[\w\W]{300,500}/$script
 !
 !12#---------------------------------Whitelists----------------------------------!
-@@||adocean-pl.hit.gemius.pl/*/url=http://sport.tvp.pl/$popup,other
 @@||adserwer.adtools.pl/Rs$script,domain=adserwer.adtools.pl
 @@/ads.js$script,domain=translatica.pl|photo.bikestats.eu|astar.czest.pl
 @@||adtaily.pl/wp-content/themes/adtaily_*/$domain=www.adtaily.pl
@@ -3368,8 +3364,6 @@ zywiecinfo.pl##.promoted
 @@||katowickisport.pl^$generichide
 @@||lulektv.app.insyscd.net/Content/player/insysplayer/adTest.png$image,domain=lulektv.app.insyscd.net
 @@||miniminiplus.pl^$generichide
-@@||myao.adocean.pl/_*/ad.xml$xmlhttprequest,domain=tvp.pl
-@@||myao.adocean.pl^$xmlhttprequest,domain=tvpstream.vod.tvp.pl
 @@||naekranie.pl/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-download-tracker.js$script,~third-party
 @@||optimus.pl/temp/adrotator_miniatury/$image
 @@||osgchmura.tk/tv/player/ads.js$script
@@ -3388,7 +3382,6 @@ zywiecinfo.pl##.promoted
 @@||ssl.allegro.pl/order/^
 @@||staticpics2.allegrostatic.pl/adverts/otomoto_pl/*128x96$image,domain=allegro.pl
 @@||stats.qmerce.com/interaction-stats/$xmlhttprequest,domain=renderer.qmerce.com
-@@||s.tvp.pl/files/tvplayer/*/advertisement.gif$image
 @@/^(https|http):\/\/static\.webcamera\.pl\/[a-z-0-9]{3,15}\.(png|jpg)/$image,domain=webcamera.pl
 @@||techpedia.pl/js/show_ads.js$script,domain=techpedia.pl
 @@||teletoonplus.pl^$generichide
@@ -3521,7 +3514,6 @@ senda.pl#@#.advert_box
 stylunio.pl##.blocked-info
 sucharry.pl###adb
 terrarium.com.pl##.ABD_display_wrapper
-tvp.pl###tvpoverlay_abdinfo
 twojezaglebie.pl###modal
 twojezaglebie.pl##.modal-box
 vitalia.pl###topbborlayer
@@ -3582,7 +3574,6 @@ zw.pl###abpnotzw
 @@/ads.reklama.728x90$script,stylesheet,domain=zmianaczasu.info|antonimy.net|odmiana.net|definicja.net|krzyzowka.net|humoris.pl
 @@/advertise.js$domain=superfilm.pl
 @@/advertisement*.js$script,domain=meczyki.pl|autocentrum.pl|tokfm.pl|trojmiasto.pl|superfilm.pl
-@@||adocean-pl.hit.gemius.pl/*redataredir?url=*myao.adocean.pl*ad.xml$domain=tvp.pl
 @@||advert-serv.johnmorris.me/adserver/adlogger_tracker.php$subdocument,domain=www.terrarium.com.pl
 @@||adv.wp.pl/adverts$xmlhttprequest,domain=pilot.wp.pl
 @@||adv.wp.pl/RM/Box/*/inline-videostar.js$script,domain=pilot.wp.pl
@@ -4221,4 +4212,18 @@ a-o.ninja##.content > center
 a-o.ninja##[id^="aukcjoner"]
 a-o.ninja##h4
 !
+!47#--------------------------tvp------------!
+@@||adocean-pl.hit.gemius.pl/*/url=http://sport.tvp.pl/$popup,other
+@@||adocean-pl.hit.gemius.pl/*redataredir?url=*myao.adocean.pl*ad.$xmlhttprequest,domain=tvp.pl
+@@||adocean-pl.hit.gemius.pl/*redataredir?url=*myao.adocean.pl*ad.xml$domain=tvp.pl
+@@||adx.adform.net/adx/$xmlhttprequest,domain=tvp.pl
+@@||myao.adocean.pl/*ad.*?$xmlhttprequest,domain=tvp.pl
+@@||myao.adocean.pl/_*/ad.xml$xmlhttprequest,domain=tvp.pl
+@@||myao.adocean.pl^$xmlhttprequest,domain=tvpstream.vod.tvp.pl
+@@||s.tvp.pl/files/tvplayer/*/advertisement.gif$image
+@@||secure.adnxs.com/ptv?id=*&cb=*&pubclick=$xmlhttprequest,domain=tvp.pl
+tvp.pl###tvpoverlay_abdinfo
+tvp.pl##.adv__rectangle
+vod.tvp.pl##.hidden-phone.rectangleWrapper
+||tvp.pl/video/vod/reklamy/$domain=tvp.pl
 !END#--------------------------END------------!
