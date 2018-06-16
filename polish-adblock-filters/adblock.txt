@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 15 June 2018
+! Last modified: 16 June 2018
 ! Expires: 1 day
-! Version: 2018061505
+! Version: 2018061601
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018061505 aktualizacja: ptk, 15 czerwca 2018, 21:25:00
+! v.2018061601 aktualizacja: sob, 16 czerwca 2018,14:35:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -52,7 +52,7 @@ _banery/980x200
 /\/(images|img|data|uploads)\/banners\//$image,object,domain=tsk24.pl|wschodnik.pl|nowawrzesnia.pl|glucholazyonline.com.pl|informacjelokalne.pl|muzyczneradio.com.pl|tvrep.pl|chwaszczyno.pl|msfera.pl|tygodnik-krapkowicki.info|darkplanet.pl|wroclawskiejedzenie.pl|magazyngitarzysta.pl|przegladkoninski.pl|radiopoznan.fm|fishing-test.pl|gostynin24.pl|wkonin.pl
 /overlay*.png$domain=mapa.targeo.pl,image
 .pl/*/adds/
-.pl/*/ads/
+.pl/*/ads/$domain=~tubagliwic.pl
 pl##a[href*="/adserwer/"]
 .pl/data/cameras/banner_$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 .pl/images/reklama120x60.jpg$image
@@ -2253,6 +2253,7 @@ spigot.pl##.ipsBox.ipsWidget_vertical.ipsWidget:nth-of-type(1)
 spiz.pl,roksa.pl##.c
 spliff.pl###gkRight > .box
 ~spolka.cda.pl,cda.pl##body:style(background:#121212!important;)
+sport.tvp.pl##.green-box-beam-bottom
 sportowebeskidy.pl##.baner
 sportowepodhale.pl##[id^="p4"], .reklama-bottom
 sportowywroclaw.eu##a[href^="http://clicks.fortunaaffiliates.com/afs/"]
@@ -2439,6 +2440,8 @@ trybi.pl###main_content_section > div[style=" text-align: center; height: 260px;
 trybunaczestochowska.pl,animalistka.pl,pojon.pl,300polityka.pl###text-2
 trybun.org.pl##[id*="_adspace_widget"]
 tryton.com.pl##[id^="banner"]
+tubagliwic.pl##.active.visible
+tubagliwic.pl##p > small
 tuelblag.pl##.module-reklamy-po-lewej
 turek.net.pl##.BanerB
 tur-info.pl##a[href^="http://www.tur-info.pl/przekierowanie/"]
@@ -3225,6 +3228,7 @@ zywiecinfo.pl##.promoted
 ||widgets.tracdelight.com/iframe/$subdocument
 ||widget.aftermarket.pl^$subdocument
 ||widgets.moneteasy.pl/widget/$script
+||widget.plastream.net/$xmlhttprequest
 ||wiocha.pl/img/tapety/$image
 ||wp.com/luzyce.info/wp-content/uploads/20*/*/*.gif$image
 ||wp.com/niestatystyczny.pl/wp-content/uploads/*/tlo$image,domain=niestatystyczny.pl
