@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Checksum: 0E9Fdu3YyEFqW+DSYRVRZg
+! Checksum: IrjGxSaZIkiF9bw7sAJ4nQ
 ! Title: Polskie Filtry Społecznościowe
 ! Polish Social Filters
 ! Codename: Social
@@ -7,8 +7,8 @@
 ! Required: Do poprawnego działania wymagana jest lista Fanboy's Social Blocking List!
 ! Collaborators: blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 201806182218
-! Last modified: Mon, 18 Jun 2018, 22:18:49 UTC+02
+! Version: 201806192055
+! Last modified: Tue, 19 Jun 2018, 20:55:48 UTC+02
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201806182218 aktualizacja: pon, 18 cze 2018, 22:18:49 UTC+02 
+! v.201806192055 aktualizacja: wto, 19 cze 2018, 20:55:48 UTC+02 
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować
@@ -873,8 +873,7 @@ cafebabel.pl##.share
 cardsplitter.pl##center > center:nth-of-type(1)
 carlsbergpolska.pl##div.col-md-4:nth-of-type(2)
 carrefour.pl##li.m-t-sm:nth-of-type(4)
-cashless.pl##a[href="https://www.facebook.com/cashlesspolska/"], a[href="https://plus.google.com/u/0/102191552045627623806"], a[href="https://twitter.com/Cashlesspl"], a[href="https://www.youtube.com/channel/UCUi9JWmGYrukodfVJi4xjLg"], a[href="https://www.linkedin.com/company-beta/17953895"]
-cashless.pl##.socialsFooter > h3
+cashless.pl##div.col-sm-2:nth-of-type(5) > h1, .icon-list > li:nth-of-type(-n+5)
 castorama.pl##div.col-md-2.col-xs-3:nth-of-type(5) > p, .so-ico
 catzilla.com##img[src="/images/vimeo.png"]
 catzilla.com##.btn-block.btn-sm.btn-danger.btn.cbConnectButtonGoogle.cbConnectButtonIconText.cbConnectButton
@@ -1125,6 +1124,7 @@ firebit.pl##.fa-google.fa
 fish24.pl##.google_foot
 fishing-mart.com.pl##.link:nth-of-type(4)
 fiskars.pl##.left:nth-of-type(1) > .inner
+fitnessworld.com##.footer__social__box > p
 fitness.shop.pl##.col-smb-12.col-sms-6.col-md-3.col-sm-3.f-col4.f-col
 fizjoplaner.pl##.ft_soc
 fkolo.pl##a[href^="https://www.facebook.com/Fko%C5%82o-746259595487105/"]
@@ -1140,6 +1140,7 @@ forbot.pl##h3:nth-of-type(11)
 forumfajerwerki.pl##a[href^="http://www.facebook.com/strzelamywsylwestra"]
 forumfajerwerki.pl##.__xXfacebook
 forumrowerowe.org##.col.ftcol:nth-of-type(4)
+forumsamochodowe.pl###fb_g_like
 forum-oddluzanie.pl##.simplesocialbuttons
 forum.blogowicz.info##.podzielsie, #facebook-badge, #googleplus-badge, .column-sidebar-inner > div:nth-of-type(3), #gfr > div:nth-of-type(n+1):nth-of-type(-n+2), #facebook2, .imp:nth-of-type(n+5):nth-of-type(-n+6), #gfr > div:nth-of-type(3) > div:nth-child(n+3), .firstPostd > hr:nth-of-type(3)
 forum.blogowicz.info##[href="http://url.blogowicz.info/LubieTo"], [href="http://url.blogowicz.info/gplus"]
@@ -1613,6 +1614,7 @@ onet100.vod.pl###socialIcons, .o_footSection3
 onetech.pl###gplus, #obserwujnas
 onet.pl##.widgetFollowUs
 onet.pl##.fb_share
+onninen.pl##.ikony
 ono24.info###tab
 open.pl##.gap-down-1.text-center.vertical-align.container-footer.container > .col-md-3
 opineo.pl##.fl:nth-of-type(3), .mt10.fh5
@@ -2255,6 +2257,7 @@ x-mobile.pl##.border.col-sm-4.col-md-2.col-lg-2 > .footer_box
 yafud.pl###strona > center, .extBox
 yerbanot.com###custom_html-5
 zaadoptujfaceta.pl##.clearfix.fleft:nth-of-type(1)
+zagranie.com##.social_links_style2, #twitter-timeline-profile-4
 zalajkowane.pl##.pu_facebook_widget
 zalando.pl##a[href="https://www.facebook.com/zalando.polska"]
 zalando.pl##.z-navigation-footer_subFooterIcons.z-navigation-footer_subFooterIconsSocial
@@ -2431,17 +2434,14 @@ avast.com#@#.social-icons
 edunews.pl#@#.custom-social-buttons
 greencanoe.pl#@#.social-links
 lublin112.pl#@##social-icon
-naekranie.pl#@#.share-buttons
 naszpradnik.pl#@#.menu-social
 rta24.eu#@#.social-bottom
 rynek-kolejowy.pl#@#.socialIcons
-satkurier.pl#@##menu_social
 tabletowo.pl#@#.social_icon
 tabletowo.pl#@#.top-social
 tvgry.pl,gameplay.pl#@#.social-16
-tvn24bis.pl#@#.social-container 
-@@/facebook-logo-$domain=giznet.pl
-@@/instagram-logo-$domain=giznet.pl
+tvn24bis.pl#@#.social-container
+zagranie.com#@#.share-container
 @@/social_media_$domain=mazury.travel
 @@||krzysztofwojczal.pl/wp-content/plugins/ultimate-social-media-plus/images/icons_theme/black/black_rss.png
 @@||www.facebook.com/v2.0/plugins/like.php$subdocument,domain=e-biznes.pl

@@ -1,11 +1,11 @@
-! Checksum: GLgc8rKIE+pqVKk9Le6YKg
+! Checksum: MopFl+j2acTlJjTyLglZCw
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 201806181519
-! Last modified: Mon, 18 Jun 2018, 15:19:04 UTC+02
+! Version: 201806192200
+! Last modified: Tue, 19 Jun 2018, 22:00:34 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201806181519 aktualizacja: pon, 18 cze 2018, 15:19:04 UTC+02 
+! v.201806192200 aktualizacja: wto, 19 cze 2018, 22:00:34 UTC+02 
 !
 !
 ! Komunikaty ciasteczkowe i dziury
@@ -67,7 +67,7 @@ unileverfoodsolutions.pl##body:style(overflow: auto!important;)
 unileverfoodsolutions.pl##.js-cookie-wall 
 !
 !
-! Popupy - polityka prywatności/RODO
+! Popupy dot. polityki prywatności/RODO
 4fun.tv###cModal, .modal-backdrop
 alltube.tv,alltube.pl###rodo-popup, .modal-backdrop
 alltube.tv,alltube.pl,zakopane.info,fryzomania.pl,obywatel.gov.pl,tuwroclaw.com,infoplanet.pl,tulodz.com,gokf.gda.pl,gdansk.pl,e-sochaczew.pl,pultusk24.pl,ogloszenia.plock.pl,tuzdrowie.pl,polski-tenis.pl,craftserve.pl,ustawmundial.weszlo.com,4fun.tv,m.24jgora.pl##.modal-open:style(overflow: auto !important; padding-right: 0px !important;)
@@ -117,3 +117,14 @@ wsensie.pl,wsensie.tv###policy
 wsensie.pl,wsensie.tv##.policy-open section:style(filter: none !important;)
 zakopane.info,tuwroclaw.com,tulodz.com###pd-modal, .modal-backdrop
 zeropln.antyweb.pl,praca.antyweb.pl##.justify-end.flex-col.flex.z-50.fixed.pin
+!
+!
+! Popupy dot. polityki prywatności/RODO - specjalne instrukcje
+!#if !cap_html_filtering
+publikator.com.pl##.layer
+publikator.com.pl##body>*:style(filter: none !important;)
+publikator.com.pl##html > body:style(overflow: auto !important;)
+!#endif
+!#if cap_html_filtering
+publikator.com.pl##^body script:has-text(polityka|zaufani)
+!#endif
