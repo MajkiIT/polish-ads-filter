@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Checksum: 0gVZnL4aL0VEVzym4ho7mA
+! Checksum: 0TLge5OeskvUuz34KgYTGg
 ! Title: Polskie Filtry Społecznościowe
 ! Polish Social Filters
 ! Codename: Social
@@ -7,8 +7,8 @@
 ! Required: Do poprawnego działania wymagana jest lista Fanboy's Social Blocking List!
 ! Collaborators: blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 201806231804
-! Last modified: Sat, 23 Jun 2018, 18:04:32 UTC+02
+! Version: 201806232027
+! Last modified: Sat, 23 Jun 2018, 20:27:55 UTC+02
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201806231804 aktualizacja: sob, 23 cze 2018, 18:04:32 UTC+02 
+! v.201806232027 aktualizacja: sob, 23 cze 2018, 20:27:55 UTC+02 
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować
@@ -111,8 +111,10 @@ pl##.Facebook
 pl##.Instagram
 pl##.Tfacebook
 pl##.Twitter
+pl##.aspexifblikebox
 pl##.blip
 pl##.contest.BTtbar
+pl##.extraBoxFacebook
 pl##.face
 pl##.facebook
 pl##.facebookIco
@@ -146,7 +148,6 @@ pl##.gplbHead
 pl##.gplus
 pl##.gplusIco
 pl##.g.socIco
-pl##.handle
 pl##.iFb
 pl##.iGl
 pl##.iIn
@@ -170,7 +171,6 @@ pl##.likebutton
 pl##.likely
 pl##.likes
 pl##.linkedin
-pl##.nforum
 pl##.nk
 pl##.pinterest
 pl##.pintrest
@@ -180,7 +180,6 @@ pl##.socialFbIco
 pl##.socialTwIco
 pl##.socialWyIco
 pl##.social.box
-pl##.stgBookmark
 pl##.theChampFacebookBackground.theChampSharing
 pl##.theChampGoogleplusBackground.theChampSharing
 pl##.theChampTwitterBackground.theChampSharing
@@ -191,9 +190,7 @@ pl##.twico.icon
 pl##.twit
 pl##.twitter
 pl##.twitterIco
-pl##.t.pl
 pl##.vimeo
-pl##.wk
 pl##.wykop
 pl##.wykopButton
 pl##.wykopShareIcon
@@ -201,6 +198,9 @@ pl##.yt
 pl##.ytico.icon
 pl##.ytlbHead
 pl##a.like
+pl##a[title="Click to share on Google+"]
+pl##a[title="Instagram"]
+pl##a[title="gplus"]
 pl##img[src="./images/icons/nk.png"]
 pl##img[src="/images/fb1.png"]
 pl##img[src="/img/nk_logo.png"]
@@ -210,6 +210,7 @@ pl##img[src="/p/logo-g+.png"]
 pl##img[src="/p/logo-tw.png"]
 pl##img[src="/p/logo-vm.png"]
 pl##img[src="/p/logo-yt.png"]
+pl##vce_social_menu
 pl###PQSharingSidebar
 pl###SocialFooter
 pl###YoutubeRight
@@ -218,6 +219,7 @@ pl###article-sidebar-action-facebook
 pl###athemes_social_icons-2
 pl###blip
 pl###block-fb-social-fb-likebox
+pl###bossbyte_slide_front
 pl###boxFacebook
 pl###boxGoogleplusArt
 pl###box_facebook
@@ -227,6 +229,7 @@ pl###dd-fblike
 pl###dd-fblike-iframe
 pl###event-socials-fb
 pl###face
+pl###facebookBox
 pl###facebookFans
 pl###facebookShare
 pl###facebookWindow
@@ -254,6 +257,7 @@ pl###fbook
 pl###fbpanel
 pl###fbw-box
 pl###fbw_id-2
+pl###fb-login
 pl###fb-window
 pl###flaker
 pl###fliskr-issu
@@ -268,6 +272,7 @@ pl###googleplus-widget
 pl###gplus-container
 pl###gp_ikona
 pl###grono
+pl###g-plus-badge
 pl###ico-fb
 pl###ico-pin
 pl###ico-yt
@@ -283,11 +288,11 @@ pl###koddostu_facebook_begen
 pl###labelSocial
 pl###likebox
 pl###likebox_1
+pl###likebox_1_1
 pl###like-btn
 pl###ls-footer-facebook-link
 pl###ls-footer-twitter-link
 pl###myspace
-pl###narzedzia
 pl###naszaklasa
 pl###nk
 pl###o_shareOnSocialMedia
@@ -305,13 +310,10 @@ pl###share-on-pinterest
 pl###share-on-twitter
 pl###sharingBar
 pl###sharingFloating
-pl###slide_panel46
-pl###sm-sa
 pl###socialYT
 pl###socials-container
 pl###social-facebook-footer-wraper
 pl###social-heder
-pl###strong
 pl###tab-widget-fb
 pl###tab-widget-g
 pl###tw
@@ -324,14 +326,10 @@ pl###tws_a_0
 pl###tws_a_100000
 pl###v_shortFbShare
 pl###wb_social
-pl###websitePQTimeoutWindow
 pl###widget-faceboox
-pl###widget_shop3
-pl###widget_shop5
 pl###win_like
 pl###win_like_mask
 pl###wykop
-pl###yDodaj
 pl###yYT
 pl###youtube_ikona
 pl###you-tube
@@ -383,9 +381,6 @@ pl##.btn_social_twiter
 pl##.btn_social_youtube
 pl##.b_like
 pl##.comments__likes
-pl##.community-sites
-pl##.content-wrapper.sitemap > .social
-pl##.copyright-right-side
 pl##.dodaj_do
 pl##.dostepne_facebook
 pl##.dostepne_googleplus
@@ -409,7 +404,6 @@ pl##.fa-instagram
 pl##.fa-linkedin.fa
 pl##.fa-pinterest.fa
 pl##.fa-spotify
-pl##.fa-stack-2x.fa-circle.fa
 pl##.fa-twitter.fa
 pl##.fa-twitter-square
 pl##.fa-youtube
@@ -421,6 +415,7 @@ pl##.fb-top
 pl##.fb-widget
 pl##.fb-yt-icon
 pl##.fb_border
+pl##.fb_foot
 pl##.fb_icon
 pl##.fb_img
 pl##.fb_like_contain
@@ -433,13 +428,11 @@ pl##.footer-social-share-icons
 pl##.footer-tube
 pl##.footer-youtube
 pl##.footer__block--social.footer__block
-pl##.footer__right
 pl##.foot_fb
 pl##.foot_gp
 pl##.foot_tw
 pl##.foot_yt
 pl##.funkc_box
-pl##.f-find-box
 pl##.gk-icon-fb
 pl##.gk-icon-twitter
 pl##.gmspr-footer-facebook
@@ -447,7 +440,6 @@ pl##.gmspr-footer-gplus
 pl##.googleplus_link
 pl##.gplus-like-button
 pl##.group.box-social-counter
-pl##.gtop_top
 pl##.has-shares.ng-scope
 pl##.header-dark-icon-facebook
 pl##.header-dark-icon-google-plus
@@ -455,6 +447,7 @@ pl##.header-dark-icon-twitter
 pl##.header-dark-icon-youtube
 pl##.header--social
 pl##.header_fb_link
+pl##.hf--social-icons
 pl##.hidden-landscape.btn--fb.btn--blue.btn--lg.btn2.hidden-xs
 pl##.hidden-landscape.btn--google.btn--red.btn--lg.btn2.hidden-xs
 pl##.hidden-landscape.btn--twitter.btn--blue2.btn--lg.btn2.hidden-xs
@@ -467,10 +460,10 @@ pl##.hide-for-small-only.sm
 pl##.icon23062016-google-plus
 pl##.icon23062016-instagram
 pl##.icons-facebook-find-us
-pl##.icon-custom-forum
 pl##.icon-custom-instagram
 pl##.icon-facebook
 pl##.icon-facebook-2
+pl##.icon-gplus.icon
 pl##.icon-instagram
 pl##.icon-snapchat
 pl##.icon-twitter
@@ -540,13 +533,11 @@ pl##.mag_gplus220
 pl##.mag_twitter220
 pl##.main-footer-social
 pl##.mashicon-pinterest
-pl##.mb-0.mt-0.bnr-text--tertiary.bnr-text.foot-network
 pl##.mobile-facebook
 pl##.mod.mod_sociallist.middle
 pl##.momizat-facebook
 pl##.m-sociallinks-link--instagram
 pl##.m-sociallinks-link--youtube
-pl##.n60972_a
 pl##.nfy-sebox-facebook-like
 pl##.okl_fb.okl
 pl##.okl_goo.okl
@@ -556,7 +547,6 @@ pl##.okl_tw.okl
 pl##.pie.login > ul
 pl##.post-like-us
 pl##.post_likes
-pl##.pull-sm-post.col-sm-2>.list-unstyled
 pl##.qticon-facebook
 pl##.qticon-twitter
 pl##.qticon-youtube
@@ -566,7 +556,6 @@ pl##.recommended-gg
 pl##.recommended-twtt
 pl##.recommend_fb_like_action
 pl##.rel.icon-top-sm-fb.icons-top-sm.images
-pl##.reseaux_blog
 pl##.roberto-facebook.roberto
 pl##.roberto-google-plus.roberto
 pl##.roberto-twitter.roberto
@@ -574,7 +563,6 @@ pl##.rrssb-facebook
 pl##.rrssb-twitter
 pl##.r-likes-wrapper
 pl##.sb_facebook.sb_list
-pl##.sb_head
 pl##.service-facebook
 pl##.service-google_plus
 pl##.service-pinterest
@@ -606,13 +594,13 @@ pl##.sm-link--p.sm-link
 pl##.sm-link--yt.sm-link
 pl##.snap_icon
 pl##.snap_img
-pl##.soc12-c.no-mobile
 pl##.socializer-fb-share
 pl##.socializer-gplus-share
 pl##.socializer-twitter
 pl##.socials-bar
 pl##.socials_foot
 pl##.social-fb
+pl##.social-float-bar
 pl##.social-gp
 pl##.social-tw
 pl##.social_ico-fb.social_ico
@@ -620,6 +608,7 @@ pl##.social_ico-gp.social_ico
 pl##.social_ico-insta.social_ico
 pl##.social_ico-tw.social_ico
 pl##.social_media_art
+pl##.social_widgets
 pl##.soc-likes
 pl##.soc-wykop
 pl##.soc_fb
@@ -639,9 +628,7 @@ pl##.toolbar-facebook
 pl##.toolbar-fb
 pl##.toolbar-linkedin
 pl##.toolbar-twitter
-pl##.top1.rel.icon-top-sm-tt.icons-top-sm.images
 pl##.topBox__fbBox
-pl##.top-contact-i.top-contact-3
 pl##.top__fb
 pl##.top__insta
 pl##.top__yt
@@ -667,27 +654,11 @@ pl##.wykop-button.share-button
 pl##.youtube-footer
 pl##.yo_icon
 pl##.yt-ico
+pl##.yt_foot
 pl##.zme-like
 pl##.zobacz-nas
 pl##._--facebook.site-footer__bottom-nav__item
 pl##[id^="nk_fajne"]
-##.aspexifblikebox
-##.extraBoxFacebook
-##a[title="Click to share on Google+"]
-##a[title="Instagram"]
-##a[title="gplus"]
-##vce_social_menu
-###bossbyte_slide_front
-###facebookBox
-###fb-login
-###g-plus-badge
-###likebox_1_1
-##.fb_foot
-##.hf--social-icons
-##.icon-gplus.icon
-##.social-float-bar
-##.social_widgets
-##.yt_foot
 !
 !
 ! Specyficzne reguły ukrywające
@@ -1045,6 +1016,7 @@ eksperymentalnie.com##.pad2.icon2x.sm-icons.row
 ekstrastats.pl##.spu-bg, .spu-box, .juiz_last_tweet_inside, .widget_wpex_social_widget
 ekte.pl##.widget_alc_social
 eku24.net##.fb-social
+eldahurt.pl,extramama.pl###widget_shop3
 electro-torrent.pl###left-side-2:nth-of-type(6)
 electro-torrent.pl###right-button-bottom:nth-of-type(17)
 electro-torrent.pl###right-button-bottom:nth-of-type(23)
@@ -1095,6 +1067,7 @@ ezamosc.pl##.nomargin.gkmod-6.box:nth-of-type(6) > .content > .custom > ul > li:
 e-biznes.pl##.x-main > div.content.entry-content:nth-of-type(1)
 e-kca.pl##a[href="http://plus.google.com/112246936900220613632"]
 e-kca.pl##a[href="http://www.facebook.com/sklepkca"]
+e-kominki24h.pl##.widgets, .footer-hehe > span:nth-of-type(8)
 e-sochaczew.pl##.col-lg-8
 e-sochaczew.pl##[href^="https://plus.google.com/u/0/100895888893863910318/"]
 e-zikoapteka.pl###side_widget
@@ -1499,6 +1472,7 @@ mojtelefon.info##.youtube
 mojtelefon.info,oakandberry.com,~allegro.pl,~kurnik.pl,pl##.fb
 mojtelefon.info,oakandberry.com,pl##.tw
 mondaynews.pl##.pre-footer-internal-social
+moto125.pl###widget_shop1
 motomi.pl##.col-sm-4 > h3
 motormag.pl##.wdi_instagram_widget
 motywujemy24.pl##li:nth-of-type(2) > .fb_iframe_widget
@@ -1659,6 +1633,7 @@ pbsbank.pl##a[href^="https://www.facebook.com/pages/PBS-Bank-Podkarpacki-Bank-Sp
 pb.pl##a[href="#npb-tab-twitter"]
 pccentre.pl###zak_fb
 pclab.pl###b021, #b037
+pcoutlet.pl##.social-conteiner
 pcsupport.lenovo.com##.icon-l-ytb
 pct24.pl,psz24.info,pp24.info.pl##.socialtop, .socmed
 pdasite.pl###text-11, #text-3
@@ -1931,6 +1906,7 @@ sitobiznes.pl##.soc-googleplus
 skiny.pl###wysuwane
 skionline.pl##a[href="https://plus.google.com/+SkionlinePl_news"]
 sklephormann.pl###widget_shop1
+sklephormann.pl,tylkostylowe.pl###widget_shop1
 sklepy.muzyczne.studentnews.pl##nobr:nth-of-type(12)
 sklepy.muzyczne.studentnews.pl##nobr:nth-of-type(13) > .menulnk
 sklep-fitness.pl##.bottom
@@ -2110,6 +2086,7 @@ tygodnikzamojski.pl##.headerfbl
 tygodnik-krapkowicki.info###tabfour
 tygodnik-rolniczy.pl##.footer_column:nth-of-type(4)
 tygodnik-rolniczy.pl##.topmenu__social
+tylkoklocki.pl###widget_shop3
 tyna.info.pl###text-2, #widget_sp_image-39
 typeofweb.com###text-4, #tp_widget_recent_tweets-2, #text-2 > .widget-title
 tytus.edu.pl##[href="https://www.facebook.com/Hr.Tytus/"]
@@ -2296,6 +2273,7 @@ zegarkiipasja.pl##.m-t-20.m-b-20.col-sm-6.col-xs-12
 zegarkiipasja.pl##.top-menu > .hidden-xs
 zeropln.antyweb.pl##.xs\:mb-8.xs\:items-center.xs\:flex.xs\:mr-0.xs\:w-full.text-center.mr-8.w-24
 zielonearkady.com.pl##.button_yt, .button_insta, .find_us_name, .find_us_content
+zizako.pl###widget_shop4
 zlece.pl###sledz-nas
 zmianynaziemi.pl##.service-links--pl-wykop, .service-links--pl-sledzik
 zoom.idg.com.pl##a[href="https://twitter.com/IDG_Poland"]

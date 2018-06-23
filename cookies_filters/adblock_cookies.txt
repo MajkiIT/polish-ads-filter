@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: uN3bGkBNU2zHO8gbpt+JJQ
+! Checksum: h0imsN8xW3obqO5nqAyXhA
 ! Title: Polskie Filtry RODO-Ciasteczkowe
 ! Polish GDPR-Cookies Filters
 ! Codename: Cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności/RODO.
 ! Collaborators: F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 201806231804
-! Last modified: Sat, 23 Jun 2018, 18:04:38 UTC+02
+! Version: 201806232027
+! Last modified: Sat, 23 Jun 2018, 20:27:49 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201806231804 aktualizacja: sob, 23 cze 2018, 18:04:38 UTC+02
+! v.201806232027 aktualizacja: sob, 23 cze 2018, 20:27:50 UTC+02
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować
@@ -1101,6 +1101,7 @@ cookie-law-popup.js$script
 !
 !
 ! Popupy - polityka prywatności/RODO
+4lomza.pl###komunikat_rodo
 agropolska.pl##.ui-widget-overlay, .ui-widget-content
 alerabat.com###popup-rodo
 allegro.pl##div[data-box-name="allegro.rodoConsentModal"]
@@ -1552,22 +1553,19 @@ gg.pl#@#body > div:nth-of-type(2) > div
 !
 !
 ! Wyjątki
+digitaltrends.com#@#[id*="cookie-"]
 foxnews.com#@#.cookies
-gdansk.pl#@#:not(input)[id*="cookie"]
 gdansk.pl,gokf.gda.pl,orteil.dashnet.org#@##cookies:not(body):not(html):not(.section)
 iculture.nl#@#[id*="cookie_"]
 letsplej.pl,telepizza.pl,orange.pl,google.pl,topics.nl,przenosne.pl#@#div[class*="cookie"]
 lomza.pl#@##komunikat-cookie
 lycos.de,lycos.com#@#.cookies
 naekranie.pl#@##polityka-cookies:not(body):not(html)
-naekranie.pl#@##polityka-prywatnosci
-naekranie.pl#@##polityka-prywatnosci:not(body):not(html)
-naekranie.pl#@#:not(input)[id*="cookie"]
 naekranie.pl#@#[id^="polityka-prywatnosci"]
 norauto.pl,orange.pl,orteil.dashnet.org#@#:not(input)[id*="Cookie"]
 opencraft.pl#@#[id^="topInfo"]
 orange.pl#@##cookies-info
-orange.pl,taat.pl,bskrasnosielc.pl,iculture.nl,interhotel.pl,puma.com,bestcena.pl,gokf.gda.pl,orteil.dashnet.org#@#:not(input)[id*="cookie"]
+orange.pl,taat.pl,bskrasnosielc.pl,iculture.nl,interhotel.pl,puma.com,bestcena.pl,gokf.gda.pl,orteil.dashnet.org,gdansk.pl,naekranie.pl,digitaltrends.com#@#:not(input)[id*="cookie"]
 orteil.dashnet.org#@#div[class*="Cookie"]
 pokemon.com#@#.cookies
 redbullmobilecollect.pl#@#[id^="polityka-prywatnosci"]
