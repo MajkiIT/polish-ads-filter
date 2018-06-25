@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 24 June 2018
+! Last modified: 25 June 2018
 ! Expires: 1 day
-! Version: 2018062401
+! Version: 2018062501
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018062401 aktualizacja: nie, 24 czerwca 2018, 21:55:00
+! v.2018062501 aktualizacja: pon, 25 czerwca 2018, 08:20:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -4037,6 +4037,7 @@ www.money.pl##DIV[style$=" z-index: auto;"] > DIV[class]
 ~www.money.pl,~praca.money.pl,money.pl##DIV[class] + DIV[id] > DIV[class]:first-child
 www.money.pl##P + DIV[style$="padding:10px 0"]
 www.money.pl##SCRIPT[src^="//money"] + DIV[class][style="text-align:center;"]
+www.money.pl#?#.article__content>div[class*=" "]:-abp-has(div>div>div:-abp-contains(REKLAMA))
 !
 !36#--------------------------Easylist Bugs -----------!
 @@||adocean.pl^*/ad.js?id=$script,domain=tvn24.pl,badfilter
