@@ -1,7 +1,7 @@
 ### Oprogramowanie pihole
 
 Jest to serwer DNS, który zasilany regularnie listą domen atakujących niepożądanymi treściami, filtruje połączenia zanim dojdzie do pobrania reklamy lub kodu śledzącego użytkowników.
-<code>https://pi-hole.net/<code>
+<code>https://pi-hole.net/</code>
 
 
 ### Spis filtrów pihole
