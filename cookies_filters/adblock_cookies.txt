@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: Q0YFJpJExAOKXuN2CGPlnA
+! Checksum: u2FJdt1G63vR72higYsG4A
 ! Title: Polskie Filtry RODO-Ciasteczkowe
 ! Polish GDPR-Cookies Filters
 ! Codename: Cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności/RODO.
-! Collaborators: F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
+! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 201806282056
-! Last modified: Thu, 28 Jun 2018, 20:56:34 UTC+02
+! Version: 201806302043
+! Last modified: Sat, 30 Jun 2018, 20:43:15 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201806282056 aktualizacja: czw, 28 cze 2018, 20:56:34 UTC+02
+! v.201806302043 aktualizacja: sob, 30 cze 2018, 20:43:15 UTC+02
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować
@@ -890,6 +890,7 @@ targeo.pl##div[style="position: absolute; z-index: 32000; font-size: 11px; font-
 tchibo.pl##[class^="euCookieLayer"]
 teatrateneum.pl##div#ecd_opt_in_banner
 teb-akademia.pl###ciasteczkowy_potwor
+techpedia.pl##.skyf1
 tekstowo.pl###ci-info-box
 teletrade-dj.pl###pp
 teltab.pl###topInfoContainer0, #topInfoContainer1, #topInfoContainer1Mask, #top_info, .top_info
@@ -1160,11 +1161,13 @@ gospodarkamorska.pl,synonim.net,speedtest.pl,nj24.pl###rodo
 haloursynow.pl###myModal, .modal-backdrop
 hebe.pl##.rodo-popup_popup
 iiyama.com##.infobar-message
-imagazine.pl##.overlay-rules
+imagazine.pl,moviesroom.pl##.overlay-rules
 infostrefa.com,pap.pl###rodoWrapper
 instagram.com#?#div>div>div:-abp-contains(cookie)
 jarocinska.pl,gostynska.pl,zpleszewa.pl,rawicz24.pl,zwielkopolski24.pl##.backdrop, .lightbox-modal
 jelonka.com##.prywatnosc
+kalendarzrolnikow.pl###colorbox, #cboxOverlay
+kiep.pl###rodo-pop
 kochamwroclaw.pl###tfade, #cwv3_dialog, #tlight, .dialog-overlay, #surbma-yes-no-popup
 kreskoweczki.pl###rodo-block
 londynek.net##.jd-rodo
@@ -1176,7 +1179,7 @@ malwarebytes.com#?#.ce-banner:-abp-has(.gdpr-p)
 meble.com.pl,archiconnect.pl,lazienka.pl,najlepszedomy.pl,mamkuchnie.pl###axn
 medme.pl###ccc
 medpolonia.pl###bannerPopup
-moviesroom.pl##.overlay-rules
+miedziowe.pl###RODOZgoda
 m.benchmark.pl###private-policy-popup
 naekranie.pl###modal-rodo-info, .reveal-modal-bg
 natemat.pl,aszdziennik.pl,mamadu.pl,innpoland.pl,warszawawpigulce.pl,joemonster.org,eskago.pl##div[class^="app_gdpr"]
@@ -1203,8 +1206,10 @@ radiogol.pl##.hustle-modal-message
 radiowroclaw.pl,radioram.pl,radiogdansk.pl###rodoModal
 radiozet.pl,antyradio.pl,radiostacja.pl,meloradio.pl,azorek.pl,planeta.fm,chillizet.pl##div[class^="app_cmpAppGdpr"]
 razemztoba.pl##.inform
+rc.fm###popup-message-window, #popup-message-background
 rmf.fm##.rodo-popup
 salesmanago.pl##.popup
+sawataxi.pl##.w_news
 serialowa.pl##.popmake-overlay
 skionline.pl###popup_rodo
 sklepyabc.pl###am_pop-up
@@ -1219,6 +1224,7 @@ trakt.tv##.sncmp-app_gdpr
 tvp.info,tvp.pl##.tvp-covl, .tvp-covl-bg
 tygodnikpowszechny.pl###top_head
 tygodnikzamojski.pl###rodo-message
+umowycywilnoprawne.pl###formalAgreementModal, #modalBackdrop
 virustotal.com###euConsent
 weather.com##.lite-msg-parent
 weekendfm.pl##.rodo_out
@@ -1249,10 +1255,12 @@ zywiec.com.pl,heineken.com.pl###infobx
 ||kochamwroclaw.pl/wp-content/plugins/wp-terms-popup/assets/popup-style.css
 ||newonce.net/wp-content/plugins/popup-builder/javascript/jquery.sgcolorbox-min.js
 ||player.pl/playerapi/document/rodo-short/content$xmlhttprequest
+||quantcast.mgr.consensu.org/cmp.js$domain=memy.pl
 ||rodo.agora.pl^$script
 ||static.fabrykasily.pl/fs-tac/pp-t-a-c.js
 ||std.wpcdn.pl/wpjslib/*wpjslib-chunk-consent-form.js 
 ||std.wpcdn.pl/wpjslib/*/wpjslib-chunk-notification.js
+||tygodnik-krapkowicki.info/media/plg_system_eprivacy/js/eprivacy.js
 ||www.forumsamochodowe.pl/js/jquery.cookie.js
 ||www.granice.pl/api/Agreements/AgreementsCheck?RodoCookie=$xmlhttprequest
 ||www.korsosanockie.pl/ajax/privacy_popup$xmlhttprequest
@@ -1260,6 +1268,7 @@ zywiec.com.pl,heineken.com.pl###infobx
 ||www.swiatksiazki.pl/customer/account/infoAgreement/*$xmlhttprequest
 ||www.twojapogoda.pl/rodo/*$xmlhttprequest
 ||www.wroclaw.pl/portal/themes/js/script-rodo.min.js
+||zgody.infor.pl/build/assets/js/main.js
 !
 !
 ! Ogólne reguły blokujące
