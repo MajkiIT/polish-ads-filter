@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 5 July 2018
+! Last modified: 6 July 2018
 ! Expires: 1 day
-! Version: 2018070501
+! Version: 2018070601
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018070501 aktualizacja: czw, 5 lipca 2018, 15:45:00
+! v.2018070601 aktualizacja: ptk, 6 lipca 2018, 08:45:00
 !
 !
 !-----------------------Integration list with uBlock-----------------------!
@@ -285,7 +285,7 @@ popkiller.pl,tygodnikpodhalanski.pl,cnc.info.pl##[class*="reklamy"]
 4kom.pl###PSH-Bar
 4lomza.pl##.bxbanner
 4lomza.pl,zambrow.org##[id*="banner"]
-4programmers.net##INS > A[target="_blank"]
+4programmers.net###container-fluid > div > A[target="_blank"]
 6obcy.com.pl##.g2a
 7dni.pila.pl##[id*="_bid_"]
 90minut.pl##body > div:nth-of-type(3)
@@ -2105,6 +2105,7 @@ radomsport.pl##SCRIPT + DIV[align="center"]
 rawicz24.pl,zwielkopolski24.pl##.txt
 rawicz24.pl###popup-wrapper
 rc4max.com##.reklamy_g
+rdc.pl##div:nth-of-type(17)
 rdn.pl###pl-w5922cc44491e8
 realmadryt.pl###col-right > #lay-home-cb-1 > .c1
 realmadryt.pl###col-right > #lay-home-cb-2 > .c1.news > .comments + div[style="text-align: center; color: #696969; font-size: 9px;"]
@@ -2209,7 +2210,7 @@ signs.pl###podreklame
 silentiumpc.com###sfuh97g
 silesia.fm##.e3lan-top
 silesia.fm##.sidebar
-sitemag.pl,infokatowice.pl##.td-header-sp-recs
+sitemag.pl,infokatowice.pl,noweinfo.pl##.td-header-sp-recs
 sitemag.pl##.td-all-devices
 skijumping.pl##P + DIV[style="text-align:center;"], .news > div:nth-of-type(2)
 skiny.pl##A[href="http://www.radioparty.pl"]
@@ -3613,6 +3614,7 @@ zw.pl###abpnotzw
 @@||advert-serv.johnmorris.me/adserver/adlogger_tracker.php$subdocument,domain=www.terrarium.com.pl
 @@||adv.wp.pl/adverts$xmlhttprequest,domain=pilot.wp.pl
 @@||adv.wp.pl/RM/Box/*/inline-videostar.js$script,domain=pilot.wp.pl
+@@||animezone.pl^$generichide
 @@||anyfiles.pl/pageloading/*-loader.jsp?ads=true
 @@||app.convertiser.com/scripts/*.advert.js
 @@||applemobile.pl^$generichide
@@ -3621,7 +3623,6 @@ zw.pl###abpnotzw
 @@||burzowo.info/scripts/ad.js$script,domain=burzowo.info
 @@||businessinsider.com.pl^$generichide
 @@||cdn.muratordom.smcloud.net/t/advert.js$script,domain=www.poradnikzdrowie.pl
-!@@||csr.onet.pl/_s/csr-*/csr.jsx$script
 @@||csr.onet.pl/$domain=www.newsweek.pl
 @@||cyfrowydoradca.pl/modules/mod_jpayday/js/advertisement.js
 @@||epiotrkow.pl/js/*reklama*.js$script
@@ -3692,6 +3693,7 @@ zw.pl###abpnotzw
 @@||zyciepabianic.pl^$generichide
 !
 !17#--------------------------Rules block ads after antiadblock rules-------------!
+animezone.pl##[id*="ScriptRoot"]
 cosplayjav.pl##.baner-bottom-section
 gry-planszowe.pl##.phpbb-ads-center
 how2play.pl##[href="https://how2play.pl/wylacz-adblocka/"], #custom_html-3
