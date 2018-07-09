@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: vQxSKKJ+SrDKspG6snEIAQ
+! Checksum: 4jF+AQwWCvAXJfzpRBs6dg
 ! Title: Polskie Filtry RODO-Ciasteczkowe
 ! Polish GDPR-Cookies Filters
 ! Codename: Cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności/RODO.
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 201807081736
-! Last modified: Sun, 08 Jul 2018, 17:36:28 UTC+02
+! Version: 201807092203
+! Last modified: Mon, 09 Jul 2018, 22:03:09 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201807081736 aktualizacja: nie, 08 lip 2018, 17:36:28 UTC+02
+! v.201807092203 aktualizacja: pon, 09 lip 2018, 22:03:09 UTC+02
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować
@@ -52,6 +52,7 @@ am.gdynia.pl##div#infoCiasteczek
 animesub.info##div.appriseOuter
 animesub.info##div#aOverlay
 apdmarket.pl###popup
+apkpure.com###policy-info
 apsdata.pl###alert
 aptekadyzurna.pl##div[style="padding: 10px 70px 10px 50px; font-family: arial, sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 9px; line-height: normal; background-color: rgb(153, 153, 153); display: block; position: relative; color: white; width: 99%; "]
 aptekagemini.pl##div#kukiz
@@ -1131,6 +1132,7 @@ autodna.pl##.privacy_policy-info
 autogielda.pl##.modal-backdrop
 automo.pl,autobaza.pl###rodo, .rodoButtonUp
 auto-swiat.pl###termsPopup
+biznesistyl.pl##.popup_overlay, .box_popup
 bryk.pl,interia.pl,pokazywarka.pl##.rodo-mini
 certum.pl##.spu-bg, .spu-box
 chomikuj.pl###acceptChomikujTermsOverlay, #acceptChomikujTermsContainer
@@ -1183,7 +1185,7 @@ kiep.pl###rodo-pop
 kochamwroclaw.pl###tfade, #cwv3_dialog, #tlight, .dialog-overlay, #surbma-yes-no-popup
 koleje-wielkopolskie.com.pl##.spu-bg, .spu-box
 kreskoweczki.pl###rodo-block
-londynek.net##.jd-rodo
+londynek.net##.jd-rodo, .jd-rodo-2
 lotto.pl###klauzula_informacyjna_nakladka
 lubimyczytac.pl###TB_window, #TB_overlay
 lublin112.pl###privacy_info_content, #privacy_info_overlay
@@ -1235,6 +1237,7 @@ speedtest.net###_evidon-barrier-wrapper
 spidersweb.pl###moove_gdpr_cookie_info_bar
 store.playstation.com###privacy-header
 szlot.pl##.spu-bg, .spu-total-
+tanie-loty.com.pl###rodo_info_placeholder
 tcz.pl###dynamic-load-rodo, #dynamic-loading-rodo
 telegazeta.pl##.tvp-covl-bg, .tvp-covl
 telewizjarepublika.pl###swsmodal, #swsoverlay
@@ -1602,7 +1605,7 @@ gg.pl#@#body > div:nth-of-type(2) > div
 !
 !
 ! Wyjątki
-digitaltrends.com#@#[id*="cookie-"]
+digitaltrends.com,php.net#@#[id*="cookie-"]
 foxnews.com#@#.cookies
 gdansk.pl,gokf.gda.pl,orteil.dashnet.org#@##cookies:not(body):not(html):not(.section)
 iculture.nl#@#[id*="cookie_"]
@@ -1614,7 +1617,7 @@ naekranie.pl#@#[id^="polityka-prywatnosci"]
 norauto.pl,orange.pl,orteil.dashnet.org#@#:not(input)[id*="Cookie"]
 opencraft.pl#@#[id^="topInfo"]
 orange.pl#@##cookies-info
-orange.pl,taat.pl,bskrasnosielc.pl,iculture.nl,interhotel.pl,puma.com,bestcena.pl,gokf.gda.pl,orteil.dashnet.org,gdansk.pl,naekranie.pl,digitaltrends.com#@#:not(input)[id*="cookie"]
+orange.pl,taat.pl,bskrasnosielc.pl,iculture.nl,interhotel.pl,puma.com,bestcena.pl,gokf.gda.pl,orteil.dashnet.org,gdansk.pl,naekranie.pl,digitaltrends.com,php.net#@#:not(input)[id*="cookie"]
 orteil.dashnet.org#@#div[class*="Cookie"]
 pokemon.com#@#.cookies
 redbullmobilecollect.pl#@#[id^="polityka-prywatnosci"]
