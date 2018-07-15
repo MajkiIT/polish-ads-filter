@@ -1,11 +1,11 @@
-! Checksum: SDUpz3vEfkNl8OZrkn4ELg
+! Checksum: sT1O7DHHSNYwQNXlSdMVFQ
 ! Title: Polskie Filtry Społecznościowe - Uzupełnienie do uBlocka i AdGuarda
 ! Polish Social Filters - Supplement for uBlock & AdGuard
 ! Codename: Social - Supplement
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, F4z, RikoDEV
 ! Homepage: https://www.certyficate.it/
-! Version: 201807101454
-! Last modified: Tue, 10 Jul 2018, 14:54:06 UTC+02
+! Version: 201807151846
+! Last modified: Sun, 15 Jul 2018, 18:46:20 UTC+02
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,7 +13,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201807101454 aktualizacja: wto, 10 lip 2018, 14:54:06 UTC+02 
+! v.201807151846 aktualizacja: nie, 15 lip 2018, 18:46:21 UTC+02 
 !
 !
 ! Popupy
@@ -39,7 +39,7 @@ wp.pl##.article > [class]:has(>[class] > .fb-like)
 !
 ! Widgety - specjalne instrukcje
 !#if !cap_user_stylesheet
-dobreprogramy.pl##.author-social-links, .social:style(visibility: hidden !important;)
+dobreprogramy.pl##.author-social-links, .span-8 > .social, .content.float-right > .social:style(visibility: hidden !important;)
 gadzetomania.pl,fotoblogia.pl,komorkomania.pl,autokult.pl##a[href^="https://www.facebook.com/sharer.php"], [href^="http://twitter.com/intent/tweet"], [href^="http://pinterest.com/pin/create/link/"]:style(visibility: hidden !important;)
 gadzetomania.pl,fotoblogia.pl,komorkomania.pl,autokult.pl##.link-facebook, .link-youtube, .link-gplus, .link-instagram, .icon-mail:style(visibility: hidden !important;)
 wp.pl,~www.wp.pl###app > div > table > tbody > tr:nth-child(1) > td > div > div > div > div > div > div > div > article > div > div > div > div[hidden]:style(position: absolute !important; left: -3000px !important;)
