@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 20 July 2018
 ! Expires: 1 day
-! Version: 2018072002
+! Version: 2018072003
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,11 +17,16 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018072002 aktualizacja: ptk, 20 lipca 2018, 11:00:00
+! v.2018072003 aktualizacja: ptk, 20 lipca 2018, 12:05:00
 !
 !
 !-----------------------Integration list with uBlock & Adguard-----------------------!
+!#if ext_ublock
 !#include adblock_ublock.txt
+!#endif
+!#if adguard
+!#include adblock_adguard.txt
+!#endif
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
