@@ -5,9 +5,9 @@
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 13 July 2018
+! Last modified: 20 July 2018
 ! Expires: 2 days
-! Version: 2018071301
+! Version: 2018072001
 ! Support: 
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -15,7 +15,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018071301 aktualizacja: pt, 13 lipca 2018, 12:30:00
+! v.2018072001 aktualizacja: pt, 20 lipca 2018, 12:05:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -313,6 +313,7 @@ astroweb.pl##script:inject(abort-on-property-read.js, checkAds)
 aternos.org##script:inject(setTimeout-defuser.js, hasAdblock)
 ||wp.hit.gemius.pl/gdejs/xgde.js$script,redirect=noopjs,domain=pilot.wp.pl
 skript.pl##script:inject(abort-current-inline-script.js, $, alert)
+skript.pl##script:inject(abort-current-inline-script.js, document.addEventListener, adblocka)
 !
 ! Rules after Adblock
 vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
