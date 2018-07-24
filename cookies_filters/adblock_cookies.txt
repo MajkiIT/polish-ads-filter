@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: 4D6YBWxMG1xyB3erwSr1Iw
+! Checksum: e6MvZt5vLhmHXfUbTYUBhQ
 ! Title: Polskie Filtry RODO-Ciasteczkowe
 ! Polish GDPR-Cookies Filters
 ! Codename: Cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności/RODO.
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 201807221228
-! Last modified: Sun, 22 Jul 2018, 12:28:42 UTC+02
+! Version: 201807241731
+! Last modified: Tue, 24 Jul 2018, 17:31:20 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201807221228 aktualizacja: nie, 22 lip 2018, 12:28:42 UTC+02
+! v.201807241731 aktualizacja: wto, 24 lip 2018, 17:31:20 UTC+02
 !
 !
 ! Specyficzne reguły ukrywające
@@ -66,6 +66,7 @@ autokult.pl##div#cop
 autosklep24.pl##div#box_alert
 avast.com##.cookie-bar
 avioner.pl##.alert
+a-o.ninja###cookie-notice
 baje.pl,traftu.pl##.unconfirmed.opt-in-splash
 bankmillennium.pl,zus.pl#@#.cookies-info
 bardotti.pl##.wpmui-popup
@@ -392,6 +393,7 @@ istotne.pl##.notification-info.notification
 ists.pl##.polityka
 itaka.pl##div[style="position: fixed; bottom: 0px; width: 100%; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(187, 187, 187); box-shadow: rgb(238, 238, 238) 0px -10px 20px; padding: 10px; text-align: center; background-color: rgb(252, 252, 252); z-index: 10000; background-position: initial initial; background-repeat: initial initial; "]
 itpromo.pl###topInfoContainer0, #topInfoContainer1, #topInfoContainer1Mask, #top_info, .top_info
+iturek.net###cookie_message_website_policy
 iwanowice.pl###privacy-policy-box
 izone.pl##.mm-page > div[style*="height: 80px"]
 jajco.pl##div[id*="n-cookies-notification"]
@@ -604,6 +606,7 @@ mzdik.pl###webDataTime > span
 nakanapie.pl##div.sticker
 nano-carbon.pl##body > div:not([id]):not([class])
 naszamlawa.pl###fancybox-overlay
+nasze-kino.tv###cookies
 naturo.pl###simple-modal, #simple-modal-overlay
 nauka.gov.pl##.ui-notificationbar.top
 nazaruk.pl##.fixedInfo
@@ -783,7 +786,7 @@ rckik.poznan.pl##body > div:not([id]):not([class])
 reactor.pl,yamo.pl###einfo
 recepcja.visionexpress.pl##div[style="background-color: rgb(217, 217, 217); margin: 0px auto; padding: 25px 8px 15px; position: fixed; right: 0px; width: 400px; bottom: 0px; z-index: 1000; color: rgb(0, 0, 0); border: 3px solid rgb(102, 102, 102); "]
 redbullmobile.pl###more1
-reddit.com##html > body > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div:nth-of-type(1) > form > div
+reddit.com#?##SHORTCUT_FOCUSABLE_DIV > div > div > div > form > div:-abp-contains(cookies)
 reedukacja.pl,sklepbiegowy.com,sklepkoszykarza.pl,zgodafc.pl##body > div:not([id]):not([class])
 refunder.pl#?#.bg-white:-abp-has([href="/warunki#cookies"])
 relpol.pl###powiadomiony
@@ -804,6 +807,7 @@ salon404.pl###jqmAlert
 salonroman.pl##DIV[style="background-color: rgb(203, 169, 92); color: rgb(255, 255, 255); font-size: 13px; margin: 0px auto; padding: 6px 0px; position: relative; text-align: center; top: 0px; width: 100%; z-index: 9000;"]
 salonroman.pl##body > div:not([id]):not([class])
 samba.com.pl###ciastoWarstwa
+samsung.com,player.pl##.cookie-notice
 sandecja.org###overflow-content
 sanprobi-superformula.pl##body > div:not([id]):not([class])
 santander24.pl###pageUpperInfo
@@ -824,6 +828,7 @@ shazam.com##div.policy-label
 shippuuden.pl##div#cookis-bg
 shop-dent.pl##div.black_overlay
 shop-dent.pl##div.ciacho-wrap-container
+showmax.com##footer ~ div:nth-of-type(1), #app > div > div:nth-of-type(2)
 showtv.pl##DIV[style="left: 0; bottom: 0; width: 100%; position: fixed; z-index: 9999999; background: #FFF; border-bottom: 1px solid #CCC;"]
 showtv.pl##body > div:not([id]):not([class])
 siemens.com###c-info
@@ -872,6 +877,7 @@ stopwariatom.pl##body > div:not([id]):not([class])
 storm24.pl###popup
 strefaczasu.pl##.Cooker
 stroer.pl##.popUpWrap
+strona.euro-net.pl##.komunikatciasteczka
 studentpotrafi.pl##body > div:not([id]):not([class])
 studiorolety.pl##.content-head-information
 stylowi.pl##DIV[style="position: fixed; left:0; right:0; bottom:0; height:120px; background-color:#eee; border-top: 1px solid black; z-index:16; overflow: auto"]
@@ -1124,6 +1130,7 @@ cookie-law-popup.js$script
 !
 !
 ! Popupy - polityka prywatności/RODO
+2x45.info###cookies
 4lomza.pl###komunikat_rodo
 adm-media.pl,kociadolina.pl##.policy
 agencjagazeta.pl###rodoLayer
@@ -1159,6 +1166,7 @@ dziennikwschodni.pl##.rodo-alert
 elka.pl,elka.tv,miedziowe.pl###RODOZgoda
 elk.gmina.pl##.spu-bg, .spu-box
 emt-systems.pl###rodoBG
+enjoyuk.pl###fanback
 epiotrkow.pl##.user_politic_pop
 epoznan.pl###rodo-info-box
 epuap.gov.pl###rodo-modal
@@ -1232,7 +1240,7 @@ pl,ki24.info,ciechocinek.biz,gniewkowo.eu,pluznica.info,nizanskie.info##.rodo-ov
 pl.isilines.com##.wrapper-banner-rgpd
 podrozezmamaitata.com##.penci-gprd-law
 pogodynka.pl###accept
-polopiryna.pl##.monit
+polopiryna.pl,polpharma.pl##.monit
 polskieradio.pl,dziennikwschodni.pl##.rodo-modal
 pomagam.pl###pp-info
 portaltatrzanski.pl###rododiv
@@ -1258,6 +1266,7 @@ skm.pkp.pl#?#.ui-dialog:-abp-has(#dialog-message-rodo)
 speedtest.net###_evidon-barrier-wrapper
 spidersweb.pl###moove_gdpr_cookie_info_bar
 store.playstation.com###privacy-header
+szkolymedyczne.eu###ppsPopupBgOverlay, .ppsPopupShell
 szlot.pl##.spu-bg, .spu-total-
 tanie-loty.com.pl###rodo_info_placeholder
 tcz.pl###dynamic-load-rodo, #dynamic-loading-rodo
@@ -1368,12 +1377,15 @@ com##.is-ready.is-shown.cnil-banner
 pl##DIV[style="border: 10px solid rgb(138, 138, 138); border-radius: 10px; box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.9); background-color: rgb(255, 255, 255); padding: 8px 8px 10px; position: fixed; z-index: 99999; right: 20px; left: 20px; bottom: 20px; width: 700px; max-width: 90%;"]
 pl##DIV[style="padding: 5px 25px 5px 15px;"]
 pl###cokPyt
+pl###cookies-banner:not(body):not(html)
 pl###cookies:not(body):not(html):not(.section)
+pl###cookie-notice:not(body):not(html)
 pl###komunikat-cookies
 pl###notice_bar
 pl###policy-info
 pl##.cnil-banner__content
 pl##.cookies:not(body):not(html)
+pl##.cookie-notice:not(body):not(html)
 pl##[class^="kom_polityka_prywatnosci"]
 pl##[id*="cookie_"]
 pl##[id^="polityka-prywatnosci"]
@@ -1571,7 +1583,6 @@ pl##[id^="polityka-prywatnosci"]
 ##.cookie-message:not(body):not(html)
 ##.cookie-msg-box:not(body):not(html)
 ##.cookie-msg:not(body):not(html)
-##.cookie-notice:not(body):not(html)
 ##.cookie-notification:not(body):not(html)
 ##.cookie_agree:not(body):not(html)
 ##.cookwarning:not(body):not(html)
