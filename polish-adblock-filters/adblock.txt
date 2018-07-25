@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 25 July 2018
 ! Expires: 1 day
-! Version: 2018072501
+! Version: 2018072502
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018072501 aktualizacja: sr, 25 lipca 2018, 11:35:00
+! v.2018072502 aktualizacja: śr, 25 lipca 2018, 13:33:00
 !
 !
 !-----------------------Integration list with uBlock & Adguard-----------------------!
@@ -279,7 +279,6 @@ popkiller.pl,tygodnikpodhalanski.pl,cnc.info.pl##[class*="reklamy"]
 24opole.pl##.dd
 24plock.pl###sj-popup-106, .reklama-glowna
 24pr.pl###text-22
-24pr.pl###wpp-4:style(width: 200%)
 24wspolnota.pl##.visible-lg
 2bstyle.pl##.header-ads-wrapper
 300polityka.pl##.dcmads
@@ -541,8 +540,7 @@ cdahd.pl##.positioner-height
 cdtracker.co.pl###block--managed-0
 cenabiznesu.pl,elubaczow.com##.img-responsive
 centrum-dramy.pl##[id^="aukcjoner"]
-centrumdruku3d.pl###slide-bottom-popup, .sidebar.col-4 > ul > div, .cd3d-video, 
-centrumdruku3d.pl##DIV.right > STYLE + DIV
+centrumdruku3d.pl###slide-bottom-popup, .sidebar.col-4 > ul > div, .cd3d-video, DIV.right > STYLE + DIV
 centrumxp.pl###WelcomeBox
 centrumxp.pl###sldr
 cgm.pl##.headFlash
@@ -1704,7 +1702,6 @@ natemat.pl##.kd_ns_logo
 nazwiska-polskie.pl##.adRightContainer
 nczas.com##A[target="_self"] > .vc_single_image-img:last-child
 ndie.pl##.\31 1b.td-ss-main-content > div:nth-of-type(4)
-ndie.pl##.td-header-style-7 .td-header-sp-logo img:style(top:-32px!important;height:100%!important;width:auto!important;)
 ndie.pl##DIV + A > IMG[style="width:100%;"]
 ndie.pl##a[href="https://twierdzaeuropa.pl/"]
 nedds24.pl##.forum > table.tborder:nth-of-type(1)
@@ -2055,7 +2052,6 @@ prostozmostu.pl###column-right
 proto.pl###block-block-1
 proto.pl###zone-header-wrapper
 prv.pl###container
-prv.pl###prvAliasFrame2:style(height:calc(100vh - 10px)!important;)
 prv.pl##.menu
 przedszkola.edu.pl##.sidebar__widget:nth-of-type(2)
 przegladkoninski.pl##[id*="advertise"]
@@ -2623,7 +2619,7 @@ wbijam.pl##.odcinek_oczekiwanie_info > center
 wbj.pl##.akpbanner
 wcograc.pl##.click
 webcamera.pl##[style="width:728px;height:90px;"]
-webhelp.pl###infobar > .foot:nth-of-type(3) 
+webhelp.pl###infobar > .foot:nth-of-type(3)
 webhelp.pl###sponsor
 webhostingtalk.pl###wht_new
 webmasteruj.pl###elComment_x
@@ -2686,9 +2682,7 @@ wp.pl##div[class^="_"] > style + div[class]
 wpolityce.pl##.ad-stamp
 wpolityce.pl##.box-division-holder-right
 wpolityce24.pl###ai_widget-12, #ai_widget-13, #ai_widget-14, #custom_html-5, #ai_widget-10, #ai_widget-9
-wprost.pl###main-list:style(margin-top: 0 !important;)
 wprost.pl##.box-list-item-adv, .page-screening, .page-header-technologie
-wprost.pl##.page-screening-layer:style(margin-top: 0 !important;)
 wrc.net.pl##.sidebar.col-sm-4.col-xs-12
 wrealu24.pl##.article-podobne.section
 wrealu24.pl##.bannergroup
@@ -2913,7 +2907,6 @@ zycietoprzygoda.pl##[class^="tws_"]
 zywiecinfo.pl###blockadblock
 zywiecinfo.pl##.col-md-12
 zywiecinfo.pl##.promoted
-~spolka.cda.pl,cda.pl##body:style(background:#121212!important;)
 ~www.cba.pl,cba.pl##img[src="https://www.cba.pl/cba1.jpg"]
 !
 !10#----------------------Specific advert blocking filters-----------------------!
@@ -3618,6 +3611,7 @@ zw.pl###abpnotzw
 !
 !15#---------------------------------Anti Adblock Rules blocking filters----------------------------------!
 /blockadblock.$script
+||a-o.ninja/wp-content/plugins/jgc-adblocker-detector/js/jgcabd-detect-adblock.js
 ||bankier.pl/static/js/kichot.js$script
 ||blog.nowebrzmienia.pl/wp-content/themes/awaken/js/scripts.js$script
 ||cosplayjav.pl/wp-content/themes/cosplayjav/js/fuckadblock
@@ -4153,7 +4147,6 @@ blogprezesa.pl,kryptowaluty.info.pl,litecoin.pl##.aligncenter
 blogujmy24.pl,tarnow.in###text-3
 businesstraveller.pl##.widget-clear.widget
 craftportal.pl###text-13
-cryptonews.pl###sidebar:style(padding-top: 0 !important)
 cryptonews.pl###text-6, #text-5, #text-11
 crypto-trader.pl##.wp-image-1528
 czadrow24.pl###text-37, #text-36
@@ -4268,38 +4261,37 @@ zwiedzamyparyz.pl###text-6, .a-single, .gyg-widget
 !41#--------------------------Dobreprogramy WL ------------!
 !
 !42#--------------------------Dobreprogramy hide elements ------------!
-dobreprogramy.pl##a[href*="campaign=baner"]
 dobreprogramy.pl##.block > div[style$="height: 600px; width: 300;"]
-dobreprogramy.pl##body:not(#bd):not([style*="background-image:"]):style(background-image:none!important;)
-dobreprogramy.pl##body:not(.variant-mobile) div[style="color: #A9A9A9; text-align:center;font-size:11px;"]
-dobreprogramy.pl##body > form > #slide-menu > :empty
-dobreprogramy.pl##div[id="slide-menu"] > a[id][href="#"]
-dobreprogramy.pl###divPoweredBy
-dobreprogramy.pl##div#slide-menu > [id]:not([class]):not([style])
 dobreprogramy.pl##.gamescarousel
-dobreprogramy.pl##[id$="_divAdTop"]
 dobreprogramy.pl##.list.block-content > div[style$="height: 180px; width: 630;"]
 dobreprogramy.pl##.no-filter
 dobreprogramy.pl##.page-element.center.target > div[style$="height: 250px; width: 970;"]
+dobreprogramy.pl##.tag-techmoto.home-section > .sidebar.span-4, .tag-smartdom.home-section > .sidebar.span-4
+dobreprogramy.pl##[id$="_divAdTop"]
+dobreprogramy.pl##[style="height: 150px; width: 630;"]
+dobreprogramy.pl##[style="width: 300px; margin: auto;"]
+dobreprogramy.pl###divPoweredBy
 dobreprogramy.pl###panReklama > div
 dobreprogramy.pl###sidebar > .no-mobile.pattern
 dobreprogramy.pl###slide-menu > .page-element.center.target
 dobreprogramy.pl###slide-menu > * div[id^="c"][style^="height:"][style*="width:"]:not([id^="cbox"]):not([id="colorbox"])
-dobreprogramy.pl##[style="height: 150px; width: 630;"]
-dobreprogramy.pl##[style="width: 300px; margin: auto;"]
+dobreprogramy.pl##a[href*="campaign=baner"]
+dobreprogramy.pl##body > form > #slide-menu > :empty
+dobreprogramy.pl##body:not(.variant-mobile) div[style="color: #A9A9A9; text-align:center;font-size:11px;"]
 dobreprogramy.pl##body:not(.variant-mobile) div[style="text-align:center;letter-spacing:6px;font-size:11px;color:#A9A9A9;width:100%;"]
 dobreprogramy.pl##body.variant-mobile div[style="text-align:center;letter-spacing:6px;font-size:11px;color:#A9A9A9;width:100%;"]
-forum.dobreprogramy.pl##div[style="margin:0px 0px 20px 0px;text-align:center;"]
-forum.dobreprogramy.pl##div[style="text-align:center;padding:5px 0px 15px 0px;"]
+dobreprogramy.pl##div[id="slide-menu"] > a[id][href="#"]
+dobreprogramy.pl##div#slide-menu > [id]:not([class]):not([style])
 forum.dobreprogramy.pl##[style="margin:20px 0;text-align:center;"]
 forum.dobreprogramy.pl##[style="text-align:center;padding:20px 0;"]
-www.dobreprogramy.pl##[data-partner="Polecamy na WP Technologie"]
-www.dobreprogramy.pl##.dobregry-slider-wrapper
-www.dobreprogramy.pl###phContent_hpOperaLink, #phContent_avastBadge
-www.dobreprogramy.pl##.pub-sponsor, .mfp-sidebar, #sgf-a, #boeGKY
+forum.dobreprogramy.pl##div[style="margin:0px 0px 20px 0px;text-align:center;"]
+forum.dobreprogramy.pl##div[style="text-align:center;padding:5px 0px 15px 0px;"]
 www.dobreprogramy.pl#?#div.collection:-abp-contains(Edycja wideo dla ambitnych)
+www.dobreprogramy.pl##.dobregry-slider-wrapper
+www.dobreprogramy.pl##.pub-sponsor, .mfp-sidebar, #sgf-a, #boeGKY
+www.dobreprogramy.pl##[data-partner="Polecamy na WP Technologie"]
+www.dobreprogramy.pl###phContent_hpOperaLink, #phContent_avastBadge
 www.dobreprogramy.pl##div[style="text-align:center;letter-spacing:6px;font-size:11px;color:#A9A9A9;width:100%;margin-top:-13px"]
-www.dobreprogramy.pl##.tag-smartdom.home-section > .span-8, .tag-techmoto.home-section > .span-8:style(width: 100% !important;)
 !
 !43#--------------------------Gemius link to ads ------------!
 spidersweb.pl,topagrar.pl##a[href*="hit.gemius.pl/"]

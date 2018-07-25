@@ -1,21 +1,20 @@
-! Checksum: 
 ! Title: Official Polish filters for AdBlock, uBlock Origin & AdGuard - supplement for uBlock Origin
 ! Oficjalne polskie filtry do AdBlocka, uBlocka Origin i AdGuarda - uzupełnienie do uBlocka Origin
 ! Codename: Official - supplement for uBlock Origin
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 20 July 2018
+! Last modified: 25 July 2018
 ! Expires: 2 days
-! Version: 2018072001
-! Support: 
+! Version: 2018072501
+! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018072001 aktualizacja: pt, 20 lipca 2018, 12:05:00
+! v.2018072501 aktualizacja: śr, 25 lipca 2018, 13:32:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -52,7 +51,7 @@ motobanda.pl###mvideo:style(z-index: 1!important;)
 @@||national-geographic.pl/bundles/burdacore/js/adv.js$script
 national-geographic.pl##.advertising-billboard:style(height: 0px !important;)
 !
-! zalukaj.tv 
+! zalukaj.tv
 ! Usunięcie "KLIKNIJ, ABY OBEJRZEĆ"
 zalukaj.com###freePlayerWatch
 zalukaj.com###free_player:style(display: block !important;)
@@ -98,18 +97,20 @@ www.ps4forum.pl##.googleheader
 www.ps4forum.pl##.forumsTabLinks.tabLinks:style(top: 60px !important;)
 !
 ! dobreprogramy
-!dobreprogramy.pl##body#top:style(background-image: none!important;)
-dobreprogramy.pl##body.variant-mobile div[style="color: #A9A9A9; text-align:center;font-size:11px;"]:style(visibility: hidden!important;)
-forum.dobreprogramy.pl##body[class]:style(background-image: none !important;)
-!dobreprogramy.pl##.page-form *:matches-css(background: /url\("?data:image\/png;base64,/)
 !dobreprogramy.pl##.page-form *:matches-css(background: /url("?blob:https://www.dobreprogramy.pl//)
+!dobreprogramy.pl##.page-form *:matches-css(background: /url\("?data:image\/png;base64,/)
 !dobreprogramy.pl##[style^="background:url"][style*="blob:https://www.dobreprogramy.pl/"]:style(position: absolute!important; left: -3000px!important;)
+!dobreprogramy.pl##body#top:style(background-image: none!important;)
 !www.dobreprogramy.pl##script:inject(addEventListener-defuser.js, DOMContentLoaded, removeEventListener)
 !||www.dobreprogramy.pl^$csp=img-src 'self' *.dpcdn.pl
-www.dobreprogramy.pl##body:not(variant-mobile).skin-green .user-login:style(color:#88ae04!important;)
+dobreprogramy.pl##body.variant-mobile div[style="color: #A9A9A9; text-align:center;font-size:11px;"]:style(visibility: hidden!important;)
+dobreprogramy.pl##body:not(#bd):not([style*="background-image:"]):style(background-image:none!important;)
 dobreprogramy.pl##script:inject(set-constant.js, WP.gaf.loadAndRunBunch, noopFunc)
+forum.dobreprogramy.pl##body[class]:style(background-image: none !important;)
 www.dobreprogramy.pl###phContent_downloaderHint
+www.dobreprogramy.pl##.tag-smartdom.home-section > .span-8, .tag-techmoto.home-section > .span-8:style(width: 100% !important; margin-right: 15px !important;)
 www.dobreprogramy.pl##article > div[id]:matches-css-after(content: "przy pomocy Asystenta pobierania")
+www.dobreprogramy.pl##body:not(variant-mobile).skin-green .user-login:style(color:#88ae04!important;)
 !
 ! purepc.pl
 purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !important; position: absolute !important;)
@@ -190,7 +191,7 @@ streamin.to##script:inject(noeval-if.js, RTCPeerConnection)
 ! reklama po prawej np. na pclab.pl,onet.pl,businessinsider.com.pl,noizz.pl,komputerswiat.pl,plejada.pl
 auto-swiat.pl,businessinsider.com.pl,komputerswiat.pl,noizz.pl,onet.pl,pclab.pl,plejada.pl,vod.pl###nitro-block:style(position: absolute!important; left: -3000px!important;)
 !
-! blokowanie gemius 
+! blokowanie gemius
 !||onet.hit.gemius.pl/fpdata.js$script,important
 !||onet.hit.gemius.pl/xgemius.js$script,important
 !
@@ -237,7 +238,7 @@ nslowo.pl###gkBg:style(background: none !important;)
 ! portel.pl
 portel.pl##body[style^="background:"]:style(background-image: none!important;)
 !
-! calcoolator.pl 
+! calcoolator.pl
 calcoolator.pl##script:inject(setTimeout-defuser.js, no-ads-info)
 ||calcoolator.pl/inc/js/adblockill_copy.js
 !
@@ -275,29 +276,36 @@ kresy.pl##.showwhennotclicked:style(display: none!important;)
 ezg24.net##body > .menu-belt + .paralax-image:style(height: 0px !important)
 !
 ! style()
+24pr.pl###wpp-4:style(width: 200%)
 booklips.pl##.js:style(background-image: none !important;)
 cartests.net###td-outer-wrap > .td-header-wrap:style(margin-bottom: 0px!important;)
 chojnow.pl##div#top:style(height: 37px!important;)
 ciekawostkihistoryczne.pl##.page:style(background: #dbdbdb !important;)
+cryptonews.pl###sidebar:style(padding-top: 0 !important)
 eku24.net##.paralax-image:style(height: 100px !important;)
 elblag.net##body:style(background-image: none!important;)
 gosc.pl##.webpart-wrap-HeaderMobile.has-promo:style(padding-top: 50px !important;)
 lubimyczytac.pl###content-container:style(background: none !important; padding-top: 0px !important)
+ndie.pl##.td-header-style-7 .td-header-sp-logo img:style(top:-32px!important;height:100%!important;width:auto!important;)
 ogrodinfo.pl###header:style(padding-top: 64px !important;)
 onet.pl##.miniSlot:style(min-height: 0rem!important;margin-bottom: 0rem!important;)
-podkarpackahistoria.pl###main-nav1:style(height: 50px !important;)
 pilkanozna.pl##.index_bg_top:style(top: auto!important;)
+podkarpackahistoria.pl###main-nav1:style(height: 50px !important;)
 portal.abczdrowie.pl##.article__side__stickblock:style(position: absolute!important; left: -3000px!important;)
 portal.abczdrowie.pl##.article__textbox:style(position: absolute!important; left: -3000px!important;)
+prv.pl###prvAliasFrame2:style(height:calc(100vh - 10px)!important;)
 spidersweb.pl##.playstation.wall-bg:style(background: none!important)
 tabletowo.pl###main_header:style(margin-top: 0px!important;)
-tv-wschod.pl##section.container:style(padding-top: 0px!important;)
 tv-wschod.pl##.widget:style(margin: 10px -15px 0 0!important;)
+tv-wschod.pl##section.container:style(padding-top: 0px!important;)
 weszlo.com##.adv:style(height: 1px !important; width: 1px !important;)
-wirtualnygarwolin.pl##body:style(overflow: visible !important;)
 wirtualnygarwolin.pl###sbox-overlay, #sbox-window
+wirtualnygarwolin.pl##body:style(overflow: visible !important;)
+wprost.pl###main-list:style(margin-top: 0 !important;)
+wprost.pl##.page-screening-layer:style(margin-top: 0 !important;)
 wykop.pl###dyingLinksBox > .dying-links:first-child ~ .dying-links:last-child:style(display:list-item !important)
 wykop.pl###dyingLinksBox > .dying-links:first-child ~ .dying-links[style="display: list-item;"] ~ .dying-links:style(display: none !important)
+~spolka.cda.pl,cda.pl##body:style(background:#121212!important;)
 !
 ! Adblock
 cvninja.pl##script:inject(abort-on-property-write.js, fuckAdBlock)
