@@ -3,17 +3,17 @@
 ! Codename: Official - supplement for AdGuard
 ! Collaborators: F4z, FadeMind, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Last modified: 20 April 2018
+! Last modified: 25 July 2018
 ! Expires: 2 days
-! Version: 2018042002
-! Support: 
+! Version: 2018072501
+! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018042002 aktualizacja: ptk, 20 kwietnia 2018, 13:30:00
+! v.2018072501 aktualizacja: śr, 25 lipca 2018, 13:49:00
 !
 !
 ! http://alltube.tv/
@@ -142,6 +142,12 @@ nslowo.pl###gkBg:style(background: none !important;)
 portel.pl##body[style^="background:"]:style(background-image: none!important;)
 !
 ! dobreprogramy.pl
+dobreprogramy.pl##body.variant-mobile div[style="color: #A9A9A9; text-align:center;font-size:11px;"]:style(visibility: hidden!important;)
+dobreprogramy.pl##body:not(#bd):not([style*="background-image:"]):style(background-image:none!important;)
+forum.dobreprogramy.pl##body[class]:style(background-image: none !important;)
+www.dobreprogramy.pl###phContent_downloaderHint
+www.dobreprogramy.pl##.tag-smartdom.home-section > .span-8, .tag-techmoto.home-section > .span-8:style(width: 100% !important; margin-right: 15px !important;)
+www.dobreprogramy.pl##article > div[id]:matches-css-after(content: "przy pomocy Asystenta pobierania")
 www.dobreprogramy.pl##body:not(variant-mobile).skin-green .user-login:style(color:#88ae04!important;)
 !
 ! style()
@@ -155,17 +161,17 @@ gosc.pl##.webpart-wrap-HeaderMobile.has-promo:style(padding-top: 50px !important
 lubimyczytac.pl###content-container:style(background: none !important; padding-top: 0px !important)
 ogrodinfo.pl###header:style(padding-top: 64px !important;)
 onet.pl##.miniSlot:style(min-height: 0rem!important;margin-bottom: 0rem!important;)
-podkarpackahistoria.pl###main-nav1:style(height: 50px !important;)
 pilkanozna.pl##.index_bg_top:style(top: auto!important;)
+podkarpackahistoria.pl###main-nav1:style(height: 50px !important;)
 portal.abczdrowie.pl##.article__side__stickblock:style(position: absolute!important; left: -3000px!important;)
 portal.abczdrowie.pl##.article__textbox:style(position: absolute!important; left: -3000px!important;)
 spidersweb.pl##.playstation.wall-bg:style(background: none!important)
 tabletowo.pl###main_header:style(margin-top: 0px!important;)
-tv-wschod.pl##section.container:style(padding-top: 0px!important;)
 tv-wschod.pl##.widget:style(margin: 10px -15px 0 0!important;)
+tv-wschod.pl##section.container:style(padding-top: 0px!important;)
 weszlo.com##.adv:style(height: 1px !important; width: 1px !important;)
-wirtualnygarwolin.pl##body:style(overflow: visible !important;)
 wirtualnygarwolin.pl###sbox-overlay, #sbox-window
+wirtualnygarwolin.pl##body:style(overflow: visible !important;)
 wykop.pl###dyingLinksBox > .dying-links:first-child ~ .dying-links:last-child:style(display:list-item !important)
 wykop.pl###dyingLinksBox > .dying-links:first-child ~ .dying-links[style="display: list-item;"] ~ .dying-links:style(display: none !important)
 !
@@ -177,3 +183,8 @@ gadzetomania.pl,wp.pl,autokult.pl,komorkomania.pl##.modal__body-adblock
 !
 ! Rules after Adblock
 vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
+!
+! Rules with conditions
+!#if (adguard_ext_firefox)
+neosite.pl#$#.kokpit { padding: 0 !important; }
+!#endif
