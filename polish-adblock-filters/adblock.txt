@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 26 July 2018
 ! Expires: 1 day
-! Version: 2018072601
+! Version: 2018072602
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,10 +17,10 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018072601 aktualizacja: czw, 26 lipca 2018, 13:50:00
+! v.2018072602 aktualizacja: czw, 26 lipca 2018, 14:09:00
 !
 !
-!-----------------------Integration list with uBlock & Adguard-----------------------!
+!-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
 !#if ext_ublock
 !#include adblock_ublock.txt
 !#endif
@@ -307,6 +307,7 @@ alawar.pl##.b-game-list__bnr-title
 alilove.pl##.widget_text:nth-of-type(3)
 alilove.pl##.widget_text:nth-of-type(5)
 allaboutmusic.pl###tie-block_707
+allans.pl##.buy_btn, .interesting
 allegro.pl###coins-banner
 allegro.pl###installments-banner-container
 allegro.pl###main_page_hr_980_180
@@ -495,6 +496,7 @@ brodnica.net##.stopka
 brodnica.net##[href^="/banery/click.php"]
 brodnica.net##td:nth-of-type(3) > table > tbody > tr:nth-of-type(1) > td:nth-of-type(2)
 bryk.pl,zvami.tv,debica24.eu,telewizjazary.pl,korsokolbuszowskie.pl,kociewiak.pl,cooltura24.co.uk,portalpomorza.pl,tvobiektyw.pl,debica24.eu,echotygodnik.info,damitv.pl,ct.jaworzno.pl##[class^="advert-"]
+brytol.com###text-3
 btc-sms.eu##.banner
 budmatauto.pl##.popup-content, .popup-bg
 budnet.pl##a[href^="https://"] > IMG
@@ -882,7 +884,7 @@ fili.tv,fili.cc##divo, #divlol
 fili.tv,fili.cc,centrumdruku3d.pl##a[href^="https://goo.gl/"]
 filmpolski.pl##.obrazek_bez_ramki
 films4free.pl##.M2U3OGQ4ZGY1
-filmweb.pl###iframe, .clickArea, .screening-content, .topBillboard, .BILLBOARD, [id^="sad_"], .clickableAdBG, #screening, [id$="_ifame"], [id^="sas_"], div[class] > [href*="/click"], [src$=".html"]
+filmweb.pl###iframe, .clickArea, .screening-content, .topBillboard, .BILLBOARD, [id^="sad_"], .clickableAdBG, #screening, [id$="_ifame"], [id^="sas_"], div[class] > [href*="/click"], [src$=".html"], .advBtn
 filmweb.pl##[id*="iframe"]
 fishing-mart.com.pl##td:nth-of-type(6) > .norm11:nth-of-type(4)
 flarrow.pl##[class^="td_block_wrap td_block_text_with_title td_uid_"]
@@ -2049,8 +2051,7 @@ prostoomuzyce.pl##[id^="block-views-banery-block"]
 prostozmostu.net###ecoeconomy
 prostozmostu.net###nmb-BusyBox
 prostozmostu.pl###column-right
-proto.pl###block-block-1
-proto.pl###zone-header-wrapper
+proto.pl###block-block-1, #block-block-9, #zone-header-wrapper
 prv.pl###container
 prv.pl##.menu
 przedszkola.edu.pl##.sidebar__widget:nth-of-type(2)
@@ -2113,7 +2114,6 @@ radiozet.pl##.adocean
 radiozw.com.pl###slider
 radkow.it###srodek3 > div
 radom24.pl##.skyscaper
-radom24.pl###pojemnik-strony:style(margin-top: 0 !important;)
 radomnews.pl##[id^="banP"]
 radomsport.pl##A[target="_blank"] > IMG[src^="img/"]
 radomsport.pl##SCRIPT + DIV[align="center"]
@@ -2486,7 +2486,7 @@ trybawaryjny.pl###bottom-bar
 trybawaryjny.pl##.description.post-content > p:nth-of-type(3)
 trybi.pl###main_content_section > div[style=" text-align: center; height: 260px;"]
 trybi.pl##.bannerInner
-trybun.org.pl##[id*="_adspace_widget"]
+trybun.org.pl##[id*="_adspace_widget"], #_dropslide1
 trybunaczestochowska.pl,animalistka.pl,pojon.pl,300polityka.pl###text-2
 tryton.com.pl##[id^="banner"]
 tubagliwic.pl##.active.visible
@@ -3141,6 +3141,7 @@ zywiecinfo.pl##.promoted
 ||niebiescy.pl/bild/$image
 ||nokaut.pl/wigetyflash/$object
 ||nowiny.rybnik.pl/baner/$image
+||nqp0852y7r.com/e6/52/26/e652267829a86c98499016a18555c207.js$script,domain=internetowa.ws
 ||nuteczki.eu/templates/KlubowaMuza/images/pobierz.png$image
 ||ocdn.eu/*.html$subdocument,domain=sniadaniezkadra.onet.pl
 ||ocs-pl.oktawave.com/*/reklamy$subdocument,domain=spidersweb.pl
@@ -4054,7 +4055,7 @@ www.wp.pl##[data-st-area="Gwiazdy-prawa"] > div > div
 www.wp.pl##[data-st-area="Mototech-prawa"] > div[class]
 www.wp.pl##DIV[style="position: relative; display: block;"] > DIV[style*="overflow: hidden; "]
 www.wp.pl##[id^="section_"]:not(#section_trends) > div:not([class]) > div:not([class]):not([id])
-www.wp.pl##div[class*=" "]:empty:not(.btnmute):not(.volsliderbg):not([style]):not([id]):not([img]):not([src])
+!www.wp.pl##div[class*=" "]:empty:not(.btnmute):not(.volsliderbg):not([style]):not([id]):not([img]):not([src])
 www.wp.pl##[id^="sgwp_screening_"]
 www.wp.pl###newsfeed-player-column[class^="_3"] > DIV[class^="sc-"]
 www.wp.pl###section_celebrities > div:nth-of-type(1)
@@ -4147,6 +4148,7 @@ autofakty.pl##.widget_text.widget
 bielskiedrogi.pl###block-block-9, #block-views-reklamy-block
 bieznie-treningowe.pl,inforiders.pl,paleosmak.pl###text-2
 blogprezesa.pl,kryptowaluty.info.pl,litecoin.pl##.aligncenter
+blogujmy24.pl##.blogu-widget, .blogu-text, #custom_html-3
 blogujmy24.pl,tarnow.in###text-3
 businesstraveller.pl##.widget-clear.widget
 craftportal.pl###text-13
@@ -4199,6 +4201,7 @@ rytmklawiatury.pl,chelmno.com.pl###text-19
 slupca.pl##.a-76.g-single > div
 smartage.pl###media_image-3
 smartage.pl,wronieckibazar.pl,mobirank.pl,historykon.pl,wolnekonopie.org,korso.pl###custom_html-2
+socialpress.pl###text-29
 stacja-tluszcz.pl###text-35
 stopnadwadze.pl###text-4
 stopnadwadze.pl###text-html-widget-10
@@ -4207,7 +4210,7 @@ supertydzien.pl##.widget.row:nth-of-type(12)
 technologiczna.pl##.alignnone
 technowinki24.pl###black-studio-tinymce-2
 tomaszowski.com.pl###text-15
-toyotaklub.org.pl,wiadomoscipodgorze.pl,mymma.pl###text-6
+toyotaklub.org.pl,wiadomoscipodgorze.pl,mymma.pl,niebezpiecznik.pl###text-6
 trybunaczestochowska.pl##body > div:nth-of-type(1) > center
 trybunaczestochowska.pl###foot-leader
 trybunaczestochowska.pl###text-4, #text-6, #text-9, #text-11
