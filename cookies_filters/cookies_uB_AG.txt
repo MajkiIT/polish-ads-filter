@@ -1,11 +1,11 @@
-! Checksum: LKaPcLQpMK1bJOXClMOvng
+! Checksum: 290Pwi+jsn2vU+Zq/CKBsw
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 201807211143
-! Last modified: Sat, 21 Jul 2018, 11:43:19 UTC+02
+! Version: 201807261146
+! Last modified: Thu, 26 Jul 2018, 11:46:28 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201807211143 aktualizacja: sob, 21 lip 2018, 11:43:19 UTC+02 
+! v.201807261146 aktualizacja: czw, 26 lip 2018, 11:46:33 UTC+02 
 !
 !
 ! Komunikaty ciasteczkowe i dziury
@@ -57,7 +57,7 @@ youtube.com##div#masthead-positioner-height-offset:style(height: 80px!important;
 !
 ! Komunikaty ciasteczkowe i dziury - specjalne instrukcje
 !#if !cap_user_stylesheet
-fotoblogia.pl,gadzetomania.pl,komorkomania.pl##.cookie-disclaimer:style(visibility: hidden !important;)
+fotoblogia.pl,gadzetomania.pl,komorkomania.pl,autokult.pl##.cookie-disclaimer:style(visibility: hidden !important;)
 purepc.pl##script:inject(nano-remove-elements-onready.js, .cookiesinfo)
 !#endif
 !
@@ -74,8 +74,9 @@ multimediago.pl##.modal-cookie
 multimediago.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 puma.com###modal-geoip-cookies, .modal-backdrop
 unileverfoodsolutions.pl##body.blurred>*:style(box-shadow: none!important; filter: none!important;)
-unileverfoodsolutions.pl##body:style(overflow: auto!important;)
 unileverfoodsolutions.pl##.js-cookie-wall
+unileverfoodsolutions.pl,wikia.com##body:style(overflow: auto!important;)
+wikia.com##div[data-tracking-opt-in-overlay]
 !
 !
 ! Popupy dot. polityki prywatności/RODO
