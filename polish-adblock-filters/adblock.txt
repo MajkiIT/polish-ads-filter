@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 26 July 2018
+! Last modified: 27 July 2018
 ! Expires: 1 day
-! Version: 2018072602
+! Version: 2018072701
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018072602 aktualizacja: czw, 26 lipca 2018, 14:09:00
+! v.2018072701 aktualizacja: ptk, 27 lipca 2018, 11:10:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -226,7 +226,7 @@ pl##.reklama-top
 pl##.reklamastoproc
 pl###image_pino
 pl##.single_ad_300x250
-pl###top-reklama
+~esanok.pl,pl###top-reklama
 .pl/www/sys/ajs*.php?$script
 popkiller.pl,tygodnikpodhalanski.pl,cnc.info.pl##[class*="reklamy"]
 ##.popup-premium__apla
@@ -814,6 +814,8 @@ esanok.pl###sidebarl > div:nth-of-type(1)
 esanok.pl###sidebarl > h2:nth-of-type(1)
 esanok.pl###sidebarl > ul:nth-of-type(1)
 esanok.pl##.entry2 > div:nth-of-type(2)
+esanok.pl##.socialGallery > div:nth-of-type(1)
+esanok.pl##div.ads-s.container
 eska.pl##.banner-750.fontregular
 eska.pl##.center.t2.color13
 eska.pl##.zpr_top_1
@@ -1743,8 +1745,8 @@ niezlomni.com###right-r
 nj24.pl###block--4
 nk.pl###content_banner > .ad_sandbox_wrapper
 nocoty.pl,aleseriale.pl###slider300Wrapper
-noizz.pl##.adtop
-noizz.pl##.intext-ads-container
+noizz.pl##.adtop, .intext-ads-container
+noizz.pl##[class^="right"][class$="-floating-container"]
 nokiahacking.pl##.nh_ads
 novekino.pl##.right-baner.hidden-sm-down.panel > .canvas-box
 nowa.gazetaobywatelska.info##.col-xs-4 > .layout-column.row > .row:nth-of-type(3)
@@ -3288,7 +3290,7 @@ zywiecinfo.pl##.promoted
 ||weszlo.com/?bsa_pro_id$popup
 ||widgets.tracdelight.com/iframe/$subdocument
 ||widget.aftermarket.pl^$subdocument
-||widgets.moneteasy.pl/widget/$script
+||widgets.moneteasy.pl/widget/$script,domain=~noizz.pl
 ||widget.plastream.net/$xmlhttprequest
 ||wiocha.pl/img/tapety/$image
 ||wp.com/luzyce.info/wp-content/uploads/20*/*/*.gif$image
@@ -3525,11 +3527,11 @@ jbzdy.pl,kwejk.pl,piwniczkamemow.pl,eszkola.pl,dobreprogramy.pl,interia.pl,kwant
 jbzdy.pl,kwejk.pl,piwniczkamemow.pl,eszkola.pl,dobreprogramy.pl,interia.pl,kwantowo.pl,katowickisport.pl,4free.waw.pl,imeds.pl,pl.aleteia.org,overwatch.pl#@#.text-ad-links
 jbzdy.pl,kwejk.pl,piwniczkamemow.pl,eszkola.pl,dobreprogramy.pl,interia.pl,kwantowo.pl,katowickisport.pl,4free.waw.pl,imeds.pl,pl.aleteia.org,overwatch.pl#@#.text_ads
 jbzdy.pl,kwejk.pl,piwniczkamemow.pl,eszkola.pl,dobreprogramy.pl,interia.pl,kwantowo.pl,katowickisport.pl,4free.waw.pl,imeds.pl,pl.aleteia.org,overwatch.pl#@#.text-ads
-katowickisport.pl#@#.ad
+katowickisport.pl,torrentcity.pl#@#.ad
 katowickisport.pl#@#.adform-slot
 katowickisport.pl#@##admain
 katowickisport.pl#@##adnp
-katowickisport.pl,darmowe-torenty.pl#@#.ads
+katowickisport.pl,darmowe-torenty.pl,torrentcity.pl,esanok.pl#@#.ads
 katowickisport.pl#@#.adsense
 katowickisport.pl#@##advertisments
 katowickisport.pl#@#[class*="cg-template"]
@@ -3590,7 +3592,7 @@ webinsider.pl#@#.etad
 vitalia.pl###topbborlayer
 vod.pl#@#.infoCloud
 vod.pl#@#.text-ad
-vorek.pl,gry-planszowe.pl,darmowe-torenty.pl#@#.adsbox
+vorek.pl,gry-planszowe.pl,darmowe-torenty.pl,torrentcity.pl#@#.adsbox
 vorek.pl,shinden.pl#@#.ads
 waznygry.pl###aside, #donut, #campagnard
 wortale.net##.ban-71.ban
@@ -3673,7 +3675,7 @@ zw.pl###abpnotzw
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=games.cdn.famobi.com|grydladzieci.pl|fm.tuba.pl|wp.pl|player.pl|animezone.pl|ipla.tv
 @@||imged.pl/subframe/js/*/adblock-advertisement.js$script
 @@||istotne.pl^$generichide
-@@/js/ads.js$script,domain=solarkurier.pl|satkurier.pl|saskakepa.waw.pl|e-krajna.pl|swiecie24.pl|zyciesokolowa.pl|ciechocinek.biz|napiprojekt.pl|uniejow.net.pl|nizanskie.info|pluznica.info|superchodziez.pl|tygodnik.pl|ekutno.pl|naszbrzesc.pl|bydgoszcz24.pl|terazlipno.pl|gwe24.pl|dziwnekomiksy.pl|digi-tv.pl|chelsea24news.pl|wolomin24.info|splendo.pl|egorzow.pl|irembertow.pl|iminsk.pl|ikrakow.info|iskierniewice.pl|ikampinos.pl|e-wyszogrod.pl|ibielsk.pl|wterenie.pl|ciechanowinaczej.pl|wabrzezno-cwa.pl|infosiedlce.pl|rypin-cry.pl|golub-cgd.pl|iotwock.info|szczecinek.com|lipno-cli.pl|imokotow.pl|nolesnica.pl|itvpiaseczno.pl|histmag.org|lowcygier.pl|gorzowianin.com|polotv.pl|video.anyfiles.pl|brotkids.tv|fokus.tv|ithardware.pl|meteoprog.pl|nowa.tv|okazje.co|forsal.pl|gazetaprawna.pl|fxmag.pl|nasztomaszow.pl|dieroten.pl|reklama.pl|gpr24.pl|twojradom.pl|inowroclaw.info.pl|pultusk24.pl|bham.pl|vorek.pl|plonszczak.pl|zdrowowdomu.wp.pl|audiklub.org|video-static.tunnl.com|pcworld.pl|gostynin.info|zambrow.org|millemiglia.wp.pl|radiogol.pl
+@@/js/ads.js$script,domain=solarkurier.pl|satkurier.pl|saskakepa.waw.pl|e-krajna.pl|swiecie24.pl|zyciesokolowa.pl|ciechocinek.biz|napiprojekt.pl|uniejow.net.pl|nizanskie.info|pluznica.info|superchodziez.pl|tygodnik.pl|ekutno.pl|naszbrzesc.pl|bydgoszcz24.pl|terazlipno.pl|gwe24.pl|dziwnekomiksy.pl|digi-tv.pl|chelsea24news.pl|wolomin24.info|splendo.pl|egorzow.pl|irembertow.pl|iminsk.pl|ikrakow.info|iskierniewice.pl|ikampinos.pl|e-wyszogrod.pl|ibielsk.pl|wterenie.pl|ciechanowinaczej.pl|wabrzezno-cwa.pl|infosiedlce.pl|rypin-cry.pl|golub-cgd.pl|iotwock.info|szczecinek.com|lipno-cli.pl|imokotow.pl|nolesnica.pl|itvpiaseczno.pl|histmag.org|lowcygier.pl|gorzowianin.com|polotv.pl|video.anyfiles.pl|brotkids.tv|fokus.tv|ithardware.pl|meteoprog.pl|nowa.tv|okazje.co|forsal.pl|gazetaprawna.pl|fxmag.pl|nasztomaszow.pl|dieroten.pl|reklama.pl|gpr24.pl|twojradom.pl|inowroclaw.info.pl|pultusk24.pl|bham.pl|vorek.pl|plonszczak.pl|zdrowowdomu.wp.pl|audiklub.org|video-static.tunnl.com|pcworld.pl|gostynin.info|zambrow.org|millemiglia.wp.pl|radiogol.pl|torrentcity.pl|kb.pl
 @@||js.iplsc.com/inpl.adb/*/empt.js?*&adserv=$domain=interia.pl
 @@||komputerswiat.pl^$generichide
 @@||kubofonista.net/r/ad.htm$script,domain=kubofonista.net
