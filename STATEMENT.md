@@ -8,7 +8,7 @@
 
 - działamy zgodnie z prawem
 - wierzymy w świadomy wybór użytkowników
-- nasze listy nie obejmują elementów będących głównym kontentem
+- nasze listy nie obejmują elementów które są głównym kontentem
 - wierzymy że użytkownicy sami potrafią znaleźć pożądane przez nich treści
 - staramy się nie dodawać do filtrów treści pożądanych z punktu widzenia użytkowników
 - staramy się zachować jak największą funkcjonalność stron które obejmuje nasz filtr
