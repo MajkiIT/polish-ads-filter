@@ -16,6 +16,6 @@
 - wszystkie środki z dotacji przeznaczamy na dalsze [wsparcie i rozwój filtrów](https://patronite.pl/polskiefiltry)
 - niezależność, dodajemy do listy możliwie wszystkie pozycje i nie poddajemy się
 - aby zapewnić możliwie jak najszybsze wsparcie, stworzyliśmy [serwer na Discordzie](https://discord.me/polskiefiltry)
-- konflikty rozstrzygamy poprzez poddawanie ich [głosowaniu społeczności](https://fb.com/CertyficateIT/)
+- nim podejmiemy jakąś ważną decyzje, poddajemy ją [głosowaniu społeczności](https://fb.com/CertyficateIT/)
 
 ---
