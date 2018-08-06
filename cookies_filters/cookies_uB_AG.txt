@@ -1,11 +1,11 @@
-! Checksum: Zu8OzMxDXLrkbmC/zF2Eng
+! Checksum: IuakKiOotFkxf5R58C7Tzg
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 201808031623
-! Last modified: Fri, 03 Aug 2018, 16:23:42 UTC+02
+! Version: 201808061441
+! Last modified: Mon, 06 Aug 2018, 14:41:27 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201808031623 aktualizacja: pią, 03 sie 2018, 16:23:42 UTC+02 
+! v.201808061441 aktualizacja: pon, 06 sie 2018, 14:41:27 UTC+02 
 !
 !
 ! Komunikaty ciasteczkowe i dziury
@@ -29,6 +29,8 @@ biuletyn.net##.urzad_mini > div:style(top: 225px!important;)
 bloombergbusinessweek.pl##body:style(margin-top: 0 !important;)
 domisad.pl##.show-message #shop-info:style(padding: 60px 0 15px 0 !important;)
 domisad.pl##.show-message #top-nav:style(height: auto !important;)
+dropbox.com##.embedded-app.IndexRebrandPage.top-notification-bar:style(margin-top: -51px !important;)
+dropbox.com##.top-notification-bar-container + .preview-box .react-file-viewer, .embedded-app.IndexRebrandPage.top-notification-bar .RebrandNavigation-container:style(top: 0 !important;):style(top: 0 !important;)
 echo24.tv##.on-top:style(top: 0 !important;)
 fiskars.pl##.desktop:style(top: 0 !important;)
 indbuildcraft.pl##body:style(overflow: auto !important;)
@@ -60,6 +62,12 @@ youtube.com##div#masthead-positioner-height-offset:style(height: 80px!important;
 !#if !cap_user_stylesheet
 fotoblogia.pl,gadzetomania.pl,komorkomania.pl,autokult.pl##.cookie-disclaimer:style(visibility: hidden !important;)
 purepc.pl##script:inject(nano-remove-elements-onready.js, .cookiesinfo)
+!#endif
+!#if !cap_html_filtering
+empik.com##script:inject(nano-remove-elements-onready.js, .cookies-accept)
+!#endif
+!#if cap_html_filtering
+empik.com##^.cookies-accept
 !#endif
 !
 !
