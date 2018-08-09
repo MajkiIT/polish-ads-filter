@@ -9,7 +9,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 9 August 2018
 ! Expires: 1 day
-! Version: 2018080903
+! Version: 2018080904
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018080903 aktualizacja: czw, 9 sierpnia 2018, 19:15:00
+! v.2018080904 aktualizacja: czw, 9 sierpnia 2018, 20:10:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -2103,6 +2103,7 @@ radiobiper.info##[id^="widget_sp_image-"]
 radiofm-online.com###block-block-3
 radioftb.net##.big-advertising
 radiogol.pl##.td-pb-span12.vc_column_container.wpb_column.td_uid_20_5b1d1b638aa41_rand.vc_column > .wpb_wrapper, .hustle-animate-slideInDown, [href="http://radiogol.pl/reklama/"]
+radio-internetowe.com##div[id^="ad"]
 radioplus.com.pl##.moduletable:nth-of-type(3)
 radioplus.pl###bottom-ad
 radiostar.net##.widget_media_image.widget.td_block_template_4
@@ -2481,7 +2482,7 @@ treningbiegacza.pl###under-menu-adds-wrapper
 tripolo.pl###footer-sidebar
 trodatreleases.com##.bannertop
 trodatreleases.com##.bgrey.block
-trojmiasto.pl###watermark[href^="http://www.trojmiasto.pl/rd/"], .ccbcbbcbed-overflow, .ccbcbbcbed.bx
+trojmiasto.pl###watermark[href^="http://www.trojmiasto.pl/rd/"], .ccbcbbcbed-overflow, .ccbcbbcbed.bx, INS[id^="revive-0-"]
 troman.pl##DIV[style="max-width: 970px; padding: 5px; background: #000; margin: 20px auto"]
 trybawaryjny.pl###bottom-bar
 trybawaryjny.pl##.description.post-content > p:nth-of-type(3)
@@ -3641,6 +3642,7 @@ zw.pl###abpnotzw
 @@/adframe.js$script,domain=kobieceporady.pl
 !@@/.*ad*/$image,domain=www.pcworld.pl
 @@/adsense.js$script,domain=biznesforum.pl|optyczne.pl
+@@/assets/ads_$script,domain=towideo.pl
 @@ads$image,domain=rapidgrab.pl
 @@/ads.reklama.728x90$script,stylesheet,domain=zmianaczasu.info|antonimy.net|odmiana.net|definicja.net|krzyzowka.net|humoris.pl
 @@/advert.js$script,domain=www.poradnikzdrowie.pl|fm.tuba.pl
@@ -4114,6 +4116,7 @@ www.money.pl#?#.article__content>div[class*=" "]:-abp-has(div>div>div:-abp-conta
 @@||erpxt.pl/Scripts/Code/
 @@/index.php?url=$xmlhttprequest,domain=alltube.pl|alltube.tv
 @@/js/tracking/$script,domain=www.olx.pl
+@@||konkurs24h.pl^*^advalue
 @@||img.dorzeczy.pl/dorzeczy/_i/button-125x40-google-play.png
 @@||img.dorzeczy.pl/dorzeczy/_i/button-125x40-app-store.png
 kafeteria.pl#@#.is-sponsored
@@ -4132,6 +4135,7 @@ kafeteria.pl#@#.is-sponsored
 ||addthis.com/*/addthis_widget.js$script,domain=~serialomaniak.pl
 24legnica.pl,wstereo.pl,magazynbasista.pl,niebezpiecznik.pl,appki.com.pl,prawapolityka.pl,stop-cham.pl,zwiedzam-stadiony.eu###text-8
 e-stargard.pl,mojeinfo24.pl#@#.bg_ad
+mandarinodesign.eu#@#.reklama
 !
 !37#--------------------------Wordpress blocking filters------------!
 ||overwatch.pl/wp-content/uploads/20*/*/250x700*.png$image
