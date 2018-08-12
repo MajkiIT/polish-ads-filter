@@ -1,11 +1,11 @@
-! Checksum: NR1f7B5K1wQuKBsOH3A6VA
+! Checksum: y93lCgqvJZ8jVgBRXCmPgw
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 201808082357
-! Last modified: Wed, 08 Aug 2018, 23:57:37 UTC+02
+! Version: 201808121527
+! Last modified: Sun, 12 Aug 2018, 15:27:37 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201808082357 aktualizacja: śro, 08 sie 2018, 23:57:37 UTC+02 
+! v.201808121527 aktualizacja: nie, 12 sie 2018, 15:27:37 UTC+02 
 !
 !
 ! Komunikaty ciasteczkowe i dziury
@@ -93,8 +93,6 @@ analizy.pl##html:style(overflow: auto !important;)
 analizy.pl##.nl_rodo, .ui-widget-overlay
 dobrzemieszkaj.pl###axn
 dobrzemieszkaj.pl##.nlOpen:style(overflow: auto !important;)
-eobuwie.com.pl###permissions-popup
-eobuwie.com.pl,zeropln.antyweb.pl,mazury.travel,wagrowczanie.pl,praca.antyweb.pl,kaliszak.pl##body:style(overflow: auto !important;)
 e-sochaczew.pl,pultusk24.pl###RODOCOOKIE, .modal-backdrop
 farmacja.net##.blur:style(filter: none !important;)
 farmacja.net##.noscroll:style(overflow: auto !important;)
@@ -146,6 +144,7 @@ wsensie.pl,wsensie.tv###policy
 wsensie.pl,wsensie.tv##.policy-open section:style(filter: none !important;)
 zakopane.info,tuwroclaw.com,tulodz.com###pd-modal, .modal-backdrop
 zdmikp.bydgoszcz.pl###customModal, .modal-backdrop
+zeropln.antyweb.pl,mazury.travel,wagrowczanie.pl,praca.antyweb.pl,kaliszak.pl##body:style(overflow: auto !important;)
 zeropln.antyweb.pl,praca.antyweb.pl##.justify-end.flex-col.flex.z-50.fixed.pin
 !
 !
@@ -159,12 +158,15 @@ born2be.pl,renee.pl##.rules-modal, .modal-backdrop
 born2be.pl,renee.pl,roztoczanskipn.pl,zakopane.info,tuwroclaw.com,tulodz.com,infoplanet.pl,gokf.gda.pl,gdansk.pl,craftserve.pl,ustawmundial.weszlo.com,ustawlige.com,ztm.poznan.pl,4fun.tv,alltube.tv,alltube.pl,infostrow.pl,fryzomania.pl,tuzdrowie.pl,ogloszenia.plock.pl,polski-tenis.pl,pro-sprzet.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 budownictwo.pl###rodoLayer, .modal-backdrop
 budownictwo.pl,zdmikp.bydgoszcz.pl##.modal-open:style(overflow: auto !important;)
+eobuwie.com.pl##.popup
+eobuwie.com.pl##body:style(overflow: auto !important;)
 fryzomania.pl###myWorningNewsletterPopUp, .modal-backdrop
 gdansk.pl,gokf.gda.pl##.rodo, .modal-backdrop
 infoplanet.pl,craftserve.pl###rodo, .modal-backdrop
 infostrow.pl###rodo-modal
 lovekrakow.pl###modal-rodo, .modal-backdrop
 lovekrakow.pl##.modal-open:style(overflow: auto !important; position: static !important;)
+money.pl##script:inject(nano-remove-elements-onready.js, .rodo-popup)
 ogloszenia.plock.pl###dialog-rodo, .modal-backdrop
 polski-tenis.pl###rodo
 pro-sprzet.pl###myWorning, .modal-backdrop
@@ -183,6 +185,7 @@ alltube.tv,alltube.pl##^#rodo-popup
 belsat.eu##^.popmake-overlay
 born2be.pl,renee.pl##^.rules-modal
 budownictwo.pl##^#rodoLayer
+eobuwie.com.pl##^script:has-text(technologii cookies)
 ferguson-digital.eu##^#cookie-notice
 fryzomania.pl##^#myWorningNewsletterPopUp
 gdansk.pl,gokf.gda.pl##^.rodo
@@ -201,6 +204,7 @@ ztm.poznan.pl##^#PopUP
 4fun.tv$$#cModal
 alltube.tv,alltube.pl$$#rodo-popup
 belsat.eu$$.popmake-overlay
+eobuwie.com.pl$$script[tag-content="technologii cookies"]
 ferguson-digital.eu$$#cookie-notice
 fryzomania.pl$$#myWorningNewsletterPopUp
 gdansk.pl,gokf.gda.pl$$.rodo
