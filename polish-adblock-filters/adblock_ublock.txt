@@ -6,7 +6,7 @@
 ! Wsparcie: https://patronite.pl/polskiefiltry
 ! Last modified: 12 August 2018
 ! Expires: 2 days
-! Version: 2018081201
+! Version: 2018081202
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -14,7 +14,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018081201 aktualizacja: nd, 12 sierpnia 2018, 17:28
+! v.2018081202 aktualizacja: nd, 12 sierpnia 2018, 21:52
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -341,6 +341,7 @@ czasdzieci.pl##^html body.cdb div#allPage script
 pracawgdansku.com.pl##^HTML > HEAD > META + TITLE + LINK + SCRIPT
 !#endif
 !#if !cap_html_filtering
+czasdzieci.pl##script:inject(abort-current-inline-script.js, billboard750)
 pracawgdansku.com.pl##IFRAME#iframe:style(height: 100% !important;)
 !#endif
 !#if env_firefox
