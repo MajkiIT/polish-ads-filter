@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: mLDq/bVL9DNWm6WJJFxZHQ
+! Checksum: loK2m2HSmRS8NyDXvi8jxg
 ! Title: Polskie Filtry RODO-Ciasteczkowe
 ! Polish GDPR-Cookies Filters
 ! Codename: Cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności/RODO.
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 201808091622
-! Last modified: Thu, 09 Aug 2018, 16:22:56 UTC+02
+! Version: 201808121455
+! Last modified: Sun, 12 Aug 2018, 14:55:00 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201808091622 aktualizacja: czw, 09 sie 2018, 16:22:56 UTC+02
+! v.201808121455 aktualizacja: nie, 12 sie 2018, 14:55:00 UTC+02
 !
 !
 ! Specyficzne reguły ukrywające
@@ -28,6 +28,7 @@
 40latki.pl###noty_bottom_layout_container
 a4-klub.pl,pfmrc.eu###document_modal
 abbvie.pl###omniTrackDiv
+aboutyou.pl##div[class^="styles__inner"]
 abt-s.pl###myModal, .reveal-modal-bg
 account.ubisoft.com###footer_tc_privacy
 acmilan24.com##div#top_oko2
@@ -254,6 +255,7 @@ felgdent.com###COOKIE_DIV
 fiatklubpolska.pl##li#navbar_notice_1
 fiatklubpolska.pl###navbar_notice_1.restore
 filmweb.pl##div.topBarCont
+filtrkad.wordpress.com###eu-cookie-law
 firecash.org##div#info
 firmy4u.pl###infociasteczka
 fleetboard.pl###overlay
@@ -1106,6 +1108,7 @@ wykopoczta.pl###noty_top_layout_container
 wymiana-pieca.pl###cmbox
 wzory-cv.com##.gatewayBar
 xaa.pl###ic
+xiaomi.eu##.notice--cookie
 y8.com###policy-validation
 yogenfruz.pl##.shotimoo
 youtube.com###ticker
@@ -1209,7 +1212,6 @@ demotywatory.pl,fabrykamemow.pl,faktopedia.pl,piekielni.pl,mklr.pl,rebelianci.or
 dobreprogramy.pl###rodoCookie
 dobrymechanik.pl##.small.navbar-fixed-bottom
 domodi.pl,homebook.pl##body > div:not(body):not(id):not(class)[style*="position: fixed;"]
-domzdrowia.pl##.pp-t-a-c
 downdetector.pl,patronite.pl###overlay
 durszlak.pl##.shadow.privacy-layer
 dziennikwschodni.pl##.rodo-alert
@@ -1363,8 +1365,9 @@ zywiec.com.pl,heineken.com.pl###infobx
 ##.gdpr-privacy-bar:not(body):not(html)
 ##.wordpress-gdpr-popup:not(body):not(html)
 /pltk/pltk.js$domain=whitepress.pl|aplikuj.pl|bielsko.biala.pl
+/pp-t-a-c.js$domain=fabrykasily.pl|toplista.pl|domzdrowia.pl|fora.pl
 /rhododendron/css/rhododendron-popup.css$domain=wpolityce.pl|wgospodarce.pl|wpolsce.pl
-/rodo.js$domain=polsat.pl|polsat1.pl|polsatfilm.pl|polsatplay.pl|polsatcafe.pl|tv4.pl|tv6.com.pl|discopolomusic.pl|polsat2.pl|polsatnews.pl|geekweek.pl|frazpc.pl|reklamowy-sklep.pl|mowianamiescie.pl|superstacja.tv|playa.pl
+/rodo.js$domain=polsat.pl|polsat1.pl|polsatfilm.pl|polsatplay.pl|polsatcafe.pl|tv4.pl|tv6.com.pl|discopolomusic.pl|polsat2.pl|polsatnews.pl|geekweek.pl|reklamowy-sklep.pl|mowianamiescie.pl|superstacja.tv|playa.pl|poszkole.pl
 /wp-content/plugins/mm-extensions/assets/js/info-popup.js$domain=koty.pl|psy.pl
 /_sess/rodo.js
 ||ad.prv.pl/rodo.js
@@ -1378,19 +1381,19 @@ zywiec.com.pl,heineken.com.pl###infobx
 ||cmp.dreamlab.pl/static/cmp.complete.bundle.js$domain=~komputerswiat.pl
 ||cookie.avt.pl/cookie-noscript
 ||ctm.gdynia.pl/js/alertbox.js
+||frazpc.pl/scripts/default/rodo-v2a.js
 ||igimag.pl/wp-content/plugins/gdpr-cookie-compliance/dist/scripts/lity.js
 ||kochamwroclaw.pl/wp-content/plugins/surbma-yes-no-popup/css/styles.css
 ||kochamwroclaw.pl/wp-content/plugins/wp-terms-popup/assets/popup-style.css
+||legionisci.com/js/cookiepopup.js
 ||newonce.net/wp-content/plugins/popup-builder/javascript/jquery.sgcolorbox-min.js
 ||openid.pino.pl/app/static/global/rodo.js
 ||player.pl/playerapi/document/rodo-short/content$xmlhttprequest
 ||quantcast.mgr.consensu.org/cmp.js$domain=memy.pl
 ||rodo.agora.pl^$script
 ||rodo.rawlplug.com/wp-content/themes/rodo/popup/markups/modal-koelner.html$xmlhttprequest
-||static.fabrykasily.pl/fs-tac/pp-t-a-c.js
 ||std.wpcdn.pl/wpjslib/*wpjslib-chunk-consent-form.js
 ||std.wpcdn.pl/wpjslib/*/wpjslib-chunk-notification.js
-||toplista.pl/tac/pp-t-a-c.js
 ||twojezaglebie.pl/wp-content/plugins/rodo/rodo_style.css
 ||tygodnik-krapkowicki.info/media/plg_system_eprivacy/js/eprivacy.js
 ||vendorlist.consensu.org/vendorlist.json$xmlhttprequest,domain=pcworld.pl|internetstandard.pl|computerworld.pl
