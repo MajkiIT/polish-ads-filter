@@ -4,9 +4,9 @@
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 9 August 2018
+! Last modified: 12 August 2018
 ! Expires: 2 days
-! Version: 2018080903
+! Version: 2018081201
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -14,7 +14,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018080903 aktualizacja: czw, 9 sierpnia 2018, 19:25:00
+! v.2018081201 aktualizacja: nd, 12 sierpnia 2018, 17:28
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -337,6 +337,7 @@ filmweb.pl##script:inject(abort-on-property-write.js, sas)
 !
 ! IF rules
 !#if cap_html_filtering
+czasdzieci.pl##^html body.cdb div#allPage script
 pracawgdansku.com.pl##^HTML > HEAD > META + TITLE + LINK + SCRIPT
 !#endif
 !#if !cap_html_filtering
@@ -345,11 +346,6 @@ pracawgdansku.com.pl##IFRAME#iframe:style(height: 100% !important;)
 !#if env_firefox
 neosite.pl##.kokpit:style(padding: 0 !important;)
 !#endif
-!#if cap_html_filtering
-czasdzieci.pl##^html body.cdb div#allPage script
-czasdzieci.pl##^html body.cdb div#allPage style
-!#endif
-!#if !cap_html_filtering
-czasdzieci.pl###ad_allLayer:style(display: none !important;)
-czasdzieci.pl###layout:style(display: block !important;)
-!#endif
+!
+! Eurozet
+chillizet.pl###playerControls .playIcon:style(opacity: 1 !important;)
