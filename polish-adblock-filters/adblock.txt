@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 12 August 2018
+! Last modified: 13 August 2018
 ! Expires: 1 day
-! Version: 2018081201
+! Version: 2018081301
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018081201 aktualizacja: nie, 12 sierpnia 2018, 22:45:00
+! v.2018081301 aktualizacja: pon, 13 sierpnia 2018, 08:10:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -3975,6 +3975,7 @@ tvtoss.me##.bannerfloat
 autokult.pl##.insert--top-offer.insert, .partner-area
 autokult.pl##[href^="http://corto.www.wp.pl/"]
 avent-ugrow.wp.pl##[class$="BgClick"]
+direct.money.pl##body > div.section, .breadcrumb
 kafeteria.pl,money.pl,pudelek.pl,autokult.pl##.scr-wallpaper
 komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##.article-wrapper > FIGURE.insert
 komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##BODY > DIV[style*="max-width: 100%; "]
@@ -4307,21 +4308,12 @@ avanti24.pl##.art_embed
 sport.pl##.cg4-ad, .mod_uzr_sport6.mod
 !
 !45#--------------------------shinden.pl------------!
-!@@||stats.g.doubleclick.net/$image,domain=shinden.pl
-!@@/fuckadblock.js$script,domain=shinden.pl|webcamera.pl|webcamera.live
-!@@/pop.js$script,domain=shinden.pl
-!@@||reklama.shinden.eu^$image,domain=reklama.shinden.eu
-!||reklama.shinden.eu/$popup,domain=shinden.pl
-!@@||s1.rtbnowads.com/ad/$subdocument,domain=shinden.pl
-!@@||serve.popads.net^$script,domain=shinden.pl
-!@@||adsco.re^$script,xmlhttprequest,domain=shinden.pl
-!@@||www.tradeadexchange.com/$script,domain=shinden.pl|shinden.eu
-!@@||smartadserver.com/$script,domain=shinden.pl
-!shinden.pl#@#.AD-RC-300x250
 ||popads.net/pop.js^$important
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=shinden.pl
 @@||ced-ns.sascdn.com/diff/templates/js/$script,domain=shinden.pl
-@@||rtbnowads.com/$script,domain=shinden.pl
+!@@||rtbnowads.com/$script,domain=shinden.pl
+@@||smartadserver.com/*ac$script,domain=shinden.pl
+@@||shinden.pl^$generichide
 !
 !46#--------------------------a-o.ninja------------!
 a-o.ninja###block-system-main > [href="https://e-neko.pl/"]
