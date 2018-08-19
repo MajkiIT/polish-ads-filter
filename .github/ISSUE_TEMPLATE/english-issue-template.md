@@ -11,7 +11,7 @@ Thanks for reporting to Polish Filters for AdBlock, uBlock and AdGuard.
 Drag and drop your screenshot here or place a link to it.
 -->
 
-### Link bezpośredni (Direct link)
+### Direct link
 <!--
 Insert here a direct link to the page, where the element, ad or error occurs.
 -->
