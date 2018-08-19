@@ -17,9 +17,9 @@ Insert here a direct link to the page, where the element, ad or error occurs.
 -->
 
 ### What do you need to do to appear element, an ad or an error?
-1.
-2.
-3.
+1. 
+2. 
+3. 
 
 
 ### My configuration
@@ -30,8 +30,8 @@ Insert here a direct link to the page, where the element, ad or error occurs.
 **Filter lists:**
 1. EasyList
 2. Official Polish Filters For AdBlock, uBlock Origin and AdGuard
-3.
-4.
+3. 
+4. 
 
 **Other important informations that may be relevant (optional):**
 

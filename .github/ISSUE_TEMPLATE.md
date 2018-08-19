@@ -13,9 +13,9 @@ Wstaw tutaj link bezpośredni do strony, na której występuje element, reklama 
 -->
 
 ### Co trzeba zrobić, aby pojawił się element, reklama albo błąd?
-1.
-2.
-3.
+1. 
+2. 
+3. 
 
 
 ### Moja konfiguracja
@@ -26,8 +26,8 @@ Wstaw tutaj link bezpośredni do strony, na której występuje element, reklama 
 **Listy filtrów:**
 1. EasyList
 2. Oficjalne Polskie Filtry do Adblocka, uBlocka Origin i AdGuarda
-3.
-4.
+3. 
+4. 
 
 **Inne ważne informacje mogące mieć znaczenie (opcjonalne):**
 
