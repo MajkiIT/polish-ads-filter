@@ -1,3 +1,8 @@
+---
+name: Polski formularz zgłoszeniowy
+about: Polish issue template
+---
+
 <!--
 Dziękujemy za zgłoszenie na rzecz Polskich Filtrów do Adblocka, uBlocka Origin i AdGuarda.
 Przed podjęciem jakiegokolwiek działania koniecznie zapoznaj się z CONTRIBUTING.md
