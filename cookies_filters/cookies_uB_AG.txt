@@ -1,11 +1,11 @@
-! Checksum: uWyXfYXeGQbNMM6eE0tLuQ
+! Checksum: 74hfMY9X7vqU51TP7q+X1g
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 201808222041
-! Last modified: Wed, 22 Aug 2018, 20:41:57 UTC+02
+! Version: 201808252113
+! Last modified: Sat, 25 Aug 2018, 21:13:06 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201808222041 aktualizacja: śro, 22 sie 2018, 20:41:57 UTC+02 
+! v.201808252113 aktualizacja: sob, 25 sie 2018, 21:13:06 UTC+02 
 !
 !
 ! Komunikaty ciasteczkowe i dziury
@@ -168,6 +168,8 @@ lovekrakow.pl,djoles.pl,muzyczneradio.com.pl###modal-rodo, .modal-backdrop
 lovekrakow.pl##.modal-open:style(overflow: auto !important; position: static !important;)
 money.pl##script:inject(nano-remove-elements-onready.js, .rodo-popup)
 ogloszenia.plock.pl###dialog-rodo, .modal-backdrop
+pl.dow.com##.cookie-notify
+pl.dow.com##html,body:style(overflow: visible !important; position: static !important;)
 polski-tenis.pl###rodo
 pro-sprzet.pl###myWorning, .modal-backdrop
 publikator.com.pl##.layer
@@ -196,6 +198,7 @@ infoplanet.pl,polski-tenis.pl,craftserve.pl##^#rodo
 infostrow.pl,roztoczanskipn.pl##^#rodo-modal
 lovekrakow.pl,djoles.pl,muzyczneradio.com.pl##^#modal-rodo
 ogloszenia.plock.pl##^#dialog-rodo
+pl.dow.com##^.cookie-notify
 publikator.com.pl##^body script:has-text(polityka|zaufani)
 pulawy.eu##^#modalRodo
 pro-sprzet.pl##^#myWorning
@@ -220,6 +223,7 @@ infoplanet.pl,polski-tenis.pl,craftserve.pl$$#rodo
 infostrow.pl$$#rodo-modal
 lovekrakow.pl,djoles.pl,muzyczneradio.com.pl$$#modal-rodo
 ogloszenia.plock.pl$$#dialog-rodo
+pl.dow.com$$.cookie-notify
 pro-sprzet.pl$$#myWorning
 publikator.com.pl$$script[tag-content="polityka|zaufani"]
 pulawy.eu$$#modalRodo
