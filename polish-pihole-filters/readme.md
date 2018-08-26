@@ -18,5 +18,17 @@ Easylist Host filters for Pi hole
 EasyPrivacy Host filters for Pi hole                                                       
 <code>https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/easy_privacy_host.txt</code>
 
+Adguard Mobile Host filters for Pi hole                                                       
+<code>https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/adguard_mobile_host.txt</code>
+
 Adguard Host filters for Pi hole                                                      
 <code>https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/adguard_host.txt</code>
+
+Adguard Crypto Host filters for Pi hole                                                      
+<code>https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/adguard_crypto_host.txt</code>
+
+Ad server list for use with hosts files to block ads                                                      
+<code>https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/Peter_Lowe_ADS.txt</code>
+
+Filtr chroniacy przed przekretami takimi jak subskrypcje SMS                                                      
+<code>https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/KADhosts.txt</code>
