@@ -4,9 +4,9 @@
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
 ! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 15 August 2018
+! Last modified: 27 August 2018
 ! Expires: 2 days
-! Version: 2018081501
+! Version: 2018082701
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -14,7 +14,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018081501 aktualizacja: śr, 15 sierpnia 2018, 22:36
+! v.2018082701 aktualizacja: pon, 27 sierpnia 2018, 00:45:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -321,6 +321,8 @@ filmweb.pl##script:inject(setTimeout-defuser.js, notDetected)
 fotoblogia.pl,gadzetomania.pl,wp.pl,autokult.pl,komorkomania.pl,medycyna24.pl,smaczneblogi.pl##script:inject(abort-on-property-write.js, __serviceAbModal)
 niezalezna.pl##script:inject(noeval.js)
 pilot.wp.pl##script:inject(set-constant.js, WP.crux.sealed, falseFunc)
+playpuls.pl##+js(setInterval-defuser.js, muted, 8000)
+playpuls.pl##+js(setTimeout-defuser.js, Math.round, 5000)
 skript.pl##script:inject(abort-current-inline-script.js, $, alert)
 skript.pl##script:inject(abort-current-inline-script.js, document.addEventListener, adblocka)
 ||wp.hit.gemius.pl/gdejs/xgde.js$script,redirect=noopjs,domain=pilot.wp.pl
