@@ -1,11 +1,11 @@
-! Checksum: yN7sCzhmbNqKYl5lHmTJog
+! Checksum: yNd4FqBPnbot3xHh/gV1fg
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 201808281433
-! Last modified: Tue, 28 Aug 2018, 14:33:05 UTC+02
+! Version: 201808311805
+! Last modified: Fri, 31 Aug 2018, 18:05:23 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201808281433 aktualizacja: wto, 28 sie 2018, 14:33:05 UTC+02
+! v.201808311805 aktualizacja: pią, 31 sie 2018, 18:05:23 UTC+02
 !
 !
 ! Komunikaty ciasteczkowe i dziury
@@ -234,4 +234,9 @@ tuzdrowie.pl$$#popupModal
 ustawmundial.weszlo.com,ustawlige.com$$#privacy-modal
 zakopane.info,tuwroclaw.com,tulodz.com,rybnik.com.pl,slaskibiznes.pl,tuwodzislaw.pl,tuzory.pl,tujastrzebie.pl$$#pd-modal
 ztm.poznan.pl$$#PopUP
+!#endif
+!#if cap_user_stylesheet
+open.fm,dobreprogramy.pl,wp.pl,money.pl,abczdrowie.pl,parenting.pl,komorkomania.pl,gadzetomania.pl,fotoblogia.pl,pudelek.pl,domodi.pl,o2.pl,autokult.pl##body > *:style(filter: none !important;)
+open.fm,dobreprogramy.pl,wp.pl,money.pl,abczdrowie.pl,parenting.pl,komorkomania.pl,gadzetomania.pl,fotoblogia.pl,pudelek.pl,domodi.pl,o2.pl,autokult.pl##html > body > div[class]:last-of-type:has-text("RODO")
+open.fm,dobreprogramy.pl,wp.pl,money.pl,abczdrowie.pl,parenting.pl,komorkomania.pl,gadzetomania.pl,fotoblogia.pl,pudelek.pl,domodi.pl,o2.pl,autokult.pl##html:style(overflow-y: visible !important; height: auto !important;)
 !#endif
