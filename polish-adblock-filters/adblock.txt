@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 3 September 2018
 ! Expires: 1 day
-! Version: 2018090306
+! Version: 2018090307
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018090306 aktualizacja: pon, 3 września 2018, 20:50:00
+! v.2018090307 aktualizacja: pon, 3 września 2018, 21:45:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -2975,7 +2975,6 @@ zywiecinfo.pl##.promoted
 ||autotrader.pl/Resources/Images/credit-agricole/$image
 ||avanti24.pl/pub/ips/$subdocument
 ||avanti.fashion/pub/ips/$subdocument
-||baje.pl/rotator/show.php
 ||benchmark.pl/screen-container-target.html$popup
 ||benchmark.pl/uploads/backend_img/*/*screening*.jpg$image
 ||bham.pl/rek_images/$image
@@ -3912,7 +3911,6 @@ autocentrum.pl,demotywatory.pl,dziennik.pl,facetemjestem.pl,gala.pl,garnek.pl,gr
 ||mojeklocki.com^
 ||oppineo.com^
 ||platnosc.link^
-||samnumer.pl^
 ||sprawdzikk.v0r.org^
 ||wydawca.lead.network^
 ||pay24iv.com^
@@ -3929,9 +3927,7 @@ autocentrum.pl,demotywatory.pl,dziennik.pl,facetemjestem.pl,gala.pl,garnek.pl,gr
 ||p986524.pl^
 ||seanse24.pl^
 ||chomik-24.pl^
-||zgarnijiphone.ml^
 ||orangę.pl^
-||xn--orang-n0a.pl^
 !
 !24#--------------------------Rules for ublock, but can be use with adblock------------!
 ||imasdk.googleapis.com/js/core/bridge*.html$subdocument,domain=exs.pl,important
@@ -3974,7 +3970,6 @@ pl##a[href^="//69oxt4q05.com/"]
 /^(http|https):\/\/[\w]{8,}\.[a-z]{3,3}\/[\w\d\W]{45,}/$script,domain=abcast.net|alltube.pl|alltube.tv
 /^(http|https):\/\/(?!youtube)[a-zA-Z0-9.]{5,20}\.com\/watch\?key=/$popup
 /^http:\/\/p[0-9]{6,10}\.[a-z]{5,10}\.com\/itab\/[a-z?=A-Z_0-9&]{10,}Zippyshare\.com[a-z0-9A-Z%.'-]{5,}/$popup
-!/https:\/\/naekranie\.pl\/[0-9a-z]{7,10}$/$popup
 /wp-content/plugins/wp-words-links-change/*$script,domain=businesstraveller.pl
 !
 !29#--------------------------Rules on tv streams element hiding rules------------!
@@ -4052,59 +4047,24 @@ pogoda.wp.pl##DIV[class]:first-child + * + DIV[class]
 pogoda.wp.pl##DIV.stamp + * + DIV[class]
 pogoda.wp.pl##DIV#stgHeader + * > :first-child + DIV[class]
 pogoda.wp.pl##DIV[style="text-align: center;"] > DIV[class]:first-child
-!tosportowefakty.wp.pl##.articleteaser > span
-!tosportowefakty.wp.pl##ASIDE.grid-wx1 > DIV[class]:first-child + * + * + DIV[class]
-!tosportowefakty.wp.pl##A[target="_blank"] > DIV[style*="background-image: url(\"https://v.wpimg.pl/"]
-!tosportowefakty.wp.pl##A[target="_blank"] > IMG.articleteaser__photo.inview[src*="/v.wpimg.pl/"]
-!tosportowefakty.wp.pl##A[target="_blank"] > IMG[src^="https://v.wpimg.pl/"]:last-child
-!tosportowefakty.wp.pl##A[target="_blank"] > IMG[src^="//v.wpimg.pl/"] + .articleteaser__title
-!tosportowefakty.wp.pl##DIV#matchtable + * + * + DIV[class]
-!tosportowefakty.wp.pl##HEADER + DIV#matchtable + DIV[class]
-!tosportowefakty.wp.pl##HEADER + DIV#matchtable + DIV + DIV
-!tosportowefakty.wp.pl##HEADER + DIV#matchtable + DIV + DIV + DIV + DIV[class]
 sportowefakty.wp.pl,kobieta.wp.pl,moto.wp.pl,tech.wp.pl,gry.wp.pl,opinie.wp.pl,turystyka.wp.pl,pogoda.wp.pl,tv.wp.pl,finanse.wp.pl##* > DIV[style*="max-width: 100%;"]
 sportowefakty.wp.pl##main div[class*=" "]:empty:not(.btnmute):not(.volsliderbg):not([style]):not([id]):not([img]):not([src])
-!sportowefakty.wp.pl,money.pl##DIV + DIV[style*="max-width: 100%;"]
-!sportowefakty.wp.pl,money.pl,pudelek.pl##A[class][href*=".wp.pl/"] > IMG[class][src^="https://v.wpimg.pl/"]:last-child
-!sportowefakty.wp.pl##P + DIV + DIV[class]
-!tosportowefakty.wp.pl##P + DIV + DIV + DIV[class]
-!tosportowefakty.wp.pl##P + DIV + DIV + DIV + DIV[class]
-!tosportowefakty.wp.pl##.section[data-st-area="Sekcja-specjalna-Wideo"] + DIV + DIV + DIV
-!tosportowefakty.wp.pl##.section__separator
 tv.wp.pl##DIV[style="text-align:center; padding:10px;"]
 tv.wp.pl##SECTION#boksy > DIV > DIV[class]
 tv.wp.pl##SECTION > DIV.wide > DIV + DIV[class]
 wiadomosci.wp.pl##DIV[style="position: relative; top: 0px;"] > A[target="_blank"] > DIV
 wiadomosci.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##A[href*=".wp.pl/"][target="_blank"]:first-child > FIGURE[class^="_"]
 wiadomosci.wp.pl##[target="_blank"] > IMG[src^="https://v.wpimg.pl/"]
-!towiadomosci.wp.pl###aSlot3
 wiadomosci.wp.pl,tech.wp.pl,kobieta.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##A[class^="_"][href*=".wp.pl/"][target="_blank"] > FIGURE[class^="_"] + * H3[class*="teaser"]
 wp.pl##.scr-wallpaper
 www.o2.pl##.gzuwb
-!towww.wp.pl##.aeg4mtl, ._3Yt2CT._3JvtY-
-!towww.wp.pl##a[href^="http://direct.money.pl/landing-page/callcenter/"]
-!towww.wp.pl##[class^="_2"][data-st-area$="prawa"] > [class] + UL[class^="_3"] + [class^="_"]
-!towww.wp.pl##[class^="_"][title][target="_blank"][data-st-clk^="\7b \"teaserId\":"]
-!www.wp.pl##.content._1gA4wm > div:nth-of-type(2) > ._2kJYSo > div > div:nth-of-type(2)
-!towww.wp.pl##[data-st-area="Gwiazdy-prawa"] > div > div
-!towww.wp.pl##[data-st-area="Mototech-prawa"] > div[class]
-!towww.wp.pl##DIV[style="position: relative; display: block;"] > DIV[style*="overflow: hidden; "]
-!towww.wp.pl##[id^="section_"]:not(#section_trends) > div:not([class]) > div:not([class]):not([id])
-!www.wp.pl##div[class*=" "]:empty:not(.btnmute):not(.volsliderbg):not([style]):not([id]):not([img]):not([src])
 www.wp.pl##[id^="sgwp_screening_"]
 www.wp.pl###newsfeed-player-column[class^="_3"] > DIV[class^="sc-"]
-!towww.wp.pl###section_celebrities > div:nth-of-type(1)
-!towww.wp.pl###section_finances > div:nth-of-type(1)
-!towww.wp.pl###section_lifestyle > div:nth-of-type(1)
-!towww.wp.pl###section_mototech > div:nth-of-type(1)
-!towww.wp.pl###section_topnews > div:nth-of-type(1)
 !www.wp.pl###sgwp_screening_topnews
 ~www.wp.pl,wp.pl##A[href*=".wp.pl/"] > DIV > IMG[class][src^="https://v.wpimg.pl/"]
 ~www.wp.pl,wp.pl##[class^="__bc_layer"]
 ~www.wp.pl,wp.pl##[class^="css-"]
 ~www.wp.pl,wp.pl##DIV[style*="overflow: hidden; z-index: 310;"]
-! inne
-! potwierdzone
 !
 !34#--------------------------Pudelek/Pudelekx element hide------------!
 pudelek.pl##DIV.cb > DIV[class^="m"]
