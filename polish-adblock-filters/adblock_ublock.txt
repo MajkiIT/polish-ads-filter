@@ -3,10 +3,12 @@
 ! Codename: Official - supplement for uBlock Origin
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
-! Wsparcie: https://patronite.pl/polskiefiltry
-! Last modified: 2 September 2018
+! Wsparcie: 
+!   Patronite ==> https://patronite.pl/polskiefiltry
+!   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
+! Last modified: 3 September 2018
 ! Expires: 2 days
-! Version: 2018090202
+! Version: 2018090301
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -14,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018090202 aktualizacja: nie, 2 września 2018, 22:03:00
+! v.2018090301 aktualizacja: pon, 3 września 2018, 21:00:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -275,6 +277,12 @@ kresy.pl##.showwhennotclicked:style(display: none!important;)
 ! ezg24.net
 ezg24.net##body > .menu-belt + .paralax-image:style(height: 0px !important)
 !
+! opensubtitles.org
+opensubtitles.org##+js(set-constant.js, displayed, false)
+!
+! milionkobiet.pl
+milionkobiet.pl##.gallery-embed-list-images:style(height: auto !important;)
+!
 !
 ! style()
 24pr.pl###wpp-4:style(width: 200%)
@@ -327,6 +335,7 @@ playpuls.pl##+js(setTimeout-defuser.js, Math.round, 5000)
 skript.pl##script:inject(abort-current-inline-script.js, $, alert)
 skript.pl##script:inject(abort-current-inline-script.js, document.addEventListener, adblocka)
 ||wp.hit.gemius.pl/gdejs/xgde.js$script,redirect=noopjs,domain=pilot.wp.pl
+warezdark.pl##script:inject(abort-on-property-write.js, addBlocking)
 !
 ! Rules after Adblock
 vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
