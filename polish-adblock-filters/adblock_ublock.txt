@@ -3,12 +3,12 @@
 ! Codename: Official - supplement for uBlock Origin
 ! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
-! Wsparcie: 
+! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 3 September 2018
+! Last modified: 6 September 2018
 ! Expires: 2 days
-! Version: 2018090301
+! Version: 2018090601
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018090301 aktualizacja: pon, 3 września 2018, 21:00:00
+! v.2018090601 aktualizacja: czw, 6 września 2018, 22:58:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -113,6 +113,7 @@ www.dobreprogramy.pl###phContent_downloaderHint
 www.dobreprogramy.pl##.tag-smartdom.home-section > .span-8, .tag-techmoto.home-section > .span-8:style(width: 100% !important; margin-right: 15px !important;)
 www.dobreprogramy.pl##article > div[id]:matches-css-after(content: "przy pomocy Asystenta pobierania")
 www.dobreprogramy.pl##body:not(variant-mobile).skin-green .user-login:style(color:#88ae04!important;)
+www.dobreprogramy.pl##:xpath(//div[contains(text(), 'REKLAMA')])
 !
 ! purepc.pl
 purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !important; position: absolute !important;)
@@ -351,16 +352,19 @@ filmweb.pl##script:inject(abort-on-property-write.js, sas)
 ! IF rules
 !#if cap_html_filtering
 czasdzieci.pl##^html body.cdb div#allPage script
+hdtvpolska.com##^script:has-text(#sdWelcomeScreen)
 pracawgdansku.com.pl##^HTML > HEAD > META + TITLE + LINK + SCRIPT
 !#endif
 !#if !cap_html_filtering
 czasdzieci.pl##script:inject(abort-current-inline-script.js, billboard750)
+hdtvpolska.com##script:inject(abort-current-inline-script.js, jQuery, #sdWelcomeScreen)
 pracawgdansku.com.pl##IFRAME#iframe:style(height: 100% !important;)
 !#endif
 !#if env_firefox
 neosite.pl##.kokpit:style(padding: 0 !important;)
 !#endif
 !#if !cap_user_stylesheet
+www.dobreprogramy.pl##div[hidden]:style(visibility: hidden !important;)
 purepc.pl##script:inject(remove-attr.js, style, [href^="https://www.purepc.pl/red1r.php"])
 !#endif
 !
