@@ -3,12 +3,12 @@
 ! Codename: Official - supplement for AdGuard
 ! Collaborators: F4z, FadeMind, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Wsparcie: 
+! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 3 September 2018
+! Last modified: 6 September 2018
 ! Expires: 2 days
-! Version: 2018090301
+! Version: 2018090601
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018090301 aktualizacja: pon, 3 września 2018, 21:00:00
+! v.2018090601 aktualizacja: czw, 6 września 2018, 23:07:00
 !
 !
 ! http://alltube.tv/
@@ -152,7 +152,7 @@ dobreprogramy.pl##body.variant-mobile div[style="color: #A9A9A9; text-align:cent
 dobreprogramy.pl##body:not(#bd):not([style*="background-image:"]):style(background-image:none!important;)
 forum.dobreprogramy.pl##body[class]:style(background-image: none !important;)
 www.dobreprogramy.pl###phContent_downloaderHint
-www.dobreprogramy.pl##.tag-smartdom.home-section > .span-8, .tag-techmoto.home-section > .span-8:style(width: 100% !important; margin-right: 15px !important;)
+www.dobreprogramy.pl##.tag-smartdom.home-section > .span-8, .tag-techmoto.home-section > .span-8, .tag-ifa2018.home-section > .span-8:style(width: 100% !important; margin-right: 15px !important;)
 www.dobreprogramy.pl##article > div[id]:matches-css-after(content: "przy pomocy Asystenta pobierania")
 www.dobreprogramy.pl##body:not(variant-mobile).skin-green .user-login:style(color:#88ae04!important;)
 !
@@ -197,11 +197,14 @@ vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
 ! Rules with conditions
 !#if (adguard_ext_firefox)
 czasdzieci.pl$$html body.cdb div#allPage script
+hdtvpolska.com$$script[tag-content="#sdWelcomeScreen"]
 neosite.pl#$#.kokpit { padding: 0 !important; }
 !#endif
 !#if (!adguard_ext_firefox)
 czasdzieci.pl###ad_allLayer
 czasdzieci.pl###layout:style(display: block !important;)
+hdtvpolska.com###sdWelcomeScreen
+hdtvpolska.com##html:style(overflow: auto !important;)
 !#endif
 !
 !
