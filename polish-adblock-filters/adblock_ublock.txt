@@ -8,7 +8,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 13 September 2018
 ! Expires: 2 days
-! Version: 2018091304
+! Version: 2018091305
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018091304 aktualizacja: czw, 13 września 2018, 16:05:00
+! v.2018091305 aktualizacja: czw, 13 września 2018, 17:35:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -139,6 +139,8 @@ autokult.pl##script:inject(set-constant.js, WP.gaf.loadAndRunBunch, noopFunc)
 ~poczta.wp.pl,wp.pl,pudelek.pl##script:inject(set-constant.js, WP.gaf.setSlotCreation, noopFunc)
 open.fm,dobreprogramy.pl,wp.pl,money.pl,abczdrowie.pl,parenting.pl,komorkomania.pl,gadzetomania.pl,fotoblogia.pl,domodi.pl,o2.pl,autokult.pl##script:inject(set-constant.js, WP.gdpr.init, noopFunc)
 www.wp.pl##script:inject(set-constant.js, WP.mods.welcomeScreen, noopFunc)
+||adv.wp.pl/RM/Box/*.mp4$media,redirect=noopmp3-0.1s
+||v.wpimg.pl/$media,redirect=noopmp3-0.1s,domain=wp.pl|~www.wp.pl|autokult.pl|parenting.pl|echirurgia.pl|money.pl|o2.pl|portal.abczdrowie.pl|komorkomania.pl|fotoblogia.pl|gadzetomania.pl|pudelek.pl|jejswiat.pl|medycyna24.pl|dobreprogramy.pl
 !
 ! kurnik.pl
 kurnik.pl##.adsbygoogle:style(height: 1px !important; width: 1px !important;)
@@ -271,11 +273,6 @@ motomi.pl##.partnership-header-banner:style(height: 80px !important;)
 kresy.pl##.hidewhennotclicked:style(display: block!important;)
 kresy.pl##.showwhennotclicked:style(display: none!important;)
 !
-! vod.tvp.pl
-@@||myao.adocean.pl/_*/ad.xml$xmlhttprequest,domain=vod.tvp.pl
-||tvp.pl/video/vod/reklamy/$xmlhttprequest,redirect=noopmp4-1s,important,domain=vod.tvp.pl
-||tvp.pl/video/vod/reklamy/$media,redirect=noopmp4-1s,important,domain=vod.tvp.pl
-!
 ! ezg24.net
 ezg24.net##body > .menu-belt + .paralax-image:style(height: 0px !important)
 !
@@ -341,6 +338,7 @@ playpuls.pl##+js(setInterval-defuser.js, muted, 8000)
 playpuls.pl##+js(setTimeout-defuser.js, Math.round, 5000)
 skript.pl##script:inject(abort-current-inline-script.js, $, alert)
 skript.pl##script:inject(abort-current-inline-script.js, document.addEventListener, adblocka)
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=twojahistoria.pl,redirect=noopjs
 ||wp.hit.gemius.pl/gdejs/xgde.js$script,redirect=noopjs,domain=pilot.wp.pl
 warezdark.pl##script:inject(abort-on-property-write.js, addBlocking)
 !
@@ -377,3 +375,6 @@ purepc.pl##script:inject(remove-attr.js, style, [href^="https://www.purepc.pl/re
 !
 ! Eurozet
 chillizet.pl###playerControls .playIcon:style(opacity: 1 !important;)
+!
+! aoredi
+||aoredi.com/apu.php?$script,redirect=noopjs,important
