@@ -1,11 +1,11 @@
-! Checksum: fbg2wvrSBDyQna/jOOE3Wg
+! Checksum: PLiiiYMN4c4hySrkNeYyOQ
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 201809081630
-! Last modified: Sat, 08 Sep 2018, 16:30:47 UTC+02
+! Version: 201809161555
+! Last modified: Sun, 16 Sep 2018, 15:55:24 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201809081630 aktualizacja: sob, 08 wrz 2018, 16:30:47 UTC+02
+! v.201809161555 aktualizacja: nie, 16 wrz 2018, 15:55:24 UTC+02
 !
 !
 ! Komunikaty ciasteczkowe i dziury
@@ -179,6 +179,7 @@ publikator.com.pl##body>*:style(filter: none !important;)
 publikator.com.pl##html > body:style(overflow: auto !important;)
 roztoczanskipn.pl###rodo-modal, .modal-backdrop
 rybnik.com.pl,slaskibiznes.pl,tuwodzislaw.pl,pulawy.eu##.modal-open:style(padding-right: 0 !important;)
+skm.pkp.pl##script:inject(abort-current-inline-script.js, $, dialog-message-rodo)
 styl.fm###rodo-info, .modal-backdrop
 tuzdrowie.pl###popupModal, .modal-backdrop
 tuzory.pl,tujastrzebie.pl###pd-modal, .modal-backdrop
@@ -206,6 +207,7 @@ pl.dow.com##^.cookie-notify
 publikator.com.pl##^body script:has-text(polityka|zaufani)
 pulawy.eu##^#modalRodo
 pro-sprzet.pl##^#myWorning
+skm.pkp.pl##^#dialog-message-rodo
 styl.fm##^.rodo-info
 tuzdrowie.pl##^#popupModal
 tvasta.pl##^#infoModal
@@ -233,15 +235,11 @@ pl.dow.com$$.cookie-notify
 pro-sprzet.pl$$#myWorning
 publikator.com.pl$$script[tag-content="polityka|zaufani"]
 pulawy.eu$$#modalRodo
+skm.pkp.pl$$#dialog-message-rodo
 styl.fm$$.rodo-info
 tuzdrowie.pl$$#popupModal
 tvasta.pl$$#infoModal
 ustawmundial.weszlo.com,ustawlige.com$$#privacy-modal
 zakopane.info,tuwroclaw.com,tulodz.com,rybnik.com.pl,slaskibiznes.pl,tuwodzislaw.pl,tuzory.pl,tujastrzebie.pl$$#pd-modal
 ztm.poznan.pl$$#PopUP
-!#endif
-!#if cap_user_stylesheet
-!o2.pl##body > *:style(filter: none !important;)
-!o2.pl##html > body > div[class]:last-of-type:has-text("RODO")
-!o2.pl##html:style(overflow-y: visible !important; height: auto !important;)
 !#endif
