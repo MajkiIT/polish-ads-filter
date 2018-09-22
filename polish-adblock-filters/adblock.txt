@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 21 September 2018
+! Last modified: 22 September 2018
 ! Expires: 1 day
-! Version: 2018092103
+! Version: 2018092201
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018092103 aktualizacja: ptk, 21 września 2018, 01:05:00
+! v.2018092201 aktualizacja: sob, 22 września 2018, 11:10:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -112,6 +112,7 @@ vshare.io###sendif
 24tp.pl,lca.pl,112tychy.pl,30minut.pl,twoje-podhale.pl,upflix.pl##[class*="reklama"]
 ###a_201
 ###a_d_billboard
+##.addv-container
 ##.adexonModuleportel.pl
 ###ad_gora_srodek
 ##.ad_Handle
@@ -737,7 +738,6 @@ dzisiajwgliwicach.pl###text-32
 dzisiajwgliwicach.pl##.entry > [class]
 dzisiajwgliwicach.pl##.entry > [href]
 dzisiajwgliwicach.pl##img[src*="Baner-590x300-"]
-dziwneobrazki.pl##body > div:nth-of-type(2)
 e-blogi.pl##a[href="#"]
 e-fvat.pl###box5
 e-grajewo.pl##.logoitems
@@ -1389,6 +1389,7 @@ kutno.net.pl##[class*="bilboard"]
 kwejk.pl###bottomadcontainer
 kwejk.pl##.da.media
 kwejk.pl##[id^="div-gpt-ad-"]
+ktoto.info##.sidb.sidebar > div:nth-of-type(3), #scroller
 laczynaspasja.pl##.wpb_content_element.wpb_text_column, #promocodeBaner
 lajfy.com###banner-top-four
 lajfy.com###interContainer
@@ -1583,9 +1584,7 @@ mlecznepodroze.onet.pl##.g-single.a-336
 mlecznepodroze.onet.pl##.widgetAD.widget_text
 mlecznepodroze.onet.pl##DIV[style="overflow: hidden; border-bottom: solid #DDDDDD 0px; border-top: solid #DDDDDD 0px; padding-top: 15px; padding-bottom: 10px;"]
 mma.pl###cb-bg-to
-mma.pl##.wrap.p0.mmapl_ads, [id^="mmapl-rotating-ads-"]
-mma.pl##a[href^="http://pbsport.pl/"]
-mma.pl##a[href^="http://www.activlab.pl/"]
+mma.pl##.wrap.p0.mmapl_ads, [id^="mmapl-rotating-ads-"], #image_widget-59, #custom_html-15, #image_widget-60, #image_widget-61, #custom_html-13
 mmanews.pl##.clickPanel
 mmanews.pl##DIV[class^="rekBlok"]
 mmarocks.pl##.td-banner-wrap-full
@@ -1702,6 +1701,7 @@ naekranie.pl##.no-review.title-wide > [class^="k"]
 naekranie.pl##.title-wide > div[class^=k][style]
 naekranie.pl##div.prawa-szpalta.box > [class^="k"]
 naekranie.pl###home-indexes > div > [class^="k"]
+naekranie.pl##div.icon-star.box > [class^=k]
 naekranie.pl##video
 naekranie.pl#?#aside:-abp-has(iframe)
 naklo24.pl##.ban
@@ -2643,7 +2643,7 @@ wakai.pl###text-html-widget-5
 wakai.pl###text-html-widget-6
 wakai.pl##.youtube-widget
 walbrzych24.com##[id^="promo"]
-warszawawpigulce.pl##.code-block-5, .eklama, #undermenu-block, .code-block-6
+warszawawpigulce.pl##.eklama
 warszawiak.pl###id_C-place > section > .box-header
 warszawskagazeta.pl###section-id-1504866636717
 warszawskagazeta.pl###sppb-addon-1511188176589, #sppb-addon-1530792147615
@@ -2881,7 +2881,7 @@ zajefajna.com###zajesearch > a[href^="https://tb7.pl/"]
 zajefajna.com##.bbcode_code > [href^="https://filefox.pl/poleca/"]
 zajefajna.com##IMG[alt="Pobierz plik"]
 zakon-ac.info##.amalker.erdt-news
-zakopane.info,tuwroclaw.com##.addv-container, .tblank
+zakopane.info,tuwroclaw.com##.tblank
 zalukaj.tv###left > a[href^="http://vshare.io/"]
 zambrow.org##.adv, .slick-slide, #__cmcmedia_upid_6
 zambrowiacy.pl###sponsorbox
@@ -3547,6 +3547,7 @@ dziennikwschodni.pl#@#.adholder
 dziennikwschodni.pl#@#.ad-holder
 dziennikwschodni.pl,vorek.pl#@#.ad
 dziwnekomiksy.pl###adbk
+dziwneobrazki.pl##+js(set-constant.js, canRunAds, true)
 e-dokument.org,znaki.vxm.pl#@##banner_ad
 egarwolin.pl###TXhkUvZljBCga
 fly4free.pl##.warnadblk
@@ -3605,7 +3606,7 @@ megawrzuta.pl###popup-1
 memorizer.pl##.adblockInfo
 minecraftpolska.net,pracawgdansku.com.pl#@#[id*="reklama"]
 minecraftpolska.net,pracawgdansku.com.pl#@##reklama
-mmorpg.org.pl,parezja.pl##.adsbygoogle
+mmorpg.org.pl,parezja.pl,dziwneobrazki.pl##.adsbygoogle
 nadajemy.pl###abp_info
 ps3forum.pl###abl
 newsweb.pl###JEcnUkoYtyfs,.hmAdHKEaBMFO-bg
@@ -3712,6 +3713,7 @@ zw.pl###abpnotzw
 @@||burzowo.info/*.js?*ad
 @@||businessinsider.com.pl^$generichide
 @@||csr.onet.pl/$domain=www.newsweek.pl
+@@||dziwneobrazki.pl^$generichide
 @@||epiotrkow.pl/reklama/*MajkiIT*.js$script
 @@||eskago.pl^$generichide
 @@||eskago.pl/html/js/ads*.js$script
