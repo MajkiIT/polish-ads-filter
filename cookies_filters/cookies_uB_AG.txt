@@ -1,11 +1,11 @@
-! Checksum: 8YVSQHAqkzhY5kmnXzgg/Q
+! Checksum: Q7IybH0wF5BwBOmjROsX1Q
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 201809221359
-! Last modified: Sat, 22 Sep 2018, 13:59:01 UTC+02
+! Version: 201809221550
+! Last modified: Sat, 22 Sep 2018, 15:50:05 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,89 +14,40 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201809221359 aktualizacja: sob, 22 wrz 2018, 13:59:01 UTC+02
+! v.201809221550 aktualizacja: sob, 22 wrz 2018, 15:50:05 UTC+02
 !
 !
-! Komunikaty ciasteczkowe i dziury
+! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
 4lomza.pl##body.polityka-cookies:style(margin-top: 0 !important;)
 abcalkoholu.pl##.cookielaw:style(padding-top: 0 !important;)
+analizy.pl##html:style(overflow: auto !important;)
+analizy.pl##.nl_rodo, .ui-widget-overlay
 appsource.microsoft.com##.cookieBanner:style(visibility: hidden !important;)
 aquapark.wroc.pl###header:style(top: 0 !important;)
 archiwum.rp.pl,info.rp.pl##body:style(margin-top: 0 !important;)
+auto-czesci-lipiec.pl###mAll
+auto-czesci-lipiec.pl##.modal-open:style(overflow: visible !important; padding-right: 0 !important;)
 bbcpolska.com###home:style(padding-top: 0 !important;)
 beko.pl##.cookies-margin:style(top: 0 !important;)
 biuletyn.net##body > table:style(margin-top: 0 !important;)
 biuletyn.net##.urzad_mini > div:style(top: 225px!important;)
 bloombergbusinessweek.pl##body:style(margin-top: 0 !important;)
+dobrzemieszkaj.pl###axn
+dobrzemieszkaj.pl##.nlOpen:style(overflow: auto !important;)
 domisad.pl##.show-message #shop-info:style(padding: 60px 0 15px 0 !important;)
 domisad.pl##.show-message #top-nav:style(height: auto !important;)
 dropbox.com##.embedded-app.IndexRebrandPage.top-notification-bar:style(margin-top: -51px !important;)
 dropbox.com##.top-notification-bar-container + .preview-box .react-file-viewer, .embedded-app.IndexRebrandPage.top-notification-bar .RebrandNavigation-container:style(top: 0 !important;)
 echo24.tv##.on-top:style(top: 0 !important;)
-fiskars.pl##.desktop:style(top: 0 !important;)
-indbuildcraft.pl##body:style(overflow: auto !important;)
-indbuildcraft.pl##.modal-overlay, #modal_cookies
-kalisz.info.pl###all:style(top: 0 !important;)
-lafe.pl##.cinfo:style(padding-bottom: 0 !important;)
-lomza.pl##html > body.polityka-cookies:style(margin-top: 0 !important; background-position: center 120px !important;)
-meetup.com###mupFooter:style(padding-bottom: 0 !important;)
-mikroporady.pl##.mikroporady:style(padding-top: 0 !important;)
-msn.com###precontent:style(margin-top: 8rem !important;)
-msn.com##.head:style(margin-top: 0 !important;)
-neon24.pl##script:inject(abort-on-property-read.js, Service.cookieMonster)
-obpon.pl##.menu-flashmessages:style(top: 0 !important;)
-play.google.com,translate.google.pl###gba:style(height: 60px!important;)
-sephora.pl###header:style(margin-top: 41px !important;)
-sephora.pl##.bandeBody:style(top: 0 !important;)
-serwis.currenda.pl##div:style(margin-top: auto!important;)
-sonymobile.com##.bnw-module.header[style="margin-top: 80px;"]:style(margin-top: 0 !important;)
-telepizza.pl##.navbar:style(margin-top: 0 !important;)
-twitter.com##.topbar-spacer:style(padding-top: 0 !important;)
-webhelp.pl###wrapper:style(margin-top: auto !important;)
-youtube.com##div#masthead-positioner-height-offset:style(height: 80px!important;)
-!
-!
-! Komunikaty ciasteczkowe i dziury - specjalne instrukcje
-!#if !cap_user_stylesheet
-fotoblogia.pl,gadzetomania.pl,komorkomania.pl,autokult.pl##.cookie-disclaimer:style(visibility: hidden !important;)
-purepc.pl##script:inject(nano-remove-elements-onready.js, .cookiesinfo)
-!#endif
-!#if !cap_html_filtering
-empik.com##script:inject(nano-remove-elements-onready.js, .cookies-accept)
-!#endif
-!#if cap_html_filtering
-empik.com##^.cookies-accept
-!#endif
-!
-!
-! Popupy
-auto-czesci-lipiec.pl###mAll
-auto-czesci-lipiec.pl##.modal-open:style(overflow: visible !important; padding-right: 0 !important;)
 etransport.pl##.modals.dimmer
 etransport.pl##body.dimmed:style(overflow: auto !important;)
-kobietymedycyny.pl##script:inject(abort-current-inline-script.js, $, cookies)
-mkidn.gov.pl###myModal
-mkidn.gov.pl,puma.com##.modal-open:style(padding-right: 0px!important; overflow: visible!important;)
-multimediago.pl##.modal-cookie
-multimediago.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
-puma.com###modal-geoip-cookies, .modal-backdrop
-unileverfoodsolutions.pl##body.blurred>*:style(box-shadow: none!important; filter: none!important;)
-unileverfoodsolutions.pl##.js-cookie-wall
-unileverfoodsolutions.pl,wikia.com##body:style(overflow: auto!important;)
-wikia.com##div[data-tracking-opt-in-overlay]
-!
-!
-! Popupy dot. polityki prywatności/RODO
-analizy.pl##html:style(overflow: auto !important;)
-analizy.pl##.nl_rodo, .ui-widget-overlay
-dobrzemieszkaj.pl###axn
-dobrzemieszkaj.pl##.nlOpen:style(overflow: auto !important;)
 e-sochaczew.pl,pultusk24.pl###RODOCOOKIE, .modal-backdrop
 farmacja.net##.blur:style(filter: none !important;)
 farmacja.net##.noscroll:style(overflow: auto !important;)
 farmacja.net##.zgoda-popup-wrapper, .popup-overlay
 filmweb.pl##.rodo:style(overflow: auto !important; position: static !important;)
 filmweb.pl##.rodo__overlay
+fiskars.pl##.desktop:style(top: 0 !important;)
 gazetabilgoraj.pl,koleje-wielkopolskie.com.pl,pedzledomakijazu.com,fdds.pl,przegladpolityczny.pl##.popmake-overlay
 gazetabilgoraj.pl,koleje-wielkopolskie.com.pl,pedzledomakijazu.com,fdds.pl,przegladpolityczny.pl##.pum-open:style(overflow: auto !important;)
 generator.blulink.pl##.body--privatepolicy:style(padding-bottom: 0 !important;)
@@ -104,23 +55,40 @@ hbogo.pl##body:style(overflow: auto !important; padding-right: 0 !important;)
 hbogo.pl##.banner-overlay
 hm.com##.modaloverlay:has(#gdpr-modal)
 hm.com##.modal-open, .modal-open body:style(overflow-y: auto !important; position: static !important;)
+indbuildcraft.pl##body:style(overflow: auto !important;)
+indbuildcraft.pl##.modal-overlay, #modal_cookies
 ipla.tv##.no-scroll:style(overflow: auto !important;)
 ipla.tv##.rodo-rules-modal
 kaliszak.pl##.rodo, .rodo_layer
+kalisz.info.pl###all:style(top: 0 !important;)
+kobietymedycyny.pl##script:inject(abort-current-inline-script.js, $, cookies)
 komputerswiat.pl##html > body.cmp:style(overflow: auto !important;)
 komputerswiat.pl##.cmp-app_gdpr
 kruger.pl###rodo, .fader
 kruger.pl##.wmpci-popup-open:style(overflow: auto !important;)
+lafe.pl##.cinfo:style(padding-bottom: 0 !important;)
+lomza.pl##html > body.polityka-cookies:style(margin-top: 0 !important; background-position: center 120px !important;)
 mazury.travel##.popup, .popup-overlay
+meetup.com###mupFooter:style(padding-bottom: 0 !important;)
+mikroporady.pl##.mikroporady:style(padding-top: 0 !important;)
+mkidn.gov.pl###myModal
+mkidn.gov.pl,puma.com##.modal-open:style(padding-right: 0px!important; overflow: visible!important;)
 morele.net##html:style(overflow: auto !important; padding-right: 0 !important;)
 morele.net###content_info_popup
+msn.com###precontent:style(margin-top: 8rem !important;)
+msn.com##.head:style(margin-top: 0 !important;)
+multimediago.pl##.modal-cookie
+multimediago.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 m.24jgora.pl###rodoModal, .modal-backdrop
+neon24.pl##script:inject(abort-on-property-read.js, Service.cookieMonster)
+obpon.pl##.menu-flashmessages:style(top: 0 !important;)
 obywatel.gov.pl###modal-rodo, .modal-backdrop
 obywatel.gov.pl,m.24jgora.pl,e-sochaczew.pl,pultusk24.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 oko.press##.is-reveal-open:style(overflow: auto !important;)
 oko.press##.reveal-overlay
 otwarteklatki.pl###popup-gdpr, .popup-overlay
 otwarteklatki.pl##.popup-visible:style(overflow: auto !important;)
+play.google.com,translate.google.pl###gba:style(height: 60px!important;)
 pl.tommy.com##div.remodal-wrapper:has(.cookie-notice)
 pl.tommy.com##.cookie-notice:style(visibility: hidden !important;)
 pl.tommy.com##.remodal-is-locked:style(overflow: auto !important;)
@@ -131,23 +99,36 @@ prawdaobiektywna.pl##body:style(overflow: auto !important;)
 prawdaobiektywna.pl##.qc-cmp-ui-container
 przydomu.pl###popup_25
 przydomu.pl##.container:style(filter: none !important;)
+puma.com###modal-geoip-cookies, .modal-backdrop
+sephora.pl###header:style(margin-top: 41px !important;)
+sephora.pl##.bandeBody:style(top: 0 !important;)
+serwis.currenda.pl##div:style(margin-top: auto!important;)
 sklep.ptwp.pl##.window
 skyscrapercity.com##body:style(overflow: auto !important;)
 skyscrapercity.com##.fc-consent-root
+sonymobile.com##.bnw-module.header[style="margin-top: 80px;"]:style(margin-top: 0 !important;)
 tabletowo.pl###disqus_thread:style(display: initial !important;)
 tabletowo.pl##.ginger_banner-wrapper
+telepizza.pl##.navbar:style(margin-top: 0 !important;)
 tuzdrowie.pl###popupModal, .modal-backdrop
 tv.pudelek.pl,gryonline.wp.pl##script:inject(set-constant.js, wp_no_consent_screen, true)
+twitter.com##.topbar-spacer:style(padding-top: 0 !important;)
+unileverfoodsolutions.pl##body.blurred>*:style(box-shadow: none!important; filter: none!important;)
+unileverfoodsolutions.pl##.js-cookie-wall
+unileverfoodsolutions.pl,wikia.com##body:style(overflow: auto!important;)
 wagrowczanie.pl##.showRodo
+webhelp.pl###wrapper:style(margin-top: auto !important;)
+wikia.com##div[data-tracking-opt-in-overlay]
 wsensie.pl,wsensie.tv###policy
 wsensie.pl,wsensie.tv##.policy-open section:style(filter: none !important;)
+youtube.com##div#masthead-positioner-height-offset:style(height: 80px!important;)
 zakopane.info,tuwroclaw.com,tulodz.com###pd-modal, .modal-backdrop
 zdmikp.bydgoszcz.pl###customModal, .modal-backdrop
 zeropln.antyweb.pl,mazury.travel,wagrowczanie.pl,praca.antyweb.pl,kaliszak.pl##body:style(overflow: auto !important;)
 zeropln.antyweb.pl,praca.antyweb.pl##.justify-end.flex-col.flex.z-50.fixed.pin
 !
 !
-! Popupy dot. polityki prywatności/RODO - specjalne instrukcje
+! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂 - specjalne instrukcje
 !#if !cap_html_filtering
 4fun.tv###cModal, .modal-backdrop
 alltube.tv,alltube.pl###rodo-popup, .modal-backdrop
@@ -157,6 +138,7 @@ born2be.pl,renee.pl##.rules-modal, .modal-backdrop
 born2be.pl,renee.pl,roztoczanskipn.pl,zakopane.info,tuwroclaw.com,tulodz.com,infoplanet.pl,gokf.gda.pl,gdansk.pl,craftserve.pl,ustawmundial.weszlo.com,ustawlige.com,ztm.poznan.pl,4fun.tv,alltube.tv,alltube.pl,infostrow.pl,fryzomania.pl,tuzdrowie.pl,ogloszenia.plock.pl,polski-tenis.pl,pro-sprzet.pl,muzyczneradio.com.pl,tuzory.pl,tujastrzebie.pl,djoles.pl,tvasta.pl,spolem.katowice.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 budownictwo.pl###rodoLayer, .modal-backdrop
 budownictwo.pl,zdmikp.bydgoszcz.pl,styl.fm##.modal-open:style(overflow: auto !important;)
+empik.com##script:inject(nano-remove-elements-onready.js, .cookies-accept)
 eobuwie.com.pl##.popup
 eobuwie.com.pl##body:style(overflow: auto !important;)
 forums.openpli.org##script:inject(abort-current-inline-script.js, euReadCookie)
@@ -164,14 +146,12 @@ fryzomania.pl###myWorningNewsletterPopUp, .modal-backdrop
 gdansk.pl,gokf.gda.pl##.rodo, .modal-backdrop
 infoplanet.pl,craftserve.pl###rodo, .modal-backdrop
 infostrow.pl###rodo-modal
-lovekrakow.pl,djoles.pl,muzyczneradio.com.pl###modal-rodo, .modal-backdrop
 lovekrakow.pl##.modal-open:style(overflow: auto !important; position: static !important;)
+lovekrakow.pl,djoles.pl,muzyczneradio.com.pl###modal-rodo, .modal-backdrop
 money.pl##script:inject(nano-remove-elements-onready.js, .rodo-popup)
 ogloszenia.plock.pl###dialog-rodo, .modal-backdrop
-!+ PLATFORM(ext_ublock)
-openpli.org##body > div:not([id]):not([class])
-pl.dow.com##.cookie-notify
 pl.dow.com##html,body:style(overflow: visible !important; position: static !important;)
+pl.dow.com##.cookie-notify
 polski-tenis.pl###rodo
 pro-sprzet.pl###myWorning, .modal-backdrop
 publikator.com.pl##.layer
@@ -188,6 +168,8 @@ tvasta.pl##.modal-backdrop
 ustawmundial.weszlo.com,ustawlige.com###privacy-modal, .modal-backdrop
 zakopane.info,tuwroclaw.com,tulodz.com###pd-modal, .modal-backdrop
 ztm.poznan.pl###PopUP, .modal-backdrop
+!+ PLATFORM(ext_ublock)
+openpli.org##body > div:not([id]):not([class])
 !#endif
 !#if cap_html_filtering
 4fun.tv##^#cModal
@@ -195,6 +177,7 @@ alltube.tv,alltube.pl##^#rodo-popup
 belsat.eu##^.popmake-overlay
 born2be.pl,renee.pl##^.rules-modal
 budownictwo.pl##^#rodoLayer
+empik.com##^.cookies-accept
 eobuwie.com.pl##^script:has-text(technologii cookies)
 ferguson-digital.eu##^#cookie-notice
 fryzomania.pl##^#myWorningNewsletterPopUp
@@ -205,17 +188,21 @@ lovekrakow.pl,djoles.pl,muzyczneradio.com.pl##^#modal-rodo
 ogloszenia.plock.pl##^#dialog-rodo
 openpli.org##^script:has-text(gdpr-accepted)
 pl.dow.com##^.cookie-notify
+pro-sprzet.pl##^#myWorning
 publikator.com.pl##^body script:has-text(polityka|zaufani)
 pulawy.eu##^#modalRodo
-pro-sprzet.pl##^#myWorning
 skm.pkp.pl##^#dialog-message-rodo
+spolem.katowice.pl##^#popup.modal
 styl.fm##^.rodo-info
 tuzdrowie.pl##^#popupModal
 tvasta.pl##^#infoModal
 ustawmundial.weszlo.com,ustawlige.com##^#privacy-modal
 zakopane.info,tuwroclaw.com,tulodz.com,rybnik.com.pl,slaskibiznes.pl,tuwodzislaw.pl,tuzory.pl,tujastrzebie.pl##^#pd-modal
 ztm.poznan.pl##^#PopUP
-spolem.katowice.pl##^#popup.modal
+!#endif
+!#if !cap_user_stylesheet
+fotoblogia.pl,gadzetomania.pl,komorkomania.pl,autokult.pl##.cookie-disclaimer:style(visibility: hidden !important;)
+purepc.pl##script:inject(nano-remove-elements-onready.js, .cookiesinfo)
 !#endif
 !#if !env_mobile
 azure.microsoft.com###main:style(padding-top: 88px !important;)
@@ -224,6 +211,7 @@ azure.microsoft.com###main:style(padding-top: 88px !important;)
 4fun.tv$$#cModal
 alltube.tv,alltube.pl$$#rodo-popup
 belsat.eu$$.popmake-overlay
+empik.com$$.cookies-accept
 eobuwie.com.pl$$script[tag-content="technologii cookies"]
 ferguson-digital.eu$$#cookie-notice
 fryzomania.pl$$#myWorningNewsletterPopUp
@@ -238,11 +226,11 @@ pro-sprzet.pl$$#myWorning
 publikator.com.pl$$script[tag-content="polityka|zaufani"]
 pulawy.eu$$#modalRodo
 skm.pkp.pl$$#dialog-message-rodo
+spolem.katowice.pl$$#popup.modal
 styl.fm$$.rodo-info
 tuzdrowie.pl$$#popupModal
 tvasta.pl$$#infoModal
 ustawmundial.weszlo.com,ustawlige.com$$#privacy-modal
 zakopane.info,tuwroclaw.com,tulodz.com,rybnik.com.pl,slaskibiznes.pl,tuwodzislaw.pl,tuzory.pl,tujastrzebie.pl$$#pd-modal
 ztm.poznan.pl$$#PopUP
-spolem.katowice.pl$$#popup.modal
 !#endif
