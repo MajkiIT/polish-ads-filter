@@ -8,7 +8,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 3 October 2018
 ! Expires: 2 days
-! Version: 2018100301
+! Version: 2018100302
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018100301 aktualizacja: sr, 3 pazdziernika 2018, 17:05:00
+! v.2018100302 aktualizacja: sr, 3 pazdziernika 2018, 23:00:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -358,6 +358,7 @@ filmweb.pl##script:inject(abort-on-property-write.js, sas)
 czasdzieci.pl##^html body.cdb div#allPage script
 hdtvpolska.com##^script:has-text(#sdWelcomeScreen)
 pracawgdansku.com.pl##^HTML > HEAD > META + TITLE + LINK + SCRIPT
+prnews.pl,weszlo.com##^script:has-text(adblock__link)
 !#endif
 !#if !cap_html_filtering
 czasdzieci.pl##script:inject(abort-current-inline-script.js, billboard750)
