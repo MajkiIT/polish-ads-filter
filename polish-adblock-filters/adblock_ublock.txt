@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 29 September 2018
+! Last modified: 3 October 2018
 ! Expires: 2 days
-! Version: 2018092901
+! Version: 2018100301
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018092901 aktualizacja: sob, 29 września 2018, 00:10:00
+! v.2018100301 aktualizacja: sr, 3 pazdziernika 2018, 17:05:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -137,7 +137,7 @@ wp.pl,echirurgia.pl,money.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl##script
 ~poczta.wp.pl,wp.pl,echirurgia.pl,kardiolo.pl,money.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl##script:inject(set-constant.js, WP.gaf.addCreation, noopFunc)
 autokult.pl##script:inject(set-constant.js, WP.gaf.loadAndRunBunch, noopFunc)
 ~poczta.wp.pl,wp.pl,pudelek.pl##script:inject(set-constant.js, WP.gaf.setSlotCreation, noopFunc)
-~www.wp.pl,dobreprogramy.pl,wp.pl,money.pl,abczdrowie.pl,parenting.pl,komorkomania.pl,gadzetomania.pl,fotoblogia.pl,domodi.pl,o2.pl,autokult.pl##script:inject(set-constant.js, WP.gdpr.init, noopFunc)
+~www.wp.pl,wp.pl,money.pl,abczdrowie.pl,parenting.pl,komorkomania.pl,gadzetomania.pl,fotoblogia.pl,domodi.pl,autokult.pl##script:inject(set-constant.js, WP.gdpr.init, noopFunc)
 www.wp.pl##script:inject(set-constant.js, WP.mods.welcomeScreen, noopFunc)
 ||adv.wp.pl/RM/Box/*.mp4$media,redirect=noopmp3-0.1s
 ||v.wpimg.pl/$media,redirect=noopmp3-0.1s,domain=wp.pl|~www.wp.pl|autokult.pl|parenting.pl|echirurgia.pl|money.pl|o2.pl|portal.abczdrowie.pl|komorkomania.pl|fotoblogia.pl|gadzetomania.pl|pudelek.pl|jejswiat.pl|medycyna24.pl|dobreprogramy.pl
@@ -226,7 +226,7 @@ naszemiasto.pl##script:inject(abort-on-property-write.js, czy_wlaczony_adblock)
 anyfiles.pl##script:inject(abort-on-property-read.js, launchOpenWindow)
 !
 ! purepc.pl
-purepc.pl##script:inject(setTimeout-defuser.js, ub_fix())
+purepc.pl##script:inject(setTimeout-defuser.js, ubfix())
 purepc.pl##html > body:style(background: #d5d5d5!important;)
 !
 ! animezone.pl
