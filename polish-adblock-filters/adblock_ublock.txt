@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 4 October 2018
+! Last modified: 5 October 2018
 ! Expires: 2 days
-! Version: 2018100401
+! Version: 2018100501
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018100401 aktualizacja: czw, 4 pazdziernika 2018, 14:05:00
+! v.2018100501 aktualizacja: ptk, 5 pazdziernika 2018, 18:05:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -325,7 +325,6 @@ wykop.pl###dyingLinksBox > .dying-links:first-child ~ .dying-links[style="displa
 ~spolka.cda.pl,cda.pl##body:style(background:#121212!important;)
 !
 ! Adblock
-!gadzetomania.pl,wp.pl,autokult.pl,komorkomania.pl##.modal__body-adblock
 alefunny.pl###myModal, .modal-backdrop
 alefunny.pl##.modal-open:style(overflow: auto !important; padding-right: 0px !important;)
 astroweb.pl##script:inject(abort-on-property-read.js, checkAds)
@@ -344,6 +343,7 @@ skript.pl##script:inject(abort-current-inline-script.js, document.addEventListen
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=twojahistoria.pl,redirect=noopjs
 ||wp.hit.gemius.pl/gdejs/xgde.js$script,redirect=noopjs,domain=pilot.wp.pl
 warezdark.pl##script:inject(abort-on-property-write.js, addBlocking)
+zambrow.org##+js(abort-current-inline-script.js,document.getElementById, block)
 !
 ! Rules after Adblock
 vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
