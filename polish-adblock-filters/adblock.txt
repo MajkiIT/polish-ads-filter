@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 5 October 2018
+! Last modified: 7 October 2018
 ! Expires: 1 day
-! Version: 2018100502
+! Version: 2018100701
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018100502 aktualizacja: ptk, 5 pazdziernika 2018, 18:20:00
+! v.2018100701 aktualizacja: nie, 7 pazdziernika 2018, 14:35:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -109,7 +109,7 @@ vshare.io###sendif
 !7#-----------------------Privacy filters block-----------------------!
 !
 !8#------------------------General element hiding rules-------------------------!
-24tp.pl,lca.pl,112tychy.pl,30minut.pl,twoje-podhale.pl,upflix.pl##[class*="reklama"]
+24tp.pl,lca.pl,112tychy.pl,30minut.pl,twoje-podhale.pl,upflix.pl,grylogiczne.biz.pl##[class*="reklama"]
 ###a_201
 ###a_d_billboard
 ##.addv-container
@@ -579,7 +579,7 @@ chojnice.com##.ad_section
 chojnow.pl###logo_box
 chomikuj.pl###aPlaceHolder
 chomikuj.pl##IMG[style="width:100%;max-width:290px;"]
-chorzowianin.pl##img[src^="http://chorzowianin.pl/uploads/userfiles/"]
+chorzowianin.pl##img[src^="http://chorzowianin.pl/uploads/userfiles/"], .left_header
 chozoba.pl###title
 chroma.pl##.uv3dpopup-adv
 chrzanowski24.pl##.custom-rektt
@@ -788,6 +788,8 @@ elektroda.pl##.tme-Dagheuw5
 elektroda.pl##.tme-down
 elektroda.pl##.words-cpgn > picture
 elektroda.pl##.wstawka
+elektroinstalacje.info###side-border-left > div.panelbody:nth-of-type(1)
+elektroinstalacje.info###side-border-left > h3.panelcap:nth-of-type(1)
 elka.pl##[id^="banner-ajax-"]
 elle.pl##.box-bg-carusel
 eloblog.pl###custom_html-16
@@ -2184,6 +2186,7 @@ resko24.pl###sidebar-b > .grid-v.width100.grid-box:nth-of-type(3)
 resko24.pl###top-b
 resko24.pl##.grid-v.width100.grid-box:nth-of-type(2)
 resko24.pl##.grid-v.width100.grid-box:nth-of-type(4)
+retrotraktor.pl##.main-bg > table:nth-of-type(1)
 rfbenchmark.pl###post-124
 rfbenchmark.pl##.rfb-news2ads-container
 ringpolska.pl##.art-sidebar1.art-layout-cell > .clearfix.art-block:nth-of-type(2) > .art-blockcontent
@@ -2556,7 +2559,7 @@ tvnwarszawa.tvn24.pl##[id^="TopicItemContainer_"] > .boxItem
 tvp.info##.banner
 tvpolsat.info##CENTER > A[target="_blank"] > IMG, div.panel-default.panel:nth-of-type(5)
 tvsudecka.pl##.visible-xs
-tvsudecka.pl,tczewska.pl,slowopodlasia.pl,bydgoszcz.com,tvswinoujscie.pl,tygodnikoko.pl,tv-wschod.pl,inowroclaw.info.pl,korsosanockie.pl,supertydzien.pl,lokalnatelewizja.pl,wiara.pl,radiosochaczew.pl,debica24.eu,zvami.tv,telewizjazary.pl,korsokolbuszowskie.pl,kociewiak.pl,cooltura24.co.uk,portalpomorza.pl,tvobiektyw.pl,echotygodnik.info,damitv.pl,ct.jaworzno.pl,narew.info,pzl24.pl,tvpogranicze.pl,tv-kwidzyn.pl,tvbelchatow.pl,tv-slupsk.pl##[class*="advert"]
+tvsudecka.pl,tczewska.pl,slowopodlasia.pl,bydgoszcz.com,tvswinoujscie.pl,tygodnikoko.pl,tv-wschod.pl,inowroclaw.info.pl,korsosanockie.pl,supertydzien.pl,lokalnatelewizja.pl,wiara.pl,radiosochaczew.pl,debica24.eu,zvami.tv,telewizjazary.pl,korsokolbuszowskie.pl,kociewiak.pl,cooltura24.co.uk,portalpomorza.pl,tvobiektyw.pl,echotygodnik.info,damitv.pl,ct.jaworzno.pl,narew.info,pzl24.pl,tvpogranicze.pl,tv-kwidzyn.pl,tvbelchatow.pl,tv-slupsk.pl,radiozamosc.pl##[class*="advert"]
 tvswinoujscie.pl##.boards.widget
 tvwlodawa.pl###layerslider_35
 twojahistoria.pl##.backbglink, .resp
@@ -2959,7 +2962,7 @@ zywiecinfo.pl##.promoted
 ~www.cba.pl,cba.pl##img[src="https://www.cba.pl/cba1.jpg"]
 !
 !10#----------------------Specific advert blocking filters-----------------------!
-/js/videoPlayer.js$script,domain=polsatnews.pl|polsatsport.pl
+/videoPlayer.js$script,domain=polsatnews.pl|polsatsport.pl
 ||24opole.pl/bimg/$image
 ||40ton.net/wp-content/uploads/*.gif$image
 ||40ton.net/wp-content/uploads/*.png$image
