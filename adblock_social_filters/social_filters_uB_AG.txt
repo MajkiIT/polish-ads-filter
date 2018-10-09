@@ -1,11 +1,11 @@
-! Checksum: TEdT5PyCui3QPoEdA8SPZw
+! Checksum: ZMb1PqWTVjOXqq7M3WEpoA
 ! Title: Polskie Filtry Społecznościowe - Uzupełnienie do uBlocka i AdGuarda
 ! Polish Social Filters - Supplement for uBlock & AdGuard
 ! Codename: Social - Supplement
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, F4z, RikoDEV
 ! Homepage: https://www.certyficate.it/
-! Version: 201810031439
-! Last modified: Wed, 03 Oct 2018, 14:39:21 UTC+02
+! Version: 20181009 RTM
+! Last modified: Tue, 09 Oct 2018
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,7 +13,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.201810031439 aktualizacja: śro, 03 paź 2018, 14:39:21 UTC+02
+! v.20181009 RTM aktualizacja: wto, 09 paź 2018
 !
 !
 ! Popupy
@@ -27,6 +27,23 @@ smaker.pl##html > body.scrollingDisabled:style(overflow: visible !important;)
 smaker.pl###overlay, #popup
 sprawnymarketing.pl###pop_facebook
 sprawnymarketing.pl##.blur:style(filter: none !important;)
+!
+!
+! Popupy - specjalne instrukcje
+!#if !cap_html_filtering
+alemeksyk.eu##.pwebbox-modal, .modal-backdrop
+alemeksyk.eu##.pweb-modal-open:style(overflow: auto !important;)
+lookcam.com###lookcam-fb-modal, .modal-backdrop
+lookcam.com##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
+!#endif
+!#if cap_html_filtering
+alemeksyk.eu##^.pwebbox-plugin-facebook_page_plugin
+lookcam.com##^#lookcam-fb-modal
+!#endif
+!#if !ext_ublock
+alemeksyk.eu$$.pwebbox-plugin-facebook_page_plugin
+lookcam.com$$#lookcam-fb-modal
+!#endif
 !
 !
 ! Widgety
@@ -58,3 +75,5 @@ librus.pl##.container-fluid:style(width: 100% !important;)
 ts-stars.pl##.card:style(margin-left: auto; margin-right: auto;)
 www.cba.pl##span[class="mailto-span"]:style(font-size: 25px !important;)
 www.cba.pl###footer > div > div:first-child:style(font-size: 0 !important;)
+www.tvn.pl##.detail-share:style(padding-bottom: 0 !important;)
+zlotygron.pl##.site_social > span:style(display: inline-block !important; padding-top: 5px !important;)
