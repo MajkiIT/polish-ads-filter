@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 5 October 2018
+! Last modified: 9 October 2018
 ! Expires: 2 days
-! Version: 2018100502
+! Version: 2018100901
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018100502 aktualizacja: ptk, 5 pazdziernika 2018, 18:25:00
+! v.2018100901 aktualizacja: wt, 9 pazdziernika 2018, 17:45:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -290,6 +290,9 @@ pl.vpnmentor.com##script:inject(abort-on-property-write.js, bioEp)
 !
 ! zabawa z adquesto
 weszlo.com,prnews.pl,mambiznes.pl,kresy.pl##+js(abort-current-inline-script.js, parseInt, adblock)
+!
+! pcworld.pl
+pcworld.pl##+js(abort-on-property-read.js, uabpd3)
 !
 ! style()
 24pr.pl###wpp-4:style(width: 200%)
