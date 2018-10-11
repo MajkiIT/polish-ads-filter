@@ -1,11 +1,11 @@
-! Checksum: gbAQsb8uWZB7Q0fTThb1cQ
+! Checksum: q0+u8K5XrtqlrQpSf/Slkg
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 20181009 RTM
-! Last modified: Tue, 09 Oct 2018
+! Version: 20181011 RTM
+! Last modified: Thu, 11 Oct 2018
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.20181009 RTM aktualizacja: wto, 09 paź 2018
+! v.20181011 RTM aktualizacja: czw, 11 paź 2018
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -84,11 +84,11 @@ morele.net###content_info_popup
 msn.com###precontent:style(margin-top: 8rem !important;)
 msn.com##.head:style(margin-top: 0 !important;)
 multimediago.pl##.modal-cookie
-m.24jgora.pl###rodoModal, .modal-backdrop
+m.24jgora.pl,24wroclaw.pl###rodoModal, .modal-backdrop
 neon24.pl##script:inject(abort-on-property-read.js, Service.cookieMonster)
 obpon.pl##.menu-flashmessages:style(top: 0 !important;)
 obywatel.gov.pl###modal-rodo, .modal-backdrop
-obywatel.gov.pl,m.24jgora.pl,e-sochaczew.pl,pultusk24.pl,multimediago.pl,dane.gov.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
+obywatel.gov.pl,m.24jgora.pl,e-sochaczew.pl,pultusk24.pl,multimediago.pl,dane.gov.pl,24wroclaw.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 oko.press##.is-reveal-open:style(overflow: auto !important;)
 oko.press##.reveal-overlay
 opiniodajnia.pl###eu-consent
@@ -140,12 +140,11 @@ zeropln.antyweb.pl,praca.antyweb.pl##.justify-end.flex-col.flex.z-50.fixed.pin
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂 - specjalne instrukcje
 !#if !cap_html_filtering
 4fun.tv###cModal, .modal-backdrop
-24wroclaw.pl###rodoModal, .modal-backdrop
 alltube.tv,alltube.pl###rodo-popup, .modal-backdrop
 belsat.eu##.popmake-overlay
 belsat.eu##.pum-open:style(overflow: auto !important;)
 born2be.pl,renee.pl##.rules-modal, .modal-backdrop
-born2be.pl,renee.pl,roztoczanskipn.pl,zakopane.info,tuwroclaw.com,tulodz.com,infoplanet.pl,gokf.gda.pl,gdansk.pl,craftserve.pl,ustawmundial.weszlo.com,ustawlige.com,ztm.poznan.pl,4fun.tv,alltube.tv,alltube.pl,infostrow.pl,fryzomania.pl,tuzdrowie.pl,ogloszenia.plock.pl,polski-tenis.pl,pro-sprzet.pl,muzyczneradio.com.pl,tuzory.pl,tujastrzebie.pl,djoles.pl,tvasta.pl,spolem.katowice.pl,zdajmyrazem.pl,motobanda.pl,24wroclaw.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
+born2be.pl,renee.pl,roztoczanskipn.pl,zakopane.info,tuwroclaw.com,tulodz.com,infoplanet.pl,gokf.gda.pl,gdansk.pl,craftserve.pl,ustawmundial.weszlo.com,ustawlige.com,ztm.poznan.pl,4fun.tv,alltube.tv,alltube.pl,infostrow.pl,fryzomania.pl,tuzdrowie.pl,ogloszenia.plock.pl,polski-tenis.pl,pro-sprzet.pl,muzyczneradio.com.pl,tuzory.pl,tujastrzebie.pl,djoles.pl,tvasta.pl,spolem.katowice.pl,zdajmyrazem.pl,motobanda.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 budownictwo.pl###rodoLayer, .modal-backdrop
 budownictwo.pl,zdmikp.bydgoszcz.pl,styl.fm##.modal-open:style(overflow: auto !important;)
 empik.com##script:inject(nano-remove-elements-onready.js, .cookies-accept)
@@ -188,7 +187,6 @@ openpli.org##body > div:not([id]):not([class])
 !#endif
 !#if cap_html_filtering
 4fun.tv##^#cModal
-24wroclaw.pl##^#rodoModal
 alltube.tv,alltube.pl##^#rodo-popup
 belsat.eu##^.popmake-overlay
 born2be.pl,renee.pl##^.rules-modal
@@ -229,7 +227,6 @@ azure.microsoft.com###main:style(padding-top: 88px !important;)
 !#endif
 !#if !ext_ublock
 4fun.tv$$#cModal
-24wroclaw.pl$$#rodoModal
 alltube.tv,alltube.pl$$#rodo-popup
 belsat.eu$$.popmake-overlay
 empik.com$$.cookies-accept
