@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 14 October 2018
 ! Expires: 1 day
-! Version: 2018101404
+! Version: 2018101405
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018101404 aktualizacja: nie, 14 pazdziernika 2018, 15:36:00
+! v.2018101405 aktualizacja: nie, 14 pazdziernika 2018, 21:12:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -495,7 +495,6 @@ bobrzanie.pl##.size-full.aligncenter
 bochnianin.pl##.xo
 bokser.org##[href="http://kup-suple.pl/"]
 bokser.org##[href="http://www.czesciauto24.pl/"]
-bolec.info##.picmax
 bonavita.pl###undermenu, .header-slogan, #share-nav
 bonavita.pl##.main-article > .textwidget > .text-center
 bonavita.pl##.strict-block:nth-of-type(2) > .centered-row.paragraph-row
@@ -2787,6 +2786,13 @@ www.benchmark.pl##.product
 www.biala24.pl##[id^="cbox"]
 www.bolec.info##.baner_max
 www.bolec.info##[class$="Board"]
+www.bolec.info##.picmax
+www.bolec.info##.bbbb:-abp-has([data-original*="/pictures/informacje/"])
+www.bolec.info##.bbbb > div > div > div:-abp-contains(reklama)
+www.bolec.info##table.tlo0:nth-of-type(1) > tbody > tr:nth-of-type(11)
+www.bolec.info##.center-cropped[style^="background-color:"]
+www.bolec.info##.bottom:nth-of-type(n+5):nth-of-type(-n+6) > .bbbb:-abp-contains(reklama)
+www.bolec.info##.bottom:nth-of-type(20) > .bbbb:-abp-contains(reklama)
 www.booclick.pl##.td-footer-wrapper > .td-container > .td-pb-row:nth-of-type(1)
 www.booclick.pl##.td-pb-row.wpb_row.vc_row:nth-of-type(2)
 www.booclick.pl##.td-pb-row.wpb_row.vc_row:nth-of-type(4)
@@ -3394,6 +3400,7 @@ zywiecinfo.pl##.promoted
 ||www.adfreestyle.pl$domain=~www.adfreestyle.pl
 ||www.audiostereo.pl/banery/
 ||www.benchmark.pl/js/header.ad.js$script
+||www.bolec.info/pictures/informacje/$image,object,~third-party
 ||www.brief.pl/img,banner$image
 ||www.budownictwo.org/banery/$image
 ||www.cadblog.pl/*.gif$image
