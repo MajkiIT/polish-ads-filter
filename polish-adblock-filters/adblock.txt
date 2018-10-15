@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 14 October 2018
+! Last modified: 15 October 2018
 ! Expires: 1 day
-! Version: 2018101405
+! Version: 2018101501
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018101405 aktualizacja: nie, 14 pazdziernika 2018, 21:12:00
+! v.2018101501 aktualizacja: pon, 15 pazdziernika 2018, 11:17:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -908,6 +908,7 @@ films4free.pl##.M2U3OGQ4ZGY1
 filmweb.pl###iframe, .clickArea, .screening-content, .topBillboard, .BILLBOARD, [id^="sad_"], .clickableAdBG, #screening, [id$="_ifame"], [id^="sas_"], div[class] > [href*="/click"], [src$=".html"], .advBtn
 filmweb.pl##[id*="iframe"]
 fishing-mart.com.pl##td:nth-of-type(6) > .norm11:nth-of-type(4)
+fizjoterapeutom.pl###zt-left-inner > .moduletable > .clearfix.module-head, #zt-right-inner > .moduletable > .clearfix.module-head
 flarrow.pl##[class^="td_block_wrap td_block_text_with_title td_uid_"]
 flarrow.pl#?#.td_block_wrap:-abp-has(.td-pulldown-size:-abp-contains(Reklama))
 flashscore.pl###box-over-content-a
@@ -1835,6 +1836,8 @@ obligacje.pl##a[href*=".bankier.pl/click/"]
 oboom.com###bgfadewnd1
 oboom.com###wcontent_wnd1
 oboom.com###wnd1
+obud.pl##div:nth-of-type(2) > div > div:nth-of-type(3) > h2.naglowek-bloku:nth-of-type(1)
+obud.pl###reklama-boczna-po-prawej, [style$="display:inline-block;"]:not([alt="newsletter"])
 obywatelenieba.pl,highlab.pl###custom_html-7
 ochrona24.info###custom_html-37, #custom_html-38, #custom_html-39
 oczamiostrego.pl##[id^="Image"]
@@ -2340,6 +2343,7 @@ sokolka.tv##.hidden-phone.white-ms.jm-module
 solarkurier.pl###banner_750x100_r
 solarkurier.pl##.row:nth-of-type(2) > .col-xs-8.col-md-3:nth-of-type(4)
 solidarnoscarimr.pl###right > .moduletable:nth-of-type(2)
+sonda.pl##table:nth-of-type(2) > tbody > tr > td:nth-of-type(1) > div, td:nth-of-type(3)
 speedtest.pl##.ha2, .ba3
 speedtest.pl##div[style^="width: 1068px; height: 470px; margin: 20px auto"]
 spidersweb.pl##.after-wikobg.after.wikobg.box-specjalna > [href^="https://www.x-kom.pl/szukaj"]
@@ -2787,12 +2791,12 @@ www.biala24.pl##[id^="cbox"]
 www.bolec.info##.baner_max
 www.bolec.info##[class$="Board"]
 www.bolec.info##.picmax
-www.bolec.info##.bbbb:-abp-has([data-original*="/pictures/informacje/"])
-www.bolec.info##.bbbb > div > div > div:-abp-contains(reklama)
+www.bolec.info#?#.bbbb:-abp-has([data-original*="/pictures/informacje/"])
+www.bolec.info#?#.bbbb > div > div > div:-abp-contains(reklama)
 www.bolec.info##table.tlo0:nth-of-type(1) > tbody > tr:nth-of-type(11)
 www.bolec.info##.center-cropped[style^="background-color:"]
-www.bolec.info##.bottom:nth-of-type(n+5):nth-of-type(-n+6) > .bbbb:-abp-contains(reklama)
-www.bolec.info##.bottom:nth-of-type(20) > .bbbb:-abp-contains(reklama)
+www.bolec.info#?#.bottom:nth-of-type(n+5):nth-of-type(-n+6) > .bbbb:-abp-contains(reklama)
+www.bolec.info#?#.bottom:nth-of-type(20) > .bbbb:-abp-contains(reklama)
 www.booclick.pl##.td-footer-wrapper > .td-container > .td-pb-row:nth-of-type(1)
 www.booclick.pl##.td-pb-row.wpb_row.vc_row:nth-of-type(2)
 www.booclick.pl##.td-pb-row.wpb_row.vc_row:nth-of-type(4)
@@ -2925,6 +2929,7 @@ za-friko.eu##[target="_blank"] > IMG[src]
 zabawkowo.com##IMG[src^="http://biuropro.pl/images/bannery/"]
 zabijambolubie.pl###MetalPartners
 zabkowice.express-miejski.pl##div.adesplace
+zabkowice.express-miejski.pl#?#.small:-abp-contains(REKLAMA)
 zagadkidladzieci.net,odmiana.net###opiekunka
 zajefajna.com###zajesearch > a[href^="https://tb7.pl/"]
 zajefajna.com##.bbcode_code > [href^="https://filefox.pl/poleca/"]
@@ -3240,6 +3245,8 @@ zywiecinfo.pl##.promoted
 ||nowiny.rybnik.pl/baner/$image
 ||nqp0852y7r.com/e6/52/26/e652267829a86c98499016a18555c207.js$script,domain=internetowa.ws
 ||nuteczki.eu/templates/KlubowaMuza/images/pobierz.png$image
+||obud.pl/img/Szkolenia%20BHP00.png$image
+||obud.pl/img/kdcmeble.png$image
 ||ocdn.eu/*.html$subdocument,domain=sniadaniezkadra.onet.pl
 ||ocs-pl.oktawave.com/*/reklamy$subdocument,domain=spidersweb.pl
 ||ocs-pl.oktawave.com/v1/AUTH_*/Reklamy/$object-subrequest
