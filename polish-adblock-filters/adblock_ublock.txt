@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 12 October 2018
+! Last modified: 15 October 2018
 ! Expires: 2 days
-! Version: 2018101205
+! Version: 2018101501
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018101205 aktualizacja: ptk, 12 pazdziernika 2018, 22:38:00
+! v.2018101501 aktualizacja: ptk, 15 pazdziernika 2018, 13:46
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -127,7 +127,7 @@ filmweb.pl###skyBanner
 www.wp.pl##[data-st-area] > div > div > div[class]:matches-css(max-width: 300px):matches-css(max-height: 250px)
 ~www.wp.pl,wp.pl##:xpath(//div[count(*)=3][img[@class][@src]][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
 www.wp.pl##:xpath(//div[@data-st-area='Zakupy'][count(*)=2][not(header)])
-www.wp.pl##body:style(overflow: visible!important;)
+www.wp.pl##body:style(overflow-y: visible !important;)
 ~www.wp.pl,wp.pl,sportowefakty.wp.pl##div[class*=" "]:has(>div[class*=" "] > [class^="__bc_layer"])
 www.wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 wp.pl##[class^="_"]:has(>img[src*=".wp.pl"])
