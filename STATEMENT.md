@@ -19,3 +19,27 @@
 - nim podejmiemy jakąś ważną decyzje, poddajemy ją [głosowaniu społeczności](https://fb.com/CertyficateIT/)
 
 ---
+
+## FAQ
+
+### Jaki adblock wybrać?
+
+<li>admucher, pihole, dnsy.. to pierwszy poziom zaawansowania blokowania reklam</li>
+<li>adblock, opera, privoxy.. to drugi poziom zaawansowania blokowania reklam</li>
+<li>ublock origin, adguard.. to trzeci poziom zaawansowania blokowania reklam</li>
+
+##
+
+<li>najlepiej ublock origin + nano defender + polskie filtry</li>
+<code>https://github.com/MajkiIT/polish-ads-filter#about</code>
+
+<li>jak nie ma takiej możliwości to warto dodać dns'y adguarda</li>
+<code>https://adguard.com/pl/adguard-dns/overview.html</code>
+
+### Jakie listy filtrów wybrać?
+
+##
+
+### Nie działa mi! Co robić?
+
+##
