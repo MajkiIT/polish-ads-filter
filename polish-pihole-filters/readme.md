@@ -39,7 +39,7 @@ Anudeep's Blacklist<br/>
 Gambling hosts<br/>
 <code>https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/gambling-hosts.txt</code>
 
-YouTube filters for Pi hole
+YouTube filters for Pi hole<br/>
 <code>https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/youtubehosts.txt</code>
 
 Adguard Host filters for Pi hole<br/>
