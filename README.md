@@ -1,6 +1,6 @@
 
 # Polish filters for Adblock, uBlock Origin & AdGuard
-[![certyficate it](https://www.certyficate.it/wp-content/uploads/2014/05/logo_ciemne-tło-jasne-litery.png)](https://www.certyficate.it)
+[![certyficate it](https://i.postimg.cc/0jq3sGzN/cert.png)](https://www.certyficate.it)
 
 ## About
 
@@ -56,8 +56,8 @@ KAD - Przekręty | przekręty sms, oszustwa | [Subskrybuj][KAD - Przekręty Subs
 [Polskie Filtry Social]: https://img.shields.io/badge/color--0066FF.svg?label=Polskie%20Filtry%20Social
 [Polskie Filtry Elementów Irytujących]: https://img.shields.io/badge/color--yellow.svg?label=Polskie%20Filtry%20Annoyance
 
-[uBO]: https://www.certyficate.it/adblock/ublock.png
-[AG]: https://www.certyficate.it/adblock/adguard_new.png
-[ADB]: https://www.certyficate.it/adblock/adblock.png
-[ABP]: https://www.certyficate.it/adblock/adblock_plus.png
-[NANO]: https://www.certyficate.it/adblock/nano.png
+[uBO]: https://i.postimg.cc/nc18nWYf/ubo.png
+[AG]: https://i.postimg.cc/L6SKKSPV/ag.png
+[ADB]: https://i.postimg.cc/8zyq6r0y/ab.png
+[ABP]: https://i.postimg.cc/Jz7f0QPD/abp.png
+[NANO]: https://i.postimg.cc/QN1GyCFt/nn.png
