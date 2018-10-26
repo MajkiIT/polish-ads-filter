@@ -1,11 +1,11 @@
-! Checksum: yi/uXh7SHjFt/eVUsQ9P2A
+! Checksum: OQzTACjANLZlDYySHRMcgw
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 20181021 RTM
-! Last modified: Sun, 21 Oct 2018
+! Version: 20181026 RTM
+! Last modified: Fri, 26 Oct 2018
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.20181021 RTM aktualizacja: nie, 21 paź 2018
+! v.20181026 RTM aktualizacja: pią, 26 paź 2018
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -33,12 +33,19 @@ biuletyn.net##body > table:style(margin-top: 0 !important;)
 biuletyn.net##.urzad_mini > div:style(top: 225px !important;)
 bloombergbusinessweek.pl##body:style(margin-top: 0 !important;)
 chojnow.pl##script:inject(abort-current-inline-script.js, confirm, rodoConfirm)
+cupsell.pl##.tingle-enabled:style(position: static !important; overflow: auto !important;)
+cupsell.pl##.tingle-modal
 dane.gov.pl##.modal-backdrop
 dane.gov.pl##.modal-dialog:has-text(RODO)
 dobrzemieszkaj.pl###axn
 dobrzemieszkaj.pl##.nlOpen:style(overflow: auto !important;)
 domisad.pl##.show-message #shop-info:style(padding: 60px 0 15px 0 !important;)
 domisad.pl##.show-message #top-nav:style(height: auto !important;)
+drogeriapigment.pl##.fancybox-overlay:has(#potwierdzamrodo)
+drogeriapigment.pl,teatrpolski.waw.pl##html > body:style(overflow: auto !important;)
+drogeriapigment.pl,teatrpolski.waw.pl##html.fancybox-lock > body:style(overflow: auto !important;)
+drogeriapigment.pl,teatrpolski.waw.pl##html.fancybox-lock:style(overflow: auto !important;)
+drogeriapigment.pl,teatrpolski.waw.pl##html.fancybox-margin:style(margin-right: 0 !important;)
 dropbox.com##.embedded-app.IndexRebrandPage.top-notification-bar:style(margin-top: -51px !important;)
 dropbox.com##.top-notification-bar-container + .preview-box .react-file-viewer, .embedded-app.IndexRebrandPage.top-notification-bar .RebrandNavigation-container:style(top: 0 !important;)
 echo24.tv##.on-top:style(top: 0 !important;)
@@ -67,8 +74,8 @@ hbogo.pl##body:style(overflow: auto !important; padding-right: 0 !important;)
 hbogo.pl##.banner-overlay
 hm.com##.modaloverlay:has(#gdpr-modal)
 hm.com##.modal-open, .modal-open body:style(overflow-y: auto !important; position: static !important;)
-indbuildcraft.pl##body:style(overflow: auto !important;)
 indbuildcraft.pl##.modal-overlay, #modal_cookies
+indbuildcraft.pl,pum.edu.pl##body:style(overflow: auto !important;)
 ipla.tv##.no-scroll:style(overflow: auto !important;)
 ipla.tv##.rodo-rules-modal
 kaliszak.pl##.rodo, .rodo_layer
@@ -121,6 +128,7 @@ prawdaobiektywna.pl##.qc-cmp-ui-container
 przydomu.pl###popup_25
 przydomu.pl##.container:style(filter: none !important;)
 puma.com###modal-geoip-cookies, .modal-backdrop
+pum.edu.pl##.js-rodo-info
 quadgraphics.pl##.blur:style(filter: none !important; pointer-events: unset !important;)
 quadgraphics.pl##.rodo-information-popup, .fixed-layer-information
 sellizer.pl##.cookies-visible .header-main:style(top: 0 !important;)
@@ -132,17 +140,18 @@ skyscrapercity.com##.fc-consent-root
 sonymobile.com##.bnw-module.header[style="margin-top: 80px;"]:style(margin-top: 0 !important;)
 tabletowo.pl###disqus_thread:style(display: initial !important;)
 tabletowo.pl##.ginger_banner-wrapper
+teatrpolski.waw.pl##.fancybox-overlay:has(#privacyPolicy)
 telepizza.pl##.navbar:style(margin-top: 0 !important;)
 tureckisklep.pl##.fancybox-lock:style(overflow: auto !important; margin-right: 0 !important;)
 tureckisklep.pl##.fancybox-overlay-fixed.fancybox-overlay
 tuzdrowie.pl###popupModal, .modal-backdrop
 tv.pudelek.pl,gryonline.wp.pl##script:inject(set-constant.js, wp_no_consent_screen, true)
 twitter.com##.topbar-spacer:style(padding-top: 0 !important;)
-unileverfoodsolutions.pl##body.blurred>*:style(box-shadow: none !important; filter: none !important;)
-unileverfoodsolutions.pl##.js-cookie-wall
-unileverfoodsolutions.pl,wikia.com##body:style(overflow: auto !important;)
+vod.naekranie.pl###modal-rodo-info, .modal-backdrop
+vod.naekranie.pl##.modal-open:style(overflow: auto !important;)
 wagrowczanie.pl##.showRodo
 webhelp.pl###wrapper:style(margin-top: auto !important;)
+wikia.com##body:style(overflow: auto !important;)
 wikia.com##div[data-tracking-opt-in-overlay]
 wpolityce.pl##.rhododendron-body-with-popup:style(overflow: auto !important;)
 wpolityce.pl##.rhododendron-popup, .rhododendron-popup-overlay
@@ -166,8 +175,9 @@ belsat.eu,mobilet.pl,marfafashion.com##.pum-open:style(overflow: auto !important
 bioagris.pl###policy-accept-div, .modal-backdrop
 born2be.pl,renee.pl##.rules-modal, .modal-backdrop
 budownictwo.pl###rodoLayer, .modal-backdrop
-budownictwo.pl,zdmikp.bydgoszcz.pl,styl.fm,twojeankiety.pl##.modal-open:style(overflow: auto !important;)
+budownictwo.pl,zdmikp.bydgoszcz.pl,styl.fm,twojeankiety.pl,dalmierze.pl##.modal-open:style(overflow: auto !important;)
 cenapaliw.pl###CBCookieMsg, .modal-backdrop
+dalmierze.pl###Widget3, .modal-backdrop
 empik.com##script:inject(nano-remove-elements-onready.js, .cookies-accept)
 eobuwie.com.pl##.popup
 eobuwie.com.pl##body:style(overflow: auto !important;)
@@ -219,6 +229,7 @@ bioagris.pl##^#policy-accept-div
 born2be.pl,renee.pl##^.rules-modal
 budownictwo.pl##^#rodoLayer
 cenapaliw.pl##^#CBCookieMsg
+dalmierze.pl##^#Widget3
 empik.com##^.cookies-accept
 eobuwie.com.pl##^script:has-text(technologii cookies)
 ferguson-digital.eu##^#cookie-notice
@@ -263,6 +274,7 @@ alltube.tv,alltube.pl$$#rodo-popup
 belsat.eu,mobilet.pl,marfafashion.com$$.popmake-overlay
 bioagris.pl$$#policy-accept-div
 cenapaliw.pl$$#CBCookieMsg
+dalmierze.pl$$#Widget3
 empik.com$$.cookies-accept
 eobuwie.com.pl$$script[tag-content="technologii cookies"]
 ferguson-digital.eu$$#cookie-notice
