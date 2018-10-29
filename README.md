@@ -30,7 +30,7 @@ KAD - Przekręty | przekręty sms, oszustwa | [Subskrybuj][KAD - Przekręty Subs
 
 `**` Jeżeli korzystasz z `Polskich Filtrów Elementów Irytujących`, to nie dodawaj filtrów `RODO-Ciasteczkowych`. Ponieważ filtry RODO-Ciasteczkowe są już zawarte w filtrach Elementów Irytujących.
 
-`***` Skrypt ten jest kompatybilny z Violentmonkey, Tampermonkey i Greasemonkey, a my rekomendujemy Violentmonkey. Jest on głównie uzupełnieniem do listy „Polskie Filtry RODO-Ciasteczkowe - Uzupełnienie do uBlocka i AdGuarda" i zajmuje się tym, czego nie da się załatwić regułą w uBlocku Origin. Jednakże jeśli korzystasz z AdBlocka/ABP, to oczywiście również możesz zainstalować ten skrypt. Natomiast, w przypadku posiadania Nano Adblockera, zamiast instalowania skryptu, można po prostu włączyć listę Nano filters – Annoyance​​​​​​​​​, a w przypadku AdGuarda - AdGuard's Annoyance List.
+`***` Skrypt ten jest kompatybilny z Violentmonkey, Tampermonkey i Greasemonkey, a my rekomendujemy Violentmonkey. Jest on głównie uzupełnieniem do listy „Polskie Filtry RODO-Ciasteczkowe - Uzupełnienie do uBlocka i AdGuarda" i zajmuje się tym, czego nie da się załatwić regułą w uBlocku Origin. Jednakże jeśli korzystasz z AdBlocka/ABP, to oczywiście również możesz zainstalować ten skrypt. Natomiast, w przypadku posiadania Nano Adblockera, zamiast instalowania skryptu, można po prostu włączyć listę Nano filters – Annoyance, a w przypadku AdGuarda - AdGuard's Annoyance List.
 
 [*Sprawdź naszą wiki aby dowiedzieć się więcej.*](https://github.com/MajkiIT/polish-ads-filter/wiki)
 
@@ -44,17 +44,17 @@ KAD - Przekręty | przekręty sms, oszustwa | [Subskrybuj][KAD - Przekręty Subs
 [AlleBlock Subscribe]: https://subscribe.adblockplus.org/?location=https://alleblock.pl/alleblock/alleblock.txt&title=AlleBlock
 [KAD - Przekręty Subscribe]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/azet12/KAD/master/KAD.txt&title=KAD%20-%20Przekręty
 
-[EasyList]: https://img.shields.io/badge/color--brightgreen.svg?label=EasyList
-[EasyPrivacy]: https://img.shields.io/badge/color--green.svg?label=EasyPrivacy
-[Polskie filtry]: https://img.shields.io/badge/color--red.svg?label=Polskie%20Filtry
-[Uzupełnienie uBO]: https://img.shields.io/badge/color--yellowgreen.svg?label=Uzupełnienie%20do%20uB%20*
-[Uzupełnienie AG]: https://img.shields.io/badge/color--yellowgreen.svg?label=Uzupełnienie%20do%20AG%20*
-[Uzupełnienie uBO_AG]: https://img.shields.io/badge/color--yellowgreen.svg?label=Uzupełnienie%20do%20uB%20i%20AG%20*
-[Skrypt uzupełniający]: https://img.shields.io/badge/color--blue.svg?label=Skrypt%20uzupełniający%20***
-[Polskie Filtry Cookies]: https://img.shields.io/badge/color--orange.svg?label=Polskie%20Filtry%20Cookies
-[Fanboy Social]: https://img.shields.io/badge/color--blue.svg?label=Fanboy%20Social
-[Polskie Filtry Social]: https://img.shields.io/badge/color--0066FF.svg?label=Polskie%20Filtry%20Social
-[Polskie Filtry Elementów Irytujących]: https://img.shields.io/badge/color--yellow.svg?label=Polskie%20Filtry%20Annoyance
+[EasyList]: https://img.shields.io/badge/INT-EasyList-brightgreen.svg
+[EasyPrivacy]: https://img.shields.io/badge/INT-EasyPrivacy-green.svg
+[Polskie filtry]: https://img.shields.io/badge/POL-Polskie%20Filtry-red.svg
+[Uzupełnienie uBO]: https://img.shields.io/badge/POL-Uzupełnienie%20do%20uB%20*-yellowgreen.svg
+[Uzupełnienie AG]: https://img.shields.io/badge/POL-Uzupełnienie%20do%20AG%20*-yellowgreen.svg
+[Uzupełnienie uBO_AG]: https://img.shields.io/badge/POL-Uzupełnienie%20do%20uB%20i%20AG%20*-yellowgreen.svg
+[Skrypt uzupełniający]: https://img.shields.io/badge/POL-Skrypt%20uzupełniający%20***-blue.svg
+[Polskie Filtry Cookies]: https://img.shields.io/badge/POL-Polskie%20Filtry%20Cookies-orange.svg
+[Fanboy Social]: https://img.shields.io/badge/INT-Fanboy%20Social-blue.svg
+[Polskie Filtry Social]: https://img.shields.io/badge/POL-Polskie%20Filtry%20Social-0066FF.svg
+[Polskie Filtry Elementów Irytujących]: https://img.shields.io/badge/POL-Polskie%20Filtry%20Annoyance-yellow.svg
 
 [uBO]: https://www.certyficate.it/adblock/ublock.png
 [AG]: https://www.certyficate.it/adblock/adguard_new.png
