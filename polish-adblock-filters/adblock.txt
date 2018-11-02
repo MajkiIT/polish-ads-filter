@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 2 November 2018
 ! Expires: 1 day
-! Version: 2018110206
+! Version: 2018110207
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018110206 aktualizacja: ptk, 2 listopada 2018, 16:55:00
+! v.2018110207 aktualizacja: ptk, 2 listopada 2018, 21:50:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -48,8 +48,8 @@ _baner/980x200
 _banery/980x200
 /banery/*980x90
 ://*.*/banery_foto/$image,domain=ki24.info|portalplock.pl|faktypilskie.pl|ddtorun.pl|ddwloclawek.pl|koronowo.net.pl|zyciesiedleckie.pl
-/banery/$image,domain=oknoserwis.pl|sps24.pl|www.chojnice.com|usa.info.pl|jarocinska.pl|www.obud.pl
-/bannery/*$image,subdocument,domain=em.kielce.pl|czasdzieci.pl|kolporter.com.pl|sklep-tvsat.hcore.pl|www.pokertexas.pl|www.walbrzych24.com|zlotoryja.info|skijumping.pl|icomp.pl|forum.cs-classic.pl|nocnygdansk.pl|wagaciezka.com|obud.pl
+/banery/$image,domain=oknoserwis.pl|sps24.pl|www.chojnice.com|usa.info.pl|jarocinska.pl|www.obud.pl|skijumping.pl
+/bannery/*$image,subdocument,domain=em.kielce.pl|czasdzieci.pl|kolporter.com.pl|sklep-tvsat.hcore.pl|www.pokertexas.pl|www.walbrzych24.com|zlotoryja.info|skijumping.pl|icomp.pl|forum.cs-classic.pl|nocnygdansk.pl|wagaciezka.com|obud.pl|beskid-niski.pl
 /content-generator/published/frame/generate?*frameId=*&placementId=*&guid=
 /data/ap3bo6/*.gif$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 /data/ap3bo6/*.jpg$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
@@ -157,7 +157,7 @@ vshare.io###sendif
 ##.cg2-ad
 ##[class^="ADbox"]
 ##[class^="adSrodek"]
-##[class*="box-advert"]
+~24jgora.pl,~24wroclaw.pl##[class*="box-advert"]
 ##[class^="sponsorowany"]
 ##.cookemessagecloseico
 ##div#skapiec_ad
@@ -279,7 +279,7 @@ popkiller.pl,tygodnikpodhalanski.pl,cnc.info.pl##[class*="reklamy"]
 24gliwice.pl##.vce-sticky
 24gliwice.pl##[href^="https://www.24gliwice.pl/r/"]
 24gliwice.pl##a[href^="http://www.24gliwice.pl/r/counter-baners.php"]
-24jgora.pl##.banrek, #reklama-top_new, .block.r_art
+24jgora.pl##.add_bill
 24jgora.pl##.linia_4.clear, .modal-content, #myModal
 24jgora.pl##IMG[src^="http://www.24jgora.pl/kampanie/"]
 24legnica.pl,premierywtv.pl###text-4
@@ -529,7 +529,7 @@ businesswomanlife.pl##[id^="widget_sp_image"]
 bwotr.pl##.widget_media_image.widget
 bytomski.pl##IMG[src^="http://www.bytomski.pl/images/banners/"], .custom > span
 bzdura.pl##.text.item.block:nth-of-type(1)
-bzdura.pl,gospodarkapodkarpacka.pl,propertynews.pl##[class^="adv"]
+bzdura.pl,gospodarkapodkarpacka.pl,propertynews.pl,24jgora.pl,24wroclaw.pl##[class*="adv"]
 cadblog.pl##TD[bgcolor="#FFFFFF"]
 cannabisnews.pl##.bld-el
 cannabisnews.pl##.td-visible-desktop
@@ -1321,7 +1321,7 @@ kantorbitcoin.pl##.mom-e3lan
 kardiolo.pl##.content-sidebar > DIV
 katalogi.pl###post_id_
 katalogsmakow.pl##.cOuterBlock-5
-katowice24.info##.inner, #text-4, #text-5
+katowice24.info##.inner, #text-4, #text-5, .background-url
 katowicedzis.pl###g-sidebar > .g-grid
 kawerna.pl###Mod138, #ja-header
 kawerna.pl###kawerna_tapeta
@@ -2019,6 +2019,7 @@ polskieradio.com##.post-widget.widget:nth-of-type(1)
 polskieradio.com##.post-widget.widget:nth-of-type(2)
 polskieradio.com##.right-post > .title-section
 polskiprzemysl.com.pl##.banner-full-content
+pilkarskieforum.com###wrapheader > center
 polubione.pl##.execphpwidget
 polwro.pl##.bodyline > table > tbody > tr > td:nth-of-type(1)
 polygamia.pl##.adwordbackground, .reklamawposcie, .fake-ad
@@ -2273,6 +2274,7 @@ se.pl##.video
 seciki.pl##.crek
 serialeonline.pl###alternative-banner
 serialeonline.pl##.white-box
+seriea.pl,kadra.pl,goal.pl,primeradivision.pl,ligapolska.pl##body > [href$="/sts"], [href*="/partnerzy/"], div.rectangle > A
 serwery.wiaderko.com##.rounded
 serwery.wiaderko.com##.wtaily
 sferadomen.pl###secondary A[target="_blank"] > img
@@ -2999,6 +3001,7 @@ zywiecinfo.pl##.promoted
 !
 !10#----------------------Specific advert blocking filters-----------------------!
 /videoPlayer.js$script,domain=polsatnews.pl|polsatsport.pl
+/uploads/*tapeta.jpg$image,domain=ciekawostkihistoryczne.pl|katowice24.info
 ||24opole.pl/bimg/$image
 ||40ton.net/wp-content/uploads/*.gif$image
 ||40ton.net/wp-content/uploads/*.png$image
@@ -3065,7 +3068,6 @@ zywiecinfo.pl##.promoted
 ||chlodnictwoiklimatyzacja.pl/images/tlo_$image
 ||chozoba.pl/images/baner$image
 ||ciechocinek.biz/banery_$image
-||ciekawostkihistoryczne.pl/uploads/*tapeta.jpg$image
 ||cloudfront.net/$domain=allegro.pl
 ||contextad.pl/$script,domain=~contextad.pl
 ||contextweb.com^
@@ -4238,6 +4240,7 @@ kafeteria.pl#@#.is-sponsored
 @@||addthis.com/live/*$script,domain=serialomaniak.pl
 @@||addthisedge.com/live$script,xmlhttprequest,domain=serialomaniak.pl
 @@/google-adwords$image,domain=spidersweb.pl
+@@||gryna2.pl/engine/scripts/ads.js$xmlhttprequest
 ||addthis.com^$important,third-party,domain=~missingkids.com|~missingkids.org,badfilter
 ||addthis.com/*/addthis_widget.js$script,badfilter
 ||addthis.com^$important,third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs,badfilter
