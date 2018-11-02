@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: 
+! Checksum: tbrWOsjcaSwWTF553tGwXg
 ! Title: Polskie Filtry RODO-Ciasteczkowe
 ! Polish GDPR-Cookies Filters
 ! Codename: Cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności/RODO.
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2018110201
-! Last modified: 2 November 2018
+! Version: 20181102 RTM
+! Last modified: Fri, 02 Nov 2018
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -17,7 +17,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2018110201 aktualizacja: ptk, 2 listopada 2018, 10:30:00
+! v.20181102 RTM aktualizacja: pią, 02 lis 2018
 !
 !
 ! Specyficzne reguły ukrywające
@@ -130,7 +130,7 @@ booking.com###cookie_warning
 borelioza.vegie.pl###menubar > center
 bose.pl###privacy-message-bar
 bricomarche.pl##div#content-head-information
-brodnica.net,clickmeeting.com,gugik.gov.pl,smyk.com,modecom.com,hifi.pl,wielkopolska.eu,dw.com,supermemo.com##.cookie
+brodnica.net,clickmeeting.com,gugik.gov.pl,smyk.com,modecom.com,hifi.pl,wielkopolska.eu,dw.com,supermemo.com,palmiarnia.poznan.pl##.cookie
 browarlubicz.pl##.PamphletWidget .popup_anchor
 browar.biz,centrumpiwowarstwa.pl##DIV[style="color: gray; background-color: white; border-bottom: 1px dotted gray; padding:2px; font-size: 0.75em;"]
 bryk.pl,interia.pl,pokazywarka.pl##.rodo-mini
@@ -499,6 +499,7 @@ jazzsoul.pl,ksiegarnienaukowe.pl###globalMessage
 jcubic.pl##.cookie-baner
 jednoslad.pl###arvlbdata > p
 jelenia.pl###alert-blue
+jelenia.tv###rodoModal, .modal-backdrop
 jellinek.pl###okno_18only
 jelonka.com,walbrzyszek.com##.prywatnosc
 jezykipodroze.pl##.widgets-5.widgets-list
@@ -824,6 +825,7 @@ philips.pl##.dot-cc-container, .dot-body-overlay
 piltza37.pl###fb
 pingpong.com.pl##body > div:nth-of-type(6)
 pipelife.com###coo
+pizzaportal.pl##.react-cookie-banner
 pkspolonus.pl,zakexpress.pl###popek
 pks.zary.pl##div#infobar
 pk.benefitsystems.pl##.ui-itbs-effect-border.bg-color-gray-light.center.oneCol.aPad
@@ -969,6 +971,7 @@ seg.org.pl###block-block-19
 serialefilmyonline.pl##.alert-dismissible, .alert-dismissable, .alert--dismissable, .pmd-alert-dismissible
 seriale.co###player_warn
 serialowa.pl,60sekund.tytan.pl,lucatel.pl##.popmake-overlay
+seriea.pl###viewCookiesClose
 seriea.pl,kadra.pl,ligapolska.pl,goal.pl,primeradivision.pl###viewCookies
 serwis.currenda.pl##div#sign_up
 seszele.com.pl##iframe#cookfr
@@ -1669,7 +1672,7 @@ gg.pl#@#body > div:nth-of-type(2) > div
 !
 ! Wyjątki
 addons.mozilla.org#@#.privacy-policy
-allegro.pl#@#[class*="cookie-policy"]:not(body):not(html)
+allegro.pl,paradoxplaza.com#@#[class*="cookie-policy"]:not(body):not(html)
 bskrasnosielc.pl,interhotel.pl,laskonline.pl,piekarniaanka.pl#@##cookiewarning:not(body):not(html)
 gdansk.pl,gokf.gda.pl#@##cookies:not(body):not(html):not(.section)
 laciate.pl,loterialaciate.pl#@#.cookies:not(body):not(html)
@@ -1680,23 +1683,24 @@ naekranie.pl#@##polityka-cookies:not(body):not(html)
 opencraft.pl,sympatia.onet.pl#@#[id^="topInfo"]
 orange.pl#@##cookies-info
 pamiatki.pl#@#[id*="cookie_"]:not(body):not(html)
+paradoxplaza.com#@##cookies-info:not(body):not(html)
 riscosoftware.pl#@#div[class*="Cookie"]
 tychy.geminipark.pl#@#.privacy-policy
 vod.naekranie.pl#@##cookie-notice:not(body):not(html)
 vod.naekranie.pl#@##modal-rodo-info, .reveal-modal-bg
 wsensie.pl,wsensie.tv#@#.policy-box:not(body):not(html)
 wtk.pl#@#.privacy-container:not(body):not(html):not(.content-container)
+!autostrada-a2.pl,tabakiera.com.pl,fastdeal.pl,unileverfoodsolutions.pl,pamiatki.pl#@#:not(input)[id*="cookie"]:not(body):not(html):not(.fade)
 !bskrasnosielc.pl,piekarniaanka.pl,xboxarcade.pl,wmeritum.pl,komunikacja.bialystok.pl,dobreprogramy.pl,lomza.pl,orange.pl,interhotel.pl,bestcena.pl,gokf.gda.pl,gdansk.pl,naekranie.pl,indbuildcraft.pl,okazik.pl#@#:not(input)[id*="cookie"]
 !letsplej.pl,telepizza.pl,orange.pl,google.pl,przenosne.pl,spreadshirt.pl,sellizer.pl,autocentrum.pl,ideabank.pl,intel.pl,pkn.pl,topsecret.pl,starbucks.pl,morizon.pl,abctygodnik.pl,wykop.pl,bt4.pl,kolba.pl,tablety.pl,tesco.pl,lomza.pl,multimediago.pl,vod.naekranie.pl,pamiatki.pl#@#div[class*="cookie"]
 !piekarniaanka.pl,xboxarcade.pl,appki.com.pl,tylesmiechu.pl,neon24.pl,norauto.pl,orange.pl#@#:not(input)[id*="Cookie"]
-!tabakiera.com.pl,fastdeal.pl,unileverfoodsolutions.pl,pamiatki.pl#@#:not(input)[id*="cookie"]:not(body):not(html):not(.fade)
 @@/js/jquery.cookie.min.js$domain=rozklad.pkp.pl|ubi.com|telepizza.pl|uplayconnect.ubi.com|playrust.io
 @@/plugins/uk-cookie-consent/assets/js/uk-cookie-consent-js.js$script,domain=escaperooms.pl|xboxarcade.pl|naziemna.info|3dwpraktyce.pl|tvs.pl|przegladbaltycki.pl|wypowiadamoc.pl|gazetabilgoraj.pl|serialowy.info|ittechblog.pl
 @@/wp-content/plugins/cookie-law-info/js/cookielawinfo.js$script
 @@||china-gadgets.de/app/plugins/cookie-law-info/js/cookielawinfo.js
 @@||coinroom.com/Modules/UI/Cookie/Cookie.js$script
 @@||pracatobie.pl/jscripts/cookieLaws.js
-@@||rozklad-pkp.pl/js/jquery.cookie.min.js$scripts
+@@||rozklad-pkp.pl/js/jquery.cookie.min.js
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka i AdGuarda, by użytkownicy nie musieli jej subskrybować
