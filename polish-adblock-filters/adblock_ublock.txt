@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 15 October 2018
+! Last modified: 2 Nov 2018
 ! Expires: 2 days
-! Version: 2018101501
+! Version: 2018110202
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018101501 aktualizacja: ptk, 15 pazdziernika 2018, 13:46
+! v.2018110202 aktualizacja: pt, 2 listopada 2018, 11:45:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -366,11 +366,13 @@ filmweb.pl##script:inject(abort-on-property-write.js, sas)
 !#if cap_html_filtering
 czasdzieci.pl##^html body.cdb div#allPage script
 hdtvpolska.com##^script:has-text(#sdWelcomeScreen)
+komputerswiat.pl##^#googleAdsCont
 pracawgdansku.com.pl##^HTML > HEAD > META + TITLE + LINK + SCRIPT
 !#endif
 !#if !cap_html_filtering
 czasdzieci.pl##script:inject(abort-current-inline-script.js, billboard750)
 hdtvpolska.com##script:inject(abort-current-inline-script.js, jQuery, #sdWelcomeScreen)
+komputerswiat.pl###googleAdsCont:style(position: absolute !important; left: -3000px !important;)
 pracawgdansku.com.pl##IFRAME#iframe:style(height: 100% !important;)
 !#endif
 !#if !cap_user_stylesheet
