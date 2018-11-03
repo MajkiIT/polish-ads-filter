@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: tbrWOsjcaSwWTF553tGwXg
+! Checksum: 6JADGTKhy/b/WPmcwjgYww
 ! Title: Polskie Filtry RODO-Ciasteczkowe
 ! Polish GDPR-Cookies Filters
 ! Codename: Cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności/RODO.
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 20181102 RTM
-! Last modified: Fri, 02 Nov 2018
+! Version: 20181103 RTM
+! Last modified: Sat, 03 Nov 2018
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -17,7 +17,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.20181102 RTM aktualizacja: pią, 02 lis 2018
+! v.20181103 RTM aktualizacja: sob, 03 lis 2018
 !
 !
 ! Specyficzne reguły ukrywające
@@ -63,7 +63,7 @@ alles-bhp.pl,greattrade.pl,urwisy2.pl###contGlowny > div:not([id]):not([class])[
 allianz.pl##.region-disclaimer-component
 allplay.pl,ammoffice.pl,androidmagazine.pl,biuletyn.net,blog.j-labs.pl,eneva.pl,galeria-dominikanska.pl,gosc.pl,sigatech.pl,strzelnicabojowa.pl,yorkedukacja.pl,zamakmercator.pl,zamow-myjnie.pl,mototube.pl,pudliszki.pl,miechow.eu,culturapoloneza.ro##body > div:not([id]):not([class])[style*="position"][style*="fixed"]
 almamarket.pl,kozy.pl,www.sygnity.pl###claw
-al.to###popup-cookie
+al.to,x-kom.pl###popup-cookie
 amarone.pl###bannerMSG
 amazon.de###desktop-cookie-disclosure
 americanexpress.com###cookie_Header
@@ -94,7 +94,7 @@ autogespot.pl##div[class^="popup"]:not(.fancybox-margin)
 autogielda.pl,mix4kids.tv##.modal-backdrop
 autokult.pl,drony.net,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,steplowski.net##div#cop
 automo.pl,autobaza.pl###rodo, .rodoButtonUp
-avast.com##.cookie-bar
+avast.com,pay.google.com##.cookie-bar
 avioner.pl##.alert
 azure.microsoft.com###cookie-prompt
 a-o.ninja,e-niemcy.de,independentdigital.com,ferguson-digital.eu,roztocze.net,etychy.org,ekspedyt.org,genesis-zone.com,kropka.audio,lapppoland.lappgroup.com,skiparkmagura.eu,filmowo.co,kryminalni24.info,marfafashion.com,mago.com,wnet.fm###cookie-notice
@@ -216,7 +216,6 @@ dourody.pl##[style="width: 100%;float: left;background: #fff;padding: 15px 0;pos
 dowozy.pl##.rodo
 drabex.com###footer
 dreammachines.pl##.modal-backdrop
-drogerielaboo.pl##.ciacho2-wrap-container
 dropbox.com#?##top-notification-bar-container:-abp-has(#eu-cookie-bar)
 dstreet.pl###ToplayerConsent, #ToplayerCover
 dukapolska.com,onlinekredyty.pl,legnica.pl,zory.dlawas.pl###popupdiv
@@ -233,6 +232,7 @@ ebay.pl##.gh-banner-active.gh-banner
 ebizneskrokpokroku.pl###notification-bar
 ebok.jmdi.pl##.ui-notificationbar.top
 ebok.vectra.pl##div.jqmAlertContent
+ecbedzin.pl,enut.pl###myModal
 economist.com##div#ec-message-1
 eco.atman.pl##div#gbpl_oba
 edarling.pl,foto4u.pl,himountain.pl,opteam.pl,praktiker.pl,smakizycia.pl,zoover.pl###infobarDiv, #infobar, .infobar, #info-bar, #info_c_box, .info-message
@@ -655,6 +655,7 @@ medme.pl###ccc
 medpolonia.pl###bannerPopup
 medpytania.pl,mymedic.pl###mcpc
 meetup.com##[class*="_cookieBanner-module_cookieBanner"]
+megasat.tv##.ep-cookies-bar
 megawrzuta.pl##.notification, .Notification, .js-notification, .notifications-container, #notifications, #notification_1, #notification, #notification_area, .notifications, .notif-bar, .notificationBox
 mega-com.eu###footer-information
 memoinfo.pl##body > div:nth-of-type(6)
@@ -745,6 +746,7 @@ nettg.pl##.fade
 netweber.pl##.flash-info
 net-speak.pl##div.uwaga
 net-s.pl##.regulations
+news.google.com##div[style^="behavior:url(#default#homePage) url(#default#userData)"]
 nfz-lodz.pl##.mfp-ready
 nf.pl###rodonf-app-ux
 niestatystyczny.pl##.group.rcc-panel
@@ -834,6 +836,7 @@ playnow.pl##.c-cookie-info
 playtube.pl##.alert-success
 play.google.com,translate.google.pl,books.google.pl###gb > div[style*="background-color"]
 plotowanie.com##div#howdydo-wrapper
+pl-pl.facebook.com##[data-testid="cookie-policy-banner"]
 pl.chili.tv###_evh-ric
 pl.depositphotos.com##._notification
 pl.fotolia.com,stock.adobe.com###_evidon_banner
@@ -1291,7 +1294,6 @@ cookie-law-popup.js$script
 ||dziennikelblaski.pl/js/rodo-wm.js
 ||eurocookie.galilcloud.wixapps.net/pages/widget/views/widget.html
 ||eurocookie.galilcloud.wixapps.net/popup$subdocument
-||evidon.com/sitenotice/evidon-banner.js
 ||exploder.pl/info_o_cookie.js$script
 ||frazpc.pl/scripts/default/rodo-v2a.js
 ||fundingchoices.google.com^$script,domain=www.accuweather.com
@@ -1400,7 +1402,9 @@ pl###polityka-cookie:not(body):not(html)
 pl##.cnil-banner__content:not(body):not(html)
 pl##.cookieChoiceInfo:not(body):not(html)
 pl##.cookieInfo:not(body):not(html)
+pl##.cookies-bar:not(body):not(html)
 pl##.cookies:not(body):not(html)
+pl##.cookie-monster:not(body):not(html)
 pl##.cookie-notice-container:not(body):not(html)
 pl##.cookie-notice:not(body):not(html)
 pl##.hpm-alert-cookies:not(body):not(html)
@@ -1578,6 +1582,7 @@ pl##[id^="polityka-prywatnosci"]:not(body):not(html):not(article)
 ##.cc-window:not(body):not(html)
 ##.cc_banner-wrapper:not(body):not(html)
 ##.cc_banner:not(body):not(html)
+##.ciacho2-wrap-container
 ##.ciacho:not(body):not(html)
 ##.ciasteczka-info:not(body):not(html)
 ##.ciasteczka:not(body):not(html)
