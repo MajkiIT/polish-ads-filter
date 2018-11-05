@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 5 November 2018
 ! Expires: 1 day
-! Version: 2018110504
+! Version: 2018110505
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018110504 aktualizacja: pon, 5 listopada 2018, 21:20:00
+! v.2018110505 aktualizacja: pon, 5 listopada 2018, 21:40:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -100,7 +100,6 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 !
 !5#-----------------------Elements hide on movie-----------------------!
 iitvx.pl###player-above-2
-streamin.to###rkm
 vshare.io###pplaay
 vshare.io###sendif
 !
@@ -1536,7 +1535,7 @@ marketingibiznes.pl##.img-ov
 matzoo.pl##.log_form, .margin10.pull-left.text-white.s15.h2
 maximgroup.pl###banner-counter
 mazury.info.pl##A[href^="http://"] > IMG[src*="logo"]
-mazury.info.pl##A[href^="https://"] > IMG
+mazury.info.pl##A[href^="https://"] > IMG, center font[size="-2"][style]
 mazury.info.pl##body > center:nth-of-type(1) > table > tbody > tr > td:nth-of-type(2)
 meble-andrex.pl###left > p
 mebloo.pl###fabryka_sypialni > [target="_blank"] > IMG
@@ -3509,7 +3508,7 @@ zywiecinfo.pl##.promoted
 @@||gazetabilgoraj.pl/wp-content/plugins/better-adsmanager/js/advertising.min.js$script
 @@||google-analytics.com$domain=certyficate.it|liptonicetea.com|filmweb.pl
 @@||googletagmanager.com/gtag/$script,domain=certyficate.it
-@@||googletagmanager.com/gtm.js$script,domain=www.emag.pl|benchmark.pl|komputerswiat.pl
+@@||googletagmanager.com/gtm.js$script,domain=www.emag.pl|benchmark.pl|komputerswiat.pl|www.jabra.pl
 @@||hit.gemius.pl/gplayer.js$script,domain=polotv.pl|pilot.wp.pl
 @@||hotelscombined.com/Script/$script,domain=mlecznepodroze.onet.pl
 @@||hotelscombined.com/SearchBox/$script,domain=mlecznepodroze.onet.pl
@@ -4055,7 +4054,7 @@ pl##a[href^="//69oxt4q05.com/"]
 /^http:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\/[a-zA-Z0-9]{30,}/$script,popup
 /^(http|https):\/\/[a-z0-9]{10,20}\.com\/[0-9]{5,10}\.html/$subdocument,domain=ekino-tv.pl
 /^(http|https):\/\/[a-z0-9]{5,}\.(com|top)\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{5,}\.js/$script,domain=vidto.me|fileone.tv|alltube.tv|srkcast.com|vidfile.net|a-o.ninja|alltube.pl|whostreams.net|cda-hd.cc|filmowo.co|szukajka.tv
-/^(http|https):\/\/[a-z0-9-]{8,30}\.[a-z]{2,11}\/[0-9]{3,10}/$xmlhttprequest,script,stylesheet,subdocument,domain=streamin.to|raptu.com|flashx.tv|rapidvideo.com|fileone.tv|animezone.pl|vidoza.net|kreskowkazone.pl|vidfile.net|a-o.ninja
+/^(http|https):\/\/[a-z0-9-]{8,30}\.[a-z]{2,11}\/[0-9]{3,10}/$xmlhttprequest,script,stylesheet,subdocument,domain=raptu.com|flashx.tv|rapidvideo.com|fileone.tv|animezone.pl|vidoza.net|kreskowkazone.pl|vidfile.net|a-o.ninja
 /^(http|https):\/\/[a-z.]{5,10}\.[a-z]{2,4}\/[a-z.]{3,7}\?[a-zA-Z0-9=&%-.]{100,250}/$popup,domain=centrum-dramy.pl|a-o.ninja|alltube.tv|alltube.pl|hentai-online.pl|centrum-mangi.ninja
 /^(http|https):\/\/[a-z]{5,10}\.com\/[a-zA-Z0-9+]{80,}/$subdocument,domain=embed.nowvideo.sx|cloudtime.to|darmowa-telewizja.info
 /^(http|https):\/\/[a-z.-]{5,30}\/client\?party/$script,domain=openkatalog.com
@@ -4088,7 +4087,6 @@ tvtoss.me##.bannerfloat
 ||assets.bro.adca.st/rectangular.html
 ||cloudfront.net^$script,domain=telewizja-live.com
 ||d1f5rbi95y1icu.cloudfront.net^
-||fullon.tv/matuma300x250.php$subdocument
 ||images.futbolbase.us/*.html$domain=bro.adca.st
 ||nowwatchtvlive.co/matomyads$subdocument
 ||privatestream.tv/adl^
@@ -4234,6 +4232,7 @@ kafeteria.pl#@#.is-sponsored
 @@||addthisedge.com/live$script,xmlhttprequest,domain=serialomaniak.pl
 @@/google-adwords$image,domain=spidersweb.pl
 @@||gryna2.pl/engine/scripts/ads.js$xmlhttprequest
+@@||ocs-pl.oktawave.com/*_reklama_$image,domain=spidersweb.pl
 ||addthis.com^$important,third-party,domain=~missingkids.com|~missingkids.org,badfilter
 ||addthis.com/*/addthis_widget.js$script,badfilter
 ||addthis.com^$important,third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs,badfilter
