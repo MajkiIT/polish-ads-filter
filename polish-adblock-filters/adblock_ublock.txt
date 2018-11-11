@@ -8,7 +8,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 11 November 2018
 ! Expires: 2 days
-! Version: 2018111102
+! Version: 2018111103
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018111102 aktualizacja: nie, 11 listopada 2018, 19:00:00
+! v.2018111103 aktualizacja: nie, 11 listopada 2018, 21:10:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -141,6 +141,7 @@ autokult.pl##script:inject(set-constant.js, WP.gaf.loadAndRunBunch, noopFunc)
 www.wp.pl##script:inject(set-constant.js, WP.mods.welcomeScreen, noopFunc)
 ||adv.wp.pl/RM/Box/*.mp4$media,redirect=noopmp3-0.1s
 ||v.wpimg.pl/$media,redirect=noopmp3-0.1s,domain=wp.pl|~www.wp.pl|autokult.pl|parenting.pl|echirurgia.pl|money.pl|o2.pl|portal.abczdrowie.pl|komorkomania.pl|fotoblogia.pl|gadzetomania.pl|pudelek.pl|jejswiat.pl|medycyna24.pl|dobreprogramy.pl
+tv.wp.pl##+js(set-constant.js, WP.crux.sealed, falseFunc)
 !
 ! kurnik.pl
 kurnik.pl##.adsbygoogle:style(height: 1px !important; width: 1px !important;)
