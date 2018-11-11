@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 8 November 2018
+! Last modified: 11 November 2018
 ! Expires: 2 days
-! Version: 2018110801
+! Version: 2018111101
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018110801 aktualizacja: czw, 8 listopada 2018, 23:10:00
+! v.2018111101 aktualizacja: nie, 11 listopada 2018, 14:50:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -123,7 +123,7 @@ purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !importa
 filmweb.pl###skyBanner
 !
 ! Grupa WP
-~poczta.wp.pl,wp.pl##script:inject(abort-on-property-read.js, WP.inline)
+~poczta.wp.pl,wp.pl,~pilot.wp.pl##script:inject(abort-on-property-read.js, WP.inline)
 www.wp.pl##[data-st-area] > div > div > div[class]:matches-css(max-width: 300px):matches-css(max-height: 250px)
 ~www.wp.pl,wp.pl##:xpath(//div[count(*)=3][img[@class][@src]][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
 www.wp.pl##:xpath(//div[@data-st-area='Zakupy'][count(*)=2][not(header)])
@@ -134,13 +134,15 @@ wp.pl##[class^="_"]:has(>img[src*=".wp.pl"])
 wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##script:inject(abort-on-property-write.js, iaqExt)
 wp.pl,echirurgia.pl,money.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl##script:inject(set-constant.js, PWA_adbd, 2)
-~poczta.wp.pl,wp.pl,echirurgia.pl,kardiolo.pl,money.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl##script:inject(set-constant.js, WP.gaf.addCreation, noopFunc)
+~poczta.wp.pl,wp.pl,echirurgia.pl,kardiolo.pl,money.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl,~pilot.wp.pl##script:inject(set-constant.js, WP.gaf.addCreation, noopFunc)
 autokult.pl##script:inject(set-constant.js, WP.gaf.loadAndRunBunch, noopFunc)
-~poczta.wp.pl,wp.pl,pudelek.pl##script:inject(set-constant.js, WP.gaf.setSlotCreation, noopFunc)
-~www.wp.pl,wp.pl,money.pl,abczdrowie.pl,parenting.pl,komorkomania.pl,gadzetomania.pl,fotoblogia.pl,domodi.pl,autokult.pl##script:inject(set-constant.js, WP.gdpr.init, noopFunc)
+~poczta.wp.pl,wp.pl,pudelek.pl,~pilot.wp.pl##script:inject(set-constant.js, WP.gaf.setSlotCreation, noopFunc)
+~www.wp.pl,wp.pl,money.pl,abczdrowie.pl,parenting.pl,komorkomania.pl,gadzetomania.pl,fotoblogia.pl,domodi.pl,autokult.pl,~pilot.wp.pl##script:inject(set-constant.js, WP.gdpr.init, noopFunc)
 www.wp.pl##script:inject(set-constant.js, WP.mods.welcomeScreen, noopFunc)
 ||adv.wp.pl/RM/Box/*.mp4$media,redirect=noopmp3-0.1s
 ||v.wpimg.pl/$media,redirect=noopmp3-0.1s,domain=wp.pl|~www.wp.pl|autokult.pl|parenting.pl|echirurgia.pl|money.pl|o2.pl|portal.abczdrowie.pl|komorkomania.pl|fotoblogia.pl|gadzetomania.pl|pudelek.pl|jejswiat.pl|medycyna24.pl|dobreprogramy.pl
+tv.wp.pl##div[class]:has(> div > div > span:has-text(wyłącz Adblock))
+tv.wp.pl##body:style(overflow: auto !important;)
 !
 ! kurnik.pl
 kurnik.pl##.adsbygoogle:style(height: 1px !important; width: 1px !important;)
