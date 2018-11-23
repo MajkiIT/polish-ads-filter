@@ -12,9 +12,6 @@ Ad filter list by Disconnect for PiHole<br/>
 KAD Host filters for Pi hole<br/>
 <code>https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/kad_host.txt</code>
 
-NoTrack Tracker Blocklist for Pi hole<br/>
-<code>https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/NoTrack_Tracker_Blocklist.txt</code>
-
 Polish filters for Pi hole<br/>
 <code>https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/hostfile.txt</code>
 
