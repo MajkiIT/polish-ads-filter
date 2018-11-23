@@ -1,11 +1,11 @@
-! Checksum: F7XGw2P/Qo67psddxZJafg
+! Checksum: HZ9aVbNTQtKEcbgmTsb1DA
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 20181120 RTM
-! Last modified: Tue, 20 Nov 2018
+! Version: 20181123 RTM
+! Last modified: Fri, 23 Nov 2018
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,13 +14,16 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.20181120 RTM aktualizacja: wto, 20 lis 2018
+! v.20181123 RTM aktualizacja: pią, 23 lis 2018
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
 4lomza.pl##body.polityka-cookies:style(margin-top: 0 !important;)
 abcalkoholu.pl##.cookielaw:style(padding-top: 0 !important;)
-abczdrowie.pl,autokult.pl,dobramama.pl,dobreprogramy.pl,echirurgia.pl,fotoblogia.pl,gadzetomania.pl,jejswiat.pl,kafeteria.pl,kafeteria.tv,komorkomania.pl,medycyna24.pl,money.pl,nocowanie.pl,o2.pl,open.fm,parenting.pl,pinger.pl,pudelek.pl,pytamy.pl,samosia.pl,snobka.pl,testwiedzy.pl,wp.pl##+js(addEventListener-defuser.js, DOMContentLoaded, default.setTimeout)
+abczdrowie.pl,autokult.pl,dobramama.pl,dobreprogramy.pl,echirurgia.pl,fotoblogia.pl,gadzetomania.pl,jejswiat.pl,kafeteria.pl,kafeteria.tv,komorkomania.pl,luxlux.pl,medycyna24.pl,mixer.pl,money.pl,nocowanie.pl,o2.pl,open.fm,parenting.pl,pinger.pl,pogodnie.pl,pudelek.pl,pytamy.pl,samosia.pl,snobka.pl,testwiedzy.pl,wp.pl##+js(addEventListener-defuser.js, DOMContentLoaded, default.setTimeout)
+agrosystems.pl##body:style(overflow:auto !important;)
+agrosystems.pl##.modal-rodo
+airdron-polska.pl##.pum-open body > [aria-hidden]:style(padding-right: 0 !important;)
 analizy.pl##.nl_rodo, .ui-widget-overlay
 analizy.pl,mago.com##html:style(overflow: auto !important;)
 appsource.microsoft.com##.cookieBanner:style(visibility: hidden !important;)
@@ -66,6 +69,7 @@ fdm.pl##.cms-popup-open:style(overflow: auto !important;)
 filmweb.pl##.rodo:style(overflow: auto !important; position: static !important;)
 filmweb.pl##.rodo__overlay
 fiskars.pl##.desktop:style(top: 0 !important;)
+galopuje.pl##+js(abort-current-inline-script.js, $, RODOCOOKIE)
 gamisport.pl###body:style(padding-top: 0 !important;)
 gamisport.pl###nextcreBotDialog
 gazetabilgoraj.pl,koleje-wielkopolskie.com.pl,pedzledomakijazu.com,fdds.pl,przegladpolityczny.pl,zgrp.pl,powiat.limanowski.pl,andrychow.eu,candeo.pl##.popmake-overlay[data-popmake*="cookies"]
@@ -131,6 +135,9 @@ porcelana.pl##body:style(overflow: auto !important;)
 porcelana.pl##.modal-popup
 portalspozywczy.pl,sadyogrody.pl,rynekzdrowia.pl,farmer.pl,dlahandlu.pl,propertynews.pl,portalsamorzadowy.pl,rynekaptek.pl,infodent24.pl,housemarket.pl,pulshr.pl,propertydesign.pl,rynekseniora.pl,ckl.pl,ptwp.pl,promocjada.pl,wnp.pl,frsih.pl,eecpoland.eu,mckkatowice.pl,spodekkatowice.pl##.rodo
 portalspozywczy.pl,sadyogrody.pl,rynekzdrowia.pl,farmer.pl,dlahandlu.pl,propertynews.pl,portalsamorzadowy.pl,rynekaptek.pl,infodent24.pl,housemarket.pl,pulshr.pl,propertydesign.pl,rynekseniora.pl,ckl.pl,ptwp.pl,promocjada.pl,wnp.pl,frsih.pl,eecpoland.eu,mckkatowice.pl,spodekkatowice.pl##.windowOpen:style(overflow: auto !important;)
+powiat-sepolno.pl##body.compensate-for-scrollbar:style(overflow: auto !important;)
+powiat-sepolno.pl###fancybox-container-1
+powiat-sepolno.pl##.compensate-for-scrollbar:style(margin-right: 0 !important;)
 powiat-zyrardowski.pl##.fancybox-overlay
 prawdaobiektywna.pl##.qc-cmp-ui-container
 przydomu.pl###popup_25
@@ -360,6 +367,7 @@ farmacja.pl,radiobielsko.pl,webprojekt.biz$$script[tag-content="rodo"]
 ferguson-digital.eu$$#cookie-notice
 fnglob.pl$$#modal
 fryzomania.pl$$#myWorningNewsletterPopUp
+galopuje.pl###RODOCOOKIE, .modal-backdrop
 ideafairplay.pl$$#modal-privacy
 infostrow.pl,roztoczanskipn.pl,wroclaw.dlawas.info,nowemiasto.dlawas.info,walbrzych.dlawas.info$$#rodo-modal
 listymikolaja.pl$$#popup_rodo_layer
@@ -383,7 +391,7 @@ pulawy.eu$$#modalRodo
 rybnik.com.pl,slaskibiznes.pl,tuwodzislaw.pl,tuzory.pl,tujastrzebie.pl,tuwroclaw.com,tulodz.com,zakopane.info$$#pd-modal
 sevenpolska.com$$#flipFlop
 sklepbiker.pl###rodoModal, .modal-backdrop
-sklepbiker.pl##.modal-open:style(padding-right: 0 !important; overflow: auto !important;)
+sklepbiker.pl,galopuje.pl##.modal-open:style(padding-right: 0 !important; overflow: auto !important;)
 sklepbiker.pl,tvbraniewo24.pl,tvsztum.pl,tvregionalna24.pl$$#rodoModal
 skm.pkp.pl$$#dialog-message-rodo
 spolem.katowice.pl,wpr.pl$$#popup.modal

@@ -1,11 +1,11 @@
-! Checksum: Xb+VdhQTZaBpOvZkM7AQOg
+! Checksum: Ab12yDlb19vSLheNAxjmqw
 ! Title: Polskie Filtry Społecznościowe - Uzupełnienie do uBlocka i AdGuarda
 ! Polish Social Filters - Supplement for uBlock & AdGuard
 ! Codename: Social - Supplement
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, F4z, RikoDEV
 ! Homepage: https://www.certyficate.it/
-! Version: 20181111 RTM
-! Last modified: Sun, 11 Nov 2018
+! Version: 20181123 RTM
+! Last modified: Fri, 23 Nov 2018
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,7 +13,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.20181111 RTM aktualizacja: nie, 11 lis 2018
+! v.20181123 RTM aktualizacja: pią, 23 lis 2018
 !
 !
 ! Popupy
@@ -58,6 +58,7 @@ wp.pl##.article > [class]:has(>[class] > .fb-like)
 ! Widgety - specjalne instrukcje
 !#if !cap_user_stylesheet
 dobreprogramy.pl##.author-social-links, .content.float-right > .social, .rrssb-facebook, .rrssb-twitter, .social__group_share, .social__group_like > .social__item, #phContent_page_content .social__group_like:style(visibility: hidden !important;)
+dobreprogramy.pl##.social__group > .social__label
 gadzetomania.pl,fotoblogia.pl,komorkomania.pl,autokult.pl##.link-facebook, .link-youtube, .link-gplus, .link-instagram, .icon-mail:style(visibility: hidden !important;)
 gadzetomania.pl,fotoblogia.pl,komorkomania.pl,autokult.pl##a[href^="https://www.facebook.com/sharer.php"], [href^="http://twitter.com/intent/tweet"], [href^="http://pinterest.com/pin/create/link/"]:style(visibility: hidden !important;)
 purepc.pl##.article-options2
@@ -71,6 +72,7 @@ autoumowa.pl##.copyright > p:after:style(content: "Google+"; margin-left: -47px;
 cashless.pl##.icon-list:style(margin-top: 25px !important;)
 cashless.pl##.rss-before:before:style(margin-right: 5px; display: inline-block !important; position: static !important;)
 fajnycraft.pl##.primary-menu > li:nth-of-type(n+3):style(visibility: hidden !important;)
+iab.org.pl###menu-social .menu-social:style(width: auto !important;)
 librus.pl##div.promo:style(width: 100%;)
 librus.pl###navBar:style(width: 100% !important;)
 librus.pl##.container-fluid:style(width: 100% !important;)
