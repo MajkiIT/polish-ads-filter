@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 22 November 2018
+! Last modified: 23 November 2018
 ! Expires: 1 day
-! Version: 2018112205
+! Version: 2018112301
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018112205 aktualizacja: czw, 22 listopada 2018, 17:30:00
+! v.2018112301 aktualizacja: ptk, 23 listopada 2018, 13:30:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -4477,4 +4477,10 @@ vod.tvp.pl##.hidden-phone.rectangleWrapper
 !49#--------------------------EasyPrivacy Bugs------------!
 @@||tv.wp.pl/do/*/dotn?sw=$image,~third-party,domain=tv.wp.pl
 @@||staty.portalradiowy.pl/wstats/wstats.php$script,domain=discoparty.pl|discopolonew.cba.pl
+!
+!50#--------------------------Video Players------------!
+||vidoza.net/js/pop.js$script
+||vidoza.net/dl?op=view&*adb=$xmlhttprequest
+||vidoza.net/srt/empty.srt$media,xmlhttprequest
+||vidoza.net/js/videojs$script,object
 !END#--------------------------END------------!
