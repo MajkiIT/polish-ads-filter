@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 27 November 2018
+! Last modified: 28 November 2018
 ! Expires: 1 day
-! Version: 2018112703
+! Version: 2018112801
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018112703 aktualizacja: wt, 27 listopada 2018, 20:45:00
+! v.2018112801 aktualizacja: sr, 28 listopada 2018, 21:55:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -401,6 +401,7 @@ autokult.pl##.post-article-sidebar--vfloat
 automatyka.pl###bannerTop, #partnerPresents
 autotrader.pl##.link-search
 b1.pl##.header_spotted, .header_praca, .header_bilety, .header_podreczniki, .header_imprezy, .portal_header
+b24tv.pl##.wpb_content_element.wpb_text_column, #metaslider_4122, #custom_html-4
 badaniaprenatalne.pl##.rsb.widget
 bajkitv.pl###watch
 baltic.info.pl##IMG[style="display: block; margin-left: auto; margin-right: auto;"]
@@ -1610,7 +1611,7 @@ miastokolobrzeg.pl###sp-right, #sp-1-reklama
 miastokolobrzeg.pl##a[href*="/component/banners/click/"]
 miastons.pl##IMG[src^="http://www.miastons.pl/media/Banners/"]
 miechowski.pl##.wpb_content_element.vc_separator
-miedziowe.tv##.moduletable-box > div
+miedziowe.tv,elka.tv##.moduletable-box
 miedzyrzec.info###banerA
 miedzyrzecz.biz###showimage
 mikrokontroler.pl###text-3, .mb30.red.title-bg-line.title-border, #text-8, .mb30.orange.title-bg-line.title-border
@@ -3519,6 +3520,7 @@ zywiecinfo.pl##.promoted
 /^https:\/\/v\.wpimg\.pl\/[a-zA-Z0-9]{90,100}/$image,domain=money.pl
 /^(http|https):\/\/[\w]{3,12}\.trojmiasto\.pl\/[\w]{5,10}\/[\w]{5,10}\/[\w]{5,10}\/[\w/]{10,20}/$script,domain=trojmiasto.pl
 /^https:\/\/[a-z.]{2,16}\.wp\.pl\/[a-zA-Z0-9-_.?=?&%]{472,}/$media,domain=open.fm
+/https?:\/\/(?!(poczta|bc))[a-z.]{3,15}\.wp\.pl\/.{20,}/$script,domain=poczta.wp.pl
 !
 !12#---------------------------------Whitelists----------------------------------!
 @@||adserwer.adtools.pl/Rs$script,domain=adserwer.adtools.pl
@@ -4100,7 +4102,6 @@ pl##a[href^="//69oxt4q05.com/"]
 !27#--------------------------Rules for pages with random adv scripts block------------!
 ||69oxt4q05.com^
 ||b54m4qbmt0b9.com^
-||electro-torrent.pl/java_klappe.js$script
 ||electro-torrent.pl/over*.js$script
 ||electro-torrent.pl/resizeIframe.js$script
 ||follofop.com/$subdocument,popup
