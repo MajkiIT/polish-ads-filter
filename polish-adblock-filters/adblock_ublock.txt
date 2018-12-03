@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 30 November 2018
+! Last modified: 3 December 2018
 ! Expires: 2 days
-! Version: 2018113002
+! Version: 2018120301
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018113002 aktualizacja: ptk, 30 listopada 2018, 10:03:00
+! v.2018120301 aktualizacja: nie, 3 grudnia 2018, 10:15:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -121,6 +121,7 @@ purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0px !importa
 ! filmweb.pl
 ||fwcdn.pl/adv/$script,domain=filmweb.pl,important
 filmweb.pl###skyBanner
+filmweb.pl##+js(abort-current-inline-script.js, Math.random, adbDetect)
 !
 ! Grupa WP
 ~poczta.wp.pl,wp.pl,~pilot.wp.pl##script:inject(abort-on-property-read.js, WP.inline)
