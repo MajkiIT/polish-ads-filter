@@ -24,9 +24,9 @@
 
 ### Jaki adblock wybrać?
 
-admucher, pihole, dnsy.. to pierwszy poziom zaawansowania blokowania reklam<br/>
-adblock, opera, privoxy.. to drugi poziom zaawansowania blokowania reklam<br/>
-ublock origin, adguard.. to trzeci poziom zaawansowania blokowania reklam<br/>
+admucher, pihole, dnsy.. wspierają pierwszy poziom najmniej zaawansowanej składni blokowania reklam<br/>
+adblock, opera, privoxy.. wspierają drugi poziom średnio zaawansowanej składni blokowania reklam<br/>
+ublock origin, adguard.. wspierają trzeci poziom najbardziej zaawansowanej składni blokowania reklam<br/>
 
 ##
 
@@ -36,10 +36,21 @@ najlepiej ublock origin + nano defender + polskie filtry<br/>
 jak nie ma takiej możliwości to warto dodać dns'y adguarda<br/>
 <code>https://adguard.com/pl/adguard-dns/overview.html</code>
 
-### Jakie listy filtrów wybrać?
+### Czym się kierować przy wyborze listy filtrów?
+
+pamiętaj by subskrybować te listy filtrów co do których<br/>
+masz absolutną pewność, nie subskrybuj jeśli nie wiesz co robi
+
+pamiętaj by subskrybować tylko aktualne listy filtrów<br/>
+jeśli masz jakiś problem z listą filtrów napisz do jej opiekuna
+
+zwracaj uwagę by nie dublować niepotrzebnie list filtrów<br/>
+oraz rozszerzeń/programów do blokowania reklam w internecie
+
 
 ##
 
 ### Nie działa mi! Co robić?
+
 
 ##
