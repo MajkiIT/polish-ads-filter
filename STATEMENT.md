@@ -24,9 +24,9 @@
 
 ### Jaki adblock wybrać?
 
-admucher, pihole, dnsy.. wspierają pierwszy poziom najmniej zaawansowanej składni blokowania reklam<br/>
-adblock, opera, privoxy.. wspierają drugi poziom średnio zaawansowanej składni blokowania reklam<br/>
-ublock origin, adguard.. wspierają trzeci poziom najbardziej zaawansowanej składni blokowania reklam<br/>
+- admucher, pihole, dnsy... wspierają pierwszy poziom najmniej zaawansowanej składni blokowania reklam
+- adblock, opera, privoxy... wspierają drugi poziom średnio zaawansowanej składni blokowania reklam
+- ublock origin, adguard... wspierają trzeci poziom najbardziej zaawansowanej składni blokowania reklam
 
 ##
 
