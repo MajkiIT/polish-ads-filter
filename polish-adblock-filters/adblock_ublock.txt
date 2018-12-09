@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 4 December 2018
+! Last modified: 9 December 2018
 ! Expires: 2 days
-! Version: 2018120402
+! Version: 2018120901
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018120402 aktualizacja: wt, 4 grudnia 2018, 19:25:00
+! v.2018120901 aktualizacja: nie, 9 grudnia 2018, 20:20:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -336,30 +336,10 @@ w-poblizu.pl###page-wrapper > .page:style(padding: 0 !important;)
 zarabiam.com##body > font[color="green"]:last-of-type:style(color: transparent !important;)
 !
 ! Adblock
-acmilan.com.pl##+js(set-constant.js, showAds, true)
-alefunny.pl###myModal, .modal-backdrop
-alefunny.pl##.modal-open:style(overflow: auto !important; padding-right: 0px !important;)
-astroweb.pl##script:inject(abort-on-property-read.js, checkAds)
-aternos.org##script:inject(setTimeout-defuser.js, hasAdblock)
-cvninja.pl##script:inject(abort-on-property-write.js, fuckAdBlock)
-dziwnekomiksy.pl##body>*:style(filter: blur(0px) !important;)
-filmweb.pl##script:inject(abort-on-property-read.js, document.onreadystatechange)
-filmweb.pl##script:inject(setTimeout-defuser.js, notDetected)
-fotoblogia.pl,gadzetomania.pl,wp.pl,autokult.pl,komorkomania.pl,medycyna24.pl,smaczneblogi.pl##script:inject(abort-on-property-write.js, __serviceAbModal)
-niezalezna.pl##script:inject(noeval.js)
-pilot.wp.pl##script:inject(set-constant.js, WP.crux.sealed, falseFunc)
-playpuls.pl##+js(setInterval-defuser.js, muted, 8000)
-playpuls.pl##+js(setTimeout-defuser.js, Math.round, 5000)
-skript.pl##script:inject(abort-current-inline-script.js, $, alert)
-skript.pl##script:inject(abort-current-inline-script.js, document.addEventListener, adblocka)
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=twojahistoria.pl,redirect=noopjs
-||wp.hit.gemius.pl/gdejs/xgde.js$script,redirect=noopjs,domain=pilot.wp.pl
-warezdark.pl##script:inject(abort-on-property-write.js, addBlocking)
-zambrow.org##+js(abort-current-inline-script.js,document.getElementById, block)
+!
 !
 ! Rules after Adblock
-vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
-webinsider.pl##script:inject(setTimeout-defuser.js, AdBlock)
+!
 !
 ! Rules to limit time wait on movies
 ekino-tv.pl##script:inject(nano-setTimeout-booster.js)
