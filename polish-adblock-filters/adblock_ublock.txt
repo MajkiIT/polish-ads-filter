@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 9 December 2018
+! Last modified: 10 December 2018
 ! Expires: 2 days
-! Version: 2018120901
+! Version: 2018121001
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018120901 aktualizacja: nie, 9 grudnia 2018, 20:20:00
+! v.2018121001 aktualizacja: pon, 10 grudnia 2018, 21:45:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -92,7 +92,7 @@ senda.pl##.advert_box > div > .tablebg:style(height: 1px !important; visibility:
 !
 ! Blokowanie reklam z unblock.onaudience.com
 autocentrum.pl,demotywatory.pl,dziennik.pl,facetemjestem.pl,gala.pl,garnek.pl,gry-online.pl,jegostrona.pl,joemonster.org,kobieta.pl,komixxy.pl,transfery.info,v10.pl##script:inject(abort-on-property-write.js, ub_ct_load)
-tvn24.pl##script:inject(abort-on-property-write.js, Vublock)
+!
 !
 ! www.ps4forum.pl
 www.ps4forum.pl##.googleheader
@@ -222,8 +222,8 @@ benchmark.pl###bannerDBB:style(height: 10px !important;)
 dvbtmap.eu###leftCol:style(top: 51px!important)
 dvbtmap.eu###content-container:style(margin-top: 0px!important;)
 !
-! naszemiasto.pl - https://github.com/MajkiIT/polish-ads-filter/issues/3175
-naszemiasto.pl##script:inject(abort-on-property-write.js, czy_wlaczony_adblock)
+!
+!
 !
 ! anyfiles.pl
 anyfiles.pl##script:inject(abort-on-property-read.js, launchOpenWindow)
@@ -250,7 +250,7 @@ portel.pl##body[style^="background:"]:style(background-image: none!important;)
 !
 ! calcoolator.pl
 calcoolator.pl##script:inject(setTimeout-defuser.js, no-ads-info)
-||calcoolator.pl/inc/js/adblockill_copy.js
+!
 !
 ! eurogamer.pl
 eurogamer.pl##script:inject(abort-on-property-write.js, yafaIt)
@@ -291,8 +291,8 @@ pl.vpnmentor.com##script:inject(abort-on-property-write.js, bioEp)
 ! twojapogoda.pl
 ||r.dcs.redcdn.pl/webcache/rdf*/redefine/*$media,redirect=noopmp3-0.1s,domain=twojapogoda.pl
 !
-! zabawa z adquesto
-weszlo.com,prnews.pl,mambiznes.pl,kresy.pl##+js(abort-current-inline-script.js, parseInt, adblock)
+!
+!
 !
 ! pcworld.pl
 pcworld.pl##+js(abort-on-property-read.js, uabpd3)
