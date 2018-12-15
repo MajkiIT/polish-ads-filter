@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 14 December 2018
+! Last modified: 15 December 2018
 ! Expires: 1 day
-! Version: 2018121403
+! Version: 2018121501
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018121403 aktualizacja: ptk, 14 grudnia 2018, 18:25:00
+! v.2018121501 aktualizacja: sob, 15 grudnia 2018, 21:10:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -35,7 +35,7 @@
 !1#-----------------------General advert blocking filters-----------------------!
 /*300x300$image,domain=portalgwiazd.pl
 /_adv/*
-/adv/*$image,domain=~arriva.pl,~budus.pl
+/adv/*$image,domain=~arriva.pl|~budus.pl
 /adv/show-windows.php$script,domain=alltube.tv|alltube.pl
 /affiliates/$image,domain=www.pasazer.com
 ##a[href*="techmaniak.pl/www/gact/ckk.php"]
@@ -3102,7 +3102,7 @@ zywiecinfo.pl##.promoted
 ||blogomaniak.pl/i/techmaniak-ceneo-sidebar$image
 ||brand.ad/^
 ||businessclick.*/$script
-||cda.pl/*.php?ad$xmlhttprequest
+||cda.pl/xml_adb*.php$xmlhttprequest
 ||cda.pl/player.php
 ||cdn.dtxngr.com/$script
 ||cdn.forumpc.pl/partner$image
@@ -3227,6 +3227,7 @@ zywiecinfo.pl##.promoted
 ||ladnydom.pl/pub/ips/
 ||leczna24.pl/f/*.gif$image
 ||leczna24.pl/f/navb*.jpg$image
+||leszczynscy.nazwa.pl/*/adv/
 ||lib.onet.pl/s.csr/external/iframe$script,subdocument
 ||lib.wtg-ads.com^$script
 ||lidl.pl/statics/lidl-pl/ds_img/layout/tapeta_$image
