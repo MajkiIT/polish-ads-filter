@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 21 December 2018
+! Last modified: 23 December 2018
 ! Expires: 1 day
-! Version: 2018122102
+! Version: 2018122301
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018122102 aktualizacja: ptk, 21 grudnia 2018, 21:45:00
+! v.2018122301 aktualizacja: nie, 23 grudnia 2018, 09:55:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -58,6 +58,7 @@ gomoney.pl/article
 \//$image,domain=strzelecopolski.pl|kabaret.tworzymyhistorie.pl|pch24.pl|skijumping.pl|rawicz24.pl|wiadomoscihandlowe.pl|wagaciezka.com
 \/images/banner\/$image,domain=2x45.info|polskiinternet.com
 /\/(images|img|data|uploads)\/banners\//$image,object,domain=tsk24.pl|wschodnik.pl|nowawrzesnia.pl|glucholazyonline.com.pl|informacjelokalne.pl|muzyczneradio.com.pl|tvrep.pl|chwaszczyno.pl|msfera.pl|tygodnik-krapkowicki.info|darkplanet.pl|wroclawskiejedzenie.pl|magazyngitarzysta.pl|przegladkoninski.pl|radiopoznan.fm|fishing-test.pl|gostynin24.pl|wkonin.pl
+/images/reklama/$image,domain=dziennikpolicki.pl
 /overlay*.png$domain=mapa.targeo.pl,image
 .pl/*/adds/
 .pl/*/ads/$domain=~tubagliwic.pl
@@ -525,7 +526,8 @@ businesswomanlife.pl##[class*="sidebar-cat-box-"]
 businesswomanlife.pl##[id^="slidero-box-"]
 businesswomanlife.pl##[id^="widget_sp_image"]
 bwotr.pl##.widget_media_image.widget
-bytomski.pl##IMG[src^="http://www.bytomski.pl/images/banners/"], .custom > span
+bytomski.pl##IMG[src^="http://www.bytomski.pl/images/banners/"]
+bytomski.pl,dziennikpolicki.pl##.custom > span
 bzdura.pl##.text.item.block:nth-of-type(1)
 bzdura.pl,gospodarkapodkarpacka.pl,propertynews.pl,24jgora.pl,24wroclaw.pl##[class*="adv"]
 cadblog.pl##TD[bgcolor="#FFFFFF"]
@@ -3042,6 +3044,7 @@ zywiecinfo.pl##.promoted
 ~www.cba.pl,cba.pl##img[src="https://www.cba.pl/cba1.jpg"]
 !
 !10#----------------------Specific advert blocking filters-----------------------!
+/grafika/banerki_reklamowe/$image,domain=wbijam.pl
 /videoPlayer.js$script,domain=polsatnews.pl|polsatsport.pl
 /uploads/*tapeta*.jpg$image,domain=ciekawostkihistoryczne.pl|katowice24.info|miastodzieci.pl
 /vardata/obrazki/$image,domain=pionki24.pl|zwolen24.pl
