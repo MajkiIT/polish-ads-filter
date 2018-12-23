@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 23 December 2018
 ! Expires: 1 day
-! Version: 2018122302
+! Version: 2018122303
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018122302 aktualizacja: nie, 23 grudnia 2018, 09:55:00
+! v.2018122303 aktualizacja: nie, 23 grudnia 2018, 18:30:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -48,7 +48,7 @@ _baner/980x200
 _banery/980x200
 /banery/*980x90
 ://*.*/banery_foto/$image,domain=ki24.info|portalplock.pl|faktypilskie.pl|ddtorun.pl|ddwloclawek.pl|koronowo.net.pl|zyciesiedleckie.pl
-/banery/$image,subdocument,object,domain=oknoserwis.pl|sps24.pl|www.chojnice.com|usa.info.pl|jarocinska.pl|www.obud.pl|skijumping.pl|gintama.wbijam.pl|haczyk.pl|instalacjebudowlane.pl|jagiellonia.net|kdega.e-kei.pl|naszalomza.pl|pionki24.pl|mragowo24.info|lokalna24.pl|ebarlinek.pl|kuriergarwolinski.pl|bielsko.biala.pl|www.budownictwo.org|www.serwer.brodnica.net|www.sps24.pl
+/banery/$image,subdocument,object,domain=oknoserwis.pl|sps24.pl|www.chojnice.com|usa.info.pl|jarocinska.pl|www.obud.pl|skijumping.pl|gintama.wbijam.pl|haczyk.pl|instalacjebudowlane.pl|jagiellonia.net|kdega.e-kei.pl|naszalomza.pl|pionki24.pl|mragowo24.info|lokalna24.pl|ebarlinek.pl|kuriergarwolinski.pl|bielsko.biala.pl|www.budownictwo.org|www.serwer.brodnica.net|www.sps24.pl|staleo.pl
 /bannery/*$image,subdocument,domain=em.kielce.pl|czasdzieci.pl|kolporter.com.pl|sklep-tvsat.hcore.pl|www.pokertexas.pl|www.walbrzych24.com|zlotoryja.info|skijumping.pl|icomp.pl|forum.cs-classic.pl|nocnygdansk.pl|wagaciezka.com|obud.pl|beskid-niski.pl|ezakopane.pl
 /content-generator/published/frame/generate?*frameId=*&placementId=*&guid=
 /data/ap3bo6/*.gif$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
@@ -68,6 +68,7 @@ pl##a[href*="/adserwer/"]
 .pl/img/ad/
 pl/*/rodzinnawycieczka/$image,domain=wp.pl
 .pl/wp-content/banners/
+/reklama/$image,domain=rybomania.pl
 /rotator.php$subdocument,domain=minecraftpolska.net|q4.pl
 .*sales*.pl/offers/$image
 /screening/*$domain=telepolis.pl,image
@@ -196,11 +197,11 @@ vshare.io###sendif
 ~istotne.pl,pl###ads
 ~joemonster.org##[id^="commentAd"]
 ##.jqmOverlay
-~kakto.pl,~agatameble.pl,~ccc.eu##a[href*="/ad/click/"]
+~kakto.pl,~agatameble.pl,~ccc.eu,~redcoon.pl##a[href*="/ad/click/"]
 ###like-us-adblock-modal
 ~m3esolutions.com,~sloworegionu.pl,~4active.eu,~valida.pl,~foodprint.pl,~roztoczanskipn.pl##.banneritem
 ###main_advertisement
-mclista.pl,bialystokonline.pl,ewgt.com.pl,tugazeta.pl,dbpolska.net,mojmac.pl,piszanin.pl,tubasiedlec.pl,pracawkatowicach.com.pl,pracawkrakowie.com.pl##[id*="reklama"]
+mclista.pl,bialystokonline.pl,ewgt.com.pl,tugazeta.pl,dbpolska.net,mojmac.pl,piszanin.pl,tubasiedlec.pl,pracawkatowicach.com.pl,pracawkrakowie.com.pl,sevillafc.pl##[id*="reklama"]
 ###middleboxrectangle
 ~milionczesci.pl,~dizibox.com,~2dehands.be,~www.pudelek.pl##[id^="adv-"]:not(#adv-settings)
 ##.mod.mod_cpCommerce.small
@@ -390,6 +391,7 @@ autocentrum.pl###new_banner + div[style="max-width: 750px; margin: 0 auto; paddi
 autocentrum.pl##a[href^="http://blbl.cr/"]
 autoklub.pl###toppage_shadow, [href^="http://www.autoklub.pl/redirect.php"]
 autoline.com.pl##.atla-place
+automobilista.com.pl###aq-block-4577-2, div.textwidget:nth-of-type(2), .ad300_inn
 auto-motor-i-sport.pl##[id^="amis-adv-slide-"] > .side-right > p
 auto-motor-i-sport.pl##[id^="amis-adv-slide-"] > p
 auto-motor-i-sport.pl,menshealth.pl,womenshealth.pl,runners-world.pl,motocykl-online.pl##SPAN[style="display:block;font-size: 14px;font-weight: 700;color: #999;text-align: left;max-width: 1130px;margin:auto;padding:0 0 10px"]
@@ -549,6 +551,7 @@ centrumdruku3d.pl###slide-bottom-popup, .sidebar.col-4 > ul > div, .cd3d-video, 
 centrumdruku3d.pl##section:nth-of-type(3) > div
 centrumxp.pl###WelcomeBox
 centrumxp.pl###sldr
+centrumwitalnosci.pl##div:nth-of-type(8), div:nth-of-type(9), .ot-widget-banner, div.ot-panel-block:nth-of-type(3)
 cgm.pl##.headFlash
 chamskie.pl##[class^="ads"]
 chamskie.pl##ad-bg-transparent
@@ -743,7 +746,7 @@ e-grajewo.pl##[id^="rotator_"]
 e-hip.pl##[id^="mce-"]
 e-hotelarz.pl##DIV[style*="background-image:url('http"]
 e-kg.pl###jm-banner
-e-kg.pl##.bannergroup
+e-kg.pl,wgmedia.eu##.bannergroup
 e-kg.pl##.rstboxes
 e-kg.pl##DIV[style="text-align: center;"]
 e-kg.pl##[class^="bg_image"]
@@ -907,6 +910,7 @@ filmpolski.pl##.obrazek_bez_ramki
 films4free.pl##.M2U3OGQ4ZGY1
 filmweb.pl###iframe, .clickArea, .screening-content, .topBillboard, .BILLBOARD, [id^="sad_"], .clickableAdBG, #screening, [id$="_ifame"], [id^="sas_"], div[class] > [href*="/click"], [src$=".html"], .advBtn, .ws__wrapper
 filmweb.pl##[id*="iframe"]
+firmy77.pl##div.rBoxLeft
 fishing-mart.com.pl##td:nth-of-type(6) > .norm11:nth-of-type(4)
 flarrow.pl##[class^="td_block_wrap td_block_text_with_title td_uid_"]
 flarrow.pl#?#.td_block_wrap:-abp-has(.td-pulldown-size:-abp-contains(Reklama))
@@ -1656,10 +1660,7 @@ mojaleczyca.pl##.bonus_tresc_center
 mojaleczyca.pl##img[src^="zasoby/banery/"]
 mojaniderlandia.pl##.bannerTop
 mojaniderlandia.pl##.mnBox
-mojanorwegia.pl###modMnNewTopBar
-mojanorwegia.pl##.bottom
-mojanorwegia.pl##.newLayerInner
-mojanorwegia.pl##.top_banner
+mojanorwegia.pl##.top_banner, #modMnNewTopBarSlider, .newLayerInner, .bottom
 mojaolesnica.pl##.mainright > div:nth-of-type(3)
 mojaolesnica.pl##.mainright > div:nth-of-type(5)
 mojaolesnica.pl##.mainright > div:nth-of-type(7)
@@ -2586,7 +2587,7 @@ treningbiegacza.pl###under-menu-adds-wrapper
 tripolo.pl###footer-sidebar
 trodatreleases.com##.bannertop
 trodatreleases.com##.bgrey.block
-trojmiasto.pl###watermark[href^="http://www.trojmiasto.pl/rd/"], .afeebebbbf.bx, INS[id^="revive-0-"], [class*="-overflow"], ins > div[class*="-wrapper"], ins > a > img[src*="__qs"]
+trojmiasto.pl###watermark[href^="http://www.trojmiasto.pl/rd/"], INS[id^="revive-0-"], [class*="-overflow"], ins > div[class*="-wrapper"], ins > a > img[src*="__qs"], [class$="-maxia--glowna"]
 troman.pl##DIV[style="max-width: 970px; padding: 5px; background: #000; margin: 20px auto"]
 trybawaryjny.pl###bottom-bar
 trybawaryjny.pl##.description.post-content > p:nth-of-type(3)
@@ -2700,6 +2701,7 @@ videowood.tv###tbl1
 vidfile.net,epiotrkow.pl,infobowling.pl##.rek
 vinowisko.pl##[href^="http://adsearch.adkontekst.pl/_/ctr/"]
 visvitalis.com.pl##.widget1
+visitnorway.pl###dtnContainer
 vitalia.pl###pasekDdd
 vodbox.pl##.ad_wide_banner
 vorek.pl###dle-content > center
@@ -3179,6 +3181,7 @@ zywiecinfo.pl##.promoted
 ||gorzow24.pl/img/ims/$image
 ||gorzowianin.com/data/rotator/
 ||gowork.pl/images/top_img/$image,domain=gowork.pl
+||gra.pl/screening
 ||gram.pl/ad/$image
 ||gram.pl/reklamy_assets/intel_iris/inteliris_$image,domain=gram.pl
 ||gramwzielone.pl/uploads/ad/$image
@@ -3418,6 +3421,7 @@ zywiecinfo.pl##.promoted
 ||webstat.pl/js.php
 ||webstat.pl/rkm/$image
 ||weszlo.com/?bsa_pro_id$popup
+||www.wgmedia.eu/images/klienci/$image
 ||widgets.tracdelight.com/iframe/$subdocument
 ||widget.aftermarket.pl^$subdocument
 ||widgets.moneteasy.pl/widget/$script,domain=~noizz.pl
@@ -3489,6 +3493,7 @@ zywiecinfo.pl##.promoted
 ||wychowawcy.pl/hosting_plikow/$image
 ||xlkredyt.pl^$third-party
 ||xml.enovatis.pl/mrdsl/content.php$subdocument
+||zamioculcas.org/$image,domain=swiatkwiatow.pl
 ||zap-hosting.com/interface/media/banner/$image
 ||zaufanatrzeciastrona.pl/aruba.gif
 ||zaufanatrzeciastrona.pl/wp-content/uploads/2017/03/a.jpg
@@ -4054,7 +4059,7 @@ hiro.pl##.vc_align_left.wpb_content_element.wpb_single_image
 historykon.pl###text-3
 iknurow.pl###text-91
 jazdaprawna.pl##.widget_sp_image.widget.td_block_template_1
-jedzbawsie.pl,ekspert.ceneo.pl,slupca.pl,fsgk.pl,inforiders.pl,gadzet.telchina.pl,lifemanagerka.pl###text-7
+jedzbawsie.pl,ekspert.ceneo.pl,slupca.pl,fsgk.pl,inforiders.pl,gadzet.telchina.pl,lifemanagerka.pl,eduzabawy.com###text-7
 kamienskie.info##[class^="ads-index"]
 kamienskie.info##[id^="text-"]
 konflikty.pl###vw_widget_custom_text-2
