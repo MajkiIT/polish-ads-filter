@@ -1,11 +1,11 @@
-! Checksum: aVI/fD7iimujPFjnNIJmeg
+! Checksum: hS30gnlnUgfVx8lxi6jkkA
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 20181217 RTM
-! Last modified: Mon, 17 Dec 2018
+! Version: 20181223 RTM
+! Last modified: Sun, 23 Dec 2018
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2018 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.20181217 RTM aktualizacja: pon, 17 gru 2018
+! v.20181223 RTM aktualizacja: nie, 23 gru 2018
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -50,6 +50,7 @@ biuletyn.net##body > table:style(margin-top: 0 !important;)
 biuletyn.net##.urzad_mini > div:style(top: 225px !important;)
 bloombergbusinessweek.pl##body:style(margin-top: 0 !important;)
 bs-zwolen.com.pl###fancybox-container-1:has(img[src="baner,32,informacja-rodo.jpg"])
+cbdzoe.pl##.swal2-container
 ceres.pl###flipFlop, .modal-backdrop
 chojnow.pl##+js(abort-current-inline-script.js, confirm, rodoConfirm)
 cupsell.pl##.tingle-enabled:style(position: static !important; overflow: auto !important;)
@@ -87,12 +88,16 @@ gazetabilgoraj.pl,koleje-wielkopolskie.com.pl,pedzledomakijazu.com,fdds.pl,przeg
 generator.blulink.pl##.body--privatepolicy:style(padding-bottom: 0 !important;)
 gitara-sklep.pl##body:style(padding-top: 0 !important;)
 haloursynow.pl,warsztat.pl,hdtv-sat.eu##.modal-open:style(padding-right: 0 !important;)
-hbogo.pl##body:style(overflow: auto !important; padding-right: 0 !important;)
 hbogo.pl##.banner-overlay
+hbogo.pl,cbdzoe.pl##body:style(overflow: auto !important; padding-right: 0 !important;)
 hm.com##.modaloverlay:has(#gdpr-modal)
 hm.com##.modal-open, .modal-open body:style(overflow-y: auto !important; position: static !important;)
+ikea.com###cookieMsgBlock
+ikea.com##.has-cookie .main-header-wrap:style(top: 0 !important;)
 indbuildcraft.pl##.modal-overlay, #modal_cookies
 indbuildcraft.pl,kaliszak.pl,mazury.travel,panattonieurope.com,pkw.gov.pl,porcelana.pl,praca.antyweb.pl,prawdaobiektywna.pl,pum.edu.pl,skyscrapercity.com,wagrowczanie.pl,zeropln.antyweb.pl##body:style(overflow: auto !important;)
+innogy.pl##html.cookie-wall-active body:style(overflow: auto !important;)
+innogy.pl###cookie-wall-container
 ipla.tv##.no-scroll:style(overflow: auto !important;)
 ipla.tv##.rodo-rules-modal
 kaliszak.pl##.rodo, .rodo_layer
@@ -128,7 +133,7 @@ nauka.rocks##.ct-ultimate-gdpr-cookie-topPanel-padding:style(padding-top: 0 !imp
 neon24.pl##+js(abort-on-property-read.js, Service.cookieMonster)
 obpon.pl##.menu-flashmessages:style(top: 0 !important;)
 obywatel.gov.pl###modal-rodo, .modal-backdrop
-obywatel.gov.pl,m.24jgora.pl,e-sochaczew.pl,multimediago.pl,dane.gov.pl,24wroclaw.pl,zwolen.pl,wrzesnia.info.pl,ceres.pl,komugroup.eu,gry.lotto.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
+obywatel.gov.pl,m.24jgora.pl,e-sochaczew.pl,multimediago.pl,dane.gov.pl,24wroclaw.pl,zwolen.pl,wrzesnia.info.pl,ceres.pl,komugroup.eu,gry.lotto.pl,printoteka.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 oko.press##.is-reveal-open:style(overflow: auto !important;)
 oko.press##.reveal-overlay
 opiniodajnia.pl##body:style(overflow: visible !important;)
@@ -149,6 +154,7 @@ portalspozywczy.pl,sadyogrody.pl,rynekzdrowia.pl,farmer.pl,dlahandlu.pl,property
 powiat-sepolno.pl,mzk-torun.pl,trendyradio.pl,bs-zwolen.com.pl##.compensate-for-scrollbar:style(overflow: auto !important; margin-right: 0 !important;)
 powiat-zyrardowski.pl##.fancybox-overlay
 prawdaobiektywna.pl##.qc-cmp-ui-container
+printoteka.pl###popupModal10, .modal-backdrop
 przydomu.pl###popup_25
 przydomu.pl##.container:style(filter: none !important;)
 puma.com###modal-geoip-cookies, .modal-backdrop
@@ -240,7 +246,7 @@ farmacja.pl##div.rodo-modal
 farmacja.pl##+js(abort-current-inline-script.js, jQuery, .rodo-modal)
 fnglob.pl###modal, .modal-backdrop
 forums.openpli.org##+js(abort-current-inline-script.js, euReadCookie)
-fryzomania.pl###myWorningNewsletterPopUp, .modal-backdrop
+fryzomania.pl,pro-sprzet.pl,happydental.pl###myWorning, .modal-backdrop
 gdansk.pl,gokf.gda.pl,stadionenerga.pl,rowerowygdansk.pl##.rodo, .modal-backdrop
 homedesign.pl##.popmake-overlay[data-popmake*="rodo"]
 infoplanet.pl,craftserve.pl,motobanda.pl,autakrajowe.com.pl###rodo, .modal-backdrop
@@ -266,7 +272,6 @@ polski-tenis.pl###rodo
 porcelana.com.pl##+js(abort-on-property-read.js, alert, cookies)
 poszalu.pl###gdpr-modal, .modal-backdrop
 powiatslubicki.pl##+js(abort-current-inline-script.js, jQuery, #myModal)
-pro-sprzet.pl,happydental.pl###myWorning, .modal-backdrop
 pruszczgdanski.pl###ifancybox-overlay115
 pruszczgdanski.pl##.ifancybox-margin.ifancybox-lock:style(overflow: auto !important; margin-right: 0 !important;)
 publikator.com.pl##.layer
@@ -340,7 +345,7 @@ farmacja.pl##^div.rodo-modal
 farmacja.pl##^script:has-text(rodo)
 ferguson-digital.eu##^#cookie-notice
 fnglob.pl##^#modal
-fryzomania.pl##^#myWorningNewsletterPopUp
+fryzomania.pl,pro-sprzet.pl,happydental.pl##^#myWorning
 homedesign.pl##^.popmake-overlay[data-popmake*="rodo"]
 ideafairplay.pl##^#modal-privacy
 infostrow.pl,roztoczanskipn.pl,wroclaw.dlawas.info,nowemiasto.dlawas.info,walbrzych.dlawas.info##^#rodo-modal
@@ -360,7 +365,6 @@ pl.dow.com##^.cookie-notify
 porcelana.com.pl##^script:has-text(plików cookies)
 poszalu.pl##^#gdpr-modal
 powiatslubicki.pl##^#myModal
-pro-sprzet.pl,happydental.pl##^#myWorning
 pruszczgdanski.pl##^#auto_popup
 publikator.com.pl##^script:has-text(polityka|zaufani)
 pulawy.eu##^#modalRodo
@@ -416,7 +420,7 @@ farmacja.pl##[style^="filter: blur"]:style(filter: none !important;)
 farmacja.pl,radiobielsko.pl,webprojekt.biz$$script[tag-content="rodo"]
 ferguson-digital.eu$$#cookie-notice
 fnglob.pl$$#modal
-fryzomania.pl$$#myWorningNewsletterPopUp
+fryzomania.pl,pro-sprzet.pl,happydental.pl$$#myWorning
 galopuje.pl###RODOCOOKIE, .modal-backdrop
 ideafairplay.pl$$#modal-privacy
 infostrow.pl,roztoczanskipn.pl,wroclaw.dlawas.info,nowemiasto.dlawas.info,walbrzych.dlawas.info$$#rodo-modal
@@ -438,7 +442,6 @@ poszalu.pl$$#gdpr-modal
 powiatslubicki.pl###myModal, .modal-backdrop
 powiatslubicki.pl##.modal-open:style(overflow: auto !important;)
 powiatslubicki.pl$$#myModal
-pro-sprzet.pl,happydental.pl$$#myWorning
 pruszczgdanski.pl$$#auto_popup
 publikator.com.pl$$script[tag-content="polityka|zaufani"]
 pulawy.eu$$#modalRodo
