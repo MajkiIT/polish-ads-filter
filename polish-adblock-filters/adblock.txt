@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 25 December 2018
 ! Expires: 1 day
-! Version: 2018122504
+! Version: 2018122505
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2018122504 aktualizacja: wt, 25 grudnia 2018, 23:40:00
+! v.2018122505 aktualizacja: wt, 25 grudnia 2018, 23:45:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -3821,7 +3821,6 @@ pl##a[href^="//69oxt4q05.com/"]
 ##[href^="//ro88qcuy.com/"]
 !
 !27#--------------------------Rules for pages with random adv scripts block------------!
-/apu.php?zoneid=$script
 ||69oxt4q05.com^
 ||b54m4qbmt0b9.com^
 ||electro-torrent.pl/over*.js$script
@@ -3852,6 +3851,7 @@ pl##a[href^="//69oxt4q05.com/"]
 /^(http|https):\/\/(?!youtube)[a-zA-Z0-9.]{5,20}\.com\/watch\?key=/$popup
 /^http:\/\/p[0-9]{6,10}\.[a-z]{5,10}\.com\/itab\/[a-z?=A-Z_0-9&]{10,}Zippyshare\.com[a-z0-9A-Z%.'-]{5,}/$popup
 /wp-content/plugins/wp-words-links-change/*$script,domain=businesstraveller.pl
+/\/[a-z]{3,5}\.php\?zoneid=[0-9]{3,7}/$script
 !
 !29#--------------------------Rules on tv streams element hiding rules------------!
 ##a[href^="http://affiliates.bet-at-home.com/processing/clickthrgh.asp"]
