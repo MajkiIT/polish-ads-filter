@@ -32,7 +32,7 @@ KAD - Przekręty | przekręty sms, oszustwa | [Subskrybuj][KAD - Przekręty Subs
 
 `**` Jeżeli korzystasz z `Polskich Filtrów Elementów Irytujących`, to nie dodawaj listy `RODO-Ciasteczkowe`. Ponieważ filtry RODO-Ciasteczkowe znajdują się już w filtrach Elementów Irytujących.
 
-`***` Rozszerzenie do listy „Polskie Filtry RODO-Ciasteczkowe - Uzupełnienie do uBlocka i AdGuarda" zajmuje się tym, czego nie da się załatwić regułą w uBlocku Origin, tzn. po prostu klika w przyciski i wyraża za ciebie zgodę na politykę ciasteczkową/RODO.
+`***` Rozszerzenie do listy „Polskie Filtry RODO-Ciasteczkowe - Uzupełnienie do uBlocka i AdGuarda" zajmuje się tym, czego nie da się załatwić regułą w uBlocku Origin, tzn. wyraża za ciebie zgodę na politykę ciasteczkową/RODO.
 
 [*Sprawdź naszą wiki aby dowiedzieć się więcej.*](https://github.com/MajkiIT/polish-ads-filter/wiki)
 
