@@ -1,20 +1,20 @@
-! Checksum: hS30gnlnUgfVx8lxi6jkkA
+! Checksum: CORCt4zcZOAD1/A1f2IX6g
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 20181223 RTM
-! Last modified: Sun, 23 Dec 2018
+! Version: 2019.1.8.1
+! Last modified: Tue, 08 Jan 2019, 12:02 UTC+01
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
 !   Discord => https://discord.me/polskiefiltry
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
-! Copyright © 2018 Certyficate IT & Polish Filters Team
+! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.20181223 RTM aktualizacja: nie, 23 gru 2018
+! v.2019.1.8.1 aktualizacja: wto, 08 sty 2019, 12:02 UTC+01
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -207,11 +207,6 @@ zozsuchabeskidzka.pl###mpc-modal-4-1
 zsgarwolin.pl##.mfp-content:has(#cadre_alert_cookies)
 zsgarwolin.pl##.mfp-ready.mfp-bg
 zwolen.pl###g_toplayer, .modal-backdrop
-!drogeriapigment.pl,bip.badkowo.ug.gov.pl,bip.powiat.poznan.pl,teatrpolski.waw.pl,szpitalnawrzesinie.pl,powiat-zyrardowski.pl,tureckisklep.pl,umig.olkusz.pl,sklepdlalekarza.com##html > body:style(overflow: auto !important;)
-!gry.lotto.pl###baseModal, .modal-backdrop
-!gry.lotto.pl##.modal-open .portal-container:style(filter: none !important;)
-!lipinscy.pl###popRodoInfoContent, #popRodoInfoFade
-!lipinscy.pl##.noscroll:style(overflow: auto !important;)
 !play.google.com###gba:style(height: 60px !important;)
 !
 !
@@ -308,9 +303,6 @@ wyceniono.pl##.cinfo > *:style(filter: none !important;)
 wyceniono.pl##.cinfo:style(overflow: auto !important;)
 zdajmyrazem.pl###gdprModal, .modal-backdrop
 ztm.poznan.pl###PopUP, .modal-backdrop
-!djoles.pl###modal-rodo, .modal-backdrop
-!djoles.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
-!eurologistics.pl##html.pum-open.pum-open-overlay.pum-open-scrollable body>[aria-hidden]:style(padding-right: 0 !important;)
 !+ PLATFORM(ext_ublock)
 akamai.com##.notification--warning, .modal--overlay
 !+ PLATFORM(ext_ublock)
@@ -387,7 +379,6 @@ wtk.pl##^#GDPR-modal
 wyceniono.pl##^script:has-text(.cookie-ok)
 zdajmyrazem.pl##^#gdprModal
 ztm.poznan.pl##^#PopUP
-!djoles.pl##^#modal-rodo
 !#endif
 !#if !cap_user_stylesheet
 fotoblogia.pl,gadzetomania.pl,komorkomania.pl,autokult.pl##.cookie-disclaimer:style(visibility: hidden !important;)
@@ -465,7 +456,6 @@ wtk.pl$$#GDPR-modal
 wyceniono.pl$$script[tag-content=".cookie-ok"]
 zdajmyrazem.pl$$#gdprModal
 ztm.poznan.pl$$#PopUP
-!djoles.pl$$#modal-rodo
 !eobuwie.com.pl$$script[tag-content="technologii cookies"]
 !homedesign.pl$$.popmake-overlay[data-popmake*="rodo"] #Działa dopiero po odświeżeniu?
 !pasjagolebie.pl$$.popmake-overlay[data-popmake*="cookies"]
