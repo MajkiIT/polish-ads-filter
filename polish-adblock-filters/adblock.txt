@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 9 January 2019
 ! Expires: 1 day
-! Version: 2019010901
+! Version: 2019010902
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019010901 aktualizacja: śr, 9 stycznia 2019, 14:21:00
+! v.2019010902 aktualizacja: śr, 9 stycznia 2019, 18:35:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -39,6 +39,7 @@
 /adv/show-windows.php$script,domain=alltube.tv|alltube.pl
 /affiliates/$image,domain=www.pasazer.com
 ##a[href*="techmaniak.pl/www/gact/ckk.php"]
+/baner/$image,domain=nowiny.rybnik.pl|macronext.pl
 _baner/980x200
 /_baner/*$domain=www.ipon.pl|tygodnikzamojski.pl
 /banery/*110x90
@@ -334,6 +335,7 @@ alltube.tv,alltube.pl###super-player
 alltube.tv,alltube.pl##[id^="undermenu"]
 alltube.pl##.col-sm-5 > .text-center
 altair.com.pl##.colSideLeft.colSide
+alltiedup.pl###sidebar
 ampolska.net###dwa_panel > center
 ampolska.net###trzy_panel
 ampolska.net##.conntent > center
@@ -1876,6 +1878,7 @@ oboom.com###bgfadewnd1
 oboom.com###wcontent_wnd1
 oboom.com###wnd1
 obywatelenieba.pl,highlab.pl###custom_html-7
+o-c.pl##.c.grid_50p
 ochrona24.info###custom_html-37, #custom_html-38, #custom_html-39
 oczamiostrego.pl##[id^="Image"]
 ogloszenia.niedziela.nl,phrasal-verbs.pl##.banner_container 
@@ -2722,6 +2725,7 @@ visvitalis.com.pl##.widget1
 visitnorway.pl###dtnContainer
 vitalia.pl###pasekDdd
 vodbox.pl##.ad_wide_banner
+voltahorse.pl##[id^="mbs"]
 vorek.pl###dle-content > center
 vorek.pl##.news > center:nth-of-type(1)
 vorek.pl##DIV[style="height: 35px;width: 726px;position:relative;text-align:center;box-shadow:0 0 2px grey;border:2px solid #0D1E5A;background: #EDF1FF;margin:0px auto 0px;"]
@@ -2965,6 +2969,7 @@ wyborcza.pl##.day-images
 wyborcza.pl##.right-content-holder > [class^="mod-generic"][class*="la-http\:\/\/wyborcza\.pl\/"] + #rectangle-splint
 wyborcza.pl##[class^="mod-generic"][class*="la-http\:\/\/wyborcza\.pl\/"]
 wylecz.to##.display_detect.ifr, .cre, .daf8
+wylecz.to##.\39 0e0.col-xs-12
 wykop.pl,demotywatory.pl,joemonster.org,mistrzowie.org##[id^="bmone2n-"]
 wynagrodzenia.pl###slider_kontener
 wyspagier.pl##.adv, .abm_plug
@@ -3297,7 +3302,6 @@ zywiecinfo.pl##.promoted
 ||news.targeo.pl/oarm.php$xmlhttprequest,domain=mapa.targeo.pl
 ||niebiescy.pl/bild/$image
 ||nokaut.pl/wigetyflash/$object
-||nowiny.rybnik.pl/baner/$image
 ||nowywyszkowiak.pl/materialy/system_banerowy$image
 ||nqp0852y7r.com/e6/52/26/e652267829a86c98499016a18555c207.js$script,domain=internetowa.ws
 ||nuteczki.eu/templates/KlubowaMuza/images/pobierz.png$image
