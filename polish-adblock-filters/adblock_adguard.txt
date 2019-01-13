@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 18 December 2018
+! Last modified: 13 January 2029
 ! Expires: 2 days
-! Version: 2018121801
+! Version: 2019011301
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,76 +16,76 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018121801 aktualizacja: wt, 18 grudnia 2018, 21:36:00
+! v.2019011301 aktualizacja: mie, 13 stycznia 2019, 11:51:00
 !
 !
-! http://alltube.tv/
+! alltube.tv
 ! Ominięcie czekania
 alltube.tv###please-wait-container
 alltube.tv#$##iframe-container { display: block !important; }
 !
 !
-! http://www.efilmy.tv/
+! www.efilmy.tv
 ! Ominięcie przycisku "Close Ad and Watch as Free User"
 efilmy.tv###step1
 efilmy.tv###hideOnClick
 efilmy.tv#$##playerVidzer { display: block !important; }
 !
-! http://gahe.pl/
+! gahe.pl
 ! Ominięcie czekania
 gahe.pl###gameloader
 gahe.pl#$##flashgame { visibility: visible; display: block; }
 !
-! http://www.jeja.pl/
+! www.jeja.pl
 ! Ominięcie czekania
 jeja.pl##.gameLoading
 jeja.pl###adLoading
 jeja.pl#$##swf { visibility: visible !important; position: static !important; left: 0px !important; }
 jeja.pl#$##game { visibility: visible !important; position: static !important; left: 0px !important; }
 !
-! http://www.national-geographic.pl/
+! www.national-geographic.pl
 ! Puste miejsce po reklamie
 @@||national-geographic.pl/bundles/burdacore/js/adv.js$script
 national-geographic.pl#$#.advertising-billboard { height: 0px !important; }
 !
-! http://www.vidzer.net/
+! www.vidzer.net
 ! Ominięcie przycisku "Close Ad and Watch as Free User"
 vidzer.net###step1
 vidzer.net###hideOnClick
 vidzer.net#$##playerVidzer { display: block !important; }
 !
-! http://zalukaj.com/
+! zalukaj.com
 ! Ominięcie jednosekundowej reklamy
 zalukaj.com###freePlayerWatch
 zalukaj.com#$##free_player { display: block !important; }
 !
-! http://www.friv12com.com/
+! www.friv12com.com
 ! Ominięcie czekania
 friv12com.com###ava-advert_container
 friv12com.com#$##ava-game_container { display: inherit !important; }
 !
-! http://gry-online.poszkole.pl/
+! gry-online.poszkole.pl
 ! Ominięcie czekania
 gry-online.poszkole.pl###mr-tomato
 gry-online.poszkole.pl#$##fgame { width: 850px !important; height: 600px !important; }
 !
-! http://stooq.pl/
+! stooq.pl
 ! Ukrycie pozostałości po reklamach
 stooq.pl,stooq.com##td[align="center"] > [id]:contains(REKLAMA)
 stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"]:not([width])[-ext-has='[id="ads_goog_1"]']
 !
-! http://www.cda.pl/
+! www.cda.pl
 ! Ominięcie czekania przy ładowaniu gier
 cda.pl###aa_ad
 cda.pl#$##obiekt { display: block !important; }
 cda.pl#$##kolumnaSrodkowa { height: auto !important; }
 !
-! http://www.komputerswiat.pl
+! www.komputerswiat.pl
 ! Adblock
 komputerswiat.pl#@#.adsbygoogle
 komputerswiat.pl#$#.adsbygoogle { height: 1px !important; }
 !
-! http://www.bankier.pl/
+! www.bankier.pl
 bankier.pl##.boxContent > ul > li[class^="item-"][-ext-has=".premium-link"]
 !
 ! senda.pl
@@ -158,9 +158,13 @@ milionkobiet.pl##.gallery-embed-list-images:style(height: auto !important;)
 ! lowcygier.pl
 lowcygier.pl##body:style(background-image: none !important;)
 !
+! money.pl
+money.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
+!
 ! style()
 booklips.pl##.js:style(background-image: none !important;)
 cartests.net###td-outer-wrap > .td-header-wrap:style(margin-bottom: 0px!important;)
+chillizet.pl###playerControls .playIcon:style(opacity: 1 !important;)
 chojnow.pl##div#top:style(height: 37px!important;)
 ciekawostkihistoryczne.pl##.page:style(background: #dbdbdb !important;)
 eku24.net##.paralax-image:style(height: 100px !important;)
@@ -172,6 +176,7 @@ onet.pl##.miniSlot:style(min-height: 0rem!important;margin-bottom: 0rem!importan
 pilkanozna.pl##.index_bg_top:style(top: auto!important;)
 poczta.o2.pl,poczta.wp.pl#$#body > #page { display: block!important; }
 podkarpackahistoria.pl###main-nav1:style(height: 50px !important;)
+pogonsportnet.pl##.kode-header-absolute:style(top: 0 !important;)
 portal.abczdrowie.pl##.article__side__stickblock:style(position: absolute!important; left: -3000px!important;)
 portal.abczdrowie.pl##.article__textbox:style(position: absolute!important; left: -3000px!important;)
 radom24.pl###pojemnik-strony:style(margin-top: 0 !important;)
@@ -212,11 +217,3 @@ komputerswiat.pl###googleAdsCont:style(position: absolute !important; left: -300
 !#if (adguard_ext_firefox)
 polygamia.pl$$.screening
 !#endif
-!
-!
-! Eurozet
-chillizet.pl###playerControls .playIcon:style(opacity: 1 !important;)
-!
-!
-! pogonsportnet.pl
-pogonsportnet.pl##.kode-header-absolute:style(top: 0 !important;)
