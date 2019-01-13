@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 27 December 2018
+! Last modified: 13 January 2019
 ! Expires: 2 days
-! Version: 2018122703
+! Version: 2019011301
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2018 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2018122703 aktualizacja: czw, 27 grudnia 2018, 12:25:00
+! v.2019011301 aktualizacja: nie, 13 stycznia, 14:22:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -125,6 +125,7 @@ filmweb.pl##+js(abort-current-inline-script.js, Math.random, adbDetect)
 !
 ! Grupa WP
 ~poczta.wp.pl,wp.pl,~pilot.wp.pl##+js(abort-on-property-read.js, WP.inline)
+money.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 money.pl###app > div[data-reactroot] > div[class]:matches-css(background-image: /\/static\/bg\.png/)
 poczta.wp.pl##body > #page:style(display: block !important;)
 www.wp.pl##[data-st-area] > div > div > div[class]:matches-css(max-width: 300px):matches-css(max-height: 250px)
