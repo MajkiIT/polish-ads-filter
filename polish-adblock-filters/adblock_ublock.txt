@@ -125,7 +125,7 @@ filmweb.pl##+js(abort-current-inline-script.js, Math.random, adbDetect)
 !
 ! Grupa WP
 ~poczta.wp.pl,wp.pl,~pilot.wp.pl##+js(abort-on-property-read.js, WP.inline)
-money.pl##div[class]:has(>div[class]:first-child:has-text(REKLAMA):not(>*))
+money.pl##div[class]:has(>div[class]:first-child:has-text(REKLAMA):has(:not(>*)))
 money.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 money.pl###app > div[data-reactroot] > div[class]:matches-css(background-image: /\/static\/bg\.png/)
 poczta.wp.pl##body > #page:style(display: block !important;)
