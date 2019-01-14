@@ -1,19 +1,19 @@
-! Checksum: J9IEIqsoBKvajMj8ZIOUyg
+! Checksum: yWQSHyvh+Ijj0cYVyQwQVw
 ! Title: Polskie Filtry Społecznościowe - Uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish Social Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Social - Supplement
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, F4z, RikoDEV
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.1.6.0
-! Last modified: Sun, 06 Jan 2019, 13:19 UTC+01
+! Version: 2019.1.14.0
+! Last modified: Mon, 14 Jan 2019, 11:58 UTC+01
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
 !   Discord => https://discord.me/polskiefiltry
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
-! Copyright © 2018 Certyficate IT & Polish Filters Team
+! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.1.6.0 aktualizacja: nie, 06 sty 2019, 13:19 UTC+01
+! v.2019.1.14.0 aktualizacja: pon, 14 sty 2019, 11:58 UTC+01
 !
 !
 ! Popupy
@@ -54,10 +54,12 @@ lookcam.com$$#lookcam-fb-modal
 !
 !
 ! Widgety
+45minut.pl##+js(remove-attr.js, href, .carousel-inner a[href="https://www.facebook.com/45minutpl"])
 bankobranie.blogspot.com###sideSocial:style(height: auto !important;)
 blog.wirtualnemedia.pl###social_ikons_header_fixed:style(visibility: hidden !important;)
 dobreprogramy.pl###phContent_SocialControlBottom_socialBox > .social__group_like.social__group:if-not(#phContent_SocialControlBottom_btnBookmark)
 freshfile.pl##.facebook, .google:style(visibility: hidden !important;)
+kamaciuch.pl##+js(remove-attr.js, href, .homeslider-container [href="https://www.facebook.com/kamaciuch"])
 odkryjpomorze.pl##+js(nano-remove-elements-onready.js, div.span6 > map[name="Map"] > area:nth-of-type(1))
 plejada.pl##.detailContentWrapper .contentShareLeft .fb_share:style(background: transparent !important;)
 rynek-kolejowy.pl##.sledzNasContainer > .zawartoscBox:style(height: auto !important;)
