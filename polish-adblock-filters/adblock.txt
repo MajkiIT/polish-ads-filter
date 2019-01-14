@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 14 January 2019
 ! Expires: 1 day
-! Version: 2019011403
+! Version: 2019011404
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019011403 aktualizacja: pon, 14 stycznia 2019, 12:02:00
+! v.2019011404 aktualizacja: pon, 14 stycznia 2019, 17:45:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -4040,7 +4040,8 @@ www.money.pl##DIV[style$=" z-index: auto;"] > DIV[class]
 www.money.pl##P + DIV[style$="padding:10px 0"]
 www.money.pl##SCRIPT[src^="//money"] + DIV[class][style="text-align:center;"]
 www.money.pl#?#.article__content>div[class*=" "]:-abp-has(div>div>div:-abp-contains(REKLAMA))
-!www.money.pl#?##app > div[class][data-reactroot] > div[class]:nth-of-type(6):-abp-has(*:empty)
+money.pl###app > div[data-reactroot] > div[class]:matches-css(background-image: /v\.wpimg\.pl\/MjAxOTAxLhopJyI7Lx00WG4cJic1Vz4eIAwmN24aKkQxFig=/)
+money.pl##div[class^="sc-"]:has(> img[src="https://i.wpimg.pl/O/56x45/i.wp.pl/a/i/stg/pkf/bg.png"])
 !
 !36#--------------------------Easylist Bugs -----------!
 @@/app\.erpxt\.[a-z]{2,3}\/Scripts\/Code\//
