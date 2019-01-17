@@ -1,11 +1,11 @@
-! Checksum: mp28a6Ijw0sDMDNgtnAUXw
+! Checksum: hP4AFQXDLvuQFfBfypX1nw
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.1.16.0
-! Last modified: Wed, 16 Jan 2019, 12:15 UTC+01
+! Version: 2019.1.17.0
+! Last modified: Thu, 17 Jan 2019, 19:00 UTC+01
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.1.16.0 aktualizacja: śro, 16 sty 2019, 12:15 UTC+01
+! v.2019.1.17.0 aktualizacja: czw, 17 sty 2019, 19:00 UTC+01
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -35,7 +35,7 @@ analizy.pl##.nl_rodo, .ui-widget-overlay
 analizy.pl,mago.com,edupolis.pl##html:style(overflow: auto !important;)
 appsource.microsoft.com##.cookieBanner:style(visibility: hidden !important;)
 aquapark.wroc.pl###header:style(top: 0 !important;)
-archiwum.rp.pl,info.rp.pl##body:style(margin-top: 0 !important;)
+archiwum.rp.pl,info.rp.pl,konik-online.pl,bloombergbusinessweek.pl##body:style(margin-top: 0 !important;)
 atat.pl,elektryka-atat.pl,chemia-atat.pl,oswietlenie-atat.pl,zywnosc-atat.pl##.gdprModal
 autostrada-a2.pl##+js(remove-attr.js, class, body)
 auto-czesci-lipiec.pl###mAll
@@ -48,7 +48,6 @@ beko.pl##.cookies-margin:style(top: 0 !important;)
 bip.badkowo.ug.gov.pl,bip.powiat.poznan.pl,powiat-sepolno.pl###fancybox-container-1
 biuletyn.net##body > table:style(margin-top: 0 !important;)
 biuletyn.net##.urzad_mini > div:style(top: 225px !important;)
-bloombergbusinessweek.pl##body:style(margin-top: 0 !important;)
 bs-zwolen.com.pl###fancybox-container-1:has(img[src="baner,32,informacja-rodo.jpg"])
 cbdzoe.pl##.swal2-container
 ceres.pl###flipFlop, .modal-backdrop
@@ -386,9 +385,10 @@ fotoblogia.pl,gadzetomania.pl,komorkomania.pl,autokult.pl##.cookie-disclaimer:st
 purepc.pl##+js(nano-remove-elements-onready.js, .cookiesinfo)
 !#endif
 !#if cap_user_stylesheet
+homebook.pl##body > div[class]:last-of-type:has-text(RODO)
 sportowefakty.wp.pl##body > *:style(filter: none !important;)
 sportowefakty.wp.pl##html > body > footer ~ div[class]:has-text(RODO)
-sportowefakty.wp.pl##html:style(overflow-y: visible !important; height: auto !important;)
+sportowefakty.wp.pl,homebook.pl##html:style(overflow-y: visible !important; height: auto !important;)
 !#endif
 !#if !env_mobile
 azure.microsoft.com###main:style(padding-top: 88px !important;)
