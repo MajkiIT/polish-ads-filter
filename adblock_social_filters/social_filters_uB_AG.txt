@@ -1,11 +1,11 @@
-! Checksum: L7MrHUoOPRv35HhFiLNnww
+! Checksum: 5ba05oQERiFgswBAyUzeEQ
 ! Title: Polskie Filtry Społecznościowe - Uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish Social Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Social - Supplement
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, F4z, RikoDEV
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.1.16.1
-! Last modified: Wed, 16 Jan 2019, 12:15 UTC+01
+! Version: 2019.1.17.4
+! Last modified: Thu, 17 Jan 2019, 19:00 UTC+01
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,7 +13,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.1.16.1 aktualizacja: śro, 16 sty 2019, 12:15 UTC+01
+! v.2019.1.17.4 aktualizacja: czw, 17 sty 2019, 19:00 UTC+01
 !
 !
 ! Popupy
@@ -59,8 +59,6 @@ bankobranie.blogspot.com###sideSocial:style(height: auto !important;)
 blog.wirtualnemedia.pl###social_ikons_header_fixed:style(visibility: hidden !important;)
 dobreprogramy.pl###phContent_SocialControlBottom_socialBox > .social__group_like.social__group:if-not(#phContent_SocialControlBottom_btnBookmark)
 freshfile.pl##.facebook, .google:style(visibility: hidden !important;)
-kamaciuch.pl##+js(remove-attr.js, href, .homeslider-container [href="https://www.facebook.com/kamaciuch"])
-napiachu.pl##+js(remove-attr.js, href, .carousel-inner a[href="https://www.facebook.com/napiachu/"])
 odkryjpomorze.pl##+js(nano-remove-elements-onready.js, div.span6 > map[name="Map"] > area:nth-of-type(1))
 plejada.pl##.detailContentWrapper .contentShareLeft .fb_share:style(background: transparent !important;)
 rynek-kolejowy.pl##.sledzNasContainer > .zawartoscBox:style(height: auto !important;)
@@ -72,12 +70,23 @@ wp.pl##.article > [class]:has(> [class] > .fb-like)
 !#if !cap_user_stylesheet
 dobreprogramy.pl##.author-social-links, .content.float-right > .social, .rrssb-facebook, .rrssb-twitter, .social__group_share, .social__group_like > .social__item, #phContent_page_content .social__group_like:style(visibility: hidden !important;)
 dobreprogramy.pl##.social__group > .social__label
-gadzetomania.pl,fotoblogia.pl,komorkomania.pl,autokult.pl##.link-facebook, .link-youtube, .link-gplus, .link-instagram, .icon-mail:style(visibility: hidden !important;)
-gadzetomania.pl,fotoblogia.pl,komorkomania.pl,autokult.pl##a[href^="https://www.facebook.com/sharer.php"], [href^="http://twitter.com/intent/tweet"], [href^="http://pinterest.com/pin/create/link/"]:style(visibility: hidden !important;)
-purepc.pl##.article-options2
 f.kafeteria.pl###ipsLayout_mainArea > .ipsList_inline > li > .cShareLink
+gadzetomania.pl,fotoblogia.pl,komorkomania.pl,autokult.pl##a[href^="https://www.facebook.com/sharer.php"], [href^="http://twitter.com/intent/tweet"], [href^="http://pinterest.com/pin/create/link/"]:style(visibility: hidden !important;)
+gadzetomania.pl,fotoblogia.pl,komorkomania.pl,autokult.pl##.link-facebook, .link-youtube, .link-gplus, .link-instagram, .icon-mail:style(visibility: hidden !important;)
+purepc.pl##.article-options2
 wp.pl##.liketag, .wpsocials--buttons:style(visibility: hidden !important;)
 wp.pl,~www.wp.pl###app > div > table > tbody > tr:nth-child(1) > td > div > div > div > div > div > div > div > article > div > div > div > div[hidden]:style(position: absolute !important; left: -3000px !important;)
+!#endif
+!#if !cap_html_filtering
+homebeer.pl##+js(remove-attr.js, href|title, a.slider-img[href="https://pl-pl.facebook.com/homebeerpl/"])
+kamaciuch.pl##+js(remove-attr.js, href, .homeslider-container a[href="https://www.facebook.com/kamaciuch"])h"])
+napiachu.pl##+js(remove-attr.js, href, .carousel-inner a[href="https://www.facebook.com/napiachu/"])
+!#endif
+!#if cap_html_filtering
+homebeer.pl##^.slides > li[id]:has(a.slider-img[href="https://pl-pl.facebook.com/homebeerpl/"])
+kamaciuch.pl##^.homeslider-container:has(a[href="https://www.facebook.com/kamaciuch"])
+napiachu.pl##^.carousel-inner > .item:not(.active):has(a[href="https://www.facebook.com/napiachu/"])
+swietarodzina.pila.pl##^div.partial_staged_slideL.single_fading_slide:has-text(Skontaktuj się z nami korzystając z serwisów społecznościowych), div.slider_nav > a:nth-of-type(5)
 !#endif
 !
 !
