@@ -1,11 +1,11 @@
-! Checksum: 5ba05oQERiFgswBAyUzeEQ
+! Checksum: ZIFzhu9+jbfd69BRgtQ6bw
 ! Title: Polskie Filtry Społecznościowe - Uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish Social Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Social - Supplement
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, F4z, RikoDEV
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.1.17.4
-! Last modified: Thu, 17 Jan 2019, 19:00 UTC+01
+! Version: 2019.1.19.0
+! Last modified: Sat, 19 Jan 2019, 15:47 UTC+01
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,7 +13,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.1.17.4 aktualizacja: czw, 17 sty 2019, 19:00 UTC+01
+! v.2019.1.19.0 aktualizacja: sob, 19 sty 2019, 15:47 UTC+01
 !
 !
 ! Popupy
@@ -78,11 +78,13 @@ wp.pl##.liketag, .wpsocials--buttons:style(visibility: hidden !important;)
 wp.pl,~www.wp.pl###app > div > table > tbody > tr:nth-child(1) > td > div > div > div > div > div > div > div > article > div > div > div > div[hidden]:style(position: absolute !important; left: -3000px !important;)
 !#endif
 !#if !cap_html_filtering
+azjatyckibazar.com##+js(remove-attr.js, href, .slides > li[data-duration] > a[href="http://facebook.com/azjatyckibazar"])
 homebeer.pl##+js(remove-attr.js, href|title, a.slider-img[href="https://pl-pl.facebook.com/homebeerpl/"])
-kamaciuch.pl##+js(remove-attr.js, href, .homeslider-container a[href="https://www.facebook.com/kamaciuch"])h"])
+kamaciuch.pl##+js(remove-attr.js, href, .homeslider-container a[href="https://www.facebook.com/kamaciuch"])
 napiachu.pl##+js(remove-attr.js, href, .carousel-inner a[href="https://www.facebook.com/napiachu/"])
 !#endif
 !#if cap_html_filtering
+azjatyckibazar.com##^#heroSlider > .slides > li[data-duration]:has(a[href="http://facebook.com/azjatyckibazar"])
 homebeer.pl##^.slides > li[id]:has(a.slider-img[href="https://pl-pl.facebook.com/homebeerpl/"])
 kamaciuch.pl##^.homeslider-container:has(a[href="https://www.facebook.com/kamaciuch"])
 napiachu.pl##^.carousel-inner > .item:not(.active):has(a[href="https://www.facebook.com/napiachu/"])
