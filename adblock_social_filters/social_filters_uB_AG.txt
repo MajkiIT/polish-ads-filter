@@ -1,11 +1,11 @@
-! Checksum: ZIFzhu9+jbfd69BRgtQ6bw
+! Checksum: 1PqQdQ+h/LbX1IdWKwtyLA
 ! Title: Polskie Filtry Społecznościowe - Uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish Social Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Social - Supplement
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, F4z, RikoDEV
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.1.19.0
-! Last modified: Sat, 19 Jan 2019, 15:47 UTC+01
+! Version: 2019.1.20.1
+! Last modified: Sun, 20 Jan 2019, 22:25 UTC+01
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,7 +13,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.1.19.0 aktualizacja: sob, 19 sty 2019, 15:47 UTC+01
+! v.2019.1.20.1 aktualizacja: nie, 20 sty 2019, 22:25 UTC+01
 !
 !
 ! Popupy
@@ -63,6 +63,7 @@ odkryjpomorze.pl##+js(nano-remove-elements-onready.js, div.span6 > map[name="Map
 plejada.pl##.detailContentWrapper .contentShareLeft .fb_share:style(background: transparent !important;)
 rynek-kolejowy.pl##.sledzNasContainer > .zawartoscBox:style(height: auto !important;)
 waw4free.pl###spolecznosci:style(height: auto !important;)
+werandafamily.com##+js(remove-attr.js, href, .instagram-item > .link-block)
 wp.pl##.article > [class]:has(> [class] > .fb-like)
 !
 !
@@ -108,3 +109,10 @@ www.cba.pl###footer > div > div:first-child:style(font-size: 0 !important;)
 www.purina.pl###page:style(overflow: hidden;)
 www.tvn.pl##.detail-share:style(padding-bottom: 0 !important;)
 zlotygron.pl##.site_social > span:style(display: inline-block !important; padding-top: 5px !important;)
+!
+!
+! Bugi AdGuarda
+!#if !ext_ublock
+focus.pl#?#.socializer-fb-share
+telepolis.pl##a.icon-facebook, a.icon-twitter
+!#endif
