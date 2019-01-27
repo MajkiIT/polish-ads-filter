@@ -1,11 +1,11 @@
-! Checksum: uInWKPGO/D2v4T9wNrkcNw
+! Checksum: eMxJxhk1i+K1vWZk5Yp6hQ
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.1.22.1
-! Last modified: Tue, 22 Jan 2019, 18:38 UTC+01
+! Version: 2019.1.27.1
+! Last modified: Sun, 27 Jan 2019, 14:40 UTC+01
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.1.22.1 aktualizacja: wto, 22 sty 2019, 18:38 UTC+01
+! v.2019.1.27.1 aktualizacja: nie, 27 sty 2019, 14:40 UTC+01
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -112,6 +112,7 @@ kruger.pl##.wmpci-popup-open:style(overflow: auto !important;)
 lafe.pl##.cinfo:style(padding-bottom: 0 !important;)
 lomza.pl##html > body.polityka-cookies:style(margin-top: 0 !important; background-position: center 120px !important;)
 mago.com###yl-popup-wrapper-popupRodo, #yl-popup-shadow-popupRodo
+maxpremiumburgers.pl##.infoBannerGdpr:style(margin-top: 0 !important;)
 mazury.travel##.popup, .popup-overlay
 meetup.com###mupFooter:style(padding-bottom: 0 !important;)
 mgr.farm##.blur:style(filter: none !important;)
@@ -254,6 +255,9 @@ listymikolaja.pl,swiat-whisky.sklep.pl##html.fancybox-lock > body, html.fancybox
 listymikolaja.pl,swiat-whisky.sklep.pl##.fancybox-margin:style(margin-right: 0 !important;)
 lovekrakow.pl##.modal-open:style(overflow: auto !important; position: static !important;)
 lovekrakow.pl,muzyczneradio.pl###modal-rodo, .modal-backdrop
+mirjan24.pl##body.compensate-for-scrollbar:style(overflow: auto !important;)
+mirjan24.pl###fancybox-container-1:has(#gdpr)
+mirjan24.pl##.compensate-for-scrollbar:style(margin-right: 0 !important;)
 money.pl##+js(nano-remove-elements-onready.js, .rodo-popup)
 muzeumazji.pl###rodo-info
 muzeumazji.pl##+js(abort-current-inline-script.js, $, doRODO)
@@ -346,6 +350,7 @@ infostrow.pl,roztoczanskipn.pl,wroclaw.dlawas.info,nowemiasto.dlawas.info,walbrz
 lipinscy.pl##^#popRodoInfoContent
 listymikolaja.pl##^#popup_rodo_layer
 lovekrakow.pl,muzyczneradio.pl##^#modal-rodo
+mirjan24.pl##^#fancybox-container-1:has(#gdpr)
 motobanda.pl##^#rodo
 muzeumazji.pl##^script:has-text(doRODO)
 natura2000.gdos.gov.pl##^#apla-banner
@@ -426,6 +431,7 @@ infostrow.pl,roztoczanskipn.pl,wroclaw.dlawas.info,nowemiasto.dlawas.info,walbrz
 lipinscy.pl$$#popRodoInfoContent
 listymikolaja.pl$$#popup_rodo_layer
 lovekrakow.pl$$#modal-rodo
+mirjan24.pl$$#fancybox-container-1[tag-content="gdpr"]
 motobanda.pl$$#rodo
 muzeumazji.pl$$script[tag-content="doRODO"]
 muzyczneradio.pl$$#modal-rodo
