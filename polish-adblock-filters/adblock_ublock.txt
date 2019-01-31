@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 23 January 2019
+! Last modified: 31 January 2019
 ! Expires: 2 days
-! Version: 2019012302
+! Version: 2019013101
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2019 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2019012302 aktualizacja: śro, 23 stycznia 2019, 21:19:00
+! v.2019013101 aktualizacja: czw, 31 stycznia 2019, 11:42:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -114,6 +114,12 @@ www.dobreprogramy.pl##div[class*="tag-"].home-section > .span-8:style(width: 100
 www.dobreprogramy.pl##article > div[id]:matches-css-after(content: "przy pomocy Asystenta pobierania")
 www.dobreprogramy.pl##body:not(variant-mobile).skin-green .user-login:style(color:#88ae04 !important;)
 www.dobreprogramy.pl##:xpath(//div[contains(text(), 'REKLAMA')])
+!#if !cap_user_stylesheet
+www.dobreprogramy.pl###phContent_avastBadge:style(visibility: hidden !important;)
+!#endif
+!#if env_edge
+www.dobreprogramy.pl##script:inject(nano-remove-elements-onready.js, #phContent_avastBadge)
+!#endif
 !
 ! purepc.pl
 purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0 !important; position: absolute !important;)
