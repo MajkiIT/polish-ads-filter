@@ -1,11 +1,11 @@
-! Checksum: brRWxXEqJLO9YNwPzDc2dw
+! Checksum: O8/hHE7tMrEwpFzMTf1lKg
 ! Title: Polskie Filtry Społecznościowe - Uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish Social Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Social - Supplement
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, F4z, RikoDEV
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.1.27.0
-! Last modified: Sun, 27 Jan 2019, 14:40 UTC+01
+! Version: 2019.2.3.1
+! Last modified: Sun, 03 Feb 2019, 18:23 UTC+01
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,7 +13,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.1.27.0 aktualizacja: nie, 27 sty 2019, 14:40 UTC+01
+! v.2019.2.3.1 aktualizacja: nie, 03 lut 2019, 18:23 UTC+01
 !
 !
 ! Popupy
@@ -55,16 +55,18 @@ lookcam.com$$#lookcam-fb-modal
 !
 ! Widgety
 45minut.pl##+js(remove-attr.js, href, .carousel-inner a[href="https://www.facebook.com/45minutpl"])
+abcfirany.pl##+js(remove-attr.js, href, #BanneryAnimacjaPrzewijana > #scrlnr1 > a[href="https://abcfirany.pl/reklama-b-4.html"])
 bankobranie.blogspot.com###sideSocial:style(height: auto !important;)
 blog.wirtualnemedia.pl###social_ikons_header_fixed:style(visibility: hidden !important;)
-dobreprogramy.pl###phContent_SocialControlBottom_socialBox > .social__group_like.social__group:if-not(#phContent_SocialControlBottom_btnBookmark)
 freshfile.pl##.facebook, .google:style(visibility: hidden !important;)
 odkryjpomorze.pl##+js(nano-remove-elements-onready.js, div.span6 > map[name="Map"] > area:nth-of-type(1))
 plejada.pl##.detailContentWrapper .contentShareLeft .fb_share:style(background: transparent !important;)
+pl.pandora.net###socialMediaFooter .leftMediaLinkFooter:style(visibility: hidden)
 rynek-kolejowy.pl##.sledzNasContainer > .zawartoscBox:style(height: auto !important;)
 waw4free.pl###spolecznosci:style(height: auto !important;)
 werandafamily.com##+js(remove-attr.js, href, .instagram-item > .link-block)
 wp.pl##.article > [class]:has(> [class] > .fb-like)
+www.dobreprogramy.pl###phContent_SocialControlBottom_socialBox > .social__group_like.social__group:if-not(#phContent_SocialControlBottom_btnBookmark)
 !
 !
 ! Widgety - specjalne instrukcje
@@ -83,6 +85,7 @@ azjatyckibazar.com##+js(remove-attr.js, href, .slides > li[data-duration] > a[hr
 homebeer.pl##+js(remove-attr.js, href|title, a.slider-img[href="https://pl-pl.facebook.com/homebeerpl/"])
 kamaciuch.pl##+js(remove-attr.js, href, .homeslider-container a[href="https://www.facebook.com/kamaciuch"])
 napiachu.pl##+js(remove-attr.js, href, .carousel-inner a[href="https://www.facebook.com/napiachu/"])
+upominki24.pl##+js(remove-attr.js, href, #slider .item-16 a[href="https://www.facebook.com/upominki24pl/"])
 !#endif
 !#if cap_html_filtering
 azjatyckibazar.com##^#heroSlider > .slides > li[data-duration]:has(a[href="http://facebook.com/azjatyckibazar"])
@@ -90,6 +93,7 @@ homebeer.pl##^.slides > li[id]:has(a.slider-img[href="https://pl-pl.facebook.com
 kamaciuch.pl##^.homeslider-container:has(a[href="https://www.facebook.com/kamaciuch"])
 napiachu.pl##^.carousel-inner > .item:not(.active):has(a[href="https://www.facebook.com/napiachu/"])
 swietarodzina.pila.pl##^div.partial_staged_slideL.single_fading_slide:has-text(Skontaktuj się z nami korzystając z serwisów społecznościowych), div.slider_nav > a:nth-of-type(5)
+upominki24.pl##^#slider .item-16:has(a[href="https://www.facebook.com/upominki24pl/"])
 !#endif
 !
 !
