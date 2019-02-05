@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 4 February 2019
+! Last modified: 5 February 2019
 ! Expires: 2 days
-! Version: 2019020401
+! Version: 2019020501
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2019 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2019020401 aktualizacja: pon, luty 2019, 9:12:00
+! v.2019020501 aktualizacja: wto, 5 luty 2019, 08:21:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -134,7 +134,7 @@ filmweb.pl##body[class]:not(.rodo):style(overflow: auto !important;)
 ! Grupa WP
 ~poczta.wp.pl,wp.pl,~pilot.wp.pl##+js(abort-on-property-read.js, WP.inline)
 money.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
-money.pl###app > div[data-reactroot] > div[class]:matches-css(background-image: /\/static\/bg\.png/)
+!money.pl###app > div[data-reactroot] > div[class]:matches-css(background-image: /\/static\/bg\.png/)
 poczta.wp.pl##body > #page:style(display: block !important;)
 www.wp.pl##[data-st-area] > div > div > div[class]:matches-css(max-width: 300px):matches-css(max-height: 250px)
 ~www.wp.pl,wp.pl##:xpath(//div[count(*)=3][img[@class][@src]][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
