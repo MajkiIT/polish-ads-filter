@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 5 February 2019
 ! Expires: 1 day
-! Version: 2019020501
+! Version: 2019020502
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019020501 aktualizacja: wto, 5 luty 2019, 08:18:00
+! v.2019020502 aktualizacja: wto, 5 luty 2019, 22:06:00
 !
 !
 !-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
@@ -782,6 +782,7 @@ echogorzowa.pl##[id^="ims_"]
 edux.pl###billb-tlo
 efilmy.tv##.addbackground
 egami-image.com##img[src*="tvsat-sklep.com"]
+egarwolin.pl##div.l-box [target="_blank"]
 eglobalcentral.pl##[id^="publi"]
 egryfino.pl##a[href^="/r/"]
 eholiday.pl###appear_event
@@ -1514,6 +1515,7 @@ lowicz24.eu##.row:nth-of-type(3) > .fl.w250
 lowicz24.eu##.row:nth-of-type(6) > .fl.w250:nth-of-type(3)
 lowicz24.eu##div.row:nth-of-type(13)
 lowicz24.eu##div.row:nth-of-type(17)
+lowicz24.eu##div.l-row:nth-of-type(5) > .l-box
 lowiczanin.info###text-16, #text-4, #text-2
 lsi-lublin.pl###poster
 lsi-lublin.pl##.right > .moduletable
@@ -2221,6 +2223,7 @@ radiohit.net.pl###custom_html-46, #custom_html-47
 radio-internetowe.com##div[id^="ad"]
 radioplus.com.pl##.moduletable:nth-of-type(3), .moduletable:nth-of-type(4)
 radioplus.pl###bottom-ad
+radioradom.pl###itro_opaco, #itro_popup
 radiorsc.pl##div.margin-bottom30:nth-of-type(5) > .greybox
 radiostar.net##.widget_media_image.widget.td_block_template_4
 radiosud.pl,krasnik24.pl,czestochowanews.pl##[class^="banner"]
@@ -3084,6 +3087,7 @@ zwolen24.pl##div:nth-of-type(1) > div.sideout:nth-of-type(2), #adocr
 zwierciadlo.pl###superTopWrapper
 zwierciadlo.pl##.srodtekstimg
 zycie.pl##.images.left-dd
+zycie.pila.pl##.l-box .text-center
 zyciebytomskie.pl##[id^="ad"]
 zycieczestochowy.pl###frank
 zycieczestochowy.pl##.top-element
@@ -3098,7 +3102,6 @@ zywiecinfo.pl##.promoted
 !
 !10#----------------------Specific advert blocking filters-----------------------!
 /grafika/banerki_reklamowe/$image,domain=wbijam.pl
-/static/files/inline_images/$image,domain=zycie.pila.pl|egarwolin.pl|lowicz24.eu|ciechanowinaczej.pl|infosiedlce.pl|ibialoleka.pl|izoliborz.pl|imokotow.pl|golub-cgd.pl
 /videoPlayer.js$script,domain=polsatnews.pl|polsatsport.pl
 /uploads/*tapeta*.jpg$image,domain=ciekawostkihistoryczne.pl|katowice24.info|miastodzieci.pl
 /vardata/obrazki/$image,domain=pionki24.pl|zwolen24.pl
@@ -3160,6 +3163,7 @@ zywiecinfo.pl##.promoted
 ||cda.pl/player.php
 ||cdn.dtxngr.com/$script
 ||cdn.forumpc.pl/partner$image
+||cdn.gallery/ad$script,domain=egarwolin.pl
 ||cdn.gallery/pic/assets/uploads/files/*-kafelek.jpg$image,domain=szczecinek.com
 ||cdn.pkwteile.de/uploads/stock/$image,domain=czesciauto24.pl
 ||cdn.salesmedia.pl/codes/$script
@@ -3560,6 +3564,7 @@ zywiecinfo.pl##.promoted
 ||zaufanatrzeciastrona.pl/wp-content/uploads/2018/04/exatel.jpg
 ||zaufanatrzeciastrona.pl/wp-content/uploads/*/Desktop_TA_LA_*_0*.jpg
 ||zaufanatrzeciastrona.pl/wp-content/uploads/*/q2s.gif
+||zlotymotocyklowe.pl/boxy/$image
 ||zolti.pl/ajax/affiliate-generator.php?$script
 ||zulawyimierzeja24.pl/assets/js/jwplayer/jwplayer.html5.js
 ||zyciesokolowa.pl/banery_$image
