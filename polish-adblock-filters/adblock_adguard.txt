@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 7 February 2019
+! Last modified: 10 February 2019
 ! Expires: 2 days
-! Version: 2019020701
+! Version: 2019021001
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2019 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2019020701 aktualizacja: czw, 7 luty 2019, 22:02:00
+! v.2019021001 aktualizacja: nie, 10 luty 2019, 14:00:00
 !
 !
 ! alltube.tv
@@ -166,7 +166,8 @@ lowcygier.pl##body:style(background-image: none !important;)
 money.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 !
 ! filmweb.pl
-filmweb.pl##.ws__wrapper
+filmweb.pl##+js(abort-current-inline-script.js, decodeURIComponent, newAdblockBoardDisplayed)
+filmweb.pl##body .ws__wrapper
 filmweb.pl##body[class]:not(.rodo):style(overflow: auto !important;)
 !
 ! style()
