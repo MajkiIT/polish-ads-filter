@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 13 February 2019
+! Last modified: 15 February 2019
 ! Expires: 2 days
-! Version: 2019021201
+! Version: 2019021501
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2019 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2019021301 aktualizacja: śr, 13 luty 2019, 18:58:00
+! v.2019021501 aktualizacja: ptk, 15 luty 2019, 01:05:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -186,10 +186,6 @@ bezuzyteczna.pl##section:has(script + div[id^="crt"][style])
 naekranie.pl##+js(setInterval-defuser.js, function neTick(){neTickCounter++;if(neTickCounter<=neTickCountLimit){neTickAjax=$.ajax({type:"POST",url:adminAjaxUrl+"?action=ne_tick",dataType:"json",success:function(data){neTickResponseAction(data)}})}}, 10000)
 naekranie.pl##+js(setTimeout-defuser.js, function check(){console.log("checked");if($(".adform").children().length>3){console.log("its more");$(".adform").children(".adform-banner").show();clearTimeout(check)}}, 1000)
 !naekranie.pl##+js(abort-on-property-read.js, showEntryWelcomescreen)
-!
-! tv.jardello.com
-videosio.pl###video_player_container:style(display: inline !important;)
-videosio.pl###preroll_placeholder
 !
 ! bankier.pl
 bankier.pl##.boxContent > ul > li[class^="item-"]:has(.premium-link)
