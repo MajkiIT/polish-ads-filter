@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 15 February 2019
+! Last modified: Wed, 20 Feb 2019, 12:34
 ! Expires: 2 days
-! Version: 2019021502
+! Version: 2019022001
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2019 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2019021502 aktualizacja: ptk, 15 luty 2019, 23:26
+! v.2019022001 aktualizacja: śr, 20 lut 2019, 12:34
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -380,13 +380,16 @@ komputerswiat.pl###googleAdsCont:style(position: absolute !important; left: -300
 pracawgdansku.com.pl##IFRAME#iframe:style(height: 100% !important;)
 !#endif
 !#if !cap_user_stylesheet
+filmweb.pl###mainSkyBanner-pl_PL:style(position: absolute !important; left: -9999px !important; height: 0 !important; z-index: -9999 !important;)
 www.dobreprogramy.pl##div[hidden]:style(visibility: hidden !important;)
 purepc.pl##+js(remove-attr.js, style, [href^="https://www.purepc.pl/red1r.php"])
 !#endif
 !#if cap_html_filtering
+filmweb.pl##^#mainSkyBanner-pl_PL
 polygamia.pl##^.screening
 !#endif
 !#if !cap_html_filtering
+filmweb.pl##+js(remove-attr.js, style, #skyBanner)
 polygamia.pl##+js(nano-remove-elements-onready.js, .screening)
 !#endif
 !
