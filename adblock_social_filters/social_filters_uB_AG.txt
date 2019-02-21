@@ -1,11 +1,11 @@
-! Checksum: mMYVQI9G/IMdo56oalDojg
+! Checksum: HQ8fMqLmNDSxpRzkmb9meg
 ! Title: Polskie Filtry Społecznościowe - Uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish Social Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Social - Supplement
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, F4z, RikoDEV
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.2.13.0
-! Last modified: Wed, 13 Feb 2019, 12:24 UTC+01
+! Version: 2019.2.21.0
+! Last modified: Thu, 21 Feb 2019, 18:45 UTC+01
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,7 +13,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.2.13.0 aktualizacja: śro, 13 lut 2019, 12:24 UTC+01
+! v.2019.2.21.0 aktualizacja: czw, 21 lut 2019, 18:45 UTC+01
 !
 !
 ! Popupy
@@ -23,6 +23,8 @@ cieplikpodrozuje.pl,fashionvoyager.pl,makulscy.com##.ArevicoModal, .ArevicoModal
 cieplikpodrozuje.pl,fashionvoyager.pl,makulscy.com##.arvnoscroll:style(overflow: auto !important;)
 e-biznes.pl##.onp-sl-blur-area:style(filter: none !important;)
 e-biznes.pl##.onp-sl-outer-wrap
+kobiecareaktywacja.pl##.fancybox-lock:style(overflow: auto !important; margin-right: 0px !important;)
+kobiecareaktywacja.pl##.fancybox-overlay-fixed.fancybox-overlay
 mamalla.pl###myModal, .modal-backdrop
 mamalla.pl##.modal-open:style(overflow: auto !important;)
 masher.pl##html.pum-open:style(overflow: auto !important;)
@@ -33,7 +35,6 @@ smaker.pl##html > body.scrollingDisabled:style(overflow: visible !important;)
 smaker.pl###overlay, #popup
 sprawnymarketing.pl###pop_facebook
 sprawnymarketing.pl##.blur:style(filter: none !important;)
-@@||facebook.com/*/plugins/page.php$domain=cieplikpodrozuje.pl|fashionvoyager.pl|makulscy.com,badfilter
 !
 !
 ! Popupy - specjalne instrukcje
@@ -74,7 +75,7 @@ www.dobreprogramy.pl###phContent_SocialControlBottom_socialBox > .social__group_
 !
 ! Widgety - specjalne instrukcje
 !#if !cap_user_stylesheet
-dobreprogramy.pl##.author-social-links, .content.float-right > .social, .rrssb-facebook, .rrssb-twitter, .social__group_share, .social__group_like > .social__item, #phContent_page_content .social__group_like:style(visibility: hidden !important;)
+dobreprogramy.pl##.author-social-links, .content.float-right > .social, .rrssb-facebook, .rrssb-twitter, .social__group_share, .social__group_like > .social__item, #phContent_page_content .social__group_like, .social.float-right:style(visibility: hidden !important;)
 dobreprogramy.pl##.social__group > .social__label
 f.kafeteria.pl###ipsLayout_mainArea > .ipsList_inline > li > .cShareLink
 gadzetomania.pl,fotoblogia.pl,komorkomania.pl,autokult.pl##a[href^="https://www.facebook.com/sharer.php"], [href^="http://twitter.com/intent/tweet"], [href^="http://pinterest.com/pin/create/link/"]:style(visibility: hidden !important;)
@@ -109,12 +110,14 @@ iab.org.pl###menu-social .menu-social:style(width: auto !important;)
 librus.pl##div.promo:style(width: 100%;)
 librus.pl###navBar:style(width: 100% !important;)
 librus.pl##.container-fluid:style(width: 100% !important;)
+pozycjoneria.com###footer > #stopka_ikonki:style(visibility: hidden !important; display: block !important;)
 ts-stars.pl##.card:style(margin-left: auto; margin-right: auto;)
 tutek.pl##.footer > .wrapper > div.row:first-of-type:style(padding: 75px 0 !important;)
 www.cba.pl##span[class="mailto-span"]:style(font-size: 25px !important;)
 www.cba.pl###footer > div > div:first-child:style(font-size: 0 !important;)
 www.purina.pl###page:style(overflow: hidden;)
 www.tvn.pl##.detail-share:style(padding-bottom: 0 !important;)
+wymiennik.com##.contact-details > p > a[href*="facebook.com"]:style(pointer-events: none !important; color: inherit  !important;)
 zlotygron.pl##.site_social > span:style(display: inline-block !important; padding-top: 5px !important;)
 !
 !
