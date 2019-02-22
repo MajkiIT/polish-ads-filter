@@ -9,27 +9,18 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 21 February 2019
+! Last modified: Fri, 22 February 2019, 11:00
 ! Expires: 1 day
-! Version: 2019022105
+! Version: 2019022201
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! Redundant Checker >> https://www.certyficate.it/redundant_checker/redundantRuleChecker.html
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-! Copyright (C) 2019 Certyficate IT
+! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019022105 aktualizacja: czw, 21 luty 2019, 21:25:00
-!
-!
-!-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
-!#if ext_ublock
-!#include adblock_ublock.txt
-!#endif
-!#if adguard
-!#include adblock_adguard.txt
-!#endif
+! v.2019022201 aktualizacja: pt, 22 lutego 2019, 11:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -4272,6 +4263,13 @@ sport.pl##.cg4-ad, .mod_uzr_sport6.mod
 ||vidoza.net/dl?op=view&*adb=$xmlhttprequest
 ||vidoza.net/srt/empty.srt$media,xmlhttprequest
 !
-!51#--------------------------KAD------------!
-!
 !END#--------------------------END------------!
+!
+!
+!-----------------------Integration of supplement lists for uBlock & AdGuard-----------------------!
+!#if ext_ublock
+!#include adblock_ublock.txt
+!#endif
+!#if adguard
+!#include adblock_adguard.txt
+!#endif
