@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: Wed, 20 Feb 2019, 12:34
+! Last modified: 24 February 2019
 ! Expires: 2 days
-! Version: 2019022001
+! Version: 2019022401
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright (C) 2019 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2019022001 aktualizacja: śr, 20 lut 2019, 12:34
+! v.2019022401 aktualizacja: nie, 24 luty 2019, 11:15:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -146,7 +146,7 @@ wp.pl##[class^="_"]:has(>img[src*=".wp.pl"])
 wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##+js(abort-on-property-write.js, iaqExt)
 wp.pl,echirurgia.pl,money.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl##+js(set-constant.js, PWA_adbd, 2)
-~poczta.wp.pl,wp.pl,echirurgia.pl,kardiolo.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl,~pilot.wp.pl##+js(set-constant.js, WP.gaf.addCreation, noopFunc)
+~poczta.wp.pl,wp.pl,echirurgia.pl,kardiolo.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl,~pilot.wp.pl,~money.pl##+js(set-constant.js, WP.gaf.addCreation, noopFunc)
 autokult.pl##+js(set-constant.js, WP.gaf.loadAndRunBunch, noopFunc)
 ~poczta.wp.pl,wp.pl,pudelek.pl,~pilot.wp.pl##+js(set-constant.js, WP.gaf.setSlotCreation, noopFunc)
 ~www.wp.pl,wp.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl,domodi.pl,autokult.pl,~pilot.wp.pl,~poczta.wp.pl,~sportowefakty.wp.pl##+js(set-constant.js, WP.gdpr.init, noopFunc)
