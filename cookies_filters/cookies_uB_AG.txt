@@ -1,11 +1,11 @@
-! Checksum: U6SOvPfDjlH2d1r8e8m7qQ
+! Checksum: FyQuqsxT5hpvy5aUH08vcw
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.2.21.0
-! Last modified: Thu, 21 Feb 2019, 18:45 UTC+01
+! Version: 2019.2.25.1
+! Last modified: Mon, 25 Feb 2019, 22:31 UTC+01
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.2.21.0 aktualizacja: czw, 21 lut 2019, 18:45 UTC+01
+! v.2019.2.25.1 aktualizacja: pon, 25 lut 2019, 22:31 UTC+01
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -38,7 +38,6 @@ aquapark.wroc.pl###header:style(top: 0 !important;)
 archiwum.rp.pl,info.rp.pl,konik-online.pl,bloombergbusinessweek.pl##body:style(margin-top: 0 !important;)
 atat.pl,elektryka-atat.pl,chemia-atat.pl,oswietlenie-atat.pl,zywnosc-atat.pl##.gdprModal
 atat.pl,elektryka-atat.pl,chemia-atat.pl,oswietlenie-atat.pl,zywnosc-atat.pl##.overflow-hidden:style(overflow: auto !important;)
-autostrada-a2.pl##+js(remove-attr.js, class, body)
 auto-czesci-lipiec.pl###mAll
 auto-czesci-lipiec.pl,mkidn.gov.pl,puma.com##.modal-open:style(overflow: visible !important; padding-right: 0 !important;)
 baptysci.pl###gafancybox-overlay559
@@ -119,6 +118,9 @@ mazury.travel##.popup, .popup-overlay
 meetup.com###mupFooter:style(padding-bottom: 0 !important;)
 mikroporady.pl##.mikroporady:style(padding-top: 0 !important;)
 militaria-hobby.eu##+js(abort-on-property-read.js, alert)
+mirjan24.pl##body.compensate-for-scrollbar:style(overflow: auto !important;)
+mirjan24.pl###fancybox-container-1:has(#gdpr)
+mirjan24.pl##.compensate-for-scrollbar:style(margin-right: 0 !important;)
 mkidn.gov.pl###myModal
 msn.com###precontent:style(margin-top: 8rem !important;)
 msn.com##.head:style(margin-top: 0 !important;)
@@ -222,6 +224,8 @@ zwolen.pl###g_toplayer, .modal-backdrop
 academy.asseco.pl###politykaPrywatnosciModal, .modal-backdrop
 alltube.tv,alltube.pl,mistravel.pl###rodo-popup, .modal-backdrop
 autakrajowe.com.pl,optimalg.com##.modal-open:style(overflow: auto !important; margin-right: 0 !important;)
+autostrada-a2.pl##+js(remove-attr.js, class, body[class="cookielaw cookielaw rodo"])
+autostrada-a2.pl##+js(remove-attr.js, class, body[class=" rodo"])
 belsat.eu,mobilet.pl,marfafashion.com,petrodom.pl,masterleasing.pl,eurologistics.pl,wybielanie.pl,poznan.ap.gov.pl,wsb.net.pl,homedesign.pl,pasjagolebie.pl,tvwalbrzych.pl,pytanieomieszkanie.pl,buddyzm.info.pl,pzsnstart.eu,whatannawears.com##.pum-open:style(overflow: auto !important;)
 belsat.eu,mobilet.pl,marfafashion.com,petrodom.pl,masterleasing.pl,eurologistics.pl,wybielanie.pl,poznan.ap.gov.pl,wsb.net.pl,pasjagolebie.pl,tvwalbrzych.pl,pytanieomieszkanie.pl,buddyzm.info.pl,pzsnstart.eu,whatannawears.com,sp112.waw.pl##.popmake-overlay[data-popmake*="cookies"]
 bioagris.pl###policy-accept-div, .modal-backdrop
@@ -258,9 +262,6 @@ listymikolaja.pl,swiat-whisky.sklep.pl##html.fancybox-lock > body, html.fancybox
 listymikolaja.pl,swiat-whisky.sklep.pl##.fancybox-margin:style(margin-right: 0 !important;)
 lovekrakow.pl##.modal-open:style(position: static !important; overflow: auto !important;)
 lovekrakow.pl,muzyczneradio.pl###modal-rodo, .modal-backdrop
-mirjan24.pl##body.compensate-for-scrollbar:style(overflow: auto !important;)
-mirjan24.pl###fancybox-container-1:has(#gdpr)
-mirjan24.pl##.compensate-for-scrollbar:style(margin-right: 0 !important;)
 moja.biedronka.pl##.modal-komunikat.modal
 moja.biedronka.pl##.showpopup:style(overflow: auto !important;)
 money.pl##+js(nano-remove-elements-onready.js, .rodo-popup)
@@ -357,7 +358,6 @@ infostrow.pl,roztoczanskipn.pl,dlawas.info##^#rodo-modal
 lipinscy.pl##^#popRodoInfoContent
 listymikolaja.pl##^#popup_rodo_layer
 lovekrakow.pl,muzyczneradio.pl##^#modal-rodo
-mirjan24.pl##^#fancybox-container-1:has(#gdpr)
 moja.biedronka.pl##^div.modal.modal-komunikat
 moja.biedronka.pl##^style:has-text(body.showpopup)
 motobanda.pl##^#rodo
@@ -443,7 +443,6 @@ infostrow.pl,roztoczanskipn.pl,dlawas.info$$#rodo-modal
 lipinscy.pl$$#popRodoInfoContent
 listymikolaja.pl$$#popup_rodo_layer
 lovekrakow.pl$$#modal-rodo
-mirjan24.pl$$#fancybox-container-1[tag-content="gdpr"]
 moja.biedronka.pl$$div.modal.modal-komunikat
 moja.biedronka.pl$$style[tag-content="body.showpopup"]
 motobanda.pl$$#rodo
