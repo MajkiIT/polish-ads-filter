@@ -6,17 +6,17 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 24 February 2019
+! Last modified: 1 March 2019
 ! Expires: 2 days
-! Version: 2019022401
+! Version: 2019030101
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-! Copyright (C) 2019 Certyficate IT
+! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2019022401 aktualizacja: nie, 24 luty 2019, 11:15:00
+! v.20190030101 aktualizacja: ptk, 1 marca 2019, 19:12:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -367,16 +367,14 @@ swiatfilmow.com##+js(nano-setTimeout-booster.js, function, 1000, 0.02)
 !
 ! IF rules
 !#if cap_html_filtering
-czasdzieci.pl##^html body.cdb div#allPage script
+czasdzieci.pl##^div#allPage > script:has-text(corner)
 hdtvpolska.com##^script:has-text(#sdWelcomeScreen)
 komputerswiat.pl##^#googleAdsCont
-pracawgdansku.com.pl##^HTML > HEAD > META + TITLE + LINK + SCRIPT
 !#endif
 !#if !cap_html_filtering
 czasdzieci.pl##+js(abort-current-inline-script.js, billboard750)
 hdtvpolska.com##+js(abort-current-inline-script.js, jQuery, #sdWelcomeScreen)
 komputerswiat.pl###googleAdsCont:style(position: absolute !important; left: -3000px !important;)
-pracawgdansku.com.pl##IFRAME#iframe:style(height: 100% !important;)
 !#endif
 !#if !cap_user_stylesheet
 www.dobreprogramy.pl##div[hidden]:style(visibility: hidden !important;)
