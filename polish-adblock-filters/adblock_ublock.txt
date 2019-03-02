@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 1 March 2019
+! Last modified: 2 March 2019
 ! Expires: 2 days
-! Version: 2019030101
+! Version: 2019030201
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.20190030101 aktualizacja: ptk, 1 marca 2019, 19:12:00
+! v.2019030201 aktualizacja: sob, 2 marca 2019, 18:32:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -111,7 +111,8 @@ dobreprogramy.pl##+js(set-constant.js, WP.gaf.loadAndRunBunch, noopFunc)
 forum.dobreprogramy.pl##body[class]:style(background-image: none !important;)
 www.dobreprogramy.pl###phContent_downloaderHint
 www.dobreprogramy.pl##div[class*="tag-"].home-section > .span-8:style(width: 100% !important; margin-right: 15px !important;)
-www.dobreprogramy.pl##article > div[id]:matches-css-after(content: "przy pomocy Asystenta pobierania")
+www.dobreprogramy.pl##article[itemprop="review"] > div[id]:matches-css-after(content: /przy|pomocy|Asystenta|pobierania/)
+www.dobreprogramy.pl##article > .hint:has(a[href$="/Czyszczenie-systemu-z-niechcianego-oprogramowania,News,61336.html"])
 www.dobreprogramy.pl##body:not(variant-mobile).skin-green .user-login:style(color:#88ae04 !important;)
 www.dobreprogramy.pl##:xpath(//div[contains(text(), 'REKLAMA')])
 !#if !cap_user_stylesheet
