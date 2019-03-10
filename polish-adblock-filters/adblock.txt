@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 10 March 2019
 ! Expires: 1 day
-! Version: 2019031001
+! Version: 2019031002
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019031001 aktualizacja: nie, 10 marca 2019, 08:30:00
+! v.2019031002 aktualizacja: nie, 10 marca 2019, 11:11:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -1767,11 +1767,11 @@ my-navia.pl##TD[style="padding-top:10px; padding-bottom:10px;"]
 my-navia.pl##[style="WIDTH: 940px; font-family: Arial;"]
 mybboard.pl##.regardsForAdblockers
 myhome.pl##.must-login-box.f-login-wrapper
-mylomza.pl##.deepest.box-2, #bottom, .add_bill, .l-box--100.l-box, .l-box--33.l-box, .l-box--99.l-box > table
-mylomza.pl##.itemBody > IMG[src^="/images/"]
-mylomza.pl##.topblock, .itemBody > p
-mylomza.pl##.width100.float-left.contenttopbox > .last.first.mod-box.module
-mylomza.pl##div.mod-box-header.mod-box.module:nth-of-type(4)
+mylomza.pl##.deepest.box-2, #bottom, .add_bill, .l-box--99.l-box > table, .l-box--33.l-box > div > [href] > img, div.l-container > div.l-row > .l-box--100, .c-content__adv, li.c-adv-list-ad
+!mylomza.pl##.itemBody > IMG[src^="/images/"]
+!mylomza.pl##.topblock, .itemBody > p
+!mylomza.pl##.width100.float-left.contenttopbox > .last.first.mod-box.module
+!mylomza.pl##div.mod-box-header.mod-box.module:nth-of-type(4)
 mysqlperformanceblog.com##.insightera-bar-widget.insightera-bar
 na-luzie.net##a[href^="http://trafisz.com/"]
 nacjonalista.pl##.napis, .entry-content.entry > A
@@ -2267,7 +2267,6 @@ realmadryt.pl###lay-home-cb-2 > .c2 > .bg:nth-of-type(2)
 realmadryt.pl##DIV[style="margin:0 auto;"]
 realmadryt.pl##fieldset
 rebelianci.org##.adad, .evo_rect.pic
-recenzja.eu###black-studio-tinymce-6
 redbullmobile.pl###more1
 reedukacja.pl###ctl00_divAdverts
 regentpolski.pl##.row:nth-of-type(3)
@@ -3770,9 +3769,6 @@ polska-telewizja-online.ayz.pl###footer-widgets > .container-inner > .group.pad
 tvtoss.com##.bannerfloat
 typertv.com.pl##[id^="reklamka"]
 worldsport.me###html7
-worldsport.pro##.player_re
-worldsport.pro##[style="position:absolute;width:100%;height:100%;top:0px;left:0px;z-index:1;"]
-worldsport.pro##[style="position: relative; left: 0px; bottom: 34px"]
 xyz##[class^="a_"]
 xyz##[id$="_right"]
 xyz,mecz.tv,ipilka.info##[class$="_right"]
@@ -3863,7 +3859,6 @@ filmbit.ws##[href$=".html"]
 ||b54m4qbmt0b9.com^
 ||electro-torrent.pl/over*.js$script
 ||electro-torrent.pl/resizeIframe.js$script
-||follofop.com/$subdocument,popup
 ||zukxd6fkxqn.com^
 ||ro88qcuy.com^
 ||4b6994dfa47cee4.com^
@@ -3887,10 +3882,10 @@ filmbit.ws##[href$=".html"]
 /^(http|https):\/\/[a-z.]{5,10}\.[a-z]{2,4}\/[a-z.]{3,7}\?[a-zA-Z0-9=&%-.]{100,250}/$popup,domain=centrum-dramy.pl|alltube.tv|alltube.pl|hentai-online.pl|centrum-mangi.ninja
 /^(http|https):\/\/[a-z]{5,10}\.com\/[a-zA-Z0-9+]{80,}/$subdocument,domain=embed.nowvideo.sx|cloudtime.to|darmowa-telewizja.info
 /^(http|https):\/\/[a-z.-]{5,30}\/client\?party/$script,domain=openkatalog.com
-/^(http|https):\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=follofop.com|seriale-po-polsku.pl|animezone.pl|filmbit.ws
+/^(http|https):\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=seriale-po-polsku.pl|animezone.pl|filmbit.ws
 /^(http|https):\/\/[a-zA-Z0-9]{5,10}\.[a-z]{2,10}\/[a-zA-Z0-9?_=&-.%]{50,70}/$subdocument,script,popup,domain=filmtu.pl|darmowa-tv.pl|cdax.online|tele-wizja.is|widestream.io
 /^(http|https):\/\/[a-zA-Z0-9]{5,15}\.(com|net)\/[a-z]{4,10}\/[0-9a-z.?=%A-Z-&]{60,100}/$script,popup,domain=veecast.net|darmowa-tv.pl
-/^(http|https):\/\/[a-zA-Z.0-9]{7,}\.(com|bid|info)\/[a-zA-Z]{1,}\.js/$script,domain=devil-torrents.pl|electro-torrent.pl|vidlox.tv|segos.es|fileone.tv|streamango.com|nasze-kino.online|vidto.pl|raptu.com|rapidvideo.com|vidfile.net|sharevideo.pl|sharing-box.cloud|vidstream.xyz|openkatalog.ml|nasze-kino.tv|kino123.pl|boxfilm.pl|cloudupload.co|allonline.pl|openload.co|cdax.online|abcast.net|darmowa-tv.pl|veecast.net|castto.me|centrum-dramy.pl|hentai-online.pl|centrum-mangi.ninja|openkatalog.com|shinden.pl|tele-wizja.is|ekinomaniak.tv|tele-wizja.ru|hqq.watch|whostreams.net|seriale-po-polsku.pl|virpe.com
+/^(http|https):\/\/[a-zA-Z.0-9]{7,}\.(com|bid|info)\/[a-zA-Z]{1,}\.js/$script,domain=devil-torrents.pl|electro-torrent.pl|vidlox.tv|segos.es|fileone.tv|streamango.com|nasze-kino.online|raptu.com|rapidvideo.com|vidfile.net|sharevideo.pl|sharing-box.cloud|vidstream.xyz|openkatalog.ml|nasze-kino.tv|kino123.pl|boxfilm.pl|cloudupload.co|allonline.pl|openload.co|cdax.online|abcast.net|darmowa-tv.pl|veecast.net|castto.me|centrum-dramy.pl|hentai-online.pl|centrum-mangi.ninja|openkatalog.com|shinden.pl|tele-wizja.is|ekinomaniak.tv|tele-wizja.ru|hqq.watch|whostreams.net|seriale-po-polsku.pl|virpe.com
 /(http|https):\/\/naekranie\.pl\/wp-content\/uploads\/[0-9]{4,4}\/[0-9]{2,2}\/(?!jpg)[0-9a-z]{7,10}$/$image
 /^(http|https):\/\/[\w]{12,}\.[a-z]{3,3}\/[a-z]{1,10}\.html[\w\d\W]{100,}/$script,domain=tele-wizja.ru
 /^(http|https):\/\/[\w]{5,}\.[a-z]{3,3}\/[\w\d\W]{45,}/$script,domain=abcast.net|alltube.pl|alltube.tv|szukajka.tv
