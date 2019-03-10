@@ -9,8 +9,8 @@ Jest to serwer DNS, który zasilany regularnie listą domen atakujących niepoż
 Ad filter list by Disconnect for PiHole<br/>
 <code>https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/Ad_filter_list_by_Disconnect.txt</code>
 
-KADhosts - filtr chroniacy przed przekrętami takimi jak subskrypcje SMS<br/>
-<code>https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt</code>
+KAD Host filters for Pi hole<br/>
+<code>https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/kad_host.txt</code>
 
 NoTrack Tracker Blocklist for Pi hole<br/>
 <code>https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/NoTrack_Tracker_Blocklist.txt</code>
@@ -51,4 +51,5 @@ Adguard Crypto Host filters for Pi hole<br/>
 Ad server list for use with hosts files to block ads<br/>
 <code>https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/Peter_Lowe_ADS.txt</code>
 
-
+Filtr chroniacy przed przekretami takimi jak subskrypcje SMS<br/>
+<code>https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/KADhosts.txt</code>
