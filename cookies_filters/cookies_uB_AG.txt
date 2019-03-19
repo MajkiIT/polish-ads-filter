@@ -1,11 +1,11 @@
-! Checksum: d8zRRmpJJ1rGz08fl/c7BQ
+! Checksum: FCOpLm89bG6fozy76UzIGA
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.3.9.1
-! Last modified: Sat, 09 Mar 2019, 19:51 UTC+01
+! Version: 2019.3.18.1
+! Last modified: Mon, 18 Mar 2019, 23:20 UTC+01
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.3.9.1 aktualizacja: sob, 09 mar 2019, 19:51 UTC+01
+! v.2019.3.18.1 aktualizacja: pon, 18 mar 2019, 23:20 UTC+01
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -41,7 +41,7 @@ archiwum.rp.pl,info.rp.pl,konik-online.pl,bloombergbusinessweek.pl##body:style(m
 atat.pl,elektryka-atat.pl,chemia-atat.pl,oswietlenie-atat.pl,zywnosc-atat.pl##.gdprModal
 atat.pl,elektryka-atat.pl,chemia-atat.pl,oswietlenie-atat.pl,zywnosc-atat.pl##.overflow-hidden:style(overflow: auto !important;)
 auto-czesci-lipiec.pl###mAll
-auto-czesci-lipiec.pl,mkidn.gov.pl,puma.com##.modal-open:style(overflow: visible !important; padding-right: 0 !important;)
+auto-czesci-lipiec.pl,mkidn.gov.pl,puma.com,paczkomaty.pl##.modal-open:style(overflow: visible !important; padding-right: 0 !important;)
 baptysci.pl###gafancybox-overlay559
 baptysci.pl##.gafancybox-lock:style(overflow: auto !important;)
 baptysci.pl##.gafancybox-margin:style(margin-right: 0 !important;)
@@ -97,6 +97,9 @@ indbuildcraft.pl##.modal-overlay, #modal_cookies
 indbuildcraft.pl,kaliszak.pl,mazury.travel,panattonieurope.com,pkw.gov.pl,porcelana.pl,praca.antyweb.pl,prawdaobiektywna.pl,pum.edu.pl,skyscrapercity.com,wagrowczanie.pl,zeropln.antyweb.pl##body:style(overflow: auto !important;)
 innogy.pl##html.cookie-wall-active body:style(overflow: auto !important;)
 innogy.pl###cookie-wall-container
+intermarche.pl##body.showCookie .sec--head:style(top: 0 !important;)
+intermarche.pl##body.showCookie .sec--menu-popup:style(top: 117px !important;)
+intermarche.pl##body.showCookie .wrapper-for-blocked-content:style(margin-top: 0 !important;)
 ipla.tv##.no-scroll:style(overflow: auto !important;)
 ipla.tv##.rodo-rules-modal
 jedenslad.pl##.noscroll:style(overflow: auto !important;)
@@ -133,6 +136,7 @@ mzbm.tychy.pl###privacy-modal, .modal-backdrop
 mzk-torun.pl###fancybox-container-1:has(#policy_elem)
 mzk-torun.pl###fancybox-container-2:has(#policy_elem)
 m.24jgora.pl,24wroclaw.pl###rodoModal, .modal-backdrop
+m.filmweb.pl##body.rodo[style^="padding-top:"]:style(padding-top: 0 !important;)
 nauka.rocks##.ct-ultimate-gdpr-cookie-topPanel-padding:style(padding-top: 0 !important;)
 neon24.pl##+js(abort-on-property-read.js, Service.cookieMonster)
 obpon.pl##.menu-flashmessages:style(top: 0 !important;)
@@ -148,6 +152,8 @@ ostrzegamy.online##body.rodo-locked, html.rodo-locked:style(overflow: auto !impo
 ostrzegamy.online##.rodo-popup, .rodo-overlay
 otwarteklatki.pl###popup-gdpr, .popup-overlay
 otwarteklatki.pl##.popup-visible:style(overflow: auto !important;)
+paczkomaty.pl##+js(remove-attr.js, class|style, body[class="modal-open"][style="padding-right: 17px;"])
+paczkomaty.pl##.modal:has(app-regulations-modal > .modal-header > .modal-title:has-text(RODO)), .modal-backdrop
 panattonieurope.com###image-popup.txt-popup, #image-popup-bg
 paypal.com##.gdprCookieBanner-acceptedAll:style(margin-bottom: 0 !important;)
 pay.google.com##.main-footer--cookie.o-container:style(padding-bottom: 0 !important;)
@@ -198,6 +204,8 @@ ugb.pl##+js(abort-current-inline-script.js, alert, RODO)
 umig.olkusz.pl###gafancybox-overlay174
 umig.olkusz.pl##.gafancybox-lock > body, .gafancybox-lock:style(overflow: auto !important;)
 umig.olkusz.pl##.gafancybox-margin:style(margin-right: 0 !important;)
+vice.com##body[style], html[style]:style(overflow: visible !important; height: 100% !important;)
+vice.com##div[id^="sp_message"][class^="sp_message_container"], div[class^="sp_veil"]
 vod.naekranie.pl###modal-rodo-info, .modal-backdrop
 vod.naekranie.pl,samasz.pl,mzbm.tychy.pl##.modal-open:style(overflow: auto !important;)
 wagrowczanie.pl##.showRodo
@@ -422,6 +430,9 @@ dobreprogramy.pl,homebook.pl,sportowefakty.wp.pl##html:style(overflow-y: visible
 homebook.pl##body > div[class]:last-of-type:has-text(RODO)
 sportowefakty.wp.pl##body > *:style(filter: none !important;)
 sportowefakty.wp.pl##html > body > footer ~ div[class]:has-text(RODO)
+www.wp.pl##body > #root ~ script + div[class]
+www.wp.pl##html, html > body:style(overflow: visible!important;)
+www.wp.pl###root:style(filter: none !important;)
 !#endif
 !#if !env_mobile
 azure.microsoft.com###main:style(padding-top: 88px !important;)
