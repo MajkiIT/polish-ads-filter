@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 19 March 2019
+! Last modified: 20 March 2019
 ! Expires: 2 days
-! Version: 2019031902
+! Version: 2019032001
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2019031902 aktualizacja: wt 19 marca 2019, 22:10:00
+! v.2019032001 aktualizacja: sr, 20 marca 2019, 10:15:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -158,9 +158,9 @@ tv.wp.pl##+js(set-constant.js, WP.crux.sealed, falseFunc)
 www.wp.pl##body > #root ~ script + div[class]
 www.wp.pl##html, html > body:style(overflow: visible!important;)
 www.wp.pl###root:style(filter: none!important;)
-facet.wp.pl,kobieta.wp.pl,teleshow.wp.pl##body > #app ~ noscript + div[class]
-facet.wp.pl,kobieta.wp.pl,teleshow.wp.pl##html, html > body:style(overflow: visible!important;)
-facet.wp.pl,kobieta.wp.pl,teleshow.wp.pl###app:style(filter: none!important;)
+~www.wp.pl,wp.pl##body > #app ~ noscript + div[class]
+~www.wp.pl,wp.pl##html, html > body:style(overflow: visible!important;)
+~www.wp.pl,wp.pl###app:style(filter: none!important;)
 !
 ! o2.pl
 poczta.o2.pl,poczta.wp.pl##body > #page:style(display: block !important;)
