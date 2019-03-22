@@ -1,11 +1,11 @@
-! Checksum: FCOpLm89bG6fozy76UzIGA
+! Checksum: 0vxQKEGFc+pnAK2YZGzbyw
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.3.18.1
-! Last modified: Mon, 18 Mar 2019, 23:20 UTC+01
+! Version: 2019.3.22.0
+! Last modified: Fri, 22 Mar 2019, 21:08 UTC+01
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.3.18.1 aktualizacja: pon, 18 mar 2019, 23:20 UTC+01
+! v.2019.3.22.0 aktualizacja: pią, 22 mar 2019, 21:08 UTC+01
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -162,6 +162,12 @@ pl.tommy.com##div.remodal-wrapper:has(.cookie-notice)
 pl.tommy.com##.cookie-notice:style(visibility: hidden !important;)
 pl.tommy.com##.remodal-is-locked:style(overflow: auto !important;)
 pl.tommy.com##.remodal-overlay
+polskikoszyk.pl##body.cookie .layout-right-col:style(padding-top: 25px !important;)
+polskikoszyk.pl##body.cookie .menu-toggle, body.cookie .fixed-actions-mobile:style(top: 12px !important;)
+polskikoszyk.pl##body.cookie .promocja-header:style(top: 90px !important;)
+polskikoszyk.pl##body.cookie .search-box:style(top: 61px !important;)
+polskikoszyk.pl##body.cookie .topbar:style(top: 0 !important;)
+polskikoszyk.pl##body.cookie .topsubbar:style(top: 57px !important;)
 porcelana.pl##.modal-popup
 portalspozywczy.pl,sadyogrody.pl,rynekzdrowia.pl,farmer.pl,dlahandlu.pl,propertynews.pl,portalsamorzadowy.pl,rynekaptek.pl,infodent24.pl,housemarket.pl,pulshr.pl,propertydesign.pl,rynekseniora.pl,ckl.pl,ptwp.pl,promocjada.pl,wnp.pl,frsih.pl,eecpoland.eu,mckkatowice.pl,spodekkatowice.pl##.rodo
 portalspozywczy.pl,sadyogrody.pl,rynekzdrowia.pl,farmer.pl,dlahandlu.pl,propertynews.pl,portalsamorzadowy.pl,rynekaptek.pl,infodent24.pl,housemarket.pl,pulshr.pl,propertydesign.pl,rynekseniora.pl,ckl.pl,ptwp.pl,promocjada.pl,wnp.pl,frsih.pl,eecpoland.eu,mckkatowice.pl,spodekkatowice.pl##.windowOpen:style(overflow: auto !important;)
@@ -319,6 +325,9 @@ sp112.waw.pl##.pum-open-overlay:style(overflow: auto !important;)
 spolem.katowice.pl,wpr.pl,mdkkolbuszowa.pl###popup, .modal-backdrop
 styl.fm###rodo-info, .modal-backdrop
 swiat-whisky.sklep.pl##.fancybox-overlay:has(#conditions_condition)
+tarnowska.tv###popModal, .modal-backdrop
+tarnowska.tv##+js(nano-remove-elements-onready.js, #popModal)
+tarnowska.tv##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 tuzdrowie.pl###popupModal, .modal-backdrop
 tuzory.pl,tujastrzebie.pl,tuwroclaw.com,tulodz.com,zakopane.info###pd-modal, .modal-backdrop
 tvasta.pl##.modal-backdrop
@@ -409,6 +418,7 @@ sp112.waw.pl##^.popmake-overlay[data-popmake*="cookies"]
 spolem.katowice.pl,wpr.pl,mdkkolbuszowa.pl##^#popup.modal
 styl.fm##^.rodo-info
 swiat-whisky.sklep.pl##^.POPUP_CONDITION
+tarnowska.tv##^#popModal
 tuzdrowie.pl##^#popupModal
 tvasta.pl##^#infoModal
 twojeankiety.pl##^.polPriv
@@ -425,14 +435,12 @@ fotoblogia.pl,gadzetomania.pl,komorkomania.pl,autokult.pl##.cookie-disclaimer:st
 purepc.pl##+js(nano-remove-elements-onready.js, .cookiesinfo)
 !#endif
 !#if cap_user_stylesheet
-dobreprogramy.pl##body > div[class]:has-text(RODO)
-dobreprogramy.pl,homebook.pl,sportowefakty.wp.pl##html:style(overflow-y: visible !important; height: auto !important;)
-homebook.pl##body > div[class]:last-of-type:has-text(RODO)
-sportowefakty.wp.pl##body > *:style(filter: none !important;)
-sportowefakty.wp.pl##html > body > footer ~ div[class]:has-text(RODO)
-www.wp.pl##body > #root ~ script + div[class]
-www.wp.pl##html, html > body:style(overflow: visible!important;)
-www.wp.pl###root:style(filter: none !important;)
+~www.wp.pl,dobreprogramy.pl,~ssl.dobreprogramy.pl,homebook.pl,wp.pl##body > div[class]:has-text(RODO)
+~www.wp.pl,dobreprogramy.pl,~ssl.dobreprogramy.pl,homebook.pl,wp.pl##html:style(overflow-y: visible !important; height: auto !important;)
+~www.wp.pl,wp.pl##body > #app ~ noscript + div[class]
+~www.wp.pl,wp.pl##body > *:style(filter: none !important;)
+~www.wp.pl,wp.pl##html, html > body:style(overflow: visible !important;)
+~www.wp.pl,wp.pl###app:style(filter: none !important;)
 !#endif
 !#if !env_mobile
 azure.microsoft.com###main:style(padding-top: 88px !important;)
@@ -502,6 +510,7 @@ sp112.waw.pl$$.popmake-overlay[data-popmake*="cookies"]
 spolem.katowice.pl,wpr.pl,mdkkolbuszowa.pl$$#popup.modal
 styl.fm$$.rodo-info
 swiat-whisky.sklep.pl$$.POPUP_CONDITION
+tarnowska.tv$$#popModal
 tuzdrowie.pl$$#popupModal
 tvasta.pl$$#infoModal
 twojeankiety.pl$$.polPriv
