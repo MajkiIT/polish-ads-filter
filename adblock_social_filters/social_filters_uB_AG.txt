@@ -1,11 +1,11 @@
-! Checksum: lUhxtdms/khPri3asb/rQQ
+! Checksum: +ijwft8zKOdkxIU5k9Wwkw
 ! Title: Polskie Filtry Społecznościowe - Uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish Social Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Social - Supplement
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, F4z, RikoDEV
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.3.22.0
-! Last modified: Fri, 22 Mar 2019, 21:08 UTC+01
+! Version: 2019.3.29.0
+! Last modified: Fri, 29 Mar 2019, 22:02 UTC+01
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,7 +13,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.3.22.0 aktualizacja: pią, 22 mar 2019, 21:08 UTC+01
+! v.2019.3.29.0 aktualizacja: pią, 29 mar 2019, 22:02 UTC+01
 !
 !
 ! Popupy
@@ -68,6 +68,7 @@ blog.wirtualnemedia.pl###social_ikons_header_fixed:style(visibility: hidden !imp
 dziennikbaltycki.pl,expressilustrowany.pl,dziennikpolski24.pl,polskatimes.pl,expressbydgoski.pl,expressilustrowany.pl,wspolczesna.pl,gazetakrakowska.pl,gp24.pl,gloswielkopolski.pl##.atomsNavigationFooterSocialmedia__button:style(visibility: hidden !important; display: block !important;)
 englishcollege.pl##.bannerdol > a[href="fb.html"]:style(visibility: hidden !important;)
 freshfile.pl##.facebook, .google:style(visibility: hidden !important;)
+giritoffset.pl##+js(remove-attr.js, href, .jcarousel-item > a[href^="https://www.facebook.com/reklamatorregionalny"])
 naklejkolandia.pl##+js(remove-attr.js, href, #sliderBox ul > li > a[href^="https://www.facebook.com/notes/naklejkolandiapl/"])
 odkryjpomorze.pl##+js(nano-remove-elements-onready.js, div.span6 > map[name="Map"] > area:nth-of-type(1))
 plejada.pl##.detailContentWrapper .contentShareLeft .fb_share:style(background: transparent !important;)
@@ -102,6 +103,7 @@ azjatyckibazar.com##^#heroSlider > .slides > li[data-duration]:has(a[href="http:
 homebeer.pl##^.slides > li[id]:has(a.slider-img[href="https://pl-pl.facebook.com/homebeerpl/"])
 kamaciuch.pl##^.homeslider-container:has(a[href="https://www.facebook.com/kamaciuch"])
 napiachu.pl##^.carousel-inner > .item:not(.active):has(a[href="https://www.facebook.com/napiachu/"])
+sterydy.link##^div.rev_slider > ul > li[data-thumb*="sterydy-link-banner-fb"]
 swietarodzina.pila.pl##^div.partial_staged_slideL.single_fading_slide:has-text(Skontaktuj się z nami korzystając z serwisów społecznościowych), div.slider_nav > a:nth-of-type(5)
 upominki24.pl##^#slider .item-16:has(a[href="https://www.facebook.com/upominki24pl/"])
 !#endif
