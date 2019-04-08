@@ -1,11 +1,11 @@
-! Checksum: fVFepLGkiE0KozRsFSaOIw
+! Checksum: Otpw/KoMZcil7seZYDpLSA
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.4.6.1
-! Last modified: Sat, 06 Apr 2019, 23:06 UTC+02
+! Version: 2019.4.8.1
+! Last modified: Mon, 08 Apr 2019, 19:11 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.4.6.1 aktualizacja: sob, 06 kwi 2019, 23:06 UTC+02
+! v.2019.4.8.1 aktualizacja: pon, 08 kwi 2019, 19:11 UTC+02
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -67,8 +67,8 @@ domisad.pl##.show-message #top-nav:style(height: auto !important;)
 dragon.com.pl###modal-rodo, .iziModal-overlay
 dragon.com.pl##.iziModal-isOverflow:style(overflow: visible !important;)
 drogeriapigment.pl##.fancybox-overlay:has(#potwierdzamrodo)
-drogeriapigment.pl,bip.badkowo.ug.gov.pl,bip.powiat.poznan.pl,teatrpolski.waw.pl,szpitalnawrzesinie.pl,powiat-zyrardowski.pl,tureckisklep.pl,galeriaslendzinskich.pl,sklepdlalekarza.com,galeriaslendzinskich.pl##html.fancybox-lock > body, html.fancybox-lock:style(overflow: auto !important;)
-drogeriapigment.pl,bip.badkowo.ug.gov.pl,bip.powiat.poznan.pl,teatrpolski.waw.pl,szpitalnawrzesinie.pl,powiat-zyrardowski.pl,tureckisklep.pl,galeriaslendzinskich.pl,sklepdlalekarza.com,galeriaslendzinskich.pl##html.fancybox-margin:style(margin-right: 0 !important;)
+drogeriapigment.pl,bip.badkowo.ug.gov.pl,bip.powiat.poznan.pl,teatrpolski.waw.pl,szpitalnawrzesinie.pl,powiat-zyrardowski.pl,tureckisklep.pl,galeriaslendzinskich.pl,sklepdlalekarza.com##html.fancybox-lock > body, html.fancybox-lock:style(overflow: auto !important;)
+drogeriapigment.pl,bip.badkowo.ug.gov.pl,bip.powiat.poznan.pl,teatrpolski.waw.pl,szpitalnawrzesinie.pl,powiat-zyrardowski.pl,tureckisklep.pl,galeriaslendzinskich.pl,sklepdlalekarza.com##html.fancybox-margin:style(margin-right: 0 !important;)
 dropbox.com##.embedded-app.IndexRebrandPage.top-notification-bar:style(margin-top: -51px !important;)
 dropbox.com##.top-notification-bar-container + .preview-box .react-file-viewer, .embedded-app.IndexRebrandPage.top-notification-bar .RebrandNavigation-container:style(top: 0 !important;)
 echo24.tv##.on-top:style(top: 0 !important;)
@@ -83,14 +83,17 @@ filmweb.pl##body.rodo #header:style(position: relative !important;)
 filmweb.pl##.rodo:style(position: static !important; overflow: auto !important;)
 filmweb.pl##.rodo__overlay
 fiskars.pl##.desktop:style(top: 0 !important;)
-galeriaslendzinskich.pl##.fancybox-overlay-fixed.fancybox-overlay:has(#fancyboxRODO)
+galeriaslendzinskich.pl,powiat-zyrardowski.pl##.fancybox-overlay
 galopuje.pl##+js(abort-current-inline-script.js, $, RODOCOOKIE)
 generator.blulink.pl##.body--privatepolicy:style(padding-bottom: 0 !important;)
 gitara-sklep.pl##body:style(padding-top: 0 !important;)
 google.com,google.pl##body > #lb > div[id^="_"][class]
+google.com,google.pl##div[class][role="dialog"] > #cnsp > div[class][aria-live="polite"]
 google.com,google.pl##html.nsc:style(overflow-y: visible !important;)
 google.com,google.pl##html:not(.nsc) > body.nsc:style(position: static !important; overflow-y: visible !important;)
 google.com,google.pl##jsl > #consent-bump > .widget-consent
+google.com,google.pl###main > #body ~ #footer > div[id] > div[id] > #fbar > .fbar > #cnsi > g-dialog > div[id^="_"][class^=" "]
+google.com,google.pl###main > #lb > div[class] > div[class*="__"]
 google.com,google.pl###main > #lb > div[id^="_"][class^=" "]
 haloursynow.pl,warsztat.pl,hdtv-sat.eu##.modal-open:style(padding-right: 0 !important;)
 hbogo.pl##.banner-overlay
@@ -181,7 +184,6 @@ porcelana.pl##.modal-popup
 portalspozywczy.pl,sadyogrody.pl,rynekzdrowia.pl,farmer.pl,dlahandlu.pl,propertynews.pl,portalsamorzadowy.pl,rynekaptek.pl,infodent24.pl,housemarket.pl,pulshr.pl,propertydesign.pl,rynekseniora.pl,ckl.pl,ptwp.pl,promocjada.pl,wnp.pl,frsih.pl,eecpoland.eu,mckkatowice.pl,spodekkatowice.pl##.rodo
 portalspozywczy.pl,sadyogrody.pl,rynekzdrowia.pl,farmer.pl,dlahandlu.pl,propertynews.pl,portalsamorzadowy.pl,rynekaptek.pl,infodent24.pl,housemarket.pl,pulshr.pl,propertydesign.pl,rynekseniora.pl,ckl.pl,ptwp.pl,promocjada.pl,wnp.pl,frsih.pl,eecpoland.eu,mckkatowice.pl,spodekkatowice.pl##.windowOpen:style(overflow: auto !important;)
 powiat-sepolno.pl,mzk-torun.pl,trendyradio.pl,bs-zwolen.com.pl##.compensate-for-scrollbar:style(overflow: auto !important; margin-right: 0 !important;)
-powiat-zyrardowski.pl,galeriaslendzinskich.pl##.fancybox-overlay
 prawdaobiektywna.pl##.qc-cmp-ui-container
 printoteka.pl###popupModal10, .modal-backdrop
 przydomu.pl###popup_25
