@@ -1,11 +1,11 @@
-! Checksum: xdnCOYghLvdNFgK9yVgWXg
+! Checksum: orusv3d9pLOhgwuNxUXWsA
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.4.14.0
-! Last modified: Sun, 14 Apr 2019, 15:30 UTC+02
+! Version: 2019.4.16.2
+! Last modified: Tue, 16 Apr 2019, 20:19 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.4.14.0 aktualizacja: nie, 14 kwi 2019, 15:30 UTC+02
+! v.2019.4.16.2 aktualizacja: wto, 16 kwi 2019, 20:19 UTC+02
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -83,10 +83,10 @@ filmweb.pl##body.rodo #header:style(position: relative !important;)
 filmweb.pl##.rodo:style(position: static !important; overflow: auto !important;)
 filmweb.pl##.rodo__overlay
 fiskars.pl##.desktop:style(top: 0 !important;)
-forum.dobreprogramy.pl##body > div:not([id]):not([class*="modal"])[class]:nth-last-child(-n+3):nth-last-of-type(-n+3):matches-css(z-index: 1000000)
 galeriaslendzinskich.pl,powiat-zyrardowski.pl##.fancybox-overlay
 galopuje.pl##+js(abort-current-inline-script.js, $, RODOCOOKIE)
 generator.blulink.pl##.body--privatepolicy:style(padding-bottom: 0 !important;)
+giantfabryczna.pl,liv-cycling.com###cookiePopupModal, .modal-backdrop
 gitara-sklep.pl##body:style(padding-top: 0 !important;)
 google.com,google.pl##body > #lb > div[id^="_"][class]
 google.com,google.pl##div[class][role="dialog"] > #cnsp > div[class][aria-live="polite"]
@@ -155,7 +155,7 @@ nauka.rocks##.ct-ultimate-gdpr-cookie-topPanel-padding:style(padding-top: 0 !imp
 neon24.pl##+js(abort-on-property-read.js, Service.cookieMonster)
 obpon.pl##.menu-flashmessages:style(top: 0 !important;)
 obywatel.gov.pl###modal-rodo, .modal-backdrop
-obywatel.gov.pl,m.24jgora.pl,e-sochaczew.pl,multimediago.pl,dane.gov.pl,24wroclaw.pl,zwolen.pl,wrzesnia.info.pl,ceres.pl,komugroup.eu,gry.lotto.pl,printoteka.pl,olesnica24.com##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
+obywatel.gov.pl,m.24jgora.pl,e-sochaczew.pl,multimediago.pl,dane.gov.pl,24wroclaw.pl,zwolen.pl,wrzesnia.info.pl,ceres.pl,komugroup.eu,gry.lotto.pl,printoteka.pl,olesnica24.com,giantfabryczna.pl,liv-cycling.com##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 oko.press##.is-reveal-open:style(overflow: auto !important;)
 oko.press##.reveal-overlay
 olesnica24.com###popModal, .modal-backdrop
@@ -206,8 +206,9 @@ serwis.currenda.pl##div:style(margin-top: auto !important;)
 sklepdlalekarza.com##.basicLightbox
 sklep.ptwp.pl##.window
 skyscrapercity.com##.fc-consent-root
+smazymy.com###wmpci-popup-wrp
+smazymy.com##.wmpci-popup-open, .wmpci-popup-open body:style(overflow: auto !important;)
 sonymobile.com##.bnw-module.header[style="margin-top: 80px;"]:style(margin-top: 0 !important;)
-ssl.dobreprogramy.pl,www.dobreprogramy.pl,homebook.pl##body > div:not([id])[class]:last-child:last-of-type:matches-css(z-index: 1000000)
 szpitalnawrzesinie.pl###gafancybox-overlay122
 teatrpolski.waw.pl##.fancybox-overlay:has(#privacyPolicy)
 telepizza.pl##.navbar:style(margin-top: 0 !important;)
@@ -447,20 +448,24 @@ ztm.poznan.pl##^#PopUP
 !autostrada-a2.pl##^#rodo-box, #cookielaw-box
 !#endif
 !#if !cap_user_stylesheet
+forum.dobreprogramy.pl##body > div:not([id]):not([class*="modal"])[class]:nth-last-child(-n+3):nth-last-of-type(-n+3):matches-css(z-index: 1000000)
 fotoblogia.pl,gadzetomania.pl,komorkomania.pl,autokult.pl##.cookie-disclaimer:style(visibility: hidden !important;)
+homebook.pl##body > div:not([id])[class]:last-child:last-of-type:matches-css(z-index: 1000000)
 purepc.pl##+js(nano-remove-elements-onready.js, .cookiesinfo)
 sportowefakty.wp.pl##body[class] > *:style(filter: none !important;)
 sportowefakty.wp.pl##+js(overlay-buster.js)
+ssl.dobreprogramy.pl,www.dobreprogramy.pl##body > div:not([id])[class]:last-of-type:matches-css(z-index: 1000000)
 !sportowefakty.wp.pl##html:style(overflow-y: visible !important; height: auto !important;)
 !#endif
 !#if cap_user_stylesheet
 ~www.wp.pl,wp.pl##body > #app ~ noscript + div:not([id])[class], body > iframe + iframe + div:not([id])[class]
 ~www.wp.pl,wp.pl##html, html > body:style(overflow: visible !important;)
 ~www.wp.pl,wp.pl,portal.abczdrowie.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,pudelek.pl,portal.abczdrowie.pl##body > *:style(filter: none !important;)
+forum.dobreprogramy.pl##body > div:not([id]):not([class*="modal"])[class]:nth-last-child(-n+3):nth-last-of-type(-n+3)
 forum.dobreprogramy.pl,homebook.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,pudelek.pl,portal.abczdrowie.pl##html:style(overflow-y: visible !important; height: auto !important;)
-forum.dobreprogramy.pl,ssl.dobreprogramy.pl,www.dobreprogramy.pl##body > div:not([id]):not([class*="modal"])[class]:nth-last-child(-n+3):nth-last-of-type(-n+3)
 fotoblogia.pl,gadzetomania.pl,homebook.pl,komorkomania.pl,pudelek.pl,portal.abczdrowie.pl##body > div:not([id])[class]:last-child:last-of-type
 sportowefakty.wp.pl##body > iframe ~ script + div:not([id])[class]
+ssl.dobreprogramy.pl,www.dobreprogramy.pl##body > div:not([id])[class]:last-of-type
 !#endif
 !#if !env_mobile
 azure.microsoft.com###main:style(padding-top: 88px !important;)
