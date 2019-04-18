@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 18 April 2019
 ! Expires: 1 day
-! Version: 2019041801
+! Version: 2019041802
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019041801 aktualizacja: czw, 18 kwietnia 2019, 07:50:00
+! v.2019041802 aktualizacja: czw, 18 kwietnia 2019, 21:05:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -40,7 +40,7 @@ _baner/980x200
 _banery/980x200
 /banery/*980x90
 ://*.*/banery_foto/$image,domain=ki24.info|portalplock.pl|faktypilskie.pl|ddtorun.pl|ddwloclawek.pl|koronowo.net.pl|zyciesiedleckie.pl
-/banery/$image,subdocument,object,domain=oknoserwis.pl|sps24.pl|www.chojnice.com|usa.info.pl|jarocinska.pl|www.obud.pl|skijumping.pl|gintama.wbijam.pl|haczyk.pl|instalacjebudowlane.pl|jagiellonia.net|kdega.e-kei.pl|naszalomza.pl|pionki24.pl|mragowo24.info|lokalna24.pl|ebarlinek.pl|kuriergarwolinski.pl|bielsko.biala.pl|www.budownictwo.org|www.serwer.brodnica.net|www.sps24.pl|staleo.pl|super-nowa.pl
+/banery/$image,subdocument,object,domain=oknoserwis.pl|sps24.pl|www.chojnice.com|usa.info.pl|jarocinska.pl|www.obud.pl|skijumping.pl|gintama.wbijam.pl|haczyk.pl|instalacjebudowlane.pl|jagiellonia.net|kdega.e-kei.pl|naszalomza.pl|pionki24.pl|mragowo24.info|lokalna24.pl|ebarlinek.pl|kuriergarwolinski.pl|bielsko.biala.pl|www.budownictwo.org|www.serwer.brodnica.net|www.sps24.pl|staleo.pl|super-nowa.pl|ekorodzice.pl
 /bannery/*$image,subdocument,domain=em.kielce.pl|czasdzieci.pl|kolporter.com.pl|sklep-tvsat.hcore.pl|www.walbrzych24.com|zlotoryja.info|skijumping.pl|icomp.pl|forum.cs-classic.pl|nocnygdansk.pl|wagaciezka.com|obud.pl|beskid-niski.pl|ezakopane.pl
 /content-generator/published/frame/generate?*frameId=*&placementId=*&guid=
 /data/ap3bo6/*.gif$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
@@ -168,7 +168,7 @@ vshare.io###sendif
 ##[id^="ad_box"]
 ~avclub.gr##[id^="ad_global"]
 ##[id^="ad_iframe"]
-##[id^="ads_"]
+~facebook.com##[id^="ads_"]
 ##[id^="AdsDetailsTop"]
 ##[id^="banner_900x"]
 ##[id*="-billboard-advert"]
@@ -186,6 +186,7 @@ vshare.io###sendif
 ##IMG[src^="http://www.audiostereo.pl/banery/"]
 ##IMG[title^="Sponsorowan"]
 ##.ipsAdvertisement
+##[href^="https://aff.sendhub.pl/"]
 ~istotne.pl,pl###ads
 ~joemonster.org##[id^="commentAd"]
 ##.jqmOverlay
@@ -1246,6 +1247,7 @@ infokatowice.pl##.widget_text.widget > .textwidget
 infolwowek24.pl###shortcodes-ultimate-2
 infolwowek24.pl###shortcodes-ultimate-3
 infolwowek24.pl###shortcodes-ultimate-6
+infoludek.pl##.banneryflex
 infopodkarpacie.pl##A[href^="/ads/"] > IMG
 infopodkarpacie.pl#@#.bg_ad
 informacja.wroclaw.pl###popupfmu
@@ -1400,7 +1402,7 @@ kobiety-kobietom.com###RightBox > div:nth-of-type(2)
 kodiwpigulce.pl##.sweet-alert
 kokosik1207.pl##[target="_blank"] > IMG[src^="/templates/KokStarter/images/"]:last-child
 komixxy.pl,mistrzowie.org,jbzd.pl##[id^="sky"]
-komorkomat.pl##.boxzilla-bottom-left-container
+komorkomat.pl##.boxzilla-bottom-left-container, .adsense-telefony
 komputerswiat.pl###\5f 479491471, .adBoxTop, div.adBox
 komputerswiat.pl##.intext:nth-of-type(17)
 komputerswiat.pl##.sidebar_html_embed, .ks-floating-slot-wrapper, .asideAds
@@ -1541,7 +1543,7 @@ lsi-lublin.pl###poster
 lsi-lublin.pl##.right > .moduletable
 lsk.plps.pl##A[rel="external nofollow"]
 lsw24.pl###c4315_0_2, #sponsorbox
-lubanski.eu##.image_widget
+lubanski.eu###metaslider_widget-8, ###banner-179, .image_widget
 lubartow24.pl##.img-responsive
 lubartow24.pl##DIV[style="margin: 0 auto; text-align: center; max-width: 950px;"]
 lubartow24.pl##[style="text-align: center; padding-bottom: 8px; margin: 0 auto;"]
@@ -1953,7 +1955,7 @@ opolak.pl,poznaniak.pl,szczeciniak.pl,toruniak.pl,warszawiak.pl,wroclawiak.pl,ka
 opowiecie.info##.a-widget
 optyczne.pl##.double-billboard
 optyczne.pl##.panel.shop-offer
-optyczne.pl##.panel:nth-of-type(3)
+optyczne.pl#?#center:-abp-has(script)
 optyczne.pl##.sidebar-left.main-content-right
 originals24.pl##body > div:nth-of-type(3)
 oscarrak.pl##IMG[alt^="baner"]
@@ -2144,7 +2146,7 @@ portalsremski.pl##div[class^="ban"]
 portaltatrzanski.com##.promo-baner
 poscigi.pl###rev_slider_1_1_wrapper, .td_block_image_box.td_block_wrap
 posshop.pl###box_custom3
-postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,audiostereo.pl,ogloszenia.gazeta.ie,legio24.pl,sdcv.pl,dostawcy-internetu.pl,forum.bukmacherskie.com,nasze.fm,lovekrakow.pl,mh24.pl,faktykonopne.pl,lajfy.com,disco-polo.info,pokemon-go.pl,gazeta-wiesci.pl,polskaniepodlegla.pl,lpg-forum.pl,kuszotv.pl,meczelive.tv,tablety.pl,polskatimes.pl,gazetakrakowska.pl,nacjonalista.pl,ostrowiecnews.pl,medianarodowe.com,prawy.pl,hobby-elektronika.eu,lowiczanin.info,kurier-w.pl,protestanci.info##center
+postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,solarkurier.pl,miniskrypt.hubaiitv.pl,swirtv.czo.pl,precyl.com,przeklej.org,club4you.pl,darmowetv.pl,forum.vwgolf.pl,szuman.eu,audiostereo.pl,ogloszenia.gazeta.ie,legio24.pl,sdcv.pl,dostawcy-internetu.pl,forum.bukmacherskie.com,nasze.fm,lovekrakow.pl,mh24.pl,faktykonopne.pl,lajfy.com,disco-polo.info,pokemon-go.pl,gazeta-wiesci.pl,polskaniepodlegla.pl,lpg-forum.pl,kuszotv.pl,meczelive.tv,tablety.pl,polskatimes.pl,gazetakrakowska.pl,nacjonalista.pl,ostrowiecnews.pl,medianarodowe.com,prawy.pl,hobby-elektronika.eu,lowiczanin.info,kurier-w.pl,protestanci.info,wachtyrz.eu##center
 potplayerclub.pl##.potpl-adlabel
 powiatowa.info###jm-header-mod > .jm-module:nth-of-type(2) > .jm-module-in
 powiatowa.info###jm-left > div > .jm-module:nth-of-type(1)
@@ -2167,6 +2169,7 @@ prawdaobiektywna.pl###right-re, #header-b, .clearfix.in-content2
 prawicowyinternet.pl##.td-ss-main-sidebar > .widget_text.widget.td_block_template_1:nth-of-type(2)
 prawicowyinternet.pl##.widget_text.widget.td_block_template_1:nth-of-type(4)
 prawicowyinternet.pl##.widget_text.widget.td_block_template_1:nth-of-type(5)
+prawo.pl##.main-content > .js-media.js-tab.block, .powiazana-oferta-html
 prawodrogowe.pl##IMG.img-responsive[src^="/img/banner/"]
 prawy.pl##img[src^="/ad/"]
 predkosc.pl##[href^="/_pub/ex.php"]
@@ -2663,6 +2666,7 @@ translate.google.pl##.gb_zb.gb_jb.gb_La
 trasa.info###forum-box
 trasa.info###trip
 trasa.info,kreskowki-online.pl,cs-creativ.pl###partners
+travelin.pl##.banner.wrap
 treningbiegacza.pl###under-menu-adds-wrapper, .is-visible.product-widget
 tripolo.pl###footer-sidebar
 trodatreleases.com##.bannertop
@@ -3245,7 +3249,7 @@ zywiecinfo.pl##.promoted
 ||embed.powercontent.pl^
 ||embed.wprost.pl/ad/$xmlhttprequest,domain=www.wprost.pl
 ||emisja.adsearch.pl/_/intext_static/*$script
-||emisja.contentstream.pl/$script,image,domain=~gol24.pl
+||emisja.contentstream.pl/$script,image,domain=~gol24.pl|~www.rp.pl
 ||eostroleka.pl/luba/dane/pliki/cache-*/$image,subdocument
 ||eurogol.pl/images/banner.jpg$image
 ||evertiq.pl/bin/evqNewsTop.js
@@ -3831,6 +3835,7 @@ xyz,mecz.tv,ipilka.info##[class$="_right"]
 ||ocs-pl.oktawave.com/*/*/bezprawnik/*/*_screening_smeo_promocja_*.png
 ||foto.stalowka.net/design/opel.jpg
 ||ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2019/01/380x1035.jpg$image
+||media.dziennikzwiazkowy.com/wp-content/uploads/2019/04/*.gif
 !
 !21#--------------------------Rules wykop.pl-------------!
 ||imgwykop.pl/*/*/paylink_$image,domain=www.wykop.pl
