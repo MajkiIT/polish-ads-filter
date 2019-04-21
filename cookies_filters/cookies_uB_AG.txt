@@ -1,11 +1,11 @@
-! Checksum: orusv3d9pLOhgwuNxUXWsA
+! Checksum: nGC6O7wbSUhDI9gy6Yp4BQ
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.4.16.2
-! Last modified: Tue, 16 Apr 2019, 20:19 UTC+02
+! Version: 2019.4.19.0
+! Last modified: Fri, 19 Apr 2019, 19:14 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.4.16.2 aktualizacja: wto, 16 kwi 2019, 20:19 UTC+02
+! v.2019.4.19.0 aktualizacja: pią, 19 kwi 2019, 19:14 UTC+02
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -96,7 +96,6 @@ google.com,google.pl##jsl > #consent-bump > .widget-consent
 google.com,google.pl###main > #body ~ #footer > div[id] > div[id] > #fbar > .fbar > #cnsi > g-dialog > div[id^="_"][class^=" "]
 google.com,google.pl###main > #lb > div[id^="_"][class] > div[class*="__overlay"]:not([id])
 google.com,google.pl###main > #lb > div[id^="_"][class] > div[class*="__"]:has(iframe[src^="https://consent.google.com"])
-google.com,google.pl###main > #lb > div[id^="_"][class^=" "]
 haloursynow.pl,warsztat.pl,hdtv-sat.eu##.modal-open:style(padding-right: 0 !important;)
 hbogo.pl##.banner-overlay
 hbogo.pl,cbdzoe.pl##body:style(overflow: auto !important; padding-right: 0 !important;)
@@ -251,6 +250,7 @@ zozsuchabeskidzka.pl###mpc-modal-4-1
 zsgarwolin.pl##.mfp-content:has(#cadre_alert_cookies)
 zsgarwolin.pl##.mfp-ready.mfp-bg
 zwolen.pl###g_toplayer, .modal-backdrop
+!google.com,google.pl###main > #lb > div[id^="_"][class^=" "]
 !play.google.com###gba:style(height: 60px !important;)
 !
 !
@@ -448,7 +448,7 @@ ztm.poznan.pl##^#PopUP
 !autostrada-a2.pl##^#rodo-box, #cookielaw-box
 !#endif
 !#if !cap_user_stylesheet
-forum.dobreprogramy.pl##body > div:not([id]):not([class*="modal"])[class]:nth-last-child(-n+3):nth-last-of-type(-n+3):matches-css(z-index: 1000000)
+forum.dobreprogramy.pl##body > div:not([id]):not([class*="modal"])[class]:nth-last-child(-n+4):nth-last-of-type(-n+4):matches-css(z-index: 1000000)
 fotoblogia.pl,gadzetomania.pl,komorkomania.pl,autokult.pl##.cookie-disclaimer:style(visibility: hidden !important;)
 homebook.pl##body > div:not([id])[class]:last-child:last-of-type:matches-css(z-index: 1000000)
 purepc.pl##+js(nano-remove-elements-onready.js, .cookiesinfo)
@@ -461,7 +461,7 @@ ssl.dobreprogramy.pl,www.dobreprogramy.pl##body > div:not([id])[class]:last-of-t
 ~www.wp.pl,wp.pl##body > #app ~ noscript + div:not([id])[class], body > iframe + iframe + div:not([id])[class]
 ~www.wp.pl,wp.pl##html, html > body:style(overflow: visible !important;)
 ~www.wp.pl,wp.pl,portal.abczdrowie.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,pudelek.pl,portal.abczdrowie.pl##body > *:style(filter: none !important;)
-forum.dobreprogramy.pl##body > div:not([id]):not([class*="modal"])[class]:nth-last-child(-n+3):nth-last-of-type(-n+3)
+forum.dobreprogramy.pl##body > div:not([id]):not([class*="modal"])[class]:nth-last-child(-n+4):nth-last-of-type(-n+4)
 forum.dobreprogramy.pl,homebook.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,pudelek.pl,portal.abczdrowie.pl##html:style(overflow-y: visible !important; height: auto !important;)
 fotoblogia.pl,gadzetomania.pl,homebook.pl,komorkomania.pl,pudelek.pl,portal.abczdrowie.pl##body > div:not([id])[class]:last-child:last-of-type
 sportowefakty.wp.pl##body > iframe ~ script + div:not([id])[class]
