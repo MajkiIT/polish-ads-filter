@@ -1,11 +1,11 @@
-! Checksum: Hvm/hC8y5oQD2G2pfeOdaw
+! Checksum: rEdW41/uJOSMnc1+bW2Evw
 ! Title: Polskie Filtry Społecznościowe - Uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish Social Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Social - Supplement
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, F4z, RikoDEV
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.4.26.0
-! Last modified: Fri, 26 Apr 2019, 11:30 UTC+02
+! Version: 2019.4.30.0
+! Last modified: Tue, 30 Apr 2019, 22:52 UTC+02
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,7 +13,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.4.26.0 aktualizacja: pią, 26 kwi 2019, 11:30 UTC+02
+! v.2019.4.30.0 aktualizacja: wto, 30 kwi 2019, 22:52 UTC+02
 !
 !
 ! Popupy
@@ -72,7 +72,8 @@ englishcollege.pl##.bannerdol > a[href="fb.html"]:style(visibility: hidden !impo
 freshfile.pl##.facebook, .google:style(visibility: hidden !important;)
 giritoffset.pl##+js(remove-attr.js, href, .jcarousel-item > a[href^="https://www.facebook.com/reklamatorregionalny"])
 naklejkolandia.pl##+js(remove-attr.js, href, #sliderBox ul > li > a[href^="https://www.facebook.com/notes/naklejkolandiapl/"])
-odkryjpomorze.pl##+js(nano-remove-elements-onready.js, div.span6 > map[name="Map"] > area:nth-of-type(1))
+odkryjpomorze.pl##+js(nano-remove-elements-onready.js, map[name="Map"] > area:nth-of-type(1))
+odkryjpomorze.pl##+js(remove-attr.js, href, map[name="Map"] > area:nth-of-type(1))
 plejada.pl##.detailContentWrapper .contentShareLeft .fb_share:style(background: transparent !important;)
 pl.pandora.net###socialMediaFooter .leftMediaLinkFooter:style(visibility: hidden)
 rynek-kolejowy.pl##.sledzNasContainer > .zawartoscBox:style(height: auto !important;)
@@ -97,6 +98,7 @@ azjatyckibazar.com##+js(remove-attr.js, href, .slides > li[data-duration] > a[hr
 homebeer.pl##+js(remove-attr.js, href|title, a.slider-img[href="https://pl-pl.facebook.com/homebeerpl/"])
 kamaciuch.pl##+js(remove-attr.js, href, .homeslider-container a[href="https://www.facebook.com/kamaciuch"])
 napiachu.pl##+js(remove-attr.js, href, .carousel-inner a[href="https://www.facebook.com/napiachu/"])
+um.kielce.pl##+js(remove-attr.js, href, map > area[alt="Facebook"])
 upominki24.pl##+js(remove-attr.js, href, #slider .item-16 a[href="https://www.facebook.com/upominki24pl/"])
 !#endif
 !#if cap_html_filtering
@@ -106,6 +108,7 @@ kamaciuch.pl##^.homeslider-container:has(a[href="https://www.facebook.com/kamaci
 napiachu.pl##^.carousel-inner > .item:not(.active):has(a[href="https://www.facebook.com/napiachu/"])
 sterydy.link##^div.rev_slider > ul > li[data-thumb*="sterydy-link-banner-fb"]
 swietarodzina.pila.pl##^div.partial_staged_slideL.single_fading_slide:has-text(Skontaktuj się z nami korzystając z serwisów społecznościowych), div.slider_nav > a:nth-of-type(5)
+um.kielce.pl##^map > area[alt="Facebook"]
 upominki24.pl##^#slider .item-16:has(a[href="https://www.facebook.com/upominki24pl/"])
 !#endif
 !
