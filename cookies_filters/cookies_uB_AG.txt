@@ -1,11 +1,11 @@
-! Checksum: xlKjDYpMb016HaXyUWSSlA
+! Checksum: Y7PibLYkbsidX1Ztbnkonw
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.4.26.0
-! Last modified: Fri, 26 Apr 2019, 11:30 UTC+02
+! Version: 2019.4.30.0
+! Last modified: Tue, 30 Apr 2019, 22:52 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.4.26.0 aktualizacja: pią, 26 kwi 2019, 11:30 UTC+02
+! v.2019.4.30.0 aktualizacja: wto, 30 kwi 2019, 22:52 UTC+02
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -26,7 +26,7 @@ abczdrowie.pl,autokult.pl,dobramama.pl,dobreprogramy.pl,echirurgia.pl,fotoblogia
 adexemplum.com,fastdeal.pl,zsgarwolin.pl,gtv.com.pl,teoria.pl##html:style(overflow: auto !important; margin-right: 0 !important;)
 adexemplum.com,gtv.com.pl,teoria.pl##.mfp-ready.mfp-wrap, .mfp-ready.mfp-bg
 agrosystems.pl##.modal-rodo
-agrosystems.pl,radioexpress.pl##body:style(overflow: auto !important;)
+agrosystems.pl,radioexpress.pl,nastyku.pl##body:style(overflow: auto !important;)
 airdron-polska.pl,paralympic.org.pl,manageronline.pl##+js(nano-remove-elements-onready.js, .popmake-overlay[data-popmake*="cookies"])
 airdron-polska.pl,paralympic.org.pl,manageronline.pl##.pum-open body > [aria-hidden]:style(padding-right: 0 !important;)
 albeco.com.pl###content:style(filter: none !important;)
@@ -60,6 +60,8 @@ cupsell.pl##.tingle-enabled:style(position: static !important; overflow: auto !i
 cupsell.pl##.tingle-modal
 dane.gov.pl##.modal-backdrop
 dane.gov.pl##.modal-dialog:has-text(RODO)
+ddz24.eu###cookie-law-info-bar, .cli-modal-backdrop
+ddz24.eu##.cli-barmodal-open:style(overflow: auto !important;)
 dobrapogoda24.pl###rodo-modal, .modal-backdrop
 dobrapogoda24.pl##+js(remove-attr.js, class, body[class="modal-open"])
 dobrapogoda24.pl##.modal-open:style(overflow: auto !important;)
@@ -155,6 +157,7 @@ m.24jgora.pl,24wroclaw.pl###rodoModal, .modal-backdrop
 m.autocentrum.pl##html.menu-active:style(overflow: auto !important;)
 m.autocentrum.pl##.hello-rodo
 m.filmweb.pl##body.rodo[style^="padding-top:"]:style(padding-top: 0 !important;)
+nastyku.pl###ns_cookie_accepted
 nauka.rocks##.ct-ultimate-gdpr-cookie-topPanel-padding:style(padding-top: 0 !important;)
 neon24.pl##+js(abort-on-property-read.js, Service.cookieMonster)
 obpon.pl##.menu-flashmessages:style(top: 0 !important;)
@@ -292,6 +295,8 @@ empik.com##.modal-backdrop
 eobuwie.com.pl##.no-scroll:style(overflow: auto !important;)
 eobuwie.com.pl##.popup:has(.permissions-form)
 eurologistics.pl,wybielanie.pl,pzsnstart.eu##.pum-open body > [aria-hidden]:style(padding-right: 0 !important;)
+e-legnickie.pl##body.jconfirm-noscroll:style(overflow: auto !important;)
+e-legnickie.pl##.jconfirm:has-text(cookies)
 farmacja.pl##div.rodo-modal
 farmacja.pl##+js(abort-current-inline-script.js, jQuery, .rodo-modal)
 fnglob.pl###modal, .modal-backdrop
@@ -401,6 +406,7 @@ ekobiuro24.pl##^#dialog-agreement
 emas.gdos.gov.pl,projekty.gdos.gov.pl,www.gdos.gov.pl##^[id^="banner-komunikat-rodo-"]
 empik.com##^.cookies-accept
 eobuwie.com.pl##^script:has-text(technologii cookies)
+e-legnickie.pl##^script:has-text(polityka-cookies)
 farmacja.pl##^div.rodo-modal
 farmacja.pl##^script:has-text(rodo)
 ferguson-digital.eu##^#cookie-notice
@@ -491,13 +497,14 @@ chelmonline.pl,powiatslubicki.pl$$#myModal
 dalmierze.pl$$#Widget3
 domhouse.pl##html.fancybox-lock > body, html.fancybox-lock:style(overflow: auto !important;)
 domhouse.pl##html.fancybox-margin:style(margin-right: 0 !important;)
-domhouse.pl##.fancybox-overlay:has-text(RODO)
+domhouse.pl##.fancybox-overlay[tag-content="RODO"]
 domhouse.pl,gdansk.pl,gokf.gda.pl,stadionenerga.pl,rowerowygdansk.pl$$.rodo
 dworzec.kielce.pl$$script[tag-content=".popup-aholic97"]
 easyprotect.pl$$.popup-aholic227
 ekobiuro24.pl$$#dialog-agreement
 emas.gdos.gov.pl,projekty.gdos.gov.pl,www.gdos.gov.pl$$[id^="banner-komunikat-rodo-"]
 empik.com$$.cookies-accept
+e-legnickie.pl$$script[tag-content="polityka-cookies"]
 farmacja.pl##[style^="filter: blur"]:style(filter: none !important;)
 farmacja.pl,radiobielsko.pl,webprojekt.biz$$script[tag-content="rodo"]
 ferguson-digital.eu$$#cookie-notice
