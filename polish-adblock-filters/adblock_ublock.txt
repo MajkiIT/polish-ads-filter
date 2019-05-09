@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 24 April 2019
+! Last modified: 9 May 2019
 ! Expires: 2 days
-! Version: 2019042401
+! Version: 2019050901
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2019042401 aktualizacja: sr, 24 kwietnia 2019, 21:44:30
+! v.2019050901 aktualizacja: czw, 9 maj 2019, 09:00:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -150,7 +150,7 @@ wp.pl,echirurgia.pl,money.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl##+js(se
 ~poczta.wp.pl,wp.pl,echirurgia.pl,kardiolo.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl,~pilot.wp.pl,~money.pl##+js(set-constant.js, WP.gaf.addCreation, noopFunc)
 autokult.pl##+js(set-constant.js, WP.gaf.loadAndRunBunch, noopFunc)
 ~poczta.wp.pl,wp.pl,pudelek.pl,~pilot.wp.pl##+js(set-constant.js, WP.gaf.setSlotCreation, noopFunc)
-~www.wp.pl,wp.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl,domodi.pl,autokult.pl,~pilot.wp.pl,~poczta.wp.pl,~sportowefakty.wp.pl##+js(set-constant.js, WP.gdpr.init, noopFunc)
+~www.wp.pl,wp.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl,domodi.pl,autokult.pl,~pilot.wp.pl,~poczta.wp.pl,~sportowefakty.wp.pl,~wiadomosci.wp.pl,~gry.wp.pl##+js(set-constant.js, WP.gdpr.init, noopFunc)
 www.wp.pl##+js(set-constant.js, WP.mods.welcomeScreen, noopFunc)
 ||adv.wp.pl/RM/Box/*.mp4$media,redirect=noopmp3-0.1s
 ||v.wpimg.pl/$media,redirect=noopmp3-0.1s,domain=wp.pl|~www.wp.pl|autokult.pl|parenting.pl|echirurgia.pl|money.pl|o2.pl|portal.abczdrowie.pl|komorkomania.pl|fotoblogia.pl|gadzetomania.pl|pudelek.pl|jejswiat.pl|medycyna24.pl|dobreprogramy.pl|kafeteria.pl
@@ -158,6 +158,7 @@ tv.wp.pl##+js(set-constant.js, WP.crux.sealed, falseFunc)
 www.wp.pl##body > #root ~ script + div[class]
 www.wp.pl##html, html > body:style(overflow: visible!important;)
 www.wp.pl###root:style(filter: none!important;)
+abczdrowie.pl#@#+js(addEventListener-defuser.js, DOMContentLoaded, :setTimeout)
 !
 ! o2.pl
 poczta.o2.pl,poczta.wp.pl##body > #page:style(display: block !important;)
