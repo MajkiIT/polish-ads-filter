@@ -1,11 +1,11 @@
-! Checksum: rEdW41/uJOSMnc1+bW2Evw
+! Checksum: 2YFJQFmw9Y6ScCrHl+gSsA
 ! Title: Polskie Filtry Społecznościowe - Uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish Social Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Social - Supplement
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, F4z, RikoDEV
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.4.30.0
-! Last modified: Tue, 30 Apr 2019, 22:52 UTC+02
+! Version: 2019.5.14.0
+! Last modified: Tue, 14 May 2019, 11:43 UTC+02
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,7 +13,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.4.30.0 aktualizacja: wto, 30 kwi 2019, 22:52 UTC+02
+! v.2019.5.14.0 aktualizacja: wto, 14 maj 2019, 11:43 UTC+02
 !
 !
 ! Popupy
@@ -63,7 +63,7 @@ lookcam.com$$#lookcam-fb-modal
 45minut.pl##+js(remove-attr.js, href, .carousel-inner a[href="https://www.facebook.com/45minutpl"])
 abcfirany.pl##+js(remove-attr.js, href, #BanneryAnimacjaPrzewijana > #scrlnr1 > a[href="https://abcfirany.pl/reklama-b-4.html"])
 am76.pl##.container.shop-footer .row > .text-center.col-md-6 > a:style(visibility: hidden !important;)
-autokult.pl,fotoblogia.pl,komorkomania.pl,fitness.wp.pl##.grid-item__social.grid-item:style(visibility: hidden !important; display: block !important; padding-top: 0 !important;)
+autokult.pl,fotoblogia.pl,komorkomania.pl,fitness.wp.pl,smaczneblogi.pl##.grid-item__social.grid-item:style(visibility: hidden !important; display: block !important; padding-top: 0 !important;)
 bankobranie.blogspot.com###sideSocial:style(height: auto !important;)
 barokko.pl##+js(remove-attr.js, href, div[class^="platnosci"] > a[href="http://www.facebook.com/pages/Barokkopl/142739835759246"])
 blog.wirtualnemedia.pl###social_ikons_header_fixed:style(visibility: hidden !important;)
@@ -84,11 +84,11 @@ wp.pl##.article > [class]:has(> [class] > .fb-like)
 !
 ! Widgety - specjalne instrukcje
 !#if !cap_user_stylesheet
+autokult.pl,gadzetomania.pl,fotoblogia.pl,komorkomania.pl,medycyna24.pl##a[href^="https://www.facebook.com/sharer.php"], a[href^="http://twitter.com/intent/tweet"], a[href^="http://pinterest.com/pin/create/link/"]:style(visibility: hidden !important;)
+autokult.pl,gadzetomania.pl,fotoblogia.pl,komorkomania.pl,medycyna24.pl,fitness.wp.pl##.link-facebook, .link-youtube, .link-gplus, .link-instagram, .link-pinterest, .icon-mail:style(visibility: hidden !important;)
 dobreprogramy.pl##.author-social-links, .content.float-right > .social, .rrssb-facebook, .rrssb-twitter, .social__group_share, .social__group_like > .social__item, #phContent_page_content .social__group_like, .social.float-right:style(visibility: hidden !important;)
 dobreprogramy.pl##.social__group > .social__label
 f.kafeteria.pl###ipsLayout_mainArea > .ipsList_inline > li > .cShareLink
-gadzetomania.pl,fotoblogia.pl,komorkomania.pl,autokult.pl##a[href^="https://www.facebook.com/sharer.php"], [href^="http://twitter.com/intent/tweet"], [href^="http://pinterest.com/pin/create/link/"]:style(visibility: hidden !important;)
-gadzetomania.pl,fotoblogia.pl,komorkomania.pl,autokult.pl##.link-facebook, .link-youtube, .link-gplus, .link-instagram, .icon-mail:style(visibility: hidden !important;)
 purepc.pl##.right.article-options
 wp.pl##.liketag, .wpsocials--buttons:style(visibility: hidden !important;)
 wp.pl,~www.wp.pl###app > div > table > tbody > tr:nth-child(1) > td > div > div > div > div > div > div > div > article > div > div > div > div[hidden]:style(position: absolute !important; left: -3000px !important;)
