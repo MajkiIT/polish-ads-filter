@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 14 May 2019
 ! Expires: 1 day
-! Version: 2019051401
+! Version: 2019051402
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019051401 aktualizacja: wt, 14 maja 2019, 22:05:00
+! v.2019051402 aktualizacja: wt, 14 maja 2019, 20:22:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -3167,6 +3167,7 @@ zywiecinfo.pl##.promoted
 /uploads/*tapeta*.jpg$image,domain=ciekawostkihistoryczne.pl|katowice24.info|miastodzieci.pl|wrc.net.pl
 /vardata/obrazki/$image,domain=pionki24.pl|zwolen24.pl
 /aserver/$script,subdocument
+|https://consumer.huawei.com/pl/?utm_source=huawei.pl&utm_medium=huawei.pl$popup,domain=www.dobreprogramy.pl
 ||24opole.pl/bimg/$image
 ||40ton.net/wp-content/uploads/*.gif$image
 ||40ton.net/wp-content/uploads/*.png$image
@@ -3495,7 +3496,7 @@ zywiecinfo.pl##.promoted
 ||static.gazetaprawna.pl/dziennik/required/build/js/adexonLoader.js$script
 ||static.gazetaprawna.pl/dziennik/required/build/js/scrollRedirect.js$script,domain=dziennik.pl
 ||static.im-g.pl/static/content/front/content-generator/master/front/dist/importFrame-min.js
-||static*jelonka.com
+||static*jelonka.com^
 ||static.lokalna24.pl/data/wysiwig/$image
 ||static.osemka.pl/pixad/$image,domain=gry-online.poszkole.pl
 ||static.pogonsportnet.pl/*banery-$image
@@ -3503,7 +3504,7 @@ zywiecinfo.pl##.promoted
 ||statics.tarsago.pl/$object-subrequest,domain=meczelive.tv|mecze24.pl
 ||static.wizaz.pl/dynamic/shopping/shopping-kwc.html
 ||static.wizaz.pl/system/kwc/promo/kwc_promo_box_*.html$subdocument
-||stg.wp.pl$subdocument
+||stg.wp.pl^$subdocument
 ||studentnews.pl/img/ban/b*.jpg$image
 ||superfilm.pl/branding/$image,domain=superfilm.pl
 ||superfilm.pl/*source=admedia&model=pop$popup
@@ -3535,7 +3536,7 @@ zywiecinfo.pl##.promoted
 ||vider.pl/static/player/v*/vast.js$script
 ||viralseedmedia.com/$script,domain=vod-share.com
 ||visualrevenue.com^
-||vixnixxer.com$script,third-party
+||vixnixxer.com^$script,third-party
 ||vshare.io/static/button.css$stylesheet
 ||v.wpimg.pl^$media,domain=pilot.wp.pl|open.fm
 ||v.wpimg.pl/$subdocument,domain=gwiazdy.wp.pl
@@ -3570,6 +3571,8 @@ zywiecinfo.pl##.promoted
 ||www.chwaszczyno.pl/templates/chwaszczyno*/images/designer/*_baner*.jpg$image
 ||www.comperialead.pl/upload/$image
 ||www.czarnkow.info/kir/ogl/$image
+||www.dobreprogramy.pl/cdn/*/huawei/huawei-$image 
+||www.dobreprogramy.pl/cdn/*/huawei/bg-mobile.jpg$image 
 ||www.ebelchatow.pl/sites/default/files/HTML5_baners/$subdocument
 ||www.ekobiety.pl/wp-content/uploads/*/reklama$image
 ||www.elondyn.co.uk/mainpage/data/event_buttons/plik/$image
@@ -4309,7 +4312,6 @@ www.dobreprogramy.pl##.pub-sponsor, .mfp-sidebar, #sgf-a, #boeGKY
 www.dobreprogramy.pl##[data-partner="Polecamy na WP Technologie"]
 www.dobreprogramy.pl###phContent_hpOperaLink, #phContent_avastBadge
 www.dobreprogramy.pl##div[style="text-align:center;letter-spacing:6px;font-size:11px;color:#A9A9A9;width:100%;margin-top:-13px"]
-obreprogramy.pl##html body > form#form1:not([style]):style(background-image: none !important; pointer-events: none;)
 !
 !43#--------------------------Gemius link to ads ------------!
 spidersweb.pl,topagrar.pl##a[href*="hit.gemius.pl/"]
