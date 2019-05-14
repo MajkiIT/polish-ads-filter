@@ -1,11 +1,11 @@
-! Checksum: JrgHb9i6+B4S1Pdsx4LvMA
+! Checksum: YkiXPK985Lg/i+n44A/KGA
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.5.9.1
-! Last modified: Thu, 09 May 2019, 19:15 UTC+02
+! Version: 2019.5.14.0
+! Last modified: Tue, 14 May 2019, 11:43 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,13 +14,14 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.5.9.1 aktualizacja: czw, 09 maj 2019, 19:15 UTC+02
+! v.2019.5.14.0 aktualizacja: wto, 14 maj 2019, 11:43 UTC+02
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
 4lomza.pl##body.polityka-cookies:style(margin-top: 0 !important;)
 7ryb.pl,etransport.pl,hrkgame.com##.modals.dimmer
 7ryb.pl,etransport.pl,hrkgame.com##.dimmed:style(overflow: auto !important;)
+24wroclaw.pl,ceres.pl,dane.gov.pl,e-sochaczew.pl,giantfabryczna.pl,gry.lotto.pl,komugroup.eu,liv-cycling.com,m.24jgora.pl,multimediago.pl,obywatel.gov.pl,olesnica24.com,printoteka.pl,tvdami.eu,tvgo.orange.pl,wrzesnia.info.pl,zwolen.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 abcalkoholu.pl##.cookielaw:style(padding-top: 0 !important;)
 adexemplum.com,fastdeal.pl,zsgarwolin.pl,gtv.com.pl,teoria.pl##html:style(overflow: auto !important; margin-right: 0 !important;)
 adexemplum.com,gtv.com.pl,teoria.pl##.mfp-ready.mfp-wrap, .mfp-ready.mfp-bg
@@ -30,6 +31,8 @@ airdron-polska.pl,paralympic.org.pl,manageronline.pl##+js(nano-remove-elements-o
 airdron-polska.pl,paralympic.org.pl,manageronline.pl##.pum-open body > [aria-hidden]:style(padding-right: 0 !important;)
 albeco.com.pl###content:style(filter: none !important;)
 albeco.com.pl###pol-background, #pol-c
+allani.pl,domodi.pl,forum.dobreprogramy.pl,homebook.pl##+js(addEventListener-defuser.js, message, e.origin)
+allani.pl,domodi.pl,forum.dobreprogramy.pl,homebook.pl##+js(setTimeout-defuser.js, message:"Not responding", 3000)
 analizy.pl##.nl_rodo, .ui-widget-overlay
 analizy.pl,mago.com,edupolis.pl##html:style(overflow: auto !important;)
 andrychow.eu,candeo.pl,defra.pl,fdds.pl,gazetabilgoraj.pl,koleje-wielkopolskie.com.pl,manageronline.pl,pedzledomakijazu.com,powiat.limanowski.pl,przegladpolityczny.pl,zgrp.pl##.popmake-overlay[data-popmake*="cookies"]
@@ -39,7 +42,6 @@ aquapark.wroc.pl###header:style(top: 0 !important;)
 archiwum.rp.pl,info.rp.pl,konik-online.pl,bloombergbusinessweek.pl##body:style(margin-top: 0 !important;)
 atat.pl,elektryka-atat.pl,chemia-atat.pl,oswietlenie-atat.pl,zywnosc-atat.pl##.gdprModal
 atat.pl,elektryka-atat.pl,chemia-atat.pl,oswietlenie-atat.pl,zywnosc-atat.pl##.overflow-hidden:style(overflow: auto !important;)
-autokult.pl,dobramama.pl,dobreprogramy.pl,echirurgia.pl,fotoblogia.pl,gadzetomania.pl,jejswiat.pl,kafeteria.pl,kafeteria.tv,komorkomania.pl,luxlux.pl,medycyna24.pl,m.domodi.pl,mixer.pl,money.pl,nocowanie.pl,o2.pl,open.fm,parenting.pl,pinger.pl,pogodnie.pl,pudelek.pl,pytamy.pl,samosia.pl,smog.pl,snobka.pl,testwiedzy.pl,~sportowefakty.wp.pl,wp.pl##+js(addEventListener-defuser.js, DOMContentLoaded, :setTimeout)
 auto-czesci-lipiec.pl###mAll
 auto-czesci-lipiec.pl,mkidn.gov.pl,puma.com,paczkomaty.pl##.modal-open:style(overflow: visible !important; padding-right: 0 !important;)
 baptysci.pl###gafancybox-overlay559
@@ -65,8 +67,6 @@ ddz24.eu##.cli-barmodal-open:style(overflow: auto !important;)
 dobrapogoda24.pl###rodo-modal, .modal-backdrop
 dobrapogoda24.pl##+js(remove-attr.js, class, body[class="modal-open"])
 dobrapogoda24.pl##.modal-open:style(overflow: auto !important;)
-dobreprogramy.pl,domodi.pl,homebook.pl##+js(addEventListener-defuser.js, message, e.origin)
-dobreprogramy.pl,domodi.pl,homebook.pl##+js(setTimeout-defuser.js, message:"Not responding", 3000)
 dobrzemieszkaj.pl###axn
 dobrzemieszkaj.pl##.nlOpen:style(overflow: auto !important;)
 domisad.pl##.show-message #shop-info:style(padding: 60px 0 15px 0 !important;)
@@ -156,13 +156,13 @@ mzk-torun.pl###fancybox-container-2:has(#policy_elem)
 m.24jgora.pl,24wroclaw.pl###rodoModal, .modal-backdrop
 m.autocentrum.pl##html.menu-active:style(overflow: auto !important;)
 m.autocentrum.pl##.hello-rodo
+m.domodi.pl,mixer.pl,nocowanie.pl,pinger.pl,pogodnie.pl,pytamy.pl,samosia.pl,snobka.pl,testwiedzy.pl,www.wp.pl##+js(addEventListener-defuser.js, DOMContentLoaded, :setTimeout)
 m.filmweb.pl##body.rodo[style^="padding-top:"]:style(padding-top: 0 !important;)
 nastyku.pl###ns_cookie_accepted
 nauka.rocks##.ct-ultimate-gdpr-cookie-topPanel-padding:style(padding-top: 0 !important;)
 neon24.pl##+js(abort-on-property-read.js, Service.cookieMonster)
 obpon.pl##.menu-flashmessages:style(top: 0 !important;)
 obywatel.gov.pl###modal-rodo, .modal-backdrop
-obywatel.gov.pl,m.24jgora.pl,e-sochaczew.pl,multimediago.pl,dane.gov.pl,24wroclaw.pl,zwolen.pl,wrzesnia.info.pl,ceres.pl,komugroup.eu,gry.lotto.pl,printoteka.pl,olesnica24.com,giantfabryczna.pl,liv-cycling.com,tvdami.eu##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 oko.press##.is-reveal-open:style(overflow: auto !important;)
 oko.press##.reveal-overlay
 olesnica24.com,tvdami.eu###popModal, .modal-backdrop
@@ -227,6 +227,7 @@ trendyopticians.pl##.bpr_body[style]:style(overflow: auto !important; background
 trendyradio.pl###fancybox-container-1:has(#rodo_1)
 tureckisklep.pl##.fancybox-overlay-fixed.fancybox-overlay[style]:has(#conditions_condition button.acceptCondition)
 tuzdrowie.pl###popupModal, .modal-backdrop
+tvgo.orange.pl##body > div[role="dialog"]:not([id]):not([class]):has(.rodo-wrapper)
 tv.pudelek.pl,gryonline.wp.pl##+js(set-constant.js, wp_no_consent_screen, true)
 twitter.com##.topbar-spacer:style(padding-top: 0 !important;)
 ugb.pl##+js(abort-current-inline-script.js, alert, RODO)
@@ -459,24 +460,9 @@ ztm.poznan.pl##^#PopUP
 !autostrada-a2.pl##^#rodo-box, #cookielaw-box
 !#endif
 !#if !cap_user_stylesheet
-fotoblogia.pl,gadzetomania.pl,komorkomania.pl,autokult.pl##.cookie-disclaimer:style(visibility: hidden !important;)
 purepc.pl##+js(nano-remove-elements-onready.js, .cookiesinfo)
-sportowefakty.wp.pl##body[class] > *:style(filter: none !important;)
-sportowefakty.wp.pl##+js(overlay-buster.js)
-!forum.dobreprogramy.pl##body > div:not([id]):not([class*="modal"])[class]:nth-last-child(-n+4):nth-last-of-type(-n+4):matches-css(z-index: 1000000)
-!homebook.pl##body > div:not([id])[class]:last-child:last-of-type:matches-css(z-index: 1000000)
-!sportowefakty.wp.pl##html:style(overflow-y: visible !important; height: auto !important;)
-!ssl.dobreprogramy.pl,www.dobreprogramy.pl##body > div:not([id])[class]:last-of-type:matches-css(z-index: 1000000)
 !#endif
 !#if cap_user_stylesheet
-~www.wp.pl,wp.pl##body > #app ~ noscript + div:not([id])[class], body > iframe + iframe + div:not([id])[class]
-~www.wp.pl,wp.pl##html, html > body:style(overflow: visible !important;)
-~www.wp.pl,wp.pl,portal.abczdrowie.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,pudelek.pl,portal.abczdrowie.pl##body > *:style(filter: none !important;)
-forum.dobreprogramy.pl,homebook.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,pudelek.pl,portal.abczdrowie.pl##html:style(overflow-y: visible !important; height: auto !important;)
-fotoblogia.pl,gadzetomania.pl,homebook.pl,komorkomania.pl,pudelek.pl,portal.abczdrowie.pl##body > div:not([id])[class]:last-child:last-of-type
-sportowefakty.wp.pl##body > iframe ~ script + div:not([id])[class]
-!forum.dobreprogramy.pl##body > div:not([id]):not([class*="modal"])[class]:nth-last-child(-n+4):nth-last-of-type(-n+4)
-!ssl.dobreprogramy.pl,www.dobreprogramy.pl##body > div:not([id])[class]:last-of-type
 !#endif
 !#if !env_mobile
 azure.microsoft.com###main:style(padding-top: 88px !important;)
