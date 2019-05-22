@@ -1,11 +1,11 @@
-! Checksum: YkiXPK985Lg/i+n44A/KGA
+! Checksum: fyq1mdtJH9SIGPaKhH7tbw
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.5.14.0
-! Last modified: Tue, 14 May 2019, 11:43 UTC+02
+! Version: 2019.5.22.0
+! Last modified: Wed, 22 May 2019, 11:02 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.5.14.0 aktualizacja: wto, 14 maj 2019, 11:43 UTC+02
+! v.2019.5.22.0 aktualizacja: śro, 22 maj 2019, 11:02 UTC+02
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -31,8 +31,6 @@ airdron-polska.pl,paralympic.org.pl,manageronline.pl##+js(nano-remove-elements-o
 airdron-polska.pl,paralympic.org.pl,manageronline.pl##.pum-open body > [aria-hidden]:style(padding-right: 0 !important;)
 albeco.com.pl###content:style(filter: none !important;)
 albeco.com.pl###pol-background, #pol-c
-allani.pl,domodi.pl,forum.dobreprogramy.pl,homebook.pl##+js(addEventListener-defuser.js, message, e.origin)
-allani.pl,domodi.pl,forum.dobreprogramy.pl,homebook.pl##+js(setTimeout-defuser.js, message:"Not responding", 3000)
 analizy.pl##.nl_rodo, .ui-widget-overlay
 analizy.pl,mago.com,edupolis.pl##html:style(overflow: auto !important;)
 andrychow.eu,candeo.pl,defra.pl,fdds.pl,gazetabilgoraj.pl,koleje-wielkopolskie.com.pl,manageronline.pl,pedzledomakijazu.com,powiat.limanowski.pl,przegladpolityczny.pl,zgrp.pl##.popmake-overlay[data-popmake*="cookies"]
@@ -107,7 +105,8 @@ haloursynow.pl,warsztat.pl,hdtv-sat.eu##.modal-open:style(padding-right: 0 !impo
 hbogo.pl##.banner-overlay
 hbogo.pl,cbdzoe.pl##body:style(overflow: auto !important; padding-right: 0 !important;)
 hm.com##.modaloverlay:has(#gdpr-modal)
-hm.com##.modal-open, .modal-open body:style(position: static !important; overflow-y: auto !important;)
+hm.com##.modal-open body:style(position: static !important;)
+hm.com##.modal-open:style(overflow-y: auto !important;)
 ikea.com###cookieMsgBlock
 ikea.com##.has-cookie .main-header-wrap:style(top: 0 !important;)
 indbuildcraft.pl##.modal-overlay, #modal_cookies
@@ -156,8 +155,9 @@ mzk-torun.pl###fancybox-container-2:has(#policy_elem)
 m.24jgora.pl,24wroclaw.pl###rodoModal, .modal-backdrop
 m.autocentrum.pl##html.menu-active:style(overflow: auto !important;)
 m.autocentrum.pl##.hello-rodo
-m.domodi.pl,mixer.pl,nocowanie.pl,pinger.pl,pogodnie.pl,pytamy.pl,samosia.pl,snobka.pl,testwiedzy.pl,www.wp.pl##+js(addEventListener-defuser.js, DOMContentLoaded, :setTimeout)
 m.filmweb.pl##body.rodo[style^="padding-top:"]:style(padding-top: 0 !important;)
+m.youtube.com##body[modal-open-body]:style(position: static !important;)
+m.youtube.com##.consent-bump-lightbox
 nastyku.pl###ns_cookie_accepted
 nauka.rocks##.ct-ultimate-gdpr-cookie-topPanel-padding:style(padding-top: 0 !important;)
 neon24.pl##+js(abort-on-property-read.js, Service.cookieMonster)
@@ -219,6 +219,8 @@ sonymobile.com##.bnw-module.header[style="margin-top: 80px;"]:style(margin-top: 
 szpitalnawrzesinie.pl###gafancybox-overlay122
 teatrpolski.waw.pl##.fancybox-overlay:has(#privacyPolicy)
 telepizza.pl##.navbar:style(margin-top: 0 !important;)
+tinder.com###content > span > .App main div[class^="Pos"][class*="NetHeight"]:style(height: 100% !important;)
+tinder.com###content > span > .App > div[class^="Pos"][class*="Start"]:has-text(pliki cookie)
 tlumacz-in.pl##body.jconfirm-noscroll:style(overflow: auto !important;)
 tlumacz-in.pl##.jconfirm:has(.jconfirm-scrollpane)
 translate.google.pl###gba:style(height: 60px !important;)
@@ -251,7 +253,7 @@ www.g2a.com##.noscroll:style(position: static !important; overflow: auto !import
 www.pekao.com.pl##body.is-reveal-open:style(overflow: auto !important; width: unset !important;)
 www.pekao.com.pl##.reveal-overlay:has(#gdpr-popup)
 youtube.com##div#masthead-positioner-height-offset:style(height: 80px !important;)
-zakopane.info,tuwroclaw.com,tulodz.com###pd-modal, .modal-backdrop
+zakopane.info,tuwroclaw.com###pd-modal, .modal-backdrop
 zdmikp.bydgoszcz.pl###customModal, .modal-backdrop
 zeropln.antyweb.pl,praca.antyweb.pl##.justify-end.flex-col.flex.z-50.fixed.pin
 zozsuchabeskidzka.pl##body.mpc-block-scroll:style(overflow-x: hidden !important; overflow-y: visible !important;)
@@ -266,7 +268,7 @@ zwolen.pl###g_toplayer, .modal-backdrop
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂 - specjalne instrukcje
 !#if !cap_html_filtering
 4fun.tv###cModal, .modal-backdrop
-4fun.tv,alltube.pl,alltube.tv,bioagris.pl,born2be.pl,cenapaliw.pl,craftserve.pl,fryzomania.pl,gdansk.pl,gokf.gda.pl,infoplanet.pl,infostrow.pl,motobanda.pl,muzyczneradio.pl,ogloszenia.plock.pl,polski-tenis.pl,pro-sprzet.pl,renee.pl,roztoczanskipn.pl,spolem.katowice.pl,tujastrzebie.pl,tulodz.com,tuwroclaw.com,tuzdrowie.pl,tuzory.pl,tvasta.pl,tvregionalna24.pl,ustawlige.com,ustawmundial.weszlo.com,zakopane.info,zdajmyrazem.pl,ztm.poznan.pl,gdos.gov.pl,wtk.pl,halowawa.pl,dlawas.info,emas.gdos.gov.pl,natura2000.gdos.gov.pl,projekty.gdos.gov.pl,ideafairplay.pl,wpr.pl,academy.asseco.pl,fnglob.pl,tvbraniewo24.pl,stadionenerga.pl,rowerowygdansk.pl,brieftip.pl,lipinscy.pl,mistravel.pl,norgips.pl,rome-easysolution.tk,happydental.pl,tvmalbork.pl,poradnikbudowlany.eu,kaliber.pl,chelmonline.pl,ac.com.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
+4fun.tv,alltube.pl,alltube.tv,bioagris.pl,born2be.pl,cenapaliw.pl,craftserve.pl,fryzomania.pl,gdansk.pl,gokf.gda.pl,infoplanet.pl,infostrow.pl,motobanda.pl,muzyczneradio.pl,ogloszenia.plock.pl,polski-tenis.pl,pro-sprzet.pl,renee.pl,roztoczanskipn.pl,spolem.katowice.pl,tujastrzebie.pl,tulodz.pl,tuwroclaw.com,tuzdrowie.pl,tuzory.pl,tvasta.pl,tvregionalna24.pl,ustawlige.com,ustawmundial.weszlo.com,zakopane.info,zdajmyrazem.pl,ztm.poznan.pl,gdos.gov.pl,wtk.pl,halowawa.pl,dlawas.info,emas.gdos.gov.pl,natura2000.gdos.gov.pl,projekty.gdos.gov.pl,ideafairplay.pl,wpr.pl,academy.asseco.pl,fnglob.pl,tvbraniewo24.pl,stadionenerga.pl,rowerowygdansk.pl,brieftip.pl,lipinscy.pl,mistravel.pl,norgips.pl,rome-easysolution.tk,happydental.pl,tvmalbork.pl,poradnikbudowlany.eu,kaliber.pl,chelmonline.pl,ac.com.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 academy.asseco.pl###politykaPrywatnosciModal, .modal-backdrop
 ac.com.pl###modalRodoInfo, .modal-backdrop
 ac.com.pl##+js(abort-current-inline-script.js, $, #modalRodoInfo)
@@ -357,7 +359,7 @@ tarnowska.tv###popModal, .modal-backdrop
 tarnowska.tv##+js(nano-remove-elements-onready.js, #popModal)
 tarnowska.tv##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 tuzdrowie.pl###popupModal, .modal-backdrop
-tuzory.pl,tujastrzebie.pl,tuwroclaw.com,tulodz.com,zakopane.info###pd-modal, .modal-backdrop
+tuzory.pl,tujastrzebie.pl,tuwroclaw.com,tulodz.pl,zakopane.info###pd-modal, .modal-backdrop
 tvasta.pl##.modal-backdrop
 tvregionalna24.pl,tvbraniewo24.pl,optimalg.com,tvmalbork.pl,poradnikbudowlany.eu###rodoModal, .modal-backdrop
 tvsztum.pl###rodoModal
@@ -439,7 +441,7 @@ publikator.com.pl##^script:has-text(polityka|zaufani)
 pulawy.eu##^#modalRodo
 radiobielsko.pl,webprojekt.biz##^script:has-text(#rodo)
 rome-easysolution.tk##^#modal-fade
-rybnik.com.pl,slaskibiznes.pl,tuwodzislaw.pl,tuzory.pl,tujastrzebie.pl,tuwroclaw.com,tulodz.com,zakopane.info##^#pd-modal
+rybnik.com.pl,slaskibiznes.pl,tuwodzislaw.pl,tuzory.pl,tujastrzebie.pl,tuwroclaw.com,tulodz.pl,zakopane.info##^#pd-modal
 sevenpolska.com##^#flipFlop
 sklepbiker.pl,tvbraniewo24.pl,tvsztum.pl,tvregionalna24.pl,optimalg.com,tvmalbork.pl,poradnikbudowlany.eu##^#rodoModal
 skm.pkp.pl##^#dialog-message-rodo
@@ -523,7 +525,7 @@ pruszczgdanski.pl$$#auto_popup
 publikator.com.pl$$script[tag-content="polityka|zaufani"]
 pulawy.eu$$#modalRodo
 rome-easysolution.tk$$#modal-fade
-rybnik.com.pl,slaskibiznes.pl,tuwodzislaw.pl,tuzory.pl,tujastrzebie.pl,tuwroclaw.com,tulodz.com,zakopane.info$$#pd-modal
+rybnik.com.pl,slaskibiznes.pl,tuwodzislaw.pl,tuzory.pl,tujastrzebie.pl,tuwroclaw.com,tulodz.pl,zakopane.info$$#pd-modal
 sevenpolska.com$$#flipFlop
 sklepbiker.pl###rodoModal, .modal-backdrop
 sklepbiker.pl,galopuje.pl##.modal-open:style(padding-right: 0 !important; overflow: auto !important;)
