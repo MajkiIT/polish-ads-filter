@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 20 May 2019
+! Last modified: 23 May 2019
 ! Expires: 2 days
-! Version: 2019052001
+! Version: 2019052301
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2019052001 aktualizacja: pon, 20 maj 2019, 18:52:00
+! v.2019052301 aktualizacja: czw, 23 maj 2019, 22:50:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -107,7 +107,7 @@ www.ps4forum.pl##.forumsTabLinks.tabLinks:style(top: 60px !important;)
 !||www.dobreprogramy.pl^$csp=img-src 'self' *.dpcdn.pl
 dobreprogramy.pl##body.variant-mobile div[style="color: #A9A9A9; text-align:center;font-size:11px;"]:style(visibility: hidden !important;)
 dobreprogramy.pl##body:not(#bd):not([style*="background-image:"]):style(background-image:none !important;)
-dobreprogramy.pl##+js(set-constant.js, WP.gaf.loadAndRunBunch, noopFunc)
+!dobreprogramy.pl##+js(set-constant.js, WP.gaf.loadAndRunBunch, noopFunc)
 forum.dobreprogramy.pl##body[class]:style(background-image: none !important;)
 www.dobreprogramy.pl###phContent_downloaderHint
 www.dobreprogramy.pl##div[class*="tag-"].home-section > .span-8:style(width: 100% !important; margin-right: 15px !important;)
@@ -147,9 +147,9 @@ wp.pl##[class^="_"]:has(>img[src*=".wp.pl"])
 wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##+js(abort-on-property-write.js, iaqExt)
 wp.pl,echirurgia.pl,money.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl##+js(set-constant.js, PWA_adbd, 2)
-~poczta.wp.pl,wp.pl,echirurgia.pl,kardiolo.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl,~pilot.wp.pl,~money.pl##+js(set-constant.js, WP.gaf.addCreation, noopFunc)
-autokult.pl##+js(set-constant.js, WP.gaf.loadAndRunBunch, noopFunc)
-~poczta.wp.pl,wp.pl,pudelek.pl,~pilot.wp.pl##+js(set-constant.js, WP.gaf.setSlotCreation, noopFunc)
+!~poczta.wp.pl,wp.pl,echirurgia.pl,kardiolo.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl,~pilot.wp.pl,~money.pl##+js(set-constant.js, WP.gaf.addCreation, noopFunc)
+!autokult.pl##+js(set-constant.js, WP.gaf.loadAndRunBunch, noopFunc)
+!~poczta.wp.pl,wp.pl,pudelek.pl,~pilot.wp.pl##+js(set-constant.js, WP.gaf.setSlotCreation, noopFunc)
 ~dom.wp.pl,~facet.wp.pl,~film.wp.pl,~gry.wp.pl,~gwiazdy.wp.pl,~kobieta.wp.pl,~ksiazki.wp.pl,~opinie.wp.pl,~pilot.wp.pl,~poczta.wp.pl,~pogoda.wp.pl,~sportowefakty.wp.pl,~tech.wp.pl,~teleshow.wp.pl,~telewizja.wp.pl,~turystyka.wp.pl,~wawalove.wp.pl,~wiadomosci.wp.pl,~www.wp.pl,abczdrowie.pl,autokult.pl,domodi.pl,fotoblogia.pl,komorkomania.pl,wp.pl##+js(set-constant.js, WP.gdpr.init, noopFunc)
 www.wp.pl##+js(set-constant.js, WP.mods.welcomeScreen, noopFunc)
 ||adv.wp.pl/RM/Box/*.mp4$media,redirect=noopmp3-0.1s
