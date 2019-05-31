@@ -8,7 +8,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 30 May 2019
 ! Expires: 2 days
-! Version: 2019053001
+! Version: 2019053002
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2019053001 aktualizacja: czw, 30 maj 2019, 21:10:00
+! v.2019053002 aktualizacja: czw, 30 maj 2019, 23:10:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -439,3 +439,12 @@ it-manuals.info##html.pum-open [aria-hidden]:style(padding-right: 0 !important;)
 !
 ! google.com,google.pl
 google.com,google.pl##.rllt__link:has(> div[class]:has-text(Reklama)):xpath(..)
+!
+! powiatowa.info
+powiatowa.info##.container-fluid > .row-fluid > #jm-header-mod.span3:style(width: 100% !important;)
+!#if !env_mobile
+powiatowa.info##.latestnews:style(-moz-column-count: 3; -moz-column-gap: 20px; -webkit-column-count: 3; -webkit-column-gap: 20px; column-count: 3 ;column-gap: 20px;)
+!#endif
+!#if env_mobile
+powiatowa.info##.latestnews:style(-moz-column-count: 2; -moz-column-gap: 20px; -webkit-column-count: 2; -webkit-column-gap: 20px; column-count: 2 ;column-gap: 20px;)
+!#endif
