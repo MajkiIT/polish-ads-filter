@@ -1,11 +1,11 @@
-! Checksum: fyq1mdtJH9SIGPaKhH7tbw
+! Checksum: vCKn2utOEWB0oDB0WJRMCg
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.5.22.0
-! Last modified: Wed, 22 May 2019, 11:02 UTC+02
+! Version: 2019.6.2.0
+! Last modified: Sun, 02 Jun 2019, 20:40 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,14 +14,14 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.5.22.0 aktualizacja: śro, 22 maj 2019, 11:02 UTC+02
+! v.2019.6.2.0 aktualizacja: nie, 02 cze 2019, 20:40 UTC+02
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
 4lomza.pl##body.polityka-cookies:style(margin-top: 0 !important;)
 7ryb.pl,etransport.pl,hrkgame.com##.modals.dimmer
 7ryb.pl,etransport.pl,hrkgame.com##.dimmed:style(overflow: auto !important;)
-24wroclaw.pl,ceres.pl,dane.gov.pl,e-sochaczew.pl,giantfabryczna.pl,gry.lotto.pl,komugroup.eu,liv-cycling.com,m.24jgora.pl,multimediago.pl,obywatel.gov.pl,olesnica24.com,printoteka.pl,tvdami.eu,tvgo.orange.pl,wrzesnia.info.pl,zwolen.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
+24wroclaw.pl,ceres.pl,dane.gov.pl,e-sochaczew.pl,giantfabryczna.pl,gry.lotto.pl,komugroup.eu,liv-cycling.com,m.24jgora.pl,multimediago.pl,obywatel.gov.pl,olesnica24.com,printoteka.pl,tvdami.eu,tvgo.orange.pl,wrzesnia.info.pl,zwolen.pl,repostuj.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 abcalkoholu.pl##.cookielaw:style(padding-top: 0 !important;)
 adexemplum.com,fastdeal.pl,zsgarwolin.pl,gtv.com.pl,teoria.pl##html:style(overflow: auto !important; margin-right: 0 !important;)
 adexemplum.com,gtv.com.pl,teoria.pl##.mfp-ready.mfp-wrap, .mfp-ready.mfp-bg
@@ -62,9 +62,9 @@ dane.gov.pl##.modal-backdrop
 dane.gov.pl##.modal-dialog:has-text(RODO)
 ddz24.eu###cookie-law-info-bar, .cli-modal-backdrop
 ddz24.eu##.cli-barmodal-open:style(overflow: auto !important;)
-dobrapogoda24.pl###rodo-modal, .modal-backdrop
 dobrapogoda24.pl##+js(remove-attr.js, class, body[class="modal-open"])
 dobrapogoda24.pl##.modal-open:style(overflow: auto !important;)
+dobrapogoda24.pl,repostuj.pl###rodo-modal, .modal-backdrop
 dobrzemieszkaj.pl###axn
 dobrzemieszkaj.pl##.nlOpen:style(overflow: auto !important;)
 domisad.pl##.show-message #shop-info:style(padding: 60px 0 15px 0 !important;)
@@ -174,8 +174,8 @@ ostrzegamy.online##body.rodo-locked, html.rodo-locked:style(overflow: auto !impo
 ostrzegamy.online##.rodo-popup, .rodo-overlay
 otwarteklatki.pl###popup-gdpr, .popup-overlay
 otwarteklatki.pl##.popup-visible:style(overflow: auto !important;)
-paczkomaty.pl##+js(remove-attr.js, class|style, body[class="modal-open"][style^="padding-right: "][style$="px;"]:not([style*="; "]))
 paczkomaty.pl##.modal:has(app-regulations-modal > .modal-header > .modal-title:has-text(RODO)), .modal-backdrop
+paczkomaty.pl,repostuj.pl##+js(remove-attr.js, class|style, body[class="modal-open"][style^="padding-right: "][style$="px;"]:not([style*="; "]))
 panattonieurope.com###image-popup.txt-popup, #image-popup-bg
 paypal.com##.gdprCookieBanner-acceptedAll:style(margin-bottom: 0 !important;)
 pay.google.com##.main-footer--cookie.o-container:style(padding-bottom: 0 !important;)
@@ -223,6 +223,8 @@ tinder.com###content > span > .App main div[class^="Pos"][class*="NetHeight"]:st
 tinder.com###content > span > .App > div[class^="Pos"][class*="Start"]:has-text(pliki cookie)
 tlumacz-in.pl##body.jconfirm-noscroll:style(overflow: auto !important;)
 tlumacz-in.pl##.jconfirm:has(.jconfirm-scrollpane)
+tme.eu##html[style]:style(overflow: auto !important;)
+tme.eu###popup_container, #popup_overlay
 translate.google.pl###gba:style(height: 60px !important;)
 trendyopticians.pl###bpr_rodo-info
 trendyopticians.pl##.bpr_body[style]:style(overflow: auto !important; background-position-x: 50% !important;)
@@ -243,8 +245,8 @@ vod.naekranie.pl,samasz.pl,mzbm.tychy.pl##.modal-open:style(overflow: auto !impo
 wagrowczanie.pl##.showRodo
 wakacje.pl###__next > div > div > div[class]:not([id]):has(> div > button):has-text(Administratorem)
 webhelp.pl###wrapper:style(margin-top: auto !important;)
-wpolityce.pl##.rhododendron-body-with-popup:style(overflow: auto !important;)
-wpolityce.pl##.rhododendron-popup, .rhododendron-popup-overlay
+wgospodarce.pl,wpolityce.pl##.rhododendron-body-with-popup:style(overflow: auto !important;)
+wgospodarce.pl,wpolityce.pl##.rhododendron-popup, .rhododendron-popup-overlay
 wrzesnia.info.pl###rodo, .modal-backdrop
 wsensie.pl,wsensie.tv###policy
 wsensie.pl,wsensie.tv##.policy-open section:style(filter: none !important;)
