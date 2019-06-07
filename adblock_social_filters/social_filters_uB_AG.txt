@@ -1,11 +1,11 @@
-! Checksum: uBQI/R+q3PBgjZTmSw/71g
+! Checksum: sBQEfxSerA8uIJFLxIGa9A
 ! Title: Polskie Filtry Społecznościowe - Uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish Social Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Social - Supplement
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, F4z, RikoDEV
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.6.2.0
-! Last modified: Sun, 02 Jun 2019, 20:40 UTC+02
+! Version: 2019.6.7.0
+! Last modified: Fri, 07 Jun 2019, 20:03 UTC+02
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,7 +13,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.6.2.0 aktualizacja: nie, 02 cze 2019, 20:40 UTC+02
+! v.2019.6.7.0 aktualizacja: pią, 07 cze 2019, 20:03 UTC+02
 !
 !
 ! Popupy
@@ -84,6 +84,8 @@ wp.pl##.article > [class]:has(> [class] > .fb-like)
 !
 ! Widgety - specjalne instrukcje
 !#if !cap_user_stylesheet
+autokult.pl##.instagram-media:style(visibility: hidden !important;)
+autokult.pl##.main-article.article > .insert__default.insert--size-m.insert
 autokult.pl,gadzetomania.pl,fotoblogia.pl,komorkomania.pl,medycyna24.pl##a[href^="https://www.facebook.com/sharer.php"], a[href^="http://twitter.com/intent/tweet"], a[href^="http://pinterest.com/pin/create/link/"]:style(visibility: hidden !important;)
 autokult.pl,gadzetomania.pl,fotoblogia.pl,komorkomania.pl,medycyna24.pl,fitness.wp.pl##.link-facebook, .link-youtube, .link-gplus, .link-instagram, .link-pinterest, .icon-mail:style(visibility: hidden !important;)
 dobreprogramy.pl##.author-social-links, .content.float-right > .social, .rrssb-facebook, .rrssb-twitter, .social__group_share, .social__group_like > .social__item, #phContent_page_content .social__group_like, .social.float-right:style(visibility: hidden !important;)
@@ -92,6 +94,8 @@ f.kafeteria.pl###ipsLayout_mainArea > .ipsList_inline > li > .cShareLink
 purepc.pl##.right.article-options
 wp.pl##.liketag, .wpsocials--buttons:style(visibility: hidden !important;)
 wp.pl,~www.wp.pl###app > div > table > tbody > tr:nth-child(1) > td > div > div > div > div > div > div > div > article > div > div > div > div[hidden]:style(position: absolute !important; left: -3000px !important;)
+zdrowie.tvn.pl##.fb-tool--link, .l-page__footer-label, .article_main__social > .social-btn--fb, .fb-tool__cta
+:style(visibility: hidden !important;)
 !#endif
 !#if !cap_html_filtering
 azjatyckibazar.com##+js(remove-attr.js, href, .slides > li[data-duration] > a[href="http://facebook.com/azjatyckibazar"])
@@ -117,6 +121,7 @@ upominki24.pl##^#slider .item-16:has(a[href="https://www.facebook.com/upominki24
 autoumowa.pl##.copyright > p > a[rel="publisher"]:style(pointer-events: none !important; color: initial !important;)
 cashless.pl##.icon-list:style(margin-top: 25px !important;)
 cashless.pl##.rss-before:before:style(margin-right: 5px; display: inline-block !important; position: static !important;)
+discoverychannel.pl,tlcpolska.pl,tvnstyle.pl##header .inputMedia .inputContainer:style(width: 100% !important;)
 fajnycraft.pl##.primary-menu > li:nth-of-type(n+3):style(visibility: hidden !important;)
 iab.org.pl###menu-social .menu-social:style(width: auto !important;)
 librus.pl##div.promo:style(width: 100%;)
@@ -132,6 +137,7 @@ www.purina.pl###page:style(overflow: hidden;)
 www.tvn.pl##.detail-share:style(padding-bottom: 0 !important;)
 wymiennik.com##.contact-details > p > a[href*="facebook.com"]:style(pointer-events: none !important; color: inherit  !important;)
 zlotygron.pl##.site_social > span:style(display: inline-block !important; padding-top: 5px !important;)
+!discoverychannel.pl,tlcpolska.pl,tvnstyle.pl##header .inputMedia .inputContainer:style(width: 160px !important;)
 !
 !
 ! Bugi AdGuarda
