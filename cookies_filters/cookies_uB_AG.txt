@@ -1,11 +1,11 @@
-! Checksum: vCKn2utOEWB0oDB0WJRMCg
+! Checksum: OqQApDx/DKw7iwZYo5bHEw
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.6.2.0
-! Last modified: Sun, 02 Jun 2019, 20:40 UTC+02
+! Version: 2019.6.7.0
+! Last modified: Fri, 07 Jun 2019, 20:08 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.6.2.0 aktualizacja: nie, 02 cze 2019, 20:40 UTC+02
+! v.2019.6.7.0 aktualizacja: pią, 07 cze 2019, 20:08 UTC+02
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -60,8 +60,10 @@ cupsell.pl##.tingle-enabled:style(position: static !important; overflow: auto !i
 cupsell.pl##.tingle-modal
 dane.gov.pl##.modal-backdrop
 dane.gov.pl##.modal-dialog:has-text(RODO)
-ddz24.eu###cookie-law-info-bar, .cli-modal-backdrop
-ddz24.eu##.cli-barmodal-open:style(overflow: auto !important;)
+ddz24.eu,wiadomosci-lodz.pl###cookie-law-info-bar, .cli-modal-backdrop
+ddz24.eu,wiadomosci-lodz.pl##+js(nano-remove-elements-onready.js, #cli-modal-backdrop)
+ddz24.eu,wiadomosci-lodz.pl##+js(nano-remove-elements-onready.js, #cookie-law-info-bar)
+ddz24.eu,wiadomosci-lodz.pl##.cli-barmodal-open:style(overflow: auto !important;)
 dobrapogoda24.pl##+js(remove-attr.js, class, body[class="modal-open"])
 dobrapogoda24.pl##.modal-open:style(overflow: auto !important;)
 dobrapogoda24.pl,repostuj.pl###rodo-modal, .modal-backdrop
@@ -243,7 +245,7 @@ vice.com##div[id^="sp_message"][class^="sp_message_container"], div[class^="sp_v
 vod.naekranie.pl###modal-rodo-info, .modal-backdrop
 vod.naekranie.pl,samasz.pl,mzbm.tychy.pl##.modal-open:style(overflow: auto !important;)
 wagrowczanie.pl##.showRodo
-wakacje.pl###__next > div > div > div[class]:not([id]):has(> div > button):has-text(Administratorem)
+wakacje.pl###__next > div > div > div[class]:not([id]):has(button):has-text(Administratorem)
 webhelp.pl###wrapper:style(margin-top: auto !important;)
 wgospodarce.pl,wpolityce.pl##.rhododendron-body-with-popup:style(overflow: auto !important;)
 wgospodarce.pl,wpolityce.pl##.rhododendron-popup, .rhododendron-popup-overlay
