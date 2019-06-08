@@ -6,6 +6,8 @@
 // @author       You
 // @match        *://*/*
 // @grant        none
+// @updateURL https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/polish_ads_wp.user.js
+// @downloadURL https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/polish_ads_wp.user.js
 // ==/UserScript==
 
 (function () {
