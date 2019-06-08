@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Reklamy WP
-// @namespace    .......
-// @version      0.1
+// @namespace    F4z
+// @version      0.2
 // @description  Blokowanie reklam na wp.pl
 // @author       You
 // @match        *://*/*
