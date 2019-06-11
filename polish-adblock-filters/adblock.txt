@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 11 June 2019
 ! Expires: 1 day
-! Version: 2019061102
+! Version: 2019061103
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019061102 aktualizacja: wt, 11 czerwiec 2019, 11:45:00
+! v.2019061103 aktualizacja: wt, 11 czerwiec 2019, 18:40:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -67,7 +67,7 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 /scripts/click.php$popup
 /upload_module//C_reklamy/*$domain=infobus.pl|transinfo.pl|inforail.pl|infotram.pl|infobike.pl|infoair.pl|infoship.pl
 /upload_module/C_reklamy/*$domain=infobus.pl|transinfo.pl|inforail.pl|infotram.pl|infobike.pl|infoair.pl|infoship.pl
-/uploads-no-w3tc/$image,domain=naekranie.pl
+!/uploads-no-w3tc/$image,domain=naekranie.pl
 /wp-content/plugins/bsa-pro-scripteo/*$script,stylesheet
 /wp-content/plugins/unblock-adsense/*/adunblock$stylesheet,script
 /wp-content/uploads/*/*300x600$image,domain=republikakobiet.pl
@@ -1816,18 +1816,15 @@ na-luzie.net##a[href^="http://trafisz.com/"]
 nacjonalista.pl##.napis, .entry-content.entry > A
 nacjonalista.pl##DIV[align="center"]
 nadmorski24.pl###G-banerGlowny
-naekranie.pl##.adform, #attachment_3064862, .screening-banner
-naekranie.pl##.inner-wrap > div[class^="g"][style]:not(#drivers-slider):not(#home)
-naekranie.pl##.no-review.title-wide > [class^="g"]
-naekranie.pl##.title-wide > div[class^="g"][style]
-naekranie.pl##div.prawa-szpalta.box > [class^="g"]:not(.birthday-list)
-naekranie.pl###home-indexes > div > [class^="g"]
-naekranie.pl##div.icon-star.box > [class^="g"]
-naekranie.pl##[id^="post-"] > div + div + div > [class^="g"]
-naekranie.pl##div[style="background-color: transparent; margin-top: -61px; min-height: 100%; height: 1200px; "]
-naekranie.pl##div[style^="max-width:"][style$="; margin: auto; "]
+naekranie.pl##[class^="r"] > div > [class^="r"]
+naekranie.pl##[class^="r"]> [href^="/d"]
+naekranie.pl##[class^="r"][class^="r"] > * > [href^="/d"]
+naekranie.pl##* > [href^="/d"]
+naekranie.pl###cornerContainer
+naekranie.pl##.main-content > DIV > [class^="r"]
+naekranie.pl##DIV > [class^="r"] > [href]
+naekranie.pl##DIV > [class^="r"] > [src$="/index.html"]
 naekranie.pl##video
-naekranie.pl##[data-capping]
 nakanapa.pl###milana-text-74
 naklo24.pl##.ban
 nakolei.pl##.textwidget > A[target="_blank"]
