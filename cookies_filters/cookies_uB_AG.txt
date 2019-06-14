@@ -1,11 +1,11 @@
-! Checksum: OqQApDx/DKw7iwZYo5bHEw
+! Checksum: QO5g/+1HHDBb9g5D5krULA
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.6.7.0
-! Last modified: Fri, 07 Jun 2019, 20:08 UTC+02
+! Version: 2019.6.14.0
+! Last modified: Fri, 14 Jun 2019, 22:36 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,14 +14,14 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.6.7.0 aktualizacja: pią, 07 cze 2019, 20:08 UTC+02
+! v.2019.6.14.0 aktualizacja: pią, 14 cze 2019, 22:36 UTC+02
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
 4lomza.pl##body.polityka-cookies:style(margin-top: 0 !important;)
 7ryb.pl,etransport.pl,hrkgame.com##.modals.dimmer
 7ryb.pl,etransport.pl,hrkgame.com##.dimmed:style(overflow: auto !important;)
-24wroclaw.pl,ceres.pl,dane.gov.pl,e-sochaczew.pl,giantfabryczna.pl,gry.lotto.pl,komugroup.eu,liv-cycling.com,m.24jgora.pl,multimediago.pl,obywatel.gov.pl,olesnica24.com,printoteka.pl,tvdami.eu,tvgo.orange.pl,wrzesnia.info.pl,zwolen.pl,repostuj.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
+24wroclaw.pl,ceres.pl,dane.gov.pl,e-sochaczew.pl,giantfabryczna.pl,gry.lotto.pl,komugroup.eu,liv-cycling.com,m.24jgora.pl,multimediago.pl,obywatel.gov.pl,olesnica24.com,printoteka.pl,tvdami.eu,tvgo.orange.pl,wrzesnia.info.pl,zwolen.pl,repostuj.pl,wedkuje.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 abcalkoholu.pl##.cookielaw:style(padding-top: 0 !important;)
 adexemplum.com,fastdeal.pl,zsgarwolin.pl,gtv.com.pl,teoria.pl##html:style(overflow: auto !important; margin-right: 0 !important;)
 adexemplum.com,gtv.com.pl,teoria.pl##.mfp-ready.mfp-wrap, .mfp-ready.mfp-bg
@@ -80,7 +80,9 @@ dropbox.com##.embedded-app.IndexRebrandPage.top-notification-bar:style(margin-to
 dropbox.com##.top-notification-bar-container + .preview-box .react-file-viewer, .embedded-app.IndexRebrandPage.top-notification-bar .RebrandNavigation-container:style(top: 0 !important;)
 echo24.tv##.on-top:style(top: 0 !important;)
 edupolis.pl###sgpb-popup-dialog-main-div-wrapper, .sg-popup-overlay
-e-sochaczew.pl###RODOCOOKIE, .modal-backdrop
+e-sochaczew.pl,paczkomaty.pl,repostuj.pl,wedkuje.pl##+js(remove-attr.js, class|style, body[class="modal-open"][style^="padding-right: "][style$="px;"]:not([style*="; "]))
+e-sochaczew.pl,wedkuje.pl##RODOCOOKIE, .modal-backdrop
+e-sochaczew.pl,wedkuje.pl##+js(abort-current-inline-script.js, SendAccept2, RODOCOOKIE)
 fabrykacukiernika.pl##.rodo-on:style(overflow: auto !important;)
 fabrykacukiernika.pl##.rodo-popup
 fastdeal.pl##.mfp-ready.mfp-wrap, .mfp-ready.mfp-bg
@@ -177,7 +179,6 @@ ostrzegamy.online##.rodo-popup, .rodo-overlay
 otwarteklatki.pl###popup-gdpr, .popup-overlay
 otwarteklatki.pl##.popup-visible:style(overflow: auto !important;)
 paczkomaty.pl##.modal:has(app-regulations-modal > .modal-header > .modal-title:has-text(RODO)), .modal-backdrop
-paczkomaty.pl,repostuj.pl##+js(remove-attr.js, class|style, body[class="modal-open"][style^="padding-right: "][style$="px;"]:not([style*="; "]))
 panattonieurope.com###image-popup.txt-popup, #image-popup-bg
 paypal.com##.gdprCookieBanner-acceptedAll:style(margin-bottom: 0 !important;)
 pay.google.com##.main-footer--cookie.o-container:style(padding-bottom: 0 !important;)
@@ -359,9 +360,9 @@ sp112.waw.pl##.pum-open-overlay:style(overflow: auto !important;)
 spolem.katowice.pl,wpr.pl,mdkkolbuszowa.pl###popup, .modal-backdrop
 styl.fm###rodo-info, .modal-backdrop
 swiat-whisky.sklep.pl##.fancybox-overlay:has(#conditions_condition)
-tarnowska.tv###popModal, .modal-backdrop
 tarnowska.tv##+js(nano-remove-elements-onready.js, #popModal)
-tarnowska.tv##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
+tarnowska.tv,wielkabrytaniaonline.co.uk###popModal, .modal-backdrop
+tarnowska.tv,wielkabrytaniaonline.co.uk##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 tuzdrowie.pl###popupModal, .modal-backdrop
 tuzory.pl,tujastrzebie.pl,tuwroclaw.com,tulodz.pl,zakopane.info###pd-modal, .modal-backdrop
 tvasta.pl##.modal-backdrop
@@ -453,7 +454,7 @@ sp112.waw.pl##^.popmake-overlay[data-popmake*="cookies"]
 spolem.katowice.pl,wpr.pl,mdkkolbuszowa.pl##^#popup.modal
 styl.fm##^.rodo-info
 swiat-whisky.sklep.pl##^.POPUP_CONDITION
-tarnowska.tv##^#popModal
+tarnowska.tv,wielkabrytaniaonline.co.uk##^#popModal
 tuzdrowie.pl##^#popupModal
 tvasta.pl##^#infoModal
 twojeankiety.pl##^.polPriv
@@ -539,7 +540,7 @@ sp112.waw.pl$$.popmake-overlay[data-popmake*="cookies"]
 spolem.katowice.pl,wpr.pl,mdkkolbuszowa.pl$$#popup.modal
 styl.fm$$.rodo-info
 swiat-whisky.sklep.pl$$.POPUP_CONDITION
-tarnowska.tv$$#popModal
+tarnowska.tv,wielkabrytaniaonline.co.uk$$#popModal
 tuzdrowie.pl$$#popupModal
 tvasta.pl$$#infoModal
 twojeankiety.pl$$.polPriv
