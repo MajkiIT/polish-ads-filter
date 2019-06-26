@@ -1,11 +1,11 @@
-! Checksum: Zb25VRQrk7mr9s1Rr6U3cg
+! Checksum: 2YOmy9kZ/V/llB0gEpFEzw
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.6.21.0
-! Last modified: Fri, 21 Jun 2019, 18:54 UTC+02
+! Version: 2019.6.26.1
+! Last modified: Wed, 26 Jun 2019, 18:14 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.6.21.0 aktualizacja: pią, 21 cze 2019, 18:54 UTC+02
+! v.2019.6.26.1 aktualizacja: śro, 26 cze 2019, 18:14 UTC+02
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -97,7 +97,7 @@ generator.blulink.pl##.body--privatepolicy:style(padding-bottom: 0 !important;)
 giantfabryczna.pl,liv-cycling.com###cookiePopupModal, .modal-backdrop
 gitara-sklep.pl##body:style(padding-top: 0 !important;)
 google.com,google.pl##body > #lb > div[id^="_"][class]
-google.com,google.pl##div[class][role="dialog"] > #cnsp > div[class][aria-live="polite"]
+google.com,google.pl##div[class][role="dialog"] > #cnsp:has(> div[class][aria-live="polite"])
 google.com,google.pl##html.nsc:style(overflow-y: visible !important;)
 google.com,google.pl##html:not(.nsc) > body.nsc:style(position: static !important; overflow-y: visible !important;)
 google.com,google.pl##jsl > #consent-bump > .widget-consent
@@ -255,6 +255,8 @@ wsensie.pl,wsensie.tv###policy
 wsensie.pl,wsensie.tv##.policy-open section:style(filter: none !important;)
 www.g2a.com##.modal-options--cookie
 www.g2a.com##.noscroll:style(position: static !important; overflow: auto !important;)
+www.google.pl,www.google.com###promos > div[style^="background"]
+www.google.pl,www.google.com##.srp #searchform[style^="top: 50px"]:style(top: 20px !important;)
 www.pekao.com.pl##body.is-reveal-open:style(overflow: auto !important; width: unset !important;)
 www.pekao.com.pl##.reveal-overlay:has(#gdpr-popup)
 youtube.com##div#masthead-positioner-height-offset:style(height: 80px !important;)
@@ -322,8 +324,6 @@ lipinscy.pl###popRodoInfoContent, .modal-backdrop
 listymikolaja.pl##.fancybox-overlay:has(#popup_rodo_layer)
 listymikolaja.pl,swiat-whisky.sklep.pl##html.fancybox-lock > body, html.fancybox-lock:style(overflow: auto !important;)
 listymikolaja.pl,swiat-whisky.sklep.pl##.fancybox-margin:style(margin-right: 0 !important;)
-lovekrakow.pl##.modal-open:style(position: static !important; overflow: auto !important;)
-lovekrakow.pl,muzyczneradio.pl###modal-rodo, .modal-backdrop
 moja.biedronka.pl##.modal-komunikat.modal
 moja.biedronka.pl##.showpopup:style(overflow: auto !important;)
 money.pl##+js(nano-remove-elements-onready.js, .rodo-popup)
@@ -431,11 +431,11 @@ ideafairplay.pl##^#modal-privacy
 itmarket.pl##^.modal
 lipinscy.pl##^#popRodoInfoContent
 listymikolaja.pl##^#popup_rodo_layer
-lovekrakow.pl,muzyczneradio.pl##^#modal-rodo
 moja.biedronka.pl##^div.modal.modal-komunikat
 moja.biedronka.pl##^style:has-text(body.showpopup)
 motobanda.pl##^#rodo
 muzeumazji.pl##^script:has-text(doRODO)
+muzyczneradio.pl##^#modal-rodo
 natura2000.gdos.gov.pl##^#apla-banner
 norgips.pl##^#cookiemodal
 ogloszenia.plock.pl##^#dialog-rodo
@@ -516,7 +516,6 @@ ideafairplay.pl$$#modal-privacy
 itmarket.pl$$.modal
 lipinscy.pl$$#popRodoInfoContent
 listymikolaja.pl$$#popup_rodo_layer
-lovekrakow.pl$$#modal-rodo
 moja.biedronka.pl$$div.modal.modal-komunikat
 moja.biedronka.pl$$style[tag-content="body.showpopup"]
 motobanda.pl$$#rodo
