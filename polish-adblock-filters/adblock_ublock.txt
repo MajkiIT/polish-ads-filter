@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 19 June 2019
+! Last modified: 27 June 2019
 ! Expires: 2 days
-! Version: 2019061901
+! Version: 2019062701
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2019061901 aktualizacja: śr, 19 czerwca 2019, 14:09:35
+! v.2019062701 aktualizacja: czw, 27 czerwca 2019, 08:55:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -423,6 +423,10 @@ bezprawnik.pl##.wall-bg[style^="background-image:"]:style(background-image: none
 !
 ! cda-tv.pl
 cda-tv.pl##+js(nano-setTimeout-booster.js, TheLink)
+!
+! wprost.pl
+wprost.pl##div[class*="lazyload"]:style(background: none !important;)
+wprost.pl##div[class*="lazyload"] > a > img:style(display: inline-block !important; height: 100% !important; width: auto !important;)
 !
 !
 ! Realizacje CMC Media
