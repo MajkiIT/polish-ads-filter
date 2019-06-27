@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 30 May 2019
+! Last modified: 27 June 2019
 ! Expires: 2 days
-! Version: 2019053001
+! Version: 2019062701
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019053001 aktualizacja: czw, 30 maja 2019, 23:12:00
+! v.2019062701 aktualizacja: czw, 27 czerwca 2019, 08:55:00
 !
 !
 ! alltube.tv
@@ -170,6 +170,10 @@ money.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 ! filmweb.pl
 filmweb.pl##+js(abort-current-inline-script.js, decodeURIComponent, newAdblockBoardDisplayed)
 filmweb.pl##body[class]:not(.rodo):style(overflow: auto !important;)
+!
+! wprost.pl
+wprost.pl##div[class*="lazyload"]:style(background: none !important;)
+wprost.pl##div[class*="lazyload"] > a > img:style(display: inline-block !important; height: 100% !important; width: auto !important;)
 !
 ! style()
 booklips.pl##.js:style(background-image: none !important;)
