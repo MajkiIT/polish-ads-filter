@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 1 July 2019
 ! Expires: 1 day
-! Version: 2019070101
+! Version: 2019070102
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019070101 aktualizacja: pon, 1 lipiec 2019, 12:20:00
+! v.2019070102 aktualizacja: pon, 1 lipiec 2019, 20:30:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -1832,7 +1832,7 @@ nacjonalista.pl##.napis, .entry-content.entry > A
 nacjonalista.pl##DIV[align="center"]
 nadmorski24.pl###G-banerGlowny
 naekranie.pl##.article-body-content.content > .main-content > div > div > [class^="s"]
-naekranie.pl##[class^="r"]:not([class^="rate"]) > div > [class^="r"]:not([class^="rate"])
+naekranie.pl##[class^="r"]:not([class^="rate"]):not([class^="recommend"]) > div > [class^="r"]:not([class^="rate"]):not([class^="recommend"])
 naekranie.pl##[class^="r"]> [href^="/d"]
 naekranie.pl##[class^="r"][class^="r"] > * > [href^="/d"]
 naekranie.pl##* > [href^="/d"]
@@ -1840,6 +1840,8 @@ naekranie.pl###cornerContainer
 naekranie.pl##.main-content > DIV > [class^="r"]
 naekranie.pl##DIV > [class^="r"] > [href]
 naekranie.pl##DIV > [class^="r"] > [src$="/index.html"]
+naekranie.pl##.wrapper > * > [class^="s"] > div
+naekranie.pl##span > [href^="/c"]
 naekranie.pl##video
 nakanapa.pl###milana-text-74
 naklo24.pl##.ban
@@ -3277,7 +3279,6 @@ zywiecinfo.pl##.promoted
 ||cdn.pkwteile.de/uploads/stock/$image,domain=czesciauto24.pl
 ||cdn.salesmedia.pl/codes/$script
 ||cdn.syndication.twitter.com/widgets/tweetbutton/
-||csn.naekranie.pl/wp-content/uploads/*/*screening*.jpeg$image
 ||chlodnictwoiklimatyzacja.pl/images/tlo_$image
 ||chozoba.pl/images/baner$image
 ||ciechocinek.biz/banery_$image
@@ -3439,7 +3440,7 @@ zywiecinfo.pl##.promoted
 ||mylead.eu/banner/
 ||mylomza.pl/images/baner_$image
 ||nacjonalista.pl/wp-content/uploads/20*/*/*.gif$image
-||naekranie.pl/wp-content/themes/naekranie/tapeta$media
+||naekranie.pl/wp-content/uploads/2019/*/*_Tapeta_1920x1080_*.jpeg$image
 ||napisy24.pl/images/bg-allplayer-*.png
 ||napisy24.pl/run/js/all_corners.js
 ||naszamlawa.pl/images/banner/$object,image,subdocument
