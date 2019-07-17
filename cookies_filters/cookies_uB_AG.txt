@@ -1,11 +1,11 @@
-! Checksum: 7MQUoAMJszLv93V3f5rDgw
+! Checksum: pJNcTpP5QGomkKePDqjXuw
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.7.13.0
-! Last modified: Sat, 13 Jul 2019, 18:42 UTC+02
+! Version: 2019.7.17.0
+! Last modified: Wed, 17 Jul 2019, 13:26 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.7.13.0 aktualizacja: sob, 13 lip 2019, 18:42 UTC+02
+! v.2019.7.17.0 aktualizacja: śro, 17 lip 2019, 13:26 UTC+02
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -294,6 +294,9 @@ autakrajowe.com.pl,optimalg.com##.modal-open:style(overflow: auto !important; ma
 belsat.eu,mobilet.pl,marfafashion.com,petrodom.pl,masterleasing.pl,eurologistics.pl,wybielanie.pl,poznan.ap.gov.pl,wsb.net.pl,homedesign.pl,pasjagolebie.pl,tvwalbrzych.pl,pytanieomieszkanie.pl,buddyzm.info.pl,pzsnstart.eu,whatannawears.com##.pum-open:style(overflow: auto !important;)
 belsat.eu,mobilet.pl,marfafashion.com,petrodom.pl,masterleasing.pl,eurologistics.pl,wybielanie.pl,poznan.ap.gov.pl,wsb.net.pl,pasjagolebie.pl,tvwalbrzych.pl,pytanieomieszkanie.pl,buddyzm.info.pl,pzsnstart.eu,whatannawears.com,sp112.waw.pl##.popmake-overlay[data-popmake*="cookies"]
 bioagris.pl###policy-accept-div, .modal-backdrop
+bmw-motorrad.pl##.cookielayer
+bmw-motorrad.pl##+js(nano-remove-elements-onready.js, .cookielayer)
+bmw-motorrad.pl##.mnm-nsc body.deactivated:style(overflow: auto !important;)
 born2be.pl,renee.pl##.rules-modal, .modal-backdrop
 brieftip.pl,kaliber.pl###cookieModal, .modal-backdrop
 brieftip.pl,kaliber.pl##+js(nano-remove-elements-onready.js, #cookieModal)
@@ -330,8 +333,8 @@ itmarket.pl##.modal, .modal-backdrop
 laziska.com.pl,m-ce.pl,mojbytom.pl,mojegliwice.pl,mojekatowice.pl,mojmikolow.pl,orzesze.com.pl,piekaryslaskie.com.pl,pyskowice.com.pl,rudaslaska.com.pl,rybnicki.com,siemianowice.net.pl,sosnowiecki.pl,swiony.pl,wodzislaw.com.pl,zabrze.com.pl,zory.com.pl,silesia.info.pl##+js(nano-remove-elements-onready.js, #rodo-popup)
 lipinscy.pl###popRodoInfoContent, .modal-backdrop
 listymikolaja.pl##.fancybox-overlay:has(#popup_rodo_layer)
-listymikolaja.pl,swiat-whisky.sklep.pl##html.fancybox-lock > body, html.fancybox-lock:style(overflow: auto !important;)
 listymikolaja.pl,swiat-whisky.sklep.pl##.fancybox-margin:style(margin-right: 0 !important;)
+listymikolaja.pl,swiat-whisky.sklep.pl,wiemy.to##html.fancybox-lock > body, html.fancybox-lock:style(overflow: auto !important;)
 moja.biedronka.pl##.modal-komunikat.modal
 moja.biedronka.pl##.showpopup:style(overflow: auto !important;)
 money.pl##+js(nano-remove-elements-onready.js, .rodo-popup)
@@ -389,6 +392,8 @@ victoriassecret.pl##body:style(padding-right: 0 !important;)
 victoriassecret.pl###cookie-info-modal, .modal-backdrop
 webprojekt.biz###rodo, #screenMoire
 webprojekt.biz##.no-move:style(overflow: auto !important;)
+wiemy.to##html.fancybox-margin:style(margin-right: 0 !important;)
+wiemy.to##.fancybox-overlay-fixed.fancybox-overlay[style]:has-text(RODO)
 wtk.pl###GDPR-modal, .modal-backdrop
 wybielanie.pl##body:style(overflow-y: unset !important;)
 wyceniono.pl##.qinfo
@@ -419,6 +424,7 @@ alltube.tv,alltube.pl,mistravel.pl,laziska.com.pl,m-ce.pl,mojbytom.pl,mojegliwic
 autakrajowe.com.pl,craftserve.pl,infoplanet.pl,polski-tenis.pl##^#rodo
 belsat.eu,mobilet.pl,marfafashion.com,petrodom.pl,masterleasing.pl,eurologistics.pl,wybielanie.pl,poznan.ap.gov.pl,wsb.net.pl,tvwalbrzych.pl,pytanieomieszkanie.pl,buddyzm.info.pl,pzsnstart.eu,whatannawears.com##^.popmake-overlay
 bioagris.pl##^#policy-accept-div
+bmw-motorrad.pl##^.cookielayer
 born2be.pl,renee.pl##^.rules-modal
 brieftip.pl,kaliber.pl##^#cookieModal
 budownictwo.pl##^#rodoLayer
@@ -480,6 +486,7 @@ tvasta.pl##^#infoModal
 twojeankiety.pl##^.polPriv
 ustawlige.com,ustawmundial.weszlo.com##^#privacy-modal
 victoriassecret.pl##^script:has-text(cookie-)
+wiemy.to##^#banner:has(#popuplink):has(#inline:has-text(RODO))
 wtk.pl##^#GDPR-modal
 wyceniono.pl##^script:has-text(.cookie-ok)
 zdajmyrazem.pl##^#gdprModal
@@ -504,6 +511,7 @@ alltube.tv,alltube.pl,mistravel.pl,laziska.com.pl,m-ce.pl,mojbytom.pl,mojegliwic
 autakrajowe.com.pl,craftserve.pl,infoplanet.pl,polski-tenis.pl$$#rodo
 belsat.eu,mobilet.pl,marfafashion.com,petrodom.pl,masterleasing.pl,eurologistics.pl,wybielanie.pl,poznan.ap.gov.pl,wsb.net.pl,tvwalbrzych.pl,pytanieomieszkanie.pl,buddyzm.info.pl,pzsnstart.eu,whatannawears.com$$.popmake-overlay
 bioagris.pl$$#policy-accept-div
+bmw-motorrad.pl$$.cookielayer
 brieftip.pl,kaliber.pl#?#.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 brieftip.pl,kaliber.pl$$#cookieModal
 cenapaliw.pl$$#CBCookieMsg
@@ -568,6 +576,7 @@ tvasta.pl$$#infoModal
 twojeankiety.pl$$.polPriv
 ustawlige.com,ustawmundial.weszlo.com$$#privacy-modal
 victoriassecret.pl$$script[tag-content="cookie-"]
+wiemy.to$$#banner[tag-content="RODO"]
 wtk.pl$$#GDPR-modal
 wyceniono.pl$$script[tag-content=".cookie-ok"]
 zdajmyrazem.pl$$#gdprModal
