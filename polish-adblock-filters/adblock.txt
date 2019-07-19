@@ -1,4 +1,4 @@
-[Adblock Plus 2.0]
+[Adblock Plus 3.5]
 ! Title: Official Polish Filters for AdBlock, uBlock Origin & AdGuard
 ! Oficjalne Polskie Filtry do AdBlocka, uBlocka Origin i AdGuarda
 ! Collaborators: bzyku, Wiesiek, Robert, Marek, buuuuuuu190, Caleb, Ryszard, Kruk, Weronika, Adam, xxcriticxx, maxoku, F4z, mathew85, Piter432, Adam K, Piotr S, Szymon D, Marek R, adreporter, kacper93, FadeMind, kerbenii, gzenio22, blocker999, hawkeye116477, gwarser, KonoromiHimaries
@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 19 July 2019
 ! Expires: 1 day
-! Version: 2019071902
+! Version: 2019071903
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019071902 aktualizacja: ptk, 19 lipiec 2019, 18:40:00
+! v.2019071903 aktualizacja: ptk, 19 lipiec 2019, 18:55:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -3241,6 +3241,7 @@ zywiecinfo.pl##.promoted
 ||adsnet.pl$script
 ||advertising.com^
 ||adv.wp.pl^
+!||adv.wp.pl/RM/Box/*.mp4$media,rewrite=abp-resource:blank-mp3
 ||ad.zanox.com$third-party
 ||aff.mediarotate.com/Click^
 ||affmy.pl/$script,domain=~affmy.pl
@@ -3505,6 +3506,7 @@ zywiecinfo.pl##.promoted
 ||prl24.co.uk/res/rotate/$image
 ||q4.pl/media/20/*.gif$image
 ||qjse.quartic.pl/qjs/$script,domain=~quartic.pl
+!||r.dcs.redcdn.pl/webcache/rdf*/redefine/*$media,rewrite=abp-resource:blank-mp3,domain=twojapogoda.pl
 ||racjonalista.pl/img/strony/$image
 ||radioduch.pl/up_files/oferta/$image
 ||radio-wrzesnia.pl/wp-content/uploads/*/*/walll_$image
@@ -3514,7 +3516,8 @@ zywiecinfo.pl##.promoted
 ||redcoon.pl/res/outer/201*/$image
 ||redir.atmcdn.pl/scale/o2/tvn/web-content/m/p2/i/81c8727c62e800be708dbf37c4695dff/$image,domain=tvnwarszawa.tvn24.pl
 ||redir.atmcdn.pl*swf$domain=tvn24.pl
-||redirector.redefine.pl/r/*.mp4$media,redirect=noopmp3-0.1s,domain=twojapogoda.pl
+!||redirector.redefine.pl/r/*$media,rewrite=abp-resource:blank-mp3,domain=www.polsatsport.pl|www.polsatnews.pl
+!||redirector.redefine.pl/r/*.mp4$media,rewrite=abp-resource:blank-mp3,domain=twojapogoda.pl
 ||reklamawadowice24.pl^$image
 ||reklama-lowicz.pl^$image
 ||reklamy.s3.amazonaws.com/bcg/$image
@@ -3573,6 +3576,7 @@ zywiecinfo.pl##.promoted
 ||tabletowo.pl/wp-content/uploads/*/*/screening_$image
 ||tanidedyk.pl/templates/$image,domain=mybboard.pl
 ||tarnowiak.pl/grafika/super_*/$image
+||tkchopin.pl/cams/video_file/*$media,rewrite=abp-resource:blank-mp3,domain=tkchopin.pl
 ||t-mobile-trendy.pl/graph/backgrounds/$image
 ||track.cux.io^
 ||track.omgpl.com^$image
@@ -3597,11 +3601,13 @@ zywiecinfo.pl##.promoted
 ||vixnixxer.com^$script,third-party
 ||vshare.io/static/button.css$stylesheet
 ||v.wpimg.pl^$media,domain=pilot.wp.pl|open.fm
+!||v.wpimg.pl/$media,rewrite=abp-resource:blank-mp3,domain=wp.pl|~www.wp.pl|autokult.pl|parenting.pl|echirurgia.pl|money.pl|o2.pl|portal.abczdrowie.pl|komorkomania.pl|fotoblogia.pl|gadzetomania.pl|pudelek.pl|jejswiat.pl|medycyna24.pl|dobreprogramy.pl|kafeteria.pl
 ||v.wpimg.pl/$subdocument,domain=gwiazdy.wp.pl
 ||wbj.pl/adv/
 ||wbj.pl/wp-content/plugins/adkingpro/js/adkingpro-functions.js$script
 ||weben1.com/scripts/generatewidget.js$script
 ||web-rynek.pl/baners/
+!||webcamera.pl/videointro/filead*.mp4$media,rewrite=abp-resource:blank-mp3
 ||webstat.pl/js.php
 ||webstat.pl/rkm/$image
 ||weszlo.com/?bsa_pro_id$popup
