@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 19 July 2019
+! Last modified: 21 July 2019
 ! Expires: 2 days
-! Version: 2019071902
+! Version: 2019072101
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2019071902 aktualizacja: ptk, 19 lipiec 2019, 19:00:00
+! v.2019072101 aktualizacja: nie, 21 lipiec 2019, 20:15:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -458,3 +458,7 @@ powiatowa.info##.latestnews:style(-moz-column-count: 3; -moz-column-gap: 20px; -
 !#if env_mobile
 powiatowa.info##.latestnews:style(-moz-column-count: 2; -moz-column-gap: 20px; -webkit-column-count: 2; -webkit-column-gap: 20px; column-count: 2 ;column-gap: 20px;)
 !#endif
+!
+! wylecz.to
+wylecz.to##a[href^="/zze_click/"]:xpath(../..[div][@style])
+wylecz.to##iframe[src^="/zze_click/"]:xpath(../..[div][@style])
