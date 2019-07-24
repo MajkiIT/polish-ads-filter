@@ -1,11 +1,11 @@
-! Checksum: pJNcTpP5QGomkKePDqjXuw
+! Checksum: TpBeZv7rQ8LCClSNV4T6hw
 ! Title: Polskie Filtry RODO-Ciasteczkowe - uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish GDPR-Cookies Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Cookies - supplement
 ! Collaborators: MajkiIT, F4z, hawkeye116477
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.7.17.0
-! Last modified: Wed, 17 Jul 2019, 13:26 UTC+02
+! Version: 2019.7.24.1
+! Last modified: Wed, 24 Jul 2019, 20:51 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -14,7 +14,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.7.17.0 aktualizacja: śro, 17 lip 2019, 13:26 UTC+02
+! v.2019.7.24.1 aktualizacja: śro, 24 lip 2019, 20:51 UTC+02
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
@@ -64,8 +64,9 @@ ddz24.eu,wiadomosci-lodz.pl,konecki24.pl,starachowicki.eu,szydlowiecki.eu,skarzy
 ddz24.eu,wiadomosci-lodz.pl,konecki24.pl,starachowicki.eu,szydlowiecki.eu,skarzyski.eu##+js(nano-remove-elements-onready.js, #cli-modal-backdrop)
 ddz24.eu,wiadomosci-lodz.pl,konecki24.pl,starachowicki.eu,szydlowiecki.eu,skarzyski.eu##+js(nano-remove-elements-onready.js, #cookie-law-info-bar)
 ddz24.eu,wiadomosci-lodz.pl,konecki24.pl,starachowicki.eu,szydlowiecki.eu,skarzyski.eu##.cli-barmodal-open:style(overflow: auto !important;)
+delikarta.pl###cookieModal
 dobrapogoda24.pl##+js(remove-attr.js, class, body[class="modal-open"])
-dobrapogoda24.pl##.modal-open:style(overflow: auto !important;)
+dobrapogoda24.pl,delikarta.pl##.modal-open:style(overflow: auto !important;)
 dobrapogoda24.pl,repostuj.pl###rodo-modal, .modal-backdrop
 dobrzemieszkaj.pl###axn
 dobrzemieszkaj.pl##.nlOpen:style(overflow: auto !important;)
@@ -80,6 +81,8 @@ dropbox.com##.embedded-app.IndexRebrandPage.top-notification-bar:style(margin-to
 dropbox.com##.top-notification-bar-container + .preview-box .react-file-viewer, .embedded-app.IndexRebrandPage.top-notification-bar .RebrandNavigation-container:style(top: 0 !important;)
 echo24.tv##.on-top:style(top: 0 !important;)
 edupolis.pl###sgpb-popup-dialog-main-div-wrapper, .sg-popup-overlay
+elevensports.pl,ipla.tv##.rodo-rules-modal
+elevensports.pl,ipla.tv,hendi.pl##.no-scroll:style(overflow: auto !important;)
 e-sochaczew.pl,paczkomaty.pl,repostuj.pl,wedkuje.pl##+js(remove-attr.js, class|style, body[class="modal-open"][style^="padding-right: "][style$="px;"]:not([style*="; "]))
 e-sochaczew.pl,wedkuje.pl##RODOCOOKIE, .modal-backdrop
 e-sochaczew.pl,wedkuje.pl##+js(abort-current-inline-script.js, SendAccept2, RODOCOOKIE)
@@ -107,6 +110,7 @@ google.com,google.pl###main > #lb > div[id^="_"][class] > div[class*="__"]:has(i
 haloursynow.pl,warsztat.pl##.modal-open:style(padding-right: 0 !important;)
 hbogo.pl##.banner-overlay
 hbogo.pl,cbdzoe.pl##body:style(overflow: auto !important; padding-right: 0 !important;)
+hendi.pl##.modal__outer--rodo, .modal--open
 hm.com##.modaloverlay:has(#gdpr-modal)
 hm.com##.modal-open body:style(position: static !important;)
 hm.com##.modal-open:style(overflow-y: auto !important;)
@@ -119,8 +123,6 @@ innogy.pl###cookie-wall-container
 intermarche.pl##body.showCookie .sec--head:style(top: 0 !important;)
 intermarche.pl##body.showCookie .sec--menu-popup:style(top: 117px !important;)
 intermarche.pl##body.showCookie .wrapper-for-blocked-content:style(margin-top: 0 !important;)
-ipla.tv,elevensports.pl##.no-scroll:style(overflow: auto !important;)
-ipla.tv,elevensports.pl##.rodo-rules-modal
 jedenslad.pl##.noscroll:style(overflow: auto !important;)
 jedenslad.pl##.popup-overlay.js-gdpr
 kaliszak.pl##.rodo, .rodo_layer
@@ -170,6 +172,9 @@ nauka.rocks##.ct-ultimate-gdpr-cookie-topPanel-padding:style(padding-top: 0 !imp
 neon24.pl##+js(abort-on-property-read.js, Service.cookieMonster)
 obpon.pl##.menu-flashmessages:style(top: 0 !important;)
 obywatel.gov.pl###modal-rodo, .modal-backdrop
+odrabiamy.pl##.blur:style(filter: none !important;)
+odrabiamy.pl##.modal-open:style(position: static !important; overflow: auto !important;)
+odrabiamy.pl##.rodo-modal-blur
 oko.press##.is-reveal-open:style(overflow: auto !important;)
 oko.press##.reveal-overlay
 olesnica24.com,tvdami.eu###popModal, .modal-backdrop
@@ -231,8 +236,9 @@ tinder.com###content > span > .App main div[class^="Pos"][class*="NetHeight"]:st
 tinder.com###content > span > .App > div[class^="Pos"][class*="Start"]:has-text(pliki cookie)
 tlumacz-in.pl##body.jconfirm-noscroll:style(overflow: auto !important;)
 tlumacz-in.pl##.jconfirm:has(.jconfirm-scrollpane)
-tme.eu##html[style]:style(overflow: auto !important;)
 tme.eu###popup_container, #popup_overlay
+tme.eu,totalizator.pl##html[style]:style(overflow: auto !important;)
+totalizator.pl##.popup
 translate.google.pl###gba:style(height: 60px !important;)
 trendyopticians.pl###bpr_rodo-info
 trendyopticians.pl##.bpr_body[style]:style(overflow: auto !important; background-position-x: 50% !important;)
@@ -284,7 +290,7 @@ zwolen.pl###g_toplayer, .modal-backdrop
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂 - specjalne instrukcje
 !#if !cap_html_filtering
 4fun.tv###cModal, .modal-backdrop
-4fun.tv,alltube.pl,alltube.tv,bioagris.pl,born2be.pl,cenapaliw.pl,craftserve.pl,fryzomania.pl,gdansk.pl,gokf.gda.pl,infoplanet.pl,infostrow.pl,motobanda.pl,muzyczneradio.pl,ogloszenia.plock.pl,polski-tenis.pl,pro-sprzet.pl,renee.pl,roztoczanskipn.pl,spolem.katowice.pl,tujastrzebie.pl,tulodz.pl,tuwroclaw.com,tuzdrowie.pl,tuzory.pl,tvasta.pl,tvregionalna24.pl,ustawlige.com,ustawmundial.weszlo.com,zakopane.info,zdajmyrazem.pl,ztm.poznan.pl,gdos.gov.pl,wtk.pl,halowawa.pl,dlawas.info,emas.gdos.gov.pl,natura2000.gdos.gov.pl,projekty.gdos.gov.pl,ideafairplay.pl,wpr.pl,academy.asseco.pl,fnglob.pl,tvbraniewo24.pl,stadionenerga.pl,rowerowygdansk.pl,brieftip.pl,lipinscy.pl,mistravel.pl,norgips.pl,rome-easysolution.tk,happydental.pl,tvmalbork.pl,poradnikbudowlany.eu,kaliber.pl,chelmonline.pl,ac.com.pl,itmarket.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
+4fun.tv,alltube.pl,alltube.tv,bioagris.pl,born2be.pl,cenapaliw.pl,craftserve.pl,fryzomania.pl,gdansk.pl,gokf.gda.pl,infoplanet.pl,infostrow.pl,motobanda.pl,muzyczneradio.pl,e-hotelarz.pl,ogloszenia.plock.pl,polski-tenis.pl,pro-sprzet.pl,renee.pl,roztoczanskipn.pl,spolem.katowice.pl,tujastrzebie.pl,tulodz.pl,tuwroclaw.com,tuzdrowie.pl,tuzory.pl,tvasta.pl,tvregionalna24.pl,ustawlige.com,ustawmundial.weszlo.com,zakopane.info,zdajmyrazem.pl,ztm.poznan.pl,gdos.gov.pl,wtk.pl,halowawa.pl,dlawas.info,emas.gdos.gov.pl,natura2000.gdos.gov.pl,projekty.gdos.gov.pl,ideafairplay.pl,wpr.pl,academy.asseco.pl,fnglob.pl,tvbraniewo24.pl,stadionenerga.pl,rowerowygdansk.pl,brieftip.pl,lipinscy.pl,mistravel.pl,norgips.pl,rome-easysolution.tk,happydental.pl,tvmalbork.pl,poradnikbudowlany.eu,zulawyimierzeja24.pl,kaliber.pl,chelmonline.pl,ac.com.pl,itmarket.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 abcjanikowo24.pl,brodnica365.pl,bydgoszcz24.pl,chelmza365.pl,chocianow.com.pl,ciechocinek.biz,czeladz365.pl,ddtorun.pl,ddwloclawek.pl,e-chelmno.pl,e-krajna.pl,e-zdunskawola.pl,ekstrasierpc.pl,ekutno.pl,eprzasnysz.pl,esopot.pl,expresskaszubski.pl,extrawalcz.pl,faktyct.pl,faktypilskie.pl,gle24.pl,gniewkowo.eu,gorlice24.pl,gostyn24.pl,grudziadz365.pl,gst24.pl,gwe24.pl,gwio.pl,hej.mielec.pl,infomogilno24.pl,ipoddebice.pl,isanok.pl,iszczecinek.pl,itvszubin.pl,jastrowie24.pl,ki24.info,klobuck365.pl,kolniak24.pl,koronowo.net.pl,kozieglowy365.pl,kurierwysmaz.pl,lelow365.pl,leszno24.pl,lubliniec365.pl,miastko24.pl,mojakruszwica.pl,myszkow365.pl,naszradziejow.pl,niegowa365.pl,nizanskie.info,nysainfo.pl,pakosc24.pl,plonskwsieci.pl,poraj365.pl,portalplock.pl,portalsremski.pl,pulsciechanowa.pl,sompolno24.pl,spotradomsko.pl,superchodziez.pl,swiecie24.pl,tarnowska.pl,terazgostynin.pl,terazlipno.pl,tusochaczew.pl,tygodnik.pl,uniejow.net.pl,walbrzych365.pl,wiescimiedzychodzkie.pl,wkikole.pl,zarki365.pl,zawiercie365.pl,zyciesiedleckie.pl,zyciesokolowa.pl##+js(abort-current-inline-script.js, $, rodo-overlay)
 academy.asseco.pl###politykaPrywatnosciModal, .modal-backdrop
 ac.com.pl###modalRodoInfo, .modal-backdrop
@@ -318,6 +324,7 @@ empik.com##.modal-backdrop
 eobuwie.com.pl##.no-scroll:style(overflow: auto !important;)
 eobuwie.com.pl##.popup:has(.permissions-form)
 eurologistics.pl,wybielanie.pl,pzsnstart.eu##.pum-open body > [aria-hidden]:style(padding-right: 0 !important;)
+e-hotelarz.pl,muzyczneradio.pl###modal-rodo, .modal-backdrop
 e-legnickie.pl##body.jconfirm-noscroll:style(overflow: auto !important;)
 e-legnickie.pl##.jconfirm:has-text(cookies)
 farmacja.pl##div.rodo-modal
@@ -384,7 +391,7 @@ tarnowska.tv,wielkabrytaniaonline.co.uk##.modal-open:style(overflow: auto !impor
 tuzdrowie.pl###popupModal, .modal-backdrop
 tuzory.pl,tujastrzebie.pl,tuwroclaw.com,tulodz.pl,zakopane.info###pd-modal, .modal-backdrop
 tvasta.pl##.modal-backdrop
-tvregionalna24.pl,tvbraniewo24.pl,optimalg.com,tvmalbork.pl,poradnikbudowlany.eu###rodoModal, .modal-backdrop
+tvregionalna24.pl,tvbraniewo24.pl,optimalg.com,tvmalbork.pl,poradnikbudowlany.eu,zulawyimierzeja24.pl###rodoModal, .modal-backdrop
 tvsztum.pl###rodoModal
 twojeankiety.pl##.polPriv, .modal-backdrop
 ustawmundial.weszlo.com,ustawlige.com###privacy-modal, .modal-backdrop
@@ -438,6 +445,7 @@ ekobiuro24.pl##^#dialog-agreement
 emas.gdos.gov.pl,projekty.gdos.gov.pl,www.gdos.gov.pl##^[id^="banner-komunikat-rodo-"]
 empik.com##^.cookies-accept
 eobuwie.com.pl##^script:has-text(technologii cookies)
+e-hotelarz.pl,muzyczneradio.pl##^#modal-rodo
 e-legnickie.pl##^script:has-text(polityka-cookies)
 farmacja.pl##^div.rodo-modal
 farmacja.pl##^script:has-text(rodo)
@@ -454,7 +462,6 @@ moja.biedronka.pl##^div.modal.modal-komunikat
 moja.biedronka.pl##^style:has-text(body.showpopup)
 motobanda.pl##^#rodo
 muzeumazji.pl##^script:has-text(doRODO)
-muzyczneradio.pl##^#modal-rodo
 natura2000.gdos.gov.pl##^#apla-banner
 norgips.pl##^#cookiemodal
 ogloszenia.plock.pl##^#dialog-rodo
@@ -474,7 +481,7 @@ radiobielsko.pl,webprojekt.biz##^script:has-text(#rodo)
 rome-easysolution.tk##^#modal-fade
 rybnik.com.pl,slaskibiznes.pl,tuwodzislaw.pl,tuzory.pl,tujastrzebie.pl,tuwroclaw.com,tulodz.pl,zakopane.info##^#pd-modal
 sevenpolska.com##^#flipFlop
-sklepbiker.pl,tvbraniewo24.pl,tvsztum.pl,tvregionalna24.pl,optimalg.com,tvmalbork.pl,poradnikbudowlany.eu##^#rodoModal
+sklepbiker.pl,tvbraniewo24.pl,tvsztum.pl,tvregionalna24.pl,optimalg.com,tvmalbork.pl,poradnikbudowlany.eu,zulawyimierzeja24.pl##^#rodoModal
 skm.pkp.pl##^#dialog-message-rodo
 sp112.waw.pl##^.popmake-overlay[data-popmake*="cookies"]
 spolem.katowice.pl,wpr.pl,mdkkolbuszowa.pl##^#popup.modal
@@ -526,6 +533,7 @@ easyprotect.pl$$.popup-aholic227
 ekobiuro24.pl$$#dialog-agreement
 emas.gdos.gov.pl,projekty.gdos.gov.pl,www.gdos.gov.pl$$[id^="banner-komunikat-rodo-"]
 empik.com$$.cookies-accept
+e-hotelarz.pl,muzyczneradio.pl$$#modal-rodo
 e-legnickie.pl$$script[tag-content="polityka-cookies"]
 farmacja.pl##[style^="filter: blur"]:style(filter: none !important;)
 farmacja.pl,radiobielsko.pl,webprojekt.biz$$script[tag-content="rodo"]
@@ -542,7 +550,6 @@ moja.biedronka.pl$$div.modal.modal-komunikat
 moja.biedronka.pl$$style[tag-content="body.showpopup"]
 motobanda.pl$$#rodo
 muzeumazji.pl$$script[tag-content="doRODO"]
-muzyczneradio.pl$$#modal-rodo
 natura2000.gdos.gov.pl$$#apla-banner
 norgips.pl$$#cookiemodal
 ogloszenia.plock.pl$$#dialog-rodo
@@ -564,7 +571,7 @@ rybnik.com.pl,slaskibiznes.pl,tuwodzislaw.pl,tuzory.pl,tujastrzebie.pl,tuwroclaw
 sevenpolska.com$$#flipFlop
 sklepbiker.pl###rodoModal, .modal-backdrop
 sklepbiker.pl,galopuje.pl##.modal-open:style(padding-right: 0 !important; overflow: auto !important;)
-sklepbiker.pl,tvbraniewo24.pl,tvsztum.pl,tvregionalna24.pl,optimalg.com,tvmalbork.pl,poradnikbudowlany.eu$$#rodoModal
+sklepbiker.pl,tvbraniewo24.pl,tvsztum.pl,tvregionalna24.pl,optimalg.com,tvmalbork.pl,poradnikbudowlany.eu,zulawyimierzeja24.pl$$#rodoModal
 skm.pkp.pl$$#dialog-message-rodo
 sp112.waw.pl$$.popmake-overlay[data-popmake*="cookies"]
 spolem.katowice.pl,wpr.pl,mdkkolbuszowa.pl$$#popup.modal
