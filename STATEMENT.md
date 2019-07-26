@@ -72,14 +72,6 @@ dalej nie działa? zgłoś to tutaj (pamiętając o strukturze zgłoszeń):
 
 ---
 
-- rek, wew. ogólne [ENG]
-  - proste do https://github.com/yourduskquibbles/webannoyances/issues
-  - trudne do https://github.com/NanoAdblocker/NanoFilters/issues
-- rek, wew. ogólne [PL]
-  - https://github.com/easylistpolish/easylistpolish/issues
-
----
-
 - ele. irytujące [ENG]
   - proste do https://github.com/ryanbr/fanboy-adblock/issues
   - trudne do https://github.com/AdguardTeam/AdguardFilters/issues
