@@ -65,7 +65,7 @@ Energized Spark | niebezpieczne domeny | [Subskrybuj][Spark Subscribe] </br>[Pod
 [KAD - Przekręty Podgląd]: https://raw.githubusercontent.com/PolishFiltersTeam/KAD/master/KAD.txt
 [Web Annoyances Ultralist Podgląd]: https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt
 [FFA Podgląd]: https://raw.githubusercontent.com/bogachenko/fuckfuckadblock/master/fuckfuckadblock.txt
-[Spark Podgląd]: https://raw.githubusercontent.com/bogachenko/fuckfuckadblock/master/fuckfuckadblock.txt
+[Spark Podgląd]: https://raw.githubusercontent.com/EnergizedProtection/block/master/spark/formats/filter
 
 [EasyList]: https://img.shields.io/badge/INT-EasyList-brightgreen.svg
 [EasyPrivacy]: https://img.shields.io/badge/INT-EasyPrivacy-green.svg
