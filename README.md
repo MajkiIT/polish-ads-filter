@@ -27,6 +27,7 @@ Polskie Filtry RSS | uzupełnienie filtrów społecznościowych o przyciski RSS 
 NoCoin Filter List | skrypty wydobywające kryptowaluty, skrypty powodujące zwiększone zużycie CPU i spowalniające prace komputera | [Subskrybuj][NoCoin Filter List Subscribe] </br>[Podgląd][NoCoin Filter List Podgląd] </br> [Zgłoś](https://github.com/hoshsadiq/adblock-nocoin-list/issues) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
 AlleBlock | filtry do Allegro, Ceneo i OLX | [Subskrybuj][AlleBlock Subscribe] </br> [Podgląd][AlleBlock Podgląd] </br> [Zgłoś](https://github.com/maciejtarmas/AlleBlock/issues) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
 KAD - Przekręty | przekręty sms, oszustwa | [Subskrybuj][KAD - Przekręty Subscribe] </br>[Podgląd][KAD - Przekręty Podgląd] </br> [Zgłoś](https://github.com/azet12/KADhosts/issues) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
+Web Annoyances Ultralist | pływające, scrollujące nagłówki i filmiki, banery aplikacji na smartfony, pływające pudełka nawigacyjne, pełnoekranowe nakładki, rozpraszające elementy | [Subskrybuj][Web Annoyances Ultralist Subscribe] </br>[Podgląd][Web Annoyances Ultralist Podgląd] </br> [Zgłoś](https://github.com/yourduskquibbles/webannoyances/issues) | | ![uBO][uBO] ![AG][AG] ![NANO][NANO]
 
 `*`  Listy uzupełniające są wymagane tylko w przypadku posiadania `uBlocka Origin < 1.15.0` lub `AdGuarda < 2.10`
 
@@ -46,6 +47,7 @@ KAD - Przekręty | przekręty sms, oszustwa | [Subskrybuj][KAD - Przekręty Subs
 [NoCoin Filter List Subscribe]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt&title=NoCoin%20Filter%20List
 [AlleBlock Subscribe]: https://subscribe.adblockplus.org/?location=https://alleblock.pl/alleblock/alleblock.txt&title=AlleBlock
 [KAD - Przekręty Subscribe]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/azet12/KAD/master/KAD.txt&title=KAD%20-%20Przekręty
+[Web Annoyances Ultralist Subscribe]: https://subscribe.adblockplus.org/?location=https://cdn.statically.io/gh/yourduskquibbles/webannoyances/master/ultralist.txt&title=Web%20Annoyances%20Ultralist
 
 [Polskie Filtry Podgląd]: https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt
 [Polskie Filtry Przeciwko Alertom Podgląd]: https://raw.githubusercontent.com/olegwukr/polish-privacy-filters/master/anti-adblock.txt
@@ -56,7 +58,8 @@ KAD - Przekręty | przekręty sms, oszustwa | [Subskrybuj][KAD - Przekręty Subs
 [Polskie Filtry RSS Podgląd]: https://raw.githubusercontent.com/PolishFiltersTeam/PolishRSSFilters/master/polish_rss_filters.txt
 [NoCoin Filter List Podgląd]: https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
 [AlleBlock Podgląd]: https://alleblock.pl/alleblock/alleblock.txt
-[KAD - Przekręty Podgląd]: https://raw.githubusercontent.com/azet12/KAD/master/KAD.txt
+[KAD - Przekręty Podgląd]: https://raw.githubusercontent.com/PolishFiltersTeam/KAD/master/KAD.txt
+[Web Annoyances Ultralist Podgląd]: https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt
 
 [EasyList]: https://img.shields.io/badge/INT-EasyList-brightgreen.svg
 [EasyPrivacy]: https://img.shields.io/badge/INT-EasyPrivacy-green.svg
