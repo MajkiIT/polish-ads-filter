@@ -28,7 +28,7 @@ NoCoin Filter List | skrypty wydobywające kryptowaluty, skrypty powodujące zwi
 AlleBlock | filtry do Allegro, Ceneo i OLX | [Subskrybuj][AlleBlock Subscribe] </br> [Podgląd][AlleBlock Podgląd] </br> [Zgłoś](https://github.com/maciejtarmas/AlleBlock/issues) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
 KAD - Przekręty | przekręty sms, oszustwa | [Subskrybuj][KAD - Przekręty Subscribe] </br>[Podgląd][KAD - Przekręty Podgląd] </br> [Zgłoś](https://github.com/azet12/KADhosts/issues) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
 Web Annoyances Ultralist | pływające, scrollujące nagłówki i filmiki, pływające pudełka nawigacyjne, pełnoekranowe nakładki, rozpraszające elementy | [Subskrybuj][Web Annoyances Ultralist Subscribe] </br>[Podgląd][Web Annoyances Ultralist Podgląd] </br> [Zgłoś](https://github.com/yourduskquibbles/webannoyances/issues) | | ![uBO][uBO] ![AG][AG] ![NANO][NANO]
-Bogachenko FFA | pułapki typu anty-adblock, skrypty nieprzyjazne użytkownikom i inne (Anti-Adblock Killer) | [Subskrybuj][FFA Subscribe] </br>[Podgląd][FFA Podgląd] </br> [Zgłoś](https://github.com/bogachenko/fuckfuckadblock/issues) | | ![uBO][uBO] ![AG][AG] ![NANO][NANO]
+Bogachenko FFA (Anti-Adblock Killer) | pułapki typu anty-adblock, skrypty nieprzyjazne użytkownikom i inne | [Subskrybuj][FFA Subscribe] </br>[Podgląd][FFA Podgląd] </br> [Zgłoś](https://github.com/bogachenko/fuckfuckadblock/issues) | | ![uBO][uBO] ![AG][AG] ![NANO][NANO]
 
 `*`  Listy uzupełniające są wymagane tylko w przypadku posiadania `uBlocka Origin < 1.15.0` lub `AdGuarda < 2.10`
 
