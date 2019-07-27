@@ -29,6 +29,7 @@ AlleBlock | filtry do Allegro, Ceneo i OLX | [Subskrybuj][AlleBlock Subscribe] <
 KAD - Przekręty | przekręty sms, oszustwa | [Subskrybuj][KAD - Przekręty Subscribe] </br>[Podgląd][KAD - Przekręty Podgląd] </br> [Zgłoś](https://github.com/azet12/KADhosts/issues) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
 Web Annoyances Ultralist | pływające, scrollujące nagłówki i filmiki, pływające pudełka nawigacyjne, pełnoekranowe nakładki, rozpraszające elementy | [Subskrybuj][Web Annoyances Ultralist Subscribe] </br>[Podgląd][Web Annoyances Ultralist Podgląd] </br> [Zgłoś](https://github.com/yourduskquibbles/webannoyances/issues) | | ![uBO][uBO] ![AG][AG] ![NANO][NANO]
 Bogachenko FFA (Anti-Adblock Killer) | pułapki typu anty-adblock, skrypty nieprzyjazne użytkownikom i inne | [Subskrybuj][FFA Subscribe] </br>[Podgląd][FFA Podgląd] </br> [Zgłoś](https://github.com/bogachenko/fuckfuckadblock/issues) | | ![uBO][uBO] ![AG][AG] ![NANO][NANO]
+Energized Spark | Core List + Adaway, add.207Net, add.Dead, add.Risk, add.Spam, Adguard Mobile Ads & Mobile Spyware, Easylist Adservers & Lite, Fanboy's Cookiemonster List, Malware Domain List, MVPS hosts file, someonewhocares, Steven Black'a Hosts, StreamingAds, uAssets Filters, UncheckyAds, PGL yoyo.org and ZeuS Tracker | [Subskrybuj][Spark - Przekręty Subscribe] </br>[Podgląd][Spark - Przekręty Podgląd] </br> [Zgłoś](https://github.com/EnergizedProtection/block/issues) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
 
 `*`  Listy uzupełniające są wymagane tylko w przypadku posiadania `uBlocka Origin < 1.15.0` lub `AdGuarda < 2.10`
 
@@ -50,6 +51,7 @@ Bogachenko FFA (Anti-Adblock Killer) | pułapki typu anty-adblock, skrypty niepr
 [KAD - Przekręty Subscribe]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/azet12/KAD/master/KAD.txt&title=KAD%20-%20Przekręty
 [Web Annoyances Ultralist Subscribe]: https://subscribe.adblockplus.org/?location=https://cdn.statically.io/gh/yourduskquibbles/webannoyances/master/ultralist.txt&title=Web%20Annoyances%20Ultralist
 [FFA Subscribe]: https://subscribe.adblockplus.org/?location=https://cdn.statically.io/gh/bogachenko/fuckfuckadblock/master/fuckfuckadblock.txt&title=Bogachenko%20FFA
+[Spark Subscribe]: https://subscribe.adblockplus.org/?location=https://subscribe.adblockplus.org/?location=https://cdn.statically.io/gh/EnergizedProtection/block/master/spark/formats/filter&title=Energized%20Spark%20Protection
 
 [Polskie Filtry Podgląd]: https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt
 [Polskie Filtry Przeciwko Alertom Podgląd]: https://raw.githubusercontent.com/olegwukr/polish-privacy-filters/master/anti-adblock.txt
@@ -63,6 +65,7 @@ Bogachenko FFA (Anti-Adblock Killer) | pułapki typu anty-adblock, skrypty niepr
 [KAD - Przekręty Podgląd]: https://raw.githubusercontent.com/PolishFiltersTeam/KAD/master/KAD.txt
 [Web Annoyances Ultralist Podgląd]: https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt
 [FFA Podgląd]: https://raw.githubusercontent.com/bogachenko/fuckfuckadblock/master/fuckfuckadblock.txt
+[Spark Podgląd]: https://raw.githubusercontent.com/bogachenko/fuckfuckadblock/master/fuckfuckadblock.txt
 
 [EasyList]: https://img.shields.io/badge/INT-EasyList-brightgreen.svg
 [EasyPrivacy]: https://img.shields.io/badge/INT-EasyPrivacy-green.svg
