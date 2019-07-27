@@ -66,7 +66,7 @@ dalej nie działa? zgłoś to tutaj (pamiętając o strukturze zgłoszeń):
 
 - rek, zewn. ogólne [ENG]
   - proste do https://github.com/easylist/easylist/issues
-  - trudne do https://github.com/uBlockOrigin/uBlock-issues/issues
+  - trudne do https://github.com/uBlockOrigin/uAssets/issues
 - rek, zewn. ogólne [PL]
   - https://github.com/MajkiIT/polish-ads-filter/issues
 
