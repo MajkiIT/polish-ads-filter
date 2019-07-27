@@ -61,6 +61,7 @@ Bogachenko FFA | pułapki typu anty-adblock, skrypty nieprzyjazne użytkownikom 
 [NoCoin Filter List Podgląd]: https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
 [AlleBlock Podgląd]: https://alleblock.pl/alleblock/alleblock.txt
 [KAD - Przekręty Podgląd]: https://raw.githubusercontent.com/PolishFiltersTeam/KAD/master/KAD.txt
+[Web Annoyances Ultralist Podgląd]: https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt
 [FFA Podgląd]: https://raw.githubusercontent.com/bogachenko/fuckfuckadblock/master/fuckfuckadblock.txt
 
 [EasyList]: https://img.shields.io/badge/INT-EasyList-brightgreen.svg
