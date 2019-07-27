@@ -48,8 +48,8 @@ Bogachenko FFA (Anti-Adblock Killer) | pułapki typu anty-adblock, skrypty niepr
 [NoCoin Filter List Subscribe]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt&title=NoCoin%20Filter%20List
 [AlleBlock Subscribe]: https://subscribe.adblockplus.org/?location=https://alleblock.pl/alleblock/alleblock.txt&title=AlleBlock
 [KAD - Przekręty Subscribe]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/azet12/KAD/master/KAD.txt&title=KAD%20-%20Przekręty
-[Web Annoyances Ultralist Subscribe]: https://subscribe.adblockplus.org/?location=https://cdn.statically.io/gh/yourduskquibbles/webannoyances/master/ultralist.txt&title=Web%20Annoyances%20Ultralist
-[FFA Subscribe]: https://subscribe.adblockplus.org/?location=https://cdn.statically.io/gh/bogachenko/fuckfuckadblock/master/fuckfuckadblock.txt&title=Bogachenko%20FFA
+[Web Annoyances Ultralist Subscribe]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/yourduskquibbles/webannoyances/ultralist.txt&title=Web%20Annoyances%20Ultralist
+[FFA Subscribe]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/bogachenko/fuckfuckadblock/fuckfuckadblock.txt&title=Bogachenko%20FFA
 
 [Polskie Filtry Podgląd]: https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt
 [Polskie Filtry Przeciwko Alertom Podgląd]: https://raw.githubusercontent.com/olegwukr/polish-privacy-filters/master/anti-adblock.txt
