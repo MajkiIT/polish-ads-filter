@@ -29,7 +29,7 @@ AlleBlock | filtry do Allegro, Ceneo i OLX | [Subskrybuj][AlleBlock Subscribe] <
 KAD - Przekręty | przekręty sms, oszustwa | [Subskrybuj][KAD - Przekręty Subscribe] </br>[Podgląd][KAD - Przekręty Podgląd] </br> [Zgłoś](https://github.com/azet12/KADhosts/issues) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
 Web Annoyances Ultralist | pływające, scrollujące nagłówki i filmiki, pływające pudełka nawigacyjne, pełnoekranowe nakładki, rozpraszające elementy | [Subskrybuj][Web Annoyances Ultralist Subscribe] </br>[Podgląd][Web Annoyances Ultralist Podgląd] </br> [Zgłoś](https://github.com/yourduskquibbles/webannoyances/issues) | | ![uBO][uBO] ![AG][AG] ![NANO][NANO]
 Bogachenko FFA (Anti-Adblock Killer) | pułapki typu anty-adblock, skrypty nieprzyjazne użytkownikom i inne | [Subskrybuj][FFA Subscribe] </br>[Podgląd][FFA Podgląd] </br> [Zgłoś](https://github.com/bogachenko/fuckfuckadblock/issues) | | ![uBO][uBO] ![AG][AG] ![NANO][NANO]
-Energized Spark | ulitarna lista niebezpiecznych domen | [Subskrybuj][Spark Subscribe] </br>[Podgląd][Spark Podgląd] </br> [Zgłoś](https://github.com/EnergizedProtection/block/issues) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
+Energized Spark | niebezpieczne domeny | [Subskrybuj][Spark Subscribe] </br>[Podgląd][Spark Podgląd] </br> [Zgłoś](https://github.com/EnergizedProtection/block/issues) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
 
 `*`  Listy uzupełniające są wymagane tylko w przypadku posiadania `uBlocka Origin < 1.15.0` lub `AdGuarda < 2.10`
 
