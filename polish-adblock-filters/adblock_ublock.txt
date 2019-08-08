@@ -8,7 +8,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 8 August 2019
 ! Expires: 1 day
-! Version: 2019070801
+! Version: 2019070802
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2019070801 aktualizacja: czw, 8 sierpnia 2019, 13:40:00
+! v.2019070802 aktualizacja: czw, 8 sierpnia 2019, 14:20:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -465,3 +465,6 @@ powiatowa.info##.latestnews:style(-moz-column-count: 2; -moz-column-gap: 20px; -
 ! wylecz.to
 wylecz.to##a[href^="/zze_click/"]:xpath(../..[div][@style])
 wylecz.to##iframe[src^="/zze_click/"]:xpath(../..[div][@style])
+!
+! otube.pl
+otube.pl##+js(abort-current-inline-script.js, Math.random)
