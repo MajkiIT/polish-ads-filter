@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: uQj96fbj+yqab0jvPE3gDw
+! Checksum: X6z22diXyqyxd/xESrP/Tg
 ! Title: Polskie Filtry RODO-Ciasteczkowe
 ! Polish GDPR-Cookies Filters
 ! Codename: Cookies
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności/RODO.
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.8.7.0
-! Last modified: Wed, 07 Aug 2019, 17:45 UTC+02
+! Version: 2019.8.8.0
+! Last modified: Thu, 08 Aug 2019, 22:29 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -18,7 +18,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.8.7.0 aktualizacja: śro, 07 sie 2019, 17:45 UTC+02
+! v.2019.8.8.0 aktualizacja: czw, 08 sie 2019, 22:29 UTC+02
 !
 !
 ! Specyficzne reguły ukrywające
@@ -768,6 +768,7 @@ glogow-info.pl,glogow.info.pl##.wrapper > table:nth-of-type(1)[style="margin-top
 glogow.info.pl,glogow-info.pl##.info1, .tloinfo1
 glos24.pl##DIV[style="border: 1px solid #fcce00; background: #fcfc9a; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: 0 2px 4px #bbb; -webkit-box-shadow:0 2px 4px #bbb; -khtml-box-shadow: 0 2px 4px #bbb; box-shadow:0 2px 4px #bbb; width: 700px; font: normal 12px/1.6em verdana; color: #505050;"]
 glos24.pl##body > div[style*="z-index: 999"]
+glosbe.com,tuv-nord.com###cookie-statement
 glos.tv##.cookieTooltip
 gls-group.eu,kinder.com###cookiePopup
 glucholazy.pl###layer9
@@ -1434,7 +1435,6 @@ pl.dst.roto-frank.com##.occ-inline
 pl.ecco.com,circleci.com###cookiebanner
 pl.farnell.com###mktg_Cookie_Wrap
 pl.fotolia.com,helpx.adobe.com,stock.adobe.com,www.adobe.com,rexona.com,vmware.com,www.knorr.pl,www.unilever.pl,behance.net###_evidon_banner
-pl.glosbe.com,tuv-nord.com###cookie-statement
 pl.godaddy.com###privacy_widget:not(body):not(html)
 pl.gravatar.com##.custom-cookie-banner
 pl.hama.com###privacyOptionsCookieOptIn-bottom
@@ -2048,9 +2048,10 @@ zysk.com.pl###pageUpperInfo
 !
 !
 ! Specyficzne reguły blokujące
+!||pcworld.pl/www/js/sp/messaging.js
 /ajax/privacy_popup$xmlhttprequest,domain=pl|debica24.eu|narew.info|zvami.tv
 /gdpr/CookieConsent$xmlhttprequest,~third-party,domain=kayak.pl
-/images/cookie.png$domain=loteriainpost.pl|somatgold.pl|loteriaburn.pl|loteriavelvet.pl|kubusszkola.pl|zmienfutro.pl
+/images/cookie.png$domain=loteriainpost.pl|somatgold.pl|loteriavelvet.pl|zmienfutro.pl
 /includes/infocookies.js$domain=wici.info
 /informationbar.js$domain=stowarzyszenie-dyrektorow.pl|zgkim.zgora.pl
 /libraries/js/jquery.tipsy.cookie.js$domain=kierunkowy.com
