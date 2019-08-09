@@ -1,11 +1,11 @@
-! Checksum: z7qRCFfjGGa+5rhFMbFf5Q
+! Checksum: eHNE3qHz3jcYcIvQtvvtEA
 ! Title: Polskie Filtry Społecznościowe - Uzupełnienie do uBlocka Origin i AdGuarda
 ! Polish Social Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Social - Supplement
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, F4z, RikoDEV
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.8.2.0
-! Last modified: Fri, 02 Aug 2019, 11:38 UTC+02
+! Version: 2019.8.9.0
+! Last modified: Fri, 09 Aug 2019, 15:43 UTC+02
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -13,7 +13,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.8.2.0 aktualizacja: pią, 02 sie 2019, 11:38 UTC+02
+! v.2019.8.9.0 aktualizacja: pią, 09 sie 2019, 15:43 UTC+02
 !
 !
 ! Popupy
@@ -35,6 +35,7 @@ masher.pl##html.pum-open:style(overflow: auto !important;)
 masher.pl##.popmake-overlay
 ratujemyzwierzaki.pl##.dimmer
 ratujemyzwierzaki.pl##body.dimmed:style(overflow: auto !important;)
+rytmynatury.pl##+js(setTimeout-defuser.js, .efbl_popup_trigger)
 smaker.pl##html > body.scrollingDisabled:style(overflow: visible !important;)
 smaker.pl###overlay, #popup
 sprawnymarketing.pl###pop_facebook
@@ -55,6 +56,9 @@ lookcam.com##^#lookcam-fb-modal
 !#if !ext_ublock
 alemeksyk.eu$$.pwebbox-plugin-facebook_page_plugin
 lookcam.com$$#lookcam-fb-modal
+rytmynatury.pl##html:style(overflow: auto !important; margin-right: 0 !important;)
+rytmynatury.pl##.mfp-bg.mfp-ready
+rytmynatury.pl##.mfp-wrap:has(#efbl_popup)
 !#endif
 !
 !
