@@ -28,9 +28,9 @@ alltube.tv#$##iframe-container { display: block !important; }
 !
 ! www.efilmy.tv
 ! Ominięcie przycisku "Close Ad and Watch as Free User"
-efilmy.tv###step1
 efilmy.tv###hideOnClick
 efilmy.tv#$##playerVidzer { display: block !important; }
+efilmy.tv###step1
 !
 ! gahe.pl
 ! Ominięcie czekania
@@ -39,10 +39,10 @@ gahe.pl#$##flashgame { visibility: visible; display: block; }
 !
 ! www.jeja.pl
 ! Ominięcie czekania
-jeja.pl##.gameLoading
 jeja.pl###adLoading
-jeja.pl#$##swf { visibility: visible !important; position: static !important; left: 0px !important; }
+jeja.pl##.gameLoading
 jeja.pl#$##game { visibility: visible !important; position: static !important; left: 0px !important; }
+jeja.pl#$##swf { visibility: visible !important; position: static !important; left: 0px !important; }
 !
 ! www.national-geographic.pl
 ! Puste miejsce po reklamie
@@ -51,9 +51,9 @@ national-geographic.pl#$#.advertising-billboard { height: 0px !important; }
 !
 ! www.vidzer.net
 ! Ominięcie przycisku "Close Ad and Watch as Free User"
-vidzer.net###step1
 vidzer.net###hideOnClick
 vidzer.net#$##playerVidzer { display: block !important; }
+vidzer.net###step1
 !
 ! zalukaj.com
 ! Ominięcie jednosekundowej reklamy
@@ -72,19 +72,19 @@ gry-online.poszkole.pl#$##fgame { width: 850px !important; height: 600px !import
 !
 ! stooq.pl
 ! Ukrycie pozostałości po reklamach
-stooq.pl,stooq.com##td[align="center"] > [id]:contains(REKLAMA)
-stooq.pl,stooq.com##table[border="0"][cellpadding="0"][cellspacing="0"]:not([width])[-ext-has='[id="ads_goog_1"]']
+stooq.com,stooq.pl##table[border="0"][cellpadding="0"][cellspacing="0"]:not([width])[-ext-has='[id="ads_goog_1"]']
+stooq.com,stooq.pl##td[align="center"] > [id]:contains(REKLAMA)
 !
 ! www.cda.pl
 ! Ominięcie czekania przy ładowaniu gier
 cda.pl###aa_ad
-cda.pl#$##obiekt { display: block !important; }
 cda.pl#$##kolumnaSrodkowa { height: auto !important; }
+cda.pl#$##obiekt { display: block !important; }
 !
 ! www.komputerswiat.pl
 ! Adblock
-komputerswiat.pl#@#.adsbygoogle
 komputerswiat.pl#$#.adsbygoogle { height: 1px !important; }
+komputerswiat.pl#@#.adsbygoogle
 !
 ! www.bankier.pl
 bankier.pl##.boxContent > ul > li[class^="item-"][-ext-has=".premium-link"]
@@ -107,8 +107,8 @@ originals24.pl##table > tbody > tr > td > font:contains(Reklama)
 benchmark.pl###bannerDBB:style(height: 10px !important;)
 !
 ! dvbtmap.eu
-dvbtmap.eu#$##leftCol { top: 51px!important; }
 dvbtmap.eu#$##content-container { margin-top: 0px!important; }
+dvbtmap.eu#$##leftCol { top: 51px!important; }
 !
 ! darmowa-telewizja.info & privatestream.tv
 ||privatestream.tv/logo.php
@@ -121,7 +121,7 @@ prostozmostu.plpl##.contentsystem-slide-link
 newsweb.pl##body .td-header-style-11 .td-g-rec-id-header .adsbygoogle
 !
 ! spolecznosci.net
-||spolecznosci.net^$image,subdocument,script
+||spolecznosci.net^$image,script,subdocument
 ||spolecznosci.net^$popup
 !
 ! windows7forum.pl
@@ -137,27 +137,27 @@ silesion.pl##body .banner-ad
 !shinden.pl##.ads:style(height: 203px!important;)
 !
 ! nslowo.pl
-||bestcontent.solutions/images/baner$image
-nslowo.pl###gkTopBar:style(position: static !important;)
 nslowo.pl###gkBg:style(background: none !important;)
+nslowo.pl###gkTopBar:style(position: static !important;)
+||bestcontent.solutions/images/baner$image
 !
 ! portel.pl
 portel.pl##body[style^="background:"]:style(background-image: none!important;)
 !
 ! dobreprogramy.pl
+www.dobreprogramy.pl###phContent_downloaderHint
+www.dobreprogramy.pl##article > .hint:has(a[href$="/Czyszczenie-systemu-z-niechcianego-oprogramowania,News,61336.html"])
+www.dobreprogramy.pl##article[itemprop="review"] > div[id]:matches-css-after(content: /przy|pomocy|Asystenta|pobierania/)
 dobreprogramy.pl##body.variant-mobile div[style="color: #A9A9A9; text-align:center;font-size:11px;"]:style(visibility: hidden!important;)
 dobreprogramy.pl##body:not(#bd):not([style*="background-image:"]):style(background-image:none!important;)
-forum.dobreprogramy.pl##body[class]:style(background-image: none !important;)
-www.dobreprogramy.pl###phContent_downloaderHint
-www.dobreprogramy.pl##div[class*="tag-"].home-section > .span-8:style(width: 100% !important; margin-right: 15px !important;)
-www.dobreprogramy.pl##article[itemprop="review"] > div[id]:matches-css-after(content: /przy|pomocy|Asystenta|pobierania/)
-www.dobreprogramy.pl##article > .hint:has(a[href$="/Czyszczenie-systemu-z-niechcianego-oprogramowania,News,61336.html"])
 www.dobreprogramy.pl##body:not(variant-mobile).skin-green .user-login:style(color:#88ae04!important;)
+forum.dobreprogramy.pl##body[class]:style(background-image: none !important;)
+www.dobreprogramy.pl##div[class*="tag-"].home-section > .span-8:style(width: 100% !important; margin-right: 15px !important;)
 !+ PLATFORM(ext_edge)
 www.dobreprogramy.pl#?##phContent_avastBadge
 !+ PLATFORM(windows)
-www.dobreprogramy.pl$$#phContent_avastBadge
 www.dobreprogramy.pl##.mfp-arrow-right:style(right: -90px !important;)
+www.dobreprogramy.pl$$#phContent_avastBadge
 !
 ! milionkobiet.pl
 milionkobiet.pl##.gallery-embed-list-images:style(height: auto !important;)
@@ -173,49 +173,49 @@ filmweb.pl##+js(abort-current-inline-script.js, decodeURIComponent, newAdblockBo
 filmweb.pl##body[class]:not(.rodo):style(overflow: auto !important;)
 !
 ! wprost.pl
-wprost.pl##div[class*="lazyload"]:style(background: none !important;)
 wprost.pl##div[class*="lazyload"] > a > img:style(display: inline-block !important; height: 100% !important; width: auto !important;)
+wprost.pl##div[class*="lazyload"]:style(background: none !important;)
 !
 ! polsatnews.pl
 polsatnews.pl###body > div > a[style="position: absolute; top: 0; left: 0; z-index: 0; width: 100%; height: 1000px;"]
 !
 ! style()
-booklips.pl##.js:style(background-image: none !important;)
-cartests.net###td-outer-wrap > .td-header-wrap:style(margin-bottom: 0px!important;)
-chillizet.pl###playerControls .playIcon:style(opacity: 1 !important;)
-chojnow.pl##div#top:style(height: 37px!important;)
-ciekawostkihistoryczne.pl##.page:style(background: #dbdbdb !important;)
-eku24.net##.paralax-image:style(height: 100px !important;)
-elblag.net##body:style(background-image: none!important;)
-gosc.pl##.webpart-wrap-HeaderMobile.has-promo:style(padding-top: 50px !important;)
 lubimyczytac.pl###content-container:style(background: none !important; padding-top: 0px !important)
+wykop.pl###dyingLinksBox > .dying-links:first-child ~ .dying-links:last-child:style(display:list-item !important)
+wykop.pl###dyingLinksBox > .dying-links:first-child ~ .dying-links[style="display: list-item;"] ~ .dying-links:style(display: none !important)
 ogrodinfo.pl###header:style(padding-top: 64px !important;)
-onet.pl##.miniSlot:style(min-height: 0rem!important;margin-bottom: 0rem!important;)
-pilkanozna.pl##.index_bg_top:style(top: auto!important;)
-poczta.o2.pl,poczta.wp.pl#$#body > #page { display: block!important; }
 podkarpackahistoria.pl###main-nav1:style(height: 50px !important;)
-pogonsportnet.pl##.kode-header-absolute:style(top: 0 !important;)
+tabletowo.pl###main_header:style(margin-top: 0px!important;)
+w-poblizu.pl###page-wrapper > .page:style(padding: 0 !important;)
+chillizet.pl###playerControls .playIcon:style(opacity: 1 !important;)
+radom24.pl###pojemnik-strony:style(margin-top: 0 !important;)
+wirtualnygarwolin.pl###sbox-overlay, #sbox-window
+cartests.net###td-outer-wrap > .td-header-wrap:style(margin-bottom: 0px!important;)
+weszlo.com##.adv:style(height: 1px !important; width: 1px !important;)
 poradnikzdrowie.pl##.article__placement:style(position: absolute !important; left: -100000px !important; top: -1000px !important;)
 portal.abczdrowie.pl##.article__side__stickblock:style(position: absolute!important; left: -3000px!important;)
 portal.abczdrowie.pl##.article__textbox:style(position: absolute!important; left: -3000px!important;)
-radom24.pl###pojemnik-strony:style(margin-top: 0 !important;)
+pilkanozna.pl##.index_bg_top:style(top: auto!important;)
+booklips.pl##.js:style(background-image: none !important;)
+pogonsportnet.pl##.kode-header-absolute:style(top: 0 !important;)
+onet.pl##.miniSlot:style(min-height: 0rem!important;margin-bottom: 0rem!important;)
+ciekawostkihistoryczne.pl##.page:style(background: #dbdbdb !important;)
+eku24.net##.paralax-image:style(height: 100px !important;)
 spidersweb.pl##.playstation.wall-bg:style(background: none!important)
-tabletowo.pl###main_header:style(margin-top: 0px!important;)
+gosc.pl##.webpart-wrap-HeaderMobile.has-promo:style(padding-top: 50px !important;)
 tv-wschod.pl##.widget:style(margin: 10px -15px 0 0!important;)
-tv-wschod.pl##section.container:style(padding-top: 0px!important;)
-weszlo.com##.adv:style(height: 1px !important; width: 1px !important;)
-wirtualnygarwolin.pl###sbox-overlay, #sbox-window
-wirtualnygarwolin.pl##body:style(overflow: visible !important;)
-wykop.pl###dyingLinksBox > .dying-links:first-child ~ .dying-links:last-child:style(display:list-item !important)
-wykop.pl###dyingLinksBox > .dying-links:first-child ~ .dying-links[style="display: list-item;"] ~ .dying-links:style(display: none !important)
-w-poblizu.pl###page-wrapper > .page:style(padding: 0 !important;)
+poczta.o2.pl,poczta.wp.pl#$#body > #page { display: block!important; }
 zarabiam.com##body > font[color="green"]:last-of-type:style(color: transparent !important;)
+elblag.net##body:style(background-image: none!important;)
+wirtualnygarwolin.pl##body:style(overflow: visible !important;)
+chojnow.pl##div#top:style(height: 37px!important;)
+tv-wschod.pl##section.container:style(padding-top: 0px!important;)
 !
 ! Adblock
-dziwnekomiksy.pl##body>*:style(filter: blur(0px) !important;)
 alefunny.pl###myModal, .modal-backdrop
 alefunny.pl##.modal-open:style(overflow: auto !important; padding-right: 0px !important;)
-gadzetomania.pl,wp.pl,autokult.pl,komorkomania.pl##.modal__body-adblock
+autokult.pl,gadzetomania.pl,komorkomania.pl,wp.pl##.modal__body-adblock
+dziwnekomiksy.pl##body>*:style(filter: blur(0px) !important;)
 !
 ! Rules after Adblock
 vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
@@ -223,15 +223,15 @@ vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
 ! Rules with conditions
 !#if (adguard_ext_firefox)
 czasdzieci.pl$$div#allPage > script[tag-content="corner"]
-hdtvpolska.com$$script[tag-content="#sdWelcomeScreen"]
 komputerswiat.pl$$#googleAdsCont
+hdtvpolska.com$$script[tag-content="#sdWelcomeScreen"]
 !#endif
 !#if (!adguard_ext_firefox)
 czasdzieci.pl###ad_allLayer
+komputerswiat.pl###googleAdsCont:style(position: absolute !important; left: -3000px !important;)
 czasdzieci.pl###layout:style(display: block !important;)
 hdtvpolska.com###sdWelcomeScreen
 hdtvpolska.com##html:style(overflow: auto !important;)
-komputerswiat.pl###googleAdsCont:style(position: absolute !important; left: -3000px !important;)
 !#endif
 !#if (adguard_ext_firefox)
 polygamia.pl$$.screening
@@ -239,12 +239,12 @@ polygamia.pl$$.screening
 !
 !
 ! Realizacje CMC Media
-ddb24.pl,iotwock.info,ototorun.pl,twojradom.pl,szczecinek.com,zycie.pila.pl,kurierpodlaski.pl,zambrow.org,egarwolin.pl,lowicz24.eu,ciechanowinaczej.pl,itvpiaseczno.pl,ikampinos.pl,infosiedlce.pl,ibialoleka.pl,izoliborz.pl,imokotow.pl,nolesnica.pl,lipno-cli.pl,golub-cgd.pl,ibielsk.pl,brodnica-cbr.pl,egorzow.pl,ipragapoludnie.pl,rypin-cry.pl,wabrzezno-cwa.pl,wio.waw.pl,e-wyszogrod.pl##.c-content__adv:style(padding-top: 0 !important;)
+brodnica-cbr.pl,ciechanowinaczej.pl,ddb24.pl,e-wyszogrod.pl,egarwolin.pl,egorzow.pl,golub-cgd.pl,ibialoleka.pl,ibielsk.pl,ikampinos.pl,imokotow.pl,infosiedlce.pl,iotwock.info,ipragapoludnie.pl,itvpiaseczno.pl,izoliborz.pl,kurierpodlaski.pl,lipno-cli.pl,lowicz24.eu,nolesnica.pl,ototorun.pl,rypin-cry.pl,szczecinek.com,twojradom.pl,wabrzezno-cwa.pl,wio.waw.pl,zambrow.org,zycie.pila.pl##.c-content__adv:style(padding-top: 0 !important;)
 !
 ! it-manuals.info
 it-manuals.info###pum-822
-it-manuals.info##html.pum-open:style(overflow: auto !important;)
 it-manuals.info##html.pum-open [aria-hidden]:style(padding-right: 0 !important;)
+it-manuals.info##html.pum-open:style(overflow: auto !important;)
 !
 ! powiatowa.info
 powiatowa.info##.container-fluid > .row-fluid > #jm-header-mod.span3:style(width: 100% !important;)
