@@ -1,19 +1,6 @@
-! Checksum: eHNE3qHz3jcYcIvQtvvtEA
-! Title: Polskie Filtry Społecznościowe - Uzupełnienie do uBlocka Origin i AdGuarda
-! Polish Social Filters - Supplement for uBlock Origin & AdGuard
 ! Codename: Social - Supplement
-! Collaborators: MajkiIT, blocker999, hawkeye116477, F4z, RikoDEV
-! Homepage: https://www.certyficate.it/
-! Version: 2019.8.9.0
-! Last modified: Fri, 09 Aug 2019, 15:43 UTC+02
-! Expires: 2 days
-! Support:
-!   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
-!   Discord => https://discord.me/polskiefiltry
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
-! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.8.9.0 aktualizacja: pią, 09 sie 2019, 15:43 UTC+02
 !
 !
 ! Popupy
@@ -67,12 +54,13 @@ rytmynatury.pl##.mfp-wrap:has(#efbl_popup)
 45minut.pl##+js(remove-attr.js, href, .carousel-inner a[href="https://www.facebook.com/45minutpl"])
 abcfirany.pl##+js(remove-attr.js, href, #BanneryAnimacjaPrzewijana > #scrlnr1 > a[href="https://abcfirany.pl/reklama-b-4.html"])
 am76.pl##.container.shop-footer .row > .text-center.col-md-6 > a:style(visibility: hidden !important;)
-autokult.pl,fotoblogia.pl,komorkomania.pl,fitness.wp.pl,smaczneblogi.pl##.grid-item__social.grid-item:style(visibility: hidden !important; display: block !important; padding-top: 0 !important;)
+autokult.pl,fitness.wp.pl,fotoblogia.pl,komorkomania.pl,smaczneblogi.pl##.grid-item__social.grid-item:style(visibility: hidden !important; display: block !important; padding-top: 0 !important;)
 bankobranie.blogspot.com###sideSocial:style(height: auto !important;)
 barokko.pl##+js(remove-attr.js, href, div[class^="platnosci"] > a[href="http://www.facebook.com/pages/Barokkopl/142739835759246"])
 blog.wirtualnemedia.pl###social_ikons_header_fixed:style(visibility: hidden !important;)
-dziennikbaltycki.pl,expressilustrowany.pl,dziennikpolski24.pl,polskatimes.pl,expressbydgoski.pl,expressilustrowany.pl,wspolczesna.pl,gazetakrakowska.pl,gp24.pl,gloswielkopolski.pl##.atomsNavigationFooterSocialmedia__button:style(visibility: hidden !important; display: block !important;)
+dziennikbaltycki.pl,dziennikpolski24.pl,expressbydgoski.pl,expressilustrowany.pl,gazetakrakowska.pl,gloswielkopolski.pl,gp24.pl,polskatimes.pl,wspolczesna.pl##.atomsNavigationFooterSocialmedia__button:style(visibility: hidden !important; display: block !important;)
 englishcollege.pl##.bannerdol > a[href="fb.html"]:style(visibility: hidden !important;)
+e-nobi.pl###social:style(height: auto !Important;)
 freshfile.pl##.facebook, .google:style(visibility: hidden !important;)
 giritoffset.pl##+js(remove-attr.js, href, .jcarousel-item > a[href^="https://www.facebook.com/reklamatorregionalny"])
 jbzdy.*##.btn-send-messenger
@@ -84,15 +72,15 @@ pl.pandora.net###socialMediaFooter .leftMediaLinkFooter:style(visibility: hidden
 rynek-kolejowy.pl##.sledzNasContainer > .zawartoscBox:style(height: auto !important;)
 waw4free.pl###spolecznosci:style(height: auto !important;)
 werandafamily.com##+js(remove-attr.js, href, .instagram-item > .link-block)
-wp.pl##.article > [class]:has(> [class] > .fb-like)
+wp.pl##.article > [class]:has( > [class] > .fb-like)
 !
 !
 ! Widgety - specjalne instrukcje
 !#if !cap_user_stylesheet
 autokult.pl##.instagram-media:style(visibility: hidden !important;)
 autokult.pl##.main-article.article > .insert__default.insert--size-m.insert
-autokult.pl,gadzetomania.pl,fotoblogia.pl,komorkomania.pl,medycyna24.pl##a[href^="https://www.facebook.com/sharer.php"], a[href^="http://twitter.com/intent/tweet"], a[href^="http://pinterest.com/pin/create/link/"]:style(visibility: hidden !important;)
-autokult.pl,gadzetomania.pl,fotoblogia.pl,komorkomania.pl,medycyna24.pl,fitness.wp.pl##.link-facebook, .link-youtube, .link-gplus, .link-instagram, .link-pinterest, .icon-mail:style(visibility: hidden !important;)
+autokult.pl,fitness.wp.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,medycyna24.pl##.link-facebook, .link-youtube, .link-gplus, .link-instagram, .link-pinterest, .icon-mail:style(visibility: hidden !important;)
+autokult.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,medycyna24.pl##a[href^="https://www.facebook.com/sharer.php"], a[href^="http://twitter.com/intent/tweet"], a[href^="http://pinterest.com/pin/create/link/"]:style(visibility: hidden !important;)
 dobreprogramy.pl##.author-social-links, .content.float-right > .social, .rrssb-facebook, .rrssb-twitter, .social__group_share, .social__group_like > .social__item, #phContent_page_content .social__group_like, .social.float-right:style(visibility: hidden !important;)
 dobreprogramy.pl##.social__group > .social__label
 f.kafeteria.pl###ipsLayout_mainArea > .ipsList_inline > li > .cShareLink
