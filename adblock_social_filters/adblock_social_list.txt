@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista Fanboy's Social Blocking List!
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.8.14.0
-! Last modified: Wed, 14 Aug 2019, 11:27 UTC+02
+! Version: 2019.8.16.0
+! Last modified: Fri, 16 Aug 2019, 22:15 UTC+02
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.8.14.0 aktualizacja: śro, 14 sie 2019, 11:27 UTC+02
+! v.2019.8.16.0 aktualizacja: pią, 16 sie 2019, 22:15 UTC+02
 !
 !
 ! Popupy
@@ -58,14 +58,6 @@ okiemturysty.pl##.div_box0
 onkyo.pl##div#dwbox-bkg, div#dwbox-box
 pelnytalerz.com###fbox-background
 pierwsze-kroki.com###spu-26, #spu-bg-26
-pl###facebook-popup
-pl###fb-fan-pop
-pl###fb-fan-pop-background
-pl###fb_like_pop
-pl###like_popup
-pl###popup-social-media
-pl##.facebook-bn_site-overlay
-pl##.facebook-popup
 podrogach.pl###popup_container
 politykazdrowotna.com##.modal-footer
 poradniktransportowy.pl,wiokoniku.pl###wbounce-modal
@@ -86,9 +78,7 @@ zakazany-humor.pl##.snp-pop-111-wrap, .snp-pop-111-overlay
 zmianywzyciu.pl###popup_facebook
 zuch.media###spu-10366, #spu-bg-10366
 /wp-content/plugins/bloom/js/custom.js$domain=thebodyshopclub.pl
-/wp-content/plugins/dc-facebook-like-box-popup-increase-facebook-fans
 /wp-content/plugins/exit-popup/js/exit-popup.js$domain=shareinfo.pl
-/wp-content/plugins/facebook-likebox-responsive-slider/templates/assets/js/facebook_likebox_slider.min.js
 ||chamskie.pl/compress/popupFacebook.js
 ||chamskie.pl/compress/popups/popupFacebook_normal.css
 ||galeriabronowice.pl/templates/gb/js/fancybox/jquery.fancybox.js
@@ -102,6 +92,19 @@ zuch.media###spu-10366, #spu-bg-10366
 ||www.brytol.com/wp-content/plugins/auto-fb-popup/assets/remodal.min.js
 ||www.motywujemy24.pl/compress/popupFacebook.js
 ||zalajkowane.pl/wp-content/plugins/custom-fan-gate-plugin/js/custom-fan-gate.js
+!
+!
+! Popupy - ogólne reguły
+pl###facebook-popup
+pl###fb-fan-pop
+pl###fb-fan-pop-background
+pl###fb_like_pop
+pl###like_popup
+pl###popup-social-media
+pl##.facebook-bn_site-overlay
+pl##.facebook-popup
+/wp-content/plugins/dc-facebook-like-box-popup-increase-facebook-fans
+/wp-content/plugins/facebook-likebox-responsive-slider/templates/assets/js/facebook_likebox_slider.min.js
 !
 !
 ! Ogólne reguły blokujące
@@ -738,7 +741,6 @@ pl,tv##div#facebook-comments[class] > a.comments-facebook[href="#"], .facebook_l
 !
 !
 ! Specyficzne reguły ukrywające
-~www.wp.pl,wp.pl#?#.article > [class] > .article--lead + div[class*=" "] > div[class] > div[class*=" "]:-abp-has(> div[class] > div[class] > span > svg > path)
 2plus3d.pl###menuItem_facebook
 2xme.pl##.footer__block--flex.footer__block, .media__second
 3dom.pro##.division-size-50.division-box-2.division-box
@@ -1081,7 +1083,7 @@ bioieko.pl#?##detal-block:-abp-contains(Dołącz do społeczności bioieko.pl)
 bioindygo.pl##.stopka_spolecznosci
 biokonopia.pl##.custom-header-area > a:nth-of-type(-n+4)
 biore.to,bydgoszcz.com,centrum.fm,fabrykazabawek.eu,miechow.eu,moaburger.com,mojtelefon.info,niemiecki.co,oakandberry.com,patriot24.net,sklep.piast-gliwice.eu,wyborcza.biz##.fb
-biore.to,channel9.msdn.com,chemik-police.com,debica24.eu,domeny.pl,siatka.org##.twitter
+biore.to,channel9.msdn.com,chemik-police.com,debica24.eu,domeny.pl,fakt.pl,siatka.org##.twitter
 biore.to,echotygodnik.info##.pinterest, .linkedin
 biore.to,google.com##.gplus
 biore.to,naszwodzislaw.com##.instagram
@@ -1331,6 +1333,7 @@ cracovia.pl##.socialFixBox
 craftboard.pl##a[href="http://facebook.com/listaserwerowminecraft"]
 craftportal.pl##.__xXznajdziesz20nas20tutaj
 crazynauka.pl,oscarrak.pl##.cb-widget-social-media
+crclondon.com#?##blockquote:-abp-contains(INSTAGRAMIE)
 creativetools.pl,fan-strefa.pl###twitter2_2
 creaton.pl,siniat.pl##.footer-content__social
 creaweb.pl###fb_all
@@ -1432,6 +1435,7 @@ dieroten.pl###foot-menu > .dark.col-sm-12.col-md-3
 digitalassets.pl##div.widget:nth-of-type(n+4):nth-of-type(-n+5)
 digitalsignage.is##.icon-twitter-full
 digitalvirgo.pl##a > img[src$="/img/linked_icon.png"]
+dimedic.eu##.hp__social
 dinfo.pl,tint.pl##.noopslikebox
 diprocon.pl##.page-header > .contact > div
 direct-sender.com###footer .col-lg-5.col-md-12.item
@@ -1629,6 +1633,7 @@ epione.pl,nowywyszkowiak.pl,soniadraga.pl###FacebookWidget
 epiotrkow.pl##.sboxr
 epiotrkow.pl##div.wcontl:nth-of-type(5) > h1
 epiotrkow.pl##.wcontl:nth-of-type(2), .wcontl:nth-of-type(6) > h1
+epoznan.pl##.boxesList__items > div > div:nth-of-type(1) > div > a[target="_blank"]
 erasmusu.com###footer div.inline.col-fourth:nth-of-type(3) > ul > li:nth-of-type(n+4):nth-of-type(-n+7)
 eredaktor.pl###text-5, #nav_menu-4, #toolbare-sm
 ergomeble.pl###widget-instagram
@@ -1688,6 +1693,7 @@ e-dach.pl,e-instalacje.pl,e-izolacje.pl,e-lazienki.pl,e-mieszkanie.pl,e-ogrodek.
 e-dewocjonalia.eu#?##extra_baner > .f-row > div.f-grid-4:nth-of-type(3):-abp-contains(Facebook)
 e-forma.pl,primadent.com.pl,sluzby-ur.pl,wilanow-palac.pl###youtube
 e-glamour.pl##.Social--footer.Social
+e-gorniak.com#?#.home-teaser:-abp-has( > p:first-child:last-child > iframe[src*="://embed.spotify.com/follow/"])
 e-hotelarz.pl##a[href="https://twitter.com/Hotelarz_pl"], a[href^="https://www.facebook.com/miesiecznikhotelarz"]
 e-infonet.pl##a[href="https://plus.google.com/103615133488436531908"]
 e-kca.pl##a[href="http://plus.google.com/112246936900220613632"]
@@ -1979,7 +1985,7 @@ gumtree.pl##.icon-seo-facebook, .icon-seo-gmailplus, .icon-seo-twitter, .icon-se
 guzik.konin.pl##a[href="https://pl-pl.facebook.com/GUZIK.systemy.informatyczne/"]
 guzik.konin.pl##.widget_text.social.widget-bottom.uk-panel-box.uk-panel
 gymeltoro.pl##.bean-social1
-hacienda.pl##.social > li:nth-of-type(-n+3)
+hacienda.pl,koscierzyna24.info##.social > li:nth-of-type(-n+3)
 hack.pl,przesylarka.pl,repozytorium.fn.org.pl,spoleczenstwo.plportal.pl###block-block-11
 hallyustarnews.pl###media_image-3, #media_image-4
 halogorlice.info###sp-bottom3
@@ -2207,6 +2213,7 @@ kapral-car.pl##.absolute-fb.wpb_content_element, .icons-socials-homepage, .o-fir
 karmimypsiaki.pl##.footer div.mrg-top-40.col-md-4:nth-of-type(2)
 kartamultisport.pl##.footer-social
 karta.org.pl##.link-media:not(.link-email)
+kasastefczyka.pl###footer > div > div.col:nth-of-type(3) > div
 kasianafali.pl###HTML3, #Image4
 kasprowiczanie.com##a[href="http://www.facebook.com/kasprowiczanie"] > #link
 kastu.pl##.footer-block-social
@@ -3250,6 +3257,7 @@ pulshr.pl##li:nth-of-type(1) > a[href="https://www.facebook.com/pulsHR"]
 pulshr.pl##.box-1 > .v2
 pulsmedycyny.pl###LinkArea\:NavHeader > li:nth-of-type(-n+3), .npb-js-tabs > a[href="#npb-tab-twitter"]
 pum.edu.pl##.crdocs__share__single:nth-of-type(-n+2)
+pupill.pl###social_follow
 purepc.pl##.soc_yt
 purina.pl##div[data-block-plugin-id*="nppe_base_community"]
 puritanpride.com.pl##.toggle-footer > p:nth-of-type(1) > a > img
@@ -3756,6 +3764,7 @@ teraz.pl##footer div:nth-of-type(4) > ul
 teresin.pl##div.col-md-3.col-xs-6:nth-of-type(4) > address
 teresin.pl###logofb, .pageSharer
 termedia.pl##a[href="https://twitter.com/MenedzerZdrowia"], a[href="https://www.facebook.com/MenedzerZdrowia"]
+termedia.pl##.headCenter > div:nth-of-type(n+2):nth-of-type(-n+3) > button
 termgaz.pl###widget_social
 testhub.pl##.sh-share-item-twitter, .sh-share-item-instagram, .sh-share-item-youtube, .sh-share-item-facebook
 tfkable.com##a.lIn:nth-of-type(-n+2)
@@ -3956,6 +3965,7 @@ vubu.pl##.trigger-facebook
 wachtyrz.eu##a[href="https://facebook.com/wachtyrz"]
 wadowice24.pl##a[href*="https://www.facebook.com/adamexpodolsze"]
 wadowice24.pl##a[href="/Google+"], a[href="https://twitter.com/wadowice24"], a[href="https://www.youtube.com/user/Wadowice24pl"], a[href="https://pl-pl.facebook.com/wadowice24"]
+wago.com##.wg-footer__socials
 wagrowiec.eu###header-top-1 > a.icon:nth-of-type(n+3):nth-of-type(-n+7), #footer #f-col4
 wakacje.pl##div[class][style^="position: fixed;"] > div > a[aria-label="Wakacje.pl facebook"]
 wakacyjnipiraci.pl##a[href="https://www.wakacyjnipiraci.pl/pages/whatsapp"]
@@ -4050,6 +4060,7 @@ wprost.pl##.soc-buttons-box
 wpr.pl##.col-lg-1 > div:nth-of-type(1) > strong
 wp.pl,~www.wp.pl##.facebook-share, .tweeter-share
 wp.pl,~www.wp.pl#?#div:-abp-has( > div > strong:-abp-contains(Podziel się))
+wp.pl,~www.wp.pl#?#.article > [class] > .article--lead + div[class*=" "] > div[class] > div[class*=" "]:-abp-has( > div[class] > div[class] > span > svg > path)
 wrobelekelemelek.com###likebox_1
 wroclaw.pl##.ck_social_media > h3, .ck_mobile_social_icon_1, .ck_mobile_social_icon_4, .ck_mobile_social_icon_5, .ck_mobile_social_icon_6, .ck_mobile_social_icon_7
 wrozka.com.pl##.contact_content td:nth-of-type(n+2)
