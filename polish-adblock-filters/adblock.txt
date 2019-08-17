@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 17 August 2019
 ! Expires: 1 day
-! Version: 2019081701
+! Version: 2019081702
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019081701 aktualizacja: sob, 17 sierpnia 2019, 15:20:00
+! v.2019081702 aktualizacja: sob, 17 sierpnia 2019, 16:00:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -122,7 +122,6 @@ vshare.io###sendif
 ##.BanerHPBig
 ##.Reklama
 ##.a-d-v
-##.a-d-v-i
 ##.ad-offers
 ##.ad_Handle
 ##.addv-container
@@ -246,6 +245,7 @@ popkiller.pl,tygodnikpodhalanski.pl,cnc.info.pl##[class*="reklamy"]
 ~m3esolutions.com,~sloworegionu.pl,~4active.eu,~valida.pl,~foodprint.pl,~roztoczanskipn.pl##.banneritem
 ~milionczesci.pl,~dizibox.com,~2dehands.be,~www.pudelek.pl##[id^="adv-"]:not(#adv-settings)
 ~ool.ru,~24jgora.pl,~24wroclaw.pl##[class*="box-advert"]
+~plonskwsieci.pl##.a-d-v-i
 ~otodom.pl,~przegladsportowy.pl,~wpolityce.pl,~box.com,~hardcorowo.pl,~filmweb.pl,~fakro.pl,~dziennikwschodni.pl,~galilu.pl,~uwaga.tvn.pl,~gumtree.pl,pl##[class^="ad-"]
 ~przegladsportowy.pl,~fakt.pl,~forbes.pl,~auto-swiat.pl,~noizz.pl,~plejada.pl,~businessinsider.com.pl,~komputerswiat.pl,~onet.pl,~vod.pl,pl##[id^="crt-"]
 ~przegladsportowy.pl,~medonet.pl,~fakt.pl,~forbes.pl,~auto-swiat.pl,~noizz.pl,~plejada.pl,~businessinsider.com.pl,~komputerswiat.pl,~onet.pl,~vod.pl,pl###advertisments
@@ -275,7 +275,7 @@ popkiller.pl,tygodnikpodhalanski.pl,cnc.info.pl##[class*="reklamy"]
 24gliwice.pl##.vce-sticky
 24gliwice.pl##[href^="https://www.24gliwice.pl/r/"]
 24gliwice.pl##a[href^="http://www.24gliwice.pl/r/counter-baners.php"]
-24jgora.pl##.add_bill
+24jgora.pl##.add_bill, .l-box--99.l-box, .l-box--25.l-box > p
 24jgora.pl##.linia_4.clear
 24jgora.pl##IMG[src^="http://www.24jgora.pl/kampanie/"]
 24jgora.pl,24wroclaw.pl,babice24.pl,brodnica-cbr.pl,ciechanowinaczej.pl,ddb24.pl,e-wyszogrod.pl,egarwolin.pl,egorzow.pl,ekspresjaroslawski.pl,esiemiatycze.pl,fakty.bialystok.pl,galopuje.pl,golub-cgd.pl,gpr24.pl,ibialoleka.pl,ibielsk.pl,ikampinos.pl,imokotow.pl,inowroclaw.info,iochota.pl,iotwock.pl,ipragapoludnie.pl,iskierniewice.pl,itvpiaseczno.pl,izabelin24.pl,izoliborz.pl,izyrardow.pl,kurierbytowski.com.pl,kurierpodlaski.pl,lipno-cli.pl,lowicz24.eu,mylomza.pl,nolesnica.pl,nowinynyskie.com.pl,nswiecie.pl,nwloclawek.pl,olawa24.pl,ototorun.pl,plonszczak.pl,poluje.pl,pultusk24.pl,rypin-cry.pl,sejny.net,splendo.pl,szczecinek.com,tp.com.pl,twojradom.pl,twojzwolen.pl,wabrzezno.pl,wio.waw.pl,wolomin24.info,wterenie.pl,zambrow.org,zlotowskie.pl,zycie.pila.pl,zyciekalisza.pl##body > .c-content__adv, span > .c-content__adv, .l-col > .c-content__adv, .l-col__item > .c-content__adv, .l-ad-top, .l-ad-box, .c-content__adv-title
@@ -1835,7 +1835,7 @@ my-navia.pl##TD[style="padding-top:10px; padding-bottom:10px;"]
 my-navia.pl##[style="WIDTH: 940px; font-family: Arial;"]
 mybboard.pl##.regardsForAdblockers
 myhome.pl##.must-login-box.f-login-wrapper
-mylomza.pl,twojawierzbica.pl,kurierpodlaski.pl,ototorun.pl,twojglos.pl,nowinynyskie.com.pl,24jgora.pl##.deepest.box-2, #bottom, .add_bill, .l-box--99.l-box > table, .l-box--33.l-box > div > [href] > img, div.l-container > div.l-row > .l-box--100, .c-content__adv, li.c-adv-list-ad
+mylomza.pl,twojawierzbica.pl,kurierpodlaski.pl,ototorun.pl,twojglos.pl,nowinynyskie.com.pl##.deepest.box-2, #bottom, .add_bill, .l-box--99.l-box > table, .l-box--33.l-box > div > [href] > img, div.l-container > div.l-row > .l-box--100, .c-content__adv, li.c-adv-list-ad
 mysnet.pl##p
 mysqlperformanceblog.com##.insightera-bar-widget.insightera-bar
 na-luzie.net##a[href^="http://trafisz.com/"]
@@ -2107,6 +2107,8 @@ plonskwsieci.pl###jm-header-container > .jm-module:nth-of-type(5)
 plonskwsieci.pl###jm-header-container > .jm-module:nth-of-type(7)
 plonskwsieci.pl##.clearfix.jm-module-content > .custom
 plonskwsieci.pl##.ic_marquee0, .content.col-md-12 > p > A
+plonskwsieci.pl##.a-d-v-i:not(.box-margin)
+plonskwsieci.pl##.a-d-v-i.box-margin > *
 plotek.pl##[id^="frame-"]
 plportal.pl##.ogloszenie, .col-xs-4 > .layout-column.row > .row:nth-of-type(3)
 plusforum.pl##.content > p
