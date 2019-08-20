@@ -82,7 +82,4 @@ po czym selektywnie powyłączać listy które zawierają ten filtr i zgłosić 
   - https://polishannoyancefilters.netlify.com/issues/
 
 
-
-
-
 ##
