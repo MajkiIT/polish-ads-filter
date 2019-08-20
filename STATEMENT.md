@@ -1,6 +1,6 @@
 ## Wprowadzenie
 
-"Polskie filtry dla Adblocka, uBlocka i AdGuarda" To sposób oceniania i kategoryzacji elementów. Nie możemy odpowiadać za sposób w jaki rozszerzenia blokujące reklamy korzystają z naszych list, ale obiecujemy aktywnie reagować na wasze [pytania](https://github.com/MajkiIT/polish-ads-filter/issues).
+"Polskie filtry dla Adblocka, uBlocka i AdGuarda" To sposób oceniania i kategoryzacji elementów. Nie możemy odpowiadać za sposób w jaki rozszerzenia blokujące reklamy korzystają z naszych list, ale obiecujemy aktywnie reagować na [pytania](https://github.com/MajkiIT/polish-ads-filter/issues).
 
 ---
 
@@ -42,7 +42,7 @@ pamiętaj by subskrybować te listy filtrów co do których<br/>
 masz absolutną pewność, nie subskrybuj jeśli nie wiesz co robi
 
 pamiętaj by subskrybować tylko aktualne listy filtrów<br/>
-jeśli masz jakiś problem z listą filtrów napisz do jej opiekuna
+jeśli masz jakiś problem z listą filtrów, napisz do jej opiekuna
 
 zwracaj uwagę by nie dublować niepotrzebnie list filtrów<br/>
 oraz rozszerzeń/programów do blokowania reklam w internecie
@@ -62,7 +62,10 @@ zaktualizuj wymagane do działania listy filtrów
 
 ---
 
-dalej nie działa? zgłoś to tutaj (pamiętając o strukturze zgłoszeń):
+dalej nie działa?
+
+`możesz sprawdzić za pomocą "dziennika rządań" zawartego w ublocku origin lub adguardzie, który filtr ci psuje daną strone.
+po czym selektywnie powyłączać listy które zawierają ten filtr i zgłosić błąd do autorów list powodujących dany błąd`
 
 - rek, zewn. ogólne [ENG]
   - proste do https://github.com/easylist/easylist/issues
