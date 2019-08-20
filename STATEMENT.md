@@ -42,7 +42,7 @@ pamiętaj by subskrybować te listy filtrów co do których<br/>
 masz absolutną pewność, nie subskrybuj jeśli nie wiesz co robi
 
 pamiętaj by subskrybować tylko aktualne listy filtrów<br/>
-jeśli masz jakiś problem z listą filtrów napisz do jej opiekuna
+jeśli masz jakiś problem z listą filtrów, napisz do jej opiekuna
 
 zwracaj uwagę by nie dublować niepotrzebnie list filtrów<br/>
 oraz rozszerzeń/programów do blokowania reklam w internecie
