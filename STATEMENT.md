@@ -62,7 +62,10 @@ zaktualizuj wymagane do działania listy filtrów
 
 ---
 
-dalej nie działa? zgłoś to tutaj (pamiętając o strukturze zgłoszeń):
+dalej nie działa?
+
+`możesz sprawdzić za pomocą "dziennika rządań" zawartego w ublocku origin lub adguardzie, który filtr ci psuje daną strone.
+po czym selektywnie powyłączać listy które zawierają ten filtr i zgłosić błąd do autorów list powodujących dany błąd`
 
 - rek, zewn. ogólne [ENG]
   - proste do https://github.com/easylist/easylist/issues
@@ -77,6 +80,9 @@ dalej nie działa? zgłoś to tutaj (pamiętając o strukturze zgłoszeń):
   - trudne do https://github.com/AdguardTeam/AdguardFilters/issues
 - ele. irytujące [PL]
   - https://polishannoyancefilters.netlify.com/issues/
+
+
+
 
 
 ##
