@@ -118,6 +118,7 @@ innogy.pl###cookie-wall-container
 intermarche.pl##body.showCookie .sec--head:style(top: 0 !important;)
 intermarche.pl##body.showCookie .sec--menu-popup:style(top: 117px !important;)
 intermarche.pl##body.showCookie .wrapper-for-blocked-content:style(margin-top: 0 !important;)
+jbzdy.*##body > div[class^="app_gdpr"]
 jedenslad.pl##.noscroll:style(overflow: auto !important;)
 jedenslad.pl##.popup-overlay.js-gdpr
 kaliszak.pl##.rodo, .rodo_layer
@@ -221,6 +222,8 @@ skyscrapercity.com##.fc-consent-root
 smazymy.com###wmpci-popup-wrp
 smazymy.com##.wmpci-popup-open, .wmpci-popup-open body:style(overflow: auto !important;)
 sonymobile.com##.bnw-module.header[style="margin-top: 80px;"]:style(margin-top: 0 !important;)
+support.malwarebytes.com##body[style*="overflow-y: hidden"]:style(overflow-y: auto !important;)
+support.malwarebytes.com###cookie-consent-alert
 szpitalnawrzesinie.pl###gafancybox-overlay122
 teatrpolski.waw.pl##.fancybox-overlay:has(#privacyPolicy)
 telepizza.pl##.navbar:style(margin-top: 0 !important;)
@@ -391,16 +394,12 @@ zdajmyrazem.pl###gdprModal, .modal-backdrop
 ztm.poznan.pl###PopUP, .modal-backdrop
 !autostrada-a2.pl##+js(remove-attr.js, class, body[class="cookielaw cookielaw rodo"])
 !autostrada-a2.pl##+js(remove-attr.js, class, body[class=" rodo"])
-!+ PLATFORM(ext_ublock)
-akamai.com##.notification--warning, .modal--overlay
-!+ PLATFORM(ext_ublock)
+!#if ext_ublock
 akamai.com##+js(remove-attr.js, class, .disable-sibling-pointer-events)
-!+ PLATFORM(ext_ublock)
-!autostrada-a2.pl###rodo-box, #cookielaw-box
-!+ PLATFORM(ext_ublock)
+akamai.com##.notification--warning, .modal--overlay
 openpli.org##body > div:not([id]):not([class])
-!+ PLATFORM(ext_ublock)
 opinie.news##.plg_system_eprivacy_accepted > p > .plg_system_eprivacy_reconsider
+!#endif
 !#endif
 !#if cap_html_filtering
 4fun.tv##^#cModal
