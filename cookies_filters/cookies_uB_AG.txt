@@ -394,12 +394,12 @@ zdajmyrazem.pl###gdprModal, .modal-backdrop
 ztm.poznan.pl###PopUP, .modal-backdrop
 !autostrada-a2.pl##+js(remove-attr.js, class, body[class="cookielaw cookielaw rodo"])
 !autostrada-a2.pl##+js(remove-attr.js, class, body[class=" rodo"])
+!#if ext_ublock
 akamai.com##+js(remove-attr.js, class, .disable-sibling-pointer-events)
 akamai.com##.notification--warning, .modal--overlay
 openpli.org##body > div:not([id]):not([class])
 opinie.news##.plg_system_eprivacy_accepted > p > .plg_system_eprivacy_reconsider
-!autostrada-a2.pl###rodo-box, #cookielaw-box
-!+ PLATFORM(ext_ublock)
+!#endif
 !#endif
 !#if cap_html_filtering
 4fun.tv##^#cModal
