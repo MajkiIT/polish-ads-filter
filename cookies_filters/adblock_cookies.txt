@@ -5,8 +5,8 @@
 ! Description: Filtry ukrywające i blokujące komunikaty dot. ciasteczek i polityki prywatności/RODO.
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.8.27.0
-! Last modified: Tue, 27 Aug 2019, 22:45 UTC+02
+! Version: 2019.8.28.0
+! Last modified: Wed, 28 Aug 2019, 22:23 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -17,7 +17,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.8.27.0 aktualizacja: wto, 27 sie 2019, 22:45 UTC+02
+! v.2019.8.28.0 aktualizacja: śro, 28 sie 2019, 22:23 UTC+02
 !
 !
 ! Specyficzne reguły ukrywające
@@ -54,7 +54,7 @@ absbank.pl##body > div:not([id]):not([class])[style="background: #eee; border-bo
 absolvent.pl##.top-ban-wrapper
 abt-s.pl,ecbedzin.pl,enut.pl,haloursynow.pl,interprojekt.pl,mojaolesnica.pl,programatory.com,warsztat.pl###myModal
 abt-s.pl,filoma.org,interprojekt.pl,naekranie.pl,polskiprawnik.pl,www.hotelbb.pl,yes.pl##.reveal-modal-bg
-accenture.com,asics.com,cookielaw.org,filehippo.com,hp.com,kia.com,malwarebytes.com,msn.com,pl.atlassian.com,prezi.com,volvocars.com###optanon, .optanon-alert-box-wrapper, #optanon-minimize-wrapper
+accenture.com,asics.com,cookielaw.org,filehippo.com,hp.com,kia.com,malwarebytes.com,msn.com,pl.atlassian.com,prezi.com,sonos.com,volvocars.com###optanon, .optanon-alert-box-wrapper, #optanon-minimize-wrapper
 accent-bikes.com,adaware.com,boca.com,carfax.eu,croatia.hr,dexcom.com,esn-eu.org,gliwice.eu,kghm.com,kielce.eu,kwestiasmaku.com,naszekielce.com,paszport.info,prestashop.com,rc.fm,sadeczanin.info,swiecie.eu###sliding-popup
 account.ubisoft.com###footer_tc_privacy
 accuweather.com###eu-cookie-notify-wrap
@@ -317,6 +317,7 @@ bosch-do-it.com,bosch-garden.com###CookieManagerDialog
 bosch-extra.pl,extra-program.pl###boschCookieSettings
 bosch-industrial.com,domkorkowy.com,junkers.pl,presta.eu.org###cookielaw
 bosch.pl##.O-CookieLaw
+bose.pl##header > div[class*="--cookie"]
 bose.pl###privacy-message-bar
 bossoftoys.pl###modal-rulescheck
 bp.com##.nr-cookie-notification-component
@@ -600,7 +601,7 @@ emito.net##.cookie-jar
 empik.com##.js-cookies-accept
 emt-systems.pl###rodoBG
 endoca.com##.gdpr-modal-notify
-eneba.com##body > #app > div[class] + div[class]:nth-of-type(2)
+eneba.com#?#body > #app > div[class] > div[class]:-abp-contains(cookies)
 enjoyuk.pl###fanback
 enutka.net,orlenarena.eu###CookieAlert
 eostroleka.pl###cookiesRodo
@@ -770,7 +771,7 @@ gardinia.pl,mactronic.pl,ogradzamy.pl##body > div[id*="cookie"]
 garneczki.pl##.cookieframe
 garwolin.pl,gmina.pl,kierunekspozywczy.pl,krsystem.pl,laskarzew.pl,nowemiasto.pl,wislaportal.pl,zwolen.pl###cook
 garwolin.spolem.org.pl#?##colorbox:-abp-has(#rodo_width_hotfix)
-gastromaniacy.pl,instytutlogopedyczny.pl,sggik.pl###flash-msg
+gastromaniacy.pl,idhosting.pl,instytutlogopedyczny.pl,sggik.pl###flash-msg
 gastrowypozyczalnia.pl###popup1
 gazeo.pl###rodo_accept
 gazetainformator.pl###okno_rcookie
@@ -1716,6 +1717,7 @@ sklepfarmer.pl###cookie_info_response
 sklepjubilerski.com###cookieGuardMsg
 skleprowerowy.pl##.gdpr-consent-tabs
 sklepyabc.pl###am_pop-up
+sklep-domwhisky.pl###rodo-modal-all
 sklep-tosia.eu##.cookie-center
 sklep.carrefour.pl##.components-cookie-law-basic
 sklep.eltron.pl###communication
@@ -3081,6 +3083,7 @@ naekranie.pl#@##polityka-cookies:not(body):not(html)
 orange.pl#@##cookies-info:not(body):not(html)
 pikio.pl#@##cookie-policy:not(body):not(html)
 porno720.pl,tvporno.pl#@##cookieinfo:not(body):not(html)
+sklep-domwhisky.pl#@#.rodo-popup:not(body):not(html):not([style="display: block;"])
 tychy.geminipark.pl#@#.privacy-policy:not(body):not(html)
 wtk.pl#@#.privacy-container:not(body):not(html):not(.content-container)
 zagojeni.pl#@#.rodo-overlay:not(body):not(html)
