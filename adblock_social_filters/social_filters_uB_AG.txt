@@ -31,16 +31,23 @@ sprawnymarketing.pl##.blur:style(filter: none !important;)
 !
 ! Popupy - specjalne instrukcje
 !#if !cap_html_filtering
+4kdownload.com##+js(remove-attr, data-remodal-id, .thanks-modal)
 alemeksyk.eu##.pwebbox-modal, .modal-backdrop
 alemeksyk.eu##.pweb-modal-open:style(overflow: auto !important;)
 lookcam.com###lookcam-fb-modal, .modal-backdrop
 lookcam.com##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 !#endif
 !#if cap_html_filtering
+4kdownload.com##^.thanks-modal
 alemeksyk.eu##^.pwebbox-plugin-facebook_page_plugin
 lookcam.com##^#lookcam-fb-modal
 !#endif
 !#if !ext_ublock
+4kdownload.com##body[style]:style(padding-right: 0 !important;)
+4kdownload.com##html.remodal-is-locked:style(overflow: auto !important;)
+4kdownload.com##.remodal-overlay
+4kdownload.com##.remodal-wrapper:has( > .thanks-modal)
+4kdownload.com$$.thanks-modal
 alemeksyk.eu$$.pwebbox-plugin-facebook_page_plugin
 lookcam.com$$#lookcam-fb-modal
 rytmynatury.pl##html:style(overflow: auto !important; margin-right: 0 !important;)
@@ -119,6 +126,8 @@ cashless.pl##.icon-list:style(margin-top: 25px !important;)
 cashless.pl##.rss-before:before:style(margin-right: 5px; display: inline-block !important; position: static !important;)
 discoverychannel.pl,tlcpolska.pl,tvnstyle.pl##header .inputMedia .inputContainer:style(width: 100% !important;)
 fajnycraft.pl##.primary-menu > li:nth-of-type(n+3):style(visibility: hidden !important;)
+golfkobiet.org###resilite-before-content-container > div[class*="inset-thin"] > div[class*="col-sm-width-4"]:style(float: left !important;)
+golfkobiet.org###resilite-before-content-container > div[class*="inset-thin"] > div[class*="col-sm-width-8"]:first-of-type
 iab.org.pl###menu-social .menu-social:style(width: auto !important;)
 librus.pl##div.promo, #navBar, .container-fluid:style(width: 100% !important;)
 pozycjoneria.com###footer > #stopka_ikonki:style(visibility: hidden !important; display: block !important;)
@@ -142,5 +151,6 @@ zlotygron.pl##.site_social > span:style(display: inline-block !important; paddin
 antyweb.pl#?#.box-social-counter
 focus.pl#?#.socializer-fb-share
 oknonawagrowiec.pl#?#.penci-social__item:nth-of-type(-n+4)
+polonia.net#?##header-social-icons
 telepolis.pl##a.icon-facebook, a.icon-twitter
 !#endif
