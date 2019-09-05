@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 1 September 2019
+! Last modified: 5 September 2019
 ! Expires: 1 day
-! Version: 2019090102
+! Version: 2019090501
 ! Support:
 !   Email >> errors@certyficate.it
 !   Discord >> http://ds.certyficate.it
@@ -20,7 +20,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019090102 aktualizacja: nie, 1 wrzesnia 2019, 19:25:00
+! v.2019090501 aktualizacja: czw, 5 wrzesnia 2019, 09:10:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -3380,6 +3380,7 @@ zywiecinfo.pl##.promoted
 ||glos.live/content/other/banner_$image
 ||googlesyndication.com^
 ||googleusercontent.com/$image,domain=openlinksys.info
+||goprediction.com^$domain=~goprediction.com
 ||gorzow24.pl/img/ims/$image
 ||gorzowianin.com/data/rotator/
 ||gowork.pl/images/top_img/$image,domain=gowork.pl
@@ -4307,7 +4308,10 @@ stopnadwadze.pl###text-4
 stopnadwadze.pl###text-html-widget-10
 strefakodera.pl##.col.widget:nth-of-type(2) > .widgetHeader
 supertydzien.pl##.widget.row:nth-of-type(12)
-tapeciarnia.pl#?#div[style*="text-align:center;"]:-abp-contains(REKLAMA)
+tapeciarnia.pl#@#div[style*="text-align:center;"]:has-text(REKLAMA)
+tapeciarnia.pl###reklama_pod_gorne_menu
+tapeciarnia.pl#?#.thumb td:-abp-contains(REKLAMA)
+tapeciarnia.pl#?#td > div:-abp-contains(REKLAMA)
 technologiczna.pl##.alignnone
 technowinki24.pl###black-studio-tinymce-2
 tomaszowski.com.pl###text-15
