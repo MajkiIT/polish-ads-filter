@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Reklamy WP
 // @namespace    F4z
-// @version      0.3
+// @version      0.4
 // @description  Blokowanie reklam na wp.pl
 // @author       You
 // @match        *://*.abczdrowie.pl/*
@@ -51,15 +51,4 @@
 // @downloadURL  https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/polish_ads_wp.user.js
 // ==/UserScript==
  
-(function () {
-    'use strict';
- 
-    Object.defineProperty(Object.prototype, 'bodies', {
-        get: function get() {
-            return function () {};
-        },
-        set: function set() {
-            return function () {};
-        }
-    });
-})();
+Object.defineProperty(navigator, 'userAgent', { get: function() { return 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1;'; } });
