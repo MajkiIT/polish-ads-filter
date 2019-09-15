@@ -3,7 +3,7 @@
 // @namespace    F4z
 // @version      0.5
 // @description  Blokowanie reklam na wp.pl
-// @author       AdamWr
+// @author       AdamWr + krystian3w 
 // @match        *://*.abczdrowie.pl/*
 // @match        *://*.allani.pl/*
 // @match        *://*.autokrata.pl/*
