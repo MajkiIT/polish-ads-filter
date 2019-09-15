@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Reklamy WP
 // @namespace    F4z
-// @version      0.4
+// @version      0.5
 // @description  Blokowanie reklam na wp.pl
-// @author       You
+// @author       AdamWr
 // @match        *://*.abczdrowie.pl/*
 // @match        *://*.allani.pl/*
 // @match        *://*.autokrata.pl/*
@@ -47,8 +47,11 @@
 // @match        *://*.wp.tv/*
 // @match        *://*.wp.pl/*
 // @grant        none
+// @run-at       document-start
+// @user-agent   Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 // @updateURL    https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/polish_ads_wp.user.js
 // @downloadURL  https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/polish_ads_wp.user.js
 // ==/UserScript==
- 
-Object.defineProperty(navigator, 'userAgent', { get: function() { return 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1;'; } });
+Object.defineProperty(navigator, 'userAgent', {
+    value: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+});
