@@ -6,16 +6,16 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 22 September 2019
+! Last modified: 25 September 2019
 ! Expires: 1 day
-! Version: 2019092201
+! Version: 2019092501
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na:  https://www.certyficate.it/adblock/
-! v.2019092201 aktualizacja: nie, 22 wrzesnia 2019, 02:41:00
+! v.2019092501 aktualizacja: śro, 25 wrzesnia 2019, 17:58:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -195,7 +195,7 @@ bezuzyteczna.pl##section:has(script + div[id^="crt"][style])
 !
 ! naekranie.pl
 ! Timery ladujace reklamy
-naekranie.pl##+js(abort-current-inline-script.js, $, /loadData|halfpage|welcome|screening/)
+naekranie.pl##+js(abort-current-inline-script.js, $, /loadData|halfpage|welcome|screening|placement/)
 naekranie.pl##+js(setInterval-defuser.js, function neTick(){neTickCounter++;if(neTickCounter<=neTickCountLimit){neTickAjax=$.ajax({type:"POST",url:adminAjaxUrl+"?action=ne_tick",dataType:"json",success:function(data){neTickResponseAction(data)}})}}, 10000)
 naekranie.pl##+js(setTimeout-defuser.js, function check(){console.log("checked");if($(".adform").children().length>3){console.log("its more");$(".adform").children(".adform-banner").show();clearTimeout(check)}}, 1000)
 !
