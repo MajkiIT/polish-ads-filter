@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 25 September 2019
+! Last modified: 29 September 2019
 ! Expires: 1 day
-! Version: 2019092501
+! Version: 2019092901
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -19,7 +19,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019092501 aktualizacja: śro, 25 wrzesnia 2019, 17:51:00
+! v.2019092901 aktualizacja: nie, 29 wrzesnia 2019, 13:55:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -292,6 +292,7 @@ popkiller.pl,tygodnikpodhalanski.pl,cnc.info.pl##[class*="reklamy"]
 300polityka.pl##.dcmads
 300polityka.pl,meczyki.pl,pepsieliot.com,gazeta-wiesci.pl###text-3
 3dwpraktyce.pl##.hidden-xs.col-xs-12
+4fun.tv###splash
 40ton.net##.clearfix.sidebar-box:nth-of-type(2), .related_post_title
 4clubbers.com.pl##body > center
 4hifi.pl##DIV[align="center"] > [target="_blank"] > IMG
@@ -1683,7 +1684,7 @@ memy.pl##.content-stream.view-meme > #news > .break-row.row
 memy.pl##.content-stream.view-meme > div[style="height:200px; width:750px;"]
 memy.pl##.side-stream > div[style="height:600px; width:300px;"]
 menshealth.pl###mh-halfpage-advert-2
-mensis.pl,lubanski.eu###custom_html-4
+mensis.pl,lubanski.eu,aju.pl###custom_html-4
 meritum.gda.pl##a[href="http://serwis-laptopy.pl"]
 metalnews.pl###sidebar_right_place-10, #text-23
 meteo.pl##.project-title.control-wrapper
@@ -1902,7 +1903,6 @@ newsbook.pl##.wpb_content_element.wpb_text_column
 newsbook.pl,infobus.pl##[id^="popup"]
 newseria.pl##.container > .banner-nagl
 newsweek.pl##.copyRCTopHolder
-next.gazeta.pl##.art_embed
 nf.pl##.footer-container.ban-main-centering-container
 nf.pl##.promo-container_google, .promo
 nflix.pl###page > center > table
@@ -2467,6 +2467,8 @@ silesia.fm,wxv.pl##.sidebar
 silesia24.pl##.adds--top, .weather-box, .footer-banner.container, #c79
 sitemag.pl##.td-all-devices
 sitemag.pl,infokatowice.pl,noweinfo.pl##.td-header-sp-recs
+sjp.pwn.pl#?#.col-wrapper > div:nth-of-type(1):-abp-has(> div:nth-of-type(2):-abp-contains(Sponsorowane))
+sjp.pwn.pl#?#.col-wrapper > div:nth-of-type(12):-abp-has(> .banner)
 skarzysko24.pl###Mod434, #Mod510, #Mod417, #Mod400, #Mod504, #Mod431, #Mod403, #Mod474, #Mod486, #Mod422, [id^="slider"]
 skawinska.pl##div.homepage-ad-area
 skijumping.pl##[src="/img/reklama_znak.png"]
@@ -3555,7 +3557,7 @@ zywiecinfo.pl##.promoted
 ||reklamy.s3.amazonaws.com/bcg/$image
 ||repostuj.pl/static/repostujpl/arrow_right.jpg$domain=repostuj.pl
 ||request.dqst.pl/$xmlhttprequest
-||rkantor.com/widget/$script
+||rkantor.com/widget/$script,domain=~poczta-polska.pl
 ||rtbnowads.com/$script
 ||s-nk.pl/files/offers/$subdocument
 ||satkurier.pl/getRandomBanner
