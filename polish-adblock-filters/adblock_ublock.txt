@@ -6,16 +6,16 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 01 October 2019
+! Last modified: 02 October 2019
 ! Expires: 1 day
-! Version: 2019100102
+! Version: 2019100201
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019100102 aktualizacja: wt, 01 października 2019, 12:42:00
+! v.2019100101 aktualizacja: śro, 02 października 2019, 17:22:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -99,6 +99,10 @@ www.ps4forum.pl##.forumsTabLinks.tabLinks:style(top: 60px !important;)
 www.ps4forum.pl##.googleheader
 !
 ! dobreprogramy
+dobreprogramy.pl##.app-list > div > div[id*="-"]:not(.active):style(display: none !important;)
+dobreprogramy.pl##.app-list > div > div[id*="-"].active:style(display: block !important;)
+dobreprogramy.pl##.badge:empty:style(display: none !important;)
+dobreprogramy.pl##.item.read .mark-as-read:style(display: none !important;)
 !dobreprogramy.pl##.page-form *:matches-css(background: /url("?blob:https://www.dobreprogramy.pl//)
 !dobreprogramy.pl##.page-form *:matches-css(background: /url\("?data:image\/png;base64,/)
 !dobreprogramy.pl##[style^="background:url"][style*="blob:https://www.dobreprogramy.pl/"]:style(position: absolute !important; left: -3000px !important;)
