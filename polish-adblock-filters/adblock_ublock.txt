@@ -6,16 +6,16 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 02 October 2019
+! Last modified: 03 October 2019
 ! Expires: 1 day
-! Version: 2019100201
+! Version: 2019100301
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019100101 aktualizacja: śro, 02 października 2019, 17:22:00
+! v.2019100301 aktualizacja: czw, 03 października 2019, 19:14:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -99,10 +99,6 @@ www.ps4forum.pl##.forumsTabLinks.tabLinks:style(top: 60px !important;)
 www.ps4forum.pl##.googleheader
 !
 ! dobreprogramy
-dobreprogramy.pl##.app-list > div > div[id*="-"]:not(.active):style(display: none !important;)
-dobreprogramy.pl##.app-list > div > div[id*="-"].active:style(display: block !important;)
-dobreprogramy.pl##.badge:empty:style(display: none !important;)
-dobreprogramy.pl##.item.read .mark-as-read:style(display: none !important;)
 !dobreprogramy.pl##.page-form *:matches-css(background: /url("?blob:https://www.dobreprogramy.pl//)
 !dobreprogramy.pl##.page-form *:matches-css(background: /url\("?data:image\/png;base64,/)
 !dobreprogramy.pl##[style^="background:url"][style*="blob:https://www.dobreprogramy.pl/"]:style(position: absolute !important; left: -3000px !important;)
@@ -111,7 +107,6 @@ dobreprogramy.pl##.item.read .mark-as-read:style(display: none !important;)
 !||www.dobreprogramy.pl^$csp=img-src 'self' *.dpcdn.pl
 dobreprogramy.pl##body.variant-mobile div[style="color: #A9A9A9; text-align:center;font-size:11px;"]:style(visibility: hidden !important;)
 dobreprogramy.pl##body:not(#bd):not([style*="background-image:"]):style(background-image:none !important;)
-!dobreprogramy.pl##+js(set-constant.js, WP.gaf.loadAndRunBunch, noopFunc)
 www.dobreprogramy.pl###phContent_downloaderHint
 www.dobreprogramy.pl##:xpath(//div[contains(text(), 'REKLAMA')])
 www.dobreprogramy.pl##article > .hint:has(a[href$="/Czyszczenie-systemu-z-niechcianego-oprogramowania,News,61336.html"])
@@ -153,7 +148,7 @@ www.wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 ~www.wp.pl,wp.pl##:xpath(//div[count(*)=3][img[@class][@src]][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
 ~www.wp.pl,wp.pl,sportowefakty.wp.pl##div[class*=" "]:has(>div[class*=" "] > [class^="__bc_layer"])
 !~poczta.wp.pl,wp.pl,echirurgia.pl,kardiolo.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl,~pilot.wp.pl,~money.pl##+js(set-constant.js, WP.gaf.addCreation, noopFunc)
-!autokult.pl##+js(set-constant.js, WP.gaf.loadAndRunBunch, noopFunc)
+!autokult.pl,dobreprogramy.pl##+js(set-constant.js, WP.gaf.loadAndRunBunch, noopFunc)
 !~poczta.wp.pl,wp.pl,pudelek.pl,~pilot.wp.pl##+js(set-constant.js, WP.gaf.setSlotCreation, noopFunc)
 !~dom.wp.pl,~facet.wp.pl,~film.wp.pl,~gry.wp.pl,~gwiazdy.wp.pl,~kobieta.wp.pl,~ksiazki.wp.pl,~opinie.wp.pl,~pilot.wp.pl,~poczta.wp.pl,~pogoda.wp.pl,~sportowefakty.wp.pl,~tech.wp.pl,~teleshow.wp.pl,~telewizja.wp.pl,~turystyka.wp.pl,~wawalove.wp.pl,~wiadomosci.wp.pl,~www.wp.pl,abczdrowie.pl,autokult.pl,domodi.pl,fotoblogia.pl,komorkomania.pl,wp.pl##+js(set-constant.js, WP.gdpr.init, noopFunc)
 !www.wp.pl##+js(set-constant.js, WP.mods.welcomeScreen, noopFunc)
@@ -162,14 +157,14 @@ www.wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 !tv.wp.pl##+js(set-constant.js, WP.crux.sealed, falseFunc)
 !www.wp.pl##body > #root ~ script + div[class]
 www.wp.pl###root:style(filter: none!important;)
-abczdrowie.pl,allani.pl,autokrata.pl,autokult.pl,biztok.pl,dobreprogramy.pl,dzieci.pl,easygo.pl,echirurgia.pl,fotoblogia.pl,gadzetomania.pl,hotmoney.pl,interaktywnie.com,inwestycje.pl,jejswiat.pl,kafeteria.pl,kafeteria.tv,kantory.pl,kazimierzdolny.pl,komediowo.pl,komorkomania.pl,mazury.com,mojeauto.pl,mojeosiedle.pl,money.pl,nasygnale.pl,niewiarygodne.pl,nocowanie.pl,o2.pl,odkrywcy.pl,open.fm,parenting.pl,pudelek.pl,pudelek.tv,pytamy.pl,sfora.pl,snobka.pl,tlen.pl,totalmoney.pl,wakacje.pl,wawalove.pl,wp.pl,wp.tv##+js(set-constant.js, Object.prototype.bodies, true)
+abczdrowie.pl,allani.pl,autokrata.pl,autokult.pl,biztok.pl,dzieci.pl,easygo.pl,echirurgia.pl,fotoblogia.pl,gadzetomania.pl,hotmoney.pl,interaktywnie.com,inwestycje.pl,jejswiat.pl,kafeteria.pl,kafeteria.tv,kantory.pl,kazimierzdolny.pl,komediowo.pl,komorkomania.pl,mazury.com,mojeauto.pl,mojeosiedle.pl,money.pl,nasygnale.pl,niewiarygodne.pl,nocowanie.pl,odkrywcy.pl,open.fm,parenting.pl,pudelek.tv,pytamy.pl,sfora.pl,snobka.pl,tlen.pl,totalmoney.pl,wakacje.pl,wawalove.pl,wp.tv##+js(set-constant.js, Object.prototype.bodies, true)
 !abczdrowie.pl,allani.pl,autokrata.pl,autokult.pl,biztok.pl,dzieci.pl,easygo.pl,echirurgia.pl,fotoblogia.pl,gadzetomania.pl,hotmoney.pl,interaktywnie.com,inwestycje.pl,jejswiat.pl,kafeteria.pl,kafeteria.tv,kantory.pl,kazimierzdolny.pl,komediowo.pl,komorkomania.pl,mazury.com,mojeauto.pl,mojeosiedle.pl,money.pl,nasygnale.pl,niewiarygodne.pl,nocowanie.pl,o2.pl,~poczta.o2.pl,odkrywcy.pl,open.fm,parenting.pl,pudelek.pl,pudelek.tv,pytamy.pl,sfora.pl,snobka.pl,tlen.pl,totalmoney.pl,wakacje.pl,wawalove.pl,wp.pl,~poczta.wp.pl,wp.tv##+js(overlay-buster.js)
 !#if cap_user_stylesheet
 abczdrowie.pl,allani.pl,autokrata.pl,autokult.pl,biztok.pl,dzieci.pl,easygo.pl,echirurgia.pl,fotoblogia.pl,gadzetomania.pl,hotmoney.pl,interaktywnie.com,inwestycje.pl,jejswiat.pl,kafeteria.pl,kafeteria.tv,kantory.pl,kazimierzdolny.pl,komediowo.pl,komorkomania.pl,mazury.com,mojeauto.pl,mojeosiedle.pl,money.pl,nasygnale.pl,niewiarygodne.pl,nocowanie.pl,odkrywcy.pl,parenting.pl,pudelek.pl,pudelek.tv,pytamy.pl,sfora.pl,snobka.pl,tlen.pl,totalmoney.pl,wakacje.pl,wawalove.pl,wp.pl,~www.wp.pl,wp.tv##html, html > body:style(overflow: auto !important;)
 abczdrowie.pl,allani.pl,autokrata.pl,autokult.pl,biztok.pl,dzieci.pl,easygo.pl,echirurgia.pl,fotoblogia.pl,gadzetomania.pl,hotmoney.pl,interaktywnie.com,inwestycje.pl,jejswiat.pl,kafeteria.pl,kafeteria.tv,kantory.pl,kazimierzdolny.pl,komediowo.pl,komorkomania.pl,mazury.com,mojeauto.pl,mojeosiedle.pl,money.pl,nasygnale.pl,niewiarygodne.pl,nocowanie.pl,o2.pl,odkrywcy.pl,open.fm,parenting.pl,pudelek.pl,pudelek.tv,pytamy.pl,sfora.pl,snobka.pl,tlen.pl,totalmoney.pl,wakacje.pl,wawalove.pl,wp.pl,wp.tv##body [class]:style(filter: none !important;)
 !#endif
 www.wp.pl##html, html > body:style(overflow: visible!important;)
-wp.pl##+js(set-constant.js, WP.gaf.loadBunch, noopFunc)
+wp.pl,~pilot.wp.pl##+js(set-constant.js, WP.gaf.loadBunch, noopFunc)
 o2.pl,pudelek.pl,wp.pl##+js(set-constant, Object.prototype.isGoogleBot, true)
 !
 ! o2.pl
@@ -198,7 +193,7 @@ bezuzyteczna.pl##section:has(script + div[id^="crt"][style])
 !
 ! naekranie.pl
 ! Timery ladujace reklamy
-naekranie.pl##+js(abort-current-inline-script.js, $, /loadData|halfpage|welcome|screening|placement/) 
+naekranie.pl##+js(abort-current-inline-script.js, $, /loadData|halfpage|welcome|screening|placement/)
 naekranie.pl##+js(setInterval-defuser.js, function neTick(){neTickCounter++;if(neTickCounter<=neTickCountLimit){neTickAjax=$.ajax({type:"POST",url:adminAjaxUrl+"?action=ne_tick",dataType:"json",success:function(data){neTickResponseAction(data)}})}}, 10000)
 naekranie.pl##+js(setTimeout-defuser.js, function check(){console.log("checked");if($(".adform").children().length>3){console.log("its more");$(".adform").children(".adform-banner").show();clearTimeout(check)}}, 1000)
 !
@@ -344,7 +339,7 @@ ciekawostkihistoryczne.pl##.page:style(background: #dbdbdb !important;)
 cryptonews.pl###sidebar:style(padding-top: 0 !important;)
 eku24.net##.paralax-image:style(height: 100px !important;)
 elblag.net##body:style(background-image: none !important;)
-fpiec.pl##body:style(padding-top: 0 !important;) 
+fpiec.pl##body:style(padding-top: 0 !important;)
 gosc.pl##.webpart-wrap-HeaderMobile.has-promo:style(padding-top: 50px !important;)
 lubimyczytac.pl###content-container:style(background: none !important; padding-top: 0px !important;)
 ndie.pl##.td-header-style-7 .td-header-sp-logo img:style(top:-32px !important; height:100% !important; width:auto !important;)
