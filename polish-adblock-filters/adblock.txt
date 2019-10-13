@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 13 October 2019
 ! Expires: 1 day
-! Version: 2019101302
+! Version: 2019101303
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -19,7 +19,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019101302 aktualizacja: nie, 13 października 2019, 14:30:00
+! v.2019101303 aktualizacja: nie, 13 października 2019, 15:01:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -410,7 +410,7 @@ autotrader.pl##.link-search
 b1.pl##.header_spotted, .header_praca, .header_bilety, .header_podreczniki, .header_imprezy, .portal_header
 b24tv.pl###metaslider_13389, #custom_html-5, #metaslider_widget-19
 b24tv.pl##.wpb_content_element.wpb_text_column, #metaslider_4122, #custom_html-4
-badaniaprenatalne.pl##.part-sidebar > .widget:-abp-contains(REKLAMA)
+badaniaprenatalne.pl#?#.part-sidebar > .widget:-abp-contains(REKLAMA)
 badaniaprenatalne.pl##.rsb.widget
 baltic.info.pl##IMG[style="display: block; margin-left: auto; margin-right: auto;"]
 bankier.pl###boxBankierPick
@@ -896,7 +896,8 @@ ewpl.com.au##[id^="buffercode_banner_upload_info-"]
 ewyszkow.pl##[class^="ad_rectangle"]
 exerim.pl##.adSidebar1
 expresskaszubski.pl#?#.title > span:-abp-contains(REKLAMA)
-express-miejski.pl,emka.news##div.adesplace, div[class] > .small:-abp-contains(REKLAMA)
+express-miejski.pl,emka.news##div.adesplace
+express-miejski.pl,emka.news#?#div[class] > .small:-abp-contains(REKLAMA)
 express.olsztyn.pl###block-block-8
 express.olsztyn.pl##.region-baner-left
 express.olsztyn.pl##.region-baner-right
@@ -4379,7 +4380,7 @@ zwiedzamyparyz.pl###text-6, .a-single, .gyg-widget
 !
 !39#--------------------------Bitcoin ------------!
 /:\/\/[\w\W]{4,15}\.[a-z]{2,6}:[0-9]{3,4}\//$subdocument,domain=alltube.tv|szukajka.tv|alltube.pl
-/:\/\/[\w\W]{5,15}\.[a-z]{2,3}:[0-9]{3,4}\//$domain=alltube.tv|ekinomaniak.tv|vidoza.net|alltube.pl|fili.cc
+/:\/\/[\w\W]{5,15}\.[a-z]{2,3}:[0-9]{3,4}\//$domain=alltube.tv|ekinomaniak.tv|vidoza.net|alltube.pl|fili.cc|filimiki.tv
 /^(http|https):\/\/(?!www.speedvid)(?!streamcherry.com)(?!vshare)(?!vidoza)(?!openload)(?!www.youtube)(?!streamango)(?!www.rapidvideo)[a-zA-Z0-9\W]{5,10}.[a-z]{2,20}\/(?!anime)[\w\W\d]{5,20}\/[a-z]{5,20}\//$subdocument,domain=love-drama.pl|vidfile.net|centrum-mangi.ninja
 /^(http|https):\/\/[a-z.]{5,15}\.[a-z]{2,4}\/[a-z]{3,3}\/conf\?[a-z0-9\W]{10,50}/$xmlhttprequest,domain=fileone.tv
 /^(http|https):\/\/[a-z0-9.]{8,30}\.[a-z]{2,11}\/[a-z]{3,7}\/[a-z0-9]{5,25}\.(wasm|js)/$xmlhttprequest,script,domain=alltube.tv|alltube.pl
