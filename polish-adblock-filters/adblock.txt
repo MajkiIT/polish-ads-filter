@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 10 October 2019
+! Last modified: 13 October 2019
 ! Expires: 1 day
-! Version: 2019101002
+! Version: 2019101301
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -19,7 +19,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019101002 aktualizacja: czw, 10 października 2019, 18:12:00
+! v.2019101301 aktualizacja: czw, 13 października 2019, 13:10:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -430,6 +430,7 @@ belchatow.bai.pl##.rekls
 benchmark.pl###marketplaceProductBox
 benchmark.pl##.screenContainer
 benchmark.pl##.threeTilesAndLogo.colWide[style="background: #EB6878;"]
+benchmark.pl#?#.box > .bbh-top:-abp-has(> h3 > a[href*="//www.mediaexpert.pl/"])
 beskidlive.pl##.flexbannergroup > p
 beskidy.news##.c-promo-slide, .o-promo
 beskidzka24.pl##.container.site-content > .banner-line, .wp_bannerize_layout_vertical.wp_bannerize_container, .banner-line
@@ -561,6 +562,7 @@ centrumdruku3d.pl##section:nth-of-type(3) > div, .col-lg-12.col-sm-12 > .title-c
 centrumwitalnosci.pl##div:nth-of-type(8), div:nth-of-type(9), .ot-widget-banner, div.ot-panel-block:nth-of-type(3)
 centrumxp.pl###WelcomeBox
 centrumxp.pl###sldr, .article > p > span
+centrumxp.pl##.article > p > a > img[src*="Bannery"]
 ceo.com.pl,trzemeszno24.info##.td_single_image_bg, .td-category-description, .widget_media_image.widget.td_block_template_1
 cgm.pl##.headFlash
 chamskie.pl##[class^="ads"]
@@ -1627,6 +1629,7 @@ luzyce.info##.right > .textwidget > IMG
 lwowecki.info##.banner_box_frame
 lwypolnocy.pl##.DnnModule-922.DnnModule-DNN_HTML.DnnModule
 m.autocentrum.pl##div.hidden-print > div.at-title
+m.interia.pl###ad-banner_app
 m.poczta.gazeta.pl##.readmailGazetaAdvert
 mackozer.myapple.pl##.container > .row > .col-xs-12 > .row > .col-md-4 > .well
 magazif.com##.is-stationary.widget.coffee-break
@@ -2574,6 +2577,8 @@ starysacz.info##.text-center.row, [id^="addon-rotator-"]
 staypoland.com###bottomBar
 steam.io###dd_ajax_float
 stereoikolorowo.blogspot.com###crosscol-overflow, #Image10, #Image11, #Image14, #Image12, #Image5, #Image7
+stoczniowcy.pl#?#a:-abp-has([src^="img/reklama_"])
+stoczniowcy.pl###reklama_top
 stooq.com##[id] > b > a[href^="?"]
 stooq.com##a[href^="//stooq.com/ads/f/"]
 stooq.com##div[onclick^="(function"][onclick*="window.open"][style^="animation"]
@@ -3677,7 +3682,6 @@ zywiecinfo.pl##.promoted
 ||www.brief.pl/img,banner$image
 ||www.cadblog.pl/*.gif$image
 ||www.cda.pl/xml_pool/get_xml_pool_list.php$xmlhttprequest
-||www.centrumxp.pl/api/Images/Bannery/$image
 ||www.centrumxp.pl/api/Images/GrafikiOsadzone/osadzony_$image
 ||www.cgm.pl/_photo_vault/specials/files/$image
 ||www.cgm.pl/_vault/_adver/$image
