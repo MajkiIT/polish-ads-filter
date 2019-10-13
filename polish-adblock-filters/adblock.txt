@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 13 October 2019
 ! Expires: 1 day
-! Version: 2019101301
+! Version: 2019101302
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -19,7 +19,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019101301 aktualizacja: czw, 13 października 2019, 13:10:00
+! v.2019101302 aktualizacja: nie, 13 października 2019, 14:30:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -45,7 +45,7 @@
 /banery/*750x200
 /banery/*980x100
 /banery/*980x90
-/banners/$image,domain=files.biala24.pl|carpatiabiznes.pl|centrumdruku3d.pl|motocyklistow.pl|portal-firma.pl|cashbackrabat.pl
+/banners/$image,domain=files.biala24.pl|carpatiabiznes.pl|centrumdruku3d.pl|motocyklistow.pl|portal-firma.pl|cashbackrabat.pl|koscianiak.pl
 /bannery/*$image,subdocument,domain=em.kielce.pl|czasdzieci.pl|kolporter.com.pl|sklep-tvsat.hcore.pl|www.walbrzych24.com|zlotoryja.info|skijumping.pl|icomp.pl|forum.cs-classic.pl|nocnygdansk.pl|wagaciezka.com|obud.pl|beskid-niski.pl|ezakopane.pl|czytelniamedyczna.pl
 /content-generator/published/frame/generate?*frameId=*&placementId=*&guid=
 /data/ap3bo6/*.gif$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
@@ -202,7 +202,7 @@ vshare.io###sendif
 .pl/www/sys/ajs*.php?$script
 /reklamy/*$image,object,subdocument,domain=~selgros24.pl|~jacus.pl|~csbydgoszcz.pl
 /wp-content/uploads/*/baner$image,domain=lubanski.eu|miastoiludzie.pl|eksmagazyn.pl|infokatowice.pl|mma.pl|tvwlodawa.pl
-24tp.pl,lca.pl,112tychy.pl,30minut.pl,twoje-podhale.pl,upflix.pl,grylogiczne.biz.pl,grydladziewczyn.net.pl,moja-ostroleka.pl,bielsko.info,polonia.nl,dukania.pl,dkl24.pl,czecho.pl##[class*="reklama"]
+24tp.pl,lca.pl,112tychy.pl,30minut.pl,twoje-podhale.pl,upflix.pl,grylogiczne.biz.pl,grydladziewczyn.net.pl,moja-ostroleka.pl,bielsko.info,polonia.nl,dukania.pl,dkl24.pl,czecho.pl,tygodnikpodhalanski.pl##[class*="reklama"]
 mclista.pl,bialystokonline.pl,ewgt.com.pl,tugazeta.pl,dbpolska.net,mojmac.pl,piszanin.pl,tubasiedlec.pl,pracawkatowicach.com.pl,pracawkrakowie.com.pl,sevillafc.pl,miastokolobrzeg.pl,wirtualnynowydwor.pl##[id*="reklama"]
 onet.pl##a[href^="http://csr.onet.pl/eclk/clk"]
 pl###LinkArea\:gry
@@ -286,6 +286,7 @@ popkiller.pl,tygodnikpodhalanski.pl,cnc.info.pl##[class*="reklamy"]
 24starogard.pl##[id^="bannerlistwidget-"]
 24wroclaw.pl##div.linia_4
 24wspolnota.pl,kociewiak.pl,cooltura24.co.uk,halogorlice.info,dziennikpowiatowy.pl,tczewska.pl,wejherowo24.info,koscierzyna24.info,tvsudecka.pl##.visible-lg
+24wspolnota.pl##.container > .center-block.text-center.rBox
 2bstyle.pl##.header-ads-wrapper
 2conv.com,flvto.biz,glos.pl,cefarm24.pl##.banner
 2x45.info##.Bilboard_750x100_na_dole
@@ -504,6 +505,7 @@ blogomaniak.pl,gizmaniak.pl,techmaniak.pl,fotomaniak.pl,tabletmaniak.pl,rtvmania
 bmw-klub.pl###wrap > .forabg
 bmwpodbeskidzie.pl##div#sidebar > A > IMG
 boardtime.pl###top-banner-ks, #widget_metaslider_widget
+bobasmiesiaca.pl##.A1sub, .advert-A1, aside > div > .text-left > .text-left > .text-left.img-responsive, div.widget.row > .text-center.col-md-12 > div > .text-left
 bobrzanie.pl##.size-full.aligncenter
 bochnianin.pl##.xo
 bochniazbliska.pl##[id^="rotate"], .top_banners
@@ -893,7 +895,8 @@ eweszlo.pl##.front__page > figure, .post__article > figure
 ewpl.com.au##[id^="buffercode_banner_upload_info-"]
 ewyszkow.pl##[class^="ad_rectangle"]
 exerim.pl##.adSidebar1
-express-miejski.pl,emka.news##div.adesplace
+expresskaszubski.pl#?#.title > span:-abp-contains(REKLAMA)
+express-miejski.pl,emka.news##div.adesplace, div[class] > .small:-abp-contains(REKLAMA)
 express.olsztyn.pl###block-block-8
 express.olsztyn.pl##.region-baner-left
 express.olsztyn.pl##.region-baner-right
@@ -1056,7 +1059,7 @@ gazeta.pl##.mod_sponsoredArticle
 gazeta.pl##.opacity.page-sections > .photos_loaded.box_games.page-section.html > .slices-container.container-fluid
 gazeta.pl##.photos_loaded.box_bargains.page-section.html > .slices-container.container-fluid
 gazeta.pl##.type_default
-gazetabilgoraj.pl#?#.vc_row-has-fill.vc_row-fluid.wpb_row.vc_row.row:-abp-has(img[width="350"][height="250"][src*="-350x250."])
+gazetabilgoraj.pl#?#.vc_row-has-fill.vc_row-fluid.wpb_row.vc_row.row:-abp-has(img[width="350"][height="250"][src*="-350x250."]), .vc_row-has-fill.vc_custom_1526373595932.vc_row-fluid.wpb_row.vc_row.row
 gazetacz.com.pl##td:nth-of-type(1) > table:nth-of-type(2)
 gazetacz.com.pl##td:nth-of-type(5) > table:nth-of-type(3)
 gazetagazeta.com##.size-full.attachment-full, [id^="media_image-"], .size-full.aligncenter
@@ -1119,6 +1122,7 @@ gloswagrowiecki.pl###rt-top
 gloswielkopolski.pl##.partner
 gloswroclawia.pl##.column9.main-content.col_9_of_12.col > .row > .col_12_of_12.col > p
 gloswroclawia.pl##center > [href] > .animated.visible
+gloszabrza24.pl#?#div.moduletable:-abp-contains(REKLAMA)
 glucholazyonline.com.pl##.flexbannergrouphidden-phone
 goal.pl,eredivisie.pl##div.rectangle:nth-of-type(1)
 goal.pl,ligapolska.pl,zarabiam.com,rzeczkrotoszynska.pl,40ton.net##object
@@ -1302,7 +1306,7 @@ infoskierniewice.pl##[class*="td_uid_42_"]
 innemedium.pl###block-block-16, #block-block-19, #block-block-17, #block-views-reklama-block
 innemedium.pl###block-block-16, .even.field-item > div
 innpoland.pl##.jw-reset.jw-aspect
-inowroclaw.info.pl##.row:nth-of-type(4) > .fl.w250
+inowroclaw.info.pl##.row:nth-of-type(4) > .fl.w250, div.l-container > div.l-row > .l-box--100.l-box > p
 inowroclaw.info.pl##CENTER > A > IMG
 instalacjebudowlane.pl###belka
 instalki.pl###PushangoAlert
@@ -1999,7 +2003,7 @@ oknonet.pl###mainbaner, #AdBig, .oknoad-news, #AdSmall
 oknonet.pl##a[href^="/openurl.php"]
 oknonet.pl#?#.left-zobacz:-abp-has(a[href^="/openurl.php"])
 oknoserwis.pl##td:nth-of-type(3) > p:nth-of-type(1)
-olawa24.pl##div.l-row > .l-box--99.l-box > center
+olawa24.pl##div.l-row > .l-box--99.l-box > center, div.l-container > div.l-row > .l-box--100.l-box
 oleole.pl###pop_newsletter_inner
 oleole.pl##[id^="ddd_left"]
 oleole.pl##[id^="ddd_right"]
@@ -2635,7 +2639,7 @@ surek.pl##iframe
 suwalki.info###banner-billboard, #bannerBn, .news-item2
 suwalki24.pl###content_right > div:nth-of-type(2), #content_right > .box:nth-of-type(3), #content_right > div.box:nth-of-type(8), #exposeMask, #pupup_comercial
 suwalki24.pl##[class*="commercial"], [id*="commercial"]
-swarzedz24.pl###header-right-section, #media_image-85, #media_image-74
+swarzedz24.pl###header-right-section, #media_image-85, #media_image-74,# media_image-282
 swiat-gier.com###paczkomaty_icon
 swiatbaterii.pl##DIV[id^="cbox"]
 swiatmotocykli.pl##ARTICLE[class*="_ecommerce"]
@@ -2852,7 +2856,7 @@ tygodnik-rolniczy.pl##.container.additional-box
 tygodnik.szczytno.pl##.widget:nth-of-type(5), #advBox, #carousel-example-captions
 tygodniknarodowy.pl###BusyBox
 tygodnikpodlaski.pl###billboardRightAdsense
-tygodnikponidzia.pl##.large > .image-link
+tygodnikponidzia.pl##.large > .image-link, .right > .a-widget, div.builder.cf.row > .one-1.builder.column > .a-widget
 tygodnikpowszechny.pl##[id*="-simpleads-"] > h2
 tygodniksanocki.pl##.wpb_raw_html.wpb_content_element.wpb_raw_code:nth-of-type(5)
 tygodniksanocki.pl##.wpb_raw_html.wpb_content_element.wpb_raw_code:nth-of-type(7)
