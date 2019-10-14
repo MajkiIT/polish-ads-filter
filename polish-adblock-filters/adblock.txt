@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 13 October 2019
+! Last modified: 14 October 2019
 ! Expires: 1 day
-! Version: 2019101304
+! Version: 2019101401
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -19,7 +19,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019101304 aktualizacja: nie, 13 października 2019, 20:40:00
+! v.2019101401 aktualizacja: pon, 14 października 2019, 08:40:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -820,6 +820,8 @@ ele24.net##.gkPage.banner-top, .dj-image
 elektroda.pl##.googleSenseTop.adsbygoogle
 elektroda.pl##div.c72b05f9c71327a4fddad2b.clearfix
 elektroda.pl##li#insert  > .clearfix.topic-box
+elektroda.pl##.topic-lists > li[id] > .topic-box > .position-relative:has(:scope > .sec-b > div > ins.adsbygoogle)
+elektroda.pl##.topic-lists > li[id] > .topic-box > .position-relative:has(:scope > .sec-b > div[id^="div-gpt-ad"])
 elektroinstalacje.info###side-border-left > div.panelbody:nth-of-type(1)
 elektroinstalacje.info###side-border-left > h3.panelcap:nth-of-type(1)
 elektryka.org##[href^="http://www.elektryka.org/redirect.php"]
@@ -4006,7 +4008,6 @@ autocentrum.pl,demotywatory.pl,dziennik.pl,facetemjestem.pl,gala.pl,garnek.pl,gr
 !
 !23#--------------------------Pages with bad reputation------------!
 filmyfilmy.pl###play
-||www.forfollow.net^
 !
 !24#--------------------------Rules for ublock, but can be use with adblock------------!
 ||imasdk.googleapis.com/js/core/bridge*.html$subdocument,domain=exs.pl,important
