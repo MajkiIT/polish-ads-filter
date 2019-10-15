@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 14 October 2019
+! Last modified: 15 October 2019
 ! Expires: 1 day
-! Version: 2019101401
+! Version: 2019101501
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -19,14 +19,14 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019101401 aktualizacja: pon, 14 października 2019, 08:40:00
+! v.2019101501 aktualizacja: wto, 15 października 2019, 19:19:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
 ##a[href*="techmaniak.pl/www/gact/ckk.php"]
 .*sales*.pl/offers/$image
 .pl/*/adds/
-.pl/*/ads/$domain=~tubagliwic.pl
+.pl/*/ads/$domain=~tubagliwic.pl|~m.olx.pl
 .pl/data/cameras/banner_$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 .pl/images/reklama120x60.jpg$image
 .pl/img/ad/
@@ -2681,8 +2681,8 @@ szwajcaria.net##[id^="prawareklam"]
 szwajcaria.net,franchising.pl##[id^="banner"]
 tabletowo.pl###menu-item-komputronik, #re_kk_near_logo, [id^="table-"] > [id^="table-"] > p
 tabletowo.pl##.swckbb, .megatop_wrap, .rd_widget_text
-tabletowo.pl##.widget2:nth-of-type(2)
-tabletowo.pl##.widget2:nth-of-type(3)
+tabletowo.pl##.widget2:nth-of-type(n+2):nth-of-type(-n+3)
+tabletowo.pl##.sidebar > div.table-widget.widget:nth-of-type(-n+3)
 tabletowo.pl##DIV[class*="rek"]
 tabletowo.pl##[id^="text-"]
 tabletowo.pl##[rel="nofollow"][target="_blank"]
