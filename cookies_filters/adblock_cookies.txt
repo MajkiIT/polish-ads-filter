@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.10.15.1
-! Last modified: Tue, 15 Oct 2019, 20:26 UTC+02
+! Version: 2019.10.17.0
+! Last modified: Thu, 17 Oct 2019, 20:39 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -18,7 +18,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.10.15.1 aktualizacja: wto, 15 paź 2019, 20:26 UTC+02
+! v.2019.10.17.0 aktualizacja: czw, 17 paź 2019, 20:39 UTC+02
 !
 !
 ! Specyficzne reguły ukrywające
@@ -277,6 +277,7 @@ bierhalle.pl###rstbox_5, #overlay_rstbox_5
 bigstar.pl##bs-cookies-law-info
 bike-parts-honda.pl,vanced.app###cookieConsent
 bik.pl##.page-cookies-info, #cmsg
+bilera.pl,biurotech.net.pl,glyskincare.eu##.module-abovebox[style^="position: fixed;"]
 bilety.arenazabrze.pl,bilety.arka.gdynia.pl,kupbilety.pogonszczecin.pl##.cookie-notice-bin
 bilka.com.pl,krasnik-okna.pl##footer > div > #mod99
 billbook.com##app-cookies
@@ -295,7 +296,6 @@ bisset.pl,bmc-switzerland.pl##.tab2-rodo-bar
 bitcomputer.pl,teletrade-dj.pl###pp
 bitmarket24.pl###notifications
 bitmaszyna.pl###wwelcome
-biurotech.net.pl,glyskincare.eu##.module-abovebox[style^="position: fixed;"]
 biurowy.sklep.pl##div > a[href$="/polityka-prywatnosci-cookies_s_5.html"] > img
 bizin.pl###bottom-cookies
 biznesinfo.pl###loadCookiePolicy
@@ -558,6 +558,7 @@ dvbsklep.pl,naturo.pl##[id^="simple-modal"]
 dvdmax.pl,punkt44.pl###alertTop
 dworzec.eu##.layer-message-container
 dziary.com,lvlup.pro,piast-gliwice.eu,pomorskie.eu,przegladlokalny.eu,sklep.piast-gliwice.eu###cookiePolicy
+dzieciom.pl##.e-cookieBar
 dziennikwschodni.pl,niskarata.org,wykop.pl##.rodo-alert
 dziennikwschodni.pl,polskieradio.pl,polskieradio24.pl,prsa.pl,ticketclub.pl##.rodo-modal
 dzis.tv##div#regulaminWrap
@@ -1016,6 +1017,7 @@ jak-ksiegowac.pl###message_wrap
 janssenmed.pl###eu-cookie-compliance-modal, .modal-backdrop
 japierpapier.pl,popbookownik.pl##.wph-modal
 jarocin.poznan.lasy.gov.pl##div#aui_3_2_0_1203
+javappa.com#?#div.col-md-12:nth-of-type(1) > .col-md-12 > .center-block:-abp-contains(Polub)
 jazzfestiwal.kck.com.pl###system-message > .fade.message.notice > ul > li
 jazzsoul.pl,ksiegarnienaukowe.pl###globalMessage
 jcubic.pl##.cookie-baner
@@ -1979,7 +1981,6 @@ wgrane.pl##.cookieinfo1
 whatsapp.com,www.msd.pl###banner
 whitemobile.pl###js-cookieTermContent
 wholandii.pl##.cookie_baner
-widoczni.com##.rodopolicy
 wiem-to.pl###notice_visitor
 wien.info##.cookiedialog
 wiescirolnicze.pl###popup_newsletter
@@ -3086,6 +3087,7 @@ pl##[id^="topInfo"]:not(body):not(html)
 ##.polo-cookie-box:not(body):not(html)
 ##.popup-rodo:not(body):not(html)
 ##.rodoaccept[style*="fixed"]:not(body):not(html)
+##.rodopolicy:not(body):not(html)
 ##.rodo-accept[style*="bottom"]:not(body):not(html)
 ##.rodo-overlay:not(body):not(html)
 ##.wordpress-gdpr-popup:not(body):not(html)
@@ -3115,10 +3117,7 @@ xboxforum.pl##.notice--cookie
 !
 !
 ! Bugi Prebake i Kiboke
-games.softgames.com#@#.as-oil[data-qa="oil-Layer"]:not(body):not(html)
 gg.pl#@#body > div:nth-of-type(2) > div
-gg.pl#@#.pum[data-popmake*="cookie-policy"]:not(body):not(html)
-javappa.com#@#.ng-scope[ng-controller="CookieCtrl"]
 !
 !
 ! Wyjątki
