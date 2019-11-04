@@ -27,6 +27,9 @@ AlleBlock | filtry do Allegro, Ceneo i OLX | [Subskrybuj][AlleBlock Subscribe] <
 KAD - Przekręty | przekręty sms, oszustwa | [Subskrybuj][KAD - Przekręty Subscribe] </br>[Podgląd][KAD - Przekręty Podgląd] </br> [Zgłoś](https://github.com/PolishFiltersTeam/KAD/issues) </br>[Formularz](https://kadantiscam.netlify.com/#contact) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
 Web Annoyances Ultralist | pływające, scrollujące nagłówki i filmiki, pływające pudełka nawigacyjne, pełnoekranowe nakładki, rozpraszające elementy | [Subskrybuj][Web Annoyances Ultralist Subscribe] </br>[Podgląd][Web Annoyances Ultralist Podgląd] </br> [Zgłoś](https://github.com/yourduskquibbles/webannoyances/issues) | | ![uBO][uBO] ![AG][AG] ![NANO][NANO]
 Bogachenko FFA | pułapki typu anty-adblock, skrypty nieprzyjazne użytkownikom i inne | [Subskrybuj][FFA Subscribe] </br>[Podgląd][FFA Podgląd] </br> [Zgłoś](https://github.com/bogachenko/fuckfuckadblock/issues) | | ![uBO][uBO] ![AG][AG] ![NANO][NANO]
+###### `x` Jeśli nie działa przycisk Subskrybuj, odśwież stronę i spróbuj ponownie lub kliknij [tutaj](https://adguardteam.github.io/AnonymousRedirect/redirect.html?url=https%3A%2F%2Fgithub.com%2FMajkiIT%2Fpolish-ads-filter%23about).
+
+##
 
 `*` Jeżeli masz rozszerzenie **I don't care about cookies**, to nie musisz subskrybować listy o tej samej nazwie.
 
