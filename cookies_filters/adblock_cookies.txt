@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.11.3.1
-! Last modified: Sun, 03 Nov 2019, 19:40 UTC+01
+! Version: 2019.11.4.0
+! Last modified: Mon, 04 Nov 2019, 20:33 UTC+01
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -18,7 +18,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.11.3.1 aktualizacja: nie, 03 lis 2019, 19:40 UTC+01
+! v.2019.11.4.0 aktualizacja: pon, 04 lis 2019, 20:33 UTC+01
 !
 !
 ! Specyficzne reguły ukrywające
@@ -621,7 +621,7 @@ emag.pl##.widget-cookies
 emc-sa.pl,entertheroom.pl,girlsroom.pl,skionline.pl,trentino.pl###popup_rodo
 emeryturyirenty.pl,gofin.pl,kodeksspolek.pl,podatekvat.pl,poradnikksiegowego.pl,poradypodatkowe.pl,prawnik-rodzinny.pl,umowycywilnoprawne.pl,vademecumksiegowego.pl###formalAgreementModal, #modalBackdrop
 emito.net##.cookie-jar
-emocje.pro###CybotCookiebotDialog
+emocje.pro,steemit.com###CybotCookiebotDialog
 empik.com##.js-cookies-accept
 emt-systems.pl###rodoBG
 endoca.com##.gdpr-modal-notify
@@ -2040,6 +2040,7 @@ www.continental-opony.pl##.scroll-to-fixed-fixed.privacyhint
 www.daftrucks.pl##.page-overlay
 www.dxracerkrzesla.pl###cookies-confirm
 www.ea.com##ea-truste-consent-bar
+www.google.com,www.google.pl##body > div[class*=" "]:not([id]):nth-of-type(2):nth-child(6) > c-wiz[class][jsaction]:not([id]):nth-child(1) > div[jsaction]:not([class]):not([id]):nth-child(3) > div[class][style="display: block;"]
 www.google.com,www.google.pl###cnsi ~ [jsaction*="dismiss"], #cnsh, div[style*="url(#default#userData)"]
 www.google.com,www.google.pl###gb > div[class][style^="background"]
 www.halico.pl##.sqs-announcement-bar-custom-location
@@ -3131,9 +3132,13 @@ wzory-cv.com##.gatewayBar
 xboxforum.pl##.notice--cookie
 !
 !
-! Bugi Prebake i Kiboke
+! Bugi Prebake
 gg.pl#@#body > div:nth-of-type(2) > div
+!
+!
+! Bugi Kiboke
 @@||lec.com.pl/wp-content/plugins/cookie-message/js/custom.js
+@@||nf.pl/js/libs/cookiesDirective.js$script
 !
 !
 ! Wyjątki
