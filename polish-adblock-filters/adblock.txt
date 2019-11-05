@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 5 November 2019
 ! Expires: 1 day
-! Version: 2019110501
+! Version: 2019110502
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -19,7 +19,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019110501 aktualizacja: wt, 5 listopada 2019, 10:45:00
+! v.2019110502 aktualizacja: wt, 5 listopada 2019, 12:55:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -38,7 +38,7 @@
 /adv/*$image,domain=~arriva.pl|~budus.pl|~filmweb.pl
 /adv/show-windows.php$script,domain=alltube.tv|alltube.pl
 /affiliates/$image,domain=www.pasazer.com
-/baner/$image,domain=nowiny.rybnik.pl|macronext.pl
+/baner/$image,domain=nowiny.rybnik.pl|macronext.pl|katowicetv.eu
 /banery/$image,subdocument,object,domain=oknoserwis.pl|sps24.pl|www.chojnice.com|usa.info.pl|jarocinska.pl|www.obud.pl|skijumping.pl|gintama.wbijam.pl|haczyk.pl|instalacjebudowlane.pl|jagiellonia.net|kdega.e-kei.pl|naszalomza.pl|pionki24.pl|mragowo24.info|lokalna24.pl|ebarlinek.pl|kuriergarwolinski.pl|bielsko.biala.pl|www.budownictwo.org|www.serwer.brodnica.net|staleo.pl|super-nowa.pl|zwolen24.pl|7dni.pila.pl|www.gostynska.pl|reszel.eu
 /banery/*110x90
 /banery/*750x100
@@ -522,7 +522,7 @@ brainly.pl##.brn-ads-box
 brodnica.net##.stopka
 brodnica.net##[href^="/banery/click.php"]
 brodnica.net##td:nth-of-type(3) > table > tbody > tr:nth-of-type(1) > td:nth-of-type(2)
-bryk.pl,www.jawor.tv,lokalna.news##[class^="advert-"]
+bryk.pl,www.jawor.tv,lokalna.news,www.swiebodzin.tv##[class^="advert-"]
 brytol.com###text-3
 budmatauto.pl##.popup-content, .popup-bg
 budnet.pl##a[href^="https://"] > IMG
@@ -3994,6 +3994,7 @@ xyz,mecz.tv,ipilka.info##[class$="_right"]
 ||imgwykop.pl/*/*/paylink_$image,domain=www.wykop.pl
 ||www.wykop.pl/img/campaign/$image,domain=www.wykop.pl
 ||www.wykop.pl/*/adblock_$image
+||wykop.pl/adverts^
 streamable.com##.stm-ad-player
 wykop.pl##a[href*="wykop.pl/tracker"]
 wykop.pl###autopromotion
