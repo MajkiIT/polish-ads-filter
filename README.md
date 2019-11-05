@@ -25,9 +25,6 @@ Polski Antyirytujący Dodatek Specjalny | elementy RSS oraz resztki po ukrytych 
 NoCoin Filter List | skrypty wydobywające kryptowaluty, skrypty powodujące zwiększone zużycie CPU i spowalniające prace komputera | [Subskrybuj][NoCoin Filter List Subscribe] </br>[Podgląd][NoCoin Filter List Podgląd] </br> [Zgłoś](https://github.com/hoshsadiq/adblock-nocoin-list/issues) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
 AlleBlock | filtry do Allegro, Ceneo i OLX | [Subskrybuj][AlleBlock Subscribe] </br> [Podgląd][AlleBlock Podgląd] </br> [Zgłoś](https://github.com/maciejtarmas/AlleBlock/issues) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
 KAD - Przekręty | przekręty sms, oszustwa | [Subskrybuj][KAD - Przekręty Subscribe] </br>[Podgląd][KAD - Przekręty Podgląd] </br> [Zgłoś](https://github.com/PolishFiltersTeam/KAD/issues) </br>[Formularz](https://kadantiscam.netlify.com/#contact) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
-Web Annoyances Ultralist | pływające, scrollujące nagłówki i filmiki, pływające pudełka nawigacyjne, pełnoekranowe nakładki, rozpraszające elementy | [Subskrybuj][Web Annoyances Ultralist Subscribe] </br>[Podgląd][Web Annoyances Ultralist Podgląd] </br> [Zgłoś](https://github.com/yourduskquibbles/webannoyances/issues) | | ![uBO][uBO] ![AG][AG] ![NANO][NANO]
-Bogachenko FFA | pułapki typu anty-adblock, skrypty nieprzyjazne użytkownikom i inne | [Subskrybuj][FFA Subscribe] </br>[Podgląd][FFA Podgląd] </br> [Zgłoś](https://github.com/bogachenko/fuckfuckadblock/issues) | | ![uBO][uBO] ![AG][AG] ![NANO][NANO]
-###### `x` Jeśli nie działa przycisk Subskrybuj, odśwież stronę i spróbuj ponownie lub kliknij [tutaj](https://adguardteam.github.io/AnonymousRedirect/redirect.html?url=https%3A%2F%2Fgithub.com%2FMajkiIT%2Fpolish-ads-filter%23about).
 
 ##
 
@@ -51,8 +48,6 @@ Bogachenko FFA | pułapki typu anty-adblock, skrypty nieprzyjazne użytkownikom 
 [NoCoin Filter List Subscribe]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt&title=NoCoin%20Filter%20List
 [AlleBlock Subscribe]: https://subscribe.adblockplus.org/?location=https://alleblock.pl/alleblock/alleblock.txt&title=AlleBlock
 [KAD - Przekręty Subscribe]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/PolishFiltersTeam/KAD/master/KAD.txt&title=KAD%20-%20Przekręty
-[Web Annoyances Ultralist Subscribe]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/yourduskquibbles/webannoyances/ultralist.txt&title=Web%20Annoyances%20Ultralist
-[FFA Subscribe]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/bogachenko/fuckfuckadblock/fuckfuckadblock.txt&title=Bogachenko%20FFA
 
 [Polskie Filtry Podgląd]: https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt
 [Polskie Filtry Przeciwko Alertom Podgląd]: https://raw.githubusercontent.com/olegwukr/polish-privacy-filters/master/anti-adblock.txt
@@ -64,8 +59,6 @@ Bogachenko FFA | pułapki typu anty-adblock, skrypty nieprzyjazne użytkownikom 
 [NoCoin Filter List Podgląd]: https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
 [AlleBlock Podgląd]: https://alleblock.pl/alleblock/alleblock.txt
 [KAD - Przekręty Podgląd]: https://raw.githubusercontent.com/PolishFiltersTeam/KAD/master/KAD.txt
-[Web Annoyances Ultralist Podgląd]: https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt
-[FFA Podgląd]: https://raw.githubusercontent.com/bogachenko/fuckfuckadblock/master/fuckfuckadblock.txt
 
 [EasyList]: https://img.shields.io/badge/INT-EasyList-brightgreen.svg
 [EasyPrivacy]: https://img.shields.io/badge/INT-EasyPrivacy-green.svg
