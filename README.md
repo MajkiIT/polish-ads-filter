@@ -26,6 +26,8 @@ NoCoin Filter List | skrypty wydobywające kryptowaluty, skrypty powodujące zwi
 AlleBlock | filtry do Allegro, Ceneo i OLX | [Subskrybuj][AlleBlock Subscribe] </br> [Podgląd][AlleBlock Podgląd] </br> [Zgłoś](https://github.com/maciejtarmas/AlleBlock/issues) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
 KAD - Przekręty | przekręty sms, oszustwa | [Subskrybuj][KAD - Przekręty Subscribe] </br>[Podgląd][KAD - Przekręty Podgląd] </br> [Zgłoś](https://github.com/PolishFiltersTeam/KAD/issues) </br>[Formularz](https://kadantiscam.netlify.com/#contact) | | ![uBO][uBO] ![AG][AG] ![ADB][ADB] ![ABP][ABP] ![NANO][NANO]
 
+###### `x` Jeśli nie działa przycisk Subskrybuj, odśwież stronę i spróbuj ponownie lub kliknij [tutaj](https://adguardteam.github.io/AnonymousRedirect/redirect.html?url=https%3A%2F%2Fgithub.com%2FMajkiIT%2Fpolish-ads-filter%23about).
+
 ##
 
 `*` Jeżeli masz rozszerzenie **I don't care about cookies**, to nie musisz subskrybować listy o tej samej nazwie.
