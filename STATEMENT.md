@@ -85,11 +85,11 @@ po czym selektywnie powyłączać listy które zawierają ten filtr i zgłosić 
 
 ### Jestem twórcą stron www, jak żyć?
 
-pomyśl o nowych formach `nieinwazyjnej` monetyzacji
+- pomyśl o nowych formach `nieinwazyjnej` monetyzacji
 
-używaj cdn dla js/css i plików graficznych <br/>
-https://statically.io/imgpx <br/>
-https://statically.io/
+- używaj cdn dla js/css i plików graficznych <br/>
+  - https://statically.io/imgpx <br/>
+  - https://statically.io/
 
-zdecentralizuj swoje serwery <br/>
-https://github.com/ipfs/go-ipfs#readme
+- zdecentralizuj swoje serwery <br/>
+  - https://github.com/ipfs/go-ipfs#readme
