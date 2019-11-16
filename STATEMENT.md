@@ -64,7 +64,7 @@ zaktualizuj wymagane do działania listy filtrów
 
 dalej nie działa?
 
-`możesz sprawdzić za pomocą "dziennika rządań" zawartego w ublocku origin lub adguardzie, który filtr ci psuje daną strone.
+`możesz sprawdzić za pomocą "dziennika żądań" zawartego w ublocku origin lub adguardzie, który filtr ci psuje daną strone.
 po czym selektywnie powyłączać listy które zawierają ten filtr i zgłosić błąd do autorów list powodujących dany błąd`
 
 - rek, zewn. ogólne [ENG]
