@@ -87,9 +87,10 @@ po czym selektywnie powyłączać listy które zawierają ten filtr i zgłosić 
 
 - pomyśl o nowych formach `nieinwazyjnej` monetyzacji
 
-- używaj cdn dla js/css i plików graficznych <br/>
-  - https://statically.io/imgpx <br/>
+- używaj cdn dla js/css i plików graficznych
+  - https://statically.io/imgpx
   - https://statically.io/
+  <br/>
 
-- zdecentralizuj swoje serwery <br/>
+- zdecentralizuj swoje serwery
   - https://github.com/ipfs/go-ipfs#readme
