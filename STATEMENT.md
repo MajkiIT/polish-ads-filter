@@ -24,9 +24,9 @@
 
 ### Jaki adblock wybrać?
 
-- admucher, pihole, dnsy... wspierają pierwszy poziom najmniej zaawansowanej składni blokowania reklam
-- adblock, opera, privoxy... wspierają drugi poziom średnio zaawansowanej składni blokowania reklam
-- ublock origin, adguard... wspierają trzeci poziom najbardziej zaawansowanej składni blokowania reklam
+- admucher, pihole, dnsy... najmniej zaawansowana składnia blokowania reklam
+- adblock, opera, privoxy... średnio zaawansowana składnia blokowania reklam
+- ublock origin, adguard... najbardziej zaawansowana składnia blokowania reklam
 
 ##
 
@@ -83,3 +83,14 @@ po czym selektywnie powyłączać listy które zawierają ten filtr i zgłosić 
 
 
 ##
+
+### Jestem twórcą stron www, jak żyć?
+
+pomyśl o nowych formach `nieinwazyjnej` monetyzacji
+
+używaj cdn dla js/css i plików graficznych <br/>
+https://statically.io/imgpx <br/>
+https://statically.io/
+
+zdecentralizuj swoje serwery <br/>
+https://github.com/ipfs/go-ipfs#readme
