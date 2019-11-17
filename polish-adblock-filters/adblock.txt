@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 15 November 2019
+! Last modified: 17 November 2019
 ! Expires: 1 day
-! Version: 2019111502
+! Version: 2019111701
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -19,7 +19,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019111502 aktualizacja: ptk, 15 listopada 2019, 13:45:00
+! v.2019111701 aktualizacja: nie, 17 listopada 2019, 13:10:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -596,6 +596,7 @@ chojnice.com##.ad_section, .article-list-full-width
 chojnow.pl###logo_box
 chomikuj.pl###aPlaceHolder
 chomikuj.pl##IMG[style="width:100%;max-width:290px;"]
+chomikuj.pl#?##InboxTable > tbody > tr:-abp-has(> td > .spons)
 chorzowianin.pl##img[src^="http://chorzowianin.pl/uploads/userfiles/"], .left_header
 chorzow.tv##div:nth-of-type(4) > .aaamainblock_right
 chozoba.pl###title
@@ -3566,7 +3567,6 @@ zywiecinfo.pl##.promoted
 ||ogloszenia.nowy-sacz.pl/rek/$image
 ||onenima.com^$script
 ||ono24.info/web/files/site/sad/$image
-||openkatalog.ml/epg/?channel=$subdocument
 ||opensubtitles.org/*=.js$script
 ||ostrzeszowinfo.pl/files/*reklama$image
 ||ovh.webshark.pl^
@@ -3915,7 +3915,6 @@ windowsowo.pl#@##adBanner
 !
 !18#--------------------------Rules sport streams element hiding rules-------------!
 ##A[href*="beaffiliates.com/processing/clickthrgh.asp"]
-abcast.net##[id^="floatLayer"]
 bukmacherzy.com###toplayer_eurobasket
 bukmacherzy.com##body > div:nth-of-type(3)
 bukmacherzy.com##body > div:nth-of-type(4)
@@ -4065,7 +4064,6 @@ horrortube.pl##A[href*="viliaff.com"], .col-md-8 > A
 ||bodelen.com^
 ||ebd.cda.pl^$xmlhttprequest,domain=cda.pl
 ||click.aliexpress.com^
-||darmowa-telewizja.online/logo.png$popup
 ||dexessee.com^
 ||electro-torrent.pl/over*.js$script
 ||electro-torrent.pl/resizeIframe.js$script
@@ -4102,20 +4100,20 @@ horrortube.pl##A[href*="viliaff.com"], .col-md-8 > A
 /^http:\/\/p[0-9]{6,10}\.[a-z]{5,10}\.com\/itab\/[a-z?=A-Z_0-9&]{10,}Zippyshare\.com[a-z0-9A-Z%.'-]{5,}/$popup
 /^https:\/\/(?!horrortube)(?!otube.pl)[a-z.]{3,15}\.[a-z]{2,3}\//$image,domain=horrortube.pl|otube.pl
 /^https?:\/\/(?!youtube)[a-zA-Z0-9.]{5,20}\.com\/watch\?key=/$popup
-/^https?:\/\/[\w]{12,}\.[a-z]{3,3}\/[a-z]{1,10}\.html[\w\d\W]{100,}/$script,domain=tele-wizja.ru
+!/^https?:\/\/[\w]{12,}\.[a-z]{3,3}\/[a-z]{1,10}\.html[\w\d\W]{100,}/$script,domain=tele-wizja.ru
 /^https?:\/\/[\w]{5,}\.[a-z]{3,4}\/$/$xmlhttprequest,domain=kinoseans.pl
-/^https?:\/\/[\w]{5,}\.[a-z]{3,4}\/[\w\d\W]{45,}/$script,domain=abcast.net|alltube.pl|alltube.tv|szukajka.tv|kinoseans.pl
+/^https?:\/\/[\w]{5,}\.[a-z]{3,4}\/[\w\d\W]{45,}/$script,domain=alltube.pl|alltube.tv|szukajka.tv|kinoseans.pl
 /^https?:\/\/[a-z.-]{5,30}\/client\?party/$script,domain=openkatalog.com
-/^https?:\/\/[a-z.]{5,10}\.[a-z]{2,4}\/[a-z.]{3,7}\?[a-zA-Z0-9=&%-.]{100,250}/$popup,domain=alltube.tv|alltube.pl|centrum-mangi.ninja
+/^https?:\/\/[a-z.]{5,10}\.[a-z]{2,4}\/[a-z.]{3,7}\?[a-zA-Z0-9=&%-.]{100,250}/$popup,domain=alltube.tv|alltube.pl
 /^https?:\/\/[a-z0-9-]{8,30}\.[a-z]{2,11}\/[0-9]{3,10}/$xmlhttprequest,script,stylesheet,subdocument,domain=raptu.com|flashx.tv|fileone.tv|animezone.pl|vidoza.net|kreskowkazone.pl|vidfile.net
 /^https?:\/\/[a-z0-9-]{8,30}\.[a-z]{2,11}\/[a-z]{1,3}\/[0-9]{5,10}/$script,domain=cda-tv.pl
 /^https?:\/\/[a-z0-9]{10,20}\.com\/[0-9]{5,10}\.html/$subdocument,domain=ekino-tv.pl
-/^https?:\/\/[a-z0-9]{5,}\.(com|top)\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9/]{5,}\.js/$script,domain=vidto.me|fileone.tv|alltube.tv|srkcast.com|vidfile.net|alltube.pl|whostreams.net|filmowo.co|szukajka.tv|cda-hd.co|horrortube.pl|otube.pl
-/^https?:\/\/[a-zA-Z.0-9]{7,}\.(com|bid|info)\/[a-zA-Z.-]{1,}\.js/$script,domain=devil-torrents.pl|electro-torrent.pl|vidlox.tv|segos.es|fileone.tv|nasze-kino.online|raptu.com|vidfile.net|sharevideo.pl|sharing-box.cloud|vidstream.xyz|openkatalog.ml|nasze-kino.tv|kino123.pl|boxfilm.pl|cloudupload.co|allonline.pl|abcast.net|darmowa-tv.pl|veecast.net|centrum-mangi.ninja|openkatalog.com|shinden.pl|tele-wizja.is|ekinomaniak.tv|tele-wizja.ru|hqq.watch|whostreams.net|seriale-po-polsku.pl|virpe.com|kinoseans.pl|horrortube.pl|otube.pl
+/^https?:\/\/[a-z0-9]{5,}\.(com|top)\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9/]{5,}\.js/$script,domain=vidto.me|fileone.tv|alltube.tv|srkcast.com|vidfile.net|alltube.pl|whostreams.net|szukajka.tv|cda-hd.co|horrortube.pl|otube.pl
+/^https?:\/\/[a-zA-Z.0-9]{7,}\.(com|bid|info)\/[a-zA-Z.-]{1,}\.js/$script,domain=devil-torrents.pl|electro-torrent.pl|vidlox.tv|segos.es|fileone.tv|raptu.com|vidfile.net|sharevideo.pl|sharing-box.cloud|vidstream.xyz|kino123.pl|cloudupload.co|veecast.net|openkatalog.com|shinden.pl|tele-wizja.is|ekinomaniak.tv|hqq.watch|whostreams.net|seriale-po-polsku.pl|virpe.com|kinoseans.pl|horrortube.pl|otube.pl
 /^https?:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=seriale-po-polsku.pl|animezone.pl|filmbit.ws
 /^https?:\/\/[a-zA-Z0-9]{15,}\.com\//$domain=horrortube.pl
-/^https?:\/\/[a-zA-Z0-9]{5,10}\.[a-z]{2,10}\/[a-zA-Z0-9?_=&-.%]{50,70}/$subdocument,script,popup,domain=darmowa-tv.pl|tele-wizja.is|widestream.io|cdahd.ml|onlystream.tv
-/^https?:\/\/[a-zA-Z0-9]{5,15}\.(com|net)\/[a-z]{4,10}\/[0-9a-z.?=%A-Z-&]{60,100}/$script,popup,domain=veecast.net|darmowa-tv.pl
+/^https?:\/\/[a-zA-Z0-9]{5,10}\.[a-z]{2,10}\/[a-zA-Z0-9?_=&-.%]{50,70}/$subdocument,script,popup,domain=tele-wizja.is|widestream.io|cdahd.ml|onlystream.tv
+/^https?:\/\/[a-zA-Z0-9]{5,15}\.(com|net)\/[a-z]{4,10}\/[0-9a-z.?=%A-Z-&]{60,100}/$script,popup,domain=veecast.net
 /^https?:\/\/[a-z]{3,10}\.[a-z]{3,4}\/[\w-]{4,10}.(css|png)[\w\W]{30,80}/$stylesheet,image,domain=filmbit.ws|freedisc.pl|cdahd.ml
 /^https?:\/\/[a-z]{3,10}\.[a-z]{3,4}\/[a-z]{3,10}\.json/$xmlhttprequest,domain=filmbit.ws|freedisc.pl|cdahd.ml
 /^https?:\/\/[a-z]{4,10}\.com\/[0-9]{5,10}.\html/$popup,domain=horrortube.pl
@@ -4137,7 +4135,6 @@ privatestream.tv/images/player_logo.png
 srkcast.com##[id^="table"]
 !
 !30#--------------------------Rules on tv streams blocking filters------------!
-||abcast.net/p.js$script
 ||assets.bro.adca.st/cuadrado.html
 ||assets.bro.adca.st/rectangular.html
 ||cloudfront.net^$script,domain=telewizja-live.com
@@ -4421,7 +4418,7 @@ zwiedzamyparyz.pl###text-6, .a-single, .gyg-widget
 !39#--------------------------Bitcoin ------------!
 /:\/\/[\w\W]{4,15}\.[a-z]{2,6}:[0-9]{3,4}\//$subdocument,domain=alltube.tv|szukajka.tv|alltube.pl
 /:\/\/[\w\W]{5,15}\.[a-z]{2,3}:[0-9]{3,4}\//$domain=alltube.tv|ekinomaniak.tv|vidoza.net|alltube.pl
-/^(http|https):\/\/(?!www.speedvid)(?!streamcherry.com)(?!vshare)(?!vidoza)(?!openload)(?!www.youtube)[a-zA-Z0-9\W]{5,10}.[a-z]{2,20}\/(?!anime)[\w\W\d]{5,20}\/[a-z]{5,20}\//$subdocument,domain=love-drama.pl|vidfile.net|centrum-mangi.ninja
+/^(http|https):\/\/(?!www.speedvid)(?!streamcherry.com)(?!vshare)(?!vidoza)(?!openload)(?!www.youtube)[a-zA-Z0-9\W]{5,10}.[a-z]{2,20}\/(?!anime)[\w\W\d]{5,20}\/[a-z]{5,20}\//$subdocument,domain=love-drama.pl|vidfile.net
 /^(http|https):\/\/[a-z.]{5,15}\.[a-z]{2,4}\/[a-z]{3,3}\/conf\?[a-z0-9\W]{10,50}/$xmlhttprequest,domain=fileone.tv
 /^(http|https):\/\/[a-z0-9.]{8,30}\.[a-z]{2,11}\/[a-z]{3,7}\/[a-z0-9]{5,25}\.(wasm|js)/$xmlhttprequest,script,domain=alltube.tv|alltube.pl
 /^(http|https):\/\/[a-z\W]{6,15}\.[a-z]{2,5}\/[a-z.]{4,10}\.js/$script,domain=vidoza.net|fileone.tv
