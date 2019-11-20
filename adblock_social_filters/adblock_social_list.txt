@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista Fanboy's Social Blocking List!
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.11.19.0
-! Last modified: Tue, 19 Nov 2019, 23:43 UTC+01
+! Version: 2019.11.20.0
+! Last modified: Wed, 20 Nov 2019, 09:08 UTC+01
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.11.19.0 aktualizacja: wto, 19 lis 2019, 23:43 UTC+01
+! v.2019.11.20.0 aktualizacja: śro, 20 lis 2019, 09:08 UTC+01
 !
 !
 ! Popupy
@@ -2836,7 +2836,7 @@ moneyv.wp.pl##footer a[href="https://www.facebook.com/portal.Moneypl"], footer a
 money.pl##div.hHoybr.uo0cnn-0 > a
 money.pl##div.sc-1ajosl-0 > a.sc-1ajosl-1
 money.pl##div[data-st-area$="_FB"]
-money.pl#?#figure > div > img + button:-abp-has( > span:-abp-contains(/^Podziel się$/))
+money.pl#?#artilce[class] div[class] img + button:-abp-has( > span:-abp-contains(/^Podziel się$/))
 monikahonory.pl#?#.vc_row-has-fill.vc_row-fluid.wpb_row.vc_row:-abp-contains(Dołącz do społeczności Zupomaniaków)
 monocerus.pl##a[href="https://www.facebook.com/monoceruspl/"]
 monsieur-cuisine.com###footer .container > div.row:nth-of-type(2) > div.col-md-4:nth-of-type(2)
@@ -4239,7 +4239,7 @@ vice.com##.site-header__social-icon
 vice.com##.titlebar__icons__social
 vidaron.pl##.youtube.panel-icon
 videotesty.pl##footer li.column:nth-of-type(3)
-video.wp.pl#?#article div[class^="sc-"]:-abp-has( > button + div:-abp-contains(Podziel się))
+video.wp.pl,wideo.wp.pl#?#article div[class^="sc-"]:-abp-has( > button + div:-abp-contains(/^Podziel się$/))
 viessmann.pl##.vi_footer__social_list
 vigo-ortho.pl##footer div.four:nth-of-type(4) > .editable
 vipzakopane.pl##.c-header-nav__links--social
@@ -4611,6 +4611,8 @@ z-hotel.com###menu-item-868
 !polskibus.com###footer-more
 !roland-gazeta.pl##.jj_sl_google, .jj_sl_linkedin
 !tradus.com##.inline-list.app-footer__social > li:nth-child(-n+2)
+!wp.pl,~www.wp.pl#?#div[class] > button + div:-abp-contains(/^Podziel się$/)
+!wp.pl,~www.wp.pl#?#div[class] > button:-abp-has(+ div:-abp-contains(/^Podziel się$/))
 !www.dobreprogramy.pl#?#.author-social-links > a:-abp-has(> svg:not(.feather-link))
 !
 !
