@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista Fanboy's Social Blocking List!
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.11.17.0
-! Last modified: Sun, 17 Nov 2019, 20:20 UTC+01
+! Version: 2019.11.20.1
+! Last modified: Wed, 20 Nov 2019, 09:14 UTC+01
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.11.17.0 aktualizacja: nie, 17 lis 2019, 20:20 UTC+01
+! v.2019.11.20.1 aktualizacja: śro, 20 lis 2019, 09:14 UTC+01
 !
 !
 ! Popupy
@@ -956,6 +956,7 @@ artmuseum.pl##.fbk, .twt
 arturjablonski.com##.social-media-fluid, .like-container
 artykulymodelarskie.pl###blocklinkb > ul > .last_item > a[style]
 art-comp24.pl###likebox-box
+asilo.pl##.navigation__social-icons > li.navigation__icon:nth-of-type(4)
 asilo.pl,isw.entra.pl##.btn-toolbar > .btn-footer-ico.btn:nth-of-type(n+5):nth-of-type(-n+6)
 asplaneta.pl###facebook_widget
 asport.pl##.find-us-on
@@ -1588,6 +1589,7 @@ drzwiklamki.pl###social_block, #left_share_fb, .social-sharing
 drzwioknabramy.eu###facebook-content
 drzwi-cal.pl##.socials-sharing, .facebook-messenger-avatar
 drzwi-cal.pl,legionisci.com##.socials
+drzwi-gerda.com##footer #top-footer #nav_menu-2
 dts24.pl##.col-md-4.footer-sidebar:nth-of-type(3)
 duckduckgo.com##.js-side-menu-twitter, .nav-menu--social-media
 dudek.eu##.socialki, .socialkistopka
@@ -2600,7 +2602,7 @@ lotnisko-chopina.pl##.social_media_list, .right_content > h2
 lovedlafirm.pl,orange.pl##.opl-footer__social
 loveit.pl##.szukaj-znajomych
 lovely-home.pl###box_custom57 > p
-lowcygier.pl###socialfans_counter_widget-2, .widget_socialfans_counter_widget
+lowcygier.pl##.community-links, .socials-icons-list
 lowcytrendow.pl##.box-sharing
 lowicz24.eu##li.social
 loxx.pl##div.image-row:nth-of-type(1) > .image-column > .image > a
@@ -2834,6 +2836,7 @@ moneyv.wp.pl##footer a[href="https://www.facebook.com/portal.Moneypl"], footer a
 money.pl##div.hHoybr.uo0cnn-0 > a
 money.pl##div.sc-1ajosl-0 > a.sc-1ajosl-1
 money.pl##div[data-st-area$="_FB"]
+money.pl#?#article[class] div[class] img + button:-abp-has( > span:-abp-contains(/^Podziel się$/))
 monikahonory.pl#?#.vc_row-has-fill.vc_row-fluid.wpb_row.vc_row:-abp-contains(Dołącz do społeczności Zupomaniaków)
 monocerus.pl##a[href="https://www.facebook.com/monoceruspl/"]
 monsieur-cuisine.com###footer .container > div.row:nth-of-type(2) > div.col-md-4:nth-of-type(2)
@@ -4236,7 +4239,7 @@ vice.com##.site-header__social-icon
 vice.com##.titlebar__icons__social
 vidaron.pl##.youtube.panel-icon
 videotesty.pl##footer li.column:nth-of-type(3)
-video.wp.pl#?#article div[class^="sc-"]:-abp-has( > button + div:-abp-contains(Podziel się))
+video.wp.pl,wideo.wp.pl#?#article div[class^="sc-"]:-abp-has( > button + div:-abp-contains(/^Podziel się$/))
 viessmann.pl##.vi_footer__social_list
 vigo-ortho.pl##footer div.four:nth-of-type(4) > .editable
 vipzakopane.pl##.c-header-nav__links--social
@@ -4321,6 +4324,7 @@ wifi-spot.net##.facebook_header_icon
 wifi-spot.net#?#.middle.col_footer:-abp-has(.recent-facebook-posts)
 wiha.com###cnt_main_footer_address > a[class^="social_media"]
 wiked.pl###menuboczne6
+wiked.pl##.supro-social-links-widget.widget
 wikilistka.pl##.jeg_container.jeg_footer_instagram_wrapper
 wikirose.pl###HTML11 > .widget-content, .header-social-icons, #content-section-wide-bottom, .widget-content > ul, .clearfix.grid-margin-top.nested-grid, .sidebar-box-wrap:nth-of-type(2) > .sidebar-box
 wilanow-palac.pl###facebook, #vimeo, #tripAdvisor
@@ -4424,6 +4428,8 @@ www.o2.pl##div[class][title="polubienia"], div[class][title="polubienia"] + div
 www.o2.pl#?#div[class][data-st-area*="Quote-Content"] div[class] > div[class]:-abp-has( > span[class][icon] > svg[width][height])
 www.o2.pl#?##grid > div[class][data-st-area*="Quotes"] a[href*="/cytat/"] div[class] > div[class]:-abp-has( > span[class][icon] > svg[width][height])
 www.o2.pl#?##stream > div > div[data-st-area*="Stream"] > div > div[class]:not([id]):-abp-has( > a[href*="social"])
+www.onet.pl##div[data-gtm-social]
+www.onet.pl#?#div[class^="_"] > span[class^="_"]:-abp-contains(Podziel się tym artykułem)
 www.opera.com##.social > li > a > img
 www.pcworld.pl##.navbar-right.navbar-nav.nav li.nav-item:nth-of-type(3)
 www.philips.pl##.p-social-wrapper
@@ -4605,6 +4611,8 @@ z-hotel.com###menu-item-868
 !polskibus.com###footer-more
 !roland-gazeta.pl##.jj_sl_google, .jj_sl_linkedin
 !tradus.com##.inline-list.app-footer__social > li:nth-child(-n+2)
+!wp.pl,~www.wp.pl#?#div[class] > button + div:-abp-contains(/^Podziel się$/)
+!wp.pl,~www.wp.pl#?#div[class] > button:-abp-has(+ div:-abp-contains(/^Podziel się$/))
 !www.dobreprogramy.pl#?#.author-social-links > a:-abp-has(> svg:not(.feather-link))
 !
 !
