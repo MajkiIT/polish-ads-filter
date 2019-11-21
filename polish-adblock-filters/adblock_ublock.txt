@@ -8,14 +8,14 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 21 November 2019
 ! Expires: 1 day
-! Version: 2019112101
+! Version: 2019112102
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019112101 aktualizacja: czw, 21 listopada 2019, 09:40:00
+! v.2019112102 aktualizacja: czw, 21 listopada 2019, 21:26:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -135,10 +135,11 @@ filmweb.pl##^#advertBar-pl_PL
 filmweb.pl##+js(nano-remove-elements-onready.js, #skyBanner)
 !
 ! Grupa WP
+abczdrowie.pl,dobreprogramy.pl,kafeteria.pl,money.pl,pudelek.pl,o2.pl,wp.pl,~www.wp.pl,~pilot.wp.pl##+js(set-constant.js, Object.prototype.gafSlot, undefined)
 money.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
-money.pl##+js(set, Object.prototype.gafSlot, undefined)
-~pilot.wp.pl,~poczta.wp.pl,~sportowefakty.wp.pl,wp.pl##+js(abort-on-property-read.js, WP.inline)
 !money.pl###app > div[data-reactroot] > div[class]:matches-css(background-image: /\/static\/bg\.png/)
+money.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
+~pilot.wp.pl,~poczta.wp.pl,~sportowefakty.wp.pl,wp.pl##+js(abort-on-property-read.js, WP.inline)
 abczdrowie.pl,echirurgia.pl,fotoblogia.pl,komorkomania.pl,money.pl,wp.pl##+js(set-constant.js, PWA_adbd, 2)
 facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##+js(abort-on-property-write.js, iaqExt)
 poczta.wp.pl##body > #page:style(display: block !important;)
@@ -169,7 +170,7 @@ abczdrowie.pl,allani.pl,autokrata.pl,autokult.pl,biztok.pl,dzieci.pl,easygo.pl,e
 www.wp.pl##html, html > body:style(overflow: visible!important;)
 www.wp.pl##+js(set-constant.js, WP.gaf.loadBunch, noopFunc)
 !wp.pl,~pilot.wp.pl,~sportowefakty.wp.pl##+js(set-constant.js, WP.gaf.loadBunch, noopFunc)
-o2.pl,pudelek.pl,wp.pl##+js(set-constant, Object.prototype.isGoogleBot, true)
+!o2.pl,pudelek.pl,wp.pl##+js(set-constant, Object.prototype.isGoogleBot, true)
 !
 ! o2.pl
 poczta.o2.pl,poczta.wp.pl##body > #page:style(display: block !important;)
