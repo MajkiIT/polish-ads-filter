@@ -6,16 +6,16 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 9 November 2019
+! Last modified: 21 November 2019
 ! Expires: 1 day
-! Version: 2019110902
+! Version: 2019112101
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019110902 aktualizacja: sob, 9 listopada 2019, 13:52:00
+! v.2019112101 aktualizacja: czw, 21 listopada 2019, 09:40:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -136,6 +136,7 @@ filmweb.pl##+js(nano-remove-elements-onready.js, #skyBanner)
 !
 ! Grupa WP
 money.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
+money.pl##+js(set, Object.prototype.gafSlot, undefined)
 ~pilot.wp.pl,~poczta.wp.pl,~sportowefakty.wp.pl,wp.pl##+js(abort-on-property-read.js, WP.inline)
 !money.pl###app > div[data-reactroot] > div[class]:matches-css(background-image: /\/static\/bg\.png/)
 abczdrowie.pl,echirurgia.pl,fotoblogia.pl,komorkomania.pl,money.pl,wp.pl##+js(set-constant.js, PWA_adbd, 2)
