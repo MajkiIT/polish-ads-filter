@@ -1,6 +1,8 @@
 ---
-name: General English issue template
-about: For people who don't speak Polish.
+name: Messages about cookies and GDPR/privacy policy
+about: Issues about Polish GDPR-Cookies Filters
+labels: cookies
+assignees: krystian3w
 ---
 
 <!--
@@ -13,10 +15,10 @@ Drag and drop your screenshot here or place a link to it.
 
 ### Direct link
 <!--
-Insert here a direct link to the page, where the element, ad or bug occurs.
+Insert here a direct link to the page, where the element or bug occurs.
 -->
 
-### What do you need to do to appear element, an ad or a bug?
+### What do you need to do to appear element or a bug?
 1. 
 2. 
 3. 
@@ -30,8 +32,10 @@ Insert here a direct link to the page, where the element, ad or bug occurs.
 **Filter lists:**
 1. EasyList
 2. Official Polish Filters For AdBlock, uBlock Origin and AdGuard
-3. 
-4. 
+3. Polish GDPR-Cookies Filters
+4. I don't care about cookies
+5. 
+6. 
 
 **Other important informations that may be relevant (optional):**
 

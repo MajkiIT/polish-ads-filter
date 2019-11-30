@@ -1,3 +1,10 @@
+---
+name: Elementy sieci społecznościowych, tj. widgety, wyskakujące okienka i inne elementy społecznościowe
+about: Sprawy dotyczące Polskich Filtrów Społecznościowych
+labels: social filters
+assignees: krystian3w
+---
+
 <!--
 Dziękujemy za zgłoszenie na rzecz Polskich Filtrów do Adblocka, uBlocka Origin i AdGuarda.
 Przed podjęciem jakiegokolwiek działania koniecznie zapoznaj się z CONTRIBUTING.md
@@ -9,10 +16,10 @@ Przeciągnij i upuść tutaj swój zrzut lub zamieść do niego link.
 
 ### Link bezpośredni
 <!--
-Wstaw tutaj link bezpośredni do strony, na której występuje element, reklama albo błąd.
+Wstaw tutaj link bezpośredni do strony, na której występuje element albo błąd.
 -->
 
-### Co trzeba zrobić, aby pojawił się element, reklama albo błąd?
+### Co trzeba zrobić, aby pojawił się element albo błąd?
 1. 
 2. 
 3. 
@@ -26,8 +33,10 @@ Wstaw tutaj link bezpośredni do strony, na której występuje element, reklama 
 **Listy filtrów:**
 1. EasyList
 2. Oficjalne Polskie Filtry do Adblocka, uBlocka Origin i AdGuarda
-3. 
-4. 
+3. Polskie Filtry Społecznościowe
+4. Fanboy's Social Blocking List
+5. 
+6. 
 
 **Inne ważne informacje mogące mieć znaczenie (opcjonalne):**
 

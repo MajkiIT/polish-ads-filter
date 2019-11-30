@@ -1,6 +1,8 @@
 ---
-name: General English issue template
-about: For people who don't speak Polish.
+name: Adverts
+about: Issues about Polish Advert Filters For AdBlock, uBlock Origin and AdGuard
+labels: reklama
+assignees: MajkiIT
 ---
 
 <!--
@@ -13,10 +15,10 @@ Drag and drop your screenshot here or place a link to it.
 
 ### Direct link
 <!--
-Insert here a direct link to the page, where the element, ad or bug occurs.
+Insert here a direct link to the page, where the ad or bug occurs.
 -->
 
-### What do you need to do to appear element, an ad or a bug?
+### What do you need to do to appear an ad or a bug?
 1. 
 2. 
 3. 

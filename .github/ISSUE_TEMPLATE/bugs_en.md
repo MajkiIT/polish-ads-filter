@@ -1,6 +1,7 @@
 ---
-name: General English issue template
-about: For people who don't speak Polish.
+name: Bugs
+about: Mistakes, no-no
+labels: błąd
 ---
 
 <!--
@@ -13,10 +14,10 @@ Drag and drop your screenshot here or place a link to it.
 
 ### Direct link
 <!--
-Insert here a direct link to the page, where the element, ad or bug occurs.
+Insert here a direct link to the page, where the bug occurs.
 -->
 
-### What do you need to do to appear element, an ad or a bug?
+### What do you need to do to appear a bug?
 1. 
 2. 
 3. 
