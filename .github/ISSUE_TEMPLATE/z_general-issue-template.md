@@ -1,6 +1,6 @@
 ---
-name: Ogólny formularz zgłoszeniowy
-about: General issue template
+name: Inne sprawy
+about: Other matters
 ---
 
 <!--
