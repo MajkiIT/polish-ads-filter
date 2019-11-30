@@ -1,7 +1,6 @@
 ---
-name: Błędy
-about: Bugs, mistakes, no-no
-labels: błąd
+name: Ogólny formularz zgłoszeniowy
+about: General issue template
 ---
 
 <!--
@@ -16,16 +15,14 @@ Przeciągnij i upuść tutaj swój zrzut lub zamieść do niego link.
 Drag and drop your screenshot here or place a link to it.
 -->
 
-
 ### Link bezpośredni <!--Direct link-->
 <!--
-Wstaw tutaj link bezpośredni do strony, na której występuje błąd.
-Insert here a direct link to the page, where the bug occurs.
+Wstaw tutaj link bezpośredni do strony, na której występuje element, reklama albo błąd.
+Insert here a direct link to the page, where an element, an ad or a bug occurs.
 -->
 
-
-<!--What do you need to do to appear a bug?-->
-### Co trzeba zrobić, aby pojawił się błąd?
+<!--What do you need to do to appear an element, an ad or a bug?-->
+### Co trzeba zrobić, aby pojawił się element, reklama albo błąd?
 1. 
 2. 
 3. 
