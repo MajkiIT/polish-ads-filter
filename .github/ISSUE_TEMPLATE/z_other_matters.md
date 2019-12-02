@@ -1,7 +1,6 @@
 ---
-name: Elementy sieci społecznościowych, tj. widgety, wyskakujące okienka i inne elementy społecznościowe
-about: Social network elements, i.e. widgets, pop-ups and other social elements
-labels: social filters
+name: Inne sprawy (np. zbiorcze zgłoszenie paru różnych elementów)
+about: Other matters (e.g. collective reporting of several different elements)
 ---
 
 <!--
@@ -18,12 +17,12 @@ Drag and drop your screenshot here or place a link to it.
 
 ### Link bezpośredni <!--Direct link-->
 <!--
-Wstaw tutaj link bezpośredni do strony, na której występuje element albo błąd.
+Wstaw tutaj link bezpośredni do strony, na której występuje element, reklama albo błąd.
 Insert here a direct link to the page, where an element, an ad or a bug occurs.
 -->
 
-<!--What do you need to do to appear an element or a bug?-->
-### Co trzeba zrobić, aby pojawił się element albo błąd?
+<!--What do you need to do to appear an element, an ad or a bug?-->
+### Co trzeba zrobić, aby pojawił się element, reklama albo błąd?
 1. 
 2. 
 3. 
@@ -38,10 +37,9 @@ Insert here a direct link to the page, where an element, an ad or a bug occurs.
 **Listy filtrów:** <!--Filter lists-->
 1. EasyList
 2. Oficjalne Polskie Filtry do Adblocka, uBlocka Origin i AdGuarda <!--Official Polish Filters For AdBlock, uBlock Origin and AdGuard-->
-3. Polskie Filtry Społecznościowe <!--Polish Social Filters-->
-4. Fanboy's Social Blocking List
-5. 
-6. 
+3. 
+4. 
+
 
 <!--Other important information that may be relevant (optional)-->
 **Inne ważne informacje mogące mieć znaczenie (opcjonalne):**

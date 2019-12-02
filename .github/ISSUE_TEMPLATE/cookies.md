@@ -2,7 +2,6 @@
 name: Komunikaty dot. ciasteczek i polityki prywatności/RODO
 about: Messages about cookies and GDPR/privacy policy
 labels: cookies
-assignees: krystian3w
 ---
 
 <!--

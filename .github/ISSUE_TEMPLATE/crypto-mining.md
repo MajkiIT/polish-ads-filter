@@ -1,6 +1,7 @@
 ---
-name: Inne sprawy
-about: Other matters
+name: Wydobywanie kryptowalut
+about: Cryptocurrency mining
+labels: kryptokoparki
 ---
 
 <!--
@@ -17,12 +18,12 @@ Drag and drop your screenshot here or place a link to it.
 
 ### Link bezpośredni <!--Direct link-->
 <!--
-Wstaw tutaj link bezpośredni do strony, na której występuje element, reklama albo błąd.
-Insert here a direct link to the page, where an element, an ad or a bug occurs.
+Wstaw tutaj link bezpośredni do strony, na której występuje element albo błąd.
+Insert here a direct link to the page, where the element or bug occurs.
 -->
 
-<!--What do you need to do to appear an element, an ad or a bug?-->
-### Co trzeba zrobić, aby pojawił się element, reklama albo błąd?
+<!--What do you need to do to appear an element or a bug?-->
+### Co trzeba zrobić, aby pojawił się element albo błąd?
 1. 
 2. 
 3. 
@@ -39,7 +40,6 @@ Insert here a direct link to the page, where an element, an ad or a bug occurs.
 2. Oficjalne Polskie Filtry do Adblocka, uBlocka Origin i AdGuarda <!--Official Polish Filters For AdBlock, uBlock Origin and AdGuard-->
 3. 
 4. 
-
 
 <!--Other important information that may be relevant (optional)-->
 **Inne ważne informacje mogące mieć znaczenie (opcjonalne):**
