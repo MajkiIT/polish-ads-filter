@@ -6,16 +6,16 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 3 December 2019
+! Last modified: 4 December 2019
 ! Expires: 1 day
-! Version: 2019120301
+! Version: 2019120401
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019120301 aktualizacja: wt, 3 grudnia 2019, 20:45:00
+! v.2019120401 aktualizacja: sr, 4 grudnia 2019, 22:00:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -379,8 +379,9 @@ swiatfilmow.com##+js(nano-setTimeout-booster.js, function, 1000, 0.02)
 @@||addthis.com/live/*$script,domain=serialomaniak.pl
 ||addthis.com/*/addthis_widget.js$badfilter,script
 ||addthis.com/*/addthis_widget.js$script,domain=~serialomaniak.pl
-||addthis.com^$badfilter,important,third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs|~sitecore.com
-||addthis.com^$important,third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs|~sitecore.com|~serialomaniak.pl
+! uBO Privacy Bugs
+||addthis.com^$badfilter,important,third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs|~sitecore.com|~amd.com
+||addthis.com^$important,third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs|~sitecore.com|~amd.com|~serialomaniak.pl
 !
 ! IF rules
 !#if cap_html_filtering
