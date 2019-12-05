@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 4 December 2019
+! Last modified: 5 December 2019
 ! Expires: 1 day
-! Version: 2019120401
+! Version: 2019120501
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -19,7 +19,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019120401 aktualizacja: sr, 4 grudnia 2019, 12:15:00
+! v.2019120501 aktualizacja: czw, 5 grudnia 2019, 16:55:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -648,7 +648,6 @@ cryptonews.pl,przekultura.pl###text-3
 cryptoprofit.pl###custom_html-2, #custom_html-4
 crystal-launcher.pl###adcnt
 cs-4frags.pl##.youplay-banner
-cs-escape.pl##.ipsBox.ipsWidget_vertical.ipsWidget:nth-of-type(4)
 cs-nabani.pl###category_sponsorzy
 cs-nabani.pl##.__xXpartnerzy
 cs-porobieni.pl##.wrapper > .tborder:nth-of-type(2) > tbody
@@ -1879,7 +1878,6 @@ myhome.pl##.must-login-box.f-login-wrapper
 mylomza.pl,twojawierzbica.pl,ototorun.pl,twojglos.pl,nowinynyskie.com.pl##.deepest.box-2, #bottom, .add_bill, .l-box--99.l-box > table, .l-box--33.l-box > div > [href] > img, div.l-container > div.l-row > .l-box--100, .c-content__adv, li.c-adv-list-ad
 mysnet.pl##p
 mysqlperformanceblog.com##.insightera-bar-widget.insightera-bar
-na-luzie.net##a[href^="http://trafisz.com/"]
 nacjonalista.pl##.napis, .entry-content.entry > A
 nacjonalista.pl##DIV[align="center"]
 nadmorski24.pl###G-banerGlowny, .dynamicAD
@@ -2887,7 +2885,6 @@ tygodniksanocki.pl##.wpb_single_image
 tygodniksiedlecki.com##[id^="wrap_scale_"], [id^="banner-"]
 tygodnikzamojski.pl##ul.banners
 tygodniowa.pl###__mce_tmp
-tygpowisla.pulawy.pl##.add
 tylkoastronomia.pl###block-block-16, #block-block-18
 tylkoastronomia.pl###block-block-16, .even.field-item > div
 tylkomedycyna.pl###block-block-19, #block-block-16, .even.field-item > div
@@ -3685,7 +3682,6 @@ zywiecinfo.pl##.promoted
 ||track.cux.io^
 ||track.omgpl.com^$image
 ||tractors.pl/banner*.png$image
-||triathlonpoland.tv/vast.xml$xmlhttprequest
 ||trybunaczestochowska.pl/wp-content/plugins/popup-maker/assets/js/site.min.js
 ||tugazeta.pl/reklamy_new/
 ||turek.net.pl/js/magnific/jquery.magnific-popup.min.js
@@ -4071,6 +4067,7 @@ pl##a[href^="//69oxt4q05.com/"]
 horrortube.pl##A[href*="viliaff.com"], .col-md-8 > A
 !
 !27#--------------------------Rules for pages with random adv scripts block------------!
+|about:$popup,domain=onlystream.tv
 ||4b6994dfa47cee4.com^
 ||69oxt4q05.com^
 ||b54m4qbmt0b9.com^
@@ -4083,7 +4080,6 @@ horrortube.pl##A[href*="viliaff.com"], .col-md-8 > A
 ||faidoud.com^
 ||freedisc.pl/static/rating/*.png$popup,domain=allcaster.pl
 ||glaimtug.com^
-||google.com/favicon.ico$popup,domain=allcaster.pl
 ||hoqqzlvwukpo.com^
 ||hyphenion.com^
 ||kaunairu.net^$third-party
@@ -4106,6 +4102,8 @@ horrortube.pl##A[href*="viliaff.com"], .col-md-8 > A
 ||syndication.exdynsrv.com^
 ||groorgex.net^
 ||keechavy.com^
+||inpagepush.com^
+||onlystream.tv/srt/empty.vtt$xmlhttprequest
 !
 !28#--------------------------Rules for pages with random adv scripts regex------------!
 /apu.php?zoneid
