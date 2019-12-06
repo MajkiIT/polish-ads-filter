@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista Fanboy's Social Blocking List!
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2019.12.3.0
-! Last modified: Tue, 03 Dec 2019, 20:13 UTC+01
+! Version: 2019.12.6.0
+! Last modified: Fri, 06 Dec 2019, 19:47 UTC+01
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2019 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2019.12.3.0 aktualizacja: wto, 03 gru 2019, 20:13 UTC+01
+! v.2019.12.6.0 aktualizacja: pią, 06 gru 2019, 19:47 UTC+01
 !
 !
 ! Popupy
@@ -1212,7 +1212,7 @@ bonavita.pl###followers
 bonprix.pl##.col-xs-offset-0.col-xs-12.col-sm-offset-1.col-sm-5
 booklips.pl,ustyle.pl###text-15
 bookmaster.com.pl##.social-comm-container
-booksy.com##.footer__top > .container > .row > .col-md-4
+booksy.com#?#footer a:-abp-has(svg > g[id*="Social"])
 born86.pl###portal_main > .duzyna1, #portal_main > .peepodpis, .instashow-gallery.instashow
 bosch-industrial.com##.footerActionYoutube
 bosch-prasa.pl##.WitrynaBoxSocialLinks
@@ -1504,6 +1504,8 @@ dewelopart.pl##.yt-r, .in-r
 deynn.blogspot.com,kamira90.blogspot.com,kesinails.pl,mylittlewhitehome.blogspot.com,reklamy-arek.blogspot.com,swedish-princesses.pl###HTML4
 diagnozainternetu.pl###widget_text, .searchComIcons
 diamante-wear.com##.widget__wrapper__tumblr, .widget__wrapper__instagram, .widget__wrapper__facebook, .header__social
+dictionary.cambridge.org###footer > div > div > div > a[title][target]
+dictionary.cambridge.org##.i-facebook, .i-instagram, .i-twitter
 dieroten.pl###foot-menu > .dark.col-sm-12.col-md-3
 dietetyczne-przepisy.net###media_image-10, #media_image-9, #custom-facebook-2, #text-5, #text-28, #text-29
 digitalassets.pl##div.widget:nth-of-type(n+4):nth-of-type(-n+5)
@@ -1544,6 +1546,7 @@ dobremiejsce.org##.opes-wp-social-tab
 dobresofty.pl##.circle-share-container
 dobroni.pl##.sociale-index
 dobrzemieszkaj.pl##.right.box-6 > .desc
+dobrzemieszkaj.pl#?#div.spaceBottom.box-1:nth-of-type(9):-abp-has(#Instagram)
 dociekliwa.pl##.SMYouTubesubscribe_Widget.widget
 dodaje.pl##.footer-content .no-padding-lg.col-xxs-12.col-xs-6.col-sm-12
 dolinaraby.pl##.bd-sidebararea-5 > .bd-textblock-3, .bd-sidebararea-5 > .bd-textblock-3 + .bd-imagelink-39
@@ -1919,6 +1922,7 @@ forum.pasja-informatyki.pl##div.qam-footer-col:nth-of-type(1)
 forum.pl.canalplus.com###YoutubeRight
 forum.poradnikogrodniczy.pl,forum.swiateczne.info,forumogrodniczeoaza.pl,gminaradlow.pl,graal.pl,henrykkania.pl,herbapol.krakow.pl,homebrewing.pl,interlumen.com,kegel-aj.com,kinoagrafka.pl,kolorowyswiat.org,lemone.pl,mojataxi24.pl,nowyolechow.pl,przystanekjezus.pl,sprzetjezdziecki.com,stephenking.pl,umig.olkusz.pl,ur.edu.pl###fb
 fotoblogia.pl,jejswiat.pl,smaczneblogi.pl##.link-gplus, .link-instagram
+fotografwdrodze.pl##.sidebar > div.widget_text.widget:nth-of-type(8)
 fotopanorama.pl##footer .col-xs-12 > .pull-left > span, #social > a:nth-of-type(1)
 fototeka.fn.org.pl##.col-lg-3:nth-of-type(4)
 foto.auchan.pl##.sidebar-link[href="https://www.facebook.com/cewefotoksiazka/"], .sidebar-link[href^="https://www.youtube.com/"], .sidebar-link[href^="https://www.instagram.com/"]
@@ -2657,7 +2661,7 @@ malopolskie-media.info###jsn-pos-right > .lightbox-2:nth-of-type(1)
 maltec.pl##.clearfix.communities
 maltec.pl,warsawdowntown.pl##.footer_top
 malywrednymis.pl##.penci_pinterest_widget.widget
-mamadu.pl##a[href*="/mamadupl" i] > img[src^="/static/media/"]
+mamadu.pl##a[href*="/mamadupl" i] > img[src^="/static/media/"], a[href*="/mamadu.pl" i] > img[src^="/static/media/"]
 mamadu.pl,natemat.pl##.footer__box__list--social
 mamaplus.pl##div.fl-l > .soc-hover
 mama-kreatywna.pl##.Pinterest.widget
@@ -3461,6 +3465,7 @@ programistka.com##.notumn_social_icons_widget.widget
 programtv.naziemna.info###my-fb-panel
 programyzadarmo.net.pl##.socialicons
 programyzadarmo.net.pl##.is_stuck.p-sidebar-inner > div.block:nth-of-type(3)
+progres.info.pl##.facebook-tiles
 proinfosc.com.pl##.do-social-link-section
 projektgamma.pl###face-slider2
 projekt-rodzina.pl###setwood_socials-2, #setwood_facebook_box-2, #null-instagram-feed-4, .instagram-size-small.instagram-pics, #null-instagram-feed-5 > .footer-instagram-title > a[href="//instagram.com/projekt_rodzina/"]
@@ -4014,7 +4019,7 @@ tabletowo.pl###menu-item-347652
 tablica-rejestracyjna.pl###fbutton-container
 tadar.pl###csocial-facebook, #csocial-googleplus, #roy_facebook_block
 tago.com.pl##.float-social
-tajemnice-swiata.pl##[href="https://www.facebook.com/Tajemnice-%C5%9Awiata-1655637548024566/"]
+tajemnice-swiata.pl##a[href="https://www.facebook.com/Tajemnice-%C5%9Awiata-1655637548024566/"]
 tajlex.pl###foot_4
 takaposciel.pl##.sm-fb
 tally-weijl.com##.fr-social-media-block
@@ -4400,6 +4405,8 @@ wszelkieprzepisy.pl###foot > .container > div.span2:nth-of-type(3), #foot > .con
 wszelkieprzepisy.pl###likeup
 wszystkotujest.pl##.is
 wszystko.pl##.sm-iblock.like
+wtp.waw.pl##.home-changes-facebook
+wtp.waw.pl##.home-social-media > li > a:not([href$="/feed/"])
 www.aligato.pl##.soc-link
 www.astar.czest.pl##.tdm-social-wrapper
 www.astar.czest.pl#?#td_block_title.td_block_wrap > .td-block-title > .td-pulldown-size:-abp-contains(Obserwuj nas)
@@ -4528,6 +4535,7 @@ youtube.com###secondary-links > a[href*="facebook.com"], #secondary-links > a[hr
 yuliyababich.eu###AnimalPanel table td > span:nth-of-type(n+6):nth-of-type(-n+9)
 yves-rocher.pl##div.service__column:nth-of-type(2) > div.service__box:nth-of-type(3)
 zaadoptujfaceta.pl##.clearfix.fleft:nth-of-type(1)
+zabka.pl##.icons-nav > a.icons-nav__link:nth-of-type(n+4):nth-of-type(-n+5)
 zachod.pl##div.large-offset-1.large-4.column:nth-of-type(4) > .label
 zadluzenia.com##.footer > .container > .row > div.col-sm-3:nth-of-type(4)
 zadowolenie.pl##.m-socialIcons
@@ -4609,6 +4617,7 @@ ztm.waw.pl##img[src="http://www.ztm.waw.pl/download/bannerZalacznik/302_bannery9
 ztm.waw.pl###Banneryiztm > a[href^="https://www.ztm.waw.pl/"]:nth-of-type(3)
 ztm.waw.pl###Banneryiztm > a[href^="https://www.ztm.waw.pl/"]:nth-of-type(5)
 ztm.waw.pl###Facebook, #Tweeter, #YouTube
+ztm.waw.pl##.page-social-media
 zuch.media##.fw-footer-social > a:nth-of-type(-n+3)
 zuch.media##.fw-icon-title-top.fw-icon-title
 zuch.media##.widget_fw_instagram.fw-widget-instagram
