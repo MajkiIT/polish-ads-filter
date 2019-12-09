@@ -2,7 +2,6 @@
 name: Reklamy
 about: Adverts
 labels: reklama
-assignees: MajkiIT
 ---
 
 <!--
