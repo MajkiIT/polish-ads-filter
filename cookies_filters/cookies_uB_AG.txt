@@ -127,7 +127,7 @@ ikea.com##.has-cookie .main-header-wrap:style(top: 0 !important;)
 indbuildcraft.pl##.modal-overlay, #modal_cookies
 innogy.pl##html.cookie-wall-active body:style(overflow: auto !important;)
 innogy.pl###cookie-wall-container
-instagram.com###react-root > section > nav div[style^="height: 1"][style$="0px;"]:style(height: 48px !important;)
+instagram.com###react-root > section > nav div[class][style^="height: 1"][style$="px;"]:style(height: 48px !important;)
 intermarche.pl##body.showCookie .sec--head:style(top: 0 !important;)
 intermarche.pl##body.showCookie .sec--menu-popup:style(top: 117px !important;)
 intermarche.pl##body.showCookie .wrapper-for-blocked-content:style(margin-top: 0 !important;)
@@ -176,6 +176,8 @@ mzk-torun.pl###fancybox-container-2:has(#policy_elem)
 m.autocentrum.pl##html.menu-active:style(overflow: auto !important;)
 m.autocentrum.pl##.hello-rodo
 m.filmweb.pl##body.rodo[style^="padding-top:"]:style(padding-top: 0 !important;)
+m.leroymerlin.pl##body.drawer-is-open, body.ReactModal__Body--open:style(overflow: auto !important;)
+m.leroymerlin.pl##.ReactModalPortal:has-text(Polityka prywatności)
 m.youtube.com##body[modal-open-body]:style(position: static !important;)
 m.youtube.com##.consent-bump-lightbox
 nastyku.pl###ns_cookie_accepted
@@ -379,6 +381,9 @@ opinie.news##+js(set-constant.js, confirm, trueFunc)
 opolak.pl##body[style]:style(overflow: auto !important;)
 opolak.pl##.rodo, .rodo_layer
 pamiatki.pl###hw_cookie_law
+pl.asseco.com##html[style^="overflow"], body[style^="overflow"]:style(overflow: visible !important;)
+pl.asseco.com###animatedModal:has(h5 > a[href="/polityka-prywatnosci/"])
+pl.asseco.com##.body-overlay
 pl.dow.com##html, body:style(position: static !important; overflow: visible !important;)
 pl.dow.com##.cookie-notify
 polski-tenis.pl###rodo
@@ -485,6 +490,8 @@ openpli.org##^script:has-text(gdpr-accepted)
 opinie.news##^script:has-text(pliki cookie)
 pamiatki.pl##^#hw_cookie_law
 pasjagolebie.pl,sp112.waw.pl##^.popmake-overlay[data-popmake*="cookies"]
+pl.asseco.com##^footer ~ a.animatedModal:has-text(Open)
+pl.asseco.com##^footer ~ #animatedModal:has(h5 > a[href="/polityka-prywatnosci/"])
 pl.dow.com##^.cookie-notify
 porcelana.com.pl##^script:has-text(plików cookies)
 poszalu.pl,sklep.visionexpress.pl##^#gdpr-modal
@@ -573,6 +580,8 @@ okazik.pl$$script[tag-content="#cookie-dialog"]
 openpli.org$$script[tag-content="gdpr-accepted"]
 opinie.news$$script[tag-content="pliki cookie"]
 pamiatki.pl$$#hw_cookie_law
+pl.asseco.com$$footer ~ a.animatedModal[tag-content="Open"]
+pl.asseco.com$$footer ~ #animatedModal[tag-content="Polityce prywatności"]
 pl.dow.com$$.cookie-notify
 porcelana.com.pl$$script[tag-content="plików cookies"]
 poszalu.pl,sklep.visionexpress.pl$$#gdpr-modal
