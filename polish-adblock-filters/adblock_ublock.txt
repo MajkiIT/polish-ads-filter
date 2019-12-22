@@ -6,16 +6,16 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 16 December 2019
+! Last modified: 21 December 2019
 ! Expires: 1 day
-! Version: 2019121601
+! Version: 2019122101
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2019 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019121601 aktualizacja: pn, 16 grudnia 2019, 22:44:00
+! v.201912101 aktualizacja: so, 21 grudnia 2019, 22:34:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -135,7 +135,9 @@ filmweb.pl##^#advertBar-pl_PL
 filmweb.pl##+js(nano-remove-elements-onready.js, #skyBanner)
 !
 ! Grupa WP
-~www.wp.pl,portal.abczdrowie.pl,parenting.pl,kafeteria.pl,dobreprogramy.pl,o2.pl,pudelek.pl,wp.pl##+js(set-constant.js, Object.prototype.rekid, undefined)
+~www.wp.pl,abczdrowie.pl,parenting.pl,kafeteria.pl,dobreprogramy.pl,o2.pl,pudelek.pl,wp.pl##+js(set-constant.js, Number.isNaN, trueFunc)
+~www.wp.pl,wp.pl##+js(set-constant.js, wp_abtest, null)
+~www.wp.pl,wp.pl##div:matches-css-after(content:/R.*E.*K.*L.*A.*M.*A/):nth-ancestor(3)
 money.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 !money.pl###app > div[data-reactroot] > div[class]:matches-css(background-image: /\/static\/bg\.png/)
 money.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
