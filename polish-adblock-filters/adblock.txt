@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 2 January 2019
+! Last modified: 6 January 2019
 ! Expires: 1 day
-! Version: 2020010102
+! Version: 2020010601
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -19,7 +19,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020010102 aktualizacja: czw, 2 stycznia 2020, 21:02:00
+! v.2020010601 aktualizacja: pon, 6 stycznia 2020, 10:50:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -833,11 +833,20 @@ elblag.net,rawicz24.pl,zpleszewa.pl,gostynska.pl,jarocinska.pl##a[href*="/redire
 elblag.net,zwielkopolski24.pl,gostynska.pl,jarocinska.pl##[class^="baner"]
 elblag24.pl##div.vc_align_left.wpb_content_element.wpb_single_image
 ele24.net##.gkPage.banner-top, .dj-image
-elektroda.pl##.googleSenseTop.adsbygoogle
+elektroda.pl##.googleSenseTop.adsbygoogle, #WelcomeAdContainer, #overlay
 elektroda.pl##div.c72b05f9c71327a4fddad2b.clearfix
 elektroda.pl##li#insert  > .clearfix.topic-box
 elektroda.pl#?#.topic-lists > li[id] > .topic-box > .position-relative:-abp-has(> .sec-b > div > ins.adsbygoogle)
 elektroda.pl#?#.topic-lists > li[id] > .topic-box > .position-relative:-abp-has(> .sec-b > div[id^="div-gpt-ad"])
+elektroda.pl##a.button_open[href="/rtvforum/companyabout.php"]:has-text(Zamieść Reklamę)
+elektroda.pl##.the-post-list > ul > li[class^="clearfix "]:has(:scope > a[href][target="_blank"][onclick*="'Banner"])
+elektroda.pl##.the-post-list > ul > li[class^="clearfix "] > a[href][target="_blank"][onclick*="'Banner"]
+elektroda.pl##.the-list > li[class^="clearfix "]:has(:scope > a[href][target="_blank"][onclick*="'Navibox', 'Click', '"])
+elektroda.pl##.the-content > div[class] > div:has(:scope >form[action^="https://www.tme.eu/pl/katalog/"][target="_blank"])
+elektroda.pl##.the-content > div[class] > div:has(:scope >a[href^="http://www.biall.com.pl/sklep.html"][target="_blank"])
+elektroda.pl##.the-content > div[class] > div:has(:scope >a[href][target="_blank"][onclick*="'Patron', 'Click Button'"])
+elektroda.pl##.bbd
+elektroda.pl##.col-md-12.sec-b
 elektroinstalacje.info###side-border-left > div.panelbody:nth-of-type(1)
 elektroinstalacje.info###side-border-left > h3.panelcap:nth-of-type(1)
 elektryka.org##[href^="http://www.elektryka.org/redirect.php"]
@@ -3541,7 +3550,6 @@ zywiecinfo.pl##.promoted
 ||leczna24.pl/f/navb*.jpg$image
 ||leszczynscy.nazwa.pl/*/adv/
 ||lib.onet.pl/s.csr/external/iframe$script,subdocument
-||lib.wtg-ads.com^$script
 ||lidl.pl/statics/lidl-pl/ds_img/layout/tapeta_$image
 ||lijjt.com^
 ||link.batuu.pl/$script
