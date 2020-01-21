@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 16 January 2019
+! Last modified: 21 January 2020
 ! Expires: 1 day
-! Version: 2020011602
+! Version: 2020012101
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -19,7 +19,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020011602 aktualizacja: czw, 16 stycznia 2020, 20:40:00
+! v.2020012101 aktualizacja: wto, 21 stycznia 2020, 18:18:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -31,7 +31,7 @@
 .pl/images/reklama120x60.jpg$image
 .pl/img/ad/
 .pl/wp-content/banners/
-/*300x300$image,domain=portalgwiazd.pl
+.pl/www/sys/ajs*.php?$script
 /\/(images|img|data|uploads)\/banners\//$image,object,domain=tsk24.pl|wschodnik.pl|nowawrzesnia.pl|glucholazyonline.com.pl|informacjelokalne.pl|muzyczneradio.com.pl|tvrep.pl|chwaszczyno.pl|msfera.pl|tygodnik-krapkowicki.info|darkplanet.pl|wroclawskiejedzenie.pl|magazyngitarzysta.pl|przegladkoninski.pl|radiopoznan.fm|fishing-test.pl|gostynin24.pl|wkonin.pl|orawa24.info|krakowski24.pl|muzyczneradio.pl|skijumping.pl|brwinow.com|www.informacje.kolobrzeg.pl
 /_adv/*
 /_baner/*$domain=www.ipon.pl|tygodnikzamojski.pl
@@ -55,6 +55,7 @@
 /images/reklama/$image,domain=dziennikpolicki.pl
 /overlay*.png$domain=mapa.targeo.pl,image
 /reklama/$image,domain=rybomania.pl
+/reklamy/*$image,object,subdocument,domain=~selgros24.pl|~jacus.pl|~csbydgoszcz.pl
 /rotator.php$subdocument,domain=minecraftpolska.net|q4.pl
 /screening/*$domain=telepolis.pl,image
 /scripts/click.php$popup
@@ -201,9 +202,6 @@ vshare.io###sendif
 ##div#skapiec_ad
 ##img[alt="reklama"]
 ##ul.sharing-tools
-.pl/www/sys/ajs*.php?$script
-/reklamy/*$image,object,subdocument,domain=~selgros24.pl|~jacus.pl|~csbydgoszcz.pl
-/wp-content/uploads/*/baner$image,domain=lubanski.eu|miastoiludzie.pl|eksmagazyn.pl|infokatowice.pl|mma.pl|tvwlodawa.pl
 24tp.pl,lca.pl,112tychy.pl,30minut.pl,twoje-podhale.pl,upflix.pl,grylogiczne.biz.pl,grydladziewczyn.net.pl,moja-ostroleka.pl,bielsko.info,polonia.nl,dukania.pl,dkl24.pl,czecho.pl,tygodnikpodhalanski.pl,tv.gniezno.pl,torun.twoje-miasto.pl##[class*="reklama"]
 mclista.pl,bialystokonline.pl,ewgt.com.pl,tugazeta.pl,dbpolska.net,mojmac.pl,piszanin.pl,tubasiedlec.pl,pracawkatowicach.com.pl,pracawkrakowie.com.pl,sevillafc.pl,miastokolobrzeg.pl,wirtualnynowydwor.pl##[id*="reklama"]
 onet.pl##a[href^="http://csr.onet.pl/eclk/clk"]
@@ -213,7 +211,7 @@ pl###image_pino
 pl###pasekSingle
 pl###playerads
 pl###reklama_top
-pl##.adbox
+pl,~m.olx.pl##.adbox
 pl##.adsbyg
 pl##.anal-post-popularne
 pl##.cg3-products
@@ -945,7 +943,7 @@ fabrykasily.pl##.body-plan-trigger
 fabrykasypialni.pl###mebloo
 facetemjestem.pl##.bgt-single-classic-content.uk-width > center
 facetpo40.pl###overHotSection, .banerBox, #fixed_box
-fachowydekarz.pl##[class^="adadapt"]
+fachowydekarz.pl###flyfooter, [class^="adadapt"]
 fajowe.pl##.commercial-center
 fakt.pl###eF > .clr
 fakt.pl###multi-1488380533
@@ -1655,7 +1653,7 @@ lubartow24.pl##[style="text-align: center; padding-bottom: 8px; margin: 0 auto;"
 lubiehrubie.pl,hrubie.pl###bannerTop
 lubien.net###text-51, text-20, #text-40, #text-47, #text-39, #text-37, #text-32, #text-27, #text-48, #text-26, #text-20, #text-25, .header-right
 lubiegrac.pl##.right > div.box1:nth-of-type(3) > .header, .right > div.box1:nth-of-type(1) > div.header:nth-of-type(1)
-lubimyczytac.pl##.container_12 > A[href^="http://lubimyczytac.pl/redirect.php"]
+lubimyczytac.pl##.adsCol, .container_12 > A[href^="http://lubimyczytac.pl/redirect.php"]
 lubin.pl##.a-.g-single
 lubin.pl##.ad_group
 lubin.pl##.panel-widget-style.bottomspace.topspace
@@ -3345,12 +3343,14 @@ zywiecinfo.pl##.promoted
 ~www.cba.pl,cba.pl##img[src="https://www.cba.pl/cba1.jpg"]
 !
 !10#----------------------Specific advert blocking filters-----------------------!
+/*300x300$image,domain=portalgwiazd.pl
 /aserver/$script,subdocument
 /fotosy/inne/$image,domain=mierzyn24.pl
 /grafika/banerki_reklamowe/$image,domain=wbijam.pl
 /uploads/*tapeta*.jpg$image,domain=ciekawostkihistoryczne.pl|katowice24.info|miastodzieci.pl|wrc.net.pl
 /vardata/obrazki/$image,domain=pionki24.pl|zwolen24.pl
 /videoPlayer.js$script,domain=polsatnews.pl|polsatsport.pl
+/wp-content/uploads/*/baner$image,domain=lubanski.eu|miastoiludzie.pl|eksmagazyn.pl|infokatowice.pl|mma.pl|tvwlodawa.pl
 |http://mon.services.tvn.pl/_pix/uri-$image
 |http://pix2.services.tvn.pl/pix2.js
 |https://consumer.huawei.com/pl/?utm_source=huawei.pl&utm_medium=huawei.pl$popup,domain=www.dobreprogramy.pl
@@ -3359,6 +3359,7 @@ zywiecinfo.pl##.promoted
 ||40ton.net/wp-content/uploads/*.png$image
 ||4lomza.pl/banner/$image
 ||4lomza.pl/i/tlo/$image
+||a5.cba.pl/js.js$script
 ||a.ib.gazeta.pl^$image
 ||ad.adview.pl/ad/
 ||ad.bitbay.net^$image
