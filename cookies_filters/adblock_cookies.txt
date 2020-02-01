@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2020.1.27.1
-! Last modified: Mon, 27 Jan 2020, 21:11 UTC+01
+! Version: 2020.2.1.0
+! Last modified: Sat, 01 Feb 2020, 15:59 UTC+01
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -18,7 +18,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2020 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2020.1.27.1 aktualizacja: pon, 27 sty 2020, 21:11 UTC+01
+! v.2020.2.1.0 aktualizacja: sob, 01 lut 2020, 15:59 UTC+01
 !
 !
 ! Specyficzne reguły ukrywające
@@ -567,6 +567,7 @@ duszniki.eu###CookiesInstro
 dvbsklep.pl,naturo.pl##[id^="simple-modal"]
 dvdmax.pl,punkt44.pl###alertTop
 dworzec.eu##.layer-message-container
+dzialoszyn.pl,garwolin.pl,gmina.pl,kierunekspozywczy.pl,krsystem.pl,laskarzew.pl,nowemiasto.pl,raczki.pl,wislaportal.pl,zwolen.pl###cook
 dziary.com,lvlup.pro,piast-gliwice.eu,pomorskie.eu,przegladlokalny.eu,sklep.piast-gliwice.eu###cookiePolicy
 dzieciom.pl##.e-cookieBar
 dziennikwschodni.pl,niskarata.org,wykop.pl##.rodo-alert
@@ -805,6 +806,7 @@ futu.pl###my-alert
 gaj-stal.com,polonia.nl###pasek
 galaxy-centrum.pl###gdpr-window
 gamedot.pl##.policy_warning
+gamepedia.com###policy-notice-root
 gameplay.pl##div#CP_box
 gameplay.pl,gry-online.pl,tvgry.pl##.cookie-alert-2018-c
 gamerhash.com,inijob.com,styl.fm,szukajka.tv,wizzair.com##.cookie-policy
@@ -812,7 +814,6 @@ gaming.youtube.com###notification-footer
 gamisport.pl###nextcreBotDialog
 gardinia.pl,mactronic.pl,ogradzamy.pl##body > div[id*="cookie"]
 garneczki.pl##.cookieframe
-garwolin.pl,gmina.pl,kierunekspozywczy.pl,krsystem.pl,laskarzew.pl,nowemiasto.pl,raczki.pl,wislaportal.pl,zwolen.pl###cook
 garwolin.spolem.org.pl#?##colorbox:-abp-has(#rodo_width_hotfix)
 gastromaniacy.pl,idhosting.pl,instytutlogopedyczny.pl,sggik.pl###flash-msg
 gastrowypozyczalnia.pl###popup1
@@ -1517,6 +1518,7 @@ pap.pl,popoznaniu.pl,stat.gov.pl,warszawa-pragapoludnie.sr.gov.pl###divcook
 parafiakomprachcice.eu###spu-570, .spu-bg
 parfumclub.pl##.gmt_gdpr
 parkersklep.pl,rotringsklep.pl###BoxCookie
+parkofpoland.com##.c-cookieBelt
 parp.gov.pl###howdydo-wrapper
 pasazer.com##.info_cookie
 passa.media.pl##.popup, .popup-overlay
@@ -2227,6 +2229,7 @@ zysk.com.pl###pageUpperInfo
 ||ctm.gdynia.pl/js/alertbox.js
 ||dlastudenta.pl/cookie/cookie_set.js$script,~third-party,domain=~www.dlastudenta.pl
 ||dlastudenta.pl/cookie/upd/$~third-party,xmlhttprequest,domain=~www.dlastudenta.pl
+||durszlak.pl/assets/privacy_popup-*.js$script
 ||dziennikelblaski.pl/js/rodo-wm.js
 ||eurocookie.galilcloud.wixapps.net/pages/widget/views/widget.html
 ||eurocookie.galilcloud.wixapps.net/popup$subdocument
@@ -3188,15 +3191,8 @@ gg.pl#@#body > div:nth-of-type(2) > div
 !
 !
 ! Bugi Kiboke
-epson.pl#@#.notification.cookies
-naekranie.pl#@##modal-rodo-info
-rp.pl#@##rodo-popup
-teb.pl,technikum.pl#@##cookieModal:not(.countryCookieModalContainer)
+redirect.global.commerce-connector.com#@#.no-cookies:not(body):not(html)
 volcano.pl#@##cookiesModal
-@@/gdpr/cookieconsent.$domain=www.kayak.pl
-@@||cdn.parkiet.com/rodo-agreement-app/$script,stylesheet,domain=parkiet.com
-@@||consentmanager.mgr.consensu.org^$domain=sourceforge.net
-@@||viessmann.com.pl/js/CookieAlert.js$script,domain=viessmann.com.pl
 !
 !
 ! Wyjątki
