@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 21 February 2020
+! Last modified: 22 February 2020
 ! Expires: 1 day
-! Version: 2020022101
+! Version: 2020022201
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -19,7 +19,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020022101 aktualizacja: ptk, 21 lutego 2020, 11:55:00
+! v.2020022201 aktualizacja: sob, 22 lutego 2020, 21:35:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -4181,6 +4181,7 @@ horrortube.fun##A[href*="viliaff.com"], .col-md-8 > A
 ||fads.online^
 ||ww1.flashx.net^
 ||cloudfront.net/atrk.js$script,domain=www.flashx.net
+||www.google.com$popup,domain=www.flashx.net
 !
 !28#--------------------------Rules for pages with random adv scripts regex------------!
 /apu.php?zoneid
@@ -4211,6 +4212,7 @@ horrortube.fun##A[href*="viliaff.com"], .col-md-8 > A
 /wp-content/plugins/wp-words-links-change/*$script,domain=businesstraveller.pl
 /^https?:\/\/[a-z]{3,15}\.[a-z]{3,4}\/[\w\W]{120,}/$subdocument,image,xmlhttprequest,domain=www.flashx.net
 /^https?:\/\/[a-z]{3,15}\.pro\/[a-zA-Z0-9?=&]{10,}/$xmlhttprequest,domain=flashx.net|filman.cc
+/^https?:\/\/[a-z]{3,15}\.[a-z]{3,4}\/[\w\W]{10,20}/$popup,domain=www.flashx.net
 !
 !29#--------------------------Rules on tv streams element hiding rules------------!
 ##a[href^="http://affiliates.bet-at-home.com/processing/clickthrgh.asp"]
