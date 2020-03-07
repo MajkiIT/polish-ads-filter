@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 7 March 2020
 ! Expires: 1 day
-! Version: 2020030705
+! Version: 2020030706
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -19,7 +19,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020030705 aktualizacja: sob, 7 marca 2020, 14:10:00
+! v.2020030706 aktualizacja: sob, 7 marca 2020, 17:05:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -566,7 +566,7 @@ cashowsky.pl##IMG[alt^="Baner"]
 cda.pl##.f-img, #glowna_banner_wrapper
 cda.pl##.top-anonco-auto-height90, .muimErPIa > .minaitura > .img-description
 cdaction.pl##[id^="mobile-ad-placeholder-"]
-cdahd.ml###div1
+cdahd.co###div1
 cdtracker.co.pl###block--managed-0
 cenabiznesu.pl,elubaczow.com##.img-responsive
 centrumdruku3d.pl###slide-bottom-popup, .sidebar.col-4 > ul > div, .cd3d-video, DIV.right > STYLE + DIV
@@ -4183,7 +4183,7 @@ horrortube.fun##A[href*="viliaff.com"], .col-md-8 > A
 ||inpagepush.com^
 ||onlystream.tv/srt/empty.vtt$xmlhttprequest
 ||postlnk.com$popup
-||image.tmdb.org^$popup,domain=cdahd.ml
+||image.tmdb.org^$popup,domain=cdahd.co
 ||www.google.com$popup,domain=onlystream.tv
 ||track.aftermarket.pl^
 ||fads.online^
@@ -4193,7 +4193,7 @@ horrortube.fun##A[href*="viliaff.com"], .col-md-8 > A
 !
 !28#--------------------------Rules for pages with random adv scripts regex------------!
 /apu.php?zoneid
-/\/[0-9a-zA-Z]{1,10}\.html$/$subdocument,domain=cdahd.ml|cda-hd.cc|horrortube.fun|clipwatching.com
+/\/[0-9a-zA-Z]{1,10}\.html$/$subdocument,domain=cdahd.co|cda-hd.cc|horrortube.fun|clipwatching.com
 /\/[a-z]{3,5}\.php\?zoneid=[0-9]{3,7}/$script
 /^http:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\/[a-zA-Z0-9]{30,}/$script,popup
 /^http:\/\/p[0-9]{6,10}\.[a-z]{5,10}\.com\/itab\/[a-z?=A-Z_0-9&]{10,}Zippyshare\.com[a-z0-9A-Z%.'-]{5,}/$popup
@@ -4210,10 +4210,10 @@ horrortube.fun##A[href*="viliaff.com"], .col-md-8 > A
 /^https?:\/\/[a-zA-Z.0-9]{7,}\.(com|bid|info)\/[a-zA-Z.-]{1,}\.js/$script,domain=devil-torrents.pl|electro-torrent.pl|vidlox.tv|segos.es|fileone.tv|raptu.com|vidfile.net|sharevideo.pl|sharing-box.cloud|vidstream.xyz|cloudupload.co|veecast.net|openkatalog.com|shinden.pl|tele-wizja.is|ekinomaniak.tv|hqq.watch|whostreams.net|seriale-po-polsku.pl|virpe.com|filman.cc|horrortube.fun|onlystream.tv|clipwatching.com|upstream.to|videopenny.net|flashx.net|vidspace.io
 /^https?:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=seriale-po-polsku.pl|animezone.pl
 /^https?:\/\/[a-zA-Z0-9]{7,}\.com\//$script,domain=horrortube.fun|ekino.pw
-/^https?:\/\/[a-zA-Z0-9]{5,10}\.[a-z]{2,10}\/[a-zA-Z0-9?_=&-.%]{50,70}/$subdocument,script,popup,domain=tele-wizja.is|widestream.io|cdahd.ml|onlystream.tv
+/^https?:\/\/[a-zA-Z0-9]{5,10}\.[a-z]{2,10}\/[a-zA-Z0-9?_=&-.%]{50,70}/$subdocument,script,popup,domain=tele-wizja.is|widestream.io|cdahd.co|onlystream.tv
 /^https?:\/\/[a-zA-Z0-9]{5,15}\.(com|net)\/[a-z]{4,10}\/[0-9a-z.?=%A-Z-&]{60,100}/$script,popup,domain=veecast.net
-/^https?:\/\/[a-z]{3,10}\.[a-z]{3,4}\/[\w-]{4,10}.(css|png)[\w\W]{30,80}/$stylesheet,image,domain=freedisc.pl|cdahd.ml|cda-hd.cc|clipwatching.com
-/^https?:\/\/[a-z]{3,10}\.[a-z]{3,4}\/[a-z]{3,10}\.json/$xmlhttprequest,domain=freedisc.pl|cdahd.ml|cda-hd.cc|onlystream.tv|clipwatching.com
+/^https?:\/\/[a-z]{3,10}\.[a-z]{3,4}\/[\w-]{4,10}.(css|png)[\w\W]{30,80}/$stylesheet,image,domain=freedisc.pl|cdahd.co|cda-hd.cc|clipwatching.com
+/^https?:\/\/[a-z]{3,10}\.[a-z]{3,4}\/[a-z]{3,10}\.json/$xmlhttprequest,domain=freedisc.pl|cdahd.co|cda-hd.cc|onlystream.tv|clipwatching.com
 /^https?:\/\/[a-z]{4,10}\.com\/[0-9]{5,10}.\html/$popup,domain=horrortube.fun
 /^https?:\/\/[a-z]{5,10}\.com\/[a-zA-Z0-9+]{80,}/$subdocument,domain=embed.nowvideo.sx|cloudtime.to|darmowa-telewizja.info
 /https?:\/\/naekranie\.pl\/wp-content\/uploads\/[0-9]{4,4}\/[0-9]{2,2}\/(?!jpg)[0-9a-z]{7,10}$/$image
