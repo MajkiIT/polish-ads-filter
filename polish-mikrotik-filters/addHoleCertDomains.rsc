@@ -1,5 +1,6 @@
-# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Tue Mar 24 19:45:03 2020)
+# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Tue Mar 24 20:45:03 2020)
 /ip dns static
+add name="moneywp.website" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="payooner.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="payoner.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="in-post.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
