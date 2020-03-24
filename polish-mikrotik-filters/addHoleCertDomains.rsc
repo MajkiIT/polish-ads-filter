@@ -1,4 +1,4 @@
-# This script adds malware domains to a block list via static dns entries (list created: Tue Mar 24 13:45:02 2020)
+# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Tue Mar 24 14:45:03 2020)
 /ip dns static
 add name="faktury3941.org" address="10.0.0.10" comment="addHoleCertDomains HoleCert"
 add name="rachinfo.com" address="10.0.0.10" comment="addHoleCertDomains HoleCert"
