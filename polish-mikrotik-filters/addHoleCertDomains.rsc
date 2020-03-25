@@ -1,5 +1,17 @@
-# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Wed Mar 25 00:45:03 2020)
+# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Wed Mar 25 01:45:03 2020)
 /ip dns static
+add name="faktypolska21.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="faktypolska20.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="faktypolska19.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="faktypolska18.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="faktypolska17.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="faktypolska15.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="faktypolska13.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="faktypolska11.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="faktypolska10.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="faktypolska9.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="faktypolska5.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="faktypolska3.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="faktypolska1.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="faktypolska7.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="faktypolska6.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
