@@ -1,4 +1,4 @@
-# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Wed Mar 25 18:45:03 2020)
+# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Wed Mar 25 19:45:03 2020)
 /ip dns static
 add name="allegro.ogloszenie.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="directpayment.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
@@ -35,10 +35,13 @@ add name="in-post.org" address="195.187.6.34" comment="addHoleCertDomains HoleCe
 add name="informacje-news.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="moneywp.website" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="nagolasa.0e0.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="oplat1y.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="oplata3981.tpskp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="paczkadpd.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="payoner.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="payooner.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="rachinfo.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="tpskp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wezwanieus.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="windykacjajagoda.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.allegro.ogloszenie.space" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
