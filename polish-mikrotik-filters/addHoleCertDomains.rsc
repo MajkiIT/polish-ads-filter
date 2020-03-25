@@ -1,5 +1,8 @@
-# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Wed Mar 25 09:45:02 2020)
+# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Wed Mar 25 10:45:03 2020)
 /ip dns static
+add name="allegro.ogloszenie.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="wezwanieus.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="hrekcustomer.icu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="faktypolska21.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="faktypolska20.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="faktypolska19.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
