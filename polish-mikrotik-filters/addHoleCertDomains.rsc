@@ -1,6 +1,7 @@
-# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Wed Mar 25 19:45:03 2020)
+# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Wed Mar 25 20:45:03 2020)
 /ip dns static
 add name="allegro.ogloszenie.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="allegro.pl.showltem.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="directpayment.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="e-bokpge.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="e-platnosc.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
@@ -41,6 +42,7 @@ add name="paczkadpd.com" address="195.187.6.34" comment="addHoleCertDomains Hole
 add name="payoner.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="payooner.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="rachinfo.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="showltem.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="tpskp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wezwanieus.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="windykacjajagoda.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
