@@ -1,10 +1,11 @@
-# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Wed Mar 25 15:45:03 2020)
+# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Wed Mar 25 16:45:04 2020)
 /ip dns static
 add name="allegro.ogloszenie.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="directpayment.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="e-bokpge.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="e-platnosc.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="energabok.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="fakt24warszawa.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="faktury3941.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="fakty24-live.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="faktypolska1.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
@@ -26,6 +27,7 @@ add name="faktypolska7.b-cdn.net" address="195.187.6.34" comment="addHoleCertDom
 add name="faktypolska8.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="faktypolska9.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="get-payment.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="ghastlyf.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="hrekcustomer.icu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="in-post.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="in-post.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
