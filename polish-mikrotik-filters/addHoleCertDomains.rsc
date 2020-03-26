@@ -1,4 +1,4 @@
-# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Thu Mar 26 17:45:03 2020)
+# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Thu Mar 26 18:15:03 2020)
 /ip dns static
 add name="adkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegro.ogloszenie.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
@@ -30,6 +30,7 @@ add name="faktypolska8.b-cdn.net" address="195.187.6.34" comment="addHoleCertDom
 add name="faktypolska9.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="get-payment.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ghastlyf.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="gov-24.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="hrekcustomer.icu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="in-post.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="in-post.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
@@ -41,6 +42,7 @@ add name="oplat1y.com" address="195.187.6.34" comment="addHoleCertDomains HoleCe
 add name="oplata3981.tpskp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="opliaty.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="paczkadpd.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="paqu24.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="payoner.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="payooner.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="rachinfo.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
