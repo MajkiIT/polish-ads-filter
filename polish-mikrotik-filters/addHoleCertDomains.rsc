@@ -1,4 +1,4 @@
-# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Fri Mar 27 00:15:03 2020)
+# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Fri Mar 27 00:45:02 2020)
 /ip dns static
 add name="adkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegro.ogloszenie.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
@@ -9,6 +9,7 @@ add name="dziennikprasowy.eu" address="195.187.6.34" comment="addHoleCertDomains
 add name="dziennikprasowy.pusiaweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="e-bokpge.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="e-platnosc.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="efakty-koronawirus24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="energabok.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="eoplaty.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="fakt24warszawa.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
