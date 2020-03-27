@@ -1,4 +1,4 @@
-# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Fri Mar 27 18:45:03 2020)
+# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Fri Mar 27 19:15:03 2020)
 /ip dns static
 add name="adkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegro.ogloszenie.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
@@ -52,6 +52,7 @@ add name="paczkadpd.com" address="195.187.6.34" comment="addHoleCertDomains Hole
 add name="paqu24.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="payoner.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="payooner.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="platnosci24.services" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="quebocalyalbum.byethost6.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="rachinfo.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="service-pay.company" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
@@ -66,6 +67,7 @@ add name="www.adkokurier.org" address="195.187.6.34" comment="addHoleCertDomains
 add name="www.allegro.ogloszenie.space" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.dziennikprasowy.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.gls-parcel.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.gov-24.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.opliaty.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.otodomweryfikacja.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.zdjecie-facebook-zdj3425jeio.dkonto.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
