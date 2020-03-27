@@ -1,4 +1,4 @@
-# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Fri Mar 27 13:45:02 2020)
+# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Fri Mar 27 14:15:03 2020)
 /ip dns static
 add name="adkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegro.ogloszenie.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
@@ -54,6 +54,7 @@ add name="payooner.club" address="195.187.6.34" comment="addHoleCertDomains Hole
 add name="quebocalyalbum.byethost6.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="rachinfo.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="service-pay.company" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="serwer2081930.home.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="showltem.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="tpskp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="us5-update.weebly.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
