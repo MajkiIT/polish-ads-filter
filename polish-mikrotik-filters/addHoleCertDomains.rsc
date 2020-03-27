@@ -1,4 +1,4 @@
-# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Fri Mar 27 14:45:02 2020)
+# This script adds domains from hole.cert.pl to a block list via static dns entries (list created: Fri Mar 27 15:15:03 2020)
 /ip dns static
 add name="adkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegro.ogloszenie.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
@@ -67,4 +67,6 @@ add name="www.dziennikprasowy.eu" address="195.187.6.34" comment="addHoleCertDom
 add name="www.gls-parcel.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.opliaty.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.otodomweryfikacja.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.zdjecie-facebook-zdj3425jeio.dkonto.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="zaplaty.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="zdjecie-facebook-zdj3425jeio.dkonto.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
