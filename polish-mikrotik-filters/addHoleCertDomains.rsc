@@ -3,6 +3,7 @@
 add name="adkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegro.ogloszenie.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegro.pl.showltem.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="allegro.pl.showlten.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allpl.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="directpayment.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dziennikprasowy.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
