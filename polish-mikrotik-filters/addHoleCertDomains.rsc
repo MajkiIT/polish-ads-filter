@@ -59,6 +59,7 @@ add name="platnik247.online" address="195.187.6.34" comment="addHoleCertDomains 
 add name="platnosci24.services" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="quebocalyalbum.byethost6.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="rachinfo.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="radkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="service-pay.company" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="serwer2081930.home.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="showltem.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
