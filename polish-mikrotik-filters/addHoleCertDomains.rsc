@@ -71,6 +71,7 @@ add name="windykacjajagoda.org" address="195.187.6.34" comment="addHoleCertDomai
 add name="wszystkowpolsce.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.adkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.allegro.ogloszenie.space" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.allegro.pl.showlten.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.dziennikprasowy.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.gls-parcel.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.gov-24.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
