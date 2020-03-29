@@ -19,6 +19,7 @@ add name="fakt24warszawka.com.pl" address="195.187.6.34" comment="addHoleCertDom
 add name="faktury3941.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="fakty-koronawirus24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="fakty24-live.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="fakty24-swiat.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="faktypolska1.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="faktypolska10.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="faktypolska11.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
