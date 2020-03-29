@@ -71,6 +71,7 @@ add name="tpskp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert
 add name="us5-update.weebly.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wezwanieus.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="windykacjajagoda.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="wp-regulamin.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wszystkowpolsce.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.247platnosci.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.adkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
