@@ -84,6 +84,7 @@ add name="www.gov-24.com" address="195.187.6.34" comment="addHoleCertDomains Hol
 add name="www.opliaty.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.otodomweryfikacja.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.radkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.regulamin-wp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.wp-regulamin.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.zdjecie-facebook-zdj3425jeio.dkonto.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="zaplaty.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
