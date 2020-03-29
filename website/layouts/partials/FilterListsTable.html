@@ -1,0 +1,169 @@
+<input type="search" id="search" class="light-table-filter" data-table="table" placeholder="Szukaj...">
+<div class="m-auto">
+	<select class="selectpicker ddlFilterTableRow mb-3 mr-sm-2 categories" data-attribute="category" multiple="multiple" title="Wybierz kategorię..." data-style="btn-outline-primary" data-actions-box="true" data-selected-text-format="count" data-width="fit">
+		<option value="bezpieczeństwo" data-icon="icon-dropdown security-icon">Bezpieczeństwo</option>
+		<option value="reklamy" data-icon="icon-dropdown ads-icon">Reklamy</option>
+		<option value="anty-adblock" data-icon="icon-dropdown adblockDetect-icon">Anty-Adblock</option>
+		<option value="społecznościowe" data-icon="icon-dropdown socialCategory-icon">Społecznościowe</option>
+		<option value="ciasteczka" data-icon="icon-dropdown sweetCategory-icon">Komunikaty dot. ciasteczek/RODO</option>
+		<option value="irytujące" data-icon="icon-dropdown annoyance-icon">Elementy irytujące</option>
+		<option value="RSS" data-icon="icon-dropdown rssCategory-icon">RSS</option>
+		<option value="sponsorowane" data-icon="icon-dropdown sponsor-icon">Sponsorowane</option>
+		<option value="e-handel" data-icon="icon-dropdown ecommerce-icon">E-handel</option>
+		<option value="prywatność" data-icon="icon-dropdown privacy-icon">Prywatność</option>
+	</select>
+	<select class="selectpicker ddlFilterTableRow mb-3 mr-sm-2 origin" data-attribute="lang" multiple="multiple" title="Wybierz pochodzenie..." data-style="btn-outline-primary" data-container="body" data-max-options="1">
+		<option value="pl">Polskie</option>
+		<option value="zagraniczne">Zagraniczne</option>
+	</select>
+	<select class="selectpicker ddlFilterTableRow mb-3 adblocker" data-attribute="adblocker" multiple="multiple" title="Wybierz adblockera..." data-style="btn-outline-primary" data-max-options="2" data-selected-text-format="count">
+		<option value="AB" data-icon="icon-dropdown AB-icon">AdBlock</option>
+		<option value="ABP" data-icon="icon-dropdown ABP-icon">Adblock Plus</option>
+		<option value="uBO" data-icon="icon-dropdown uBO-icon">uBlock Origin</option>
+		<option value="NA" data-icon="icon-dropdown NA-icon">Nano Adblocker</option>
+		<option value="AG" data-icon="icon-dropdown AG-icon">AdGuard</option>
+	</select>
+</div>
+
+<table class="responsive table table-sm table-striped table-bordered table-light sortable-theme" data-sortable>
+	<thead>
+		<tr>
+			<th scope="col" class="text-center font-weight-bold" >LISTA</th>
+			<th scope="col" class="text-center font-weight-bold" >ELEMENTY</th>
+			<th scope="col" class="text-center font-weight-bold" data-sortable="false">LINKI</th>
+			<th scope="col" class="text-center font-weight-bold" data-sortable="false">WYMAGANE</th>
+			<th scope="col" class="text-center font-weight-bold" data-sortable="false">ZGODNOŚĆ</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{ range $.Site.Data.FilterLists.items }}
+		<tr class="Row" data-category="{{.category}}" data-lang="{{ if .lang }} {{.lang}} {{else}}zagraniczne{{end}}" data-adblocker="{{ if findRE .adblocker "hosts"}}hosts, Ph{{ else if findRE "ABP" .adblocker }}AB, ABP, uBO, NA, AG{{ else if (findRE "uBO, AG" .adblocker ) and not (findRE "ABP" .adblocker) and not (findRE "NA" .adblocker)}}uBO, NA, AG{{else if (findRE "uBO" .adblocker )}}uBO, NA{{else}}{{.adblocker}}{{end}}">
+			<td class="align-middle" data-label="LISTA"><span>{{.title}}</span></td>
+			<td class="align-middle" data-label="ELEMENTY"><span>{{ .desc | $.Page.RenderString }}</span></td>
+			<td class="align-middle" data-label="LINKI">
+				<div class="span">
+					<div class="btn-group-vertical">
+						{{ if not (findRE .adblocker "hosts|Ph" ) }}
+						<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{.subscribe}}&amp;title={{.title}}">Subskrybuj</a>
+						{{end}}
+
+						<a class="btn btn-info mb-2r" href="{{.subscribe}}" target="_blank" rel="noopener">Podgląd</a>
+
+						{{with .uBO_supp}}<a class="btn btn-info mb-2r" href="{{.}}" target="_blank" rel="noopener" title="Podgląd uzupełnienia dla uBO">Podgląd uBO</a>{{end}}
+
+						{{with .AG_supp}}<a class="btn btn-info mb-2r" href="{{.}}" target="_blank" rel="noopener" title="Podgląd uzupełnienia dla AdGuarda">Podgląd AG</a>{{end}}
+
+						{{with .supp}}<a class="btn btn-info mb-2r" href="{{.}}" target="_blank" rel="noopener" title="Podgląd uzupełnienia dla uBO i AdGuarda">Podgląd uzup.</a>{{end}}
+
+						{{with .modules}}<a class="btn btn-modules mb-2r" href="{{.}}" target="_blank" rel="noopener">Moduły</a>{{end}}
+
+						{{with .issues}}<a class="btn btn-danger mb-2r" href="{{.}}" target="_blank" rel="noopener">Zgłoś problem</a>{{end}}
+
+						{{with .form}}<a class="btn btn-danger mb-2r" href="{{.}}" target="_blank" rel="noopener">Formularz</a>{{end}}
+
+						{{with .forum}}<a class="btn btn-danger mb-2r" href="{{.}}" target="_blank" rel="noopener">Forum</a>{{end}}
+
+						{{with .chat}}<a class="btn btn-danger mb-2r" href="" data-secret="{{. | base64Encode}}" onmouseover="this.href = atob(this.dataset.secret);" target="_blank" rel="noopener">Poczatuj</a>{{end}}
+
+						{{with .mail}}<a class="btn btn-danger mb-2r" data-secret="{{. | base64Encode}}" href="" onmouseover="this.href = 'mailto:' + atob(this.dataset.secret);">Wyślij maila</a>{{end}}
+
+						{{with .donate}}<a class="btn btn-success mb-2r" href="{{.}}" target="_blank" rel="noopener">Przekaż datek</a>{{end}}
+
+						{{with .home}}<a class="btn btn-secondary mb-2r" href="{{.}}" target="_blank" rel="noopener">Strona główna</a>{{ end }}
+					</div>
+				</div>
+				<span style="display: none;">
+					{{.subscribe}}
+				</span>
+			</td>
+			<td class="align-middle" data-label="WYMAGANE">
+				<div class="span">
+					<div class="btn-group-vertical">
+						{{if ne .requiredType "normal"}}
+						{{if .requiredTitle}}<a class="btn btn-outline-info mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation}}&amp;title={{.requiredTitle}}">{{.requiredTitle}}</a>{{end}}
+						{{else}}
+						{{if .requiredTitle}}<a class="btn btn-outline-info mb-2r" href="{{.requiredLocation}}" target="_blank" rel="noopener">{{.requiredTitle}}</a>{{end}}
+						{{end}}
+
+						{{if ne .requiredType2 "normal"}}
+						{{if .requiredTitle2}}<a class="btn btn-outline-info mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation2}}&amp;title={{.requiredTitle2}}">{{.requiredTitle2}}</a>{{end}}
+						{{else}}
+						{{if .requiredTitle2}}<a class="btn btn-outline-info mb-2r" href="{{.requiredLocation2}}" target="_blank" rel="noopener">{{.requiredTitle2}}</a>{{end}}
+						{{end}}
+
+						{{if ne .requiredType3 "normal"}}
+						{{if .requiredTitle3}}<a class="btn btn-outline-info mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation3}}&amp;title={{.requiredTitle3}}">{{.requiredTitle3}}</a>{{end}}
+						{{else}}
+						{{if .requiredTitle3}}<a class="btn btn-outline-info mb-2r" href="{{.requiredLocation3}}" target="_blank" rel="noopener">{{.requiredTitle3}}</a>{{end}}
+						{{end}}
+
+						{{if ne .requiredType4 "normal"}}
+						{{if .requiredTitle4}}<a class="btn btn-outline-info mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation4}}&amp;title={{.requiredTitle4}}">{{.requiredTitle4}}</a>{{end}}
+						{{else}}
+						{{if .requiredTitle4}}<a class="btn btn-outline-info mb-2r" href="{{.requiredLocation4}}" target="_blank" rel="noopener">{{.requiredTitle4}}</a>{{end}}
+						{{end}}
+
+						{{if ne .requiredType5 "normal"}}
+						{{if .requiredTitle5}}<a class="btn btn-outline-info mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation5}}&amp;title={{.requiredTitle5}}">{{.requiredTitle5}}</a>{{end}}
+						{{else}}
+						{{if .requiredTitle5}}<a class="btn btn-outline-info mb-2r" href="{{.requiredLocation5}}" target="_blank" rel="noopener">{{.requiredTitle5}}</a>{{end}}
+						{{end}}
+
+						{{if (not .requiredTitle) (not .requiredTitle2) (not .requiredTitle3) (not .requiredTitle4) (not .requiredTitle5)}}
+						-
+						{{end}}
+					</div>
+				</div>
+			</td>
+			<td class="align-middle" data-label="ZGODNOŚĆ">
+				<span>
+					{{ if findRE "ABP" .adblocker }}
+					<a href="https://getadblock.com/" target="_blank" rel="noopener"><img src="{{ "images/AdBlock.svg" | relURL }}" style="width:32px;height:32px" title="AdBlock"></a>
+					<a href="https://adblockplus.org/" target="_blank" rel="noopener"><img src="{{ "images/ABP_32.png" | relURL }}" style="width:32px;height:32px" title="Adblock Plus"></a>
+					<a href="https://github.com/gorhill/uBlock" target="_blank" rel="noopener"><img src="{{ "images/uBO_32.png" | relURL }}" style="width:32px;height:32px" title="uBlock Origin"></a>
+					<a href="https://github.com/NanoAdblocker/NanoCore" target="_blank" rel="noopener"><img src="{{ "images/Nano_32.png" | relURL }}" style="width:32px;height:32px" title="Nano Adblocker"></a>
+					<a href="https://adguard.com/" target="_blank" rel="noopener"><img src="{{ "images/AdGuard_logo_32.png" | relURL }}" style="width:32px;height:32px" title="AdGuard"></a>
+					{{end}}
+
+					{{ if (findRE "uBO" .adblocker) and not (findRE "ABP" .adblocker) and not (findRE "NA" .adblocker) }}
+					<a href="https://github.com/gorhill/uBlock" target="_blank" rel="noopener"><img src="{{ "images/uBO_32.png" | relURL }}" style="width:32px;height:32px" title="uBlock Origin"></a>
+					<a href="https://github.com/NanoAdblocker/NanoCore" target="_blank" rel="noopener"><img src="{{ "images/Nano_32.png" | relURL }}" style="width:32px;height:32px" title="Nano Adblocker"></a>
+					{{end}}
+
+					{{ if (findRE "NA" .adblocker) and not (findRE "ABP" .adblocker) }}
+					<a href="https://github.com/NanoAdblocker/NanoCore" target="_blank" rel="noopener"><img src="{{ "images/Nano_32.png" | relURL }}" style="width:32px;height:32px" title="Nano Adblocker"></a>
+					{{end}}
+
+					{{ if (findRE "AG" .adblocker) and not (findRE "ABP" .adblocker) }}
+					<a href="https://adguard.com/" target="_blank" rel="noopener"><img src="{{ "images/AdGuard_logo_32.png" | relURL }}" style="width:32px;height:32px" title="AdGuard"></a>
+					{{end}}
+
+					{{ if findRE "hosts" .adblocker }}
+					<a href="https://adaway.org/" target="_blank" rel="noopener"><img src="{{ "images/AdAway.svg" | relURL }}" style="width:32px;height:32px" title="AdAway"></a>
+					<a href="https://adguard.com/pl/adguard-home/overview.html" target="_blank" rel="noopener"><img src="{{ "images/AGHome.svg" | relURL }}" style="width:32px;height:32px" title="AdGuard Home"></a>
+					<a href="https://blokada.org/" target="_blank" rel="noopener"><img src="{{ "images/Blokada.png" | relURL }}" style="width:32px;height:32px" title="Blokada"></a>
+					<a href="https://pi-hole.net/" target="_blank" rel="noopener"><img src="{{ "images/Pi-hole.svg" | relURL }}" style="width:32px;height:32px" title="Pi-hole"></a>
+					<a href="https://diversion.ch/" target="_blank" rel="noopener"><img src="{{ "images/Diversion.png" | relURL }}" style="width:32px;height:32px" title="Diversion"></a>
+					<a href="https://www.reddit.com/r/pfBlockerNG/" target="_blank" rel="noopener"><img src="{{ "images/pfBlockerNG.jpg" | relURL }}" style="width:32px;height:32px" title="pfBlockerNG"></a>
+					<a href="https://zenz-solutions.de/personaldnsfilter/" target="_blank" rel="noopener"><img src="{{ "images/personalDNSFilter.svg" | relURL }}" style="width:32px;height:32px" title="personalDNSfilter"></a>
+					{{end}}
+
+					{{ if findRE "Ph" .adblocker }}
+					<a href="https://pi-hole.net/" target="_blank" rel="noopener"><img src="{{ "images/Pi-hole.svg" | relURL }}" style="width:32px;height:32px" title="Pi-hole"></a>
+					{{end}}
+				</span>
+			</td>
+		</tr>
+		{{end}}
+	</tbody>
+</table>
+
+
+{{ $selectFilter := resources.Get "js/multipleSelectFilter.js" }}
+{{ $select := resources.Get "js/bootstrap-select.min.js" }}
+{{ $selectPolish := resources.Get "js/bootstrap-select-translations/defaults-pl_PL.min.js" }}
+{{ $filterSearch := resources.Get "js/light-table-filter.min.js" }}
+{{ $sort := resources.Get "js/sortable.min.js" }}
+{{ $js := slice $selectFilter $select $selectPolish $filterSearch $sort | resources.Concat "js/table_bundle.js" | minify | fingerprint }}
+<script defer src="{{ $js.Permalink | relURL }}" integrity="{{ $js.Data.Integrity }}"></script>
+
