@@ -1,5 +1,6 @@
 # This script adds domains from hole.cert.pl to a block list via static dns entries
 /ip dns static
+add name="247platnosci.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="adkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegro.ogloszenie.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegro.pl.showltem.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
@@ -69,6 +70,7 @@ add name="us5-update.weebly.com" address="195.187.6.34" comment="addHoleCertDoma
 add name="wezwanieus.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="windykacjajagoda.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wszystkowpolsce.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.247platnosci.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.adkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.allegro.ogloszenie.space" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.allegro.pl.showlten.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
