@@ -1,0 +1,18 @@
+<table class="responsive table table-sm table-striped table-bordered table-light">
+	<thead>
+		<tr>
+			<th scope="col" class="text-center font-weight-bold">WŁASNOŚĆ </th>
+			<th scope="col" class="text-center font-weight-bold">OPIS</th>
+			<th scope="col" class="text-center font-weight-bold">WYMAGANE</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{ range $.Site.Data.FilterListsDataModel.items }}
+		<tr class="Row">
+			<td class="align-middle" data-label="WŁASNOŚĆ"><span><code>{{.property }}</code></span></td>
+			<td class="align-middle" data-label="OPIS"><span>{{ .desc | $.Page.RenderString }}</span></td>
+			<td class="align-middle" data-label="WYMAGANE"><span>{{if .required}}X{{end}}</span></td>
+		</tr>
+		{{end}}
+	</tbody>
+</table>

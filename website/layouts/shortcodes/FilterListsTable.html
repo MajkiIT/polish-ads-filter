@@ -1,10 +1,6 @@
-{{ define "main" }}
-{{ with .Content }}
-{{ . }}
-{{ end }}
 <section class="row td-box td-box--gradient td-box--height-auto">
 	<div class="col">
-		<div class="row ">
+		<div class="row">
 			{{ partial "FilterListsTable.html" . }}
 		</div>
 		<div class="pageinfo pageinfo-primary">
@@ -12,4 +8,3 @@
 		</div>
 	</div>
 </section>
-{{ end }}

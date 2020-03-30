@@ -2,6 +2,7 @@
 title: "Jak zapobiec zamienianiu linków przez Google przy kliknięciu PPM?"
 weight: 4
 date: 26 Dec 2018
+slug: "search-link-fix"
 ---
 Jak zapewne zauważyliście, jeśli wyszukacie coś przez Google i klikniecie to prawym przyciskiem myszy, aby skopiować link, to Google zamienia go np. na coś takiego:
 ```

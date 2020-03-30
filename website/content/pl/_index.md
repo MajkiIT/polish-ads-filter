@@ -8,3 +8,5 @@
 [![Issues o](https://img.shields.io/github/issues/MajkiIT/polish-ads-filter.svg?colorB=1caf92)](https://github.com/MajkiIT/polish-ads-filter/issues)
 [![Patronite](https://img.shields.io/website-donate-down-green-red/https/patronite.pl/polskiefiltry.svg?label=Patronite&colorB=1caf92)](https://patronite.pl/polskiefiltry)
 {{% /blocks/lead %}}
+
+{{< FilterListsTable >}}
