@@ -90,6 +90,7 @@ add name="www.fakty24-swiat.pl" address="195.187.6.34" comment="addHoleCertDomai
 add name="www.gls-parcel.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.gnreg.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.gov-24.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.informacje24fakt.pusiaweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.opliaty.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.otodomweryfikacja.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.radkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
