@@ -7,6 +7,8 @@ add name="allegro.pl.showltem.pl" address="195.187.6.34" comment="addHoleCertDom
 add name="allegro.pl.showlten.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allpl.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="directpayment.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="dzienniknews.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="dzienniknews.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dziennikprasowy.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dziennikprasowy.pusiaweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="e-bokpge.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
