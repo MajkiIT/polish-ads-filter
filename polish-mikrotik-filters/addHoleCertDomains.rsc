@@ -7,6 +7,7 @@ add name="allegro.ogloszenie.best" address="195.187.6.34" comment="addHoleCertDo
 add name="allegro.pl.showltem.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegro.pl.showlten.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allpl.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="bookofoffers.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="cristal2017.argo.host" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="directpayment.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dzienniknews.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
