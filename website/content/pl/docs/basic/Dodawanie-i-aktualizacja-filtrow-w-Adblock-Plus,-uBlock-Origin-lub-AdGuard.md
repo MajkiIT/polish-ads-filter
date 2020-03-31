@@ -3,6 +3,7 @@ title: "Dodawanie i aktualizacja filtrów w Adblock Plus, uBlock Origin lub AdGu
 weight: 1
 date: 31 Dec 2018
 author: KonoromiHimaries
+slug: "add-update-filter"
 ---
 
 # **Dodawanie**
