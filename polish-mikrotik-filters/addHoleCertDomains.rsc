@@ -58,6 +58,7 @@ add name="interneip.org" address="195.187.6.34" comment="addHoleCertDomains Hole
 add name="ipayyou.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="koronawirus.hekko24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="losososdesign.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="lowpay.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="moneywp.website" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="nagolasa.0e0.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="oplat1y.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
