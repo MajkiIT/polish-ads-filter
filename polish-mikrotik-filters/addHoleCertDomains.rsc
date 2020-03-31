@@ -10,6 +10,7 @@ add name="allpl.club" address="195.187.6.34" comment="addHoleCertDomains HoleCer
 add name="bookofoffers.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="charisministries.id" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="cristal2017.argo.host" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="dhl-percel.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="directpayment.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dzienniknews.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dzienniknews.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
