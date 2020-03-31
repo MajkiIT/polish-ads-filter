@@ -53,6 +53,7 @@ add name="in-post.org" address="195.187.6.34" comment="addHoleCertDomains HoleCe
 add name="informacje-news.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="informacje24fakt.pusiaweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="interneip.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="ipayyou.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="koronawirus.hekko24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="moneywp.website" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="nagolasa.0e0.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
