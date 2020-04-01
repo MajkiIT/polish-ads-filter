@@ -68,6 +68,7 @@ add name="informacje-news.eu" address="195.187.6.34" comment="addHoleCertDomains
 add name="informacje24fakt.pusiaweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="interneip.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ipayyou.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="istrefa.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="itelefon.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="koronawirus.hekko24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="losososdesign.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
