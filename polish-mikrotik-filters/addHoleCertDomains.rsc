@@ -85,6 +85,7 @@ add name="regulamin-wp.com" address="195.187.6.34" comment="addHoleCertDomains H
 add name="service-pay.company" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="serwer2081930.home.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="showltem.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="sknrtel.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="tpskp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="us5-update.weebly.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wezwanieus.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
