@@ -123,6 +123,7 @@ add name="www.gls-parcel.com" address="195.187.6.34" comment="addHoleCertDomains
 add name="www.gnreg.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.gov-24.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.informacje24fakt.pusiaweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.istrefa.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.itelefon.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.oplac-abonament24.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.opliaty.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
