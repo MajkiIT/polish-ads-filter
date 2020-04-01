@@ -100,6 +100,7 @@ add name="sknrtel.com" address="195.187.6.34" comment="addHoleCertDomains HoleCe
 add name="tpskp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="us5-update.weebly.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wezwanieus.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="wiadomoscipolska99.pro-linuxpl.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="windykacjajagoda.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wp-regulamin.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wszystkowpolsce.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
