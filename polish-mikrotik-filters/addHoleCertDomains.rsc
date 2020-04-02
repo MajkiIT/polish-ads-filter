@@ -5,6 +5,7 @@ add name="247platnosci.online" address="195.187.6.34" comment="addHoleCertDomain
 add name="24platnosci.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="abonament-oplac.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="adkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="aktualizacja-regulamin.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="alkoskurier.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegro.ogloszenie.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegro.pl.showltem.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
