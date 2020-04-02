@@ -55,6 +55,7 @@ add name="faktypolska6.b-cdn.net" address="195.187.6.34" comment="addHoleCertDom
 add name="faktypolska7.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="faktypolska8.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="faktypolska9.b-cdn.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="findmyiphone-id.pw" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="frankokurier.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="gazeta.pl.com.bz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="get-payment.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
