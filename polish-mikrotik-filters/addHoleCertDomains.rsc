@@ -139,5 +139,7 @@ add name="www.radkokurier.org" address="195.187.6.34" comment="addHoleCertDomain
 add name="www.regulamin-wp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.wp-regulamin.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.zdjecie-facebook-zdj3425jeio.dkonto.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.zlecone.xn.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="zaplaty.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="zdjecie-facebook-zdj3425jeio.dkonto.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="zlecone.xn.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
