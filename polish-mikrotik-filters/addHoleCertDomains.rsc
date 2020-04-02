@@ -89,6 +89,7 @@ add name="payooner.club" address="195.187.6.34" comment="addHoleCertDomains Hole
 add name="platnik247.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="platnosci24.services" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="polskiemedia.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="pranksduck.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="quebocalyalbum.byethost6.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="rachinfo.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="radkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
