@@ -134,6 +134,7 @@ add name="www.dzienniknews.pl" address="195.187.6.34" comment="addHoleCertDomain
 add name="www.dziennikprasowy.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.einfo24.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fakty24-swiat.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.gackokurier.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.gls-parcel.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.gnreg.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.gov-24.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
