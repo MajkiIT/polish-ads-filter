@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 4 April 2020
+! Last modified: 5 April 2020
 ! Expires: 1 day
-! Version: 2020040402
+! Version: 2020040501
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -19,7 +19,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020040402 aktualizacja: sob, 4 kwietnia 2020, 21:55:00
+! v.2020040501 aktualizacja: nie, 5 kwietnia 2020, 09:20:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -2384,6 +2384,7 @@ punkt.media##.advertpattern, .flexbannergrouppattern
 purepc.pl##A[datab][href]
 purepc.pl##DIV > A[href^="http"][style^="display:block;"]
 purepc.pl##[href^="/r3d1r.php"]
+purepc.pl##[href^="/redir.php"]
 purepc.pl##BODY > [href^="/red1r.php"], BODY > DIV > DIV > [href^="/red1r.php"]
 pykownia.pl##.ipsWidget:nth-of-type(8)
 pyszne.pl##.yd-banner
@@ -4210,6 +4211,7 @@ horrortube.fun##A[href*="viliaff.com"], .col-md-8 > A
 ||cloudfront.net/atrk.js$script,domain=www.flashx.net
 ||www.google.com$popup,domain=www.flashx.net
 ||playtube.ws/js/pop.js$script
+||drda5yf9kgz5p.cloudfront.net^
 !
 !28#--------------------------Rules for pages with random adv scripts regex------------!
 /apu.php?zoneid
@@ -4227,7 +4229,7 @@ horrortube.fun##A[href*="viliaff.com"], .col-md-8 > A
 /^https?:\/\/[a-z0-9-]{8,30}\.[a-z]{2,11}\/[a-z]{1,3}\/[0-9]{5,10}/$script,domain=cda-tv.pl
 /^https?:\/\/[a-z0-9]{10,20}\.com\/[0-9]{5,10}\.html/$subdocument,domain=ekino-tv.pl
 /^https?:\/\/[a-z0-9]{5,}\.(com|top|pro)\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9/]{4,}\.js/$script,domain=vidto.me|fileone.tv|alltube.tv|srkcast.com|vidfile.net|alltube.pl|whostreams.net|szukajka.tv|cda-hd.co|filman.cc|cda-hd.cc|horrortube.fun|onlystream.tv|onlystream.tv|jetload.net|ekino.pw|waaw.tv
-/^https?:\/\/[a-zA-Z.0-9]{7,}\.(com|bid|info)\/[a-zA-Z.-]{1,}\.js/$script,domain=devil-torrents.pl|electro-torrent.pl|vidlox.tv|segos.es|fileone.tv|raptu.com|vidfile.net|sharevideo.pl|sharing-box.cloud|vidstream.xyz|cloudupload.co|veecast.net|openkatalog.com|shinden.pl|tele-wizja.is|ekinomaniak.tv|hqq.watch|whostreams.net|seriale-po-polsku.pl|virpe.com|filman.cc|horrortube.fun|onlystream.tv|clipwatching.com|upstream.to|videopenny.net|flashx.net|vidspace.io|cdahd.co
+/^https?:\/\/[a-zA-Z.0-9]{7,}\.(com|bid|info)\/[a-zA-Z.-]{1,}\.js/$script,domain=devil-torrents.pl|electro-torrent.pl|vidlox.tv|segos.es|fileone.tv|raptu.com|vidfile.net|sharevideo.pl|sharing-box.cloud|vidstream.xyz|cloudupload.co|veecast.net|openkatalog.com|shinden.pl|tele-wizja.is|ekinomaniak.tv|hqq.watch|whostreams.net|seriale-po-polsku.pl|virpe.com|filman.cc|horrortube.fun|onlystream.tv|clipwatching.com|upstream.to|videopenny.net|flashx.net|vidspace.io|cdahd.co|upzone.cc
 /^https?:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=seriale-po-polsku.pl|animezone.pl
 /^https?:\/\/[a-zA-Z0-9]{7,}\.com\//$script,domain=horrortube.fun|ekino.pw
 /^https?:\/\/[a-zA-Z0-9]{5,10}\.[a-z]{2,10}\/[a-zA-Z0-9?_=&-.%]{50,70}/$subdocument,script,popup,domain=tele-wizja.is|widestream.io|cdahd.co|onlystream.tv
