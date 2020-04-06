@@ -157,6 +157,7 @@ add name="www.informacje24fakt.pusiaweb.com" address="195.187.6.34" comment="add
 add name="www.istrefa.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.itelefon.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.kirkolin.ml" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.monikareplin.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.onet-zaginieni-24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.oplac-abonament24.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.opliaty.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
