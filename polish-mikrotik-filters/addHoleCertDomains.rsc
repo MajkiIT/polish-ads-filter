@@ -85,6 +85,7 @@ add name="koronawirus.hekko24.pl" address="195.187.6.34" comment="addHoleCertDom
 add name="losososdesign.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="lowpay.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="moneywp.website" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="monikareplin.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="nagolasa.0e0.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="netflix-mail.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="onet-zaginieni-24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
