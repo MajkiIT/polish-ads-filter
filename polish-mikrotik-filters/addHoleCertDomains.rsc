@@ -189,6 +189,7 @@ add name="www.przechwyconeefotki.eu" address="195.187.6.34" comment="addHoleCert
 add name="www.przechwyconeefotki.pusiaweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.przechwyconefotki24.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.przechwyconefotki24.pusiaweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.rachuneki.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.radkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.regulamin-wp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.sprnr59713.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
