@@ -117,6 +117,7 @@ add name="przechwyconefotki24.eu" address="195.187.6.34" comment="addHoleCertDom
 add name="przechwyconefotki24.pusiaweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="quebocalyalbum.byethost6.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="rachinfo.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="rachuneki.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="radkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="regulamin-poczty.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="regulamin-wirtualnapolska.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
