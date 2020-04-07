@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 6 April 2020
+! Last modified: 7 April 2020
 ! Expires: 1 day
-! Version: 2020040602
+! Version: 2020040701
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -19,7 +19,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020040602 aktualizacja: pon, 6 kwietnia 2020, 21:20:00
+! v.2020040701 aktualizacja: wt, 7 kwietnia 2020, 15:40:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -877,10 +877,14 @@ eostroleka.pl##DIV[style$="width: 100%; margin: 8px auto; overflow: hidden;"]
 eostroleka.pl##DIV[style="margin-bottom:10px; margin-left:25px; float:left; width:300px; height:300px;"]
 epainfo.pl###custom_html-19, #custom_html-18
 epainfo.pl##.td_block_text_with_title
-epainfo.pl##.wpb_text_column
+epainfo.pl##.wpb_text_column, #epain-752f77f26d6724dc4341c712ac18b0dc
 epainfo.pl##DIV.g-single > IMG
-epainfo.pl#?#.widget_custom_html:-abp-contains(Reklama)
+!epainfo.pl#?#.widget_custom_html:-abp-contains(Reklama)
 epainfo.pl,vipmultimedia.pl##A.gofollow > IMG
+!epainfo.pl##.cad_widget-box > ul > .epain-widget.widget.td_block_template_1
+epainfo.pl##[id^="epain-"] > A[target="_blank"] > IMG
+epainfo.pl##.block-title > span:has-text(REKLAMA)
+epainfo.pl##.block-title > span:has-text(Reklama)
 eparczew.pl###block-block-5
 epd24.net##.boksy-wyroznione.box
 epiotrkow.pl##a[href^="rd.php"]
@@ -1318,6 +1322,7 @@ imokotow.pl##.row:nth-of-type(2) > .fl.w1000
 imokotow.pl##.row:nth-of-type(3) > .fl.w250
 imperiumromanum.edu.pl,portal.dlugoleka.pl###custom_html-9
 indeed.com###related
+info112.pl###main > div > A > IMG
 info.elblag.pl##.ADinfo, #banner-33, .linkwrap, #banner-glowny, #banner-popup
 info.elblag.pl##IMG[alt*="reklamowe"]
 infobeskidy.eu##[href^="http://infobeskidy.eu/sad"], #last_comment > div > IMG, .before
@@ -1691,7 +1696,7 @@ lwowecki.info##.banner_box_frame, #c9071_89_20
 lwypolnocy.pl##.DnnModule-922.DnnModule-DNN_HTML.DnnModule
 m.autocentrum.pl##div.hidden-print > div.at-title
 m.interia.pl###ad-banner_app
-m.poczta.gazeta.pl##.readmailGazetaAdvert
+m.poczta.gazeta.pl##.readmailGazetaAdvert, #slot_001_TOPBOARD.top-box-container
 mapabts.pl##.bane
 mackozer.myapple.pl##.container > .row > .col-xs-12 > .row > .col-md-4 > .well
 magazif.com##.is-stationary.widget.coffee-break
@@ -2236,6 +2241,7 @@ polnocna.tv##A[href^="/ad/"] > IMG
 poloniairlandia.pl##.td-header-style-5.td-header-wrap, #td_uid_7_5abf827b54b35
 polsatnews.pl##.LM__popup
 polscygracze.pl##.gridlove-sidebar > .LfUW8dL1Hl-widget.gridlove-box.widget
+polska-zbrojna.pl##.kornelia
 polskaizbabranzypogrzebowej.pl##.\31 958.has-shadow.article
 polskaligaesportowa.pl##.home-partners
 polskaniepodlegla.pl###section-id-1503913327338, #section-id-1530612923433
@@ -2266,7 +2272,7 @@ pomorska.pl##P[style="font:normal 12px/16px Arial,Tahoma,sans-serif;margin:0;pad
 pomorskiprzewodnikwedkarski.pl##.art-hmenu-extra2, #div.clearfix.art-block:nth-of-type(2), #div.clearfix.art-block:nth-of-type(4), .jmoddiv.clearfix.art-block
 pomu.pl##.Games-addLateral, .Banners-lateral
 ponapisach.pl##[class^="slide-"]
-popkulturysci.pl##[class^="adace_ad_"]
+popkulturysci.pl##[class^="adace_ad_"], .g1-collection-item.g1-injected-unit
 popradio.pl##.slider-23, .slider-10736
 poprostupycha.com.pl###reklama-wlasna
 popularne.pl,popularne.net##[class^="devel-"]
