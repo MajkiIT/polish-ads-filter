@@ -32,6 +32,7 @@ add name="dzienniknews.com.pl" address="195.187.6.34" comment="addHoleCertDomain
 add name="dzienniknews.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dziennikprasowy.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dziennikprasowy.pusiaweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="dziennikuprowadzono.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="e-bokpge.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="e-platnosc.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="efakty-koronawirus24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
