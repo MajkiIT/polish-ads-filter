@@ -93,6 +93,7 @@ add name="istrefa.net" address="195.187.6.34" comment="addHoleCertDomains HoleCe
 add name="itelefon.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="kirkolin.ml" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="koronawirus.hekko24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="lnstagram.pp.ru" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="losososdesign.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="lowpay.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="moneywp.website" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
