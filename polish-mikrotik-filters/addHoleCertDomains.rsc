@@ -188,6 +188,8 @@ add name="www.amonitalia.it" address="195.187.6.34" comment="addHoleCertDomains 
 add name="www.bacuskurier.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.bok.epgnig.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.charisministries.id" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.childalertfakt.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.childalertfakt.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.childalertfakt.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.dhl-percel.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.dostawaca24.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
