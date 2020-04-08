@@ -137,6 +137,7 @@ add name="radkokurier.org" address="195.187.6.34" comment="addHoleCertDomains Ho
 add name="regulamin-poczty.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="regulamin-wirtualnapolska.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="regulamin-wp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="server078515.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="server836207.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="server905483.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="service-pay.company" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
