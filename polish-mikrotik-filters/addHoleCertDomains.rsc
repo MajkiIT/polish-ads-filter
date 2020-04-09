@@ -272,6 +272,7 @@ add name="www.pomagajmypl.net.pl" address="195.187.6.34" comment="addHoleCertDom
 add name="www.pomagajmypl.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.pomagajmypl.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.pomagajmypl.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.porwaniadzieci.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.poszukiwanadziewczynka.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.privacy-email.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.przechwycone-zdjecia-fotki.pusiaweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
