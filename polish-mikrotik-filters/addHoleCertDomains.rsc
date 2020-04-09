@@ -286,6 +286,7 @@ add name="www.panel.home.pl.muna.it" address="195.187.6.34" comment="addHoleCert
 add name="www.panel.home.pl.vespaclub.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.payment24-online.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.platnosci-online.services" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.polskaporwania.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.polskaporwania.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.polskaporwania.net.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.pomagajmypl.net.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
