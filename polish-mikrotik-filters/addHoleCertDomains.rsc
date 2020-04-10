@@ -189,6 +189,7 @@ add name="server078515.nazwa.pl" address="195.187.6.34" comment="addHoleCertDoma
 add name="server095630.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="server730889.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="server836207.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="server866225.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="server905483.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="service-pay.company" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="servicecheck5.wixsite.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
