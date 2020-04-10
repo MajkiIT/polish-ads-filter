@@ -327,6 +327,7 @@ add name="www.regulamin-wp.com" address="195.187.6.34" comment="addHoleCertDomai
 add name="www.server095630.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.server730889.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.server836207.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.server866225.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.server905483.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.sprnr59713.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.sprnr59813.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
