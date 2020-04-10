@@ -333,6 +333,7 @@ add name="www.tvnpolska24.hekko24.pl" address="195.187.6.34" comment="addHoleCer
 add name="www.warszawa-gov.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.wazne-informacje.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.wirtualna-polska.privacy-email.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.worthlessness.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.wp-regulamin.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.wppoczta-regulamin.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.zbyk.drl.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
