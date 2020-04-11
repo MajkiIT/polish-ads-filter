@@ -138,6 +138,7 @@ add name="olszewski.ehost.pl" address="195.187.6.34" comment="addHoleCertDomains
 add name="onet-zaginieni-24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="onet24pl.pvi.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="onetporwanie.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="onetporwanie.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="onetposzukiwani.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="online-platnosc.services" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="online-platnosci.services" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
