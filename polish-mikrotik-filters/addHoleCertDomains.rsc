@@ -53,6 +53,7 @@ add name="efakty-koronawirus24.pl" address="195.187.6.34" comment="addHoleCertDo
 add name="einfo24.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="energabok.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="eoplaty.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="epity2020.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="eurocarsped.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="express-dhl.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="facebook-info.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
