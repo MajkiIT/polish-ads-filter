@@ -137,6 +137,7 @@ add name="moneywp.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCe
 add name="monikareplin.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="nagolasa.0e0.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="netflix-mail.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="nowy-regulamin.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="o2-fakty.pro" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olszewski.ehost.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="onet-zaginieni-24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
