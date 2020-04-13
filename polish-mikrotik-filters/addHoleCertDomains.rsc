@@ -186,6 +186,8 @@ add name="porwaniadzieci.pl" address="195.187.6.34" comment="addHoleCertDomains 
 add name="porwaniapolska.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="porwaniapolska.net.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="porwaniapolska.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="porwaniedziecki24.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="porwaniedziecki24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="poszukiwanadziewczynka.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pranksduck.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="privacy-email.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
