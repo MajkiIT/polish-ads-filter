@@ -364,6 +364,7 @@ add name="www.poszukiwanadziewczynka.eu" address="195.187.6.34" comment="addHole
 add name="www.poszukiwania24.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.poszukiwania24.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.poszukiwania24.net.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.poszukiwania24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.privacy-email.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.przechwycone-zdjecia-fotki.pusiaweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.przechwyconeefotki.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
