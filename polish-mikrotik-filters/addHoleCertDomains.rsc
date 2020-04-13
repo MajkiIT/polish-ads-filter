@@ -52,6 +52,7 @@ add name="e-pomagajmypl.pl" address="195.187.6.34" comment="addHoleCertDomains H
 add name="e-porwaniapolska.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="efakty-koronawirus24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="einfo24.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="emptierbreak.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="energabok.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="eoplaty.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="epity2020.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
