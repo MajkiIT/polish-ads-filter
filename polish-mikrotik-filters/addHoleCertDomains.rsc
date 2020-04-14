@@ -316,6 +316,7 @@ add name="www.e-pomagajmypl.pl" address="195.187.6.34" comment="addHoleCertDomai
 add name="www.e-porwaniapolska.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.e-poszukiwananatalka.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.einfo24.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.epaka.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.eposzukiwananatalka.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.eurocarsped.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.express-dhl.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
