@@ -256,6 +256,7 @@ add name="sprnr59713.net" address="195.187.6.34" comment="addHoleCertDomains Hol
 add name="sprnr59813.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ssl-payu.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="sslpayu.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="sso-cloud-ideabank.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="tematdnia24.h2g.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="tematinfo.hekko24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="tpskp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
