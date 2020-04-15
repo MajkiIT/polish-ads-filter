@@ -110,6 +110,7 @@ add name="heavensp.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleC
 add name="hosting2021623.online.pro" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="hrekcustomer.icu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="i-dziewczynkaporwana.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="icleanammunitio.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="in-post.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="in-post.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="in-post.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
