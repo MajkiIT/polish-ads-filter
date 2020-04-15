@@ -354,6 +354,7 @@ add name="www.informacje24fakt.pusiaweb.com" address="195.187.6.34" comment="add
 add name="www.informujemy.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.ionetporwanie.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.ionetporwanie.net.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.ionetporwanie.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.ionetporwanie.waw.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.iporwaniedziecka24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.iporwaniedziecka24.waw.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
