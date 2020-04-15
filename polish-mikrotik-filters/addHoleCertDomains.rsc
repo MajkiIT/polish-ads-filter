@@ -4,6 +4,7 @@ add name="247platnosc.online" address="195.187.6.34" comment="addHoleCertDomains
 add name="247platnosci.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="24ekspres.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="24platnosci.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="aaronbos0.wixsite.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="abonament-oplac.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="adamdj.ct8.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="adkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
