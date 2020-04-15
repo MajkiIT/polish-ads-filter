@@ -123,6 +123,7 @@ add name="informujemy.eu" address="195.187.6.34" comment="addHoleCertDomains Hol
 add name="interneip.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ionetporwanie.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ionetporwanie.net.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="ionetporwanie.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ionetporwanie.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ionetporwanie.waw.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ipayu.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
