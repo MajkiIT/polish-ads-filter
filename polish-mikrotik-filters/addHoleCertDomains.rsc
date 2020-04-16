@@ -349,6 +349,7 @@ add name="www.childalertfakt.eu" address="195.187.6.34" comment="addHoleCertDoma
 add name="www.childalertfakt.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.childalertfakt.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.childalertfakt.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.dhl-payment.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.dhl-percel.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.dostawaca24.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.dworzecporwaniepl.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
