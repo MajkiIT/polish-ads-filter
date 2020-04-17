@@ -46,6 +46,7 @@ add name="dworzecfakt.eu" address="195.187.6.34" comment="addHoleCertDomains Hol
 add name="dworzecfakt.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dworzecfakt.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dworzecfakt.waw.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="dworzeconline24.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dworzeconline24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dworzeconline24.waw.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dworzecporwanie.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
