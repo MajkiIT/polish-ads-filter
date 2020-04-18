@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2020.4.13.0
-! Last modified: Mon, 13 Apr 2020, 17:23 UTC+02
+! Version: 2020.4.18.0
+! Last modified: Sat, 18 Apr 2020, 17:04 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -18,7 +18,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2020 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2020.4.13.0 aktualizacja: pon, 13 kwi 2020, 17:23 UTC+02
+! v.2020.4.18.0 aktualizacja: sob, 18 kwi 2020, 17:04 UTC+02
 !
 !
 ! Specyficzne reguły ukrywające
@@ -1555,6 +1555,7 @@ pcprwiecbork.pl##.mlab-modal
 pc.net.sosnowiec.pl###stopka > div[style*="position"][style*="absolute"]
 pebx.pl###Notices
 peb.pl###jqibox
+pekao.com.pl##.cookies-accept-message
 peka.poznan.pl###popup-peka
 penguingamers.eu##div#RACKWrapper
 pepiniera.pl##.relative > div:nth-of-type(4)[style="float:left; width:100%; padding-bottom:10px; padding-top:10px; color:#fff; font-size:13px;"]
@@ -1807,6 +1808,8 @@ selsey.pl##.cookie_alert_selsey
 semex.pl,zmkowalczyk.pl###r-overlay
 sempire.pl##.bottom-bar
 sempreinfo.pl###ccm-cookiesDisclosure
+sendgb.com##div.sendgb_cookiewarning
+sendgb.com##.cookie_checker
 senetic.pl###rodoBar
 seni24.pl##.cp-popup, .cp-popup-overlay
 seriale.co###player_warn
@@ -2389,9 +2392,7 @@ cookie-law-popup.js$domain=pl
 com###msccBanner:not(body):not(html)
 com##.is-ready.is-shown.cnil-banner:not(body):not(html)
 com,eu,pl###cookie-notice:not(body):not(html)
-com,pl###catapult-cookie-bar:not(body):not(html)
 com,pl##.cc-revoke:not(body):not(html)
-com,pl##.cc-window[aria-label*="consent"]:not(body):not(html)
 org,pl##amp-consent
 org,pl###amp-user-notification1:not(body):not(html)
 pl##aside[class*="Cookie"]
@@ -2447,6 +2448,7 @@ pl###box_cookie:not(body):not(html)
 pl###box_cookie_info:not(body):not(html)
 pl###bv_cookie-law-info-bar:not(body):not(html)
 pl###cadre_alert_cookies:not(body):not(html)
+pl###catapult-cookie-bar:not(body):not(html)
 pl###ca_banner:not(body):not(html)
 pl###cccwr:not(body):not(html)
 pl###cccwr:not(body):not(html) + #cccwrpad
@@ -2854,6 +2856,7 @@ pl##.box_cookies:not(body):not(html)
 pl##.ccc-widget:not(body):not(html):not(.ccc-chart):not(.ccc-multi)
 pl##.cc-banner:not(body):not(html)
 pl##.cc-cookies:not(body):not(html)
+pl##.cc-window[aria-label*="consent"]:not(body):not(html)
 pl##.cc-window[aria-label="Informacja o ciasteczkach"]:not(body):not(html)
 pl##.cc_banner-wrapper:not(body):not(html)
 pl##.cc_banner:not(body):not(html)
@@ -3238,6 +3241,7 @@ lektury.gov.pl#@#.cookies-box:not(body):not(html)
 motocombo.pl#@##topInfoContainer0
 multikino.pl#@#.cookie-msg-box
 multikino.pl#@#.cookie-msg:not(body):not(html)
+pl#@#.ccc-widget:not(body):not(html)
 volcano.pl#@##cookiesModal
 wins.pl#@#.cookie-container:not(body):not(html)
 @@||consent.cookiefirst.com$domain=swietawdomu.pl
