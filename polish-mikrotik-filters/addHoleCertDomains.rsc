@@ -460,6 +460,7 @@ add name="www.hosting2086464.online.pro" address="195.187.6.34" comment="addHole
 add name="www.i-dworzecporwaniepl.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.i-dziewczynkaporwana.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.idworzecporwaniepl.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.info-24.cloud" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.info-fakty24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.info24-warszawa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.informacje-fakty.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
