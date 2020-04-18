@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista Fanboy's Social Blocking List!
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2020.4.13.0
-! Last modified: Mon, 13 Apr 2020, 17:23 UTC+02
+! Version: 2020.4.18.0
+! Last modified: Sat, 18 Apr 2020, 17:04 UTC+02
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2020 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2020.4.13.0 aktualizacja: pon, 13 kwi 2020, 17:23 UTC+02
+! v.2020.4.18.0 aktualizacja: sob, 18 kwi 2020, 17:04 UTC+02
 !
 !
 ! Popupy
@@ -161,6 +161,9 @@ pl##.facebook-popup
 !
 ! Ogólne reguły ukrywające
 ~pl###bossbyte_slide:lang(pl)
+~pl###wysZakladki > #fb:lang(pl)
+~pl###wysZakladki > #gp:lang(pl)
+~pl###wysZakladki > #in:lang(pl)
 ~pl##.box_facebooklike_wrap:lang(pl)
 ~pl##.kac-sm-blog:lang(pl)
 ~pl##.kac-sm-fb:lang(pl)
@@ -793,7 +796,7 @@ pl,tv##div#facebook-comments[class] > a.comments-facebook[href="#"], .facebook_l
 3dom.pro,abarta.pl,bedziepieklo.pl,e-vox.pl,kubolek.pl,mbmeganarzedzia.pl,motogron.com,naturalo.pl#?#.footer-container div .center.section-title > span:-abp-contains(Znajdziesz nas na)
 3dom.pro,anmur.eu##.top-bar li:nth-of-type(n+3) > .link
 3mk.pl,400.pl,ccnews.pl,konstantinkanin.com,netyou.pl##.cresta-facebook-messenger-box
-3mk.pl,aletorcik.pl,blogujmy24.pl,info.ceneo.pl,magnapolonia.org,moj-kawalek-podlogi.pl,pannaannabiega.pl,phunetcom.pl,polska.sumy.ua,wroclawskiejedzenie.pl###text-8
+3mk.pl,aletorcik.pl,blogujmy24.pl,doradca.tv,info.ceneo.pl,magnapolonia.org,moj-kawalek-podlogi.pl,pannaannabiega.pl,phunetcom.pl,polska.sumy.ua,wroclawskiejedzenie.pl###text-8
 3obieg.pl##.smart-youtube
 3obieg.pl,appki.com.pl,autonom.pl,calkiemzdrowo.pl,domtuiteraz.eu,e-marketingprawniczy.pl,konstantinkanin.com,multigaming.pl,paczka-wiedzy.pl,popradio.pl###text-7
 4dd.pl##.list-12 > li
@@ -2051,6 +2054,7 @@ fokusfashion.com,kupbuty.com###tws_a_0
 foldruk.media.pl###socialmedia-top
 fonopolis.pl##.wce_sociallinks
 foodjobs.pl###tw-slider, #li-slider
+food.bolt.eu##.footer-section-right > .col > div:nth-of-type(1) > a
 footroll.pl##.likebox-facebook
 footsteps.city##.footer-nav-row
 forbot.pl##h3:nth-of-type(11)
@@ -2659,6 +2663,7 @@ kompan.pl##.blog-icon
 komputerswiat.pl,www-komputerswiat-pl.cdn.ampproject.org#?#div > a[href*="facebook.com/GamezillaPL" i]:-abp-has(img)
 komputerswiat.pl,www-komputerswiat-pl.cdn.ampproject.org#?#div > a[href*="facebook.com/komputerswiat" i]:-abp-has(img)
 komputerytychy.pl##.col-md-12:nth-of-type(4) > .panel-default.panel
+komputery-pc.info###Mod107
 komunikacjapabianice.pl#?#td:nth-of-type(5) > table:nth-of-type(17):-abp-contains(Facebook:)
 kom-ster.pl##a > img[src="/images/like-it.png"]
 konecki24.pl##.np-aside-social-wrapper
@@ -2775,7 +2780,6 @@ kutno.net.pl##header .left > a
 kwiaciarnia-fd.pl##.tm-bottom-b div:nth-of-type(2) > .uk-panel > .uk-panel-title > span
 kwiatowaprzesylka.pl##.footer1_15
 kwiatysztuczne.pl##.text-fb, .text-gp, .text-yt
-kwiatyupominki.net,madys.eu,meble-jarocin.com###wysZakladki > #fb
 kzkgop.com.pl,rozklady.kzkgop.pl##.pull-right.col-sm-1 > .btn-sm.btn-default.btn
 laboratoria.net##.lewybannerkontakt > .kontaktarea, .comunity:nth-of-type(-n+2)
 labotiga.pl###sns_botsl .botsl_in > div.col-sm-4:nth-of-type(2)
@@ -3060,6 +3064,7 @@ milworld.pl##.four-up.block-grid div.num3.col:nth-of-type(1)
 minecraft.org.pl##.stone-module.well-sm.well:nth-of-type(3), .col-md-12.col-lg-2:nth-of-type(4)
 minecraft.org.pl##[aria-label="Profil na Facebooku"], [aria-label="Profil na Twitterze"], [aria-label="Kanał na YouTube"], [aria-label="Discord"], [title="Dołącz na serwer Discord Minecraft Polska"]
 ministerstwodobregomydla.pl###menu_contact > #menu_button3_bottom
+ministerstworeklamy.pl##.socialBeam
 mini-max.biz##.footer .BottomMenu > div.column:nth-of-type(4)
 minskmaz.com##.top-icons > a:nth-of-type(2)
 mintos.com##.footer-top div.footer-column:nth-of-type(5)
@@ -3454,7 +3459,7 @@ oskko.net#?#span.style18:nth-of-type(2):-abp-contains(Dołącz do nas na:)
 ostatniatawerna.pl##.module-about.widget
 ostrowmaz.com##.nk-tab
 ostry-sklep.pl##.social-conteiner-outer
-oswiecim112.pl,wat.edu.pl##.topbar_social > ul > li:nth-of-type(2)
+oswiecim112.pl##.topbar_social > ul > li:nth-of-type(2)
 osworld.pl##.td-social-wrap-64.td-social-wrap.td_block_wrap > .block-title
 osworld.pl##.td-s-s-64-meetup
 oszczedzarka.co.uk##.row > .engine-block.small-12.large-3 > center > a > img, .textwidget > p > img[src="/img/ico/skype.png"]
@@ -3754,6 +3759,7 @@ portalkryminalny.pl##.art > .row > div > .pull-right:nth-last-of-type(1)
 portalkujawski.pl###sp-right1
 portalmmo.pl##.nv-ico-fb, .soc-icons > li:nth-of-type(2)
 portalpszczelarski.pl##.element.col-2-7:nth-of-type(2)
+portalspozywczy.pl##.right > .inline > li:nth-of-type(2)
 portalspozywczy.pl##.tabs-2.tabs > .navi > a:nth-of-type(-n+4)
 portalspozywczy.pl#?#.tabs-2.tabs > .panes > .one:-abp-contains(/(Facebook|LinkedIn)/)
 portaltatrzanski.com##.moduletable.m-d
@@ -4101,6 +4107,7 @@ semmelrock.pl##.copyright_right > a[href="https://www.youtube.com/channel/UCnoAU
 sempretaniec.pl##div.col-sm-3.footer-list:nth-of-type(3)
 semtec.pl###sociallinkstop > div > a > img[src^="data:image/png;base64,"]
 senat.gov.pl##.fabcebook
+sendgb.com##.si-linkedin, .si-youtube, .si-facebook, .si-twitter, .si-instagram
 seniorka-z-plecakiem.pl##.flownews-footer-social
 senior.pl##.podziel_links
 senpai.com.pl##a[href="https://www.facebook.com/events/204364196983965/"]
@@ -4759,6 +4766,7 @@ warsztatywyobrazni.com.pl##a[href="https://www.facebook.com/wwyobrazni/"] > img
 wasserman.eu##section[class^="Footer__LogoAndSocialSection-"] > section:nth-of-type(3)
 waszaedukacja.pl##.footer3 > h3:nth-of-type(1), #udostepnij
 watra.pl##.addTo
+wat.edu.pl##.topbar_social > ul > li:nth-of-type(n+3):nth-of-type(-n+6)
 waveconcept.pl##.wtyczki .inst, .wtyczki .pt
 wavepc.pl##.mh-footer-4, .mh_magazine_facebook_page
 waw4free.pl##div.footer-box:not(:nth-of-type(2)) > .social, #spolecznosci > a[title^="fanpage"], #spolecznosci > a[title$="Instagramie"]
@@ -5500,6 +5508,7 @@ pilot.wp.pl#?#div > h4 ~ ul ~ h4:nth-of-type(2):-abp-contains(Więcej informacji
 poczta.onet.pl##.icon-ico_menu_facebook
 pomponik.pl##.is-facebook.share-link
 porady.sympatia.onet.pl##div.cell.medium-6.small-24:nth-of-type(3)
+poral.eu##.fa-facebook-square.fa, .fa-youtube-square.fa, .fa-twitter.fa
 posty.pl##.btn-share
 potplayerclub.pl##.social-icon-wrapper, .social-icon-wrapper-pie
 programtv.onet.pl##.contentShareFacebook, .contentShareTwitter, .contentShareGoogle, .followUs
@@ -5546,6 +5555,7 @@ zdrowie.tvn.pl##.fb-tool--link, .l-page__footer-label, .article_main__social > .
 alilove.pl#@#.footer-social-wrap
 alilove.pl,miedzyrzecz.biz#@#.td-social-icon-wrap
 avast.com,karointhekitchen.com,szkolymedyczne.eu,tenit.com.pl,upflix.pl#@#.social-icons
+bankier.pl,claudia.pl,dyskusje24.pl,edziecko.pl,gazeta.pl,haps.pl,infoladnydom.pl,infozdrowie24.pl,kobieta.pl,moto.pl,sadeczanin.info,sport.pl,tokfm.pl,transfery.info,ugotuj.to#@#.socialBar
 bemares.pl#@#.social-media:not(html):not(body)
 biznes.interia.pl#@#.social-socialButtons
 edunews.pl#@#.custom-social-buttons
