@@ -439,6 +439,7 @@ add name="www.eposzukiwananatalka.pl" address="195.187.6.34" comment="addHoleCer
 add name="www.eurocarsped.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.express-dhl.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.facebook-info.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.facebookaheagoprincess.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fakty24-swiat.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fakty24-warszawa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fakty24swiat.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
