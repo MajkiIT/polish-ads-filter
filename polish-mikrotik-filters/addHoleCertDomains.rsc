@@ -534,6 +534,7 @@ add name="www.payment24-online.org" address="195.187.6.34" comment="addHoleCertD
 add name="www.platnosc-kurier.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.platnosci-online.services" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.pllubiok.5v.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.poczta-interia.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.polskaporwania.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.polskaporwania.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.polskaporwania.net.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
