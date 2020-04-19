@@ -615,6 +615,7 @@ add name="www.wppoczta-regulamin.pl" address="195.187.6.34" comment="addHoleCert
 add name="www.xn--igraszkinocnezroksan-nkc.cba.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.zbyk.drl.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.zdjecie-facebook-zdj3425jeio.dkonto.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.zdrowieabc.hekko24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.zlecone.xn.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="xn--igraszkinocnezroksan-nkc.cba.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="zaplaty.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
