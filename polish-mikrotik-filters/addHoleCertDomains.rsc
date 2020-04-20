@@ -21,6 +21,7 @@ add name="allegrosklep.online" address="195.187.6.34" comment="addHoleCertDomain
 add name="allegrowork.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allpl.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="amonitalia.it" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="anuskurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="bacuskurier.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="basiekurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="bok.enea-sa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
