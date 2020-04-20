@@ -197,6 +197,7 @@ add name="lnpostdezynfekcje.net" address="195.187.6.34" comment="addHoleCertDoma
 add name="lnstagram.pp.ru" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="login-paribas-planet.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="login-paribas.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="login-planet-paribas.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="login-planet-paribas.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="losososdesign.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="lowpay.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
