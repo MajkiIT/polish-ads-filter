@@ -83,6 +83,7 @@ add name="e-pomagajmypl.pl" address="195.187.6.34" comment="addHoleCertDomains H
 add name="e-porwaniapolska.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="e-porwanienatalki.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="e-poszukiwananatalka.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="e-poszukiwania.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="e-poszukiwania.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="e-poszukiwania.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="e-uprowadzeniedworzec.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
