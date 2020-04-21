@@ -184,6 +184,7 @@ add name="informacje-news.eu" address="195.187.6.34" comment="addHoleCertDomains
 add name="informacje-swiat.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="informacje24fakt.pusiaweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="informujemy.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="infoswiat.hekko24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="inpostdoplata.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="inpostodkaz.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="interneip.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
