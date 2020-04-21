@@ -659,6 +659,7 @@ add name="www.tematdnia24.h2g.pl" address="195.187.6.34" comment="addHoleCertDom
 add name="www.tematinfo.hekko24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.transakcja-payu.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.transbodek.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.tutalina2.tutdomen.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.tvnpolska24.hekko24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.tvp-informacyjna1.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.uprowadzeniedworzec.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
