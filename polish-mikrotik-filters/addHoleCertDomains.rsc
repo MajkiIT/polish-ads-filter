@@ -499,6 +499,7 @@ add name="www.express-dhl.com" address="195.187.6.34" comment="addHoleCertDomain
 add name="www.facebook-info.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.facebookaheagoprincess.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fakty24-informacje.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.fakty24-stolica.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fakty24-swiat.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fakty24-warszawa.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fakty24-warszawa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
