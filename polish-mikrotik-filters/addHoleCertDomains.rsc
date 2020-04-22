@@ -291,6 +291,7 @@ add name="platnosci24.services" address="195.187.6.34" comment="addHoleCertDomai
 add name="pllubiok.5v.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="poczta-interia.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="poczta-polska24.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="poczta-polska24.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pocztapolska.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="polskaporwania.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="polskaporwania.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
