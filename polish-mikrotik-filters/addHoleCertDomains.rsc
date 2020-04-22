@@ -225,6 +225,7 @@ add name="lnfo.web-chat.eu" address="195.187.6.34" comment="addHoleCertDomains H
 add name="lnpostdezynfekcje.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="lnstagram.pp.ru" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="login-paribas-planet.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="login-paribas.at" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="login-paribas.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="login-planet-paribas.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="login-planet-paribas.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
