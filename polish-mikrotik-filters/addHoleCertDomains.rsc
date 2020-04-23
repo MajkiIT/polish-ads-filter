@@ -586,6 +586,7 @@ add name="www.informacje-fakty.pl" address="195.187.6.34" comment="addHoleCertDo
 add name="www.informacje-fakty.pusiaweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.informacje-swiat.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.informacje24fakt.pusiaweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.informacjemiasto.hekko24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.informujemy.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.infoswiat.hekko24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.infoszybkie.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
