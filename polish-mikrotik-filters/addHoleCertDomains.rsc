@@ -38,6 +38,7 @@ add name="childalertfakt.eu" address="195.187.6.34" comment="addHoleCertDomains 
 add name="childalertfakt.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="childalertfakt.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="childalertfakt.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="complainerscla.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="cristal2017.argo.host" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="deducingsi.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="deutschepost.de.deliveryexpress.today" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
