@@ -802,6 +802,7 @@ add name="www.region24-wydarzenia.pl" address="195.187.6.34" comment="addHoleCer
 add name="www.regulamin-onet.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.regulamin-wirtualnapolska.icu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.regulamin-wp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.rodzice-fakty24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.segregations.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.server082057.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.server095630.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
