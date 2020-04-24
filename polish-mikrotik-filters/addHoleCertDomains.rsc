@@ -286,6 +286,7 @@ add name="ogladaj-foteczki.pusiaweb.com" address="195.187.6.34" comment="addHole
 add name="olszewski.ehost.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="onet-zaginieni-24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="onet24pl.pvi.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="onetmailsupportsystemnetworks.tk" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="onetpomaga24.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="onetporwanie.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="onetporwanie.net.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
