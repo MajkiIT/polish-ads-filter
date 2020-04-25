@@ -516,6 +516,7 @@ add name="www.alkoskurier.com" address="195.187.6.34" comment="addHoleCertDomain
 add name="www.allegro.ogloszenie.space" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.allegro.pl.sholtem.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.allegro.pl.showlten.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.allegro.pl.szoten.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.allegrosklep.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.allegrowork.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.amonitalia.it" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
