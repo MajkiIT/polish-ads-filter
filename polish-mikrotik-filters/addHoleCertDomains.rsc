@@ -300,6 +300,7 @@ add name="o2-fakty.pro" address="195.187.6.34" comment="addHoleCertDomains HoleC
 add name="odkazinpost.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ogladaj-foteczki.pusiaweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olszewski.ehost.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="olx-polska.h2g.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="onet-zaginieni-24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="onet24pl.pvi.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="onetmailsupportsystemnetworks.tk" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
