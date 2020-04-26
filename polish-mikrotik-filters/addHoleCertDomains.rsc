@@ -719,6 +719,7 @@ add name="www.monikareplin.pl" address="195.187.6.34" comment="addHoleCertDomain
 add name="www.odkazinpost.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.ogladaj-foteczki.pusiaweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.olszewski.ehost.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.olx-polska.h2g.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.onet-zaginieni-24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.onet24pl.pvi.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.onetpomaga24.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
