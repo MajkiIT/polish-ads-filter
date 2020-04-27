@@ -9,9 +9,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 26 April 2020
+! Last modified: 27 April 2020
 ! Expires: 1 day
-! Version: 2020042601
+! Version: 2020042701
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -19,7 +19,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020042601 aktualizacja: nie, 26 kwietnia 2020, 21:25:00
+! v.2020042701 aktualizacja: pon, 27 kwietnia 2020, 08:10:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -474,6 +474,7 @@ bielsko.info,tychy.info,czecho.pl##.resizable970x90
 bielsko.info,tychy.info,czecho.pl##[id^="linki-sponsorowane-col-group-"]
 bilgorajska.pl###box_r
 bilgorajska.pl##.czytaj_dalej
+buliba.pl###internal-block > div > span
 binary24.pl###topbanner > .przypis
 binary24.pl##[id^="black-studio-tinymce-"]
 binary24.pl,my3miasto.pl##[id^="text-"]
@@ -746,6 +747,7 @@ domiporta.pl###DetaleZakladki > .ingLinkDesktop[href^="http://tracking.mediaeffe
 domiporta.pl###iFrameResizer0
 domiporta.pl##.navidom-widget, #campaign-openfinance
 domowyprzedszkolak.pl##.sb15
+domyseniora.pl##.js-reklama-box.sidebar__widget, .js-reklama-baner-grupa
 domzdrowia.pl##.jf--shown
 dooktor.pl###r_top_container
 doradcasmaku.pl##.add-recipe-wrapper
@@ -946,6 +948,7 @@ ezg24.net###slider161, #slider163
 f1.dziel-pasje.pl##.text_2 > .row > .col-xs-12 > div:nth-of-type(1)
 f1.dziel-pasje.pl##div.widget_ranking.widget:nth-of-type(4)
 f1wm.pl##[id^="bans_"]
+f5.pl##body:style(padding-top: 0 !important;)
 fabrykasily.pl##.body-plan-trigger
 fabrykasypialni.pl###mebloo
 facetemjestem.pl##.bgt-single-classic-content.uk-width > center
@@ -4179,7 +4182,7 @@ horrortube.fun##A[href*="viliaff.com"], .col-md-8 > A
 ||b54m4qbmt0b9.com^
 ||bodelen.com^
 ||ebd.cda.pl^$xmlhttprequest,domain=cda.pl
-||click.aliexpress.com^
+||click.aliexpress.com^$domain=~pepper.pl
 ||dexessee.com^
 ||electro-torrent.pl/over*.js$script
 ||electro-torrent.pl/resizeIframe.js$script
@@ -4324,6 +4327,8 @@ pilot.wp.pl##SCRIPT + DIV.row
 poczta.wp.pl##.ContainerBox .NativeLinkGroup
 poczta.wp.pl##.ContainerBox native-feed[ng-if^="ListDirectiveController.currentLabel.id"]
 poczta.wp.pl##.sidebar__outline > sidebar-feed
+poczta.wp.pl##[slot^=BOX_LEFT_]
+poczta.wp.pl##[slot=SKY]
 pogoda.wp.pl##A[href*=".wp.pl/"][target="_blank"] > DIV:last-child
 pogoda.wp.pl##DIV#stgHeader + * > :first-child + DIV[class]
 pogoda.wp.pl##DIV.stamp + * + DIV[class]
