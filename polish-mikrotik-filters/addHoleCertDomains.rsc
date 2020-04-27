@@ -828,6 +828,7 @@ add name="www.poszukiwania24.site" address="195.187.6.34" comment="addHoleCertDo
 add name="www.poszukiwanialaury.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.poszukiwanialaury.net.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.poszukiwanialaury.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.poszukiwanialaury.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.poszukiwanialaury.waw.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.powiat24-wydarzenia.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.privacy-email.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
