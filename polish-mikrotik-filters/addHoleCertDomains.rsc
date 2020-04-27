@@ -621,6 +621,7 @@ add name="www.express-dhl.com" address="195.187.6.34" comment="addHoleCertDomain
 add name="www.facebook-com-pl-profile.7m.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.facebook-info.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.facebookaheagoprincess.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.facebookgroups.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fakty-onet48.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fakty24-informacje.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fakty24-pomagamy.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
