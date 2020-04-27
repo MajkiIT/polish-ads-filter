@@ -133,6 +133,7 @@ add name="eurocarsped.com" address="195.187.6.34" comment="addHoleCertDomains Ho
 add name="express-dhl.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="facebook-com-pl-profile.7m.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="facebook-info.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="facebookgroups.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="fakt-polska.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="fakt24warszawa.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="fakt24warszawka.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
