@@ -932,6 +932,7 @@ add name="www.zdjecie-ukradzione.eu" address="195.187.6.34" comment="addHoleCert
 add name="www.zdrowieabc.hekko24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.zgwalconadziewczyna.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.zgwalconadziewczyna.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.zgwalconadziewczyna.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.zlecone.xn.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="xn--igraszkinocnezroksan-nkc.cba.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="zaplaty.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
@@ -941,4 +942,5 @@ add name="zdjecie-ukradzione.eu" address="195.187.6.34" comment="addHoleCertDoma
 add name="zdrowieabc.hekko24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="zgwalconadziewczyna.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="zgwalconadziewczyna.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="zgwalconadziewczyna.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="zlecone.xn.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
