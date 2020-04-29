@@ -529,6 +529,7 @@ add name="uprowadzniezdworca.net.pl" address="195.187.6.34" comment="addHoleCert
 add name="uprowadzniezdworca.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="uprowadzniezdworca.waw.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="us5-update.weebly.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="uwaga-alert.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="uwaga24tv.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="warszawa-gov.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="warszawa-informujemy.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
