@@ -33,6 +33,7 @@ add name="bok.epgnig.pl" address="195.187.6.34" comment="addHoleCertDomains Hole
 add name="bok.itauron.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="bokenea.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="bokpgnig.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="bokpocztapolska.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="bookofoffers.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="bundle-deals.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="bungalowsentertainment.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
