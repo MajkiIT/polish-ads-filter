@@ -57,6 +57,7 @@ add name="dotpay.bokpocztapolska.pl" address="195.187.6.34" comment="addHoleCert
 add name="dotpay.i-pocztapolska.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dotpay.ipocztapolska.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dotpay.pocztapolska48.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="dotpay.pocztex-polska.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dotpay.pocztexpolska.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dotpay.pocztexpolska.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dworzecfakt.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
