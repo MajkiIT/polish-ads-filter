@@ -576,6 +576,7 @@ add name="waznesprawy.eu" address="195.187.6.34" comment="addHoleCertDomains Hol
 add name="wazneswiat.hekko24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wezwanieus.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wiad-info.5v.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="wiadomosci-lokalne.5v.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wiadomoscipolska99.pro-linuxpl.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wiecejpolski.icu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="windykacjajagoda.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
