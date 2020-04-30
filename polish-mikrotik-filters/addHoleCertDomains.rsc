@@ -587,6 +587,7 @@ add name="www.247platnosc.online" address="195.187.6.34" comment="addHoleCertDom
 add name="www.247platnosci.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.24ekspres.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.24platnosci.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.82210001244.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.abonament-oplac.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.adamdj.ct8.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.adkokurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
