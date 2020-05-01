@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2020.4.25.0
-! Last modified: Sat, 25 Apr 2020, 22:23 UTC+02
+! Version: 2020.5.1.0
+! Last modified: Fri, 01 May 2020, 23:47 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -18,7 +18,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2020 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2020.4.25.0 aktualizacja: sob, 25 kwi 2020, 22:23 UTC+02
+! v.2020.5.1.0 aktualizacja: pią, 01 maj 2020, 23:47 UTC+02
 !
 !
 ! Specyficzne reguły ukrywające
@@ -114,6 +114,7 @@ alegotowka.pl,chwilowkomat.pl,halopozyczka.pl,quadralite.pl###cookies-law
 alekino.com###cookies-info-wrapper
 alepromocje.pl##.ale-cookies-info
 alerabat.com###popup-rodo
+alerabat.com##.m-popup__cookies
 alesoczewki.com,iposto.com,moremoi.com###cookie-message-box
 alga-shop.pl##.top.infobar_wrap
 aliexpress.com###j-aliexpress-notice
@@ -320,7 +321,7 @@ blog-pozyczoneiniebieskie.pl###cookie_info_container
 bluecity.pl##.gp-gdpr__belt
 bluestilo.com##ma-cookie-law-info
 bobrowniki.tv###cookie_policy_popup
-bodyfit.pl,januszebiznesu.pl,proszynski.pl,seriale.co,zarmen.pl###komunikat
+bodyfit.pl,proszynski.pl,seriale.co,zarmen.pl###komunikat
 bogatyelblag.pl###storageMessage
 bolsius.com##.c-cookie__container
 bonart.com.pl###cookie_kom
@@ -607,6 +608,7 @@ ecoxpress.pl###rodo-consent-bg-overlay
 eco.atman.pl,groj.pl,kreskoweczki.pl,marketing-news.pl,www.obozytenisowe.pl###gbpl_oba
 ecslupsk.pl###politics
 edimax.pl,fleetboard.pl,hbo.pl,patronite.pl###overlay
+eduelo.pl###purePopupWrap
 edukacja.rybnik.eu,medialubuskie.eu,polskaekologia.org,siemiatycze.eu##.cookieWarning
 edupage.org##.eu-cookie-panel
 edutorial.pl,kerrisgroup.com###wmpci-popup-wrp
@@ -841,6 +843,7 @@ gdansk.rzgw.gov.pl,rzgw.gda.pl###COOKIETLO
 gdsport.pl###rodo-policy-banner
 gdziewpolsce.pl##body > div > .cookie-alert-content
 geekbuying.com,geekbuying.pl##.gdpr-cookie
+geers.pl##.ConsentWrapper
 generali.pl##div#cLayer
 generatorkodowkreskowych.pl,kalendarz-roku-szkolnego.edu.pl###cn
 generator.blulink.pl##.privatepolicy
@@ -1182,9 +1185,7 @@ leagueoflegends.com##.cookie-link
 lechia.pl###rodo-wrapper
 leclerc.com.pl##div#tekst
 leddo.pl,zdp.poznan.pl##.rodo-block
-legalsite.pl###message-1
-legia.com###cook-wrapper
-legia.com#?##root > div > #real-content > div[class^="jss"]:last-of-type:-abp-contains(cookies)
+legia.com#?##real-content > div[class]:not([class*="-"]):not([class*="_"]):-abp-contains(cookies)
 legionisci.com,odkrywamyzakryte.com###ez-cookie-dialog-wrapper
 legoland.de##.alertbar
 lego.com###GFSticky
@@ -2087,7 +2088,6 @@ wentylacja24.pl##.body-cookie
 wgrane.pl##.cookieinfo1
 whatsapp.com,www.msd.pl###banner
 wholandii.pl##.cookie_baner
-wiem-to.pl###notice_visitor
 wien.info##.cookiedialog
 wiescirolnicze.pl###popup_newsletter
 wiha.com##.cookie_box
@@ -2218,6 +2218,8 @@ zwrotzalot.pl##.cookies-banner-overlay-original
 zyciekalisza.pl###cdiv
 zygzaksnow.pl###jOverlayContent, #jOverlay, #ppCookies
 zysk.com.pl###pageUpperInfo
+!legia.com###cook-wrapper
+!legia.com#?##root > div > #real-content > div[class^="jss"]:last-of-type:-abp-contains(cookies)
 !pl.aptoide.com##.cookie-notification-holder
 !poki.pl#?#aside:-abp-has( > h2:-abp-contains(Uwaga))
 !poki.pl#?#aside:-abp-has( > p:-abp-contains(zgodę))
@@ -2728,6 +2730,7 @@ pl###cookie_wall:not(body):not(html)
 pl###cookie_warning:not(body):not(html)
 pl###cross-dialog.crossDialog:not(body):not(html)
 pl###divCookie:not(body):not(html)
+pl###divOneTrustMainContainer
 pl###div_accept_cookies:not(body):not(html)
 pl###div_cookies_accept:not(body):not(html)
 pl###div_info_cookies:not(body):not(html)
