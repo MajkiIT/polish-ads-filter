@@ -1111,6 +1111,7 @@ add name="www.serwer2079025.home.pl" address="195.187.6.34" comment="addHoleCert
 add name="www.show-auctions.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.siodemkawysyl24h.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.sklep-allegro.lokalnie.live" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.spillerfanside.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.sprawypilne.h2g.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.sprnr59713.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.sprnr59813.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
