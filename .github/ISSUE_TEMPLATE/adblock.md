@@ -23,7 +23,7 @@ Insert here a direct link to the page, where the ad or bug occurs.
 -->
 
 <!--What do you need to do to appear an ad or a bug?-->
-### Co trzeba zrobić, aby pojawiła się reklama albo błąd?
+### Co trzeba zrobić, aby pojawił się element albo błąd?
 1. 
 2. 
 3. 
