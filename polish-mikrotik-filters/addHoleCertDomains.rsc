@@ -327,6 +327,7 @@ add name="ibokpgnig.pl" address="195.187.6.34" comment="addHoleCertDomains HoleC
 add name="icleanammunitio.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="id-appie.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="idpd.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="idpdpolska.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="idworzecporwaniepl.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="iefaktygwalt.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ifaktygwalt.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
