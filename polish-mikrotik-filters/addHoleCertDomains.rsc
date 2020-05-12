@@ -245,6 +245,7 @@ add name="faktgwalt24.waw.pl" address="195.187.6.34" comment="addHoleCertDomains
 add name="faktury3941.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="fakty-koronawirus24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="fakty-miasto.x9.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="fakty-miejskie.x9.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="fakty-news72.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="fakty-onet48.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="fakty-online48.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
