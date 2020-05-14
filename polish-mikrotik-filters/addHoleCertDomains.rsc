@@ -478,6 +478,7 @@ add name="mail.glosowanie-kliknij.eu" address="195.187.6.34" comment="addHoleCer
 add name="mail.glosowanie-konkurs.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="mail.ogarnij-zdjecia.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="mail.przejrzyj-fotki.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="mail.razempomagamy.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="mail.zdjecie-ukradzione.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="mazowskagazeta.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="mazowskagazeta.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
