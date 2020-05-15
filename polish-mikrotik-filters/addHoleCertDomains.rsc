@@ -745,6 +745,7 @@ add name="server328687.nazwa.pl" address="195.187.6.34" comment="addHoleCertDoma
 add name="server364021.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="server375674.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="server379672.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="server385882.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="server432067.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="server432146.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="server553372.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
