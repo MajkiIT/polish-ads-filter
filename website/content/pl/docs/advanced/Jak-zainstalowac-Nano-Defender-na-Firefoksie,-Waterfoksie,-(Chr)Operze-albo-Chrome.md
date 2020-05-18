@@ -59,11 +59,11 @@ slug: "install-nano-defender"
 ## **III. ![Opera][Opera]<sub><sup>(CHR)</sup></sub>OPERA**
 (wersja wideo - [www.youtube.com/watch?v=R5iB1-6B1A0](https://www.youtube.com/watch?v=R5iB1-6B1A0 "https://www.youtube.com/watch?v=R5iB1-6B1A0"))
 
-1. Zainstaluj [**Extension Source Viewer**](https://addons.opera.com/pl/extensions/details/extension-source-viewer/?display=en "https://addons.opera.com/pl/extensions/details/extension-source-viewer/?display=en").
+1. Zainstaluj [**Download Chrome Extension**](https://addons.opera.com/pl/extensions/details/download-chrome-extension-9/?display=en "https://addons.opera.com/pl/extensions/details/download-chrome-extension-9/?display=en").
 
-2. Wejdź na [**chrome.google.com/webstore**/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb](https://chrome.google.com/webstore/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb "https://chrome.google.com/webstore/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb") i kliknij na pasku adresu na ikonkę **CRX**, a następnie kliknij na `install`.
+2. Wejdź na [**chrome.google.com/webstore**/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb](https://chrome.google.com/webstore/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb "https://chrome.google.com/webstore/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb") i kliknij `Dodaj do Opera`.
 
-3. Wejdź na `opera://extensions`, a następnie kliknij zainstaluj przy **Nano Defender**, potwierdź jeszcze raz naciskając zainstaluj.
+3. Wejdź na `opera://extensions`, a następnie kliknij zainstaluj przy **Nano Defender**, potwierdź jeszcze raz naciskając zainstaluj
 
 4. Jeśli używasz [Nano Adblockera](https://chrome.google.com/webstore/detail/nano-adblocker/gabbbocakeomblphkmmnoamkioajlkfo "https://chrome.google.com/webstore/detail/nano-adblocker/gabbbocakeomblphkmmnoamkioajlkfo"), to lista **Nano Defender Integration** powinna się automatycznie po chwili aktywować - opcjonalnie sprawdź i aktywuj.
 
@@ -83,15 +83,15 @@ slug: "install-nano-defender"
 
 6. Ciesz się z działającego **Nano Defendera**!
 
-<hr><blockquote><details><summary>Alternatywna metoda z użyciem <code>Download Chrome Extension</code>:</summary><br>
+<hr><blockquote><details><summary>Alternatywna metoda z użyciem <code>Extension Source Viewer</code>:</summary><br>
 
-1. Zainstaluj [**Download Chrome Extension**](https://addons.opera.com/pl/extensions/details/download-chrome-extension-9/?display=en "https://addons.opera.com/pl/extensions/details/download-chrome-extension-9/?display=en").
+1. Zainstaluj [**Extension Source Viewer**](https://addons.opera.com/pl/extensions/details/extension-source-viewer/?display=en "https://addons.opera.com/pl/extensions/details/extension-source-viewer/?display=en").
 
-2. Wejdź na [**chrome.google.com/webstore**/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb](https://chrome.google.com/webstore/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb "https://chrome.google.com/webstore/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb") i kliknij `Dodaj do Opera`.
+2. Wejdź na [**chrome.google.com/webstore**/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb](https://chrome.google.com/webstore/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb "https://chrome.google.com/webstore/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb") i kliknij na pasku adresu na ikonkę **CRX**, a następnie kliknij na `install`.
 
-3. Wejdź na `opera://extensions`, a następnie kliknij zainstaluj przy **Nano Defender**, potwierdź jeszcze raz naciskając zainstaluj
+3. Wejdź na `opera://extensions`, a następnie kliknij zainstaluj przy **Nano Defender**, potwierdź jeszcze raz naciskając zainstaluj.
 
-4. Jeśli używasz [Nano Adblockera](https://chrome.google.com/webstore/detail/nano-adblocker/gabbbocakeomblphkmmnoamkioajlkfo "https://chrome.google.com/webstore/detail/nano-adblocker/gabbbocakeomblphkmmnoamkioajlkfo") lista **Nano Defender Integration** powinna się automatycznie po chwili aktywować - opcjonalnie sprawdź i aktywuj.
+4. Jeśli używasz [Nano Adblockera](https://chrome.google.com/webstore/detail/nano-adblocker/gabbbocakeomblphkmmnoamkioajlkfo "https://chrome.google.com/webstore/detail/nano-adblocker/gabbbocakeomblphkmmnoamkioajlkfo"), to lista **Nano Defender Integration** powinna się automatycznie po chwili aktywować - opcjonalnie sprawdź i aktywuj.
 
 5. Jeśli używasz uBlocka Origin wykonaj dodatkowe kroki:
 
@@ -117,7 +117,7 @@ slug: "install-nano-defender"
 
 ## **IV. ![Chrome][Chrome]GOOGLE CHROME/![Chromium][Chromium]CHROMIUM/![Vivaldi][Vivaldi]VIVALDI**
 1. Zainstaluj [**Nano Defender**](https://chrome.google.com/webstore/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb "https://chrome.google.com/webstore/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb")
-2. Jeśli używasz [Nano Adblockera](https://chrome.google.com/webstore/detail/nano-adblocker/gabbbocakeomblphkmmnoamkioajlkfo "https://chrome.google.com/webstore/detail/nano-adblocker/gabbbocakeomblphkmmnoamkioajlkfo"), to lista **Nano Defender Integration** powinna się automatycznie po chwili aktywować - opcjonalnie sprawdź i aktywuj.
+2. Jeśli używasz [Nano Adblockera](https://chrome.google.com/webstore/detail/nano-adblocker/gabbbocakeomblphkmmnoamkioajlkfo "https://chrome.google.com/webstore/detail/nano-adblocker/gabbbocakeomblphkmmnoamkioajlkfo"), lista **Nano Defender Integration** powinna się automatycznie po chwili aktywować - opcjonalnie sprawdź i aktywuj.
 3. Jeśli używasz uBlocka Origin wykonaj dodatkowe kroki:
 
    - Subskrybuj listę filtrów [Adblock Warning Removal List](ubo://subscribe?location=https%3A%2F%2Feasylist-downloads.adblockplus.org%2Fantiadblockfilters.txt&title=Adblock%20Warning%20Removal%20List)
