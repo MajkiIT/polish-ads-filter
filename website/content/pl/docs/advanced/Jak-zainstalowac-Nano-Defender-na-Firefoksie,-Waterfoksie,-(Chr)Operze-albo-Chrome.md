@@ -57,7 +57,7 @@ slug: "install-nano-defender"
 
 
 ## **III. ![Opera][Opera]<sub><sup>(CHR)</sup></sub>OPERA**
-(wersja wideo - [www.youtube.com/watch?v=R5iB1-6B1A0](https://www.youtube.com/watch?v=R5iB1-6B1A0 "https://www.youtube.com/watch?v=R5iB1-6B1A0"))
+(wersja wideo - [www.youtube.com/watch?v=R5iB1-6B1A0](https://www.youtube.com/watch?v=R5iB1-6B1A0 "https://www.youtube.com/watch?v=R5iB1-6B1A0") - Extension Source Viewer)
 
 1. Zainstaluj [**Download Chrome Extension**](https://addons.opera.com/pl/extensions/details/download-chrome-extension-9/?display=en "https://addons.opera.com/pl/extensions/details/download-chrome-extension-9/?display=en").
 
