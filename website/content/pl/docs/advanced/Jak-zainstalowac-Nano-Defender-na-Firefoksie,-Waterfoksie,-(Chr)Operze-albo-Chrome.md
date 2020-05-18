@@ -63,7 +63,7 @@ slug: "install-nano-defender"
 
 2. Wejdź na [**chrome.google.com/webstore**/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb](https://chrome.google.com/webstore/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb "https://chrome.google.com/webstore/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb") i kliknij `Dodaj do Opera`.
 
-3. Wejdź na `opera://extensions`, a następnie kliknij zainstaluj przy **Nano Defender**, potwierdź jeszcze raz naciskając zainstaluj
+3. Wejdź na `opera://extensions`, a następnie kliknij **Zainstaluj** przy **Nano Defender** i  potwierdź ponownie naciskając **Zainstaluj**.
 
 4. Jeśli używasz [Nano Adblockera](https://chrome.google.com/webstore/detail/nano-adblocker/gabbbocakeomblphkmmnoamkioajlkfo "https://chrome.google.com/webstore/detail/nano-adblocker/gabbbocakeomblphkmmnoamkioajlkfo"), to lista **Nano Defender Integration** powinna się automatycznie po chwili aktywować - opcjonalnie sprawdź i aktywuj.
 
@@ -89,7 +89,7 @@ slug: "install-nano-defender"
 
 2. Wejdź na [**chrome.google.com/webstore**/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb](https://chrome.google.com/webstore/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb "https://chrome.google.com/webstore/detail/nano-defender/ggolfgbegefeeoocgjbmkembbncoadlb") i kliknij na pasku adresu na ikonkę **CRX**, a następnie kliknij na `install`.
 
-3. Wejdź na `opera://extensions`, a następnie kliknij zainstaluj przy **Nano Defender**, potwierdź jeszcze raz naciskając zainstaluj.
+3. Wejdź na `opera://extensions`, a następnie kliknij **Zainstaluj** przy **Nano Defender**, potwierdź jeszcze raz naciskając **Zainstaluj**.
 
 4. Jeśli używasz [Nano Adblockera](https://chrome.google.com/webstore/detail/nano-adblocker/gabbbocakeomblphkmmnoamkioajlkfo "https://chrome.google.com/webstore/detail/nano-adblocker/gabbbocakeomblphkmmnoamkioajlkfo"), to lista **Nano Defender Integration** powinna się automatycznie po chwili aktywować - opcjonalnie sprawdź i aktywuj.
 
