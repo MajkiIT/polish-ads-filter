@@ -11,7 +11,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 18 May 2020
 ! Expires: 1 day
-! Version: 2020051801
+! Version: 2020051802
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -19,7 +19,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020051801 aktualizacja: pon, 18 maja 2020, 08:45:00
+! v.2020051802 aktualizacja: pon, 18 maja 2020, 08:55:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -78,8 +78,6 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 !
 !2#-----------------------Block pages-----------------------!
 /premium/player.php$domain=cyberkino.pl
-||vshare.io/sdm.php$xmlhttprequest
-||vshare.io/watch_video.php$script
 !
 !3#-----------------------Popup filters-----------------------!
 ||gasurvey.gemius.com^$popup
@@ -96,8 +94,6 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 !
 !5#-----------------------Elements hide on movie-----------------------!
 iitvx.pl###player-above-2
-vshare.io###pplaay
-vshare.io###sendif
 !
 !6#-----------------------Privacy filters hide-----------------------!
 !
@@ -130,7 +126,6 @@ vshare.io###sendif
 ##.addv-container
 ##.adexonModuleportel.pl
 ##.adoceanGora1Wrapper
-##.ads_widget
 ##.boxAdvert
 ##.advContainer
 ##.adverstiment-box
@@ -145,16 +140,12 @@ vshare.io###sendif
 ##.ceneo-products.clearfix
 ##.cg2-ad
 ##.cookemessagecloseico
-##.footer-ad
-##.g1-advertisement
 ##.hide-for-small.baner-promo-euro
 ##.home_ads
 ##.homeadv
 ##.houdini
-##.ipsAdvertisement
 ##.jqmOverlay
 ##.mod.mod_cpCommerce.small
-##.module_single_ads
 ##.opacitybox
 ##.oponeoWidget
 ##.popup-premium__apla
@@ -2071,7 +2062,6 @@ obalamyglupote.pl###Image3
 obcasy.pl##[data-td-block-uid] + DIV > A[href] > IMG
 obcasypodlasia.pl##.webnus-ad
 obligacje.pl##a[href*=".bankier.pl/click/"]
-oboom.com###bgfadewnd1
 oboom.com###wcontent_wnd1
 oboom.com###wnd1
 obud.pl##.warstwa_z_tekstem > div[style="width:100%; margin:0px 0px 15px 0px; display:inline-block;"]
@@ -3013,7 +3003,6 @@ vorek.pl###dle-content > center
 vorek.pl##.news > center:nth-of-type(1)
 vorek.pl##DIV[style="height: 35px;width: 726px;position:relative;text-align:center;box-shadow:0 0 2px grey;border:2px solid #0D1E5A;background: #EDF1FF;margin:0px auto 0px;"]
 voxfm.pl###global_belka
-vshare.io###pplay
 w-poblizu.pl##.da
 w203.pl,w210.pl##td:nth-of-type(2) > center
 w210.pl##.af_sidebar
@@ -3315,7 +3304,6 @@ zakon-ac.info##.amalker.erdt-news
 zakopane.info,tuwroclaw.com##.tblank
 zakopane.info###bsa-block-990--100, #td_uid_33_5de793a6c1baa
 zakopane.info,tygodnikketrzynski.pl##.textwidget > p
-zalukaj.tv###left > a[href^="http://vshare.io/"]
 zambrow.org,lowicz24.eu##.adv, #__cmcmedia_upid_6, .l-box > center > p, .l-box--25.l-box, .slick-slider.slick-initialized.qa > .draggable.slick-list > .slick-track
 zambrowiacy.pl###sponsorbox
 zapodaj.net###stop, #sbottom
@@ -3576,7 +3564,6 @@ zywiecinfo.pl##.promoted
 ||hyperreal.info/acid/frame/$subdocument
 ||i.imgur.com/$image,domain=fight24.pl
 ||ib.gazeta.pl/abc/$image,domain=polygamia.pl|plotek.pl
-||ibillboard.com^$third-party
 ||ifotos.pl/img/$image,domain=supertydzien.pl|radiobonton.pl
 ||ilawa24.pl/photos/skyscraper.jpg$image
 ||image.ceneostatic.pl/data/footer_widget/$image
@@ -3813,7 +3800,6 @@ zywiecinfo.pl##.promoted
 ||viralseedmedia.com/$script,domain=vod-share.com
 ||visualrevenue.com^
 ||vixnixxer.com^$script,third-party
-||vshare.io/static/button.css$stylesheet
 ||wbj.pl/adv/
 ||wbj.pl/wp-content/plugins/adkingpro/js/adkingpro-functions.js$script
 ||web-rynek.pl/baners/
@@ -4196,8 +4182,6 @@ cda-tv.online###clickfakeplayer
 ||hoqqzlvwukpo.com^
 ||hyphenion.com^
 ||kaunairu.net^$third-party
-||niltutch.com^$third-party
-||pheegoab.click^$third-party
 ||remtoaku.net^
 ||rinsouxy.com^
 ||ro88qcuy.com^
@@ -4211,11 +4195,9 @@ cda-tv.online###clickfakeplayer
 ||zostofou.link^
 ||zukxd6fkxqn.com^
 ||erosyndc.com^
-||popcash.net^
 ||syndication.exdynsrv.com^
 ||groorgex.net^
 ||keechavy.com^
-||inpagepush.com^
 ||onlystream.tv/srt/empty.vtt$xmlhttprequest
 ||postlnk.com$popup
 ||image.tmdb.org^$popup,domain=cdahd.co
