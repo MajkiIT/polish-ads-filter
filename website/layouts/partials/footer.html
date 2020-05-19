@@ -13,6 +13,10 @@
         {{ with $links }}
         {{ with index . "developer"}}
         {{ template "footer-links-block"  . }}
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="darkSwitch" data-toggle="toggle" data-on="Tryb ciemny" data-off="Tryb jasny"/>
+          <label class="form-check-label" for="darkSwitch"></label>
+        </div>
         {{ end }}
         {{ end }}
       </div>
