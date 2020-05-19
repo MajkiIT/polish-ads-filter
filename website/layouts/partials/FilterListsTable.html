@@ -173,4 +173,3 @@
 {{ $sort := resources.Get "js/sortable.min.js" }}
 {{ $js := slice $selectFilter $select $selectPolish $filterSearch $sort | resources.Concat "js/table_bundle.js" | minify | fingerprint }}
 <script defer src="{{ $js.Permalink | relURL }}" integrity="{{ $js.Data.Integrity }}"></script>
-

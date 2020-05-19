@@ -18,7 +18,7 @@ $targetSearchInput.on('shown.bs.popover',()=>{$('.search-result-close-button').o
 * Dark Mode Switch
 * https://github.com/coliff/dark-mode-switch
 * Released under the MIT License.
-*/const darkSwitch=document.getElementById('darkSwitch');window.addEventListener('load',()=>{if(darkSwitch){initTheme();$('#darkSwitch').change(function(){resetTheme();})}});function initTheme(){const systemPrefersDarkMode=window.matchMedia("(prefers-color-scheme: dark)").matches;const darkThemeSelected=localStorage.getItem('darkSwitch')!==null&&localStorage.getItem('darkSwitch')==='dark';if(darkThemeSelected){darkSwitch.checked=true;document.body.setAttribute('data-theme','dark');}
+*/const darkSwitch=document.getElementById('darkSwitch');window.addEventListener('load',()=>{if(darkSwitch){initTheme();$('#darkSwitch').change(function(){resetTheme();})}});function initTheme(){const systemPrefersDarkMode=window.matchMedia("(prefers-color-scheme: dark)").matches;const darkThemeSelected=localStorage.getItem('darkSwitch')!==null&&localStorage.getItem('darkSwitch')==='dark';if(darkThemeSelected){darkSwitch.checked=true;document.body.setAttribute('data-theme','dark');$('#darkSwitch').bootstrapToggle('on');}
 else if(systemPrefersDarkMode){darkSwitch.checked=true;darkSwitch.disabled=true;document.body.setAttribute('data-theme','dark');}
 else{darkSwitch.checked=false;document.body.removeAttribute('data-theme');}}
 function resetTheme(){if(darkSwitch.checked){document.body.setAttribute('data-theme','dark');localStorage.setItem('darkSwitch','dark');}else{document.body.removeAttribute('data-theme');localStorage.removeItem('darkSwitch');}}

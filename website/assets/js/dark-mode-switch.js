@@ -34,6 +34,7 @@ function initTheme() {
   if (darkThemeSelected) {
     darkSwitch.checked = true;
     document.body.setAttribute('data-theme', 'dark');
+    $('#darkSwitch').bootstrapToggle('on');
   }
   else if (systemPrefersDarkMode) {
     darkSwitch.checked = true;

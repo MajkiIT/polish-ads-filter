@@ -9,5 +9,5 @@
 {{ $bootstraptgl :=resources.Get "/js/bootstrap4-toggle.min.js" }}
 {{ $dm := resources.Get "js/dark-mode-switch.js" }}
 {{ $main_js := slice $jquery $jsBase $jsAnchor $jsSearch $lunr $popper $bootstrap $bootstraptgl $dm | resources.Concat "/js/main.js" | minify | fingerprint }}
-<script defer src="{{ $main_js.Permalink | relURL }}" integrity="{{ $main_js.Data.Integrity }}"></script>
+<script src="{{ $main_js.Permalink | relURL }}" integrity="{{ $main_js.Data.Integrity }}"></script>
 {{ partial "hooks/body-end.html" . }}
