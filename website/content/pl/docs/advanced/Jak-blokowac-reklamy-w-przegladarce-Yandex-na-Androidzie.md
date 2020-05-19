@@ -18,7 +18,9 @@ tags:
 
 
 ## A) Yandex + Nano Adblocker + Nano Defender
-(wersja wideo - już wkrótce)
+<hr><blockquote><details><summary>Wersja wideo</summary><br>
+{{< youtube 9k6tvyyowk0 >}}
+</details></blockquote><hr>
 
 Aby zainstalować Nano Adblocker dla Yandexa, powinieneś wykonać parę kroków:
 
@@ -46,8 +48,13 @@ Do tego zestawu warto jeszcze doinstalować Nano Defender, który zajmie się sk
 10. Sprawdź, czy działa. Wejdź na [antiblock.org/?p=v3&demo](http://antiblock.org/?p=v3&demo "http://antiblock.org/?p=v3&demo"). Jeśli wyświetli się komunikat _„Please disable your ad blocker!"_, to znaczy, że być może zrobiłeś coś nie tak, jak trzeba, a jeśli nie, to gotowe!--->
 
 ## B) Yandex + uBlock Origin + Nano Defender
-(wersja wideo (instalowanie) :arrow_right: [www.youtube.com/watch?v=nmEs0J4M-7I](https://www.youtube.com/watch?v=nmEs0J4M-7I "https://www.youtube.com/watch?v=nmEs0J4M-7I"))
-(wersja wideo (aktualizowanie) :arrow_right: [www.youtube.com/watch?v=k9t9PRDn5MU](https://www.youtube.com/watch?v=k9t9PRDn5MU "https://www.youtube.com/watch?v=k9t9PRDn5MU"))
+<hr><blockquote><details><summary>Wersja wideo (instalowanie)</summary><br>
+{{< youtube nmEs0J4M-7I >}}
+</details></blockquote><hr>
+
+<hr><blockquote><details><summary>Wersja wideo (aktualizowanie)</summary><br>
+{{< youtube k9t9PRDn5MU >}}
+</details></blockquote><hr>
 
 Aby zainstalować uBlock Origin (w wersji stabilnej) dla Yandexa, powinieneś wykonać parę kroków:
 1. Po zainstalowaniu Yandex Browser możesz wejść w jego **ustawienia** (settings) i odznaczyć **show Yandex Zen** (Zen pokazuje newsy z różnych stron, wg. zainteresowań, historii, lokalizacji i innych czynników) i **show ads above Tableau** (to są oczywiście reklamy), następnie wejdź w **notifications** i odznacz **show Tableau in the notifications bar** (Tableau to widgety najczęściej odwiedzanych stron, w tym przypadku wyświetlane na pasku). Potem wróć do głównych ustawień i ustaw **Shocking ad blocker** na **Disabled**.

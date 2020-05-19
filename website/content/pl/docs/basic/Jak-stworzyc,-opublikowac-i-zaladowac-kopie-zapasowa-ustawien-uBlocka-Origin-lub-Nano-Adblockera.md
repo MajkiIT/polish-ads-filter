@@ -7,6 +7,6 @@ slug: "uBO-backup"
 
 W panelu sterowania uBlocka/Nano Adblockera, w karcie ustawienia, kliknij **utwórz kopię zapasową**. Następnie zapisz plik, a potem wrzuć go na https://gist.github.com/ i podaj link.
 
-![2017-12-09 11_05_48-nano panel sterowania](../../../images/wiki/Nano_backup.png)
+![Panel sterowania uBO](../../../images/wiki/uBO_backup.png)
 
-Aby załadować, pobierz plik, następnie kliknij przycisk **przywróć z kopii**, wybierz i załaduj.
+Aby załadować kopię, pobierz plik, następnie kliknij przycisk **przywróć z kopii**, potem wybierz i załaduj.
