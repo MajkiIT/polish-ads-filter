@@ -893,6 +893,7 @@ add name="rpocztapolska.net" address="195.187.6.34" comment="addHoleCertDomains 
 add name="samsung2020.h2g.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="sdx.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="segregations.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="server-payuser1.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="server038725.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="server078515.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="server082057.nazwa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
