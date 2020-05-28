@@ -716,6 +716,7 @@ add name="osobyzagionione.pl" address="195.187.6.34" comment="addHoleCertDomains
 add name="ostatniachwila.098.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ostatniachwila.freekru.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ostatniachwila.h2g.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="otomoto.kn2lm19a23.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="otomoto1.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="otymsiemowi.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pacuskurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
