@@ -83,6 +83,10 @@ freshfile.pl##.facebook, .google:style(visibility: hidden !important;)
 gremont.pl##.wd-footer > .row > ul.columns.block:nth-of-type(3) > li > .textwidget:style(color: #0000 !important;)
 intereffective.pl##.t-our-contact__social > .fw-main-row > .fw-container > .fw-row > div:nth-of-type(1):style(visibility: hidden !important;)
 jbzdy.*,jbzd.*##.btn-send-messenger, .fb-like
+knauf-industries.pl##header > div[style*="position:"]:nth-of-type(1) > a:nth-of-type(-n+4):nth-of-type(even):style(background-color: #4f79b8 !important;)
+knauf-industries.pl##header > div[style*="position:"]:nth-of-type(1) > a:nth-of-type(-n+4):nth-of-type(odd):style(background-color: #dbdbdb !important;)
+knauf-industries.pl##header > div[style*="position:"]:nth-of-type(1) > a:nth-of-type(-n+4):style(pointer-events: none !important; border-radius: 100% !important;)
+meblomag.eu##map[name="Map4"] > area:nth-of-type(1):remove()
 meblomag.eu##+js(remove-attr, href, map[name="Map4"] > area:nth-of-type(1))
 media.santander.pl##.footer__social-container > a:nth-of-type(-n+5):style(visibility: hidden !important; width: 1px !important; margin: 1px !important;)
 money.pl,~poczta.wp.pl,pudelek.pl,wp.pl,~www.wp.pl##a[href*="instagram"][title*="instagram"][target="_blank"] ~ a[href*="facebook"][title*="facebook"][target="_blank"]:upward(2)
@@ -91,11 +95,11 @@ money.pl,~poczta.wp.pl,pudelek.pl,wp.pl,~www.wp.pl##title:has-text(Share):upward
 motek.com.pl##a[href="https://www.instagram.com/motek.com.pl/"]:style(pointer-events: none !important;)
 muza.com.pl###facebook:style(visibility: hidden !important;)
 naklejkolandia.pl##+js(remove-attr.js, href, #sliderBox ul > li > a[href^="https://www.facebook.com/notes/naklejkolandiapl/"])
+odkryjpomorze.pl##map[name="Map"] > area:nth-of-type(1):remove()
 odkryjpomorze.pl##+js(remove-attr, href, map[name="Map"] > area:nth-of-type(1))
 plejada.pl##.detailContentWrapper .contentShareLeft .fb_share:style(background: #0000 !important;)
 pl.pandora.net###socialMediaFooter .leftMediaLinkFooter:style(visibility: hidden)
 pollena.com.pl##body > h5:before:style(content: "Podążaj za nami:"; position: relative; left: 102px; background: white; color: white;)
-pomponik.pl##+js(nano-remove-elements-onready.js, a[class="share-link is-facebook"])
 pomponik.pl##^a[class="share-link is-facebook"]
 porta.com.pl##article > div.blog_article_socials:style(max-width: unset !important;)
 realmadryt.pl##.social-share-widget > .social-share-widget__input:style(border-top: 0 !important;)
@@ -109,7 +113,6 @@ scigacz.pl##div#main-footer:style(color: #0000 !important; font-size: 0 !importa
 shop.huawei.com##div.J_anchors:last-of-type > a.J_anchor[style*="width:59px; height:5"]:style(pointer-events: none !important; background: #fff !important;)
 skuter-krakow.pl###home_container_right > div:nth-of-type(1):empty:style(background: #fff !important;)
 um.kielce.pl##map > area[alt="Facebook"]:remove()
-um.kielce.pl#$?#map > area[alt="Facebook"] { remove: true; }
 waw4free.pl###spolecznosci:style(height: auto !important;)
 weather.com##.SocialMediaShareButton:style(pointer-events: none; position: unset !important;)
 werandafamily.com##+js(remove-attr.js, href, .instagram-item > .link-block)
@@ -196,8 +199,11 @@ zlotygron.pl##.site_social > span:style(display: inline-block !important; paddin
 !#if !ext_ublock
 antyweb.pl#?#.box-social-counter
 focus.pl#?#.socializer-fb-share
+meblomag.eu#$?#map[name="Map4"] > area:nth-of-type(1) { remove: true; }
+odkryjpomorze.pl#$?#map[name="Map"] > area:nth-of-type(1) { remove: true; }
 oknonawagrowiec.pl#?#.penci-social__item:nth-of-type(-n+4)
 pilot.wp.pl#?#.fb_iframe_widget
 polonia.net#?##header-social-icons
 telepolis.pl##a.icon-facebook, a.icon-twitter
+um.kielce.pl#$?#map > area[alt="Facebook"] { remove: true; }
 !#endif
