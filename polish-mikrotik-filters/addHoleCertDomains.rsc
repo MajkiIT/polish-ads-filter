@@ -736,6 +736,7 @@ add name="nowiny24.h2g.pl" address="195.187.6.34" comment="addHoleCertDomains Ho
 add name="nowy-regulamin.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="npocztapolska.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="o2-fakty.pro" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="o2.nowy-regulamin.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="o2.regulamin-poczty.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="obslugakelnerska20.wixsite.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="odbierzkod.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
