@@ -41,6 +41,7 @@ add name="allegro.pl.szoten.pl" address="195.187.6.34" comment="addHoleCertDomai
 add name="allegro.su" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegrolokalnie-pl.cc" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegrolokalnie-pl.ru" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="allegrolokalnie.su" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegrolokalnie.tech" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegrosklep.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegrowork.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
