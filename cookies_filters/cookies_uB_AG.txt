@@ -59,6 +59,8 @@ burgerking.pl##body[style]:style(overflow: auto !important;)
 burgerking.pl##.modal:has(.cookies-modal)
 calisia.pl###modals-container
 calisia.pl##.v--modal-block-scroll:style(overflow-y: auto !important;)
+carrefour.pl##.MuiDialog-root:has( > .MuiDialog-container > div[class]:not([id])[role="dialog"]:has-text(cookies))
+carrefour.pl,kanga.exchange##body[style]:style(overflow: auto !important; padding-right: 0 !important;)
 cbdzoe.pl##.swal2-container
 cbdzoe.pl,ticketos.pl##body:style(overflow: auto !important; padding-right: 0 !important;)
 ceres.pl###flipFlop, .modal-backdrop
@@ -146,7 +148,6 @@ jedenslad.pl##.popup-overlay.js-gdpr
 kaliszak.pl##.rodo, .rodo_layer
 kalisz.info.pl###all:style(top: 0 !important;)
 kanga.exchange###root + div[role="presentation"].mui-fixed
-kanga.exchange,zakupycodzienne.carrefour.pl##body[style]:style(overflow: auto !important; padding-right: 0 !important;)
 kbw.gov.pl,pkw.gov.pl###rodo_wiadomosc
 kobietymedycyny.pl##+js(abort-current-inline-script.js, $, cookies)
 kolomnie.pl##.open-modal:style(overflow: auto !important;)
@@ -244,6 +245,7 @@ przydomu.pl###popup_25
 przydomu.pl##.container:style(filter: none !important;)
 puma.com###modal-geoip-cookies, .modal-backdrop
 pum.edu.pl##.js-rodo-info
+pureveg.pl##html:style(padding-bottom: 0 !important;)
 quadgraphics.pl##.blur:style(filter: none !important; pointer-events: unset !important;)
 quadgraphics.pl##.rodo-information-popup, .fixed-layer-information
 radioexpress.pl###rodo, .lean-overlay
@@ -322,7 +324,6 @@ youtube.com###yt-consent-dialog, #yt-dialog-bg
 youtube.com##.yt-dialog-active:style(overflow: auto !important;)
 zagojeni.pl##body.overflow:style(overflow: auto !important;)
 zagojeni.pl##.rodo-overlay
-zakupycodzienne.carrefour.pl##.MuiDialog-root:has( > .MuiDialog-container > div[class]:not([id])[role="dialog"]:has-text(cookies))
 zdmikp.bydgoszcz.pl###customModal, .modal-backdrop
 zozsuchabeskidzka.pl##body.mpc-block-scroll:style(overflow-x: hidden !important; overflow-y: visible !important;)
 zozsuchabeskidzka.pl##html.mpc-block-scroll:style(overflow: visible !important;)
@@ -380,7 +381,7 @@ e-legnickie.pl##body.jconfirm-noscroll:style(overflow: auto !important;)
 e-legnickie.pl##.jconfirm:has-text(cookies)
 farmacja.pl##div.rodo-modal
 farmacja.pl##+js(abort-current-inline-script.js, jQuery, .rodo-modal)
-fnglob.pl###modal, .modal-backdrop
+fnglob.pl,polska6.pl###modal, .modal-backdrop
 forums.openpli.org##+js(abort-current-inline-script.js, euReadCookie)
 fryzomania.pl,happydental.pl,pro-sprzet.pl###myWorning, .modal-backdrop
 gdansk.pl,gokf.gda.pl,rowerowygdansk.pl,stadionenerga.pl##.rodo, .modal-backdrop
@@ -415,6 +416,7 @@ pl.asseco.com###animatedModal:has(h5 > a[href="/polityka-prywatnosci/"])
 pl.asseco.com##.body-overlay
 pl.dow.com##html, body:style(position: static !important; overflow: visible !important;)
 pl.dow.com##.cookie-notify
+polska6.pl###modal:remove()
 polski-tenis.pl###rodo
 porcelana.com.pl##+js(abort-on-property-read.js, alert)
 poszalu.pl###gdpr-modal, .modal-backdrop
@@ -503,7 +505,7 @@ farmacja.pl##^div.rodo-modal
 farmacja.pl##^script:has-text(rodo)
 ferguson-digital.eu##^#cookie-notice
 filmboxlive.com##^.mobox.cookie-policy-popup
-fnglob.pl##^#modal
+fnglob.pl,polska6.pl##^#modal
 fryzomania.pl,happydental.pl,pro-sprzet.pl##^#myWorning
 homedesign.pl##^.popmake-overlay[data-popmake*="rodo"]
 ideafairplay.pl##^#modal-privacy
@@ -599,7 +601,7 @@ ferguson-digital.eu$$#cookie-notice
 filmboxlive.com##.mobox-active:style(overflow-y: auto !important;)
 filmboxlive.com##.mobox-wrapper:has(.cookie-policy-popup)
 filmboxlive.com##.mobox-wrapper:style(overflow: auto !important;)
-fnglob.pl$$#modal
+fnglob.pl,polska6.pl$$#modal
 fryzomania.pl,happydental.pl,pro-sprzet.pl$$#myWorning
 galopuje.pl###RODOCOOKIE, .modal-backdrop
 galopuje.pl,sklepbiker.pl##.modal-open:style(padding-right: 0 !important; overflow: auto !important;)
@@ -622,6 +624,7 @@ pamiatki.pl$$#hw_cookie_law
 pl.asseco.com$$footer ~ a.animatedModal[tag-content="Open"]
 pl.asseco.com$$footer ~ #animatedModal[tag-content="Polityce prywatności"]
 pl.dow.com$$.cookie-notify
+polska6.pl#$?#modal { remove: true; }
 porcelana.com.pl$$script[tag-content="plików cookies"]
 poszalu.pl,sklep.visionexpress.pl$$#gdpr-modal
 powiatslubicki.pl###myModal, .modal-backdrop
