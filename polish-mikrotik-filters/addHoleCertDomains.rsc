@@ -356,6 +356,7 @@ add name="etracking-pocztapolska24.net" address="195.187.6.34" comment="addHoleC
 add name="etracking-pocztex.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="etracking-pocztex24-polska.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="eu.longxvisitorcenter.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="eu.spacexvisitorcenter.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="eu.visitoronearthxrussellathletic.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="euprowadzeniedworzec.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="euprowadzniezdworca.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
