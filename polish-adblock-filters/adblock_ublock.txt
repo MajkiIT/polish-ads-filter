@@ -6,16 +6,16 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 7 June 2020
+! Last modified: 13 June 2020
 ! Expires: 1 day
-! Version: 2020060701
+! Version: 2020061301
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020060701 aktualizacja: nie, 7 czerwca 2020, 18:50:00
+! v.2020061301 aktualizacja: nie, 7 czerwca 2020, 17:59:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -205,17 +205,13 @@ bezuzyteczna.pl##section:has(script + div[id^="crt"][style])
 !
 ! naekranie.pl
 ! Timery ladujace reklamy
-naekranie.pl##+js(abort-current-inline-script.js, $, /loadData|halfpage|welcome|screening|placement/)
 naekranie.pl##+js(setInterval-defuser.js, function neTick(){neTickCounter++;if(neTickCounter<=neTickCountLimit){neTickAjax=$.ajax({type:"POST",url:adminAjaxUrl+"?action=ne_tick",dataType:"json",success:function(data){neTickResponseAction(data)}})}}, 10000)
 naekranie.pl##+js(setTimeout-defuser.js, function check(){console.log("checked");if($(".adform").children().length>3){console.log("its more");$(".adform").children(".adform-banner").show();clearTimeout(check)}}, 1000)
-naekranie.pl##+js(abort-current-inline-script, $, /loadData|halfpage|welcome|screening|placement|adtitle/)
+naekranie.pl##+js(abort-current-inline-script.js, $, /loadData|halfpage|welcome|screening|placement|adtitle/)
 !
 ! bankier.pl
 bankier.pl##+js(abort-on-property-write.js, detectAB)
 bankier.pl##.boxContent > ul > li[class^="item-"]:has(.premium-link)
-!
-! efilmy.online
-efilmy.online##+js(impspcabe-defuser.js)
 !
 ! raptu.com
 raptu.com##+js(noeval.js)
