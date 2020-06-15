@@ -6,16 +6,16 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 14 June 2020
+! Last modified: 15 June 2020
 ! Expires: 1 day
-! Version: 2020061400
+! Version: 2020061501
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020061400 aktualizacja: nie, 14 czerwca 2020, 18:32:00
+! v.2020061501 aktualizacja: pon, 15 czerwca 2020, 14:50:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -178,6 +178,16 @@ www.wp.pl##html, html > body:style(overflow: visible!important;)
 www.wp.pl##+js(set-constant.js, WP.gaf.loadBunch, noopFunc)
 !wp.pl,~pilot.wp.pl,~sportowefakty.wp.pl##+js(set-constant.js, WP.gaf.loadBunch, noopFunc)
 !o2.pl,pudelek.pl,wp.pl##+js(set-constant, Object.prototype.isGoogleBot, true)
+www.wp.pl##div[class^="sc-"]:has(:scope > img[src^="https://v.wpimg.pl/"][role="presentation"][class^="sc-"]:matches-css(position: absolute))
+www.wp.pl##+js(set-constant, Object.prototype.gafSlot, undefined)
+www.wp.pl##+js(set-constant, Object.prototype.advViewability, undefined)
+www.wp.pl##+js(set-constant, Object.prototype.rekids, undefined)
+so-magazyn.pl,o2.pl,pudelek.pl,film.wp.pl,finanse.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,magazyn.wp.pl,moto.wp.pl,opinie.wp.pl,sportowefakty.wp.pl,tech.wp.pl,teleshow.wp.pl,wiadomosci.wp.pl#@#.pub_300x250
+so-magazyn.pl,o2.pl,pudelek.pl,film.wp.pl,finanse.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,magazyn.wp.pl,moto.wp.pl,opinie.wp.pl,sportowefakty.wp.pl,tech.wp.pl,teleshow.wp.pl,wiadomosci.wp.pl#@#.text_ads
+so-magazyn.pl,o2.pl,pudelek.pl,film.wp.pl,finanse.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,magazyn.wp.pl,moto.wp.pl,opinie.wp.pl,sportowefakty.wp.pl,tech.wp.pl,teleshow.wp.pl,wiadomosci.wp.pl#$#.pub_300x250 { display: block!important; }
+so-magazyn.pl,o2.pl,pudelek.pl,film.wp.pl,finanse.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,magazyn.wp.pl,moto.wp.pl,opinie.wp.pl,sportowefakty.wp.pl,tech.wp.pl,teleshow.wp.pl,wiadomosci.wp.pl#$?#html { overflow: visible!important; position: unset!important; }
+so-magazyn.pl,o2.pl,pudelek.pl,film.wp.pl,finanse.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,magazyn.wp.pl,moto.wp.pl,opinie.wp.pl,sportowefakty.wp.pl,tech.wp.pl,teleshow.wp.pl,wiadomosci.wp.pl#$?#body { overflow: visible!important; position: unset!important; }
+so-magazyn.pl,o2.pl,pudelek.pl,film.wp.pl,finanse.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,magazyn.wp.pl,moto.wp.pl,opinie.wp.pl,sportowefakty.wp.pl,tech.wp.pl,teleshow.wp.pl,wiadomosci.wp.pl#$?#body > [class]:not(.settings--user) { filter: none!important; }
 !
 ! o2.pl
 poczta.o2.pl,poczta.wp.pl##body > #page:style(display: block !important;)
