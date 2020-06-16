@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2020.6.13.0
-! Last modified: Sat, 13 Jun 2020, 15:44 UTC+02
+! Version: 2020.6.16.0
+! Last modified: Tue, 16 Jun 2020, 19:36 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -18,7 +18,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2020 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2020.6.13.0 aktualizacja: sob, 13 cze 2020, 15:44 UTC+02
+! v.2020.6.16.0 aktualizacja: wto, 16 cze 2020, 19:36 UTC+02
 !
 !
 ! Specyficzne reguły ukrywające
@@ -224,7 +224,7 @@ avcraft.pl##.cookiesEU-inner
 avmarket.eu,delllow.com,dronexpert.eu,drukowanie.net,ethnostudio.eu,interlumen.com,kegel-aj.com,madys.eu,meble-jarocin.com,sprzetjezdziecki.com###InfoCookie
 avon.pl##.CookieSection
 azure.microsoft.com###cookie-prompt
-baborow.pl##.page-cookie
+baborow.pl,przemysl.pl##.page-cookie
 babytvchannel.info###cookieStandart
 baby.nivea.pl##.policy-info, .privacy-policy-change
 bacca.pl###CookieLawInfoPlugin
@@ -1225,8 +1225,7 @@ licytacje.komornik.pl###sign_up, body > div[style*="margin-top: 100px"]
 lifepointspanel.com##.cookie_banner_notification
 lightbox.pl##.cookies-bottom
 limango-outlet.pl##.lilayout-header-cookiebar
-limango.pl###footer-container ~ div[class*="shop"]:last-of-type:not([style])
-limango.pl##.floating_notification
+limango.pl###footer-container ~ div[class*="shop"]:last-of-type:not([style]), .floating_notification
 linkedin.com###artdeco-global-alert-container > artdeco-global-alert[severity="notice"]
 linkedin.com###global-alert-queue > .alert, #notice-cookie-policy, .global-alert
 linkhouse.pl##.popup_wrapper, .popup_background
@@ -1274,6 +1273,7 @@ malwaretips.com,xiaomi.eu##.notice--cookie
 malybelgrad.pl##.june2018cookies
 mamadha.pl,maxonactive.pl###page-cookie-bar
 mamaplus.pl###ue-cookie-warning
+mango.pl##div[class^="cookieMonster-wrapper-"]
 manusite.pl##div[style="width:960px;height:100px;background:#0F0F0F;font-size:15px;text-align:center;padding:10px auto;"]
 maratony24.pl##div#privacyPolicy
 marczewski.pl,michal.kosmulski.org###ustawaCiasteczkowa
@@ -3266,6 +3266,8 @@ gg.pl#@#body > div:nth-of-type(2) > div
 pl#@##catapult-cookie-bar
 pl#@#.ccc-widget:not(body):not(html)
 pl#@#.cookie-msg-box
+uniroyal.pl#@#.js-cookie-banner:not(body):not(html)
+uniroyal.pl#@#.privacyhint:not(body):not(html)
 volcano.pl#@##cookiesModal
 @@||bitner.com.pl/plugins/cookiebar/jquery.cookiebar.js
 !
