@@ -10,7 +10,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 17 June 2020
 ! Expires: 1 day
-! Version: 2020061702
+! Version: 2020061703
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020061702 aktualizacja: sr, 17 czerwca 2020, 10:20:00
+! v.2020061703 aktualizacja: sr, 17 czerwca 2020, 13:20:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -262,6 +262,7 @@ popkiller.pl,tygodnikpodhalanski.pl,cnc.info.pl##[class*="reklamy"]
 ~wtkplay.pl,~epoznan.pl,pl##[class^="advertisement"]
 ~katywroclawskie.pl,~rozklad-pkp.pl,~gwarant.czest.pl,~sukniaonline.pl,~pepco.pl,pl##[src*="/banners/banner"]
 pl##.inpl-gallery-ad-horizontal
+pl##.reklama_top
 !
 !9#------------------------Specific element hiding rules------------------------!
 100pompek.pl,podciaganie.pl,miesniebrzucha.pl,miesnienog.pl,biegaj40minut.pl,treningrozciagania.pl,treningaerobowy.pl###block-trainings-rev-content-bottom, #block-trainings-rev-header
@@ -876,9 +877,7 @@ epainfo.pl###custom_html-19, #custom_html-18
 epainfo.pl##.td_block_text_with_title
 epainfo.pl##.wpb_text_column, #epain-752f77f26d6724dc4341c712ac18b0dc
 epainfo.pl##DIV.g-single > IMG
-!epainfo.pl#?#.widget_custom_html:-abp-contains(Reklama)
 epainfo.pl,vipmultimedia.pl##A.gofollow > IMG
-!epainfo.pl##.cad_widget-box > ul > .epain-widget.widget.td_block_template_1
 epainfo.pl##[id^="epain-"] > A[target="_blank"] > IMG
 epainfo.pl##.block-title > span:has-text(REKLAMA)
 epainfo.pl##.block-title > span:has-text(Reklama)
@@ -900,6 +899,8 @@ esanok.pl##.socialGallery > div:nth-of-type(1)
 eska.pl##.zpr_top_1, #placement2, .center.t2.color13, .banner-750.fontregular, .active.zpr_box, .zpr_combo
 eska.pl##A[style="display: block; height: 100%; width: 100%;"]
 eska.pl##[href*="bbelements.com/please/track/adClick/"]
+eskatt.pl###NaglowekSklepu > div > div > A > IMG
+eskatt.pl##div.BoxRwdUkryj:nth-of-type(2) > .CalyBox
 eslupsk.pl##.box_unison-slide
 estadios.pl##.blok_tresc_bez_tla, .baner_home2, .baner_top_tlo
 estrzelce.pl###popup2, #ac-wrapper, #nav > div.moduletable
