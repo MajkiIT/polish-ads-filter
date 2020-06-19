@@ -114,6 +114,7 @@ add name="deducingsi.xyz" address="195.187.6.34" comment="addHoleCertDomains Hol
 add name="deutschepost.de.deliveryexpress.today" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="devicenowaasn37126.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="devicenowaasn51541.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="dhdost.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dhexpl.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dhexpres.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dhl-dostawa.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
