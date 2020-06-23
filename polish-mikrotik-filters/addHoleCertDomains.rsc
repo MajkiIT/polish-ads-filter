@@ -37,6 +37,7 @@ add name="alkadiakurier.com" address="195.187.6.34" comment="addHoleCertDomains 
 add name="alkadiakurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="alkoskurier.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegor.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="allegr0.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegro-blokada.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegro.ogloszenie.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="allegro.pl-oferta.ml" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
