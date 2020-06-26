@@ -8,9 +8,9 @@
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 24 June 2020
+! Last modified: 26 June 2020
 ! Expires: 1 day
-! Version: 2020062402
+! Version: 2020062601
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020062402 aktualizacja: sr, 24 czerwca 2020, 16:10:00
+! v.2020062601 aktualizacja: ptk, 26 czerwca 2020, 06:50:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -88,7 +88,6 @@ pl/*/rodzinnawycieczka/$image,domain=wp.pl
 ||nextclick.pl^$script
 ||reklamy.sterta.pl/$object-subrequest,domain=patrz.pl
 ||upvid.co/$popup,domain=~mirrorace.com
-||vdztrack.com^
 ||zalukaj.com/sdm.php$xmlhttprequest
 !
 !5#-----------------------Elements hide on movie-----------------------!
@@ -864,6 +863,7 @@ elektroda.pl##.the-content > div[class] > div:has(:scope >a[href][target="_blank
 elektroda.pl##.bbd
 elektroda.pl##.col-md-12.sec-b
 elektrosystemy.pl##.ms-container > .ms-inner-controls-cont > .ms-grab-cursor.ms-basic-view.ms-view
+elektrosystemy.pl###custom_html-43, #text-87, #custom_html-47, #text-92
 elektroinstalacje.info###side-border-left > div.panelbody:nth-of-type(1)
 elektroinstalacje.info###side-border-left > h3.panelcap:nth-of-type(1)
 elektryka.org##[href^="http://www.elektryka.org/redirect.php"]
@@ -964,6 +964,7 @@ fabrykasypialni.pl###mebloo
 facetemjestem.pl##.bgt-single-classic-content.uk-width > center
 facetpo40.pl###overHotSection, .banerBox, #fixed_box
 fachowydekarz.pl###flyfooter, [class^="adadapt"]
+fachowyinstalator.pl##.code-block-7
 fajowe.pl##.commercial-center
 fakt.pl###eF > .clr
 fakt.pl###multi-1488380533
@@ -1120,6 +1121,7 @@ gazeta.pl##.opacity.page-sections > .photos_loaded.box_games.page-section.html >
 gazeta.pl##.photos_loaded.box_bargains.page-section.html > .slices-container.container-fluid
 gazeta.pl##.type_default
 gazetabilgoraj.pl#?#.vc_row-has-fill.vc_row-fluid.wpb_row.vc_row.row:-abp-has(img[width="350"][height="250"][src*="-350x250."]), .vc_row-has-fill.vc_custom_1526373595932.vc_row-fluid.wpb_row.vc_row.row, .vc_row-has-fill.vc_custom_1526373595932.vc_row-fluid.wpb_row.vc_row.row
+gazetabilgoraj.pl##div.vc_col-sm-4.vc_column_container.bs-vc-column.wpb_column > .wpb_wrapper.bs-vc-wrapper > .wpb_raw_html.wpb_content_element.wpb_raw_code > .wpb_wrapper > A, .wpb_wrapper > .vc_single_image-img
 gazetacz.com.pl##td:nth-of-type(1) > table:nth-of-type(2), #custom_html-2 > .widget-title, .gazet-widget.widget
 gazetacz.com.pl##td:nth-of-type(5) > table:nth-of-type(3)
 gazetagazeta.com##.size-full.attachment-full, [id^="media_image-"], .size-full.aligncenter
@@ -1226,7 +1228,7 @@ gowork.pl##.popup-free-offer
 gowork.pl##[id^="ad_"]
 gp24.pl##.typObrazek.skrocone.rekomendacje.large-3.hide-for-medium-down.columns
 gpd24.pl##[id^="zozo_ads_widget"], [id^="random_banner_widget-"], .newser-artical-bottom-ads
-gpcodziennie.pl##[id*="750x200"], a[href^="https://gpcodziennie.pl/click.php"]
+gpcodziennie.pl##[id*="750x200"], a[href^="https://gpcodziennie.pl/click.php"], #column-right > .text-center > span, #JPO
 gpcodziennie.pl##body > .text-center
 gpr24.pl##.row:nth-of-type(13)
 gr4cze.pl###custom_html-8, #custom_html-11
@@ -4263,7 +4265,6 @@ cda-tv.online###clickfakeplayer
 !
 !27#--------------------------Rules for pages with random adv scripts block------------!
 |about:$popup,domain=onlystream.tv
-||4b6994dfa47cee4.com^
 ||69oxt4q05.com^
 ||b54m4qbmt0b9.com^
 ||bodelen.com^
@@ -4305,7 +4306,6 @@ cda-tv.online###clickfakeplayer
 ||drda5yf9kgz5p.cloudfront.net^
 ||d3mzokty951c5w.cloudfront.net^
 ||achcdn.com^
-||a.a^
 ||upgulpinon.com^
 !
 !28#--------------------------Rules for pages with random adv scripts regex------------!
