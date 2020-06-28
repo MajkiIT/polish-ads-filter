@@ -997,6 +997,7 @@ add name="pgnig-24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCe
 add name="pgnigonline.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pilnasprawa.hekko24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pilnesprawy.h2g.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="pl-fb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pl-nadaj.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pl-pl-fb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pl-pl-fb.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
