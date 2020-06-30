@@ -2082,6 +2082,7 @@ add name="www.platnosc-kurier.com" address="195.187.6.34" comment="addHoleCertDo
 add name="www.platnosc9481.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.platnosci-online.services" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.playallthis.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.playsklep.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.pllubiok.5v.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.poczta-interia.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.poczta-regulamin.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
