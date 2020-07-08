@@ -8,9 +8,9 @@
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 6 July 2020
+! Last modified: 8 July 2020
 ! Expires: 1 day
-! Version: 2020070603
+! Version: 2020070801
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020070603 aktualizacja: pon, 6 lipca 2020, 18:45:00
+! v.2020070801 aktualizacja: sr, 8 lipca 2020, 15:45:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -526,6 +526,7 @@ booklips.pl#?#.widget_custom_html:-abp-contains(Patron)
 booklips.pl,bloog.pl,kurierwilenski.lt###custom_html-6
 booksclub.pl##IMG[src*="/banners/"]
 boxing.pl##td:nth-of-type(2) > div:nth-of-type(3)
+braclowiecka.pl###sidebar > div.widget > h3:-abp-contains(Reklama), div.widget > .socialize
 brainly.pl##.brn-ads-box
 brodnica.net##.stopka, .calosc
 brodnica.net##[href^="/banery/click.php"]
@@ -552,7 +553,7 @@ busradar.pl##div[id^="leaderboard-"]
 busy-krk.pl###tt_box > div[id^="gad"]
 bwotr.pl##.widget_media_image.widget
 bydgoszczcity.pl##.promotion-section, #media_image-4, #media_image-2, #media_image-3, #media_image-1
-bytomski.pl##IMG[src^="http://www.bytomski.pl/images/banners/"], #sppb-addon-1575199906458 > .sppb-text-center.sppb-addon-single-image.sppb-addon > .sppb-addon-content > .sppb-addon-single-image-container
+bytomski.pl##IMG[src^="http://www.bytomski.pl/images/banners/"], #commercial
 bytomski.pl,dziennikpolicki.pl##.custom > span
 bzdura.pl##.text.item.block:nth-of-type(1)
 bzdura.pl,gospodarkapodkarpacka.pl,propertynews.pl,24jgora.pl,24wroclaw.pl##[class*="adv"]
@@ -892,12 +893,13 @@ eostroleka.pl##DIV[style$="width: 100%; margin: 8px auto; overflow: hidden;"]
 eostroleka.pl##DIV[style="margin-bottom:10px; margin-left:25px; float:left; width:300px; height:300px;"]
 epainfo.pl###custom_html-19, #custom_html-18
 epainfo.pl##.td_block_text_with_title
-epainfo.pl##.wpb_text_column, #epain-752f77f26d6724dc4341c712ac18b0dc
+epainfo.pl##.wpb_text_column
 epainfo.pl##DIV.g-single > IMG
 epainfo.pl,vipmultimedia.pl##A.gofollow > IMG
 epainfo.pl##[id^="epain-"] > A[target="_blank"] > IMG
 epainfo.pl##.block-title > span:has-text(REKLAMA)
 epainfo.pl##.block-title > span:has-text(Reklama)
+epainfo.pl##[href^="https://epainfo.pl/linkout/"]
 eparczew.pl###block-block-5
 epd24.net##.boksy-wyroznione.box
 epiotrkow.pl##a[href^="rd.php"]
@@ -1675,6 +1677,7 @@ lit.pl###stronaReklama
 live.com##.popupOuterCellLeft
 lk-projekt.pl###widget_oferta_lk
 lm.pl##.belka_z_banerami,.lista_ogloszen_reklama
+log4.pl##.grafikaKlienta
 lokalna.com.pl##.leaderboard.col-lg-7.col-md-7
 lokalna.info##.td_block_template_4.td-pb-border-top.td-single-image-.td_uid_4_5c69b28607848_rand.vc_single_image.td-no-img-custom-url.td_block_wrap.td_block_single_image.wpb_wrapper, .td_block_template_4.td-pb-border-top.td-single-image-.td_uid_5_5dff428764516_rand.vc_single_image.td_block_wrap.td_block_single_image.wpb_wrapper
 lokalna24.pl##.custom > p > span, aside > div > .text-center
@@ -1970,7 +1973,8 @@ msmobile.pl###gk-top1
 msmobile.pl###text-57
 mtech.pl###widget-notify
 multi-head.pl##.partnerRight
-muratordom.pl,mjakmama24.pl,muratorplus.pl##.active.placement__lazy, #bottom_1, .zpr_box_side_bottom, [class*="placement"]
+muratordom.pl,mjakmama24.pl,muratorplus.pl,urzadzamy.pl##[class*="placement"]
+muratordom.pl,mjakmama24.pl,muratorplus.pl##.active.placement__lazy, #bottom_1, .zpr_box_side_bottom
 muratordom.pl##.promo.main_page.container, .player-block-info
 musiclovers.pl##div.wpb_content_element.wpb_text_column, .td-header-sp-recs, .wpb_raw_html.wpb_content_element.wpb_raw_code
 muzyka.dziennik.pl##.widget-headertext-area
@@ -1993,12 +1997,13 @@ nacjonalista.pl##.napis, .entry-content.entry > A
 nacjonalista.pl##DIV[align="center"]
 nadmorski24.pl###G-banerGlowny, .dynamicAD, .homeMain > A
 nadwisla24.pl##div.container > .mines-center, #page > .container, #nw-secondary > div > A
-naekranie.pl###cornerContainer, .x1510e7cb
+naekranie.pl###cornerContainer
 naekranie.pl##* > [href^="/d"]
 naekranie.pl##.wrapper > div > [class^="t"] > div
 naekranie.pl##[class^="t"] > [href^="/0"]
 naekranie.pl##[href^="/0f"]
 naekranie.pl##video
+naekranie.pl##.screening-banner, #art_rec_bottom > .wtg-placeholder, #art_half_prawa_szpalta, #art_rec_bottom, #sg_belka_srodek
 nakanapa.pl###milana-text-74
 naklo24.pl##.ban
 nakolei.pl##.textwidget > A[target="_blank"]
@@ -2016,7 +2021,7 @@ naszagazeta.info###Mod114, #Mod116, #Mod117
 naszalomza.pl##.in.fade.modal-backdrop
 naszamlawa.pl###fancybox-wrap
 naszamlawa.pl##.flooor
-naszamlawa.pl##.td_uid_4_5d18db7fb12a1_rand.vc_column
+naszamlawa.pl##.td-pulldown-size:-abp-contains(R E K L A M A)
 naszamlawa.pl##[class^="efactory-ad-"]
 naszamlawa.pl,e-dukacja.pl,e-farmacja.net,rynekinstalacyjny.pl,gramwzielone.pl##.banner
 naszciechanow.pl##.spacead-r-2, [class^="efactory-ad-"], .td-is-sticky.td-pb-span4
@@ -2413,7 +2418,7 @@ progressforpoland.com,cyfrowaekonomia.pl,expresselblag.pl##.td-header-rec-wrap
 prokapitalizm.pl###text-4, #text-7, #custom_html-2
 promise.com.pl###ctl00_ReklamaBig1_pnlBaner
 promocja.mielec.pl##.image-under
-promocyjni.interia.pl##.l-app__content__paper-fold._qmandit > div, .l-app__content__paper-fold._qmandit, .l-app__content__paper-fold._95ssv1s, ._m2boqwj, [id^="slot-"]
+promocyjni.interia.pl##.l-app__content__paper-fold._qmandit > div, .l-app__content__paper-fold._qmandit, .l-app__content__paper-fold._95ssv1s, [id^="slot-"], .ap-ad.auto-promo-box.ap-pos-center
 promocyjni.pl##.autopromo-boxes-holder > .ap-ad.auto-promo-box
 promocyjni.pl##.autopromo-boxes-holder > .ap-pos-left
 promocyjni.pl##.autopromo-boxes-holder-2nd
@@ -3476,7 +3481,7 @@ zwierciadlo.pl##.srodtekstimg
 zwik.skawina.pl###popupDiv, #bgDiv
 zw.lt##.grid-12 > .banners.box, .wp-image-378854.size-full.alignnone
 zwolen24.pl##div:nth-of-type(1) > div.sideout:nth-of-type(2), #adocr
-zycie.pila.pl##.text-center
+zycie.pila.pl,gpcodziennie.pl##.text-center
 zycie.pl##.images.left-dd
 zyciebytomskie.pl##[id^="ad"]
 zycieczestochowy.pl###frank
