@@ -10,7 +10,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 8 July 2020
 ! Expires: 1 day
-! Version: 2020070802
+! Version: 2020070803
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020070802 aktualizacja: sr, 8 lipca 2020, 15:50:00
+! v.2020070803 aktualizacja: sr, 8 lipca 2020, 18:45:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -1110,10 +1110,6 @@ gastrona.pl##.content > A > IMG
 gazeo.pl##.point
 gazeta-mlawska.pl##.clear.box_tekstowy_mainpage:nth-of-type(4), div.clear.box_tekstowy_mainpage:nth-of-type(5), div.clear.box_tekstowy_mainpage:nth-of-type(6)
 gazeta-mosina.pl##div.mod-line.module > .deepest.box-1 > P
-gazeta-olawa.pl##.absolute, #sidebar-primary-sidebar > div.row, .reklama-txt
-gazeta-olawa.pl##.style-normal.full-width.container.content-container.row, .betterad-link
-gazeta-olawa.pl##.vc_custom_1558347292737.vc_align_center.wpb_content_element.wpb_single_image, #advertisement-image-2
-gazeta-olawa.pl##img[width="300"][height="300"]
 gazeta-wiesci.pl###text-11, #text-8, #text-12, #text-10
 gazetarumska.pl##[id^="gazet-"]
 gazeta.pl##.binInLinksList
@@ -1290,7 +1286,8 @@ halogorlice.info##.bannergroup
 halogorlice.info##.center.module
 halogorlice.info##.itemFullText > .custom
 halogorlice.info##[id^="sppb-addon-"] > .black.block-title.sppb-addon-module.sppb-addon > .sppb-addon-content
-halogorlice.info##hr, .reklama-center, #sppb-addon-1519497934974, #sppb-addon-1520015008039
+halogorlice.info##hr, .reklama-center
+halogorlice.info##[class*="advert-"]
 halogorlice.info#?#.sppb-addon-title:-abp-contains(reklama)
 halogorlice.info#?#p:-abp-contains(reklama)
 haloursynow.pl##.voffset3.cleardiv
@@ -1431,7 +1428,7 @@ it-manuals.info,witkowo.eu,motohigh.pl,futbolweb.pl,kaszuby24.pl###text-5
 itporady.pl##.hidden-xs.r_sidebar
 itporady.pl##.well
 itporady.pl##A > IMG.img-responsive.center-block
-itporady.pl,igryfino.pl,eluban.pl##.visible-lg
+itporady.pl,igryfino.pl,eluban.pl,tuolawa.pl##.visible-lg
 itreseller.pl###banner
 itreseller.pl##.swf
 ittechblog.pl##.ext-link
@@ -1855,7 +1852,7 @@ miechowski.pl##.wpb_content_element.vc_separator
 miedziowe.tv,elka.tv##.moduletable-box
 miedzyrzec.info###banerA, #reklamaImg
 miedzyrzecz.biz###showimage, .td-a-rec, #aside.widget_text.widget.td_block_template_1
-miejscawewroclawiu.pl##.vc_custom_1544721178017
+miejscawewroclawiu.pl###rev_slider_1_1
 miejscowa.pl##.td_block_template_1.td-pb-border-top.td_uid_15_5ca9bcbd1f688_rand.vc_custom_1531991690619.vc_column_text.td_block_wrap.wpb_text_column.wpb_wrapper
 mieszkaniec.pl##[class^="attachment-"]
 migrelo.de###modMnNewLayerA, .newLayerBack.a.modMnNewLayerBack
@@ -2513,7 +2510,7 @@ radiowroclaw.pl###BannerHolder, .advLabel
 radiozet.pl###banner-radiostacja
 radiozet.pl##.adocean
 radioznin.fm###jm-footer-menu
-radiozw.com.pl###slider, #_ning_zone_253_1174457063
+radiozw.com.pl###slider, [id^="_ning_zone_"]
 radkow.it###srodek3 > div
 radom24.pl##.skyscaper
 radomnews.pl##[id^="banP"]
@@ -2933,8 +2930,8 @@ theoniondaily.com,kanag.pl##.custom-html-widget.textwidget
 thepolandtimes.com##a[href^="http://p"] > IMG
 thinkapple.pl##.sidebar_list
 thinkapple.pl,repostuj.pl##a[href*="://bit.ly/"]
-tibiopedia.pl##.forumBottAd, .forumMainAd
-ticketmaster.pl##.dGPTXk.s9bjmyz-0, .edmGoe.xdysqj-0
+tibiopedia.pl##.forumBottAd, .forumMainAdF
+ticketmaster.pl##div[class^="sc-"]:-abp-contains(Reklama), [id^="ad-slot-"]
 tinypic.pl##div.media-toolbox:nth-of-type(1), #nexus_ban
 tkn24.pl###right-sidebar, #dk-image-rotator-widget-6, #FONT[color="SILVER"], #container > center, #dk-image-rotator-widget-10
 tkn24.pl#?#font:-abp-contains(REKLAMA)
@@ -2950,7 +2947,7 @@ torebunia.pl###adv_on_post, #small
 torebunia.pl###pager > small
 tosiedzieje.pl##.clr.ai_widget.sidebar-box
 tp.com.pl##[id^="text-html-widget-"], #custom_html-3, .l-box > p > font
-tradersarea.pl##.tdi_28_23e.vc_raw_html.td_block_wrap.wpb_wrapper > .td-fix-index, #custom_html-3 > .custom-html-widget.textwidget
+tradersarea.pl###custom_html-3 > .custom-html-widget.textwidget, .vc_raw_html.td_block_wrap.wpb_wrapper > .td-fix-index > A > IMG
 traftu.pl##.half.news.gray.box
 transfery.info##div.blok:nth-of-type(4)
 translate.google.pl##.gb_zb.gb_jb.gb_La
@@ -2981,7 +2978,7 @@ tryton.com.pl##[id^="banner"]
 trzemeszno24.info##div.span-24:nth-of-type(4) > center:nth-of-type(1), div.span-24:nth-of-type(4) > center:nth-of-type(2), #text-48, .content > center:nth-of-type(1), .content > center:nth-of-type(2)
 tsk24.pl###gkMainbodyTop
 tubagliwic.pl,tubawyszkowa.pl##.active.aligned.center.segment.basic.stackable.ui > small, .aligned.center.column.one.grid.stackable.ui > p > small, .active.aligned.center.segment.basic.stackable.ui > p > small
-tubawyszkowa.pl,tubamarek.pl,gazeta-olawa.pl##p > small
+tubawyszkowa.pl,tubamarek.pl##p > small
 tulegnica.pl##.l-box--33.l-box > p
 tur-info.pl##.left_aktualnosci_tekst > p:nth-of-type(4)
 tur-info.pl##a[href^="http://www.tur-info.pl/przekierowanie/"]
@@ -3238,7 +3235,7 @@ www.3trzy3.pl##.fons_zona_golds.sec_publi
 www.43bis.media.pl##.column-right-advertising, .column-left-advertising
 www.antyradio.pl##.adsearch-adkontekst
 www.applecenter.pl###leader-wrap
-www.applecenter.pl,zarabiajnaokazjach.pl,kierunek.szczecin.pl,trybawaryjny.pl,android.com.pl,off-road.pl,polskikosz.pl,gazeta-wiesci.pl,my3miasto.pl,kucharze.pl,portalwarszawski.com.pl,gazeta-olawa.pl,infobusko.pl##.textwidget
+www.applecenter.pl,zarabiajnaokazjach.pl,kierunek.szczecin.pl,trybawaryjny.pl,android.com.pl,off-road.pl,polskikosz.pl,gazeta-wiesci.pl,my3miasto.pl,kucharze.pl,portalwarszawski.com.pl,infobusko.pl##.textwidget
 www.aptekagemini.pl###pw_bannery_5, .baner, .s_extra_btn, .container_right_box, .container_left_box
 www.axn.pl###block-dart-dart-tag-980x100-ldr-top.block.block-dart > .content > .dart-advertisement
 www.benchmark.pl##.product
