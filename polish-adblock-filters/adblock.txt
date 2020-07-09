@@ -8,9 +8,9 @@
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 8 July 2020
+! Last modified: 9 July 2020
 ! Expires: 1 day
-! Version: 2020070804
+! Version: 2020070901
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020070804 aktualizacja: sr, 8 lipca 2020, 18:55:00
+! v.2020070901 aktualizacja: czw, 9 lipca 2020, 19:10:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -1287,7 +1287,7 @@ halogorlice.info##.center.module
 halogorlice.info##.itemFullText > .custom
 halogorlice.info##[id^="sppb-addon-"] > .black.block-title.sppb-addon-module.sppb-addon > .sppb-addon-content
 halogorlice.info##hr, .reklama-center
-halogorlice.info##[class*="advert-"]
+halogorlice.info,tuolawa.pl##[class*="advert-"]
 halogorlice.info#?#.sppb-addon-title:-abp-contains(reklama)
 halogorlice.info#?#p:-abp-contains(reklama)
 haloursynow.pl##.voffset3.cleardiv
@@ -1561,7 +1561,7 @@ konin24.info##.flex-list, [href^="Plugin/ads_click.php"]
 kopalniawiedzy.pl##.right-col-sky
 kopalniawiedzy.pl##.ui-helper-clearfix.box.interview > .ui-helper-clearfix
 korkosfera.pl##div#copyright_ne
-korso.pl,debica24.eu##.legal-notice
+korso.pl,debica24.eu,halogorlice.info##.legal-notice
 korsosanockie.pl,korso.pl##.no-bg.widget
 korsokolbuszowskie.pl#?#div.widget.row > .widget-custom.text-center:-abp-has(> div:-abp-contains(/Reklama/i))
 koscian.net##.span_15.col
@@ -2713,13 +2713,14 @@ spidersweb.pl##.after-wikobg.after.wikobg.box-specjalna > [href^="https://www.x-
 spidersweb.pl##.box-visual, .padding-20-0, .text-center.columns.small-12.medium-12.large-4
 spidersweb.pl##.category-color-bg.archive-header
 spidersweb.pl##.show-for-large.columns.large-9 > nav > ul > li:nth-of-type(9)
-spidersweb.pl##.sonybg, .netflix-box
+spidersweb.pl##.sonybg, .netflix-box, .box-specjalna
 spidersweb.pl##.sticky, #vimeo_player, .after-boxfintechbg.after.boxfintechbg.box-specjalna
 spidersweb.pl##[href="https://bit.ly/2SAaczl"], .show-for-large.columns.small-12.medium-12.large-4
 spidersweb.pl##a[href^="https://www.audi.pl/"], .sidebar-reklamabg, .wall-bg-banner, .hbo-single-bg, .wall-bg-link
 spidersweb.pl##center > iframe
 spidersweb.pl##iframe[src*="ads"], .adContainer
 spidersweb.pl##section.show-for-medium.margin-bottom35.padding-35-0.greybg > .row > .show-for-large.columns.large-4
+spidersweb.pl#?#.sidebar-panel:-abp-has(center:only-child script:-abp-contains(googletag.cmd.push))
 spiswitryn.pl##[src^="https://www.slubi.pro/banery/"]
 spiswitryn.pl##h3:nth-of-type(3)
 spiz.pl,roksa.pl##.c
@@ -2960,6 +2961,7 @@ tripolo.pl###footer-sidebar
 trodatreleases.com##.bannertop
 trodatreleases.com##.bgrey.block
 !trojmiasto.pl###watermark[href^="http://www.trojmiasto.pl/rd/"], INS[id^="revive-0-"], [class*="-overflow"], ins > div[class*="-wrapper"], ins > a > img[src*="__qs"], [class$="-maxia--glowna"], #adv_words
+trojmiasto.pl##.banner-maxia--glowna.banner-maxia.banner.bx
 trojmiasto.pl##iframe[src*="trojmiasto.pl/"][src*=".html"][name]
 trojmiasto.pl##.subcontent-body  > div > div > a[target="_blank"] > img[height][width]
 trojmiasto.pl##a[target="_blank"][href*=".trojmiasto.pl/"] > img[width][height][src*=".trojmiasto.pl/"]
