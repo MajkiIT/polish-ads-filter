@@ -1837,6 +1837,7 @@ add name="www.fb-ads.me" address="195.187.6.34" comment="addHoleCertDomains Hole
 add name="www.fb-regulamin.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fb-service-login-photoview0forward.you2.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fb-stalking.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.fb-updt.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fbgroups.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.filmspolandxxx.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.food-eng.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
