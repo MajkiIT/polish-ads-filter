@@ -8,9 +8,9 @@
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 9 July 2020
+! Last modified: 12 July 2020
 ! Expires: 1 day
-! Version: 2020070902
+! Version: 2020071201
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020070902 aktualizacja: czw, 9 lipca 2020, 20:15:00
+! v.2020071201 aktualizacja: nie, 12 lipca 2020, 13:35:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -599,7 +599,7 @@ chip.pl###search_box
 chip.pl##.portlet.portletCeneo
 chip.pl##LI[id^="media_image"].widget_media_image:last-child
 chip.pl##[id^="portletwrapper-"] > form
-chip.pl,magazynbieganie.pl##.top-banner
+chip.pl,magazynbieganie.pl,prawo.pl##.top-banner
 chip.pl,ostrzeszowinfo.pl,infostrow.pl,dlawas.info,malopolska.in###banner-top
 chnnews.pl###main_bottom > .clearfix.module:nth-of-type(1)
 chojna24.pl###HTML13, #HTML15
@@ -768,6 +768,8 @@ dostawczakiem.pl##.dosta-widget.widget, #reklamowkaBottom, .nad-trescia-banner
 dotnetomaniak.pl##.recommend-left-column
 dotnetomaniak.pl,dostawczakiem.pl##.pasek1
 download.net.pl##DIV[style="text-align: center; margin: 0 auto;"]
+download.komputerswiat.pl##a[href^="/akcesoria-i-narzedzia/kopia-zapasowa-danych/cloud-backup"] > img
+download.komputerswiat.pl##div.dl-floating-slot-wrapper
 doz.pl##.clearfix.container > .clearfix.row
 driverm.webd.pl###sidebarii > div.sidebar-box:nth-of-type(1)
 dstar.pzk.pl##[style$="background: #dfdfdf;"]
@@ -2367,6 +2369,7 @@ posshop.pl###box_custom3
 postawnaswoim.pl##.size-full.alignnone
 postawnaswoim.pl,forum.tweaks.pl,androidhacksgames.com,mobilegameshack4u.com,solarkurier.pl,miniskrypt.hubaiitv.pl,precyl.com,przeklej.org,darmowetv.pl,forum.vwgolf.pl,szuman.eu,audiostereo.pl,ogloszenia.gazeta.ie,legio24.pl,sdcv.pl,dostawcy-internetu.pl,forum.bukmacherskie.com,nasze.fm,lovekrakow.pl,mh24.pl,faktykonopne.pl,lajfy.com,disco-polo.info,pokemon-go.pl,gazeta-wiesci.pl,polskaniepodlegla.pl,lpg-forum.pl,kuszotv.pl,meczelive.tv,tablety.pl,polskatimes.pl,gazetakrakowska.pl,nacjonalista.pl,ostrowiecnews.pl,medianarodowe.com,prawy.pl,hobby-elektronika.eu,lowiczanin.info,kurier-w.pl,protestanci.info,wachtyrz.eu##center
 potplayerclub.pl##.potpl-adlabel
+podobnestrony.pl##.int__url > .picture
 powiat-piaseczynski.info##div[class$="bannergroup"]
 powiatowa.info###jm-header-mod > .jm-module:nth-of-type(2) > .jm-module-in
 powiatowa.info###jm-left > div > .jm-module:nth-of-type(1)
@@ -2926,7 +2929,7 @@ teraz-wilanow.pl###rev_slider_2_3_wrapper, #rev_slider_3_6, #rev_slider_2_1_wrap
 terazgabin.pl##.clear-pad-right.col-md-4 > p, .clear.col-md-12, .baner.container
 terazgrodkow24.pl,aletorcik.pl,ps4life.pl###text-5
 terazgrodkow24.pl,prawapolityka.pl,shebang.pl###text-9
-terazgrodkow24.pl,ziemialimanowska.pl,onalubi.pl,niestatystyczny.pl,centrumaut.pl,lifemanagerka.pl,life4style.pl###text-3
+terazgrodkow24.pl,ziemialimanowska.pl,onalubi.pl,niestatystyczny.pl,centrumaut.pl,lifemanagerka.pl,life4style.pl,booklips.pl###text-3
 theoniondaily.com,kanag.pl##.custom-html-widget.textwidget
 thepolandtimes.com##a[href^="http://p"] > IMG
 thinkapple.pl##.sidebar_list
@@ -4041,6 +4044,7 @@ zywiecinfo.pl##.promoted
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|pogoda.wp.pl|dladzieci.pl|dzieci.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|avent-ugrow.wp.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl|pytamy.pl|ranking.abczdrowie.pl|profil.tlen.pl
 /^https:\/\/eku24.net\/images\/slajdy\/(?!zyczenia)[a-z]{3,10}\/[a-zA-Z0-9_-]{10,50}\.jpg/$image
 /https?:\/\/(?!(poczta|bc))[a-z.]{3,15}\.wp\.pl\/.{20,}/$script,domain=poczta.wp.pl
+/^(http|https):\/\/obrazki\.elektroda\.pl\/[0-9]{9,10}_[0-9]{9,10}\.(jpg|gif)/$image
 !
 !12#---------------------------------Whitelists----------------------------------!
 @@/TVN-Adserver/*.mp4$xmlhttprequest,domain=player.pl
