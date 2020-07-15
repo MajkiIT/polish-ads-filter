@@ -619,6 +619,7 @@ add name="get-payment.pl" address="195.187.6.34" comment="addHoleCertDomains Hol
 add name="getinbank-secure.at" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ghastlyf.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="giuliakurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="gloosuj-pomagaj.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="gloriakurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="glosowanie-kliknij.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="glosowanie-kliknij.zaglosuj-teraz.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
