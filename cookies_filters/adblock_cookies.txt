@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2020.7.11.0
-! Last modified: Sat, 11 Jul 2020, 18:07 UTC+02
+! Version: 2020.7.19.0
+! Last modified: Sun, 19 Jul 2020, 13:35 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -18,7 +18,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2020 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2020.7.11.0 aktualizacja: sob, 11 lip 2020, 18:07 UTC+02
+! v.2020.7.19.0 aktualizacja: nie, 19 lip 2020, 13:35 UTC+02
 !
 !
 ! Specyficzne reguły ukrywające
@@ -96,7 +96,7 @@ ago.pl,askopolska.pl,indigo-nails.com,lodz.pl,mamoo.pl,papercast.pl###banner_coo
 agropolska.pl,miastograf.pl##.ui-dialog[aria-describedby], .ui-widget-overlay
 agrozakupy.pl###ms-cookie-policy
 agro-bis.eu,eldom.eu,iletutego.eu,prawniktorun.eu###cookie-alert
-agusto.pl###st_notification_3
+agusto.pl,etroniks.pl,happytime.com.pl,mebags.pl,trojmiejskaperfumeria.pl##div[id^="st_notification_"][style*="display"]
 ag-complex.com.pl##.cookie__window
 ahrefs.com###iubenda-cs-banner
 airbnb.pl##div[data-veloute="cookie-disclaimer"]
@@ -692,7 +692,6 @@ etam.pl##.cookiesettingsmanager
 eteacher.pl,ettoi.pl,speedtest.com.pl,speedtest.pl,starmann.pl,wirtualis.pl###info_container
 eternityproject.pl##div.newsbar
 etipolam.com.pl##.ico-wrapper
-etroniks.pl,trojmiejskaperfumeria.pl###st_notification_1
 etsy.com##div[data-gdpr-consent-prompt], div[data-etsy-promo-cookie-expires]
 ettoi.pl,wirtualis.pl###info_content
 eura7.com,wzorcowniawloclawek.com###cookie-info-layer
@@ -744,7 +743,8 @@ e-swietokrzyskie.kielce.eu##div#belka_dolna
 e-wiklinowy-sklep.pl,monacollection.pl##.cookiesPolicyInfo
 fabrykamemow.pl##body > div:not([id]):not([class])
 fabryka-kuchni.eu,lubliniec.eu,mebledom.eu,owczarska.eu,tvnakarte.eu###cadre_alert_cookies
-facebook.com##.pam.fbPageBanner.uiBoxGray.bottomborder, [data-testid="cookie-policy-banner"]
+facebook.com##[data-testid="cookie-policy-banner"]
+facebook.com,help.instagram.com##div[class][data-cookiebanner]
 faktykaliskie.pl,finansowysupermarket.pl###policy-popup
 famemma.tv##.paper-privacy-agreement
 familiasa.pl###rodo-box
@@ -983,6 +983,7 @@ hokej.net###cookies_box
 holidaycheck.pl###infoCloseableBoxContainer
 homebrewing.pl##.rodo-popupbox
 home.kpmg##.privacy-container
+home.pl##footer ~ div[class^="sc-"]
 home.pl,idea4you.eu,koty24.pl,psy24.pl###box_policies
 hondanews.eu###cookiesPolicyBanner, #cookies-cover
 hopea.eu,kalendarzrolnikow.pl,kpcen-torun.edu.pl,lpwiksa.pl###colorbox, #cboxOverlay
@@ -1305,7 +1306,6 @@ mcdonalds.pl###cookies_message_info, .cookie-messages
 mckp.uj.edu.pl###cookie_filter
 mc-2.pl###_COOKIE-PPN
 mdkgal.edu.pl##[data-nclose-cookie]
-mebags.pl###st_notification_2
 mebleciesielski.eu##.email-signup-fixed
 mebleswiata.eu##.obligation_info
 mediamarkt.pl###site_container > .clearfix
@@ -1768,7 +1768,7 @@ qualitylife.pl###text-5
 quer.pl##DIV[style="top:0;width:100%;background:#0a0e10;color:#f2f2f2;font-size:10px;text-align:center"]
 quiosque.pl###cookie-notification-block
 quizme.pl,quizowa.pl###modal-consent, .iziModal-overlay
-racezone.pl###sky-cookies
+racezone.pl,wrozbyonline.pl###sky-cookies
 racjonalista.pl###_ci
 radio17.pl##.v-dialog__content, .v-overlay
 radioemu.com##div#footer ~ div#cc
@@ -2344,6 +2344,7 @@ zysk.com.pl###pageUpperInfo
 ||lenovozone.pl/frontend/js/sweetalert.min.js$script
 ||lovekrakow.pl/ajax/rodo
 ||lubiegrac.pl/api/Agreements/AgreementsCheck?RodoCookie=$xmlhttprequest
+||mojedane.edipresse.pl/tcf/cookie.js$script,domain=pl
 ||msecnd.net/Unilever/panels/generic/PanelPrzepisy.htm?consent$subdocument
 ||muza.com.pl/modules/rodoinfo/views/js/remodal.js$script,domain=muza.com.pl
 ||newonce.net/wp-content/plugins/popup-builder/javascript/jquery.sgcolorbox-min.js
@@ -3278,6 +3279,8 @@ gg.pl#@#body > div:nth-of-type(2) > div
 !
 !
 ! Bugi Kiboke
+doleasingu.com#@#body > #privacy[style*="display"]
+gadu-gadu.pl#@#.pum[data-popmake*="cookie-policy"]
 pl#@##catapult-cookie-bar
 pl#@#.ccc-widget:not(body):not(html)
 pl#@#.cookie-msg-box
