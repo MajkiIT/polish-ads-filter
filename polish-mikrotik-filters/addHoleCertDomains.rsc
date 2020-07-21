@@ -2109,6 +2109,7 @@ add name="www.inpostapp.com" address="195.187.6.34" comment="addHoleCertDomains 
 add name="www.inpostapp.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.inpostdoplata.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.inpostodkaz.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.instagram.com.ukradene-slike.cf" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.instragramweb.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.ionetporwanie.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.ionetporwanie.net.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
