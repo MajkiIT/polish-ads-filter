@@ -641,6 +641,7 @@ add name="gazetapolska.098.pl" address="195.187.6.34" comment="addHoleCertDomain
 add name="gazetapolska.h2g.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="gazetapucka.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="gazetawojewodzka.cal24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="gazetawyborcza.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="gazetkamazowsze.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="gazetkawarszawa.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="gazetkawarszawa.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
