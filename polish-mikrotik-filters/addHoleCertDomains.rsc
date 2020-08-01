@@ -1704,6 +1704,7 @@ add name="wszystkowpolsce.website" address="195.187.6.34" comment="addHoleCertDo
 add name="wszystkowpolsce.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ww.kowdent.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ww.paczkaups.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="ww.paczkhups.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ww.paczksups.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wwa-informacje.co.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.008753331120.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
