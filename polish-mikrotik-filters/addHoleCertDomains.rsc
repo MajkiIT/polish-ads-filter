@@ -106,6 +106,7 @@ add name="baseny.club" address="195.187.6.34" comment="addHoleCertDomains HoleCe
 add name="baseny.in" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="basiekurier.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="beasybd.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="bentyluses.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="biedronka-promocje.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="biedronka2020x1room.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="bigsklep.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
