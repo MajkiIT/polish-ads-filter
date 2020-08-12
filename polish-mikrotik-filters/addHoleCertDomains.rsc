@@ -414,6 +414,7 @@ add name="e-zaginieni.eu" address="195.187.6.34" comment="addHoleCertDomains Hol
 add name="e-zaginieni.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="e-zaginioneosoby.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="e.paczkxups.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="e.paczkyups.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="e24gwaltfakt.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ebok-poczta.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ebok.gkpge1.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
