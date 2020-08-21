@@ -3128,6 +3128,7 @@ add name="www.stronazdrowia.hekko24.pl" address="195.187.6.34" comment="addHoleC
 add name="www.support1.trocable.ga" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.support2.p-traceable.ga" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.support2.trocable.ga" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.supportservice.webcindario.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.swiatpilne.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.swiezefakty.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.szalone.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
