@@ -3,6 +3,7 @@
 add name="008753331120.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="02-wiadomosci.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="0b8cc331813049912.temporary.link" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="1809175.na397463.web.hosting-test.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="2-praca.co.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="20200709071631.restflko.giize.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="247platnosc.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
