@@ -177,6 +177,7 @@ add name="cs.nailrr.com" address="195.187.6.34" comment="addHoleCertDomains Hole
 add name="csgomvpseries.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="csprocup.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="csz1-amzzzsrvceupdayters.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="cy79417.tmweb.ru" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="cybereleague.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="cyfrowypolsate.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="davekurier.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
