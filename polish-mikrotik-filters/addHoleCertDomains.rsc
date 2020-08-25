@@ -1102,6 +1102,7 @@ add name="miastowe.hekko24.pl" address="195.187.6.34" comment="addHoleCertDomain
 add name="miastowirus.hekko24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="michasiapaczka.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="microsoft-secure-online.oa.r.appspot.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="miejskieinfo.cal24.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="miejskimonitoring.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="miejskimonitoring.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="miejskiportal.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
