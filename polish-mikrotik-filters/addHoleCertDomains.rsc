@@ -1351,6 +1351,7 @@ add name="paribas-logowanie.at" address="195.187.6.34" comment="addHoleCertDomai
 add name="paribas-online-logowanie.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="paribas-online.at" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="paribas-online.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="paribas-secure.at" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pay-u24.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pay.gorillafitness.io" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pay.poczta-polska24.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
