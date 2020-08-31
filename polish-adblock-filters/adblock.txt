@@ -8,9 +8,9 @@
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 30 August 2020
+! Last modified: 31 August 2020
 ! Expires: 1 day
-! Version: 2020083001
+! Version: 2020083101
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020083001 aktualizacja: nie, 30 sierpnia 2020, 17:05:00
+! v.2020083101 aktualizacja: pon, 31 sierpnia 2020, 17:05:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -178,6 +178,7 @@ iitvx.pl###player-above-2
 ##[id^="pianoMediaBoxInfo"]
 ##[id^="slot_ad_billboard"]
 ##[id^="sponsorowany"]
+##[href*="://clkpl.tradedoubler.com/"]
 ##a[href*="://tracking.linktogame.com/aff_c"]
 ##a[href*="adnow.com/click"]
 ##a[href*="bbelements.com/please/"]
@@ -1648,7 +1649,7 @@ lajfy.com###interVeil
 laskonline.pl###prawa_kolumna > h1:nth-of-type(2)
 lawka.pl###szesc
 lawka.pl##table:nth-of-type(2) > tbody > tr > td > table
-lca.pl###banner_inside1
+lca.pl###banner_inside1, #right_container_box_ad
 lebork24.info###rT1, #rM0, #rM2, #banner-main2, div.banner-box
 lechpoznan.pl##.AdvertBottomBar
 leczna24.pl##.noprint.centrujban, .bounceInUp.animated.serwis_box.col-lg-3.col-md-3.col-sm-4.col-xs-12 > div:nth-of-type(5), .text-center.col-xs-12.col-md-12, [class*="ffds"]
@@ -1724,7 +1725,7 @@ lubartow24.pl##[style="text-align: center; padding-bottom: 8px; margin: 0 auto;"
 lubiehrubie.pl,hrubie.pl###bannerTop
 lubien.net###text-51, text-20, #text-40, #text-47, #text-39, #text-37, #text-32, #text-27, #text-48, #text-26, #text-20, #text-25, .header-right
 lubiegrac.pl##.right > div.box1:nth-of-type(3) > .header, .right > div.box1:nth-of-type(1) > div.header:nth-of-type(1)
-lubimyczytac.pl##.adsCol, .container_12 > A[href^="http://lubimyczytac.pl/redirect.php"]
+lubimyczytac.pl##.adsCol, .container_12 > A[href^="http://lubimyczytac.pl/redirect.php"], #tapetaMain
 lubin.pl##.a-.g-single
 lubin.pl##.ad_group
 lubin.pl,gopoznan.pl##.panel-widget-style
@@ -3482,7 +3483,7 @@ ziemialimanowska.pl###primary
 ziemniak-bonin.pl###content-adv
 zinfo.pl##.mb10.mt10.container
 zizako.pl###widget_shop6
-zlotowskie.pl##[id^="D1000"], div.l-row:nth-of-type(8) > div.l-box--33.l-box, div.l-container > div.l-row > .l-box--100.l-box, [id^="Gazeta370"], [id^="D300x250"], div.l-row > div.l-box--50.l-box
+zlotowskie.pl##[id^="D1000"], div.l-row:nth-of-type(8) > div.l-box--33.l-box, div.l-container > div.l-row > .l-box--100.l-box, [id^="Gazeta370"], [id^="D300x250"], div.l-row > div.l-box--50.l-box, #D300x600, #verticalBannerGallery
 zlubaczowa.pl###Mod605, #Mod584, #Mod599
 zmianynaziemi.pl###block-block-27, #block-block-19, #block-block-32, #block-block-16, .even.field-item > div
 zory.dlawas.pl##.in.fade.modal-backdrop
@@ -3607,7 +3608,9 @@ zywiecinfo.pl##.promoted
 ||chlodnictwoiklimatyzacja.pl/images/tlo_$image
 ||chozoba.pl/images/baner$image
 ||ciechocinek.biz/banery_$image
+||clkpl.tradedoubler.com^
 ||cloudfront.net/$domain=allegro.pl
+||cdn-lubimyczytac.pl/upload/wallpapers/$image
 ||contextad.pl/$script,domain=~contextad.pl
 ||contextweb.com^
 ||converti.se/comparison/$xmlhttprequest
@@ -4579,7 +4582,7 @@ filmyfilmy.pl#@#.sidebar_advert
 kafeteria.pl#@#.is-sponsored
 mandarinodesign.eu,ddb24.pl,iotwock.info,ototorun.pl,twojradom.pl,szczecinek.com,zycie.pila.pl,kurierpodlaski.pl,zambrow.org,egarwolin.pl,lowicz24.eu,ciechanowinaczej.pl,itvpiaseczno.pl,ikampinos.pl,infosiedlce.pl,ibialoleka.pl,izoliborz.pl,imokotow.pl,nolesnica.pl,lipno-cli.pl,golub-cgd.pl,ibielsk.pl,brodnica-cbr.pl,egorzow.pl,ipragapoludnie.pl,rypin-cry.pl,wabrzezno-cwa.pl,wio.waw.pl,e-wyszogrod.pl,upflix.pl,brzozow24.pl,bukowsko24.pl,esanok.pl,jaslo24.pl,rzeszow24.pl,strzyzow24.pl,tvpodkarpacie.pl,ustrzyki24.pl,zagorz24.pl,zarszyn24.pl#@#.reklama
 walbrzych24.com,zloty-pociag.com#@##gwd-ad
-24legnica.pl,wstereo.pl,magazynbasista.pl,niebezpiecznik.pl,appki.com.pl,prawapolityka.pl,stop-cham.pl,namasce.pl,24legnica.pl##text-8
+24legnica.pl,wstereo.pl,magazynbasista.pl,niebezpiecznik.pl,appki.com.pl,prawapolityka.pl,stop-cham.pl,namasce.pl,24legnica.pl###text-8
 ||static-olxeu.akamaized.net/static/olxpl/naspersclassifieds-regional/olxeu-atlas-web/static/js/advertising.js$important
 @@/wp-content/uploads/*/*-300x250-$image,domain=www.agrofakt.pl
 @@||liveads.pl$domain=liveads.pl
