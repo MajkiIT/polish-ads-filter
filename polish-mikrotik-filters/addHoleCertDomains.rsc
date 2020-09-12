@@ -2751,6 +2751,7 @@ add name="www.filmspolandxxx.com" address="195.187.6.34" comment="addHoleCertDom
 add name="www.fkr7ce4c20lqkyr.lianides.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fm-device.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.food-eng.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.foteczkipl24.mypressonline.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fotkinapiec.com.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fotkinapiec.net.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.fotkinapiec.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
