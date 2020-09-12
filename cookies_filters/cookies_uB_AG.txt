@@ -6,7 +6,7 @@
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
 4lomza.pl##body.polityka-cookies:style(margin-top: 0 !important;)
 7ryb.pl,etransport.pl,hrkgame.com##.modals.dimmer
-7ryb.pl,etransport.pl,hrkgame.com##.dimmed:style(overflow: auto !important;)
+7ryb.pl,etransport.pl,hrkgame.com##.dimmable, .dimmed:style(overflow: auto !important;)
 24wroclaw.pl,aptekagemini.pl,barbara.net.pl,bosch-easycontrol.com,ceres.pl,ciekaweblogi.pl,dabrowka.net.pl,dane.gov.pl,doleasingu.com,dzialoszyn.pl,e-sochaczew.pl,empik.com,giantfabryczna.pl,gry.lotto.pl,handluj.com,jawor24h.pl,katarzynatryniszewska.pl,komugroup.eu,liv-cycling.com,m.24jgora.pl,multimediago.pl,naekranie.pl,obywatel.gov.pl,olesnica24.com,panoramafirm.pl,printoteka.pl,repostuj.pl,tvdami.eu,tvgo.orange.pl,wapex.pl,wedkuje.pl,wrzesnia.info.pl,zwolen.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 24wroclaw.pl,dabrowka.net.pl,m.24jgora.pl###rodoModal, .modal-backdrop
 abcalkoholu.pl##.cookielaw:style(padding-top: 0 !important;)
@@ -68,7 +68,7 @@ burgerking.pl,bydgoszczak.pl,katowiczak.pl,viennahouse.com##body[style]:style(ov
 bydgoszczak.pl,kaliszak.pl,katowiczak.pl##.rodo, .rodo_layer
 calisia.pl###modals-container
 calisia.pl##.v--modal-block-scroll:style(overflow-y: auto !important;)
-carrefour.pl##.MuiDialog-root:has( > .MuiDialog-container > div[class]:not([id])[role="dialog"]:has-text(cookies))
+carrefour.pl##div[class][role="presentation"]:not([id]):has(.MuiPaper-root a[href="/polityka-prywatnosci"])
 carrefour.pl,kanga.exchange##body[style]:style(overflow: auto !important; padding-right: 0 !important;)
 cbdzoe.pl##.swal2-container
 cbdzoe.pl,ticketos.pl##body:style(overflow: auto !important; padding-right: 0 !important;)
@@ -89,7 +89,7 @@ ddz24.eu,konecki24.pl,skarzyski.eu,starachowicki.eu,szydlowiecki.eu,wiadomosci-l
 ddz24.eu,konecki24.pl,skarzyski.eu,starachowicki.eu,szydlowiecki.eu,wiadomosci-lodz.pl###cookie-law-info-bar, .cli-modal-backdrop, .cli-popupbar-overlay
 ddz24.eu,konecki24.pl,skarzyski.eu,starachowicki.eu,szydlowiecki.eu,wiadomosci-lodz.pl##.cli-barmodal-open:style(overflow: auto !important;)
 delikarta.pl###cookieModal
-delikarta.pl,dobrapogoda24.pl,lektury.gov.pl,mzbm.tychy.pl,samasz.pl##.modal-open:style(overflow: auto !important;)
+delikarta.pl,dobrapogoda24.pl,lektury.gov.pl,mzbm.tychy.pl,puratos.pl,samasz.pl##.modal-open:style(overflow: auto !important;)
 dobrapogoda24.pl##+js(ra, class, body[class="modal-open"])
 dobrapogoda24.pl,repostuj.pl###rodo-modal, .modal-backdrop
 dobrzemieszkaj.pl###axn
@@ -259,11 +259,14 @@ przydomu.pl###popup_25
 przydomu.pl##.container:style(filter: none !important;)
 puma.com###modal-geoip-cookies, .modal-backdrop
 pum.edu.pl##.js-rodo-info
+puratos.pl###cookieBannerModal, .modal-backdrop
 quadgraphics.pl##.blur:style(filter: none !important; pointer-events: unset !important;)
 quadgraphics.pl##.rodo-information-popup, .fixed-layer-information
 radioexpress.pl###rodo, .lean-overlay
 rawlplug.com##.cookieModal:style(overflow: auto !important;)
 rawlplug.com##.js-rodo-modal
+reserved.com##div[class][data-selen-group="cookies-bar"]
+reserved.com##div[class][data-selen-group="cookies-bar"] ~ div[style*="position"][style*="absolute"]:style(top: 0 !important;)
 reserved.com##.cookie-visible .main-content:style(padding-top: 51px !important;)
 reserved.com##.cookie-visible .main-header, .cookie-visible .mobile-menu:style(top: 0 !important;)
 samasz.pl###popup-19391-, .modal-backdrop
@@ -320,7 +323,6 @@ wrzesnia.info.pl###rodo, .modal-backdrop
 wsensie.pl,wsensie.tv###policy
 wsensie.pl,wsensie.tv##.policy-open section:style(filter: none !important;)
 www.google.com,www.google.pl##body.QVCmK:style(position: static !important; overflow-y: visible !important;)
-www.google.com,www.google.pl##div[class][role="dialog"] > #cnsp:has( > div[class][aria-live="polite"]):upward(2)
 www.google.com,www.google.pl##header#gb + div[class^="gb"][data-cbh="consent.google.com"]
 www.google.com,www.google.pl##html.QVCmK:style(overflow-y: visible !important;)
 www.google.com,www.google.pl##html.gb_ea > body.gb_ea:style(height: auto !important;)
@@ -332,6 +334,7 @@ www.google.com,www.google.pl###main #lb > div[id^="_"] > div[class*=" "]:not([id
 www.google.com,www.google.pl###main #lb > div[id^="_"] > div[class*=" "]:not([id]):has( > span > div[role="dialog"] > #cnsw > iframe[src*="://consent.google.com"]):remove()
 www.google.com,www.google.pl###promos > div[style^="background"]
 www.google.com,www.google.pl##.srp #searchform[style^="top: 50px"]:style(top: 20px !important;)
+www.google.com,www.google.pl#?#div[class][role="dialog"] > #cnsp:has( > div[class][aria-live="polite"]):upward(2)
 www.kayak.pl##.cdk-global-scrollblock:style(position: static !important; overlow: auto !important;)
 www.kayak.pl##.cdk-overlay-container
 www.pekao.com.pl##body.is-reveal-open:style(overflow: auto !important; width: unset !important;)
@@ -347,6 +350,7 @@ zozsuchabeskidzka.pl##html.mpc-block-scroll:style(overflow: visible !important;)
 zozsuchabeskidzka.pl###mpc-modal-4-1
 zsgarwolin.pl##.mfp-content:has(#cadre_alert_cookies)
 zsgarwolin.pl##.mfp-ready.mfp-bg
+!carrefour.pl##.MuiDialog-root:has( > .MuiDialog-container > div[class]:not([id])[role="dialog"]:has-text(cookies))
 !computerworld.pl,cxo.pl,idg.pl,internetstandard.pl,pcworld.pl##html.sp-message-open:style(position: static !important; overflow: auto !important;)
 !computerworld.pl,cxo.pl,idg.pl,internetstandard.pl,pcworld.pl##[class^="sp_veil"], [id^="sp_message_panel"]
 ||web.archive.org/web/*/http*://*.pl/*$generichide,important,domain=web.archive.org
@@ -355,7 +359,7 @@ zsgarwolin.pl##.mfp-ready.mfp-bg
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂 - specjalne instrukcje
 !#if !cap_html_filtering
 4fun.tv###cModal, .modal-backdrop
-4fun.tv,ac.com.pl,academy.asseco.pl,alltube.pl,alltube.tv,bioagris.pl,born2be.pl,brieftip.pl,cenapaliw.pl,chelmonline.pl,cooltura24.co.uk,craftserve.pl,dabrowka.net.pl,debica24.eu,dlawas.info,e-hotelarz.pl,eluban.pl,emas.gdos.gov.pl,fnglob.pl,fryzomania.pl,gdansk.pl,gdos.gov.pl,gokf.gda.pl,halowawa.pl,happydental.pl,ideafairplay.pl,infoplanet.pl,infostrow.pl,itmarket.pl,kaliber.pl,korsokolbuszowskie.pl,koscierzyna24.info,lipinscy.pl,lokalna24.pl,lubimyczytac.pl,meble-4you.pl,mistravel.pl,muzyczneradio.pl,natura2000.gdos.gov.pl,norgips.pl,ogloszenia.plock.pl,polski-tenis.pl,poradnikbudowlany.eu,pro-sprzet.pl,projekty.gdos.gov.pl,radiobonton.pl,renee.pl,rome-easysolution.tk,rowerowygdansk.pl,roztoczanskipn.pl,roztocze.net,rynek-turystyczny.pl,spolem.katowice.pl,sprzet-fryzjerski.pl,stadionenerga.pl,tarnowska.tv,truso.tv,tujastrzebie.pl,tulodz.pl,tuwroclaw.com,tuzdrowie.pl,tuzory.pl,tvasta.pl,tvbraniewo24.pl,tvdzierzgon.pl,tvmalbork.pl,tvregionalna24.pl,tvsztum.pl,ustawlige.com,ustawmundial.weszlo.com,wejherowo24.info,wpr.pl,wtk.pl,zakopane.info,zdajmyrazem.pl,ztm.poznan.pl,zulawyimierzeja24.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
+4fun.tv,ac.com.pl,academy.asseco.pl,alltube.pl,alltube.tv,bioagris.pl,born2be.pl,brieftip.pl,cenapaliw.pl,chelmonline.pl,cooltura24.co.uk,craftserve.pl,dabrowka.net.pl,debica24.eu,dlawas.info,e-hotelarz.pl,eluban.pl,emas.gdos.gov.pl,fnglob.pl,fryzomania.pl,gdansk.pl,gdos.gov.pl,gokf.gda.pl,halowawa.pl,happydental.pl,ideafairplay.pl,infoplanet.pl,infostrow.pl,itmarket.pl,kaliber.pl,korsokolbuszowskie.pl,koscierzyna24.info,lipinscy.pl,lokalna24.pl,lubimyczytac.pl,meble-4you.pl,mistravel.pl,muzyczneradio.pl,natura2000.gdos.gov.pl,norgips.pl,ogloszenia.plock.pl,polski-tenis.pl,poradnikbudowlany.eu,pro-sprzet.pl,projekty.gdos.gov.pl,radiobonton.pl,renee.pl,rome-easysolution.tk,rowerowygdansk.pl,roztoczanskipn.pl,roztocze.net,rynek-turystyczny.pl,spolem.katowice.pl,sprzet-fryzjerski.pl,stadionenerga.pl,tarnowska.tv,truso.tv,tujastrzebie.pl,tulodz.pl,tuwroclaw.com,tuzdrowie.pl,tuzory.pl,tvasta.pl,tvbraniewo24.pl,tvdzierzgon.pl,tvmalbork.pl,tvregionalna24.pl,tvsztum.pl,ustawlige.com,ustawmundial.weszlo.com,wejherowo24.info,wpr.pl,wtk.pl,zakopane.info,zdajmyrazem.pl,zgl.pl,ztm.poznan.pl,zulawyimierzeja24.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 abcjanikowo24.pl,brodnica365.pl,bydgoszcz24.pl,chelmza365.pl,chocianow.com.pl,ciechocinek.biz,czeladz365.pl,ddtorun.pl,ddwloclawek.pl,e-chelmno.pl,e-krajna.pl,ejarocin.pl,ekstrasierpc.pl,ekutno.pl,esopot.pl,expresskaszubski.pl,extrawalcz.pl,faktyct.pl,faktypilskie.pl,gle24.pl,gniewkowo.eu,gorlice24.pl,gostyn24.pl,grudziadz365.pl,gst24.pl,gwe24.pl,gwio.pl,hej.mielec.pl,ibytow.pl,infomogilno24.pl,ipoddebice.pl,isanok.pl,iszczecinek.pl,itvszubin.pl,jastrowie24.pl,ki24.info,klobuck365.pl,kolniak24.pl,koronowo.net.pl,kozieglowy365.pl,kurierwysmaz.pl,lelow365.pl,leszno24.pl,lubliniec365.pl,miastko24.pl,mlodagdynia.pl,mojakruszwica.pl,myszkow365.pl,naszradziejow.pl,niegowa365.pl,nizanskie.info,pakosc24.pl,plonskwsieci.pl,poraj365.pl,portalplock.pl,portalsremski.pl,pulsciechanowa.pl,roztocze.net,rzeczkrotoszynska.pl,sompolno24.pl,spotradomsko.pl,superchodziez.pl,swiecie24.pl,tarnowska.pl,terazgabin.pl,terazgostynin.pl,terazlipno.pl,tusochaczew.pl,tygodnik.pl,uniejow.net.pl,walbrzych365.pl,wiescimiedzychodzkie.pl,wkikole.pl,zarki365.pl,zawiercie365.pl,zyciesiedleckie.pl,zyciesokolowa.pl##+js(acis, $, rodo-overlay)
 academy.asseco.pl###politykaPrywatnosciModal, .modal-backdrop
 ac.com.pl###modalRodoInfo, .modal-backdrop
@@ -376,8 +380,8 @@ budownictwo.pl,dalmierze.pl,mdkkolbuszowa.pl,poszalu.pl,styl.fm,twojeankiety.pl,
 cenapaliw.pl###CBCookieMsg, .modal-backdrop
 chelmonline.pl###myModal, .modal-backdrop
 chelmonline.pl##+js(ra, class|style, body[class="modal-open"][style^="padding-right: "][style$="px;"]:not([style*="; "]))
-cooltura24.co.uk,debica24.eu,korsokolbuszowskie.pl,koscierzyna24.info,lokalna24.pl,radiobonton.pl,tarnowska.tv,truso.tv,wejherowo24.info###popModal2, .modal-backdrop
-cooltura24.co.uk,debica24.eu,korsokolbuszowskie.pl,koscierzyna24.info,lokalna24.pl,radiobonton.pl,tarnowska.tv,truso.tv,wejherowo24.info###popModal2:remove()
+cooltura24.co.uk,debica24.eu,korsokolbuszowskie.pl,koscierzyna24.info,lokalna24.pl,radiobonton.pl,tarnowska.tv,truso.tv,wejherowo24.info,zgl.pl###popModal2, .modal-backdrop
+cooltura24.co.uk,debica24.eu,korsokolbuszowskie.pl,koscierzyna24.info,lokalna24.pl,radiobonton.pl,tarnowska.tv,truso.tv,wejherowo24.info,zgl.pl###popModal2:remove()
 dabrowka.net.pl,lepszytrener.pl,optimalg.com,poradnikbudowlany.eu,tvbraniewo24.pl,tvdzierzgon.pl,tvmalbork.pl,tvregionalna24.pl,tvsztum.pl,zulawyimierzeja24.pl###rodoModal, .modal-backdrop
 dalmierze.pl###Widget3, .modal-backdrop
 dlawas.info,halowawa.pl,infostrow.pl###rodo-modal
@@ -503,7 +507,7 @@ budownictwo.pl##^#rodoLayer
 cenapaliw.pl##^#CBCookieMsg
 centrumbajki.pl,drogeriekoliber.pl,sp112.waw.pl##^.popmake-overlay[data-popmake*="cookies"]
 chelmonline.pl,powiatslubicki.pl##^#myModal
-cooltura24.co.uk,debica24.eu,korsokolbuszowskie.pl,koscierzyna24.info,lokalna24.pl,radiobonton.pl,tarnowska.tv,truso.tv,wejherowo24.info##^#popModal2
+cooltura24.co.uk,debica24.eu,korsokolbuszowskie.pl,koscierzyna24.info,lokalna24.pl,radiobonton.pl,tarnowska.tv,truso.tv,wejherowo24.info,zgl.pl##^#popModal2
 dabrowka.net.pl,lepszytrener.pl,optimalg.com,poradnikbudowlany.eu,sklepbiker.pl,tvbraniewo24.pl,tvdzierzgon.pl,tvmalbork.pl,tvregionalna24.pl,tvsztum.pl,zulawyimierzeja24.pl##^#rodoModal
 dalmierze.pl##^#Widget3
 dlawas.info,halowawa.pl,infostrow.pl,meble-4you.pl,roztoczanskipn.pl##^#rodo-modal
@@ -591,7 +595,7 @@ brieftip.pl,kaliber.pl$$#cookieModal
 cenapaliw.pl$$#CBCookieMsg
 centrumbajki.pl$$.popmake-overlay[tag-content="danych osobowych"]
 chelmonline.pl,powiatslubicki.pl$$#myModal
-cooltura24.co.uk,debica24.eu,korsokolbuszowskie.pl,koscierzyna24.info,lokalna24.pl,radiobonton.pl,tarnowska.tv,truso.tv,wejherowo24.info$$#popModal2
+cooltura24.co.uk,debica24.eu,korsokolbuszowskie.pl,koscierzyna24.info,lokalna24.pl,radiobonton.pl,tarnowska.tv,truso.tv,wejherowo24.info,zgl.pl$$#popModal2
 dabrowka.net.pl,lepszytrener.pl,optimalg.com,poradnikbudowlany.eu,sklepbiker.pl,tvbraniewo24.pl,tvdzierzgon.pl,tvmalbork.pl,tvregionalna24.pl,tvsztum.pl,zulawyimierzeja24.pl$$#rodoModal
 dalmierze.pl$$#Widget3
 dlawas.info,halowawa.pl,infostrow.pl,meble-4you.pl,roztoczanskipn.pl$$#rodo-modal
