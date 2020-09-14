@@ -1042,6 +1042,7 @@ add name="inpost.pl.novaintermed.ro" address="195.187.6.34" comment="addHoleCert
 add name="inpost.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="inpost.sklep-play.cc" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="inpost.sklep-play.me" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="inpost.sklep-play.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="inpost.tech" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="inpost.us" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="inpost.wygeneruj-kod.me" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
