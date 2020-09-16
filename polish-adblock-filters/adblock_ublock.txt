@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 31 July 2020
+! Last modified: 16 September 2020
 ! Expires: 1 day
-! Version: 2020073101
+! Version: 2020091601
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020073101 aktualizacja: ptk, 31 lipca 2020, 07:15:00
+! v.2020091601 aktualizacja: sr, 16 września 2020, 22:25:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -131,6 +131,7 @@ purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0 !important
 !
 ! filmweb.pl
 filmweb.pl##+js(abort-current-inline-script.js, decodeURIComponent, newAdblockBoardDisplayed)
+filmweb.pl##+js(abort-current-inline-script, addEventListener, /faBar[\s\S]*?insertAdjacentElement/)
 ||fwcdn.pl/adv/$important,script,domain=filmweb.pl
 !filmweb.pl##body .ws__wrapper
 filmweb.pl##.ws__wrapper:style(visibility: hidden !important;)
