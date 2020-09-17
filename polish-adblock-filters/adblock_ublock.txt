@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 16 September 2020
+! Last modified: 17 September 2020
 ! Expires: 1 day
-! Version: 2020091601
+! Version: 2020091701
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020091601 aktualizacja: sr, 16 września 2020, 22:25:00
+! v.2020091701 aktualizacja: czw, 17 września 2020, 14:35:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -144,7 +144,6 @@ filmweb.pl##+js(nano-remove-elements-onready.js, #skyBanner)
 ~www.wp.pl,abczdrowie.pl,parenting.pl,kafeteria.pl,money.pl,dobreprogramy.pl,wp.pl##+js(set-constant.js, Number.isNaN, trueFunc)
 ~www.wp.pl,wp.pl##+js(set-constant.js, wp_abtest, null)
 ~www.wp.pl,o2.pl,~poczta.o2.pl,pudelek.pl,wp.pl##div:matches-css-after(content:/R.*E.*K.*L.*A.*M.*A/):nth-ancestor(1)
-money.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 !money.pl###app > div[data-reactroot] > div[class]:matches-css(background-image: /\/static\/bg\.png/)
 money.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
 ~pilot.wp.pl,~poczta.wp.pl,~sportowefakty.wp.pl,wp.pl##+js(abort-on-property-read.js, WP.inline)
