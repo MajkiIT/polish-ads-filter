@@ -1323,6 +1323,7 @@ add name="ms-gatewayapp.com" address="195.187.6.34" comment="addHoleCertDomains 
 add name="myaccount8412.website" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="n-fakty.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="nagolasa.0e0.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="nagroda.myartsonline.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="namibiasafaritours.ml" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="narzedzia.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="narzedzia.live" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
