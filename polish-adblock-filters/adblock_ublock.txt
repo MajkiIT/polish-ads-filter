@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 17 September 2020
+! Last modified: 20 September 2020
 ! Expires: 1 day
-! Version: 2020091702
+! Version: 2020092001
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020091702 aktualizacja: czw, 17 września 2020, 19:55:00
+! v.2020092001 aktualizacja: nie, 20 września 2020, 17:30:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -479,6 +479,12 @@ polsatnews.pl,polsatsport.pl##.ads .videoPlayer__vast, .ads .videoPlayer__mask[d
 it-manuals.info###pum-822
 it-manuals.info##html.pum-open [aria-hidden]:style(padding-right: 0 !important;)
 it-manuals.info##html.pum-open:style(overflow: auto !important;)
+!
+! https://github.com/MajkiIT/polish-ads-filter/issues/17140
+pl##li > div[id*="taboola"]:upward(li)
+!
+! encyklopedia.pwn.pl
+encyklopedia.pwn.pl##div[style*="font-size"]:upward(div[class*="col"])
 !
 ! google.com,google.pl
 google.com,google.pl##.rllt__link:has( > div[class]:has-text(Reklama)):xpath(..)
