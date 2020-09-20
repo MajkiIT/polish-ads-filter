@@ -8,9 +8,9 @@
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 17 September 2020
+! Last modified: 20 September 2020
 ! Expires: 1 day
-! Version: 2020091702
+! Version: 2020092001
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020091702 aktualizacja: czw, 17 września 2020, 19:50:00
+! v.2020092001 aktualizacja: nie, 20 września 2020,17:25:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -910,6 +910,7 @@ endurorider.pl###dupermag_ad-5
 endurorider.pl###dupermag_ad-6
 endurorider.pl###dupermag_ad-8
 energetyka24.com##.section:nth-of-type(4)
+encyklopedia.pwn.pl##div[style*="font-size"]:not([id]):not([class])
 eostroleka.pl##DIV[style$="margin:0 3px 4px 0; overflow:hidden;"]
 eostroleka.pl##DIV[style$="width: 100%; margin: 8px auto; overflow: hidden;"]
 eostroleka.pl##DIV[style="margin-bottom:10px; margin-left:25px; float:left; width:300px; height:300px;"]
@@ -2719,6 +2720,7 @@ sitemag.pl##.td-all-devices
 sitemag.pl,infokatowice.pl,noweinfo.pl##.td-header-sp-recs
 sjp.pwn.pl#?#.col-wrapper > div:nth-of-type(1):-abp-has(> div:nth-of-type(2):-abp-contains(Sponsorowane))
 sjp.pwn.pl#?#.col-wrapper > div:nth-of-type(12):-abp-has(> .banner)
+sjp.pwn.pl,encyklopedia.pwn.pl###vjs-rcp1
 skarzysko24.pl###Mod434, #Mod510, #Mod417, #Mod400, #Mod504, #Mod431, #Mod403, #Mod474, #Mod486, #Mod422, [id^="slider"], #t3-content > DIV > [id^="djslider-"], .none.custom
 skawinska.pl##div.homepage-ad-area
 skawina.eu##[id^="skawi-"]
@@ -3107,9 +3109,9 @@ twojeradio.fm##.sec-imgadv
 twojkurierolsztynski.pl##.td-pb-span4.tdc-column.vc_column_container.wpb_column.td_uid_70_5ca4e6dcdea97_rand.vc_column
 twojprofesor.pl###adbd
 twojradom.pl###slider > p
-twojradom.pl##.row:nth-of-type(10) > .fl.w1000
-twojradom.pl##.row:nth-of-type(21)
-twojradom.pl##.row:nth-of-type(8)
+twojradom.pl##div.l-container--rwd.l-container > div.l-row > .l-box--100.l-box > p
+twojradom.pl##div.l-row > div.l-box--50.l-box > p
+twojradom.pl##div.l-row > .l-box--25.l-box > p
 twojradom.pl,pultusk24.pl##.fl.w250
 twojwolanow.pl##.row:nth-of-type(3)
 twojzwolen.pl##.row:nth-of-type(3) > .fl.w750
@@ -3399,6 +3401,11 @@ www.mycenter.pl##[id^="place3_v"]
 www.naotwocku.pl##.sidebar > .tborder:nth-of-type(4) > tbody
 www.naotwocku.pl##.wrapper > .tborder:nth-of-type(3) > tbody
 www.nexto.pl##iframe[src^="http://get.x-link.pl/"]
+www.nightcity.love##.active.ybox--header.ybox--1.ybox
+www.nightcity.love##.header__ybox--wrapper
+www.nightcity.love##.is-visible.section__observer.transport > .active.ybox--1.ybox
+www.nightcity.love##.is-visible.section__observer.history > .active.ybox--1.ybox
+www.nightcity.love##.is-visible.section__observer.district > .active.ybox--1.ybox
 www.ogloszeniarolnicze.com.pl##div.row > .simplemod > .custom, div.moduleBox  > .custom
 www.oleole.pl###sss_left > .imgHover[alt="gazetka agd"]
 www.oleole.pl###sss_right
@@ -3704,7 +3711,7 @@ zywiecinfo.pl##.promoted
 ||evertiq.pl/go/$popup
 ||evertiq.pl/include/ad-block/$xmlhttprequest
 ||exs.pl/ads.js$script
-||exs.pl/embed*.php$script,domain=~wgospodarce.pl|~szczecinek.com|~polityka.pl|~ototorun.pl|~natemat.pl
+||exs.pl/embed*.php$script,domain=~wgospodarce.pl|~szczecinek.com|~polityka.pl|~ototorun.pl|~natemat.pl|~plonszczak.pl
 ||exs.pl/frame*.php$subdocument,domain=~wgospodarce.pl|~szczecinek.com|~polityka.pl|~ototorun.pl|~natemat.pl
 ||extremehobby.eu/banner/$subdocument
 ||exyzz.pl^
@@ -4065,6 +4072,7 @@ zywiecinfo.pl##.promoted
 ||www.movie-box.pl/commer/*.mp4$media,domain=www.movie-box.pl
 ||www.multimediait.pl/klient/upload/$image,domain=terazkrosno.pl
 ||www.nbi.com.pl/assets/Bannery/$image
+||www.nightcity.love/build/images/pop/$image
 ||www.nowawrzesnia.pl/images/$image
 ||www.one-solution.pl/images/banner.png
 ||www.optymalizacja.com/img/$image
@@ -4478,6 +4486,8 @@ komorkomania.pl##.insert--top-offer, .insert--size-b.insert
 komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##.article-wrapper > FIGURE.insert
 komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##BODY > DIV[style*="max-width: 100%; "]
 komorkomania.pl,gadzetomania.pl,fotoblogia.pl,autokult.pl,wawalove.pl##FIGURE.insert > DIV[style*="max-width: 100%;"]
+kuchnia.wp.pl##body > div:-abp-has( > div > a[href])
+kuchnia.wp.pl##td > div[style="position: relative; top: 0px;"]
 o2.pl##A[href*=".wp.pl/"][target="_blank"] > DIV[style^="background-color: rgb"]
 o2.pl,gadzetomania.pl##A[href*=".wp.pl/"][target="_blank"] > IMG[class][src^="https://v.wpimg.pl/"]
 open.fm###ADrail
@@ -4650,6 +4660,7 @@ walbrzych24.com,zloty-pociag.com#@##gwd-ad
 @@||liveads.pl$domain=liveads.pl
 bajeczki.org##.video-js[data-attr-player="mcnPlayer2"]
 bajeczki.org#?#div.site-content:-abp-has(> div[id^="videojs-remote"])
+plonszczak.pl#@#.reklama
 !
 !37#--------------------------Wordpress blocking filters------------!
 ||overwatch.pl/wp-content/uploads/20*/*/250x700*.png$image
