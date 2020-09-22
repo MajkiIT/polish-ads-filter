@@ -2309,6 +2309,7 @@ add name="ww.paczkfups.com" address="195.187.6.34" comment="addHoleCertDomains H
 add name="ww.paczkhups.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ww.paczkjups.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ww.paczkmups.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="ww.paczkndpd.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ww.paczkpups.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ww.paczkqups.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="ww.paczkrups.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
