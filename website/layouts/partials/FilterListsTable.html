@@ -44,39 +44,65 @@
 	</thead>
 	<tbody>
 		{{ range $.Site.Data.FilterLists.items }}
-		<tr class="Row" data-category="{{.category}}" data-lang="{{ if .lang }} {{.lang}} {{else}}zagraniczne{{end}}" data-adblocker="{{ if findRE .adblocker "hosts"}}hosts, Ph{{ else if findRE "ABP" .adblocker }}AB, ABP, uBO, NA, AG{{ else if (findRE "uBO, AG" .adblocker ) and not (findRE "ABP" .adblocker) and not (findRE "NA" .adblocker)}}uBO, NA, AG{{else if (findRE "uBO" .adblocker )}}uBO, NA{{else}}{{.adblocker}}{{end}}">
+		<tr class="Row" data-category="{{.category}}" data-lang="{{ if .lang }} {{.lang}} {{else}}zagraniczne{{end}}" data-adblocker="{{ if findRE .adblocker "hosts"}}hosts, Ph{{ else if findRE "ABP" .adblocker }}AB, ABP, uBO, NA, AG{{ else if and (findRE "uBO, AG" .adblocker) (not (findRE "ABP" .adblocker)) (not (findRE "NA" .adblocker)) }}uBO, NA, AG{{else if (findRE "uBO" .adblocker )}}uBO, NA{{else}}{{.adblocker}}{{end}}">
 			<td class="align-middle" data-label="LISTA"><span>{{.title}}</span></td>
 			<td class="align-middle" data-label="ELEMENTY"><span>{{ .desc | $.Page.RenderString }}</span></td>
 			<td class="align-middle" data-label="LINKI">
 				<div class="span">
 					<div class="btn-group-vertical">
 						{{ if not (findRE .adblocker "hosts|Ph" ) }}
-						<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{.subscribe}}&amp;title={{.title}}">Subskrybuj</a>
+						<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{.subscribe}}&amp;title={{.title}}">
+							<i class="fas fa-file-import fa-fw"></i>Subskrybuj
+						</a>
 						{{end}}
 
-						<a class="btn btn-info mb-2r" href="{{.subscribe}}" target="_blank" rel="noopener">Podgląd</a>
+						<a class="btn btn-outline-info mb-2r" href="{{.subscribe}}" target="_blank" rel="noopener">
+							<i class="fas fa-eye fa-fw"></i>Podgląd
+						</a>
 
-						{{with .uBO_supp}}<a class="btn btn-info mb-2r" href="{{.}}" target="_blank" rel="noopener" title="Podgląd uzupełnienia dla uBO">Podgląd uBO</a>{{end}}
+						{{with .uBO_supp}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener" title="Podgląd uzupełnienia dla uBO">
+							<i class="fas fa-eye fa-fw"></i>Podgląd uBO
+						</a>{{end}}
 
-						{{with .AG_supp}}<a class="btn btn-info mb-2r" href="{{.}}" target="_blank" rel="noopener" title="Podgląd uzupełnienia dla AdGuarda">Podgląd AG</a>{{end}}
+						{{with .AG_supp}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener" title="Podgląd uzupełnienia dla AdGuarda">
+							<i class="fas fa-eye fa-fw"></i>Podgląd AG
+						</a>{{end}}
 
-						{{with .supp}}<a class="btn btn-info mb-2r" href="{{.}}" target="_blank" rel="noopener" title="Podgląd uzupełnienia dla uBO i AdGuarda">Podgląd uzup.</a>{{end}}
+						{{with .supp}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener" title="Podgląd uzupełnienia dla uBO i AdGuarda">
+							<i class="fas fa-eye fa-fw"></i>Podgląd uzup.
+						</a>{{end}}
 
-						{{with .modules}}<a class="btn btn-modules mb-2r" href="{{.}}" target="_blank" rel="noopener">Moduły</a>{{end}}
+						{{with .modules}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener">
+							<i class="fas fa-puzzle-piece fa-fw"></i>Moduły
+						</a>{{end}}
 
-						{{with .issues}}<a class="btn btn-danger mb-2r" href="{{.}}" target="_blank" rel="noopener">Zgłoś problem</a>{{end}}
+						{{with .issues}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener">
+							<i class="fas fa-bug fa-fw"></i>Zgłoś problem
+						</a>{{end}}
 
-						{{with .form}}<a class="btn btn-danger mb-2r" href="{{.}}" target="_blank" rel="noopener">Formularz</a>{{end}}
+						{{with .form}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener">
+							<i class="fas fa-edit fa-fw"></i>Formularz
+						</a>{{end}}
 
-						{{with .forum}}<a class="btn btn-danger mb-2r" href="{{.}}" target="_blank" rel="noopener">Forum</a>{{end}}
+						{{with .forum}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener">
+							<i class="fas fa-users fa-fw"></i>Forum
+						</a>{{end}}
 
-						{{with .chat}}<a class="btn btn-danger mb-2r" href="" data-secret="{{. | base64Encode}}" onmouseover="this.href = atob(this.dataset.secret);" target="_blank" rel="noopener">Poczatuj</a>{{end}}
+						{{with .chat}}<a class="btn btn-outline-info mb-2r" href="" data-secret="{{. | base64Encode}}" onmouseover="this.href = atob(this.dataset.secret);" target="_blank" rel="noopener">
+							<i class="fas fa-comment-dots fa-fw"></i>Poczatuj
+						</a>{{end}}
 
-						{{with .mail}}<a class="btn btn-danger mb-2r" data-secret="{{. | base64Encode}}" href="" onmouseover="this.href = 'mailto:' + atob(this.dataset.secret);">Wyślij maila</a>{{end}}
+						{{with .mail}}<a class="btn btn-outline-info mb-2r" data-secret="{{. | base64Encode}}" href="" onmouseover="this.href = 'mailto:' + atob(this.dataset.secret);">
+							<i class="fas fa-envelope fa-fw"></i>Wyślij maila
+						</a>{{end}}
 
-						{{with .donate}}<a class="btn btn-success mb-2r" href="{{.}}" target="_blank" rel="noopener">Przekaż datek</a>{{end}}
+						{{with .donate}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener">
+							<i class="fas fa-donate fa-fw"></i>Przekaż datek
+						</a>{{end}}
 
-						{{with .home}}<a class="btn btn-secondary mb-2r" href="{{.}}" target="_blank" rel="noopener">Strona główna</a>{{ end }}
+						{{with .home}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener">
+							<i class="fas fa-home fa-fw"></i>Strona główna
+						</a>{{ end }}
 					</div>
 				</div>
 				<span style="display: none;">
@@ -87,36 +113,56 @@
 				<div class="span">
 					<div class="btn-group-vertical">
 						{{if ne .requiredType "normal"}}
-						{{if .requiredTitle}}<a class="btn btn-outline-info mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation}}&amp;title={{.requiredTitle}}">{{.requiredTitle}}</a>{{end}}
+						{{if .requiredTitle}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation}}&amp;title={{.requiredTitle}}">
+							<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle}}
+						</a>{{end}}
 						{{else}}
-						{{if .requiredTitle}}<a class="btn btn-outline-info mb-2r" href="{{.requiredLocation}}" target="_blank" rel="noopener">{{.requiredTitle}}</a>{{end}}
+						{{if .requiredTitle}}<a class="btn btn-outline-danger mb-2r" href="{{.requiredLocation}}" target="_blank" rel="noopener">
+							<i class="fab fa-readme fa-fw"></i>{{.requiredTitle}}
+						</a>{{end}}
 						{{end}}
 
 						{{if ne .requiredType2 "normal"}}
-						{{if .requiredTitle2}}<a class="btn btn-outline-info mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation2}}&amp;title={{.requiredTitle2}}">{{.requiredTitle2}}</a>{{end}}
+						{{if .requiredTitle2}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation2}}&amp;title={{.requiredTitle2}}">
+							<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle2}}
+						</a>{{end}}
 						{{else}}
-						{{if .requiredTitle2}}<a class="btn btn-outline-info mb-2r" href="{{.requiredLocation2}}" target="_blank" rel="noopener">{{.requiredTitle2}}</a>{{end}}
+						{{if .requiredTitle2}}<a class="btn btn-outline-danger mb-2r" href="{{.requiredLocation2}}" target="_blank" rel="noopener">
+							<i class="fab fa-readme fa-fw"></i>{{.requiredTitle2}}
+						</a>{{end}}
 						{{end}}
 
 						{{if ne .requiredType3 "normal"}}
-						{{if .requiredTitle3}}<a class="btn btn-outline-info mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation3}}&amp;title={{.requiredTitle3}}">{{.requiredTitle3}}</a>{{end}}
+						{{if .requiredTitle3}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation3}}&amp;title={{.requiredTitle3}}">
+							<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle3}}
+						</a>{{end}}
 						{{else}}
-						{{if .requiredTitle3}}<a class="btn btn-outline-info mb-2r" href="{{.requiredLocation3}}" target="_blank" rel="noopener">{{.requiredTitle3}}</a>{{end}}
+						{{if .requiredTitle3}}<a class="btn btn-outline-danger mb-2r" href="{{.requiredLocation3}}" target="_blank" rel="noopener">
+							<i class="fab fa-readme fa-fw"></i>{{.requiredTitle3}}
+						</a>{{end}}
 						{{end}}
 
 						{{if ne .requiredType4 "normal"}}
-						{{if .requiredTitle4}}<a class="btn btn-outline-info mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation4}}&amp;title={{.requiredTitle4}}">{{.requiredTitle4}}</a>{{end}}
+						{{if .requiredTitle4}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation4}}&amp;title={{.requiredTitle4}}">
+							<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle4}}
+						</a>{{end}}
 						{{else}}
-						{{if .requiredTitle4}}<a class="btn btn-outline-info mb-2r" href="{{.requiredLocation4}}" target="_blank" rel="noopener">{{.requiredTitle4}}</a>{{end}}
+						{{if .requiredTitle4}}<a class="btn btn-outline-danger mb-2r" href="{{.requiredLocation4}}" target="_blank" rel="noopener">
+							<i class="fab fa-readme fa-fw"></i>{{.requiredTitle4}}
+						</a>{{end}}
 						{{end}}
 
 						{{if ne .requiredType5 "normal"}}
-						{{if .requiredTitle5}}<a class="btn btn-outline-info mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation5}}&amp;title={{.requiredTitle5}}">{{.requiredTitle5}}</a>{{end}}
+						{{if .requiredTitle5}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation5}}&amp;title={{.requiredTitle5}}">
+							<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle5}}
+						</a>{{end}}
 						{{else}}
-						{{if .requiredTitle5}}<a class="btn btn-outline-info mb-2r" href="{{.requiredLocation5}}" target="_blank" rel="noopener">{{.requiredTitle5}}</a>{{end}}
+						{{if .requiredTitle5}}<a class="btn btn-outline-danger mb-2r" href="{{.requiredLocation5}}" target="_blank" rel="noopener">
+							<i class="fab fa-readme fa-fw"></i>{{.requiredTitle5}}
+						</a>{{end}}
 						{{end}}
 
-						{{if (not .requiredTitle) (not .requiredTitle2) (not .requiredTitle3) (not .requiredTitle4) (not .requiredTitle5)}}
+						{{ if and (not (.requiredTitle)) (not (.requiredTitle2)) (not (.requiredTitle3)) (not (.requiredTitle4)) (not (.requiredTitle5)) }}
 						-
 						{{end}}
 					</div>
@@ -132,16 +178,16 @@
 					<a href="https://adguard.com/" target="_blank" rel="noopener"><img src="{{ "images/AdGuard_logo_32.png" | relURL }}" style="width:32px;height:32px" title="AdGuard"></a>
 					{{end}}
 
-					{{ if (findRE "uBO" .adblocker) and not (findRE "ABP" .adblocker) and not (findRE "NA" .adblocker) }}
+					{{ if and (findRE "uBO" .adblocker) (not (findRE "ABP" .adblocker)) (not (findRE "NA" .adblocker)) }}
 					<a href="https://github.com/gorhill/uBlock" target="_blank" rel="noopener"><img src="{{ "images/uBO_32.png" | relURL }}" style="width:32px;height:32px" title="uBlock Origin"></a>
 					<a href="https://github.com/NanoAdblocker/NanoCore" target="_blank" rel="noopener"><img src="{{ "images/Nano_32.png" | relURL }}" style="width:32px;height:32px" title="Nano Adblocker"></a>
 					{{end}}
 
-					{{ if (findRE "NA" .adblocker) and not (findRE "ABP" .adblocker) }}
+					{{ if and (findRE "NA" .adblocker) (not (findRE "ABP" .adblocker)) }}
 					<a href="https://github.com/NanoAdblocker/NanoCore" target="_blank" rel="noopener"><img src="{{ "images/Nano_32.png" | relURL }}" style="width:32px;height:32px" title="Nano Adblocker"></a>
 					{{end}}
 
-					{{ if (findRE "AG" .adblocker) and not (findRE "ABP" .adblocker) }}
+					{{ if and (findRE "AG" .adblocker) (not (findRE "ABP" .adblocker)) }}
 					<a href="https://adguard.com/" target="_blank" rel="noopener"><img src="{{ "images/AdGuard_logo_32.png" | relURL }}" style="width:32px;height:32px" title="AdGuard"></a>
 					{{end}}
 
