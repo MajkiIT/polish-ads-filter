@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies i EasyList/AdGuard Base!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2020.9.20.0
-! Last modified: Sun, 20 Sep 2020, 19:36 UTC+02
+! Version: 2020.9.24.0
+! Last modified: Thu, 24 Sep 2020, 18:06 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -18,7 +18,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2020 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2020.9.20.0 aktualizacja: nie, 20 wrz 2020, 19:36 UTC+02
+! v.2020.9.24.0 aktualizacja: czw, 24 wrz 2020, 18:06 UTC+02
 !
 !
 ! Specyficzne reguły ukrywające
@@ -225,7 +225,6 @@ avmarket.eu,delllow.com,dronexpert.eu,drukowanie.net,ethnostudio.eu,interlumen.c
 avon.pl##.CookieSection
 azure.microsoft.com###cookie-prompt
 az.pl###gatsby-focus-wrapper > footer + div[class^="sc-"]
-baborow.pl,przemysl.pl##.page-cookie
 babytvchannel.info###cookieStandart
 baby.nivea.pl##.policy-info, .privacy-policy-change
 bacca.pl###CookieLawInfoPlugin
@@ -1515,6 +1514,7 @@ nowa.tv###mpc_cookie_intro
 noweprzetargi.pl###dcach, #txt
 nowezyciepabianic.pl##div#PopupDiv
 nowgeo.pl###div_ciasteczka
+nowiny.rybnik.pl###rodoBox
 nowyteatr.org###cookies-notification
 no-ip.pl###id_rodosrodo
 numizmatyka24.pl##.prvcookies
@@ -1660,6 +1660,7 @@ pl.hama.com###privacyOptionsCookieOptIn-bottom
 pl.investing.com##.consentBarWrapper
 pl.isilines.com##.wrapper-banner-rgpd
 pl.jooble.org,twitch.tv##.gdpr-consent-banner
+pl.kronospan-express.com##.cc-container
 pl.kruk.eu##.cookie-agreement
 pl.meteox.com,pl.sat24.com###cookie-message
 pl.mitsubishielectric.com##.pc_scsmod-cookie_alert
@@ -1838,6 +1839,8 @@ routex.com###ca_alert
 rowermevo.pl##.cookies-cont
 rower.com.pl###cookies_request
 rozwojowiec.pl###fixedBar
+rpo-swietokrzyskie.pl,stypendia.sejmik.kielce.pl##.mod_pa_sci
+rpo.lubelskie.pl###legal-info
 rps.ms.gov.pl###MS
 rumia.eu###box-cookies
 ryanair.com###cookie-popup.cookie-popup
@@ -1994,7 +1997,6 @@ stronghold.net.pl###ci_info
 studentbeans.com##div[data-react-class="Components.CookieBanner"]
 stukstuk.pl###tws_s_100001
 stylownik.com##.cpolicy
-stypendia.sejmik.kielce.pl##.mod_pa_sci
 sudafed.pl,vcms.eu###cookies-alert
 sulky-burel.pl###info_cookies_master
 sunandsnow.pl##.popup-cookies
@@ -2093,6 +2095,7 @@ trentino.pl###popup_cookies
 trizer.pl##.ft__cookies
 trovit.pl###welcomebar-wrapper
 truckstore.com##.tso-popup-footer, .tso-popup-overlay
+trustmate.io##div[class^="Cookies__CookiesWrapper-sc-"]
 ttv.pl###msgLayer
 tulodz.pl###modalCookies
 turio.com.pl##.cookie-info-dlg
@@ -2217,7 +2220,7 @@ www.ea.com##ea-truste-consent-bar
 www.google.com,www.google.pl##body > div[class*=" "]:not([id]) > c-wiz > div[jscontroller] > div[class][jsname][data-ved][style="display: block;"]
 www.google.com,www.google.pl###cnsi ~ [jsaction*="dismiss"], #cnsh, div[style*="url(#default#userData)"]
 www.google.com,www.google.pl###gb > div[class][style^="background"]
-www.google.com,www.google.pl#?##center_col > #taw > div > .med + div:-abp-has( > a[href*="/intl/pl/policies/technologies/cookies/"])
+www.google.com,www.google.pl#?##center_col #taw > div > .med + div:-abp-has( > a[href*="/intl/pl/policies/technologies/cookies/"]),
 www.halico.pl##.sqs-announcement-bar-custom-location
 www.hertz.com.pl##[class^="lb-"]
 www.hertz.pl###light-box-1
@@ -2741,7 +2744,6 @@ pl###cookie-info:not(body):not(html)
 pl###cookie-law-bar:not(body):not(html)
 pl###cookie-law-container:not(body):not(html)
 pl###cookie-law-info-again:not(body):not(html)
-pl###cookie-law-info-bar ~ #cookie-law-info-again ~ #cliSettingsPopup
 pl###cookie-law-info-bar:not(body):not(html):not(.cli-bar-popup):not(.cli-modal-content)
 pl###cookie-law-message:not(body):not(html)
 pl###cookie-law:not(body):not(html)
@@ -3104,6 +3106,7 @@ pl##.notice_notice_cookies:not(body):not(html)
 pl##.notification--cookie-alert:not(body):not(html)
 pl##.notification--cookie:not(body):not(html)
 pl##.optanon-alert-box-wrapper:not(body):not(html)
+pl##.overlay-cookie:not(body):not(html)
 pl##.page-cookies:not(body):not(html)
 pl##.page-cookie:not(body):not(html)
 pl##.page-wrap--cookie-permission:not(body):not(html)
@@ -3320,11 +3323,15 @@ pl#@##catapult-cookie-bar
 pl#@#.ccc-widget:not(body):not(html)
 pl#@#.cookie-msg-box
 pl#@#.rodo-popup:not(body):not(html)
+portaloswiatowy.pl#@#.container-cookie:not(body):not(html)
+portaloswiatowy.pl#@#.overlay-cookie:not(body):not(html)
+portaloswiatowy.pl#@#.popup-cookie:not(body):not(html)
 puratos.pl#@##cookieBannerModal
 puratos.pl#@##cookieInfo
 viennahouse.com#@##cookies-panel
 viennahouse.com#@##cookie-box
 volcano.pl#@##cookiesModal
+@@/wp-content/plugins/cookie-law-info/public/*$stylesheet
 @@||bitner.com.pl/plugins/cookiebar/jquery.cookiebar.js
 !
 !
@@ -3353,6 +3360,8 @@ orange.pl#@##cookies-info:not(body):not(html)
 parkiet.com,rp.pl#@##rodo-popup:not(body):not(html):not(.fade):not(.modal)
 pikio.pl#@##cookie-policy:not(body):not(html)
 porno720.pl,tvporno.pl#@##cookieinfo:not(body):not(html)
+portaloswiatowy.pl#@#.overlay-cookie:not(body):not(html)
+portaloswiatowy.pl#@#.popup-cookie:not(body):not(html)
 puratos.pl#@##cookieInfo:not(body):not(html)
 puratos.pl#@#.cookie-banner:not(body):not(html)
 sklep-domwhisky.pl#@#.rodo-popup:not(body):not(html):not([style="display: block;"])
