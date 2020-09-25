@@ -1,0 +1,46 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - master  # Set a branch to deploy
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive  # Fetch the Docsy theme
+          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Update Bootstrap
+        run: |
+          cd ./website/themes/docsy/assets/vendor/bootstrap
+          git checkout v4.5.2
+
+      - name: Build & deploy
+        run: |
+          git rm -rf ./docs
+          cd ./website
+          npm i -D --save autoprefixer@9 postcss-cli
+          hugo --minify
+          git config --local user.name 'github-actions[bot]'
+          git config --local user.email 'github-actions[bot]@users.noreply.github.com'
+          git add ../docs/*
+          git commit -m "Deploy updated website ($GITHUB_SHA)"
+          git push origin master
