@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies i EasyList/AdGuard Base!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2020.9.24.0
-! Last modified: Thu, 24 Sep 2020, 18:06 UTC+02
+! Version: 2020.9.25.0
+! Last modified: Fri, 25 Sep 2020, 17:25 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -18,7 +18,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2020 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2020.9.24.0 aktualizacja: czw, 24 wrz 2020, 18:06 UTC+02
+! v.2020.9.25.0 aktualizacja: pią, 25 wrz 2020, 17:25 UTC+02
 !
 !
 ! Specyficzne reguły ukrywające
@@ -99,6 +99,7 @@ agro-bis.eu,eldom.eu,iletutego.eu,prawniktorun.eu###cookie-alert
 agusto.pl,etroniks.pl,happytime.com.pl,mebags.pl,trojmiejska.com,trojmiejskaperfumeria.pl##div[id^="st_notification_"][style*="display"]
 ag-complex.com.pl##.cookie__window
 ahrefs.com###iubenda-cs-banner
+airbnb.pl##div[data-testid="main-cookies-banner-container"]
 airbnb.pl##div[data-veloute="cookie-disclaimer"]
 aircon.panasonic.eu,ecreo.eu,mazury.com,pl.vivre.eu,polemi.co.uk,rybnik.eu,tbnpolska.tv,ztm.lublin.eu##.cc-cookies
 airkiosk.lot.com##.mf-modal-overlay, .mf-modal-iframe
@@ -1396,6 +1397,7 @@ mojapogoda.com###IR
 mojavon.pl##.mpp-container > .mpp-popup
 mojbank.pl##.uk-notification-message
 mojehobby.pl##.message-footer-panel
+mojeuslugi.pl##.footer ~ div.text-center.fixed
 molkip.pl##.dialog-message.dialog-lightbox-message > .elementor-location-popup
 mondeoklubpolska.pl##li#navbar_notice_12
 monedo.pl##.NotificationBar
@@ -1674,7 +1676,9 @@ pl.pog.com###policy-validation.policy-validation
 pl.primo.com##.e-cookie
 pl.sputniknews.com###cookieContainer
 pl.thermaltake.com###gdprcode2
+pl.tripadvisor.com##span[data-test-name="consent"]
 pl.tripadvisor.com##.ppr_priv_document_cookie_banner
+pl.trip.com###use-cookie
 pl.twich.tv##div#noty_bottomCenter_layout_container
 pl.yahoo.com##div#mediafpwave3-wshade
 pmw.net.pl###note-holder
@@ -2220,7 +2224,7 @@ www.ea.com##ea-truste-consent-bar
 www.google.com,www.google.pl##body > div[class*=" "]:not([id]) > c-wiz > div[jscontroller] > div[class][jsname][data-ved][style="display: block;"]
 www.google.com,www.google.pl###cnsi ~ [jsaction*="dismiss"], #cnsh, div[style*="url(#default#userData)"]
 www.google.com,www.google.pl###gb > div[class][style^="background"]
-www.google.com,www.google.pl#?##center_col #taw > div > .med + div:-abp-has( > a[href*="/intl/pl/policies/technologies/cookies/"]),
+www.google.com,www.google.pl#?##center_col #taw > div > .med + div:-abp-has( > a[href*="/intl/pl/policies/technologies/cookies/"])
 www.halico.pl##.sqs-announcement-bar-custom-location
 www.hertz.com.pl##[class^="lb-"]
 www.hertz.pl###light-box-1
