@@ -17,23 +17,30 @@ jobs:
           submodules: recursive  # Fetch the Docsy theme
           fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
 
+      - id: log
+        run: echo "::set-output name=message::$(git log HEAD^..HEAD --name-only --pretty=format:"" | sort | uniq)"
+
       - name: Setup Hugo
+        if: "contains(steps.log.outputs.message, 'website')"
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
 
       - name: Setup Node
+        if: "contains(steps.log.outputs.message, 'website')"
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
 
       - name: Update Bootstrap
+        if: "contains(steps.log.outputs.message, 'website')"
         run: |
           cd ./website/themes/docsy/assets/vendor/bootstrap
           git checkout v4.5.2
 
       - name: Build & deploy
+        if: "contains(steps.log.outputs.message, 'website')"
         run: |
           git rm -rf ./docs
           cd ./website
