@@ -3699,6 +3699,7 @@ add name="www.pracaonline.co.pl" address="195.187.6.34" comment="addHoleCertDoma
 add name="www.pracuj-w-domu.co.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.prawdaboli.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.privacy-email.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.prywatna-sesja.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.przechowalnia.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.przechowalnia24.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.przechowalnie.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
