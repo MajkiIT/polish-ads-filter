@@ -9,26 +9,6 @@ Przed podjęciem jakiegokolwiek działania koniecznie zapoznaj się z CONTRIBUTI
 Thanks for reporting to Polish Filters for AdBlock, uBlock and AdGuard.
 -->
 
-
-<!--
-Co mamy schować, zablokować albo w czym jest problem, może pojawił się jakiś błąd?
-Proszę wstawić x pomiędzy znakami [] obok typu/typów, którego/których to zgłoszenie dotyczy.
-W przypadku pomyłki co do typu, proszę odznaczyć checkbox (przycisk wyboru) lub usunąć x i zamiast niego - wstawić spację.
-
-What should we hide, block or what is the problem, maybe there is an error?
-Please put an x between the [] signs next to the type (s) for which this issue relates.
-In case of a mistake as to the type, please uncheck the checkbox or delete x and insert a space instead.
--->
-### Typ elementu/problemu <!--Item / problem type-->
-- [] Reklama <!--Advert-->
-- [] Wydobywanie kryptowalut <!--Cryptocurrency mining-->
-- [] Anty-adblock <!--Anti-adblock wall-->
-- [] Komunikat dot. ciasteczek i polityki prywatności/RODO <!--Message about cookies and GDPR/privacy policy-->
-- [] Element społecznościowy <!--Social network element-->
-- [] Pi-hole, hosts i spółka <!--Pi-hole, hosts & co-->
-- [] Błąd <!--Bug, mistake, no-no-->
-- [] Pytanie <!--Question-->
-
 ### Zrzut ekranu <!--Screenshot-->
 <!--
 Przeciągnij i upuść tutaj swój zrzut lub zamieść do niego link.
