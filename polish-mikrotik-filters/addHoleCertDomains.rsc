@@ -1441,6 +1441,7 @@ add name="naszpolskiswiat.xyz" address="195.187.6.34" comment="addHoleCertDomain
 add name="natemat.h2g.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="natemat24.h2g.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="navi-esport.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="navi-free.org.ru" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="navi-tm.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="nazwapaiement-pl-2e7fa370.evv-auditing.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="nazwapaiement-pl-6ce740a6.evv-auditing.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
