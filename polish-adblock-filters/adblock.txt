@@ -8,9 +8,9 @@
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 9 October 2020
+! Last modified: 11 October 2020
 ! Expires: 1 day
-! Version: 2020100901
+! Version: 2020101101
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020100901 aktualizacja: ptk, 9 października 2020, 11:35:00
+! v.2020101101 aktualizacja: nie, 11 października 2020, 13:25:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -300,7 +300,7 @@ pl##.reklama_top
 4kom.pl###PSH-Bar
 4lomza.pl##.bxbanner
 4lomza.pl,zambrow.org,miedziowe.pl,miastociechocinek.com##[id*="banner"]
-4programmers.net###container-fluid > div > A[target="_blank"]
+4programmers.net###container-fluid > div > A[target="_blank"], .revive
 6obcy.com.pl##.g2a
 7dni.pila.pl###text-3, #text-4, #text-17, #text-11, #text-13, #text-2, #text-12, #text-10, #text-26, #text-25
 7dni.pila.pl##[id*="_bid_"]
@@ -1275,7 +1275,9 @@ gramynawynos.pl##.news_list:first-child
 granicenauki.pl###block-views-promo-box-block
 grapplerinfo.pl##A > IMG[width="350px"]
 grapplerinfo.pl##A[href^="https://goo.gl/"] > IMG
-gratka.pl##.nieSkacz
+gratka.pl##body > .dfp--center.dfp
+gratka.pl##.listing__dfpTop, dfp-sponsoraddol
+gratka.pl##[id^="dfp-gora"], [id^="dfp-srodek"], [id^="dfp-dol"]
 grodzisknews.pl##.ad_Content, [id^="grodz-"]
 grojec24.net###cookieinfo2
 groupon.pl###ls-in-app-messages
@@ -1633,6 +1635,9 @@ kuchnia-domowa.pl##[id^="position-recipe-adv-"], div.sunfw-item-module-position.
 kurier-bb.pl###aktualnosci > div:nth-of-type(4), #aktualnosci > div:nth-of-type(3), #aktualnosci > div:nth-of-type(5), center > div > table > tbody > tr
 kurierzamojski.pl##.td-a-ad, .kurie-adlabel, .kurie-w-tresci, .td-fix-index.td_mod_wrap, [class^="adace_ad_"]
 kujawy.info##div#homepageBaner2, .adBoxFullWidth
+kolbuszowalokalnie.pl##[class^="slider-"]
+kolbuszowalokalnie.pl##.mh-header-image-link
+kolbuszowalokalnie.pl##.widget_text
 kulisy.net##.row-fluid.wpb_row.vc_row:nth-of-type(6) > .span12.vc_column_container.wpb_column > .vc_column-inner > .wpb_wrapper
 kulisy.net##.row-fluid.wpb_row.vc_row:nth-of-type(7) > .span12.vc_column_container.wpb_column > .vc_column-inner > .wpb_wrapper > .wpb_content_element.wpb_text_column:nth-of-type(1)
 kulisy.net##.span12.vc_column_container.wpb_column > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_content_element.wpb_single_image
