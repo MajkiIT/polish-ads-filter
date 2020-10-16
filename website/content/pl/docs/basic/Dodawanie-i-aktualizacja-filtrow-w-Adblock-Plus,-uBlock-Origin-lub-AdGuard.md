@@ -31,7 +31,7 @@ slug: "add-update-filter"
    [![Adblock Plus](https://user-images.githubusercontent.com/5884000/38175733-6515e8dc-35e1-11e8-9945-06413f716eb7.jpg "Dodawanie filtrów na przykładzie przeglądarki Maxthon w dodatku Adblock Plus")](https://user-images.githubusercontent.com/5884000/38175733-6515e8dc-35e1-11e8-9945-06413f716eb7.jpg) -->
 
 
-#### uBlock Origin / Nano Adblocker
+#### uBlock Origin
 
 * W miejsce 3 wklejasz adres z listą filtrów np.
    ```
@@ -48,7 +48,7 @@ slug: "add-update-filter"
 # **Aktualizowanie**
 <ul>
 
-#### uBlock Origin / Nano Adblocker
+#### uBlock Origin
 <ul>
 
 ![ublock-origin-ustawienia-rozszerzenia](/images/wiki/uBO_update.png)
