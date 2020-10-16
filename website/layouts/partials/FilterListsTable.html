@@ -20,7 +20,6 @@
 		<option value="AB" data-icon="icon-dropdown AB-icon">AdBlock</option>
 		<option value="ABP" data-icon="icon-dropdown ABP-icon">Adblock Plus</option>
 		<option value="uBO" data-icon="icon-dropdown uBO-icon">uBlock Origin</option>
-		<option value="NA" data-icon="icon-dropdown NA-icon">Nano Adblocker</option>
 		<option value="AG" data-icon="icon-dropdown AG-icon">AdGuard</option>
 		<option value="Ph" data-icon="icon-dropdown Ph-icon">Pi-hole</option>
 		<option value="hosts" data-icon="icon-dropdown AA-icon">AdAway</option>
@@ -35,23 +34,23 @@
 <table class="responsive table table-sm table-striped table-bordered table-light sortable-theme" data-sortable>
 	<thead>
 		<tr>
-			<th scope="col" class="text-center font-weight-bold">{{ i18n "filterlist" }}</th>
-			<th scope="col" class="text-center font-weight-bold">{{ i18n "elements" }}</th>
-			<th scope="col" class="text-center font-weight-bold" data-sortable="false">{{ i18n "links" }}</th>
-			<th scope="col" class="text-center font-weight-bold" data-sortable="false">{{ i18n "required" }}</th>
-			<th scope="col" class="text-center font-weight-bold" data-sortable="false">{{ i18n "compatibility" }}</th>
+			<th scope="col" class="text-center font-weight-bold">{{ upper (i18n "filterlist") }}</th>
+			<th scope="col" class="text-center font-weight-bold">{{ upper (i18n "elements") }}</th>
+			<th scope="col" class="text-center font-weight-bold" data-sortable="false">{{ upper (i18n "links") }}</th>
+			<th scope="col" class="text-center font-weight-bold" data-sortable="false">{{ upper (i18n "required") }}</th>
+			<th scope="col" class="text-center font-weight-bold" data-sortable="false">{{ upper (i18n "compatibility") }}</th>
 		</tr>
 	</thead>
 	<tbody>
 		{{ range $.Site.Data.FilterLists.items }}
-		<tr class="Row" data-category="{{.category}}" data-lang="{{ if .lang }} {{.lang}} {{else}}zagraniczne{{end}}" data-adblocker="{{ if findRE .adblocker "hosts"}}hosts, Ph{{ else if findRE "ABP" .adblocker }}AB, ABP, uBO, NA, AG{{ else if and (findRE "uBO, AG" .adblocker) (not (findRE "ABP" .adblocker)) (not (findRE "NA" .adblocker)) }}uBO, NA, AG{{else if (findRE "uBO" .adblocker )}}uBO, NA{{else}}{{.adblocker}}{{end}}">
+		<tr class="Row" data-category="{{.category}}" data-lang="{{ if .lang }}{{.lang}}{{else}}zagraniczne{{end}}" data-adblocker="{{ if findRE .adblocker "hosts"}}hosts, Ph{{ else if findRE "ABP" .adblocker }}AB, ABP, uBO, NA, AG{{ else if and (findRE "uBO, AG" .adblocker) (not (findRE "ABP" .adblocker)) (not (findRE "NA" .adblocker)) }}uBO, NA, AG{{else if (findRE "uBO" .adblocker )}}uBO, NA{{else}}{{.adblocker}}{{end}}">
 			<td class="align-middle" data-label="LISTA"><span>{{.title}}</span></td>
 			<td class="align-middle" data-label="ELEMENTY"><span>{{ .desc | $.Page.RenderString }}</span></td>
 			<td class="align-middle" data-label="LINKI">
 				<div class="span">
 					<div class="btn-group-vertical">
 						{{ if not (findRE .adblocker "hosts|Ph" ) }}
-						<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{.subscribe}}&amp;title={{.title}}">
+						<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{.subscribe}}&amp;title={{ trim .title "*" }}">
 							<i class="fas fa-file-import fa-fw"></i>{{ i18n "subscribe" }}
 						</a>
 						{{end}}
@@ -113,7 +112,7 @@
 				<div class="span">
 					<div class="btn-group-vertical">
 						{{if ne .requiredType "normal"}}
-						{{if .requiredTitle}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation}}&amp;title={{.requiredTitle}}">
+						{{if .requiredTitle}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation}}&amp;title={{ trim .requiredTitle "*" }}">
 							<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle}}
 						</a>{{end}}
 						{{else}}
@@ -123,7 +122,7 @@
 						{{end}}
 
 						{{if ne .requiredType2 "normal"}}
-						{{if .requiredTitle2}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation2}}&amp;title={{.requiredTitle2}}">
+						{{if .requiredTitle2}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation2}}&amp;title={{ trim .requiredTitle2 "*" }}">
 							<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle2}}
 						</a>{{end}}
 						{{else}}
@@ -133,7 +132,7 @@
 						{{end}}
 
 						{{if ne .requiredType3 "normal"}}
-						{{if .requiredTitle3}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation3}}&amp;title={{.requiredTitle3}}">
+						{{if .requiredTitle3}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation3}}&amp;title={{ trim .requiredTitle3 "*" }}">
 							<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle3}}
 						</a>{{end}}
 						{{else}}
@@ -143,7 +142,7 @@
 						{{end}}
 
 						{{if ne .requiredType4 "normal"}}
-						{{if .requiredTitle4}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation4}}&amp;title={{.requiredTitle4}}">
+						{{if .requiredTitle4}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation4}}&amp;title={{trim .requiredTitle4 "*" }}">
 							<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle4}}
 						</a>{{end}}
 						{{else}}
@@ -153,7 +152,7 @@
 						{{end}}
 
 						{{if ne .requiredType5 "normal"}}
-						{{if .requiredTitle5}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation5}}&amp;title={{.requiredTitle5}}">
+						{{if .requiredTitle5}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation5}}&amp;title={{trim .requiredTitle5 "*"}}">
 							<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle5}}
 						</a>{{end}}
 						{{else}}
@@ -174,17 +173,11 @@
 					<a href="https://getadblock.com/" target="_blank" rel="noopener"><img src="{{ "images/AdBlock.svg" | relURL }}" style="width:32px;height:32px" title="AdBlock"></a>
 					<a href="https://adblockplus.org/" target="_blank" rel="noopener"><img src="{{ "images/ABP_32.png" | relURL }}" style="width:32px;height:32px" title="Adblock Plus"></a>
 					<a href="https://github.com/gorhill/uBlock" target="_blank" rel="noopener"><img src="{{ "images/uBO_32.png" | relURL }}" style="width:32px;height:32px" title="uBlock Origin"></a>
-					<a href="https://github.com/NanoAdblocker/NanoCore" target="_blank" rel="noopener"><img src="{{ "images/Nano_32.png" | relURL }}" style="width:32px;height:32px" title="Nano Adblocker"></a>
 					<a href="https://adguard.com/" target="_blank" rel="noopener"><img src="{{ "images/AdGuard_logo_32.png" | relURL }}" style="width:32px;height:32px" title="AdGuard"></a>
 					{{end}}
 
 					{{ if and (findRE "uBO" .adblocker) (not (findRE "ABP" .adblocker)) (not (findRE "NA" .adblocker)) }}
 					<a href="https://github.com/gorhill/uBlock" target="_blank" rel="noopener"><img src="{{ "images/uBO_32.png" | relURL }}" style="width:32px;height:32px" title="uBlock Origin"></a>
-					<a href="https://github.com/NanoAdblocker/NanoCore" target="_blank" rel="noopener"><img src="{{ "images/Nano_32.png" | relURL }}" style="width:32px;height:32px" title="Nano Adblocker"></a>
-					{{end}}
-
-					{{ if and (findRE "NA" .adblocker) (not (findRE "ABP" .adblocker)) }}
-					<a href="https://github.com/NanoAdblocker/NanoCore" target="_blank" rel="noopener"><img src="{{ "images/Nano_32.png" | relURL }}" style="width:32px;height:32px" title="Nano Adblocker"></a>
 					{{end}}
 
 					{{ if and (findRE "AG" .adblocker) (not (findRE "ABP" .adblocker)) }}
@@ -193,7 +186,7 @@
 
 					{{ if findRE "hosts" .adblocker }}
 					<a href="https://adaway.org/" target="_blank" rel="noopener"><img src="{{ "images/AdAway.svg" | relURL }}" style="width:32px;height:32px" title="AdAway"></a>
-					<a href="https://adguard.com/pl/adguard-home/overview.html" target="_blank" rel="noopener"><img src="{{ "images/AGHome.svg" | relURL }}" style="width:32px;height:32px" title="AdGuard Home"></a>
+					<a href="https://adguard.com/adguard-home/overview.html" target="_blank" rel="noopener"><img src="{{ "images/AGHome.svg" | relURL }}" style="width:32px;height:32px" title="AdGuard Home"></a>
 					<a href="https://blokada.org/" target="_blank" rel="noopener"><img src="{{ "images/Blokada.png" | relURL }}" style="width:32px;height:32px" title="Blokada"></a>
 					<a href="https://pi-hole.net/" target="_blank" rel="noopener"><img src="{{ "images/Pi-hole.svg" | relURL }}" style="width:32px;height:32px" title="Pi-hole"></a>
 					<a href="https://diversion.ch/" target="_blank" rel="noopener"><img src="{{ "images/Diversion.png" | relURL }}" style="width:32px;height:32px" title="Diversion"></a>
