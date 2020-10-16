@@ -1,9 +1,14 @@
 ---
-title: "Jak zainstalować Nano Defender na Firefoksie, Waterfoksie, (Chr)Operze? albo Chrome?"
+title: "Jak zainstalować Nano Defender na Firefoksie albo Waterfoksie?"
 weight: 2
 date: 26 Dec 2018
 slug: "install-nano-defender"
 ---
+
+{{% pageinfo %}}
+⚠️ **UWAGA!!!!** ⚠️ Wersja Nano Defendera i Adblockera dla Firefoksa jest stworzona przez inną osobę niż dla Chrome i na bazie pracy dawnego autora wersji dla Chrome, co też oznacza, że jest w pełni bezpieczna. Jednakże wkrótce najprawdopodobniej Nano Adblocker nie otrzyma już żadnej aktualizacji, a Nano Defender zmieni nazwę. Więcej informacji na https://github.com/LiCybora/NanoDefenderFirefox/issues/187.
+{{% /pageinfo %}}
+
 ## **I. ![Firefox][Firefox]FIREFOX QUANTUM (57+)/![Waterfox Current][Waterfox Current]WATERFOX CURRENT**
 
 1. Zainstaluj [**Nano Defender**](https://addons.mozilla.org/pl/firefox/addon/nano-defender-firefox/ "https://addons.mozilla.org/pl/firefox/addon/nano-defender-firefox/") (kliknij **Dodaj do Firefoksa**, a następnie **Dodaj**).
@@ -56,7 +61,7 @@ slug: "install-nano-defender"
 
 
 
-## **III. ![Opera][Opera]<sub><sup>(CHR)</sup></sub>OPERA**
+<!-- ## **III. ![Opera][Opera]<sub><sup>(CHR)</sup></sub>OPERA**
 <hr><blockquote><details><summary>Wersja wideo</summary><br>
 {{< youtube R5iB1-6B1A0 >}}
 </details></blockquote><hr>
@@ -134,7 +139,7 @@ slug: "install-nano-defender"
 
    - Subskrybuj listę filtrów [Nano filters - Whitelist](ubo://subscribe?location=https%3A%2F%2Fgitcdn.xyz%2Frepo%2FNanoAdblocker%2FNanoFilters%2Fmaster%2FNanoFilters%2FNanoWhitelist.txt&title=Nano%20filters%20-%20Whitelist)
 
-4. Ciesz się z działającego **Nano Defendera**!
+4. Ciesz się z działającego **Nano Defendera**! -->
 
 [Firefox]: https://cdnjs.cloudflare.com/ajax/libs/browser-logos/46.1.0/firefox/firefox_24x24.png "Mozilla Firefox"
 [Waterfox Classic]: https://github.com/MrAlex94/Waterfox/raw/classic/browser/branding/unofficial/default24.png "Waterfox Classic"
