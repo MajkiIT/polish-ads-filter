@@ -1,22 +1,22 @@
-<input type="search" id="search" class="light-table-filter" data-table="table" placeholder="Szukaj...">
+<input type="search" id="search" class="light-table-filter" data-table="table" placeholder='{{ i18n "search" }}...'>
 <div class="m-auto">
-	<select class="selectpicker ddlFilterTableRow mb-3 mr-sm-2 categories" data-attribute="category" multiple="multiple" title="Wybierz kategorię..." data-style="btn-outline-primary" data-actions-box="true" data-selected-text-format="count" data-width="fit">
-		<option value="bezpieczeństwo" data-icon="icon-dropdown security-icon">Bezpieczeństwo</option>
-		<option value="reklamy" data-icon="icon-dropdown ads-icon">Reklamy</option>
-		<option value="anty-adblock" data-icon="icon-dropdown adblockDetect-icon">Anty-Adblock</option>
-		<option value="społecznościowe" data-icon="icon-dropdown socialCategory-icon">Społecznościowe</option>
-		<option value="ciasteczka" data-icon="icon-dropdown sweetCategory-icon">Komunikaty dot. ciasteczek/RODO</option>
-		<option value="irytujące" data-icon="icon-dropdown annoyance-icon">Elementy irytujące</option>
+	<select class="selectpicker ddlFilterTableRow mb-3 mr-sm-2 categories" data-attribute="category" multiple="multiple" title='{{ i18n "category" }}...' data-style="btn-outline-primary" data-actions-box="true" data-selected-text-format="count" data-width="fit">
+		<option value="bezpieczeństwo" data-icon="icon-dropdown security-icon">{{ i18n "security" }}</option>
+		<option value="reklamy" data-icon="icon-dropdown ads-icon">{{ i18n "ads" }}</option>
+		<option value="anty-adblock" data-icon="icon-dropdown adblockDetect-icon">{{ i18n "anti-adblock" }}</option>
+		<option value="społecznościowe" data-icon="icon-dropdown socialCategory-icon">{{ i18n "social" }}</option>
+		<option value="ciasteczka" data-icon="icon-dropdown sweetCategory-icon">{{ i18n "cookiesCategory" }}</option>
+		<option value="irytujące" data-icon="icon-dropdown annoyance-icon">{{ i18n "annoyances" }}</option>
 		<option value="RSS" data-icon="icon-dropdown rssCategory-icon">RSS</option>
-		<option value="sponsorowane" data-icon="icon-dropdown sponsor-icon">Sponsorowane</option>
-		<option value="e-handel" data-icon="icon-dropdown ecommerce-icon">E-handel</option>
-		<option value="prywatność" data-icon="icon-dropdown privacy-icon">Prywatność</option>
+		<option value="sponsorowane" data-icon="icon-dropdown sponsor-icon">{{ i18n "sponsored" }}</option>
+		<option value="e-handel" data-icon="icon-dropdown ecommerce-icon">{{ i18n "e-commerce" }}</option>
+		<option value="prywatność" data-icon="icon-dropdown privacy-icon">{{ i18n "privacy" }}</option>
 	</select>
-	<select class="selectpicker ddlFilterTableRow mb-3 mr-sm-2 origin" data-attribute="lang" multiple="multiple" title="Wybierz pochodzenie..." data-style="btn-outline-primary" data-container="body" data-max-options="1">
-		<option value="pl">Polskie</option>
-		<option value="zagraniczne">Zagraniczne</option>
+	<select class="selectpicker ddlFilterTableRow mb-3 mr-sm-2 origin" data-attribute="lang" multiple="multiple" title='{{ i18n "origin" }}...' data-style="btn-outline-primary" data-container="body" data-max-options="1">
+		<option value="pl">{{ i18n "Polish" }}</option>
+		<option value="zagraniczne">{{ i18n "foreign" }}</option>
 	</select>
-	<select class="selectpicker ddlFilterTableRow mb-3 adblocker" data-attribute="adblocker" multiple="multiple" title="Wybierz adblockera..." data-style="btn-outline-primary" data-max-options="2" data-selected-text-format="count">
+	<select class="selectpicker ddlFilterTableRow mb-3 adblocker" data-attribute="adblocker" multiple="multiple" title='{{ i18n "adblocker" }}...' data-style="btn-outline-primary" data-max-options="2" data-selected-text-format="count">
 		<option value="AB" data-icon="icon-dropdown AB-icon">AdBlock</option>
 		<option value="ABP" data-icon="icon-dropdown ABP-icon">Adblock Plus</option>
 		<option value="uBO" data-icon="icon-dropdown uBO-icon">uBlock Origin</option>
@@ -35,11 +35,11 @@
 <table class="responsive table table-sm table-striped table-bordered table-light sortable-theme" data-sortable>
 	<thead>
 		<tr>
-			<th scope="col" class="text-center font-weight-bold">LISTA</th>
-			<th scope="col" class="text-center font-weight-bold">ELEMENTY</th>
-			<th scope="col" class="text-center font-weight-bold" data-sortable="false">LINKI</th>
-			<th scope="col" class="text-center font-weight-bold" data-sortable="false">WYMAGANE</th>
-			<th scope="col" class="text-center font-weight-bold" data-sortable="false">ZGODNOŚĆ</th>
+			<th scope="col" class="text-center font-weight-bold">{{ i18n "filterlist" }}</th>
+			<th scope="col" class="text-center font-weight-bold">{{ i18n "elements" }}</th>
+			<th scope="col" class="text-center font-weight-bold" data-sortable="false">{{ i18n "links" }}</th>
+			<th scope="col" class="text-center font-weight-bold" data-sortable="false">{{ i18n "required" }}</th>
+			<th scope="col" class="text-center font-weight-bold" data-sortable="false">{{ i18n "compatibility" }}</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -52,36 +52,36 @@
 					<div class="btn-group-vertical">
 						{{ if not (findRE .adblocker "hosts|Ph" ) }}
 						<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{.subscribe}}&amp;title={{.title}}">
-							<i class="fas fa-file-import fa-fw"></i>Subskrybuj
+							<i class="fas fa-file-import fa-fw"></i>{{ i18n "subscribe" }}
 						</a>
 						{{end}}
 
 						<a class="btn btn-outline-info mb-2r" href="{{.subscribe}}" target="_blank" rel="noopener">
-							<i class="fas fa-eye fa-fw"></i>Podgląd
+							<i class="fas fa-eye fa-fw"></i>{{ i18n "preview" }}
 						</a>
 
-						{{with .uBO_supp}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener" title="Podgląd uzupełnienia dla uBO">
-							<i class="fas fa-eye fa-fw"></i>Podgląd uBO
+						{{with .uBO_supp}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener" title='{{ i18n "uBOPreviewTitle" }}'>
+							<i class="fas fa-eye fa-fw"></i>{{ i18n "uBOPreview" }}
 						</a>{{end}}
 
-						{{with .AG_supp}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener" title="Podgląd uzupełnienia dla AdGuarda">
-							<i class="fas fa-eye fa-fw"></i>Podgląd AG
+						{{with .AG_supp}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener" title='{{ i18n "AGPreviewTitle" }}'>
+							<i class="fas fa-eye fa-fw"></i>{{ i18n "AGPreview" }}
 						</a>{{end}}
 
-						{{with .supp}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener" title="Podgląd uzupełnienia dla uBO i AdGuarda">
-							<i class="fas fa-eye fa-fw"></i>Podgląd uzup.
+						{{with .supp}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener" title='{{ i18n "supplementPreviewTitle" }}'>
+							<i class="fas fa-eye fa-fw"></i>{{ i18n "supplementPreview" }}
 						</a>{{end}}
 
 						{{with .modules}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener">
-							<i class="fas fa-puzzle-piece fa-fw"></i>Moduły
+							<i class="fas fa-puzzle-piece fa-fw"></i>{{ i18n "modules" }}
 						</a>{{end}}
 
 						{{with .issues}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener">
-							<i class="fas fa-bug fa-fw"></i>Zgłoś problem
+							<i class="fas fa-bug fa-fw"></i>{{ i18n "reportProblem" }}
 						</a>{{end}}
 
 						{{with .form}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener">
-							<i class="fas fa-edit fa-fw"></i>Formularz
+							<i class="fas fa-edit fa-fw"></i>{{ i18n "form" }}
 						</a>{{end}}
 
 						{{with .forum}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener">
@@ -89,19 +89,19 @@
 						</a>{{end}}
 
 						{{with .chat}}<a class="btn btn-outline-info mb-2r" href="" data-secret="{{. | base64Encode}}" onmouseover="this.href = atob(this.dataset.secret);" target="_blank" rel="noopener">
-							<i class="fas fa-comment-dots fa-fw"></i>Poczatuj
+							<i class="fas fa-comment-dots fa-fw"></i>{{ i18n "chat" }}
 						</a>{{end}}
 
 						{{with .mail}}<a class="btn btn-outline-info mb-2r" data-secret="{{. | base64Encode}}" href="" onmouseover="this.href = 'mailto:' + atob(this.dataset.secret);">
-							<i class="fas fa-envelope fa-fw"></i>Wyślij maila
+							<i class="fas fa-envelope fa-fw"></i>{{ i18n "sendMail" }}
 						</a>{{end}}
 
 						{{with .donate}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener">
-							<i class="fas fa-donate fa-fw"></i>Przekaż datek
+							<i class="fas fa-donate fa-fw"></i>{{ i18n "donate" }}
 						</a>{{end}}
 
 						{{with .home}}<a class="btn btn-outline-info mb-2r" href="{{.}}" target="_blank" rel="noopener">
-							<i class="fas fa-home fa-fw"></i>Strona główna
+							<i class="fas fa-home fa-fw"></i>{{ i18n "home" }}
 						</a>{{ end }}
 					</div>
 				</div>
@@ -217,5 +217,11 @@
 {{ $selectPolish := resources.Get "js/bootstrap-select-translations/defaults-pl_PL.min.js" }}
 {{ $filterSearch := resources.Get "js/light-table-filter.min.js" }}
 {{ $sort := resources.Get "js/sortable.min.js" }}
-{{ $js := slice $selectFilter $select $selectPolish $filterSearch $sort | resources.Concat "js/table_bundle.js" | minify | fingerprint }}
+
+{{ $js := slice $selectFilter $select $filterSearch $sort | resources.Concat "js/table_bundle.js" | minify | fingerprint }}
+{{ if eq .Site.Language.Lang "pl" }}
+{{ $jspl := slice $js $selectPolish | resources.Concat "js/table_bundle_pl.js" | minify | fingerprint }}
+<script defer src="{{ $jspl.Permalink | relURL }}" integrity="{{ $jspl.Data.Integrity }}"></script>
+{{ else }}
 <script defer src="{{ $js.Permalink | relURL }}" integrity="{{ $js.Data.Integrity }}"></script>
+{{ end }}

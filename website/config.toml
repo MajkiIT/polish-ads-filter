@@ -3,7 +3,8 @@ title = "Polish filters for AdBlock, uBlock Origin & AdGuard"
 ignoreFiles = [ "table_notes.md" ]
 enableRobotsTXT = true
 publishDir = "../docs"
-
+canonifyURLs = true
+relativeURLs = true
 # Hugo allows theme composition (and inheritance). The precedence is from left to right.
 theme = ["docsy"]
 
@@ -58,24 +59,19 @@ languageName ="Polski"
 time_format_default = "02.01.2006"
 # Weight used for sorting.
 weight = 1
-# [languages.en]
-# contentDir = "content"
-# title = "Polish filters for AdBlock, uBlock Origin & AdGuard"
-# description = "polish-ads-filter"
-# languageName ="English"
-# # Weight used for sorting.
-# weight = 1
+[languages.en]
+contentDir = "content/en"
+title = "Polish filters for AdBlock, uBlock Origin & AdGuard"
+description = "polish-ads-filter"
+languageName ="English"
+# Weight used for sorting.
+weight = 2
 
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-
-[[menu.main]]
-    name = "GitHub"
-    weight = 25
-    url = "https://github.com/MajkiIT/polish-ads-filter"
 
 # Everything below this are Site Params
 
