@@ -1857,6 +1857,7 @@ add name="pl-pocztapolska.com" address="195.187.6.34" comment="addHoleCertDomain
 add name="pl-postkod.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pl-wyslij.best" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pl.bitcoinbillionarie.t500track29.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="pl.oix-pay.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pl.stores2020.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pl.suluklima.com.tr" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pl.tradenewsinvesting.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
