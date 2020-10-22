@@ -1925,6 +1925,7 @@ add name="poczta-polska48.net" address="195.187.6.34" comment="addHoleCertDomain
 add name="poczta-polska5.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="poczta-polska6.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="poczta-regulamin.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="poczta.interia-pl.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="poczta.ron-mil-pl.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pocztainteria-regulamin.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pocztapolska.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
