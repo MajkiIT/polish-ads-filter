@@ -10,7 +10,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 23 October 2020
 ! Expires: 1 day
-! Version: 2020102301
+! Version: 2020102302
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,13 +18,13 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020102301 aktualizacja: ptk, 23 października 2020, 08:05:00
+! v.2020102302 aktualizacja: ptk, 23 października 2020, 19:50:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
 ##a[href*="techmaniak.pl/www/gact/ckk.php"]
 .*sales*.pl/offers/$image
-.pl/*/adds/
+.pl/*/adds/$domain=~vvena.pl
 .pl/*/ads/$domain=~tubagliwic.pl|~m.olx.pl|~niezalezna.pl
 .pl/data/cameras/banner_$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
 .pl/images/reklama120x60.jpg$image
@@ -39,7 +39,7 @@
 /affiliates/$image,domain=www.pasazer.com
 /baner/$image,domain=nowiny.rybnik.pl|macronext.pl|katowicetv.eu
 /baners/$image,domain=raciborz24.pl
-/banery/$image,subdocument,object,domain=oknoserwis.pl|sps24.pl|www.chojnice.com|usa.info.pl|jarocinska.pl|www.obud.pl|skijumping.pl|gintama.wbijam.pl|haczyk.pl|instalacjebudowlane.pl|jagiellonia.net|kdega.e-kei.pl|naszalomza.pl|pionki24.pl|mragowo24.info|lokalna24.pl|ebarlinek.pl|kuriergarwolinski.pl|bielsko.biala.pl|www.budownictwo.org|www.serwer.brodnica.net|staleo.pl|super-nowa.pl|zwolen24.pl|7dni.pila.pl|www.gostynska.pl|reszel.eu|e-stargard.pl|medicusveterinarius.pl|polskicaravaning.pl|kielkismaku.pl|obud.pl|swiatrolnika.info|warsztat.pl|rawicz24.pl|ostrowmaz24.pl|kozienice24.pl
+/banery/$image,subdocument,object,domain=oknoserwis.pl|sps24.pl|www.chojnice.com|usa.info.pl|jarocinska.pl|www.obud.pl|skijumping.pl|gintama.wbijam.pl|haczyk.pl|instalacjebudowlane.pl|jagiellonia.net|kdega.e-kei.pl|naszalomza.pl|pionki24.pl|mragowo24.info|lokalna24.pl|ebarlinek.pl|kuriergarwolinski.pl|bielsko.biala.pl|www.budownictwo.org|www.serwer.brodnica.net|staleo.pl|super-nowa.pl|zwolen24.pl|7dni.pila.pl|www.gostynska.pl|reszel.eu|e-stargard.pl|medicusveterinarius.pl|polskicaravaning.pl|kielkismaku.pl|obud.pl|swiatrolnika.info|warsztat.pl|rawicz24.pl|ostrowmaz24.pl|kozienice24.pl|bialogardzianin.pl
 /banery/*110x90
 /banery/*750x100
 /banery/*750x200
@@ -656,7 +656,7 @@ comperia.pl##.rkoScroll, #aboveMenuCzarobox, .wybierz-oferte-container.py-lg-5.p
 comprix.pl###subList3 > .l3
 computerworld.pl###tui-animation
 cooltura24.co.uk##.bgad
-cozadzien.pl##.box_bnewshome
+cozadzien.pl##.box_bnewshome, .relative.w-100.mnr
 cpb.pl###artbaner
 crafted.pl#?#.ipsComment.ipsBox.cPost:-abp-has(.cAuthorPane_info > li:-abp-contains(/^Reklama$/))
 craftportal.pl###secondary
@@ -3705,7 +3705,7 @@ zywiecinfo.pl##.promoted
 ||antyweb.pl/wp-content/uploads/2017/03/horizon-cover.jpg$image
 ||api-content-generator.gazeta.pl/content-generator/published/frame/generate?frameId=
 ||api.ergokantor.pl/widgets/$subdocument
-||api.systempartnerski.pl^$domain=niepoddawajsie.pl
+||api.systempartnerski.pl^
 ||aptekacentrum.lublin.pl/images/*1920x1080.jpg$image
 ||arpass.nazwa.pl/pliki/swf/$image
 ||atrexpress.com.pl/fileadmin/user_upload/grafika/baner$image
@@ -3838,6 +3838,7 @@ zywiecinfo.pl##.promoted
 ||ifotos.pl/img/$image,domain=supertydzien.pl|radiobonton.pl
 ||ilawa24.pl/photos/skyscraper.jpg$image
 ||image.ceneostatic.pl/data/footer_widget/$image
+||img.lzrikate.com^
 ||img.dvhk.to^$image,domain=portal.dvhk.to
 ||img.targeo.pl/i/cache/a/$image,domain=mapa.targeo.pl
 ||info.elblag.pl/images/banerki$script,object
@@ -3920,6 +3921,7 @@ zywiecinfo.pl##.promoted
 ||naekranie.pl/wp-content/uploads/2019/06/st3scrd_5d1379da037fe.jpeg$image
 ||napisy24.pl/images/bg-allplayer-*.png
 ||napisy24.pl/run/js/all_corners.js
+||napiprojekt.pl/js/ads-*.js$script
 ||naszamlawa.pl/images/banner/$object,image,subdocument
 ||naszarola.pl/wp-content/uploads/201*/*/*1200x200*.jpg
 ||naszarola.pl/wp-content/uploads/201*/*/reklam*.jpg
