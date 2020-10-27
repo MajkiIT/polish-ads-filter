@@ -1828,6 +1828,7 @@ add name="paczkups.com" address="195.187.6.34" comment="addHoleCertDomains HoleC
 add name="paczkxpress.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="paczpocztex.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="paczpocztex.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="paczta.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="paczups.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="paczups.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="paiementhome-pl-bcfc5bbc.vmkfz.at" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
