@@ -37,8 +37,8 @@
 			<th scope="col" class="text-center font-weight-bold">{{ upper (i18n "filterlist") }}</th>
 			<th scope="col" class="text-center font-weight-bold">{{ upper (i18n "elements") }}</th>
 			<th scope="col" class="text-center font-weight-bold" data-sortable="false">{{ upper (i18n "links") }}</th>
+			<th scope="col" class="text-center font-weight-bold" data-sortable="false">{{ upper (i18n "alternativeLinks") }}</th>
 			<th scope="col" class="text-center font-weight-bold" data-sortable="false">{{ upper (i18n "required") }}</th>
-			<th scope="col" class="text-center font-weight-bold" data-sortable="false">{{ upper (i18n "compatibility") }}</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -53,7 +53,7 @@
 						<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{.subscribe}}&amp;title={{ trim .title "*" }}">
 							<i class="fas fa-file-import fa-fw"></i>{{ i18n "subscribe" }}
 						</a>
-						{{end}}
+						{{ end }}
 
 						<a class="btn btn-outline-info mb-2r" href="{{.subscribe}}" target="_blank" rel="noopener">
 							<i class="fas fa-eye fa-fw"></i>{{ i18n "preview" }}
@@ -104,71 +104,63 @@
 						</a>{{ end }}
 					</div>
 				</div>
-				<span style="display: none;">
-					{{.subscribe}}
-				</span>
 			</td>
-			<td class="align-middle" data-label="WYMAGANE">
+			<td class="align-middle" data-label="LINKI ALTERNATYWNE">
 				<div class="span">
 					<div class="btn-group-vertical">
-						{{if ne .requiredType "normal"}}
-						{{if .requiredTitle}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation}}&amp;title={{ trim .requiredTitle "*" }}">
-							<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle}}
-						</a>{{end}}
-						{{else}}
-						{{if .requiredTitle}}<a class="btn btn-outline-danger mb-2r" href="{{.requiredLocation}}" target="_blank" rel="noopener">
-							<i class="fab fa-readme fa-fw"></i>{{.requiredTitle}}
-						</a>{{end}}
-						{{end}}
+						{{ if in .subscribe "raw.githubusercontent.com"}}
 
-						{{if ne .requiredType2 "normal"}}
-						{{if .requiredTitle2}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation2}}&amp;title={{ trim .requiredTitle2 "*" }}">
-							<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle2}}
-						</a>{{end}}
-						{{else}}
-						{{if .requiredTitle2}}<a class="btn btn-outline-danger mb-2r" href="{{.requiredLocation2}}" target="_blank" rel="noopener">
-							<i class="fab fa-readme fa-fw"></i>{{.requiredTitle2}}
-						</a>{{end}}
-						{{end}}
+						{{ if not (findRE .adblocker "hosts|Ph" ) }}
+						<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo" }}&amp;title={{ trim .title "*" }}">
+							<i class="fas fa-file-import fa-fw"></i>{{ i18n "subscribe" }} (GitCDN)
+						</a>
+						<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh" }}&amp;title={{ trim .title "*" }}">
+							<i class="fas fa-file-import fa-fw"></i>{{ i18n "subscribe" }} (Statically)
+						</a>
+						{{ end }}
 
-						{{if ne .requiredType3 "normal"}}
-						{{if .requiredTitle3}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation3}}&amp;title={{ trim .requiredTitle3 "*" }}">
-							<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle3}}
-						</a>{{end}}
-						{{else}}
-						{{if .requiredTitle3}}<a class="btn btn-outline-danger mb-2r" href="{{.requiredLocation3}}" target="_blank" rel="noopener">
-							<i class="fab fa-readme fa-fw"></i>{{.requiredTitle3}}
-						</a>{{end}}
-						{{end}}
+						<a class="btn btn-outline-info mb-2r" href="{{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo" }}" target="_blank" rel="noopener">
+							<i class="fas fa-eye fa-fw"></i>{{ i18n "preview" }} (GitCDN)
+						</a>
+						<a class="btn btn-outline-info mb-2r" href="{{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh" }}" target="_blank" rel="noopener">
+							<i class="fas fa-eye fa-fw"></i>{{ i18n "preview" }} (Statically)
+						</a>
 
-						{{if ne .requiredType4 "normal"}}
-						{{if .requiredTitle4}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation4}}&amp;title={{trim .requiredTitle4 "*" }}">
-							<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle4}}
-						</a>{{end}}
-						{{else}}
-						{{if .requiredTitle4}}<a class="btn btn-outline-danger mb-2r" href="{{.requiredLocation4}}" target="_blank" rel="noopener">
-							<i class="fab fa-readme fa-fw"></i>{{.requiredTitle4}}
-						</a>{{end}}
-						{{end}}
+						{{ with .uBO_supp }}
+						<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo"}}" target="_blank" rel="noopener" title='{{ i18n "uBOPreviewTitle" }}'>
+							<i class="fas fa-eye fa-fw"></i>{{ i18n "uBOPreview" }} (GitCDN)
+						</a>
+						<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh"}}" target="_blank" rel="noopener" title='{{ i18n "uBOPreviewTitle" }}'>
+							<i class="fas fa-eye fa-fw"></i>{{ i18n "uBOPreview" }} (Statically)
+						</a>
+						{{ end }}
 
-						{{if ne .requiredType5 "normal"}}
-						{{if .requiredTitle5}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?location={{.requiredLocation5}}&amp;title={{trim .requiredTitle5 "*"}}">
-							<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle5}}
-						</a>{{end}}
-						{{else}}
-						{{if .requiredTitle5}}<a class="btn btn-outline-danger mb-2r" href="{{.requiredLocation5}}" target="_blank" rel="noopener">
-							<i class="fab fa-readme fa-fw"></i>{{.requiredTitle5}}
-						</a>{{end}}
-						{{end}}
+						{{ with .AG_supp }}
+						<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo"}}" target="_blank" rel="noopener" title='{{ i18n "AGPreviewTitle" }}'>
+							<i class="fas fa-eye fa-fw"></i>{{ i18n "AGPreview" }} (GitCDN)
+						</a>
+						<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh"}}" target="_blank" rel="noopener" title='{{ i18n "AGPreviewTitle" }}'>
+							<i class="fas fa-eye fa-fw"></i>{{ i18n "AGPreview" }} (Statically)
+						</a>
+						{{ end }}
 
-						{{ if and (not (.requiredTitle)) (not (.requiredTitle2)) (not (.requiredTitle3)) (not (.requiredTitle4)) (not (.requiredTitle5)) }}
-						-
-						{{end}}
+						{{with .supp}}
+						<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo"}}" target="_blank" rel="noopener" title='{{ i18n "supplementPreviewTitle" }}'>
+							<i class="fas fa-eye fa-fw"></i>{{ i18n "supplementPreview" }} (GitCDN)
+						</a>
+						<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh"}}" target="_blank" rel="noopener" title='{{ i18n "supplementPreviewTitle" }}'>
+							<i class="fas fa-eye fa-fw"></i>{{ i18n "supplementPreview" }} (Statically)
+						</a>
+						{{ end }}
+
+						{{ end }}
+
+						{{ if not (in .subscribe "raw.githubusercontent.com") }} - {{ end }}
 					</div>
 				</div>
 			</td>
-			<td class="align-middle" data-label="ZGODNOŚĆ">
-				<span>
+			<td class="align-middle" data-label="WYMAGANE">
+				<div class="span">
 					{{ if findRE "ABP" .adblocker }}
 					<a href="https://getadblock.com/" target="_blank" rel="noopener"><img src="{{ "images/AdBlock.svg" | relURL }}" style="width:32px;height:32px" title="AdBlock"></a>
 					<a href="https://adblockplus.org/" target="_blank" rel="noopener"><img src="{{ "images/ABP_32.png" | relURL }}" style="width:32px;height:32px" title="Adblock Plus"></a>
@@ -197,7 +189,63 @@
 					{{ if findRE "Ph" .adblocker }}
 					<a href="https://pi-hole.net/" target="_blank" rel="noopener"><img src="{{ "images/Pi-hole.svg" | relURL }}" style="width:32px;height:32px" title="Pi-hole"></a>
 					{{end}}
+
+					{{ if .requiredTitle }}
+					<span class="d-block pt-2">
+						<div class="btn-group-vertical">
+							{{if ne .requiredType "normal"}}
+							{{if .requiredTitle}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?	location={{.requiredLocation}}&amp;title={{ trim .requiredTitle "*" }}">
+								<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle}}
+							</a>{{end}}
+							{{else}}
+							{{if .requiredTitle}}<a class="btn btn-outline-danger mb-2r" href="{{.requiredLocation}}" target="_blank" rel="noopener">
+								<i class="fab fa-readme fa-fw"></i>{{.requiredTitle}}
+							</a>{{end}}
+							{{end}}
+
+							{{if ne .requiredType2 "normal"}}
+							{{if .requiredTitle2}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?	location={{.requiredLocation2}}&amp;title={{ trim .requiredTitle2 "*" }}">
+								<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle2}}
+							</a>{{end}}
+							{{else}}
+							{{if .requiredTitle2}}<a class="btn btn-outline-danger mb-2r" href="{{.requiredLocation2}}" target="_blank" rel="noopener">
+								<i class="fab fa-readme fa-fw"></i>{{.requiredTitle2}}
+							</a>{{end}}
+							{{end}}
+
+							{{if ne .requiredType3 "normal"}}
+							{{if .requiredTitle3}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?	location={{.requiredLocation3}}&amp;title={{ trim .requiredTitle3 "*" }}">
+								<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle3}}
+							</a>{{end}}
+							{{else}}
+							{{if .requiredTitle3}}<a class="btn btn-outline-danger mb-2r" href="{{.requiredLocation3}}" target="_blank" rel="noopener">
+								<i class="fab fa-readme fa-fw"></i>{{.requiredTitle3}}
+							</a>{{end}}
+							{{end}}
+
+							{{if ne .requiredType4 "normal"}}
+							{{if .requiredTitle4}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?	location={{.requiredLocation4}}&amp;title={{trim .requiredTitle4 "*" }}">
+								<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle4}}
+							</a>{{end}}
+							{{else}}
+							{{if .requiredTitle4}}<a class="btn btn-outline-danger mb-2r" href="{{.requiredLocation4}}" target="_blank" rel="noopener">
+								<i class="fab fa-readme fa-fw"></i>{{.requiredTitle4}}
+							</a>{{end}}
+							{{end}}
+
+							{{if ne .requiredType5 "normal"}}
+							{{if .requiredTitle5}}<a class="btn btn-outline-danger mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else }}ubo{{end}}:subscribe?	location={{.requiredLocation5}}&amp;title={{trim .requiredTitle5 "*"}}">
+								<i class="fas fa-file-import fa-fw"></i>{{.requiredTitle5}}
+							</a>{{end}}
+							{{else}}
+							{{if .requiredTitle5}}<a class="btn btn-outline-danger mb-2r" href="{{.requiredLocation5}}" target="_blank" rel="noopener">
+								<i class="fab fa-readme fa-fw"></i>{{.requiredTitle5}}
+							</a>{{end}}
+							{{end}}
+						</div>
 				</span>
+				{{end}}
+				</div>
 			</td>
 		</tr>
 		{{end}}
