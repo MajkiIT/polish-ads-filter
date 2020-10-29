@@ -17,8 +17,6 @@ slug: "install-nano-defender"
 
 3. Jeśli używasz uBlocka Origin wykonaj dodatkowe kroki:
 
-   - Subskrybuj listę filtrów [Adblock Warning Removal List](ubo://subscribe?location=https%3A%2F%2Feasylist-downloads.adblockplus.org%2Fantiadblockfilters.txt&title=Adblock%20Warning%20Removal%20List)
-
    - Subskrybuj listę filtrów [Nano Defender Integration](ubo://subscribe?location=https%3A%2F%2Fgitcdn.xyz%2Frepo%2FNanoAdblocker%2FNanoFilters%2Fmaster%2FNanoMirror%2FNanoDefender.txt&title=Nano%20Defender%20Integration)
    - Wejdź do panelu sterowania uBlocka, zaznacz **Jestem zaawansowanym użytkownikiem** w karcie **Ustawienia**. Następnie kliknij na zębatkę, która się pojawiła obok tej opcji i zmień wartość `unset` dla wpisu `userResourcesLocation` na: `https://gitcdn.xyz/repo/NanoAdblocker/NanoFilters/master/NanoFilters/NanoResources.txt`
 
@@ -40,8 +38,6 @@ slug: "install-nano-defender"
 2. Jeśli używasz [Nano Adblockera](https://addons.mozilla.org/pl/firefox/addon/nano-adblocker-firefox/ "https://addons.mozilla.org/pl/firefox/addon/nano-adblocker-firefox/"), to lista filtrów **Nano Defender Integration** powinna się automatycznie po chwili aktywować.
 
 3. Jeśli używasz uBlocka Origin wykonaj dodatkowe kroki:
-
-   - Subskrybuj listę filtrów [Adblock Warning Removal List](ubo://subscribe?location=https%3A%2F%2Feasylist-downloads.adblockplus.org%2Fantiadblockfilters.txt&title=Adblock%20Warning%20Removal%20List)
 
    - Subskrybuj listę filtrów [Nano Defender Integration](ubo://subscribe?location=https%3A%2F%2Fgitcdn.xyz%2Frepo%2FNanoAdblocker%2FNanoFilters%2Fmaster%2FNanoMirror%2FNanoDefender.txt&title=Nano%20Defender%20Integration)
    - Wejdź do panelu sterowania uBlocka, zaznacz **Jestem zaawansowanym użytkownikiem** w karcie **Ustawienia**. Następnie kliknij na zębatkę, która się pojawiła obok tej opcji i zmień wartość `unset` dla wpisu `userResourcesLocation` na: `https://gitcdn.xyz/repo/NanoAdblocker/NanoFilters/master/NanoFilters/NanoResources.txt`
