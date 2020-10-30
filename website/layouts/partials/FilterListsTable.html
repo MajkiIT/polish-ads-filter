@@ -1,6 +1,6 @@
 <input type="search" id="search" class="light-table-filter" data-table="table" placeholder='{{ i18n "search" }}...'>
 <div class="m-auto">
-	<select class="selectpicker ddlFilterTableRow mb-3 mr-sm-2 categories" data-attribute="category" multiple="multiple" title='{{ i18n "category" }}...' data-style="btn-outline-primary" data-actions-box="true" data-selected-text-format="count" data-width="fit">
+	<select class="selectpicker ddlFilterTableRow mb-3 mr-sm-2 category" data-attribute="category" multiple="multiple" title='{{ i18n "category" }}...' data-style="btn-outline-primary" data-actions-box="true" data-selected-text-format="count" data-width="fit">
 		<option value="bezpieczeństwo" data-icon="icon-dropdown security-icon">{{ i18n "security" }}</option>
 		<option value="reklamy" data-icon="icon-dropdown ads-icon">{{ i18n "ads" }}</option>
 		<option value="anty-adblock" data-icon="icon-dropdown adblockDetect-icon">{{ i18n "anti-adblock" }}</option>
@@ -12,7 +12,7 @@
 		<option value="e-handel" data-icon="icon-dropdown ecommerce-icon">{{ i18n "e-commerce" }}</option>
 		<option value="prywatność" data-icon="icon-dropdown privacy-icon">{{ i18n "privacy" }}</option>
 	</select>
-	<select class="selectpicker ddlFilterTableRow mb-3 mr-sm-2 origin" data-attribute="lang" multiple="multiple" title='{{ i18n "origin" }}...' data-style="btn-outline-primary" data-container="body" data-max-options="1" data-width="fit">
+	<select class="selectpicker ddlFilterTableRow mb-3 mr-sm-2 origin" data-attribute="origin" multiple="multiple" title='{{ i18n "origin" }}...' data-style="btn-outline-primary" data-container="body" data-max-options="1" data-width="fit">
 		<option value="pl">{{ i18n "Polish" }}</option>
 		<option value="zagraniczne">{{ i18n "foreign" }}</option>
 	</select>
@@ -29,7 +29,7 @@
 		<option value="hosts" data-icon="icon-dropdown pf-icon">pfBlockerNG</option>
 		<option value="hosts" data-icon="icon-dropdown pDF-icon">personalDNSFilter</option>
 	</select>
-	<select class="selectpicker mb-3 mirror" id="mirror" multiple="multiple" title='{{ i18n "mirror" }}...' data-style="btn-outline-primary" data-max-options="1" data-selected-text-format="count" data-width="fit">
+	<select class="selectpicker mb-3 mirror" id="mirror" multiple="multiple" title='{{ i18n "mirror" }}...' data-style="btn-outline-primary" data-max-options="1" data-selected-text-format="count" data-width="fit" data-attribute="mirror">
 		<option value="gitcdn.xyz" data-icon="icon-dropdown GC-icon">GitCDN</option>
 		<option value="rawcdn.githack.com" data-icon="icon-dropdown RGH-icon">Raw GitHack</option>
 		<option value="cdn.statically.io" data-icon="icon-dropdown S-icon">Statically</option>
@@ -48,8 +48,8 @@
 	</thead>
 	<tbody>
 		{{ range $.Site.Data.FilterLists.items }}
-		<tr class="Row" id="{{ trim .title "* " | replaceRE "(\\s)" "_" | lower }}" data-category="{{.category}}" data-lang="{{ if .lang }}{{.lang}}{{else}}zagraniczne{{end}}" data-adblocker="{{ if findRE .adblocker "hosts"}}hosts, Ph{{ else if findRE "ABP" .adblocker }}AB, ABP, uBO, NA, AG{{ else if and (findRE "uBO, AG" .adblocker) (not (findRE "ABP" .adblocker)) (not (findRE "NA" .adblocker)) }}uBO, NA, AG{{else if (findRE "uBO" .adblocker )}}uBO, NA{{else}}{{.adblocker}}{{end}}">
-			<td class="align-middle" data-label="LISTA"><span>{{.title}}</span></td>
+		<tr class="Row" id="{{ trim .title "* " | replaceRE "(\\s)" "_" | replaceRE "'" "" | lower }}" data-category="{{ .category}}" data-origin="{{ if .lang }}{{.lang}}{{else}}zagraniczne{{end}}" data-adblocker="{{ if findRE .adblocker "hosts"}}hosts, Ph{{ else if findRE "ABP" .adblocker }}AB, ABP, uBO, NA, AG{{ else if and (findRE "uBO, AG" .adblocker) (not (findRE "ABP" .adblocker)) (not (findRE "NA" .adblocker)) }}uBO, NA, AG{{else if (findRE "uBO" .adblocker )}}uBO, NA{{else}}{{.adblocker}}{{end}}">
+			<td class="align-middle" data-label="LISTA"><span>{{.title}}</span><div><a href="#{{ trim .title "* " | replaceRE "(\\s)" "_" | replaceRE "'" "" | lower }}" class="fas fa-link"></a></div></td>
 			<td class="align-middle" data-label="ELEMENTY"><span>{{ .desc | $.Page.RenderString }}</span></td>
 			<td class="align-middle" data-label="LINKI">
 				<div class="span">
@@ -278,7 +278,7 @@
 {{ $selectPolish := resources.Get "js/bootstrap-select-translations/defaults-pl_PL.min.js" }}
 {{ $filterSearch := resources.Get "js/light-table-filter.min.js" }}
 {{ $sort := resources.Get "js/sortable.min.js" }}
-{{ $mirror := resources.Get "js/mirror.js" }}
+{{ $mirror := resources.Get "js/table-utils.js" }}
 
 {{ $js := slice $selectFilter $select $filterSearch $sort $mirror | resources.Concat "js/table_bundle.js" | minify | fingerprint }}
 {{ if eq .Site.Language.Lang "pl" }}
