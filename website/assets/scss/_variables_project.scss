@@ -22,11 +22,6 @@ $btn-white-space: nowrap;
     border-color: #117a8b;
 }
 
-
-.td-home, header {
-    width: fit-content;
-}
-
 body {
     overflow-wrap: break-word;
 }
@@ -257,4 +252,15 @@ nav .td-search-input {
 
 .td-content img {
     vertical-align: baseline !important;
+}
+
+@media only screen and (max-width: 720px) {
+    table .btn {
+        white-space: normal;
+        display: inline-flex;
+        align-items: center;
+    }
+    .bootstrap-select.fit-width {
+        width: 100% !important;
+    }
 }
