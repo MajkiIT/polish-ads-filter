@@ -8,9 +8,9 @@
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 29 October 2020
+! Last modified: 31 October 2020
 ! Expires: 1 day
-! Version: 2020102902
+! Version: 2020103101
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020102902 aktualizacja: czw, 29 października 2020, 15:55:00
+! v.2020103101 aktualizacja: sob, 31 października 2020, 21:30:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -31,7 +31,7 @@
 .pl/img/ad/
 .pl/wp-content/banners/
 .pl/www/sys/ajs*.php?$script
-/\/(images|img|data|uploads)\/banners\//$image,object,domain=tsk24.pl|wschodnik.pl|nowawrzesnia.pl|glucholazyonline.com.pl|informacjelokalne.pl|muzyczneradio.com.pl|tvrep.pl|chwaszczyno.pl|msfera.pl|tygodnik-krapkowicki.info|darkplanet.pl|wroclawskiejedzenie.pl|magazyngitarzysta.pl|przegladkoninski.pl|radiopoznan.fm|fishing-test.pl|gostynin24.pl|wkonin.pl|orawa24.info|krakowski24.pl|muzyczneradio.pl|skijumping.pl|brwinow.com|www.informacje.kolobrzeg.pl|eoborniki.pl|zywiecinfo.pl|www.konstrukcjeinzynierskie.pl|portalrolniczy.info
+/\/(images|img|data|uploads|upload)\/banners\//$image,object,domain=tsk24.pl|wschodnik.pl|nowawrzesnia.pl|glucholazyonline.com.pl|informacjelokalne.pl|muzyczneradio.com.pl|tvrep.pl|chwaszczyno.pl|msfera.pl|tygodnik-krapkowicki.info|darkplanet.pl|wroclawskiejedzenie.pl|magazyngitarzysta.pl|przegladkoninski.pl|radiopoznan.fm|fishing-test.pl|gostynin24.pl|wkonin.pl|orawa24.info|krakowski24.pl|muzyczneradio.pl|skijumping.pl|brwinow.com|www.informacje.kolobrzeg.pl|eoborniki.pl|zywiecinfo.pl|www.konstrukcjeinzynierskie.pl|portalrolniczy.info|packaging-polska.pl
 /_adv/*
 /_baner/*$domain=www.ipon.pl|tygodnikzamojski.pl
 /adv/*$image,domain=~arriva.pl|~budus.pl|~filmweb.pl
@@ -972,6 +972,8 @@ eurogamer.pl###leaderboard, .game-spotlight-advertising
 eurogamer.pl###skyscraper
 eurogamer.pl##.collapsible.stack-mpu
 eurogamer.pl##.container:nth-of-type(2) > .i-amphtml-unresolved.amp-unresolved.i-amphtml-layout-size-defined.i-amphtml-layout-responsive.amp-notbuilt.i-amphtml-notbuilt.i-amphtml-element
+eurologistics.pl##div.baner_top > A > IMG
+eurologistics.pl##div.reklamka_sidebar
 evertiq.pl,tenisklub.pl##[id^="bnr"]
 eweszlo.pl##.front__page > figure, .post__article > figure
 ewyszkow.pl##[class^="ad_rectangle"]
@@ -1272,7 +1274,9 @@ gowork.pl##[id^="ad_"]
 gp24.pl##.typObrazek.skrocone.rekomendacje.large-3.hide-for-medium-down.columns
 gpd24.pl##[id^="zozo_ads_widget"], [id^="random_banner_widget-"], .newser-artical-bottom-ads
 gpcodziennie.pl##[id*="750x200"], a[href^="https://gpcodziennie.pl/click.php"], #column-right > .text-center > span, #JPO
-gpr24.pl##.row:nth-of-type(13)
+gpr24.pl##.l-box--75.l-box > p > A > IMG
+gpr24.pl##.l-box--75.l-box > p > IMG
+gpr24.pl##.l-box--25.l-box > p > IMG
 grafmag.pl##.money-maker__articles
 grafoteka.pl###info
 grajewo24.pl,elk24.pl,augustow24.pl,skrotymeczow.pl###popup
@@ -2292,6 +2296,7 @@ otozawiercie.pl###Image1
 ozoneo.pl##.non-fullwidth
 ozoneo.pl##.paralax
 paczkow24.pl##.owl-theme.owl-carousel
+packaging-polska.pl##.header_vc
 pan-doradca.pl##.sky-left
 panoramakutna.pl##.td_block_wrap.wpb_wrapper > .td-fix-index, .flexslider
 pap.edu.pl###p8
@@ -2557,6 +2562,8 @@ przepisy.pl##.promobanner-container, .banner_wrap, .recipe-container-promo
 przewodnicywedkarscy.pl###sidebar > p
 przychodnia.pl##.prnetItem
 przyslijprzepis.pl###tracdelight-slide-btn
+pszczoly.pl###zajPasieka
+pszczoly.pl##tr > .tresc_bez_wciecia > A > IMG
 pszczynska.pl,polskicaravaning.pl,4run.pl,eglos.pl,wiadomoscikosmetyczne.pl,asta24.pl,wiadomoscihandlowe.pl##.baner
 pudelek.tv,wp.tv,interaktywnie.com##[src^="http://adv.wp.pl"]
 pukawka.pl##.partnerzy
@@ -4053,6 +4060,7 @@ zywiecinfo.pl##.promoted
 ||static.wizaz.pl/system/kwc/promo/kwc_promo_box_*.html$subdocument
 ||statics.d404.pl/bundles/spoonsite/$image,domain=~motocaina.pl
 ||statics.tarsago.pl/$object-subrequest,domain=meczelive.tv|mecze24.pl
+||strzal.pl/wp-content/uploads/2020/*1140X*$image
 ||stg.wp.pl^$subdocument
 ||studentnews.pl/img/ban/b*.jpg$image
 ||superfilm.pl/*source=admedia&model=pop$popup
