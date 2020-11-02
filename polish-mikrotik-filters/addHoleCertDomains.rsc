@@ -374,6 +374,7 @@ add name="cy79417.tmweb.ru" address="195.187.6.34" comment="addHoleCertDomains H
 add name="cybereleague.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="cyfrowypolsate.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="d26sio54efdz72.cloudfront.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="d3rzloh6xv2xem.cloudfront.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="darmowe-ogloszenia.you2.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="darmowe-olx.dfirma.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="davekurier.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
