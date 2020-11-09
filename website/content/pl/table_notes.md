@@ -5,4 +5,7 @@
 `***` Rozszerzenie **Polska Ciasteczkowa Zgoda** zajmuje się tym, czego nie da się załatwić regułą w uBlocku Origin, tzn. wyraża za ciebie zgodę na politykę ciasteczkową/RODO.
 
 ----------------------------------------------------------------------------------------------------------------
+Więcej list filtrów znajdziesz na [FilterLists.com](https://filterlists.com).
+
+----------------------------------------------------------------------------------------------------------------
 Paczka ikon kategorii została stworzona przez [Icons8](https://icons8.com).

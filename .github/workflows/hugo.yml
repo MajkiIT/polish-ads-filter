@@ -28,11 +28,6 @@ jobs:
         with:
           node-version: '12.x'
 
-      - name: Update Bootstrap
-        run: |
-          cd ./website/themes/docsy/assets/vendor/bootstrap
-          git checkout v4.5.3
-
       - name: Build
         run: |
           git rm -rf ./docs
