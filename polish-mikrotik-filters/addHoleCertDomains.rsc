@@ -4277,6 +4277,7 @@ add name="www.olx.pl-oferta.online" address="195.187.6.34" comment="addHoleCertD
 add name="www.olx.pl-offerta.pro" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.olx.pl.dostawa.pw" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.olx.pl.oferta.pw" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.olx.pl.personpay.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.olx.pl.platnosc.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.olx.security-online.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.olx.ua.delivery.consulting" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
