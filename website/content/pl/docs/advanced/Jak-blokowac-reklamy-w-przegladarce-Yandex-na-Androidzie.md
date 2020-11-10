@@ -13,6 +13,7 @@ tags:
 - adblocker
 - rozszerzenia
 - filtry
+date: 18 Nov 2018
 ---
 
 ## A) ![Yandex]Yandex + ![uBO]uBlock Origin
