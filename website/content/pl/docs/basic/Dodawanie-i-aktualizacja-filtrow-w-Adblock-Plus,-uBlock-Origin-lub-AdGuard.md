@@ -4,6 +4,11 @@ weight: 1
 date: 31 Dec 2018
 author: KonoromiHimaries
 slug: "add-update-filter"
+tags:
+- filtry
+- adblock
+- uBlock
+- AdGuard
 ---
 
 # **Dodawanie**
@@ -14,7 +19,6 @@ slug: "add-update-filter"
 
 [majkiit.github.io/polish-ads-filter](https://majkiit.github.io/polish-ads-filter "https://majkiit.github.io/polish-ads-filter")
  | [filterlists.com](https://filterlists.com/ "https://filterlists.com/")
- | [polishannoyancefilters.netlify.com](https://polishannoyancefilters.netlify.com/otherfiltersforadblockers/ "https://polishannoyancefilters.netlify.com/otherfiltersforadblockers/")
 
 </ul>
 

@@ -29,12 +29,12 @@
 		<option value="hosts" data-icon="icon-dropdown pf-icon">pfBlockerNG</option>
 		<option value="hosts" data-icon="icon-dropdown pDF-icon">personalDNSFilter</option>
 	</select>
-	<select class="selectpicker mb-3 mirror" id="mirror" multiple="multiple" title='{{ i18n "mirror" }}...' data-style="btn-outline-primary" data-max-options="1" data-selected-text-format="count" data-width="fit" data-attribute="mirror">
+	<select class="selectpicker mb-3 mr-sm-2 mirror" id="mirror" multiple="multiple" title='{{ i18n "mirror" }}...' data-style="btn-outline-primary" data-max-options="1" data-selected-text-format="count" data-width="fit" data-attribute="mirror">
 		<option value="gitcdn.xyz" data-icon="icon-dropdown GC-icon">GitCDN</option>
 		<option value="rawcdn.githack.com" data-icon="icon-dropdown RGH-icon">Raw GitHack</option>
 		<option value="cdn.statically.io" data-icon="icon-dropdown S-icon">Statically</option>
 	</select>
-	<select class="selectpicker ddlFilterTableRow mb-3 id" id="hash" multiple="multiple" title='{{ i18n "favoriteLists" }}...' data-style="btn-outline-primary" data-attribute="hash" data-selected-text-format="count" data-width="fit" data-actions-box="true" data-live-search="true">
+	<select class="selectpicker ddlFilterTableRow mb-3 id" id="hash" multiple="multiple" title='{{ i18n "favoriteLists" }}...' data-style="btn-outline-primary" data-attribute="hash" data-selected-text-format="count" data-width="fit" data-actions-box="true" data-live-search="true" data-live-search-placeholder='{{ i18n "search"}}...'>
 		{{ range $.Site.Data.FilterLists.items }}
 		{{ $id := trim .title "* " | replaceRE "(\\s)" "_" | replaceRE "'" "" | lower }}
 		<option value="{{ $id | md5 }}">{{ trim .title "* "}}</option>
