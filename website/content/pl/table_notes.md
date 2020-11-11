@@ -1,4 +1,4 @@
-`*` Jeżeli masz rozszerzenie **I don't care about cookies**, to nie musisz subskrybować listy o tej samej nazwie.
+`*` Jeżeli masz rozszerzenie **I don't care about cookies**, to nie musisz subskrybować listy o tej samej nazwie, ponieważ filtry **I don't care about cookies** znajdują się juz w tym dodatku.
 
 `**` Jeżeli korzystasz z **Polskich Filtrów Elementów Irytujących**, to nie dodawaj listy **RODO-Ciasteczkowej**, ponieważ **Filtry RODO-Ciasteczkowe** znajdują się już w **Filtrach Elementów Irytujących**.
 

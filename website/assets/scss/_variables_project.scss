@@ -260,11 +260,38 @@ nav .td-search-input {
         display: inline-flex;
         align-items: center;
     }
-    .bootstrap-select.fit-width {
-        width: 100% !important;
+    .dropdown.bootstrap-select.show-tick.fit-width {
+        width: auto !important;
+        display: grid;
     }
 }
 
 .bs-searchbox input[type="search"] {
     margin-bottom: 2px;
+}
+
+.bootstrap-select .dropdown-item {
+    display: flex;
+    align-items: center;
+}
+
+.m-auto .bootstrap-select.show-tick .dropdown-menu .selected span.check-mark {
+    margin-left: auto;
+    order: 2;
+    display: inline-flex;
+    position: static;
+}
+
+.bootstrap-select .filter-option-inner-inner {
+    text-overflow: ellipsis;
+}
+
+.bootstrap-select .dropdown-menu .text {
+    white-space: normal;
+}
+
+.bootstrap-select div.dropdown-menu[x-placement="bottom-start"] {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 100% !important;
 }
