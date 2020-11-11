@@ -29,11 +29,6 @@
 		<option value="hosts" data-icon="icon-dropdown pf-icon">pfBlockerNG</option>
 		<option value="hosts" data-icon="icon-dropdown pDF-icon">personalDNSFilter</option>
 	</select>
-	<select class="selectpicker mb-3 mr-sm-2 mirror" id="mirror" multiple="multiple" title='{{ i18n "mirror" }}...' data-style="btn-outline-primary" data-max-options="1" data-selected-text-format="count" data-width="fit" data-attribute="mirror">
-		<option value="gitcdn.xyz" data-icon="icon-dropdown GC-icon">GitCDN</option>
-		<option value="rawcdn.githack.com" data-icon="icon-dropdown RGH-icon">GitHack</option>
-		<option value="cdn.statically.io" data-icon="icon-dropdown S-icon">Statically</option>
-	</select>
 	<select class="selectpicker ddlFilterTableRow mb-3 id" id="hash" multiple="multiple" title='{{ i18n "favoriteLists" }}...' data-style="btn-outline-primary" data-attribute="hash" data-selected-text-format="count" data-width="false" data-actions-box="true" data-live-search="true" data-live-search-placeholder='{{ i18n "search"}}...'>
 		{{ range $.Site.Data.FilterLists.items }}
 		{{ $id := trim .title "* " | replaceRE "(\\s)" "_" | replaceRE "'" "" | lower }}
@@ -123,99 +118,150 @@
 			</td>
 			<td class="align-middle" data-label="LINKI ALTERNATYWNE">
 				<div class="span">
+					{{ if and (not (in $filterlist.subscribe "raw.githubusercontent.com")) (not $filterlist.mirror) }} - {{ end }}
 					<div class="btn-group-vertical">
-							{{/*  Subskrybuj  */}}
+						{{/*  Subskrybuj  */}}
 						{{ if not (findRE .adblocker "hosts|Ph" ) }}
 
-						{{ if in .subscribe "raw.githubusercontent.com" }}
-						<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo" }}&amp;title={{ trim .title "* " }}">
-							<i class="fas fa-file-import fa-fw"></i>{{ i18n "subscribe" }} (GitCDN)
-						</a>
-						<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://rawcdn.githack.com" }}&amp;title={{ trim .title "* " }}">
-							<i class="fas fa-file-import fa-fw"></i>{{ i18n "subscribe" }} (Raw GitHack)
-						</a>
-						<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh" }}&amp;title={{ trim .title "* " }}">
-							<i class="fas fa-file-import fa-fw"></i>{{ i18n "subscribe" }} (Statically)
-						</a>
+						{{ if or (in .subscribe "raw.githubusercontent.com") (.mirror) }}
+						<div class="btn-group dropright">
+							<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-file-import fa-fw"></i>
+								{{ i18n "subscribe" }}
+							</a>
+							<div class="dropdown-menu text-center">
+								<div class="btn-group-vertical">
+									{{ if in .subscribe "raw.githubusercontent.com" }}
+									<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo" }}&amp;title={{ trim .title "* " }}">
+										<i class="fas fa-file-import fa-fw"></i>GitCDN
+									</a>
+									<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://rawcdn.githack.com" }}&amp;title={{ trim .title "* " }}">
+										<i class="fas fa-file-import fa-fw"></i>Raw GitHack
+									</a>
+									<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh" }}&amp;title={{ trim .title "* " }}">
+										<i class="fas fa-file-import fa-fw"></i>Statically
+									</a>
+									{{ end }}
+									{{ if .mirror }}
+									{{ range $index, $mirrorURL := split $filterlist.mirrorURL ", " }}
+									{{ $mirror := index (split $filterlist.mirror ", ") $index }}
+									<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" $filterlist.adblocker }}abp{{ else if findRE "uBO|NA" $filterlist.adblocker }}ubo{{end}}:subscribe?location={{ $mirrorURL }}&amp;title={{ trim $filterlist.title "* " }}">
+										<i class="fas fa-file-import fa-fw"></i>{{ $mirror }}
+									</a>
+									{{ end }}
+									{{ end }}
+									{{ end }}
+								</div>
+							</div>
+						</div>
 						{{ end }}
 
-						{{ if .mirror }}
-							{{ range $index, $mirrorURL := split $filterlist.mirrorURL ", " }}
-							{{ $mirror := index (split $filterlist.mirror ", ") $index }}
-						<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" $filterlist.adblocker }}abp{{ else if findRE "uBO|NA" $filterlist.adblocker }}ubo{{end}}:subscribe?location={{ $mirrorURL }}&amp;title={{ trim $filterlist.title "* " }}">
-							<i class="fas fa-file-import fa-fw"></i>{{ i18n "subscribe" }} ({{ $mirror }})
-						</a>
-							{{ end }}
-						{{ end }}
+						{{/*  Podgląd  */}}
+						{{ if or (in .subscribe "raw.githubusercontent.com") (.mirror) }}
+						<div class="btn-group dropright">
+							<a class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-eye fa-fw"></i>
+								{{ i18n "preview" }}
+							</a>
+							<div class="dropdown-menu text-center">
+								<div class="btn-group-vertical">
+									{{ if in .subscribe "raw.githubusercontent.com" }}
+									<a class="btn btn-outline-info mb-2r" href="{{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo" }}" target="_blank" rel="noopener">
+										<i class="fas fa-eye fa-fw"></i>GitCDN
+									</a>
+									<a class="btn btn-outline-info mb-2r" href="{{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://rawcdn.githack.com" }}" target="_blank" rel="noopener">
+										<i class="fas fa-eye fa-fw"></i>Raw GitHack
+									</a>
+									<a class="btn btn-outline-info mb-2r" href="{{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh" }}" target="_blank" rel="noopener">
+										<i class="fas fa-eye fa-fw"></i>Statically
+									</a>
+									{{ end }}
+									{{ if .mirror }}
+									{{ range $index, $mirrorURL := split $filterlist.mirrorURL ", " }}
+									{{ $mirror := index (split $filterlist.mirror ", ") $index }}
+									<a class="btn btn-outline-info mb-2r" href="{{ $mirrorURL }}" target="_blank" rel="noopener">
+										<i class="fas fa-eye fa-fw"></i>{{ $mirror }}
+									</a>
+									{{ end }}
+									{{ end }}
+								</div>
+							</div>
+						</div>
 
-						{{ end }}
-
-							{{/*  Podgląd  */}}
-						{{ if in .subscribe "raw.githubusercontent.com" }}
-						<a class="btn btn-outline-info mb-2r" href="{{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo" }}" target="_blank" rel="noopener">
-							<i class="fas fa-eye fa-fw"></i>{{ i18n "preview" }} (GitCDN)
-						</a>
-						<a class="btn btn-outline-info mb-2r" href="{{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://rawcdn.githack.com" }}" target="_blank" rel="noopener">
-							<i class="fas fa-eye fa-fw"></i>{{ i18n "preview" }} (Raw GitHack)
-						</a>
-						<a class="btn btn-outline-info mb-2r" href="{{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh" }}" target="_blank" rel="noopener">
-							<i class="fas fa-eye fa-fw"></i>{{ i18n "preview" }} (Statically)
-						</a>
-						{{ end }}
-
-						{{ if .mirror }}
-							{{ range $index, $mirrorURL := split $filterlist.mirrorURL ", " }}
-							{{ $mirror := index (split $filterlist.mirror ", ") $index }}
-						<a class="btn btn-outline-info mb-2r" href="{{ $mirrorURL }}" target="_blank" rel="noopener">
-							<i class="fas fa-eye fa-fw"></i>{{ i18n "preview" }} ({{ $mirror }})
-						</a>
-							{{ end }}
 						{{ end }}
 
 
 						{{ if in .subscribe "raw.githubusercontent.com" }}
 						{{ with .uBO_supp }}
-						<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo"}}" target="_blank" rel="noopener" title='{{ i18n "uBOPreviewTitle" }}'>
-							<i class="fas fa-eye fa-fw"></i>{{ i18n "uBOPreview" }} (GitCDN)
-						</a>
-						<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://rawcdn.githack.com"}}" target="_blank" rel="noopener" title='{{ i18n "uBOPreviewTitle" }}'>
-							<i class="fas fa-eye fa-fw"></i>{{ i18n "uBOPreview" }} (Raw GitHack)
-						</a>
-						<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh"}}" target="_blank" rel="noopener" title='{{ i18n "uBOPreviewTitle" }}'>
-							<i class="fas fa-eye fa-fw"></i>{{ i18n "uBOPreview" }} (Statically)
-						</a>
+						<div class="btn-group dropright">
+							<a class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title='{{ i18n "uBOPreviewTitle" }}'>
+								<i class="fas fa-eye fa-fw"></i>
+								{{ i18n "uBOPreview" }}
+							</a>
+							<div class="dropdown-menu text-center">
+								<div class="btn-group-vertical">
+									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo"}}" target="_blank" rel="noopener" title='{{ i18n "uBOPreviewTitle" }}'>
+										<i class="fas fa-eye fa-fw"></i>GitCDN
+									</a>
+									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://rawcdn.githack.com"}}" target="_blank" rel="noopener" title='{{ i18n "uBOPreviewTitle" }}'>
+										<i class="fas fa-eye fa-fw"></i>Raw GitHack
+									</a>
+									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh"}}" target="_blank" rel="noopener" title='{{ i18n "uBOPreviewTitle" }}'>
+										<i class="fas fa-eye fa-fw"></i>Statically
+									</a>
+								</div>
+							</div>
+						</div>
 						{{ end }}
 						{{ end }}
 
 						{{ if in .subscribe "raw.githubusercontent.com" }}
 						{{ with .AG_supp }}
-						<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo"}}" target="_blank" rel="noopener" title='{{ i18n "AGPreviewTitle" }}'>
-							<i class="fas fa-eye fa-fw"></i>{{ i18n "AGPreview" }} (GitCDN)
-						</a>
-						<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://rawcdn.githack.com"}}" target="_blank" rel="noopener" title='{{ i18n "AGPreviewTitle" }}'>
-							<i class="fas fa-eye fa-fw"></i>{{ i18n "AGPreview" }} (Raw GitHack)
-						</a>
-						<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh"}}" target="_blank" rel="noopener" title='{{ i18n "AGPreviewTitle" }}'>
-							<i class="fas fa-eye fa-fw"></i>{{ i18n "AGPreview" }} (Statically)
-						</a>
+						<div class="btn-group dropright">
+							<a class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title='{{ i18n "AGPreviewTitle" }}'>
+								<i class="fas fa-eye fa-fw"></i>
+								{{ i18n "AGPreview" }}
+							</a>
+							<div class="dropdown-menu text-center">
+								<div class="btn-group-vertical">
+									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo"}}" target="_blank" rel="noopener" title='{{ i18n "AGPreviewTitle" }}'>
+										<i class="fas fa-eye fa-fw"></i>GitCDN
+									</a>
+									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://rawcdn.githack.com"}}" target="_blank" rel="noopener" title='{{ i18n "AGPreviewTitle" }}'>
+										<i class="fas fa-eye fa-fw"></i>Raw GitHack
+									</a>
+									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh"}}" target="_blank" rel="noopener" title='{{ i18n "AGPreviewTitle" }}'>
+										<i class="fas fa-eye fa-fw"></i>Statically
+									</a>
+								</div>
+							</div>
+						</div>
 						{{ end }}
 						{{ end }}
 
 						{{ if in .subscribe "raw.githubusercontent.com" }}
-						{{with .supp}}
-						<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo"}}" target="_blank" rel="noopener" title='{{ i18n "supplementPreviewTitle" }}'>
-							<i class="fas fa-eye fa-fw"></i>{{ i18n "supplementPreview" }} (GitCDN)
-						</a>
-						<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://rawcdn.githack.com"}}" target="_blank" rel="noopener" title='{{ i18n "supplementPreviewTitle" }}'>
-							<i class="fas fa-eye fa-fw"></i>{{ i18n "supplementPreview" }} (Raw GitHack)
-						</a>
-						<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh"}}" target="_blank" rel="noopener" title='{{ i18n "supplementPreviewTitle" }}'>
-							<i class="fas fa-eye fa-fw"></i>{{ i18n "supplementPreview" }} (Statically)
-						</a>
+						{{ with .supp }}
+						<div class="btn-group dropright">
+							<a class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title='{{ i18n "supplementPreviewTitle" }}'>
+								<i class="fas fa-eye fa-fw"></i>
+								{{ i18n "supplementPreview" }}
+							</a>
+							<div class="dropdown-menu text-center">
+								<div class="btn-group-vertical">
+									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo"}}" target="_blank" rel="noopener" title='{{ i18n "supplementPreviewTitle" }}'>
+										<i class="fas fa-eye fa-fw"></i>GitCDN
+									</a>
+									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://rawcdn.githack.com"}}" target="_blank" rel="noopener" title='{{ i18n "supplementPreviewTitle" }}'>
+										<i class="fas fa-eye fa-fw"></i>Raw GitHack
+									</a>
+									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh"}}" target="_blank" rel="noopener" title='{{ i18n "supplementPreviewTitle" }}'>
+										<i class="fas fa-eye fa-fw"></i>Statically
+									</a>
+								</div>
+							</div>
+						</div>
 						{{ end }}
 						{{ end }}
-
-						{{ if and (not (in $filterlist.subscribe "raw.githubusercontent.com")) (not $filterlist.mirror) }} - {{ end }}
 					</div>
 				</div>
 			</td>
@@ -268,7 +314,7 @@
 							{{ end }}
 						</div>
 					</div>
-				{{end}}
+					{{end}}
 				</div>
 			</td>
 		</tr>
