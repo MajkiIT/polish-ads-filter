@@ -2,6 +2,8 @@
 * Dark Mode Switch
 * https://github.com/coliff/dark-mode-switch
 * Released under the MIT License.
+* Modified by hawkeye116477
+* Thanks for https://github.com/popoway/dark-mode-switch/commit/c11cd31f39056d47cdd354e6796dcc2bc4c7b921
 */
 
 const darkSwitch = document.getElementById('darkSwitch');
@@ -31,14 +33,16 @@ function initTheme() {
   const darkThemeSelected =
     localStorage.getItem('darkSwitch') !== null &&
     localStorage.getItem('darkSwitch') === 'dark';
+  const lightThemeSelected =
+    localStorage.getItem('darkSwitch') !== null &&
+    localStorage.getItem('darkSwitch') === 'light';
   if (darkThemeSelected) {
     darkSwitch.checked = true;
     document.body.setAttribute('data-theme', 'dark');
     $('#darkSwitch').bootstrapToggle('on');
   }
-  else if (systemPrefersDarkMode) {
+  else if (systemPrefersDarkMode && !lightThemeSelected) {
     darkSwitch.checked = true;
-    darkSwitch.disabled = true;
     document.body.setAttribute('data-theme', 'dark');
   }
   else {
@@ -59,6 +63,6 @@ function resetTheme() {
     localStorage.setItem('darkSwitch', 'dark');
   } else {
     document.body.removeAttribute('data-theme');
-    localStorage.removeItem('darkSwitch');
+    localStorage.setItem('darkSwitch', 'light');
   }
 }
