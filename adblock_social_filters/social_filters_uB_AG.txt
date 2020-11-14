@@ -196,6 +196,7 @@ ipla.tv##.share-modal .modal:style(height: auto !important;)
 janssenmed.pl##.footer-social--mobile:style(border: none !important)
 librus.pl##div.promo, #navBar, .container-fluid:style(width: 100% !important;)
 ofeminin.pl##.joinClubLnk[href*="/klub-ekspertek"]:before:style(content: "#KlubExpertek - "; display: inline-block !important; padding-right: 5px !important;)
+pepco.pl##.text-right.footer-menu > ul.no-list:nth-of-type(2) > li:last-of-type:style(margin-right: 230px !important;)
 pozycjoneria.com###footer > #stopka_ikonki:style(visibility: hidden !important; display: block !important;)
 roweroweporady.pl##.sidebar .widget:style(border-bottom: none !important; margin-bottom: 0 !important; padding-bottom: 0 !important;)
 sport.tvp.pl##.news-socials .icon-message__news:style(top: 0 !important;)
@@ -214,17 +215,17 @@ x-kom.pl##section.social-bar > div.social-links:style(display: flex; justify-con
 zlotygron.pl##.site_social > span:style(display: inline-block !important; padding-top: 5px !important;)
 !discoverychannel.pl,tlcpolska.pl,tvnstyle.pl##header .inputMedia .inputContainer:style(width: 160px !important;)
 !x-kom.pl##.icon-custom-forum:style(display: block !important; margin: 0 auto !important;)
+!#if !env_mobile
+pepco.pl#@#.text-right.footer-menu > ul.no-list:nth-of-type(2) > li:last-of-type:style(margin-right: 230px !important;)
+!#endif
 !
 !
 ! Bugi AdGuarda
 !#if !ext_ublock
 antyweb.pl#?#.box-social-counter
 focus.pl#?#.socializer-fb-share
-meblomag.eu#$?#map[name="Map4"] > area:nth-of-type(1) { remove: true; }
-odkryjpomorze.pl#$?#map[name="Map"] > area:nth-of-type(1) { remove: true; }
 oknonawagrowiec.pl#?#.penci-social__item:nth-of-type(-n+4)
 pilot.wp.pl#?#.fb_iframe_widget
 polonia.net#?##header-social-icons
 telepolis.pl##a.icon-facebook, a.icon-twitter
-um.kielce.pl#$?#map > area[alt="Facebook"] { remove: true; }
 !#endif
