@@ -1,21 +1,22 @@
 ! Title: Official Polish filters for AdBlock, uBlock Origin & AdGuard - supplement for AdGuard
 ! Oficjalne polskie filtry do AdBlocka, uBlocka Origin i AdGuarda - uzupełnienie do AdGuarda
 ! Codename: Official - supplement for AdGuard
-! Collaborators: F4z, FadeMind, hawkeye116477
+! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 30 September 2020
+! Last modified: 15 November 2020
 ! Expires: 1 day
-! Version: 2020093001
+! Version: 2020111501
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
+! Redundant Checker >> https://www.certyficate.it/redundant_checker/redundantRuleChecker.html
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020093001 aktualizacja: sr, 30 września 2020, 08:35:00
+! v.2020111501 aktualizacja: nie, 15 listopada 2020, 15:51:00
 !
 !
 ! alltube.tv
@@ -167,8 +168,17 @@ milionkobiet.pl##.gallery-embed-list-images:style(height: auto !important;)
 ! lowcygier.pl
 lowcygier.pl##body:style(background-image: none !important;)
 !
+! Interia
+mamdziecko.interia.pl###content .brief-list-items .brief-placeholder-list:style(height: 320px)
+www.interia.pl##+js(remove-attr.js, scrolling, iframe#sg-iframe[scrolling="no"])
+poczta.interia.pl#$##mainApp #sitebar, #mainApp #sitebar form { width: 100% !important; max-width: 100% !important }
+!
 ! money.pl
 money.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
+money.pl,moneyv.wp.pl###app > div[data-reactroot] > div[class]:matches-css(background-image: /v\.wpimg\.pl\/MjAxOTA/)
+!
+! purepc.pl
+purepc.pl##html > body:style(background-image: none!important; background-color: #d5d5d5!important;)
 !
 ! filmweb.pl
 filmweb.pl##+js(abort-current-inline-script.js, decodeURIComponent, newAdblockBoardDisplayed)
@@ -177,8 +187,10 @@ filmweb.pl##body[class]:not(.rodo):style(overflow: auto !important;)
 ! polsatnews.pl
 polsatnews.pl###body > div > a[style="position: absolute; top: 0; left: 0; z-index: 0; width: 100%; height: 1000px;"]
 !
+! stooq.*
+stooq.pl,stooq.com##:xpath(//*[@align="center"]/*[@id][contains(text(),"REKLAMA")])
+!
 ! style()
-2conv.com,flvto.biz##.banner:style(visibility: hidden !important; display: block !important; height: 0 !important;)
 24pr.pl###primary-sidebar:style(width: auto !important;)
 booklips.pl##.js:style(background-image: none !important;)
 cartests.net###td-outer-wrap > .td-header-wrap:style(margin-bottom: 0 !important;)
