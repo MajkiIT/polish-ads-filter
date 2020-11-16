@@ -8,9 +8,9 @@
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 15 November 2020
+! Last modified: 16 November 2020
 ! Expires: 1 day
-! Version: 2020111508
+! Version: 2020111601
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020111508 aktualizacja: nie, 15 listopada 2020, 19:40:00
+! v.2020111601 aktualizacja: pon, 16 listopada 2020, 20:25:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -1454,6 +1454,10 @@ interia.pl##.entertainment-li.i10 > .entertainment-a
 interia.pl##[id^="ad_"]
 interia.pl##div[class*="ad ad_"]
 interia.pl,pomponik.pl,styl.pl##.inpl-gallery-ad-horizontal, .inpl-gallery-ad-side
+interia.pl##div[class^="box ad box"]
+interia.pl##.adStandardTop
+interia.pl##.main-sidebar > div[style="height: 600px;"] > div[style^="max-width:"][style*="position: sticky"]
+interia.pl##.main-sidebar a[href][target="_blank"][onclick*="&creation="]
 interia.tv###belka_stopka1
 interia.tv###box300x2501
 interia.pl#?#.brief-list-item:-abp-has(> .mixerAdTopRight-wrapper:not(.has-noads))
@@ -4238,9 +4242,9 @@ zywiecinfo.pl##.promoted
 /^(http|https):\/\/www\.wp\.pl\/[a-zA-Z0-9-_]{50,}/$popup,domain=www.wp.pl
 /^https:\/\/(g|www)\.cda\.pl\/[\w]{1,50}\.php\?[\w\W]{60,150}=[0-9]{10,20}/$xmlhttprequest,object
 /^https:\/\/[a-z.]{2,16}\.wp\.pl\/[a-zA-Z0-9-_.?=?&%]{472,}/$media,domain=open.fm
-/^https:\/\/[a-z.]{2,17}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$popup,domain=www.wp.pl
-/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl
-/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|pogoda.wp.pl|dladzieci.pl|dzieci.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|avent-ugrow.wp.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl|pytamy.pl|ranking.abczdrowie.pl|profil.tlen.pl
+!/^https:\/\/[a-z.]{2,17}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$popup,domain=www.wp.pl
+!/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl
+!/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|pogoda.wp.pl|dladzieci.pl|dzieci.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|avent-ugrow.wp.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl|pytamy.pl|ranking.abczdrowie.pl|profil.tlen.pl
 /^https:\/\/eku24.net\/images\/slajdy\/(?!zyczenia)[a-z]{3,10}\/[a-zA-Z0-9_-]{10,50}\.jpg/$image
 /https?:\/\/(?!(poczta|bc))[a-z.]{3,15}\.wp\.pl\/.{20,}/$script,domain=poczta.wp.pl
 /^https:\/\/[a-z]{5,10}\.[a-z]{3,3}\/easylist\/[0-9]{5,6}/$script,domain=dziennikwschodni.pl
@@ -4643,7 +4647,7 @@ poczta.wp.pl##[slot=SKY]
 pogoda.wp.pl##A[href*=".wp.pl/"][target="_blank"] > DIV:last-child
 pogoda.wp.pl##DIV#stgHeader + * > :first-child + DIV[class]
 pogoda.wp.pl##DIV.stamp + * + DIV[class]
-pogoda.wp.pl##DIV[class]:first-child + * + DIV[class]
+!pogoda.wp.pl##DIV[class]:first-child + * + DIV[class]
 pogoda.wp.pl##DIV[style="text-align: center;"] > DIV[class]:first-child
 sportowefakty.wp.pl##.image--lead + div:not([class])
 sportowefakty.wp.pl##main div[class*=" "]:empty:not(.btnmute):not(.volsliderbg):not([style]):not([id]):not([img]):not([src])
