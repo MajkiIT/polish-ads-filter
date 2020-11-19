@@ -10,7 +10,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 19 November 2020
 ! Expires: 1 day
-! Version: 2020111901
+! Version: 2020111902
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020111901 aktualizacja: czw, 19 listopada 2020, 11:55:00
+! v.2020111902 aktualizacja: czw, 19 listopada 2020, 19:00:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -1387,6 +1387,7 @@ ibielany.pl##div.l-row > .l-box--100.l-box > P
 ideagrafika.pl###adswidget7-quick-adsense
 ideas2action.pl##.o_inner
 infokrakow24.pl##div.mom_custom_text.widget:nth-of-type(5)
+infosokolka.pl###promoted-module
 ifrancja.fr##.top-main-ads.row
 igostyn.pl,ikalisz.pl,iostrowwlkp.pl,ijarocin.pl,ipleszew.pl##.partners2
 igrit.pl##.boczniak, #polifoska
@@ -1405,7 +1406,7 @@ imokotow.pl##.row:nth-of-type(3) > .fl.w250
 imperiumromanum.edu.pl,portal.dlugoleka.pl,motofilm.pl###custom_html-9
 indeed.com###related
 info112.pl###main > div > A > IMG
-info.elblag.pl##.ADinfo, #banner-33, .linkwrap, #banner-glowny, #banner-popup
+info.elblag.pl##.ADinfo, #banner-33, .linkwrap, #banner-glowny, #banner-popup, #banner-4
 info.elblag.pl##IMG[alt*="reklamowe"]
 infobeskidy.eu##[href^="http://infobeskidy.eu/sad"], #last_comment > div > IMG, .before
 infogazeta.pl###comment-captcha
@@ -2124,8 +2125,8 @@ naszamlawa.pl##[class^="efactory-ad-"]
 naszamlawa.pl,e-dukacja.pl,e-farmacja.net,rynekinstalacyjny.pl,gramwzielone.pl##.banner
 naszarola.pl##.avia-align-center.el_before_av_hr.el_after_av_hr.avia-builder-el-111.av-styling-no-styling.avia-image-container
 naszarola.pl###after_section_4 > .container > .units.alpha.av-content-full.content.template-page
-naszarola.pl##.el_before_av_button.el_after_av_one_fourth.avia-builder-el-87.av-zero-column-padding.flex_column_div.av_one_fourth.flex_column
-naszarola.pl##.avia-align-center.avia-builder-el-first.el_before_av_hr.avia-builder-el-78.av-styling-.avia-image-container
+naszarola.pl##.avia-align-center.avia-builder-el-first.el_before_av_image.avia-builder-el-89.av-styling-no-styling.avia-image-container
+naszarola.pl##.el_before_av_hr.el_after_av_one_fourth.avia-builder-el-78.av-zero-column-padding.flex_column_div.av_one_fourth.flex_column
 naszciechanow.pl##.spacead-r-2, [class^="efactory-ad-"], .td-is-sticky.td-pb-span4
 naszekielce.com###block-block-509, #block-block-1, .region-promoted, #block-block-465, #block-block-468
 naszemiasto.pl###zobacz-koniecznie
@@ -4252,8 +4253,8 @@ zywiecinfo.pl##.promoted
 /^(http|https):\/\/www\.wp\.pl\/[a-zA-Z0-9-_]{50,}/$popup,domain=www.wp.pl
 /^https:\/\/(g|www)\.cda\.pl\/[\w]{1,50}\.php\?[\w\W]{60,150}=[0-9]{10,20}/$xmlhttprequest,object
 /^https:\/\/[a-z.]{2,16}\.wp\.pl\/[a-zA-Z0-9-_.?=?&%]{472,}/$media,domain=open.fm
-!/^https:\/\/[a-z.]{2,17}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$popup,domain=www.wp.pl
-!/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl
+/^https:\/\/[a-z.]{2,17}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$popup,domain=www.wp.pl
+/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=profil.wp.pl|poczta.o2.pl|nowy.tlen.pl
 !/^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{450,}/$script,domain=twojeip.wp.pl|czat.wp.pl|wawalove.pl|niewiarygodne.pl|pogoda.wp.pl|dladzieci.pl|dzieci.pl|sport.wp.pl|topnews.wp.pl|odkrywcy.pl|katalog.wp.pl|kultura.wp.pl|avent-ugrow.wp.pl|pudelekx.pl|nerwica.com|forum.abczdrowie.pl|pytamy.pl|ranking.abczdrowie.pl|profil.tlen.pl
 /^https:\/\/eku24.net\/images\/slajdy\/(?!zyczenia)[a-z]{3,10}\/[a-zA-Z0-9_-]{10,50}\.jpg/$image
 /https?:\/\/(?!(poczta|bc))[a-z.]{3,15}\.wp\.pl\/.{20,}/$script,domain=poczta.wp.pl
@@ -4771,6 +4772,7 @@ money.pl,moneyv.wp.pl#?#div[class^="sc-"]:-abp-has(> img[src="https://i.wpimg.pl
 @@.pl/ads/*/static/$stylesheet,script,domain=google.pl
 @@/images/ads/puszczatv/*$image,domain=niezalezna.pl
 @@||hdtvpolska.com^*300x250$image,domain=hdtvpolska.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=focus.pl
 digest.com.pl#@#.display-ad-block
 e-stargard.pl,mojeinfo24.pl#@#.bg_ad
 epainfo.pl#@#.td-ad-background-link
