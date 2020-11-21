@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 20 November 2020
+! Last modified: 21 November 2020
 ! Expires: 1 day
-! Version: 2020112002
+! Version: 2020112101
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020112002 aktualizacja: ptk, 20 listopada 2020, 21:20:00
+! v.2020112101 aktualizacja: sob, 21 listopada 2020, 10:45:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -203,6 +203,8 @@ profil.wp.pl##+js(set, Object.prototype.loadAndRunBunch, noopFunc)
 autokult.pl,kafeteria.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl##+js(nostif, HubAPI, 3000)
 autokult.pl,kafeteria.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl##+js(aeld, message, t.origin===k)
 wp.pl##+js(no-setTimeout-if, /getComputedStyle[\s\S]*?style\.display="none"[\s\S]*?styleBlocked[\s\S]*?detected/)
+dom.wp.pl,facet.wp.pl,film.wp.pl,finanse.wp.pl,gry.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,kuchnia.wp.pl,moto.wp.pl,opinie.wp.pl,tech.wp.pl,teleshow.wp.pl,turystyka.wp.pl,wawalove.wp.pl,wiadomosci.wp.pl,wroclaw.wp.pl#?#td[data-reactid] > div[class] > div[class] > div[class*=" "] > div[class] > span:contains(/^TWOJE OKAZJE$/):upward(2)
+dom.wp.pl,facet.wp.pl,film.wp.pl,finanse.wp.pl,gry.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,kuchnia.wp.pl,moto.wp.pl,opinie.wp.pl,tech.wp.pl,teleshow.wp.pl,turystyka.wp.pl,wawalove.wp.pl,wiadomosci.wp.pl,wroclaw.wp.pl#?#div[class*=" "]:has(>div[class]:first-child:empty+img[src*="://v.wpimg.pl/"][alt]:empty)
 !
 ! o2.pl
 poczta.o2.pl,poczta.wp.pl##body > #page:style(display: block !important;)
