@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies i EasyList/AdGuard Base!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2020.11.22.0
-! Last modified: Sun, 22 Nov 2020, 22:41 UTC+01
+! Version: 2020.11.23.1
+! Last modified: Mon, 23 Nov 2020, 20:01 UTC+01
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -18,7 +18,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2020 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2020.11.22.0 aktualizacja: nie, 22 lis 2020, 22:41 UTC+01
+! v.2020.11.23.1 aktualizacja: pon, 23 lis 2020, 20:01 UTC+01
 !
 !
 ! Specyficzne reguły ukrywające
@@ -1119,7 +1119,7 @@ investmap.pl##.popup-back, .popup-rodo
 ioki.pl,lubartow24.pl##.bg-warning
 iom.pl###cooker
 ipolska24.pl###cookie_policy
-ipos.pl#?##gatsby-focus-wrapper > div + div.is-opened:-abp-has(a[href*="/polityka-prywatnosci"])
+ipos.pl#?##gatsby-focus-wrapper > div[class*="css-"] ~ div[class*="css-"]:-abp-has(a[href*="/polityka-prywatnosci"])
 irebu.pl###COOKIE
 isms.pl###skel-panels-pageWrapper > div[name="cookie_info"]
 isok.gov.pl##.message_div_cookie
@@ -1221,7 +1221,7 @@ komp-net.eu,odreklamy.pl,wiano.eu###xrootCookieRules
 komugroup.eu###pop-up-modal
 komugroup.eu##.cookie-infobox
 komunikacja.um.bialystok.pl##a[href="/?page=cookies"]
-komunikaty.tp.pl,orange.pl#?##__next section > div div[class^="css-"][style="opacity: 1;"]:-abp-has(strong:-abp-contains(Informacja o cookies))
+komunikaty.tp.pl,orange.pl#?##__next section > div div[class^="css-"]:-abp-has( > div > div > strong:-abp-contains(Informacja o cookies))
 koncertomania.pl###conv11548
 konecki24.pl##.cli-modal-backdrop
 konkursydladzieci.eu###thecookie
@@ -1396,7 +1396,7 @@ megasat.tv##.ep-cookies-bar
 megataxi.pl##body > div > div[style*="position"][style*="fixed"]:not([id]):not([class])
 mega-com.eu###footer-information
 mega-kino.pl,skutecznie.tv###dc-cnb-container
-megiw.pl##body > div:not([id]):not([class]) > div[style*="position"][style*="fixed"]:not([id]):not([class])
+megiw.pl,megiw4garden.pl,megiw4sauna.pl##body > div:not([id]):not([class]) > div[style*="position"][style*="fixed"]:not([id]):not([class])
 meloradio.pl##.cookie-giodo
 memoinfo.pl,pingpong.com.pl##body > div:nth-of-type(6)
 memorialhenrykapuzonia.pl###sc
@@ -1583,6 +1583,7 @@ nonsa.pl,nonsensopedia.org##.mw-cookiewarning-container
 nordglass.pl##.rodoBox--visible.rodoBox
 norwegian.com#?#.alert:-abp-has(.cookie-disclaimer)
 notino.pl###exponea-cookie-compliance
+notus.pl###bancook
 nova-farm.com##.cookie_consent
 nowa.tv###mpc_cookie_intro
 noweprzetargi.pl###dcach, #txt
