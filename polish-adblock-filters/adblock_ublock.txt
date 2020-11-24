@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 23 November 2020
+! Last modified: 24 November 2020
 ! Expires: 1 day
-! Version: 2020112301
+! Version: 2020112401
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020112301 aktualizacja: pon, 23 listopada 2020, 18:55:00
+! v.2020112401 aktualizacja: wt, 24 listopada 2020, 10:55:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -208,6 +208,7 @@ dom.wp.pl,facet.wp.pl,film.wp.pl,finanse.wp.pl,gry.wp.pl,gwiazdy.wp.pl,kobieta.w
 !
 ! o2.pl
 poczta.o2.pl,poczta.wp.pl##body > #page:style(display: block !important;)
+o2.pl##div[class][style="width:100%"] > div[class*=" "]:has(:scope > img[role="presentation"]:not([src]))
 !
 ! kurnik.pl
 kurnik.pl##.adsbygoogle:style(height: 1px !important; width: 1px !important;)
