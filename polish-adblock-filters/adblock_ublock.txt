@@ -8,7 +8,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 26 November 2020
 ! Expires: 1 day
-! Version: 2020112601
+! Version: 2020112602
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020112601 aktualizacja: czw, 26 listopada 2020, 15:50:00
+! v.2020112602 aktualizacja: czw, 26 listopada 2020, 19:55:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -205,6 +205,7 @@ autokult.pl,kafeteria.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,o2.pl,pol
 wp.pl##+js(no-setTimeout-if, /getComputedStyle[\s\S]*?style\.display="none"[\s\S]*?styleBlocked[\s\S]*?detected/)
 dom.wp.pl,facet.wp.pl,film.wp.pl,finanse.wp.pl,gry.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,kuchnia.wp.pl,moto.wp.pl,opinie.wp.pl,tech.wp.pl,teleshow.wp.pl,turystyka.wp.pl,wawalove.wp.pl,wiadomosci.wp.pl,wroclaw.wp.pl#?#td[data-reactid] > div[class] > div[class] > div[class*=" "] > div[class] > span:contains(/^TWOJE OKAZJE$/):upward(2)
 dom.wp.pl,facet.wp.pl,film.wp.pl,finanse.wp.pl,gry.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,kuchnia.wp.pl,moto.wp.pl,opinie.wp.pl,tech.wp.pl,teleshow.wp.pl,turystyka.wp.pl,wawalove.wp.pl,wiadomosci.wp.pl,wroclaw.wp.pl#?#div[class*=" "]:has(>div[class]:first-child:empty+img[src*="://v.wpimg.pl/"][alt]:empty)
+sportowefakty.wp.pl##+js(aost, WP.prebid, onLoad)
 !
 ! o2.pl
 poczta.o2.pl,poczta.wp.pl##body > #page:style(display: block !important;)
