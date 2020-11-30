@@ -10,7 +10,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 30 November 2020
 ! Expires: 1 day
-! Version: 2020113001
+! Version: 2020113002
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020113001 aktualizacja: pon, 30 listopada 2020, 17:25:00
+! v.2020113002 aktualizacja: pon, 30 listopada 2020, 21:50:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -954,6 +954,7 @@ eska.pl##A[style="display: block; height: 100%; width: 100%;"]
 eska.pl##[href*="bbelements.com/please/track/adClick/"], .zpr_shopping__article
 eskatt.pl###NaglowekSklepu > div > div > A > IMG
 eskatt.pl##div.BoxRwdUkryj:nth-of-type(2) > .CalyBox
+esporter.pl,interia.pl,pomponik.pl,styl.pl#?#div[style*="sticky"]:-abp-has(a[target="_blank"][onclick*="'polsat'"])
 eslupsk.pl##.box_unison-slide
 estadios.pl##.blok_tresc_bez_tla, .baner_home2, .baner_top_tlo
 estadios24.pl##.baner_top_bann, .baner_top_tlo, .blok_tresc_bez_tla
@@ -2441,7 +2442,7 @@ polacywewloszech.com###text-16, #text-17, #text-19
 police24.pl##.bannerheader, [class*="banner"] > font
 police24.pl##.class\=.\ > table > tbody > tr:nth-of-type(4)
 police24.pl##td > table > tbody > tr:nth-of-type(1) > td:nth-of-type(1), div.jm-module:nth-of-type(3) > .jm-module-in > .clearfix.jm-module-content > .custom
-polnocna.tv##A[href^="/ad/"] > IMG
+polnocna.tv##A[href^="/ad/"] > IMG, #block-block-20 > .clearfix.block-inner
 poloniairlandia.pl##.td-header-style-5.td-header-wrap, #td_uid_7_5abf827b54b35
 polsatnews.pl##.LM__popup
 polscygracze.pl##.gridlove-sidebar > .LfUW8dL1Hl-widget.gridlove-box.widget
@@ -4712,6 +4713,9 @@ www.wp.pl#?#div[class*=" "]:-abp-has(> img[src$="/i.wp.pl/a/i/stg/pkf/bg.png"])
 ~www.wp.pl,wp.pl##[class^="__bc_layer"]
 ~www.wp.pl,~pilot.wp.pl,wp.pl##[class^="css-"]
 ~www.wp.pl,wp.pl##body > script + iframe + div:not([id])[class]
+pogoda.wp.pl##li > .item + div[class*=" "]
+pogoda.wp.pl##.grid-right > div:matches-css(background-image: /data:image\/png;base64,/)
+pogoda.wp.pl##.grid-right > div > div:matches-css(background-image: /data:image\/png;base64,/)
 !
 !34#--------------------------Pudelek/Pudelekx element hide------------!
 pudelek.pl##DIV.cb > DIV[class^="m"]
