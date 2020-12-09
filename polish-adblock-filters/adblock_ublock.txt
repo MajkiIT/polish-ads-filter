@@ -8,7 +8,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 9 December 2020
 ! Expires: 1 day
-! Version: 2020120903
+! Version: 2020120904
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020120903 aktualizacja: sr, 9 grudnia 2020, 20:00:00
+! v.2020120904 aktualizacja: sr, 9 grudnia 2020, 22:35:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -179,9 +179,9 @@ www.wp.pl##+js(set-constant.js, WP.gaf.loadBunch, noopFunc)
 !wp.pl,~pilot.wp.pl,~sportowefakty.wp.pl##+js(set-constant.js, WP.gaf.loadBunch, noopFunc)
 !o2.pl,pudelek.pl,wp.pl##+js(set-constant, Object.prototype.isGoogleBot, true)
 www.wp.pl##div[class^="sc-"]:has(:scope > img[src^="https://v.wpimg.pl/"][role="presentation"][class^="sc-"]:matches-css(position: absolute))
-www.wp.pl##+js(set-constant, Object.prototype.gafSlot, undefined)
-www.wp.pl##+js(set-constant, Object.prototype.advViewability, undefined)
-www.wp.pl##+js(set-constant, Object.prototype.rekids, undefined)
+!www.wp.pl##+js(set-constant, Object.prototype.gafSlot, undefined)
+!www.wp.pl##+js(set-constant, Object.prototype.advViewability, undefined)
+!www.wp.pl##+js(set-constant, Object.prototype.rekids, undefined)
 so-magazyn.pl,o2.pl,pudelek.pl,film.wp.pl,finanse.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,magazyn.wp.pl,moto.wp.pl,opinie.wp.pl,sportowefakty.wp.pl,tech.wp.pl,teleshow.wp.pl,wiadomosci.wp.pl#@#.pub_300x250
 so-magazyn.pl,o2.pl,pudelek.pl,film.wp.pl,finanse.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,magazyn.wp.pl,moto.wp.pl,opinie.wp.pl,sportowefakty.wp.pl,tech.wp.pl,teleshow.wp.pl,wiadomosci.wp.pl#@#.text_ads
 so-magazyn.pl,o2.pl,pudelek.pl,film.wp.pl,finanse.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,magazyn.wp.pl,moto.wp.pl,opinie.wp.pl,sportowefakty.wp.pl,tech.wp.pl,teleshow.wp.pl,wiadomosci.wp.pl#$#.pub_300x250 { display: block!important; }
@@ -197,7 +197,7 @@ money.pl,wp.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>
 money.pl,moneyv.wp.pl###app > div[data-reactroot] > div[class]:matches-css(background-image: /v\.wpimg\.pl\/MjAxOTA/)
 !pogoda.wp.pl,tv.wp.pl,horoskop.wp.pl,autokult.pl,echirurgia.pl,fotoblogia.pl,gadzetomania.pl,kafeteria.pl,parenting.pl,pudelek.pl,fitness.wp.pl,kobieta.wp.pl,wawalove.wp.pl,komorkomania.pl,wiadomosci.wp.pl,portal.abczdrowie.pl,gwiazdy.wp.pl,teleshow.wp.pl,sportowefakty.wp.pl##+js(set, Object.prototype.advViewability, undefined)
 !wp.pl,poczta.o2.pl,poczta.wp.pl,abczdrowie.pl,autokult.pl,dobreprogramy.pl,echirurgia.pl,fotoblogia.pl,gadzetomania.pl,kafeteria.pl,komorkomania.pl,money.pl,open.fm,parenting.pl,snobka.pl##+js(set, Object.prototype.advViewability, undefined)
-www.wp.pl,sportowefakty.wp.pl##+js(set, Object.prototype.loadBunch, noopFunc)
+sportowefakty.wp.pl##+js(set, Object.prototype.loadBunch, noopFunc)
 profil.wp.pl##+js(set, Object.prototype.loadAndRunBunch, noopFunc)
 kafeteria.pl,polygamia.pl,open.fm,pudelek.pl##+js(nostif, HubAPI, 3000)
 kafeteria.pl,polygamia.pl,open.fm,pudelek.pl##+js(aeld, message, t.origin===k)
@@ -205,7 +205,7 @@ wp.pl##+js(no-setTimeout-if, /getComputedStyle[\s\S]*?style\.display="none"[\s\S
 dom.wp.pl,facet.wp.pl,film.wp.pl,finanse.wp.pl,gry.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,kuchnia.wp.pl,moto.wp.pl,opinie.wp.pl,tech.wp.pl,teleshow.wp.pl,turystyka.wp.pl,wawalove.wp.pl,wiadomosci.wp.pl,wroclaw.wp.pl#?#td[data-reactid] > div[class] > div[class] > div[class*=" "] > div[class] > span:contains(/^TWOJE OKAZJE$/):upward(2)
 dom.wp.pl,facet.wp.pl,film.wp.pl,finanse.wp.pl,gry.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,kuchnia.wp.pl,moto.wp.pl,opinie.wp.pl,tech.wp.pl,teleshow.wp.pl,turystyka.wp.pl,wawalove.wp.pl,wiadomosci.wp.pl,wroclaw.wp.pl#?#div[class*=" "]:has(>div[class]:first-child:empty+img[src*="://v.wpimg.pl/"][alt]:empty)
 abczdrowie.pl,autokult.pl,echirurgia.pl,film.wp.pl,fotoblogia.pl,gadzetomania.pl,gry.wp.pl,horoskop.wp.pl,kobieta.wp.pl,komorkomania.pl,medycyna24.pl,money.pl,parenting.pl,pogoda.wp.pl,tech.wp.pl,tv.wp.pl,twojeip.wp.pl,wiadomosci.wp.pl,wideo.wp.pl,www.wp.pl,sportowefakty.wp.pl,fitness.wp.pl,wawalove.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##+js(aost, WP.prebid, onLoad)
-sportowefakty.wp.pl,www.wp.pl##+js(aopr, Object.prototype.bodyCode)
+sportowefakty.wp.pl##+js(aopr, Object.prototype.bodyCode)
 !
 ! o2.pl
 poczta.o2.pl,poczta.wp.pl##body > #page:style(display: block !important;)
