@@ -5,8 +5,8 @@
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
 4lomza.pl##body.polityka-cookies:style(margin-top: 0 !important;)
-7ryb.pl,etransport.pl,grupawsparcia.pl,hrkgame.com##.modals.dimmer
-7ryb.pl,etransport.pl,grupawsparcia.pl,hrkgame.com##.dimmable, .dimmed:style(overflow: auto !important;)
+7ryb.pl,etransport.pl,grupawsparcia.pl##.modals.dimmer
+7ryb.pl,etransport.pl,grupawsparcia.pl##.dimmable, .dimmed:style(overflow: auto !important;)
 24wroclaw.pl,academy.asseco.pl,barbara.net.pl,biblioteka-cybinka.pl,bosch-easycontrol.com,ceres.pl,ciekaweblogi.pl,dabrowka.net.pl,dane.gov.pl,dawg.pl,doleasingu.com,dzialoszyn.pl,e-sochaczew.pl,empik.com,giantfabryczna.pl,grebkow.pl,gry.lotto.pl,handluj.com,jaktorow.pl,jawor24h.pl,katarzynatryniszewska.pl,komugroup.eu,korytnica.pl,liv-cycling.com,m.24jgora.pl,mistravel.pl,multimediago.pl,naekranie.pl,obywatel.gov.pl,ogladajanime.pl,olesnica24.com,osieck.pl,panoramafirm.pl,poradnikbudowlany.eu,printoteka.pl,repostuj.pl,sobieniejeziory.pl,tanibus.com,tvbraniewo24.pl,tvdami.eu,tvgo.orange.pl,tvmalbork.pl,tvregionalna24.pl,tvsztum.pl,wapex.pl,wedkuje.pl,wit.edu.pl,wrzesnia.info.pl,www.gbl.waw.pl,zamowienia.gbl.waw.pl,ztm.gda.pl,zulawyimierzeja24.pl,zwolen.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 24wroclaw.pl,dabrowka.net.pl,generali.pl,lepszytrener.pl,m.24jgora.pl,poradnikbudowlany.eu,saleswww.proama.pl,tvbraniewo24.pl,tvmalbork.pl,tvregionalna24.pl,tvsztum.pl,wit.edu.pl,zulawyimierzeja24.pl###rodoModal, .modal-backdrop
 abcalkoholu.pl##.cookielaw:style(padding-top: 0 !important;)
@@ -197,6 +197,8 @@ kolomnie.pl##.show.rodo-pop-up
 komputerswiat.pl##html > body.cmp:style(overflow: auto !important;)
 komputerswiat.pl##.cmp-app_gdpr
 komunikaty.tp.pl,orange.pl##section button[title="Zamknij informację o cookies"]:upward(1)
+kpcen-torun.edu.pl###cookieModal, .modal-backdrop
+kpcen-torun.edu.pl##.modal-open:style(overflow: auto !important; padding-right: auto !important;)
 kramp.com###root-modal
 kramp.com##.no-scroll:style(position: static !important; overflow: auto !important;)
 kruger.pl###rodo, .fader
@@ -299,6 +301,8 @@ poradykomputerowe.pl,portaloswiatowy.pl##.overlay-cookie
 poradykomputerowe.pl,portaloswiatowy.pl##.overlay-hidden-cookie:style(overflow: auto !important;)
 porcelana.pl##.modal-popup
 powiatslawno.pl##.gafancybox-overlay-fixed.gafancybox-overlay
+powiat-ostrowski.pl##.info
+powiat-ostrowski.pl##body > *:style(filter: none !important;)
 praca.antyweb.pl,zeropln.antyweb.pl##.justify-end.flex-col.flex.z-50.fixed.pin
 prawdaobiektywna.pl##.qc-cmp-ui-container
 printoteka.pl###popupModal10, .modal-backdrop
@@ -415,6 +419,7 @@ ztm.gda.pl###acceptRodo, .modal-backdrop
 !carrefour.pl##.MuiDialog-root:has( > .MuiDialog-container > div[class]:not([id])[role="dialog"]:has-text(cookies))
 !computerworld.pl,cxo.pl,idg.pl,internetstandard.pl,pcworld.pl##html.sp-message-open:style(position: static !important; overflow: auto !important;)
 !computerworld.pl,cxo.pl,idg.pl,internetstandard.pl,pcworld.pl##[class^="sp_veil"], [id^="sp_message_panel"]
+/^https\:\/\/(www\.)?youtube(-nocookie)?\.com\/embed\//$3p,frame,object,redirect=click2load.html,domain=pinger.pl
 ||web.archive.org/web/*/http*://*.pl/*$generichide,important,domain=web.archive.org
 !
 !
@@ -608,6 +613,12 @@ autokult.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl##.cookie-disclaimer:st
 purepc.pl##.cookiesinfo:remove()
 !#endif
 !#if cap_user_stylesheet
+!#endif
+!#if ext_ublock
+!#if cap_user_stylesheet
+hrkgame.com##html:root > body .modals.dimmer.ui > .ui.gdpr.hidden:upward(1):style(display: flex !important;)
+hrkgame.com##.modals.dimmer > .gdpr.visible:upward(1):style(display: none !important; filter: none !important;)
+!#endif
 !#endif
 !#if !env_mobile
 azure.microsoft.com###main:style(padding-top: 88px !important;)
