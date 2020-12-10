@@ -6,7 +6,7 @@
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
 4lomza.pl##body.polityka-cookies:style(margin-top: 0 !important;)
 7ryb.pl,etransport.pl,grupawsparcia.pl##.modals.dimmer
-7ryb.pl,etransport.pl,grupawsparcia.pl##.dimmable, .dimmed:style(overflow: auto !important;)
+7ryb.pl,etransport.pl,grupawsparcia.pl,hrkgame.com##.dimmable, .dimmed:style(overflow: auto !important;)
 24wroclaw.pl,academy.asseco.pl,barbara.net.pl,biblioteka-cybinka.pl,bosch-easycontrol.com,ceres.pl,ciekaweblogi.pl,dabrowka.net.pl,dane.gov.pl,dawg.pl,doleasingu.com,dzialoszyn.pl,e-sochaczew.pl,empik.com,giantfabryczna.pl,grebkow.pl,gry.lotto.pl,handluj.com,jaktorow.pl,jawor24h.pl,katarzynatryniszewska.pl,komugroup.eu,korytnica.pl,liv-cycling.com,m.24jgora.pl,mistravel.pl,multimediago.pl,naekranie.pl,obywatel.gov.pl,ogladajanime.pl,olesnica24.com,osieck.pl,panoramafirm.pl,poradnikbudowlany.eu,printoteka.pl,repostuj.pl,sobieniejeziory.pl,tanibus.com,tvbraniewo24.pl,tvdami.eu,tvgo.orange.pl,tvmalbork.pl,tvregionalna24.pl,tvsztum.pl,wapex.pl,wedkuje.pl,wit.edu.pl,wrzesnia.info.pl,www.gbl.waw.pl,zamowienia.gbl.waw.pl,ztm.gda.pl,zulawyimierzeja24.pl,zwolen.pl##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 24wroclaw.pl,dabrowka.net.pl,generali.pl,lepszytrener.pl,m.24jgora.pl,poradnikbudowlany.eu,saleswww.proama.pl,tvbraniewo24.pl,tvmalbork.pl,tvregionalna24.pl,tvsztum.pl,wit.edu.pl,zulawyimierzeja24.pl###rodoModal, .modal-backdrop
 abcalkoholu.pl##.cookielaw:style(padding-top: 0 !important;)
@@ -616,8 +616,9 @@ purepc.pl##.cookiesinfo:remove()
 !#endif
 !#if ext_ublock
 !#if cap_user_stylesheet
-hrkgame.com##html:root > body .modals.dimmer.ui > .ui.gdpr.hidden:upward(1):style(display: flex !important;)
-hrkgame.com##.modals.dimmer > .gdpr.visible:upward(1):style(display: none !important; filter: none !important;)
+hrkgame.com##html > body .modals > .gdpr.visible:upward(1):watch-attr([class])
+hrkgame.com##html > body .modals.dimmer > .gdpr.visible:upward(1):style(display: none !important;)
+hrkgame.com##html:root > body .modals.dimmer > .gdpr.hidden:upward(1):style(display: flex !important;)
 !#endif
 !#endif
 !#if !env_mobile
