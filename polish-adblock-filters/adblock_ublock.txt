@@ -8,7 +8,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 10 December 2020
 ! Expires: 1 day
-! Version: 2020121003
+! Version: 2020121004
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020121003 aktualizacja: czw, 10 grudnia 2020, 13:20:00
+! v.2020121004 aktualizacja: czw, 10 grudnia 2020, 14:30:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -388,7 +388,9 @@ repairlab.pl##.sgpb-overflow-hidden, sgpb-overflow-hidden-body:style(overflow: a
 !
 ! rabatio.com, alerabat.com
 $popunder,domain=rabatio.com|alerabat.com|salesandshopping.pl|kodyrabatowe.olx.pl|kod.rabatowy.pl
+!#if env_firefox
 kod.rabatowy.pl##+js(nostif, gotoUrl, 300)
+!#endif
 !
 ! style()
 24pr.pl###primary-sidebar:style(width: auto !important;)
