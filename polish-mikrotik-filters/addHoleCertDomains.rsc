@@ -2983,6 +2983,7 @@ add name="przelew24santander.site" address="195.187.6.34" comment="addHoleCertDo
 add name="przelewonline.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="przelewonline.website" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="przeplyw-danych.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="przerabianie-zdjec.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="przesydh.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="przesyika-pl.host" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="przesyika.host" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
