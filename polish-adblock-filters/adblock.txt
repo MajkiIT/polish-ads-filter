@@ -10,7 +10,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 28 December 2020
 ! Expires: 1 day
-! Version: 2020122801
+! Version: 2020122802
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2020 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020122801 aktualizacja: pon, 28 grudnia 2020, 09:15:00
+! v.2020122802 aktualizacja: pon, 28 grudnia 2020, 19:15:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -31,7 +31,7 @@
 .pl/img/ad/
 .pl/wp-content/banners/
 .pl/www/sys/ajs*.php?$script
-/\/(images|img|data|uploads|upload)\/banners\//$image,object,domain=tsk24.pl|wschodnik.pl|nowawrzesnia.pl|glucholazyonline.com.pl|informacjelokalne.pl|muzyczneradio.com.pl|tvrep.pl|chwaszczyno.pl|msfera.pl|tygodnik-krapkowicki.info|darkplanet.pl|wroclawskiejedzenie.pl|magazyngitarzysta.pl|przegladkoninski.pl|radiopoznan.fm|fishing-test.pl|gostynin24.pl|wkonin.pl|orawa24.info|krakowski24.pl|muzyczneradio.pl|skijumping.pl|brwinow.com|www.informacje.kolobrzeg.pl|eoborniki.pl|zywiecinfo.pl|www.konstrukcjeinzynierskie.pl|portalrolniczy.info|packaging-polska.pl|goniec.com
+/\/(images|img|data|uploads|upload)\/banners\//$image,object,domain=tsk24.pl|wschodnik.pl|nowawrzesnia.pl|glucholazyonline.com.pl|informacjelokalne.pl|muzyczneradio.com.pl|tvrep.pl|chwaszczyno.pl|msfera.pl|tygodnik-krapkowicki.info|darkplanet.pl|wroclawskiejedzenie.pl|magazyngitarzysta.pl|przegladkoninski.pl|radiopoznan.fm|fishing-test.pl|gostynin24.pl|wkonin.pl|orawa24.info|krakowski24.pl|muzyczneradio.pl|skijumping.pl|brwinow.com|www.informacje.kolobrzeg.pl|eoborniki.pl|zywiecinfo.pl|www.konstrukcjeinzynierskie.pl|portalrolniczy.info|packaging-polska.pl|goniec.com|janosik.info
 /_adv/*
 /_baner/*$domain=www.ipon.pl|tygodnikzamojski.pl
 /adv/*$image,domain=~arriva.pl|~budus.pl|~filmweb.pl
@@ -75,6 +75,7 @@ pl##a[href*="/adserwer/"]
 pl/*/rodzinnawycieczka/$image,domain=wp.pl
 /import_frame?version=*
 /tmpl/images/$image,domain=ikrotoszyn.pl|ipleszew.pl|ijarocin.pl|iostrowwlkp.pl|igostyn.pl
+/zaufali_nam/$image,domain=janosik.info
 !
 !2#-----------------------Block pages-----------------------!
 /premium/player.php$domain=cyberkino.pl
@@ -458,7 +459,7 @@ besty.pl##[id^="adsense_main_"]
 besty.pl##div:nth-of-type(10) > span
 betblog.pl##.size-large.aligncenter > A, div.wp-block-image
 betonline.net.pl##.module-content.module > .cnt > p > A > IMG, .show.cool-stuff
-bezprawnik.pl##.visual-wide, .wall-bg-banner, .col-xs-12.hidden-xs, .margin-bottom40.headline, .margin-bottom40.sidebar, .play_iframe
+bezprawnik.pl##.visual-wide, .wall-bg-banner, .col-xs-12.hidden-xs, .margin-bottom40.headline, .margin-bottom40.sidebar, .play_iframe, .wall-bg-link
 bezuzyteczna.pl##[style="width:700px;height:200px;"]
 bezuzyteczna.pl,zumi.pl##[class^="special"]
 bham.pl###bilboard, .p-prawy, #s300
@@ -1183,6 +1184,7 @@ gazeta.pl##.mod_sponsoredArticle
 gazeta.pl##.opacity.page-sections > .photos_loaded.box_games.page-section.html > .slices-container.container-fluid
 gazeta.pl##.photos_loaded.box_bargains.page-section.html > .slices-container.container-fluid
 gazeta.pl##.type_default
+gazetabialolecka.waw.pl##.widget_wrap.widget_text
 gazetabilgoraj.pl#?#.vc_row-has-fill.vc_row-fluid.wpb_row.vc_row.row:-abp-has(img[width="350"][height="250"][src*="-350x250."])
 gazetabilgoraj.pl##.vc_row-has-fill.vc_custom_1526373595932.vc_row-fluid.wpb_row.vc_row.row, .vc_row-has-fill.vc_custom_1526373595932.vc_row-fluid.wpb_row.vc_row.row
 gazetabilgoraj.pl##div.vc_col-sm-4.vc_column_container.bs-vc-column.wpb_column > .wpb_wrapper.bs-vc-wrapper > .wpb_raw_html.wpb_content_element.wpb_raw_code > .wpb_wrapper > A, .wpb_wrapper > .vc_single_image-img
@@ -1214,6 +1216,7 @@ gazetasenior.pl##.fn-builder > p > [target="_blank"] > IMG, .fn-block-content.wi
 gazetaslupecka.pl###main > .widget_media_image.covernews-widget.widget
 gazetaspoleczna.pl##div.columns.medium-4.small-12 > .footer-widget > .footer-title-block
 gazetarumska.pl###custom_html-7, .gazet-w-artykule-reklama
+gazetatrzebinska.pl##.td_block_template_1.td-pb-border-top.td-single-image-.tdi_61_6b5.vc_single_image.td-no-img-custom-url.td_block_wrap.td_block_single_image.wpb_wrapper, .td-pb-row.wpb_row.tdi_47_eff.vc_row
 gazetatychy.pl##center > [href] > .animated.visible
 gazetatwojeinfo.pl##.bkshortcode-wrapper, .gazet-widget.widget
 gazetawroclawska.pl##.promoBox, .typBaner, .component.componentsPromotionsArticlePromotedList
@@ -1410,6 +1413,7 @@ hmt.pl##div.cdp-item:nth-of-type(1)
 iautomatyka.pl###custom_html-30
 icelandnews.is##.theiaStickySidebar
 ibielany.pl##div.l-row > .l-box--100.l-box > P
+id-24.pl##.banner1-wrap
 ideagrafika.pl###adswidget7-quick-adsense
 ideas2action.pl##.o_inner
 infokrakow24.pl##div.mom_custom_text.widget:nth-of-type(5)
@@ -3299,7 +3303,7 @@ tylkoastronomia.pl###block-block-16, .even.field-item > div
 tylkotorun.pl###fsp_light
 tylkomedycyna.pl###block-block-19, #block-block-16, .even.field-item > div
 tylkonauka.pl##.even.field-item > div
-tyna.info.pl###widget_sp_image-53
+tyna.info.pl###widget_sp_image-53, .no-display.lazyloaded.ls-is-cached
 tysol.pl##.rekl_box
 ulub.pl##.right_col
 ulub.pl##[class^="ads_szuk"]
@@ -3494,7 +3498,7 @@ www.bankier.pl#?#li.m-home-link-list__item:-abp-contains(/reklama/)
 www.bankier.pl##.o-home-ecom-box
 www.benchmark.pl##.product
 www.biala24.pl##[id^="cbox"]
-www.bolec.info##.baner_max
+www.bolec.info##.baner_max, div.bottom > .top_menu
 www.bolec.info##.center-cropped[style^="background-color:"]
 www.bolec.info##.picmax
 www.bolec.info##[class$="Board"]
