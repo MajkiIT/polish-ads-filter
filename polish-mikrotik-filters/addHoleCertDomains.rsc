@@ -2841,6 +2841,7 @@ add name="paczkomat24.uno" address="195.187.6.34" comment="addHoleCertDomains Ho
 add name="paczkomat24.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="paczkomat24pl.fun" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="paczkomatowa-zaplata-pl.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="paczkomaty-inpost.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="paczkomatyapp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="paczkonat.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="paczkownie.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
