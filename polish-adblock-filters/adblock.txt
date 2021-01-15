@@ -10,7 +10,7 @@
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
 ! Last modified: 15 January 2021
 ! Expires: 1 day
-! Version: 2021011501
+! Version: 2021011502
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,12 +18,13 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2021 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2021011501 aktualizacja: czw, 15 stycznia 2021, 10:43:00
+! v.2021011502 aktualizacja: czw, 15 stycznia 2021, 12:35:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
 ##a[href*="techmaniak.pl/www/gact/ckk.php"]
 .*sales*.pl/offers/$image
+/files/rek/$image,domain=siechnice.com.pl|rybnik.com.pl|tuwodzislaw.pl
 .pl/*/adds/$domain=~vvena.pl
 .pl/*/ads/$domain=~tubagliwic.pl|~m.olx.pl|~niezalezna.pl
 .pl/data/cameras/banner_$image,domain=tvmalbork.pl|tvsztum.pl|zulawyimierzeja24.pl|tvregionalna24.pl
@@ -473,6 +474,7 @@ bialystok.com.pl##div#showcase.w3-container
 biedronka.pl##.app-link
 bieganieuskrzydla.pl##.c-advertaisment
 bieganie.pl###slider1_container
+bielskirynek.pl##.sppb-addon-content > .sppb-addon-title:-abp-contains(reklama)
 bielski24.pl###JtfRightBox
 bielskiedrogi.pl###block-block-11
 bielskiedrogi.pl###block-views-reklamy-block-2
@@ -675,7 +677,7 @@ cowkrakowie.pl##.bdaia-header-e3-desktop, #custom_html-3, .advert--component
 cozadzien.pl##.box_bnewshome, .relative.w-100.mnr
 cpb.pl###artbaner
 crafted.pl#?#.ipsComment.ipsBox.cPost:-abp-has(.cAuthorPane_info > li:-abp-contains(/^Reklama$/))
-craftlista.pl##.footerStyle.mt-0
+craftlista.pl##.footerStyle.mt-0.stonefilip
 craftportal.pl###secondary
 craftportal.pl##.bbc_center
 craftportal.pl##A[alt] > IMG:last-child
@@ -1270,6 +1272,8 @@ glosgdyni.eu##.penci-pb-row.vc_row-fluid.vc_row_43491808.wpb_row.vc_row, .header
 glos24.pl##IMG[src^="/files/adv/"]
 glosgminny.pl###text-30
 gloskoninski.pl##.widget-area.hero-area
+glosmordoru.pl###panel-506-2-0-0
+glospedagogiczny.pl##.loaded.auto-pr-block__desktop.picture.lazy-image
 glostorunia.pl,glosrzeszowa.pl,glosrybnika.pl##.theiaStickySidebar > .widget.widget-4, .theiaStickySidebar > .widget.widget-3, .entry_content
 gloswielkopolski.pl##.partner
 gloswroclawia.pl##.column9.main-content.col_9_of_12.col > .row > .col_12_of_12.col > p
@@ -1284,6 +1288,7 @@ godzinyotwarcia24.pl##.anzeigenlabel
 google.com,google.pl##div[data-ismultirow="true"][data-id^="CarouselPLA-"] 
 goldenline.pl##[id^="adv_"]
 goleniowska.com##.modul_baner.modul, #section.golen-widget
+goleniowska.com##[href^="https://goleniowska.com/linkout/"]
 goleniowska.com##[id^="golen-slider-"]
 golfnews.pl##[href^="https://golfnews.pl/do/"]
 gomoney.pl###aunit
@@ -1522,7 +1527,7 @@ inwestycje.pl###show-message
 inwestycje.pl##.a468
 iotwock.info##div.l-row  > div.l-box--33.l-box > P, .l-col__item--sticky.l-col__item, li.c-news-list-item.c-news-list__item:nth-of-type(1)
 iotwock.info,egarwolin.pl##div.l-row > .l-box--100.l-box > p
-iotwock.info##div.l-box--25.l-box > p
+iotwock.info,tulegnica.pl##div.l-box--25.l-box > p
 iotwock.info##.l-box--66.l-box > p > A
 iotwock.info##.l-box--99.l-box > p > A > IMG
 ipon.pl###rekalama_PodMenu
@@ -2269,7 +2274,7 @@ noizz.pl##.adtop, .intext-ads-container
 noizz.pl##[class^="right"][class$="-floating-container"]
 nokiahacking.pl##.nh_ads
 nolesnica.pl,szczecinek.com##.l-box--100.l-box > p
-nowinynyskie.com.pl##div.l-box--33.l-box > p
+nowinynyskie.com.pl,tudeblin.pl##div.l-box--33.l-box > p
 novekino.pl##.right-baner.hidden-sm-down.panel > .canvas-box
 nowafarmacja.pl##[class^="bg-banner-wrapper"]
 nowagazeta.pl##.g-single > A > IMG[src^="http://nowagazeta.pl/wp-content/uploads/"]
@@ -2644,7 +2649,8 @@ progressforpoland.com,cyfrowaekonomia.pl,expresselblag.pl##.td-header-rec-wrap
 prokapitalizm.pl###text-4, #text-7, #custom_html-2
 promise.com.pl###ctl00_ReklamaBig1_pnlBaner
 promocja.mielec.pl##.image-under
-promocyjni.interia.pl##.l-app__content__paper-fold._qmandit > div, .l-app__content__paper-fold._qmandit, .l-app__content__paper-fold._95ssv1s, [id^="slot-"], .ap-ad.auto-promo-box.ap-pos-center
+promocyjni.interia.pl##.l-app__content__paper-fold._qmandit > div, .l-app__content__paper-fold._qmandit, .l-app__content__paper-fold._95ssv1s, .ap-ad.auto-promo-box.ap-pos-center
+promocyjni.interia.pl,kanonierzy.com##[id^="slot-"]
 promocyjni.pl##.autopromo-boxes-holder > .ap-ad.auto-promo-box
 promocyjni.pl##.autopromo-boxes-holder > .ap-pos-left
 promocyjni.pl##.autopromo-boxes-holder-2nd
@@ -3351,6 +3357,7 @@ upflix.pl##[class*="showmax"], [class$="-ad"]
 uploaduj.com##.UwOWM2OT
 uploaduj.com##.guestMessage
 uptimemadeeasy.com##.subscribep
+urania.edu.pl###block-reklamagoogleadsensewiadomosci, #block-reklamamoneteasygadzety
 urbnews.pl##.sb-widget:nth-of-type(5), .sb-widget:nth-of-type(6)
 v10.pl##DIV[style="width: 100%; background-color: rgb(0, 0, 0); margin: 0px; position: fixed; bottom: 0px; left: 0px; padding: 0px; height: 15px; line-height: 15px; text-align: center; color: rgb(255, 255, 255); z-index: 1000; font-family: Arial,Helvetica,sans-serif; font-size: 10px;"]
 v10.pl##[id^="newsltr1_"]
@@ -3749,6 +3756,7 @@ zeglarski.info##[class^="zegla-baner"]
 zegocina.in##.wpb_wrapper > .td-all-devices
 zepsute.pl###adv_main
 zespolmi.pl##a[href^="https://prisonwarsonline.com/"]
+zgizycka.pl##.dj-slide-image
 zielonanews.pl##A.gofollow > IMG
 zielonydziennik.pl,tygodnikkrag.pl,itfocus.pl,tsl-biznes.pl,trucks.com.pl,polska-ie.com,fleschmazowsza.com.pl##.a-single
 zielonyogrodek.pl###\39 LedEL64Yw
@@ -4092,6 +4100,8 @@ zywiecinfo.pl##.promoted
 ||naszarola.pl/wp-content/uploads/201*/*/baner*.jpg
 ||naszarola.pl/wp-content/uploads/201*/*/*-baner-1200na250.jpg
 ||naszarola.pl/wp-content/uploads/20*/*/*1200x250$image
+||naszarola.pl/wp-content/uploads/2020/01/nasza-rola-nowy.jpg$image
+||naszarola.pl/wp-content/uploads/20*/*/*-240-x-540-px.jpg$image
 ||naszawielkopolska.pl/wp-content/uploads/*/reklama$image
 ||nazwa.pl/a.php?$object-subrequest,domain=rmfon.pl
 ||nazwa.pl/video/$object-subrequest,media,domain=rmfon.pl
@@ -4181,7 +4191,6 @@ zywiecinfo.pl##.promoted
 ||shopeasy.by/redirect/$subdocument
 ||shoperia.pl/$subdocument
 ||shoplov.in^$third-party
-||siechnice.com.pl/files/rek/$image
 ||skiny.pl/*.gif$image
 ||sklep.gry-online.pl/imgs/tapeta/$image,domain=sklep.gry-online.pl
 ||smartadserver.com^
