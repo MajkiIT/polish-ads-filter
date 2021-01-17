@@ -2569,6 +2569,7 @@ add name="olx.pl-id41464578.com" address="195.187.6.34" comment="addHoleCertDoma
 add name="olx.pl-id423678123.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-id431571.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-id444333.icu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="olx.pl-id485333.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-id519249.icu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-id594259.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-id596492.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
