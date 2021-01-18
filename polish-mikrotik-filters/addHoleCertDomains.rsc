@@ -3168,6 +3168,7 @@ add name="pl-konto.mobi" address="195.187.6.34" comment="addHoleCertDomains Hole
 add name="pl-m.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pl-nadaj.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pl-olx.bank-payment.cf" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="pl-olx.guru" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pl-olx.live" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pl-olx.men" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="pl-olx.news" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
