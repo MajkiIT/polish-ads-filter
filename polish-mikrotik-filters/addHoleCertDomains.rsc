@@ -2564,6 +2564,7 @@ add name="olx.informacja-pl.info" address="195.187.6.34" comment="addHoleCertDom
 add name="olx.ink" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.manager.name" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.merch-pays.ru" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="olx.merchant-b.me" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.my-pay.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.my-payment.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.new-cash.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
