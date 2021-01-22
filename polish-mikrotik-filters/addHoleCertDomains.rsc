@@ -2673,6 +2673,7 @@ add name="olx.pl-logowanie.live" address="195.187.6.34" comment="addHoleCertDoma
 add name="olx.pl-logowanie.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-logowanie.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-logowanie.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="olx.pl-logowanie.store" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-logowanie.website" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-logowanie.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-m.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
