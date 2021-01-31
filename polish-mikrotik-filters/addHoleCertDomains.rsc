@@ -3027,6 +3027,7 @@ add name="olxpl.delivery-b.site" address="195.187.6.34" comment="addHoleCertDoma
 add name="olxpl.e-tracking.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olxpl.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olxpl.me" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="olxpl.moneta.world" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olxpl.one-merchant.ru" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olxpl.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olxpl.onlypays.su" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
