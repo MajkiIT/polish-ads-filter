@@ -8,9 +8,9 @@
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 20 February 2021
+! Last modified: 21 February 2021
 ! Expires: 1 day
-! Version: 202102202
+! Version: 2021022101
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2021 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.202102202 aktualizacja: sob, 20 lutego 2021, 17:20:00
+! v.2021022101 aktualizacja: nie, 21 lutego 2021, 11:10:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -4717,7 +4717,7 @@ cda-tv.online###clickfakeplayer
 !
 !28#--------------------------Rules for pages with random adv scripts regex------------!
 /apu.php?zoneid
-/\/[0-9a-zA-Z]{1,10}\.html$/$subdocument,domain=cdahd.co|cda-hd.cc|clipwatching.com|abcvideo.cc
+/\/[0-9a-zA-Z]{1,10}\.html$/$subdocument,domain=cdahd.co|cda-hd.cc|clipwatching.com|abcvideo.cc|streamtape.com
 /\/[a-z]{3,5}\.php\?zoneid=[0-9]{3,7}/$script
 /^http:\/\/((?!192\.168)(?!10\.)(?!172\.16)(?!172\.17)(?!172\.18)(?!172\.19)(?!172\.2)(?!172\.30)(?!172\.31)([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\/[a-zA-Z0-9]{30,}/$script,popup
 /^http:\/\/p[0-9]{6,10}\.[a-z]{5,10}\.com\/itab\/[a-z?=A-Z_0-9&]{10,}Zippyshare\.com[a-z0-9A-Z%.'-]{5,}/$popup
@@ -4743,6 +4743,9 @@ cda-tv.online###clickfakeplayer
 /^https?:\/\/[a-z]{3,15}\.[a-z]{3,4}\/[\w\W]{120,}/$subdocument,image,xmlhttprequest,domain=www.flashx.net|abcvideo.cc
 /^https?:\/\/[a-z]{3,15}\.pro\/[a-zA-Z0-9?=&]{10,}/$xmlhttprequest,domain=flashx.net|filman.cc
 /^https?:\/\/[a-z]{3,15}\.[a-z]{3,4}\/[\w\W]{10,20}/$popup,domain=www.flashx.net
+/^https?:\/\/[a-z0-9]{5,}\.(com|bid|online|top|club)\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9/]{4,}\.js/$script,domain=userload.co
+/^https?:\/\/[a-zA-Z0-9.]{7,}\.(com|net)\//$subdocument,domain=userload.co
+/^https?:\/\/[a-z]{3,10}\.[a-z]{3,4}\/[a-z]{1,10}\.(json|html)/$xmlhttprequest,domain=streamtape.com
 !
 !29#--------------------------Rules on tv streams element hiding rules------------!
 ##a[href^="http://affiliates.bet-at-home.com/processing/clickthrgh.asp"]
