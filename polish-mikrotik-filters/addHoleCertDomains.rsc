@@ -3193,6 +3193,7 @@ add name="olx.pl-logowanie.me" address="195.187.6.34" comment="addHoleCertDomain
 add name="olx.pl-logowanie.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-logowanie.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-logowanie.place" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="olx.pl-logowanie.rest" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-logowanie.shop" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-logowanie.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-logowanie.store" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
