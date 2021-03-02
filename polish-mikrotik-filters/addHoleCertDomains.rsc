@@ -3490,6 +3490,7 @@ add name="olx.pl-savepay.casa" address="195.187.6.34" comment="addHoleCertDomain
 add name="olx.pl-savepay.cyou" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-savepay.icu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-savepay.work" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="olx.pl-savepayouts.shop" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-savepayouts.surf" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-savepays.icu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-savepays.surf" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
