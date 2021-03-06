@@ -5641,6 +5641,7 @@ add name="uwaga72.you2.pl" address="195.187.6.34" comment="addHoleCertDomains Ho
 add name="uwagainfo24.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="uznanie-pomocy.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="uzyskac-olx.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="uzytkownik-zbiera.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="v5ikm5k3438cbsa.drjesri.ir" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="valecarnisrl.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="verification.libertrust.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
