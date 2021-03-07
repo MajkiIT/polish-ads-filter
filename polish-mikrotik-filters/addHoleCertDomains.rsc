@@ -9720,6 +9720,7 @@ add name="www.uwaga72.you2.pl" address="195.187.6.34" comment="addHoleCertDomain
 add name="www.uwagainfo24.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.uznanie-pomocy.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.uzyskac-olx.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.uzytkownik-zbiera.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.v5ikm5k3438cbsa.drjesri.ir" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.velica.com.br" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.verification.libertrust.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
