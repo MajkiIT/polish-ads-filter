@@ -3426,6 +3426,7 @@ add name="olx.pl-id1615399106.online" address="195.187.6.34" comment="addHoleCer
 add name="olx.pl-id1615399107.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-id1615399204.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-id1615403601.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="olx.pl-id1615480805.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-id1635359.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-id16363899.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-id16386538.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
