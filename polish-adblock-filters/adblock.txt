@@ -8,9 +8,9 @@
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 15 March 2021
+! Last modified: 19 March 2021
 ! Expires: 1 day
-! Version: 2021031503
+! Version: 2021031901
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2021 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2021031503 aktualizacja: pon, 15 marca 2021, 16:50:00
+! v.2021031901 aktualizacja: ptk, 19 marca 2021, 06:55:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -1711,7 +1711,7 @@ korsosanockie.pl,korso.pl##.no-bg.widget
 korsokolbuszowskie.pl#?#div.widget.row > .widget-custom.text-center:-abp-has(> div:-abp-contains(/Reklama/i))
 koscian.net##.span_15.col
 kosmetykaaut.pl##.ipsAreaBackground_light.ipsResponsive_inlineBlock.ipsResponsive_showDesktop > A > IMG
-koszalininfo.pl,wlkp24.info,wwl24.info,b2-biznes.pl,sporteuro.pl,metropoliabydgoska.pl,brzeg24.pl,pabianice.tv,zambrowiacy.pl,e-play.pl,wrc.net.pl,dziennik.walbrzych.pl,asta24.pl,nswiecie.pl,blogtransportowy.pl,portalprzemyski.pl,wzielonej.pl,mikrokontroler.pl,naszawielkopolska.pl,radio-wrzesnia.pl,life4style.pl,zachodniemazowsze.info,mlecznepodroze.pl,ziemiadebicka.pl,szydlowiecki.eu,skarzyski.eu,konecki24.pl,starachowicki.eu,swiatmotocykli.pl,magazyn.elubin.pl,topmejt.co.uk,starachowicka.pl,goral.info.pl,togethermagazyn.pl,inzynier-medyczny.pl,dzisiajwgliwicach.pl,radiowrzesnia.pl,kalisz24.info.pl,targowek.info,luzna24.pl,bobowa24.pl,dts24.pl,portaltenisowy.info,kolobrzeginfo.pl,bialogardinfo.pl,plock.fm,informatorbrzeski.pl,nadwisla24.pl,wwl24.pl##.g
+koszalininfo.pl,wlkp24.info,wwl24.info,b2-biznes.pl,sporteuro.pl,metropoliabydgoska.pl,brzeg24.pl,pabianice.tv,zambrowiacy.pl,e-play.pl,wrc.net.pl,dziennik.walbrzych.pl,asta24.pl,nswiecie.pl,blogtransportowy.pl,portalprzemyski.pl,wzielonej.pl,mikrokontroler.pl,naszawielkopolska.pl,radio-wrzesnia.pl,life4style.pl,zachodniemazowsze.info,mlecznepodroze.pl,ziemiadebicka.pl,szydlowiecki.eu,skarzyski.eu,konecki24.pl,starachowicki.eu,swiatmotocykli.pl,magazyn.elubin.pl,topmejt.co.uk,starachowicka.pl,goral.info.pl,togethermagazyn.pl,inzynier-medyczny.pl,dzisiajwgliwicach.pl,radiowrzesnia.pl,kalisz24.info.pl,targowek.info,luzna24.pl,bobowa24.pl,dts24.pl,portaltenisowy.info,kolobrzeginfo.pl,bialogardinfo.pl,plock.fm,informatorbrzeski.pl,nadwisla24.pl,wwl24.pl,agronews.com.pl##.g
 kronikamontrealska.com##.textwidget > A
 kryptoporadnik.pl##.stm_sidebar > p
 krytykapolityczna.pl##.kppromowidget.widget
@@ -2801,6 +2801,7 @@ regionalna.pl##a[href*="_redirect_"]
 regionfan.pl###dyzur
 reklama.pl##.banner-top
 remiza.com.pl,sporteuro.pl,nowy-sacz.info,radioradom.pl,kosmetologa.pl##.gofollow
+raportkolejowy.pl##[class^="acc_banner_linkd"], #reklamainfo
 reporter.pl##.dodaj.c
 reporter.pl##a[href^="/r/#"]
 reporter.pl##center
@@ -3025,7 +3026,8 @@ stalowemiasto.pl##.main-cbaner, .slot-1280px.slot, .header-parent > .container >
 starachowicka.pl##div.commercial
 starcom-ntt.com.pl###g-container-header > .g-grid
 stargard.com.pl###index-01b
-starosadeckie.info##.entry-content > p
+starosadeckie.info#?#.entry-content > p:-abp-contains(Reklama)
+starosadeckie.info##.entry-content > p > img
 starachowicki.eu##[id^="bills_in_rotation_1_"]
 starosadeckie.info##.front-top.rotator, .entry-content > div:nth-of-type(4), .front-medium.rotator
 start24.pl##table:nth-of-type(5) > tbody > tr:nth-of-type(1) > td:nth-of-type(7)
@@ -4032,6 +4034,7 @@ zywiecinfo.pl##.promoted
 ||ib.gazeta.pl/abc/$image,domain=polygamia.pl|plotek.pl
 ||ifotos.pl/img/$image,domain=supertydzien.pl|radiobonton.pl
 ||ilawa24.pl/photos/skyscraper.jpg$image
+||igrit.pl/extra-content/$image
 ||image.ceneostatic.pl/data/footer_widget/$image
 ||image2.ceneo.pl/data/banners/$image,domain=internet-komputery.blogspot.com
 ||img.lzrikate.com^
@@ -4108,7 +4111,7 @@ zywiecinfo.pl##.promoted
 ||mon.services.tvn.pl/xlinkplayer.js$script,domain=get.x-link.pl
 ||money.pl/*/ad/direct/*.jpg$image
 ||money.wpcdn.pl/*/ad/$image
-||moviads.pl^$domain=~moviads.pl|~gala.pl|~glamour.pl|~kobieta.pl
+||moviads.pl^$domain=~moviads.pl|~gala.pl|~glamour.pl|~kobieta.pl|~claudia.pl
 ||mrex.exs.pl^$third-party
 ||muratordom.pl/media/desktop/zpr_videos_web/js/video_blocker.js
 ||mybboard.pl/images/promo/$image
