@@ -4254,6 +4254,7 @@ add name="olx.pl-safeway.shop" address="195.187.6.34" comment="addHoleCertDomain
 add name="olx.pl-safeway.store" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-safeway.surf" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-safeway.work" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="olx.pl-sale.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-save.casa" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-save.surf" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-save.work" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
