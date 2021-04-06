@@ -86,6 +86,7 @@ burgerking.pl,bydgoszczak.pl,katowiczak.pl,viennahouse.com##body[style]:style(ov
 bydgoszczak.pl,kaliszak.pl,katowiczak.pl##.rodo, .rodo_layer
 calisia.pl###modals-container
 calisia.pl##.v--modal-block-scroll:style(overflow-y: auto !important;)
+canva.com##div[class]:first-child > div[class]:only-child > :is(h4, p) ~ :is(div, p) > span > a[href*="/policies/cookies-policy"]:upward(4)
 carrefour.pl##div[class][role="presentation"]:not([id]):has(.MuiPaper-root a[href="/polityka-prywatnosci"])
 carrefour.pl,kanga.exchange##body[style]:style(overflow: auto !important; padding-right: 0 !important;)
 cbdzoe.pl,premiumtech.pl##.swal2-container
@@ -449,18 +450,14 @@ wodapierrot.pl##.alertify
 wodapierrot.pl##html > body.ajs-no-overflow:style(overflow: auto !important;)
 wsensie.pl,wsensie.tv###policy
 wsensie.pl,wsensie.tv##.policy-open section:style(filter: none !important;)
-www.google.com,www.google.pl##body.QVCmK:style(position: static !important; overflow-y: visible !important;)
 www.google.com,www.google.pl##div[class][role="dialog"] > #cnsp:has( > div[class][aria-live="polite"]):upward(2)
 www.google.com,www.google.pl##header#gb + div[class^="gb"][data-cbh="consent.google.com"]
-www.google.com,www.google.pl##html.QVCmK:style(overflow-y: visible !important;)
 www.google.com,www.google.pl##html.gb_ea > body.gb_ea:style(height: auto !important;)
 www.google.com,www.google.pl##html.gb_ea:style(overflow-y: visible !important;)
-www.google.com,www.google.pl###lb > div[id^="_"] > div[class*=" "]:not([id]):empty:matches-css(opacity: 0.7)
-www.google.com,www.google.pl###lb > div[id^="_"] > div[class*=" "]:not([id]):empty:matches-css(opacity: 0.7):remove()
-www.google.com,www.google.pl###lb > div[id^="_"] > div[class*=" "]:not([id]):has( > span > div[role="dialog"] > #cnsw > iframe[src*="://consent.google.com"])
-www.google.com,www.google.pl###lb > div[id^="_"] > div[class*=" "]:not([id]):has( > span > div[role="dialog"] > #cnsw > iframe[src*="://consent.google.com"]):remove()
 www.google.com,www.google.pl###lb > div[id^="_"]:has(#cnskc)
 www.google.com,www.google.pl###promos > div[style^="background"]
+www.google.com,www.google.pl##+js(acis, document.cookie, /YES\+/)
+www.google.com,www.google.pl##+js(acis, navigator.userAgent, consentCookiePayload)
 www.google.com,www.google.pl##.srp #searchform[style^="top: 50px"]:style(top: 20px !important;)
 www.pekao.com.pl##body.is-reveal-open:style(overflow: auto !important; width: unset !important;)
 www.pekao.com.pl##.reveal-overlay:has(#gdpr-popup)
@@ -489,6 +486,12 @@ ztm.gda.pl###acceptRodo, .modal-backdrop
 !google.com,google.pl##+js(aeld, DOMContentLoaded, CONSENT)
 !pepper.pl##.cookies-message, .popover-cover[class*="fixed"]
 !porcelana.com.pl##+js(acis, onload, plików cookies)
+!www.google.com,www.google.pl##body.QVCmK:style(position: static !important; overflow-y: visible !important;)
+!www.google.com,www.google.pl##html.QVCmK:style(overflow-y: visible !important;)
+!www.google.com,www.google.pl###lb > div[id^="_"] > div[class*=" "]:not([id]):empty:matches-css(opacity: 0.7)
+!www.google.com,www.google.pl###lb > div[id^="_"] > div[class*=" "]:not([id]):empty:matches-css(opacity: 0.7):remove()
+!www.google.com,www.google.pl###lb > div[id^="_"] > div[class*=" "]:not([id]):has( > span > div[role="dialog"] > #cnsw > iframe[src*="://consent.google.com"])
+!www.google.com,www.google.pl###lb > div[id^="_"] > div[class*=" "]:not([id]):has( > span > div[role="dialog"] > #cnsw > iframe[src*="://consent.google.com"]):remove()
 /^https\:\/\/(www\.)?youtube(-nocookie)?\.com\/embed\//$3p,frame,object,redirect=click2load.html,domain=pinger.pl
 ||web.archive.org/web/*/http*://*.pl/*$generichide,important,domain=web.archive.org
 !
@@ -678,6 +681,7 @@ twojeankiety.pl##^.polPriv
 ustawlige.com,ustawmundial.weszlo.com##^#privacy-modal
 wiemy.to##^#banner:has(#popuplink):has(#inline:has-text(RODO))
 wtk.pl##^#GDPR-modal
+www.google.com,www.google.pl##^script:has-text(consentCookiePayload)
 zdajmyrazem.pl##^#gdprModal
 ztm.poznan.pl##^#PopUP
 !autostrada-a2.pl##^#rodo-box, #cookielaw-box
@@ -775,6 +779,7 @@ twojeankiety.pl$$.polPriv
 ustawlige.com,ustawmundial.weszlo.com$$#privacy-modal
 wiemy.to$$#banner[tag-content="RODO"]
 wtk.pl$$#GDPR-modal
+www.google.com,www.google.pl##^script[tag-content="consentCookiePayload"]
 zdajmyrazem.pl$$#gdprModal
 ztm.poznan.pl$$#PopUP
 @@||gawex.pl/assets/js/cookieinfo.js
