@@ -3765,6 +3765,7 @@ add name="olx.pl-autoryzacja.xyz" address="195.187.6.34" comment="addHoleCertDom
 add name="olx.pl-blog.help" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-buy.casa" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-buy.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="olx.pl-buy.shop" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-cash.casa" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-cash.cyou" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl-cash.icu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
