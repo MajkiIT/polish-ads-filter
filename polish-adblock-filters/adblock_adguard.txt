@@ -6,17 +6,17 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 30 November 2020
+! Last modified: 22 April 2021
 ! Expires: 1 day
-! Version: 2020113001
+! Version: 2021042201
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! Redundant Checker >> https://www.certyficate.it/redundant_checker/redundantRuleChecker.html
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-! Copyright © 2020 Certyficate IT
+! Copyright © 2021 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2020113001 aktualizacja: pon, 30 listopada 2020, 21:55:00
+! v.2021042201 aktualizacja: czw, 22 kwietnia 2021, 07:55:00
 !
 !
 ! alltube.tv
@@ -282,3 +282,10 @@ pl##li > div[id*="taboola"]:upward(li)
 !
 ! encyklopedia.pwn.pl
 encyklopedia.pwn.pl##div[style*="font-size"]:upward(div[class*="col"])
+!
+! filmy69.pl popup
+filmy69.pl##+js(acis, document.querySelectorAll, popMagic)
+filmy69.pl##.sidebar_right
+filmy69.pl##li.videoblock script[src^="https://a.realsrv.com/"]:upward(li)
+filmy69.pl##li.videoblock iframe[id][src*="/www/delivery/"]:upward(li)
+filmyporno.tv###playerOverlay
