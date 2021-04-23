@@ -15,7 +15,7 @@ jobs:
             var labels = context.payload.issue.labels;
             var labelSet = [
               {
-                "body": "Anty-adblock",
+                "body": "(Anty-adblock|adblock)",
                 "label": "adblock detect",
               },
               {
@@ -27,11 +27,11 @@ jobs:
                 "label": "kryptokoparki",
               },
               {
-                "body": "Komunikat dot. ciasteczek i polityki prywatności\/RODO",
+                "body": "(Komunikat dot. ciasteczek i polityki prywatności\/RODO|ciasteczka|rodo)",
                 "label": "cookies",
               },
               {
-                "body": "Element społecznościowy",
+                "body": "(Element społecznościowy|social)",
                 "label": "social filters",
               },
               {
@@ -51,9 +51,13 @@ jobs:
             var labelsToAdd = [];
 
             for (const i in labelSet) {
-              var re_add = new RegExp("- \\[[xX]] "+labelSet[i].body);
-              var re_remove = new RegExp("- \\[[ ]] "+labelSet[i].body);
+              var re_add = new RegExp("- \\[[xX]] "+labelSet[i].body, "i");
+              var re_remove = new RegExp("- \\[[ ]] "+labelSet[i].body, "i");
+              var re_add_fire = new RegExp("Kategoria: "+labelSet[i].body, "i");
               if(body.match(re_add) && !labels.some(e => e.name === labelSet[i].label)) {
+                labelsToAdd.push(labelSet[i].label);
+              }
+              if(body.match(re_add_fire) && !labels.some(e => e.name === labelSet[i].label)) {
                 labelsToAdd.push(labelSet[i].label);
               }
               if(body.match(re_remove) && labels.some(e => e.name === labelSet[i].label)) {
