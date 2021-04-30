@@ -5359,6 +5359,7 @@ add name="olx.pl.dostawa.website" address="195.187.6.34" comment="addHoleCertDom
 add name="olx.pl.dostawa.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl.dostawy-online.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl.dostawy-pay.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="olx.pl.get.oferta-payment.technology" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl.id-48134138.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl.informacija.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pl.informacija.digital" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
