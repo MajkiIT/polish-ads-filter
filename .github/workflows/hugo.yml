@@ -24,7 +24,7 @@ jobs:
           extended: true
 
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: '12.x'
 
@@ -32,7 +32,7 @@ jobs:
         run: |
           git rm -rf ./docs
           cd ./website
-          npm i -D --save autoprefixer@9 postcss-cli
+          npm i -D --save autoprefixer postcss-cli postcss
           hugo --minify
 
       - name: Deploy
