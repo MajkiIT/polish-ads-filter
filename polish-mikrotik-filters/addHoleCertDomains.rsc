@@ -2446,6 +2446,7 @@ add name="inpost.paczkonnat.app" address="195.187.6.34" comment="addHoleCertDoma
 add name="inpost.page" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="inpost.pay-pl.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="inpost.pay-web.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="inpost.payouts.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="inpost.pl-0rder.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="inpost.pl-bought.icu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="inpost.pl-bought.shop" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
