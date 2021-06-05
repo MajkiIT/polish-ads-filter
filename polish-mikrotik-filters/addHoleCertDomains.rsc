@@ -9220,6 +9220,7 @@ add name="steammcomunjty.com" address="195.187.6.34" comment="addHoleCertDomains
 add name="steanccmmunity.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="stearncommumiity.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="steawcomnunity.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="stemcommnunilty.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="sterlemo.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="stermccommunitty.ru" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="stg.charoll.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
