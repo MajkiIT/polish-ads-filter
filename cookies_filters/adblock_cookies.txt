@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies i EasyList/AdGuard Base!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2021.6.20.1
-! Last modified: Sun, 20 Jun 2021, 20:14 UTC+02
+! Version: 2021.6.25.0
+! Last modified: Fri, 25 Jun 2021, 19:28 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -18,7 +18,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2021 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2021.6.20.1 aktualizacja: nie, 20 cze 2021, 20:14 UTC+02
+! v.2021.6.25.0 aktualizacja: pią, 25 cze 2021, 19:28 UTC+02
 !
 !
 ! Specyficzne reguły ukrywające
@@ -37,6 +37,7 @@
 4lapki.eu,chinahomelife247.eu,czechofil.com,ekskluzywnymenel.com,jarek-kefir.org,kuchniaubietki.home.blog,muzykoholicy.com,ninawum.com,polonia.net,programistka.com,rebe1scum.com,rowery.org,szukajacslonca.com,torun24.tv,wordpress.com###eu-cookie-law
 4lifedirect.pl##.cookie-window
 4lomza.pl,ubojnia-skad.pl###komunikat_rodo
+4mens.pl,korwin24.pl##.eu-cookies-bar-cookies-bar
 4myart.eu###xcookies
 4people.pl,emilbus.com.pl,marketingdlaludzi.pl###window_4cookies
 4prm.pl###sticky_eprivacy
@@ -667,7 +668,7 @@ demeco.pl###copyrights > #foot_col_5
 demo.eskok.pl#?#article > table p:-abp-has(strong:-abp-contains(plików cookie))
 demo.kasastefczyka.pl#?#.artToRight:-abp-has(strong:-abp-contains(plików cookie))
 demo.ncbkf.pl###cookup
-denley.pl##.ck-popup.cookiepopup
+denley.pl##.dialog_wrapper_cookie, #dialog_cover
 denon.pl##.cookiestrip
 denso.com,gearbest.com,gorlice.tv,internationalpaper.com##.cookiePolicy
 dentalcare.pl,pampers.pl##.dc-cookie-consent
@@ -869,6 +870,8 @@ eostroleka.pl###cookiesRodo
 epicgames.com###euCookie
 epiotrkow.pl##.user_politic
 epiotrkow.pl,glosregionu.pl,ziemiagorowska.pl,ziemialeszczynska.pl,ziemiawolsztynska.pl,zw.pl##.user_politic_pop
+epoznan.pl##.rodo-info-box
+epoznan.pl##.rodo-info-box-overlay
 epoznan.pl,filmlab.com.pl,lech.tv,obiezyswiat.org###rodo-info-box
 epuap.gov.pl###specialbox-info
 epuap.gov.pl##.footer-info
@@ -984,6 +987,7 @@ feromony.pl###btmcks
 ferpay.com,nomoreransom.org,powiat-piaseczynski.info##.cookieinfo
 feryster.pl###cookie-accpet
 festiwaldzieciecy.pl,mbeszczecin.pl###bpagencyCookieAll
+festiwalkolorow.pl###cms-cookie-bar
 festo.com###eucp_container
 fhunetcom.pl###notice-alert
 fiatklubpolska.pl#?##navbar_notice_1.restore > center:nth-of-type(1):-abp-contains(cookies)
@@ -1448,9 +1452,9 @@ konsbud-hifi.com.pl##.sticky-footer
 konskowola.info.pl###privacy_info_content
 konskowola.info.pl###privacy_info_overlay
 korepetycje.edu.pl,niania.pl##.cookies_message_bar
-korwin24.pl##.eu-cookies-bar-cookies-bar
 koscian.net##.zgoda_popup
 kosmetyki.fr###nscookie
+kotlet.tv##.global-wrapper > div[style*="background-color"]
 koty.pl,psy.pl###infoPopup
 kozak.pl###cookie_inf_o
 kprlegionowo.pl###sb-container
@@ -1502,6 +1506,7 @@ kzgw.gov.pl###jcemediabox-popup-page
 k-mag.pl#?##modals-container:-abp-contains(RODO)
 laboratoria.net#?##colorbox:-abp-has(#rodoPopupClose)
 laczynaspilka.pl##app-common-settings-rule
+lafaktoria.pl##.region-cookies
 lagardere-tr.pl###madcoders-cookies-info-bar-wrapper-back
 lagardere-tr.pl,wakacyjnipiraci.pl###tarteaucitronAlertBig
 lahtipro.pl,profix.com.pl,proline-tools.com.pl,tryton-tools.pl###alert_bar
@@ -1695,6 +1700,7 @@ mirjan24.pl###window_overlay
 mirpol-bis.pl##.message-popup-background
 missplanner.pl##.page--notification
 mistama.com,sklep.agro-plus.com.pl,sklepkrzyzanek.pl###change_terms_message
+mistrzbranzy.pl##.rodo-dialog-confirm, .rodo-dialog-confirm + .ui-widget-overlay
 mitsubishielectric.com##.cookie-hint
 mittendrin.pl##.bpcms-cookie-bar
 mixmedia.pl##div#cook_info
@@ -3291,7 +3297,7 @@ pl###cookie-popup-content:not(body):not(html)
 pl###cookie-popup-outer:not(body):not(html)
 pl###cookie-popup-wrapper:not(body):not(html)
 pl###cookie-popup:not(body):not(html)
-pl###cookie-popup::not(head) ~ .modal-backdrop:not(body)
+pl###cookie-popup:not(head) ~ .modal-backdrop:not(body)
 pl###cookie-privacy:not(body):not(html)
 pl###cookie-terms:not(body):not(html)
 pl###cookie-warning:not(body):not(html)
