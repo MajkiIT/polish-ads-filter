@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies i EasyList/AdGuard Base!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2021.7.4.0
-! Last modified: Sun, 04 Jul 2021, 22:28 UTC+02
+! Version: 2021.7.4.1
+! Last modified: Sun, 04 Jul 2021, 22:39 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -18,7 +18,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2021 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2021.7.4.0 aktualizacja: nie, 04 lip 2021, 22:28 UTC+02
+! v.2021.7.4.1 aktualizacja: nie, 04 lip 2021, 22:39 UTC+02
 !
 !
 ! Specyficzne reguły ukrywające
@@ -1631,6 +1631,7 @@ masz.eu,wikar.com.pl##.popupContent
 matematykainnegowymiaru.pl##.popup_cookie_contener_main
 mat-dom.pl##.info_rodo
 maximedia.pl###cookiesinformation
+maxizoo.pl##body:not(.no-scrolling) .cookie-banner
 maxpremiumburgers.pl###main .infoBanner
 max-dywanik.pl###stopka-sl
 mazda.pl##div[class^="mxp-main-cookie-panel-container-"]
@@ -3804,6 +3805,8 @@ goldenline.pl#@#.cookie-modal:not(body):not(html):not(.in):not(.mfp-hide)
 gtv.com.pl#@##panel_cookie_dol
 kpcen-torun.edu.pl,ranking.perspektywy.pl#@##cookieModal:not(.countryCookieModalContainer):not(.idcac)
 lomza.pl#@##komunikat-cookie
+maxizoo.pl#@##cookie-banner
+maxizoo.pl,puratos.pl#@#.cookie-banner:not(body):not(html)
 mcdonalds.pl#@#body > .cookies[style*="display"]
 mcdonalds.pl#@#.cookies-container:not(body):not(html)
 mcdonalds.pl#@#.cookies-info:not(body):not(html)
@@ -3824,7 +3827,6 @@ poradykomputerowe.pl,portaloswiatowy.pl#@#.overlay-cookie:not(body):not(html)
 poradykomputerowe.pl,portaloswiatowy.pl#@#.popup-cookie:not(body):not(html)
 pracuj.pl#@#header > div:last-child:not([data-test])
 puratos.pl#@##cookieBannerModal
-puratos.pl#@#.cookie-banner:not(body):not(html)
 ranking.perspektywy.pl#@##cookieModal ~ .modal-backdrop
 straganzdrowia.pl#@##cookie-law-info-bar ~ .cli-modal-backdrop
 toteraz.pl#@##cookie-preferences
@@ -3856,6 +3858,7 @@ gry.pl,shinden.pl,wykop.pl#@#div[class^="app_gdpr"]
 gtv.com.pl#@#.panel_cookie:not(body):not(html)
 hbogo.pl#@#.cookie-consent:not(body):not(html):not(.paragraph)
 kupbilecik.pl,wins.pl#@#.cookie-container:not(body):not(html)
+maxizoo.pl#@##cookie-banner:not(body):not(html)
 mcdonalds.pl#@#.cookies-container:not(body):not(html)
 mcdonalds.pl#@#.cookies-info:not(body):not(html)
 mcdonalds.pl,ose.gov.pl#@#.cookies:not(body):not(html):not(#page):not(#container):not(.wrapper):not(.popup-newsletter):not(.js-cookies)
