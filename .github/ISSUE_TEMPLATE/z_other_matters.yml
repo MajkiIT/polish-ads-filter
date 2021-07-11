@@ -1,11 +1,11 @@
 name: Inne sprawy (np. zbiorcze zgłoszenie paru różnych elementów)
-description: Other matters (e.g. collective reporting of several different elements) 
+description: Other matters (e.g. collective reporting of several different elements)
 body:
   - type: markdown
     attributes:
       value: |
         Dziękujemy za zgłoszenie na rzecz Polskich Filtrów do Adblocka, uBlocka Origin i AdGuarda!
-        Thanks for reporting to Polish Filters for AdBlock, uBlock and AdGuard.
+        Thanks for reporting to Polish Filters for AdBlock, uBlock and AdGuard!
   - type: checkboxes
     id: problemType
     attributes:
@@ -33,11 +33,16 @@ body:
         Insert here a direct link to the page, where an element, an ad or a bug occurs.
       placeholder: http://www.iloveads.wp.pl/new
       render: markdown
-  - type: input
+  - type: dropdown
     id: OS
     attributes:
       label: System operacyjny (Operating system)
-      placeholder: Windows 11
+      options:
+        - Linux/Unix
+        - Windows
+        - macOS
+        - Android
+        - iOS
     validations:
       required: true
   - type: input
@@ -51,19 +56,18 @@ body:
     id: adblocker
     attributes:
       label: Bloker (Blocker)
-      placeholder: uBlock Origin 1.35.2
+      placeholder: uBlock Origin 1.16.4.29
     validations:
       required: true
   - type: textarea
     id: myfilters
     attributes:
-      label: Używane filtry (Used filter lists)
+      label: Używane listy filtrów (Used filter lists)
       value: |
         1. EasyList
         2. Oficjalne Polskie Filtry do AdBlocka, uBlocka Origin i AdGuarda <!--(Official Polish Filters For AdBlock, uBlock Origin and AdGuard)-->
         3. 
         4. 
-        5. 
     validations:
       required: true
   - type: textarea
@@ -80,12 +84,12 @@ body:
         Zrzuty ekranu, etapy odtworzenia problemu (co doprowadziło do błędu) albo twoja metoda rozwiązania problemu.
 
         Screenshots, the steps to reproduce the problem (which led to the error) or your method of solving the problem.
-      placeholder: Proszę pana tych reklam jest cała masa, wyskakują też jakieś okienka i od tego wszystkiego głowa mnie boli, a komputer wariuje...
+      placeholder: Proszę pana, tych reklam jest cała masa, wyskakują też jakieś okienka z informacją o słodyczach i od tego wszystkiego głowa mnie boli, a komputer wariuje... .
   - type: checkboxes
     id: terms
     attributes:
-      label: Przewodnik dot. składania raportów (The guide about submitting reports)
+      label: Zasady pisania (Writing rules)
       options:
         - label: |
-            Zapoznałem się z [przewodnikiem dot. składania raportów](https://github.com/MajkiIT/polish-ads-filter/blob/master/CONTRIBUTING.md) (I've read the guide about submitting reports)
+            Zapoznałem się z [przewodnikiem dot. składania raportów](https://github.com/MajkiIT/polish-ads-filter/blob/master/CONTRIBUTING.md) i [netykietą](https://pl.wikipedia.org/wiki/Netykieta) (I've read the [GitHub Community Guidelines](https://docs.github.com/en/github/site-policy/github-community-guidelines))
           required: true
