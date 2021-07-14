@@ -4495,6 +4495,7 @@ add name="items-auction.pl" address="195.187.6.34" comment="addHoleCertDomains H
 add name="ivenjobber.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="iverifyids.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="iwiadomoscigwalt.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="iyeuryetts.firebaseapp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="izlogin-webmail.web.app" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="j6xl1kzht9pk5zw.asanrahvisa.ir" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="jacpuz.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
