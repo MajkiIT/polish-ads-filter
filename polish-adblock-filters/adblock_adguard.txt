@@ -1,21 +1,22 @@
 ! Title: Official Polish filters for AdBlock, uBlock Origin & AdGuard - supplement for AdGuard
 ! Oficjalne polskie filtry do AdBlocka, uBlocka Origin i AdGuarda - uzupełnienie do AdGuarda
 ! Codename: Official - supplement for AdGuard
-! Collaborators: F4z, FadeMind, hawkeye116477
+! Collaborators: F4z, xxcriticxx, hawkeye116477, KonoromiHimaries
 ! Homepage: https://www.certyficate.it/
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 15 October 2019
+! Last modified: 24 April 2021
 ! Expires: 1 day
-! Version: 2019101501
+! Version: 2021042401
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
+! Redundant Checker >> https://www.certyficate.it/redundant_checker/redundantRuleChecker.html
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-! Copyright © 2019 Certyficate IT
+! Copyright © 2021 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2019101501 aktualizacja: wto, 15 października 2019, 19:25:00
+! v.2021042401 aktualizacja: sob, 24 kwietnia 2021, 16:25:00
 !
 !
 ! alltube.tv
@@ -105,8 +106,8 @@ originals24.pl##table > tbody > tr > td > font:contains(Reklama)
 benchmark.pl###bannerDBB:style(height: 10px !important;)
 !
 ! dvbtmap.eu
-dvbtmap.eu#$##content-container { margin-top: 0px!important; }
-dvbtmap.eu#$##leftCol { top: 51px!important; }
+dvbtmap.eu#$##content-container2 { margin-top: 0px!important; }
+dvbtmap.eu#$##leftCol2 { top: 51px!important; }
 !
 ! darmowa-telewizja.info & privatestream.tv
 ||privatestream.tv/logo.php
@@ -142,6 +143,10 @@ nslowo.pl###gkTopBar:style(position: static !important;)
 ! portel.pl
 portel.pl##body[style^="background:"]:style(background-image: none!important;)
 !
+! repairlab.pl
+repairlab.pl##sgpb-popup-dialog-main-div-wrapper, .sgpb-popup-overlay
+repairlab.pl##.sgpb-overflow-hidden, sgpb-overflow-hidden-body:style(overflow: auto !important;)
+!
 ! dobreprogramy.pl
 www.dobreprogramy.pl###phContent_downloaderHint
 www.dobreprogramy.pl##article > .hint:has(a[href$="/Czyszczenie-systemu-z-niechcianego-oprogramowania,News,61336.html"])
@@ -163,8 +168,17 @@ milionkobiet.pl##.gallery-embed-list-images:style(height: auto !important;)
 ! lowcygier.pl
 lowcygier.pl##body:style(background-image: none !important;)
 !
+! Interia
+mamdziecko.interia.pl###content .brief-list-items .brief-placeholder-list:style(height: 320px)
+www.interia.pl##+js(remove-attr.js, scrolling, iframe#sg-iframe[scrolling="no"])
+poczta.interia.pl#$##mainApp #sitebar, #mainApp #sitebar form { width: 100% !important; max-width: 100% !important }
+!
 ! money.pl
 money.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
+money.pl,moneyv.wp.pl###app > div[data-reactroot] > div[class]:matches-css(background-image: /v\.wpimg\.pl\/MjAxOTA/)
+!
+! purepc.pl
+purepc.pl##html > body:style(background-image: none!important; background-color: #d5d5d5!important;)
 !
 ! filmweb.pl
 filmweb.pl##+js(abort-current-inline-script.js, decodeURIComponent, newAdblockBoardDisplayed)
@@ -173,8 +187,13 @@ filmweb.pl##body[class]:not(.rodo):style(overflow: auto !important;)
 ! polsatnews.pl
 polsatnews.pl###body > div > a[style="position: absolute; top: 0; left: 0; z-index: 0; width: 100%; height: 1000px;"]
 !
+! stooq.*
+stooq.pl,stooq.com##:xpath(//*[@align="center"]/*[@id][contains(text(),"REKLAMA")])
+!
+! rabatio.com
+rabatio.com#%#//scriptlet('abort-on-property-read', 'focus')
+!
 ! style()
-2conv.com,flvto.biz##.banner:style(visibility: hidden !important; display: block !important; height: 0 !important;)
 24pr.pl###primary-sidebar:style(width: auto !important;)
 booklips.pl##.js:style(background-image: none !important;)
 cartests.net###td-outer-wrap > .td-header-wrap:style(margin-bottom: 0 !important;)
@@ -258,3 +277,18 @@ powiatowa.info##.latestnews:style(-moz-column-count: 2; -moz-column-gap: 20px; -
 !
 ! newsweek / Onet
 newsweek.pl###onet-ad-top
+! https://github.com/MajkiIT/polish-ads-filter/issues/17140
+pl##li > div[id*="taboola"]:upward(li)
+!
+! encyklopedia.pwn.pl
+encyklopedia.pwn.pl##div[style*="font-size"]:upward(div[class*="col"])
+!
+! filmy69.pl popup
+filmy69.pl##+js(acis, document.querySelectorAll, popMagic)
+filmy69.pl##.sidebar_right
+filmy69.pl##li.videoblock script[src^="https://a.realsrv.com/"]:upward(li)
+filmy69.pl##li.videoblock iframe[id][src*="/www/delivery/"]:upward(li)
+filmyporno.tv###playerOverlay
+!
+! trojmiasto.pl
+/v\.s\-trojmiasto\.pl\/flv\/\d+/\d+.*(peugeot|preroll|_muz_).*960x\.mp4$/$media,redirect=noopmp4-1s,domain=trojmiasto.*

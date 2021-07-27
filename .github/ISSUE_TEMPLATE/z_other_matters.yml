@@ -1,0 +1,95 @@
+name: Inne sprawy (np. zbiorcze zgłoszenie paru różnych elementów)
+description: Other matters (e.g. collective reporting of several different elements)
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Dziękujemy za zgłoszenie na rzecz Polskich Filtrów do Adblocka, uBlocka Origin i AdGuarda!
+        Thanks for reporting to Polish Filters for AdBlock, uBlock and AdGuard!
+  - type: checkboxes
+    id: problemType
+    attributes:
+      label: Typ elementu lub problemu (The type of item or problem)
+      description: |
+        W przypadku pomyłki co do typu, proszę odznaczyć checkbox (przycisk wyboru) lub usunąć x i wstawić spację zamiast niego.
+
+        In case of a mistake as to the type, please uncheck the checkbox or delete x and insert a space instead.
+      options:
+        - label: Reklama (Advert)
+        - label: Wydobywanie kryptowalut (Cryptocurrency mining)
+        - label: Anty-adblock (Anti-adblock wall)
+        - label: Komunikat dot. ciasteczek i polityki prywatności/RODO (Message about cookies and GDPR/privacy policy)
+        - label: Element społecznościowy (Social network element)
+        - label: Pi-hole, hosts i spółka (Pi-hole, hosts & co)
+        - label: Błąd (Bug, mistake, no-no)
+        - label: Pytanie (Question)
+  - type: textarea
+    id: specificLink
+    attributes:
+      label: Link bezpośredni (Specific link)
+      description: |
+        Wstaw tutaj link bezpośredni do strony, na której występuje element, reklama albo błąd.
+
+        Insert here a direct link to the page, where an element, an ad or a bug occurs.
+      placeholder: http://www.iloveads.wp.pl/new
+      render: markdown
+  - type: dropdown
+    id: OS
+    attributes:
+      label: System operacyjny (Operating system)
+      options:
+        - Linux/Unix
+        - Windows
+        - macOS
+        - Android
+        - iOS
+    validations:
+      required: true
+  - type: input
+    id: webBrowser
+    attributes:
+      label: Przeglądarka internetowa (Web browser)
+      placeholder: Pale Moon 29.2.1
+    validations:
+      required: true
+  - type: input
+    id: adblocker
+    attributes:
+      label: Bloker (Blocker)
+      placeholder: uBlock Origin 1.16.4.29
+    validations:
+      required: true
+  - type: textarea
+    id: myfilters
+    attributes:
+      label: Używane listy filtrów (Used filter lists)
+      value: |
+        1. EasyList
+        2. Oficjalne Polskie Filtry do AdBlocka, uBlocka Origin i AdGuarda <!--(Official Polish Filters For AdBlock, uBlock Origin and AdGuard)-->
+        3. 
+        4. 
+    validations:
+      required: true
+  - type: textarea
+    id: otherExtensions
+    attributes:
+      label: Inne rozszerzenia (Other extensions)
+      placeholder: Polish Cookie Consent 1.43.5
+  - type: textarea
+    id: additionalInfo
+    attributes:
+      label: |
+        Dodatkowe informacje mogące mieć znaczenie (Additional information that may be relevant)
+      description: |
+        Zrzuty ekranu, etapy odtworzenia problemu (co doprowadziło do błędu) albo twoja metoda rozwiązania problemu.
+
+        Screenshots, the steps to reproduce the problem (which led to the error) or your method of solving the problem.
+      placeholder: Proszę pana, tych reklam jest cała masa, wyskakują też jakieś okienka z informacją o słodyczach i od tego wszystkiego głowa mnie boli, a komputer wariuje... .
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Zasady pisania (Writing rules)
+      options:
+        - label: |
+            Zapoznałem się z [przewodnikiem dot. składania raportów](https://github.com/MajkiIT/polish-ads-filter/blob/master/CONTRIBUTING.md) i [netykietą](https://pl.wikipedia.org/wiki/Netykieta) (I've read the [GitHub Community Guidelines](https://docs.github.com/en/github/site-policy/github-community-guidelines))
+          required: true
