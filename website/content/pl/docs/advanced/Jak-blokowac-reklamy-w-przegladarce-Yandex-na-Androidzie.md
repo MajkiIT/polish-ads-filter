@@ -57,33 +57,6 @@ Ta procedura jest bardzo prosta. Otóż po zainstalowaniu [Kiwi Browser](https:/
 2. Wybierz filtry, jakie chcesz. A jeśli 2 polskie ci nie wystarczają, to wejdź na [majkiit.github.io/polish-ads-filter](https://majkiit.github.io/polish-ads-filter/) i zasubskrybuj dodatkowe.
 3. Gotowe!
 
-## C) ![Chromium]Ungoogled Chromium + ![uBO]uBlock Origin
-<hr><blockquote><details><summary>Wersja wideo</summary><br>
-{{< youtube 9k6tvyyowk0 >}}
-</details></blockquote><hr>
-
-{{% pageinfo %}}
-⚠️ **UWAGA!!! ⚠️ W tej przeglądarce obsługa rozszerzeń jest eksperymentalna.**
-{{% /pageinfo %}}
-
-Pewnie większość osób po zobaczeniu nazwy tej przeglądarki, zaczęłaby jej szukać w Sklepie Play, cóż niestety muszę was rozczarować, trzeba będzie się trochę więcej napracować, bo jej tam nie znajdziecie 😊.
-
-Jeżeli nie masz aplikacji [F-Droid](https://f-droid.org) (dla niewtajemniczonych, jest to alternatywny sklep z wyłącznie otwarto-źródłowymi aplikacjami):
-1. Pobierz aplikację [F-Droid](https://f-droid.org/F-Droid.apk).
-2. Wejdź do powiadomień i dotknij pobrany plik apk, a następnie dotknij **zainstaluj**, a jeżeli dostaniesz informację o instalowaniu z nieznanego źródła, to skorzystaj z poradnika dostępnego na [android.com.pl](https://android.com.pl/porady/250018-aplikacje-z-nieznanych-zrodel/).
-
-Następnie, jeżeli już masz [F-Droid](https://f-droid.org):
-1. Skopiuj [link](https://www.droidware.info/fdroid/repo?fingerprint=2144449AB1DD270EC31B6087409B5D0EA39A75A9F290DA62AC1B238A0EAAF851).
-2. Włącz F-Droid, wejdź w `Ustawienia => Repozytoria`, a następnie dotknij **+** i **dodaj**.
-3. Wyjdź z ustawień i wybierz **Ostatnie**, a następnie dotknij **lupę** i wpisz **Ungoogled Chromium Ext**.
-4. Kliknij w białą ikonę z niebieską strzałką w dół, by pobrać **Ungoogled Chromium Extensions**, a następnie **zainstaluj**.
-5. Uruchom **Ungoogled Chromium**, wpisz w pasek `chrome://flags/` i potwierdź Enterem.
-6. Wpisz `#extension-mime-request-handling` w pole wyszukiwania, następnie wybierz **Always prompt for install** zamiast **Default** i dotknij **Relaunch**.
-7. Wejdź na https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm, następnie naciśnij na `3 kropki => wersja na komputer`, dotknij **Add to Chromium** i potwierdź, że chcesz zainstalować.
-8. Wejdź na `chrome://extensions/`, potem kliknij w **szczegóły** obok uBO, a następnie **opcje rozszerzeń**.
-9. Wybierz filtry, jakie chcesz. A jeśli 2 polskie ci nie wystarczają, to wejdź na [majkiit.github.io/polish-ads-filter](https://majkiit.github.io/polish-ads-filter/) i zasubskrybuj dodatkowe (obecnie niestety trzeba ręcznie kopiować linki).
-10. Gotowe!
-
 ## D) ![Webview]Dowolna przeglądarka + ![AG]AdGuard
 1. Wejdź na https://adguard.com/pl/welcome.html i kliknij **Pobierz**.
 2. Wejdź do powiadomień i dotknij pobrany plik apk, a następnie dotknij **zainstaluj**, a jeżeli dostaniesz informację o instalowaniu z nieznanego źródła, to skorzystaj z poradnika dostępnego na [android.com.pl](https://android.com.pl/porady/250018-aplikacje-z-nieznanych-zrodel/).
@@ -92,7 +65,6 @@ Następnie, jeżeli już masz [F-Droid](https://f-droid.org):
 5. Dotknij `3 kropki => ustawienia => blokowanie treści => filtry` i wybierz to, co chcesz, zwracając szczególną uwagę na specyficzne językowe.
 6. Gotowe!
 
-[Chromium]: https://cdnjs.cloudflare.com/ajax/libs/browser-logos/69.0.1/chromium/chromium_24x24.png "Ungoogled Chromium"
 [Kiwi]: https://raw.githubusercontent.com/scribblemaniac/browser-logos/41d6542b2d122f5b65d8f259cf5ffbdb3b89831d/src/kiwi/kiwi_24x24.png "Kiwi Browser"
 [Yandex]: https://cdnjs.cloudflare.com/ajax/libs/browser-logos/69.0.1/yandex/yandex_24x24.png "Yandex Browser"
 [Webview]: https://cdnjs.cloudflare.com/ajax/libs/browser-logos/69.0.1/android-webview/android-webview_24x24.png
