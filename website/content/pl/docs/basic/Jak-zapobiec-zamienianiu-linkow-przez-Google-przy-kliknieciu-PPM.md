@@ -8,15 +8,14 @@ Jak zapewne zauważyliście, jeśli wyszukacie coś przez Google i klikniecie to
 ```
 https://www.google.pl/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwicuJ6puKTVAhUhOpoKHYkgDloQFggtMAA&url=http%3A%2F%2Fsatkurier.pl%2F&usg=AFQjCNEeq3O247Wi2FAi-bpj93P2S1Sjxw
 ```
-Na szczęście da się temu zapobiec, wystarczy tylko zainstalować magiczne rozszerzenie **Google search link fix**.
+Na szczęście da się temu zapobiec. Jest na to kilka sposobów:
 
-|Przeglądarka | Link do rozszerzenia |
-| ----------- | ------- |
-| ![Firefox]Firefox/![Waterfox]Waterfox | [**addons.mozilla.org**/pl/firefox/addon/google-search-link-fix](https://addons.mozilla.org/pl/firefox/addon/google-search-link-fix "https://addons.mozilla.org/pl/firefox/addon/google-search-link-fix") |
-| ![Chrome]Chrome/![Chromium]Chromium/![Vivaldi]Vivaldi | [**chrome.google.com/webstore**/detail/google-search-link-fix/cekfddagaicikmgoheekchngpadahmlf](https://chrome.google.com/webstore/detail/google-search-link-fix/cekfddagaicikmgoheekchngpadahmlf "https://chrome.google.com/webstore/detail/google-search-link-fix/cekfddagaicikmgoheekchngpadahmlf") |
-| ![Opera][](Chr)Opera | [**addons.opera.com**/pl/extensions/details/google-search-link-fix](https://addons.opera.com/pl/extensions/details/google-search-link-fix "https://addons.opera.com/pl/extensions/details/google-search-link-fix") |
+a) Jeżeli posiadacie rozszerzenie uBlock Origin, to wystarczy jedynie zasubskrybować listę [uBlock Filters - Annoyances](ubo:subscribe?location=https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt&title=uBlock%20filters%20%E2%80%93%20Annoyances).
 
-![Przed/po](http://i.imgur.com/wL13ARK.jpg "Przed/po")
+b) Możecie zainstalować rozszerzenie [ClearURLs](https://docs.clearurls.xyz/latest/#download).
+
+c) Możecie wejsć na [urlclean.com](https://urlclean.com/) i wkleić tam link z Google, by zamienić go na właściwy.
+
 
 [Firefox]: https://cdnjs.cloudflare.com/ajax/libs/browser-logos/46.1.0/firefox/firefox_24x24.png "Mozilla Firefox"
 [Waterfox]: https://cdnjs.cloudflare.com/ajax/libs/browser-logos/46.1.0/waterfox/waterfox_24x24.png "Waterfox"
