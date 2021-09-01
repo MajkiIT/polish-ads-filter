@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista Fanboy's Social Blocking List i EasyList/AdGuard Base!
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2021.8.29.0
-! Last modified: Sun, 29 Aug 2021, 21:37 UTC+02
+! Version: 2021.9.1.0
+! Last modified: Wed, 01 Sep 2021, 23:37 UTC+02
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2021 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2021.8.29.0 aktualizacja: nie, 29 sie 2021, 21:37 UTC+02
+! v.2021.9.1.0 aktualizacja: śro, 01 wrz 2021, 23:37 UTC+02
 !
 !
 !#safari_cb_affinity(social)
@@ -193,6 +193,7 @@ pl##.facebook-popup
 ~pl###wysZakladki > #tw:lang(pl)
 ~pl###wysZakladki > #yt:lang(pl)
 ~pl##.box_facebooklike_wrap:lang(pl)
+~pl##.google-like-box:lang(pl)
 ~pl##.kac-sm-blog:lang(pl)
 ~pl##.kac-sm-fb:lang(pl)
 ~pl##.kac-sm-gplus:lang(pl)
@@ -555,6 +556,7 @@ pl##.gk-icon-twitter
 pl##.gmspr-footer-facebook
 pl##.gmspr-footer-gplus
 pl##.googleplus_link
+pl##.google-like-box
 pl##.gplus-like-button
 pl##.group.box-social-counter
 pl##.has-shares.ng-scope
@@ -1279,6 +1281,8 @@ avlab.pl##li:nth-child(-n+3) > .ext
 avlab.pl#?#.page-content ~ div section:-abp-has(.elementor-widget-share-buttons)
 avon-24.pl##a[hre*="facebook.com/lsavonkasia/"] > img
 avon.pl###FooterSocialMediaColumn
+avon.pl##.SharingOverlay a:not(.emailSvgIcon):not(.urlSvgIcon)
+avon.pl##.yotpo-review span[data-target="share-review"]
 awa24.pl##.right_soc
 awans-bhp.pl##.icon_bar_google.icon_bar, .icon_bar_fb.icon_bar, .icon_box > a[href*="facebook.com/awansbhp/"]
 awf.edu.pl##.sprite-fb.sprite, .sprite-yt.sprite
@@ -1289,6 +1293,8 @@ azbudownictwo.com##.footer-contact__social-item
 azjatyckibazar.com###footer > div.col-sm-no-pd.col-sm-4:nth-of-type(3)
 aztecas.eu##.stopka > div[class*="stopka2"] > a:not([href$="/feed/"])
 azure.microsoft.com##nav.medium-3.column
+az-polska.com#?#.vcard > div:nth-child(3) > div:first-child > div > div:-abp-has( > h3:-abp-contains(Udostepnij))
+az-polska.com#?#.vcard > div:nth-child(3) > div:first-child > div:-abp-has( > h3:-abp-contains(Portale społecznościowe))
 az.pl##div.o-page-footer__column:nth-of-type(3) > ul.o-footer-list:nth-of-type(1)
 b2btrade.eu###footer > div:nth-of-type(6) > a.left
 b2b.metal-bud.eu##.social-media-ui
@@ -1963,10 +1969,7 @@ cybex-online.com#?#.Container-item div[class="u-md-marginBottom60 u-sm-marginBot
 cybsecurity.org##.themeum-social-share > li > a:not(.rss), .widget_themeum_social_share_widget > .widget_title
 cyfra.eu###top_contact > span
 cyfrowydoradca.pl##.rt-grid-4:nth-of-type(2) > .borderleft.rt-block > .module-surround > .module-content > .customborderleft
-cyfrowypolsatnews.pl##a[href*="plus.google.com/113231559080328863312"], a[href*="twitter.com/cp_news_"], #side-border-left > .panel:nth-of-type(6), .mobile-hide.column.medium-3.small-12:nth-of-type(4) > ul > li:nth-of-type(3)
-cyfrowypolsat.pl##div.foot:nth-of-type(4) > ul > li:nth-of-type(3)
-cyfrowypolsat.pl###fbSticker
-cyfrowypolsat.pl###footer .column > li:nth-of-type(1) > strong
+cyfrowypolsatnews.pl##a[href*="plus.google.com/"], a[href*="twitter.com/cp_news_"], #side-border-left > .panel:nth-of-type(6), .mobile-hide.column.medium-3.small-12:nth-of-type(4) > ul > li:nth-of-type(3)
 cyrk-zalewski.com.pl###FLMSSR-Social-Sidebar
 cyryl.poznan.pl###k7_fb
 czarnkow.pl##.item a[href*="facebook.com/"]
@@ -2633,7 +2636,7 @@ faktykonopne.pl###custom_html-12
 faktyoswiecim.pl###mzine_instagram-2, #mzine_social_media-2
 faktyozywnosci.pl,karointhekitchen.com,techpolska.pl###text-14
 fakty.nl##.bialy.width-30.user11 > .moduletable
-fakty.plportal.pl###block-block-10
+fakty.plportal.pl,lafarge.pl###block-block-10
 fakt.pl##.article-contact-footer-button
 fakt.pl##.article-share-button:not([class*="link"]):not([class*="mail"])
 fama.org.pl###text-5, .widget_ci_twitter_widget
@@ -3874,6 +3877,7 @@ labotiga.pl###sns_botsl .botsl_in > div.col-sm-4:nth-of-type(2)
 labotiga.pl##.sns-social
 laczynaspilka.pl##.box-standard.social-side
 ladybusiness.pl##div[class*="4_tb_header"][class*="last-child"] > div > div > a[href*=".com/"] > img
+lafarge.pl,mol.pl,plportal.pl###block-block-7
 laguna.pl###footer-end > .section-title
 laguna.pl##.catalog-widget > .widget-content
 lahtipro.pl##.stopkaKontakt > .contact-feed, .stopkaKontakt > .white
@@ -4078,6 +4082,7 @@ magazynwiatr.pl##.left_col > .partners
 magazyn.ceneo.pl##.js_share-btn-horizontal.lnd_share-horizontal.lnd_wrapper > div > table > tbody > tr, .lnd_anim-toDown > table > tbody > tr
 magnatfarby.pl##.sn-social-share
 magnesmedia.pl##.slide-fb-out-div
+magres.pl##nav .sf-menu a[href*="youtube.com/"]
 majbus.eu###slide-1-layer-10 > img
 majbus.eu#?#.fusion-row > .fusion-column-last.fusion-one-fourth:-abp-contains(FACEBOOK)
 majkiit.github.io##footer .fa-facebook
@@ -4406,7 +4411,6 @@ moliera2.com###join-us > h3:nth-of-type(2), #join-us > h3:nth-of-type(2) + a[tar
 moliera2.com##.fbtab, .insttab
 molly.pl###globalWrapper > #bottom-boxes > .box-left ~ .box-center
 molnlycke.pl##.footer .column.medium-3 > h4
-mol.pl,plportal.pl###block-block-7
 moncredo.pl###youtube-icon, #instagram-icon
 mondaynews.pl##.pre-footer-internal-social
 mondeoklubpolska.pl###widgetlist_column2 > li:nth-of-type(2)
@@ -5288,6 +5292,9 @@ polonika.at###top1 .poscenter
 polot.net##.list-inline > li.list-inline-item:nth-of-type(1)
 polregio.pl##.hpm-social
 polrisk.pl###footer > .limited > .last.column
+polsatbox.pl##div.foot:nth-of-type(4) > ul > li:nth-of-type(3)
+polsatbox.pl###fbSticker
+polsatbox.pl###footer .column > li:nth-of-type(1) > strong
 polsatgo.pl##div > div > a[href*=".com/"][target] > svg
 polsatnews.pl##.covid__share
 polsatnews.pl##.news__share > ul.nav__items > .nav__item:not(.nav__item--comments), .nav--social-box.nav > .nav__items > .nav__item:nth-of-type(-n+5)
@@ -6297,6 +6304,8 @@ steamcommunity.com##a[class*="Share"][href*="/share/"]
 stepone.pl##.widget_wtrwidgetsocialicons.widget
 stili.pl###main_cms
 stokrotka.pl###Media_społecznościowe
+stokrotka.pl###Okno_z_grafikami_social_media
+stokrotka.pl#?#.table > .stokrotka-divider-no-title[id*="container"]:-abp-has(#Okno_z_grafikami_social_media)
 stolicazdrowia.pl##.mh_magazine_facebook_page
 stopnadwadze.pl###bottom-bar
 stoprocent.com###social-sticky
@@ -7192,6 +7201,9 @@ x-lander.com##.instagram-widget-container
 x-mobile.pl##.border.col-sm-4.col-md-2.col-lg-2 > .footer_box
 yellowpages.pl#?#dl > dt:-abp-contains(Konta społecznościowe)
 yellowpages.pl#?#dl > dt:-abp-contains(Konta społecznościowe) + dd
+yenn.eu###menu-item-61421
+yenn.eu###menu-item-61422
+yenn.eu###menu-item-61423
 yes2move.com##.icon-facebook.icon
 yes2move.com##.icon-instagram.icon
 yetiforce.com##.jj-social-slider > a:not(:nth-child(n+5))
