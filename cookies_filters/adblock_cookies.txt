@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies i EasyList/AdGuard Base!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2021.8.29.0
-! Last modified: Sun, 29 Aug 2021, 21:37 UTC+02
+! Version: 2021.9.1.0
+! Last modified: Wed, 01 Sep 2021, 23:37 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -18,7 +18,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2021 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2021.8.29.0 aktualizacja: nie, 29 sie 2021, 21:37 UTC+02
+! v.2021.9.1.0 aktualizacja: śro, 01 wrz 2021, 23:37 UTC+02
 !
 !
 ! Specyficzne reguły ukrywające
@@ -1654,6 +1654,7 @@ mc-2.pl###_COOKIE-PPN
 mdkgal.edu.pl##[data-nclose-cookie]
 mebleswiata.eu##.obligation_info
 mediaexpert.pl##body:not(.is-bodyScrollDisabled) .is-cookies.c-footer_col
+mediaexpert.pl#?#.modal.dialog-wrapper:-abp-has(a[href="/s,zasady-przetwarzania-danych"])
 mediaexpert.pl#?#.wrapper:-abp-has(.cookie-box)
 mediamarkt.pl###site_container > .clearfix
 mediam.eu,szkolawbrusie.pl###panel_popup
@@ -2129,8 +2130,8 @@ polnord.pl###polCookieInfo
 polona.pl##cbn-cookies
 poloniagrecka.eu###cookieMessageOuter
 polonika.at,tominet.com.pl#?#table:-abp-has(#cookieMessageText)
-polsatgo.pl#?##__next > div[class^="sc-"]:first-child:-abp-has( > div[class^="sc-"] > div[class^="sc-"] > div[class^="sc-"] > p:first-child + p:last-child:-abp-contains(Wyrażam zgodę na przechowywanie))
-polsatgo.pl#?##__next > div[class^="sc-"]:first-child:-abp-has( > div[class^="sc-"] > h2 + p:-abp-contains(/^Potrzebujemy Twojej zgody/))
+polsatgo.pl,polsatgobox.pl#?##__next > div[class^="sc-"]:first-child:-abp-has( > div[class^="sc-"] > div[class^="sc-"] > div[class^="sc-"] > p:first-child + p:last-child:-abp-contains(Wyrażam zgodę na przechowywanie))
+polsatgo.pl,polsatgobox.pl#?##__next > div[class^="sc-"]:first-child:-abp-has( > div[class^="sc-"] > h2 + p:-abp-contains(/^Potrzebujemy Twojej zgody/))
 polskaligatenisa.pl##app-rodo
 polska-szkola.pl###activebar-container
 polskijubiler.pl##body > div:nth-of-type(1)[style="width: 90%; margin: 0 auto;"]
@@ -2235,7 +2236,7 @@ pushpushgo.com##.ppg-cookies
 puzzlefactory.pl###cc-container
 pwik.wolomin.pl###oknoModal
 pw.edu.pl##.lb-overlay, .lb-wrapper
-pyszne.pl##footer ~ div[data-qa="privacy-settings"]
+pyszne.pl##div[data-qa="privacy-settings"]
 pzip.pl##.sqs-announcement-bar-content
 pzszerm.pl,rewolucjawoc.pl##.copy
 qnap.com###cookie-policy-notification
