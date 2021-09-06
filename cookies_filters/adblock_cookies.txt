@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies i EasyList/AdGuard Base!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2021.9.5.0
-! Last modified: Sun, 05 Sep 2021, 22:20 UTC+02
+! Version: 2021.9.7.0
+! Last modified: Tue, 07 Sep 2021, 01:06 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errors@certyficate.it
@@ -18,7 +18,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2021 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2021.9.5.0 aktualizacja: nie, 05 wrz 2021, 22:20 UTC+02
+! v.2021.9.7.0 aktualizacja: wto, 07 wrz 2021, 01:06 UTC+02
 !
 !
 ! Specyficzne reguły ukrywające
@@ -1361,6 +1361,7 @@ i-puzzle.pl##.euc
 jabra.pl###jbr-consent-track
 jadlonomia.com##.cbar-container
 jajco.pl##div[id*="n-cookies-notification"]
+jakaoferta.pl#?#div.moOptinForm[style*="position:"][style*="fixed"]:-abp-contains(Ciasteczka)
 jakikredyt.pl##.popup--open
 jakuby.eu###w357_cpnb
 jak-ksiegowac.pl###message_wrap
@@ -2130,8 +2131,8 @@ polnord.pl###polCookieInfo
 polona.pl##cbn-cookies
 poloniagrecka.eu###cookieMessageOuter
 polonika.at,tominet.com.pl#?#table:-abp-has(#cookieMessageText)
-polsatgo.pl,polsatgobox.pl#?##__next > div[class^="sc-"]:first-child:-abp-has( > div[class^="sc-"] > div[class^="sc-"] > div[class^="sc-"] > p:first-child + p:last-child:-abp-contains(Wyrażam zgodę na przechowywanie))
-polsatgo.pl,polsatgobox.pl#?##__next > div[class^="sc-"]:first-child:-abp-has( > div[class^="sc-"] > h2 + p:-abp-contains(/^Potrzebujemy Twojej zgody/))
+polsatboxgo.pl,polsatgo.pl#?##__next > div[class^="sc-"]:first-child:-abp-has( > div[class^="sc-"] > div[class^="sc-"] > div[class^="sc-"] > p:first-child + p:last-child:-abp-contains(Wyrażam zgodę na przechowywanie))
+polsatboxgo.pl,polsatgo.pl#?##__next > div[class^="sc-"]:first-child:-abp-has( > div[class^="sc-"] > h2 + p:-abp-contains(/^Potrzebujemy Twojej zgody/))
 polskaligatenisa.pl##app-rodo
 polska-szkola.pl###activebar-container
 polskijubiler.pl##body > div:nth-of-type(1)[style="width: 90%; margin: 0 auto;"]
@@ -2688,6 +2689,7 @@ vivrehome.pl###notification__consent
 vivus.pl###app > #outer-container + div[class^="c"]
 vmr.pl##.ck-cnt
 vodflix.tv##.tibrr-cookie-consent-container
+vod.warszawa.pl#?##root footer ~ div[class]:-abp-has(h2:-abp-contains(Szanujemy Twoją Prywatność))
 voxel.pl###block-rodo-rodo-block
 vtc360.pl#?#.ggskin_text.info[style*="bottom"] > div:-abp-has( > a[href="https://vulcan-tc.pl/privacy_policy"])
 vuch.pl##.gdpr-cookie-bar
@@ -3820,8 +3822,10 @@ agrohandel.com.pl,gtv.com.pl#@#.panel_cookie:not(body):not(html)
 aion.eu#@#.cookies-notification:not(body)
 al.to,combat.pl#@##app > div:first-child > div
 bethesda.net,coca-cola.pl,toteraz.pl#@##onetrust-consent-sdk
-ddz24.eu,konecki24.pl,regioneo.pl,skarzyski.eu,starachowicki.eu,straganzdrowia.pl,szydlowiecki.eu,wiadomosci-lodz.pl#@##cookie-law-info-again
-ddz24.eu,konecki24.pl,regioneo.pl,skarzyski.eu,starachowicki.eu,straganzdrowia.pl,szydlowiecki.eu,wiadomosci-lodz.pl#@##cookie-law-info-bar
+czyodebrac.pl,ddz24.eu,eu,konecki24.pl,pl,regioneo.pl,skarzyski.eu,starachowicki.eu,straganzdrowia.pl,szydlowiecki.eu,wiadomosci-lodz.pl#@##cliSettingsPopup
+czyodebrac.pl,ddz24.eu,eu,konecki24.pl,pl,regioneo.pl,skarzyski.eu,starachowicki.eu,straganzdrowia.pl,szydlowiecki.eu,wiadomosci-lodz.pl#@##cookie-law-info-again
+czyodebrac.pl,ddz24.eu,eu,konecki24.pl,pl,regioneo.pl,skarzyski.eu,starachowicki.eu,straganzdrowia.pl,szydlowiecki.eu,wiadomosci-lodz.pl#@##cookie-law-info-bar
+czyodebrac.pl,ddz24.eu,eu,konecki24.pl,pl,regioneo.pl,skarzyski.eu,starachowicki.eu,straganzdrowia.pl,szydlowiecki.eu,wiadomosci-lodz.pl#@##cookie-law-info-bar ~ .cli-modal-backdrop
 eforia.pl,euromobil.com.pl,euromotor.pl,japanmotors.pl,koreamotors.pl,pgd.pl#@##modal-cookies
 elavon.pl#@#.acceptCookieButton:not(body):not(html)
 elavon.pl#@#.cookiePolicyMessage:not(body):not(html)
@@ -3829,6 +3833,12 @@ elavon.pl#@#.cookiePolicy:not(.reveal):not(body):not(html)
 elementstore.pl#@##cookie-agree:not(button):not(.btn)
 epicdrama.pl#@#.cookie_accept:not(body):not(html):not(input):not([id*="main"])
 eurogamer.pl#@#.ot-sdk-show-settings
+eu,pl#@#body > div:not([id]):not([class])
+eu,pl#@##catapult-cookie-bar
+eu,pl#@#.ccc-widget:not(body):not(html)
+eu,pl#@#.cookie-msg-box
+eu,pl#@#.js-cookies:not(body):not(html)
+eu,pl#@#.rodo-popup:not(body):not(html)
 fxpro.pl#@#.popup-cookies:not(body):not(html)
 goldenline.pl#@#.cookie-modal:not(body):not(html):not(.in):not(.mfp-hide)
 gtv.com.pl#@##panel_cookie_dol
@@ -3845,12 +3855,6 @@ metropoliaztm.pl#@##cookieModalCenter ~ .modal-backdrop
 naekranie.pl#@##polityka-cookies
 noweinwestycje.pl#@#.cookieBar:not(body):not(html)
 pepper.pl#@##footer ~ div .oreo-message
-pl#@#body > div:not([id]):not([class])
-pl#@##catapult-cookie-bar
-pl#@#.ccc-widget:not(body):not(html)
-pl#@#.cookie-msg-box
-pl#@#.js-cookies:not(body):not(html)
-pl#@#.rodo-popup:not(body):not(html)
 pl.aptoide.com#@##__next div[class*="CookieNotice"]
 poradykomputerowe.pl,portaloswiatowy.pl#@#.container-cookie:not(body):not(html)
 poradykomputerowe.pl,portaloswiatowy.pl#@#.overlay-cookie:not(body):not(html)
@@ -3858,7 +3862,6 @@ poradykomputerowe.pl,portaloswiatowy.pl#@#.popup-cookie:not(body):not(html)
 pracuj.pl#@#header > div:last-child:not([data-test])
 puratos.pl#@##cookieBannerModal
 ranking.perspektywy.pl#@##cookieModal ~ .modal-backdrop
-straganzdrowia.pl#@##cookie-law-info-bar ~ .cli-modal-backdrop
 toteraz.pl#@##cookie-preferences
 tvp.pl#@#.tvp-cookie-overlay:not(body):not(html)
 volcano.pl#@##cookiesModal
