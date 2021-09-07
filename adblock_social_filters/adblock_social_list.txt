@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista Fanboy's Social Blocking List i EasyList/AdGuard Base!
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2021.9.5.0
-! Last modified: Sun, 05 Sep 2021, 22:20 UTC+02
+! Version: 2021.9.7.1
+! Last modified: Tue, 07 Sep 2021, 01:12 UTC+02
 ! Expires: 2 days
 ! Support:
 !   GitHub => https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0)
 ! Copyright © 2021 Certyficate IT & Polish Filters Team
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2021.9.5.0 aktualizacja: nie, 05 wrz 2021, 22:20 UTC+02
+! v.2021.9.7.1 aktualizacja: wto, 07 wrz 2021, 01:12 UTC+02
 !
 !
 !#safari_cb_affinity(social)
@@ -1857,6 +1857,9 @@ cmrev.com##.nsocial > div.nitem:nth-of-type(-n+4)
 cm-uj.krakow.pl###naglowek9a > .lewy_loga_dol > .media > .media-left > a:nth-of-type(-n+2), .media-left > span
 coccodrillo.eu###socialFlyBox
 cocomoda.pl##h4:nth-of-type(2), .banner_small_right, .icons_footer_top
+codeeurope.pl##footer ul li a[href*=".com/"][target="_blank"] > svg
+codeeurope.pl#?#div > p:-abp-contains(Śledź nas i dowiedz)
+codeeurope.pl#?#div > p:-abp-contains(Śledź) ~ div > a[href*=".com/"][target="_blank"]
 codeme.pl##div.v-box-footer:nth-of-type(3)
 codeme.pl##.v-top-bar > .v-left
 codenga.pl##.b-site-footer__bottom--social
@@ -3960,6 +3963,7 @@ lenovozone.pl##.social > li:nth-of-type(5) > a[href*="linkedin.com/company/lenov
 lenovo.com##.m-footerSocial__Icon:not(.footerForumsIcon)
 leoexpress.com##footer ul > li > a[target="_blank"]
 lepszytrener.pl##.social_black.btn
+leroymerlin.pl##.our-channels
 lesniow.pl##.socialTabs-tab--facebook
 lessmess.storage##.widget-twitter.slideout-widget, .widget-gplus-2.slideout-widget, .widget-facebook-2.slideout-widget
 letni.net##.oceanwp-social-menu
@@ -5820,7 +5824,7 @@ rozwojmiasta.plock.eu##.soc-icons > a[href*="facebook.com/Plock.rozwojmiasta"]
 ro.com.pl###footer_col2
 rpo-swietokrzyskie.pl##a[class^="ftr_social_fb"]
 rpo.lubelskie.pl##a[title^="Facebook ("], a[title^="Youtube ("], a[title^="Instagram ("]
-rp.pl##.btn--icon.btn--light
+rp.pl##.footer--socials
 rumia.eu##.ikonSocialMediaR
 runandonly.pl##.widget_ci-socials.group.widget
 runeat.pl##.line:nth-of-type(5), .widget:nth-of-type(4)
@@ -6696,7 +6700,6 @@ tvmalbork.pl##a[href="/facebook"]
 tvn24bis.pl##.title-wrapper > .social, .fbClassicBox, .forum-header-box > h3
 tvn24.pl##.share-container--fixed.share-container
 tvn.pl##.header-card-socials
-tvn.pl#?#.social-item:-abp-has( > .share-link > svg:not(.fa-link))
 tvokazje.pl##.Social_block
 tvonline.vectra.pl##footer a[href*="facebook.com/groups/"]
 tvpolice.com.pl##.header-social-box
@@ -6912,6 +6915,7 @@ vixon.pl###CustomWidget_8
 vmr.pl###info a[href*="/wmr" i] > span > svg
 vobis.pl##.m-copyrights_info > a
 vod.naekranie.pl##.nav-bottom figure.iconBox-md-size:nth-of-type(n+2):nth-of-type(-n+4)
+vod.warszawa.pl##a[title="Przejdź do facebooka"]
 vogueswing.blogspot.com###HTML1 a[href*="facebook.com/ubraniowelove"]
 volcano.pl#?#section.section-text:-abp-contains(Znajdź nas w Social Media)
 volcano.pl#?#section.section-text:-abp-contains(Znajdź nas w Social Media) + .section-banners
@@ -8090,6 +8094,7 @@ tvn24.pl##.article-share-socials > .social-list > .social-item:nth-of-type(-n+2)
 tvn24.pl##.fbClassicBox, .funpageTitleStyle
 tvn24.pl##.header-socials__social
 tvn24.pl##.htmlBox:nth-of-type(8), .htmlBox:nth-of-type(10), .htmlBox:nth-of-type(30), .htmlBox:nth-of-type(31), .side-info, .social-icon
+tvn.pl#?#.social-item:-abp-has( > .share-link > svg:not(.fa-link))
 tvn.pl,tvnturbo.pl,~www.tvn.pl##li.vjs-menu-item[class*="share"]:not(.vjs-share-link)
 uwaga.tvn.pl##.insta-widget, .section-social, .socialmedia > ul > .youtube
 video.wp.pl##.social
