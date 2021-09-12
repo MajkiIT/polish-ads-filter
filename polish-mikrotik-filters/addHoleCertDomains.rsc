@@ -3065,6 +3065,7 @@ add name="dailypost341.bar" address="195.187.6.34" comment="addHoleCertDomains H
 add name="daj79f6cjleuy.cloudfront.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dalsza-droga.tk" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="damianek24.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="danaburkart.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="danapm336umsu.cloudfront.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="dandasana1.co.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="danialrazali.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
