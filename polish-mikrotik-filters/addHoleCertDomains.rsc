@@ -22757,6 +22757,7 @@ add name="www.nebeska.xyz" address="195.187.6.34" comment="addHoleCertDomains Ho
 add name="www.nedera.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.neqtarin.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.nerkynso.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.nerwa.space" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.nesenens.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.nestava.space" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.netaver.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
