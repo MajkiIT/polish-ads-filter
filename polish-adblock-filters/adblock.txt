@@ -8,9 +8,9 @@
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 2 September 2021
+! Last modified: 20 September 2021
 ! Expires: 1 day
-! Version: 2021090201
+! Version: 2021092001
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2021 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2021090201 aktualizacja: czw, 2 wrzesnia 2021, 09:10:00
+! v.2021092001 aktualizacja: pon, 20 wrzesnia 2021, 10:45:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -775,6 +775,7 @@ dentoforum.pl,perfuforum.pl##.forabg
 deon.pl##.view-footer
 di.com.pl###intertext1 > table
 di.com.pl##[style="margin-bottom:5px;clear:both;"]
+di.com.pl###pub_body > table > tbody > tr > td
 diagnozujmy.pl##.et_pb_image_wrap, .et_bloom_flyin, .code-block-1.code-block
 dieroten.pl###ad-main-news-lg, .sticky-inner, .col-md-12 > A
 dieroten.pl##.hidden-sm-xs.col-md-12.col-lg-12
@@ -801,6 +802,7 @@ dobrastacja.pl###tfhover
 dobredladziecka.pl###rekl
 dobrewiadomosci.net.pl,getlevel.info,tyna.info.pl,kryptoporadnik.pl,tkn24.pl##center
 dodajauto.pl##.content-row.row > .no-padding.col-md-4.hidden-sm.hidden-xs > div
+dogosfera.pl###text-10012 > .module-surround
 dogry.pl##.banner-top-content
 dogry.pl##.pro-box
 dojrzalakobieta.pl###slider-with
@@ -1477,6 +1479,9 @@ igrit.pl##.boczniak, #polifoska
 igrit.pl##a[href^="redirect/"]
 igrit.pl##table:nth-of-type(1) > tbody > tr:nth-of-type(7)
 iitvx.pl##._video-link
+ilovenysa.pl###cb-section-a > .clearfix.cb-module-block.cb-box.cb-a-large
+ilovenysa.pl##[id^="aas_widget"]
+ilovenysa.pl###cb-section-c > .clearfix.cb-module-block.cb-box.cb-a-large
 ikamien.pl###ads, .adsSpecial, #div.box:nth-of-type(2)
 iknurow.pl###text-97 > .textwidget, .vc_message_box, .td_block_single_image.wpb_wrapper
 iknurow.pl##A[onclick*="_blank"] > IMG
@@ -2648,6 +2653,7 @@ portalkomunalny.pl##.pasinfotxt.above
 portalmedialny.pl##div#rc_content_block > A
 portalmorski.pl###C-D-1
 portalmorski.pl##.pm-banner, .pmb_banners
+portal-mundurowy.pl###sp-header
 portalplock.pl###fixme
 portalplock.pl##.ads-programmatic
 portalplock.pl#?#h6:-abp-contains(Reklama)
@@ -3788,6 +3794,7 @@ wyborcza.biz,wyborcza.pl,gazeta.pl###pianoMediaBoxModal
 wyborcza.pl##.day-images
 wyborcza.pl##.right-content-holder > [class^="mod-generic"][class*="la-http\:\/\/wyborcza\.pl\/"] + #rectangle-splint
 wyborcza.pl##[class^="mod-generic"][class*="la-http\:\/\/wyborcza\.pl\/"]
+wyborcza.pl##.adviewDFPBanner
 wykop.pl,demotywatory.pl,joemonster.org,mistrzowie.org##[id^="bmone2n-"]
 wylecz.to##[class] > .bottomSeen.topSeen
 wylecz.to##.display_detect.ifr, .cre, .daf8, div.col-md-3.col-sm-6.col-xs-12 > div[class] > div[style^="border-bottom: 20px"] > div[style]
@@ -4594,6 +4601,10 @@ zywiecinfo.pl##.promoted
 @@||websystem.pl/environment/cache/images/300_250_$image,domain=websystem.pl
 @@||wikimedia.org/
 @@||www.bet-at-home.com/*/account/deposit/$popup,domain=www.bet-at-home.com
+@@||myao.adocean.pl/files/$image,domain=polsatbox.pl
+@@||myao.adocean.pl/*ad.xml$domain=polsatbox.pl
+@@||adocean.pl/ad.xml$domain=imasdk.googleapis.com
+@@||adocean.pl/*ad.xml$domain=imasdk.googleapis.com
 !
 !13#------------------------Whitelist specific element hiding rules------------------------!
 emag.pl#@#a[href^="https://pubads.g.doubleclick.net/"]
