@@ -11398,6 +11398,7 @@ add name="olx.pay77.info" address="195.187.6.34" comment="addHoleCertDomains Hol
 add name="olx.pay80.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pay81.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.pay82.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="olx.payd01.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.payd17.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.payd23.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="olx.payersend.info" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
