@@ -8,9 +8,9 @@
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 1 October 2021
+! Last modified: 5 October 2021
 ! Expires: 1 day
-! Version: 2021100101
+! Version: 2021100501
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2021 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2021100101 aktualizacja: ptk, 1 pazdziernik 2021, 11:15:00
+! v.2021100501 aktualizacja: wt, 5 pazdziernik 2021, 12:40:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -763,7 +763,7 @@ deblinnews.pl###header-right-section, #black-studio-tinymce-76, #black-studio-ti
 deccoria.pl##.autopromotion-beam-img
 decoupage24.pl##.marginbottom.tborder
 deccoria.pl##div[class="advert--top--center"]
-deccoria.pl##div[class="dc-billboard advert-250-box"]
+deccoria.pl##div[class="dc-billboard advert-250-box has-ad"]
 defence24.pl,energetyka24.com,infosecurity24.pl#?#section.section:nth-of-type(-n+2):-abp-has(> div > .adv)
 defence24.pl,defence24.com#?#section.section:nth-of-type(-n+2):-abp-has(> div > div > .adv)
 defence24.pl##.lazy-box-load.lazy-box:nth-of-type(8) > .box
@@ -2749,9 +2749,12 @@ przegladsportowy.pl###region-item20927
 przegladsportowy.pl###region-item21626
 przegladsportowy.pl##A > .lazy:last-child
 przegladsportowy.pl##[id$="_ARTICLE_TOP"]
+przegladsportowy.pl,auto-swiat.pl,businessinsider.com.pl,fakt.pl,komputerswiat.pl,noizz.pl,ofeminin.pl,plejada.pl,onet.pl##div[class^="AdPlaceholder_"]
+przegladsportowy.pl,auto-swiat.pl,businessinsider.com.pl,fakt.pl,komputerswiat.pl,noizz.pl,ofeminin.pl,plejada.pl,onet.pl##aside[class^="CenterAd_container"]
 przekrojlokalny.pl##.banner_zone
 przemysl24.pl###banner-top, .fbaner
 przepisy.pl##.promobanner-container, .banner_wrap, .recipe-container-promo
+przyslijprzepis.pl##body > p, .advertising-billboard, .szpalta, .rc, .widget-content, .plista_container, .header-specjal
 przewodnicywedkarscy.pl###sidebar > p
 prudnik24.pl##.panel.first.widget-1, .panel.widget-3, .panel.widget-4
 przychodnia.pl##.prnetItem
@@ -3449,6 +3452,7 @@ upflix.pl##.ban-drogowka, .chili-promo
 upflix.pl##.video-index > [href^="http://"] > span
 upflix.pl##.za30, .center-block.img-responsive
 upflix.pl##[class*="showmax"], [class$="-ad"]
+upflix.pl##.reklama.adsbygoogle.banner.ad.ads
 uploaduj.com##.UwOWM2OT
 uploaduj.com##.guestMessage
 uptimemadeeasy.com##.subscribep
@@ -4203,7 +4207,7 @@ zywiecinfo.pl##.promoted
 ||mon.services.tvn.pl/xlinkplayer.js$script,domain=get.x-link.pl
 ||money.pl/*/ad/direct/*.jpg$image
 ||money.wpcdn.pl/*/ad/$image
-||moviads.pl^$domain=~moviads.pl|~gala.pl|~glamour.pl|~kobieta.pl|~claudia.pl
+||moviads.pl^$domain=~moviads.pl|~gala.pl|~glamour.pl|~kobieta.pl|~claudia.pl|~przyslijprzepis.pl
 ||mrex.exs.pl^$third-party
 ||muratordom.pl/media/desktop/zpr_videos_web/js/video_blocker.js
 ||mybboard.pl/images/promo/$image
@@ -4606,6 +4610,7 @@ zywiecinfo.pl##.promoted
 @@||myao.adocean.pl/*ad.xml$domain=polsatbox.pl
 @@||adocean.pl/ad.xml$domain=imasdk.googleapis.com
 @@||adocean.pl/*ad.xml$domain=imasdk.googleapis.com
+@@||plista.com/$domain=przyslijprzepis.pl
 !
 !13#------------------------Whitelist specific element hiding rules------------------------!
 emag.pl#@#a[href^="https://pubads.g.doubleclick.net/"]
@@ -5080,7 +5085,7 @@ epainfo.pl#@#.td-ad-background-link
 facebook.com#@#a[href^="/ads/"]
 filmyfilmy.pl#@#.sidebar_advert
 kafeteria.pl#@#.is-sponsored
-mandarinodesign.eu,ddb24.pl,iotwock.info,ototorun.pl,twojradom.pl,szczecinek.com,zycie.pila.pl,kurierpodlaski.pl,zambrow.org,egarwolin.pl,lowicz24.eu,ciechanowinaczej.pl,itvpiaseczno.pl,ikampinos.pl,infosiedlce.pl,ibialoleka.pl,izoliborz.pl,imokotow.pl,nolesnica.pl,lipno-cli.pl,golub-cgd.pl,ibielsk.pl,brodnica-cbr.pl,egorzow.pl,ipragapoludnie.pl,rypin-cry.pl,wabrzezno-cwa.pl,wio.waw.pl,e-wyszogrod.pl,upflix.pl,brzozow24.pl,bukowsko24.pl,esanok.pl,jaslo24.pl,rzeszow24.pl,strzyzow24.pl,tvpodkarpacie.pl,ustrzyki24.pl,zagorz24.pl,zarszyn24.pl,kurierzamojski.pl#@#.reklama
+mandarinodesign.eu,ddb24.pl,iotwock.info,ototorun.pl,twojradom.pl,szczecinek.com,zycie.pila.pl,kurierpodlaski.pl,zambrow.org,egarwolin.pl,lowicz24.eu,ciechanowinaczej.pl,itvpiaseczno.pl,ikampinos.pl,infosiedlce.pl,ibialoleka.pl,izoliborz.pl,imokotow.pl,nolesnica.pl,lipno-cli.pl,golub-cgd.pl,ibielsk.pl,brodnica-cbr.pl,egorzow.pl,ipragapoludnie.pl,rypin-cry.pl,wabrzezno-cwa.pl,wio.waw.pl,e-wyszogrod.pl,brzozow24.pl,bukowsko24.pl,esanok.pl,jaslo24.pl,rzeszow24.pl,strzyzow24.pl,tvpodkarpacie.pl,ustrzyki24.pl,zagorz24.pl,zarszyn24.pl,kurierzamojski.pl#@#.reklama
 walbrzych24.com,zloty-pociag.com#@##gwd-ad
 24legnica.pl,wstereo.pl,magazynbasista.pl,niebezpiecznik.pl,prawapolityka.pl,stop-cham.pl,namasce.pl,24legnica.pl,motohigh.pl###text-8
 ||static-olxeu.akamaized.net/static/olxpl/naspersclassifieds-regional/olxeu-atlas-web/static/js/advertising.js$important
