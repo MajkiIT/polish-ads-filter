@@ -8,9 +8,9 @@
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 5 October 2021
+! Last modified: 11 October 2021
 ! Expires: 1 day
-! Version: 2021100501
+! Version: 2021101101
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2021 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2021100501 aktualizacja: wt, 5 pazdziernik 2021, 12:40:00
+! v.2021101101 aktualizacja: pon, 11 pazdziernik 2021, 08:10:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -764,6 +764,7 @@ deccoria.pl##.autopromotion-beam-img
 decoupage24.pl##.marginbottom.tborder
 deccoria.pl##div[class="advert--top--center"]
 deccoria.pl##div[class="dc-billboard advert-250-box has-ad"]
+deccoria.pl##div[class="dc-billboard advert-250-box advert-250_margin has-ad"]
 defence24.pl,energetyka24.com,infosecurity24.pl#?#section.section:nth-of-type(-n+2):-abp-has(> div > .adv)
 defence24.pl,defence24.com#?#section.section:nth-of-type(-n+2):-abp-has(> div > div > .adv)
 defence24.pl##.lazy-box-load.lazy-box:nth-of-type(8) > .box
@@ -2754,11 +2755,12 @@ przegladsportowy.pl,auto-swiat.pl,businessinsider.com.pl,fakt.pl,komputerswiat.p
 przekrojlokalny.pl##.banner_zone
 przemysl24.pl###banner-top, .fbaner
 przepisy.pl##.promobanner-container, .banner_wrap, .recipe-container-promo
-przyslijprzepis.pl##body > p, .advertising-billboard, .szpalta, .rc, .widget-content, .plista_container, .header-specjal
+przyslijprzepis.pl##.advertising-billboard, .szpalta, .rc, .widget-content, .plista_container, .header-specjal
+przyslijprzepis.pl###tracdelight-slide-btn
+przyslijprzepis.pl#?#body > p:-abp-contains(REKLAMA)
 przewodnicywedkarscy.pl###sidebar > p
 prudnik24.pl##.panel.first.widget-1, .panel.widget-3, .panel.widget-4
 przychodnia.pl##.prnetItem
-przyslijprzepis.pl###tracdelight-slide-btn
 pszczoly.pl###zajPasieka
 pszczoly.pl##tr > .tresc_bez_wciecia > A > IMG
 pszczynska.pl,polskicaravaning.pl,4run.pl,eglos.pl,wiadomoscikosmetyczne.pl,asta24.pl,wiadomoscihandlowe.pl##.baner
@@ -3231,6 +3233,7 @@ tabletowo.pl##a[href*="dhosting.pl"]
 tabletowo.pl##a[href*="goo.gl"]
 tabletowo.pl##a[onclick*="eventAction: 'Klik'"][target="_blank"]
 tabletowo.pl##footer div[id^="table"] > a > .i-amphtml-layout
+tabletowo.pl##.zeen-da-wrap > .clearfix.block-html-content > div
 tablety.pl##[class^="post"] > div > div:nth-child(8) > a > img
 taksiegra.pl,wawernews.pl##body > center
 taniaksiazka.pl,gsmmaniak.pl,wieliczkacity.pl,aferyprawa.eu,tyna.info.pl,startkariery.pl,ziemialimanowska.pl,mojradom.pl##A[target="_self"] > IMG
@@ -5281,6 +5284,8 @@ www.dobreprogramy.pl##[data-partner="Polecamy na WP Technologie"]
 www.dobreprogramy.pl###phContent_hpOperaLink, #phContent_cbBadge 
 www.dobreprogramy.pl##div[style="text-align:center;letter-spacing:6px;font-size:11px;color:#A9A9A9;width:100%;margin-top:-13px"]
 www.dobreprogramy.pl##div[class^="plchldr "]
+www.dobreprogramy.pl##:xpath(//a[not(contains(@href,','))][string-length(@href)>1600])
+www.dobreprogramy.pl##script:-abp-contains(slotNumber):upward(2)
 !
 !43#--------------------------Gemius link to ads ------------!
 spidersweb.pl,topagrar.pl##a[href*="hit.gemius.pl/"]
