@@ -57,7 +57,7 @@ Ta procedura jest bardzo prosta. Otóż po zainstalowaniu [Kiwi Browser](https:/
 2. Wybierz filtry, jakie chcesz. A jeśli 2 polskie ci nie wystarczają, to wejdź na [majkiit.github.io/polish-ads-filter](https://majkiit.github.io/polish-ads-filter/) i zasubskrybuj dodatkowe.
 3. Gotowe!
 
-## D) ![Webview]Dowolna przeglądarka + ![AG]AdGuard
+## C) ![Webview]Dowolna przeglądarka + ![AG]AdGuard
 1. Wejdź na https://adguard.com/pl/welcome.html i kliknij **Pobierz**.
 2. Wejdź do powiadomień i dotknij pobrany plik apk, a następnie dotknij **zainstaluj**, a jeżeli dostaniesz informację o instalowaniu z nieznanego źródła, to skorzystaj z poradnika dostępnego na [android.com.pl](https://android.com.pl/porady/250018-aplikacje-z-nieznanych-zrodel/).
 3. Uruchom AdGuard i dotknij **Akceptuj**.
