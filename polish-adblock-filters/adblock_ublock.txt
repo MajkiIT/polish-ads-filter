@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 23 September 2021
+! Last modified: 18 October 2021
 ! Expires: 1 day
-! Version: 2021092301
+! Version: 2021101801
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2021 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2021092301 aktualizacja: czw, 23 września 2021, 14:30:00
+! v.2021101801 aktualizacja: pon, 18 pazdziernika 2021, 12:01:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -129,6 +129,8 @@ www.dobreprogramy.pl##+js(nostif, PrebidDamOpen, 800)
 dobreprogramy.pl##body:style(pointer-events: auto!important;)
 dobreprogramy.pl##body:not(#bd):not([style*="background-image:"]):style(background-image:none!important;)
 !dobreprogramy.pl##+js(aopr,WP.gaf)
+www.dobreprogramy.pl##:xpath(//a[not(contains(@href,','))][string-length(@href)>1600])
+www.dobreprogramy.pl##script:-abp-contains(slotNumber):upward(2)
 !
 ! purepc.pl
 purepc.pl##a[href^="https://www.purepc.pl/redir.php"]:style(height: 0 !important; position: absolute !important;)
