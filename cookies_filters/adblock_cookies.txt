@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies i EasyList/AdGuard Base!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2021.10.24.0
-! Last modified: Sun, 24 Oct 2021, 21:25 UTC+02
+! Version: 2021.10.31.0
+! Last modified: Sun, 31 Oct 2021, 16:01 UTC+01
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -18,7 +18,7 @@
 ! Copyright © 2021 Certyficate IT
 ! Copyright © 2021 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2021.10.24.0 aktualizacja: nie, 24 paź 2021, 21:25 UTC+02
+! v.2021.10.31.0 aktualizacja: nie, 31 paź 2021, 16:01 UTC+01
 !
 !
 ! Specyficzne reguły ukrywające
@@ -2157,6 +2157,7 @@ pomorskie.eu###cookiesinfoPWU
 pomorskie.travel###cookiesInfoPOT
 popaopa.pl###popup-content
 porowneo.pl#?#footer > div[class^="sc-"]:nth-last-child(-n+2):-abp-has( > button ~ div > a[href*="rules=polityka_prywatnosci"])
+porsche.pl##.full_modal_cookie_background
 portale-randkowe-ranking.pl,valtra.pl##.disclaimer
 portalgorski.pl###aToolTip
 portalmorski.pl###clause-info, #clause-info-mobile > p
@@ -2665,6 +2666,7 @@ twojtenis.pl###cookie_accepter
 tygodnikpowszechny.pl###top_head
 tylkohity.pl##.cm_open
 tymrazemglosuje.eu###cookiespolicymessage
+uber.com##.privacy_prompt_custom
 udemy.com##[data-module-id="eu-cookie-message"]
 ugporaj.pl#?##fancybox-wrap:-abp-contains(iod)
 uk.ign.com##div#policyNotice
@@ -3868,6 +3870,7 @@ eu,pl#@#.rodo-popup:not(body):not(html)
 fxpro.pl#@#.popup-cookies:not(body):not(html)
 goldenline.pl#@#.cookie-modal:not(body):not(html):not(.in):not(.mfp-hide)
 goodram.com#@##cookie-container
+grweb.ics.forth.gr#@##cookiebanner
 gtv.com.pl#@##panel_cookie_dol
 kpcen-torun.edu.pl,ranking.perspektywy.pl#@##cookieModal:not(.countryCookieModalContainer):not(.idcac)
 lomza.pl#@##komunikat-cookie
@@ -3881,6 +3884,7 @@ metropoliaztm.pl#@##cookieModalCenter
 metropoliaztm.pl#@##cookieModalCenter ~ .modal-backdrop
 naekranie.pl#@##polityka-cookies
 noweinwestycje.pl#@#.cookieBar:not(body):not(html)
+o2.pl#@##__next div[class*="PrivacyPolicy"]
 pepper.pl#@##footer ~ div .oreo-message
 pl.aptoide.com#@##__next div[class*="CookieNotice"]
 poradykomputerowe.pl,portaloswiatowy.pl#@#.container-cookie:not(body):not(html)
@@ -3896,8 +3900,10 @@ winnicalidla.pl#@#.privacy-policy
 @@/jquery.cookiebar$domain=bitner.com.pl|iforbet.pl|shinden.pl
 @@/wp-content/plugins/cookie-law-info/public/*$stylesheet
 @@||consent.cookiebot.com/uc.js$script,domain=lyko.com
+@@||consent.cookiebot.com^$domain=grweb.ics.forth.gr
 @@||footroll.pl/js/vendor/cookiebox.min.js
-@@||fundingchoicesmessages.google.com^$script,domain=spidersweb.pl
+@@||fundingchoicesmessages.google.com^$domain=spidersweb.pl
+@@||fundingchoicesmessages.google.com^$domain=stooq.com|stooq.pl
 @@||kawalekkodu.pl/bl-plugins/cookie-consent/js/advert.js
 @@||sdk.privacy-center.org^$domain=dziennikbaltycki.pl|dzienniklodzki.pl|dziennikpolski24.pl|dziennikwschodni.pl|dziennikzachodni.pl|echodnia.eu|expressbydgoski.pl|expressilustrowany.pl|gazetakrakowska.pl|gazetalubuska.pl|gazetawroclawska.pl|gk24.pl|gloswielkopolski.pl|gol24.pl|gp24.pl|gra.pl|gs24.pl|kurierlubelski.pl|motofakty.pl|naszemiasto.pl|nowiny24.pl|nowosci.com.pl|nto.pl|polskatimes.pl|pomorska.pl|poranny.pl|regiodom.pl|sportowy24.pl|strefaagro.pl|strefabiznesu.pl|stronakobiet.pl|telemagazyn.pl|to.com.pl|wspolczesna.pl
 !
