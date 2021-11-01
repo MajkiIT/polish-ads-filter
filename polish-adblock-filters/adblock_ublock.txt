@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 18 October 2021
+! Last modified: 1 November 2021
 ! Expires: 1 day
-! Version: 2021101801
+! Version: 2021110101
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2021 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2021101801 aktualizacja: pon, 18 pazdziernika 2021, 12:01:00
+! v.2021110101 aktualizacja: pon, 1 listopada 2021, 14:20:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -560,6 +560,12 @@ petronews.pl##.jeg_navbar.jeg_stickybar:style(height: 35px !important;)
 !
 ! orionblues.pinger.pl
 /^https:\/\/(www\.)?youtube(-nocookie)?\.com\/embed\//$3p,frame,object,redirect=click2load.html,domain=orionblues.pinger.pl
+!
+! tekstowo.pl
+tekstowo.pl#@##advSong
+tekstowo.pl#$##advSong { visibility: hidden !important }
+tekstowo.pl#@#[class^="adv-"]
+tekstowo.pl#$#.teledysk { flex: 0 0 100% !important; max-width: 100% !important; }
 !
 ! uBlock-user
 napiprojekt.pl##+js(insert-iframe, 1, honeypot, https://www.napiprojekt.pl/napisy-42731-Ostatni-U-Boot-(1993), width: 1px !important; height: 1px !important; position: absolute !important; left: -3000px !important)
