@@ -26037,6 +26037,7 @@ add name="www.inpost.polskaolerta.cyou" address="195.187.6.34" comment="addHoleC
 add name="www.inpost.polskaolerta.shop" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.inpost.polskaolerta.store" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.inpost.polskaolerta.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.inpost.powitanie.reklamarzym.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.inpost.shortdostawa.bar" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.inpost.site" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.inpost.spredaz-online.club" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
