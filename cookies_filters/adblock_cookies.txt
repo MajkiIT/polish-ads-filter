@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies i EasyList/AdGuard Base!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2021.10.31.0
-! Last modified: Sun, 31 Oct 2021, 16:01 UTC+01
+! Version: 2021.11.4.1
+! Last modified: Thu, 04 Nov 2021, 23:48 UTC+01
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -18,7 +18,7 @@
 ! Copyright © 2021 Certyficate IT
 ! Copyright © 2021 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2021.10.31.0 aktualizacja: nie, 31 paź 2021, 16:01 UTC+01
+! v.2021.11.4.1 aktualizacja: czw, 04 lis 2021, 23:48 UTC+01
 !
 !
 ! Specyficzne reguły ukrywające
@@ -343,6 +343,7 @@ bethesda.net#?#visor-alert[name="visor-alert"] > div[class=""] > div > div:last-
 betsson22.com##.bottom-snackbar.cookie-consent
 betsson22.com##.mat-snack-bar-container
 betsson.com###MsgAreaBottom
+bezowsikow.pl,pirolam.pl,polopiryna.pl,polpharma.pl##.monit
 bezpieczny.pl##.remodal-wrapper, .remodal-overlay
 bialoleka.waw.pl###img_98
 bialoleka.waw.pl###popup-bg
@@ -872,9 +873,7 @@ empik.com##.js-cookies-accept
 emt-systems.pl###rodoBG
 encycolorpedia.pl,fdb.pl###consent
 endoca.com##.gdpr-modal-notify
-eneba.com#?##app > div[class] > div[class]:-abp-has( > h3:-abp-contains(/^Ciasteczka$/))
-eneba.com#?##app > main ~ div[class]:-abp-has( > h3:-abp-contains(/^Ciasteczka$/))
-eneba.com#?##app > main > div[class] > div[class]:-abp-has( > h3:-abp-contains(/^Ciasteczka$/))
+eneba.com#?##app > div[class] > div[class]:-abp-has( > p > a:-abp-contains(polityce prywatności))
 engie-services.pl##.agreements
 enigmatis.pl###root > div:nth-of-type(1):not([id]):not([class])
 enjoyuk.pl###fanback
@@ -1352,7 +1351,7 @@ isop.pl###spu-14299
 istebna.org###cookie_alert
 istockphoto.com##.warning.banner
 ists.pl,lokalnabiznes.pl,old.gbl.waw.pl,zmienimyswiat.pl##.polityka
-italiapozaszlakiem.com,pafere.org,zs12lublin.eu##.ginger_banner-wrapper > .ginger_banner
+italiapozaszlakiem.com,lawyerka.pl,pafere.org,zs12lublin.eu##.ginger_banner-wrapper > .ginger_banner
 iturek.net###cookie_message_website_policy
 itvwisla.tv,polska-ie.com,stoicway.net,twojcel.to,wachtyrz.eu##.gdpr-privacy-bar
 it-szkola.edu.pl###cookieLayerBoxModal
@@ -2056,7 +2055,6 @@ pilot.wp.pl#?##gatsby-focus-wrapper > div[class] > div[class*="sc-"]:-abp-has( >
 pinterest.com##div[role="main"] > div[class] > div[data-test-id="unauthEuCookieBar"]
 pios.gov.pl,wios.gov.pl,wios.rzeszow.pl##.a-footer
 pipelife.com###coo
-pirolam.pl,polopiryna.pl,polpharma.pl##.monit
 pizzahut.pl###ph-cookies
 pizzahut.pl#?#body > #__next > div[class^="css-"] > div[class^="css-"] ~ div[class^="css-"]:last-child:-abp-has(img[alt="Cookies"][src^="/images/cookies"])
 pizzaportal.pl,pl.chili.com##.react-cookie-banner
@@ -2847,6 +2845,8 @@ zwrotzalot.pl##.cookies-banner-overlay-original
 zyciekalisza.pl###cdiv
 zygzaksnow.pl###jOverlayContent, #jOverlay, #ppCookies
 zyro.com##.zyro-cookies
+!eneba.com#?##app > main ~ div[class]:-abp-has( > p a:-abp-contains(polityce prywatności))
+!eneba.com#?##app > main > div[class] > div[class]:-abp-has( > p a:-abp-contains(polityce prywatności))
 !
 !
 ! Specyficzne reguły blokujące
@@ -3848,7 +3848,7 @@ gg.pl#@#body > div:nth-of-type(2) > div
 agrohandel.com.pl,gtv.com.pl#@#.panel_cookie:not(body):not(html)
 aion.eu#@#.cookies-notification:not(body)
 al.to,combat.pl#@##app > div:first-child > div
-bethesda.net,coca-cola.pl,domiporta.pl,edziecko.pl,haps.pl,moto.pl,plotek.pl,sport.pl,toteraz.pl#@##onetrust-consent-sdk
+avg.com,bethesda.net,coca-cola.pl,domiporta.pl,edziecko.pl,haps.pl,moto.pl,plotek.pl,sport.pl,toteraz.pl#@##onetrust-consent-sdk
 czyodebrac.pl,ddz24.eu,eu,konecki24.pl,pl,regioneo.pl,skarzyski.eu,starachowicki.eu,straganzdrowia.pl,szydlowiecki.eu,wiadomosci-lodz.pl#@##cliSettingsPopup
 czyodebrac.pl,ddz24.eu,eu,konecki24.pl,pl,regioneo.pl,skarzyski.eu,starachowicki.eu,straganzdrowia.pl,szydlowiecki.eu,wiadomosci-lodz.pl#@##cookie-law-info-again
 czyodebrac.pl,ddz24.eu,eu,konecki24.pl,pl,regioneo.pl,skarzyski.eu,starachowicki.eu,straganzdrowia.pl,szydlowiecki.eu,wiadomosci-lodz.pl#@##cookie-law-info-bar
@@ -3867,10 +3867,10 @@ eu,pl#@#.ccc-widget:not(body):not(html)
 eu,pl#@#.cookie-msg-box
 eu,pl#@#.js-cookies:not(body):not(html)
 eu,pl#@#.rodo-popup:not(body):not(html)
+forth.gr#@##cookiebanner
 fxpro.pl#@#.popup-cookies:not(body):not(html)
 goldenline.pl#@#.cookie-modal:not(body):not(html):not(.in):not(.mfp-hide)
 goodram.com#@##cookie-container
-grweb.ics.forth.gr#@##cookiebanner
 gtv.com.pl#@##panel_cookie_dol
 kpcen-torun.edu.pl,ranking.perspektywy.pl#@##cookieModal:not(.countryCookieModalContainer):not(.idcac)
 lomza.pl#@##komunikat-cookie
@@ -3899,11 +3899,9 @@ volcano.pl#@##cookiesModal
 winnicalidla.pl#@#.privacy-policy
 @@/jquery.cookiebar$domain=bitner.com.pl|iforbet.pl|shinden.pl
 @@/wp-content/plugins/cookie-law-info/public/*$stylesheet
-@@||consent.cookiebot.com/uc.js$script,domain=lyko.com
-@@||consent.cookiebot.com^$domain=grweb.ics.forth.gr
+@@||consent.cookiebot.com^$domain=forth.gr|lyko.com
 @@||footroll.pl/js/vendor/cookiebox.min.js
-@@||fundingchoicesmessages.google.com^$domain=spidersweb.pl
-@@||fundingchoicesmessages.google.com^$domain=stooq.com|stooq.pl
+@@||fundingchoicesmessages.google.com^$domain=spidersweb.pl|stooq.com|stooq.pl
 @@||kawalekkodu.pl/bl-plugins/cookie-consent/js/advert.js
 @@||sdk.privacy-center.org^$domain=dziennikbaltycki.pl|dzienniklodzki.pl|dziennikpolski24.pl|dziennikwschodni.pl|dziennikzachodni.pl|echodnia.eu|expressbydgoski.pl|expressilustrowany.pl|gazetakrakowska.pl|gazetalubuska.pl|gazetawroclawska.pl|gk24.pl|gloswielkopolski.pl|gol24.pl|gp24.pl|gra.pl|gs24.pl|kurierlubelski.pl|motofakty.pl|naszemiasto.pl|nowiny24.pl|nowosci.com.pl|nto.pl|polskatimes.pl|pomorska.pl|poranny.pl|regiodom.pl|sportowy24.pl|strefaagro.pl|strefabiznesu.pl|stronakobiet.pl|telemagazyn.pl|to.com.pl|wspolczesna.pl
 !
