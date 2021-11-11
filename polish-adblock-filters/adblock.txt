@@ -8,9 +8,9 @@
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 5 November 2021
+! Last modified: 11 November 2021
 ! Expires: 1 day
-! Version: 2021110501
+! Version: 2021111101
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -18,7 +18,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2021 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2021110501 aktualizacja: ptk, 5 listopada 2021, 20:45:00
+! v.2021111101 aktualizacja: czw, 11 listopada 2021, 13:55:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -241,7 +241,7 @@ popkiller.pl,tygodnikpodhalanski.pl,cnc.info.pl##[class*="reklamy"]
 ~istotne.pl,pl###ads
 ~joemonster.org##[id^="commentAd"]
 ~kakto.pl,~agatameble.pl,~ccc.eu,~redcoon.pl##a[href*="/ad/click/"]
-~lowcygier.pl,pl##a[href*="://converti.se/click/"]
+~tatromaniak.pl,~lowcygier.pl,pl##a[href*="://converti.se/click/"]
 ~m3esolutions.com,~sloworegionu.pl,~4active.eu,~valida.pl,~foodprint.pl,~roztoczanskipn.pl##.banneritem
 ~biblio.com,~milionczesci.pl,~dizibox.com,~2dehands.be,~ru,~ua,~www.pudelek.pl,~btdb.eu##[id^="adv-"]:not(#adv-settings)
 ~ool.ru,~24jgora.pl,~24wroclaw.pl,~kurierpodlaski.pl##[class*="box-advert"]
@@ -2069,6 +2069,12 @@ mgsm.pl##.is-at-top.is-anchored.sticky.text-center.show-for-large.columns.large-
 mgsm.pl##.karta-widget-prices, .reklama_caption
 mgsm.pl##[id^="AdArea"]
 mgsm.pl##hr, div.columns > small:not([style="font-size: 0.7em;"])
+mgsm.pl##.mediafarm:style(height: 0 !important;)
+mgsm.pl###users-photos__panel > .oa_photodata
+mgsm.pl###camera-back__panel > .oa_photodata
+mgsm.pl###transmissions__panel > .oa_photodata
+mgsm.pl##.phonedatas.columns.small-12.medium-12.large-7 > .oa_photodata
+mgsm.pl##div.oa_comment
 mh24.pl###cboxOverlay
 mh24.pl###colorbox
 mh24.pl,jaw.pl##[id^="text-"]
@@ -3298,6 +3304,7 @@ telko.in##.detail-top-banner.custom-html, .article-wrapper.content-wrapper > div
 bitcoin-online.pl##.bannergroup
 bitcoin.pl##.m-rek
 bitcoin.pl##.space-x-6.flex
+teksciory.interia.pl##.advert-200-box
 temi.pl##.gtmi-2.gtmi, .gtmi-dyn
 tenis24.eu##.container > .text-center
 tenisklub.pl##DIV[style="width:750px;height:100px;margin:10px auto;"]
@@ -4598,6 +4605,7 @@ zywiecinfo.pl##.promoted
 @@||hotelscombined.com/Script/$script,domain=mlecznepodroze.onet.pl
 @@||hotelscombined.com/SearchBox/$script,domain=mlecznepodroze.onet.pl
 @@||hub.com.pl^$subdocument,domain=poczta.interia.pl
+@@||ia.hit.interia.pl/*/date?$domain=interia.pl
 @@||js-agent.newrelic.com/$script,domain=portal.abczdrowie.pl
 @@||lokalna24.pl^*^LOKALNA24_logo_
 @@||lulektv.app.insyscd.net/Content/player/insysplayer/adTest.png$image,domain=lulektv.app.insyscd.net
