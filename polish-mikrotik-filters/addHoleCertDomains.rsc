@@ -6381,6 +6381,7 @@ add name="gkpge.link" address="195.187.6.34" comment="addHoleCertDomains HoleCer
 add name="gladkie-glosowanko.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="glaxo.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="glazinc.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="glenskof-com.preview-domain.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="global-infonews.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="globalarrangeme.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="globaltopcourse.us" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
