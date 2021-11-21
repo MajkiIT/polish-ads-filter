@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies i EasyList/AdGuard Base!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2021.11.15.0
-! Last modified: Mon, 15 Nov 2021, 00:03 UTC+01
+! Version: 2021.11.21.0
+! Last modified: Sun, 21 Nov 2021, 19:45 UTC+01
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -18,7 +18,7 @@
 ! Copyright © 2021 Certyficate IT
 ! Copyright © 2021 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2021.11.15.0 aktualizacja: pon, 15 lis 2021, 00:03 UTC+01
+! v.2021.11.21.0 aktualizacja: nie, 21 lis 2021, 19:45 UTC+01
 !
 !
 ! Specyficzne reguły ukrywające
@@ -225,6 +225,7 @@ arch.kpcen.pl###colorbox
 arch.kpcen.pl,laboratoria.net###cboxOverlay
 areatour.pl,dacter.pl,dlapacjenta.pl,marbo-sport.pl,radentortodonta.pl,uni-tech.pl##div#topbar
 arena.pl#?##__next > footer ~ .MuiPaper-root:-abp-has(a[href*="Polityka-Plik%C3%B3w-Cookies"].MuiLink-root)
+are.waw.pl,ebok.asta-net.pl,studia.gov.pl##.top.ui-notificationbar
 argentointernational.pl,bilera.pl,biurotech.net.pl,brewa.pl,dekavit.pl,gdanska1.pl,jesienna.mediaprod.com.pl,kalisz.caritas.pl,lanko.pl,letniskowo.pl,opiekun.kalisz.pl,parafia-slupia.pl,parafiachynowa.pl,przp.pl,radiorodzina.kalisz.pl,technikum.kalisz.pl,tygodnikkepinski.pl##.module-abovebox[style^="position: fixed;"]
 arg.gdynia.pl,finai.pl,rankinglekarzy.pl##div > .info
 arkady.info,e-drogeria.com,krzysztonjan.com###notice_bar
@@ -565,6 +566,8 @@ cineman.pl,mojeekino.pl,tv-trwam.pl##div[class^="CookiePolicyInfo__container"]
 cinkciarz.pl##.c-topbar--cookie
 circleci.com,pl.ecco.com###cookiebanner
 circlek.pl###cookieboxM
+cire.pl#?##root > header ~ header ~ div[class*=" "]:-abp-has( > div div:first-child:-abp-contains(/^Informacja na stronę$/))
+cire.pl#?##root > header ~ header ~ div[class*=" "]:-abp-has( > div p:first-child:-abp-contains(/plików cookie$/))
 citibank.pl##.new-cookie
 ciuchy.zizej.pl##footer ~ div[data-hook="optanon"]
 civitas.edu.pl###cronox-cookie-notice
@@ -795,7 +798,6 @@ ebay.pl###gdpr-banner, .gh-banner
 ebill.pl,racezone.pl,wrozbyonline.pl###sky-cookies
 ebizneskrokpokroku.pl###notification-bar
 eblik.pl#?#.page_content_info:-abp-has(#cookie_info_max)
-ebok.asta-net.pl,studia.gov.pl##.top.ui-notificationbar
 ebok.enea.pl##.page-footer-cookie-info
 ebok.jmdi.pl,nauka.gov.pl##.ui-notificationbar.top
 ebok.macrosat.pl,ebok.tkk.net.pl##.ui-widget.ui-notificationbar
@@ -1829,6 +1831,7 @@ mzgok.com.pl###spu-bg-1867
 mzkzg.org##.cookies-container
 mzn.jastrzebie.pl#?#.sp_popup_wrap:-abp-has([href="/index.php/polityka-prywatności"])
 m.benchmark.pl###private-policy-popup
+m.ceneo.pl##.js_popupContainer.popup-container
 m.facebook.com#?##viewport > div:nth-of-type(1):-abp-has( > a:-abp-contains(cookie))
 m.facebook.com,touch.facebook.com###header-notices
 m.mapahandlu.pl#?#.ui-footer .ui-title:-abp-contains(pliki cookies)
@@ -2889,8 +2892,6 @@ oetker.*/static/js/privacy-dialog/
 ||apteki24.waw.pl/info_cook.js
 ||architektura.info/extension/pucookies/design/base/stylesheets/pu_cookies.css
 ||artkomnet.pl/wp-content/plugins/popup-builder/javascript/jquery.sgcolorbox-min.js
-||assets.allegrostatic.com/opbox-gdpr-consent$script,stylesheet,domain=allegro.pl
-||assets.allegrostatic.com/opbox-rodo-consent$script,stylesheet,domain=allegro.pl
 ||assets.goldenline.io/assets/user/rodoAgreement.*.js
 ||asus.com/cookienotice.json$xmlhttprequest
 ||asus.com/pl/cookienotice.json$xmlhttprequest
