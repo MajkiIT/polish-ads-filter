@@ -45,8 +45,8 @@ appsource.microsoft.com##.cookieBanner:style(visibility: hidden !important;)
 apress24.pl##.modals-overlay
 apress24.pl##.modal-popup:has-text(Polityką Prywatności)
 apress24.pl,volcano.pl##._has-modal:style(overflow: auto !important;)
-aptekagemini.pl###modal-cookies:remove()
-aptekagemini.pl##.vue-modal--privacy-policy:remove()
+aptekagemini.pl,gemini.pl###modal-cookies:remove()
+aptekagemini.pl,gemini.pl##.vue-modal--privacy-policy:remove()
 aquapark.wroc.pl###header:style(top: 0 !important;)
 archiwum.rp.pl,bloombergbusinessweek.pl,info.rp.pl,konik-online.pl##body:style(margin-top: 0 !important;)
 atalbusiness.pl##.privacyPopup
@@ -56,6 +56,10 @@ atat.pl,chemia-atat.pl,elektryka-atat.pl,oswietlenie-atat.pl,zywnosc-atat.pl##.g
 atat.pl,chemia-atat.pl,elektryka-atat.pl,oswietlenie-atat.pl,zywnosc-atat.pl##.overflow-hidden:style(overflow: auto !important;)
 autodesk.pl###adsk-eprivacy-body-parent
 autodesk.pl##.adsk-eprivacy-force-html, .adsk-eprivacy-force-html body:style(overflow-y: auto !important;)
+autohero.com##body[class*="documentBodyNoScroll_"]:style(position: static !important;)
+autohero.com###app ~ div[class*="backdrop_"], #app ~ div[class*="backdrop_"]
+autohero.com###app ~ div[class*="backdrop_"], #app ~ div[class*="backdrop_"] ~ div[class*="root"][role="dialog"]:-abp-contains(Używamy plików cookie)
+autohero.com,kanga.exchange,powiadomienia.gis.gov.pl##body[style]:style(overflow: auto !important; padding-right: 0 !important;)
 auto-czesci-lipiec.pl###mAll
 auto-czesci-lipiec.pl,mkidn.gov.pl,paczkomaty.pl,puma.com##.modal-open:style(overflow: visible !important; padding-right: 0 !important;)
 avg.com##body.ot-overflow-hidden:style(overflow: auto !important; padding-right: 0 !important;)
@@ -216,7 +220,7 @@ gitara-sklep.pl##body:style(padding-top: 0 !important;)
 gmina-aleksandrow.pl,grabow.pl,raciazek.pl###g_toplayer
 goldenline.pl###profiling-agreement, .modal-backdrop
 goldenline.pl###react-portals:has(.cookie-modal)
-goldenline.pl,sklepyinfo.pl,www.thomas-krenn.com,zsti.zsti.civ.pl##body[style*="overflow"]:style(overflow: auto !important;)
+goldenline.pl,maxelektro.pl,sklepyinfo.pl,www.thomas-krenn.com,zsti.zsti.civ.pl##body[style*="overflow"]:style(overflow: auto !important;)
 goodram.com##div#cookie-container
 goodram.com##+js(rc, .cookie-opened, body, complete)
 goodram.com##.cookie-opened:style(position: fixed; overflow: auto !important;)
@@ -259,7 +263,6 @@ jelenia.tv###rodoModal:remove()
 jelenia.tv##+js(set, cookie_rodo, undefined)
 kalisz.info.pl###all:style(top: 0 !important;)
 kanga.exchange###root + div[role="presentation"].mui-fixed
-kanga.exchange,powiadomienia.gis.gov.pl##body[style]:style(overflow: auto !important; padding-right: 0 !important;)
 katarzynatryniszewska.pl###popupModalRodo, .modal-backdrop
 kbw.gov.pl,pkw.gov.pl###rodo_wiadomosc
 kobietymedycyny.pl##+js(acis, $, cookies)
@@ -294,6 +297,7 @@ lnk.to,orcd.co,tix.to##.slide-bar-container
 lomza.pl##html > body.polityka-cookies:style(margin-top: 0 !important; background-position: center 120px !important;)
 mago.com###yl-popup-wrapper-popupRodo, #yl-popup-shadow-popupRodo
 makro.pl##.cookie-law-modal
+maxelektro.pl##.cookie-bg-wrapper
 maxizoo.pl##body.no-scrolling:style(overflow: auto !important;)
 maxizoo.pl###cookie-banner.cookie-banner
 maxkuchnie.pl##+js(acis, $, initRodoWindow();)
@@ -311,6 +315,10 @@ media.netflix.com###cookieAlert #mainContent:style(padding-top: 82px !important;
 media.netflix.com###cookieAlert #mainHeader:style(top: -48px !important;)
 media.netflix.com##+js(ra, id, body[id="cookieAlert"], stay)
 meetup.com###mupFooter:style(padding-bottom: 0 !important;)
+memo-book.pl##+js(rc, .rodo-locked, body\, html, stay)
+memo-book.pl,ostrzegamy.online##body.rodo-locked #page-container > *:style(filter: none !important;)
+memo-book.pl,ostrzegamy.online##body.rodo-locked, html.rodo-locked:style(overflow: auto !important;)
+memo-book.pl,ostrzegamy.online##.rodo-popup, .rodo-overlay
 meteoblue.com##.gdpr_message
 meteoblue.com##.scroll_lock:style(overflow: auto !important;)
 metropoliaztm.pl##footer#footer > div > div > a[href="#"].text-danger
@@ -379,9 +387,6 @@ osehero.pl##.ReactModalPortal
 osehero.pl##.ReactModal__Body--open:style(overflow: auto !important;)
 ose.gov.pl##body.modal-open #root:style(filter: none !important;)
 ose.gov.pl##.cookies-modal, .modal-backdrop
-ostrzegamy.online##body.rodo-locked #page-container > *:style(filter: none !important;)
-ostrzegamy.online##body.rodo-locked, html.rodo-locked:style(overflow: auto !important;)
-ostrzegamy.online##.rodo-popup, .rodo-overlay
 otwarteklatki.pl###popup-gdpr, .popup-overlay
 otwarteklatki.pl##.popup-visible:style(overflow: auto !important;)
 paczkomaty.pl##.modal:has(app-regulations-modal > .modal-header > .modal-title:has-text(RODO))
@@ -399,6 +404,7 @@ pl###kopageBar > #kopageBarCookies:upward(1)
 pl##.alert > a[href*="/polityka-cookies"] ~ a[href*="/polityka"]:upward(.alert)
 pl##.module-abovebox p > a[href*="/polityka"][href$="-cookies.html"]:upward(.module-abovebox[style^="position: fixed;"])
 pl.aptoide.com##div[class*="cookie-notice__CookieNoticeWrapper-"]
+pl.canalplus.com###modal-overlayer-cookie-banner:remove()
 pl.kruk.eu##.cookie-agreement
 pl.kruk.eu##.cookie-open:style(position: static !important;)
 pl.nowystyl.com##html[style*="overflow:"]:style(overflow-y: auto !important;)
