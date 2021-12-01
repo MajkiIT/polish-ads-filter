@@ -2153,6 +2153,7 @@ add name="ceglaocenic.site" address="195.187.6.34" comment="addHoleCertDomains H
 add name="celestedaleo.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="cemarevo.website" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="cen.trum.polska.24.account.login.ssl.masterfood.mobi" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="cena-kachestvo.bg" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="cennik-24.in.net" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="cennik-24.life" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="cennik-paczki-24.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
