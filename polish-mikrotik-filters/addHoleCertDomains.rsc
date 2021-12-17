@@ -24636,6 +24636,7 @@ add name="westwall-com.preview-domain.com" address="195.187.6.34" comment="addHo
 add name="wetieria.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="weyewweg.mypi.co" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wezwanieus.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="wf.agakhanacademies.optimizia.co" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wgazetce.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wgazetce.waw.pl" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="wgliwicach.xyz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
