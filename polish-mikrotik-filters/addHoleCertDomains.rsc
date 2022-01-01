@@ -26535,6 +26535,7 @@ add name="www.allegrolokalnie-pl.id-79949017.site" address="195.187.6.34" commen
 add name="www.allegrolokalnie-pl.id-834361.pw" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.allegrolokalnie-pl.id-836272.pw" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.allegrolokalnie-pl.id-8493849.pw" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.allegrolokalnie.398543.pw" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.allegrolokalnie.75843.space" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.allegrolokalnie.83432.space" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.allegrolokalnie.app" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
