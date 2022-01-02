@@ -28884,6 +28884,7 @@ add name="www.elbravocomputer.com" address="195.187.6.34" comment="addHoleCertDo
 add name="www.elbroder.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.eldinews.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.elecompl.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="www.electrocanada.online" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.electrumltc.org" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.elektro-max.top" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="www.elektronicze-poszukiwania.eu" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
