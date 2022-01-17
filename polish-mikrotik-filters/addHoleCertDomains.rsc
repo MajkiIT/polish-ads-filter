@@ -26466,6 +26466,7 @@ add name="weryfikacja-facebookowa-23.herokuapp.com" address="195.187.6.34" comme
 add name="weryfikacja-facebookowa-24.herokuapp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="weryfikacja-facebookowa-25.herokuapp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="weryfikacja-facebookowa-26.herokuapp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
+add name="weryfikacja-facebookowa-30.herokuapp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="weryfikacja-facebookowa1.herokuapp.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="weryfikacja-kosmetyczki.biz" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
 add name="weryfikacja-kosmetyczki.com" address="195.187.6.34" comment="addHoleCertDomains HoleCert"
