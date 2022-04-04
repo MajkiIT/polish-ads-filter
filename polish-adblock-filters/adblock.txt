@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
-! Last modified: 22 March 2022
+! Last modified: 4 April 2022
 ! Expires: 1 day
-! Version: 2022032201
+! Version: 2022040401
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2022 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2022032201 aktualizacja: wt, 22 marca 2022, 10:50:00
+! v.2022040401 aktualizacja: pon, 4 kwietnia 2022, 09:45:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -2236,6 +2236,7 @@ multi-head.pl##.partnerRight
 muratordom.pl,mjakmama24.pl,muratorplus.pl,urzadzamy.pl##[class*="placement"]
 muratordom.pl,mjakmama24.pl,muratorplus.pl##.active.placement__lazy, #bottom_1, .zpr_box_side_bottom
 muratordom.pl##.promo.main_page.container, .player-block-info
+muratorplus.pl##[id^="hook_box_top"], .promo-image-wrapper, [class^="zpr_box_half_page"]
 musiclovers.pl##div.wpb_content_element.wpb_text_column, .td-header-sp-recs, .wpb_raw_html.wpb_content_element.wpb_raw_code
 muzyka.dziennik.pl##.widget-headertext-area
 muzyka.interia.pl###news1
@@ -3123,7 +3124,7 @@ spidersweb.pl##iframe[src*="ads"], .adContainer, .partner-logo
 spidersweb.pl##section.show-for-medium.margin-bottom35.padding-35-0.greybg > .row > .show-for-large.columns.large-4
 spidersweb.pl#?#.sidebar-panel:-abp-has(center:only-child script:-abp-contains(googletag.cmd.push))
 spidersweb.pl##script[src*="optad360.io"] ~ div > div[id][class=" "]
-spidersweb.pl##[id^="SonyPs5Ad"]
+spidersweb.pl##[id^="SonyPs5Ad"], .app-adBox
 spiswitryn.pl##[src^="https://www.slubi.pro/banery/"]
 spiswitryn.pl##h3:nth-of-type(3)
 spiz.pl,roksa.pl##.c
@@ -3533,6 +3534,7 @@ uploaduj.com##.guestMessage
 uptimemadeeasy.com##.subscribep
 urania.edu.pl###block-reklamagoogleadsensewiadomosci, #block-reklamamoneteasygadzety
 urbnews.pl##.sb-widget:nth-of-type(5), .sb-widget:nth-of-type(6)
+urzadzamy.pl###hook_box_top1
 v10.pl##DIV[style="width: 100%; background-color: rgb(0, 0, 0); margin: 0px; position: fixed; bottom: 0px; left: 0px; padding: 0px; height: 15px; line-height: 15px; text-align: center; color: rgb(255, 255, 255); z-index: 1000; font-family: Arial,Helvetica,sans-serif; font-size: 10px;"]
 v10.pl##[id^="newsltr1_"]
 valetudo.bialystok.pl##.darkness-popup
@@ -3601,6 +3603,7 @@ wedkarstwo-lublin.pl###wrap > div:nth-of-type(1), #page-footer > div:nth-of-type
 wedleprawa.pl##.prawo-sidebar2.prawo-layout-cell > div.clearfix.prawo-block:nth-of-type(2)
 weeb.tv##DIV[style="width: 800px; height: 80px; background: url(\"http://backupstatic.weeb.tv/images/weeb-1.png\") no-repeat scroll left top transparent; padding-left: 151px; padding-top: 73px; cursor: pointer;"]
 weekend.gazeta.pl##A[target="_blank"] > IMG[alt^="(fot."][src^="http://bi.gazeta.pl/"]
+weranda.pl##[id^="a-container-"]
 wertykal.com###box_slider_61, #box_custom60
 weszlo.com##.bsaGridGutter, A[href^="https://promocje.woah.com/"]
 weszlo.com##.top-adw
@@ -4050,6 +4053,7 @@ zywiecinfo.pl##.promoted
 ||adglare.org^$third-party,domain=nhl.pl|notebookcheck.pl
 ||adocean.pl^
 ||ads.gry-online.pl^
+||ads-tejot.pl^
 ||adv.herocraft.com^
 ||adsb4track.com/?$script
 ||adraker-dev.azureedge.net^
@@ -4335,6 +4339,7 @@ zywiecinfo.pl##.promoted
 ||ovh.webshark.pl^
 ||ozoneo.pl/templates/images/description/5901/Image/$image
 ||ozoneo.pl/templates/images/rotators/$image
+||pakietbudowlany.pl/modules/tptncolbanner/images/$image
 ||pan-doradca.pl/index/noaidb/
 ||panele5.llog.pl/$image
 ||partnerzyapi.ceneo.pl^$script
