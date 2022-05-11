@@ -4,11 +4,16 @@ on:
   issues:
     types: [opened, edited]
 
+permissions:
+  contents: read
+
 jobs:
   apply-label:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
-      - uses: actions/github-script@v3
+      - uses: actions/github-script@v6
         with:
           script: |
             var body = context.payload.issue.body;
@@ -61,7 +66,7 @@ jobs:
                 labelsToAdd.push(labelSet[i].label);
               }
               if(body.match(re_remove) && labels.some(e => e.name === labelSet[i].label)) {
-                github.issues.removeLabel({
+                github.rest.issues.removeLabel({
                   issue_number: context.issue.number,
                   owner: context.repo.owner,
                   repo: context.repo.repo,
@@ -71,7 +76,7 @@ jobs:
             }
 
             if (labelsToAdd.length > 0) {
-              github.issues.addLabels({
+              github.rest.issues.addLabels({
                       issue_number: context.issue.number,
                       owner: context.repo.owner,
                       repo: context.repo.repo,
