@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
-! Last modified: 20 May 2022
+! Last modified: 6 June 2022
 ! Expires: 1 day
-! Version: 2022052001
+! Version: 2022060601
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2022 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2022052001 aktualizacja: ptk, 20 maja 2022, 20:35:00
+! v.2022060601 aktualizacja: pon, 6 czerwca 2022, 12:05:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -193,6 +193,7 @@ iitvx.pl###player-above-2
 ##a[href^="https://ad.zanox.com/ppc/"]
 ##a[href^="https://affiliate.bitbay.net/"]
 ##a[href^="https://www.solutions4ad.com/partner/scripts/click.php"]
+##[href*=".smartadserver.com"]
 ##ads-top-layer
 ##[id^="componentsPromotionsOffers"]
 ##div#skapiec_ad
@@ -1713,7 +1714,8 @@ kartuzy.info##._ap
 kartuzy.info,bbfan.pl##.c-content__adv
 kaszuby24.pl##.html-block.col-md-12
 katalogsmakow.pl##.cOuterBlock-5
-katowice24.info##.inner, #text-4, #text-5, .background-url, div.k_ad.row
+katowice24.info###text-4, #text-5, .background-url, div.k_ad.row
+katowice24.info##.inner:-abp-contains(/reklama/i)
 katowicedzis.pl###g-sidebar > .g-grid
 kawerna.pl###Mod138, #ja-header
 kawerna.pl###kawerna_tapeta
@@ -1887,7 +1889,7 @@ lento.pl###a-show-boottom
 lento.pl###sidebar-promo
 leonclub.pl##.bg3.post
 lesko.info##.widget-header, #content > center > A > IMG, .widget_media_image.widget
-letsplej.pl,regionfan.pl,4trucks.pl##.rekl
+letsplej.pl,regionfan.pl,4trucks.pl,nie-spamuj.eu##.rekl
 lexus-forum.pl##body > .forabg
 lezajsk4u.pl##div.vc_col-sm-12.vc_column_container.wpb_column > .vc_column-inner
 lfc.pl###center > .box:nth-of-type(1)
@@ -2461,7 +2463,7 @@ olawa24.pl##div.l-row > .l-box--99.l-box > center, div.l-container > div.l-row >
 oleole.pl###pop_newsletter_inner
 oleole.pl##[id^="ddd_left"]
 oleole.pl##[id^="ddd_right"]
-olesnica24.com##.right
+olesnica24.com##.iad.relative.text-cente, .right
 olesnicainfo.pl##div.tocenter.hadw
 olsztyn.com.pl##.partners, #boxE, #boxA
 olsztyn24.com###body2 > div:nth-of-type(3), [class^="reklama_"]
@@ -3104,6 +3106,7 @@ slowopodlasia.pl,expresselblag.pl,strzelce360.pl,lokalna24.pl##.tipad_tag
 sloworegionu.pl###Mod343, #Mod121, #Mod372, #Mod373, #Mod281, #Mod252, #Mod120, .container > .bannergroup
 sloworegionu.pl##.t3-spotlight
 sloworegionu.pl,glucholazyonline.com.pl,zlubaczowa.pl,bogatynia.info.pl##.flexbannergroup
+sloworegionu.pl###Mod479, #Mod276, #Mod402
 wirtualnemedia.pl,nowywyszkowiak.pl,eglos.pl##[id^="baner"]
 slowopodlasia.pl##.mw-15.main-widget, .widget-57.widget, .widget-82.widget
 slupca.pl##.g-2.g
@@ -3398,6 +3401,7 @@ ticketmaster.pl##[id^="ad-slot-"]
 tinypic.pl##div.media-toolbox:nth-of-type(1), #nexus_ban
 tkn24.pl###right-sidebar, #dk-image-rotator-widget-6, #FONT[color="SILVER"], #container > center, #dk-image-rotator-widget-10
 tkn24.pl#?#font:-abp-contains(REKLAMA)
+tko.pl##.oln-sticky
 toiowo.eu###black-studio-tinymce-21, #text-6, #text-4
 tojuzbylo.pl###block-block-19, #block-block-16, .even.field-item > div
 tokfm.pl##DIV[style="width: 940px; padding: 21px 0 18px; background: #F8F8F8; margin: 0 auto; "], .tok-advertisement
@@ -3731,7 +3735,7 @@ wterenie.pl,pultusk24.pl##div.l-box--50.l-box > p
 wtk.pl##.clean-border.video-medium-tile
 wtkplay.pl##[id^="adsys_"]
 wydawajdobrze.com##.d-xl-block.d-none
-wysokomazowiecki24.pl##[id^="section-id-"] > .sppb-row-container > .sppb-no-gutter.sppb-row > .sppb-col-md-4, #sp-reklamatop
+wysokomazowiecki24.pl##[id^="section-id-"] > .sppb-row-container > .sppb-no-gutter.sppb-row > .sppb-col-md-4, #sp-reklamatop, #sp-top-bar
 wyspiarzniebieski.pl##.popupOff
 www.3trzy3.pl##.fonsGris1
 www.3trzy3.pl##.fonsPubli.flex-item
