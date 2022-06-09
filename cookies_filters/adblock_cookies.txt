@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies i EasyList/AdGuard Base!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2022.5.22.1
-! Last modified: Sun, 22 May 2022, 20:09 UTC+02
+! Version: 2022.6.9.0
+! Last modified: Thu, 09 Jun 2022, 23:14 UTC+02
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -18,7 +18,7 @@
 ! Copyright © 2022 Certyficate IT
 ! Copyright © 2022 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2022.5.22.1 aktualizacja: nie, 22 maj 2022, 20:09 UTC+02
+! v.2022.6.9.0 aktualizacja: czw, 09 cze 2022, 23:14 UTC+02
 !
 !
 ! Specyficzne reguły ukrywające
@@ -2343,6 +2343,7 @@ rck.pila.pl#?#.alert-message.alert:-abp-has(.plg_system_eprivacy_message)
 rck.rydultowy.pl#?#.cherry-popup:-abp-has(a[href*="/cookies/"])
 realbus.pl#?#.alert:-abp-contains(🍪)
 rebalance.pl##.cookie-info_container
+receptagemini.pl##.cookies-banner-overlay
 recticelinsulation.com###js-cookie-alert.c-alert-cookie
 redark.pl##div[class*="cookiesPopup__PopupContainer"]
 redbullmobile.pl###more1
@@ -3134,13 +3135,13 @@ com##.cnil-banner-v2:not(body):not(html)
 com##.cnil-banner:not(body):not(html)
 com,eu,pl###cookie-notice:not(body):not(html)
 com,pl##.cc-revoke:not(body):not(html)
+eu,pl##body:not(.cli-barmodal-open) #cookie-law-info-again
+eu,pl##body:not(.cli-barmodal-open) #cookie-law-info-bar:not(.cli-bar-popup):not(.cli-modal-content)
 org,pl##amp-consent
 org,pl###amp-user-notification1:not(body):not(html)
 pl##aside[class*="Cookie"]
 pl##aside[class*="cookie"]
 pl##body > div[style*="top"][style*="left"][style*="background"][style*="cookies_tlo"]:not([id]):not([class])
-pl##body:not(.cli-barmodal-open) #cookie-law-info-again
-pl##body:not(.cli-barmodal-open) #cookie-law-info-bar:not(.cli-bar-popup):not(.cli-modal-content)
 pl##div.cookieKontener
 pl##div#cook
 pl##div#cookiepopupdiv
@@ -3191,8 +3192,8 @@ pl###band-cookies:not(body):not(html)
 pl###banner-cookies:not(body):not(html)
 pl###barritaloca:not(body):not(html)
 pl###bar_bottom_cookie:not(body):not(html)
-pl###ba_eu_cookie_law
 pl###ba_eu_cookie_law ~ .ba_popup_cookie
+pl###ba_eu_cookie_law:not(form)
 pl###bbccookies:not(body):not(html)
 pl###blockPopupInformation:not(body):not(html)
 pl###box_cookie:not(body):not(html)
@@ -3996,7 +3997,11 @@ visa.pl#@##CookieReportsPanel
 volcano.pl#@##cookiesModal
 winnicalidla.pl#@#.privacy-policy
 wolframalpha.com##footer ~ section
+###ba_eu_cookie_law:not(form)
+#@##ba_eu_cookie_law
 @@/jquery.cookiebar$domain=pl
+@@/wp-content/plugins/cookie-law-info/admin/*
+@@/wp-content/plugins/cookie-law-info/images/*
 @@/wp-content/plugins/cookie-law-info/public/*$stylesheet
 @@||consent.cookiebot.com^$domain=forth.gr|lyko.com
 @@||footroll.pl/js/vendor/cookiebox.min.js
