@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
-! Last modified: 8 July 2022
+! Last modified: 13 July 2022
 ! Expires: 1 day
-! Version: 2022070802
+! Version: 2022071301
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2022 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2022070802 aktualizacja: ptk, 8 lipca 2022, 11:35:00
+! v.2022071301 aktualizacja: sr, 13 lipca 2022, 12:30:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -166,7 +166,7 @@ iitvx.pl###player-above-2
 ##[href*="://clickserve.dartsearch.net/link/click"]
 ##[href^="http://adserwer."]
 ##[href^="https://aff.sendhub.pl/"]
-##[id$="reklamy"]
+~browargrodzisk.com##[id$="reklamy"]
 ##[id*="-billboard-advert"]
 ##[id*="nokaut_ads_"]
 ##[id^="AdsDetailsTop"]
@@ -3304,7 +3304,6 @@ sztafeta.pl##.mom-e3lanat-wrap
 sztuka-wnetrza.pl##div.adv_w_1
 sztutowo.com###all > div > div > [href^="baner"] > [src^="img/banery"]
 szukacz.pl###googleContainer
-szukajka.tv##.left > .picture
 szukam-ksiazki.pl##td:nth-of-type(3) > table > tbody > tr > .box_width_td_left > .box_width_left > tbody > tr:nth-of-type(2)
 szukam-ksiazki.pl##td:nth-of-type(3) > table > tbody > tr > .box_width_td_left > .box_width_left > tbody > tr:nth-of-type(3)
 szydlowiecki.eu##[id^="bills_in_rotation_"]
@@ -3338,6 +3337,7 @@ tarnow.net.pl##.sec_A_adv2
 www.tarnobrzeg.info##.header-advertise
 tarnowiak.pl##.rightb.column:nth-of-type(4)
 tatromaniak.pl##.google-sidedrt-wrap, [href^="https://tatromaniak.pl/linkout/"]
+taxiways.pl##.commercial-header
 tcz.pl###dynamic-load, #dynamic-loading
 techfresh.pl,chip.pl###banner-3
 techmaniachd.pl##a[href*="s.click.aliexpress.com"]
@@ -4988,12 +4988,11 @@ cda-tv.online###clickfakeplayer
 /^https:\/\/(?!horrortube)(?!filman.cc)(?!horlol.pl)[a-z.0-9]{3,15}\.[a-z]{2,3}\//$image,domain=filman.cc|horlol.pl
 /^https?:\/\/(?!youtube)[a-zA-Z0-9.]{5,20}\.com\/watch\?key=/$popup
 /^https?:\/\/[\w]{8,}\.[a-z]{3,3}\/[a-zA-Z]{1,10}\.html[\w\d\W]{100,}/$script,domain=upzone.cc
-/^https?:\/\/[\w]{5,}\.[a-z]{3,4}\/[\w\d\W]{45,}/$script,domain=szukajka.tv|fileone.tv|jetload.net
-!/^https?:\/\/[a-z.]{5,10}\.[a-z]{2,4}\/[a-z.]{3,7}\?[a-zA-Z0-9=&%-.]{100,250}/$popup,domain=alltube.tv|alltube.pl
+/^https?:\/\/[\w]{5,}\.[a-z]{3,4}\/[\w\d\W]{45,}/$script,domain=fileone.tv|jetload.net
 /^https?:\/\/[a-z0-9-]{8,30}\.[a-z]{2,11}\/[0-9]{3,10}/$xmlhttprequest,script,stylesheet,subdocument,domain=raptu.com|flashx.tv|fileone.tv|animezone.pl|vidoza.net|kreskowkazone.pl|vidfile.net
 /^https?:\/\/[a-z0-9-]{8,30}\.[a-z]{2,11}\/[a-z]{1,3}\/[0-9]{5,10}/$script,domain=cda-tv.pl
 /^https?:\/\/[a-z0-9]{10,20}\.com\/[0-9]{5,10}\.html/$subdocument,domain=ekino-tv.pl|abcvideo.cc
-/^https?:\/\/[a-z0-9]{5,}\.(com|bid|online|top|club)\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9/]{4,}\.js/$script,domain=vidto.me|fileone.tv|srkcast.com|vidfile.net|whostreams.net|szukajka.tv|cda-hd.co|filman.cc|cda-hd.cc|onlystream.tv|jetload.net|ekino.pw|waaw.tv|cda-tv.online|playtube.ws|supervideo.tv|upstream.to|vizjer.pl|vodi.cc|clipwatching.com
+/^https?:\/\/[a-z0-9]{5,}\.(com|bid|online|top|club)\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9]{1,}\/[a-z0-9/]{4,}\.js/$script,domain=vidto.me|fileone.tv|srkcast.com|vidfile.net|whostreams.net|cda-hd.co|filman.cc|cda-hd.cc|onlystream.tv|jetload.net|ekino.pw|waaw.tv|cda-tv.online|playtube.ws|supervideo.tv|upstream.to|vizjer.pl|vodi.cc|clipwatching.com
 /^https?:\/\/[a-zA-Z.0-9]{7,}\.(com|bid|info)\/[a-zA-Z.-]{1,}\.js/$script,domain=devil-torrents.pl|electro-torrent.pl|vidlox.tv|segos.es|fileone.tv|raptu.com|vidfile.net|sharevideo.pl|sharing-box.cloud|vidstream.xyz|cloudupload.co|veecast.net|shinden.pl|tele-wizja.is|hqq.watch|whostreams.net|seriale-po-polsku.pl|virpe.com|filman.cc|onlystream.tv|clipwatching.com|upstream.to|videopenny.net|flashx.net|vidspace.io|cdahd.co|upzone.cc|abcvideo.cc|ekinomaniak.net
 /^https?:\/\/[a-zA-Z0-9]{10,}\.cloudfront\.net\/[a-zA-Z0-9%?=]{10,}/$script,domain=seriale-po-polsku.pl|animezone.pl|abcvideo.cc
 /^https?:\/\/[a-zA-Z0-9]{7,}\.com\//$script,domain=ekino.pw
@@ -5351,7 +5350,6 @@ zdrowyportal.org,swiatoze.pl,histografy.pl,kurierwilenski.lt,szymkiewicz.pl,piek
 zwiedzamyparyz.pl###text-6, .a-single, .gyg-widget
 !
 !39#--------------------------Bitcoin ------------!
-/:\/\/[\w\W]{4,15}\.[a-z]{2,6}:[0-9]{3,4}\//$subdocument,domain=szukajka.tv
 /:\/\/[\w\W]{5,15}\.[a-z]{2,3}:[0-9]{3,4}\//$domain=vidoza.net
 /^(http|https):\/\/(?!www.speedvid)(?!streamcherry.com)(?!vshare)(?!vidoza)(?!openload)(?!www.youtube)[a-zA-Z0-9\W]{5,10}.[a-z]{2,20}\/(?!anime)[\w\W\d]{5,20}\/[a-z]{5,20}\//$subdocument,domain=love-drama.pl|vidfile.net
 /^(http|https):\/\/[a-z.]{5,15}\.[a-z]{2,4}\/[a-z]{3,3}\/conf\?[a-z0-9\W]{10,50}/$xmlhttprequest,domain=fileone.tv
