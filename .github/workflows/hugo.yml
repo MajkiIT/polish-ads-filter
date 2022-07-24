@@ -12,7 +12,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: recursive  # Fetch the Docsy theme
           fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
@@ -24,14 +24,15 @@ jobs:
           extended: true
 
       - name: Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '12.x'
+          node-version: 'lts/*'
 
       - name: Build
         run: |
           git rm -rf ./docs
-          cd ./website
+          cd ./website/themes/docsy && npm install
+          cd "$GITHUB_WORKSPACE"/website
           npm i -D --save autoprefixer postcss-cli postcss
           hugo --minify
 
