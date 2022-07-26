@@ -36,6 +36,13 @@ jobs:
           npm i -D --save autoprefixer postcss-cli postcss
           hugo --minify
 
+      - name: Upload test build
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v3
+        with:
+          name: polish-ads-filter_website_${{github.sha}}
+          path: ./docs/
+
       - name: Deploy
         if: github.event.pull_request.merged == true || github.event_name == 'push'
         run: |
