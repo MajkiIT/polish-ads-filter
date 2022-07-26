@@ -132,7 +132,7 @@
 							<div class="dropdown-menu text-center">
 								<div class="btn-group-vertical">
 									{{ if in .subscribe "raw.githubusercontent.com" }}
-									<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo" }}&amp;title={{ trim .title "* " }}">
+									<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.link/cdn" }}&amp;title={{ trim .title "* " }}">
 										<i class="fas fa-file-import fa-fw"></i>GitCDN
 									</a>
 									<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.jsdelivr.net/gh" | replaceRE "/master/" "@master/" | replaceRE "/main/" "@main/" }}&amp;title={{ trim .title "* " }}">
@@ -166,7 +166,7 @@
 							<div class="dropdown-menu text-center">
 								<div class="btn-group-vertical">
 									{{ if in .subscribe "raw.githubusercontent.com" }}
-									<a class="btn btn-outline-info mb-2r" href="{{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo" }}" target="_blank" rel="noopener">
+									<a class="btn btn-outline-info mb-2r" href="{{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.link/cdn" }}" target="_blank" rel="noopener">
 										<i class="fas fa-eye fa-fw"></i>GitCDN
 									</a>
 									<a class="btn btn-outline-info mb-2r" href="{{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.jsdelivr.net/gh" | replaceRE "/master/" "@master/" | replaceRE "/main/" "@main/" }}" target="_blank" rel="noopener">
@@ -200,7 +200,7 @@
 							</a>
 							<div class="dropdown-menu text-center">
 								<div class="btn-group-vertical">
-									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo"}}" target="_blank" rel="noopener" title='{{ i18n "uBOPreviewTitle" }}'>
+									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.link/cdn"}}" target="_blank" rel="noopener" title='{{ i18n "uBOPreviewTitle" }}'>
 										<i class="fas fa-eye fa-fw"></i>GitCDN
 									</a>
 									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.jsdelivr.net/gh" | replaceRE "/master/" "@master/" | replaceRE "/main/" "@main/" }}" target="_blank" rel="noopener" title='{{ i18n "uBOPreviewTitle" }}'>
@@ -224,7 +224,7 @@
 							</a>
 							<div class="dropdown-menu text-center">
 								<div class="btn-group-vertical">
-									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo"}}" target="_blank" rel="noopener" title='{{ i18n "AGPreviewTitle" }}'>
+									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.link/cdn"}}" target="_blank" rel="noopener" title='{{ i18n "AGPreviewTitle" }}'>
 										<i class="fas fa-eye fa-fw"></i>GitCDN
 									</a>
 									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.jsdelivr.net/gh" | replaceRE "/master/" "@master/" | replaceRE "/main/" "@main/" }}" target="_blank" rel="noopener" title='{{ i18n "AGPreviewTitle" }}'>
@@ -248,7 +248,7 @@
 							</a>
 							<div class="dropdown-menu text-center">
 								<div class="btn-group-vertical">
-									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.xyz/repo"}}" target="_blank" rel="noopener" title='{{ i18n "supplementPreviewTitle" }}'>
+									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitcdn.link/cdn"}}" target="_blank" rel="noopener" title='{{ i18n "supplementPreviewTitle" }}'>
 										<i class="fas fa-eye fa-fw"></i>GitCDN
 									</a>
 									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.jsdelivr.net/gh" | replaceRE "/master/" "@master/" | replaceRE "/main/" "@main/" }}" target="_blank" rel="noopener" title='{{ i18n "supplementPreviewTitle" }}'>
