@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 15 February 2021
+! Last modified: 24 August 2022
 ! Expires: 1 day
-! Version: 2022021501
+! Version: 2022082401
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2022 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2022021501 aktualizacja: wt, 15 lutego 2022, 08:15:00
+! v.2022082401 aktualizacja: wt, 24 sierpnia 2022, 08:35:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -101,6 +101,9 @@ www.ps4forum.pl##.googleheader
 !
 ! f5.pl
 f5.pl##body:style(padding-top: 0 !important;)
+!
+! meteo.pl
+meteo.pl##div#kon_2a[style*="white"] > * > *:empty:upward([style*="white"])
 !
 ! dobreprogramy
 !dobreprogramy.pl##.page-form *:matches-css(background: /url("?blob:https://www.dobreprogramy.pl//)
