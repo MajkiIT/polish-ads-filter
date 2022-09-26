@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
-! Last modified: 12 September 2022
+! Last modified: 26 September 2022
 ! Expires: 1 day
-! Version: 2022091201
+! Version: 2022092601
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2022 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2022091201 aktualizacja: pon, 12 września 2022, 21:55:00
+! v.2022092601 aktualizacja: pon, 26 września 2022, 12:30:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -261,8 +261,8 @@ popkiller.pl,tygodnikpodhalanski.pl,cnc.info.pl##[class*="reklamy"]
 ~przegladsportowy.pl,~medonet.pl,~fakt.pl,~forbes.pl,~auto-swiat.pl,~noizz.pl,~plejada.pl,~businessinsider.com.pl,~komputerswiat.pl,~onet.pl,~vod.pl,pl,~polsatnews.pl,~polsatsport.pl,~twojapogoda.pl,~comperia.pl,~wp.pl,~dobreprogramy.pl,~motobanda.pl##.ads
 ~przegladsportowy.pl,~playpuls.pl,~fakt.pl,~forbes.pl,~auto-swiat.pl,~noizz.pl,~plejada.pl,~businessinsider.com.pl,~komputerswiat.pl,~onet.pl,~vod.pl,~gry-online.pl,~tv6.com.pl,~trojmiasto.pl,~otomoto.pl,~dziennikwschodni.pl,~obalamyglupote.pl,pl,~pornohd.pl,~polskieszlaki.pl,~poczta.interia.pl,~comperia.pl,~filmweb.pl,~semtalk.pl,~eurogamer.pl,~mapa-turystyczna.pl,~otodom.pl,~ferrarikatowice.pl,~tvp.pl,~sekurak.pl,~naswieczniku-blog.pl,~duathlonradwanice.pl,~profitechnika.pl,~halowies.pl,~sadnowoczesny.pl,~warzywaiowoce.pl,~elita-magazyn.pl##[class$="-ads"]
 !~przegladsportowy.pl,~playpuls.pl,~fakt.pl,~forbes.pl,~auto-swiat.pl,~noizz.pl,~plejada.pl,~businessinsider.com.pl,~komputerswiat.pl,~onet.pl,~vod.pl,~gry-online.pl,~tv6.com.pl,~trojmiasto.pl,~otomoto.pl,~medonet.pl,pl##[class*="cg-template"]
-~przelewy24.pl,~allegro.pl,~zaq2.pl,~docer.pl,~dpd.com.pl,~scp-wiki.net.pl,~swiat-magii.pl,~portable.info.pl,pl##[id*="ad-container"]:not(#documents-upload-container):not(#editor-preload-container):not(#component-lead-container)
-~rp5.ua,~rp5.ru,~webcamera.pl##[id^="aswift_"]
+~przelewy24.pl,~allegro.pl,~zaq2.pl,~docer.pl,~dpd.com.pl,~scp-wiki.net.pl,~swiat-magii.pl,~portable.info.pl,pl##[id*="ad-container"]:not(#documents-upload-container):not(#editor-preload-container):not(#component-lead-container):not(#subhead-container)
+~rp5.ua,~rp5.ru,~webcamera.pl##[id^="aswift_"]:not(#subhead-container)
 ~szczecinek.com,~olneo.pl,~wirtualnemedia.pl,~radekcholewinski.pl,~github.com,~dlawas.info,~alaev.net,~wykop.pl##A[href$="/reklama"]
 ~szydlowiecki.eu,~www.wykop.pl##IMG[alt="Reklama"], .l-box--99.l-box > .text-center
 ~konsoleigry.pl,~megadyskont.pl,pl##[class^="adv-"]
@@ -385,6 +385,7 @@ antyweb.pl##.group.big.box-img, .banner--placeholder
 antyweb.pl##.group.no-margin.columns-wrapper > .group.no-margin.columns-wrapper
 antyweb.pl##.touch + IMG.notMobile[src*="/1200x400"]
 antyweb.pl##.transparent, .box-adv, .grid-item--height-2.grid-item--width-2.grid-item
+antyweb.pl##[class$="banner--place"]
 aptekarski.com,swiatzdrowia.pl##.placement-item
 apynews.pl##.featured-advert
 archiwum.wiesci.com.pl##table:nth-of-type(1) > tbody > tr > td:nth-of-type(3), table:nth-of-type(2) > tbody > tr > td:nth-of-type(3)
@@ -632,6 +633,7 @@ cdaction.pl##[id^="mobile-ad-placeholder-"]
 cdahd.co###div1
 cdtracker.co.pl###block--managed-0
 cenabiznesu.pl,elubaczow.com##.img-responsive
+centrum-dramy.pl##.video-content #overplay
 centrumdruku3d.pl###slide-bottom-popup, .sidebar.col-4 > ul > div, .cd3d-video, DIV.right > STYLE + DIV
 centrumdruku3d.pl##section:nth-of-type(3) > div, .col-lg-12.col-sm-12 > .title-cat
 centrumwitalnosci.pl##div:nth-of-type(8), div:nth-of-type(9), .ot-widget-banner, div.ot-panel-block:nth-of-type(3)
@@ -2828,7 +2830,7 @@ przegladsportowy.onet.pl##aside[class^="Left_placeholderLeft_"]
 przekrojlokalny.pl##.banner_zone
 przemysl24.pl###banner-top, .fbaner
 przepisy.pl##.promobanner-container, .banner_wrap, .recipe-container-promo
-przyslijprzepis.pl##.advertising-billboard, .szpalta, .rc, .widget-content, .plista_container, .header-specjal
+przyslijprzepis.pl##.advertising-billboard, .szpalta, .rc, .widget-content, .plista_container, .header-specjal, .rc, .plista_container, .pending-ad
 przyslijprzepis.pl###tracdelight-slide-btn
 przyslijprzepis.pl#?#body > p:-abp-contains(REKLAMA)
 przewodnicywedkarscy.pl###sidebar > p
@@ -3392,7 +3394,7 @@ teraz-wilanow.pl###rev_slider_2_3_wrapper, #rev_slider_3_6, #rev_slider_2_1_wrap
 terazgabin.pl##.clear-pad-right.col-md-4 > p, .clear.col-md-12, .baner.container
 terazgostynin.pl##.mb-3.h-100 > div > .text-center
 terazgostynin.pl,ddbelchatow.pl##[id^="inside_"]
-terazgrodkow24.pl,aletorcik.pl,ps4life.pl,www.kurier-lokalny.com###text-5
+terazgrodkow24.pl,aletorcik.pl,ps4life.pl,www.kurier-lokalny.com,akademiawitalnosci.pl###text-5
 terazgrodkow24.pl,prawapolityka.pl,shebang.pl###text-9
 terazgrodkow24.pl,ziemialimanowska.pl,onalubi.pl,niestatystyczny.pl,centrumaut.pl,lifemanagerka.pl,life4style.pl,booklips.pl###text-3
 theoniondaily.com,kanag.pl##.custom-html-widget.textwidget
@@ -5131,6 +5133,10 @@ www.wp.pl#?#div[class*=" "]:-abp-has(> img[src$="/i.wp.pl/a/i/stg/pkf/bg.png"])
 pogoda.wp.pl##li > .item + div[class*=" "]
 pogoda.wp.pl##.grid-right > div:matches-css(background-image: /data:image\/png;base64,/)
 pogoda.wp.pl##.grid-right > div > div:matches-css(background-image: /data:image\/png;base64,/)
+o2.pl##body:style(pointer-events: auto!important;)
+o2.pl##body:style(overflow-y: visible!important; position: unset!important;)
+o2.pl##body > [class]:not(.settings--user):not(.article__textbox):style(filter: none!important;)
+@@||o2.pl^$generichide
 !
 !34#--------------------------Pudelek/Pudelekx element hide------------!
 pudelek.pl##DIV.cb > DIV[class^="m"]
@@ -5329,7 +5335,7 @@ tapeciarnia.pl#?@#div[style*="text-align:center;"]:-abp-contains(REKLAMA)
 technologiczna.pl,polski-sport.pl##.alignnone
 technowinki24.pl###black-studio-tinymce-2
 tomaszowski.com.pl###text-15
-toyotaklub.org.pl,wiadomoscipodgorze.pl,mymma.pl,niebezpiecznik.pl,tvgorzow.pl,swoszowice.org.pl,nowy-sacz.info,gazetalubliniecka.pl,ziemiastrzelecka.strzelce.pl,slomski.us,bociany.tv###text-6
+toyotaklub.org.pl,wiadomoscipodgorze.pl,mymma.pl,niebezpiecznik.pl,tvgorzow.pl,swoszowice.org.pl,nowy-sacz.info,gazetalubliniecka.pl,ziemiastrzelecka.strzelce.pl,slomski.us,bociany.tv,akademiawitalnosci.pl###text-6
 trybunaczestochowska.pl###foot-leader
 trybunaczestochowska.pl###text-4, #text-6, #text-9, #text-11
 trybunaczestochowska.pl##body > div:nth-of-type(1) > center
