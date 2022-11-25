@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 08 November 2022
+! Last modified: 25 November 2022
 ! Expires: 1 day
-! Version: 2022110800
+! Version: 2022112500
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2022 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2022110800 aktualizacja: wt, 08 listopada 2022, 22:51:00
+! v.2022112500 aktualizacja: pią, 25 listopada 2022, 22:41:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -572,6 +572,9 @@ tekstowo.pl#@##advSong
 tekstowo.pl#$##advSong { visibility: hidden !important }
 tekstowo.pl#@#[class^="adv-"]
 tekstowo.pl#$#.teledysk { flex: 0 0 100% !important; max-width: 100% !important; }
+!
+! meczyki.pl
+meczyki.pl##:not(.onnetwork-banner) > .placeholder:not(.onnetwork-banner):style(height: 0 !important; min-height: 0 !important;)
 !
 ! uBlock-user
 napiprojekt.pl##+js(insert-iframe, 1, honeypot, https://www.napiprojekt.pl/napisy-42731-Ostatni-U-Boot-(1993), width: 1px !important; height: 1px !important; position: absolute !important; left: -3000px !important)
