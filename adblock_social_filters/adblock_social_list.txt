@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista Fanboy's Social Blocking List i EasyList/AdGuard Base!
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2023.1.9.0
-! Last modified: Mon, 09 Jan 2023, 22:44 UTC+01:00
+! Version: 2023.1.9.1
+! Last modified: Mon, 09 Jan 2023, 23:10 UTC+01:00
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -17,7 +17,7 @@
 ! Copyright © 2022 Certyficate IT
 ! Copyright © 2022 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2023.1.9.0 aktualizacja: pon, 09 sty 2023, 22:44 UTC+01:00
+! v.2023.1.9.1 aktualizacja: pon, 09 sty 2023, 23:10 UTC+01:00
 !
 !
 !#safari_cb_affinity(social)
@@ -872,6 +872,7 @@ abrakadabra.sklep.pl##.social a:not([href*="newsletter"])
 absolvent.pl##footer ul ~ ul ul > li > a[href*=".com/"]
 accent-bikes.com###right_icons
 account.efortuna.pl##.wc-footer-social
+account.kaufland.com##.footer .footer-content
 accu-chek.pl###accuchek-facebook
 acer-sj.pl,sklep-garbi-rol.pl##.csocial-link.rssocial-link
 acer.com##.praxis-social-links
@@ -1644,6 +1645,7 @@ blockchain.com##a[href*="twitter.com/blockchain"], a[href*="linkedin.com/company
 blockchain.com##div[class^="Footer__SocialLinksWrap"]
 blog-daneosobowe.pl,ekorekta24.pl,niezlasztuka.net,sprawyzdrowia.pl##.nksub_socialbar
 blog.aboutamazon.pl##li.PageHome-headerLinks-item
+blog.avast.com##.follow h2
 blog.bloomboard.co##.social_icons_widget
 blog.cochlear.com##.tw-social-icon
 blog.eduweb.pl##.desktop-shareIt > h5
@@ -2635,6 +2637,7 @@ eecpoland.eu##.spolecznosci > *
 eecpoland.eu,frsih.pl##.stickSocial
 ef.pl##.js-share-post, .cn-post-heading > .cn-social-logos-list, .cn-fat-footer__social
 efashionstudio.pl##.section-banner-7.section-banner.banner, .section-banner-8.section-banner.banner, .widget-navigation.widget-15
+efento.pl##li.header-social
 egarden24.pl,robotkowo.com.pl###block-facebook
 egospodarka.pl##.lee-share.lee-box:nth-of-type(4) > .lee-ramka:nth-of-type(2)
 egrudziadz.pl###footer-a > .grid-box:nth-of-type(3)
@@ -3742,6 +3745,8 @@ intercity.pl##.social-links > nav > .list-inline a
 interferie.pl##.GP
 interia.pl###videos .player-videos__infoblock-share
 interia.pl,interia.tv,poboczem.pl,pomponik.pl,styl.pl##.social-buttons a[href*=".com/"]
+interia.pl,pomponik.pl##.emotion-join-us-text
+interia.pl,pomponik.pl##.emotion-share-button
 interia.pl,pomponik.pl##.share-tooltip a[href*=".com/"]
 interia.pl,pomponik.pl##.social-media-panel
 interia.pl,pomponik.pl#?#.brief-list-item:-abp-has(> .tile-magazine:-abp-has(a.tile-magazine-thumb[href*="facebook.com/"], a.tile-magazine-thumb[href*="instagram.com/"]))
@@ -3863,6 +3868,7 @@ jdm-option.pl##div.content_right > .box_logotypes
 jeans-center.pl##a[href*="facebook.com/JeansCenter"] > img
 jedlicze.pl##.ikonki_pod_wyszukiwarka.miejsce-banerowe
 jedynka.polskieradio.pl##a[href*=".com/"][aria-label] > div span img[src*="image?url"]
+jedynka.polskieradio.pl##img[class*="ShareLinks__ShareIcon-"]
 jedz-bezpiecznie.pl###wys, a > img[src^="foto/elementy/social-media-"]
 jedz-bezpiecznie.pl##a[href*="facebook.com/groups/pracawmotoryzacji/"] > img
 jeja.pl##.icon-m-box > .fsh
@@ -4854,6 +4860,7 @@ mng.gda.pl##section.section-opaque > .container-vertical-middle.container-fullwi
 mniumniu.com###Text2
 mnwr.pl##.bottom-menu-lvl-2__sm > .footer-sm-2
 mobbingwpracy.com,risreklamy.pl,up.krakow.pl##.jj_sl_navigation
+mobi.pl,techwish.pl,upc.pl,webskill.group##.social-icon
 mobileclick.pl##.yt-facebook-likebox-widget
 mobileclick.pl##.yt-twitter-profile-widget
 mobilevikings.pl##.footer-other.columns > div.col-6-12:nth-of-type(1)
@@ -5225,6 +5232,7 @@ nietylkopasta.pl###text-49, #sidebar-instagram
 nietylkopasta.pl##.uk-width-large-1-4.bh-sidebar-right > .widget-text.uk-panel:nth-of-type(1)
 nietylkopasta.pl##.widget-ws_fb_like_box, #dbx_light, .uk-icon-button
 niezalezna.pl###puszczatvSM
+niezalezna.pl##.sm_icons > li:not(.fill_email)
 niezlomni.com,prawdaobiektywna.pl###hwm
 nieznany-numer.pl##.titleRwd:nth-of-type(5)
 nightwish.pl##.sidebar div.boxNoPadding.box:nth-of-type(1), .sidebar section.boxNoPadding
@@ -5580,6 +5588,7 @@ pbsbank.pl##a[href*="facebook.com/pages/PBS-Bank-Podkarpacki-Bank-Spoldzielczy/1
 pbsbank.pl##a[href*="youtube.com/user/PBSbank"]
 pccentre.pl,pks.bydgoszcz.pl,pksszczecin.info###zak_fb
 pcformat.pl###slider-track
+pch24.pl#?#.single-post div.col-md-8.col-12 .align-items-center:-abp-has(> div > a[href*="wykop"])
 pcprojekt.pl##.theblogwidgets
 pct24.pl##a.fbfoot
 pct24.pl,pp24.info.pl##.socialtop, .socmed
@@ -5722,6 +5731,7 @@ pl.dst.roto-frank.com##.footerCol1.col-md-6 > .networks > .socialMediaNav > ul >
 pl.ecco.com##.footer-links a[class^="social-icons"]
 pl.ecco.com##.footer-top div:nth-of-type(4) > .footer-title
 pl.euro-linux.com##.footer-col.sc-icons
+pl.factcool.com##div[data-cy="footerSocialNetworks"]
 pl.farnell.com###footer .col-xs-3 > a
 pl.forvo.com##.share > ul > li:not(:last-child)
 pl.freepik.com##.footer__menu.alignl > .first
@@ -7242,7 +7252,6 @@ techmot.com.pl###right > div.content:nth-of-type(2), #right > img[src="/images/b
 technischools.com##.fotter-right-container > a > svg
 technologia-wody.pl##footer div.flex > a[href*=".com/"]
 technowinki24.pl#?#.site-title:-abp-contains(Face)
-techwish.pl,upc.pl,webskill.group##.social-icon
 tefal24.pl##.tl-footer-telephone-socials
 tekstowo.pl##.btn-messenger
 tekstowo.pl##.fb-panel
@@ -9188,6 +9197,7 @@ spece.it#@#.social-tooltip
 spece.it#@#[title^="Follow us on "]
 speedtest.net#@#.social-share-links
 styl.fm#@#.article__share
+support.mozilla.org#@#.share-link
 t-mobile.pl#@#.socialMedia
 tabletowo.pl#@#.social_icon
 tajemnice-swiata.pl#@#.mh-social-icons
