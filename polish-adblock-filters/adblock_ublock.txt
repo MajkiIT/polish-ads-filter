@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 30 January 2023
+! Last modified: 12 March 2023
 ! Expires: 1 day
-! Version: 2023013000
+! Version: 2023031201
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2022 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2023013000 aktualizacja: pon, 30 stycznia 2023, 18:07:00
+! v.2023031201 aktualizacja: nie, 12 marca 2023, 22:56:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -220,6 +220,9 @@ open.fm##body:style(pointer-events: auto!important;)
 abczdrowie.pl#@#+js(no-setTimeout-if, visibility, 0)
 !
 ! o2.pl
+o2.pl##body:style(pointer-events: auto!important;)
+o2.pl##body:style(overflow-y: visible!important; position: unset!important;)
+o2.pl##body > [class]:not(.settings--user):not(.article__textbox):style(filter: none!important;)
 poczta.o2.pl,poczta.wp.pl##body > #page:style(display: block !important;)
 o2.pl##div[class][style="width:100%"] > div[class*=" "]:has(:scope > img[role="presentation"]:not([src]))
 polygamia.pl,pudelek.pl,money.pl,wideo.wp.pl##[src$="bg.png"]:upward(1)
@@ -359,6 +362,9 @@ ezg24.net##body > .menu-belt + .paralax-image:style(height: 0 !important;)
 ! opensubtitles.org
 opensubtitles.org##+js(set, displayed, false)
 !
+! mgsm.pl
+mgsm.pl##.mediafarm:style(height: 0 !important;)
+!
 ! milionkobiet.pl
 milionkobiet.pl##.gallery-embed-list-images:style(height: auto !important;)
 !
@@ -385,6 +391,9 @@ pcworld.pl##+js(aopr, uabpd3)
 lowcygier.pl##body:style(background-image: none !important;)
 !
 ! Interia
+interia.pl##[class^="common-header common-header--"]:style(top: 0px !important)
+interia.pl##body[class*="_ad-"]:style(padding-top: 0 !important;)
+interia.pl##header[class^="sc-"]:style(transform: unset !important)
 mamdziecko.interia.pl###content .brief-list-items .brief-placeholder-list:style(height: 320px)
 www.interia.pl##+js(ra, scrolling, iframe#sg-iframe[scrolling="no"], stay)
 poczta.interia.pl#$##mainApp #sitebar, #mainApp #sitebar form { width: 100% !important; max-width: 100% !important }
