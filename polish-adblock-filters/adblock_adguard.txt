@@ -6,17 +6,17 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 5 Febuary 2023
+! Last modified: 12 March 2023
 ! Expires: 1 day
-! Version: 2023020500
+! Version: 2023021201
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! Redundant Checker >> https://www.certyficate.it/redundant_checker/redundantRuleChecker.html
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-! Copyright © 2021 Certyficate IT
+! Copyright © 2023 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2023020500 aktualizacja: nie, 5 Luty 2023, 20:45:00
+! v.2023021201 aktualizacja: nie, 12 marca 2023, 22:56:00
 !
 !
 ! alltube.tv
@@ -96,6 +96,9 @@ senda.pl#$#.advert_box > div > .tablebg { height: 1px !important; visibility: hi
 www.ps4forum.pl##.googleheader
 www.ps4forum.pl#$#.forumsTabLinks.tabLinks { top: 60px !important; }
 !
+! f5.pl
+f5.pl##body:style(padding-top: 0 !important;)
+!
 ! kurnik.pl
 kurnik.pl#$#.adsbygoogle { height: 1px !important; width: 1px !important; }
 !
@@ -169,12 +172,24 @@ milionkobiet.pl##.gallery-embed-list-images:style(height: auto !important;)
 lowcygier.pl##body:style(background-image: none !important;)
 !
 ! Interia
+interia.pl##[class^="common-header common-header--"]:style(top: 0px !important)
+interia.pl##body[class*="_ad-"]:style(padding-top: 0 !important;)
+interia.pl##header[class^="sc-"]:style(transform: unset !important)
 mamdziecko.interia.pl###content .brief-list-items .brief-placeholder-list:style(height: 320px)
 www.interia.pl##+js(remove-attr.js, scrolling, iframe#sg-iframe[scrolling="no"])
 poczta.interia.pl#$##mainApp #sitebar, #mainApp #sitebar form { width: 100% !important; max-width: 100% !important }
 !
-! money.pl
+! grupa WP
+pogoda.wp.pl##.grid-right > div:matches-css(background-image: /data:image\/png;base64,/)
+pogoda.wp.pl##.grid-right > div > div:matches-css(background-image: /data:image\/png;base64,/)
 money.pl,moneyv.wp.pl###app > div[data-reactroot] > div[class]:matches-css(background-image: /v\.wpimg\.pl\/MjAxOTA/)
+www.money.pl###app > div > div:matches-css(background-image: /^url\("https:\/\/v\.wpimg\.pl/)
+o2.pl##body:style(pointer-events: auto!important;)
+o2.pl##body:style(overflow-y: visible!important; position: unset!important;)
+o2.pl##body > [class]:not(.settings--user):not(.article__textbox):style(filter: none!important;)
+!
+! mgsm.pl
+mgsm.pl##.mediafarm:style(height: 0 !important;)
 !
 ! purepc.pl
 purepc.pl##html > body:style(background-image: none!important; background-color: #d5d5d5!important;)
