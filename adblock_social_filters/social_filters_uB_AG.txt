@@ -77,7 +77,11 @@ lookcam.com$$#lookcam-fb-modal
 !
 !
 ! Widgety
-~poczta.wp.pl,wp.pl,~www.wp.pl##div > strong:has-text(/^Podziel się$/):upward(2)
+~1login.wp.pl,money.pl,open.fm,~poczta.wp.pl,pudelek.pl,wp.pl,~www.wp.pl##a[href*="instagram"][title*="instagram"][target="_blank"] ~ a[href*="facebook"][title*="facebook"][target="_blank"]:upward(2)
+~1login.wp.pl,money.pl,open.fm,~poczta.wp.pl,pudelek.pl,wp.pl,~www.wp.pl##a[href=""][title*="instagram"][target="_blank"] ~ a[href=""][title*="facebook"][target="_blank"]:upward(2)
+~1login.wp.pl,money.pl,open.fm,~poczta.wp.pl,pudelek.pl,wp.pl,~www.wp.pl##figure strong:has-text(/^Podziel się$/):upward(2)
+~1login.wp.pl,money.pl,open.fm,~poczta.wp.pl,pudelek.pl,wp.pl,~www.wp.pl##title:has-text(Share):upward(3)
+~1login.wp.pl,~poczta.wp.pl,wp.pl,~www.wp.pl##div > strong:has-text(/^Podziel się$/):upward(2)
 30minut.pl##.gora_ikony_nk, .gora_ikony_fb:style(visibility: hidden !important;)
 45minut.pl##+js(ra, href, .carousel-inner a[href="https://www.facebook.com/45minutpl"], stay)
 abcfirany.pl##+js(ra, href, #BanneryAnimacjaPrzewijana > #scrlnr1 > a[href="https://abcfirany.pl/reklama-b-4.html"], stay)
@@ -123,10 +127,6 @@ meblomag.eu##map[name="Map4"] > area:nth-of-type(1):remove()
 media.santander.pl##.footer__social-container > a:nth-of-type(-n+5):style(visibility: hidden !important; width: 1px !important; margin: 1px !important;)
 money.pl,moneyv.wp.pl##div:last-child > button[color="gray400"] ~ div:empty:upward(1)
 money.pl,moneyv.wp.pl##div:last-child > button[color] ~ div > div[color]:has-text(/^Podziel się$/):upward(2)
-money.pl,open.fm,~poczta.wp.pl,pudelek.pl,wp.pl,~www.wp.pl##a[href*="instagram"][title*="instagram"][target="_blank"] ~ a[href*="facebook"][title*="facebook"][target="_blank"]:upward(2)
-money.pl,open.fm,~poczta.wp.pl,pudelek.pl,wp.pl,~www.wp.pl##a[href=""][title*="instagram"][target="_blank"] ~ a[href=""][title*="facebook"][target="_blank"]:upward(2)
-money.pl,open.fm,~poczta.wp.pl,pudelek.pl,wp.pl,~www.wp.pl##figure strong:has-text(/^Podziel się$/):upward(2)
-money.pl,open.fm,~poczta.wp.pl,pudelek.pl,wp.pl,~www.wp.pl##title:has-text(Share):upward(3)
 motek.com.pl##a[href="https://www.instagram.com/motek.com.pl/"]:style(pointer-events: none !important;)
 muza.com.pl###facebook:style(visibility: hidden !important;)
 naklejkolandia.pl##+js(ra, href, #sliderBox ul > li > a[href^="https://www.facebook.com/notes/naklejkolandiapl/"], stay)
@@ -188,6 +188,7 @@ www.knorr.pl##:root > body .social-sharing, :root > body .social-sharing > *:sty
 !
 ! Widgety - specjalne instrukcje
 !#if !cap_user_stylesheet
+~1login.wp.pl,~poczta.wp.pl,wp.pl,~www.wp.pl###app > div > table > tbody > tr:nth-child(1) > td > div > div > div > div > div > div > div > article > div > div > div > div[hidden]:style(position: absolute !important; left: -3000px !important;)
 autokult.pl##.instagram-media:style(visibility: hidden !important;)
 autokult.pl##.main-article.article > .insert__default.insert--size-m.insert
 autokult.pl,fitness.wp.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,medycyna24.pl##.link-facebook, .link-youtube, .link-gplus, .link-instagram, .link-pinterest, .icon-mail:style(visibility: hidden !important;)
@@ -197,7 +198,6 @@ dobreprogramy.pl##.social__group > .social__label
 f.kafeteria.pl###ipsLayout_mainArea > .ipsList_inline > li > .cShareLink
 purepc.pl##.right.article-options
 wp.pl##.liketag, .wpsocials--buttons:style(visibility: hidden !important;)
-wp.pl,~www.wp.pl###app > div > table > tbody > tr:nth-child(1) > td > div > div > div > div > div > div > div > article > div > div > div > div[hidden]:style(position: absolute !important; left: -3000px !important;)
 zdrowie.tvn.pl##.fb-tool--link, .l-page__footer-label, .article_main__social > .social-btn--fb, .fb-tool__cta:style(visibility: hidden !important;)
 !#endif
 !#if !cap_html_filtering
@@ -221,18 +221,15 @@ www.satel.pl##^.header_container div.headerBox[data-url="https://www.satel.pl/pl
 !
 !
 ! Ulepszenia CSS
-!discoverychannel.pl,tlcpolska.pl,tvnstyle.pl##header .inputMedia .inputContainer:style(width: 160px !important;)
-!ipla.tv##.share-modal .modal:style(height: auto !important;)
-!x-kom.pl##.icon-custom-forum:style(display: block !important; margin: 0 auto !important;)
 biznes.interia.pl##.interia-addcommentButton:style(border-color: #0000 !important;)
-cashless.pl,green-news.pl##.icon-list:style(margin-top: 25px !important;)
-cashless.pl,green-news.pl##.rss-before::before:style(margin-right: 5px; display: inline-block !important; position: static !important;)
 discoverychannel.pl,tlcpolska.pl,tvnstyle.pl##header .inputMedia .inputContainer:style(width: 100% !important;)
 epicgames.com##ul[data-component="PDPSocialLinks"]:style(place-content: start !important; justify-content: start !important;)
 fasardi.com##.cdz-social-listing > .email:style(float: right !important;)
 filmweb.pl##.facebookLoginButton__facebookWrapper:style(background-color: transparent !important;)
 golfkobiet.org###resilite-before-content-container > div[class*="inset-thin"] > div[class*="col-sm-width-4"]:style(float: left !important;)
 golfkobiet.org###resilite-before-content-container > div[class*="inset-thin"] > div[class*="col-sm-width-8"]:first-of-type
+green-news.pl##.icon-list:style(margin-top: 25px !important;)
+green-news.pl##.rss-before::before:style(margin-right: 5px; display: inline-block !important; position: static !important;)
 iab.org.pl###menu-social .menu-social:style(width: auto !important;)
 janssenmed.pl##.footer-social--mobile:style(border: none !important)
 librus.pl##div.promo, #navBar, .container-fluid:style(width: 100% !important;)
