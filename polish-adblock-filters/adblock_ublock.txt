@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 12 March 2023
+! Last modified: 3 April 2023
 ! Expires: 1 day
-! Version: 2023031201
+! Version: 2023040301
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2022 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2023031201 aktualizacja: nie, 12 marca 2023, 22:56:00
+! v.2023031201 aktualizacja: pon, 3 kwietnia 2023, 21:59:35
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -164,7 +164,7 @@ www.wp.pl##:xpath(//div[@data-st-area='Zakupy'][count(*)=2][not(header)])
 www.wp.pl##[data-st-area] > div > div > div[class]:matches-css(max-width: 300px):matches-css(max-height: 250px)
 www.wp.pl##body:style(overflow-y: visible !important;)
 www.wp.pl##+js(aopr, __headpayload)
-~www.wp.pl,wp.pl##:xpath(//div[count(*)=3][img[@class][@src]][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
+~www.wp.pl,wp.pl##:xpath("//div[count(*)=3][img[@class][@src]][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]]")
 ~www.wp.pl,wp.pl,sportowefakty.wp.pl##div[class*=" "]:has(>div[class*=" "] > [class^="__bc_layer"])
 !~poczta.wp.pl,wp.pl,echirurgia.pl,kardiolo.pl,abczdrowie.pl,komorkomania.pl,fotoblogia.pl,~pilot.wp.pl,~money.pl##+js(set, WP.gaf.addCreation, noopFunc)
 !autokult.pl,dobreprogramy.pl##+js(set, WP.gaf.loadAndRunBunch, noopFunc)
@@ -218,7 +218,7 @@ sportowefakty.wp.pl##+js(aopr, Object.prototype.bodyCode)
 open.fm##+js(set, Object.prototype.gafSlot, undefined)
 open.fm##body:style(pointer-events: auto!important;)
 abczdrowie.pl#@#+js(no-setTimeout-if, visibility, 0)
-www.money.pl###app > div > div:matches-css(background-image: /^url\("https:\/\/v\.wpimg\.pl/)
+www.money.pl###app > div > div:matches-css(background-image: /^url\(.https:\/\/v\.wpimg\.pl/)
 pogoda.wp.pl##.grid-right > div:matches-css(background-image: /data:image\/png;base64,/)
 pogoda.wp.pl##.grid-right > div > div:matches-css(background-image: /data:image\/png;base64,/)
 o2.pl##body:style(pointer-events: auto!important;)
@@ -317,8 +317,8 @@ animezone.pl##+js(aopr, o6c6e)
 animezone.pl##+js(noeval)
 !
 ! parenting.pl
-parenting.pl##:xpath(//div[count(*)=1][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
-parenting.pl##:xpath(//div[count(*)=1][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]])
+parenting.pl##:xpath("//div[count(*)=1][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]]")
+parenting.pl##:xpath("//div[count(*)=1][*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=1]/*[count(*)=0]]")
 !
 ! nslowo.pl
 nslowo.pl###gkBg:style(background: none !important;)
@@ -451,7 +451,7 @@ wprost.pl##.page-screening-layer:style(margin-top: 0 !important;)
 wykop.pl###dyingLinksBox > .dying-links:first-child ~ .dying-links:last-child:style(display:list-item !important;)
 wykop.pl###dyingLinksBox > .dying-links:first-child ~ .dying-links[style="display: list-item;"] ~ .dying-links:style(display: none !important;)
 www.poloniainfo.se###thePage:style(position: relative; margin: 0px auto 0px auto; max-width: 980px; background-color:white; padding: 0px 0px 0px 20px;)
-strabag-pfs.pl###page_margins:style(position: relative !important; margin: 0px auto 0px auto !important; max-width: 980px !important; background-color:white !important; padding: 0px 0px 0px 20px; !important)
+strabag-pfs.pl###page_margins:style(position: relative !important; margin: 0px auto 0px auto !important; max-width: 980px !important; background-color:white !important; padding: 0px 0px 0px 20px !important)
 !
 ! Rules to limit time wait on movies
 ekino-tv.pl##+js(nano-stb)
@@ -513,7 +513,7 @@ pogonsportnet.pl##.kode-header-absolute:style(top: 0 !important;)
 ziemiadebicka.pl###header:style(height: 170px !important;)
 !
 ! elka.pl & miedziowe.pl
-elka.pl,miedziowe.pl##:xpath(//*[@align="center"][contains(text(), 'reklama')])
+elka.pl,miedziowe.pl##:xpath('//*[@align="center"][contains(text(),"reklama")]')
 !
 ! filmowakraina.tv
 filmowakraina.tv##+js(nano-sib)
@@ -571,7 +571,7 @@ powiatowa.info##.latestnews:style(-moz-column-count: 2; -moz-column-gap: 20px; -
 otube.pl##+js(acis, Math.random)
 !
 ! stooq.*
-stooq.pl,stooq.com##:xpath(//*[@align="center"]/*[@id][contains(text(),"REKLAMA")])
+stooq.pl,stooq.com##:xpath('//*[@align="center"]/*[@id][contains(text(),"REKLAMA")]')
 !
 ! petronews.pl
 petronews.pl##.jeg_navbar.jeg_stickybar:style(height: 35px !important;)
