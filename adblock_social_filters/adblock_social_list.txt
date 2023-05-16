@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista Fanboy's Social Blocking List i EasyList/AdGuard Base!
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2023.4.16.1
-! Last modified: Sun, 16 Apr 2023, 21:38 UTC+02:00
+! Version: 2023.5.14.1
+! Last modified: Sun, 14 May 2023, 23:17 UTC+02:00
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -17,7 +17,7 @@
 ! Copyright © 2023 Certyficate IT
 ! Copyright © 2023 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2023.4.16.1 aktualizacja: nie, 16 kwi 2023, 21:38 UTC+02:00
+! v.2023.5.14.1 aktualizacja: nie, 14 maj 2023, 23:17 UTC+02:00
 !
 !
 !#safari_cb_affinity(social)
@@ -183,6 +183,9 @@ pl##.facebook-popup
 /snfacebooklike
 /socialBox2
 /spiritimg
+/static/media/facebook_square_black$image
+/static/media/instagram_black$image
+/static/media/twitter_black$image
 /Twitter_ico
 /twitter_white
 /yt.$image
@@ -200,6 +203,7 @@ pl##.facebook-popup
 ##a[href*="://plus.google.com/"]:lang(pl)
 ##div#wtyczka-fbinst
 ##section[aria-label="media społecznościowe"]
+~onet.pl,pl,~plejada.pl##.Instagram
 ~pl###bossbyte_slide:lang(pl)
 ~pl###wysZakladki > #fb:lang(pl)
 ~pl###wysZakladki > #gp:lang(pl)
@@ -516,7 +520,7 @@ pl##.hidden-xs.btn--fb.btn--blue.btn--lg.btn2.like-buttons
 pl##.hidden-xs.like-buttons.btn--google.btn--red.btn--lg.btn2
 pl##.hidden-xs.like-buttons.btn--twitter.btn--blue2.btn--lg.btn2
 pl##.hide-for-small-only.sm
-pl##.ic-instagram.ic-lg.ic.ib-hover.ib
+pl##.ic-instagram.ic
 pl##.ico-google
 pl##.ico-in
 pl##.ico-insta
@@ -557,7 +561,6 @@ pl##.in.socialMediaFixedBtn
 pl##.inline-list-container.columns.small-12
 pl##.inst_img
 pl##.insta
-pl##.Instagram
 pl##.instagram
 pl##.instagram-footer
 pl##.instagram-ico
@@ -754,7 +757,8 @@ pl##.zobacz-nas
 pl##[id^="nk_fajne"]
 pl##a img.facebook-link
 pl##a.like
-pl##a[href^="whatsapp://send"]
+pl##a[href^="https://twitter.com/intent/tweet"]
+pl##a[href^="https://twitter.com/share?url="]
 pl##a[title="Click to share on Google+"]
 pl##a[title="gplus"]
 pl##a[title="Instagram"]
@@ -792,6 +796,9 @@ pl,~wykop.pl##.wykop
 ~1login.wp.pl,money.pl,o2.pl,~poczta.wp.pl,wp.pl,~www.wp.pl##a[class][href*="instagram.com"][title^="Instagram"][target="_blank"]
 ~pl###chaty-channel-facebook_messenger:lang(pl)
 ~pl##.sm-panel .sm-messenger:lang(pl)
+~pl##.x13socialfixed_links a[href*="/m.me/"]:lang(pl)
+~pl##.x13socialfixed_links a[href*="/wa.me/"]:lang(pl)
+~pl##.x13socialfixed_links a[href*="skype:"]:lang(pl)
 2kc.pl##.container.userfooter > .row > div > a[href*=".com/"]
 2plus3d.pl###menuItem_facebook
 2smaki.pl###text-35
@@ -811,7 +818,7 @@ pl,~wykop.pl##.wykop
 3xk.pl##.footer_contact div.ft_sec:nth-of-type(2)
 3xk.pl##.footer_contact__social
 3xk.pl##div.footer_contact__div:nth-of-type(2)
-4adstudio.pl,4f.com.pl,4keepers.pl,4media.com,a-z-decor.eu,abant.pl,adpresso.pl,advanced-ip-scanner.com,aeropolisa.pl,aftermarket.pl,agdrtv24.pl,agrofakt.pl,akademiafamilijna.pl,alergie-pokarmowe.pl,alesoczewki.com,alleceny.pl,allsporter.com,aluna.eu,americanclub.pl,antyart13.pl,apap.pl,aplikuj.pl,architektura.info,art-deweloper.pl,artyferia.pl,as.cmielow.com.pl,asago.pl,asta-net.pl,aukso.pl,avisplacezabaw.pl,awans-bhp.pl,axadirect.pl,banach.pl,bananki.pl,batteryguru.eu,bbcpolska.com,bediet.pl,beltone-polska.eu,beltone-polska.pl,biblioteka-jablonna.eu,bimbo.shop.pl,brandvital.eu,breakplan.pl,brenda.pl,brif.pl,brolerserwis.pl,budownictwo.pl,bytheway.pl,calypso.com.pl,carguru.com.pl,carraro24.com,cba.pl,centramedycznemedyceusz.pl,centrummedialne.pl,cenum.pl,cert.orange.pl,cert.pl,cesin.pl,cezal.lublin.pl,cezar.eu,chemet.com.pl,chojnice24.pl,circlek.pl,clinex.com.pl,clinic4car.pl,cmentarze.lebork.pl,codojedzenia.pl,columbusenergy.pl,corteva.pl,cos.pl,crimeinvestigation.pl,csw.torun.pl,cyclonis.com,czasnawnetrze.pl,darex-kuchnie.pl,darymex.pl,dayupstore.pl,debiutplus.pl,dekordia.pl,dine4fit.pl,direct.money.pl,diversesystem.com,doba.pl,dobrzemieszkaj.pl,dokumentcyfrowo.pl,doppelherz.pl,dre.pl,dreweks.eu,drewniaczek.eu,drewnolandia.pl,drogeriejasmin.pl,drogerienatura.pl,dzialoszyce.pl,e-serafin.pl,e-szkolniak.pl,echo24.tv,echomedia.info,eelektryka.com,eenergy.com.pl,eglos.pl,ekologiczny.pl,ekonomika.pl,elixirgroup.pl,elma-rk.pl,eluban.pl,eofficemedia.pl,epaypolska.pl,estradaistudio.pl,etim.pl,euautomation.com,eurobank.pl,eurogamer.pl,expresselblag.pl,expresspaslek.pl,fakt.pl,faktykaliskie.info,fashion.solano-shop.com,fastenerpoland.pl,ferratum.pl,fibaro.com,fillup.pl,filmopedia.org,flagi-sign.com.pl,flora-fauna.pl,florexpol.eu,forsal.pl,fotopolis.pl,galeria-dominikanska.pl,galeriabronowice.pl,galiciajewishmuseum.org,gazetaolsztynska.pl,gazetasredzka.pl,gazetaweselna.pl,geers.pl,gliwickirower.pl,glucholazy.eu,gobloo.pl,godanparty.pl,gravit.pl,grctechnologie.pl,grouponpoland.pl,hadexdevelopment.pl,hammeromania.pl,hardreset.info,hbogo.pl,herbapol.krakow.pl,historytv.pl,hobbyzone.pl,hurtowniakluczy.pl,hyundai.pl,ifm.com,industrial.pl,ine.com.pl,infakt.pl,infoaudio.pl,inkubatorstarter.pl,intellect.pl,iparts.pl,iposto.com,ipragapoludnie.pl,isof.pl,jagiellonski.pl,joannalech.pl,jpk.info.pl,karoseria.eu,kibice.net,kierunektokio.pl,klett.pl,kobiety.pl,komorkomat.pl,kotlinanatury.pl,krawczyk.info,kredytmarket.com,krolmajtekpierwszy.pl,ksiazka.krakow.pl,kukbuk.pl,kurasinski.com,kursrodo.eu,lajtmobile.pl,larslarslars.pl,lays.pl,lazienkaplus.pl,leadstar.pl,legia.net,lento.pl,lewica2019.pl,liderbudowlany.pl,link4.pl,lisner.pl,listonic.com,liveonlineradio.net,lokalna24.pl,lol24.com,lublin112.pl,m.superbiz.se.pl,magazyngitarzysta.pl,magazynkuchenny.com,magazynperkusista.pl,magicznyogrod.pl,malako.pl,maldrew.com.pl,mamsmartfona.pl,marginesy.com.pl,masarniakrzys.pl,maxmodels.pl,media-tech.eu,mega.nz,mensahome.eu,metaltech.sklep.pl,miastojestnasze.org,mikolaj.org.pl,mjakmama24.pl,modny-dzieciak.pl,moi-mili.pl,mojanorwegia.pl,monden.pl,mora.com.pl,mustache.pl,mytrendyphone.pl,mzbm.tychy.pl,nafciarze.info,nasionakujawskie.pl,nautilus.net.pl,neo24.pl,newmanstudio.pl,news.hrd.pl,nexis.pl,nextbike.pl,niechcial.io,nieznany-numer.pl,niszczarki24.pl,niw.gov.pl,nowymarketing.pl,nowyobywatel.pl,nportal.no,oknoplast.com.pl,optitaxi.pl,osmpower.pl,otoz.pl,outsourcingportal.eu,pademosciane.pl,pakamera.pl,paranienormalni.com,pasaztesco.pl,password.kaspersky.com,paysafecard.com,payu.pl,payukraine.com,pdaclub.pl,peugeot.pl,piekielko.com,pl.000webhost.com,pl.dreamstime.com,pl.investing.com,pl.ryobitools.eu,pl.vpnmentor.com,pl.weekendmaxmara.com,plk.pl,pogonszczecin.pl,pogradajmy.pl,pokato.pl,polska-telewizja.co.uk,polskawoda.com.pl,polskieradio.pl,pomagam.wwf.pl,poradykomputerowe.pl,portalpomorza.pl,portalsamorzadowy.pl,portalspozywczy.pl,portpraski.pl,pozyczkowy-portal.pl,pragma.pl,prettyone.pl,printer4.pl,prospero.e-teatr.pl,prostozmostu.pl,przegladpiaseczynski.pl,przekazypieniezne.com,psl.pl,pszczyna.pl,punktolejowy.pl,purepc.pl,pwik.gliwice.pl,pzpn.pl,radca.prawny.com.pl,radiobonton.pl,radioplus.com.pl,rajska.info,raven-fishing.pl,readspeaker.com,realmeshop.pl,rmdc.rh.pl,rowermevo.pl,rs-handmade.com,sages.com.pl,sandomierztv.pl,sare.pl,segregatory.pl,selectshop.pl,sennheiser.pl,serwiskorporacyjny.maxcom.pl,sevikebab.pl,sicher-bautechnik.com,siecbudowlana.pl,silentiumpc.com,silveradochristmasornaments.com,skierniewice.eu,sklep.agroczesci.pl,sklep.elitpolska.pl,sklep.enger.pl,sklep.hard-pc.pl,sklep.legia.com,sklep.polpuch.pl,sklepmrowka.pl,slowopodlasia.pl,slzpn.katowice.pl,smbieluch.pl,smolar.pl,sonos.com,sportowo-medyczna.pl,srodaslaska.pl,staltech.biz,starstv.eu,strzelce360.pl,styl.fm,subiektywnieofinansach.pl,sulky-burel.pl,surfshark.com,swiatwyscigow.pl,swietywojciech.pl,swiezyzna.pl,sygic.com,szczecin.eu,szczecinek.com,szkolajazdykoronamm.pl,szybkagotowka.pl,tabelaofert.pl,tago.com.pl,taniec.com.pl,targi.krakow.pl,tastestore.pl,tatromaniak.pl,tawernaskipperow.pl,tb7.pl,tczewska.pl,teatrologia.pl,teologiapolityczna.pl,termokubki.com.pl,timetrend.pl,tinystar.pl,transfering.pl,tvasta.pl,tvokazje.pl,tvsudecka.pl,tydzienzpuszczabialowieska.pl,tygodnikprudnicki.pl,tygodniowa.pl,ue.wroc.pl,ukrainashop.com,umtychy.pl,upwr.edu.pl,versus.com,vivaldi.com,vod.tvp.pl,warsawdowntown.pl,waszaedukacja.pl,wegeguru.pl,weranda.pl,weszlo.fm,wiadomoscihandlowe.pl,wiadomoscikosmetyczne.pl,widoczni.com,wieniec24.pl,wizaz24.pl,wkret-met.com,wnp.pl,wolf-garten.com.pl,woobykids.com,wp.tv,wrocnet.pl,wspanialewesele.com.pl,www.kalisz.pl,www.philips.pl,www.pit.pl,www.pkobp.pl,wyciagarki.eu,wydawnictwoliterackie.pl,wypozyczalniachoinek.eu,wysylkowo.pl,xt7.pl,yanosik.pl,yessport.pl,zaadoptujrzeke.pl,zaradnyfinansowo.pl,zawisza.szkola.pl,zenbox.pl,zimowynarodowy.pl,zlocieniec.pl,znanylekarz.pl,zoosafari.com.pl,zwrot.cz,zygzaksnow.pl##.social
+4adstudio.pl,4f.com.pl,4keepers.pl,4media.com,a-z-decor.eu,abant.pl,adpresso.pl,advanced-ip-scanner.com,aeropolisa.pl,aftermarket.pl,agdrtv24.pl,agrofakt.pl,akademiafamilijna.pl,alergie-pokarmowe.pl,alesoczewki.com,alleceny.pl,allsporter.com,aluna.eu,americanclub.pl,antyart13.pl,apap.pl,aplikuj.pl,architektura.info,art-deweloper.pl,artyferia.pl,as.cmielow.com.pl,asago.pl,asta-net.pl,aukso.pl,avisplacezabaw.pl,awans-bhp.pl,axadirect.pl,banach.pl,bananki.pl,batteryguru.eu,bbcpolska.com,bediet.pl,beltone-polska.eu,beltone-polska.pl,biblioteka-jablonna.eu,bimbo.shop.pl,brandvital.eu,breakplan.pl,brenda.pl,brif.pl,brolerserwis.pl,budownictwo.pl,bytheway.pl,calypso.com.pl,carguru.com.pl,carraro24.com,cba.pl,centramedycznemedyceusz.pl,centrummedialne.pl,cenum.pl,cert.orange.pl,cert.pl,cesin.pl,cezal.lublin.pl,cezar.eu,chemet.com.pl,chojnice24.pl,circlek.pl,clinex.com.pl,clinic4car.pl,cmentarze.lebork.pl,codojedzenia.pl,columbusenergy.pl,corteva.pl,cos.pl,crimeinvestigation.pl,csw.torun.pl,cyclonis.com,czasnawnetrze.pl,darex-kuchnie.pl,darymex.pl,dayupstore.pl,debiutplus.pl,dekordia.pl,dine4fit.pl,direct.money.pl,diversesystem.com,doba.pl,dobrzemieszkaj.pl,dokumentcyfrowo.pl,doppelherz.pl,dre.pl,dreweks.eu,drewniaczek.eu,drewnolandia.pl,drogeriejasmin.pl,drogerienatura.pl,dzialoszyce.pl,e-serafin.pl,e-szkolniak.pl,echo24.tv,echomedia.info,eelektryka.com,eenergy.com.pl,eglos.pl,ekologiczny.pl,ekonomika.pl,elixirgroup.pl,elma-rk.pl,eluban.pl,eofficemedia.pl,epaypolska.pl,estradaistudio.pl,etim.pl,euautomation.com,eurobank.pl,eurogamer.pl,expresselblag.pl,expresspaslek.pl,fakt.pl,faktykaliskie.info,fashion.solano-shop.com,fastenerpoland.pl,ferratum.pl,fibaro.com,fillup.pl,filmopedia.org,flagi-sign.com.pl,flora-fauna.pl,florexpol.eu,forsal.pl,fotopolis.pl,galeria-dominikanska.pl,galeriabronowice.pl,galiciajewishmuseum.org,gazetaolsztynska.pl,gazetasredzka.pl,gazetaweselna.pl,geers.pl,gliwickirower.pl,glucholazy.eu,gobloo.pl,godanparty.pl,gravit.pl,grctechnologie.pl,grouponpoland.pl,hadexdevelopment.pl,hammeromania.pl,hardreset.info,hbogo.pl,herbapol.krakow.pl,historytv.pl,hobbyzone.pl,hurtowniakluczy.pl,hyundai.pl,ifm.com,industrial.pl,ine.com.pl,infakt.pl,infoaudio.pl,inkubatorstarter.pl,intellect.pl,iparts.pl,iposto.com,ipragapoludnie.pl,isof.pl,jagiellonski.pl,joannalech.pl,jpk.info.pl,karoseria.eu,kibice.net,kierunektokio.pl,klett.pl,kobiety.pl,komorkomat.pl,koral.com.pl,kotlinanatury.pl,krawczyk.info,kredytmarket.com,krolmajtekpierwszy.pl,ksiazka.krakow.pl,kukbuk.pl,kurasinski.com,kursrodo.eu,lajtmobile.pl,larslarslars.pl,lays.pl,lazienkaplus.pl,leadstar.pl,legia.net,lento.pl,lewica2019.pl,liderbudowlany.pl,link4.pl,lisner.pl,listonic.com,liveonlineradio.net,lokalna24.pl,lol24.com,lublin112.pl,m.superbiz.se.pl,magazyngitarzysta.pl,magazynkuchenny.com,magazynperkusista.pl,magicznyogrod.pl,malako.pl,maldrew.com.pl,mamsmartfona.pl,marginesy.com.pl,marketingdlaludzi.pl,masarniakrzys.pl,maxmodels.pl,media-tech.eu,mega.nz,mensahome.eu,metaltech.sklep.pl,miastojestnasze.org,mikolaj.org.pl,mjakmama24.pl,modny-dzieciak.pl,moi-mili.pl,mojanorwegia.pl,monden.pl,mora.com.pl,mustache.pl,mytrendyphone.pl,mzbm.tychy.pl,nafciarze.info,nasionakujawskie.pl,nautilus.net.pl,neo24.pl,newmanstudio.pl,news.hrd.pl,nexis.pl,nextbike.pl,niechcial.io,nieznany-numer.pl,niszczarki24.pl,niw.gov.pl,nowymarketing.pl,nowyobywatel.pl,nportal.no,oknoplast.com.pl,optitaxi.pl,osmpower.pl,otoz.pl,outsourcingportal.eu,pademosciane.pl,pakamera.pl,paranienormalni.com,pasaztesco.pl,password.kaspersky.com,paysafecard.com,payu.pl,payukraine.com,pdaclub.pl,peugeot.pl,piekielko.com,pl.000webhost.com,pl.dreamstime.com,pl.investing.com,pl.ryobitools.eu,pl.vpnmentor.com,pl.weekendmaxmara.com,plk.pl,pogonszczecin.pl,pogradajmy.pl,pokato.pl,polska-telewizja.co.uk,polskawoda.com.pl,polskieradio.pl,pomagam.wwf.pl,poradykomputerowe.pl,portalpomorza.pl,portalsamorzadowy.pl,portalspozywczy.pl,portpraski.pl,pozyczkowy-portal.pl,pragma.pl,prettyone.pl,printer4.pl,prospero.e-teatr.pl,prostozmostu.pl,przegladpiaseczynski.pl,przekazypieniezne.com,psl.pl,pszczyna.pl,punktolejowy.pl,purepc.pl,pwik.gliwice.pl,pzpn.pl,radca.prawny.com.pl,radiobonton.pl,radioplus.com.pl,rajska.info,raven-fishing.pl,readspeaker.com,realmeshop.pl,rmdc.rh.pl,rowermevo.pl,rs-handmade.com,sages.com.pl,sandomierztv.pl,sare.pl,segregatory.pl,selectshop.pl,sennheiser.pl,serwiskorporacyjny.maxcom.pl,sevikebab.pl,sicher-bautechnik.com,siecbudowlana.pl,silentiumpc.com,silveradochristmasornaments.com,skierniewice.eu,sklep.agroczesci.pl,sklep.elitpolska.pl,sklep.enger.pl,sklep.hard-pc.pl,sklep.legia.com,sklep.polpuch.pl,sklepmrowka.pl,slowopodlasia.pl,slzpn.katowice.pl,smbieluch.pl,smolar.pl,sonos.com,sportowo-medyczna.pl,srodaslaska.pl,staltech.biz,starstv.eu,strzelce360.pl,styl.fm,subiektywnieofinansach.pl,sulky-burel.pl,surfshark.com,swiatwyscigow.pl,swietywojciech.pl,swiezyzna.pl,sygic.com,szczecin.eu,szczecinek.com,szkolajazdykoronamm.pl,szybkagotowka.pl,tabelaofert.pl,tago.com.pl,taniec.com.pl,targi.krakow.pl,tastestore.pl,tatromaniak.pl,tawernaskipperow.pl,tb7.pl,tczewska.pl,teatrologia.pl,teologiapolityczna.pl,termokubki.com.pl,timetrend.pl,tinystar.pl,transfering.pl,tvasta.pl,tvokazje.pl,tvsudecka.pl,tydzienzpuszczabialowieska.pl,tygodnikprudnicki.pl,tygodniowa.pl,ue.wroc.pl,ukrainashop.com,umtychy.pl,upwr.edu.pl,versus.com,vivaldi.com,vod.tvp.pl,warsawdowntown.pl,waszaedukacja.pl,wegeguru.pl,weranda.pl,weszlo.fm,wiadomoscihandlowe.pl,wiadomoscikosmetyczne.pl,widoczni.com,wieniec24.pl,wizaz24.pl,wkret-met.com,wnp.pl,wolf-garten.com.pl,woobykids.com,wp.tv,wrocnet.pl,wspanialewesele.com.pl,www.kalisz.pl,www.philips.pl,www.pit.pl,www.pkobp.pl,wyciagarki.eu,wydawnictwoliterackie.pl,wypozyczalniachoinek.eu,wysylkowo.pl,xt7.pl,yanosik.pl,yessport.pl,zaadoptujrzeke.pl,zaradnyfinansowo.pl,zawisza.szkola.pl,zenbox.pl,zimowynarodowy.pl,zlocieniec.pl,znanylekarz.pl,zoosafari.com.pl,zwrot.cz,zygzaksnow.pl##.social
 4dd.pl##.list-12 > li
 4fun.tv##div > a[href*="facebook.com/4FUN.TV/" i] .fa, div > a[href*="twitter.com/4_fun_tv"] .fa, div > a[href*="youtube.com/4funtvextra"] .fa, div > a[href*="instagram.com/4fun.tv/"] .fa
 4fun.tv##div.top-mini-nav:nth-of-type(-n+2)
@@ -851,7 +858,7 @@ pl,~wykop.pl##.wykop
 24kurier.pl##.topbar a[class^="icon"]:not(.icon_mail)
 24kurier.pl#?#.d-lg-block.d-none.sidebox > .headline_sidebox_1:-abp-contains(Dołącz do nas)
 24legnica.pl###socialStuff
-24opony.pl,adleragro.pl,agrieko.pl,akademos.pl,antyweb.pl,audiofan24.pl,auto-swiat.pl,bhs-goleniow.pl,biuroprasowe.pl,blachownia.pl,bydgoszcz.com,centrum.fm,cocolita.pl,comperia.pl,duzekubki.pl,ebexo.pl,fabrykazabawek.eu,fakt.pl,fonpizza.pl,galeriadomow.pl,grodzisknews.pl,gugik.gov.pl,how2html.pl,ibuprom.pl,inowroclaw.pl,jezykipaderewski.pl,kalisz24.info.pl,komputerswiat.pl,lublin112.pl,macris.com.pl,matkapolkahybrydowa.pl,miechow.eu,moaburger.com,mojanorwegia.pl,mojtelefon.info,mokis.info,naklo.fm,ncn.gov.pl,niemiecki.co,nmedica.pl,oakandberry.com,oftalmika.pl,optyk.klodzko.pl,osmpiaski.pl,p-programowanie.pl,patriot24.net,pieninyinfo.pl,polskieradio.pl,portalmorski.pl,poznan.optitaxi.pl,promopixel.pl,protonmail.com,protonvpn.com,przegladsportowy.pl,queer.pl,rdn.pl,reypol.com.pl,roltech.eu,scandi-city.pl,sec.com.pl,sklep.piast-gliwice.eu,sklepfarmera.pl,smakistyl.pl,splacepark.pl,sprzedajemy.pl,ssl24.pl,strzelec.info,taniaksiazka.pl,vaya.com.pl,wanicki.pl,weblider.eu,wrzesnia.powiat.pl,wyborcza.biz,zdrowekolorowe.pl,znak.com.pl,ztkruszwica.pl##.fb
+24opony.pl,adleragro.pl,agrieko.pl,akademos.pl,antyweb.pl,audiofan24.pl,auto-swiat.pl,bhs-goleniow.pl,biuroprasowe.pl,blachownia.pl,bydgoszcz.com,centrum.fm,cocolita.pl,comperia.pl,duzekubki.pl,ebexo.pl,fabrykazabawek.eu,fakt.pl,fonpizza.pl,galeriadomow.pl,grodzisknews.pl,gugik.gov.pl,how2html.pl,ibuprom.pl,inowroclaw.pl,jezykipaderewski.pl,kalisz24.info.pl,komputerswiat.pl,lublin112.pl,macris.com.pl,matkapolkahybrydowa.pl,miechow.eu,moaburger.com,mojanorwegia.pl,mojtelefon.info,mokis.info,naklo.fm,naszenieruchomosci.com,ncn.gov.pl,niemiecki.co,nmedica.pl,oakandberry.com,oftalmika.pl,optyk.klodzko.pl,osmpiaski.pl,p-programowanie.pl,patriot24.net,pieninyinfo.pl,polskieradio.pl,portalmorski.pl,poznan.optitaxi.pl,promopixel.pl,protonmail.com,protonvpn.com,przegladsportowy.pl,queer.pl,rdn.pl,reypol.com.pl,roltech.eu,scandi-city.pl,sec.com.pl,sklep.piast-gliwice.eu,sklepfarmera.pl,smakistyl.pl,splacepark.pl,sprzedajemy.pl,ssl24.pl,strzelec.info,taniaksiazka.pl,vaya.com.pl,wanicki.pl,weblider.eu,wrzesnia.powiat.pl,wyborcza.biz,zdrowekolorowe.pl,znak.com.pl,ztkruszwica.pl##.fb
 24pr.pl##a[href*="facebook.com/pages/24PR-Portal-PR/300082949728"]
 35mm.online##.footer-bar__top__links
 40ton.net##.clearfix.sidebar-box:nth-of-type(4)
@@ -870,9 +877,9 @@ pl,~wykop.pl##.wykop
 51015kids.eu##.facebook_hidden
 51015kids.eu##.piktogram > a:nth-of-type(-n+5)
 51015kids.eu#?#footer > div > div > div > div + div + div > h5:-abp-contains(BĄDŹ Z NAMI)
-51015kids.eu,abud.pl,activy.app,al.to,autoland.pl,bawidlo.pl,bezpieczny-przejazd.pl,bonami.pl,clipchamp.com,colian.com,combat.pl,creativehobby.pl,czerwona-skarbonka.pl,dekolo.pl,dworska.pl,e24cloud.com,edu-sense.com,eko-asklepios.pl,ekspertbudowlany.pl,fankakodowania.pl,global4net.com,goodie.pl,grobonet.com,ibood.com,instaling.pl,kioskpolis.pl,koleje-wielkopolskie.com.pl,koty.pl,ktomalek.pl,kuchnieswiata.com.pl,ladysi.com.pl,lekarzebezkolejki.pl,lidl.pl,mbwesolek.pl,mescomp.pl,miastomyszkow.pl,mobilnepodreczniki.pl,mokka.pl,niemchem.com,oetker.pl,onetech.pl,otoagent.pl,papajohns.pl,pergo24.pl,perwoll.pl,pocztex.pl,podarujwigilie.pl,porta.com.pl,pracasport.pl,promocje.invado.pl,psy.pl,pzwl.pl,redgo.film,selgros24.pl,shopee.pl,sig.pl,sklep.lisek.app,sklep.poshlady.pl,smakistyl.pl,solvano.pl,speckable.pl,spidersweb.pl,studiooptyczne.tychy.pl,supermedia.pl,tv.mgsm.pl,twisto.pl,viennalife.pl,weidemann.de,wokularach.pl,www.pocztowy.pl,www.pzu.pl,x-kom.pl,zawszepomorze.pl,zenwire.eu##footer a[href*="facebook.com/"]
-51015kids.eu,abud.pl,activy.app,al.to,autoland.pl,bawidlo.pl,bonami.pl,ciuchy.zizej.pl,clipchamp.com,combat.pl,creativehobby.pl,dworska.pl,ekspertbudowlany.pl,goodie.pl,grobonet.com,ibood.com,koleje-wielkopolskie.com.pl,koty.pl,kuchnieswiata.com.pl,ladysi.com.pl,mescomp.pl,mokka.pl,oetker.pl,papajohns.pl,perwoll.pl,pocztex.pl,porta.com.pl,promocje.invado.pl,psy.pl,pzwl.pl,rowerlubon.pl,shopee.pl,sklep.lisek.app,sklep.poshlady.pl,spidersweb.pl,supermedia.pl,tv.mgsm.pl,twisto.pl,weidemann.de,wokularach.pl,www.pocztowy.pl,x-kom.pl,zawszepomorze.pl##footer a[href*="instagram.com/"]
-51015kids.eu,abud.pl,al.to,ciuchy.zizej.pl,clipchamp.com,combat.pl,creativehobby.pl,csi.pl,dworska.pl,edu-sense.com,ekspertbudowlany.pl,goodie.pl,ibood.com,instaling.pl,koleje-wielkopolskie.com.pl,lidl.pl,mokka.pl,oetker.pl,perwoll.pl,porta.com.pl,promocje.invado.pl,spidersweb.pl,tv.mgsm.pl,weidemann.de,wokularach.pl,www.pocztowy.pl,www.pzu.pl,x-kom.pl##footer a[href*="youtube.com/"]
+51015kids.eu,abud.pl,activy.app,al.to,aszdziennik.pl,autoland.pl,bawidlo.pl,bezpieczny-przejazd.pl,bonami.pl,clipchamp.com,colian.com,combat.pl,creativehobby.pl,czerwona-skarbonka.pl,dadhero.pl,dekolo.pl,dworska.pl,e24cloud.com,edu-sense.com,eko-asklepios.pl,ekspertbudowlany.pl,fankakodowania.pl,global4net.com,goodie.pl,grobonet.com,ibood.com,innpoland.pl,instaling.pl,kioskpolis.pl,koleje-wielkopolskie.com.pl,koty.pl,ktomalek.pl,kuchnieswiata.com.pl,ladysi.com.pl,lekarzebezkolejki.pl,lidl.pl,mamadu.pl,mbwesolek.pl,mescomp.pl,miastomyszkow.pl,mobilnepodreczniki.pl,mokka.pl,natemat.pl,niemchem.com,oetker.pl,onetech.pl,otoagent.pl,papajohns.pl,pergo24.pl,perwoll.pl,pocztex.pl,podarujwigilie.pl,porta.com.pl,pracasport.pl,promocje.invado.pl,psy.pl,pzwl.pl,redgo.film,selgros24.pl,shopee.pl,sig.pl,sklep.lisek.app,sklep.poshlady.pl,smakistyl.pl,solvano.pl,speckable.pl,spidersweb.pl,studiooptyczne.tychy.pl,supermedia.pl,tv.mgsm.pl,twisto.pl,untitled-01.com,viennalife.pl,weidemann.de,wokularach.pl,www.pocztowy.pl,www.pzu.pl,x-kom.pl,zawszepomorze.pl,zenwire.eu##footer a[href*="facebook.com/"]
+51015kids.eu,abud.pl,activy.app,al.to,aszdziennik.pl,autoland.pl,bawidlo.pl,bonami.pl,ciuchy.zizej.pl,clipchamp.com,combat.pl,creativehobby.pl,dadhero.pl,dworska.pl,ekspertbudowlany.pl,goodie.pl,grobonet.com,ibood.com,innpoland.pl,koleje-wielkopolskie.com.pl,koty.pl,kuchnieswiata.com.pl,ladysi.com.pl,mamadu.pl,mescomp.pl,mokka.pl,natemat.pl,oetker.pl,papajohns.pl,perwoll.pl,pocztex.pl,porta.com.pl,promocje.invado.pl,psy.pl,pzwl.pl,rowerlubon.pl,shopee.pl,sklep.lisek.app,sklep.poshlady.pl,spidersweb.pl,supermedia.pl,tv.mgsm.pl,twisto.pl,untitled-01.com,weidemann.de,wokularach.pl,www.pocztowy.pl,x-kom.pl,zawszepomorze.pl##footer a[href*="instagram.com/"]
+51015kids.eu,abud.pl,al.to,aszdziennik.pl,ciuchy.zizej.pl,clipchamp.com,combat.pl,creativehobby.pl,csi.pl,dadhero.pl,dworska.pl,edu-sense.com,ekspertbudowlany.pl,goodie.pl,ibood.com,innpoland.pl,instaling.pl,koleje-wielkopolskie.com.pl,lidl.pl,mamadu.pl,mokka.pl,natemat.pl,oetker.pl,perwoll.pl,porta.com.pl,promocje.invado.pl,spidersweb.pl,tv.mgsm.pl,weidemann.de,wokularach.pl,www.pocztowy.pl,www.pzu.pl,x-kom.pl##footer a[href*="youtube.com/"]
 51015kids.eu,creativehobby.pl,porta.com.pl,promocje.invado.pl##footer a[href*="pinterest.com/"]
 aba-sport.pl##.footer-bookmarklets
 abc.tvp.pl##.program__icons
@@ -885,7 +892,7 @@ abcksiegarnia.pl,aptekadomlekow.pl,aptekamirowska.pl,aptekawsieci.pl,dlapacjenta
 abcmotoru.com.pl###Info-box-wrap-7180
 abcsurf.pl,militarnysklep.com.pl##.modFooter_Social
 abczdrowie.pl,allani.pl,architekturaibiznes.pl,autocentrum.pl,autokult.pl,channel9.msdn.com,chemik-police.com,cooltura24.co.uk,debica24.eu,dobramama.pl,dobregry.pl,dobreprogramy.pl,domnowoczesny.com,domodi.pl,donashop.eu,dzwignice.info,e-pasaz.com,echirurgia.pl,echotygodnik.info,estyl.pl,extradom.pl,filmaster.com,filterlogic.pl,fotoblogia.pl,gadzetomania.pl,galeria-pestka.com,gls-group.eu,gorlice.in,gorlice.tv,grene.pl,hardreset.info,homebook.pl,host1.eu,inkubatorkultury.eu,kadantiscam.netlify.app,kafeteria.pl,kafeteria.tv,kardiolo.pl,kazimierzdolny.pl,komorkomania.pl,konskowola.info.pl,krokdozdrowia.com,kuponrabatowy.net,kwiaciarniaina.com,limanowa.in,lubelska.tv,luxlux.pl,medycyna24.pl,mixer.pl,money.pl,neon24.info,nerwica.com,netim.pl,niepodlegla.gov.pl,nocowanie.pl,nowyekran24.com,o2.pl,open.fm,panasonic-batteries.com,parenting.pl,pinger.pl,pl.futbol24.com,podstacja.com,pogodnie.pl,polskieradio.pl,polygamia.pl,prawo-budowlane.info,pudelek.pl,pudelek.tv,pudelekx.pl,pytamy.pl,radiomalbork.fm,rorek.eu,sacz.in,sadzonkiborowki.com,samosia.pl,shop.massdnm.com,siatka.org,slonskyradio.eu,sluzebnosc.info,smaczneblogi.pl,smog.pl,snobka.pl,so-magazyn.pl,stoprocent.com,superauto.pl,swmarcin-jarocin.com,tarnowska.tv,testwiedzy.pl,totalmoney.pl,tvdami.eu,vibez.pl,vpolshchi.pl,wakacje.pl,warsztatowiec.info,wejherowo24.info,woblink.com,wp.pl##.facebook
-abersklep.pl,commplace.pl,eplakaty.pl,goldenline.pl,unisono.eu##.social-box
+abersklep.pl,commplace.pl,eplakaty.pl,goldenline.pl,idea4me.pl,pro-skippers.com,unisono.eu##.social-box
 abonament.alfaromeo.pl##.watch-us__headline
 abrakadabra.sklep.pl##.social a:not([href*="newsletter"])
 absolvent.pl##footer ul ~ ul ul > li > a[href*=".com/"]
@@ -971,7 +978,7 @@ agro-klon.pl##span.btIconCircleShape a[href*="facebook.com/"], span.btIconCircle
 agro-land.net##.right-widgets a[href*="facebook.com/"]
 agro-las.com.pl,boker.com.pl,pasmanteria.pl,poz-bud.com.pl##.rssocial-container
 agro-masz.eu##.topspace3.text-right > a > i
-agro-met.com.pl,agropol24.pl,amperlux.pl,bgk.pl,bluecity.pl,bruder.zabawki.piksklep.pl,cedrus.com.pl,diablochairs.com,digitalhome.co,digitalpoland.org,download.net.pl,dre.pl,drzwi-cal.pl,ekoj.pl,epione.pl,foodfakty.pl,gandalf.com.pl,gardenflora.pl,gembird.com,help.activy.pl,hurt.com.pl,hurtowezakupy.com,ibuprom.pl,itmag.pl,kleszcze.info.pl,ksiegarniahada.pl,lechia.pl,leddo.pl,legionisci.com,listwadekoracyjna.pl,literia.pl,magazyn.wp.pl,media-tech.eu,mycompanypolska.pl,narzedziowy24.eu,onet.pl,operatorzy.pl,parp.gov.pl,pcformat.pl,pieknowdomu.pl,porta.com.pl,press.pl,prosupport.com.pl,pushpushgo.com,roltrans.eu,sigma-sklep.pl,sklep.gadowskiksiegarnia.pl,sklep.lobos.pl,stolmot.com,technoland.com.pl,terytorialsi.wp.mil.pl,tge.pl,tifo24.pl,twojsklep.pima-agro.pl,uniqa.pl,warta.pl,wella.com,wfdif.online,widex.pl,wik-tor.pl,wmrowisku.pl,wosp.org.pl,wsb.edu.pl##.socials
+agro-met.com.pl,agropol24.pl,amperlux.pl,bgk.pl,bluecity.pl,bruder.zabawki.piksklep.pl,cedrus.com.pl,diablochairs.com,digitalhome.co,digitalpoland.org,download.net.pl,dre.pl,drzwi-cal.pl,ekoj.pl,epione.pl,foodfakty.pl,gandalf.com.pl,gardenflora.pl,gembird.com,help.activy.pl,hurt.com.pl,hurtowezakupy.com,ibuprom.pl,itmag.pl,kleszcze.info.pl,ksiegarniahada.pl,lechia.pl,leddo.pl,legionisci.com,listwadekoracyjna.pl,literia.pl,magazyn.wp.pl,media-tech.eu,mycompanypolska.pl,narzedziowy24.eu,onet.pl,operatorzy.pl,parp.gov.pl,pcformat.pl,pieknowdomu.pl,porta.com.pl,press.pl,prosupport.com.pl,pushpushgo.com,roltrans.eu,sharpconsumer.pl,sigma-sklep.pl,sklep.gadowskiksiegarnia.pl,sklep.lobos.pl,stolmot.com,technoland.com.pl,terytorialsi.wp.mil.pl,tge.pl,tifo24.pl,twojsklep.pima-agro.pl,uniqa.pl,warta.pl,wella.com,wfdif.online,widex.pl,wik-tor.pl,wmrowisku.pl,wosp.org.pl,wsb.edu.pl##.socials
 agro-sklep.com,apteka-melissa.pl,arstattoo.pl,audioexpert.pl,odix.pl,porcelanaart.pl##.spolecznosciowe
 agro-sklep.com.pl##footer .brz-icon__container
 agro-tom.eu###yt
@@ -999,14 +1006,14 @@ agroma-poznan.pl###title1
 agromasz.pl##.footer_area > div > div > div:nth-child(2) ul > li > a
 agromasz.pl##p > a[href*="facebook.com/agromasz/"] > img
 agromat.pl###foot-flex > div.column-half.col5:nth-of-type(3)
-agromep.pl,alechoinki.com.pl,amiqs.pl,apap.pl,armax.com.pl,bankbps.pl,born86.pl,boxcars.pl,cisco.com,dzem.com.pl,edulab.io,ekobud-sklep.pl,elektryczny.com,fajowo.eu,fritzbox.com.pl,greensteam.pl,grupa-wanik.pl,holidon.pl,hykker.com,iluzjon.fn.org.pl,internetowe-sklepy.pl,italicus.com.pl,km-net.pl,kuchnia-wloska.com.pl,lombarduleszka.pl,luqam.com,mdkmikolow.eu,meczelive.tv,megascena.pl,mirjan24.pl,nexto.pl,olini.pl,pl.libreoffice.org,planplaneta.com,playoverwatch.com,plusbank.pl,poczta-polska.pl,policja.gov.pl,protonvpn.com,pureveg.pl,radio.lublin.pl,rolnik.pl,skarga.com,sklep.trawyibyliny.eu,sklepkrzyzanek.pl,skrotymeczow.pl,slowhop.com,smartspot.com.pl,strefapmi.pl,stubai.at,takaposciel.pl,techbud.eu,tophifi.pl,tropy.pl,wader-zabawki.pl,wielkopolska.policja.gov.pl###social
+agromep.pl,alechoinki.com.pl,amiqs.pl,apap.pl,armax.com.pl,bankbps.pl,born86.pl,boxcars.pl,cisco.com,dzem.com.pl,edulab.io,ekobud-sklep.pl,elektryczny.com,fajowo.eu,fritzbox.com.pl,greensteam.pl,grupa-wanik.pl,holidon.pl,hykker.com,iluzjon.fn.org.pl,internetowe-sklepy.pl,italicus.com.pl,kiddyfave.com,km-net.pl,kuchnia-wloska.com.pl,lombarduleszka.pl,luqam.com,mdkmikolow.eu,meczelive.tv,megascena.pl,mirjan24.pl,nexto.pl,olini.pl,pl.libreoffice.org,planplaneta.com,playoverwatch.com,plusbank.pl,poczta-polska.pl,policja.gov.pl,protonvpn.com,pureveg.pl,radio.lublin.pl,rolnik.pl,skarga.com,sklep.trawyibyliny.eu,sklepkrzyzanek.pl,skrotymeczow.pl,slowhop.com,smartspot.com.pl,strefapmi.pl,stubai.at,takaposciel.pl,techbud.eu,tophifi.pl,tropy.pl,wader-zabawki.pl,wielkopolska.policja.gov.pl###social
 agromix.agro.pl##.csocial-link:not([href*="/maps"])
 agronews.com.pl#?#style + div:-abp-has(> div[class*="instagram-feed"])
 agronews.com.pl,eurowizja.org,gazetaregionalna.com,gizycko.info,miedzyrzecz.biz,moja24.pl,naprawatelefonu.eu,piasecznonews.pl,tarnogorski.info,technologiczna.pl##.footer-social-wrap
 agroperfekt.pl##.rssocial-custom-icon[href*="instagram.com/"]
 agroperfekt.pl,apolanka.pl,bona-ppetit.pl,kwiaciarniahonoratka.pl,mckenzie.pl,owbaltyk.pl,rolpolopalenica.pl,rozruch-startgum.pl##.rssocial-facebook-icon
 agroperfekt.pl,czemarol.pl,materialybudowlanekrokowa.pl,owbaltyk.pl##.rssocial-youtube-icon
-agropolska.pl,avatec.pl,canagri.pl,cyclonis.com,deere.pl,empireshop.pl,etuo.pl,kreatywna.pl,logitech.com,lokalnyrolnik.pl,lumex.pl,makro.pl,morebananas.pl,nano.komputronik.pl,netgear.com,pekao.com.pl,polskieradio24.pl,saketos.pl,sumin.com.pl,support.avast.com,teb.pl,velux.pl,webd.pl,weissklinik.pl,xlm.pl,zinfo.pl##.social-icons
+agropolska.pl,avatec.pl,canagri.pl,carsmile.pl,cyclonis.com,deere.pl,empireshop.pl,etuo.pl,kreatywna.pl,logitech.com,lokalnyrolnik.pl,lumex.pl,makro.pl,morebananas.pl,nano.komputronik.pl,netgear.com,pekao.com.pl,polskieradio24.pl,saketos.pl,sumin.com.pl,support.avast.com,teb.pl,velux.pl,webd.pl,weissklinik.pl,xlm.pl,zinfo.pl##.social-icons
 agrosiec.pl##.fixed > a[href*=".com/"][target="_blank"]
 agrosimex.pl##.icon-Youtube
 agrosimex.pl##a.social-icon
@@ -1062,7 +1069,7 @@ akumeo.pl##.sclicons
 akumulatorki.com.pl,domy-bartek.pl,es-er.pl,forum.poradnikogrodniczy.pl,forum.swiateczne.info,forumogrodniczeoaza.pl,foto-hurt.pl,freshtec.eu,gminaradlow.pl,go-market.pl,graal.pl,henrykkania.pl,herbapol.krakow.pl,homebrewing.pl,interlumen.com,kegel-aj.com,kinoagrafka.pl,klockolandia.pl,kolorowyswiat.org,kontaktowe.pl,lemone.pl,lokomotywazdrowia.pl,mojataxi24.pl,nowyolechow.pl,poltechparts.pl,przystanekjezus.pl,radiowroclaw.pl,sprzetjezdziecki.com,stephenking.pl,szamotuly.pl,umig.olkusz.pl,ur.edu.pl,wgn.pl,wordki.pl,zamel.com###fb
 akwarysta.eu###Mod111 > .ja-box-ct > .custom > *:nth-child(n+6):nth-child(-n+11)
 akwarystyczny.eu##li > .link a:not([href*="mailto:"]):not([href*="tel:"])
-al.to,clipchamp.com,combat.pl,e24cloud.com,ekspertbudowlany.pl,ibood.com,mescomp.pl,onetech.pl,pocztex.pl,pracasport.pl,pzwl.pl,rowerlubon.pl,spidersweb.pl,tv.mgsm.pl,www.pocztowy.pl,x-kom.pl,zawszepomorze.pl##footer a[href*="twitter.com/"]
+al.to,aszdziennik.pl,clipchamp.com,combat.pl,dadhero.pl,e24cloud.com,ekspertbudowlany.pl,ibood.com,innpoland.pl,mamadu.pl,mescomp.pl,natemat.pl,onetech.pl,pocztex.pl,pracasport.pl,pzwl.pl,rowerlubon.pl,spidersweb.pl,tv.mgsm.pl,www.pocztowy.pl,x-kom.pl,zawszepomorze.pl##footer a[href*="twitter.com/"]
 al.to,x-kom.pl##footer.social > .row h4
 alanyaonline.pl,rajski.szczecin.pl##.facebook-join
 aldi.pl##.mod-social-media-bar
@@ -1135,7 +1142,7 @@ amazon.pl##div.navFooterLinkCol:nth-of-type(7)
 amazon.pl##div.ssf-channel-v:nth-of-type(n+2):nth-of-type(-n+4)
 amberexpo.pl##body > div[style]:nth-of-type(n+3):nth-of-type(-n+4) > .handle_fb
 ambrozja.com###nm-footer .nm-footer-bar-social > li > a > .nm-font-facebook
-amfetamina.promo,damianparol.com,drzwipartnerkrakow.pl,dzdn.pl,dzikapolska.org,finereader.pl,foodarea.pl,fundacjawolnosci.org,kawiarniabezcukru.pl,konsolowe.info,kreatywni.co,kruczek.pl,lisiesprawy.pl,nowamuzyka.pl,paweltkaczyk.com,piu.org.pl,rozaniec.eu,trenerangielskiego.com,ttg.com.pl,wierzbowyjar.pl,wnet.fm,yenn.eu##.menu-item a[href*="facebook.com/"]
+amfetamina.promo,damianparol.com,drzwipartnerkrakow.pl,dzdn.pl,dzikapolska.org,finereader.pl,foodarea.pl,fundacjawolnosci.org,kawiarniabezcukru.pl,konsolowe.info,kreatywni.co,kruczek.pl,lisiesprawy.pl,nowamuzyka.pl,paweltkaczyk.com,piu.org.pl,rozaniec.eu,termalica.brukbet.com,trenerangielskiego.com,ttg.com.pl,wierzbowyjar.pl,wnet.fm,yenn.eu##.menu-item a[href*="facebook.com/"]
 amfetamina.promo,damianparol.com,foodarea.pl,fundacjawolnosci.org,kawiarniabezcukru.pl,kruczek.pl,paweltkaczyk.com,piu.org.pl,trenerangielskiego.com,wnet.fm,yenn.eu##.menu-item a[href*="instagram.com/"]
 amica.pl##.amica-menu-social-media > a, .amica-footer-social-media-links > a
 amicenergy.pl##.footer-contact.row > div[class]:nth-of-type(3) > *
@@ -1315,10 +1322,6 @@ astroweb.pl##.col-md-8 > div:nth-of-type(4)
 astroweb.pl,przewodnikduchowy.pl##.well:nth-of-type(1)
 asus.com###Community_menu
 asus.com##div[class^="Footer__communityListContainer_"]
-aszdziennik.pl##a[href*="/aszdziennik" i] > img[src^="/static/media/"]
-aszdziennik.pl,dadhero.pl,innpoland.pl,mamadu.pl,medianarodowe.com,natemat.pl###fbinvite
-aszdziennik.pl,dadhero.pl,innpoland.pl,mamadu.pl,natemat.pl##.art__body__instagram-container, .art__conclusion__share
-aszdziennik.pl,dadhero.pl,innpoland.pl,mamadu.pl,natemat.pl#?##article-body > div:last-of-type:-abp-contains(Znajdź nas na)
 ataf.pl##.footer-text.menu-text
 ataf.pl,perfekcyjnawdomu.pl##.instagram-feed
 atalbaltica.pl,atalkliny.pl,atalmarina.pl,atalresidence.pl,atalzerniki.pl,chojnypark.pl,drewnowska43.pl,drzwicallublin.pl,francuskapark.pl,godealla.pl,gogler.pl,krakowska37.pl,miastorozanka.pl,nowytargowek.pl,osiedlewarszawa.pl,pitbull.pl,pomorskapark.pl,przybyszewskiego64.pl,przystanletnica.pl,sapayclub.com,wakacjezprocentem.pl##.footer-icons
@@ -1581,6 +1584,8 @@ biblioteka-jablonna.eu#?#section[id*="news_module"] > .container > div > h3:-abp
 biblioteka.gliwice.pl#?#div.vc_row-fluid.wpb_row.vc_row:nth-of-type(6) div.vc_col-has-fill.vc_col-sm-2.vc_column_container.wpb_column:nth-of-type(-n+5) div.vc_column-inner:-abp-has(> div > div > div > a)
 biblioteka.jelenia-gora.pl###kk-facebook-buttons
 biblioteka.rawicz.pl##td > a[href*="facebook.com/pages/Rawicka-Biblioteka-Publiczna"] > img
+bibliotekarium.pl#?#.sticky-sidebar div.clearfix.widget:-abp-has(h4:-abp-contains(Facebook))
+bibliotekarium.pl,dorotafilipiuk.pl,mobi.pl,techwish.pl,upc.pl,webskill.group##.social-icon
 biedronka.pl##.see-fb
 biedronka.pl##nav[class*="footer"] a[href*="facebook.com/"]
 biedronka.pl##nav[class*="footer"] a[href*="tiktok.com/"]
@@ -1630,6 +1635,7 @@ birofilia.org##.tweeter-share, .pinterest-pin
 bisnode.pl##footer .main-footer__bottom div.col:nth-of-type(1) > .main-footer__bottom-links
 bispol.pl##.footer-line > .row > div[class]:nth-of-type(4)
 bispol.pl##.icons-soc
+bissole.pl###contact a[href*=".com/"]
 bissole.pl##.textwidget > a[href*="linkedin.com/company/17906027"]
 bitbay.net,bitbaypay.com##.menu-child-5.flex-menu-child
 bitcoin.pl###__layout div[class^="bg-orange"]
@@ -1726,6 +1732,7 @@ bobowozki.com.pl###subfooter
 bobowozki.com.pl##.footer_facebook
 bobowozki.com.pl##a[href*="facebook.com/bobowozki/"] > img
 bobrka.com##a[href*="facebook.com/pages/Agroturystyka-Bazyl/"] > img[src*="_art."]
+bobrka.pl##.iconsRightWrapper
 boczkinabok.pl##.image_wrapper > a[href*="facebook.com/boczkinabok"]
 boczkinabok.pl##div.mcb-section.section:nth-of-type(4) .mcb-wrap-inner .column_image.one-third.mcb-column.column
 boczkinabok.pl#?#div.column_column.one-third.mcb-column.column:-abp-contains(na facebook!)
@@ -1752,6 +1759,7 @@ bonavita.pl###followers
 bonduelle.pl##.footer-right-social
 bonduelle.pl##.som-desktop-social
 bonduelle.pl##sf-social-wall
+bonito.pl##.footer_container_dark > .container > div:nth-child(1) > div:nth-child(1) > div > div
 bonito.pl##a[href^="//www.facebook.com/share.php"]
 bonito.pl##a[href^="//www.facebook.com/share.php"] + a[href*="twitter.com/"]
 bonprix.pl##.col-xs-offset-0.col-xs-12.col-sm-offset-1.col-sm-5
@@ -1792,7 +1800,7 @@ brg.gda.pl##.fb-url
 bridle.com.pl##.sliderightItem
 brilu.pl##.instafeed_container
 brilu.pl,butyolivier.pl##.buttons_social_container
-britishairways.com,doorit.pl,elmark.com.pl,kontakt24.tvn24.pl,luxmed.pl,maczek.edu.pl,medyczny.store,pl.bab.la,polskieradio.pl,printoteka.pl,radioopornik.eu,scottiego.com,sportdziennik.com,stopotylosci.pl,strefaklimatyzacji.pl,superpharm.pl,techno-senior.com,vanish.pl##.social-links
+britishairways.com,doorit.pl,elmark.com.pl,emaillabs.io,kontakt24.tvn24.pl,luxmed.pl,maczek.edu.pl,medyczny.store,pl.bab.la,polskieradio.pl,printoteka.pl,radioopornik.eu,scottiego.com,sportdziennik.com,stopotylosci.pl,strefaklimatyzacji.pl,superpharm.pl,techno-senior.com,vanish.pl##.social-links
 britneyspears.pl,solidarnoscarimr.pl###right
 brodrene.eu,gentle-man.pl###social_block_footer
 brooklynbutik.pl##.block > a[href*="instagram.com/brooklynbutik/tagged/"] > img
@@ -1843,6 +1851,7 @@ buki.org.pl#?#footer > div > div > div > nav > div:-abp-has(+ div[class*="styles
 buma.pl##.footer-cols > .col1 > .text > p:nth-of-type(5)
 bursa1.krakow.pl###wb_footer a[href*="facebook.com"] > img
 bursztynowa.pl##.footer-top section.col-xs-12.col-sm-4:nth-of-type(2)
+busemprzezswiat.pl##.penci_social_counter
 busfor.pl##.footer__social-container
 busiarze.com.pl,invado.pl,jaknajwiecej.pl##.zoom-instagram-widget
 business-english.com.pl##.contact > header > h3, .contact > p, .contact > .icons > li:nth-of-type(1)
@@ -1861,7 +1870,7 @@ butyjana.pl##.bjSocialMedia
 butylukow.pl,dd-print.pl,eksperymentuj.pl,korob.pl,melbo.pl,ozonee.pl,pepegi.eu,perfumeriainternetowa.pl,rosarosie.iai-shop.com,royalfashion.pl,sklepsmjsport.pl,woliniusz.pl###tws_i_1
 butynalata.pl##.facebook_banner
 butynalata.pl##.footer_links_facebook
-butyraj.pl##a[title="Facebook"]
+butyraj.pl,fhpartner.eu##a[title="Facebook"]
 buu.pl###footer > div.omega.alpha.grid_24:nth-of-type(5), div.omega.alpha.grid_24:nth-of-type(4) p:nth-of-type(5)
 buzzfeed.com##.tweet_share
 bwa.katowice.pl##li.m-social-media__item
@@ -1951,6 +1960,8 @@ ceneo.pl##.footer__main__follow__social-list
 ceneo.pl##.sm-link
 cenka.pl##.social-cenka
 cenowarka.pl###fb-btn-img
+center.ai##.widget_shareicon
+center.ai##a.social-link
 centermed.pl,winotoskanii.pl##div[id^="gb-widget"][style*="position"][style*="fixed"]
 centrobud.elblag.pl##.footer-social-inner-wrap
 centrobud.pl#?#div.pshowlayouts-slide:nth-of-type(2):-abp-has(a[href*="facebook.com/"])
@@ -2204,9 +2215,11 @@ cyberteam.pl##.spolecznosci
 cybex-online.com#?#.Container-item div[class="u-md-marginBottom60 u-sm-marginBottom60"]:-abp-contains(ŚLEDŹ NAS)
 cybsecurity.org##.themeum-social-share > li > a:not(.rss), .widget_themeum_social_share_widget > .widget_title
 cyfra.eu###top_contact > span
+cyfra.eu###tws_s_100000
 cyfrowa.tvp.pl,sklep-rolniczy.pl##.socials a
 cyfrowydoradca.pl##.rt-grid-4:nth-of-type(2) > .borderleft.rt-block > .module-surround > .module-content > .customborderleft
 cyfrowypolsatnews.pl##a[href*="twitter.com/cp_news_"], #side-border-left > .panel:nth-of-type(6), .mobile-hide.column.medium-3.small-12:nth-of-type(4) > ul > li:nth-of-type(3)
+cylex-polska.pl###btnShareSocial
 cyrk-zalewski.com.pl###FLMSSR-Social-Sidebar
 cyryl.poznan.pl###k7_fb
 czarnkow.pl##.item a[href*="facebook.com/"]
@@ -2232,6 +2245,7 @@ czeskieklimaty.pl###div_fb
 czestochowa.pl###left_bookmarks > a[href*="nk.pl/main"], #left_bookmarks > a[href*="instagram.com/"]
 czestochowskie24.pl###text-32, .item-youtube
 czestochowskie24.pl,detektywprawdy.pl,greencanoe.pl,karointhekitchen.com,staszic.info,szema.eu,szklomal.eu###text-13
+czeszesie.pl###fbTab
 cztbos.pl###tm-footer .slidecss
 czterylapysklep.com,okiemrolnika.pl,rynek.de,zdmikp.bydgoszcz.pl###likeboxbluestandardright
 czytajpl.pl##a[href^="https://www.facebook.com/czytajpl/"]
@@ -2245,7 +2259,6 @@ czytelnik.pl###headlink8
 czyztak.pl##.footer .footer__sm > a:not([href*="patronite.pl/"])
 dabrowa-gornicza.pl##.footer > .right > #link-box > div:nth-of-type(1), .footer > .right > #link-box > a[href*="facebook.com/"]
 dacter.pl##.stopka a[href*="facebook.com/dacter.akcesoria"]
-dadhero.pl##a[href*="/dadheropl" i] > img[src^="/static/media/"]
 daemon-tools.cc##.feedback > .footer-link-col > h3
 dagmara.pl,pachniolek.pl,sklep.sokomedica.pl,zielonaesencja.pl###links_footer_2
 dagrasso.pl##footer > a[href="#"]:nth-of-type(1)
@@ -2258,7 +2271,7 @@ dakoma.com.pl#?#.menu-item-has-children.menu-item:-abp-contains(Social Media)
 dalchemyskincare.com##.socialhead
 damagier.pl###blog_subscription-2
 dami24.pl##.bg-youtube, .ico-youtube-play
-damianparol.com,dzdn.pl,fundacjawolnosci.org,konsolowe.info,kruczek.pl,paweltkaczyk.com,piu.org.pl,rozaniec.eu,ustawlige.com##.menu-item a[href*="twitter.com/"]
+damianparol.com,dzdn.pl,fundacjawolnosci.org,konsolowe.info,kruczek.pl,paweltkaczyk.com,piu.org.pl,rozaniec.eu,termalica.brukbet.com,ustawlige.com##.menu-item a[href*="twitter.com/"]
 damianparol.com,ekspedyt.org,forum-oddluzanie.pl,ogloszenia.legiobiznes.pl,oldcamera.pl,przemocnc.pl##.simplesocialbuttons
 damizabawki.pl###footer_links .banners2_wrapper
 damle.com.pl##.menu_button_wrapper > a[href*="facebook.com/groups/damlecompl/"]
@@ -2355,6 +2368,8 @@ dictionary.cambridge.org###footer > div > div > div > a[title][target]
 dictionary.cambridge.org##.i-facebook, .i-instagram, .i-twitter
 dieroten.pl###foot-menu > .dark.col-sm-12.col-md-3
 dietetyczne-przepisy.net###media_image-10, #media_image-9, #custom-facebook-2, #text-5, #text-28, #text-29
+diety.nfz.gov.pl##.social-box > .txt
+diety.nfz.gov.pl##.social-box a[href*=".com/"]
 dietyodbrokula.pl##.contact-widget__link[href*=".com/"]
 dietyodbrokula.pl##.meet-us-socials
 digitalassets.pl##div.widget:nth-of-type(n+4):nth-of-type(-n+5)
@@ -2471,7 +2486,6 @@ doradcasmaku.pl##.other_options > .item_share_options
 doradztwosadownicze.pl##.site-header__list--socials > li.site-header__list-item:nth-of-type(n+2):nth-of-type(-n+3)
 dorotafilipiuk.pl###socialside
 dorotafilipiuk.pl##.footer > .container > .row:first-child > div:last-child
-dorotafilipiuk.pl,mobi.pl,techwish.pl,upc.pl,webskill.group##.social-icon
 dorotasmakuje.com##.socials a:not([class*="mail"])
 dorzeczy.pl,wprost.pl##.youtube-button
 dotd.pl,krainaekozabawek.pl##.likebox_content
@@ -2878,8 +2892,7 @@ eulerhermes.pl###ICI-footerSocial, .ICI_linkedin, .ICI_google, .ICI_youtube
 euractiv.pl##.sharect
 euro26.pl###fbLikeright
 euro-cart.eu,ztm.waw.pl##.page-social-media
-euro.com.pl###comunity-links
-euro.com.pl###footer-contact > .column > #footer-icons > a:not([class]), #footer-contact > .column > .footer-icons > a:not([class])
+euro.com.pl,oleole.pl##.footer-contact__socials
 eurobank.pl##.last.f-div > .bold
 eurobus.pl#?#.text-center.sp-column:-abp-contains(LAJKUJ)
 eurocent.opole.pl###Mod115 p:nth-of-type(2) > .icons > a, .head-top > .custom > p > .icons > a
@@ -3047,7 +3060,7 @@ finanse.wp.pl#?#div[data-st-area="gallery-suggested"] span:-abp-contains(/^lub$/
 finansenaobcasach.info###text-4 > .widgettitle
 finanseodkuchni.pl,garneczki.pl##.barcelona-widget-social-media-icons
 finansowysupermarket.pl###fb-header
-finereader.pl,fundacjawolnosci.org,paweltkaczyk.com,ustawlige.com,wnet.fm,yenn.eu##.menu-item a[href*="youtube.com/"]
+finereader.pl,fundacjawolnosci.org,paweltkaczyk.com,termalica.brukbet.com,ustawlige.com,wnet.fm,yenn.eu##.menu-item a[href*="youtube.com/"]
 finexpert.pl,kadpol.pl##.facebook_zt
 finish.pl##.swiper-social
 finmarket.pl##span:nth-of-type(5)
@@ -3106,6 +3119,7 @@ focus.pl##.box-obserwuj-newsletter > a[href*="instagram.com/focus.pl/"], .social
 fokusfashion.com,kupbuty.com###tws_a_0
 foldruk.media.pl###socialmedia-top
 followrap.com###wh-widget-send-button
+fonelab.com###share-list ul li.whatsapp
 fonia.app##.elementor-widget-pix-social-icons
 food.bolt.eu##.footer-section-right > .col > div:nth-of-type(1) > a
 foodarea.pl,kruczek.pl,paweltkaczyk.com,piu.org.pl,zdgtor.pl##.menu-item a[href*="linkedin.com/"]
@@ -3488,6 +3502,9 @@ grawerowanie.org.pl##.last.widget_inner
 grechmoto.pl###sp-kontakt-adresy #sp-user4 h3:nth-of-type(1)
 grechmoto.pl##.jfab_main_btn
 greckikiosk.pl###fb2
+green-fields.pl##.gf-header__social-media
+green-fields.pl##.gf-post__author-linkedin
+green-fields.pl##.gf-social-media
 greencanoe.pl##.fa-heart, .widget_cookbook_facebook
 greencell.global##.al-footer-social
 greenfelix.eu##.top-bar .pull-left li:nth-of-type(n+3):nth-of-type(-n+4)
@@ -3611,6 +3628,7 @@ hermesplus.pl##.custom_icon-facebook-box-line
 hermessk.pl,rywalbp.pl###sliding_box_submit
 hes.pl##a[href*="facebook.com/hes.wroclaw/"]
 hexade.com,kety.pl,ock.org.pl###trigger3
+heyah.pl##.large-shrink.columns.large-2.small-12 > .text-bold.footer--nav-list > *
 heyah.pl,paleosmak.pl##.likebox
 hfc.com.pl##.social-search-box > ul > li:nth-of-type(-n+3)
 hi-fi.com.pl###twitterbutton1left, #likeboxbluestandardleft, .syndicate-module
@@ -3625,6 +3643,8 @@ hipper.pl##.c-sm.c-f-s
 histmag.org###calculatedSocials > a:not([href*="/rss?"]):not([href*="#newsletter"])
 histmag.org##.commented-widget:nth-of-type(7)
 histmag.org##.css-nil > a[href*="youtube.com/channel/UCg5074EC_9nguiI1LeWqKfA"], .css-nil > a[href*="twitter.com/histmagorg"], .css-nil > a[href*="facebook.com/histmag.org"], .css-nil > a[href*="instagram.com/histmagorg/"]
+histmag.org##a[href*="wykop.pl/dodaj/link/?url="]
+histmag.org##a[href^="https://twitter.com/share"]
 histmag.org#?##article > div[class$="border-box"] > div[class$="border-box"] > a:-abp-contains(/^(Facebook|Twitter|Instagram)$/)
 historiasportu.info###text-2 > .widgettitle
 historytv.pl###menu-15471-1
@@ -3674,6 +3694,7 @@ hostovita.pl##div.contact-info:nth-of-type(2)
 hotel-tulipan.pl##div.banner2:nth-of-type(-n+4)
 hotel.odr.net.pl##a[class*="iconlink"][href*="facebook.com/"]
 hotelbrda.com.pl###fb-plugin-tab
+hotelcenturia.pl##.blogLink
 hotelkrynica.eu##.module-footer-socialmedia, .navbar-right.navbar-nav.nav > .hidden-xs.text
 hotelmarinaclub.pl##.col--socials
 hotfix.pl##.side-border-left > center > table:nth-of-type(17)
@@ -3725,7 +3746,7 @@ idel.pl###footer .links
 idelikatesy24.pl,laserowelove.pl,partyworld.pl##.modSocMedFix
 idg.pl##ul:nth-of-type(2) > li, .footer_social_links > ul
 idg.pl,zoom.idg.com.pl##.social_con
-idosell.com##.social_media
+idosell.com,zegaryzegarki.pl##.social_media
 idream.pl##a[href*="instagram.com/idream_pl/"], a[href*="facebook.com/iDreamPolska/"]
 ienergia.eu##.main-footer div.col-sm-3:nth-of-type(4) a .icon-square
 ieo.pl###sme_twitter_sidebar
@@ -3798,7 +3819,6 @@ inmedium.pl##.icon-fb-circle.icon
 inmedium.pl##.sliders-social
 innogy.pl#?#div#footer > .row > .grid-12 > .fluid.container.component:-abp-contains(Spotkajmy się!)
 innovaconcept.pl##a[title="Facebook Osiedle Modeno"]
-innpoland.pl##a[href*="/innpoland" i] > img[src^="/static/media/"]
 inpay.pl##.column.wide.six
 inpost.pl##.socials--menu
 inpzu.pl##.last.col-footer > p
@@ -3875,6 +3895,7 @@ isl.pl##.quick-actions > a:nth-of-type(-n+2)
 islodycze.pl##.cms-footer-four-column-block.cms-footer-block
 ismserwis.pl##.nxs-icon-youtube, .nxs-icon-facebook
 isp.org.pl##div.cell:nth-of-type(2) > .mt-10.b-scl > div[class^="grid"] > div.cell.shrink
+istockphoto.com##div[data-testid="full-layout-footer"] > nav > nav:nth-child(5) > nav > ul > li > a
 it.tarnow.pl##nav a[class*="ink--social"]:not([href*="/feed"])
 ita.tools###StopkaAktywnaKontakt > h5:nth-of-type(2), #StopkaAktywnaKontakt > p > a > .fa
 itaxi.pl##.m_hidden.footer_section_1.footer_section > div.footer_box_one_six.footer_box:nth-of-type(3)
@@ -4086,6 +4107,7 @@ kety.pl###twittery > ul > li:nth-of-type(1)
 kfc.pl##.social-side
 kia.com##.sns
 kiczeraski.pl##.right > div:nth-of-type(3)
+kiddyfave.com,wydawnictwodialog.pl,wydawnictwomartel.pl,zlotarybka24.com###fb-slide-gfx
 kids-trendy.pl###fx-social-bottom
 kielcekonferencje.pl###Footer .col-3
 kielman.pl#?#div.promo:nth-of-type(2) > div.promo-box:nth-of-type(3):-abp-contains(Bądź na bieżąco)
@@ -4109,6 +4131,7 @@ kingsong.pl##.social > a:nth-of-type(n+3):nth-of-type(-n+4)
 kinguin.net##footer .icons div.col-sm:nth-of-type(2)
 kinopolskamuzyka.pl##.footer_right > li:nth-of-type(2)
 kkslech.com###text-25
+klamki-bartex.pl##.social-sharing.btn
 klamoty.com##.container > .row > .col-sm-4:nth-of-type(3)
 klassikauto.pl,muzeum.com.pl###text-18
 klasycznebuty.pl###myfooter div.f-grid-4:nth-of-type(2) > h3:nth-of-type(1)
@@ -4185,6 +4208,7 @@ komorkomat.pl##.widget_text.col-md-3:nth-of-type(4) > .widgettitle
 komornik-marchaj.pl##.rstpl-social
 kompan.pl##.blog-icon
 kompan.pl,ulc.gov.pl##.icon-linkedin
+komputerswiat.pl,onet.pl,plejada.pl##div[class*="BigCard_social_"] > span[class*="share"]
 komputerswiat.pl,www-komputerswiat-pl.cdn.ampproject.org#?#div > a[href*="facebook.com/GamezillaPL" i]:-abp-has(img)
 komputerswiat.pl,www-komputerswiat-pl.cdn.ampproject.org#?#div > a[href*="facebook.com/komputerswiat" i]:-abp-has(img)
 komputery-pc.info###Mod107
@@ -4220,6 +4244,7 @@ kontrowersje.net##.color-facebook
 kontrowersje.net##.color-twitter
 kopalniawiedzy.pl##.ui-helper-clearfix.box.articles:nth-of-type(4)
 koraliki.pl###footer div.col-sm-3:nth-of-type(1)
+korbanek.pl##.social-icons > li:not(:last-child)
 kordialne.pl###right_sidebar_item-3 > .tborder:nth-of-type(1)
 korner.pl###custom_post_widget-2, #custom_post_widget-9
 korob.pl##a[href*="facebook.com/KOROB-330310557144075"]
@@ -4502,6 +4527,7 @@ leyraa.blogspot.com###HTML2 center > a:nth-of-type(n+2):nth-of-type(-n+7):not([h
 lfspareparts724.pl##.footer-sitemap > .row > div.col-lg-3:nth-of-type(4)
 lg.com##.homepage > .autoplay.dot-view.dot-line.lists.with-carousel.m14.module > .container > .title > h3
 lg.com##.homepage > .autoplay.dot-view.dot-line.lists.with-carousel.m14.module > .container div.slick-active.slick-slide.slide:nth-of-type(-n+4)
+lg.com##.social-links .icon.social-icon
 lg.com#?#.iw_placeholder > .iw_component .list-box:-abp-has(a[href*="facebook.com"], a[href*="twitter.com"], a[href*="youtube.com"], a[href*="instagram.com"])
 lg.com#?#.iw_placeholder > .iw_component > .zero-btm:-abp-contains(Znajdź nas na)
 lgnews.pl##.pr-social-media--layout
@@ -4514,7 +4540,10 @@ librus.pl##.twitterPluginContainer
 liderwalut.pl##.socialmedia-links > a:not([href*="opineo"])
 lidl.pl###footer-lidl-social-media
 lidl.pl##.navigation--social
+lidl.pl##button[aria-label="socialMediaBtn"]:not([data-url*="m.me"])
+lidl.pl##button[aria-label="socialMediaBtn"][data-url*="m.me"]
 lidl.pl##div.footer__info:nth-of-type(4) .footer__info-link[href*=".com/"]
+lidl.pl##span[id^="regionSocialMedia-"].label
 lifebymarcelka.pl,pelnytalerz.com###HTML9
 lifemanagerka.pl###nav_menu-2, .lightbox-btn
 lifemotion.pl##.follow.box
@@ -4666,12 +4695,11 @@ maltec.pl##.clearfix.communities
 maltec.pl,warsawdowntown.pl##.footer_top
 maluchy.pl##.lineFB
 maluchy.pl#?##right-column > div.best_photo.widget:-abp-contains(Fanpage)
+maluchy.pl#?#.sekcja_dark > div:nth-child(1):-abp-has([src="/szablon/share.png"])
 malwarebytes.com##.close-soc
 mam-fach.info###__next > main ~ div[class*="bg-yellow"] p:last-child a[href*=".com/"]
 mam-serce.org##.ms-icon-social-media
 mama-kreatywna.pl##.Pinterest
-mamadu.pl##a[href*="/mamadupl" i] > img[src^="/static/media/"], a[href*="/mamadu.pl" i] > img[src^="/static/media/"]
-mamadu.pl,natemat.pl##.footer__box__list--social
 mamaistetoskop.pl##.widget_wonderblog_facebook_like_box_wg
 mamaistetoskop.pl##.widget_wonderblog_social_wg
 mamaplus.pl##div.fl-l > .soc-hover
@@ -4724,6 +4752,7 @@ masz.gliwice.pl##.col-social-icons.col > .footer-h4
 maszynadopisania.pl###header-icon-container
 maszyneria.pl##.wciecie_kat:nth-of-type(2)
 maszyny-frankopol.pl##.social > a:not([href*="-sklep.pl"])
+matbud.pl##div[id*="s"] > .social
 matchpro.pl##.fb-1.box-1
 matematyka.pisz.pl###ikonkaFb
 matfiz24.pl##.media-spolecznosciowe
@@ -4794,6 +4823,7 @@ mediaarena.pl###fx-fb
 mediaexpert.pl##.is-shareButtonsContainer
 mediakrytyk.pl##.menu_bottom_social_link
 mediamarkt.pl##.is-socials
+medianarodowe.com###fbinvite
 medianarodowe.com##.clearfix.widget_radium_newsletter.widget > p
 medianarodowe.com##.custom_footer > p
 medianarodowe.com##.social-icon-footer
@@ -4972,6 +5002,7 @@ modelarski.eu###fbBox
 modelarski.eu##.box.social
 moderntasteblog.com##.menuplus
 modile.pl##.footer-bg.footer__info-inner > div > .col-md-5.unvisible.footer-column
+modivo.pl##.social.social-icons
 moico.pl##.conSocialLinks
 moj-sen.net##.fblikelink
 moja-ostroleka.pl##.odslony > tbody > tr > td:nth-of-type(3)
@@ -4992,6 +5023,7 @@ mojeinstalacje.com##.ptssocial_link
 mojeinstalacje.com,sklepbrp.pl##.sm-panel-prawe
 mojejaslo.pl#?#.td-footer-wrap .tds-title:-abp-contains(SOCIAL MEDIA)
 mojejaslo.pl#?#.td-pb-span4.tdc-column.vc_column_container.vc_column:-abp-has(.td_social_type)
+mojepodlogi.com##.block_social_list
 mojeppk.pl##.social-social-container
 mojeuslugi.pl##footer div > a[class*="bg-orange"]:nth-of-type(-n+3)
 mojewypieki.com###home_fb_plugin
@@ -5059,7 +5091,11 @@ motohurt.org##footer [alt="Facebook"]
 motointegrator.com##div[class*="SocialIconsContainer-"]
 motokorzysci.pl###footer > div[class] > div[class] > div[class^="platnosci"] > img[alt=""]:nth-of-type(n+3)
 motoledy.pl##.fb-open
+motomaszyny.pl##.footer .gtm-link._blank[href*=".com/"]
+motomaszyny.pl##.footer > div.col-md-3.col-sm-6.col-xs-12:nth-child(6) > h2:nth-child(1)
+motomaszyny.pl##.footer > div:nth-child(6) > div:nth-child(n+3)
 motomi.pl##.col-sm-4 > h3
+motopedia.otomoto.pl##footer a[aria-label$="link do social mediów"]
 motoperfekt.pl,pandawanda.pl##.userfooter > .row > table
 motopoznan.com##.newshive-social-icons-wrapper > div
 motorlublin.eu###sidebar > div.box:nth-of-type(n+7):nth-of-type(-n+9)
@@ -5223,11 +5259,15 @@ naszestrony.info.pl#?##tabs a[href="#tab-comments"]:-abp-contains(Facebook)
 naszglospoznanski.pl##.nav a[href*="facebook.com/"]
 naszglospoznanski.pl##.nav a[href*="twitter.com/"]
 naszpradnik.pl##.menu-social-fb
+naszraciborz.pl,naszrybnik.com,naszwodzislaw.com###socials_logs
+naszraciborz.pl,naszrybnik.com,naszwodzislaw.com###socios_right
+naszraciborz.pl,naszrybnik.com,naszwodzislaw.com##.socials > a:not(.print)
+naszraciborz.pl,naszrybnik.com,naszwodzislaw.com##.socios
+naszraciborz.pl,naszrybnik.com,naszwodzislaw.com##a.share:not(.comments_s)
 naszswiat.net##.t3-footnav #Mod233, .t3-footnav #Mod234
 nasztomaszow.pl#?#.row.article_summary p:-abp-contains(Podziel się)
 nasztomaszow.pl#?#.sidebar > .widget:-abp-has(a[href*="facebook.com/"])
 natemat.de##.author-icons > li > a:not([href*="//natemat.de/"])
-natemat.pl##a[href*="/natematpl" i] > img[src^="/static/media/"]
 natgeotv.com###SocialFooter
 natuli.pl###Instagram_lista
 naturalnieniebanalnie.pl##.hestia-contact-form-col > .card-contact.card
@@ -5252,6 +5292,7 @@ ncez.pzh.gov.pl##.az-social-box
 ncez.pzh.gov.pl##footer .et_pb_text_inner > p > a[href]
 nck.org.pl###block-menu-social-media, #block-menu-socialmedia-footer
 nck.pl##.no-as.youtube
+nck.pl##.sidebar-socail-media
 ncpp.opole.pl##.hoverbox
 nec-display-solutions.com##.footerlinks--social
 neffos.pl###footer > div > .row > .col:nth-of-type(2)
@@ -5292,6 +5333,7 @@ news.samsung.com##.sns_link > li > a:not(.sns_rss)
 newsblog.pl##.wpra-share-wrap
 newseria.pl##.ist_face
 newsletter2go.pl##.n2go-footer_socials
+newsletter.al.to,newsletter.x-kom.pl#?#p.mt-4:-abp-has(+ .social-media)
 newsrm.tv###footer > div > ul > li > a
 newstyling.pl###footer > #footer-icon > a[id^="fico"]
 newstyling.pl##div.footer-inc > a.s-ico
@@ -5330,6 +5372,7 @@ nietylkopasta.pl##.uk-width-large-1-4.bh-sidebar-right > .widget-text.uk-panel:n
 nietylkopasta.pl##.widget-ws_fb_like_box, #dbx_light, .uk-icon-button
 niezalezna.pl###puszczatvSM
 niezalezna.pl##.sm_icons > li:not(.fill_email)
+niezlomni.com##.twbox
 niezlomni.com,prawdaobiektywna.pl###hwm
 nieznany-numer.pl##.titleRwd:nth-of-type(5)
 nightwish.pl##.sidebar div.boxNoPadding.box:nth-of-type(1), .sidebar section.boxNoPadding
@@ -5475,8 +5518,7 @@ oktawave.com###footer-content .text-center.col-xs-12.col-sm-4, #footer-contact .
 olayanails.com##.footer_contact.footer_links a[href*=".com/"] > i
 olczak.info##table:nth-of-type(1) > tbody > tr > td:nth-of-type(4) > a > img, table:nth-of-type(1) > tbody > tr > td:nth-of-type(4) > f:nth-of-type(2) > f > a > img
 oldcamera.pl###twitter-follow-3
-oleole.pl##.footer-contact-box > .box-left > a.footer-elem:nth-of-type(2), .footer-contact-box > .box-right > a.footer-elem:nth-of-type(2)
-oleole.pl##div.services__serviceItem:nth-of-type(2)
+oleole.pl#?#eui-record.footer-contact__record:nth-child(1):-abp-has(a[href*="facebook.com/"])
 olesnica24.com#?#.xs-text-center.text-left.col-sm-6 > h5:-abp-contains(Podziel)
 olesnica.pl#?#.naglowek__buttons--container ul > li:-abp-has(a[href*=".com/"])
 olesnica.wroc.pl##td > a[href*="facebook.com/gmina.olesnica"] > img
@@ -5503,8 +5545,10 @@ omegaregen.pl###instafeed
 onebid.pl##footer .footer-nav :nth-of-type(3) > h2
 onepiece.com.pl#?#.column.wide.four > .segments.ui:-abp-contains(Facebook)
 onet.pl##[class*="DetailAuthors_socialLinksWrap_"]
+onet.pl##div[class*="DetailAuthors_socialWrapper_"]
 onet.pl##div[data-gtm-social]
 onet.pl#?#div[class^="_"] > span[class^="_"]:-abp-contains(Podziel się tym artykułem)
+onet.pl,plejada.pl##.poll_share
 onet.pl,plejada.pl##.whatsapp
 onet.tv##.mvp-beam-social-buttons
 onetech.pl###obserwujnas
@@ -5523,6 +5567,7 @@ open.pl##.nav.pull-right > li > a[href*=".com/"]
 opening-anime.pl###fbbutton
 opera.com##.footer__follow-label
 opera.com##.footer__social-icons
+operatorzy.pl###glowCookies.glowCookies-banner
 opineo.pl##.fl:nth-of-type(3), .mt10.fh5
 opineo.pl##.footer__links-social
 opiniodajnia.pl##.contact > .button:nth-of-type(2)
@@ -5652,6 +5697,7 @@ parenting.pl,parenting.wp.pl##.article__footer__share
 pariso.pl##footer #banners_bottom
 parkerpen.com###footerSocialSection
 parkhome.com.pl###musli > li.ruchomy:nth-of-type(2)
+parkhome.com.pl##.background_color_menu_footer > div > div > div.col-xs-12.col-md-3:nth-of-type(4)
 parkizoolandia.pl##footer #block-7
 parkofpoland.com##.l-footer .-contact.l-col > .u-hideSm.c-horizontalNav > .c-horizontalNav_links
 parkofpoland.com##.l-footer .-contact.l-col > p.u-hideSm:nth-of-type(2)
@@ -5720,8 +5766,6 @@ pepco.pl##.header-responsive-social
 pepco.pl##.social-media-label
 pepco.pl##.text-right.footer-menu > ul.no-list:nth-of-type(2) > li:not(:last-of-type)
 pepco.pl#?#.footer-nav .row p:-abp-contains(Znajdź nas na)
-pepco.pl#?#div.col-sm-6.col-md-3.col-xs-12.grid-item:-abp-contains(DOŁĄCZ DO NAS)
-pepco.pl#?#div.col-xs-12.col-sm-6.col-md-3.grid-item:-abp-has(a[href*="instagram.com/pepcopl/"])
 pepegi.eu#?#.menu_button_wrapper:nth-of-type(2):-abp-has(a[href*="facebook.com/"], a[href*="twitter.com"])
 pepper.pl##.js-banner.aGrid[data-track*="twitter_banner"]
 pepper.pl##footer#footer.footer > div:nth-child(3) > div > section:nth-child(4) > div > ul > li:nth-of-type(-n+3)
@@ -5759,6 +5803,7 @@ pgd.pl##.footer__sm-icons
 pgnig.pl##.footer-menu-list-icons.footer-menu-list li a[href*=".com/"]
 philips.pl##.p-footer-social
 philips.pl##.p-social-wrapper
+philips.pl##.p-socialfeed > ul
 philips.pl##a[data-track-name*="follow_us"]
 philips.pl#?#div.p-l-one-quarter.p-grid-item:nth-of-type(4):-abp-contains(Podłącz mnie)
 phlov.com##.block-socialorder-1
@@ -5822,7 +5867,11 @@ pkwp.org##.tw-tab
 pkwp.org##.yt-tab
 pl##.slide-fb-out-div
 pl##.sm-panel .sm-messenger
+pl##.x13socialfixed_links a[href*="/m.me/"]
+pl##.x13socialfixed_links a[href*="/wa.me/"]
+pl##.x13socialfixed_links a[href*="skype:"]
 pl##a[href^="fb-messenger://share/"]
+pl##a[href^="whatsapp://send"]
 pl-pl.fitatu.com##.fitatu-footer__social
 pl.abbott##.m-social-media--icons
 pl.admininfo.info##.hotwp-scroll-top
@@ -5852,6 +5901,8 @@ pl.ecco.com##.footer-top div:nth-of-type(4) > .footer-title
 pl.euro-linux.com##.footer-col.sc-icons
 pl.factcool.com##div[data-cy="footerSocialNetworks"]
 pl.farnell.com###footer .col-xs-3 > a
+pl.fonelab.com###share-list ul li:not(.gmail):not(.whatsapp)
+pl.fonelab.com##.footer .list.flex_box > div > div a
 pl.forvo.com##.share > ul > li:not(:last-child)
 pl.freepik.com##.footer__menu.alignl > .first
 pl.genesis-zone.com##.social-media__icon-item
@@ -5879,6 +5930,7 @@ pl.pons.com##.span4:nth-of-type(3) > h4
 pl.primo.com##footer .p-imagetext-tb:nth-of-type(3)
 pl.ryobitools.eu##div[class^="Footerstyles__SocialContainer-"]
 pl.silvexcraft.eu###media_section
+pl.techinfus.com##.socialize
 pl.tommy.com###olapic_specific_widget
 pl.tommy.com##.\-\-connect.footer__list-title
 pl.tradingview.com##.tv-footer__column--socials:nth-of-type(2)
@@ -6055,6 +6107,8 @@ polsl.pl##tr:nth-of-type(5) > .shortcutsImg:nth-of-type(1)
 polsl.pl##tr:nth-of-type(5) > .shortcutsLink:nth-of-type(2)
 polszczyzna.pl##.eltdf-icon-shortcode, .textwidget > h4
 poltechparts.pl##.media-foot
+polter.pl#?##col2 > h3:-abp-contains(Facebook)
+polter.pl#?##col2 > h3:-abp-contains(Facebook) + div
 polvision.com##.foot_search_share
 polygamia.pl###polysocial, #sidebar-footer-top, #menu-submenu-1 a[href*="youtube.com/"], .sharepostHome
 polygamia.pl,tech.wp.pl,www.dobreprogramy.pl##[data-href*="/dobreprogramy/posts/" i]:not(a), [data-href*="/305335630685/posts/" i]:not(a)
@@ -6268,6 +6322,7 @@ przemyskie.info##.footer-copyright a[href*="facebook.com/"]
 przenosne.pl##.sm_link
 przepisnazdrowie.eu##.top-mod__socialmedia
 przepisy.net###social_box_left
+przepisy.pl##.social-wrapper
 przetargi.info###footer div.grid3:nth-of-type(3) > .copytext-link
 przewodnik-katolicki.pl##.pozycje-menu, .social-stopka, .strefa-social, .fb-comments
 przychodnie-grudziadz.pl###module-tm-3.uk-navbar-item
@@ -6311,8 +6366,7 @@ pulsmedycyny.pl##.navdark-yt
 pum.edu.pl##.crdocs__share__single:nth-of-type(-n+2)
 puma.com##.p-footer-more > .p-footer-section-inner > .p-footer-section-title, .p-footer-more-icons
 puratos.pl##.p-footer-list-nav-horizontal--right.p-footer-list-nav-horizontal > li > a
-purepc.pl##.soc_wk
-purepc.pl##.soc_yt
+purepc.pl##.soc_tw, .soc_yt, .soc_wk
 purepc.pl#?#div.sidebox:nth-of-type(3):-abp-contains(na Facebooku)
 purina.pl##div[data-block-plugin-id*="nppe_base_community"]
 puritanpride.com.pl##.toggle-footer > p:nth-of-type(1) > a > img
@@ -6658,6 +6712,7 @@ satel.pl#?##article > p:nth-of-type(2) + table:nth-of-type(1):-abp-has(td a img[
 satel.pl#?##article > p:nth-of-type(2):-abp-contains(odwiedzić naszych kanałów)
 satel.pl#?##article > p:nth-of-type(3):-abp-contains(/i\sbądź na\sbieżąco/)
 satkurier.pl###sky_left_container, #vLine_stopBootstrap
+satkurier.pl##.twitter-share-button
 savicki.pl#?#.mt-5 > div.line-section:nth-of-type(1):-abp-contains(Dołącz do nas)
 sawataxi.pl##.oNasSocIcons, .oNasSocName
 sbc.wbp.kielce.pl##.footer__contact > div.footer__contact-box:nth-of-type(4) > .footer__text--contact-title
@@ -6789,6 +6844,8 @@ silesion.pl##.sub-menu-btn-fb
 siligan.pl###widget_3, #widget_4
 silowniezewnetrzne.pl##.custom-fb
 silvermet.eu##.fblbLeft
+simlock48.pl##.x13socialfixed_links a[href*="facebook.com/"]
+simlock48.pl##.x13socialfixed_links a[href*="youtube.com/"]
 simplyyourself.online##.elementor-animation-shrink[href*="facebook.com"] > svg
 simplyyourself.online##.elementor-animation-shrink[href*="instagram.com"] > svg
 simplyyourself.online##.elementor-animation-shrink[href*="youtube.com"] > svg
@@ -6992,6 +7049,7 @@ sluzby-ratownicze.pl###menu-social-menu-items
 sluzby-ur.pl##.wysun_facebooka.fl
 smaczneblogi.pl##.link-gplus, .link-instagram
 smaczny.pl##a[href*="facebook.com/smacznypl"]
+smaker.pl##p > a[href="https://www.facebook.com/groups/226122496302170"] > img
 smakinatalerzu.pl###text-27
 smakistyl.pl##.join-us
 smakliter.pl##.fbAndInstagram
@@ -7015,6 +7073,7 @@ smgostyn.pl###youtubeHandler, #vimeoHandler
 smieszneciuszki.pl##.text-2.sidebar
 smieszneprezenty.com.pl##a[href*="facebook.com/pg/SmiesznySklepPl/posts/"] > img
 smsapi.pl##.footer__social-media-urls a:not([href*="apple"]):not([href*="play"]):not([href*="github"])
+smsapi.pl##footer > div:first-child > div > div + ul > li > a[href*=".com/"]:not([href*="play.google."]):not([href*="apple.com/"])
 smyk.com##div.content-box-buttons-strefy_2 > *
 sneakerpeeker.pl###instaFeed
 sneakerpeeker.pl##footer.container a[href*="facebook.com/"]
@@ -7130,6 +7189,7 @@ srodmiescie.warszawa.pl##.nk-share, .wykop-share, .gg-share
 srw.org.pl##.navibar-social
 ssangyong.pl##.facebook-big
 ssl24.pl,strefa.fm##.fbook
+st.pl##.text-center a[href*="instagram.com/"]
 stacja7.pl###icon-google-plus
 stacja7.pl##.navbar-nav-right-social
 stacja7.pl##.st7-overlay-menu-social > a:not([href*="mailto:"])
@@ -7253,6 +7313,8 @@ surgepolonia.pl###footer_contact_data > li:nth-of-type(1) > a
 sutricon.pl##.nectar-social
 sw.gov.pl###block-13
 swatka.pl##.user-block > .left
+swederm.com##.insta.item
+swederm.com,vileda.pl##.fb.item
 sweetdecor.pl##.left_side > div.categories:nth-of-type(3)
 sweetliving.pl###llg_social_media
 sweetliving.pl##.llg_footer_col_three.col-sm-3 > h4:nth-of-type(2)
@@ -7347,6 +7409,7 @@ taniaksiazka.pl##footer > ul > li > a[href*=".com/"]
 tanie-loty.com.pl##.social-links > li:nth-child(-n+5)
 taniefototapety.eu##.sm-panel .sm-gplus:not(:lang(pl))
 taniejdladomu.pl##footgroup6
+tanio.co##.layout-footer__social-media-wrapper a
 tapenda.pl###lewe_socjalki, #prawa_spolecznosciowki
 tapeteos.pl###sidebar > p.title:nth-of-type(1), #sidebar > p.title:nth-of-type(1) + div.content:nth-of-type(1)
 tarczynski.pl##.s_icon
@@ -7371,6 +7434,7 @@ tbitech.pl##.social-nav li:not(.private-policy)
 tchibo4you.pl##.footer-social-buttons
 tchibo.pl##.l-tp-footer-gray .g-tp-column--half.g-tp-column
 tcl.com##.cm-footer-share
+tcl.com##.social-padding.social.menu-stack-wrap
 tcz.pl##a[href*="facebook.com/tczewtczpl"]
 tcz.pl##div[id] > a[href*="youtube.com/user/tczpl"]
 tdm-electronics.com##.vc_row-flex.vc_row-o-equal-height.vc_row-fluid.vc_inner.wpb_row.vc_row > div.vc_col-has-fill.vc_col-sm-4.vc_column_container.wpb_column:nth-of-type(3)
@@ -7383,15 +7447,22 @@ teatrnn.pl##.bip-url ~ a
 teatrnn.pl##.newsletter-sidebar-widget
 teatrologia.pl#?#.site-footer p:-abp-has(+ .social)
 teatrslaski.art.pl##.fa-vimeo-square
+tech2u.pl##.social-title
 techlipton.pl#?#style + div.fusion-title.title:-abp-contains(Social Media)
 techlipton.pl#?#style + div.fusion-title.title:-abp-contains(Social Media) + div
 techmaniachd.pl##.PlusBadge
 techmot.com.pl###content #right > div.content:nth-of-type(3)
 techmot.com.pl###right > div.content:nth-of-type(2), #right > img[src="/images/bg-right-top.png"]:nth-of-type(3), #right > img[src="/images/bg-right-bottom.png"]:nth-of-type(4)
 technischools.com##.fotter-right-container > a > svg
+techno-senior.com##a.tipi-i-facebook
+techno-senior.com##a.tipi-i-instagram
+techno-senior.com##a.tipi-i-tiktok
+techno-senior.com##a.tipi-i-twitter
+techno-senior.com##a.tipi-i-youtube-play
 technologia-wody.pl##footer div.flex > a[href*=".com/"]
 technowinki24.pl#?#.site-title:-abp-contains(Face)
 techpolis.pl##div.KolumnaStopki:nth-of-type(5)
+tecnoandroid.net##.footer-social-list > :not(.social-link-rss)
 tefal24.pl##.tl-footer-telephone-socials
 tekstowo.pl##.btn-messenger
 tekstowo.pl##.fb-panel
@@ -7743,6 +7814,8 @@ unisono.eu##div.footer-box:nth-of-type(4) > h4
 unitee.pl###footer-content .text-socials
 unityline.pl###dolacz-do-nas
 uniwexaudio.pl###blok_19
+untitled-01.com##.header-widget a[href*="facebook.com/"]
+untitled-01.com##.header-widget a[href*="instagram.com/"]
 unturned.pl##.widget_text:nth-of-type(3)
 uodo.gov.pl##span.top-icons:nth-of-type(n+3):nth-of-type(-n+4)
 uokik.gov.pl##.nav > a[href*="vimeo.com/uokik"]
@@ -7833,7 +7906,6 @@ videotesty.pl##footer li.column:nth-of-type(3)
 viennahouse.com##.footer-container__socialmedia
 viessmann.pl##.vi_footer__social_list
 vigo-ortho.pl##footer div.four:nth-of-type(4) > .editable
-vileda.pl##.fb.item
 vileda.pl##.yt.item
 villacarpatia.com##.face_book, div:nth-of-type(2) > .blog_box
 vipzakopane.pl##.c-header-nav__links--social
@@ -7966,8 +8038,10 @@ werandafamily.com##.instagram-item > .link-block > .overlay > .figure-content-ho
 werandafamily.com##.instagram-item > .link-block > .overlay::after
 werit.eu#?##middle-gray:-abp-has(#social)
 wesob.com.pl##.follow--up
+westwing.pl##footer div:nth-child(3) nav:nth-child(4) > *
 westwingnow.pl##.page > div[class*="OneFooter"] > div[class*="OneFooter"]:nth-child(2) > div:nth-child(8)
 westwingnow.pl##[class^="Social__StyledSocial-"] > a:nth-child(-n+3)
+wetransfer.com##.social-link-out ul a:not([href*="/new"])
 wgmedia.eu##.wg-icon
 wgospodarce.pl##.widget--social-media
 wgrane.pl##.window_title:nth-of-type(3)
@@ -8040,6 +8114,7 @@ wiszniowka.pl##.instagram-section, a[href*="facebook.com/Wiszniowka/"]
 wit.com.pl##.navbar-nav.nav > li:nth-of-type(2)
 witek.pl###rightbar a[href*=".com/"]
 witow-ski.pl##.wk-icon-facebook, .uk-icon-button
+wittchen.com###app-footer-socials
 wittchen.com##.footer__social-media--wrapper
 wittchen.com##.instabox-naglowek
 wiwa.info.pl##a[href*="facebook.com/WIWAINFOPL/"], a[href*="youtube.com/watch?v=8Khj2ZexkIM"]
@@ -8130,6 +8205,7 @@ wszelkieprzepisy.pl###likeup
 wszystkiegoslodkiego.pl##.ws-footer__center__socials
 wszystkiemojebziki.pl###HTML252
 wszystko.pl##.sm-iblock.like
+wszystko.pl##.wpl-footer__socials
 wszystkoociasteczkach.pl##.menu-item a[href*="witter.com"]
 wszystkotujest.pl##.is
 wtk.pl##.tooltip-news-share-container > div[class*="icon"]:nth-of-type(-n+2)
@@ -8181,7 +8257,6 @@ wydajenamsie.pl##.footer-social-media__head
 wydajnykomputer.pl##.footerMenu > li:nth-of-type(8)
 wydarzysie.pl##.facebookfloatbox
 wydawnictwodialog.pl##.menuFooter a[href*=".com/"] img[src*="gfx"]
-wydawnictwodialog.pl,wydawnictwomartel.pl,zlotarybka24.com###fb-slide-gfx
 wydawnictwokobiece.pl###text-6 > .textwidget > h4:nth-of-type(1)
 wydawnictwokobiece.pl##.panel-widget-style-for-13856-2-0-0.panel-widget-style
 wydawnictwokobiece.pl#?#.panel-grid-cell > .panel-last-child:-abp-contains(Bądź na bieżąco!)
@@ -8340,6 +8415,8 @@ zhr.pl##a[href*="facebook.com/harcerstwo/"], a[href*="twitter.com/harcerstwo"], 
 ziaja.com#?#.homepage > .cms-block:-abp-has(> p > span:-abp-contains(Odwiedź nasz profil))
 zielonalinia.gov.pl##.mediashares
 zielonearkady.com.pl##.button_yt, .button_insta, .find_us_name, .find_us_content
+zielonemielone.pl##.footer-container div.row:nth-of-type(1) > h1
+zielonemielone.pl##.footer-container div.row:nth-of-type(1) > h1 + div
 zielonyogrodek.pl##.topFacebook, .topGplus
 ziemkiewicz.info##.page-footer .row:first-child div:nth-child(2) h3
 zinkpower.com###footer div:nth-of-type(2) .zpColumnItem:nth-of-type(1) a i
@@ -8382,6 +8459,7 @@ zprp.pl###text-html-widget-12
 zrobtosam24.eu##.find-us-box
 zrozumboryska.cba.pl###stopka-d
 zrp.pl##a[href*="facebook.com/ZwiazekRzemioslaPolskiego/"] > img
+zryjzdrowocatering.com##.footer-contacts > .row > div:nth-child(3)
 zrzutka.pl###opis .btn-outline-facebook.btn
 zrzutka.pl###popupShare .btn-outline-facebook, #popupShare .btn-outline-twitter
 zrzutka.pl##.chip-shares-container, #chip-sticky-footer-sm .btn-outline-facebook.btn
@@ -8443,9 +8521,6 @@ zywiecinfo.pl#?#.newsberg-card.sppb-addon-module.sppb-addon:-abp-contains(Nasz F
 /insta-ico.png$domain=eska.pl
 /pasek-fb-lowcy-promocji.png
 /skins/user/rwd_shoper_2/images/user/fb.png$domain=uzdrowiskowespa.pl
-/static/media/facebook_square_black$image,domain=aszdziennik.pl|dadhero.pl|innpoland.pl|mamadu.pl|natemat.pl
-/static/media/instagram_black$image,domain=aszdziennik.pl|dadhero.pl|innpoland.pl|mamadu.pl|natemat.pl
-/static/media/twitter_black$image,domain=aszdziennik.pl|dadhero.pl|innpoland.pl|mamadu.pl|natemat.pl
 /themes/fb.png$domain=rynek-kolejowy.pl|rynek-lotniczy.pl|rynekinfrastruktury.pl|transport-publiczny.pl
 /themes/fbLogo.jpg$domain=rynek-kolejowy.pl|rynek-lotniczy.pl|rynekinfrastruktury.pl|transport-publiczny.pl
 /themes/fbmiddle.png$domain=rynek-kolejowy.pl|rynek-lotniczy.pl|rynekinfrastruktury.pl|transport-publiczny.pl
@@ -8463,6 +8538,8 @@ zywiecinfo.pl#?#.newsberg-card.sppb-addon-module.sppb-addon:-abp-contains(Nasz F
 /zdjecia/ikonki/logo_skype_t.jpg$domain=dietetyk.szczecin.pl|metabolic-balance.pl
 ||4prm.pl/*/facebook_menu$image
 ||6art.pl/youtube.png
+||*hotel*.pl/img/*_facebook.svg
+||*hotel*.pl/img/*_youtube_v2.svg
 ||a-z-decor.pl/data/include/img/links/1308135133.jpg
 ||a-z-decor.pl/data/include/img/links/1446760268.jpg
 ||aat.pl/sites/default/files/in_text_illustrations/Youtube_PL.jpg
@@ -8571,6 +8648,9 @@ zywiecinfo.pl#?#.newsberg-card.sppb-addon-module.sppb-addon:-abp-contains(Nasz F
 ||dexpol.com/szablony/dexpol/gfx/logo_google.png
 ||dexpol.com/szablony/dexpol/gfx/logo_tweet.png
 ||di.com.pl/pic/social/si_f.gif
+||dingo-shop.com.pl/public/assets/ico_fb.png
+||dingo-shop.com.pl/public/assets/ico_insta.png
+||dingo-shop.com.pl/public/assets/ico_yt.png
 ||dlabiura24.pl/i/cms/fb.jpg
 ||dlabiura24.pl/i/cms/instagram.jpg
 ||dlahandlu.pl/images/2015/icons/fb.png
@@ -8583,6 +8663,7 @@ zywiecinfo.pl#?#.newsberg-card.sppb-addon-module.sppb-addon:-abp-contains(Nasz F
 ||dywany.dywilan.pl/styles/fb.png
 ||dzielnica18.krakow.pl/images/fb3.png
 ||dziennikprawny.pl/assets/img/icons/wykop.png
+||e2.tacdn.com/img2/t4b/Stacked_TA_logo.png$domain=hotelcenturia.pl
 ||e-skladnica.pl/public/assets/przyciski/info.png
 ||eactive.pl/wp-content/themes/eactive/images/facebox.png
 ||ecocomfort.pl/wp-content/uploads/20*/*/facebook.png
@@ -8609,6 +8690,8 @@ zywiecinfo.pl#?#.newsberg-card.sppb-addon-module.sppb-addon:-abp-contains(Nasz F
 ||farm-market.eu/wp-content/themes/*/images/fIcon.png
 ||farm-market.eu/wp-content/themes/*/images/gIcon.png
 ||farm-market.eu/wp-content/themes/*/images/ytIcon.png
+||fashion-style.com.pl/images/fbico148x55.png
+||fashion-style.com.pl/images/ytico148x55.png
 ||festiwalbiegowy.pl/sites/default/files/upload/misc/fb-art.png
 ||festiwalbiegowy.pl/sites/default/files/upload/misc/instagram_PNG1*.png
 ||festiwalbiegowy.pl/sites/default/files/upload/misc/twitter_318-136405.jpg
@@ -8651,6 +8734,7 @@ zywiecinfo.pl#?#.newsberg-card.sppb-addon-module.sppb-addon:-abp-contains(Nasz F
 ||godne-polecenia.pl/grafika/facebook.png
 ||goldap.info/images/grafika_szablonu/0*/ikonka_yt_
 ||goodgift.pl/css/ytpodkladp.png
+||gpcdn.pl/*/public/images/footer/fb.svg
 ||gram.pl/components/img/youtube.png
 ||greg.pl/imgs/icos/fb.png
 ||greg.pl/imgs/icos/ig.png
@@ -8663,6 +8747,8 @@ zywiecinfo.pl#?#.newsberg-card.sppb-addon-module.sppb-addon:-abp-contains(Nasz F
 ||hi-fi.com.pl/modules/mod_susnet_twitter/images/twitterbutton.png
 ||home.pl/homepl*/image/face_*.png$domain=kupujzdomu.pl
 ||home.pl/static/img/www/footer_ico.png
+||hotelsystems.pl/img/fb-logo.png
+||hotelsystems.pl/img/instagram.$image
 ||housemarket.pl/images/icons/nu-social/wykop.png
 ||hurtum.pl/images/linkedin-logo.png
 ||ibe.edu.pl/images/ikony/twiter-gr.jpg
@@ -8750,6 +8836,7 @@ zywiecinfo.pl#?#.newsberg-card.sppb-addon-module.sppb-addon:-abp-contains(Nasz F
 ||maclife.pl/Modules/mod.main/images/icons/icon-footer-google.png
 ||malbus.pl/files/fb.png
 ||malopolskiekoleje.pl/images/grafika/facebook.png
+||maluchy.pl/szablon/share.png
 ||mamalyga.org/wp-content/uploads/20*/*/FB.png
 ||materacekolo24.pl/images/blog1.png
 ||materacekolo24.pl/images/blog2.png
@@ -8888,6 +8975,7 @@ zywiecinfo.pl#?#.newsberg-card.sppb-addon-module.sppb-addon:-abp-contains(Nasz F
 ||ptakoutlet.pl/templates/ptakoutlet/images/insta-small.png
 ||publicat.pl/sites/all/themes/publicat/img/components/rightsection_fb.png
 ||purebiologics.pl/wp-content/uploads/*/*/tiwtter.png
+||purepc.pl/skin/social.png
 ||pwik.gliwice.pl/images/ig-logo.svg
 ||pyskatyzamsz.com/themes/default-bootstrap/img/INSTAICON.png
 ||quantor.pl/build/images/follow_pl.png
@@ -8898,6 +8986,7 @@ zywiecinfo.pl#?#.newsberg-card.sppb-addon-module.sppb-addon:-abp-contains(Nasz F
 ||ratujtenczyn.org.pl/sitebuilder/images/facebook_logo2-73x69.jpg
 ||redbullmobile.pl/sites/default/files/face.png
 ||ridex.pl/images/site/fb.png
+||ringpolska.pl/*/youtubeicon.png
 ||roker.pl/images/facebook.png
 ||rolmax-sklep.pl/img/logo_fb2.png
 ||rolmax-sklep.pl/img/logo_ins_2.png
@@ -9011,6 +9100,7 @@ zywiecinfo.pl#?#.newsberg-card.sppb-addon-module.sppb-addon:-abp-contains(Nasz F
 ||topware.com/images/icons/youtube.png
 ||topware.com/pl/images/icon/twitter.png
 ||tor-konferencje.pl/themes/social*.png
+||toshiba.pl/common/pages/nep/img/linkedin.png
 ||tourde.pl/images/g--BUTTON.png
 ||toysbox.pl/gfx/cobi2/userfiles/_public/instagram.png
 ||toysbox.pl/gfx/cobi2/userfiles/_public/youtube-ico.png
@@ -9075,8 +9165,6 @@ zywiecinfo.pl#?#.newsberg-card.sppb-addon-module.sppb-addon:-abp-contains(Nasz F
 ||wsensie.pl/images/vimeo_wsensie.png
 ||wsensie.pl/images/yt_wsensie.png
 ||wsensie.tv/images/twetter_icon.png
-||www.fashion-style.com.pl/images/fbico148x55.png
-||www.fashion-style.com.pl/images/ytico148x55.png
 ||xdsport.pl/data/include/cms//facebook_706.jpg
 ||xdsport.pl/data/include/cms//instagram_706.jpg
 ||xn--bolesawiec-e0b.pl/miasto/images/ikony/2018/2_IT.png
@@ -9224,9 +9312,9 @@ zdrowie.tvn.pl##.fb-tool--link, .l-page__footer-label, .article_main__social > .
 !
 !
 ! Bugi Fanboy's Social Blocking List
-##[class]:not(.rank-math-tabs) .button-facebook
-##[class]:not(.rank-math-tabs) .button-twitter
-##[class]:not(.rank-math-tabs) .dashicons-twitter
+##[class] .button-facebook:not([id*="tab-panel"])
+##[class] .button-twitter:not([id*="tab-panel"])
+##[class] .button-twitter:not([id*="tab-panel"]) .dashicons-twitter
 #@#.button-facebook
 #@#.button-twitter
 #@#.cookie-bottom-layer
@@ -9245,6 +9333,8 @@ zdrowie.tvn.pl##.fb-tool--link, .l-page__footer-label, .article_main__social > .
 @@/social_media_$domain=mazury.travel|nuorder.pl
 @@/tiktok/*/static/images/share-$image,domain=tiktok.com
 @@/wp-content/plugins/fwdu3dcar/*$image,~third-party
+@@||allegroimg.com/*/information-social-facebook-$image,domain=allegro.pl
+@@||allegroimg.com/*/information-social-google-$image,domain=allegro.pl
 @@||apis.google.com/js/platform.js
 @@||assets.allegrostatic.com/metrum/icon/share-*.svg$image,domain=allegro.pl
 @@||ceneo.pl/Content/img/icons/logos/Facebook-simple$image
