@@ -3,13 +3,14 @@ title: "Jak zainstalować Nano Defender na Firefoksie albo Waterfoksie?"
 weight: 2
 date: 26 Dec 2018
 slug: "install-nano-defender"
+expiryDate: 2023-06-21
 ---
 
 {{% pageinfo %}}
 ⚠️ **UWAGA!!!!** ⚠️ Wersja Nano Defendera i Adblockera dla Firefoksa jest stworzona przez inną osobę niż dla Chrome i na bazie pracy dawnego autora wersji dla Chrome, co też oznacza, że jest w pełni bezpieczna. Jednakże wkrótce najprawdopodobniej Nano Adblocker nie otrzyma już żadnej aktualizacji, a Nano Defender zmieni nazwę. Więcej informacji na https://github.com/LiCybora/NanoDefenderFirefox/issues/187.
 {{% /pageinfo %}}
 
-## **I. ![Firefox][Firefox]FIREFOX QUANTUM (57+)/![Waterfox Current][Waterfox Current]WATERFOX CURRENT**
+## **I. ![Firefox][Firefox]FIREFOX QUANTUM (57+)/![Waterfox G][Waterfox G]WATERFOX G.x**
 
 1. Zainstaluj [**Nano Defender**](https://addons.mozilla.org/pl/firefox/addon/nano-defender-firefox/ "https://addons.mozilla.org/pl/firefox/addon/nano-defender-firefox/") (kliknij **Dodaj do Firefoksa**, a następnie **Dodaj**).
 
@@ -138,8 +139,8 @@ slug: "install-nano-defender"
 4. Ciesz się z działającego **Nano Defendera**! -->
 
 [Firefox]: https://cdnjs.cloudflare.com/ajax/libs/browser-logos/46.1.0/firefox/firefox_24x24.png "Mozilla Firefox"
-[Waterfox Classic]: https://github.com/MrAlex94/Waterfox/raw/classic/browser/branding/unofficial/default24.png "Waterfox Classic"
-[Waterfox Current]: https://github.com/MrAlex94/Waterfox/raw/current/browser/branding/waterfox/default24.png "Waterfox Current"
+[Waterfox Classic]: https://raw.githubusercontent.com/WaterfoxCo/Waterfox-Classic/classic/browser/branding/unofficial/default24.png "Waterfox Classic"
+[Waterfox G]: https://raw.githubusercontent.com/WaterfoxCo/Waterfox/current/waterfox/browser/branding/default24.png "Waterfox"
 [Chrome]: https://cdnjs.cloudflare.com/ajax/libs/browser-logos/46.1.0/chrome/chrome_24x24.png "Google Chrome"
 [Chromium]: https://cdnjs.cloudflare.com/ajax/libs/browser-logos/46.1.0/chromium/chromium_24x24.png "Chromium"
 [Vivaldi]: https://cdnjs.cloudflare.com/ajax/libs/browser-logos/46.1.0/vivaldi/vivaldi_24x24.png "Vivaldi"

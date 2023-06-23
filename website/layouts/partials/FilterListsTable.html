@@ -138,9 +138,6 @@
 									<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.jsdelivr.net/gh" | replaceRE "/master/" "@master/" | replaceRE "/main/" "@main/" }}&amp;title={{ trim .title "* " }}">
 										<i class="fas fa-file-import fa-fw"></i>jsDelivr
 									</a>
-									<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://combinatronics.io" }}&amp;title={{ trim .title "* " }}">
-										<i class="fas fa-file-import fa-fw"></i>Combinatronics
-									</a>
 									{{ end }}
 									{{ if .mirror }}
 									{{ range $index, $mirrorURL := split $filterlist.mirrorURL ", " }}
@@ -171,9 +168,6 @@
 									</a>
 									<a class="btn btn-outline-info mb-2r" href="{{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.jsdelivr.net/gh" | replaceRE "/master/" "@master/" | replaceRE "/main/" "@main/" }}" target="_blank" rel="noopener">
 										<i class="fas fa-eye fa-fw"></i>jsDelivr
-									</a>
-									<a class="btn btn-outline-info mb-2r" href="{{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://combinatronics.io" }}" target="_blank" rel="noopener">
-										<i class="fas fa-eye fa-fw"></i>Combinatronics
 									</a>
 									{{ end }}
 									{{ if .mirror }}
@@ -206,9 +200,6 @@
 									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.jsdelivr.net/gh" | replaceRE "/master/" "@master/" | replaceRE "/main/" "@main/" }}" target="_blank" rel="noopener" title='{{ i18n "uBOPreviewTitle" }}'>
 										<i class="fas fa-eye fa-fw"></i>jsDelivr
 									</a>
-									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://combinatronics.io"}}" target="_blank" rel="noopener" title='{{ i18n "uBOPreviewTitle" }}'>
-										<i class="fas fa-eye fa-fw"></i>Combinatronics
-									</a>
 								</div>
 							</div>
 						</div>
@@ -230,9 +221,6 @@
 									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.jsdelivr.net/gh" | replaceRE "/master/" "@master/" | replaceRE "/main/" "@main/" }}" target="_blank" rel="noopener" title='{{ i18n "AGPreviewTitle" }}'>
 										<i class="fas fa-eye fa-fw"></i>jsDelivr
 									</a>
-									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://combinatronics.io"}}" target="_blank" rel="noopener" title='{{ i18n "AGPreviewTitle" }}'>
-										<i class="fas fa-eye fa-fw"></i>Combinatronics
-									</a>
 								</div>
 							</div>
 						</div>
@@ -253,9 +241,6 @@
 									</a>
 									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.jsdelivr.net/gh" | replaceRE "/master/" "@master/" | replaceRE "/main/" "@main/" }}" target="_blank" rel="noopener" title='{{ i18n "supplementPreviewTitle" }}'>
 										<i class="fas fa-eye fa-fw"></i>jsDelivr
-									</a>
-									<a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://combinatronics.io"}}" target="_blank" rel="noopener" title='{{ i18n "supplementPreviewTitle" }}'>
-										<i class="fas fa-eye fa-fw"></i>Combinatronics
 									</a>
 								</div>
 							</div>

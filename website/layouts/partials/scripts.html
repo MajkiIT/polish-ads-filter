@@ -6,7 +6,7 @@
 {{ $jsSearch = resources.Get "js/offline-search.js" }}
 {{ $popper := resources.Get "/js/popper.min.js" }}
 {{ $bootstrap := resources.Get "/js/bootstrap.min.js" }}
-{{ $bootstraptgl :=resources.Get "/js/bootstrap4-toggle.min.js" }}
+{{ $bootstraptgl :=resources.Get "/js/bootstrap5-toggle.min.js" }}
 {{ $dm := resources.Get "js/dark-mode-switch.js" }}
 {{ $main_js := slice $jquery $jsBase $jsAnchor $jsSearch $lunr $popper $bootstrap $bootstraptgl $dm | resources.Concat "/js/main.js" | minify | fingerprint }}
 <script src="{{ $main_js.Permalink | relURL }}" integrity="{{ $main_js.Data.Integrity }}"></script>

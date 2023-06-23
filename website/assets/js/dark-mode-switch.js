@@ -10,9 +10,9 @@ const darkSwitch = document.getElementById('darkSwitch');
 window.addEventListener('load', () => {
   if (darkSwitch) {
     initTheme();
-    $('#darkSwitch').change(function() {
+    darkSwitch.addEventListener('change', () => {
       resetTheme();
-    })
+    });
   }
 });
 
@@ -39,10 +39,11 @@ function initTheme() {
   if (darkThemeSelected) {
     darkSwitch.checked = true;
     document.body.setAttribute('data-theme', 'dark');
-    $('#darkSwitch').bootstrapToggle('on');
+    darkSwitch.bootstrapToggle('on');
   }
   else if (systemPrefersDarkMode && !lightThemeSelected) {
     darkSwitch.checked = true;
+    darkSwitch.bootstrapToggle('on');
     document.body.setAttribute('data-theme', 'dark');
   }
   else {
