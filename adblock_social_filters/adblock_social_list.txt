@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista Fanboy's Social Blocking List i EasyList/AdGuard Base!
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2023.8.13.2
-! Last modified: Sun, 13 Aug 2023, 18:42 UTC+02:00
+! Version: 2023.8.13.3
+! Last modified: Sun, 13 Aug 2023, 21:22 UTC+02:00
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -17,7 +17,7 @@
 ! Copyright © 2023 Certyficate IT
 ! Copyright © 2023 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2023.8.13.2 aktualizacja: nie, 13 sie 2023, 18:42 UTC+02:00
+! v.2023.8.13.3 aktualizacja: nie, 13 sie 2023, 21:22 UTC+02:00
 !
 !
 !#safari_cb_affinity(social)
@@ -5894,6 +5894,8 @@ pepco.pl##.text-right.footer-menu > ul.no-list:nth-of-type(2) > li:not(:last-of-
 pepco.pl#?#.footer-nav .row p:-abp-contains(Znajdź nas na)
 pepegi.eu#?#.menu_button_wrapper:nth-of-type(2):-abp-has(a[href*="facebook.com/"], a[href*="twitter.com"])
 pepper.pl##.js-banner.aGrid[data-track*="twitter_banner"]
+pepper.pl##button[data-t^="shareOn"]:not([data-t*="Whatsapp"]):not([data-t*="Messenger"])
+pepper.pl##button[data-t^="shareOn"][data-t*="Whatsapp"], button[data-t^="shareOn"][data-t*="Messenger"]
 pepper.pl##footer#footer.footer > div:nth-child(3) > div > section:nth-child(4) > div > ul > li:nth-of-type(-n+3)
 pepsi.pl###socialBox
 pepsieliot.com##.soc-buttons > a:nth-of-type(-n+5)
