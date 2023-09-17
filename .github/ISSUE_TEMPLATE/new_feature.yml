@@ -1,0 +1,29 @@
+name: Pytania i propozycje ulepszeń list
+description: Questions and suggestions for improving lists
+labels: ["pytanie"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Dziękujemy za zgłoszenie na rzecz Polskich Filtrów do Adblocka, uBlocka Origin i AdGuarda!
+        Thanks for reporting to Polish Filters for AdBlock, uBlock and AdGuard!
+  - type: textarea
+    id: info
+    attributes:
+      label: Opis sprawy (Case description)
+      description: |
+        Co mamy ulepszyć albo w czym jest problem?
+        What should we improve or what the problem is?
+      placeholder: |
+        Proszę dodać sekcję wycinającą irytującą muzyczkę.
+        Please add a section to cut out annoying music.
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Zasady pisania (Writing rules)
+      options:
+        - label: |
+            Zapoznałem się z [netykietą](https://pl.wikipedia.org/wiki/Netykieta) (I've read the [GitHub Community Guidelines](https://docs.github.com/en/github/site-policy/github-community-guidelines)).
+          required: true
