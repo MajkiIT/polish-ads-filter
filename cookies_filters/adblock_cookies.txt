@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista lub rozszerzenie I don't care about cookies i EasyList/AdGuard Base!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2023.9.17.0
-! Last modified: Sun, 17 Sep 2023, 21:59 UTC+02:00
+! Version: 2023.9.17.1
+! Last modified: Sun, 17 Sep 2023, 23:42 UTC+02:00
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -18,7 +18,7 @@
 ! Copyright © 2023 Certyficate IT
 ! Copyright © 2023 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2023.9.17.0 aktualizacja: nie, 17 wrz 2023, 21:59 UTC+02:00
+! v.2023.9.17.1 aktualizacja: nie, 17 wrz 2023, 23:42 UTC+02:00
 !
 !
 ! Specyficzne reguły ukrywające
@@ -3027,6 +3027,8 @@ zyro.com##.zyro-cookies
 !
 !
 ! Specyficzne reguły blokujące
+!||consensu.*/delivery/cmp.min.js$script,domain=opinie24.pl
+!||vendorlist.consensu.org/vendorlist.json$xmlhttprequest,domain=krzyzowka.net|synonim.net
 /ajax/privacy_popup$xmlhttprequest,domain=debica24.eu|narew.info
 /assets/cookies-info.js$script,domain=allegrolokalnie.pl
 /cookie*/bosch-privacy-settings-*.min.js$script,domain=bosch-professional.com|bosch.pl
@@ -3093,7 +3095,6 @@ zyro.com##.zyro-cookies
 ||cmp.quantcast.com/choice/*.org/*$rewrite=abp-resource:blank-js,script,domain=aternos.org
 ||cmp.quantcast.com/choice/*.pl/*$rewrite=abp-resource:blank-js,script,domain=24wspolnota.pl|adresowo.pl|android.com.pl|antyweb.pl|aszdziennik.pl|dadhero.pl|dobryslownik.pl|e-commerce.pl|elle.pl|forumneurologiczne.pl|gazetki.pl|gizmaniak.pl|glamour.pl|glamrap.pl|gry-online.pl|hejto.pl|innpoland.pl|instrukcjaobslugipdf.pl|ithardware.pl|kalendarz-365.pl|kobieta.pl|mamadu.pl|medme.pl|mmorpg.org.pl|mojegotowanie.pl|mojpieknyogrod.pl|mp.pl|naekranie.pl|natemat.pl|national-geographic.pl|nowiny.pl|polskieradio24.pl|przyslijprzepis.pl|radiokierowcow.pl|rozklad-pkp.pl|sieciprawdy.pl|sieradzak.pl|smakosze.pl|tabletowo.pl|teleman.pl|termedia.pl
 ||cmp.redge.media^$xmlhttprequest,domain=kanalsportowy.pl
-||consensu.*/delivery/cmp.min.js$script,domain=opinie24.pl
 ||consent.cookiebot.com/*/cc.js$script,domain=crclondon.com|elica.com|gitlab.com|storytel.com|wienerberger.pl|ziaja.com
 ||consent.dropbox.com^$subdocument
 ||cookie.bortos.pl/*cookie*.js$script
@@ -3182,7 +3183,6 @@ zyro.com##.zyro-cookies
 ||twoje-seriale.pl/cookies.html$subdocument
 ||twojezaglebie.pl/wp-content/plugins/rodo/rodo_style.css
 ||tygodnik-krapkowicki.info/media/plg_system_eprivacy/js/eprivacy.js
-||vendorlist.consensu.org/vendorlist.json$xmlhttprequest,domain=krzyzowka.net|synonim.net
 ||vox.pl/modal/rodo$xmlhttprequest
 ||wieczorpomorze.pl/wp-content/themes/colormag/js/magnific-popup/jquery.magnific-popup.min.js
 ||wins.pl/pages/getcookie$xmlhttprequest
@@ -4177,13 +4177,13 @@ stilord.pl#@#.cookie-bar:not(body):not(html)
 viasatexplore.pl,viasathistory.pl,viasatnature.pl,winnicalidla.pl#@#.privacy-policy:not(body):not(html)
 visa.pl#@#span[class*="Cookie"]:not(.closeCookie)
 wtk.pl#@#.privacy-container:not(body):not(html):not(.content-container)
+!@@||consensu.$domain=fly4free.pl
+!@@||vendorlist.consensu.org/vendorlist.json$xmlhttprequest,domain=gry.pl
 @@/wp-content/plugins/cookie-law-info/js/cookielawinfo.js
-@@||consensu.$domain=fly4free.pl
 @@||consensu.*/js/cmp.stable.min.js$script,domain=shinden.pl
 @@||pracatobie.pl/jscripts/cookieLaws.js
 @@||sdk.privacy-center.org/*/loader.js$domain=filmweb.pl
 @@||sdk.privacy-center.org/sdk.*.js$domain=filmweb.pl
-@@||vendorlist.consensu.org/vendorlist.json$xmlhttprequest,domain=gry.pl
 !
 !
 ! Dołączenie listy uzupełniającej do uBlocka Origin i AdGuarda, by użytkownicy nie musieli jej subskrybować
