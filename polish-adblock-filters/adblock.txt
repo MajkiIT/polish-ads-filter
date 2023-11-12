@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
-! Last modified: 7 November 2023
+! Last modified: 12 November 2023
 ! Expires: 1 day
-! Version: 2023110701
+! Version: 2023111201
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2023 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2023110701 aktualizacja: wt, 7 listopada 2023, 20:50:00
+! v.2023111201 aktualizacja: nie, 12 listopada 2023, 17:50:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -166,7 +166,7 @@ iitvx.pl###player-above-2
 ##[href*="://clickserve.dartsearch.net/link/click"]
 ##[href^="http://adserwer."]
 ##[href^="https://aff.sendhub.pl/"]
-~browargrodzisk.com##[id$="reklamy"]
+~browargrodzisk.com##[id$="reklamy"]:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(b):not(strong)
 ##[id*="-billboard-advert"]
 ##[id*="nokaut_ads_"]
 ##[id^="AdsDetailsTop"]
@@ -2560,7 +2560,7 @@ ototorun.pl##div.row:nth-of-type(5) > .fl.w1000
 ototorun.pl##div.row:nth-of-type(7) > .fl.w1000
 ototorun.pl##p:nth-of-type(9), span > p > A
 ototorun.pl##.adv__content
-ototorun.pl,zyciesokolowa.pl##.ad--bill-top
+ototorun.pl,zyciesokolowa.pl,powiatowa.info##.ad--bill-top
 otozawiercie.pl###HTML8
 otozawiercie.pl###Image1
 ozoneo.pl##.non-fullwidth
@@ -2785,6 +2785,7 @@ powiatowa.info###jm-left > div > .jm-module:nth-of-type(1)
 powiatowa.info###jm-left > div > .jm-module:nth-of-type(4)
 powiatowa.info###jm-right > div > .hidden-mobile.jm-module:nth-of-type(4)
 powiatowa.info###jm-right > div > .jm-module:nth-of-type(1)
+powiatowa.info##.custom-html-box.box > .box__container
 powiatowy.pl###ftHolder, #pasek, .colorbox-manual, #marquee
 powiatpolicki.info##.powia-widget.relative.left.mvp-widget-home, #mvp-leader-wrap
 poznan.naszemiasto.pl##.sekcjaWaska:nth-of-type(1)
@@ -3169,6 +3170,7 @@ sloworegionu.pl###Mod517 > .module-inner > .module-ct > .bannergroup
 sloworegionu.pl##.t3-spotlight
 sloworegionu.pl,glucholazyonline.com.pl,zlubaczowa.pl,bogatynia.info.pl##.flexbannergroup
 sloworegionu.pl###Mod479, #Mod276, #Mod402
+sloworegionu.pl###Mod581, #Mod596, #Mod599, #Mod598, #Mod591, #Mod584, #Mod580, #Mod574
 wirtualnemedia.pl,nowywyszkowiak.pl,eglos.pl##[id^="baner"]
 slowopodlasia.pl##.mw-15.main-widget, .widget-57.widget, .widget-82.widget
 slupca.pl##.g-2.g
@@ -3317,7 +3319,7 @@ supertydzien.pl##.widget.row:nth-of-type(8)
 supertydzien.pl##a[href^="https://www.facebook.com"] > IMG[src*="ifotos.pl"]
 surek.pl###content-wrap > center:nth-of-type(1)
 surek.pl##iframe
-suwalki.info###banner-billboard, #bannerBn, .news-item2, .area.before_content
+suwalki.info###banner-billboard, #bannerBn, .news-item2, .area.before_content, .ads, #views_slideshow_cycle_teaser_section_ads-block_2
 suwalki24.pl###content_right > div:nth-of-type(2), #content_right > .box:nth-of-type(3), #content_right > div.box:nth-of-type(8), #exposeMask, #pupup_comercial
 suwalki24.pl##[class*="commercial"], [id*="commercial"]
 swarzedz24.pl###header-right-section, #media_image-85, #media_image-74, #media_image-282, #media_image-314, #media_image-320
@@ -3384,6 +3386,7 @@ tabletowo.pl##footer div[id^="table"] > a > .i-amphtml-layout
 tabletowo.pl##.zeen-da-wrap > .clearfix.block-html-content > div
 tablety.pl##[class^="post"] > div > div:nth-child(8) > a > img
 taksiegra.pl,wawernews.pl##body > center
+taniabonament.pl###text-10 > .textwidget > div
 taniaksiazka.pl,gsmmaniak.pl,wieliczkacity.pl,aferyprawa.eu,tyna.info.pl,startkariery.pl,ziemialimanowska.pl,mojradom.pl##A[target="_self"] > IMG
 tapenda.pl###glowna_fotki
 tapenda.pl##[class^="glowna_adbox"]
@@ -3546,7 +3549,7 @@ tvp.info,legia.net##.banner
 tvpolsat.info##CENTER > A[target="_blank"] > IMG, div.panel-default.panel:nth-of-type(5)
 tvskierniewice.pl##.elementor-widget-rt-title.elementor-widget.elementor-element
 tvsudecka.pl##.visible-xs
-tvsudecka.pl,tczewska.pl,slowopodlasia.pl,bydgoszcz.com,tvswinoujscie.pl,tygodnikoko.pl,tv-wschod.pl,inowroclaw.info.pl,korsosanockie.pl,supertydzien.pl,lokalnatelewizja.pl,wiara.pl,debica24.eu,zvami.tv,telewizjazary.pl,korsokolbuszowskie.pl,kociewiak.pl,cooltura24.co.uk,portalpomorza.pl,tvobiektyw.pl,echotygodnik.info,damitv.pl,ct.jaworzno.pl,narew.info,pzl24.pl,tvpogranicze.pl,tv-kwidzyn.pl,tvbelchatow.pl,tv-slupsk.pl,radiozamosc.pl,eluban.pl,auto-motor-i-sport.pl,menshealth.pl,womenshealth.pl,runners-world.pl,motocykl-online.pl,ox.pl,radiobonton.pl,dzienniknowy.pl,lokalna24.pl,tv.starachowice.pl,kronikatygodnia.pl,sandomierztv.pl,tarnowska.tv,telewizjamazury.pl,nasztomaszow.pl,slubice.tv,dziennikpowiatowy.pl,expresselblag.pl,truso.tv,naszrynek.pl,olesnica24.com,sejny.info,poradnikhandlowca.com.pl,olesnicainfo.pl,chojnakulturalnie.pl,malbork1.pl,extra-plonsk.pl,koscierzyna24.info,radiosochaczew.pl,wirtualnesuwalki.pl,zycie.pl##[class*="advert"]
+tvsudecka.pl,tczewska.pl,slowopodlasia.pl,bydgoszcz.com,tvswinoujscie.pl,tygodnikoko.pl,tv-wschod.pl,inowroclaw.info.pl,korsosanockie.pl,supertydzien.pl,lokalnatelewizja.pl,wiara.pl,debica24.eu,zvami.tv,telewizjazary.pl,korsokolbuszowskie.pl,kociewiak.pl,cooltura24.co.uk,portalpomorza.pl,tvobiektyw.pl,echotygodnik.info,damitv.pl,ct.jaworzno.pl,narew.info,pzl24.pl,tvpogranicze.pl,tv-kwidzyn.pl,tvbelchatow.pl,tv-slupsk.pl,radiozamosc.pl,eluban.pl,auto-motor-i-sport.pl,menshealth.pl,womenshealth.pl,runners-world.pl,motocykl-online.pl,ox.pl,radiobonton.pl,dzienniknowy.pl,lokalna24.pl,tv.starachowice.pl,kronikatygodnia.pl,sandomierztv.pl,tarnowska.tv,telewizjamazury.pl,nasztomaszow.pl,slubice.tv,dziennikpowiatowy.pl,expresselblag.pl,truso.tv,naszrynek.pl,olesnica24.com,sejny.info,olesnicainfo.pl,chojnakulturalnie.pl,malbork1.pl,extra-plonsk.pl,koscierzyna24.info,radiosochaczew.pl,wirtualnesuwalki.pl,zycie.pl##[class*="advert"]
 tvswietokrzyska.pl###gkBannerReklama1, .nomargin.boxmod2.box, div.borderbottom.boxmod1.box, .customboxmod1
 tvswinoujscie.pl##.boards.widget
 tvtoya.pl##div.columns.large-2, div.articles-banners-rows > A
@@ -3571,6 +3574,7 @@ twoje-miasto.pl,www.rdc.pl,techfanik.pl##[class^="reklama"]
 twojepajeczno.pl##.rekslide, .td-header-rec-wrap, div.rslide, div.fslide, span.ast, .td-header-sp-recsx, .active, span.astad
 twojepajeczno.pl##.screks
 twojepajeczno.pl##.scxxx > .xslide > .activeadb
+twojepajeczno.pl##.activeadx, .aastadd
 twojepc.pl##td[width="300"][align="left"][valign="top"]
 twojeradio.fm##.sec-imgadv
 twojkurierolsztynski.pl##.td-pb-span4.tdc-column.vc_column_container.wpb_column.td_uid_70_5ca4e6dcdea97_rand.vc_column
@@ -3604,7 +3608,7 @@ tygodnikketrzynski.pl###text-53
 tygodniowa.pl###__mce_tmp
 tylkoastronomia.pl###block-block-16, #block-block-18
 tylkoastronomia.pl###block-block-16, .even.field-item > div
-tylkotorun.pl###fsp_light
+tylkotorun.pl###fsp_light, .artadv, .tf_w.tf_box.tb-column-inner
 tylkomedycyna.pl###block-block-19, #block-block-16, .even.field-item > div
 tylkonauka.pl##.even.field-item > div
 tyna.info.pl###widget_sp_image-53, .no-display.lazyloaded.ls-is-cached
@@ -4286,6 +4290,7 @@ zywiecinfo.pl##[href*="/component/banners/click/"]
 ||freedisc.pl/static/player/*/vast.js$script
 ||freeware.info.pl/wiejskie.js
 ||fwcdn.pl/adv/$subdocument
+||fwcdn.pl/front/assets/fastaticbanner-*.$from=filmweb.pl
 ||fwcdn.pl/*/mediaexpert.html$subdocument
 ||g.cda.pl/*.php?ax$xmlhttprequest
 ||g.gazetaprawna.pl/gp/sgp/img/gp/kyocera-logo.png$image
