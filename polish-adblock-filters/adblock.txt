@@ -5349,6 +5349,16 @@ www.wp.pl#?#div[class*=" "]:-abp-has(> img[src$="/i.wp.pl/a/i/stg/pkf/bg.png"])
 ~www.wp.pl,wp.pl##body > script + iframe + div:not([id])[class]
 pogoda.wp.pl##li > .item + div[class*=" "]
 @@||o2.pl^$generichide
+! against blinking ads :
+! already added in uAssets :
+! https://github.com/uBlockOrigin/uAssets/commit/e106cc80a42cada1c7b24dc1776bfebc5f1071b9
+! not added in uAssets (multiple requests were ignored) :
+! https://github.com/uBlockOrigin/uAssets/issues/12214#issuecomment-1878540350
+! https://github.com/uBlockOrigin/uAssets/issues/12214#issuecomment-1879673020 
+! https://github.com/uBlockOrigin/uAssets/issues/12214#issuecomment-1884828280
+fitness.wp.pl#?#.article-wrapper.wizard-body > div:not([class*="-"]):-abp-has(> img[src^="https://i.wpimg.pl/100x0/m.autokult.pl/"])
+wideo.wp.pl#?#header + div + style + div:-abp-has(>[src="https://std.wpcdn.pl/images/adv/placeholder_wp.svg"])
+wideo.wp.pl#?#header + style + div:-abp-has(>[src="https://std.wpcdn.pl/images/adv/placeholder_wp.svg"])
 !
 !34#--------------------------Pudelek/Pudelekx element hide------------!
 pudelek.pl##DIV.cb > DIV[class^="m"]
