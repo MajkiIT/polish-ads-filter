@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
-! Last modified: 12 January 2024
+! Last modified: 13 January 2024
 ! Expires: 1 day
-! Version: 2024011201
+! Version: 2024011301
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2023 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2024011201 aktualizacja: pt, 12 stycznia 2024, 16:20:00
+! v.2024011301 aktualizacja: so, 13 stycznia 2024, 14:25:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -564,7 +564,7 @@ bithub.pl##.gpuajs-image
 biznes-firma.pl##.navibox
 biznes.pl##.e_Box.analyses
 biznes.pl##.rightBoxR.boxPopComtR.cl
-biznes.interia.pl,muzyka.interia.pl##.promocyjni_gazetka_dol.ad.box, .ad-rectangle
+biznes.interia.pl,geekweek.interia.pl,muzyka.interia.pl##.promocyjni_gazetka_dol, .ad-rectangle
 biznes2biznes.com##DIV[style="width:200px;float:right;display:block;margin-left:-5px;"]
 biznes2biznes.com##[id^="stickynote"]
 biznesalert.pl##.banner-overlay, .container > div:nth-of-type(10)
@@ -1392,6 +1392,7 @@ gazetki-promocyjne.net.pl##.shadow-text
 gazetkonosz.pl###overlayAd
 gazetkonosz.pl##.signad
 gdzietymrazem.pl##.widget_text.widget.td_block_template_1:nth-of-type(4)
+geekweek.interia.pl##.dol_srodek_ads_box
 geoforum.pl###advertisement_div
 geoforum.pl,eurobuildcee.com,dziennikprawny.pl,fachowcybudowlani.pl##.banery
 getlevel.info###cb-section-b > .clearfix.cb-sidebar
@@ -4029,6 +4030,7 @@ www.hopaj.pl###hopajembed
 www.imperiumromanum.edu.pl##[href^="https://www.empik.com/swiety-ogien-rzymu-wespazjan-tom-8-fabbri-robert,p1242140709,ksiazka-p"]
 www.imperiumromanum.edu.pl##[href="http://www.wydawnictwoatryda.pl/kolekcja/frontpage/aecjusz-i-barbarzyncy/"]
 www.interia.pl##section.wide-section > section > div > A > IMG
+www.interia.pl##.ad-content, .ad-window, .overlay
 www.jaslo4u.pl###flashContent
 www.jaslo4u.pl###posters_slider
 www.kazimierzdolny.pl##.sidebar__widget:nth-of-type(1)
@@ -4071,7 +4073,6 @@ www.photoblog.pl###adsense-top-placeholder
 www.pino.pl###pinowyswietlacz
 www.planowaniewesela.pl###header-banner
 www.pless.pl##main > .small.pasek-gray
-
 www.policja2009.fora.pl##.f_bnr_type-1
 www.pomniki.eu##.ukl-body > p
 www.portalmorski.pl##.pmbi, .a-block, #ijoomlazone151, #ijoomlazone152, #ijoomlazone154, .standard_adv_link
@@ -5350,13 +5351,7 @@ www.wp.pl#?#div[class*=" "]:-abp-has(> img[src$="/i.wp.pl/a/i/stg/pkf/bg.png"])
 ~www.wp.pl,wp.pl##body > script + iframe + div:not([id])[class]
 pogoda.wp.pl##li > .item + div[class*=" "]
 @@||o2.pl^$generichide
-! against blinking ads :
-! already added in uAssets :
-! https://github.com/uBlockOrigin/uAssets/commit/e106cc80a42cada1c7b24dc1776bfebc5f1071b9
-! not added in uAssets (multiple requests were ignored) :
-! https://github.com/uBlockOrigin/uAssets/issues/12214#issuecomment-1878540350
-! https://github.com/uBlockOrigin/uAssets/issues/12214#issuecomment-1879673020 
-! https://github.com/uBlockOrigin/uAssets/issues/12214#issuecomment-1884828280
+! against blinking ads (https://github.com/MajkiIT/polish-ads-filter/pull/22235) :
 fitness.wp.pl#?#.article-wrapper.wizard-body > div:not([class*="-"]):-abp-has(> img[src^="https://i.wpimg.pl/100x0/m.autokult.pl/"])
 wideo.wp.pl#?#header + div + style + div:-abp-has(>[src="https://std.wpcdn.pl/images/adv/placeholder_wp.svg"])
 wideo.wp.pl#?#header + style + div:-abp-has(>[src="https://std.wpcdn.pl/images/adv/placeholder_wp.svg"])
