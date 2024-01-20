@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 15 January 2024
+! Last modified: 19 January 2024
 ! Expires: 1 day
-! Version: 2024011501
+! Version: 2024011901
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2022 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2024011501 aktualizacja: pon, 15 stycznia 2024, 10:45:00
+! v.2024011901 aktualizacja: pt, 19 stycznia 2024, 20:31:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -154,7 +154,7 @@ filmweb.pl##+js(nano-remove-elements-onready.js, #skyBanner)
 ! Grupa WP
 !~www.wp.pl,abczdrowie.pl,parenting.pl,kafeteria.pl,money.pl,dobreprogramy.pl,wp.pl##+js(set, Number.isNaN, trueFunc)
 !~www.wp.pl,wp.pl##+js(set, wp_abtest, null)
-~www.wp.pl,o2.pl,~poczta.o2.pl,pudelek.pl,wp.pl##div:matches-css-after(content:/R.*E.*K.*L.*A.*M.*A/):upward(1)
+~www.wp.pl,o2.pl,~poczta.o2.pl,ranking.abczdrowie.pl,pudelek.pl,wp.pl##div:matches-css-after(content:/R.*E.*K.*L.*A.*M.*A/):upward(1)
 ~pilot.wp.pl,~poczta.wp.pl,~sportowefakty.wp.pl,wp.pl##+js(aopr, WP.inline)
 !abczdrowie.pl,echirurgia.pl,fotoblogia.pl,komorkomania.pl,money.pl,wp.pl##+js(set, PWA_adbd, 2)
 facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##+js(aopw, iaqExt)
@@ -401,6 +401,9 @@ www.interia.pl###sg-iframe:style(filter: blur(0px) !important)
 www.interia.pl##+js(nano-stb, #iwa_source=timeout, 15000, 0.02)
 poczta.interia.pl#$##mainApp #sitebar, #mainApp #sitebar form { width: 100% !important; max-width: 100% !important }
 interia.pl,pomponik.pl##.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important;)
+!
+! Grupa Agora
+avanti24.pl,czterykaty.pl,edziecko.pl,g.pl,gazeta.pl,haps.pl,hapsvod.pl,komunikaty.pl,magazyn-kuchnia.pl,moto.pl,plotek.pl,sport.pl,tokfm.pl,ukrayina.pl,wyborcza.biz##+js(set, dfpParams.slots, null)
 !
 ! elektroda.pl
 www.elektroda.pl##+js(set, loadElement, noopFunc)
