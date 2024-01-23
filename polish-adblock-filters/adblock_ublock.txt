@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 19 January 2024
+! Last modified: 22 January 2024
 ! Expires: 1 day
-! Version: 2024011901
+! Version: 2024012201
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2022 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2024011901 aktualizacja: pt, 19 stycznia 2024, 20:31:00
+! v.2024012201 aktualizacja: pon, 22 stycznia 2024, 22:00:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -211,6 +211,7 @@ profil.wp.pl##+js(set, Object.prototype.loadAndRunBunch, noopFunc)
 kafeteria.pl,polygamia.pl,open.fm,pudelek.pl##+js(nostif, HubAPI, 3000)
 kafeteria.pl,polygamia.pl,open.fm,pudelek.pl##+js(aeld, message, t.origin===k)
 wp.pl##+js(no-setTimeout-if, /getComputedStyle[\s\S]*?style\.display="none"[\s\S]*?styleBlocked[\s\S]*?detected/)
+dom.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,kuchnia.wp.pl,pogoda.wp.pl,turystyka.wp.pl,wiadomosci.wp.pl#?#[data-native-adv]:-abp-has(a>span:-abp-contains(REKLAMA)):upward(1)
 dom.wp.pl,facet.wp.pl,film.wp.pl,finanse.wp.pl,gry.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,kuchnia.wp.pl,moto.wp.pl,opinie.wp.pl,tech.wp.pl,teleshow.wp.pl,turystyka.wp.pl,wawalove.wp.pl,wiadomosci.wp.pl,wroclaw.wp.pl#?#td[data-reactid] > div[class] > div[class] > div[class*=" "] > div[class] > span:contains(/^TWOJE OKAZJE$/):upward(2)
 dom.wp.pl,facet.wp.pl,film.wp.pl,finanse.wp.pl,gry.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,kuchnia.wp.pl,moto.wp.pl,opinie.wp.pl,tech.wp.pl,teleshow.wp.pl,turystyka.wp.pl,wawalove.wp.pl,wiadomosci.wp.pl,wroclaw.wp.pl#?#div[class*=" "]:has(>div[class]:first-child:empty+img[src*="://v.wpimg.pl/"][alt]:empty)
 abczdrowie.pl,autokult.pl,echirurgia.pl,film.wp.pl,fotoblogia.pl,gadzetomania.pl,gry.wp.pl,horoskop.wp.pl,kobieta.wp.pl,komorkomania.pl,medycyna24.pl,money.pl,parenting.pl,pogoda.wp.pl,tech.wp.pl,tv.wp.pl,twojeip.wp.pl,wiadomosci.wp.pl,wideo.wp.pl,sportowefakty.wp.pl,fitness.wp.pl,wawalove.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl,www.wp.pl##+js(aost, WP.prebid, onLoad)
