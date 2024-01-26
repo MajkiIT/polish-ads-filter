@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
-! Last modified: 24 January 2024
+! Last modified: 26 January 2024
 ! Expires: 1 day
-! Version: 2024012401
+! Version: 2024012601
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2024 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2024012201 aktualizacja: sro, 24 stycznia 2024, 11:00:00
+! v.2024012601 aktualizacja: sro, 26 stycznia 2024, 20:00:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -1051,6 +1051,8 @@ elektroda.pl#?#.the-list > li[class^="clearfix "]:-abp-has(:scope > a[href][targ
 elektroda.pl#?#.the-content > div[class] > div:-abp-has(:scope >form[action^="https://www.tme.eu/pl/katalog/"][target="_blank"])
 elektroda.pl#?#.the-content > div[class] > div:-abp-has(:scope >a[href^="http://www.biall.com.pl/sklep.html"][target="_blank"])
 elektroda.pl#?#.the-content > div[class] > div:-abp-has(:scope >a[href][target="_blank"][onclick*="'Patron', 'Click Button'"])
+elektroda.pl#?#.ad-resize.container > div[id][style^="min-width: "]:-abp-has( > .text-center > [id^="div-gpt-ad-"])
+elektroda.pl#?#[class*="col-"][style^="min-height:"]:-abp-has(div[id^="div-gpt-ad-"], .text-center)
 elektroda.pl##.bbd, section.col-md-12, .col-md-12.sec-b, #Se5reezoo6eith4o
 elektroda.pl##.topbar-wrap + .container > div > div > section
 elektrosystemy.pl##.ms-container > .ms-inner-controls-cont > .ms-grab-cursor.ms-basic-view.ms-view
@@ -1908,7 +1910,7 @@ koscierski.info##._ad
 koscierski.info##div.kampeki.center
 koscierzyna24.info##.cycle-slideshow
 kosmetykaaut.pl##.ipsAreaBackground_light.ipsResponsive_inlineBlock.ipsResponsive_showDesktop > A > IMG
-koszalininfo.pl,wlkp24.info,wwl24.info,b2-biznes.pl,sporteuro.pl,metropoliabydgoska.pl,brzeg24.pl,pabianice.tv,zambrowiacy.pl,e-play.pl,wrc.net.pl,dziennik.walbrzych.pl,asta24.pl,nswiecie.pl,blogtransportowy.pl,portalprzemyski.pl,wzielonej.pl,mikrokontroler.pl,naszawielkopolska.pl,radio-wrzesnia.pl,life4style.pl,zachodniemazowsze.info,mlecznepodroze.pl,ziemiadebicka.pl,szydlowiecki.eu,skarzyski.eu,konecki24.pl,starachowicki.eu,swiatmotocykli.pl,magazyn.elubin.pl,topmejt.co.uk,starachowicka.pl,goral.info.pl,togethermagazyn.pl,inzynier-medyczny.pl,dzisiajwgliwicach.pl,radiowrzesnia.pl,kalisz24.info.pl,targowek.info,luzna24.pl,bobowa24.pl,dts24.pl,portaltenisowy.info,kolobrzeginfo.pl,bialogardinfo.pl,plock.fm,informatorbrzeski.pl,nadwisla24.pl,wwl24.pl,agronews.com.pl,dobragazeta.com.pl,pozatorun.pl,pielgrzym.pelplin.pl##.g
+koszalininfo.pl,wlkp24.info,wwl24.info,b2-biznes.pl,sporteuro.pl,metropoliabydgoska.pl,brzeg24.pl,pabianice.tv,zambrowiacy.pl,e-play.pl,wrc.net.pl,dziennik.walbrzych.pl,asta24.pl,nswiecie.pl,blogtransportowy.pl,portalprzemyski.pl,wzielonej.pl,mikrokontroler.pl,naszawielkopolska.pl,radio-wrzesnia.pl,life4style.pl,zachodniemazowsze.info,mlecznepodroze.pl,ziemiadebicka.pl,szydlowiecki.eu,skarzyski.eu,konecki24.pl,starachowicki.eu,swiatmotocykli.pl,magazyn.elubin.pl,topmejt.co.uk,starachowicka.pl,goral.info.pl,togethermagazyn.pl,inzynier-medyczny.pl,dzisiajwgliwicach.pl,radiowrzesnia.pl,kalisz24.info.pl,targowek.info,luzna24.pl,bobowa24.pl,dts24.pl,portaltenisowy.info,kolobrzeginfo.pl,bialogardinfo.pl,plock.fm,informatorbrzeski.pl,nadwisla24.pl,wwl24.pl,agronews.com.pl,dobragazeta.com.pl,pozatorun.pl,pielgrzym.pelplin.pl,tylkotorun.pl##.g
 kronikamontrealska.com##.textwidget > A
 kryptoporadnik.pl##.stm_sidebar > p
 krytykapolityczna.pl##.kppromowidget.widget
@@ -2639,8 +2641,6 @@ onet.pl##[class^=AdSlotPlaceholder_]
 onlinekredyty.pl##.box2Cont
 onlineradio.pl##.add-box-top,.add-box-side
 onlinesudoku.pl###ads-sidebar-right, .bnr-player-top, .bnr-player-float-right
-open.fm###bnr-top, .bnr-player
-open.fm###radioFlashPlayer
 operatorzy.pl##header .banner-background, #sidebar .cms-banner
 opieka.farm##._ning_inner > ._ning_link.strack_cli
 opieka.farm,glosfizjoterapeuty.pl##.custom-html-widget.textwidget
@@ -3599,6 +3599,7 @@ teksciory.interia.pl##.advert-200-box
 temi.pl##.gtmi-2.gtmi, .gtmi-dyn
 tenis24.eu##.container > .text-center
 tenisklub.pl##DIV[style="width:750px;height:100px;margin:10px auto;"]
+tenpoznan.pl##[data-insertion-position="prepend"]
 tenpoznan.pl##div[class^="ai-viewport-"] > .code-block
 tenpoznan.pl##aside[class*="ai_widget"] > .code-block
 tenpoznan.pl##div.code-block[style$="min-height: 300px; margin-bottom: 25px; margin-top: 25px"]
@@ -3760,7 +3761,7 @@ tygodnik.szczytno.pl#?#p:-abp-contains(Reklama)
 tygodnikketrzynski.pl###text-53
 tygodniowa.pl###__mce_tmp
 tylkoastronomia.pl###block-block-16, #block-block-18, .even.field-item > div
-tylkotorun.pl###fsp_light, .artadv, .tf_w.tf_box.tb-column-inner
+tylkotorun.pl###fsp_light, .artadv, .not_editable_builder
 tylkomedycyna.pl###block-block-19, #block-block-16, .even.field-item > div
 tylkonauka.pl##.even.field-item > div
 tyna.info.pl###widget_sp_image-53, .no-display.lazyloaded.ls-is-cached
@@ -5295,6 +5296,7 @@ autocentrum.pl,e.autokult.pl##body > div[class]:first-child:not([id])
 autokult.pl##.insert--top-offer.insert, .partner-area
 autokult.pl##[href^="http://corto.www.wp.pl/"]
 avent-ugrow.wp.pl##[class$="BgClick"]
+domodi.pl##.product-list__ad
 forum.benchmark.pl##div[id][style$="display:flex;justify-content:center;align-items:center"]
 horoskop.wp.pl##div[class*="reklama_"]
 kafeteria.pl,money.pl,pudelek.pl,autokult.pl##.scr-wallpaper
@@ -5310,11 +5312,9 @@ o2.pl##A[href*=".wp.pl/"][target="_blank"] > DIV[style^="background-color: rgb"]
 o2.pl##div[data-testid^="ad-placeholder-"]
 o2.pl#?#div[class][style="width:100%"] > div[class*=" "]:-abp-has(:scope > img[role="presentation"]:not([src]))
 o2.pl,gadzetomania.pl##A[href*=".wp.pl/"][target="_blank"] > IMG[class][src^="https://v.wpimg.pl/"]
-open.fm###ADrail
+open.fm###ADrail, .listAdvSlot, .Placeholder
 open.fm###openfm-player > DIV[class] > DIV[class]
-open.fm##.bnr-con2
-open.fm##.listAdvSlot
-open.fm##.bnr-con
+open.fm##.bnr-con2, .bnr-con, .bnr-player, #bnr-top, #radioFlashPlayer
 open.fm##A[class][href*=".wp.pl/"] IMG[class][src^="https://v.wpimg.pl/"]
 open.fm##[class^="bnr-player-"]
 !pogoda.wp.pl#?#.desktop > div:nth-of-type(4):-abp-has(div:empty)
@@ -5344,7 +5344,7 @@ zywotziemniaka.wp.pl##.advertisement, .banner
 !
 !33#--------------------------WP element hide------------!
 autocentrum.pl,autokult.pl,dobreprogramy.pl,fotoblogia.pl,gadzetomania.pl,genialne.pl,komorkomania.pl,polygamia.pl,pysznosci.pl,tech.wp.pl#?#[role="listitem"]:-abp-has(span:-abp-contains(REKLAMA))
-~praca.money.pl,autocentrum.pl,autokult.pl,dobreprogramy.pl,fotoblogia.pl,gadzetomania.pl,genialne.pl,jastrzabpost.pl,kobieta.wp.pl,money.pl,o2.pl,polygamia.pl,pudelek.pl,pysznosci.pl,tech.wp.pl#?#div:-abp-has(>[src^="https://v.wpimg.pl/"]:not([alt]))
+autocentrum.pl,autokult.pl,dobreprogramy.pl,fotoblogia.pl,gadzetomania.pl,genialne.pl,jastrzabpost.pl,kobieta.wp.pl,o2.pl,polygamia.pl,pudelek.pl,pysznosci.pl,tech.wp.pl#?#div:-abp-has(>[src^="https://v.wpimg.pl/"]:not([alt]))
 dom.wp.pl,facet.wp.pl,film.wp.pl,finanse.wp.pl,gry.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,kuchnia.wp.pl,moto.wp.pl,opinie.wp.pl,tech.wp.pl,teleshow.wp.pl,turystyka.wp.pl,wawalove.wp.pl,wiadomosci.wp.pl,wroclaw.wp.pl#?#div[class*=" "]:-abp-has(>div[class]:first-child:empty+img[src*="://v.wpimg.pl/"][alt]:empty)
 czat.wp.pl,infografika.wp.pl,dladzieci.pl,muzyka.wp.pl,niewiarygodne.pl,sportowybar.wp.pl,forum.o2.pl,topnews.wp.pl,ogloszenia.wp.pl##[id*="adv"]
 !film.wp.pl,turystyka.wp.pl,opinie.wp.pl,gry.wp.pl,tech.wp.pl,moto.wp.pl,kobieta.wp.pl,finanse.wp.pl,sportowefakty.wp.pl,wiadomosci.wp.pl,pudelek.pl,tv.wp.pl##* > DIV[style*="; overflow: hidden"]
@@ -5450,6 +5450,8 @@ money.pl##.recommended
 money.pl##A[href*="://direct.money.pl/o/salechannel.php"]
 money.pl##DIV[style$="min-height:180px"]
 money.pl##iframe[src*="promoted"]
+money.pl#?#section + div:-abp-has(>style)
+money.pl#?#[id="header"] + div + div:-abp-has(>style)
 money.pl#?##app > div[class^="sc-"] > div[class]:not([class*=" "]):-abp-has(:scope > div[class*=" "]:only-child > img[src^="https://v.wpimg.pl/"][src$="=="][alt])
 msp.money.pl##DIV > DIV[style*=" z-index: 310"]
 praca.money.pl#?#div:-abp-has(>[src^="https://v.wpimg.pl/"]:not([alt],[loading]))
