@@ -188,6 +188,9 @@ www.wp.pl##div[class^="sc-"]:has(:scope > img[src^="https://v.wpimg.pl/"][role="
 !www.wp.pl##+js(set, Object.prototype.advViewability, undefined)
 !www.wp.pl##+js(set, Object.prototype.rekids, undefined)
 www.wp.pl##+js(aost, WP, r https)
+!#if !env_mobile
+www.wp.pl##[src^="https://v.wpimg.pl/"]:not([alt]):upward(3)
+!#endif
 so-magazyn.pl,o2.pl,pudelek.pl,film.wp.pl,finanse.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,magazyn.wp.pl,moto.wp.pl,opinie.wp.pl,sportowefakty.wp.pl,tech.wp.pl,teleshow.wp.pl,wiadomosci.wp.pl#@#.pub_300x250
 so-magazyn.pl,o2.pl,pudelek.pl,film.wp.pl,finanse.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,magazyn.wp.pl,moto.wp.pl,opinie.wp.pl,sportowefakty.wp.pl,tech.wp.pl,teleshow.wp.pl,wiadomosci.wp.pl#@#.text_ads
 so-magazyn.pl,o2.pl,pudelek.pl,film.wp.pl,finanse.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,magazyn.wp.pl,moto.wp.pl,opinie.wp.pl,sportowefakty.wp.pl,tech.wp.pl,teleshow.wp.pl,wiadomosci.wp.pl#$#.pub_300x250 { display: block!important; }
