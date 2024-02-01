@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
-! Last modified: 26 January 2024
+! Last modified: 31 January 2024
 ! Expires: 1 day
-! Version: 2024012601
+! Version: 2024013101
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2024 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2024012601 aktualizacja: pt, 26 stycznia 2024, 20:00:00
+! v.2024013101 aktualizacja: śro, 31 stycznia 2024, 10:10:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -558,8 +558,8 @@ bitcoin-online.pl##.sp-module:nth-of-type(3) > .sp-module-content > .custom
 bitcoin-online.pl##.bannergroup
 bitcoin-online.pl,swiatdronow.pl##A[rel="nofollow"] > IMG
 bitcoin.pl,zd24.pl##.custom
-bitcoin.pl##.m-rek
-bitcoin.pl##.space-x-6.flex
+bitcoin.pl##.m-rek, .space-x-6.flex
+bitcoin.pl##.widget_media_image > a:not([href*="bitcoin.pl"]) > img
 bithub.pl##.hqeigpn-container, .st-ad-region
 bithub.pl###text-8 > .textwidget, .sckutqx-image, #text-12, #text-9
 bithub.pl##.gpuajs-image
@@ -766,7 +766,7 @@ comperia.pl##.rkoScroll, #aboveMenuCzarobox, .wybierz-oferte-container.py-lg-5.p
 comprix.pl###subList3 > .l3
 computerworld.pl###tui-animation
 cooltura24.co.uk##.bgad
-cowkrakowie.pl##.bdaia-header-e3-desktop, #custom_html-3, .advert--component, .google--component
+cowkrakowie.pl##.bdaia-header-e3-desktop, #custom_html-3, .advert--component, .google--component, .cwk--component
 cowwilanowie.pl##.sp-image, .a-image, .a-re, .sp-grab.sp-mask
 cozadzien.pl##.box_bnewshome, .relative.w-100.mnr
 cpb.pl###artbaner
@@ -1055,6 +1055,7 @@ elektroda.pl#?#.ad-resize.container > div[id][style^="min-width: "]:-abp-has( > 
 elektroda.pl#?#[class*="col-"][style^="min-height:"]:-abp-has(div[id^="div-gpt-ad-"], .text-center)
 elektroda.pl##.bbd, section.col-md-12, .col-md-12.sec-b, #Se5reezoo6eith4o
 elektroda.pl##.topbar-wrap + .container > div > div > section
+elektroda.pl##ul[class] > li[id] + li[class]
 elektrosystemy.pl##.ms-container > .ms-inner-controls-cont > .ms-grab-cursor.ms-basic-view.ms-view
 elektrosystemy.pl###custom_html-43, #text-87, #custom_html-47, #text-92
 elektroinstalacje.info###side-border-left > div.panelbody:nth-of-type(1)
@@ -1898,6 +1899,7 @@ konin24.info##.flex-list, [href^="Plugin/ads_click.php"]
 konin24.info###popup_box
 konindzieciom.pl##.re_div_show
 kontomaniak.pl##.banner-image
+konto.onet.pl###ad-slot-container
 kopalniawiedzy.pl##.right-col-sky
 kopalniawiedzy.pl##.ui-helper-clearfix.box.interview > .ui-helper-clearfix
 korkosfera.pl##div#copyright_ne
@@ -2223,7 +2225,7 @@ mediagroupinfo.pl##DIV > IMG[src^="http://"][alt]:last-child
 mediamarkt.pl##A[href^="http://www.mediamarkt.pl/ad.php"]
 medme.pl##.adslot--centered, .art__content > p[style^="background:"]
 medme.pl##.agr__block--html.agr__block
-medonet.pl###halodoctor_list_widget, #marketplace_list_widget
+medonet.pl###halodoctor_list_widget, #marketplace_list_widget, .dlapi-placeholder.onet-ad
 medycznamarihuana.com##A[target="_blank"] > IMG[src*="medycznamarihuana.com/wp-content/uploads/"]
 medycznamarihuana.com##DIV[style="float: left; padding: 8px;"]
 medycznamarihuana.com##IMG[src*="/wp-content/uploads/baner_"]
@@ -2237,6 +2239,8 @@ memy.pl##.side-stream > div[style="height:600px; width:300px;"]
 menshealth.pl###mh-halfpage-advert-2
 menshealth.pl##.side-right > p
 mensis.pl,lubanski.eu,aju.pl,gracz.org,lubaczow.tv,poprostupycha.com.pl,swietokrzyskie.pl###custom_html-4
+menworld.pl##.one_half_sr, .home-widget-re-size
+menworld.pl#?#h4.top-widget-title:-abp-contains(Reklama)
 meritum.gda.pl##a[href="http://serwis-laptopy.pl"]
 metalnews.pl###sidebar_right_place-10, #text-23
 metalnews.pl,izaktv.pl##.custom-html-widget.textwidget
@@ -3007,8 +3011,11 @@ przegladsportowy.pl,auto-swiat.pl,businessinsider.com.pl,fakt.pl,komputerswiat.p
 przegladsportowy.pl,auto-swiat.pl,businessinsider.com.pl,fakt.pl,komputerswiat.pl,noizz.pl,ofeminin.pl,plejada.pl,onet.pl##aside[class^="CenterAd_container"]
 przegladsportowy.onet.pl##aside[class^="Top_placeholderTop"]
 przegladsportowy.onet.pl##aside[class^="Panel_placeholderPanel_"]
+przegladsportowy.onet.pl##aside[class^="Rectangle_placeholderRectangle__"]
+przegladsportowy.onet.pl##aside[class^="FlatBoxLeft_"]
 przegladsportowy.onet.pl##aside[class^="FlatBoxRight_"]
 przegladsportowy.onet.pl##aside[class^="Left_placeholderLeft_"]
+www.auto-swiat.pl,www.komputerswiat.pl,businessinsider.com.pl,facet.onet.pl,fakt.pl,gotowanie.onet.pl,kobieta.onet.pl,kodyrabatowe.onet.pl,kultura.onet.pl,magia.onet.pl,plejada.pl,podroze.onet.pl,pogoda.onet.pl,wiadomosci.onet.pl,zapytaj.onet.pl##.adsContainer, .adPlaceholder, .ad-placeholder, .asideAds, .dlapi-placeholder.onet-ad, .placeholder.onet-ad, #onet-ad-flat-belkagorna, #extraAdsBlock, #googleAdsCont
 przekrojlokalny.pl##.banner_zone
 przemysl24.pl###banner-top, .fbaner
 przepisy.pl##.promobanner-container, .banner_wrap, .recipe-container-promo
@@ -5298,7 +5305,7 @@ autocentrum.pl,e.autokult.pl##body > div[class]:first-child:not([id])
 autokult.pl##.insert--top-offer.insert, .partner-area
 autokult.pl##[href^="http://corto.www.wp.pl/"]
 avent-ugrow.wp.pl##[class$="BgClick"]
-domodi.pl##.product-list__ad
+domodi.pl##.product-list__ad, .dml-post__products, [data-t="16.3"]
 forum.benchmark.pl##div[id][style$="display:flex;justify-content:center;align-items:center"]
 horoskop.wp.pl##div[class*="reklama_"]
 kafeteria.pl,money.pl,pudelek.pl,autokult.pl##.scr-wallpaper
@@ -5345,6 +5352,7 @@ zywotziemniaka.wp.pl##.advertisement, .banner
 ||xml.enovatis.pl/mrdsl/json.php$xmlhttprequest,domain=turystyka.wp.pl
 !
 !33#--------------------------WP element hide------------!
+autocentrum.pl,autokult.pl,fotoblogia.pl,gadzetomania.pl,genialne.pl,jastrzabpost.pl,kobieta.wp.pl,komorkomania.pl,money.pl,open.fm,polygamia.pl,pudelek.pl,pysznosci.pl,wideo.wp.pl##style + div[class]
 autocentrum.pl,autokult.pl,dobreprogramy.pl,fotoblogia.pl,gadzetomania.pl,genialne.pl,komorkomania.pl,polygamia.pl,pysznosci.pl,tech.wp.pl#?#[role="listitem"]:-abp-has(span:-abp-contains(REKLAMA))
 autocentrum.pl,autokult.pl,dobreprogramy.pl,fotoblogia.pl,gadzetomania.pl,genialne.pl,jastrzabpost.pl,kobieta.wp.pl,komorkomania.pl,o2.pl,polygamia.pl,pudelek.pl,pysznosci.pl,tech.wp.pl#?#div:-abp-has(>[src^="https://v.wpimg.pl/"]:not([alt]))
 dom.wp.pl,facet.wp.pl,film.wp.pl,finanse.wp.pl,gry.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,kuchnia.wp.pl,moto.wp.pl,opinie.wp.pl,tech.wp.pl,teleshow.wp.pl,turystyka.wp.pl,wawalove.wp.pl,wiadomosci.wp.pl,wroclaw.wp.pl#?#div[class*=" "]:-abp-has(>div[class]:first-child:empty+img[src*="://v.wpimg.pl/"][alt]:empty)
@@ -5467,6 +5475,7 @@ www.money.pl##DIV[style$=" z-index: auto;"] > DIV[class]
 www.money.pl##P + DIV[style$="padding:10px 0"]
 www.money.pl##SCRIPT[src^="//money"] + DIV[class][style="text-align:center;"]
 www.money.pl#?#.article__content>div[class*=" "]:-abp-has(div>div>div:-abp-contains(REKLAMA))
+www.money.pl#?#main > div:first-child:-abp-has(img[src^="https://v.wpimg.pl/"][loading="lazy"])
 money.pl,pudelek.pl,wideo.wp.pl#?#[data-st-area="list-recommended4you-MainColumn"] > div > div:-abp-contains(/REKLAMA/i)
 www.money.pl,moneyv.wp.pl###app > div[data-reactroot] > [class^="sc-"] + div[class]:not([class^="sc-"]):nth-of-type(6)
 money.pl,moneyv.wp.pl#?#div[class^="sc-"]:-abp-has(> img[src="https://i.wpimg.pl/O/56x45/i.wp.pl/a/i/stg/pkf/bg.png"])
