@@ -3,32 +3,43 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - gh-pages  # Set a branch to deploy
+      - gh-pages # Set a branch to deploy
   pull_request:
     branches:
       - gh-pages
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: recursive  # Fetch the Docsy theme
-          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+          submodules: recursive # Fetch the Docsy theme
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
+        if: github.event_name == 'push' || github.event.action != 'closed'
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
 
       - name: Setup Node
+        if: github.event_name == 'push' || github.event.action != 'closed'
         uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
 
       - name: Build
+        if: github.event_name == 'push' || github.event.action != 'closed'
         run: |
           git rm -rf ./docs
           cd ./website/themes/docsy && npm install
@@ -36,8 +47,14 @@ jobs:
           npm i -D --save autoprefixer postcss-cli postcss
           hugo --minify
 
-      - name: Upload test build
+      - name: Deploy preview
         if: github.event_name == 'pull_request'
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./docs/
+
+      - name: Upload test build
+        if: github.event_name == 'pull_request' && github.event.action != 'closed'
         uses: actions/upload-artifact@v4
         with:
           name: polish-ads-filter_website_${{github.sha}}
