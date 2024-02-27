@@ -22,6 +22,8 @@
 		<option value="uBO" data-icon="icon-dropdown uBO-icon">uBlock Origin</option>
 		<option value="AG" data-icon="icon-dropdown AG-icon">AdGuard</option>
 		<option value="Ph" data-icon="icon-dropdown Ph-icon">Pi-hole</option>
+		<option value="Dmq" data-icon="icon-dropdown Dmq-icon">Dnsmasq</option>
+		<option value="FG" data-icon="icon-dropdown FG-icon">FortiGate</option>
 		<option value="hosts" data-icon="icon-dropdown AA-icon">AdAway</option>
 		<option value="hosts" data-icon="icon-dropdown Blokada-icon">Blokada</option>
 		<option value="hosts" data-icon="icon-dropdown AGHome-icon">AdGuard Home</option>
@@ -60,7 +62,7 @@
 			<td class="align-middle" data-label="LINKI">
 				<div class="span">
 					<div class="btn-group-vertical">
-						{{ if not (findRE .adblocker "hosts|Ph" ) }}
+						{{ if not (findRE .adblocker "hosts|Ph|Dmq|FG" ) }}
 						<a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{.subscribe}}&amp;title={{ trim .title "* " }}">
 							<i class="fas fa-file-import fa-fw"></i>{{ i18n "subscribe" }}
 						</a>
@@ -121,7 +123,7 @@
 					{{ if and (not (in $filterlist.subscribe "raw.githubusercontent.com")) (not $filterlist.mirror) }} - {{ end }}
 					<div class="btn-group-vertical">
 						{{/*  Subskrybuj  */}}
-						{{ if not (findRE .adblocker "hosts|Ph" ) }}
+						{{ if not (findRE .adblocker "hosts|Ph|Dmq|FG" ) }}
 
 						{{ if or (in .subscribe "raw.githubusercontent.com") (.mirror) }}
 						<div class="btn-group dropright">
@@ -294,6 +296,14 @@
 
 					{{ if findRE "Ph" .adblocker }}
 					<a href="https://pi-hole.net/" target="_blank" rel="noopener"><img src="{{ "images/Pi-hole.svg" | relURL }}" style="width:32px;height:32px" title="Pi-hole"></a>
+					{{end}}
+
+					{{ if findRE "Dmq" .adblocker }}
+					<a href="https://thekelleys.org.uk/dnsmasq/doc.html" target="_blank" rel="noopener"><img src="{{ "images/Dnsmasq.svg" | relURL }}" style="width:32px;height:32px" title="Dnsmasq"></a>
+					{{end}}
+
+					{{ if findRE "FG" .adblocker }}
+					<a href="https://docs.fortinet.com/document/fortigate/7.4.3/administration-guide/9463/threat-feeds" target="_blank" rel="noopener"><img src="{{ "images/FTNT.svg" | relURL }}" style="width:32px;height:32px" title="FortiGate"></a>
 					{{end}}
 
 					{{ if .requiredTitle }}
