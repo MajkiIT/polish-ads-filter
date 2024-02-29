@@ -6,17 +6,17 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 26 January 2024
+! Last modified: 28 Febuary 2024
 ! Expires: 1 day
-! Version: 2024012601
+! Version: 2024022800
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! Redundant Checker >> https://www.certyficate.it/redundant_checker/redundantRuleChecker.html
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-! Copyright © 2022 Certyficate IT
+! Copyright © 2024 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2024012401 aktualizacja: pt, 26 stycznia 2024, 20:00:00
+! v.2024022800 aktualizacja: śro, 28 lutego 2024, 22:23
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -269,8 +269,8 @@ streamin.to##+js(noeval-if, RTCPeerConnection)
 ! Popupy https://github.com/MajkiIT/polish-ads-filter/issues/2478
 ||go.onclasrv.com/apu.php$important,redirect=noop.js,script
 !
-! reklama po prawej np. na pclab.pl,onet.pl,businessinsider.com.pl,noizz.pl,komputerswiat.pl,plejada.pl
-auto-swiat.pl,businessinsider.com.pl,komputerswiat.pl,noizz.pl,onet.pl,pclab.pl,plejada.pl,vod.pl###nitro-block:style(position: absolute !important; left: -3000px !important;)
+! reklama po prawej np. na pclab.pl, onet.pl, businessinsider.com.pl, noizz.pl, komputerswiat.pl, plejada.pl
+auto-swiat.pl,businessinsider.com.pl,komputerswiat.pl,noizz.pl,onet.pl,pclab.pl,plejada.pl###nitro-block:style(position: absolute !important; left: -3000px !important;)
 !
 ! blokowanie gemius
 !||onet.hit.gemius.pl/fpdata.js$script,important
@@ -292,9 +292,6 @@ dvbtmap.eu###leftCol2:style(top: 51px !important;)
 ! tko.pl
 tko.pl##.pum-open:style(overflow: auto !important;)
 tko.pl##.pum[data-popmake*="uczelnia"]
-!
-!
-!
 !
 ! anyfiles.pl
 anyfiles.pl##+js(aopr, launchOpenWindow)
@@ -586,7 +583,9 @@ tekstowo.pl#$#.teledysk { flex: 0 0 100% !important; max-width: 100% !important;
 meczyki.pl##:not(.onnetwork-banner) > .placeholder:not(.onnetwork-banner):style(height: 0 !important; min-height: 0 !important;)
 !
 ! uBlock-user
-napiprojekt.pl##+js(insert-iframe, 1, honeypot, https://www.napiprojekt.pl/napisy-42731-Ostatni-U-Boot-(1993), width: 1px !important; height: 1px !important; position: absolute !important; left: -3000px !important)
+!napiprojekt.pl##+js(insert-iframe, 1, honeypot, https://www.napiprojekt.pl/napisy-42731-Ostatni-U-Boot-(1993), width: 1px !important; height: 1px !important; position: absolute !important; left: -3000px !important)
+napiprojekt.pl##+js(ape, body #catalgForm, iframe, src, https://www.napiprojekt.pl/napisy-42731-Ostatni-U-Boot-(1993))
+napiprojekt.pl##body #catalgForm iframe[src*="U-Boot"]
 ppe.pl###hot-slides-wrapper #hot_0, #hot-slider #m_hot_0
 ppe.pl##+js(ac, active, #m_hot_1)
 ppe.pl##+js(ac, box_active, #hot_1)
