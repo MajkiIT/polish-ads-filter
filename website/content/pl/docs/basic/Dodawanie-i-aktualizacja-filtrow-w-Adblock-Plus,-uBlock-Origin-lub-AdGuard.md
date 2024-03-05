@@ -42,10 +42,9 @@ tags:
    https://raw.githubusercontent.com/PolishFiltersTeam/KAD/master/KAD.txt
    ```
 
+   ![ubo](images/wiki/uBO_add1.png "klikamy w przycisk ustawień")
 
-   ![ubo](/images/wiki/uBO_add1.png "klikamy w przycisk ustawień")
-
-   ![ubo-settings](/images/wiki/uBO_add2.png "aktywujemy zakładkę zewnętrzne filtry, przewijamy stronę do końca i wklejamy link z filtrami do pola na dole, potem klikamy zastosuj")
+   ![ubo-settings](images/wiki/uBO_add2.png "aktywujemy zakładkę zewnętrzne filtry, przewijamy stronę do końca i wklejamy link z filtrami do pola na dole, potem klikamy zastosuj")
 </ul>
 </ul>
 
@@ -55,9 +54,9 @@ tags:
 #### uBlock Origin
 <ul>
 
-![ublock-origin-ustawienia-rozszerzenia](/images/wiki/uBO_update.png)
+![ublock-origin-ustawienia-rozszerzenia](images/wiki/uBO_update.png)
 
-![aktualizacja-filtrow-w-ublocku-origin](/images/wiki/uBO_update2.gif)
+![aktualizacja-filtrow-w-ublocku-origin](images/wiki/uBO_update2.gif)
 
 </ul>
 </ul>

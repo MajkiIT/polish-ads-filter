@@ -1,13 +1,11 @@
 {{ $jsBase := resources.Get "js/base.js" }}
-{{ $jsAnchor := resources.Get "js/anchor.js" }}
 {{ $jsSearch := resources.Get "js/search.js" | resources.ExecuteAsTemplate "js/search.js" .Site.Home }}
 {{ $jquery:= resources.Get "/js/jquery.min.js" }}
-{{ $lunr:= resources.Get "/js/lunr.min.js" }}
+{{ $lunr:= resources.Get "/js/lunr.js" }}
 {{ $jsSearch = resources.Get "js/offline-search.js" }}
-{{ $popper := resources.Get "/js/popper.min.js" }}
-{{ $bootstrap := resources.Get "/js/bootstrap.min.js" }}
-{{ $bootstraptgl :=resources.Get "/js/bootstrap5-toggle.min.js" }}
+{{ $bootstrap := resources.Get "vendor/bootstrap/dist/js/bootstrap.bundle.js" }}
+{{ $bootstraptgl :=resources.Get "/js/bootstrap5-toggle.ecmas.js" }}
 {{ $dm := resources.Get "js/dark-mode-switch.js" }}
-{{ $main_js := slice $jquery $jsBase $jsAnchor $jsSearch $lunr $popper $bootstrap $bootstraptgl $dm | resources.Concat "/js/main.js" | minify | fingerprint }}
+{{ $main_js := slice $jquery $jsBase $jsSearch $lunr $bootstrap $bootstraptgl $dm | resources.Concat "/js/main.js" | minify | fingerprint }}
 <script src="{{ $main_js.Permalink | relURL }}" integrity="{{ $main_js.Data.Integrity }}"></script>
 {{ partial "hooks/body-end.html" . }}

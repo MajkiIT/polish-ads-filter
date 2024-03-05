@@ -1,52 +1,19 @@
-<input type="search" id="search" class="light-table-filter" data-table="table" placeholder='{{ i18n "search" }}...'>
-<div class="m-auto">
-	<select class="selectpicker ddlFilterTableRow mb-3 mr-sm-2 category" data-attribute="category" multiple="multiple" title='{{ i18n "category" }}...' data-style="btn-outline-primary" data-actions-box="true" data-selected-text-format="count" data-width="fit">
-		<option value="bezpieczeństwo" data-icon="icon-dropdown security-icon">{{ i18n "security" }}</option>
-		<option value="reklamy" data-icon="icon-dropdown ads-icon">{{ i18n "ads" }}</option>
-		<option value="anty-adblock" data-icon="icon-dropdown adblockDetect-icon">{{ i18n "anti-adblock" }}</option>
-		<option value="społecznościowe" data-icon="icon-dropdown socialCategory-icon">{{ i18n "social" }}</option>
-		<option value="ciasteczka" data-icon="icon-dropdown sweetCategory-icon">{{ i18n "cookiesCategory" }}</option>
-		<option value="irytujące" data-icon="icon-dropdown annoyance-icon">{{ i18n "annoyances" }}</option>
-		<option value="RSS" data-icon="icon-dropdown rssCategory-icon">RSS</option>
-		<option value="sponsorowane" data-icon="icon-dropdown sponsor-icon">{{ i18n "sponsored" }}</option>
-		<option value="e-handel" data-icon="icon-dropdown ecommerce-icon">{{ i18n "e-commerce" }}</option>
-		<option value="prywatność" data-icon="icon-dropdown privacy-icon">{{ i18n "privacy" }}</option>
-	</select>
-	<select class="selectpicker ddlFilterTableRow mb-3 mr-sm-2 origin" data-attribute="origin" multiple="multiple" title='{{ i18n "origin" }}...' data-style="btn-outline-primary" data-max-options="1" data-width="fit">
-		<option value="pl">{{ i18n "Polish" }}</option>
-		<option value="zagraniczne">{{ i18n "foreign" }}</option>
-	</select>
-	<select class="selectpicker ddlFilterTableRow mb-3 mr-sm-2 adblocker" data-attribute="adblocker" multiple="multiple" title='{{ i18n "adblocker" }}...' data-style="btn-outline-primary" data-max-options="1" data-selected-text-format="count" data-width="fit">
-		<option value="AB" data-icon="icon-dropdown AB-icon">AdBlock</option>
-		<option value="ABP" data-icon="icon-dropdown ABP-icon">Adblock Plus</option>
-		<option value="uBO" data-icon="icon-dropdown uBO-icon">uBlock Origin</option>
-		<option value="AG" data-icon="icon-dropdown AG-icon">AdGuard</option>
-		<option value="Ph" data-icon="icon-dropdown Ph-icon">Pi-hole</option>
-		<option value="Dmq" data-icon="icon-dropdown Dmq-icon">Dnsmasq</option>
-		<option value="FG" data-icon="icon-dropdown FG-icon">FortiGate</option>
-		<option value="hosts" data-icon="icon-dropdown AA-icon">AdAway</option>
-		<option value="hosts" data-icon="icon-dropdown Blokada-icon">Blokada</option>
-		<option value="hosts" data-icon="icon-dropdown AGHome-icon">AdGuard Home</option>
-		<option value="hosts" data-icon="icon-dropdown Diversion-icon">Diversion</option>
-		<option value="hosts" data-icon="icon-dropdown pf-icon">pfBlockerNG</option>
-		<option value="hosts" data-icon="icon-dropdown pDF-icon">personalDNSFilter</option>
-	</select>
-	<select class="selectpicker ddlFilterTableRow mb-3 id" id="hash" multiple="multiple" title='{{ i18n "favoriteLists" }}...' data-style="btn-outline-primary" data-attribute="hash" data-selected-text-format="count" data-width="false" data-actions-box="true" data-live-search="true" data-live-search-placeholder='{{ i18n "search"}}...'>
-		{{ range $.Site.Data.FilterLists.items }}
-		{{ $id := trim .title "* " | replaceRE "(\\s)" "_" | replaceRE "'" "" | lower }}
-		<option value="{{ $id | md5 }}">{{ trim .title "* "}}</option>
-		{{end}}
-	</select>
+<input type="search" id="searchTable" class="light-table-filter td-search__input form-control" data-table="table" placeholder='{{ i18n "search" }}...'>
+<div class="m-auto w-auto d-flex flex-wrap" id="dropdown-container">
+	<div id="category-select" class="selectpicker ddlFilterTableRow mb-3 ms-sm-2 category"></div>
+	<div id="origin-select" class="selectpicker ddlFilterTableRow mb-3 ms-sm-2 origin"></div>
+	<div id="adblocker-select" class="selectpicker ddlFilterTableRow mb-3 ms-sm-2 adblocker"></div>
+	<div id="lists-select" class="selectpicker ddlFilterTableRow mb-3 ms-sm-2 id"></div>
 </div>
 
-<table class="responsive table table-sm table-striped table-bordered table-light sortable-theme" data-sortable>
+<table class="responsive table table-sm table-striped table-bordered table-light sortable asc">
 	<thead>
 		<tr>
 			<th scope="col" class="text-center font-weight-bold">{{ upper (i18n "filterlist") }}</th>
 			<th scope="col" class="text-center font-weight-bold">{{ upper (i18n "elements") }}</th>
-			<th scope="col" class="text-center font-weight-bold" data-sortable="false">{{ upper (i18n "links") }}</th>
-			<th scope="col" class="text-center font-weight-bold" data-sortable="false">{{ upper (i18n "alternativeLinks") }}</th>
-			<th scope="col" class="text-center font-weight-bold" data-sortable="false">{{ upper (i18n "required") }}</th>
+			<th scope="col" class="text-center font-weight-bold no-sort">{{ upper (i18n "links") }}</th>
+			<th scope="col" class="text-center font-weight-bold no-sort">{{ upper (i18n "alternativeLinks") }}</th>
+			<th scope="col" class="text-center font-weight-bold no-sort">{{ upper (i18n "required") }}</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -127,7 +94,7 @@
 
 						{{ if or (in .subscribe "raw.githubusercontent.com") (.mirror) }}
 						<div class="btn-group dropright">
-							<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<i class="fas fa-file-import fa-fw"></i>
 								{{ i18n "subscribe" }}
 							</a>
@@ -161,7 +128,7 @@
 						{{/*  Podgląd  */}}
 						{{ if or (in .subscribe "raw.githubusercontent.com") (.mirror) }}
 						<div class="btn-group dropright">
-							<a class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a class="btn btn-outline-info dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<i class="fas fa-eye fa-fw"></i>
 								{{ i18n "preview" }}
 							</a>
@@ -196,7 +163,7 @@
 						{{ if in .subscribe "raw.githubusercontent.com" }}
 						{{ with .uBO_supp }}
 						<div class="btn-group dropright">
-							<a class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title='{{ i18n "uBOPreviewTitle" }}'>
+							<a class="btn btn-outline-info dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title='{{ i18n "uBOPreviewTitle" }}'>
 								<i class="fas fa-eye fa-fw"></i>
 								{{ i18n "uBOPreview" }}
 							</a>
@@ -220,7 +187,7 @@
 						{{ if in .subscribe "raw.githubusercontent.com" }}
 						{{ with .AG_supp }}
 						<div class="btn-group dropright">
-							<a class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title='{{ i18n "AGPreviewTitle" }}'>
+							<a class="btn btn-outline-info dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title='{{ i18n "AGPreviewTitle" }}'>
 								<i class="fas fa-eye fa-fw"></i>
 								{{ i18n "AGPreview" }}
 							</a>
@@ -244,7 +211,7 @@
 						{{ if in .subscribe "raw.githubusercontent.com" }}
 						{{ with .supp }}
 						<div class="btn-group dropright">
-							<a class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title='{{ i18n "supplementPreviewTitle" }}'>
+							<a class="btn btn-outline-info dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title='{{ i18n "supplementPreviewTitle" }}'>
 								<i class="fas fa-eye fa-fw"></i>
 								{{ i18n "supplementPreview" }}
 							</a>
@@ -332,18 +299,17 @@
 	</tbody>
 </table>
 
+{{ $utilsLangPath := "js/table-utils_i18n.js" }}
+{{- $utilsLang := resources.Get "js/table-utils_i18n.js" | resources.ExecuteAsTemplate (printf "%s.%s.js" "js/table-utils" .Site.Language.Lang ) . | minify | fingerprint -}}
+<script defer src="{{ $utilsLang.Permalink | relURL }}" integrity="{{ $utilsLang.Data.Integrity }}"></script>
 
-{{ $selectFilter := resources.Get "js/multipleSelectFilter.js" }}
-{{ $select := resources.Get "js/bootstrap-select.min.js" }}
-{{ $selectPolish := resources.Get "js/bootstrap-select-translations/defaults-pl_PL.min.js" }}
-{{ $filterSearch := resources.Get "js/light-table-filter.min.js" }}
-{{ $sort := resources.Get "js/sortable.min.js" }}
-{{ $mirror := resources.Get "js/table-utils.js" }}
+{{ $select := resources.Get "js/virtual-select.js" }}
+{{ $filterSearch := resources.Get "js/light-table-filter.js" }}
+{{ $sort := resources.Get "js/sortable.js" }}
+{{ $scroll := resources.Get "js/sliding-scroll.js" }}
+{{ $utilsPath := "js/table-utils.js" }}
+{{- $utils := resources.Get $utilsPath | resources.ExecuteAsTemplate $utilsPath . -}}
 
-{{ $js := slice $selectFilter $select $filterSearch $sort $mirror | resources.Concat "js/table_bundle.js" | minify | fingerprint }}
-{{ if eq .Site.Language.Lang "pl" }}
-{{ $jspl := slice $js $selectPolish | resources.Concat "js/table_bundle_pl.js" | minify | fingerprint }}
-<script defer src="{{ $jspl.Permalink | relURL }}" integrity="{{ $jspl.Data.Integrity }}"></script>
-{{ else }}
+{{ $js := slice $select $filterSearch $sort $scroll $utils | resources.Concat "js/table_bundle.js" | minify | fingerprint }}
 <script defer src="{{ $js.Permalink | relURL }}" integrity="{{ $js.Data.Integrity }}"></script>
-{{ end }}
+
