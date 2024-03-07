@@ -3,13 +3,35 @@ body[data-theme="dark"] {
     color: white !important;
     background-color: #010101 !important;
 
-    table, .bootstrap-select .dropdown-menu.inner, .bootstrap-select .dropdown-item, .bootstrap-select .dropdown-menu, .popover-body {
+    table, .vscomp-dropbox, .popover-body {
         color: #fff !important;
         background-color: #222 !important;
     }
 
-    .table-light th, .table-light td, .table-light thead th, input[type="search"], .td-search-input.form-control:focus, .form-control {
+    .vscomp-wrapper:not(.has-value) .vscomp-value {
+        opacity: .8;
+    }
+    
+    .table, .td-table:not(.td-initial), .td-content table:not(.td-initial), .td-box table:not(.td-initial) {
+        --bs-table-color: #fff;
+        --bs-table-bg: #212529;
+        --bs-table-border-color: #373b3e;
+        --bs-table-striped-bg: #2c3034;
+        --bs-table-striped-color: #fff;
+        --bs-table-active-bg: #373b3e;
+        --bs-table-active-color: #fff;
+        --bs-table-hover-bg: #323539;
+        --bs-table-hover-color: #fff;
+        color: var(--bs-table-color);
+        border-color: var(--bs-table-border-color);
+    }
+    
+
+    // .table-light th, .table-light td, .table-light thead th, 
+    input[type="search"], 
+    .td-search-input.form-control:focus, .form-control {
         border-color: #353535 !important;
+        color: #dedad6;
     }
 
     .bs-searchbox input[type="search"] {
@@ -17,22 +39,26 @@ body[data-theme="dark"] {
         color: inherit;
     }
 
-    .table-light.table-striped tbody tr:nth-of-type(2n+1),
-    .td-content > table.table-light tbody tr:nth-of-type(2n+1),
-    .td-box .row.section > table.table-light tbody tr:nth-of-type(2n+1) {
-        background-color: rgba(255, 255, 255, 0.05) !important;
-    }
+    // // .table-light.table-striped tbody tr:nth-of-type(2n+1),
+    // .td-content > table.table-light tbody tr:nth-of-type(2n+1),
+    // .td-box .row.section > table.table-light tbody tr:nth-of-type(2n+1) {
+    //     background-color: rgba(255, 255, 255, 0.05) !important;
+    // }
 
     .pageinfo {
         background: rgba(255, 255, 255, 0.05) !important;
     }
 
     .form-control:focus {
-        background-color: #353535;
+        background-color: #222;
     }
 
-    .dropdown-item:hover, .dropdown-item:focus {
-        background: rgba(255, 255, 255, 0.2) !important;
+    .vscomp-option.focused {
+        background: #333333;
+    }
+
+    .vscomp-option.selected:not(.focused) {
+        background: #111111;
     }
 
     .td-sidebar-nav__section-title a {
@@ -43,9 +69,9 @@ body[data-theme="dark"] {
         color: #b6afa8;
     }
 
-    table:not(class) thead th, .td-content > table thead th, table:not(class) .td-box .row.section > table thead th, table:not(class) th, .td-content > table th, .td-box .rowsection > table th, table:not(class) td, .td-content > table td, table:not(class) .td-box .row.section > table td {
-        border-color: #353535 !important;
-    }
+    // table:not(class) thead th, .td-content > table thead th, table:not(class) .td-box .row.section > table thead th, table:not(class) th, .td-content > table th, .td-box .rowsection > table th, table:not(class) td, .td-content > table td, table:not(class) .td-box .row.section > table td {
+    //     border-color: #353535 !important;
+    // }
 
     table:not(class) {
         display: inline-table !important;
@@ -55,9 +81,9 @@ body[data-theme="dark"] {
         background: black !important;
     }
 
-    .table-striped tbody tr:nth-of-type(odd), .td-content > table tbody tr:nth-of-type(odd), .td-box .row.section > table tbody tr:nth-of-type(odd) {
-        background-color: rgba(255, 255, 255, 0.05) !important;
-    }
+    // .table-striped tbody tr:nth-of-type(odd), .td-content > table tbody tr:nth-of-type(odd), .td-box .row.section > table tbody tr:nth-of-type(odd) {
+    //     background-color: rgba(255, 255, 255, 0.05) !important;
+    // }
 
     pre {
         background-color: rgba(255, 255, 255, 0.1) !important;
@@ -87,13 +113,53 @@ body[data-theme="dark"] {
         border-top: 1px solid rgba(255,255,255,.1);
     }
 
-    .AGHome-icon, img[src="./images/AGHome.svg"] {
+    .AGHome-icon, img[title="AdGuard Home"] {
         filter: invert(1);
     }
 
-    td .dropdown-menu {
+    .dropdown-menu {
         background-color: #222 !important;
     }
 
+    .taxonomy-term:not(:hover):not(:focus)  {
+        color: #e9ecef;
+        background: #403f4c;
+    }
+
+    .taxonomy-count {
+        background-color: #000;
+    }
+
+    .taxonomy-term:hover .taxonomy-count {
+        color: #bfc0b3 !important;
+    }
+
+    .card {
+        background-color: rgba(var(--bs-dark-rgb), 0.5) !important;
+    }
+
+    .td-content table code {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .vscomp-wrapper.multiple .vscomp-option.selected .checkbox-icon::after {
+        border-color: deepskyblue;
+        border-left-color: rgba(0, 0, 0, 0);
+        border-top-color: rgba(0, 0, 0, 0);
+    }
+
+    .vscomp-value {
+        color: deepskyblue;
+    }
+
+    .dropdown-item {
+        color: #dedad6;
+    }
+
+    .dropdown-item:hover, .dropdown-item:focus {
+        background-color: var(--bs-dropdown-link-hover-color);
+        color: var(--bs-dropdown-link-hover-bg);
+    }
+    
 }
 // }

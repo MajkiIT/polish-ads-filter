@@ -3,8 +3,6 @@ title = "Polish filters for AdBlock, uBlock Origin & AdGuard"
 ignoreFiles = [ "table_notes.md" ]
 enableRobotsTXT = true
 publishDir = "../docs"
-canonifyURLs = true
-relativeURLs = true
 # Hugo allows theme composition (and inheritance). The precedence is from left to right.
 theme = ["docsy"]
 
@@ -18,8 +16,6 @@ defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
-
 enableInlineShortcodes = true
 enableEmoji = true
 
@@ -32,10 +28,10 @@ pygmentsUseClassic = false
 # See https://help.farbox.com/pygments.html
 pygmentsStyle = "tango"
 
+disableKinds = ["taxonomy"]
 # Configure how URLs look like per section.
 [permalinks]
 blog = "/:section/:year/:month/:day/:slug/"
-
 
 # Image processing configuration.
 [imaging]
@@ -54,16 +50,18 @@ anchor = "smart"
 [languages.pl]
 contentDir = "content/pl"
 title = "Polskie filtry do AdBlocka, uBlocka Origin i AdGuarda"
-description = "polish-ads-filter"
 languageName = "Polski"
+weight = 1
+[languages.pl.params]
+description = "polish-ads-filter"
 time_format_default = "2 January, 2006"
 # Weight used for sorting.
-weight = 1
 [languages.en]
 contentDir = "content/en"
 title = "Polish filters for AdBlock, uBlock Origin & AdGuard"
-description = "polish-ads-filter"
 languageName = "English"
+[languages.en.params]
+description = "polish-ads-filter"
 
 
 [markup]
@@ -74,7 +72,6 @@ languageName = "English"
 # Everything below this are Site Params
 
 [params]
-copyright = "MajkiIT"
 #privacy_policy = "https://policies.google.com/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
@@ -117,6 +114,13 @@ algolia_docsearch = false
 # Enable Lunr.js offline search
 offlineSearch = true
 
+# Copyright
+[params.copyright]
+from_year = "2020"
+authors = """
+MajkiIT | 
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)"""
+
 # User interface configuration
 [params.ui]
 # Enable to show the side bar menu in its compact state.
@@ -129,8 +133,8 @@ breadcrumb_disable = false
 sidebar_search_disable = false
 #  Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top nav bar
 navbar_logo = false
-# Set to true to disable the About link in the site footer
-footer_about_disable = false
+# Set to true to enablethe About link in the site footer
+footer_about_enable = true
 
 # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
 # This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.
@@ -191,3 +195,10 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 
 [outputs]
 section = [ "HTML", "RSS", "print" ]
+[module]
+#[[module.mounts]]
+#    source = 'data'
+#    target = 'data'
+#[[module.mounts]]
+#    source = 'i18n'
+#    target = 'data'

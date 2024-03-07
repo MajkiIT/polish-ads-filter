@@ -1,0 +1,68 @@
+.sortable {
+  thead {
+    th {
+      &:not(.no-sort) {
+        cursor: pointer;
+        &::after,
+        &::before {
+          transition: color 0.1s ease-in-out;
+          font-size: 1.2em;
+          color: transparent;
+        }
+
+        &::after {
+          margin-left: 3px;
+          content: '\025B8';
+        }
+        &:hover {
+          &::after {
+            color: inherit;
+          }
+        }
+
+        &[aria-sort="descending"]{
+          &::after {
+            color: inherit;
+            content: '\025BE';
+          }
+        }
+
+        &[aria-sort="ascending"] {
+          &::after {
+            color: inherit;
+            content: '\025B4';
+          }
+        }
+        &.indicator-left {
+          &::after {
+            content: '';
+          }
+          &::before {
+            margin-right: 3px;
+            content: '\025B8';
+          }
+
+          &:hover {
+            &::before {
+              color: inherit;
+            }
+          }
+
+          &[aria-sort="descending"]{
+            &::before {
+              color: inherit;
+              content: '\025BE';
+            }
+          }
+
+          &[aria-sort="ascending"] {
+            &::before {
+              color: inherit;
+              content: '\025B4';
+            }
+          }
+        }
+      }
+    }
+  }
+}

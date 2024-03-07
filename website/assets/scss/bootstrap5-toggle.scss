@@ -1,5 +1,5 @@
 /* Copyright Notice
- * bootstrap5-toggle v3.7.4
+ * bootstrap5-toggle v5.0.4
  * https://palcarazm.github.io/bootstrap5-toggle/
  * @author 2011-2014 Min Hur (https://github.com/minhur)
  * @author 2018-2019 Brent Ely (https://github.com/gitbrent)
@@ -15,82 +15,90 @@
 * @added 3.0.0: Return support for "*-xs" removed in Bootstrap-4
 * @see: [Comment](https://github.com/twbs/bootstrap/issues/21881#issuecomment-341972830)
 */
-.btn-group-xs > .btn, .btn-xs {
-	padding: .35rem .4rem .25rem .4rem;
-	font-size: .875rem;
-	line-height: .5;
-	border-radius: .2rem;
+.btn-group-xs > .btn,
+.btn-xs {
+  padding: 0.35rem 0.4rem 0.25rem 0.4rem;
+  font-size: 0.875rem;
+  line-height: 0.5;
+  border-radius: 0.2rem;
 }
 
-.checkbox label .toggle, .checkbox-inline .toggle {
-	margin-left: -1.25rem;
-	margin-right: .35rem;
+.checkbox label .toggle,
+.checkbox-inline .toggle {
+  margin-left: -1.25rem;
+  margin-right: 0.35rem;
 }
 
 .toggle {
-	position: relative;
-	overflow: hidden;
+  position: relative;
+  overflow: hidden;
+}
+.toggle:focus > .toggle-group > .btn,
+.toggle:hover > .toggle-group > .btn {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border-color: var(--bs-btn-hover-border-color);
 }
 .toggle:hover > .toggle-group > .toggle-handle,
 .toggle:focus > .toggle-group > .toggle-handle {
-	background-color: var(--light);
-	opacity: 0.5;
+  background-color: var(--bs-light);
+  opacity: 0.5;
 }
 .toggle > input[type="checkbox"] {
-	display: none;
+  display: none;
 }
 .toggle > .toggle-group {
-	position: absolute;
-	width: 200%;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	transition: left 0.35s;
-	-webkit-transition: left 0.35s;
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none;
+  position: absolute;
+  width: 200%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition: left 0.35s;
+  -webkit-transition: left 0.35s;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
-.toggle.btn:not(.disabled) { cursor: pointer; }
-.toggle.btn.disabled{ cursor:auto; }
-.toggle >.toggle-group >.btn { cursor: inherit; }
+.toggle > .toggle-group > span {
+  cursor: pointer;
+}
 .toggle.off > .toggle-group {
-	left: -100%;
+  left: -100%;
 }
 .toggle.indeterminate > .toggle-group {
-	left: -50%;
+  left: -50%;
 }
 .toggle > .toggle-group > .toggle-on {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 50%;
-	margin: 0;
-	border: 0;
-	border-radius: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
 }
 .toggle > .toggle-group > .toggle-off {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 50%;
-	right: 0;
-	margin: 0;
-	border: 0;
-	border-radius: 0;
-	box-shadow: none; /* Bootstrap 4.0 Support via (Issue #186)[https://github.com/minhur/bootstrap-toggle/issues/186]) */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none; /* Bootstrap 4.0 Support via (Issue #186)[https://github.com/minhur/bootstrap-toggle/issues/186]) */
 }
 .toggle > .toggle-group > .toggle-handle {
-	position: relative;
-	margin: 0 auto;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	height: 100%;
-	width: 0px;
-	border-width: 0 1px;
-	background-color: var(--light);
-	border-color: var(--light);
+  position: relative;
+  margin: 0 auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 100%;
+  width: 0px;
+  border-width: 0 1px;
+  background-color: var(--bs-light);
+  border-color: var(--bs-light);
 }
 
 /** Support for input-group
@@ -98,71 +106,107 @@
  * @see https://github.com/gitbrent/bootstrap4-toggle/issues/32#issuecomment-616974580
  */
 .input-group .toggle > .toggle-group > .toggle-on,
-.input-group .toggle > .toggle-group > .toggle-off{
-    position: absolute;
-}
-.input-group:not(.has-validation)>:not(:last-child).toggle,
-.input-group.has-validation>:nth-last-child(n+3).toggle{
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-.input-group>:not(:first-child).toggle{
-    margin-left: -1px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+.input-group .toggle > .toggle-group > .toggle-off {
+  position: absolute;
 }
 
-.toggle:not(:hover):not(:focus).btn-outline-primary > .toggle-group > .toggle-handle {
-	background-color: var(--primary);
-	border-color: var(--primary);
+.toggle:not(:hover):not(:focus).btn-outline-primary
+  > .toggle-group
+  > .toggle-handle {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
 }
-.toggle:not(:hover):not(:focus).btn-outline-secondary > .toggle-group > .toggle-handle {
-	background-color: var(--secondary);
-	border-color: var(--secondary);
+.toggle:not(:hover):not(:focus).btn-outline-secondary
+  > .toggle-group
+  > .toggle-handle {
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
 }
-.toggle:not(:hover):not(:focus).btn-outline-success > .toggle-group > .toggle-handle {
-	background-color: var(--success);
-	border-color: var(--success);
+.toggle:not(:hover):not(:focus).btn-outline-success
+  > .toggle-group
+  > .toggle-handle {
+  background-color: var(--bs-success);
+  border-color: var(--bs-success);
 }
-.toggle:not(:hover):not(:focus).btn-outline-danger > .toggle-group > .toggle-handle {
-	background-color: var(--danger);
-	border-color: var(--danger);
+.toggle:not(:hover):not(:focus).btn-outline-danger
+  > .toggle-group
+  > .toggle-handle {
+  background-color: var(--bs-danger);
+  border-color: var(--bs-danger);
 }
-.toggle:not(:hover):not(:focus).btn-outline-warning > .toggle-group > .toggle-handle {
-	background-color: var(--warning);
-	border-color: var(--warning);
+.toggle:not(:hover):not(:focus).btn-outline-warning
+  > .toggle-group
+  > .toggle-handle {
+  background-color: var(--bs-warning);
+  border-color: var(--bs-warning);
 }
-.toggle:not(:hover):not(:focus).btn-outline-info > .toggle-group > .toggle-handle {
-	background-color: var(--info);
-	border-color: var(--info);
+.toggle:not(:hover):not(:focus).btn-outline-info
+  > .toggle-group
+  > .toggle-handle {
+  background-color: var(--bs-info);
+  border-color: var(--bs-info);
 }
-.toggle:not(:hover):not(:focus).btn-outline-light > .toggle-group > .toggle-handle {
-	background-color: var(--light);
-	border-color: var(--light);
+.toggle:not(:hover):not(:focus).btn-outline-light
+  > .toggle-group
+  > .toggle-handle {
+  background-color: var(--bs-light);
+  border-color: var(--bs-light);
 }
-.toggle:not(:hover):not(:focus).btn-outline-dark > .toggle-group > .toggle-handle {
-	background-color: var(--dark);
-	border-color: var(--dark);
+.toggle:not(:hover):not(:focus).btn-outline-dark
+  > .toggle-group
+  > .toggle-handle {
+  background-color: var(--bs-dark);
+  border-color: var(--bs-dark);
 }
 
 /* NOTE: Must come first, so classes below override as needed */
 /* [default] (bootstrap-4.1.3 - .btn - h:38px) */
-.toggle.btn { min-width: 3.7rem; min-height: 2.15rem; }
-.toggle > .toggle-group > .toggle-on.btn { padding-right: 1.5rem; }
-.toggle > .toggle-group > .toggle-off.btn { padding-left: 1.5rem; }
+.toggle.btn {
+  min-width: 3.7rem;
+  min-height: 2.15rem;
+}
+.toggle > .toggle-group > .toggle-on.btn {
+  padding-right: 1.5rem;
+}
+.toggle > .toggle-group > .toggle-off.btn {
+  padding-left: 1.5rem;
+}
 
 /* `lg` (bootstrap-4.1.3 - .btn - h:48px) */
-.toggle.btn-lg { min-width: 5rem; min-height: 2.815rem; }
-.toggle > .toggle-group > .toggle-on.btn-lg { padding-right: 2rem; }
-.toggle > .toggle-group > .toggle-off.btn-lg { padding-left: 2rem; }
-.toggle > .toggle-group > .toggle-handle.btn-lg { width: 2.5rem; }
+.toggle.btn-lg {
+  min-width: 5rem;
+  min-height: 2.815rem;
+}
+.toggle > .toggle-group > .toggle-on.btn-lg {
+  padding-right: 2rem;
+}
+.toggle > .toggle-group > .toggle-off.btn-lg {
+  padding-left: 2rem;
+}
+.toggle > .toggle-group > .toggle-handle.btn-lg {
+  width: 2.5rem;
+}
 
 /* `sm` (bootstrap-4.1.3 - .btn - h:31px) */
-.toggle.btn-sm { min-width: 3.125rem; min-height: 1.938rem; }
-.toggle > .toggle-group > .toggle-on.btn-sm { padding-right: 1rem; }
-.toggle > .toggle-group > .toggle-off.btn-sm { padding-left: 1rem; }
+.toggle.btn-sm {
+  min-width: 3.125rem;
+  min-height: 1.938rem;
+}
+.toggle > .toggle-group > .toggle-on.btn-sm {
+  padding-right: 1rem;
+}
+.toggle > .toggle-group > .toggle-off.btn-sm {
+  padding-left: 1rem;
+}
 
 /* `xs` (bootstrap-3.3 - .btn - h:22px) */
-.toggle.btn-xs { min-width: 2.19rem; min-height: 1.375rem; }
-.toggle > .toggle-group > .toggle-on.btn-xs { padding-right: .8rem; }
-.toggle > .toggle-group > .toggle-off.btn-xs { padding-left: .8rem; }
+.toggle.btn-xs {
+  min-width: 2.19rem;
+  min-height: 1.375rem;
+}
+.toggle > .toggle-group > .toggle-on.btn-xs {
+  padding-right: 0.8rem;
+}
+.toggle > .toggle-group > .toggle-off.btn-xs {
+  padding-left: 0.8rem;
+}
