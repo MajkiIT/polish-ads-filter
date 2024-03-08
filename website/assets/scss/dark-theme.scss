@@ -69,21 +69,9 @@ body[data-theme="dark"] {
         color: #b6afa8;
     }
 
-    // table:not(class) thead th, .td-content > table thead th, table:not(class) .td-box .row.section > table thead th, table:not(class) th, .td-content > table th, .td-box .rowsection > table th, table:not(class) td, .td-content > table td, table:not(class) .td-box .row.section > table td {
-    //     border-color: #353535 !important;
-    // }
-
-    table:not(class) {
-        display: inline-table !important;
-    }
-
     .alert {
         background: black !important;
     }
-
-    // .table-striped tbody tr:nth-of-type(odd), .td-content > table tbody tr:nth-of-type(odd), .td-box .row.section > table tbody tr:nth-of-type(odd) {
-    //     background-color: rgba(255, 255, 255, 0.05) !important;
-    // }
 
     pre {
         background-color: rgba(255, 255, 255, 0.1) !important;
@@ -142,7 +130,7 @@ body[data-theme="dark"] {
         background-color: rgba(255, 255, 255, 0.05);
     }
 
-    .vscomp-wrapper.multiple .vscomp-option.selected .checkbox-icon::after {
+    .vscomp-wrapper.multiple .vscomp-option.selected .checkbox-icon::after, .vscomp-wrapper .checkbox-icon.checked::after {
         border-color: deepskyblue;
         border-left-color: rgba(0, 0, 0, 0);
         border-top-color: rgba(0, 0, 0, 0);
@@ -159,6 +147,10 @@ body[data-theme="dark"] {
     .dropdown-item:hover, .dropdown-item:focus {
         background-color: var(--bs-dropdown-link-hover-color);
         color: var(--bs-dropdown-link-hover-bg);
+    }
+
+    .vscomp-dropbox-close-button {
+        background-color: #333;
     }
     
 }
