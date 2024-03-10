@@ -146,6 +146,7 @@ odkryjpomorze.pl##+js(ra, href, map[name="Map"] > area:first-of-type, stay)
 odkryjpomorze.pl##map[name="Map"] > area:first-of-type:remove()
 perfekcyjnawdomu.pl##.a-neuron-share-button:not([class*="mail"]):upward(div)
 pl##.footer-container div .center.section-title > span:has-text(Znajdziesz nas na)
+pl.aleteia.org##div > a[aria-label="Email share"]:upward(1) + button
 pl.pandora.net###socialMediaFooter .leftMediaLinkFooter:style(visibility: hidden)
 plejada.pl###detail.articleBody p:nth-last-child(-n+3) a[href*="facebook.com/plejada" i]:remove-attr(href)
 plejada.pl###detail.articleBody p:nth-last-child(-n+3) a[href*="instagram.com/plejada" i]:remove-attr(href)
@@ -190,6 +191,7 @@ um.kielce.pl##map > area[alt="Facebook"]:remove()
 valtra.pl##.aem-GridColumn .titleblock__heading:has-text(ŚLEDŹ)
 valtra.pl##.aem-GridColumn a[href*="facebook.com/"] img:upward(.aem-GridColumn)
 vibez.pl##div > svg[aria-labelledby="share"]:upward(1)
+visplantis.pl##div.footer-box:has(+ div .social-media):remove-class(/border/)
 waw4free.pl###spolecznosci:style(height: auto !important)
 weather.com##.SocialMediaShareButton:style(pointer-events: none; position: unset !important)
 welovekeratin.pl##.elementor-widget-pix-social-icons
@@ -251,7 +253,6 @@ iab.org.pl###menu-social .menu-social:style(width: auto !important)
 janssenmed.pl##.footer-social--mobile:style(border: none !important)
 librus.pl##div.promo, #navBar, .container-fluid:style(width: 100% !important)
 ofeminin.pl##.joinClubLnk[href*="/klub-ekspertek"]::before:style(content: "#KlubExpertek - "; display: inline-block !important; padding-right: 5px !important)
-pepco.pl##.text-right.footer-menu > ul.no-list:nth-of-type(2) > li:last-of-type:style(margin-right: 230px !important)
 pozycjoneria.com###footer > #stopka_ikonki:style(visibility: hidden !important; display: block !important)
 roweroweporady.pl##.sidebar .widget:style(border-bottom: none !important; margin-bottom: 0 !important; padding-bottom: 0 !important)
 sport.tvp.pl##.news-socials .icon-message__news:style(top: 0 !important)
@@ -269,8 +270,6 @@ wymiennik.com##.contact-details > p > a[href*="://facebook.com/"]:style(pointer-
 x-kom.pl##section.social-bar > div.social-links:style(display: flex; justify-content: center; align-items: center)
 zlotygron.pl##.site_social > span:style(display: inline-block !important; padding-top: 5px !important)
 !#if !env_mobile
-fakt.pl##.article-contact-footer::after:style(content: "Podziel się tym artykułem: " !important; position: relative !important; left: -183px !important; color: #ebebeb !important; background: #ebebeb !important)
-pepco.pl#@#.text-right.footer-menu > ul.no-list:nth-of-type(2) > li:last-of-type:style(margin-right: 230px !important)
 !#endif
 !
 !
@@ -283,5 +282,5 @@ oknonawagrowiec.pl#?#.penci-social__item:nth-of-type(-n+4)
 pilot.wp.pl#?#.fb_iframe_widget
 polonia.net#?##header-social-icons
 radio.bialystok.pl#@?#.row > .columns .columns, .text-center .text-center > .columns:-abp-has( > h3:-abp-contains(ZNAJDŹ NAS))
-radio.bialystok.pl#@?#body > div > .row:-abp-has( > .text-left h2:-abp-contains(/^(FACEBOOK|TWITTER)$/))
+radio.bialystok.pl#@?#body > div > .row:-abp-has(> .text-left h2:-abp-contains(/^(FACEBOOK|TWITTER)$/))
 !#endif
