@@ -1,0 +1,29 @@
+{{- $collapsed := true -}}
+{{- $id := "test" -}}
+
+<a class="nav-link dropdown-toggle d-lg-none" role="button" data-bs-toggle="dropdown" aria-label='{{ T "colorMode" }}' aria-expanded="false">
+    <span class="theme-icon-active"></span>&nbsp;{{ T "colorMode" }}
+  </a>
+  <a class="nav-link dropdown-toggle d-none d-lg-block" role="button" data-bs-toggle="dropdown" aria-label='{{ T "colorMode" }}' aria-expanded="false" data-toggle="tooltip" title='{{ T "colorMode" }}'>
+    <span class="theme-icon-active"></span>
+  </a>
+<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="{{ $id }}-theme{{ if $collapsed }}-collapsed{{ end }}">
+    <li>
+        <a class="dropdown-item" data-bs-theme-value="light">
+            <span class="theme-icon"><i class="fas fa-sun fa-fw"></i></span>&nbsp;
+            {{- T "colorLight" }}
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item" data-bs-theme-value="dark">
+            <span class="theme-icon"><i class="fas fa-moon fa-fw"></span></i>&nbsp;
+            {{- T "colorDark" }}
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-item active" data-bs-theme-value="auto">
+            <span class="theme-icon"><i class="fas fa-circle-half-stroke fa-fw"></i></span>&nbsp;
+            {{- T "colorAuto" }}
+        </a>
+    </li>
+</ul>

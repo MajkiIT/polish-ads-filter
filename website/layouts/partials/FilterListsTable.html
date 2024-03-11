@@ -1,12 +1,42 @@
 <input type="search" id="searchTable" class="light-table-filter td-search__input form-control" data-table="table" placeholder='{{ i18n "search" }}...'>
 <div class="m-auto w-auto d-flex flex-wrap" id="dropdown-container">
-	<div id="category-select" class="selectpicker ddlFilterTableRow mb-3 ms-sm-2 category"></div>
-	<div id="origin-select" class="selectpicker ddlFilterTableRow mb-3 ms-sm-2 origin"></div>
-	<div id="adblocker-select" class="selectpicker ddlFilterTableRow mb-3 ms-sm-2 adblocker"></div>
-	<div id="lists-select" class="selectpicker ddlFilterTableRow mb-3 ms-sm-2 id"></div>
+	<div id="category-select" class="selectpicker ddlFilterTableRow mb-3 ms-2 category"></div>
+	<div id="origin-select" class="selectpicker ddlFilterTableRow mb-3 ms-2 origin"></div>
+	<div id="adblocker-select" class="selectpicker ddlFilterTableRow mb-3 ms-2 adblocker"></div>
+	<div id="lists-select" class="selectpicker ddlFilterTableRow mb-3 ms-2 id"></div>
+	<button type="button" class="btn btn-primary mb-3 ms-lg-5 mx-auto" data-bs-toggle="modal" data-bs-target="#filtersSettingsModal">
+		<i class="fas fa-fw fa-save"></i>{{ T "saveSettings" }}
+	</button>
 </div>
 
-<table class="responsive table table-sm table-striped table-bordered table-light sortable asc">
+<div class="modal fade" id="filtersSettingsModal" tabindex="-1" aria-labelledby="filtersSettingsModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h1 class="modal-title fs-5" id="filtersSettingsModalLabel">{{ T "saveSettings" }}</h1>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label='{{ T "closeModal" }}'></button>
+		</div>
+		<div class="modal-body">
+			<div class="container-fluid">
+				<p>{{ T "filtersSettingsModalDesc"}}</p>
+				<div class="d-flex">
+					<input type="text" id="flTableSettingsURL" class="form-control" readonly="true" value='{{ absLangURL "" }}'>
+					<button type="button" class="btn btn-outline-info ms-2" onclick='copyToClipBoard("#flTableSettingsURL");'>
+						<i class="fas fa-fw fa-clipboard"></i>
+					</button>
+				</div>
+
+			</div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ T "closeModal" }}</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
+<table class="responsive table table-sm table-striped table-bordered sortable asc">
 	<thead>
 		<tr>
 			<th scope="col" class="text-center font-weight-bold">{{ upper (i18n "filterlist") }}</th>

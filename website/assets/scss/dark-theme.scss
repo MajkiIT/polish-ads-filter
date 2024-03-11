@@ -1,157 +1,114 @@
 // @media (prefers-color-scheme: dark) {
-body[data-theme="dark"] {
-    color: white !important;
-    background-color: #010101 !important;
-
-    table, .vscomp-dropbox, .popover-body {
-        color: #fff !important;
-        background-color: #222 !important;
-    }
-
-    .vscomp-wrapper:not(.has-value) .vscomp-value {
-        opacity: .8;
-    }
+    html[data-bs-theme="dark"] body {
+        background-color: #010101 !important;
     
-    .table, .td-table:not(.td-initial), .td-content table:not(.td-initial), .td-box table:not(.td-initial) {
-        --bs-table-color: #fff;
-        --bs-table-bg: #212529;
-        --bs-table-border-color: #373b3e;
-        --bs-table-striped-bg: #2c3034;
-        --bs-table-striped-color: #fff;
-        --bs-table-active-bg: #373b3e;
-        --bs-table-active-color: #fff;
-        --bs-table-hover-bg: #323539;
-        --bs-table-hover-color: #fff;
-        color: var(--bs-table-color);
-        border-color: var(--bs-table-border-color);
-    }
+        .vscomp-dropbox, .popover-body {
+            color: #fff !important;
+            background-color: #222 !important;
+        }
     
+        .vscomp-wrapper:not(.has-value) .vscomp-value {
+            opacity: .8;
+        }
+    
+        // .table-light th, .table-light td, .table-light thead th, 
+    
+        // // .table-light.table-striped tbody tr:nth-of-type(2n+1),
+        // .td-content > table.table-light tbody tr:nth-of-type(2n+1),
+        // .td-box .row.section > table.table-light tbody tr:nth-of-type(2n+1) {
+        //     background-color: rgba(255, 255, 255, 0.05) !important;
+        // }
+    
+        .pageinfo {
+            background: rgba(255, 255, 255, 0.05) !important;
+        }
+    
+        .vscomp-option.focused {
+            background: #333333;
+        }
+    
+        .vscomp-option.selected:not(.focused) {
+            background: #111111;
+        }
+    
+        .td-sidebar-nav__section-title a {
+            color: #dddddd;
+        }
+    
+        .td-sidebar-nav .td-sidebar-link__page {
+            color: #b6afa8;
+        }
+    
+        .alert {
+            background: black !important;
+        }
+    
+        .bootstrap-select .notify, .bootstrap-select .no-results {
+            background: black !important;
+            border-color: black !important;
+            color: white;
+        }
+    
+        .bs-actionsbox .actions-btn {
+            background: #30638E linear-gradient(180deg, #4f7a9f, #30638E) repeat-x;
+            border-color: #30638E;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+            color: white;
+        }
+    
+        .bs-actionsbox .actions-btn:not(:disabled):not(.disabled):active, .bs-actionsbox .actions-btn:hover{
+            color: #fff;
+            background: #264f71 linear-gradient(180deg, #476987, #264f71) repeat-x;
+            border-color: #234868;
+        }
+    
+        .AGHome-icon, img[title="AdGuard Home"] {
+            filter: invert(1);
+        }
+    
+        .taxonomy-term:not(:hover):not(:focus)  {
+            color: #e9ecef;
+            background: #403f4c;
+        }
+    
+        .taxonomy-count {
+            background-color: #000;
+        }
+    
+        .taxonomy-term:hover .taxonomy-count {
+            color: #bfc0b3 !important;
+        }
+    
+        .vscomp-wrapper.multiple .vscomp-option.selected .checkbox-icon::after, .vscomp-wrapper .checkbox-icon.checked::after {
+            border-color: deepskyblue;
+            border-left-color: rgba(0, 0, 0, 0);
+            border-top-color: rgba(0, 0, 0, 0);
+        }
+    
+        .vscomp-value {
+            color: deepskyblue;
+        }
+    
+        .vscomp-dropbox-close-button {
+            background-color: #333;
+        }
 
-    // .table-light th, .table-light td, .table-light thead th, 
-    input[type="search"], 
-    .td-search-input.form-control:focus, .form-control {
-        border-color: #353535 !important;
-        color: #dedad6;
+        pre {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            color: inherit !important;
+        }
+        
+        .td-sidebar__toggle {
+            color: var(--bs-body-color);
+        }
+
+        .td-sidebar-nav .dropdown a {
+            color: #b6afa8;
+        }
+
+        nav.foldable-nav .ul-1 .with-child > label:before {
+            color: #b6afa8;
+        }
     }
-
-    .bs-searchbox input[type="search"] {
-        background: transparent;
-        color: inherit;
-    }
-
-    // // .table-light.table-striped tbody tr:nth-of-type(2n+1),
-    // .td-content > table.table-light tbody tr:nth-of-type(2n+1),
-    // .td-box .row.section > table.table-light tbody tr:nth-of-type(2n+1) {
-    //     background-color: rgba(255, 255, 255, 0.05) !important;
     // }
-
-    .pageinfo {
-        background: rgba(255, 255, 255, 0.05) !important;
-    }
-
-    .form-control:focus {
-        background-color: #222;
-    }
-
-    .vscomp-option.focused {
-        background: #333333;
-    }
-
-    .vscomp-option.selected:not(.focused) {
-        background: #111111;
-    }
-
-    .td-sidebar-nav__section-title a {
-        color: #dddddd;
-    }
-
-    .td-sidebar-nav .td-sidebar-link__page {
-        color: #b6afa8;
-    }
-
-    .alert {
-        background: black !important;
-    }
-
-    pre {
-        background-color: rgba(255, 255, 255, 0.1) !important;
-        color: white !important;
-    }
-
-    .bootstrap-select .notify, .bootstrap-select .no-results {
-        background: black !important;
-        border-color: black !important;
-        color: white;
-    }
-
-    .bs-actionsbox .actions-btn {
-        background: #30638E linear-gradient(180deg, #4f7a9f, #30638E) repeat-x;
-        border-color: #30638E;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
-        color: white;
-    }
-
-    .bs-actionsbox .actions-btn:not(:disabled):not(.disabled):active, .bs-actionsbox .actions-btn:hover{
-        color: #fff;
-        background: #264f71 linear-gradient(180deg, #476987, #264f71) repeat-x;
-        border-color: #234868;
-    }
-
-    hr {
-        border-top: 1px solid rgba(255,255,255,.1);
-    }
-
-    .AGHome-icon, img[title="AdGuard Home"] {
-        filter: invert(1);
-    }
-
-    .dropdown-menu {
-        background-color: #222 !important;
-    }
-
-    .taxonomy-term:not(:hover):not(:focus)  {
-        color: #e9ecef;
-        background: #403f4c;
-    }
-
-    .taxonomy-count {
-        background-color: #000;
-    }
-
-    .taxonomy-term:hover .taxonomy-count {
-        color: #bfc0b3 !important;
-    }
-
-    .card {
-        background-color: rgba(var(--bs-dark-rgb), 0.5) !important;
-    }
-
-    .td-content table code {
-        background-color: rgba(255, 255, 255, 0.05);
-    }
-
-    .vscomp-wrapper.multiple .vscomp-option.selected .checkbox-icon::after, .vscomp-wrapper .checkbox-icon.checked::after {
-        border-color: deepskyblue;
-        border-left-color: rgba(0, 0, 0, 0);
-        border-top-color: rgba(0, 0, 0, 0);
-    }
-
-    .vscomp-value {
-        color: deepskyblue;
-    }
-
-    .dropdown-item {
-        color: #dedad6;
-    }
-
-    .dropdown-item:hover, .dropdown-item:focus {
-        background-color: var(--bs-dropdown-link-hover-color);
-        color: var(--bs-dropdown-link-hover-bg);
-    }
-
-    .vscomp-dropbox-close-button {
-        background-color: #333;
-    }
     
-}
-// }
