@@ -1,0 +1,6 @@
+/*!
+ * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Licensed under the Creative Commons Attribution 3.0 Unported License.
+ * Modified by hawkeye116477
+ */(()=>{"use strict";const e=localStorage.getItem("theme"),t=localStorage.getItem("darkSwitch"),n=()=>t?(localStorage.setItem("theme",t),localStorage.removeItem("darkSwitch"),t):e||"auto",s=function(e){e==="auto"?document.documentElement.setAttribute("data-bs-theme",window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"):document.documentElement.setAttribute("data-bs-theme",e)};s(n());const o=e=>{const n=document.querySelectorAll(".theme-icon-active"),t=document.querySelectorAll(`[data-bs-theme-value="${e}"]`);if(t.length>0){const e=t[0].querySelector("span");document.querySelectorAll("[data-bs-theme-value]").forEach(e=>{e.classList.remove("active")});for(let t=0;t<n.length;++t)n[t].innerHTML=e.innerHTML;for(let e=0;e<t.length;++e)t[e].classList.add("active")}};window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{(e!=="light"||e!=="dark")&&s(n())}),window.addEventListener("DOMContentLoaded",()=>{o(n()),document.querySelectorAll("[data-bs-theme-value]").forEach(e=>{e.addEventListener("click",()=>{const t=e.getAttribute("data-bs-theme-value");localStorage.setItem("theme",t),s(t),o(t)})})})})()
