@@ -148,10 +148,10 @@ for (selectObject of selectObjects) {
 						allValues.push(options.value);
 					}
 				}
-				const url = new URL(location);
+				var newURL = new URL(document.querySelector("#flTableSettingsURL").value);
 				if(allValues != "") {
 					allValues = allValues.toString();
-					url.searchParams.set(dataAttribute, allValues);
+					newURL.searchParams.set(dataAttribute, allValues)
 					if (allValues.includes(",")){
 						var startDataAttribute = `[data-${dataAttribute}*="`;
 						var endDataAttribute = '"]';
@@ -162,9 +162,9 @@ for (selectObject of selectObjects) {
 					}
 				}
 				else {
-					url.searchParams.delete(dataAttribute);
+					newURL.searchParams.delete(dataAttribute);
 				}
-				history.replaceState(null, '', url.href);
+				document.querySelector("#flTableSettingsURL").value = newURL.href;
 			}
 		}
 		var allRecords = rows;
@@ -206,14 +206,10 @@ function scrollPaddingTop(target) {
 var faLinks = document.querySelectorAll(".fa-link");
 for (var faLink of faLinks) {
 	faLink.addEventListener('click', function () {
-		scrollPaddingTop(document.querySelector(decodeURIComponent(this.getAttribute("href"))));
+		scrollPaddingTop(document.querySelector(this.getAttribute("href")));
 	});
 }
 window.addEventListener('load', () => {
-	var target = document.querySelector(':target');
-	if (target != null) {
-		scrollPaddingTop(document.querySelector(':target'));
-	}
 	const urlParams = new URLSearchParams(window.location.search);
 	let key;
 	var allSelects = document.querySelectorAll(".ddlFilterTableRow");
@@ -234,15 +230,33 @@ window.addEventListener('load', () => {
 		searchField.setAttribute("value", key);
 		searchField.dispatchEvent(new Event('input'));
 	}
+	var target = document.querySelector(':target');
+	if (target != null) {
+		scrollPaddingTop(document.querySelector(':target'));
+	}
 });
 
 
 document.querySelector(".light-table-filter").addEventListener('input', function (e) {
-	const url = new URL(location);
+	var newURL = new URL(document.querySelector("#flTableSettingsURL").value);
 	if (this.value != '') {
-		url.searchParams.set("search", this.value);
+		newURL.searchParams.set("search", this.value);
 	} else {
-		url.searchParams.delete("search");
+		newURL.searchParams.delete("search");
 	}
-	history.replaceState(null, '', url.href);
+	document.querySelector("#flTableSettingsURL").value = newURL.href;
 });
+
+function copyToClipBoard(element) {
+    var copyText = document.querySelector(element);
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+	/* Copy the text inside the text field */
+	if (typeof navigator.clipboard != undefined) {
+		navigator.clipboard.writeText(copyText.value);
+	}
+	else {
+		document.execCommand("copy");
+	}
+}

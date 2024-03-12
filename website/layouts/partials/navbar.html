@@ -1,0 +1,85 @@
+{{ $color := resources.Get "js/color.js" | minify | fingerprint }}
+<script src="{{ $color.Permalink | relURL }}" integrity="{{ $color.Data.Integrity }}"></script>
+
+{{ $cover := and
+    (.HasShortcode "blocks/cover")
+    (not .Site.Params.ui.navbar_translucent_over_cover_disable)
+-}}
+{{ $baseURL := urls.Parse $.Site.Params.Baseurl -}}
+
+<nav class="td-navbar navbar-dark js-navbar-scroll
+            {{- if $cover }} td-navbar-cover {{- end }}">
+<div class="container-fluid flex-column flex-md-row">
+  <div>
+    <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
+      {{- /**/ -}}
+      <span class="navbar-brand__logo navbar-logo">
+        {{- if ne .Site.Params.ui.navbar_logo false -}}
+          {{ with resources.Get "icons/logo.svg" -}}
+            {{ ( . | minify).Content | safeHTML -}}
+          {{ end -}}
+        {{ end -}}
+      </span>
+      {{- /**/ -}}
+      <span class="navbar-brand__name">
+        {{- .Site.Title -}}
+      </span>
+      {{- /**/ -}}
+    </a>
+  </div>
+
+
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav ms-auto">
+      {{ $p := . -}}
+      {{ range .Site.Menus.main -}}
+      <li class="nav-item">
+        {{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) -}}
+        {{ $href := "" -}}
+        {{ with .Page -}}
+          {{ $active = or $active ( $.IsDescendant .) -}}
+          {{ $href = .RelPermalink -}}
+        {{ else -}}
+          {{ $href = .URL | relLangURL -}}
+        {{ end -}}
+        {{ $isExternal := ne $baseURL.Host (urls.Parse .URL).Host -}}
+        <a {{/**/ -}}
+          class="nav-link {{- if $active }} active {{- end }}" {{/**/ -}}
+          href="{{ $href }}"
+          {{- if $isExternal }} target="_blank" rel="noopener" {{- end -}}
+        >
+            {{- .Pre -}}
+            <span>{{ .Name }}</span>
+            {{- .Post -}}
+        </a>
+      </li>
+      {{ end -}}
+
+       <!-- Insert divider if applicable -->
+       {{- if and .Site.Menus.main (or (gt (len .Site.Home.Translations) 0) .Site.Params.versions) -}}
+       <li class="nav-item py-2 py-md-1">
+           <div class="vr d-md-flex h-100 mx-md-2"></div>
+       </li>
+       <li><hr class="dropdown-divider-bg"></li>
+       {{- end -}}
+
+      {{ if .Site.Params.versions -}}
+      <li class="nav-item dropdown d-none d-lg-block">
+        {{ partial "navbar-version-selector.html" . -}}
+      </li>
+      {{ end -}}
+      {{ if (gt (len .Site.Home.Translations) 0) -}}
+      <li class="nav-item">
+        {{ partial "navbar-lang-selector.html" . -}}
+      </li>
+      <li class="nav-item">
+        {{ partial "navbar-mode-switcher.html" . -}}
+      </li>
+      {{ end -}}
+    </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    {{ partial "search-input.html" . }}
+  </div>
+</div>
+</nav>

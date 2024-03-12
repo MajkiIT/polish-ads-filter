@@ -1,0 +1,12 @@
+{{ $langPage := cond (gt (len .Translations) 0) . .Site.Home -}}
+  <a class="nav-link dropdown-toggle d-lg-none" role="button" data-bs-toggle="dropdown" aria-label='{{ T "languageSwitcherLabel" }}' aria-expanded="false">
+    <i class="fas fa-globe fa-fw"></i>&nbsp;{{ T "languageSwitcherLabel" }}
+  </a>
+  <a class="nav-link dropdown-toggle d-none d-lg-block" role="button" data-bs-toggle="dropdown" aria-label='{{ T "languageSwitcherLabel" }}' aria-expanded="false" data-toggle="tooltip" title='{{ T "languageSwitcherLabel" }}'>
+    <i class="fas fa-globe fa-fw"></i>
+  </a>
+  <ul class="dropdown-menu dropdown-menu-end ">
+      {{- range $langPage.AllTranslations -}}
+              <li><a class="dropdown-item {{ if eq .Language.LanguageName $langPage.Language.LanguageName }}active{{ end }}" href="{{ .RelPermalink }}">{{ .Language.LanguageName  }}</a></li>
+      {{- end -}}
+  </ul>

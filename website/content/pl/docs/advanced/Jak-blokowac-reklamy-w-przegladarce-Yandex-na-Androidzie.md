@@ -50,10 +50,10 @@ Po zainstalowaniu [Edge Canary](https://play.google.com/store/apps/details?id=co
 6. Gotowe!
 
 [Firefox]: https://cdnjs.cloudflare.com/ajax/libs/browser-logos/74.1.0/firefox/firefox_24x24.png "Mozilla Firefox"
-[Kiwi]: images/kiwi_24.png "Kiwi Browser"
-[Lemur]: images/lemur_24.png "Lemur Browser"
+[Kiwi]: /polish-ads-filter/images/kiwi_24.png "Kiwi Browser"
+[Lemur]: /polish-ads-filter/images/lemur_24.png "Lemur Browser"
 [Edge Canary]: https://cdnjs.cloudflare.com/ajax/libs/browser-logos/74.1.0/edge-canary/edge-canary_24x24.png
 [Webview]: https://cdnjs.cloudflare.com/ajax/libs/browser-logos/74.1.0/android-webview/android-webview_24x24.png
 
-[uBO]: images/uBO_24.png
-[AG]: images/AdGuard_logo_24.png
+[uBO]: /polish-ads-filter/images/uBO_24.png
+[AG]: /polish-ads-filter/images/AdGuard_logo_24.png
