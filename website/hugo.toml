@@ -3,8 +3,6 @@ title = "Polish filters for AdBlock, uBlock Origin & AdGuard"
 ignoreFiles = [ "table_notes.md" ]
 enableRobotsTXT = true
 publishDir = "../docs"
-# Hugo allows theme composition (and inheritance). The precedence is from left to right.
-theme = ["docsy"]
 
 # Will give values to .Lastmod etc.
 enableGitInfo = true
@@ -135,6 +133,7 @@ sidebar_search_disable = false
 navbar_logo = false
 # Set to true to enablethe About link in the site footer
 footer_about_enable = true
+showLightDarkModeMenu = true
 
 # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
 # This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.
@@ -196,6 +195,9 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 [outputs]
 section = [ "HTML", "RSS", "print" ]
 [module]
+	[[module.imports]]
+	path = "github.com/google/docsy"
+
 #[[module.mounts]]
 #    source = 'data'
 #    target = 'data'

@@ -11,6 +11,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      HUGO_CACHEDIR: /tmp/hugo_cache
     steps:
       - uses: actions/checkout@v4
         with:
@@ -20,7 +22,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.123.7'
+          hugo-version: '0.134.3'
           extended: true
 
       - name: Setup Node
@@ -28,10 +30,16 @@ jobs:
         with:
           node-version: 'lts/*'
 
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.HUGO_CACHEDIR }}
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
+
       - name: Build
         run: |
           git rm -rf ./docs
-          cd ./website/themes/docsy && npm install
           cd "$GITHUB_WORKSPACE"/website
           npm i -D --save autoprefixer postcss-cli postcss
           hugo --minify
