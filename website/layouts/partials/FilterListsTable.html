@@ -137,9 +137,6 @@
                                     <a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh" }}&amp;title={{ trim .title "* " }}">
 										<i class="fas fa-file-import fa-fw"></i>Statically
 									</a>
-                                    <a class="btn btn-primary mb-2r" href="{{ if findRE "AB|ABP|AG" .adblocker }}abp{{ else if findRE "uBO|NA" .adblocker }}ubo{{end}}:subscribe?location={{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://gitloaf.com/cdn" }}&amp;title={{ trim .title "* " }}">
-										<i class="fas fa-file-import fa-fw"></i>Gitloaf
-									</a>
 									{{ end }}
 									{{ if .mirror }}
 									{{ range $index, $mirrorURL := split $filterlist.mirrorURL ", " }}
@@ -170,9 +167,6 @@
 									</a>
                                     <a class="btn btn-outline-info mb-2r" href="{{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh" }}" target="_blank" rel="noopener">
 										<i class="fas fa-eye fa-fw"></i>Statically
-									</a>
-                                    <a class="btn btn-outline-info mb-2r" href="{{ .subscribe | replaceRE  "^https?://raw.githubusercontent.com" "https://gitloaf.com/cdn" }}" target="_blank" rel="noopener">
-										<i class="fas fa-eye fa-fw"></i>Gitloaf
 									</a>
 									{{ end }}
 									{{ if .mirror }}
@@ -205,9 +199,6 @@
                                     <a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io/gh"}}" target="_blank" rel="noopener" title='{{ i18n "uBOPreviewTitle" }}'>
 										<i class="fas fa-eye fa-fw"></i>Statically
 									</a>
-                                    <a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitloaf.com/cdn"}}" target="_blank" rel="noopener" title='{{ i18n "uBOPreviewTitle" }}'>
-										<i class="fas fa-eye fa-fw"></i>Gitloaf
-									</a>
 								</div>
 							</div>
 						</div>
@@ -229,9 +220,6 @@
                                     <a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io"}}" target="_blank" rel="noopener" title='{{ i18n "AGPreviewTitle" }}'>
 										<i class="fas fa-eye fa-fw"></i>Statically
 									</a>
-                                    <a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitloaf.com/cdn"}}" target="_blank" rel="noopener" title='{{ i18n "AGPreviewTitle" }}'>
-										<i class="fas fa-eye fa-fw"></i>Gitloaf
-									</a>
 								</div>
 							</div>
 						</div>
@@ -252,9 +240,6 @@
 									</a>
                                     <a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://cdn.statically.io"}}" target="_blank" rel="noopener" title='{{ i18n "supplementPreviewTitle" }}'>
 										<i class="fas fa-eye fa-fw"></i>Statically
-									</a>
-                                    <a class="btn btn-outline-info mb-2r" href="{{. | replaceRE  "^https?://raw.githubusercontent.com" "https://gitloaf.com/cdn"}}" target="_blank" rel="noopener" title='{{ i18n "supplementPreviewTitle" }}'>
-										<i class="fas fa-eye fa-fw"></i>Gitloaf
 									</a>
 								</div>
 							</div>
