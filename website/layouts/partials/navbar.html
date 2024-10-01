@@ -7,8 +7,8 @@
 -}}
 {{ $baseURL := urls.Parse $.Site.Params.Baseurl -}}
 
-<nav class="td-navbar navbar-dark js-navbar-scroll
-            {{- if $cover }} td-navbar-cover {{- end }}">
+<nav class="td-navbar js-navbar-scroll
+            {{- if $cover }} td-navbar-cover {{- end }}" data-bs-theme="dark">
 <div class="container-fluid flex-column flex-md-row">
   <div>
     <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
@@ -72,10 +72,10 @@
       <li class="nav-item">
         {{ partial "navbar-lang-selector.html" . -}}
       </li>
+      {{ end -}}
       <li class="nav-item">
         {{ partial "navbar-mode-switcher.html" . -}}
       </li>
-      {{ end -}}
     </ul>
   </div>
   <div class="d-none d-lg-block">
