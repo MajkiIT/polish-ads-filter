@@ -95,7 +95,6 @@ amicenergy.pl##.footer-contact.row > div:nth-of-type(-n+2):style(width: 50% !imp
 apptoyou.pl##div.clickable-element img[src*="fb.svg"]:upward(div)
 apptoyou.pl##div.clickable-element img[src*="in.svg"]:upward(div)
 autokult.pl,fitness.wp.pl,fotoblogia.pl,komorkomania.pl,smaczneblogi.pl##.grid-item__social.grid-item:style(visibility: hidden !important; display: block !important; padding-top: 0 !important)
-awangardashoes.com###footer_bottom > div:first-of-type:style(visibility: hidden !important)
 bankobranie.blogspot.com###sideSocial:style(height: auto !important)
 barokko.pl##+js(ra, href, div[class^="platnosci"] > a[href*="facebook.com/"], stay)
 blog.wirtualnemedia.pl###social_ikons_header_fixed:style(visibility: hidden !important)
@@ -195,7 +194,6 @@ syrion.pl##.box-socials:remove()
 transinfo.pl##+js(rmnt, #text, Polub na nas na FB:)
 transportgzm.pl##+js(ra, href, body > a[href*="facebook.com/"]:has(img))
 tvp.pl##.header__socials-container a:style(visibility: hidden !important; height: 5px !important; width: 5px !important)
-um.kielce.pl##map > area[alt="Facebook"]:remove()
 valtra.pl##.aem-GridColumn .titleblock__heading:has-text(ŚLEDŹ)
 valtra.pl##.aem-GridColumn a[href*="facebook.com/"] img:upward(.aem-GridColumn)
 vibez.pl##div > svg[aria-labelledby="share"]:upward(1)
@@ -239,14 +237,12 @@ zdrowie.tvn.pl##.fb-tool--link, .l-page__footer-label, .article_main__social > .
 homebeer.pl##+js(ra, href|title, a.slider-img[href="https://pl-pl.facebook.com/homebeerpl/"])
 napiachu.pl##+js(ra, href, .carousel-inner a[href="https://bit.ly/36budYN"])
 openoffice.org##+js(remove-node-text, script, createShareBox)
-um.kielce.pl##+js(ra, href|title, map > area[alt="Facebook"])
 !#endif
 !#if cap_html_filtering
 homebeer.pl##^.slides > li[id]:has(a.slider-img[href="https://pl-pl.facebook.com/homebeerpl/"])
 napiachu.pl##.carousel-indicators li:last-child:not(.active)
 napiachu.pl##^.carousel-inner > .item:not(.active):has(a[href="https://bit.ly/36budYN"])
 openoffice.org##^script:has-text(createShareBox)
-um.kielce.pl##^map > area[alt="Facebook"]
 www.satel.pl##^.header_container .navigation li:nth-of-type(6)
 www.satel.pl##^.header_container div.headerBox[data-url="https://www.satel.pl/pl/art/582"]
 !#endif
@@ -262,8 +258,6 @@ fasardi.com##.cdz-social-listing > .email:style(float: right !important)
 filmweb.pl##.facebookLoginButton__facebookWrapper:style(background-color: #0000 !important)
 golfkobiet.org###resilite-before-content-container > div[class*="inset-thin"] > div[class*="col-sm-width-4"]:style(float: left !important)
 golfkobiet.org###resilite-before-content-container > div[class*="inset-thin"] > div[class*="col-sm-width-8"]:first-of-type
-green-news.pl##.icon-list:style(margin-top: 25px !important)
-green-news.pl##.rss-before::before:style(margin-right: 5px; display: inline-block !important; position: static !important)
 iab.org.pl###menu-social .menu-social:style(width: auto !important)
 janssenmed.pl##.footer-social--mobile:style(border: none !important)
 librus.pl##div.promo, #navBar, .container-fluid:style(width: 100% !important)
@@ -290,7 +284,6 @@ zlotygron.pl##.site_social > span:style(display: inline-block !important; paddin
 !
 ! Bugi AdGuarda
 !#if !ext_ublock
-antyweb.pl#?#.box-social-counter
 focus.pl#?#.socializer-fb-share
 forums-pl.ubisoft.com#%#//scriptlet('remove-attr', 'href', 'area[href*="discordapp.com/"], area[href*="facebook.com/"], area[href*="instagram.com/"], area[href*="plus.google.com/"], area[href*="reddit.com/"], area[href*="twitter.com/"], area[href*="youtube.com/"]')
 oknonawagrowiec.pl#?#.penci-social__item:nth-of-type(-n+4)
@@ -303,6 +296,6 @@ plejada.pl#@#.contentArticle p:nth-last-child(-n+3) a[href*="facebook.com/plejad
 plejada.pl#@#.contentArticle p:nth-last-child(-n+3) a[href*="instagram.com/plejada" i]:remove-attr(href)
 plejada.pl#@#.contentArticle p:nth-last-child(-n+3) a[href*="tiktok.com/@plejada" i]:remove-attr(href)
 plejada.pl#@#.contentArticle p:nth-last-child(-n+3) a[href*="youtube.com/"][href*="plejada" i]:remove-attr(href)
-polonia.net#?##header-social-icons
+twitch.tv#@#.social-button
 visplantis.pl#@#div.footer-box:has(+ div .social-media):remove-class(/border/)
 !#endif
