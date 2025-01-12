@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista EasyList Cookie List (EasyList - Cookie Notices) wraz z EasyList (Ads) lub AdGuard Base (w produktach AdGuard)!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2025.1.10.0
-! Last modified: Fri, 10 Jan 2025, 13:54 UTC+01:00
+! Version: 2025.1.12.0
+! Last modified: Sun, 12 Jan 2025, 20:52 UTC+01:00
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -19,7 +19,7 @@
 ! Copyright © 2025 Certyficate IT
 ! Copyright © 2025 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2025.1.10.0 aktualizacja: pią, 10 sty 2025, 13:54 UTC+01:00
+! v.2025.1.12.0 aktualizacja: nie, 12 sty 2025, 20:52 UTC+01:00
 !
 !
 ! Specyficzne filtry ukrywające
@@ -677,7 +677,7 @@ country.db.com,sew-eurodrive.pl##.mod-cookie-layer
 coverise.com##coverise-cookies
 cowkrakowie.pl##.cookies--container
 cp.mywebinar.com###admin > .topline
-cpb.pl,efaktury.org,merixstudio.pl,multikody.pl,olekmotocykle.pl,ranking.net.pl,szukarka.net###message
+cpb.pl,efaktury.org,merixstudio.pl,multikody.pl,olekmotocykle.pl,ranking.net.pl###message
 cqb.pl###overlay_cookies
 credit-suisse.com##.mod_cookie_policy
 crimedistrict.com#?#body > div > div[style*="position"][style*="absolute"] > div[style*="float"][style*="left"]:-abp-has(~ [style*="float"][style*="left"] > a[href*="cookie"] > img[src*="cookie"])
@@ -1813,6 +1813,8 @@ mcdonalds.pl###cookies_message_info, .cookie-messages
 mdkgal.edu.pl##[data-nclose-cookie]
 mebleswiata.eu##.obligation_info
 meczyki.pl##.badge-yt
+med-store.pl###cookies_2024.cookies_2024
+med-store.pl###cookies_2025.cookies_2025
 media-tech.eu,migora.pl,polskimarket.nl,sklep.ekotechnologia.eu###topInfoContainer1
 media.netflix.com#?##__next > div[class*="css-"]:first-of-type:-abp-has(> button)
 mediaexpert.pl##body:not(.is-bodyScrollDisabled) .is-cookies.c-footer_col
@@ -3652,8 +3654,8 @@ pl###cookies-policy:not(body, html)
 pl###cookies-politics:not(body, html)
 pl###cookies-popup:not(body, html)
 pl###cookies-warning:not(body, html)
-pl###cookies:not(body, html, .section, .fade)
-pl###cookies:not(body, html, .section, .fade) ~ #backdrop:empty
+pl###cookies:not(body, html, .fade , .section)
+pl###cookies:not(body, html, .fade, .section) ~ #backdrop:empty
 pl###Cookies:not(body, html, [class*="headline"])
 pl###cookies_:not(body, html)
 pl###cookies_accept:not(body, html, button)
@@ -3901,7 +3903,7 @@ pl##.cookie-layer:not(body, html)
 pl##.cookie-message:not(body, html, .modal-body, .fade)
 pl##.cookie-monster:not(body, html)
 pl##.cookie-notice-container:not(body, html)
-pl##.cookie-notice:not(body, html, #wrapper, #footer)
+pl##.cookie-notice:not(body, html, #footer, #wrapper)
 pl##.cookie-notification:not(body, html)
 pl##.cookie-overlay-box:not(body, html)
 pl##.cookie-overlay:not(body, html)
@@ -3976,7 +3978,7 @@ pl##.cookies-popup:not(body, html)
 pl##.cookies-statement:not(body, html)
 pl##.cookies-tab:not(body, html)
 pl##.cookies-warning:not(body, html)
-pl##.cookies:not(body, html, #page, #container, .wrapper, .popup-newsletter, .js-cookies)
+pl##.cookies:not(body, html, #page, #container, .popup-newsletter, .js-cookies, .wrapper)
 pl##.cookies__info:not(body, html)
 pl##.cookies_block:not(body, html)
 pl##.cookies_header:not(body, html)
@@ -4054,7 +4056,7 @@ pl##.popup-cookie:not(body, html)
 pl##.privacy-container:not(body, html, .content-container)
 pl##.privacy-info:not(body, html)
 pl##.privacy-note:not(body, html)
-pl##.privacy-policy:not(body, html, a)
+pl##.privacy-policy:not(a, body, html)
 pl##.privacy_policy_info:not(body, html)
 pl##.privacybanner_notice:not(body, html)
 pl##.r-cookie-bar:not(body, html)
@@ -4326,36 +4328,37 @@ rynek-turystyczny.pl###modal-rodo { remove: true }
 !
 !
 ! Wyjątki
-allecco.pl,aptekadlapacjenta.pl,dlapacjenta.pl,e-zikoapteka.pl,effector.pl,f5.pl,hiperpharm.pl,mcdonalds.pl,swiatleku.pl,zikodermo.pl#@#.cookies-info:not(body, html)
-allecco.pl,aptekadlapacjenta.pl,dlapacjenta.pl,e-zikoapteka.pl,effector.pl,f5.pl,hiperpharm.pl,mcdonalds.pl,swiatleku.pl,zikodermo.pl#@#.cookies-popup:not(body, html)
+allecco.pl,aptekadlapacjenta.pl,dlapacjenta.pl,e-leki.pl,effector.pl,f5.pl,hiperpharm.pl,mcdonalds.pl,swiatleku.pl,zikoapteka.pl,zikodermo.pl#@#.cookies-popup:not(body, html)
+allecco.pl,aptekadlapacjenta.pl,dlapacjenta.pl,e-zikoapteka.pl,effector.pl,f5.pl,hiperpharm.pl,leki.pl,mcdonalds.pl,swiatleku.pl,zikodermo.pl#@#.cookies-info:not(body, html)
 allegro.pl,pikio.pl,sklep.winkhaus.pl,zus.pl#@#[class*="cookie-policy"]:not(body, html)
 bgk.pl#@#.cc-revoke:not(body, html)
 bgk.pl,dkms.pl,meiko.pl#@#.cc-window[aria-label*="consent"]:not(body, html)
 biblioteka.wroc.pl#@#.cookie-notice-container:not(body, html)
 bskrasnosielc.pl,interhotel.pl,laskonline.pl,piekarniaanka.pl,vaillant.pl#@##cookiewarning:not(body, html)
-calvinklein.pl,pl.tommy.com#@#.cookie-notice:not(body, html, #footer, #wrapper)
+calvinklein.pl,pl.tommy.com,selgros.pl#@#.cookie-notice:not(body, html, #footer, #wrapper)
 danio.com.pl#@##cookies-bar:not(body, html)
 danio.com.pl#@#.footer-cookies:not(body, html)
 danio.com.pl,mcdonalds.pl#@#.cookies-container:not(body, html)
 dkms.pl#@#.cc-banner:not(body, html)
-dominospizza.pl#@##cookie-message:not(body, html)
+dominospizza.pl#@##cookie-message:not(body, html, .fade)
 dominospizza.pl#@#aside[class*="Cookie"]
 drogeriapigment.pl,parkiet.com,rp.pl#@##rodo-popup:not(body, html, .fade, .modal)
 ebilet.pl#@##cookies-overlay:not(body, html)
 ebilet.pl,orange.pl#@##cookies-info:not(body, html)
+effector.pl,f5.pl,hiperpharm.pl,leki.pl,mcdonalds.pl,swiatleku.pl,zikoapteka.pl,zikodermo.pl#@##cookie-popup:not(body, html)
+effector.pl,f5.pl,hiperpharm.pl,leki.pl,mcdonalds.pl,swiatleku.pl,zikoapteka.pl,zikodermo.pl#@#.cookie-popup:not(body, html)
 elavon.pl#@#.cookiePolicy:not(.reveal, body, html)
 electrolux.pl,senda.pl#@#.CookieConsent:not(body, html)
 eurogamer.pl#@##optanon:not(body, html)
 eurogamer.pl#@#.optanon-alert-box-wrapper:not(body, html)
-forum.gg.pl,viasatexplore.pl,viasathistory.pl,viasatnature.pl,winnicalidla.pl#@#.privacy-policy:not(body, html, a)
-gdansk.pl,gokf.gda.pl,wins.pl#@##cookies:not(body, html, .section, .fade)
+forum.gg.pl,viasatexplore.pl,viasathistory.pl,viasatnature.pl,winnicalidla.pl#@#.privacy-policy:not(a, body, html)
+gdansk.pl,gokf.gda.pl,wins.pl#@##cookies:not(body, html, .fade , .section)
+gdansk.pl,gokf.gda.pl,wins.pl#@##cookies:not(body, html, .fade , .section) ~ #backdrop:empty
 grupapsb.com.pl#@#.cookies-footer:not(body, html)
 gry.pl,shinden.pl,wmeritum.pl,wykop.pl#@#div[class^="app_gdpr"]
 iglotex.pl,maxelektro.pl#@##cookie-info:not(body, html)
-iglotex.pl,mcdonalds.pl,ose.gov.pl,san.edu.pl#@#.cookies:not(body, html, #page, #container, .wrapper, .popup-newsletter, .js-cookies)
+iglotex.pl,mcdonalds.pl,ose.gov.pl,san.edu.pl#@#.cookies:not(body, html, #page, #container, .popup-newsletter, .js-cookies, .wrapper)
 kupbilecik.pl,liderlamp.pl,panbilet.pl,wins.pl#@#.cookie-container:not(body, html)
-leki.pl#@##cookie-popup:not(body, html)
-leki.pl#@#.cookie-popup:not(body, html)
 maxizoo.pl#@##cookie-banner:not(body, html)
 mazda-od-reki.pl#@##cookie-widget:not(body, html)
 memo-book.pl,zagojeni.pl#@#.rodo-overlay:not(body, html)
@@ -4373,10 +4376,10 @@ przystanki.bialystok.pl#@##cookie-info-box:not(body, html)
 puratos.pl#@##cookieInfo:not(body, html)
 selgros.pl#@##cookie_accept:not(body, html)
 sklep-domwhisky.pl#@#.rodo-popup:not(body, html, [style="display: block;"])
-sklep.winkhaus.pl,volcano.pl#@#aside[class*="cookie"]
-smsapi.pl#@##CybotCookiebotDialog:not(body, html)
+sklep.winkhaus.pl,volcano.pl#@#aside[class*="cookie"]:not([class*="modal" i])
+smsapi.pl#@#body:not([style*="overflow"]) #CybotCookiebotDialog
 stilord.pl#@#.cookie-bar:not(body, html)
-uniabracka.pl#@##cookie-container:not(body, html)
+uniabracka.pl#@#body:not(.cookie-opened) #cookie-container
 urbancity.pl#@##cookie-modal:not(body, html, .reveal)
 visa.pl#@#span[class*="Cookie"]:not(.closeCookie, [class*="CookiebotDialog"])
 wtk.pl#@#.privacy-container:not(body, html, .content-container)
