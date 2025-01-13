@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista EasyList Social List (EasyList – Social Widgets) wraz z EasyList (Ads) lub AdGuard Base (w produktach AdGuard)!
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2025.1.13.0
-! Last modified: Mon, 13 Jan 2025, 08:50 UTC+01:00
+! Version: 2025.1.13.1
+! Last modified: Mon, 13 Jan 2025, 20:21 UTC+01:00
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -18,7 +18,7 @@
 ! Copyright © 2025 Certyficate IT
 ! Copyright © 2025 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2025.1.13.0 aktualizacja: pon, 13 sty 2025, 08:50 UTC+01:00
+! v.2025.1.13.1 aktualizacja: pon, 13 sty 2025, 20:21 UTC+01:00
 !
 !
 !#safari_cb_affinity(social)
@@ -825,6 +825,7 @@ pl,~wykop.pl##.wykop
 ###chaty-channel-facebook_messenger
 ##.btn-share.btn.btn-whatsapp
 ##a[aria-label="Udostępnij w WhatsApp"]
+~1login.wp.pl,autokult.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,~poczta.wp.pl,polygamia.pl,pysznosci.pl,wp.pl,www.dobreprogramy.pl,~www.wp.pl####header[data-st-area="header"] ~ div > div[class*=" "] > aside > div:has(> p + div > a[href*=".com/"]:is([href*="facebookc.com/"], [href*="twitter.com/"]))
 ~1login.wp.pl,autokult.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,~poczta.wp.pl,polygamia.pl,pysznosci.pl,wp.pl,www.dobreprogramy.pl,~www.wp.pl##[aria-label="Menu"] ~ div aside > div:has(span ~ div a[href*="facebook.com/"])
 ~1login.wp.pl,autokult.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,~poczta.wp.pl,polygamia.pl,pysznosci.pl,wp.pl,www.dobreprogramy.pl,~www.wp.pl##article ~ div span > a[href*="facebook.com/"]
 ~1login.wp.pl,autokult.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,~poczta.wp.pl,polygamia.pl,pysznosci.pl,wp.pl,www.dobreprogramy.pl,~www.wp.pl##article ~ div span > a[href*="instagram.com/"]
@@ -2467,7 +2468,7 @@ dailyweb.pl##.social-media.footer-column > :not(.create-by)
 dajar.pl###footer a[href*="pinterest.com/"]
 dajar.pl#?##__next #__app__ > div > div > div > div > div > div:has(> h3:has-text(Instagram))
 dajar.pl#?##__next #__app__ > div > div > div > div > div > div:has(> h3:has-text(Instagram)) + div
-dajar.pl,epaka.pl,mas-sport.pl,pizzahut.pl,szukajwarchiwach.gov.pl,vivus.pl###footer a[href*="facebook.com/"]
+dajar.pl,epaka.pl,mas-sport.pl,pachnij.pl,pizzahut.pl,szukajwarchiwach.gov.pl,vivus.pl###footer a[href*="facebook.com/"]
 dajar.pl,monitoring-system.pl##.yt-icon
 dajmiskrzydla.pl,strefapmi.pl###sfp_page_plugin_widget-2
 dakoma.com.pl##.menu-icons-wrap > li > a:not([href*="//dakoma.com.pl/"])
@@ -2931,6 +2932,7 @@ e-stargard.pl##a > img[src*="e-stargard.pl/grafika/banery/estargard/polubnas2.jp
 e-testynaprawojazdy.pl##.secPdng.faqArea > .container
 e-testynaprawojazdy.pl,hd-opinie.pl##.fanpage
 e-timberland.pl##.b-footer_infoLink
+e-tlumacze.net##footer a[href*=".com/"]:is([href*="facebook.com/"], [href*="youtube.com/"], [href*="linkedin.com/"])
 e-vasco.pl##.facebook-box-slider
 e.tm.pl##.fa-facebook-f.brands.icon
 e.tm.pl##.fa-twitter.brands.icon
@@ -9068,6 +9070,7 @@ wittchen.com##.instabox-naglowek
 wiwa.info.pl##a[href*="facebook.com/WIWAINFOPL/"], a[href*="youtube.com/watch?v=8Khj2ZexkIM"]
 wizaz.pl###socialize-right-side
 wizaz.pl##.branding-socials
+wizaz.pl##button[data-test-id="share-product-page-button"]
 wizaz.pl##div.c-article__action > div:not(.c-email-share)
 wizzair.com##.sitemap__wrapper--footer.container > .row > div.gr-3:nth-of-type(3) > .heading--5
 wjakiejsieci.pl#?##form > .text:-abp-has(> div > img ~ a[href*="facebook.com/"])
@@ -9525,6 +9528,7 @@ zywiecinfo.pl#?#.newsberg-card.sppb-addon-module.sppb-addon:-abp-contains(Nasz F
 !
 !
 ! Specyficzne filtry blokujące
+*/homesliderpro/images/resize_baner12002.jpg$image,rewrite=abp-resource:32x32-transparent-png,domain=pachnij.pl
 /avlab*/img/bg_share.png$domain=avlab.pl
 /content/images/facebook.png$domain=ceneo.pl|jego-styl.pl|kraina-stylu.pl|wnetrza-ze-smakiem.pl
 /facebook.png$domain=handlujemy.pl
