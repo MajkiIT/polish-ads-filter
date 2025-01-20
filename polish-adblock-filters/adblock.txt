@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
-! Last modified: 14 January 2025
+! Last modified: 20 January 2025
 ! Expires: 1 day
-! Version: 2025011401
+! Version: 2025012001
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2025 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2025011401 aktualizacja: wt, 14 stycznia 2025, 16:05:00
+! v.2025012001 aktualizacja: pn, 20 stycznia 2025, 20:11:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -5142,6 +5142,10 @@ mecz.tv,ipilka.info##[class$="_right"]
 ||www.wykop.pl/img/campaign/$image,domain=www.wykop.pl
 ||www.wykop.pl/*/adblock_$image
 ||wykop.pl/adverts^
+||wykop.pl/paylink/emiter/$image,domain=www.wykop.pl
+||wykop.pl/tracker
+||wykop.pl/api/v*/ads
+@@||wykop.pl/api/v*/ads/redirect$~third-party
 streamable.com##.stm-ad-player
 wykop.pl##a[href*="wykop.pl/tracker"]
 wykop.pl###autopromotion
@@ -5159,13 +5163,10 @@ wykop.pl#?#li.link:-abp-has(a[href*='wykop.pl/market'])
 wykop.pl#?#li.link:-abp-has(a[href*='wykop.pl/paylink'])
 wykop.pl#?#li.link:-abp-has(a[href*='wykop.pl/reklama'])
 wykop.pl##.m-hide.screening
-||wykop.pl/paylink/emiter/$image,domain=www.wykop.pl
 wykop.pl#?#.r-block:-abp-has(a[href*="wykop.pl/tracker"])
 wykop.pl##.screening-displace.r-block
-||wykop.pl/tracker
 wykop.pl###wpladbottom, .stm-ad-player
 wykop.pl##.m-hide.m-reset-width.m-reset-margin.m-reset-float.grid-right > div.r-block > div > A > IMG
-||wykop.pl/api/v*/ads
 wykop.pl##.pub-slot-wrapper
 wykop.pl##.ski-jumping-slider
 !
