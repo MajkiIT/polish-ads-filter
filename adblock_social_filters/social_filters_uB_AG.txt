@@ -109,8 +109,10 @@ czytamyetykiety.pl##header > div:first-child > div > div > div:nth-child(n+3):nt
 czytamyetykiety.pl##header > div:first-child > div > div > div:nth-child(n+3):nth-child(-n+5) > nav > a[href*=".com/"]:style(display: block !important; visibility: hidden !important)
 danio.com.pl##.footer > .footer-main > div.col:nth-of-type(1):nth-child(1):style(border: none !important)
 darymex.pl##.userfooter > .row > p:has-text(Dołącz do nas:):style(color: #0000 !important)
-dekpol.pl##.social::first-line:style(color: #0000 !important; -webkit-user-select: none !important; user-select: none !important; pointer-events: none !important)
+dekpol.pl##.social::first-line:style(color: #0000 !important)
 dorotafilipiuk.pl##.elementor-icon-box-title > a[href*=".com/"]:not([href*="spotify."]):upward(.elementor-widget-container)
+e-kolo.pl##.text-center.d-sm-block:has(> a[title*="Udostępnij"])::first-line:style(-webkit-text-fill-color: #0000 !important; color: #0000 !important; font-size: 0 !important)
+e-kolo.pl#@#.text-center.d-sm-block:has(> a[title*="Udostępnij"])
 e-mcklein.pl##.safty_payment_banner > div:first-child:style(visibility: hidden !important)
 e-nobi.pl###social:style(height: auto !important)
 elektroda.pl##.social-media-dropdown.dropdown-menu:style(min-width: unset !important)
@@ -184,7 +186,7 @@ rynek-lotniczy.pl,rynekinfrastruktury.pl,transport-publiczny.pl##.wiadomoscSocia
 rynek-lotniczy.pl,rynekinfrastruktury.pl,transport-publiczny.pl##.wiadomoscSocialBig > .fbLikeBox ~ *:style(visibility: hidden !important)
 sadyogrody.pl##.twitter.social:upward(.active)
 scigacz.pl##div#main-footer > span.akonet:last-child:style(color: #606060 !important; font-size: 1.2rem !important)
-scigacz.pl##div#main-footer:style(color: #0000 !important; font-size: 0 !important; width: calc(100% - 200px) !important; margin-left: 200px !important)
+scigacz.pl##div#main-footer:style(-webkit-text-fill-color: #0000 !important; color: #0000 !important; font-size: 0 !important; width: calc(100% - 200px) !important; margin-left: 200px !important)
 shop.huawei.com##div.J_anchors:last-of-type > a.J_anchor[style*="width:59px; height:5"]:style(pointer-events: none !important; background: #fff !important)
 shopee.pl##footer div[class]:nth-child(4) > div[class] + ul li a[href*="facebook.com/"]:upward(div[class]:nth-child(4))
 sklep-internet.pl##.card.panel a.btn:style(white-space: unset !important)
@@ -306,8 +308,9 @@ wizaz.pl#@#button[data-test-id="share-product-page-button"]
 !
 ! Bugi AdGuarda
 !#if !ext_ublock
+e-kolo.pl##body .text-center.d-sm-block:has(> a[title*="Udostępnij"])::first-line { color: transparent !important }
 focus.pl#?#.socializer-fb-share
-forums-pl.ubisoft.com#%#//scriptlet('remove-attr', 'href', 'area[href*="discordapp.com/"], area[href*="facebook.com/"], area[href*="instagram.com/"], area[href*="plus.google.com/"], area[href*="reddit.com/"], area[href*="twitter.com/"], area[href*="youtube.com/"]')
+forums-pl.ubisoft.com#%#//scriptlet('remove-attr', 'href', 'area:is([href*="discordapp.com/"], [href*="facebook.com/"], [href*="instagram.com/"], [href*="plus.google.com/"], [href*="reddit.com/"], [href*="twitter.com/"], [href*="youtube.com/"])')
 oknonawagrowiec.pl#?#.penci-social__item:nth-of-type(-n+4)
 pilot.wp.pl#?#.fb_iframe_widget
 plejada.pl#@##detail.articleBody p:nth-last-child(-n+3) a[href*="facebook.com/plejada" i]:remove-attr(href)
