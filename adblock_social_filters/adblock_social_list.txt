@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista EasyList Social List (EasyList – Social Widgets) wraz z EasyList (Ads) lub AdGuard Base (w produktach AdGuard)!
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2025.1.27.0
-! Last modified: Mon, 27 Jan 2025, 16:11 UTC+01:00
+! Version: 2025.1.27.1
+! Last modified: Mon, 27 Jan 2025, 20:58 UTC+01:00
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -18,7 +18,7 @@
 ! Copyright © 2025 Certyficate IT
 ! Copyright © 2025 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2025.1.27.0 aktualizacja: pon, 27 sty 2025, 16:11 UTC+01:00
+! v.2025.1.27.1 aktualizacja: pon, 27 sty 2025, 20:58 UTC+01:00
 !
 !
 !#safari_cb_affinity(social)
@@ -831,6 +831,7 @@ pl,tv##div#facebook-comments[class] > a.comments-facebook[href="#"]
 ~1login.wp.pl,autokult.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,~poczta.wp.pl,polygamia.pl,pysznosci.pl,wp.pl,www.dobreprogramy.pl,~www.wp.pl#?#article#main-content ~ div[class]:nth-child(n+2):nth-child(-n+3) > div[class]:nth-child(-n+2) > div[class]:-abp-has(> span:-abp-contains(/^Udostępnij:?$/)) > :not(:last-child)
 ~1login.wp.pl,autokult.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,~poczta.wp.pl,polygamia.pl,pysznosci.pl,wp.pl,www.dobreprogramy.pl,~www.wp.pl#?#article#main-content ~ div[class]:nth-child(n+2):nth-child(-n+3) ~ div[class]:nth-child(-n+2) > div[class]:-abp-has(> span:-abp-contains(/^Udostępnij:?$/)) + div > div
 ~1login.wp.pl,money.pl,moneyv.wp.pl,o2.pl,~poczta.wp.pl,wp.pl,~www.wp.pl##a[class][href*="instagram.com"][title^="Instagram"][target="_blank"]
+~azure.microsoft.com,microsoft.com##div[id^="socialfollow-"]
 ~fitness.wp.pl,wp.pl,~www.wp.pl##.social-links a
 ~pl###chaty-channel-facebook_messenger:lang(pl)
 ~pl###fb-root:lang(pl)
@@ -1550,7 +1551,7 @@ azet.net.pl###box_wce_headerinfo > div > a
 azet.net.pl###box_wce_headerinfo > p > a
 azjatyckibazar.com###footer > div.col-sm-no-pd.col-sm-4:nth-of-type(3)
 aztecas.eu##.stopka > div[class*="stopka2"] > a:not([href$="/feed/"])
-azure.microsoft.com##nav.medium-3.column
+azure.microsoft.com##div[id^="socialfollow-"] a[href]:not([href*="app"])
 b2b.metal-bud.eu,bat.pl,brymorex.pl,chemko.com.pl,sklep.enger.pl##.social-media-ui
 b2btrade.eu###footer > div:nth-of-type(6) > a.left
 b2net.pl#?#.single-widget > h3:-abp-contains(Udostępnij)
@@ -3242,9 +3243,7 @@ eventmanagement.pl,flota.com.pl,nm.pl,o-m.pl##.logo-socials
 eventmanagement.pl,flota.com.pl,nm.pl,o-m.pl##.znajdz-nas
 eventory.cc##.site-footer__follow-us__wrapper
 events.comarch.com##li.footer__item:nth-of-type(1)
-events.teams.microsoft.com##div[class*="Pop"][role="dialog"] #facebookLink
-events.teams.microsoft.com##div[class*="Pop"][role="dialog"] #linkedInLink
-events.teams.microsoft.com##div[class*="Pop"][role="dialog"] #twitterLink
+events.teams.microsoft.com##div[class*="Pop"][role="dialog"] :is(#facebookLink, #linkedInLink, #twitterLink, #xLink)
 eventy.neonail.pl##footer > a
 evertiq.pl###foot > ul > li:nth-of-type(3)
 evertourist.com##.contact-fb
@@ -6633,6 +6632,8 @@ pl.geofumadas.com###connect-ah .m-block.sm.alignright > ul > li > a
 pl.hisense.com##.console-foot-hs-social-group
 pl.howtopronounce.com##.socialShareIcons
 pl.huel.com##div[class*="footer__socials" i]
+pl.iherb.com##.iherb-pdp-share
+pl.iherb.com##.social-media-icons li:not(:has(.store-review)) a
 pl.iqos.com##.footer-secondary-link-menu > li.footer-list:first-of-type
 pl.johnnybet.com##.article-share-links
 pl.jooble.org##footer button[aria-label]
