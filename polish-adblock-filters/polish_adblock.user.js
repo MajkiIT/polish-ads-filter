@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         wp.pl
-// @version      0.2
-// @description  Pozbycie siÄ™ reklam i komunikatu o adblocku na stronach naleÅ¼Ä…cych do wp.pl
+// @name         wp.pl - nieaktualny
+// @version      0.3
+// @description  Pozbycie się reklam i komunikatu o adblocku na stronach należących do wp.pl
 // @author       F4z
 // @match        *://*.abczdrowie.pl/*
 // @match        *://*.autokrata.pl/*
@@ -29,7 +29,9 @@
 // @downloadURL https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/polish_adblock.user.js
 // ==/UserScript==
 
-(function(b) {
+(function() {
+    'use strict';
+/* (function(b) {
     function a() {
         "advertisement" != arguments[0] && b.apply(window, arguments)
     }
@@ -51,4 +53,5 @@
             }
         }
     })
-})(window.addEventListener);
+})(window.addEventListener); */
+})();
