@@ -6,26 +6,20 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 28 Febuary 2024
+! Last modified: 29 January 2025
 ! Expires: 1 day
-! Version: 2024022800
+! Version: 2025012902
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! Redundant Checker >> https://www.certyficate.it/redundant_checker/redundantRuleChecker.html
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-! Copyright © 2024 Certyficate IT
+! Copyright © 2025 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2024022800 aktualizacja: śro, 28 lutego 2024, 22:23
+! v.2025012901 aktualizacja: sr, 29 stycznia 2025, 17:05:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
-! http://alltube.tv/
-! Ominięcie czekania
-alltube.tv###iframe-container:style(display: block !important;)
-alltube.tv###please-wait-container
-alltube.tv##+js(noeval)
-!
 ! http://www.czasbajki.pl/
 ! Ominięcie czekania
 czasbajki.pl###kAdd
@@ -73,15 +67,6 @@ cda.pl###kolumnaSrodkowa:style(height: auto !important;)
 cda.pl###obiekt:style(display: block !important;)
 ebd.cda.pl##+js(nowoif)
 !
-! pclab.pl
-!pclab.pl###header .left .sponT:style(height: 100px !important;)
-!pclab.pl###header .right .sponT:style(height: 75px !important;)
-!pclab.pl###headerwrapper:style(height: 140px !important;)
-!pclab.pl###categories:style(top: 33px !important;)
-!pclab.pl###header:style(z-index: 0 !important;)
-!pclab.pl###tabwrapper #tab:style(margin-top: 90px !important;)
-pclab.pl##.logoS:style(width: 275px; padding: 11px 0 0 5px; height: 74px; float: left;)
-||pclab.pl/css/extra
 !
 ! playpuls.pl
 ! Ominięcie reklam
@@ -269,8 +254,8 @@ streamin.to##+js(noeval-if, RTCPeerConnection)
 ! Popupy https://github.com/MajkiIT/polish-ads-filter/issues/2478
 ||go.onclasrv.com/apu.php$important,redirect=noop.js,script
 !
-! reklama po prawej np. na pclab.pl, onet.pl, businessinsider.com.pl, noizz.pl, komputerswiat.pl, plejada.pl
-auto-swiat.pl,businessinsider.com.pl,komputerswiat.pl,noizz.pl,onet.pl,pclab.pl,plejada.pl###nitro-block:style(position: absolute !important; left: -3000px !important;)
+! reklama po prawej np. na onet.pl, businessinsider.com.pl, noizz.pl, komputerswiat.pl, plejada.pl
+auto-swiat.pl,businessinsider.com.pl,komputerswiat.pl,noizz.pl,onet.pl,plejada.pl###nitro-block:style(position: absolute !important; left: -3000px !important;)
 !
 ! blokowanie gemius
 !||onet.hit.gemius.pl/fpdata.js$script,important
@@ -451,14 +436,6 @@ strabag-pfs.pl###page_margins:style(position: relative !important; margin: 0px a
 ekino-tv.pl##+js(nano-stb)
 swiatfilmow.com##+js(nano-stb, function, 1000, 0.02)
 !
-! Easylist Bugs
-!filmweb.pl##+js(aopw, sas)
-@@||addthis.com/live/*$script,domain=serialomaniak.pl
-||addthis.com/*/addthis_widget.js$badfilter,script
-||addthis.com/*/addthis_widget.js$script,domain=~serialomaniak.pl
-! uBO Privacy Bugs
-||addthis.com^$badfilter,important,third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs|~sitecore.com|~amd.com
-||addthis.com^$important,third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs|~sitecore.com|~amd.com|~serialomaniak.pl
 !
 ! IF rules
 !#if cap_html_filtering
@@ -583,7 +560,6 @@ tekstowo.pl#$#.teledysk { flex: 0 0 100% !important; max-width: 100% !important;
 meczyki.pl##:not(.onnetwork-banner) > .placeholder:not(.onnetwork-banner):style(height: 0 !important; min-height: 0 !important;)
 !
 ! uBlock-user
-!napiprojekt.pl##+js(insert-iframe, 1, honeypot, https://www.napiprojekt.pl/napisy-42731-Ostatni-U-Boot-(1993), width: 1px !important; height: 1px !important; position: absolute !important; left: -3000px !important)
 napiprojekt.pl##+js(ape, body #catalgForm, iframe, src, https://www.napiprojekt.pl/napisy-42731-Ostatni-U-Boot-(1993))
 napiprojekt.pl##body #catalgForm iframe[src*="U-Boot"]
 ppe.pl###hot-slides-wrapper #hot_0, #hot-slider #m_hot_0
