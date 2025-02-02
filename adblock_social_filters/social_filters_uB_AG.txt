@@ -78,7 +78,6 @@ lookcam.com$$[id="lookcam-fb-modal"]
 !
 !
 ! Widgety
-!www.msn.com##fluent-design-system-provider > entry-point:shadow(div[class*="container"]) > me-stripe:shadow(msft-horizontal-card-slider) > me-stripe-tile:shadow(.me-stripe-tile-content) a[href]:is([href*="facebook.com"], [href*="twitter.com"], [href*="x.com"])
 /plugins/likebox.php$frame,redirect=noop.html,domain=vifon.pl
 ~1login.wp.pl,money.pl,open.fm,~poczta.wp.pl,pudelek.pl,wp.pl,~www.wp.pl##a[href*="instagram"][title*="instagram"][target="_blank"] ~ a[href*="facebook"][title*="facebook"][target="_blank"]:upward(2)
 ~1login.wp.pl,money.pl,open.fm,~poczta.wp.pl,pudelek.pl,wp.pl,~www.wp.pl##a[href=""][title*="instagram"][target="_blank"] ~ a[href=""][title*="facebook"][target="_blank"]:upward(2)
@@ -130,6 +129,7 @@ forums-pl.ubisoft.com##area[href*="youtube.com/"]:remove-attr(href)
 gremont.pl##.wd-footer > .row > ul.columns.block:nth-of-type(3) > li > .textwidget:style(color: #0000 !important)
 ibb.co##.btn-social:not(.btn-mail):upward(li)
 ibuprom.pl##.footer-section-wrapper > article:nth-of-type(2) > h5:style(visibility: hidden !important)
+inoni.cc##div[class*="footer"] a[href*=".com/"]:is([href*="facebook.com/"], [href*="instagram.com/"]):upward(p)
 invado.pl##div[id^="block"][class*="-item"] .widget.social-icons.social-section:upward(div[id^="block"])
 isop.pl##ul.et_pb_social_media_follow:upward(1)
 jbzdy.*,jbzd.*##.btn-send-messenger, .fb-like, .facebook-share
@@ -308,9 +308,25 @@ wizaz.pl#@#button[data-test-id="share-product-page-button"]
 !
 ! Bugi AdGuarda
 !#if !ext_ublock
+45minut.pl#@#.carousel-inner a[href="https://www.facebook.com/45minutpl"]:remove-attr(href)
+abcfirany.pl#@##BanneryAnimacjaPrzewijana > #scrlnr1 > a[href="https://abcfirany.pl/reklama-b-4.html"]:remove-attr(href)
+barokko.pl#@#div[class^="platnosci"] > a[href*="facebook.com/"]:remove-attr(href)
+boop.pl#@#article ~ div p a.uppercase[class*="hover:"]:remove-attr(class)
+boop.pl#@#article ~ div p a[href*="dc"]:remove-attr(href)
 e-kolo.pl##body .text-center.d-sm-block:has(> a[title*="Udostępnij"])::first-line { color: transparent !important }
 focus.pl#?#.socializer-fb-share
 forums-pl.ubisoft.com#%#//scriptlet('remove-attr', 'href', 'area:is([href*="discordapp.com/"], [href*="facebook.com/"], [href*="instagram.com/"], [href*="plus.google.com/"], [href*="reddit.com/"], [href*="twitter.com/"], [href*="youtube.com/"])')
+forums-pl.ubisoft.com#@#area[href*="discordapp.com/"]:remove-attr(href)
+forums-pl.ubisoft.com#@#area[href*="facebook.com/"]:remove-attr(href)
+forums-pl.ubisoft.com#@#area[href*="instagram.com/"]:remove-attr(href)
+forums-pl.ubisoft.com#@#area[href*="plus.google.com/"]:remove-attr(href)
+forums-pl.ubisoft.com#@#area[href*="reddit.com/"]:remove-attr(href)
+forums-pl.ubisoft.com#@#area[href*="twitter.com/"]:remove-attr(href)
+forums-pl.ubisoft.com#@#area[href*="youtube.com/"]:remove-attr(href)
+karolinaniedzielska.pl#@#a.sie-footer_5[href]:has(div[style*="avatar" i]):remove-attr(href)
+meblomag.eu#@#map[name="Map4"] > area:first-of-type:remove-attr(href)
+naklejkolandia.pl#@##sliderBox ul > li > a[href^="https://www.facebook.com/notes/naklejkolandiapl/"]:remove-attr(href)
+odkryjpomorze.pl#@#map[name="Map"] > area:first-of-type:remove-attr(href)
 oknonawagrowiec.pl#?#.penci-social__item:nth-of-type(-n+4)
 pilot.wp.pl#?#.fb_iframe_widget
 plejada.pl#@##detail.articleBody p:nth-last-child(-n+3) a[href*="facebook.com/plejada" i]:remove-attr(href)
@@ -321,6 +337,9 @@ plejada.pl#@#.contentArticle p:nth-last-child(-n+3) a[href*="facebook.com/plejad
 plejada.pl#@#.contentArticle p:nth-last-child(-n+3) a[href*="instagram.com/plejada" i]:remove-attr(href)
 plejada.pl#@#.contentArticle p:nth-last-child(-n+3) a[href*="tiktok.com/@plejada" i]:remove-attr(href)
 plejada.pl#@#.contentArticle p:nth-last-child(-n+3) a[href*="youtube.com/"][href*="plejada" i]:remove-attr(href)
+sklep.bi-es.eu#@##inst a[href*="instagram.com/"]:remove-attr(href)
+studiooptyczne44.pl#@#.swiper-slide > a[href*="instagram.com/p/"][title]:remove-attr(href)
+transportgzm.pl#@#body > a[href*="facebook.com/"]:has(img):remove-attr(href)
 twitch.tv#@#.social-button
 visplantis.pl#@#div.footer-box:has(+ div .social-media):remove-class(/border/)
 !#endif
