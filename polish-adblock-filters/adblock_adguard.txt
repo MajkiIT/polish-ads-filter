@@ -6,30 +6,18 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 24 April 2021
+! Last modified: 29 January 2025
 ! Expires: 1 day
-! Version: 2021042401
+! Version: 2025012902
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
 ! Redundant Checker >> https://www.certyficate.it/redundant_checker/redundantRuleChecker.html
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-! Copyright © 2021 Certyficate IT
+! Copyright © 2025 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2021042401 aktualizacja: sob, 24 kwietnia 2021, 16:25:00
+! v.2025012902 aktualizacja: sr, 29 stycznia 2025, 17:05:00
 !
-!
-! alltube.tv
-! Ominięcie czekania
-alltube.tv###please-wait-container
-alltube.tv#$##iframe-container { display: block !important; }
-!
-!
-! www.efilmy.tv
-! Ominięcie przycisku "Close Ad and Watch as Free User"
-efilmy.tv###hideOnClick
-efilmy.tv#$##playerVidzer { display: block !important; }
-efilmy.tv###step1
 !
 ! gahe.pl
 ! Ominięcie czekania
@@ -95,6 +83,9 @@ senda.pl#$#.advert_box > div > .tablebg { height: 1px !important; visibility: hi
 ! www.ps4forum.pl
 www.ps4forum.pl##.googleheader
 www.ps4forum.pl#$#.forumsTabLinks.tabLinks { top: 60px !important; }
+!
+! f5.pl
+f5.pl##body:style(padding-top: 0 !important;)
 !
 ! kurnik.pl
 kurnik.pl#$#.adsbygoogle { height: 1px !important; width: 1px !important; }
@@ -169,13 +160,24 @@ milionkobiet.pl##.gallery-embed-list-images:style(height: auto !important;)
 lowcygier.pl##body:style(background-image: none !important;)
 !
 ! Interia
+interia.pl##[class^="common-header common-header--"]:style(top: 0px !important)
+interia.pl##body[class*="_ad-"]:style(padding-top: 0 !important;)
+interia.pl##header[class^="sc-"]:style(transform: unset !important)
 mamdziecko.interia.pl###content .brief-list-items .brief-placeholder-list:style(height: 320px)
 www.interia.pl##+js(remove-attr.js, scrolling, iframe#sg-iframe[scrolling="no"])
 poczta.interia.pl#$##mainApp #sitebar, #mainApp #sitebar form { width: 100% !important; max-width: 100% !important }
 !
-! money.pl
-money.pl##div[class]:if(>div[class]:first-child:has-text(REKLAMA):if-not(>*))
+! grupa WP
+pogoda.wp.pl##.grid-right > div:matches-css(background-image: /data:image\/png;base64,/)
+pogoda.wp.pl##.grid-right > div > div:matches-css(background-image: /data:image\/png;base64,/)
 money.pl,moneyv.wp.pl###app > div[data-reactroot] > div[class]:matches-css(background-image: /v\.wpimg\.pl\/MjAxOTA/)
+www.money.pl###app > div > div:matches-css(background-image: /^url\("https:\/\/v\.wpimg\.pl/)
+o2.pl##body:style(pointer-events: auto!important;)
+o2.pl##body:style(overflow-y: visible!important; position: unset!important;)
+o2.pl##body > [class]:not(.settings--user):not(.article__textbox):style(filter: none!important;)
+!
+! mgsm.pl
+mgsm.pl##.mediafarm:style(height: 0 !important;)
 !
 ! purepc.pl
 purepc.pl##html > body:style(background-image: none!important; background-color: #d5d5d5!important;)
@@ -237,8 +239,6 @@ alefunny.pl##.modal-open:style(overflow: auto !important; padding-right: 0px !im
 autokult.pl,gadzetomania.pl,komorkomania.pl,wp.pl##.modal__body-adblock
 dziwnekomiksy.pl##body>*:style(filter: blur(0px) !important;)
 !
-! Rules after Adblock
-vod.pl##.infoCloud:style(position: absolute!important; left: -3000px!important;)
 !
 ! Rules with conditions
 !#if (adguard_ext_firefox)
@@ -292,3 +292,10 @@ filmyporno.tv###playerOverlay
 !
 ! trojmiasto.pl
 /v\.s\-trojmiasto\.pl\/flv\/\d+/\d+.*(peugeot|preroll|_muz_).*960x\.mp4$/$media,redirect=noopmp4-1s,domain=trojmiasto.*
+!
+! tekstowo.pl
+tekstowo.pl#@##advSong
+tekstowo.pl#$##advSong { visibility: hidden !important }
+tekstowo.pl#@#[class^="adv-"]
+tekstowo.pl#$#.teledysk { flex: 0 0 100% !important; max-width: 100% !important; }
+!

@@ -4,77 +4,15 @@ on:
   issues:
     types: [opened, edited]
 
+permissions:
+  contents: read
+
 jobs:
   apply-label:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
-      - uses: actions/github-script@v3
+      - uses: hawkeye116477/issue-manager-action@v1
         with:
-          script: |
-            var body = context.payload.issue.body;
-            var labels = context.payload.issue.labels;
-            var labelSet = [
-              {
-                "body": "(Anty-adblock|adblock)",
-                "label": "adblock detect",
-              },
-              {
-                "body": "Reklama",
-                "label": "reklama",
-              },
-              {
-                "body": "Wydobywanie kryptowalut",
-                "label": "kryptokoparki",
-              },
-              {
-                "body": "(Komunikat dot. ciasteczek i polityki prywatności\/RODO|ciasteczka|rodo)",
-                "label": "cookies",
-              },
-              {
-                "body": "(Element społecznościowy|social)",
-                "label": "social filters",
-              },
-              {
-                "body": "Pi-hole, hosts i spółka",
-                "label": "hosts file",
-              },
-              {
-                "body": "Błąd",
-                "label": "błąd",
-              },
-              {
-                "body": "Pytanie",
-                "label": "pytanie",
-              },
-            ]
-
-            var labelsToAdd = [];
-
-            for (const i in labelSet) {
-              var re_add = new RegExp("- \\[[xX]] "+labelSet[i].body, "i");
-              var re_remove = new RegExp("- \\[[ ]] "+labelSet[i].body, "i");
-              var re_add_fire = new RegExp("Kategoria: "+labelSet[i].body, "i");
-              if(body.match(re_add) && !labels.some(e => e.name === labelSet[i].label)) {
-                labelsToAdd.push(labelSet[i].label);
-              }
-              if(body.match(re_add_fire) && !labels.some(e => e.name === labelSet[i].label)) {
-                labelsToAdd.push(labelSet[i].label);
-              }
-              if(body.match(re_remove) && labels.some(e => e.name === labelSet[i].label)) {
-                github.issues.removeLabel({
-                  issue_number: context.issue.number,
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  name: labelSet[i].label
-                })
-              }
-            }
-
-            if (labelsToAdd.length > 0) {
-              github.issues.addLabels({
-                      issue_number: context.issue.number,
-                      owner: context.repo.owner,
-                      repo: context.repo.repo,
-                      labels: labelsToAdd
-              })
-            }
+          mode: "labelOpened"

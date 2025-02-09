@@ -1,0 +1,19 @@
+name: 'Bodyguard'
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  lock:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: dessant/lock-threads@v5
+        with:
+          issue-inactive-days: '60'
+          issue-comment: 'Ten wątek został automatycznie zablokowany, ponieważ 60 dni po jego zamknięciu nie było żadnej aktywności. Proszę otworzyć nowe zgłoszenie dla powiązanych problemów.'
+          issue-lock-reason: 'resolved'
+          exclude-any-issue-labels: ''
+          process-only: 'issues'
