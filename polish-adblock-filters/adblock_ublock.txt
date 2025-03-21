@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 29 January 2025
+! Last modified: 21 March 2025
 ! Expires: 1 day
-! Version: 2025012902
+! Version: 2025032101
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2025 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2025012901 aktualizacja: sr, 29 stycznia 2025, 17:05:00
+! v.2025032101 aktualizacja: ptk, 21 marca 2025, 15:15:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -199,6 +199,9 @@ abczdrowie.pl,autokult.pl,echirurgia.pl,film.wp.pl,fotoblogia.pl,gadzetomania.pl
 sportowefakty.wp.pl##+js(aopr, Object.prototype.bodyCode)
 open.fm##+js(set, Object.prototype.gafSlot, undefined)
 open.fm##body:style(pointer-events: auto!important;)
+open.fm#@#+js(set-constant, Object.prototype.gafSlot, undefined)
+||criteo.net^$script,redirect=noopjs,domain=open.fm
+||doubleclick.net^$image,redirect=1x1.gif,domain=open.fm
 abczdrowie.pl#@#+js(no-setTimeout-if, visibility, 0)
 www.money.pl###app > div > div:matches-css(background-image: /^url\(.https:\/\/v\.wpimg\.pl/)
 pogoda.wp.pl##.grid-right > div:matches-css(background-image: /data:image\/png;base64,/)
