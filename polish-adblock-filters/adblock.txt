@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
-! Last modified: 30 March 2025
+! Last modified: 2 April 2025
 ! Expires: 1 day
-! Version: 2025033001
+! Version: 2025040201
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2025 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2025033001 aktualizacja: nie, 30 marzec 2025, 10:05:00
+! v.2025040201 aktualizacja: sr, 30 kwietnia 2025, 11:30:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -1566,6 +1566,9 @@ halogorlice.info##hr, .reklama-center
 halogorlice.info#?#.sppb-addon-title:-abp-contains(reklama)
 halogorlice.info#?#p:-abp-contains(reklama)
 haloursynow.pl##.voffset3.cleardiv, .baner > .baner > span
+haloursynow.pl##.banner--regular
+haloursynow.pl##.banner--programmatic--optad360
+haloursynow.pl##.new-toplayer
 handballnews.pl##A > IMG[src^="http://www.handballnews.pl/image/strona750x500"]
 handballnews.pl##p > span > span
 handelextra.pl##[id^="banner-url-"]
@@ -1942,6 +1945,8 @@ krs-online.com.pl###bad
 krs-online.com.pl###commcoo
 krs-online.com.pl###all > div > A > IMG
 krs-pobierz.pl##A[target="_blank"] > IMG[src*="ban"]
+krs-pobierz.pl###v-banner-right
+krs-pobierz.pl###v-banner-left
 kryptoholik.pl##A > [class*="size-full wp-image-"][width="200"]
 kryptoraport.pl,msmobile.pl,moja-gazeta.com.pl,magazynmotomi.pl,btcpolska.com,glamrap.pl###custom_html-5
 krytykapolityczna.pl##.commercial
@@ -4415,6 +4420,7 @@ www.gdziepolek.pl##.lazy-load-image-loaded.opacity.lazy-load-image-background
 ||cdn.pkwteile.de/uploads/stock/$image,domain=czesciauto24.pl
 ||cdn.salesmedia.pl/codes/$script
 ||cdn.syndication.twitter.com/widgets/tweetbutton/
+||cdn.questvert.pl/publishers/SiecPortali/qpscript.js$script,domain=haloursynow.pl
 ||chlodnictwoiklimatyzacja.pl/images/tlo_$image
 ||chozoba.pl/images/baner$image
 ||ciechocinek.biz/banery_$image
