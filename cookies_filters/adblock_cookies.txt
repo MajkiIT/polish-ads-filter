@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista EasyList Cookie List (EasyList - Cookie Notices) wraz z EasyList (Ads) lub AdGuard Base (w produktach AdGuard)!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2025.6.29.0
-! Last modified: Sun, 29 Jun 2025, 19:22 UTC+02:00
+! Version: 2025.7.7.0
+! Last modified: Mon, 07 Jul 2025, 00:10 UTC+02:00
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -19,7 +19,7 @@
 ! Copyright © 2025 Certyficate IT
 ! Copyright © 2025 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2025.6.29.0 aktualizacja: nie, 29 cze 2025, 19:22 UTC+02:00
+! v.2025.7.7.0 aktualizacja: pon, 07 lip 2025, 00:10 UTC+02:00
 !
 !
 ! Specyficzne filtry ukrywające
@@ -4283,6 +4283,7 @@ wolframalpha.com##footer ~ section
 ! Bugi ELC
 @@/complianz-$script,domain=grupabiwakowa.pl|nowymarketing.pl
 @@/complianz.$script,domain=grupabiwakowa.pl|nowymarketing.pl
+@@/cookie-bar.js$domain=medicover.pl|medicoversport.pl
 @@/jquery.cookiebar.js$domain=shinden.pl
 @@/otBannerSdk.js$domain=avanti24.pl|bankier.pl|bethesda.net|blaklader.pl|carrefour.pl|cartoonito.pl|czterykaty.pl|dyskusje24.pl|elle.pl|elleman.pl|essilor.pl|focus.pl|focusnauka.pl|glamour.pl|gry.pl|ikea.com|infoladnydom.pl|infozdrowie24.pl|kobieta.pl|magazyn-kuchnia.pl|mojegotowanie.pl|mojpieknyogrod.pl|moto-wiadomosci.pl|national-geographic.pl|olx.pl|pizzahut.pl|player.pl|przyslijprzepis.pl|sport.gwar.pl|toteraz.pl|tvn.pl|tvn24.pl|wpodrozy24.pl|wyborcza.pl
 @@/wpjslib-ecom.js$domain=17bankow.com
@@ -4295,7 +4296,6 @@ wolframalpha.com##footer ~ section
 @@||usercentrics.eu^$script,subdocument,xmlhttprequest,domain=aldi.pl
 ###ba_eu_cookie_law:not(form)
 ###gdpr_consent:not([class*="form"], [class*="module"])
-##.cookies-wrapper:not([class*="pum-field"])
 ##body:not(.sf-lockscroll) .sf-consent
 #@##ba_eu_cookie_law
 #@##ck_dsclr_v2
@@ -4308,6 +4308,7 @@ wolframalpha.com##footer ~ section
 #@#.grecaptcha-badge
 #@#.sf-consent
 #@#.woocommerce-store-notice
+~dolomitienergia.it##.cookies-wrapper:not([class*="pum-field"])
 ~pl##body:lang(pl).cookie-overlay-active::after
 acogo.pl#@#.elementor-popup-modal
 adventuresports.pl,dkms.pl#@#.cc-banner
@@ -4444,6 +4445,7 @@ naekranie.pl#@##modal-rodo-info:not(body, html, .fade, .reveal-modal)
 nat.pl#@##cookieWarning:not(body, html)
 nat.pl#@#.cookieContent:not(body, html)
 noweinwestycje.pl#@#.cookieBar:not(body, html)
+pap.pl#@##sliding-popup:not(body, html)
 pikio.pl#@##cookie-policy:not(body, html)
 poradykomputerowe.pl,portaloswiatowy.pl#@#.overlay-cookie:not(body, html)
 poradykomputerowe.pl,portaloswiatowy.pl#@#.popup-cookie:not(body, html)
