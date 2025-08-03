@@ -6,9 +6,9 @@
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 29 January 2025
+! Last modified: 21 March 2025
 ! Expires: 1 day
-! Version: 2025012902
+! Version: 2025032101
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -16,7 +16,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2025 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2025012901 aktualizacja: sr, 29 stycznia 2025, 17:05:00
+! v.2025032101 aktualizacja: ptk, 21 marca 2025, 15:15:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -143,6 +143,9 @@ filmweb.pl##+js(nano-remove-elements-onready.js, #skyBanner)
 !abczdrowie.pl,echirurgia.pl,fotoblogia.pl,komorkomania.pl,money.pl,wp.pl##+js(set, PWA_adbd, 2)
 facet.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl##+js(aopw, iaqExt)
 poczta.wp.pl##body > #page:style(display: block !important;)
+poczta.wp.pl##html:style(position: static !important; overflow: visible !important)
+poczta.wp.pl##body:style(position: static !important; overflow: visible !important)
+poczta.wp.pl##:not(.overflow-x_hidden, .overflow_hidden, .truncate_true, svg:not(:root), img):style(overflow: visible !important)
 www.wp.pl##:xpath(//div[@data-st-area='Zakupy'][count(*)=2][not(header)])
 www.wp.pl##[data-st-area] > div > div > div[class]:matches-css(max-width: 300px):matches-css(max-height: 250px)
 www.wp.pl##body:style(overflow-y: visible !important;)
@@ -158,6 +161,7 @@ www.wp.pl##+js(aopr, __headpayload)
 !tv.wp.pl##+js(set, WP.crux.sealed, falseFunc)
 !www.wp.pl##body > #root ~ script + div[class]
 www.wp.pl###root:style(filter: none!important;)
+parenting.pl#@#[src^="https://v.wpimg.pl/"]:not([alt],[class="contentstream-cover"]):upward(3):not(html,body)
 !abczdrowie.pl,allani.pl,autokrata.pl,autokult.pl,biztok.pl,dzieci.pl,easygo.pl,echirurgia.pl,fotoblogia.pl,gadzetomania.pl,hotmoney.pl,interaktywnie.com,inwestycje.pl,jejswiat.pl,kafeteria.pl,kafeteria.tv,kantory.pl,kazimierzdolny.pl,komediowo.pl,komorkomania.pl,mazury.com,mojeauto.pl,mojeosiedle.pl,money.pl,nasygnale.pl,niewiarygodne.pl,nocowanie.pl,odkrywcy.pl,parenting.pl,pudelek.tv,pytamy.pl,sfora.pl,snobka.pl,tlen.pl,totalmoney.pl,wakacje.pl,wawalove.pl,wp.tv##+js(set, Object.prototype.bodies, true)
 !abczdrowie.pl,allani.pl,autokrata.pl,autokult.pl,biztok.pl,dzieci.pl,easygo.pl,echirurgia.pl,fotoblogia.pl,gadzetomania.pl,hotmoney.pl,interaktywnie.com,inwestycje.pl,jejswiat.pl,kafeteria.pl,kafeteria.tv,kantory.pl,kazimierzdolny.pl,komediowo.pl,komorkomania.pl,mazury.com,mojeauto.pl,mojeosiedle.pl,money.pl,nasygnale.pl,niewiarygodne.pl,nocowanie.pl,o2.pl,~poczta.o2.pl,odkrywcy.pl,open.fm,parenting.pl,pudelek.pl,pudelek.tv,pytamy.pl,sfora.pl,snobka.pl,tlen.pl,totalmoney.pl,wakacje.pl,wawalove.pl,wp.pl,~poczta.wp.pl,wp.tv##+js(overlay-buster)
 !#if cap_user_stylesheet
@@ -199,6 +203,9 @@ abczdrowie.pl,autokult.pl,echirurgia.pl,film.wp.pl,fotoblogia.pl,gadzetomania.pl
 sportowefakty.wp.pl##+js(aopr, Object.prototype.bodyCode)
 open.fm##+js(set, Object.prototype.gafSlot, undefined)
 open.fm##body:style(pointer-events: auto!important;)
+open.fm#@#+js(set-constant, Object.prototype.gafSlot, undefined)
+||criteo.net^$script,redirect=noopjs,domain=open.fm
+||doubleclick.net^$image,redirect=1x1.gif,domain=open.fm
 abczdrowie.pl#@#+js(no-setTimeout-if, visibility, 0)
 www.money.pl###app > div > div:matches-css(background-image: /^url\(.https:\/\/v\.wpimg\.pl/)
 pogoda.wp.pl##.grid-right > div:matches-css(background-image: /data:image\/png;base64,/)
