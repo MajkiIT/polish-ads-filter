@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista EasyList Social List (EasyList – Social Widgets) wraz z EasyList (Ads) lub AdGuard Base (w produktach AdGuard)!
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2025.8.3.0
-! Last modified: Sun, 03 Aug 2025, 17:40 UTC+02:00
+! Version: 2025.8.3.1
+! Last modified: Sun, 03 Aug 2025, 18:36 UTC+02:00
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -18,7 +18,7 @@
 ! Copyright © 2025 Certyficate IT
 ! Copyright © 2025 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2025.8.3.0 aktualizacja: nie, 03 sie 2025, 17:40 UTC+02:00
+! v.2025.8.3.1 aktualizacja: nie, 03 sie 2025, 18:36 UTC+02:00
 !
 !
 !#safari_cb_affinity(social)
@@ -6380,6 +6380,8 @@ olini.pl,sofly.club###instagramGalleryWidget
 olivegreenthemovie.com##footer > .footer_1 > .section_footer_container
 olsztyn24.com###right_1 > .zakladka1
 olsztyn24.com###right_1 > div:nth-of-type(2)
+olx.pl#?#span:has-text(/^Dołącz do nas/)
+olx.pl#?#span:has-text(/^Dołącz do nas/) + div a
 olympia-electronics.com###block-block-9 h2.block-title
 olza.pl###Socials
 ombre.pl###links_footer_4 > li > .footer_links_label, .footer_links_facebook
@@ -6480,8 +6482,7 @@ oszczedzarka.co.uk##.textwidget > p > img[src="/img/ico/skype.png"]
 oticon.pl###footer .section-one > .rich-text.component > .component-content
 otmetobuwie.pl##.dark_blue.button3_sub
 otoagent.pl##.layout__footer--socialsWrapper
-otodom.pl##footer > div > div > div:last-child > div + div:last-child
-otodom.pl##footer div.item:nth-of-type(4) > ul > li:nth-of-type(2)
+otodom.pl##div[data-sentry-component="SocialsAndMarkets"] div:first-child
 otoksiazka24.pl###kontakt div.flex-3.flex:nth-of-type(3)
 otomoto.pl###page-footer > section > article:first-child
 otomoto.pl##footer a[href*="facebook.com/otomotopl" i]
@@ -9558,7 +9559,6 @@ wyborcza.pl##li.social--item > .social--link-fb
 wyborcza.pl##li.social--item:has(.social--link-fb, .social--link-tw)
 wyborkierowcow.pl#?#.td-block-title:has-text(FACEBOOK)
 wybory.um.warszawa.pl##[id^="sm"].sm
-wycena.otodom.pl##.widget-box, .widget-html
 wycieczki.tanie-loty.com.pl##.tl-social-links > li:not(:nth-of-type(5))
 wydajenamsie.pl##.footer-social-media__head
 wydajnykomputer.pl##.footerMenu > li:nth-of-type(8)
