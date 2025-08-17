@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
-! Last modified: 11 July 2025
+! Last modified: 14 August 2025
 ! Expires: 1 day
-! Version: 2025071101
+! Version: 2025081402
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2025 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2025071101 aktualizacja: ptk, 11 lipca 2025, 07:50:00
+! v.2025081402 aktualizacja: czw, 14 sierpnia 2025, 11:35:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -567,6 +567,9 @@ biznes-firma.pl##.navibox
 biznes.pl##.e_Box.analyses
 biznes.pl##.rightBoxR.boxPopComtR.cl
 biznes.interia.pl,geekweek.interia.pl,gry.interia.pl,muzyka.interia.pl##.promocyjni_gazetka_dol, .ad-rectangle
+interia.pl##[id^="ad-gora_srodek"]
+interia.pl##[id^="ad-rectangle"]
+interia.pl##[id^="ad-box"]
 biznes2biznes.com##DIV[style="width:200px;float:right;display:block;margin-left:-5px;"]
 biznes2biznes.com##[id^="stickynote"]
 biznesalert.pl##.banner-overlay, .container > div:nth-of-type(10)
@@ -2019,6 +2022,13 @@ laskonline.pl###prawa_kolumna > h1:nth-of-type(2)
 lawka.pl###szesc
 lawka.pl##table:nth-of-type(2) > tbody > tr > td > table
 lca.pl###banner_inside1, #right_container_box_ad
+lca.pl##.new-toplayer
+lca.pl##.centered.billboard.container
+lca.pl##.banner--html.d--393-393.baner
+lca.pl##.news.col-md-8 > .news-slot-center
+lca.pl##.banner--programmatic--optad360
+lca.pl##.banner--html.d--393-270.baner
+lca.pl##.banner--html.dbh
 legalnybukmacher.com##.entry-content > A > [class^="wp-image"]
 lebork24.info###rT1, #rM0, #rM2, #banner-main2, div.banner-box
 lebork24.info##.size-large.wp-block-image
@@ -3266,6 +3276,8 @@ satkurier.pl###m_top_1_subpage
 satkurier.pl###m_inside_top_newspage
 satkurier.pl###m_inside_bottom_newspage
 satkurier.pl##div[style^="margin-left:auto;margin-right:auto;margin-bottom:"]
+satkurier.pl###blok_1_box_300x250
+satkurier.pl###blok_2_box_300x250
 scarlett.com.pl###phpeverywherewidget-2
 sci24.pl##.g-dyn
 scie24.pl##A[target="blank_"] > IMG[src^="/uploads/baners/"]
@@ -4475,7 +4487,7 @@ www.wirtualnemedia.pl###wtg_art_full_service
 ||cdn.pkwteile.de/uploads/stock/$image,domain=czesciauto24.pl
 ||cdn.salesmedia.pl/codes/$script
 ||cdn.syndication.twitter.com/widgets/tweetbutton/
-||cdn.questvert.pl/publishers/SiecPortali/qpscript.js$script,domain=haloursynow.pl
+||cdn.questvert.pl^
 ||chlodnictwoiklimatyzacja.pl/images/tlo_$image
 ||chozoba.pl/images/baner$image
 ||ciechocinek.biz/banery_$image
@@ -4657,7 +4669,6 @@ www.wirtualnemedia.pl###wtg_art_full_service
 ||medserwis.pl/grafika/banery/$image
 ||medycznamarihuana.com/wp-content/uploads/*_330x250$image
 ||mgsm.pl/js/get*Ads.xhtml$xmlhttprequest,domain=www.mgsm.pl
-||mgr.farm/wp-content/plugins/farmacja-popup/inc/popup.js$script,1p
 ||microsms.pl/img/reklama$image
 ||miedzyrzec.info/media_site/banery/$image
 ||mierzyn24.pl/bannery_reklamowe/
@@ -5067,6 +5078,7 @@ www.wirtualnemedia.pl###wtg_art_full_service
 @@||polsatnews.pl/templates/pnews/js/fingerprint2.min.js
 @@||prostozmostu.pl/imgcache/300x250/$image
 @@||pubads.g.doubleclick.net/gampad/ad$image,domain=www.emag.pl
+@@||reklamy.grupafarmacja.net/*/STOPKA-$image
 @@||remiza.com.pl/ads/haft/jquery.slides.min.js$script
 @@||rtax.criteo.com^$domain=ekstraklasa.tv|itvn.pl|player.pl|ttv.pl|tvn.pl|tvn24.pl|tvn24bis.pl|tvn7.pl|tvnplayer.pl|tvnstyle.pl|tvnturbo.pl
 @@||s-nk.pl/script/nk/ads/$script,domain=nk.pl
@@ -5128,6 +5140,7 @@ eurogamer.pl,pcworld.pl#@#[href*="://clkpl.tradedoubler.com/"]
 !15#---------------------------------Anti Adblock Rules blocking filters----------------------------------!
 !
 !16#---------------------------------Anti Adblock Rules whitelist filters----------------------------------!
+@@||lca.pl/pl/js/$script,~third-party
 !
 !17#--------------------------Rules block ads after antiadblock rules-------------!
 !
