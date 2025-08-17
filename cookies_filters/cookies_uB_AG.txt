@@ -23,6 +23,7 @@ eu,pl#@#body > div:not([id]):not([class])
 /wpjslib-stat.js$badfilter
 @@/wpjslib-ecom.js$badfilter,domain=17bankow.com
 @@/wpjslib-stat.js$badfilter,domain=nauka.rocks
+||service-cmp.com^$badfilter,third-party
 allegro.pl,allegrolokalnie.pl#@#body:style(overflow-y: auto !important;)
 allegro.pl,allegrolokalnie.pl,pepper.pl#@#body:style(overflow: auto !important;)
 answear.com#@#.modal
@@ -34,8 +35,6 @@ doz.pl#@#+js(set-cookie, consent-granted-version, 24)
 !
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
-!zoom.us###agree-terms ~ div label input[disabled]:remove-attr(disabled)
-!zoom.us###agree-terms ~ div label[class]:watch-attr(class):remove-class(/disabled/)
 /wp-content/plugins/cookie-law-info/lite/frontend/js/script.min.js$important,domain=sztolnie.pl|zamekgrodno.pl
 ||cdn.ans-media.com/*/CookiesConsentPopUp$redirect=noop.css,stylesheet
 ||lajt-online.pl/api/terms/rodo$1p,important,redirect=noop.json:10,xhr
@@ -479,7 +478,7 @@ lnk.to,orcd.co,tix.to##.box-shadow.player-container[style]:style(opacity: 1 !imp
 lnk.to,orcd.co,tix.to##.page-container > .player-container[style]:style(overflow-y: auto !important; width: auto !important)
 lnk.to,orcd.co,tix.to##.privacy-notice-gdpr-container
 lnk.to,orcd.co,tix.to##.slide-bar-container
-login.e-dowod.gov.pl##+js(set-cookie, acceptRodoSie, hide)
+login.e-dowod.gov.pl##+js(set-local-storage-item, dataProcessingInfoDialogRead, true)
 login.ingbank.pl##.global-overlays__overlay[data-tag-name="cookie-banner-main"]
 lomza.pl##html > body.polityka-cookies:style(margin-top: 0 !important; background-position: center 120px !important)
 longines.com##body > div.MuiDialog-root:has(> div.MuiDialog-container div[class^="Cookies_Actions__"])
@@ -1145,7 +1144,6 @@ amled.pl,bayadera.pl,butico.pl,butoholiczka.pl,cicius.pl,csk-med.pl,dekomotyw.pl
 bayadera.pl,butico.pl,butoholiczka.pl,e-clematis.com,eldom.eu,frajdomania.pl,hi-lashes.pl,ilapka.pl,krainazabawek.com.pl,laptok.com,nesea.pl,perfumik.pl,przydatny.pl,rodajaslo.com.pl,skladczesci.pl,sklep-ewa.pl,sklep.instato.pl,topcena24.pl,zabawkinaczasie.pl,zniczeflamma.pl,zoo24.pl##+js(set-local-storage-item, consents.show_consent_modal, 1)
 bayadera.pl,butico.pl,butoholiczka.pl,e-clematis.com,eldom.eu,frajdomania.pl,hi-lashes.pl,ilapka.pl,krainazabawek.com.pl,laptok.com,nesea.pl,perfumik.pl,przydatny.pl,rodajaslo.com.pl,skladczesci.pl,sklep-ewa.pl,sklep.instato.pl,topcena24.pl,zabawkinaczasie.pl,zniczeflamma.pl,zoo24.pl##+js(set-local-storage-item, consents.user_consents, [])
 biuroprasowe.porta.com.pl##+js(set-cookie-reload, cookies-agreement, true, , dontOverwrite, 1)
-budujmase.pl,drogerium.pl,trec.pl,wylecz.to##+js(set-cookie-reload, rodoHfM, true)
 doz.pl##+js(set-cookie-reload, consent-granted, 1)
 espedytor.pl##+js(set-cookie-reload, zgodaRODO, true)
 f1racing.pl##+js(set-cookie-reload, x-id-cookie-yes, 1)
@@ -1198,7 +1196,6 @@ accuweather.com,bezprawnik.pl,bolec.info##body[style]:style(overflow: auto !impo
 biuroprasowe.porta.com.pl#%#//scriptlet('set-cookie-reload', 'cookies-agreement', 'true', '', 'dontOverwrite', '1')
 bonduelle.pl#%#//scriptlet('didomi-loader')
 brieftip.pl,kaliber.pl#?#.modal-open:style(overflow: auto !important; padding-right: 0 !important)
-budujmase.pl,drogerium.pl,trec.pl,wylecz.to#%#//scriptlet('set-cookie-reload', 'rodoHfM', 'true')
 centrumbajki.pl$$[class="popmake-overlay"][tag-content="danych osobowych"]
 domhouse.pl##.fancybox-overlay[tag-content="RODO"]
 domhouse.pl##html.fancybox-lock > body, html.fancybox-lock:style(overflow: auto !important)
