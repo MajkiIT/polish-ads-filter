@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista EasyList Social List (EasyList – Social Widgets) wraz z EasyList (Ads) lub AdGuard Base (w produktach AdGuard)!
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2025.8.18.0
-! Last modified: Mon, 18 Aug 2025, 17:04 UTC+00:00
+! Version: 2025.8.18.1
+! Last modified: Mon, 18 Aug 2025, 20:15 UTC+00:00
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -18,7 +18,7 @@
 ! Copyright © 2025 Certyficate IT
 ! Copyright © 2025 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2025.8.18.0 aktualizacja: pon, 18 sie 2025, 17:04 UTC+00:00
+! v.2025.8.18.1 aktualizacja: pon, 18 sie 2025, 20:15 UTC+00:00
 !
 !
 !#safari_cb_affinity(social)
@@ -2249,8 +2249,7 @@ chefbox.pl##[class*="footer"] a[href*="instagram.com/"]
 chemik-police.com##.youtube-cta
 chevan.pl##footer > div > div.text-center:first-of-type
 chili24.pl##.fixedIcons a[href*=".com/"]
-chili24.pl##footer .module:has(a[href*="facebook.com/"])
-chili24.pl##header .module:has(a[href*="facebook.com/"])
+chili24.pl##:is(header, footer) .module:has(a[href*="facebook.com/"])
 chillizet.pl##.share > .messanger.button, .like__us, #main-footer p.text-align__center.uppercase.footer__title
 chimmo.pl##a.footer-icon
 chinskapatelnia.pl##.home-instagram.home-box, .home-youtube.home-box
@@ -9500,8 +9499,9 @@ wsensie.pl,wsensie.tv##.lubie
 wsfiz.edu.pl##.footer__sm
 wsfiz.edu.pl##.header__top__sm
 wsinf.edu.pl###social, .nobrd.border
-wsjp.pl##.circle_facebook
-wsjp.pl##a.circle[href*="twitter.com/"]
+wsjp.pl##.circle-facebook
+wsjp.pl##.circle-x
+wsjp.pl##.circle-youtube
 wsliwinski.pl###foot > div.block30 > p > a > img
 wsliwinski.pl##.footer .icons a[href*=".com/"]
 wsliwinski.pl##.top-info-bar a[href*=".com/"]
