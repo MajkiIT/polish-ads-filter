@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista EasyList Cookie List (EasyList - Cookie Notices) wraz z EasyList (Ads) lub AdGuard Base (w produktach AdGuard)!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2025.9.22.0
-! Last modified: Mon, 22 Sep 2025, 21:58 UTC+00:00
+! Version: 2025.9.29.0
+! Last modified: Mon, 29 Sep 2025, 16:58 UTC+00:00
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -19,7 +19,7 @@
 ! Copyright © 2025 Certyficate IT
 ! Copyright © 2025 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2025.9.22.0 aktualizacja: pon, 22 wrz 2025, 21:58 UTC+00:00
+! v.2025.9.29.0 aktualizacja: pon, 29 wrz 2025, 16:58 UTC+00:00
 !
 !
 ! Specyficzne filtry ukrywające
@@ -688,6 +688,7 @@ colormark.pl###Kom_cookie
 comfortum.pl,dywany.dywilan.pl,powiatkutno.eu,umed.pl###ppc_box.ppc_box
 comitor.pl###rodoBoxWrap
 confronter.pl###cookieBarDiv
+console.cloud.google.com##.glue-cookie-notification-bar
 consumer.huawei.com##.huawei-bootom-cookie
 contentorganica.pl##.pasekBlack
 contentstream.pl,events.teams.microsoft.com,niezlasztuka.net###cookie-banner
@@ -3480,6 +3481,7 @@ pl/tcf/cookie.js$script,domain=pl
 ~pl###kopageBarCookies:lang(pl)
 ~pl###x13eucookies-icon:lang(pl)
 ~pl##.fmessages:lang(pl):has(.cookie-message-popup-lq, .cookie-notice-ui)
+~pl##a[href="javascript:CookieScript.instance.show()"]:lang(pl)
 ~pl##body > div#cookie[class=""]
 ~pl##body:not([class*="cookie-overflow"], [class*="freeze_bcg"]) #ck_dsclr:lang(pl)
 ~pl##body:not([class*="cookie-overflow"], [class*="freeze_bcg"]) div[id][class*="iai_cookie"]:lang(pl)
@@ -4160,6 +4162,7 @@ pl##.wrap-cookie-info:not(body, html)
 pl##[class*="cookie-policy"]:not(body, html)
 pl##[class^="box-cookie"]:not(body, html)
 pl##[id^="topInfo"]:not(body, html)
+pl##a[href*="javascript:CookieScript.instance.show()"]
 pl##aside[class*="Cookie"]
 pl##aside[class*="cookie"]:not([class*="modal" i])
 pl##body > div[style*="top"][style*="left"][style*="background"][style*="cookies_tlo"]:not([id], [class])
@@ -4422,6 +4425,7 @@ polska6.pl###modal { remove: true }
 purepc.pl##.cookiesinfo { remove: true }
 rynek-turystyczny.pl###modal-rodo { remove: true }
 vinello.pl##dialog#cookieDialog { remove: true }
+webh.pl##body .cookie-consent { remove: true }
 wmglass.com.pl##dialog[cookies-dialog] { remove: true }
 !#endif
 !
@@ -4488,11 +4492,12 @@ publiczneodtwarzanie.pl,urbancity.pl#@##cookie-modal:not(body, html, .reveal)
 puratos.pl#@##cookieInfo:not(body, html)
 selgros.pl#@##cookie_accept:not(body, html)
 sklep-domwhisky.pl#@#.rodo-popup:not(body, html, [style="display: block;"])
-sklep.winkhaus.pl,volcano.pl#@#aside[class*="cookie"]:not([class*="modal" i])
+sklep.winkhaus.pl,volcano.pl,webh.pl#@#aside[class*="cookie"]:not([class*="modal" i])
 smsapi.pl#@#body:not([style*="overflow"]) #CybotCookiebotDialog
 stilord.pl#@#.cookie-bar:not(body, html)
 uniabracka.pl#@#body:not(.cookie-opened) #cookie-container
 visa.pl#@#span[class*="Cookie"]:not(.closeCookie, [class*="CookiebotDialog"])
+webh.pl#@#.cookie-consent:not(body, html, .paragraph)
 wtk.pl#@#.privacy-container:not(body, html, .content-container)
 !
 !
