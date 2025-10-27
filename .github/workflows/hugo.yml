@@ -46,7 +46,7 @@ jobs:
 
       - name: Upload test build
         if: github.event_name == 'pull_request'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: polish-ads-filter_website_${{github.sha}}
           path: ./docs/
