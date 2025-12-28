@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
-! Last modified: 2 November 2025
+! Last modified: 26 December 2025
 ! Expires: 1 day
-! Version: 2025110202
+! Version: 2025122601
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2025 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2025110202 aktualizacja: nie, 2 listopada 2025, 09:55:00
+! v.2025122601 aktualizacja: ptk, 26 grudnia 2025, 15:10:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -1110,6 +1110,10 @@ epainfo.pl##.epain-widget.widget.td_block_template_1, #media_image-7
 eparczew.pl###block-block-5
 epd24.net##.boksy-wyroznione.box
 epiotrkow.pl##a[href^="rd.php"], .banP4, .rtop
+epiotrkow.pl##+js(rmnt, script, testScript.onerror, includes, adblock)
+epiotrkow.pl##.sidebar-item:has(> .make-me-sticky > span) 
+epiotrkow.pl##.box-ra:has(ins[data-revive-zoneid])
+epiotrkow.pl##.box-ra:has(a[href^="/ad_click.php"])
 epoznan.pl##[id^="adsys_"], [href^="http://epoznan.pl/adsys_"], .post__adsysText, .mainBoxes, .bannerBox__mob, .bannerBox, .BannerBox, [href^="adsysClick"]
 epoznan.pl##[style^="clear: both; display: block; margin: 0 auto 10px auto; width:"]
 eprzasnysz.pl##.l-box--99.l-box > center > div
@@ -1940,7 +1944,7 @@ koszalininfo.pl,wlkp24.info,wwl24.info,b2-biznes.pl,sporteuro.pl,metropoliabydgo
 kronikamontrealska.com##.textwidget > A
 kryptoporadnik.pl##.stm_sidebar > p
 krytykapolityczna.pl##.kppromowidget.widget
-kozaczek.pl##.nsg_ad_box
+kozaczek.pl##.nsg_ad_box, 
 kozaczek.pl##img[src^="data:image/jpeg;base64"]
 kozienice24.pl###adocr
 kraj24.pl##.box_h
@@ -2866,7 +2870,7 @@ podoslonami.pl##.a14s
 podrogach.pl###secondary > div:nth-of-type(1), #text-3, #secondary > div > A > IMG
 pogoda.dziennik.pl###idm140677357800800
 pogoda.onet.pl##.ssListaContainer
-pogoda.interia.pl##.adStandardTop.ad.box
+pogoda.interia.pl##.adStandardTop.ad.box, .belka.ad.box
 pogodawtoruniu.pl##.new-toplayer
 pogodawtoruniu.pl##.banner--programmatic--optad360
 pogonsportnet.pl##.kode-content > section.kode-pagesection:nth-of-type(1) > .container > .row > .col-md-12.kode-pagecontent > .margin-top10-bottom10.heading-12.heading
@@ -4174,7 +4178,7 @@ www.ogloszeniarolnicze.com.pl##div.row > .simplemod > .custom, div.moduleBox > .
 www.oleole.pl###sss_left > .imgHover[alt="gazetka agd"]
 www.oleole.pl###sss_right
 www.onlinecenter.pl##.componentheading_small:nth-of-type(3)
-www.owg.pl###baner_baza, .reklamaGoogleTopProfil, #baner_gazetapl
+www.owg.pl###baner_baza, .reklamaGoogleTopProfil, #baner_gazetapl, .linkReklama
 www.pcformat.pl###ad_news
 www.photoblog.pl###adsense-top-placeholder
 www.pino.pl###pinowyswietlacz
@@ -4319,6 +4323,7 @@ zlubaczowa.pl###Mod605, #Mod584, #Mod599
 zkaszub.info##.zkasz-widget.widget, #block-3, .amkad, .zkasz-przed-trescia, .zkasz-tresc, .zkasz-w-tresci_2, .zkasz-po-tresci_4
 zlotoryjska.pl##div.noprint.pole-banerowe > A[target="_blank"] >IMG
 zmianynaziemi.pl###block-block-27, #block-block-19, #block-block-32, #block-block-16, .even.field-item > div
+zooart.com.pl##.up-banner.container
 zory.dlawas.pl##.in.fade.modal-backdrop
 zory.dlawas.pl##.modal-dialog
 zory24.pl##.advertbutton, #baner2Box, #baner1Box, #baner7Box,#sliderHolder, .twocol_right, #znsHeadBox, #repCinema
@@ -4731,6 +4736,7 @@ www.wirtualnemedia.pl###wtg_art_full_service
 ||oglaszamy24.pl/adstorage/$image
 ||ogloszenia.nowy-sacz.pl/rek/$image
 ||online-mexos.efortuna.pl^
+||ogladajanime.pl/command_processor.php
 ||ono24.info/web/files/site/sad/$image
 ||opensubtitles.org/*=.js$script
 ||ostrzeszowinfo.pl/files/*reklama$image
@@ -5386,7 +5392,33 @@ filmyfilmy.pl###play
 ||numpet.com^
 ||azontree.com^
 ||aktualnosci.pl.ua^
-||pl.ua^
+||shownewsdaily.com^
+||apteline.deal-pl.shop^
+||deal-pl.shop^
+||tracking718.com^
+||track654.com^
+||mydatinguniverse.com^
+||edrrak.com^
+||asckat.com^
+||tvmoviespoilers.com^
+||nowiny24h.com^
+||travel2days.com^
+||hoanhxinh.com^
+||znicely.com^
+||auradelunadao.com^
+||embemy.com^
+||gymhay.com^
+||slovakpress.com^
+||heathwood.info^
+||yearning-go.com^
+||fenmarrow.info^
+||render.hetdmr.com^
+||render.boulder-collide.com^
+||vruqlimoxu.site^
+||vurzokli.site^
+||termsfeed.com^
+||outsourcing-sprzedazy.pl^
+||xinloc.com
 !
 !24#--------------------------Rules for ublock, but can be use with adblock------------!
 ||imasdk.googleapis.com/js/core/bridge*.html$subdocument,domain=exs.pl,important
@@ -5763,6 +5795,8 @@ czadrow24.pl###media_image-15, #media_image-19
 dailyweb.pl###text-18, .lt10.col > A, #text-20, .adwse-headerr
 dziejesienapodkarpaciu.pl###lsvr_image_widget-2
 dziennikzwiazkowy.com##.widget-28
+dziennikzwiazkowy.com##.text-center.tipad_tag
+dziennikzwiazkowy.com##.container.my-3.item-subtype-a.text-center
 extra.info.pl###leader-wrap, #text-38
 gamenerd.pl###text-46
 globalne-archiwum.pl###text-60
