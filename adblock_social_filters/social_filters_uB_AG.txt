@@ -101,6 +101,7 @@ boop.pl##article ~ div p a[href*="dc"]:remove-attr(href)
 carrefour.pl##div > p ~ div > a[href*="sharer"] ~ a[href*="share"]:upward(2)
 codetwo.pl###content div.facebook.item:style(display: block !important; visibility: hidden !important; height: 2px !important)
 com,eu,info,pl##body #social_block:style(visibility: hidden !important)
+com,eu,info,pl,tv#@#.article-share
 czerwonak.pl##.rd-navbar-info > div > div:nth-child(2):style(visibility: hidden !important)
 czytamyetykiety.pl##header > div:first-child > div > div > div:nth-child(n+3):nth-child(-n+5) > div:empty:style(visibility: hidden !important)
 czytamyetykiety.pl##header > div:first-child > div > div > div:nth-child(n+3):nth-child(-n+5) > nav > a[href*=".com/"]:style(display: block !important; visibility: hidden !important)
@@ -157,6 +158,7 @@ odkryjpomorze.pl##map[name="Map"] > area:first-of-type:remove()
 odkryjpomorze.pl##map[name="Map"] > area:first-of-type:remove-attr(href)
 perfekcyjnawdomu.pl##.a-neuron-share-button:not([class*="mail"]):upward(div)
 pl##.footer-container div .center.section-title > span:has-text(Znajdziesz nas na)
+pl#@#div[class^="footer-social-"]
 pl.aleteia.org##div > a[aria-label="Email share"]:upward(1) + button
 pl.pandora.net###socialMediaFooter .leftMediaLinkFooter:style(visibility: hidden)
 plejada.pl##.ods-c-gallery__item__description a[href*=".com/"]:not([href*="/publications"]):remove-attr(href)
