@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista EasyList Social List (EasyList – Social Widgets) wraz z EasyList (Ads) lub AdGuard Base (w produktach AdGuard)!
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2026.3.23.0
-! Last modified: Mon, 23 Mar 2026, 18:48 UTC+00:00
+! Version: 2026.3.28.0
+! Last modified: Sat, 28 Mar 2026, 10:50 UTC+00:00
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -18,7 +18,7 @@
 ! Copyright © 2025 Certyficate IT
 ! Copyright © 2025 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2026.3.23.0 aktualizacja: pon, 23 mar 2026, 18:48 UTC+00:00
+! v.2026.3.28.0 aktualizacja: sob, 28 mar 2026, 10:50 UTC+00:00
 !
 !
 !#safari_cb_affinity(social)
@@ -6585,6 +6585,7 @@ onet.pl##div[class*="AuthorSocialProfiles_socialButtonsContainer_"] a
 onet.pl##div[class*="DetailAuthors_socialWrapper_"]
 onet.pl##div[class*="DetailAuthorsItem_socialWrapper_"]
 onet.pl##div[class*="HamburgerMenuItem_menuItem"] div[class*="FollowUs_FollowUs_"]
+onet.pl##div[class^="FollowUs_followUs_"]
 onet.pl##div[data-gtm-social]
 onet.pl#?#div[class^="_"] > span[class^="_"]:has-text(Podziel się tym artykułem)
 onet.pl,plejada.pl##.poll_share
@@ -6607,6 +6608,7 @@ open.spotify.com##button[data-testid="entity-share-button"]
 open.spotify.com##nav a[href*=".com/"]:is([href*="instagram.com"], [href*="twitter.com"], [href*="facebook.com"])
 opera.com##.footer__follow-label
 opera.com##.footer__social-icons
+opera.com##.simple-footer__follow-container
 operatorzy.pl###glowCookies.glowCookies-banner
 opineo.pl##.fl:nth-of-type(3), .mt10.fh5
 opineo.pl##.footer__links-social
@@ -7306,11 +7308,14 @@ porsche.pl##.m-03-social-headline
 porscheinterauto.pl##a[href*="facebook.com/PorscheInterAutoPL/"], .c-article > .o-container.c-section > .o-flex-gaps.o-flex-md > div:first-of-type
 porta.com.pl##.-contact.advertisement--wrapper a
 porta.com.pl##.foot a[href*="pinterest.com/"]
+porta.com.pl##.nav-menu-mobile-social-media
 porta.com.pl##.newsletter--section > div > div.advertisement--container > :nth-child(-n+2)
 porta.com.pl##.social-box > h3
 porta.com.pl##.social-icon.icon-youtube-play
 porta.com.pl##.social_bttn_pinterest_wrapper
 porta.com.pl##a[class*="ShareButton_share_button_"]
+porta.com.pl##header .nav-menu-desktop-js p:has(+ div .social-media-header)
+porta.com.pl##header .nav-menu-mobile-scrollbar p:has(+ .nav-menu-mobile-social-media)
 portal-polski.pl##.hustle-social
 portal-polski.pl##.tg-second-footer-widget
 portal-polski.pl##.tg-third-footer-widget
