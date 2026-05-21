@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
-! Last modified: 19 May 2026
+! Last modified: 24 May 2026
 ! Expires: 1 day
-! Version: 2026051901
+! Version: 2026052401
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2026 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2026051901 aktualizacja: wt, 19 maja 2026, 20:35:00
+! v.2026052401 aktualizacja: nie, 24 maja 2026, 20:38:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -2749,6 +2749,10 @@ oswiecimonline.pl##.vc_col-sm-12.vc_column_container.wpb_column > .vc_column-inn
 oswiecimskie24.pl##.noad
 otodom.pl###adsTopOD
 otodom.pl##div[data-cy="search.listing.promoted"]
+! Block the Masthead element
+otodom.pl##[data-sentry-component="Masthead"]
+! Remove the top padding from the NexusHeader element
+otodom.pl##[data-sentry-component="NexusHeader"] {padding-top: 0px !important}
 otomoto.pl##[data-testid="banner-link"]
 otopanorama.pl##.wpb_content_element.wpb_text_column
 ototorun.pl##.row:nth-of-type(6) > .fl.w1000
