@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista EasyList Cookie List (EasyList - Cookie Notices) wraz z EasyList (Ads) lub AdGuard Base (w produktach AdGuard)!
 ! Collaborators: MajkiIT, F4z, xxcriticxx, blocker999, hawkeye116477, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2026.6.28.0
-! Last modified: Sun, 28 Jun 2026, 16:41 UTC+00:00
+! Version: 2026.7.4.0
+! Last modified: Sat, 04 Jul 2026, 14:18 UTC+00:00
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -19,7 +19,7 @@
 ! Copyright © 2025 Certyficate IT
 ! Copyright © 2025 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2026.6.28.0 aktualizacja: nie, 28 cze 2026, 16:41 UTC+00:00
+! v.2026.7.4.0 aktualizacja: sob, 04 lip 2026, 14:18 UTC+00:00
 !
 !
 ! Specyficzne filtry ukrywające
@@ -619,6 +619,7 @@ carrefour.pl,glovoapp.com,play.pl,rossmann.pl,zakupy.auchan.pl##div#onetrust-con
 casamundo.pl###cm_spa_components_messages_oil
 castelmar.pl###hideme
 castorama.pl##.background-overlay
+castorama.pl#?#footer li:has(> button [data-test-id="footer_bottom_link"]:has-text(Ustawienia plików cookie)) { remove: true }
 castrol.com##.nv-cookie-notification
 causafinita.pl##.policy_text_message
 cavallonero.pl,golembiewscy.pl,mazda.warszawa.pl,mikroznakowanie.pl,puller.com.pl,sprawdzhistorie.pl,sztukalakierowania.pl,sztukawyciszania.pl,zywiec.com.pl###infobx
@@ -734,7 +735,7 @@ credit-suisse.com##.mod_cookie_policy
 crimedistrict.com##body > div > div[style*="position"][style*="absolute"] > div[style*="float"][style*="left"]:has(~ [style*="float"][style*="left"] > a[href*="cookie"] > img[src*="cookie"])
 crocs.pl###intercept
 crocs.pl##.cookie-banner-consent
-cropp.com,dombud.eu,fabrykanadrukow.com,giftmaker.eu,giorre.com,gorke.eu,harposoftware.com,hikoki-narzedzia.pl,laroxy.com,mojeinstalacje.com,navcomm.eu,rebelelectro.com,rockwellautomation.com,sklep-tvsat.com,sklep.metalbud.eu,spacetronik.eu,zbiornikinadeszczowke.com,zeskory.com###cookieNotice
+cropp.com,dombud.eu,fabrykanadrukow.com,giorre.com,gorke.eu,harposoftware.com,hikoki-narzedzia.pl,laroxy.com,navcomm.eu,rebelelectro.com,rockwellautomation.com,sklep-tvsat.com,sklep.metalbud.eu,spacetronik.eu,zbiornikinadeszczowke.com,zeskory.com###cookieNotice
 cropp.com,e-forum.pl,ibood.com,ifm.com##.cookie-notice
 crossweb.pl##.part-cook
 cs-puchatek.pl##.oregulaminie
@@ -1016,6 +1017,7 @@ elektrozysk.pl,fajka24.pl,krups.com.pl,laznianowa.pl,linuxportal.pl,lovela.pl,ls
 elementstore.pl###cookie-row
 elensport.pl###sek_cstk_inf
 elevensports.pl##.cookieNotice
+elicytacje.mf.gov.pl##jsp-cookie-banner
 elk.gmina.pl###spu-10427, #spu-bg-10427
 elk.gmina.pl#?#.spu-box:has-text(plików cookies)
 elk.gmina.pl,naszesprawy.eu,parafiakomprachcice.eu##.spu-bg
@@ -1423,6 +1425,7 @@ hpe.com##.privacy-banner
 hrlink.pl##.cookies-obligation-clause
 htc.com##.cookie-consent-container
 huawei.com,huaweipolska.pl##.huawei-cookie
+hub.pl,interia.pl,polsat.pl,pomponik.pl,terazgotuje.pl,top.pl##button[onclick="showConsentTool()"], div[title="ustawienia-cookies"]
 humanoffice.pl###cookie_cointer
 hurt.com.pl,teatrkomedia.pl##.cover
 hurtopony.pl,opony-rolnicze.net##.cookies-modal
@@ -1486,7 +1489,6 @@ infoski.pl##.cookieTooltipKontener > .cookieTooltip
 infostrefa.com,pap.com.pl,pap.pl###rodoWrapper
 infotex.com.pl##.info_cook_wrapper
 inksystem.pl##.fixed_bottom
-inku.pl##div[id^="jet-popup-"].jet-popup:has(a[href*="/polityka-prywatnosci"])
 innovaconcept.pl###footer div[class*="Pane"][style*="background"]
 inoreader.com##.landing_promo_banner_top
 inpay.pl##.ckcontent
@@ -2317,6 +2319,7 @@ pl.gorenje.com##.blurry-background
 pl.gpbatteries.com###raksha-consent-banner, #raksha-widget
 pl.gravatar.com##.custom-cookie-banner
 pl.hama.com###privacyOptionsCookieOptIn-bottom
+pl.holy.com##button[onclick="if(window.Cookiebot) Cookiebot.renew();"]
 pl.ingrammicro.eu###CookieConsentLayer
 pl.investing.com##.consentBarWrapper
 pl.jooble.org##[data-test-name="_termsOfServices"][class^="GdprPopup_gdpr_consent_banner"]
@@ -2854,7 +2857,6 @@ szklomal.eu###spu-71777
 szkola-medyczna.com.pl###cookoie_info
 szkolawohyn.pl###imSplashBox:has([src="images/klauzula-PNG.png"])
 szkolawohyn.pl#?##imContent > div[style]:not([id], [class]):first-of-type:has(> div[id^="imCell"][class^="imGrid"] p > span ~ b > span:has-text(pliki cookies))
-szkolenia24h.pl##body > div[style="width: 970px; border:1px solid gray; margin: 3px auto; color: gray; padding: 3px; text-align: center; font: 10px Verdana, sans-serif;"]
 szkolnastrona.pl###cookiesMsgWrap
 szlot.pl###spu-1873, #spu-bg-1873
 szostygracz.pl##div#cw_statusbar
