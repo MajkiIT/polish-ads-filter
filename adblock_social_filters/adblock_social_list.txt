@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista EasyList Social List (EasyList – Social Widgets) wraz z EasyList (Ads) lub AdGuard Base (w produktach AdGuard)!
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2026.8.31.0
-! Last modified: Mon, 31 Aug 2026, 21:58 UTC+00:00
+! Version: 2026.9.1.0
+! Last modified: Tue, 01 Sep 2026, 19:42 UTC+00:00
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -18,7 +18,7 @@
 ! Copyright © 2026 Certyficate IT
 ! Copyright © 2026 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2026.8.31.0 aktualizacja: pon, 31 sie 2026, 21:58 UTC+00:00
+! v.2026.9.1.0 aktualizacja: wto, 01 wrz 2026, 19:42 UTC+00:00
 !
 !
 !#safari_cb_affinity(social)
@@ -1018,7 +1018,7 @@ abrakadabra.sklep.pl,all4home.pl##.social a:not([href*="newsletter"])
 absolvent.pl##footer ul ~ ul ul > li > a[href*=".com/"]
 abud.pl,anitawu.pl,auchan.pl,delio.com.pl,dworska.pl,ecmentarze.pl,koleje-wielkopolskie.com.pl,oetker.pl,perwoll.pl,redgo.film,schwarzkopf.pl,sklepopon.com,smartwoods.pl,techgame.pl,weidemann.de,wokularach.pl##footer a[href*=".com/"]:is([href*="facebook.com"], [href*="instagram.com"], [href*="youtube.com"])
 accent-bikes.com###right_icons
-accessmate.pl,artano.pl,beskidy.cafe,bielskiedrogi.pl,bielsko.biz,bielsko.info,bielsko.tv,borcas.eu,brenna.info,cieszyn.news,czecho.pl,czechowice.biz,czechowice.tv,djfranek.pl,dlabiura24.pl,dojnakrowa.pl,domar.pl,envelo.pl,epp-poland.com,forto.com,gov.pl,grupa-wolff.eu,icmarket.pl,jumo.pl,kariera.comarch.pl,kartony24.eu,kler.eu,kris-wroclaw.pl,mojapraca.pl,mojelokum.pl,mypewex.com,myworld.com,oneplus.com,oponyexpress.pl,oppo.com,pancernik.eu,peak-bike.pl,pless-intermedia.pl,pless.pl,poczta-polska.pl,podczapla.pl,potreningu.pl,pracowniaef.pl,pszczyna.biz,pszczyna.tv,r.pl,resicapital.pl,skin79-sklep.pl,tecno-store.pl,teleguru.pl,toponline.pl,transfery.info,turboportal.pl,tychy.info,urologia.katowice.pl,vichy.pl,vidaxl.pl,visplantis.pl,wenet.pl,wojsko-polskie.pl,wujekfranek.pl,zdzislowicz.pl,zielonehobby.com,zloteobraczki.pl,zteshop.pl,zywiecinfo.pl##.social-media
+accessmate.pl,artano.pl,beskidy.cafe,bielskiedrogi.pl,bielsko.biz,bielsko.info,bielsko.tv,borcas.eu,brenna.info,cieszyn.news,czecho.pl,czechowice.biz,czechowice.tv,djfranek.pl,dlabiura24.pl,dojnakrowa.pl,domar.pl,envelo.pl,epp-poland.com,forto.com,gov.pl,grupa-wolff.eu,icmarket.pl,jumo.pl,kariera.comarch.pl,kartony24.eu,kler.eu,kohnkebags.com,kris-wroclaw.pl,mojapraca.pl,mojelokum.pl,mypewex.com,myworld.com,oneplus.com,oponyexpress.pl,oppo.com,pancernik.eu,peak-bike.pl,pless-intermedia.pl,pless.pl,poczta-polska.pl,podczapla.pl,potreningu.pl,pracowniaef.pl,pszczyna.biz,pszczyna.tv,r.pl,resicapital.pl,skin79-sklep.pl,tecno-store.pl,teleguru.pl,toponline.pl,transfery.info,turboportal.pl,tychy.info,urologia.katowice.pl,vichy.pl,vidaxl.pl,visplantis.pl,wenet.pl,wojsko-polskie.pl,wujekfranek.pl,zdzislowicz.pl,zielonehobby.com,zloteobraczki.pl,zteshop.pl,zywiecinfo.pl##.social-media
 account.efortuna.pl##.wc-footer-social
 account.kaufland.com##.footer .footer-content
 account.skrill.com##.sign-up__footer-social
@@ -2041,6 +2041,7 @@ blog.siegnijpozdrowie.org,djakdesign.pl,ewaszalkowska.com,invoicer.blogspot.com,
 blog.spacetronik.eu###facebook-2, #social_v2-2
 blog.spotawheel.pl##.widget--social
 blog.szurek.tv##footer a:is([href*="facebook.com"], [href*="twitter.com"], [href*="instagram.com"], [href*="linkedin.com"], [href*="/discord"], [href*="youtube.com"])
+blog.whatsapp.com##a[data-ms*="share-button"]
 blogierka.pl###facebook_like_widget-3
 blogmtb.pl###HTML3 > .title, .roll1, .roll2, .roll3
 blogojciec.pl###ppsPopupShell_100_859245, #ppsPopupBgOverlay
@@ -7876,6 +7877,9 @@ radiojazz.fm##.gk-social
 radiojura.pl##.ul-share > li:not(:first-child, :last-child)
 radiokampus.fm##.socjalne
 radiokierowcow.pl##footer div[class*="ShareSocial"] > :nth-child(-n+2)
+radiokiss.fm#?#.flex-col.flex:has(> h3:has-text(Follow us))
+radiokiss.fm#?#.flex-col.flex:has(> h3:has-text(Stories)):not(:has(iframe))
+radiokiss.fm#?#.flex.items-center:has(> div:has-text(Śledź))
 radiolodz.pl##a[rel="me noopener"][target="blank"]
 radioluz.pwr.edu.pl##.top-menu__social
 radionaukowe.pl##.footer__container > div > div:nth-child(3) > :nth-child(n+3):nth-child(-n+4)
@@ -7940,6 +7944,7 @@ randomseed.pl##.footer-links > li > a:not([href^="mailto:"], [href*="index.xml"]
 rankinglekarzy.pl##.rl-socialButtons
 rankomat.pl###footer-menu-col-social
 rapa-sklep.pl,sklepsaturn.pl###social a:not([href*="allegro.pl/"], [href*="/newsletter"])
+ratingcaptain.com##footer > div:nth-child(2) > div:first-child > div > div:nth-child(2) > div:nth-child(2) > div:has(> div > a[href*="facebook.com/"]) :is(h3:first-child, a:not([href*="/maps"]))
 ratownicy24.pl###kontakt.main-footer .small, #kontakt.main-footer .small ~ a
 ratownicy24.pl##.social-wgt
 ratownik-med.pl#?#div.span6:nth-of-type(2) > div.jm-module:nth-of-type(4):has-text(Profile społecznościowe)
@@ -8022,6 +8027,7 @@ retrolab.pl##.wiersz_fb
 retromtb.pl##td:nth-of-type(2) > table > tbody > tr > td:nth-of-type(2) > table > tbody > tr:nth-of-type(n+3) > td > div
 retronagazie.eu###sfsi-widget-5
 retrotraktor.pl##.side-border-right > table:first-of-type
+reviews.ratingcaptain.com##footer > div > div:nth-child(3) > div > div:nth-child(2) > div > div > div > div:has(> div > a[class*="btn"][href*="facebook.com/"]) :is(div:first-child, a[class*="btn"]:not([href*="g.page"]))
 revolut.com##ul[aria-label="Social links"]
 revolutionrace.pl##.community-and-ratings-block__social-media
 riftcat.com###header-static > .topbar-social-icons > a
