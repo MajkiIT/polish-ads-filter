@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
-! Last modified: 24 August 2026
+! Last modified: 4 September 2026
 ! Expires: 1 day
-! Version: 2026082401
+! Version: 2026090401
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2026 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2026082401 aktualizacja: pon, 24 sierpnia 2026, 17:00:00
+! v.2026090401 aktualizacja: pią, 4 września 2026, 00:38
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -2403,7 +2403,7 @@ mobilneforum.pl##a[href^="http://shrsl.com/"]
 mobimaniak.pl###nav2
 mobimaniak.pl##[style$="color:#999999; font-size:10px;"]
 mobirank.pl##[id^="html_javascript_adder"]
-moj.tauron.pl##div.ebok-pop-up:not(#popupContact)
+!moj.tauron.pl##div.ebok-pop-up:not(#popupContact)
 moj.tauron.pl##div.promo-box[title^="Zobacz ofertę oczyszczaczy powietrza"][title*="stronę sklepu"]
 moj.tauron.pl#?#div.ebok-pop-up:-abp-has([title^="Zyskaj dotację do 4000" i][title*="fotowolt" i])
 moja-ostroleka.pl##div.ramka_wybory_top, li.kandydat
@@ -5338,10 +5338,10 @@ wykop.pl#?#.r-block:-abp-has(a[href*="wykop.pl/tracker"])
 wykop.pl##.screening-displace.r-block
 wykop.pl###wpladbottom, .stm-ad-player
 wykop.pl##.m-hide.m-reset-width.m-reset-margin.m-reset-float.grid-right > div.r-block > div > A > IMG
-wykop.pl##.pub-slot-wrapper
 wykop.pl##.ski-jumping-slider
 wykop.pl##section.lisek-app
 wykop.pl##footer ~ *
+wykop.pl##.pub-slot-wrapper { position: absolute !important; left: -4000px !important; visibility: hidden !important; pointer-events: none !important; }
 !
 !22#--------------------------Rules unblock protection------------!
 autocentrum.pl,demotywatory.pl,dziennik.pl,facetemjestem.pl,gala.pl,garnek.pl,jegostrona.pl,joemonster.org,kobieta.pl,komixxy.pl,transfery.info,v10.pl,prawdaobiektywna.pl##div > iframe[style^="border:"]:not([src])
@@ -6089,6 +6089,7 @@ avanti24.pl,czterykaty.pl,edziecko.pl,g.pl,gazeta.pl,haps.pl,hapsvod.pl,magazyn-
 @@||googletagmanager.com/gtag/$script,domain=certyficate.it|aptekarski.com
 @@||googletagmanager.com/gtm.js$script,domain=www.emag.pl|benchmark.pl|komputerswiat.pl|www.jabra.pl|plus.pl|expressilustrowany.pl|motofakty.pl|kurierlubelski.pl|stronakobiet.pl|ads.allegro.pl|skoda-auto.pl|aptekarski.com|geselle.pl|www.mbank.pl|krzyzowki123.pl
 @@||googletagmanager.com/gtm.js$xmlhttprequest,domain=krzyzowki123.pl
+@@||googletagmanager.com^$domain=njumobile.pl
 @@||googletagmanager.com^$script,domain=www.aptekarska.pl|aptekarski.com
 @@||online.mbank.pl/venezia/fingerprint.js$script,domain=online.mbank.pl
 @@||polfan.pl/*/fingerprint2.min.js$script,~third-party,domain=polfan.pl
