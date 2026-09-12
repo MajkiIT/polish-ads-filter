@@ -36,7 +36,7 @@ doz.pl#@#+js(set-cookie, consent-granted-version, 24)
 !
 ! Komunikaty dot. 🍪, polityki prywatności/RODO i 🥛 🙂
 /wp-content/plugins/cookie-law-info/lite/frontend/js/script.min.js$important,domain=sztolnie.pl|zamekgrodno.pl
-@@/^https?:\/\/web\.archive\.org\/web\/[0-9]+\/https?:\/\/(?![^\/]+\.pl)/$ghide
+@@/^https?:\/\/web\.archive\.org\/web\/[0-9]+\/https?:\/\/(?![^\/]+\.pl\.?(\/|$))/$ghide
 @@||web.archive.org^$badfilter,ghide
 ||cdn.ans-media.com/*/CookiesConsentPopUp$redirect=noop.css,stylesheet
 ||lajt-online.pl/api/terms/rodo$1p,important,redirect=noop.json:10,xhr
@@ -155,7 +155,7 @@ avg.com,radiopogoda.pl##body.ot-overflow-hidden:style(overflow-y: auto !importan
 babyland.pl###xf-modal, .modal-backdrop
 baptysci.pl,powiatslawno.pl,szkolawielgus.pl,szpitalnawrzesinie.pl,umig.olkusz.pl##.gafancybox-overlay-fixed.gafancybox-overlay
 barbara.net.pl##.modal:has-text(RODO)
-barbara.net.pl,conversion.pl,dane.gov.pl,dyzurnet.pl,gertbhp.pl,makro.pl,qa-stack.pl,zrzutka.pl##.modal-backdrop
+barbara.net.pl,conversion.pl,dane.gov.pl,dyzurnet.pl,gertbhp.pl,makro.pl,qa-stack.pl##.modal-backdrop
 bbcpolska.com###home:style(padding-top: 0 !important)
 bebiprogram.pl,bobovita.pl##+js(set-cookie, cookie_necessary, 1)
 beko.com,burgerking.pl,bydgoszczak.pl,drogeriapigment.pl,katowiczak.pl,ksiaznicapodlaska.pl,lyko.com,mojaprzychodnia.com,nat.pl,podlaskie.eu,pozbruk.pl,siepomaga.pl,smsapi.pl,spidersweb.pl,starachowice.eu,tme.eu,trzymajsiecieplo.pl,viennahouse.com,vod3.pl,wmeritum.pl##body[style]:style(overflow-y: auto !important)
@@ -248,6 +248,9 @@ corbby.com.pl##:root[style^="overflow"]:style(overflow-y: auto !important)
 credit-suisse.com##body.ot-consent-manager-open:style(overflow-y: auto !important)
 crfop.gdos.gov.pl###banner-komunikat-rodo-gdos-2
 crfop.gdos.gov.pl###banner-komunikat-rodo-gdos-2 ~ .modal-backdrop
+cupra.pl##+js(set-cookie, vw_cookie_popup_unblock_list_script, true, , dontOverwrite, 1)
+cupra.pl##body.modal-active:style(overflow-y: auto !important)
+cupra.pl,revolutionrace.pl##:root > body .cookie-popup
 cyberdefence24.pl,defence24.com,defence24.pl,energetyka24.com,infosecurity24.pl,space24.pl##.modal:has(.cookie__modal_text)
 czescidobmw.pl,hermon.com.pl,sklep.ack.com.pl###cookie-transparency-modal-main, .modal-backdrop
 czescizamienne.amica.pl##.modal-container:has(a[href="/Account/CookiesPolicy"])
@@ -727,7 +730,6 @@ reserved.com##div[class][data-selen-group="cookies-bar"] ~ div[style*="position"
 restilo.pl##.modals-wrapper:has(.pr-cookie-modal-wall)
 restilo.pl##body._has-modal:style(position: static !important; overflow-y: auto !important)
 revolutionrace.pl##.body--modal[class]:style(position: static !important)
-revolutionrace.pl##:root > body .cookie-popup
 rydzewski.pl###linijka2:style(color: #0000)
 samasz.pl###popup-19391-, .modal-backdrop
 san.edu.pl##.cookies, .modal-backdrop
@@ -910,6 +912,8 @@ zivada.pl###CookiesConfirmationLink, .CookiesConfirmationLink
 zivada.pl##[style*="overflow"]:is(body, html):style(overflow-y: auto !important)
 zlubaczowa.pl##:root[style*="overflow" i]:style(overflow-y: auto !important; height: unset !important)
 zlubaczowa.pl##iframe#cmp-iframe
+zrzutka.pl##+js(set-cookie, cookie_preferences, true, , dontOverwrite, 1)
+zrzutka.pl##.modal-backdrop:not(:has(+ div div[data-test="ShareModal"]))
 zrzutka.pl##.modal:has(a[href="/privacy"])
 zsgarwolin.pl##.mfp-content:has(#cadre_alert_cookies)
 ztm.gda.pl###acceptRodo, .modal-backdrop
