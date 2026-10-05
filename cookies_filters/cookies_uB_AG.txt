@@ -1187,7 +1187,7 @@ com,eu,pl##body[class*="shop" i] div.consents
 com,eu,pl##body[class*="shop" i]:has(.consents):has(> [inert]) > [inert]:remove-attr(inert)
 com,eu,pl##body[style*="overflow"][style*="padding"]:has(h-portal-target .consents-modal [aria-label="Ustawienia plików cookies"]):style(overflow-y: auto !important; padding-right: 0 !important)
 com,eu,pl##h-backdrop
-com,eu,pl##h-portal-target:has(.consents-modal [aria-label="Ustawienia plików cookies"])
+com,eu,pl##h-portal-target:has(.consents-modal:only-child:only-of-type [aria-label="Ustawienia plików cookies"])
 doz.pl##+js(set-cookie-reload, consent-granted, 1)
 espedytor.pl##+js(set-cookie-reload, zgodaRODO, true)
 kts.weszlo.com##+js(set-cookie-reload, cookiesActive, false)
