@@ -6,8 +6,8 @@
 ! Required: Do poprawnego działania wymagana jest lista EasyList Social List (EasyList – Social Widgets) wraz z EasyList (Ads) lub AdGuard Base (w produktach AdGuard)!
 ! Collaborators: MajkiIT, blocker999, hawkeye116477, xxcriticxx, KonoromiHimaries, RikoDEV, krystian3w
 ! Homepage: https://www.certyficate.it/
-! Version: 2026.10.6.0
-! Last modified: Tue, 06 Oct 2026, 20:31 UTC+00:00
+! Version: 2026.10.7.0
+! Last modified: Wed, 07 Oct 2026, 20:28 UTC+00:00
 ! Expires: 2 days
 ! Support:
 !   Email => errorsfilters@certyficate.it
@@ -18,7 +18,7 @@
 ! Copyright © 2026 Certyficate IT
 ! Copyright © 2026 Filters Heroes
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock/
-! v.2026.10.6.0 aktualizacja: wto, 06 paź 2026, 20:31 UTC+00:00
+! v.2026.10.7.0 aktualizacja: śro, 07 paź 2026, 20:28 UTC+00:00
 !
 !
 !#safari_cb_affinity(social)
@@ -1632,12 +1632,15 @@ auto-motor-i-sport.pl,menshealth.pl,motocykl-online.pl,runners-world.pl,womenshe
 auto-motor-i-sport.pl,menshealth.pl,motocykl-online.pl,runners-world.pl,womenshealth.pl##div[class$="-community-floating"] > .chips
 auto-motor-i-sport.pl,menshealth.pl,motocykl-online.pl,runners-world.pl,womenshealth.pl##div[class$="-community-floating"] > div.title:first-of-type
 auto-swiat.pl,businessinsider.com.pl,fakt.pl,komputerswiat.pl,medonet.pl,onet.pl,plejada.pl##.ods-a-anchor__share-others
+auto-swiat.pl,businessinsider.com.pl,fakt.pl,komputerswiat.pl,medonet.pl,onet.pl,plejada.pl##.ods-c-footer__social a[href*="com/"]
+auto-swiat.pl,businessinsider.com.pl,fakt.pl,komputerswiat.pl,medonet.pl,onet.pl,plejada.pl##.ods-m-author-teaser__socials
 auto-swiat.pl,businessinsider.com.pl,fakt.pl,komputerswiat.pl,medonet.pl,onet.pl,plejada.pl##.ods-m-author-xl__socials
-auto-swiat.pl,businessinsider.com.pl,fakt.pl,komputerswiat.pl,medonet.pl,onet.pl,plejada.pl##a.ods-m-socials-icon-stream__link:not([href*="feed"])
+auto-swiat.pl,businessinsider.com.pl,fakt.pl,komputerswiat.pl,medonet.pl,onet.pl,plejada.pl##.ods-m-socials-icon-stream__link:not([class*="copy"], [href*="wa.me"], [href*="feed"], [href^="mailto:"])
+auto-swiat.pl,businessinsider.com.pl,fakt.pl,komputerswiat.pl,medonet.pl,onet.pl,plejada.pl##.ods-m-socials-stream > :not([class*="copy"], [href*="wa.me"], [href*="feed"], [href^="mailto:"])
+auto-swiat.pl,businessinsider.com.pl,fakt.pl,komputerswiat.pl,medonet.pl,onet.pl,plejada.pl##div[class*="BigCard_social_"] > span[class*="share"]
 auto-swiat.pl,fakt.pl,komputerswiat.pl,medonet.pl,onet.pl,plejada.pl,przegladsportowy.pl##.ods-m-socials-stream a[href*="wa.me"]
 auto-swiat.pl,fakt.pl,komputerswiat.pl,medonet.pl,onet.pl,plejada.pl,przegladsportowy.pl##li.ods-c-share__li:has(> a[href*="wa.me"])
 auto-swiat.pl,fakt.pl,komputerswiat.pl,medonet.pl,onet.pl,plejada.pl,przegladsportowy.pl##span[class*="ShareLayerItem_"]:has([class*="Messenger"], [class*="WhatsApp"])
-auto-swiat.pl,medonet.pl,onet.pl,plejada.pl##.ods-m-socials-stream > :not([class*="copy"], [href*="wa.me"], [href*="feed"])
 auto.pl##.row .row > .social-media:first-child
 autoblog24.pl###execphp-2
 autoblog.spidersweb.pl##div[class*="AuthorBio_authorBio__social_media_"]
@@ -2803,6 +2806,7 @@ decoliving.pl,intymna.pl,ohso.pl###sg-social-inline-block
 decolux.com.pl###footer > .row .title_block
 decora.pl##.elementor-widget-container a:not([href*="decora.pl"]) > img[src*="/social"]
 decority.pl##footer > div > .row > div:nth-of-type(4) > ul
+decoroom.eu##footer a[href*=".com/"]:is([href*="facebook.com"], [href*="instagram.com"], [href*="linkedin.com"], [href*="pinterest.com"])
 dedalus.pl##.rc-infobox
 deepl.com##.dl_footer__social
 deepl.com##div[class*="socialMediaContainer"] a:not([href*="github.com/"])
@@ -2990,6 +2994,7 @@ dobropolski.com##.bot-social
 dobryfarmer.pl##a[title="Facebook"] img
 dobrzynska.wroc.pl###divBottomRight > a > img
 dociekliwa.pl##.SMYouTubesubscribe_Widget
+dock.eu##footer li:has(a[href*=".com/"]:is([href*="facebook.com"], [href*="instagram.com"], [href*="linkedin.com"]))
 docs.wisniowski.pl##div.MuiGrid-root > div[style]:not([class]) + div[style] > a[href*=".com/"] > svg[data-testid*="Icon"]
 docs.wisniowski.pl##div.MuiGrid-root > div[style]:not([class]):has(+ div[style] > a[href*="facebook.com/"] > svg)
 doctorgun.eu###box-18
@@ -3044,7 +3049,7 @@ doneta.pl##.zespol p + p + p a:not([href*="doneta.pl/"])
 doniczki-poznan.pl##.TwitterFeeds
 doortrade.eu##.contact__social__item
 doortrade.eu##.menu-item > a[href*="facebook.com/"]
-dopesnow.com,mescomp.pl##footer a[href*=".com/"]:is([href*="facebook.com"], [href*="instagram.com"], [href*="pinterest.com"])
+dopesnow.com,lumosteel.pl,mescomp.pl##footer a[href*=".com/"]:is([href*="facebook.com"], [href*="instagram.com"], [href*="pinterest.com"])
 doradcapodatkowy.pl###bottom-5 > .moduletable > .custom > .pdcorrect.col-lg-12.col-md-12.col-sm-12.col-xs-12 > .pdcorrect.col-lg-5.col-md-5.col-sm-12.col-xs-12
 doradcapodatkowy.pl##.moduletable .pdcorrect.col-lg-5.col-md-5.col-sm-12.col-xs-12 > p:nth-of-type(2)
 doradcasmaku.pl##.other_options > .item_share_options
@@ -5087,7 +5092,7 @@ kei.pl##.kei-social-icons
 keller.com.pl,obserwatorgospodarczy.pl###Mod111
 kelton.pl##img[src="/data/include/cms/fb.png"]
 kepno.pl##li.no-mini:nth-of-type(n+4)
-kerno.pl##.column:nth-of-type(3) .shb-footer-menu-label
+kerno.pl##div.contact-col:has(> .social-row)
 kerpro.pl##footer .loga-dost-plat > .et_pb_text_inner > p
 kety.pl###twittery > ul > li:first-of-type
 kfc.pl##.social-side
@@ -5162,6 +5167,7 @@ klucz.net###labelSocial, .vklogo
 kluczekaczorek.pl,testowaniepl.net###oknoPopUp, #tloPopUp
 km.glogow.pl###g-footer .g-block:nth-of-type(3) .g-title
 kmag.pl##.article-title ~ div:has([data-link^="#share-"])
+kmag.pl##a.border-limegreen[href*=".com/"]:is([href*="facebook.com"], [href*="instagram.com"], [href*="tiktok.com"], [href*="x.com"])
 kmag.pl##footer a[href*=".com/"]
 kmag.pl##nav a[href*=".com/"]
 kmdentalexperts.pl###widget-3 p a[href*="facebook.com"]
@@ -5218,8 +5224,6 @@ komorkomat.pl##.widget_text.col-md-3:nth-of-type(4) > .widgettitle
 komornik-marchaj.pl##.rstpl-social
 kompan.pl##.blog-icon
 kompan.pl,truckcare.pl,ulc.gov.pl,uniqueseo.pl,wirtualnemedia.pl##.icon-linkedin
-komputerswiat.pl##.ods-c-footer__social a[href*="com/"]
-komputerswiat.pl,onet.pl,plejada.pl##div[class*="BigCard_social_"] > span[class*="share"]
 komputerswiat.pl,www-komputerswiat-pl.cdn.ampproject.org##div > a[href*="facebook.com/komputerswiat" i]:has(img)
 komputery-pc.info###Mod107
 komputerymarkowe.pl##.footer-banner-2 > a + a
@@ -6002,7 +6006,6 @@ medium.com##span[data-dd-action-name*="highlight_text"] + button
 medme.pl##.footer__navigation--social
 medme.pl##.medme__header__social
 mednova.pl,novamed.pl###footer-content-social
-medonet.pl,onet.pl,plejada.pl##.ods-m-author-teaser__socials
 medpak.com.pl###iqithtmlandbanners-block-3
 medpolonia.pl##.helper-yt
 medseven.eu,spawaj.eu##.kac-sm-panel .kac-sm-twitter
@@ -6147,6 +6150,7 @@ misyjne.pl##.social-icons__list
 mitsubishi-japanmotors.pl,mitsubishi.pl##.social.row > .columns > .beforeFooterMenu > li:not(:nth-of-type(5))
 mittendrin.pl##.container-social.container
 mittendrin.pl#?#div.container-hader.container:has-text(MEDIA SPOŁECZNOŚCIOWE)
+miuipolska.pl##.social-button:not(.social-link-email)
 mixremedia.eu###box_cusConBody_73
 miyacosmetics.com###text-6 > .textwidget > a:not([style])
 mjakmama24.pl,muratorplus.pl,poradnikzdrowie.pl##.big_socials_tw, .big_socials_gp, .big_socials_fb
@@ -6423,6 +6427,9 @@ mzbm.tychy.pl##footer h2:has(+ .social)
 mzk-ostrow.com.pl##.rightpane p:nth-of-type(n+52):nth-of-type(-n+58)
 mzk-ostrow.com.pl##p:nth-child(n+59)
 mzk-torun.pl###s5_drop_down_container
+mzkskierniewice.pl##.fixed:has(a[href="/polityka-prywatnosci"])
+mzkskierniewice.pl##a[aria-label^="Facebook"]
+mzkskierniewice.pl##a[aria-label^="X "]
 mzuim.chorzow.eu##.socialmedia > li:not(.bip, .rss)
 na-talerzu.pl##.wprm-call-to-action-simple.wprm-call-to-action
 nacjonalista.pl##.widget_text.widget, .top-twitter, .top-facebook, .top-youtube
